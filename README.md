@@ -36,7 +36,7 @@ To get a collection of offline map tiles create an "osmdroid zip" archive using 
 
 The site should now work from any relative path on an Apache/PHP server like `http://localhost/TrainWalks/`.
 
-The offline.html page eliminates the reliance on PHP and (soon) an online tile server.
+The offline.html page eliminates the reliance on PHP and an online tile server.
 
 ## License
 
