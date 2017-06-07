@@ -1,0 +1,26 @@
+{
+  "name": "sydneytrainwalks",
+  "version": "0.0.0",
+  "devDependencies": {
+    "compass": "",
+    "exif": "",
+    "gm": "",
+    "grunt": ">=0.4.5",
+    "grunt-autoprefixer": "",
+    "grunt-contrib-compass": "",
+    "grunt-contrib-concat": "",
+    "grunt-contrib-connect": "",
+    "grunt-contrib-imagemin": "",
+    "grunt-contrib-jshint": "",
+    "grunt-contrib-uglify": "",
+    "grunt-contrib-watch": "",
+    "grunt-font-optimizer": "",
+    "grunt-image-resize": "",
+    "grunt-imagemagick": "",
+    "grunt-php": "",
+    "grunt-pngmin": "",
+    "jsdom": "",
+    "sass": "",
+    "xmldom": ""
+  }
+}

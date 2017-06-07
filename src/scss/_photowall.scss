@@ -1,0 +1,98 @@
+/*
+	Photo Wall
+*/
+@media all {
+	.photowall {
+		@include transition-property(transform);
+		@include transition-duration(300ms);
+		@include translate(100%, 0);
+		background: #000;
+		bottom: 50px;
+		height: auto;
+		max-height: 100%;
+		position: absolute;
+		right: 0;
+		top: 100px;
+		width: 50%;
+		z-index: 4;
+		margin: 0;
+		padding: 0;
+
+		* {
+			@include box-sizing(border-box);
+			-ms-interpolation-mode: bicubic;
+		}
+
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+
+			height: 100%;
+			overflow: hidden;
+			overflow-y: auto;
+			-webkit-overflow-scrolling: touch;
+
+			li {
+				flex: 0 1 auto;
+				flex-grow: 1;
+				margin: 0;
+				padding: 0;
+
+				a {
+					display: block;
+					background-size: cover;
+					background-position: center;
+					border: solid 1px #000;
+
+					img {
+						height: 128px;
+						width: auto;
+						visibility: hidden;
+					}
+				}
+			}
+		}
+
+		&:after {
+			@include background(Transparent linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%));
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: -2px;
+			height: 32px;
+			left: 0;
+			right: 0;
+			z-index: 5;
+		}
+	}
+	/*
+		on which screen should this be visible
+	*/
+	body.screen-photos .photowall {
+		@include translate(0, 0);
+	}
+}
+@media (max-width:767px) {
+	.photowall ul li a img {
+		height: 96px;
+	}
+}
+@media (orientation: portrait) {
+	.photowall {
+		width: 100%;
+	}
+	/*
+		on which screen should this be visible
+	*/
+	body.screen-photos .photowall {
+		@include translate(0, 0);
+	}
+}
+@media print {
+	.photowall {
+		display: none !important;
+	}
+}

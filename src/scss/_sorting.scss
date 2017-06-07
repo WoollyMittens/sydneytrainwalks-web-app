@@ -1,0 +1,60 @@
+/*
+	sorting
+*/
+
+@media all {
+
+	#sorting {
+		display : block;
+		margin : 1em 0;
+		padding : 0;
+		position : relative;
+		width : 100%;
+		height : 30px;
+		label {
+			display : block;
+			position : absolute;
+			right : 1em;
+			left : 51%;
+			top : 0;
+			bottom : 0;
+			span {
+				display : none;
+			}
+			input, select {
+				border : solid 1px #333;
+				border-radius : 4px;
+				font-size : 16px;
+				margin : 0;
+				width : 100%;
+				height : 30px;
+			}
+			input {
+				box-shadow : inset 1px 2px 4px rgba(0,0,0,0.3);
+				padding-left : 0.5em;
+				background-image : url(../img/button_delete_2.svg);
+				background-size : auto 90%;
+				background-repeat : no-repeat;
+				background-position : 99% 50%;
+			}
+		}
+		label:first-child {
+			left : 1em;
+			right : 51%;
+		}
+	}
+
+}
+@media (max-width: 480px) {
+
+	#sorting {
+		height : 27px;
+		label {
+			input, select {
+				font-size : 14px;
+				height : 27px;
+			}
+		}
+	}
+
+}

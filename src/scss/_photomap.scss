@@ -1,0 +1,97 @@
+/*
+	Photo Map
+*/
+
+@media all {
+
+	.photomap {
+		@include transition-property(transform);
+		@include transition-duration(300ms);
+		@include translate(-100%, 0);
+		display : block;
+		margin : 0;
+		padding : 0;
+		bottom : 50px;
+		height : auto;
+		left : 0;
+		max-height : 100%;
+		position : absolute;
+		top : 100px;
+		width : 50%;
+		z-index : 3;
+	}
+
+	.photomap-return {
+		@include iconParent(48);
+		@include rem('width', 3);
+		@include rem('height', 3);
+		@include rem('right', 1);
+		@include rem('top', 1);
+		background : #000086;
+		color : #fff;
+		cursor : pointer;
+		display : none;
+		font-weight : bold;
+		position : absolute;
+		text-align : center;
+		text-decoration : none;
+		z-index : 2;
+		&:before {
+			@include iconCenter(24);
+			background-image : url(../img/forward.svg);
+		}
+		&:hover {
+			background : $color-hover;
+		}
+	}
+
+	.photomap-leaflet {
+		width : 100%;
+		height : 100%;
+		position : relative;
+		z-index : 1;
+	}
+
+	/*
+		on which screen should this be visible
+	*/
+
+	body.screen-guide .photomap,
+	body.screen-photos .photomap,
+	body.screen-map .photomap { @include translate(0, 0); }
+
+}
+@media (orientation: portrait) {
+
+	.photomap {
+		width : 100%;
+	}
+
+	.photomap-return {
+		display : block;
+	}
+
+	/*
+	on which screen should this be visible
+	*/
+
+	body.screen-guide .photomap { @include translate(-100%, 0); }
+	body.screen-photos .photomap { @include translate(-100%, 0); }
+	body.screen-map .photomap { @include translate(0, 0); }
+
+}
+@media print {
+
+	.photomap {
+		@include translate(0, 0);
+		position : relative !important;
+		top : auto !important;
+		right : auto !important;
+		bottom : auto !important;
+		left : auto !important;
+		page-break-before : always;
+		height : 20cm !important;
+		width : 20cm !important;
+	}
+
+}

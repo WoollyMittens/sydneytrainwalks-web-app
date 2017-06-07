@@ -1,0 +1,162 @@
+/*
+	signage
+*/
+
+@media all {
+
+	.sign {
+		background-color : #000086;
+		@include background(#000086 linear-gradient(top, #000062 0%, #000086 100%));
+		@include box-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
+		border-top : solid 1px rgba(255, 255, 255, 0.2);
+		border-right : solid 1px rgba(0, 0, 0, 0.1);
+		border-bottom : solid 1px rgba(0, 0, 0, 0.2);
+		border-left : solid 1px rgba(255, 255, 255, 0.1);
+		border-radius : 3px;
+		color : #fff;
+		display : inline-block;
+		font-size : 18px;
+		font-weight : normal;
+		height : 50px;
+		line-height : 48px;
+		padding : 0 10px 0 5px;
+  		text-align : left;
+		text-overflow : ellipsis;
+		vertical-align : middle;
+  		overflow: hidden;
+  		white-space: nowrap;
+		&:before {
+			-webkit-font-smoothing : antialiased;
+			-moz-osx-font-smoothing : grayscale;
+			speak : none;
+			background-repeat : no-repeat;
+			background-position : 50% 50%;
+			background-size : auto 40px;
+			font-family : 'cosmo';
+			content : '';
+			font-size : 36px;
+			line-height : 40px;
+			display : inline-block;
+			height : 40px;
+			margin-top : -2px;
+			vertical-align : middle;
+			width : 40px;
+			text-align : center;
+		}
+		&.from {
+			display : none;
+		}
+		&.to {
+			overflow : hidden;
+			width : 50px;
+			padding : 6px;
+			&:before {
+				background-color : #fff;
+				border-radius : 50%;
+				content : '';
+				background-image : url(../img/stability_1.svg);
+				background-size : auto 24px;
+				width : 32px;
+				height : 32px;
+				display : block;
+				margin : 3px 2px;
+			}
+		}
+		&.park {
+			background-color : #4b6455;
+			@include background(linear-gradient(top, #587360 0%, #4b6455 100%));
+			color : #efd4a3;
+			text-shadow : -1px -1px 1px #96865a;
+			&:before {
+				@include box-shadow(inset 1px 1px 2px rgba(0, 0, 0, 0.5));
+				background-color : #5a8476;
+				background-image : url(../img/walking.png);
+				background-size : auto 35px;
+				margin-right : 5px;
+			}
+		}
+		&.train:before {
+			background-image : url(../img/sign_train_3.svg);
+		}
+		&.bus:before {
+			background-image : url(../img/sign_bus.svg);
+		}
+		&.ferry:before {
+			background-image : url(../img/sign_water_transport.svg);
+		}
+		&.sign.park i {
+			background : url(../img/duration.png) no-repeat;
+			display : inline-block;
+			font-size : 12px;
+			line-height : 14px;
+			height : 14px;
+			margin : 0 0 0 0.3em;
+			padding : 0 0 0 17px;
+			vertical-align : middle;
+		}
+	}
+
+}
+
+@mixin smallSigns {
+
+	.sign {
+		font-size : 14px;
+		height : 28px;
+		line-height : 27px;
+		padding : 0 10px 0 5px;
+		&:before {
+			background-size : auto 20px;
+			height : 20px;
+			margin-top : -2px;
+			margin-right : 3px;
+			width : 20px;
+		}
+		&.to {
+			width : 30px;
+			padding : 3px 4px;
+			&:before {
+				background-size : auto 12px;
+				width : 16px;
+				height : 16px;
+				margin : 3px 2px;
+			}
+		}
+		&.park {
+			&:before {
+				margin-right : 5px;
+				background-size : auto 18px;
+			}
+		}
+		&.sign.park i {
+			background : url(../img/duration.png) no-repeat;
+			font-size : 12px;
+			height : 14px;
+			line-height : 14px;
+			margin : 0 0 0 0.3em;
+			padding : 0 0 0 17px;
+		}
+	}
+
+}
+
+header.subtitle {
+
+	@include smallSigns;
+
+}
+
+@media (max-width: 640px), (max-height: 480px) {
+
+	@include smallSigns;
+
+}
+@media (max-width: 769px) {
+
+	.sign {
+		&.to {
+			display : none;
+		}
+	}
+
+}
