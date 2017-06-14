@@ -87,13 +87,12 @@
 							foreach ($json->{'landmarks'} as $name => $value) {
 								$isOptional = '/optional: |detour: /i';
 								$isSpherical = '/_r\d{7}/i';
+								$viewerType = (preg_match($isSpherical, $name)) ? 'sphere' : 'zoom';
 								if (preg_match($isOptional, $value)) {
 									$value = preg_replace($isOptional, '', $value);
-									?><div class="guide-optional"><p><a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg" class="zoom-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg);" data-desc="<?php echo $value ?>"><img alt="" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg"></a> <?php echo $value ?></p></div><?php
-								} elseif (preg_match($isSpherical, $name)) {
-									?><p><a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg" class="sphere-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg);" data-desc="<?php echo $value ?>"><img alt="" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg"></a> <?php echo $value ?></p><?php
+									?><div class="guide-optional"><p><a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg" class="<?php echo $viewerType?>-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg);" data-desc="<?php echo $value ?>"><img alt="" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg"></a> <?php echo $value ?></p></div><?php
 								} else {
-									?><p><a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg" class="zoom-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg);" data-desc="<?php echo $value ?>"><img alt="" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg"></a> <?php echo $value ?></p><?php
+									?><p><a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg" class="<?php echo $viewerType?>-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg);" data-desc="<?php echo $value ?>"><img alt="" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg"></a> <?php echo $value ?></p><?php
 								}
 							}
 						} else {
