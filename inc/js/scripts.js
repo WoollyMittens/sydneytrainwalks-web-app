@@ -56262,19 +56262,22 @@ useful.Photozoom.prototype.Main = function(config, context) {
   // PROPERTIES
 
   "use strict";
-  this.config = config;
   this.context = context;
   this.element = config.element;
+  this.config = {
+    'container': document.body,
+    'zoom': 1,
+    'sizer': null,
+    'slicer': '{src}'
+  };
+  
+  for (name in config) {
+    this.config[name] = config[name];
+  }
 
   // METHODS
 
   this.init = function() {
-    var a, b;
-    // apply the default values
-    this.config.container = this.config.container || document.body;
-    this.config.zoom = this.config.zoom || 1;
-    this.config.sizer = this.config.sizer || null;
-    this.config.slicer = this.config.slicer || '{src}';
     // apply the event handlers
     this.element.addEventListener('click', this.onShow.bind(this));
     // return the object
@@ -56282,12 +56285,12 @@ useful.Photozoom.prototype.Main = function(config, context) {
   };
 
   this.hide = function() {
-    var _this = this;
     // if there is a popup
     if (this.popup) {
       // unreveal the popup
       this.popup.className = this.popup.className.replace(/-active/gi, '-passive');
       // and after a while
+      var _this = this;
       setTimeout(function() {
         // remove it
         if (_this.popup) { _this.config.container.removeChild(_this.popup); }
@@ -56358,9 +56361,8 @@ useful.Photozoom.prototype.Main = function(config, context) {
   };
 
   this.addCloser = function() {
-    var closer;
     // build a close gadget
-    closer = document.createElement('a');
+    var closer = document.createElement('a');
     closer.className = 'photozoom-closer';
     closer.innerHTML = 'x';
     closer.href = '#close';
@@ -56451,11 +56453,12 @@ useful.Photozoom.prototype.Main = function(config, context) {
   };
 
   this.changeImage = function(direction) {
-    var _this = this;
     // if there is more than one photo
     if (this.config.elements.length > 1) {
       // have the old element it slide off screen in the direction of the swipe
       this.image.style.left = (direction === 'left') ? '-100%' : '100%';
+      // replace the image for the next one
+      var _this = this;
       setTimeout(function() {
         // remove the old image
         _this.popup.removeChild(_this.image);
@@ -57812,7 +57815,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
     // fill the guide with landmarks
     for (var name in GuideData[id].landmarks) {
       // pick the right template
-      guideTemplate = (/^\d{13}_r/i.test(name)) ? sphereTemplate : zoomTemplate;
+      guideTemplate = (/_r\d{7}/i.test(name)) ? sphereTemplate : zoomTemplate;
       // get the description
       landmark = guideTemplate
         .replace(/{id}/g, prefix)

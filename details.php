@@ -85,10 +85,13 @@
 					<?php
 						if (property_exists($json, 'landmarks')) {
 							foreach ($json->{'landmarks'} as $name => $value) {
-								$pattern = '/optional: |detour: /i';
-								if (preg_match($pattern, $value)) {
-									$value = preg_replace($pattern, '', $value);
+								$isOptional = '/optional: |detour: /i';
+								$isSpherical = '/_r\d{7}/i';
+								if (preg_match($isOptional, $value)) {
+									$value = preg_replace($isOptional, '', $value);
 									?><div class="guide-optional"><p><a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg" class="zoom-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg);" data-desc="<?php echo $value ?>"><img alt="" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg"></a> <?php echo $value ?></p></div><?php
+								} elseif (preg_match($isSpherical, $name)) {
+									?><p><a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg" class="sphere-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg);" data-desc="<?php echo $value ?>"><img alt="" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg"></a> <?php echo $value ?></p><?php
 								} else {
 									?><p><a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg" class="zoom-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg);" data-desc="<?php echo $value ?>"><img alt="" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg"></a> <?php echo $value ?></p><?php
 								}
@@ -153,7 +156,7 @@
 						'orphans' : 2,
 						'maximise' : false,
 						'zoom' : 4,
-			      'spherical': /_r\d{7}/i,
+			      	'spherical': /_r\d{7}/i,
 						'slice' : 'imageslice.php?src={src}&{size}',
 						'fallback' : navigator.userAgent.match(/msie 8|msie 7|msie 6/gi),
 						'opened' : function (referer) { photomap.indicate(referer); return true; },
@@ -179,6 +182,21 @@
 					};
 
 					var photozoom = new useful.Photozoom().init(photozoomSettings);
+
+					/*
+						photo shere configuration
+					*/
+
+					var photosphereSettings = {
+						'elements' : document.querySelectorAll('.sphere-image'),
+						'container' : document.querySelector('.guide'),
+						'slicer' : '{src}', //'imageslice.php?src={src}&{size}',
+						'opened' : function (referer) { photomap.indicate(referer); return true; },
+						'located' : function () { returnTo = 'guide'; document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map'); },
+						'closed' : function () { photomap.unindicate(); }
+					};
+
+					var photosphere = new useful.Photosphere().init(photosphereSettings);
 
 					/*
 						photo map configuration

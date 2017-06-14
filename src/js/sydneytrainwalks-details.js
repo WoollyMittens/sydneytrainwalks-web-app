@@ -132,7 +132,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
     // fill the guide with landmarks
     for (var name in GuideData[id].landmarks) {
       // pick the right template
-      guideTemplate = (/^\d{13}_r/i.test(name)) ? sphereTemplate : zoomTemplate;
+      guideTemplate = (/_r\d{7}/i.test(name)) ? sphereTemplate : zoomTemplate;
       // get the description
       landmark = guideTemplate
         .replace(/{id}/g, prefix)
