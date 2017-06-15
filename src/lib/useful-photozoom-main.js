@@ -24,7 +24,7 @@ useful.Photozoom.prototype.Main = function(config, context) {
     'sizer': null,
     'slicer': '{src}'
   };
-  
+
   for (name in config) {
     this.config[name] = config[name];
   }
@@ -208,7 +208,7 @@ useful.Photozoom.prototype.Main = function(config, context) {
 
   this.changeImage = function(direction) {
     // if there is more than one photo
-    if (this.config.elements.length > 1) {
+    if (this.config.elements && this.config.elements.length > 1) {
       // have the old element it slide off screen in the direction of the swipe
       this.image.style.left = (direction === 'left') ? '-100%' : '100%';
       // replace the image for the next one
