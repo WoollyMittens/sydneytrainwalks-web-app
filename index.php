@@ -112,20 +112,28 @@
 		<script src="./inc/js/scripts.js"></script>
 		<script>
 
-			// start the on/off stage rendering
-			var staging = new useful.Staging().init({
-				'stage' : document.querySelectorAll('nav')[0],
-				'actors' : document.querySelectorAll('.off-stage'),
-				'offset' : 32,
-				'allways' : true,
-				'parallax' : true
-			});
-
 			// ordering the menu
 			var filters = new useful.Filters().init({
 				'element' : document.getElementById('sorting'),
-				'promise' : function () { staging.update(); }
+				'promise' : function () {}
 			});
+
+			// after the page has rendered
+			setTimeout(function() {
+
+				// order by length initially
+				var sortingSelect = document.querySelector('.sorting-selected');
+				sortingSelect.selectedIndex = 4;
+				filters.sortBy(sortingSelect.selectedIndex);
+
+				// start the on/off stage rendering
+				var staging = new useful.Staging().init({
+					'stage' : document.querySelectorAll('nav')[0],
+					'actors' : document.querySelectorAll('.off-stage'),
+					'offset' : 32
+				});
+
+			}, 0);
 
 		</script>
 	</body>

@@ -10,7 +10,7 @@
 var useful = useful || {};
 
 // extend the global object
-useful.Staging = function () {
+useful.Staging = function() {
 
 	// PROPERTIES
 
@@ -20,15 +20,13 @@ useful.Staging = function () {
 
 	// METHODS
 
-	this.init = function (config) {
+	this.init = function(config) {
 		// store the configuration
 		this.config = config;
 		this.stage = config.stage;
-		this.actors = config.actors;
+		this.actors = config.actors || document.querySelectorAll('.off-stage');
 		// set the default offset if there wasn't one
 		this.config.offset = this.config.offset || 0;
-		// set the default repeat behaviour
-		this.config.always = this.config.always || false;
 		// set the scrolling event handler
 		this.stage.addEventListener('scroll', this.onUpdate(), true);
 		// perform the first redraw
@@ -37,49 +35,42 @@ useful.Staging = function () {
 		return this;
 	};
 
-	this.update = function () {
-		var objectPos, objectSize, relativePos, className, replace = new RegExp(' off-stage| on-stage|off-stage|on-stage', 'i');
-		// get the scroll position
-		var scrollSize = useful.positions.window(this.stage);
-		var scrollPos = useful.positions.document(this.stage);
+	this.update = function() {
 		// if we can measure the stage
-		if (scrollSize.y !== 0) {
-			// get the screen actors if they are unknown
-			var actors = this.actors || document.querySelectorAll('.off-stage');
+		if (this.stage.offsetHeight > 0) {
 			// for every watched element
-			for (var a = 0, b = actors.length; a < b; a += 1) {
-				className = actors[a].className;
-				// if this actor is still invisible
-				if (replace.test(className) || cfg.always) {
-					// get the object position / dimensions
-					objectPos = { x : actors[a].offsetLeft, y : actors[a].offsetTop };
-					objectSize = { x : actors[a].offsetWidth, y : actors[a].offsetHeight };
-					// if the object is in the viewport
-					if (objectPos.y + objectSize.y >= scrollPos.y - this.config.offset && objectPos.y < scrollPos.y + this.config.offset + scrollSize.y) {
-						// if required position the parallax
-						if (this.config.parallax) {
-							relativePos = (objectPos.y - scrollPos.y + objectSize.y) / (scrollSize.y + objectSize.y) * 100;
-							relativePos = (relativePos > 100) ? 100 : relativePos;
-							relativePos = (relativePos < 0) ? 0 : relativePos;
-							relativePos = relativePos / 4 + 37;
-							actors[a].style.backgroundPosition = relativePos + '%' + ' 50%';
-						}
-						// mark its visibility
-						actors[a].className = className.replace(replace, '') + ' on-stage';
-					} else {
-						// mark the object is outsidie the viewport
-						actors[a].className = className.replace(replace, '') + ' off-stage';
-					}
+			for (var a = 0, b = this.actors.length; a < b; a += 1) {
+				// if the object is in the viewport
+				if (this.isElementInViewport(this.actors[a], this.config.offset).visible) {
+					// mark its visibility
+					this.actors[a].className = this.actors[a].className.replace(/ off-stage| on-stage|off-stage|on-stage/i, '') + ' on-stage';
+				} else {
+					// mark the object is outsidie the viewport
+					this.actors[a].className = this.actors[a].className.replace(/ off-stage| on-stage|off-stage|on-stage/i, '') + ' off-stage';
 				}
 			}
 		}
 	};
 
+	this.isElementInViewport = function(el, dy) {
+		var rect = el.getBoundingClientRect(),
+			offset = dy || 0,
+			height = (window.innerHeight || document.documentElement.clientHeight),
+			width = (window.innerWidth || document.documentElement.clientWidth);
+		return ({
+			'above': rect.bottom < offset,
+			'below': rect.top > (height + offset),
+			'visible': rect.top < (height + offset) && rect.bottom > offset
+		});
+	};
+
 	// EVENTS
 
-	this.onUpdate = function () {
+	this.onUpdate = function() {
 		var _this = this;
-		return function () { _this.update(); };
+		return function() {
+			_this.update();
+		};
 	};
 
 };
