@@ -113,21 +113,21 @@
 		<script>
 
 			// ordering the menu
-			var filters = new useful.Filters().init({
+			var _staging;
+			var _filters = new useful.Filters().init({
 				'element' : document.getElementById('sorting'),
-				'promise' : function () {}
+				'promise' : function () { if (_staging && _staging.update) _staging.update(); }
 			});
 
 			// after the page has rendered
 			setTimeout(function() {
 
 				// order by length initially
-				var sortingSelect = document.querySelector('.sorting-selected');
-				sortingSelect.selectedIndex = 4;
-				filters.sortBy(sortingSelect.selectedIndex);
+				document.querySelector('.sorting-selected').selectedIndex = 4;
+				_filters.sortBy(4);
 
 				// start the on/off stage rendering
-				var staging = new useful.Staging().init({
+				_staging = new useful.Staging().init({
 					'stage' : document.querySelectorAll('nav')[0],
 					'actors' : document.querySelectorAll('.off-stage'),
 					'offset' : 32
