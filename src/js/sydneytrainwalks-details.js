@@ -98,7 +98,9 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 				_this.config.photomap.indicate(link);
 				return true;
 			},
-			'located': function() {
+			'located': function(link) {
+				_this.returnTo = 'guide';
+				_this.config.photomap.indicate(link);
 				document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
 			},
 			'closed': function() {
@@ -209,8 +211,10 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 				_this.config.photomap.indicate(link);
 				return true;
 			},
-			'located': function() {
-				document.body.className = document.body.className.replace(/screen-photos/, 'screen-map');
+			'located': function(link) {
+				_this.returnTo = 'photos';
+				_this.config.photomap.indicate(link);
+				document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
 			},
 			'closed': function() {
 				_this.config.photomap.unindicate();
