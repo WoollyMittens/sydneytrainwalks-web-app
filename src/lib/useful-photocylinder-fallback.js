@@ -29,7 +29,7 @@ useful.Photocylinder.prototype.Fallback = function (parent) {
 	this.horizontal = {};
 	this.vertical = {};
 	this.tracked = null;
-	this.increment = this.config.idle / 2;
+	this.increment = this.config.idle / 200;
 	this.auto = true;
 
 	// METHODS
@@ -135,8 +135,8 @@ useful.Photocylinder.prototype.Fallback = function (parent) {
 		// if animation is allowed
 		if (this.auto) {
 			// in 180 degree pictures adjust increment and reverse, otherwise loop forever
-			if (this.horizontal.current + this.increment * 2 > this.horizontal.max) this.increment = -this.config.idle / 2;
-			if (this.horizontal.current + this.increment * 2 < this.horizontal.min) this.increment = this.config.idle / 2;
+			if (this.horizontal.current + this.increment * 2 > this.horizontal.max) this.increment = -this.config.idle / 200;
+			if (this.horizontal.current + this.increment * 2 < this.horizontal.min) this.increment = this.config.idle / 200;
 			var step = this.horizontal.current + this.increment;
 			// advance rotation incrementally, until interrupted
 			this.move(step, this.vertical.current);
