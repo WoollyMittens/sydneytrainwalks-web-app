@@ -23,22 +23,13 @@ useful.Photowall.prototype.Main = function(config, context) {
   // METHODS
 
   this.init = function() {
-    var photoPopup, PhotoPopup;
     // find all the links
-    var links = this.element.getElementsByTagName('a');
-    // decide for each link what viewer to use
-    for (var a = 0, b = links.length; a < b; a += 1) {
-      PhotoPopup = (this.config.spherical.test(links[a])) ? useful.Photosphere : useful.Photozoom;
-      photoPopup = new PhotoPopup().init({
-        'element': links[a],
-        'container': this.config.element,
-        'zoom': 2,
-        'sizer': null,
-        'slicer': this.config.slice,
-        'opened': this.config.opened,
-        'located': this.config.located,
-        'closed': this.config.closed
-      });
+    var photos = this.element.getElementsByTagName('img');
+    // process all photos
+    for (var a = 0, b = photos.length; a < b; a += 1) {
+      // move the image to the tile's background
+      photos[a].style.visibility = 'hidden';
+      photos[a].parentNode.style.backgroundImage = "url('" + photos[a].getAttribute('src') + "')";
     }
     // return the object
     return this;

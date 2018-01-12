@@ -8,34 +8,34 @@ var SydneyTrainWalks = SydneyTrainWalks || function() {};
 // extend the constructor
 SydneyTrainWalks.prototype.Busy = function(parent) {
 
-  // PROPERTIES
+	// PROPERTIES
 
-  this.parent = parent;
-  this.config = parent.config;
-  this.config.extend({
-    'appView': document.querySelector('#appView')
-  });
+	this.parent = parent;
+	this.config = parent.config;
+	this.config.extend({
+		'appView': document.querySelector('#appView')
+	});
 
-  // METHODS
+	// METHODS
 
-  this.init = function() {
-    // return the object
-    return this;
-  };
+	this.init = function() {
+		// return the object
+		return this;
+	};
 
-  this.show = function() {
-    // remove the cover page
-    this.config.appView.className = this.config.appView.className.replace(/-ready/g, '-busy');
-  };
+	this.show = function() {
+		// remove the cover page
+		this.config.appView.className = this.config.appView.className.replace(/-ready/g, '-busy');
+	};
 
-  this.hide = function() {
-    // remove the cover page
-    this.config.appView.className = this.config.appView.className.replace(/-busy/g, '-ready');
-  };
+	this.hide = function() {
+		// remove the cover page
+		this.config.appView.className = this.config.appView.className.replace(/-busy/g, '-ready');
+	};
 
 };
 
 // return as a require.js module
 if (typeof module !== 'undefined') {
-  exports = module.exports = SydneyTrainWalks.Busy;
+	exports = module.exports = SydneyTrainWalks.Busy;
 }

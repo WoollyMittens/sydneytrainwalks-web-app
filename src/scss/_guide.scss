@@ -33,7 +33,7 @@
 		  margin: -0.7em 0 0 0;
 		  padding: 1px 0.7em;
 		}
-		.sphere-image,
+		.cylinder-image,
 		.zoom-image {
 			background-color : #000;
 			background-size : cover;
@@ -81,7 +81,7 @@
 @media (min-width: 481px) {
 
 	.guide {
-		.sphere-image,
+		.cylinder-image,
 		.zoom-image {
 			float : left;
 			margin : 0 1em 0.7em 0;

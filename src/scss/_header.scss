@@ -79,7 +79,7 @@
 	}
 
 	html.ios-true header.title {
-		@include smallHeader;
+		/*@include smallHeader;*/
 	}
 
 	body.screen-menu > header.subtitle { visibility : hidden; }
