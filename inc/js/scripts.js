@@ -15785,7 +15785,7 @@ useful.Photocylinder.prototype.Main = function(config, context) {
 		this.popup = new this.context.Popup(this);
 		this.popup.show();
 		// insert the viewer, but MSIE and low FOV should default to fallback
-		this.stage = (!/msie|edge/i.test(navigator.userAgent) && (this.config.spherical.test(url) || this.config.cylindrical.test(url))) ? new this.context.Stage(this) : new this.context.Fallback(this);
+		this.stage = (!/msie|trident|edge/i.test(navigator.userAgent) && (this.config.spherical.test(url) || this.config.cylindrical.test(url))) ? new this.context.Stage(this) : new this.context.Fallback(this);
 		this.stage.init();
 		// hide the busy indicator
 		this.busy.hide();
@@ -16600,7 +16600,7 @@ useful.Photomap = useful.Photomap || function () {};
 useful.Photomap.prototype.Location = function (parent) {
 
 	// PROPERTIES
-	
+
 	"use strict";
 	this.parent = parent;
 	this.config = parent.config;
@@ -16634,7 +16634,6 @@ useful.Photomap.prototype.Location = function (parent) {
 	this.onGeoSuccess = function () {
 		var _this = this, _config = this.parent.config;
 		return function (geo) {
-			console.log('geolocation succeeded', geo);
 			// if the marker doesn't exist yet
 			if (_this.object === null) {
 				// create the icon
@@ -16654,7 +16653,7 @@ useful.Photomap.prototype.Location = function (parent) {
 			}
 		};
 	};
-	
+
 	this.onGeoFailure = function () {
 		var _this = this;
 		return function () {
