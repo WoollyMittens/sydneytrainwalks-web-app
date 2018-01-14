@@ -83,7 +83,7 @@ useful.Photocylinder.prototype.Main = function(config, context) {
 		this.busy.show();
 		// create the url for the image sizing webservice
 	    var url = this.config.url || this.element.getAttribute('href') || this.image.getAttribute('src');
-	    var size = (/_r360/.test(url)) ? 'height=1080&top=0.2&bottom=0.8' : 'height=1080';
+	    var size = (this.config.spherical.test(url)) ? 'height=1080&top=0.2&bottom=0.8' : 'height=1080';
 		// load the image asset
 		this.config.image = new Image();
 		this.config.image.src = this.config.slicer.replace('{src}', url).replace('{size}', size);
