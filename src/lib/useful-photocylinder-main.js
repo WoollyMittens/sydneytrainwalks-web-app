@@ -46,7 +46,7 @@ useful.Photocylinder.prototype.Main = function(config, context) {
 		this.popup = new this.context.Popup(this);
 		this.popup.show();
 		// insert the viewer, but MSIE and low FOV should default to fallback
-		this.stage = (!/msie|trident|edge/i.test(navigator.userAgent) && (this.config.spherical.test(url) || this.config.cylindrical.test(url)) || isWideEnough) ? new this.context.Stage(this) : new this.context.Fallback(this);
+		this.stage = (!/msie|trident|edge/i.test(navigator.userAgent) && (this.config.spherical.test(url) || this.config.cylindrical.test(url) || isWideEnough)) ? new this.context.Stage(this) : new this.context.Fallback(this);
 		this.stage.init();
 		// hide the busy indicator
 		this.busy.hide();
