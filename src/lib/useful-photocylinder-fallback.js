@@ -126,7 +126,6 @@ useful.Photocylinder.prototype.Fallback = function (parent) {
 		// on requestAnimationFrame count down the delta vectors to ~0
 		if (this.magnification.delta || this.horizontal.delta || this.vertical.delta) {
 			// reduce the increment
-			console.log('this.momentum', this.horizontal.delta);
 			this.magnification.delta = (Math.abs(this.magnification.delta) > 0.0001) ? this.magnification.delta / 1.05 : 0;
 			this.horizontal.delta = (Math.abs(this.horizontal.delta) > 0.001) ? this.horizontal.delta / 1.05 : 0;
 			this.vertical.delta = (Math.abs(this.vertical.delta) > 0.001) ? this.vertical.delta / 1.05 : 0;

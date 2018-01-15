@@ -39,11 +39,14 @@ useful.Photocylinder.prototype.Main = function(config, context) {
 	};
 
 	this.success = function(url) {
+		// check if the aspect ratio of the image can be determined
+		var image = this.config.image;
+		var isWideEnough = (image.naturalWidth && image.naturalHeight && image.naturalWidth / image.naturalHeight > 3);
 		// show the popup
 		this.popup = new this.context.Popup(this);
 		this.popup.show();
 		// insert the viewer, but MSIE and low FOV should default to fallback
-		this.stage = (!/msie|trident|edge/i.test(navigator.userAgent) && (this.config.spherical.test(url) || this.config.cylindrical.test(url))) ? new this.context.Stage(this) : new this.context.Fallback(this);
+		this.stage = (!/msie|trident|edge/i.test(navigator.userAgent) && (this.config.spherical.test(url) || this.config.cylindrical.test(url)) || isWideEnough) ? new this.context.Stage(this) : new this.context.Fallback(this);
 		this.stage.init();
 		// hide the busy indicator
 		this.busy.hide();

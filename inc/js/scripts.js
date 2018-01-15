@@ -15653,7 +15653,6 @@ useful.Photocylinder.prototype.Fallback = function (parent) {
 		// on requestAnimationFrame count down the delta vectors to ~0
 		if (this.magnification.delta || this.horizontal.delta || this.vertical.delta) {
 			// reduce the increment
-			console.log('this.momentum', this.horizontal.delta);
 			this.magnification.delta = (Math.abs(this.magnification.delta) > 0.0001) ? this.magnification.delta / 1.05 : 0;
 			this.horizontal.delta = (Math.abs(this.horizontal.delta) > 0.001) ? this.horizontal.delta / 1.05 : 0;
 			this.vertical.delta = (Math.abs(this.vertical.delta) > 0.001) ? this.vertical.delta / 1.05 : 0;
@@ -15808,11 +15807,14 @@ useful.Photocylinder.prototype.Main = function(config, context) {
 	};
 
 	this.success = function(url) {
+		// check if the aspect ratio of the image can be determined
+		var image = this.config.image;
+		var isWideEnough = (image.naturalWidth && image.naturalHeight && image.naturalWidth / image.naturalHeight > 3);
 		// show the popup
 		this.popup = new this.context.Popup(this);
 		this.popup.show();
 		// insert the viewer, but MSIE and low FOV should default to fallback
-		this.stage = (!/msie|trident|edge/i.test(navigator.userAgent) && (this.config.spherical.test(url) || this.config.cylindrical.test(url))) ? new this.context.Stage(this) : new this.context.Fallback(this);
+		this.stage = (!/msie|trident|edge/i.test(navigator.userAgent) && (this.config.spherical.test(url) || this.config.cylindrical.test(url)) || isWideEnough) ? new this.context.Stage(this) : new this.context.Fallback(this);
 		this.stage.init();
 		// hide the busy indicator
 		this.busy.hide();
