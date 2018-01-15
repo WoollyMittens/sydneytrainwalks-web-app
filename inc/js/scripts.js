@@ -15725,7 +15725,7 @@ useful.Photocylinder.prototype.Fallback = function (parent) {
 				if (this.tracked) {
 					coords = this.coords(evt);
 					// store the momentum
-					this.magnification.delta = (this.tracked.z - coords.z) / this.wrapper.offsetWidth * scale;
+					this.magnification.delta = (this.tracked.z - coords.z) / this.wrapper.offsetWidth * scale * 2;
 					this.horizontal.delta = (this.tracked.x - coords.x) / this.wrapper.offsetWidth * scale / this.imageAspect;
 					this.vertical.delta = (this.tracked.y - coords.y) / this.wrapper.offsetHeight * scale;
 					// calculate the position
@@ -16220,7 +16220,7 @@ useful.Photocylinder.prototype.Stage = function (parent) {
 					coords = this.coords(evt);
 					// store the momentum
 					this.rotation.delta = this.baseAngle * (this.tracked.x - coords.x) / this.wrapper.offsetWidth * scale;
-					this.magnification.delta = (this.tracked.z - coords.z) / this.wrapper.offsetWidth * scale;
+					this.magnification.delta = (this.tracked.z - coords.z) / this.wrapper.offsetWidth * scale * 2;
 					this.offset.delta = (this.tracked.y - coords.y) / this.wrapper.offsetHeight;
 					// calculate the rotation
 					this.rotate(this.rotation.current + this.rotation.delta);

@@ -224,7 +224,7 @@ useful.Photocylinder.prototype.Stage = function (parent) {
 					coords = this.coords(evt);
 					// store the momentum
 					this.rotation.delta = this.baseAngle * (this.tracked.x - coords.x) / this.wrapper.offsetWidth * scale;
-					this.magnification.delta = (this.tracked.z - coords.z) / this.wrapper.offsetWidth * scale;
+					this.magnification.delta = (this.tracked.z - coords.z) / this.wrapper.offsetWidth * scale * 2;
 					this.offset.delta = (this.tracked.y - coords.y) / this.wrapper.offsetHeight;
 					// calculate the rotation
 					this.rotate(this.rotation.current + this.rotation.delta);

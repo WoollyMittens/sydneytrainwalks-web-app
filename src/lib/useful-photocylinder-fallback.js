@@ -198,7 +198,7 @@ useful.Photocylinder.prototype.Fallback = function (parent) {
 				if (this.tracked) {
 					coords = this.coords(evt);
 					// store the momentum
-					this.magnification.delta = (this.tracked.z - coords.z) / this.wrapper.offsetWidth * scale;
+					this.magnification.delta = (this.tracked.z - coords.z) / this.wrapper.offsetWidth * scale * 2;
 					this.horizontal.delta = (this.tracked.x - coords.x) / this.wrapper.offsetWidth * scale / this.imageAspect;
 					this.vertical.delta = (this.tracked.y - coords.y) / this.wrapper.offsetHeight * scale;
 					// calculate the position
