@@ -53,6 +53,8 @@ useful.Photocylinder.prototype.Popup = function(parent) {
 				_this.config.container.removeChild(_this.config.popup);
 				// remove its reference
 				_this.config.popup = null;
+				// ask the parent to self destruct
+				_this.parent.destroy();
 			}, 500);
 		}
 	};

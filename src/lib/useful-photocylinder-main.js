@@ -76,6 +76,12 @@ useful.Photocylinder.prototype.Main = function(config, context) {
 		this.busy.hide();
 	};
 
+	this.destroy = function() {
+		console.log('main: destroy');
+		// shut down sub components
+		this.stage.destroy();
+	};
+
 	// EVENTS
 
 	this.onElementClicked = function(evt) {

@@ -42,8 +42,15 @@ useful.Photocylinder.prototype.Fallback = function (parent) {
 		// add the controls
 		this.controls();
 		// rescale after resize
-		window.addEventListener('resize', this.resize.bind(this));
+		this.resizeListener = this.resize.bind(this);
+		window.addEventListener('resize', this.resizeListener, true);
 
+	};
+
+	this.destroy = function() {
+		// cancel all global event listeners
+		window.removeEventListener('resize', this.resizeListener, true);
+		window.removeEventListener('deviceorientation', this.tiltListener, true);
 	};
 
 	this.build = function() {
@@ -81,8 +88,11 @@ useful.Photocylinder.prototype.Fallback = function (parent) {
 		this.wrapper.addEventListener('mousedown', this.touch.bind(this, 'start'));
 		this.wrapper.addEventListener('mousemove', this.touch.bind(this, 'move'));
 		this.wrapper.addEventListener('mouseup', this.touch.bind(this, 'end'));
-		this.wrapper.addEventListener('mousewheel', this.wheel.bind(this), false);
-	    this.wrapper.addEventListener('DOMMouseScroll', this.wheel.bind(this), false);
+		this.wrapper.addEventListener('mousewheel', this.wheel.bind(this));
+	    this.wrapper.addEventListener('DOMMouseScroll', this.wheel.bind(this));
+		// add tilt contols
+		this.tiltListener = this.tilt.bind(this);
+		window.addEventListener("deviceorientation", this.tiltListener, true);
 	};
 
 	this.coords = function(evt) {
@@ -160,6 +170,22 @@ useful.Photocylinder.prototype.Fallback = function (parent) {
 	};
 
 	// EVENTS
+
+	this.tilt = function(evt) {
+		// stop animating
+		this.auto = false;
+		// if there was tilt before and the jump is not extreme
+		if (this.horizontal.tilted && this.vertical.tilted && Math.abs(evt.alpha - this.horizontal.tilted) < 45 && Math.abs(evt.beta - this.vertical.tilted) < 45) {
+			// update the rotation
+			this.move(
+				this.horizontal.current + (evt.alpha - this.horizontal.tilted) / 180,
+				this.vertical.current + (evt.beta - this.vertical.tilted) / 180
+			);
+		}
+		// store the tilt
+		this.horizontal.tilted = evt.alpha;
+		this.vertical.tilted = evt.beta;
+	};
 
 	this.wheel = function(evt) {
 		// cancel the scrolling
