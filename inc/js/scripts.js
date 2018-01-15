@@ -15552,7 +15552,7 @@ useful.Photocylinder.prototype.Fallback = function (parent) {
 	this.wrapper = null;
 	this.wrapperAspect = null;
 	this.fov = null;
-	this.zoom = {};
+	this.magnification = {};
 	this.horizontal = {};
 	this.vertical = {};
 	this.tracked = null;
@@ -15589,14 +15589,14 @@ useful.Photocylinder.prototype.Fallback = function (parent) {
 		// get the aspect ratio from the image
 		this.imageAspect = this.image.offsetWidth / this.image.offsetHeight;
 		// calculate the zoom limits
-		this.zoom.min = 1; // TODO: make sure the image fills the width and height
-		this.zoom.max = 10;
+		this.magnification.min = 1; // TODO: make sure the image fills the width and height
+		this.magnification.max = 4;
 		// set the initial rotation
 		this.recentre();
 		// set the initial zoom
 		this.resize();
 		// if the image is wide enough, start the idle animation
-		if (this.imageAspect - this.wrapperAspect > 1) this.animate();
+		if (this.imageAspect - this.wrapperAspect >= 1) this.animate();
 	};
 
 	this.controls = function() {
@@ -15622,19 +15622,19 @@ useful.Photocylinder.prototype.Fallback = function (parent) {
 
 	this.recentre = function() {
 		// reset the initial position
-		this.zoom.current = 1;
+		this.magnification.current = 1;
 		this.horizontal.current = 0.5;
 		this.vertical.current = 0.5;
 	};
 
-	this.zoom = function(factor) {
+	this.magnify = function(factor) {
 		// limit the zoom
-		this.zoom.current = Math.max(Math.min(factor, this.zoom.max), this.zoom.min);
+		this.magnification.current = Math.max(Math.min(factor, this.magnification.max), this.magnification.min);
 		// (re)calculate the movement limits
-		this.horizontal.min = Math.min(0.5 - (this.zoom.current -  this.wrapperAspect / this.imageAspect) / 2, 0.5);
+		this.horizontal.min = Math.min(0.5 - (this.magnification.current -  this.wrapperAspect / this.imageAspect) / 2, 0.5);
 		this.horizontal.max = Math.max(1 - this.horizontal.min, 0.5);
 		this.horizontal.current = Math.max(Math.min(this.horizontal.current, this.horizontal.max), this.horizontal.min);
-		this.vertical.min = Math.min(0.5 - (this.zoom.current - 1) / 2, 0.5);
+		this.vertical.min = Math.min(0.5 - (this.magnification.current - 1) / 2, 0.5);
 		this.vertical.max = Math.max(1 - this.vertical.min, 0.5);
 		this.vertical.current = Math.max(Math.min(this.vertical.current, this.vertical.max), this.vertical.min);
 		// implement the zoom
@@ -15649,9 +15649,25 @@ useful.Photocylinder.prototype.Fallback = function (parent) {
 		this.redraw();
 	};
 
+	this.momentum = function() {
+		// on requestAnimationFrame count down the delta vectors to ~0
+		if (this.magnification.delta || this.horizontal.delta || this.vertical.delta) {
+			// reduce the increment
+			console.log('this.momentum', this.horizontal.delta);
+			this.magnification.delta = (Math.abs(this.magnification.delta) > 0.0001) ? this.magnification.delta / 1.05 : 0;
+			this.horizontal.delta = (Math.abs(this.horizontal.delta) > 0.001) ? this.horizontal.delta / 1.05 : 0;
+			this.vertical.delta = (Math.abs(this.vertical.delta) > 0.001) ? this.vertical.delta / 1.05 : 0;
+			// advance rotation incrementally
+			this.move(this.horizontal.current + this.horizontal.delta, this.vertical.current + this.vertical.delta);
+			this.magnify(this.magnification.current + this.magnification.delta);
+			// wait for the next render
+			window.requestAnimationFrame(this.momentum.bind(this));
+		}
+	};
+
 	this.redraw = function() {
 		// apply all transformations in one go
-		this.image.style.transform = 'translate(' + (this.horizontal.current * -100) + '%, ' + (this.vertical.current * -100) + '%) scale(' + this.zoom.current + ', ' + this.zoom.current + ')';
+		this.image.style.transform = 'translate(' + (this.horizontal.current * -100) + '%, ' + (this.vertical.current * -100) + '%) scale(' + this.magnification.current + ', ' + this.magnification.current + ')';
 	};
 
 	this.animate = function(allow) {
@@ -15678,34 +15694,44 @@ useful.Photocylinder.prototype.Fallback = function (parent) {
 		evt.preventDefault();
 		// stop animating
 		this.auto = false;
+		// reset the deltas
+		this.magnification.delta = 0;
 		// get the feedback
 		var coords = this.coords(evt);
 		var distance = evt.deltaY || evt.wheelDeltaY || evt.wheelDelta;
-		this.zoom(this.zoom.current + distance / this.wrapper.offsetHeight);
+		this.magnification.delta = distance / this.wrapper.offsetHeight;
+		this.magnify(this.magnification.current + this.magnification.delta);
+		// continue based on inertia
+		this.momentum();
 	};
 
 	this.touch = function(phase, evt) {
 		// cancel the click
 		evt.preventDefault();
 		// pick the phase of interaction
-		var coords, scale = this.zoom.current / this.zoom.min;
+		var coords, scale = this.magnification.current / this.magnification.min;
 		switch(phase) {
 			case 'start':
 				// stop animating
 				this.auto = false;
+				// reset the deltas
+				this.magnification.delta = 0;
+				this.horizontal.delta = 0;
+				this.vertical.delta = 0;
 				// start tracking
 				this.tracked = this.coords(evt);
 				break;
 			case 'move':
 				if (this.tracked) {
 					coords = this.coords(evt);
+					// store the momentum
+					this.magnification.delta = (this.tracked.z - coords.z) / this.wrapper.offsetWidth * scale;
+					this.horizontal.delta = (this.tracked.x - coords.x) / this.wrapper.offsetWidth * scale / this.imageAspect;
+					this.vertical.delta = (this.tracked.y - coords.y) / this.wrapper.offsetHeight * scale;
 					// calculate the position
-					this.move(
-						this.horizontal.current + (this.tracked.x - coords.x) / this.wrapper.offsetWidth * scale / this.imageAspect,
-						this.vertical.current + (this.tracked.y - coords.y) / this.wrapper.offsetHeight * scale
-					);
+					this.move(this.horizontal.current + this.horizontal.delta, this.vertical.current + this.vertical.delta);
 					// calculate the zoom
-					this.zoom(this.zoom.current - (this.tracked.z - coords.z) / this.wrapper.offsetWidth / scale);
+					this.magnify(this.magnification.current - this.magnification.delta);
 					// update the step
 					this.tracked.x = coords.x;
 					this.tracked.y = coords.y;
@@ -15715,7 +15741,8 @@ useful.Photocylinder.prototype.Fallback = function (parent) {
 			case 'end':
 				// stop tracking
 				this.tracked = null;
-				// TODO: maybe resume animating
+				// continue based on inertia
+				this.momentum();
 				break;
 		}
 	};
@@ -15724,11 +15751,11 @@ useful.Photocylinder.prototype.Fallback = function (parent) {
 		// update the aspect ratio
 		this.wrapperAspect = this.wrapper.offsetWidth / this.wrapper.offsetHeight;
 		// restore current values
-		var factor = this.zoom.current || 1;
+		var factor = this.magnification.current || 1;
 		var horizontal = this.horizontal.current || 0.5;
 		var vertical = this.vertical.current || 0.5;
 		// reset to zoom
-		this.zoom(factor);
+		this.magnify(factor);
 		// reset the rotation
 		this.move(horizontal, vertical);
 	};
@@ -15999,8 +16026,8 @@ useful.Photocylinder.prototype.Stage = function (parent) {
 	this.objRow = null;
 	this.objCols = [];
 	this.fov = null;
-	this.zoom = {};
-	this.rotate = {};
+	this.magnification = {};
+	this.rotation = {};
 	this.offset = {};
 	this.tracked = null;
 	this.increment = this.config.idle;
@@ -16023,15 +16050,11 @@ useful.Photocylinder.prototype.Stage = function (parent) {
 		// add the wrapper
 		this.wrapper = document.createElement('div');
 		this.wrapper.setAttribute('class', 'photo-cylinder');
-		// add the parent object
-		this.obj = document.createElement('div');
-		this.obj.setAttribute('class', 'pc-obj');
-		this.wrapper.appendChild(this.obj);
-		// add the row
+		// add the row object
 		this.objRow = document.createElement('div');
 		this.objRow.setAttribute('class', 'pc-obj-row');
-		this.obj.appendChild(this.objRow);
-		// add the columns
+		this.wrapper.appendChild(this.objRow);
+		// add the column oblects
 		for (var a = 0, b = 8; a < b; a += 1) {
 			this.objCols[a] = document.createElement('span');
 			this.objCols[a].setAttribute('class', 'pc-obj-col pc-obj-col-' + a);
@@ -16052,8 +16075,8 @@ useful.Photocylinder.prototype.Stage = function (parent) {
 		// get the field of view property or guess one
 		this.wrapper.className += (this.fov < 360) ? ' pc-180' : ' pc-360';
 		// calculate the zoom limits - scale = aspect * (360 / fov) * 0.3
-		this.zoom.min = Math.max(this.imageAspect * (360 / this.fov) * 0.3, 1);
-		this.zoom.max = 10;
+		this.magnification.min = Math.max(this.imageAspect * (360 / this.fov) * 0.3, 1);
+		this.magnification.max = 4;
 		// the offset limits are 0 at zoom level 1 be definition, because there is no overscan
 		this.offset.min = 0;
 		this.offset.max = 0;
@@ -16095,33 +16118,50 @@ useful.Photocylinder.prototype.Stage = function (parent) {
 		this.rotate(this.fov/2);
 	};
 
-	this.zoom = function(factor, offset) {
+	this.magnify = function(factor, offset) {
 		// limit the zoom
-		this.zoom.current = Math.max(Math.min(factor, this.zoom.max), this.zoom.min);
+		this.magnification.current = Math.max(Math.min(factor, this.magnification.max), this.magnification.min);
 		// calculate the view angle
-		this.baseAngle = 60 * this.wrapperAspect * (this.zoom.min / this.zoom.current);
+		this.baseAngle = 60 * this.wrapperAspect * (this.magnification.min / this.magnification.current);
 		// centre the zoom
-		this.offset.max = (this.zoom.current - this.zoom.min) / 8;
+		this.offset.max = (this.magnification.current - this.magnification.min) / 8;
 		this.offset.min = -1 * this.offset.max;
 		this.offset.current = Math.max(Math.min(offset, this.offset.max), this.offset.min);
 		// calculate the rotation limits
 		var overscanAngle = (this.baseAngle - 360 / this.objCols.length) / 2;
-		this.rotate.min = (this.fov < 360) ? overscanAngle : 0;
-		this.rotate.max = (this.fov < 360) ? this.fov - this.baseAngle + overscanAngle : this.fov;
-		// dynamically adjust the zoom to the component size
-		var scale = this.wrapper.offsetHeight / this.baseSize;
-		this.obj.style.transform = 'translate(-50%, ' + ((0.5 + this.offset.current * scale) * -100) + '%) scale(' + (this.zoom.current * scale) + ')';
+		this.rotation.min = (this.fov < 360) ? overscanAngle : 0;
+		this.rotation.max = (this.fov < 360) ? this.fov - this.baseAngle + overscanAngle : this.fov;
+		// redraw the object
+		this.redraw();
 	};
 
 	this.rotate = function(angle) {
 		// limit or loop the rotation
-		this.rotate.current = (this.fov < 360) ? Math.max(Math.min(angle, this.rotate.max), this.rotate.min) : angle%360 ;
-		// set rotation
-		this.objRow.style.transform = 'rotateY(' + this.rotate.current + 'deg)';
+		this.rotation.current = (this.fov < 360) ? Math.max(Math.min(angle, this.rotation.max), this.rotation.min) : angle%360 ;
+		// redraw the object
+		this.redraw();
+	};
+
+	this.momentum = function() {
+		// on requestAnimationFrame count down the delta vectors to ~0
+		if (this.rotation.delta || this.magnification.delta || this.offset.delta) {
+			// reduce the increment
+			this.rotation.delta = (Math.abs(this.rotation.delta) > 0.1) ? this.rotation.delta / 1.05 : 0;
+			this.magnification.delta = (Math.abs(this.magnification.delta) > 0.0001) ? this.magnification.delta / 1.05 : 0;
+			this.offset.delta = (Math.abs(this.offset.delta) > 0.001) ? this.offset.delta / 1.05 : 0;
+			// advance rotation incrementally
+			this.rotate(this.rotation.current + this.rotation.delta);
+			this.magnify(this.magnification.current + this.magnification.delta, this.offset.current + this.offset.delta);
+			// wait for the next render
+			window.requestAnimationFrame(this.momentum.bind(this));
+		}
 	};
 
 	this.redraw = function() {
-		// TODO: apply all transformations in one go (allows obj and obj-row to merge)
+		// update the relative scale
+		var scale = this.wrapper.offsetHeight / this.baseSize;
+		// apply all transformations in one go
+		this.objRow.style.transform = 'translate(-50%, ' + ((0.5 + this.offset.current * scale) * -100) + '%) scale(' + (this.magnification.current * scale) + ') rotateY(' + this.rotation.current + 'deg)';
 	};
 
 	this.animate = function(allow) {
@@ -16132,9 +16172,9 @@ useful.Photocylinder.prototype.Stage = function (parent) {
 		// if animation is allowed
 		if (this.auto) {
 			// in 180 degree pictures adjust increment and reverse, otherwise loop forever
-			if (this.rotate.current + this.increment * 2 > this.rotate.max) this.increment = -this.config.idle;
-			if (this.rotate.current + this.increment * 2 < this.rotate.min) this.increment = this.config.idle;
-			var step = (this.fov < 360) ? this.rotate.current + this.increment : (this.rotate.current + this.increment) % 360;
+			if (this.rotation.current + this.increment * 2 > this.rotation.max) this.increment = -this.config.idle;
+			if (this.rotation.current + this.increment * 2 < this.rotation.min) this.increment = this.config.idle;
+			var step = (this.fov < 360) ? this.rotation.current + this.increment : (this.rotation.current + this.increment) % 360;
 			// advance rotation incrementally, until interrupted
 			this.rotate(step);
 			window.requestAnimationFrame(this.animate.bind(this));
@@ -16148,34 +16188,44 @@ useful.Photocylinder.prototype.Stage = function (parent) {
 		evt.preventDefault();
 		// stop animating
 		this.auto = false;
+		// reset the deltas
+		this.magnification.delta = 0;
 		// get the feedback
 		var coords = this.coords(evt);
 		var distance = evt.deltaY || evt.wheelDeltaY || evt.wheelDelta;
-		this.zoom(this.zoom.current + distance / this.wrapper.offsetHeight, this.offset.current);
+		this.magnification.delta = distance / this.wrapper.offsetHeight;
+		this.magnify(this.magnification.current + this.magnification.delta, this.offset.current);
+		// continue based on inertia
+		this.momentum();
 	};
 
 	this.touch = function(phase, evt) {
 		// cancel the click
 		evt.preventDefault();
 		// pick the phase of interaction
-		var coords, scale = this.zoom.current / this.zoom.min;
+		var coords, scale = this.magnification.current / this.magnification.min;
 		switch(phase) {
 			case 'start':
 				// stop animating
 				this.auto = false;
+				// reset the deltas
+				this.rotation.delta = 0;
+				this.magnification.delta = 0;
+				this.offset.delta = 0;
 				// start tracking
 				this.tracked = this.coords(evt);
 				break;
 			case 'move':
 				if (this.tracked) {
 					coords = this.coords(evt);
+					// store the momentum
+					this.rotation.delta = this.baseAngle * (this.tracked.x - coords.x) / this.wrapper.offsetWidth * scale;
+					this.magnification.delta = (this.tracked.z - coords.z) / this.wrapper.offsetWidth * scale;
+					this.offset.delta = (this.tracked.y - coords.y) / this.wrapper.offsetHeight;
 					// calculate the rotation
-					this.rotate(this.rotate.current + this.baseAngle * (this.tracked.x - coords.x) / this.wrapper.offsetWidth / scale);
+					this.rotate(this.rotation.current + this.rotation.delta);
 					// calculate the zoom
-					this.zoom(
-						this.zoom.current - (this.tracked.z - coords.z) / this.wrapper.offsetWidth / scale,
-						this.offset.current + (this.tracked.y - coords.y) / this.wrapper.offsetHeight / scale
-					);
+					this.magnify(this.magnification.current - this.magnification.delta, this.offset.current + this.offset.delta);
 					// update the step
 					this.tracked.x = coords.x;
 					this.tracked.y = coords.y;
@@ -16185,7 +16235,8 @@ useful.Photocylinder.prototype.Stage = function (parent) {
 			case 'end':
 				// stop tracking
 				this.tracked = null;
-				// TODO: maybe resume animating
+				// continue based on inertia
+				this.momentum();
 				break;
 		}
 	};
@@ -16194,11 +16245,11 @@ useful.Photocylinder.prototype.Stage = function (parent) {
 		// update the wrapper aspect ratio
 		this.wrapperAspect = (this.wrapper.offsetWidth / this.wrapper.offsetHeight);
 		// restore current values
-		var factor = this.zoom.current || 1;
+		var factor = this.magnification.current || 1;
 		var offset = this.offset.current || 0;
-		var angle = this.rotate.current || this.fov/2;
+		var angle = this.rotation.current || this.fov/2;
 		// reset to zoom
-		this.zoom(factor, offset);
+		this.magnify(factor, offset);
 		// reset the rotation
 		this.rotate(angle);
 	};

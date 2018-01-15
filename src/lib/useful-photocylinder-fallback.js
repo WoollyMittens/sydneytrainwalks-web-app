@@ -25,7 +25,7 @@ useful.Photocylinder.prototype.Fallback = function (parent) {
 	this.wrapper = null;
 	this.wrapperAspect = null;
 	this.fov = null;
-	this.zoom = {};
+	this.magnification = {};
 	this.horizontal = {};
 	this.vertical = {};
 	this.tracked = null;
@@ -62,14 +62,14 @@ useful.Photocylinder.prototype.Fallback = function (parent) {
 		// get the aspect ratio from the image
 		this.imageAspect = this.image.offsetWidth / this.image.offsetHeight;
 		// calculate the zoom limits
-		this.zoom.min = 1; // TODO: make sure the image fills the width and height
-		this.zoom.max = 10;
+		this.magnification.min = 1; // TODO: make sure the image fills the width and height
+		this.magnification.max = 4;
 		// set the initial rotation
 		this.recentre();
 		// set the initial zoom
 		this.resize();
 		// if the image is wide enough, start the idle animation
-		if (this.imageAspect - this.wrapperAspect > 1) this.animate();
+		if (this.imageAspect - this.wrapperAspect >= 1) this.animate();
 	};
 
 	this.controls = function() {
@@ -95,19 +95,19 @@ useful.Photocylinder.prototype.Fallback = function (parent) {
 
 	this.recentre = function() {
 		// reset the initial position
-		this.zoom.current = 1;
+		this.magnification.current = 1;
 		this.horizontal.current = 0.5;
 		this.vertical.current = 0.5;
 	};
 
-	this.zoom = function(factor) {
+	this.magnify = function(factor) {
 		// limit the zoom
-		this.zoom.current = Math.max(Math.min(factor, this.zoom.max), this.zoom.min);
+		this.magnification.current = Math.max(Math.min(factor, this.magnification.max), this.magnification.min);
 		// (re)calculate the movement limits
-		this.horizontal.min = Math.min(0.5 - (this.zoom.current -  this.wrapperAspect / this.imageAspect) / 2, 0.5);
+		this.horizontal.min = Math.min(0.5 - (this.magnification.current -  this.wrapperAspect / this.imageAspect) / 2, 0.5);
 		this.horizontal.max = Math.max(1 - this.horizontal.min, 0.5);
 		this.horizontal.current = Math.max(Math.min(this.horizontal.current, this.horizontal.max), this.horizontal.min);
-		this.vertical.min = Math.min(0.5 - (this.zoom.current - 1) / 2, 0.5);
+		this.vertical.min = Math.min(0.5 - (this.magnification.current - 1) / 2, 0.5);
 		this.vertical.max = Math.max(1 - this.vertical.min, 0.5);
 		this.vertical.current = Math.max(Math.min(this.vertical.current, this.vertical.max), this.vertical.min);
 		// implement the zoom
@@ -122,9 +122,25 @@ useful.Photocylinder.prototype.Fallback = function (parent) {
 		this.redraw();
 	};
 
+	this.momentum = function() {
+		// on requestAnimationFrame count down the delta vectors to ~0
+		if (this.magnification.delta || this.horizontal.delta || this.vertical.delta) {
+			// reduce the increment
+			console.log('this.momentum', this.horizontal.delta);
+			this.magnification.delta = (Math.abs(this.magnification.delta) > 0.0001) ? this.magnification.delta / 1.05 : 0;
+			this.horizontal.delta = (Math.abs(this.horizontal.delta) > 0.001) ? this.horizontal.delta / 1.05 : 0;
+			this.vertical.delta = (Math.abs(this.vertical.delta) > 0.001) ? this.vertical.delta / 1.05 : 0;
+			// advance rotation incrementally
+			this.move(this.horizontal.current + this.horizontal.delta, this.vertical.current + this.vertical.delta);
+			this.magnify(this.magnification.current + this.magnification.delta);
+			// wait for the next render
+			window.requestAnimationFrame(this.momentum.bind(this));
+		}
+	};
+
 	this.redraw = function() {
 		// apply all transformations in one go
-		this.image.style.transform = 'translate(' + (this.horizontal.current * -100) + '%, ' + (this.vertical.current * -100) + '%) scale(' + this.zoom.current + ', ' + this.zoom.current + ')';
+		this.image.style.transform = 'translate(' + (this.horizontal.current * -100) + '%, ' + (this.vertical.current * -100) + '%) scale(' + this.magnification.current + ', ' + this.magnification.current + ')';
 	};
 
 	this.animate = function(allow) {
@@ -151,34 +167,44 @@ useful.Photocylinder.prototype.Fallback = function (parent) {
 		evt.preventDefault();
 		// stop animating
 		this.auto = false;
+		// reset the deltas
+		this.magnification.delta = 0;
 		// get the feedback
 		var coords = this.coords(evt);
 		var distance = evt.deltaY || evt.wheelDeltaY || evt.wheelDelta;
-		this.zoom(this.zoom.current + distance / this.wrapper.offsetHeight);
+		this.magnification.delta = distance / this.wrapper.offsetHeight;
+		this.magnify(this.magnification.current + this.magnification.delta);
+		// continue based on inertia
+		this.momentum();
 	};
 
 	this.touch = function(phase, evt) {
 		// cancel the click
 		evt.preventDefault();
 		// pick the phase of interaction
-		var coords, scale = this.zoom.current / this.zoom.min;
+		var coords, scale = this.magnification.current / this.magnification.min;
 		switch(phase) {
 			case 'start':
 				// stop animating
 				this.auto = false;
+				// reset the deltas
+				this.magnification.delta = 0;
+				this.horizontal.delta = 0;
+				this.vertical.delta = 0;
 				// start tracking
 				this.tracked = this.coords(evt);
 				break;
 			case 'move':
 				if (this.tracked) {
 					coords = this.coords(evt);
+					// store the momentum
+					this.magnification.delta = (this.tracked.z - coords.z) / this.wrapper.offsetWidth * scale;
+					this.horizontal.delta = (this.tracked.x - coords.x) / this.wrapper.offsetWidth * scale / this.imageAspect;
+					this.vertical.delta = (this.tracked.y - coords.y) / this.wrapper.offsetHeight * scale;
 					// calculate the position
-					this.move(
-						this.horizontal.current + (this.tracked.x - coords.x) / this.wrapper.offsetWidth * scale / this.imageAspect,
-						this.vertical.current + (this.tracked.y - coords.y) / this.wrapper.offsetHeight * scale
-					);
+					this.move(this.horizontal.current + this.horizontal.delta, this.vertical.current + this.vertical.delta);
 					// calculate the zoom
-					this.zoom(this.zoom.current - (this.tracked.z - coords.z) / this.wrapper.offsetWidth / scale);
+					this.magnify(this.magnification.current - this.magnification.delta);
 					// update the step
 					this.tracked.x = coords.x;
 					this.tracked.y = coords.y;
@@ -188,7 +214,8 @@ useful.Photocylinder.prototype.Fallback = function (parent) {
 			case 'end':
 				// stop tracking
 				this.tracked = null;
-				// TODO: maybe resume animating
+				// continue based on inertia
+				this.momentum();
 				break;
 		}
 	};
@@ -197,11 +224,11 @@ useful.Photocylinder.prototype.Fallback = function (parent) {
 		// update the aspect ratio
 		this.wrapperAspect = this.wrapper.offsetWidth / this.wrapper.offsetHeight;
 		// restore current values
-		var factor = this.zoom.current || 1;
+		var factor = this.magnification.current || 1;
 		var horizontal = this.horizontal.current || 0.5;
 		var vertical = this.vertical.current || 0.5;
 		// reset to zoom
-		this.zoom(factor);
+		this.magnify(factor);
 		// reset the rotation
 		this.move(horizontal, vertical);
 	};
