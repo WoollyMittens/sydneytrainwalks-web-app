@@ -29,15 +29,14 @@
 			margin: 0;
 			padding: 0;
 			list-style-type: none;
-
 			height: 100%;
 			overflow: hidden;
 			overflow-y: auto;
 			-webkit-overflow-scrolling: touch;
 
 			li {
-				flex: 0 1 auto;
-				flex-grow: 1;
+				flex: 1 1 auto;
+				max-width: 50%;
 				margin: 0;
 				padding: 0;
 
@@ -48,7 +47,7 @@
 					border: solid 1px #000;
 
 					img {
-						height: 128px;
+						height: 100px;
 						width: auto;
 						visibility: hidden;
 					}
@@ -76,6 +75,9 @@
 	}
 }
 @media (max-width:767px) {
+	.photowall ul li {
+		max-width: none;
+	}
 	.photowall ul li a img {
 		height: 96px;
 	}

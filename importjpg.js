@@ -47,8 +47,8 @@ var generateQueue = function() {
             queue.push({
               'srcPath': srcPath,
               'dstPath': dstPath,
-              'width': 2160,
-              'height': 1080,
+              'width': 3200,
+              'height': 800,
               'quality': 0.6,
               'strip': false
             });
@@ -60,8 +60,8 @@ var generateQueue = function() {
             queue.push({
               'srcPath': srcPath,
               'dstPath': dstPath,
-              'width': 768,
-              'height': 160,
+              'width': 600,
+              'height': 150,
               'quality': 0.6,
               'strip': true
             });
