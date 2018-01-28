@@ -105,7 +105,7 @@ useful.Photocylinder.prototype.Fallback = function (parent) {
 
 	this.recentre = function() {
 		// reset the initial position
-		this.magnification.current = 1;
+		this.magnification.current = this.magnification.min * 1.25;
 		this.horizontal.current = 0.5;
 		this.vertical.current = 0.5;
 	};

@@ -88,6 +88,7 @@ useful.Photocylinder.prototype.Stage = function (parent) {
 		// calculate the zoom limits - scale = aspect * (360 / fov) * 0.3
 		this.magnification.min = Math.max(this.imageAspect * (360 / this.fov) * 0.3, 1);
 		this.magnification.max = 4;
+		this.magnification.current = this.magnification.min * 1.25;
 		// the offset limits are 0 at zoom level 1 be definition, because there is no overscan
 		this.offset.min = 0;
 		this.offset.max = 0;
