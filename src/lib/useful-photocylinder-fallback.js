@@ -178,8 +178,8 @@ useful.Photocylinder.prototype.Fallback = function (parent) {
 		if (this.horizontal.tilted && this.vertical.tilted && Math.abs(evt.alpha - this.horizontal.tilted) < 45 && Math.abs(evt.beta - this.vertical.tilted) < 45) {
 			// update the rotation
 			this.move(
-				this.horizontal.current + (evt.alpha - this.horizontal.tilted) / 180,
-				this.vertical.current + (evt.beta - this.vertical.tilted) / 180
+				this.horizontal.current - (evt.alpha - this.horizontal.tilted) / 180,
+				this.vertical.current - (evt.beta - this.vertical.tilted) / 180
 			);
 		}
 		// store the tilt
