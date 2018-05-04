@@ -69,35 +69,29 @@
 				<menu>
 					<?php
 
-						// include all project folders in the root
-						$files = scandir($inc . "guides/");
-						for ($a = 0; $a < count($files); $a++) {
-							if (preg_match("/\.js/i", $files[$a])) {
+						// load and process the json file
+						$jsonText = file_get_contents($inc . "js/guide-data.js");
+						$jsonText = preg_split('/ = /i', $jsonText);
+						$jsonText = $jsonText[1];
+						$jsonText = preg_split('/;/i', $jsonText);
+						$jsonText = $jsonText[0];
+						$json = json_decode($jsonText);
 
-								// determine the prefix
-								$prefix = str_replace(".js", "", $files[$a]);
+						// for each entry
+						foreach ($json as $name => $value) {
 
-								// load and process the json file
-								$jsonText = file_get_contents($inc . "guides/" . $prefix . '.js');
-								$jsonText = preg_split('/ = /i', $jsonText);
-								$jsonText = $jsonText[2];
-								$jsonText = preg_split('/;/i', $jsonText);
-								$jsonText = $jsonText[0];
-								$json = json_decode($jsonText);
-
-								echo '<li class="off-stage" style="background-image:url(' . $inc . 'wide/' . $prefix . '.jpg)"><a href="details.php?id='. $prefix . '">';
+								echo '<li class="off-stage" style="background-image:url(' . $inc . 'wide/' . $name . '.jpg)"><a href="details.php?id='. $name . '">';
 
 								?>
 									<span class="sign from">From</span>
-									<span class="sign start <?php print $json->{'markers'}->{'start'}->{'method'}?>"><?php print $json->{'markers'}->{'start'}->{'location'}?></span>
+									<span class="sign start <?php print $value->{'markers'}->{'start'}->{'method'}?>"><?php print $value->{'markers'}->{'start'}->{'location'}?></span>
 									<span class="sign to">via</span>
-									<span class="sign park"><?php print $json->{'location'}?> <i><?php print $json->{'duration'}?>h / <span><?php print $json->{'length'}?>km</span></i></span>
+									<span class="sign park"><?php print $value->{'location'}?> <i><?php print $value->{'duration'}?>h / <span><?php print $value->{'length'}?>km</span></i></span>
 									<span class="sign to">to</span>
-									<span class="sign finish <?php print $json->{'markers'}->{'end'}->{'method'}?>"><?php print $json->{'markers'}->{'end'}->{'location'}?></span>
+									<span class="sign finish <?php print $value->{'markers'}->{'end'}->{'method'}?>"><?php print $value->{'markers'}->{'end'}->{'location'}?></span>
 								<?php
 
 								echo '</a></li>';
-							}
 						}
 
 					?>

@@ -18,7 +18,7 @@ useful.Photomap = useful.Photomap || function () {};
 useful.Photomap.prototype.Route = function (parent) {
 
 	// PROPERTIES
-	
+
 	"use strict";
 	this.parent = parent;
 	this.config = parent.config;

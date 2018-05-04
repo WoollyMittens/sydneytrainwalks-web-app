@@ -26,6 +26,7 @@ The following commands are available for development:
 + `node importexif` - Prepare a cache of lat and lon data of all the photos.
 + `node importgpx` - Prepare a cache of GPX data of all routes.
 + `node importtiles` - Coverts the PNG tile store to JPG.
++ `node importguides` - Prepare a cache of JSON data for all the guides.
 + `grunt dev` - Build the project for development purposes.
 + `grunt prod` - Build the project for deployment purposes.
 + `grunt watch` - Continuously recompile updated files during development sessions.

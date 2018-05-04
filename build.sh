@@ -8,6 +8,7 @@
 #echo "Starting compass compile"
 #compass compile
 
+node importguides
 node importjpg
 node importexif
 node importgpx

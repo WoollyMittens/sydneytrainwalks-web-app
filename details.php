@@ -6,13 +6,12 @@
 		$id = (@$_REQUEST['id']) ? @$_REQUEST['id'] : 'cowan-taffyslookout-brooklyn';
 		$inc = './inc/';
 
-		// load and process the json file
-		$jsonText = file_get_contents($inc . "guides/" . $id . '.js');
+		$jsonText = file_get_contents($inc . 'js/guide-data.js');
 		$jsonText = preg_split('/ = /i', $jsonText);
-		$jsonText = $jsonText[2];
+		$jsonText = $jsonText[1];
 		$jsonText = preg_split('/;/i', $jsonText);
 		$jsonText = $jsonText[0];
-		$json = json_decode($jsonText);
+		$json = json_decode($jsonText)->$id;
 
 		// formal title
 		$title = "From " . $json->{'markers'}->{'start'}->{'location'} . " via " . $json->{'location'} . " to " . $json->{'markers'}->{'end'}->{'location'};
@@ -188,7 +187,7 @@
 						"description" : [""],
 					};
 
-					var photomapSettings = <?php print $jsonText ?>;
+					var photomapSettings = <?php print json_encode($json) ?>;
 
 					//photomapSettings.onlineTiles = 'http://{s}.tile.osm.org/{z}/{x}/{y}.png';
 					//photomapSettings.onlineTiles = 'http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png';

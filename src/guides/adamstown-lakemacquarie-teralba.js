@@ -1,5 +1,4 @@
-var GuideData = GuideData || {};
-GuideData["adamstown-lakemacquarie-teralba"] = {
+{
 	"location" : "Lake Macquarie",
 	"description" : ["The <a href=\"http://www.railtrails.org.au/trail?view=trail&id=80\" target=\"_system\">Fernleigh track</a> is an old railway line from Newcastle to Lake Macquarie that has been turned into a bike path. The platforms of the stations are still visible along the way and food and drinks conveniently available nearby every stop."],
 	"duration" : 9,
@@ -99,4 +98,4 @@ GuideData["adamstown-lakemacquarie-teralba"] = {
 		"185_p2180130" : "Follow Anzac parade up to Teralba's shops.",
 		"188_p2180133" : "Anzac Parade eventually ends at Teralba Station."
 	}
-};
+}

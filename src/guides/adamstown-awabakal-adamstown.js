@@ -1,5 +1,4 @@
-var GuideData = GuideData || {};
-GuideData["adamstown-awabakal-adamstown"] = {
+{
 	"location" : "Awabakal",
 	"description" : [
 		"The <a href=\"http://www.railtrails.org.au/trail?view=trail&id=80\" target=\"_system\">Fernleigh track</a> is an old railway line from Newcastle to Lake Macquarie that has been turned into a bike path. The platforms of the stations are still visible along the way and food and drinks conveniently available nearby every stop.",
@@ -98,4 +97,4 @@ GuideData["adamstown-awabakal-adamstown"] = {
 		"pb130180" : "Follow the Fernleigh track back to its start.",
 		"pb130184" : "At the start of the Fernleigh track, cross the road and follow the footpath back to the train station."
 	}
-};
+}

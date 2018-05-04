@@ -1,5 +1,4 @@
-var GuideData = GuideData || {};
-GuideData["adamstown-fernleightrack-belmont"] = {
+{
 	"location" : "Fernleigh Track",
 	"description" : ["The <a href=\"http://www.railtrails.org.au/trail?view=trail&id=80\" target=\"_system\">Fernleigh track</a> is an old railway line from Newcastle to Lake Macquarie that has been turned into a bike path. The platforms of the stations are still visible along the way and food and drinks conveniently available nearby every stop."],
 	"duration" : 4,
@@ -57,4 +56,4 @@ GuideData["adamstown-fernleightrack-belmont"] = {
 		"055_p2180041" : "From the station continue up the urban streets to the main road.",
 		"056_p2180042" : "At the intersection turn right and follow the main road to the shops and the bus stop."
 	}
-};
+}

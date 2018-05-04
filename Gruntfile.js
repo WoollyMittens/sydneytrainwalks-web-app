@@ -53,8 +53,7 @@ module.exports = function(grunt) {
 				files: {
 					'./inc/js/scripts.js': [
 						'./src/lib/*.js', './src/js/*.js'
-					],
-					'./inc/js/guide-data.js': ['./inc/guides/*.js']
+					]
 				}
 			}
 		},
@@ -63,8 +62,7 @@ module.exports = function(grunt) {
 				files: {
 					'./inc/js/scripts.js': [
 						'./src/lib/*.js', './src/js/*.js'
-					],
-					'./inc/js/guide-data.js': ['./inc/guides/*.js']
+					]
 				}
 			}
 		},

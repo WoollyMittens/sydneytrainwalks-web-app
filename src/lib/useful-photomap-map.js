@@ -105,16 +105,12 @@ useful.Photomap.prototype.Map = function (parent) {
 
 	this.centre = function () {
 		var a, b, points,
-			minLat = 999, minLon = 999, maxLat = 0, maxLon = 0, totLat = 0, totLon = 0;
+			totLat = 0, totLon = 0;
 		// for all navigation points
 		points = this.parent.gpx.coordinates();
 		for (a = 0 , b = points.length; a < b; a += 1) {
 			totLon += points[a][0];
 			totLat += points[a][1];
-			minLon = (points[a][0] < minLon) ? points[a][0] : minLon;
-			minLat = (points[a][1] < minLat) ? points[a][1] : minLat;
-			maxLon = (points[a][0] > maxLon) ? points[a][0] : maxLon;
-			maxLat = (points[a][1] > maxLat) ? points[a][1] : maxLat;
 		}
 		// average the centre
 		this.config.map.centre = {
