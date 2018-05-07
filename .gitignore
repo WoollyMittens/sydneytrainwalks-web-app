@@ -1,4 +1,6 @@
 .sass-cache
+cordova/platforms
+cordova/plugins
 node_modules
 inc/css
 inc/medium
