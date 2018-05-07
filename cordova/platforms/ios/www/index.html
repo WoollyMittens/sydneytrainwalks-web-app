@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="ios-true">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Sydney Train Walks</title>
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' data: gap: blob: http://www.sydneytrainwalks.com http://4umaps.eu https://ssl.gstatic.com; img-src * blob:; media-src * blob:">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<link rel="stylesheet" href="./inc/css/styles.css" />
+</head>
+
+<body class="screen-menu">
+
+	<!-- markup -->
+
+	<section id="appView" class="status-busy">
+
+		<header class="title">
+			<h1><a href="./">Sydney Train Walks</a></h1>
+		</header>
+
+		<header class="subtitle">
+			<h2></h2>
+		</header>
+
+		<nav class="navigation">
+			<p>
+				<img class="intro" alt="" src="./inc/img/favicon.png" /> Easy nature walks around Sydney using the train, bus and ferry.
+			</p>
+			<form id="sorting" data-target=".navigation > menu > li">
+				<label>
+					<span>Search by location:</span>
+					<input placeholder="Search..." name="searching-input" type="text"/>
+				</label>
+				<label>
+					<span>Sort by:</span>
+					<select class="sorting-selected" name="sorting-selected">
+						<option value="start">Sort by start</option>
+						<option value="finish">Sort by end</option>
+						<option value="region">Sort by region</option>
+						<option value="duration" data-type="number">Sort by duration</option>
+						<option value="length" data-type="number" selected>Sort by length</option>
+					</select>
+				</label>
+			</form>
+			<menu></menu>
+		</nav>
+
+		<figure class="overview" id="leafletMap2"></figure>
+
+		<article class="guide"></article>
+
+		<aside>
+			<figure class="photomap">
+				<a class="photomap-return" href="#">Back</a>
+				<div class="photomap-leaflet" id="leaflet"></div>
+			</figure>
+			<figure class="photowall">
+				<ul></ul>
+			</figure>
+		</aside>
+
+		<section class="about">
+			<div class="about-scroller">
+				<h2>About This App</h2>
+				<figure>
+					<img src="./inc/img/icon.png" />
+					<figcaption><strong>Sydney Train Walks</strong> Version 1.9.2</figcaption>
+				</figure>
+				<p>Thank you for supporting Sydney Train Walks. You make it possible for me to expand this guide and motivate people to enjoy Sydney's varied landscapes.</p>
+				<p>Please send suggestions and bug reports to <a href="mailto:info@sydneytrainwalks.com">info@sydneytrainwalks.com</a>.</p>
+				<h2>Credits</h2>
+				<p>App, photography and GPS logs &copy; Maurice van Creij, <a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC BY-SA</a>.</p>
+				<p>Maps &copy; <a href="http://www.4umaps.eu/" target="_blank">4UMaps</a>. Data &copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> and contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC BY-SA</a>.</p>
+				<h2>Disclaimer</h2>
+				<p>Please do not rely solely on this app for your navigation. There is no warranty on the accuracy or reliability of this app. Always carry a real paper map, which are readily available from park offices and tourist information centres.</p>
+			</div>
+		</section>
+
+		<footer class="toolbar"></footer>
+
+	</section>
+
+	<!-- templates -->
+
+	<script id="title-template" type="text/template">
+		<span class="sign from">From</span>
+		<span class="sign sign-short {startTransport}">{startLocation}</span>
+		<span class="sign to">via</span>
+		<span class="sign sign-short park">{walkLocation} <i>{walkDuration}h / <span>{walkLength}</span>km</i>
+		</span>
+		<span class="sign to">to</span>
+		<span class="sign sign-short {endTransport}">{endLocation}</span>
+	</script>
+
+	<script id="menu-template" type="text/template">
+		<li class="on-stage" style="background-image:url(./inc/wide/{id}.jpg)">
+			<a href="?key={id}" data-id="{id}">{title}</a>
+		</li>
+	</script>
+
+	<script id="guide-template" type="text/template">
+		<div class="guide-scroller">
+			<h2>About this walk</h2> {description}
+			<p>
+				It takes about {duration} hours to complete the full {length} kilometre walk, with plenty of breaks and photography stops. A brisk walker can do this much faster, but consider that there's a lot to see along the way.
+			</p>
+			<h3>Getting there and back</h3> {there} {back}
+			<h3>Along the way</h3> {landmarks}
+			<h3>What to bring</h3>
+			<ul>
+				<li>Check the <a href="http://www.nationalparks.nsw.gov.au/alert/state-alerts" target="_system">national parks website</a> for possible closures and restriction.</li>
+				<li>Install an OpenStreetMap app for <a href="http://wiki.openstreetmap.org/wiki/Android" target="_system">Android</a> or <a href="http://wiki.openstreetmap.org/wiki/Apple_iOS" target="_system">iOS</a> and preload the area.</li>
+				<li>Download the <a href="{gpx}" target="_system">GPS data</a> if your device can import it.</li>
+				<li>Print out this map and get a better one from a visitor information centre if possible.</li>
+				<li>Be sure to leave enough charge in your phone's battery for emergency calls.</li>
+				<li>Bring plenty of water, comfortable shoes, a hat and SPF 50 sunscreen.</li>
+				<li>Also bring a light windbreaker/raincoat in case you get caught out in the rain.</li>
+			</ul>
+		</div>
+	</script>
+
+	<script id="thumbnail-template" type="text/template">
+		<p><a class="cylinder-image" href="./inc/medium/{id}/{src}" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/{id}/{src});" data-desc="{description}"><img alt="" src="./inc/small/{id}/{src}"/></a> {description}</p>
+	</script>
+
+	<script id="wall-template" type="text/template">
+		<li><a class="cylinder-image" style="background-image:url('./inc/small/{id}/{src}');" href="./inc/medium/{id}/{src}"><img alt="" src="./inc/small/{id}/{src}"/></a></li>
+	</script>
+
+	<script id="footer-template" type="text/template">
+		<a id="footer-to-menu" href="?screen=menu">Menu</a>
+		<a id="footer-to-overview" href="?screen=overview">Overview</a>
+		<a id="footer-to-guide" href="?id={id}&amp;screen=guide">Guide</a>
+		<a id="footer-to-photos" href="?id={id}&amp;screen=photos">Photos</a>
+		<a id="footer-to-map" href="?id={id}&amp;screen=map">Map</a>
+		<a id="footer-to-about" href="?id={id}&amp;screen=about">About</a>
+	</script>
+
+	<script id="credit-template" type="text/template">
+		Maps &copy; <a href="http://www.4umaps.eu/" target="_blank">4UMaps</a>. Data &copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> and contributors, CC BY-SA
+	</script>
+
+	<!-- scripts -->
+
+	<script src="cordova.js"></script>
+	<script src="./inc/js/exif-data.js"></script>
+	<script src="./inc/js/guide-data.js"></script>
+	<script src="./inc/js/gpx-data.js"></script>
+	<script src="./inc/js/scripts.js"></script>
+	<script>
+		// create the global object
+		var sydneyTrainWalks;
+		// wait for phonegap to start
+		document.addEventListener('deviceready', function() {
+
+			// configure the statusbar
+			if ("StatusBar" in window) {
+				setTimeout(function() {
+					StatusBar.overlaysWebView(false);
+					StatusBar.styleLightContent();
+					StatusBar.backgroundColorByName('black');
+				}, 0);
+			}
+
+			// start the interface
+			var sydneyTrainWalks = new SydneyTrainWalks().init({
+				'onlineTiles': 'http://4umaps.eu/{z}/{x}/{y}.png',
+				'offlineTiles': './inc/tiles/{z}/{x}/{y}.jpg',
+				'exif': 'http://www.sydneytrainwalks.com/imageexif.php?src={src}',
+				'slice': 'http://www.sydneytrainwalks.com/imageslice.php?src={src}&{size}',
+				//'slice': 'http://www.sydneytrainwalks.com/{src}',
+				'gpx': 'http://www.sydneytrainwalks.com/inc/gpx/{id}.gpx',
+				'pointer': './inc/img/marker-location.png',
+				'missing': './inc/img/missing.png'
+			});
+		}, false);
+	</script>
+
+</body>
+
+</html>
