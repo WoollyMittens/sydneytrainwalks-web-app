@@ -46,10 +46,13 @@
 		}
 	}
 	a {
-		color : #000086;
+		color : #0D47A1;
 	}
 	img {
 		border : none;
+	}
+	*:focus {
+	    outline: none;
 	}
 
 }

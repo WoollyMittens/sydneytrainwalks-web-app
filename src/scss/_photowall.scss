@@ -6,13 +6,13 @@
 		@include transition-property(transform);
 		@include transition-duration(300ms);
 		@include translate(100%, 0);
-		background: #000;
+		background: #FFF;
 		bottom: 50px;
 		height: auto;
 		max-height: 100%;
 		position: absolute;
 		right: 0;
-		top: 100px;
+		top: 8rem;
 		width: 50%;
 		z-index: 4;
 		margin: 0;
@@ -44,7 +44,7 @@
 					display: block;
 					background-size: cover;
 					background-position: center;
-					border: solid 1px #000;
+					border: solid 1px #FFF;
 
 					img {
 						height: 100px;

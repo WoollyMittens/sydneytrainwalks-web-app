@@ -2,43 +2,28 @@
 	header
 */
 
-@mixin smallHeader {
-
-	h1 {
-		font-size : 16px;
-		height : 30px;
-		line-height : 30px;
-		margin : 17px 0 0 0;
-		&:before {
-			background-image : url(../img/logo.svg);
-			background-size : 35px 20px;
-			height : 20px;
-			width : 35px;
-		}
-	}
-
-}
-
 @media all {
 
 	header {
 		&.title {
-			background-color : #f7f7f7;
-			border-bottom : solid 1px #b2b2b2;
+			background-color: #fff;
+	    border-bottom: solid 1px #eee;
+			box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
 			border-radius : 0;
 			text-align : left;
 			position : absolute;
-			height : 50px;
+			height : 4rem;
 			left : 0;
 			right : 0;
 			text-align : center;
 			top : 0;
-			z-index : 5;
+			z-index : 8;
 			h1 {
 				display : inline-block;
 				font-size : 23px;
-				height : 50px;
-				line-height : 50px;
+				font-weight: normal;
+				height : 4rem;
+				line-height : 4rem;
 				margin : 0 0 0 0;
 				vertical-align : middle;
 				&:before {
@@ -52,37 +37,40 @@
 					width : 65px;
 				}
 				a {
-					color : #006;
+					color : #0D47A1;
 					text-decoration : none;
 				}
 			}
 		}
 		&.subtitle {
-			@include box-shadow(inset 0 0 15px rgba(0, 0, 0, 0.5));
-			background : silver url(../img/background.jpg) repeat 50% 50%;
-			border-bottom : solid 1px #000;
+			border-bottom: solid 1px #eee;
+			box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
 			position : absolute;
-			height : 50px;
+			height : 4rem;
 			left : 0;
-			padding : 10px 0;
 			right : 0;
-			text-align : center;
-			top : 50px;
-			white-space : nowrap;
-			z-index : 2;
+			top : 4rem;
+			z-index : 8;
 			h2 {
-				display : inline;
-				margin : 0;
-				vertical-align : middle;
+				display: flex;
+				flex-wrap: nowrap;
+				justify-content: center;
+				align-items: stretch;
+				height: 4rem;
+				position: relative;
+				font-size: 1.166666666666667rem;
+				text-decoration: none;
+				margin: 0;
+				font-weight: normal;
 			}
 		}
 	}
 
-	html.ios-true header.title {
-		/*@include smallHeader;*/
-	}
+	html.ios-true header.title {}
 
-	body.screen-menu > header.subtitle { visibility : hidden; }
+	body.screen-menu header.subtitle,
+	body.screen-overview header.subtitle,
+	body.screen-about header.subtitle { visibility : hidden; }
 
 }
 @media (max-height: 768px) {
@@ -92,20 +80,6 @@
 
 	header.title h1 {
 		text-align : center;
-	}
-
-	header.subtitle h2 .sign {
-		max-width : 30%;
-
-  		&.sign-long {
-			text-overflow : clip;
-			max-width : 100%;
-  		}
-  		&.sign-short {
-			text-overflow : ellipsis;
-			max-width : 30%;
-  		}
-
 	}
 
 }

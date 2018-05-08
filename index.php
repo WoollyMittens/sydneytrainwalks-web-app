@@ -17,7 +17,7 @@
 			<link rel="shortcut icon" href="./inc/img/favicon.ico">
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<meta name="msapplication-TileColor" content="#000066"/>
+		<meta name="msapplication-TileColor" content="#0D47A1"/>
 		<meta name="msapplication-TileImage" content="./inc/img/favicon.png"/>
 		<link rel="stylesheet" href="./inc/css/styles.css"/>
 		<script>
@@ -45,6 +45,11 @@
 					<img class="intro" alt="" src="./inc/img/favicon.png"/>
 					Easy bushwalks around Sydney using the train, bus and ferry.
 				</p>
+				<p class="app-banners">
+					<span>Take these guides with you as an app:</span>
+					<a href="https://play.google.com/store/apps/details?id=com.sydneytrainwalks.ios"><img alt="Get it on Google Play" src="./inc/img/banner-android.png" target="_blank"/></a>
+					<a href="https://itunes.apple.com/us/app/sydney-train-walks/id917041642?ls=1&mt=8"><img alt="Download on the App Store" src="./inc/img/banner-ios.png" target="_blank"/></a>
+				</p>
 				<form id="sorting" data-target=".navigation > menu > li">
 					<label>
 						<span>Search for:</span>
@@ -61,11 +66,6 @@
 						</select>
 					</label>
 				</form>
-				<p class="app-banners">
-					<span>Take these guides with you as an app:</span>
-					<a href="https://play.google.com/store/apps/details?id=com.sydneytrainwalks.ios"><img alt="Get it on Google Play" src="./inc/img/banner-android.png" target="_blank"/></a>
-					<a href="https://itunes.apple.com/us/app/sydney-train-walks/id917041642?ls=1&mt=8"><img alt="Download on the App Store" src="./inc/img/banner-ios.png" target="_blank"/></a>
-				</p>
 				<menu>
 					<?php
 
@@ -80,7 +80,7 @@
 						// for each entry
 						foreach ($json as $name => $value) {
 
-								echo '<li class="off-stage" style="background-image:url(' . $inc . 'wide/' . $name . '.jpg)"><a href="details.php?id='. $name . '">';
+								echo '<li class="off-stage"><a href="details.php?id='. $name . '">';
 
 								?>
 									<span class="sign from">From</span>

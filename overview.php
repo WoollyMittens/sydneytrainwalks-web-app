@@ -17,7 +17,7 @@
 			<link rel="shortcut icon" href="./inc/img/favicon.ico">
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<meta name="msapplication-TileColor" content="#000066"/>
+		<meta name="msapplication-TileColor" content="#0D47A1"/>
 		<meta name="msapplication-TileImage" content="./inc/img/favicon.png"/>
 		<link rel="stylesheet" href="./inc/css/styles.css"/>
 		<script type="text/javascript">

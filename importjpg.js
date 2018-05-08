@@ -4,8 +4,6 @@ var fs = require('fs');
 var large = './src/large/';
 var medium = './inc/medium/';
 var small = './inc/small/';
-var wideIn = './src/wide/';
-var wideOut = './inc/wide/';
 
 // generates a resize queue
 var generateQueue = function() {
@@ -67,20 +65,6 @@ var generateQueue = function() {
             });
           }
         }
-      }
-      // process the wide image
-      srcPath = wideIn + guide + '.jpg';
-      dstPath = wideOut + guide + '.jpg';
-      if (!fs.existsSync(dstPath)) {
-        // add the full size to the queue
-        queue.push({
-          'srcPath': srcPath,
-          'dstPath': dstPath,
-          'width': 2000,
-          'height': 100,
-          'quality': 0.6,
-          'strip': true
-        });
       }
     }
   }
