@@ -214,6 +214,7 @@
 			</aside>
 			<footer class="toolbar">
 				<a id="footer-to-menu" href="index.php">Menu</a>
+				<a id="footer-to-overview" href="overview.php">Overview</a>
 				<a id="footer-to-guide" onclick="document.body.className='screen-guide'" href="#">Guide</a>
 				<a id="footer-to-photos" onclick="document.body.className='screen-photos'" href="#">Photos</a>
 				<a id="footer-to-map" onclick="document.body.className='screen-map'" href="#">Map</a>
