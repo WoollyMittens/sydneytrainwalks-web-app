@@ -1,0 +1,1499 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mytracks="http://mytracks.stichling.info/myTracksGPX/1/0" creator="myTracks" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+    <rte>
+        <name>Joined Track</name>
+        <desc>Log every 0 sec, 50 m</desc>
+        <extensions>
+            <mytracks:color red="0.000000" green="0.000000" blue="1.000000" alpha="1.000000"></mytracks:color>
+            <mytracks:area showArea="no" areaDistance="0.000000"></mytracks:area>
+            <mytracks:directionArrows showDirectionArrows="yes"></mytracks:directionArrows>
+            <mytracks:sync syncPhotosOniPhone="no"></mytracks:sync>
+            <mytracks:timezone offset="0"></mytracks:timezone>
+        </extensions>
+        <rtept lat="-34.625648" lon="150.854279">
+            <ele>0</ele>
+            <desc>Lat.=-34.625648, Long.=150.854279, Alt.=0.000000m, Speed=nanKm/h</desc>
+            <extensions>
+                <mytracks:length>0</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.62581100000001" lon="150.853868">
+            <ele>0</ele>
+            <desc>Lat.=-34.625811, Long.=150.853868, Alt.=0.000000m, Speed=nanKm/h</desc>
+            <extensions>
+                <mytracks:length>0.04174649520570691</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.626247" lon="150.853138">
+            <ele>0</ele>
+            <desc>Lat.=-34.626247, Long.=150.853138, Alt.=0.000000m, Speed=nanKm/h</desc>
+            <extensions>
+                <mytracks:length>0.08253465363984658</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.625755" lon="150.854431">
+            <ele>13.912598</ele>
+            <desc>Lat.=-34.625755, Long.=150.854431, Alt.=13.912598m, Speed=0.000000Km/h</desc>
+            <extensions>
+                <mytracks:speed>0</mytracks:speed>
+                <mytracks:length>0.1303459912484145</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.626133" lon="150.854736">
+            <ele>21.512207</ele>
+            <desc>Lat.=-34.626133, Long.=150.854736, Alt.=21.512207m, Speed=4.127965Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.127965229525872</mytracks:speed>
+                <mytracks:length>0.05045290836087176</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.626411" lon="150.855179">
+            <ele>24.222168</ele>
+            <desc>Lat.=-34.626411, Long.=150.855179, Alt.=24.222168m, Speed=5.097645Km/h</desc>
+            <extensions>
+                <mytracks:speed>5.097645391849122</mytracks:speed>
+                <mytracks:length>0.05097645391849122</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.62672799999999" lon="150.855576">
+            <ele>23.070801</ele>
+            <desc>Lat.=-34.626728, Long.=150.855576, Alt.=23.070801m, Speed=4.672271Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.672271495952082</mytracks:speed>
+                <mytracks:length>0.05061627453948089</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.627106" lon="150.855896">
+            <ele>20.318359</ele>
+            <desc>Lat.=-34.627106, Long.=150.855896, Alt.=20.318359m, Speed=4.610199Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.610199023326046</mytracks:speed>
+                <mytracks:length>0.05122460953775276</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.627487" lon="150.856186">
+            <ele>18.274414</ele>
+            <desc>Lat.=-34.627487, Long.=150.856186, Alt.=18.274414m, Speed=2.045001Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.045000909274723</mytracks:speed>
+                <mytracks:length>0.04998891111560433</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.62794100000001" lon="150.856125">
+            <ele>19.578613</ele>
+            <desc>Lat.=-34.627941, Long.=150.856125, Alt.=19.578613m, Speed=4.353423Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.353423496038963</mytracks:speed>
+                <mytracks:length>0.05078994078712123</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.628395" lon="150.856186">
+            <ele>19.757324</ele>
+            <desc>Lat.=-34.628395, Long.=150.856186, Alt.=19.757324m, Speed=4.688319Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.68831860653996</mytracks:speed>
+                <mytracks:length>0.05079011823751624</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.628845" lon="150.856308">
+            <ele>19.324219</ele>
+            <desc>Lat.=-34.628845, Long.=150.856308, Alt.=19.324219m, Speed=4.614093Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.614092813301065</mytracks:speed>
+                <mytracks:length>0.05126769792556739</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.628899" lon="150.856857">
+            <ele>20.876953</ele>
+            <desc>Lat.=-34.628899, Long.=150.856857, Alt.=20.876953m, Speed=4.235375Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.23537507199497</mytracks:speed>
+                <mytracks:length>0.05058920224882881</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.628803" lon="150.857422">
+            <ele>18.564941</ele>
+            <desc>Lat.=-34.628803, Long.=150.857422, Alt.=18.564941m, Speed=5.000802Km/h</desc>
+            <extensions>
+                <mytracks:speed>5.000802189421519</mytracks:speed>
+                <mytracks:length>0.05278624533278269</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.628872" lon="150.857971">
+            <ele>17.164551</ele>
+            <desc>Lat.=-34.628872, Long.=150.857971, Alt.=17.164551m, Speed=4.690546Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.690545758611134</mytracks:speed>
+                <mytracks:length>0.05081424571828728</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.629059" lon="150.858475">
+            <ele>13.185547</ele>
+            <desc>Lat.=-34.629059, Long.=150.858475, Alt.=13.185547m, Speed=2.718030Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.718029549173123</mytracks:speed>
+                <mytracks:length>0.05058537177493614</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.62932600000001" lon="150.858932">
+            <ele>15.140625</ele>
+            <desc>Lat.=-34.629326, Long.=150.858932, Alt.=15.140625m, Speed=1.678318Km/h</desc>
+            <extensions>
+                <mytracks:speed>1.678317889445313</mytracks:speed>
+                <mytracks:length>0.05128211125878522</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.62965000000001" lon="150.859314">
+            <ele>23.932129</ele>
+            <desc>Lat.=-34.629650, Long.=150.859314, Alt.=23.932129m, Speed=3.346346Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.346346186772246</mytracks:speed>
+                <mytracks:length>0.05019519280158369</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.62998200000001" lon="150.859695">
+            <ele>24.125977</ele>
+            <desc>Lat.=-34.629982, Long.=150.859695, Alt.=24.125977m, Speed=1.439277Km/h</desc>
+            <extensions>
+                <mytracks:speed>1.439277171838792</mytracks:speed>
+                <mytracks:length>0.05077450022875737</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.630318" lon="150.860046">
+            <ele>32.263672</ele>
+            <desc>Lat.=-34.630318, Long.=150.860046, Alt.=32.263672m, Speed=1.866965Km/h</desc>
+            <extensions>
+                <mytracks:speed>1.866964579396732</mytracks:speed>
+                <mytracks:length>0.04926712084519156</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.630486" lon="150.860535">
+            <ele>43.79199200000001</ele>
+            <desc>Lat.=-34.630486, Long.=150.860535, Alt.=43.791992m, Speed=3.173520Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.173520474465936</mytracks:speed>
+                <mytracks:length>0.04848434058211847</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.63074899999999" lon="150.860992">
+            <ele>44.610352</ele>
+            <desc>Lat.=-34.630749, Long.=150.860992, Alt.=44.610352m, Speed=1.569999Km/h</desc>
+            <extensions>
+                <mytracks:speed>1.569998856467605</mytracks:speed>
+                <mytracks:length>0.05102513946825479</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.631187" lon="150.861145">
+            <ele>48.15332</ele>
+            <desc>Lat.=-34.631187, Long.=150.861145, Alt.=48.153320m, Speed=3.881503Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.881502993835659</mytracks:speed>
+                <mytracks:length>0.05067508904871204</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.631634" lon="150.861206">
+            <ele>42.22753900000001</ele>
+            <desc>Lat.=-34.631634, Long.=150.861206, Alt.=42.227539m, Speed=2.647927Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.64792697539325</mytracks:speed>
+                <mytracks:length>0.05001639842409473</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.632065" lon="150.861023">
+            <ele>41.50878900000001</ele>
+            <desc>Lat.=-34.632065, Long.=150.861023, Alt.=41.508789m, Speed=2.995994Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.995993574765795</mytracks:speed>
+                <mytracks:length>0.05076544668353154</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.632481" lon="150.860825">
+            <ele>41.037109</ele>
+            <desc>Lat.=-34.632481, Long.=150.860825, Alt.=41.037109m, Speed=4.064550Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.064550316777138</mytracks:speed>
+                <mytracks:length>0.04967783720505391</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.63288900000001" lon="150.860565">
+            <ele>39.21581999999999</ele>
+            <desc>Lat.=-34.632889, Long.=150.860565, Alt.=39.215820m, Speed=4.852974Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.852974423554523</mytracks:speed>
+                <mytracks:length>0.05122584113751996</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.632999" lon="150.860031">
+            <ele>39.34375</ele>
+            <desc>Lat.=-34.632999, Long.=150.860031, Alt.=39.343750m, Speed=4.422272Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.422271940443869</mytracks:speed>
+                <mytracks:length>0.05036476376616628</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.632996" lon="150.859467">
+            <ele>37.47558599999999</ele>
+            <desc>Lat.=-34.632996, Long.=150.859467, Alt.=37.475586m, Speed=4.763329Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.76332866659093</mytracks:speed>
+                <mytracks:length>0.05160272722140174</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.633354" lon="150.859116">
+            <ele>33.64257799999999</ele>
+            <desc>Lat.=-34.633354, Long.=150.859116, Alt.=33.642578m, Speed=2.789796Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.789795678833145</mytracks:speed>
+                <mytracks:length>0.05114634221910732</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.633312" lon="150.858582">
+            <ele>29.422852</ele>
+            <desc>Lat.=-34.633312, Long.=150.858582, Alt.=29.422852m, Speed=4.530393Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.530392644985622</mytracks:speed>
+                <mytracks:length>0.04907925365401091</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.63339200000001" lon="150.858047">
+            <ele>22.632812</ele>
+            <desc>Lat.=-34.633392, Long.=150.858047, Alt.=22.632812m, Speed=3.655095Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.655094741465007</mytracks:speed>
+                <mytracks:length>0.04974990064771814</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.633804" lon="150.857803">
+            <ele>23.904297</ele>
+            <desc>Lat.=-34.633804, Long.=150.857803, Alt.=23.904297m, Speed=3.903482Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.903482373636403</mytracks:speed>
+                <mytracks:length>0.05096213098914193</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.634125" lon="150.858185">
+            <ele>28.161133</ele>
+            <desc>Lat.=-34.634125, Long.=150.858185, Alt.=28.161133m, Speed=3.526242Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.526241965744367</mytracks:speed>
+                <mytracks:length>0.04995509451471186</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.634567" lon="150.858047">
+            <ele>26.51953099999999</ele>
+            <desc>Lat.=-34.634567, Long.=150.858047, Alt.=26.519531m, Speed=5.074396Km/h</desc>
+            <extensions>
+                <mytracks:speed>5.074396024124335</mytracks:speed>
+                <mytracks:length>0.05074396024124335</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.634773" lon="150.857544">
+            <ele>22.141113</ele>
+            <desc>Lat.=-34.634773, Long.=150.857544, Alt.=22.141113m, Speed=5.140525Km/h</desc>
+            <extensions>
+                <mytracks:speed>5.140525039731656</mytracks:speed>
+                <mytracks:length>0.05140525039731655</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.634949" lon="150.85704">
+            <ele>15.117676</ele>
+            <desc>Lat.=-34.634949, Long.=150.857040, Alt.=15.117676m, Speed=4.745577Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.745577138058712</mytracks:speed>
+                <mytracks:length>0.05009220312395307</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.635082" lon="150.856506">
+            <ele>16.285645</ele>
+            <desc>Lat.=-34.635082, Long.=150.856506, Alt.=16.285645m, Speed=4.966533Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.966532611099024</mytracks:speed>
+                <mytracks:length>0.05104491850296219</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.63551700000001" lon="150.856613">
+            <ele>7.265991</ele>
+            <desc>Lat.=-34.635517, Long.=150.856613, Alt.=7.265991m, Speed=3.230213Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.230212515106506</mytracks:speed>
+                <mytracks:length>0.04935046898079383</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.635956" lon="150.856491">
+            <ele>9.847899999999999</ele>
+            <desc>Lat.=-34.635956, Long.=150.856491, Alt.=9.847900m, Speed=1.365665Km/h</desc>
+            <extensions>
+                <mytracks:speed>1.365665117332543</mytracks:speed>
+                <mytracks:length>0.05007438763552657</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.63639500000001" lon="150.856384">
+            <ele>3.004944000000001</ele>
+            <desc>Lat.=-34.636395, Long.=150.856384, Alt.=3.004944m, Speed=3.896326Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.896326258544439</mytracks:speed>
+                <mytracks:length>0.04978639108140116</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.636829" lon="150.856232">
+            <ele>5.383300999999999</ele>
+            <desc>Lat.=-34.636829, Long.=150.856232, Alt.=5.383301m, Speed=3.846814Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.84681431691362</mytracks:speed>
+                <mytracks:length>0.05022229802637226</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.63700100000001" lon="150.855713">
+            <ele>1.078033</ele>
+            <desc>Lat.=-34.637001, Long.=150.855713, Alt.=1.078033m, Speed=3.233015Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.233015270843592</mytracks:speed>
+                <mytracks:length>0.0511893204219829</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.636917" lon="150.855164">
+            <ele>1.307953</ele>
+            <desc>Lat.=-34.636917, Long.=150.855164, Alt.=1.307953m, Speed=3.998183Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.998182994738945</mytracks:speed>
+                <mytracks:length>0.05108789382166431</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.637112" lon="150.85466">
+            <ele>-1.667511</ele>
+            <desc>Lat.=-34.637112, Long.=150.854660, Alt.=-1.667511m, Speed=3.527548Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.527547545530068</mytracks:speed>
+                <mytracks:length>0.05095364142745503</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.636959" lon="150.854172">
+            <ele>11.519287</ele>
+            <desc>Lat.=-34.636959, Long.=150.854172, Alt.=11.519287m, Speed=5.931018Km/h</desc>
+            <extensions>
+                <mytracks:speed>5.931017972482772</mytracks:speed>
+                <mytracks:length>0.04777764477833345</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.636818" lon="150.853653">
+            <ele>15.951172</ele>
+            <desc>Lat.=-34.636818, Long.=150.853653, Alt.=15.951172m, Speed=4.615734Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.615733831532347</mytracks:speed>
+                <mytracks:length>0.05000378317493375</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.63610799999999" lon="150.854446">
+            <ele>46.91015599999999</ele>
+            <desc>Lat.=-34.636108, Long.=150.854446, Alt.=46.910156m, Speed=2.880570Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.880569909216717</mytracks:speed>
+                <mytracks:length>0.1072212132875111</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.636292" lon="150.853973">
+            <ele>29.088379</ele>
+            <desc>Lat.=-34.636292, Long.=150.853973, Alt.=29.088379m, Speed=9.069568Km/h</desc>
+            <extensions>
+                <mytracks:speed>9.069567968082277</mytracks:speed>
+                <mytracks:length>0.04786697598974676</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.636639" lon="150.853638">
+            <ele>29.230957</ele>
+            <desc>Lat.=-34.636639, Long.=150.853638, Alt.=29.230957m, Speed=4.927590Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.927590097209291</mytracks:speed>
+                <mytracks:length>0.049275992423515</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.63684500000001" lon="150.854095">
+            <ele>15.3396</ele>
+            <desc>Lat.=-34.636845, Long.=150.854095, Alt.=15.339600m, Speed=1.261953Km/h</desc>
+            <extensions>
+                <mytracks:speed>1.261953016434183</mytracks:speed>
+                <mytracks:length>0.04767359157083759</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.63715000000001" lon="150.854523">
+            <ele>14.27124</ele>
+            <desc>Lat.=-34.637150, Long.=150.854523, Alt.=14.271240m, Speed=4.144158Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.144157922531566</mytracks:speed>
+                <mytracks:length>0.05180197403164458</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.63759200000001" lon="150.85466">
+            <ele>5.704102000000001</ele>
+            <desc>Lat.=-34.637592, Long.=150.854660, Alt.=5.704102m, Speed=2.371373Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.371373447519989</mytracks:speed>
+                <mytracks:length>0.0507212208745027</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.638031" lon="150.854538">
+            <ele>2.679504</ele>
+            <desc>Lat.=-34.638031, Long.=150.854538, Alt.=2.679504m, Speed=5.150508Km/h</desc>
+            <extensions>
+                <mytracks:speed>5.150508442511305</mytracks:speed>
+                <mytracks:length>0.05007438763552657</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.638477" lon="150.854401">
+            <ele>1.858063</ele>
+            <desc>Lat.=-34.638477, Long.=150.854401, Alt.=1.858063m, Speed=4.384478Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.38447814744648</mytracks:speed>
+                <mytracks:length>0.05115224505354227</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.63892" lon="150.854263">
+            <ele>-0.193134</ele>
+            <desc>Lat.=-34.638920, Long.=150.854263, Alt.=-0.193134m, Speed=4.693983Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.693982667816949</mytracks:speed>
+                <mytracks:length>0.05085147890135028</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.63935499999999" lon="150.854111">
+            <ele>3.371094</ele>
+            <desc>Lat.=-34.639355, Long.=150.854111, Alt.=3.371094m, Speed=4.026317Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.026316903495195</mytracks:speed>
+                <mytracks:length>0.05032896129368994</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.639771" lon="150.853882">
+            <ele>4.436522999999999</ele>
+            <desc>Lat.=-34.639771, Long.=150.853882, Alt.=4.436523m, Speed=4.458748Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.458747517502545</mytracks:speed>
+                <mytracks:length>0.05078018006044565</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.640194" lon="150.853683">
+            <ele>0.614517</ele>
+            <desc>Lat.=-34.640194, Long.=150.853683, Alt.=0.614517m, Speed=4.539226Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.539226115528128</mytracks:speed>
+                <mytracks:length>0.0504358457280903</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.640594" lon="150.853424">
+            <ele>4.365966999999999</ele>
+            <desc>Lat.=-34.640594, Long.=150.853424, Alt.=4.365967m, Speed=3.702536Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.702535565079688</mytracks:speed>
+                <mytracks:length>0.05039553354948165</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.641045" lon="150.853317">
+            <ele>9.008300999999999</ele>
+            <desc>Lat.=-34.641045, Long.=150.853317, Alt.=9.008301m, Speed=4.277746Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.277746276520271</mytracks:speed>
+                <mytracks:length>0.05109530274732547</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.64149500000001" lon="150.853241">
+            <ele>10.414551</ele>
+            <desc>Lat.=-34.641495, Long.=150.853241, Alt.=10.414551m, Speed=4.229450Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.229449557519147</mytracks:speed>
+                <mytracks:length>0.05051860367448129</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.64195299999999" lon="150.853226">
+            <ele>15.475586</ele>
+            <desc>Lat.=-34.641953, Long.=150.853226, Alt.=15.475586m, Speed=3.987060Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.987060232115379</mytracks:speed>
+                <mytracks:length>0.05094585808647512</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.642406" lon="150.853302">
+            <ele>18.216797</ele>
+            <desc>Lat.=-34.642406, Long.=150.853302, Alt.=18.216797m, Speed=4.358470Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.358470310778563</mytracks:speed>
+                <mytracks:length>0.0508489975373367</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.64285700000001" lon="150.853363">
+            <ele>17.17041</ele>
+            <desc>Lat.=-34.642857, Long.=150.853363, Alt.=17.170410m, Speed=4.224428Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.224428018464599</mytracks:speed>
+                <mytracks:length>0.05045826715929237</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.643307" lon="150.853394">
+            <ele>20.510254</ele>
+            <desc>Lat.=-34.643307, Long.=150.853394, Alt.=20.510254m, Speed=4.100558Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.100557534931334</mytracks:speed>
+                <mytracks:length>0.05011792542693852</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.64372999999999" lon="150.853592">
+            <ele>27.197266</ele>
+            <desc>Lat.=-34.643730, Long.=150.853592, Alt.=27.197266m, Speed=3.944551Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.944551086292401</mytracks:speed>
+                <mytracks:length>0.05040259721373622</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.644119" lon="150.853867">
+            <ele>39.121094</ele>
+            <desc>Lat.=-34.644119, Long.=150.853867, Alt.=39.121094m, Speed=3.832741Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.832740575611372</mytracks:speed>
+                <mytracks:length>0.05003855751492624</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.644482" lon="150.854187">
+            <ele>43.68457</ele>
+            <desc>Lat.=-34.644482, Long.=150.854187, Alt.=43.684570m, Speed=4.079574Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.079574076747514</mytracks:speed>
+                <mytracks:length>0.04986146093802516</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.644661" lon="150.854691">
+            <ele>44.64550799999999</ele>
+            <desc>Lat.=-34.644661, Long.=150.854691, Alt.=44.645508m, Speed=4.017468Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.017467986500597</mytracks:speed>
+                <mytracks:length>0.05021852930140584</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.645031" lon="150.855011">
+            <ele>40.753906</ele>
+            <desc>Lat.=-34.645031, Long.=150.855011, Alt.=40.753906m, Speed=2.673187Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.673186973372904</mytracks:speed>
+                <mytracks:length>0.05049353171926596</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.645424" lon="150.855286">
+            <ele>31.817383</ele>
+            <desc>Lat.=-34.645424, Long.=150.855286, Alt.=31.817383m, Speed=4.125538Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.125538313073172</mytracks:speed>
+                <mytracks:length>0.05042324604867211</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.645809" lon="150.855545">
+            <ele>21.913574</ele>
+            <desc>Lat.=-34.645809, Long.=150.855545, Alt.=21.913574m, Speed=3.090258Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.090258015206419</mytracks:speed>
+                <mytracks:length>0.04892908524076831</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.646233" lon="150.855759">
+            <ele>13.356201</ele>
+            <desc>Lat.=-34.646233, Long.=150.855759, Alt.=13.356201m, Speed=4.083954Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.083953655544961</mytracks:speed>
+                <mytracks:length>0.05104942069431201</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.646656" lon="150.855972">
+            <ele>18.193848</ele>
+            <desc>Lat.=-34.646656, Long.=150.855972, Alt.=18.193848m, Speed=3.665630Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.665629903627708</mytracks:speed>
+                <mytracks:length>0.05091161495265758</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.647026" lon="150.856308">
+            <ele>27.632812</ele>
+            <desc>Lat.=-34.647026, Long.=150.856308, Alt.=27.632812m, Speed=2.844306Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.844305791513959</mytracks:speed>
+                <mytracks:length>0.05135543348737715</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.64729700000001" lon="150.856735">
+            <ele>32.288086</ele>
+            <desc>Lat.=-34.647297, Long.=150.856735, Alt.=32.288086m, Speed=4.799979Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.799978892811591</mytracks:speed>
+                <mytracks:length>0.04933311639834136</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.64757899999999" lon="150.857178">
+            <ele>31.21484400000001</ele>
+            <desc>Lat.=-34.647579, Long.=150.857178, Alt.=31.214844m, Speed=4.499045Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.49904494100188</mytracks:speed>
+                <mytracks:length>0.05123912293918809</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.64785" lon="150.857635">
+            <ele>30.963867</ele>
+            <desc>Lat.=-34.647850, Long.=150.857635, Alt.=30.963867m, Speed=2.992248Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.992248427769385</mytracks:speed>
+                <mytracks:length>0.05153307992133599</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.64814" lon="150.858047">
+            <ele>33.25195299999999</ele>
+            <desc>Lat.=-34.648140, Long.=150.858047, Alt.=33.251953m, Speed=4.464052Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.464052341661835</mytracks:speed>
+                <mytracks:length>0.04960058157402039</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.64847899999999" lon="150.858414">
+            <ele>30.591797</ele>
+            <desc>Lat.=-34.648479, Long.=150.858414, Alt.=30.591797m, Speed=4.432144Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.432144128943896</mytracks:speed>
+                <mytracks:length>0.05047737557391153</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.648895" lon="150.858627">
+            <ele>28.087891</ele>
+            <desc>Lat.=-34.648895, Long.=150.858627, Alt.=28.087891m, Speed=4.517390Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.517389590911939</mytracks:speed>
+                <mytracks:length>0.05019321767679932</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.649311" lon="150.858887">
+            <ele>25.928711</ele>
+            <desc>Lat.=-34.649311, Long.=150.858887, Alt.=25.928711m, Speed=4.567012Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.567012231109424</mytracks:speed>
+                <mytracks:length>0.05201319485430177</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.649765" lon="150.858948">
+            <ele>26.354004</ele>
+            <desc>Lat.=-34.649765, Long.=150.858948, Alt.=26.354004m, Speed=4.459597Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.4595967663924</mytracks:speed>
+                <mytracks:length>0.05078994078712123</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.650219" lon="150.85907">
+            <ele>22.629395</ele>
+            <desc>Lat.=-34.650219, Long.=150.859070, Alt.=22.629395m, Speed=4.539628Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.539627528752694</mytracks:speed>
+                <mytracks:length>0.05170131352190568</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.650665" lon="150.859085">
+            <ele>12.640137</ele>
+            <desc>Lat.=-34.650665, Long.=150.859085, Alt.=12.640137m, Speed=3.027169Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.027169030178838</mytracks:speed>
+                <mytracks:length>0.04961202771548296</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.65109600000001" lon="150.858978">
+            <ele>24.102051</ele>
+            <desc>Lat.=-34.651096, Long.=150.858978, Alt.=24.102051m, Speed=5.502854Km/h</desc>
+            <extensions>
+                <mytracks:speed>5.502853680432906</mytracks:speed>
+                <mytracks:length>0.04891434706474547</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.651516" lon="150.858765">
+            <ele>34.40820299999999</ele>
+            <desc>Lat.=-34.651516, Long.=150.858765, Alt.=34.408203m, Speed=4.554271Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.554270662818572</mytracks:speed>
+                <mytracks:length>0.0506030073646508</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.651905" lon="150.858475">
+            <ele>31.673828</ele>
+            <desc>Lat.=-34.651905, Long.=150.858475, Alt.=31.673828m, Speed=4.455318Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.455317711212269</mytracks:speed>
+                <mytracks:length>0.05074111837769529</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.652355" lon="150.858444">
+            <ele>35.07128900000001</ele>
+            <desc>Lat.=-34.652355, Long.=150.858444, Alt.=35.071289m, Speed=3.758858Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.758857894252582</mytracks:speed>
+                <mytracks:length>0.05011801534190047</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.652767" lon="150.858688">
+            <ele>37.259766</ele>
+            <desc>Lat.=-34.652767, Long.=150.858688, Alt.=37.259766m, Speed=4.169441Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.169440789568338</mytracks:speed>
+                <mytracks:length>0.05095965501307933</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.653175" lon="150.858932">
+            <ele>25.630859</ele>
+            <desc>Lat.=-34.653175, Long.=150.858932, Alt.=25.630859m, Speed=1.936353Km/h</desc>
+            <extensions>
+                <mytracks:speed>1.936353175997585</mytracks:speed>
+                <mytracks:length>0.05056033292882583</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.65329700000001" lon="150.858414">
+            <ele>15.481445</ele>
+            <desc>Lat.=-34.653297, Long.=150.858414, Alt.=15.481445m, Speed=2.609208Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.609208279228562</mytracks:speed>
+                <mytracks:length>0.04928504527431729</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.65319100000001" lon="150.85791">
+            <ele>4.026733</ele>
+            <desc>Lat.=-34.653191, Long.=150.857910, Alt.=4.026733m, Speed=3.644710Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.644709541671406</mytracks:speed>
+                <mytracks:length>0.04758370790515445</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.653522" lon="150.857529">
+            <ele>3.637877999999999</ele>
+            <desc>Lat.=-34.653522, Long.=150.857529, Alt.=3.637878m, Speed=0.575626Km/h</desc>
+            <extensions>
+                <mytracks:speed>0.5756262893010752</mytracks:speed>
+                <mytracks:length>0.05068691488571082</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.653976" lon="150.857452">
+            <ele>4.655150999999999</ele>
+            <desc>Lat.=-34.653976, Long.=150.857452, Alt.=4.655151m, Speed=3.904193Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.904193476202563</mytracks:speed>
+                <mytracks:length>0.05097141482820013</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.654327" lon="150.857117">
+            <ele>2.342529</ele>
+            <desc>Lat.=-34.654327, Long.=150.857117, Alt.=2.342529m, Speed=3.370478Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.370478158498487</mytracks:speed>
+                <mytracks:length>0.04962092844456105</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.654648" lon="150.85672">
+            <ele>-0.244579</ele>
+            <desc>Lat.=-34.654648, Long.=150.856720, Alt.=-0.244579m, Speed=2.106962Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.106962193845269</mytracks:speed>
+                <mytracks:length>0.05091825301792732</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.655037" lon="150.856461">
+            <ele>8.248047</ele>
+            <desc>Lat.=-34.655037, Long.=150.856461, Alt.=8.248047m, Speed=2.690040Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.690040135239762</mytracks:speed>
+                <mytracks:length>0.04931758522815467</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.655457" lon="150.856232">
+            <ele>3.174316</ele>
+            <desc>Lat.=-34.655457, Long.=150.856232, Alt.=3.174316m, Speed=3.543510Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.54351033432434</mytracks:speed>
+                <mytracks:length>0.05118403816246268</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.655872" lon="150.856003">
+            <ele>3.348021999999999</ele>
+            <desc>Lat.=-34.655872, Long.=150.856003, Alt.=3.348022m, Speed=3.508423Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.508423147273481</mytracks:speed>
+                <mytracks:length>0.05067731216101436</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.656269" lon="150.855743">
+            <ele>3.390808</ele>
+            <desc>Lat.=-34.656269, Long.=150.855743, Alt.=3.390808m, Speed=3.539481Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.539480891787014</mytracks:speed>
+                <mytracks:length>0.0501426459669827</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.65669999999999" lon="150.855545">
+            <ele>0.520126</ele>
+            <desc>Lat.=-34.656700, Long.=150.855545, Alt.=0.520126m, Speed=3.688755Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.688754570327891</mytracks:speed>
+                <mytracks:length>0.05123270236566515</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.657131" lon="150.855362">
+            <ele>1.827301</ele>
+            <desc>Lat.=-34.657131, Long.=150.855362, Alt.=1.827301m, Speed=3.583343Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.583343038099015</mytracks:speed>
+                <mytracks:length>0.05076384883146749</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.657555" lon="150.855148">
+            <ele>-0.083172</ele>
+            <desc>Lat.=-34.657555, Long.=150.855148, Alt.=-0.083172m, Speed=2.241148Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.241147573258732</mytracks:speed>
+                <mytracks:length>0.05104836139089335</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.65797799999999" lon="150.85495">
+            <ele>1.326233</ele>
+            <desc>Lat.=-34.657978, Long.=150.854950, Alt.=1.326233m, Speed=4.652440Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.652440145229646</mytracks:speed>
+                <mytracks:length>0.0504014349066545</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.658409" lon="150.854752">
+            <ele>4.810059</ele>
+            <desc>Lat.=-34.658409, Long.=150.854752, Alt.=4.810059m, Speed=4.009502Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.009502069860443</mytracks:speed>
+                <mytracks:length>0.05123252644821677</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.658848" lon="150.854584">
+            <ele>6.803466999999999</ele>
+            <desc>Lat.=-34.658848, Long.=150.854584, Alt.=6.803467m, Speed=4.284490Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.284489732505854</mytracks:speed>
+                <mytracks:length>0.05117593763892204</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.659302" lon="150.854492">
+            <ele>7.758423000000001</ele>
+            <desc>Lat.=-34.659302, Long.=150.854492, Alt.=7.758423m, Speed=3.920095Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.920095111476</mytracks:speed>
+                <mytracks:length>0.05117893146002597</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.659748" lon="150.854431">
+            <ele>9.859375</ele>
+            <desc>Lat.=-34.659748, Long.=150.854431, Alt.=9.859375m, Speed=3.822573Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.822573184360233</mytracks:speed>
+                <mytracks:length>0.04990572627631224</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.66019799999999" lon="150.854385">
+            <ele>6.203979</ele>
+            <desc>Lat.=-34.660198, Long.=150.854385, Alt.=6.203979m, Speed=3.766067Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.766066638060508</mytracks:speed>
+                <mytracks:length>0.05021422184080677</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.660645" lon="150.854279">
+            <ele>6.010498</ele>
+            <desc>Lat.=-34.660645, Long.=150.854279, Alt.=6.010498m, Speed=3.878866Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.87886609596719</mytracks:speed>
+                <mytracks:length>0.05064075180846053</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.661098" lon="150.854172">
+            <ele>8.042969000000001</ele>
+            <desc>Lat.=-34.661098, Long.=150.854172, Alt.=8.042969m, Speed=3.769944Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.769943608951774</mytracks:speed>
+                <mytracks:length>0.05131312134406581</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.661556" lon="150.854141">
+            <ele>11.994385</ele>
+            <desc>Lat.=-34.661556, Long.=150.854141, Alt.=11.994385m, Speed=3.747390Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.747390458921503</mytracks:speed>
+                <mytracks:length>0.05100614791309824</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.66201" lon="150.854111">
+            <ele>12.679199</ele>
+            <desc>Lat.=-34.662010, Long.=150.854111, Alt.=12.679199m, Speed=4.044556Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.044555675265848</mytracks:speed>
+                <mytracks:length>0.05055712420900649</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.66245299999999" lon="150.853943">
+            <ele>12.154541</ele>
+            <desc>Lat.=-34.662453, Long.=150.853943, Alt.=12.154541m, Speed=2.948588Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.948587541918318</mytracks:speed>
+                <mytracks:length>0.05160010731929146</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.66289500000001" lon="150.853821">
+            <ele>14.79541</ele>
+            <desc>Lat.=-34.662895, Long.=150.853821, Alt.=14.795410m, Speed=4.031907Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.031907357694841</mytracks:speed>
+                <mytracks:length>0.05039884197118551</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.66327700000001" lon="150.854141">
+            <ele>13.620361</ele>
+            <desc>Lat.=-34.663277, Long.=150.854141, Alt.=13.620361m, Speed=3.713981Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.713981379272811</mytracks:speed>
+                <mytracks:length>0.05158298735092412</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.66354" lon="150.853683">
+            <ele>13.818359</ele>
+            <desc>Lat.=-34.663540, Long.=150.853683, Alt.=13.818359m, Speed=1.286098Km/h</desc>
+            <extensions>
+                <mytracks:speed>1.286097706479181</mytracks:speed>
+                <mytracks:length>0.05108665889625633</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.663219" lon="150.853302">
+            <ele>20.543945</ele>
+            <desc>Lat.=-34.663219, Long.=150.853302, Alt.=20.543945m, Speed=2.943875Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.94387543603681</mytracks:speed>
+                <mytracks:length>0.04988233377729039</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.66282700000001" lon="150.853012">
+            <ele>23.466797</ele>
+            <desc>Lat.=-34.662827, Long.=150.853012, Alt.=23.466797m, Speed=4.174676Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.174675748625129</mytracks:speed>
+                <mytracks:length>0.05102381470541823</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.662563" lon="150.85257">
+            <ele>27.830078</ele>
+            <desc>Lat.=-34.662563, Long.=150.852570, Alt.=27.830078m, Speed=3.330622Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.330622274444885</mytracks:speed>
+                <mytracks:length>0.04995915371540829</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.662937" lon="150.852234">
+            <ele>24.374023</ele>
+            <desc>Lat.=-34.662937, Long.=150.852234, Alt.=24.374023m, Speed=2.737530Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.737529788333158</mytracks:speed>
+                <mytracks:length>0.0517090702986583</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.663284" lon="150.851883">
+            <ele>18.311035</ele>
+            <desc>Lat.=-34.663284, Long.=150.851883, Alt.=18.311035m, Speed=3.474890Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.474890207643586</mytracks:speed>
+                <mytracks:length>0.0501928585548518</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.66365399999999" lon="150.852188">
+            <ele>26.298828</ele>
+            <desc>Lat.=-34.663654, Long.=150.852188, Alt.=26.298828m, Speed=3.807368Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.807368404687479</mytracks:speed>
+                <mytracks:length>0.0497072190699805</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.66394" lon="150.8526">
+            <ele>37.04882799999999</ele>
+            <desc>Lat.=-34.663940, Long.=150.852600, Alt.=37.048828m, Speed=2.958425Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.958424564456475</mytracks:speed>
+                <mytracks:length>0.04930716746787531</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.664227" lon="150.853027">
+            <ele>35.52441400000001</ele>
+            <desc>Lat.=-34.664227, Long.=150.853027, Alt.=35.524414m, Speed=3.862986Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.862986377912439</mytracks:speed>
+                <mytracks:length>0.05043343326719018</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.664494" lon="150.85347">
+            <ele>41.478516</ele>
+            <desc>Lat.=-34.664494, Long.=150.853470, Alt.=41.478516m, Speed=4.205221Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.205220880944912</mytracks:speed>
+                <mytracks:length>0.05022902718906424</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.664856" lon="150.853806">
+            <ele>42.612305</ele>
+            <desc>Lat.=-34.664856, Long.=150.853806, Alt.=42.612305m, Speed=4.239765Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.239765348952131</mytracks:speed>
+                <mytracks:length>0.05064173065313723</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.665264" lon="150.85405">
+            <ele>44.14453099999999</ele>
+            <desc>Lat.=-34.665264, Long.=150.854050, Alt.=44.144531m, Speed=4.232824Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.232823789296211</mytracks:speed>
+                <mytracks:length>0.05055872859437141</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.665676" lon="150.854294">
+            <ele>42.802734</ele>
+            <desc>Lat.=-34.665676, Long.=150.854294, Alt.=42.802734m, Speed=4.266271Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.266271265492188</mytracks:speed>
+                <mytracks:length>0.05095815168320433</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.66609999999999" lon="150.854538">
+            <ele>46.615234</ele>
+            <desc>Lat.=-34.666100, Long.=150.854538, Alt.=46.615234m, Speed=3.182708Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.182708149985172</mytracks:speed>
+                <mytracks:length>0.05216105023586809</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.666542" lon="150.854706">
+            <ele>47.916016</ele>
+            <desc>Lat.=-34.666542, Long.=150.854706, Alt.=47.916016m, Speed=4.213129Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.213129234377945</mytracks:speed>
+                <mytracks:length>0.05149380175350821</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.66699200000001" lon="150.854767">
+            <ele>47.23925799999999</ele>
+            <desc>Lat.=-34.666992, Long.=150.854767, Alt.=47.239258m, Speed=4.531290Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.53129041353756</mytracks:speed>
+                <mytracks:length>0.05034776076619235</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.666569" lon="150.85495">
+            <ele>53.423828</ele>
+            <desc>Lat.=-34.666569, Long.=150.854950, Alt.=53.423828m, Speed=2.567532Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.567532024187039</mytracks:speed>
+                <mytracks:length>0.04992423380363688</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.666187" lon="150.85524">
+            <ele>45.443359</ele>
+            <desc>Lat.=-34.666187, Long.=150.855240, Alt.=45.443359m, Speed=3.679100Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.67909989175067</mytracks:speed>
+                <mytracks:length>0.05007654742623713</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.665962" lon="150.855713">
+            <ele>37.10253900000001</ele>
+            <desc>Lat.=-34.665962, Long.=150.855713, Alt.=37.102539m, Speed=3.747931Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.747930860490436</mytracks:speed>
+                <mytracks:length>0.04997241147320581</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.666218" lon="150.856155">
+            <ele>40.898438</ele>
+            <desc>Lat.=-34.666218, Long.=150.856155, Alt.=40.898438m, Speed=2.045811Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.045810562979179</mytracks:speed>
+                <mytracks:length>0.0494404219386635</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.666515" lon="150.856598">
+            <ele>42.109375</ele>
+            <desc>Lat.=-34.666515, Long.=150.856598, Alt.=42.109375m, Speed=4.003604Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.003604036710851</mytracks:speed>
+                <mytracks:length>0.052269274923725</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.666977" lon="150.856705">
+            <ele>43.90625</ele>
+            <desc>Lat.=-34.666977, Long.=150.856705, Alt.=43.906250m, Speed=3.842142Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.842142036657932</mytracks:speed>
+                <mytracks:length>0.05229582216562186</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.667431" lon="150.856659">
+            <ele>39.108398</ele>
+            <desc>Lat.=-34.667431, Long.=150.856659, Alt.=39.108398m, Speed=3.144263Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.144262810988239</mytracks:speed>
+                <mytracks:length>0.05065756751036608</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.66774700000001" lon="150.85704">
+            <ele>29.055664</ele>
+            <desc>Lat.=-34.667747, Long.=150.857040, Alt.=29.055664m, Speed=2.827702Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.827702326297359</mytracks:speed>
+                <mytracks:length>0.04948479071020379</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.668205" lon="150.857086">
+            <ele>23.436523</ele>
+            <desc>Lat.=-34.668205, Long.=150.857086, Alt.=23.436523m, Speed=2.787305Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.787305137058777</mytracks:speed>
+                <mytracks:length>0.05110068236530355</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.668503" lon="150.856659">
+            <ele>21.746094</ele>
+            <desc>Lat.=-34.668503, Long.=150.856659, Alt.=21.746094m, Speed=3.922832Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.922832349451597</mytracks:speed>
+                <mytracks:length>0.05121475567339585</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.668736" lon="150.856186">
+            <ele>23.446289</ele>
+            <desc>Lat.=-34.668736, Long.=150.856186, Alt.=23.446289m, Speed=4.125487Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.125487127779659</mytracks:speed>
+                <mytracks:length>0.0504227098222629</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.669113" lon="150.855896">
+            <ele>17.57373</ele>
+            <desc>Lat.=-34.669113, Long.=150.855896, Alt.=17.573730m, Speed=3.434226Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.434226049843017</mytracks:speed>
+                <mytracks:length>0.04960548738662136</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.669556" lon="150.855789">
+            <ele>18.125488</ele>
+            <desc>Lat.=-34.669556, Long.=150.855789, Alt.=18.125488m, Speed=1.116043Km/h</desc>
+            <extensions>
+                <mytracks:speed>1.11604309138599</mytracks:speed>
+                <mytracks:length>0.05022175965440633</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.670013" lon="150.855728">
+            <ele>12.508789</ele>
+            <desc>Lat.=-34.670013, Long.=150.855728, Alt.=12.508789m, Speed=4.973966Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.973965655501602</mytracks:speed>
+                <mytracks:length>0.05112131368154425</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.670464" lon="150.85582">
+            <ele>14.91748</ele>
+            <desc>Lat.=-34.670464, Long.=150.855820, Alt.=14.917480m, Speed=4.160431Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.160430532705019</mytracks:speed>
+                <mytracks:length>0.05084970651083911</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.67083" lon="150.856155">
+            <ele>14.759766</ele>
+            <desc>Lat.=-34.670830, Long.=150.856155, Alt.=14.759766m, Speed=4.825846Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.825846327625587</mytracks:speed>
+                <mytracks:length>0.05093966594326334</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.671204" lon="150.856461">
+            <ele>10.383301</ele>
+            <desc>Lat.=-34.671204, Long.=150.856461, Alt.=10.383301m, Speed=4.626967Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.62696717429118</mytracks:speed>
+                <mytracks:length>0.05012547772148779</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.67153499999999" lon="150.856827">
+            <ele>10.104004</ele>
+            <desc>Lat.=-34.671535, Long.=150.856827, Alt.=10.104004m, Speed=4.368173Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.368172610538482</mytracks:speed>
+                <mytracks:length>0.0497486325089105</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.671875" lon="150.857208">
+            <ele>11.119873</ele>
+            <desc>Lat.=-34.671875, Long.=150.857208, Alt.=11.119873m, Speed=3.629157Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.629156600586938</mytracks:speed>
+                <mytracks:length>0.05141305184164828</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.67188299999999" lon="150.857758">
+            <ele>11.169922</ele>
+            <desc>Lat.=-34.671883, Long.=150.857758, Alt.=11.169922m, Speed=4.311869Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.311869017970167</mytracks:speed>
+                <mytracks:length>0.05030495938182779</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.67215299999999" lon="150.8582">
+            <ele>12.966553</ele>
+            <desc>Lat.=-34.672153, Long.=150.858200, Alt.=12.966553m, Speed=3.940484Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.940483682459679</mytracks:speed>
+                <mytracks:length>0.05035062483142922</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.672085" lon="150.858734">
+            <ele>9.034668000000002</ele>
+            <desc>Lat.=-34.672085, Long.=150.858734, Alt.=9.034668m, Speed=2.092897Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.092897003111391</mytracks:speed>
+                <mytracks:length>0.04941562368457452</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.67211200000001" lon="150.859283">
+            <ele>14.532227</ele>
+            <desc>Lat.=-34.672112, Long.=150.859283, Alt.=14.532227m, Speed=3.936139Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.936138615808102</mytracks:speed>
+                <mytracks:length>0.05029510453532575</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.672218" lon="150.859818">
+            <ele>14.214844</ele>
+            <desc>Lat.=-34.672218, Long.=150.859818, Alt.=14.214844m, Speed=2.625653Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.625653293916196</mytracks:speed>
+                <mytracks:length>0.05032484237635466</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.672321" lon="150.860336">
+            <ele>20.273926</ele>
+            <desc>Lat.=-34.672321, Long.=150.860336, Alt.=20.273926m, Speed=3.898831Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.898830760136549</mytracks:speed>
+                <mytracks:length>0.04873538450170686</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.67250799999999" lon="150.86084">
+            <ele>20.639648</ele>
+            <desc>Lat.=-34.672508, Long.=150.860840, Alt.=20.639648m, Speed=2.758002Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.758001629061671</mytracks:speed>
+                <mytracks:length>0.05056336319946398</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.672462" lon="150.861389">
+            <ele>20.441895</ele>
+            <desc>Lat.=-34.672462, Long.=150.861389, Alt.=20.441895m, Speed=3.784886Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.784885758765637</mytracks:speed>
+                <mytracks:length>0.0504651434502085</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.67234000000001" lon="150.861908">
+            <ele>29.367188</ele>
+            <desc>Lat.=-34.672340, Long.=150.861908, Alt.=29.367188m, Speed=2.538639Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.538639235385867</mytracks:speed>
+                <mytracks:length>0.0493624295769474</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.672207" lon="150.862442">
+            <ele>35.507812</ele>
+            <desc>Lat.=-34.672207, Long.=150.862442, Alt.=35.507812m, Speed=3.908221Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.908220613464287</mytracks:speed>
+                <mytracks:length>0.05102399134245041</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.672005" lon="150.86293">
+            <ele>34.79980500000001</ele>
+            <desc>Lat.=-34.672005, Long.=150.862930, Alt.=34.799805m, Speed=1.077005Km/h</desc>
+            <extensions>
+                <mytracks:speed>1.07700462530735</mytracks:speed>
+                <mytracks:length>0.04996104789620204</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.671593" lon="150.862701">
+            <ele>34.17382799999999</ele>
+            <desc>Lat.=-34.671593, Long.=150.862701, Alt.=34.173828m, Speed=2.789829Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.789829482234681</mytracks:speed>
+                <mytracks:length>0.05037192120701506</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.671165" lon="150.862518">
+            <ele>31.908203</ele>
+            <desc>Lat.=-34.671165, Long.=150.862518, Alt.=31.908203m, Speed=3.783606Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.783606371669918</mytracks:speed>
+                <mytracks:length>0.0504480849555989</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.670734" lon="150.86235">
+            <ele>27.49707</ele>
+            <desc>Lat.=-34.670734, Long.=150.862350, Alt.=27.497070m, Speed=2.264731Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.264730731260863</mytracks:speed>
+                <mytracks:length>0.05032752866502527</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.670483" lon="150.861877">
+            <ele>27.560059</ele>
+            <desc>Lat.=-34.670483, Long.=150.861877, Alt.=27.560059m, Speed=3.633794Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.633793933362796</mytracks:speed>
+                <mytracks:length>0.05147874738930627</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.670406" lon="150.861328">
+            <ele>28.994629</ele>
+            <desc>Lat.=-34.670406, Long.=150.861328, Alt.=28.994629m, Speed=4.167110Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.167110421431547</mytracks:speed>
+                <mytracks:length>0.05093134959527446</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.67054" lon="150.860809">
+            <ele>19.271973</ele>
+            <desc>Lat.=-34.670540, Long.=150.860809, Alt.=19.271973m, Speed=1.905197Km/h</desc>
+            <extensions>
+                <mytracks:speed>1.905197393334816</mytracks:speed>
+                <mytracks:length>0.04974700199722822</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.67088299999999" lon="150.860458">
+            <ele>16.578125</ele>
+            <desc>Lat.=-34.670883, Long.=150.860458, Alt.=16.578125m, Speed=4.078620Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.078620071512012</mytracks:speed>
+                <mytracks:length>0.0498498008740357</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.671207" lon="150.860077">
+            <ele>17.888184</ele>
+            <desc>Lat.=-34.671207, Long.=150.860077, Alt.=17.888184m, Speed=4.196047Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.196047308224957</mytracks:speed>
+                <mytracks:length>0.05011945395935365</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.671497" lon="150.85965">
+            <ele>17.375977</ele>
+            <desc>Lat.=-34.671497, Long.=150.859650, Alt.=17.375977m, Speed=3.798197Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.798196537163731</mytracks:speed>
+                <mytracks:length>0.05064270947889438</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.671722" lon="150.859161">
+            <ele>17.616211</ele>
+            <desc>Lat.=-34.671722, Long.=150.859161, Alt.=17.616211m, Speed=1.661901Km/h</desc>
+            <extensions>
+                <mytracks:speed>1.661900665412415</mytracks:speed>
+                <mytracks:length>0.05124176129780503</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.671764" lon="150.858612">
+            <ele>19.776367</ele>
+            <desc>Lat.=-34.671764, Long.=150.858612, Alt.=19.776367m, Speed=4.776871Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.776871365365613</mytracks:speed>
+                <mytracks:length>0.05042253107885925</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.671833" lon="150.858078">
+            <ele>21.310059</ele>
+            <desc>Lat.=-34.671833, Long.=150.858078, Alt.=21.310059m, Speed=4.138580Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.13857996452527</mytracks:speed>
+                <mytracks:length>0.04943303846516295</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.671825" lon="150.857513">
+            <ele>19.495605</ele>
+            <desc>Lat.=-34.671825, Long.=150.857513, Alt.=19.495605m, Speed=4.326409Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.326409153225618</mytracks:speed>
+                <mytracks:length>0.05167655377463932</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.671761" lon="150.856964">
+            <ele>17.976562</ele>
+            <desc>Lat.=-34.671761, Long.=150.856964, Alt.=17.976562m, Speed=4.563686Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.563686311328408</mytracks:speed>
+                <mytracks:length>0.05070762568142675</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.671707" lon="150.856415">
+            <ele>17.155762</ele>
+            <desc>Lat.=-34.671707, Long.=150.856415, Alt.=17.155762m, Speed=2.935958Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.935957917481123</mytracks:speed>
+                <mytracks:length>0.05056371968995269</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.67144" lon="150.855972">
+            <ele>21.910156</ele>
+            <desc>Lat.=-34.671440, Long.=150.855972, Alt.=21.910156m, Speed=3.690092Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.690091536327663</mytracks:speed>
+                <mytracks:length>0.05022624591112653</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.671165" lon="150.85553">
+            <ele>19.162109</ele>
+            <desc>Lat.=-34.671165, Long.=150.855530, Alt.=19.162109m, Speed=4.054740Km/h</desc>
+            <extensions>
+                <mytracks:speed>4.054739811574435</mytracks:speed>
+                <mytracks:length>0.05068424764468043</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.67149000000001" lon="150.855148">
+            <ele>26.908691</ele>
+            <desc>Lat.=-34.671490, Long.=150.855148, Alt.=26.908691m, Speed=2.622409Km/h</desc>
+            <extensions>
+                <mytracks:speed>2.622408980919683</mytracks:speed>
+                <mytracks:length>0.05026283880096059</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.671848" lon="150.854797">
+            <ele>30.500977</ele>
+            <desc>Lat.=-34.671848, Long.=150.854797, Alt.=30.500977m, Speed=3.835269Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.835268541856454</mytracks:speed>
+                <mytracks:length>0.05113691389141939</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.672203" lon="150.854462">
+            <ele>31.544434</ele>
+            <desc>Lat.=-34.672203, Long.=150.854462, Alt.=31.544434m, Speed=3.747559Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.747558862461381</mytracks:speed>
+                <mytracks:length>0.04996745149948507</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.672661" lon="150.854431">
+            <ele>30.54248</ele>
+            <desc>Lat.=-34.672661, Long.=150.854431, Alt.=30.542480m, Speed=3.600434Km/h</desc>
+            <extensions>
+                <mytracks:speed>3.600433970336346</mytracks:speed>
+                <mytracks:length>0.05100614791309824</mytracks:length>
+            </extensions>
+        </rtept>
+        <rtept lat="-34.672249" lon="150.854614">
+            <ele>17.316895</ele>
+            <desc>Lat.=-34.672249, Long.=150.854614, Alt.=17.316895m, Speed=1.170557Km/h</desc>
+            <extensions>
+                <mytracks:speed>1.170556520257748</mytracks:speed>
+                <mytracks:length>0.04877318834407282</mytracks:length>
+            </extensions>
+        </rtept>
+    </rte>
+</gpx>
