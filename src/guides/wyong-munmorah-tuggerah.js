@@ -1,21 +1,21 @@
 {
 	"location" : "Lake Tuggerah",
-	"description" : ["Part of this walk covers <a href=\"http://www.nationalparks.nsw.gov.au/wyrrabalong-national-park\" target=\"_system\">Wyrrabalong National Park</a>."],
+	"description" : ["Part of this walk covers <a href=\"http://www.nationalparks.nsw.gov.au/wyrrabalong-national-park\">Wyrrabalong National Park</a>."],
 	"duration" : 13,
 	"length" : 61,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Wyong",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Wyong at <a href=\"https://transportnsw.info/trip#/?from=Wyong\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Wyong at <a href=\"https://transportnsw.info/trip#/?from=Wyong\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Tuggerah",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Tuggerah using <a href=\"https://transportnsw.info/trip#/?to=Tuggerah\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Tuggerah using <a href=\"https://transportnsw.info/trip#/?to=Tuggerah\">transportnsw.info</a>."
 		}
 	},
 	"indicator" : {

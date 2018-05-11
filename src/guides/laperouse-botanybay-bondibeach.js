@@ -1,29 +1,28 @@
 {
 	"location" : "Botany Bay",
-	"description" : ["This walk covers <a href=\"http://www.nationalparks.nsw.gov.au/kamay-botany-bay-national-park\" target=\"_system\">Kamay Botany Bay National Park</a> and the famous <a href=\"http://bonditocoogeewalk.com.au/\" target=\"_system\">Bondi to Coogee walk</a>."],
+	"description" : ["This walk covers <a href=\"http://www.nationalparks.nsw.gov.au/kamay-botany-bay-national-park\">Kamay Botany Bay National Park</a> and the famous <a href=\"http://bonditocoogeewalk.com.au/\">Bondi to Coogee walk</a>."],
 	"duration" : 8,
 	"length" : 23,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "La Perouse",
-			"method" : "bus",
+			"type" : "bus",
 			"icon" : "./inc/img/marker-bus.png",
-			"description" : "Get the bus to La Perouse using <a href=\"https://transportnsw.info/trip#/?to=La Perouse\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the bus to La Perouse using <a href=\"https://transportnsw.info/trip#/?to=La Perouse\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Bondi Beach",
-			"method" : "bus",
+			"type" : "bus",
 			"icon" : "./inc/img/marker-bus.png",
-			"description" : "Plan your return trip from Bondi Beach at <a href=\"https://transportnsw.info/trip#/?from=Bondi Beach\" target=\"_system\">transportnsw.info</a>.",
+			"description" : "Plan your return trip from Bondi Beach at <a href=\"https://transportnsw.info/trip#/?from=Bondi Beach\">transportnsw.info</a>.",
 			"lat" : -33.892822,
 			"lon" : 151.273468
 		},
 		"coogee" : {
-			"location" : "Coogee Beach",
-			"method" : "bus",
+			"type" : "bus",
 			"icon" : "./inc/img/marker-bus.png",
-			"description" : "Use Coogee Beach as an alternate end at <a href=\"https://transportnsw.info/trip#/?from=Coogee Beach\" target=\"_system\">transportnsw.info</a>.",
+			"description" : "Use Coogee Beach as an alternate end at <a href=\"https://transportnsw.info/trip#/?from=Coogee Beach\">transportnsw.info</a>.",
 			"lat" : -33.920504780004606,
 			"lon" : 151.2570640600152
 		}

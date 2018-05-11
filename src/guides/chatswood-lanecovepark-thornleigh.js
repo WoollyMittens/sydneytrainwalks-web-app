@@ -1,21 +1,21 @@
 {
 	"location" : "Lane Cove Park",
-	"description" : ["This walk covers the full length of <a href=\"http://www.nationalparks.nsw.gov.au/lane-cove-national-park\" target=\"_system\">Lane Cove National Park</a>."],
+	"description" : ["This walk covers the full length of <a href=\"http://www.nationalparks.nsw.gov.au/lane-cove-national-park\">Lane Cove National Park</a>."],
 	"duration" : 6,
 	"length" : 19,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Chatswood",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Chatswood using <a href=\"https://transportnsw.info/trip#/?to=Chatswood\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Chatswood using <a href=\"https://transportnsw.info/trip#/?to=Chatswood\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Thornleigh",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Thornleigh at <a href=\"https://transportnsw.info/trip#/?from=Thornleigh\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Thornleigh at <a href=\"https://transportnsw.info/trip#/?from=Thornleigh\">transportnsw.info</a>."
 		}
 	},
 	"indicator" : {

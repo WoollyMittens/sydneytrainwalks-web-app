@@ -64,6 +64,18 @@ SydneyTrainWalks.prototype.Main = function(config, context) {
 		this.footer.update(id);
 	};
 
+	this.remoteLink = function(evt) {
+		var href = evt.target.getAttribute("href");
+		if(/^http/i.test(href)) {
+			evt.preventDefault();
+			window.open(href, '_system', 'location=yes');
+		}
+	};
+
+	// EVENTS
+
+	document.body.addEventListener("click", this.remoteLink.bind(this));
+
 };
 
 // return as a require.js module

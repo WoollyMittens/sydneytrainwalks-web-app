@@ -1,8 +1,8 @@
 {
 	"location" : "Springwood Ridge",
 	"description" : [
-		"The first part of this walk follows Springwood Ridge in <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park\" target=\"_system\">Blue Mountains National Park</a>.",
-		"The second part of this walk covers <a href=\"http://www.nationalparks.nsw.gov.au/yellomundee-regional-park\" target=\"_system\">Yellomundee Regional Park</a>."
+		"The first part of this walk follows Springwood Ridge in <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park\">Blue Mountains National Park</a>.",
+		"The second part of this walk covers <a href=\"http://www.nationalparks.nsw.gov.au/yellomundee-regional-park\">Yellomundee Regional Park</a>."
 	],
 	"duration" : 8,
 	"length" : 32,
@@ -10,29 +10,29 @@
 	"markers" : {
 		"start" : {
 			"location" : "Springwood",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Springwood using <a href=\"https://transportnsw.info/trip#/?to=Springwood\" target=\"_system\">transportnsw.info</a>.",
+			"description" : "Get the train to Springwood using <a href=\"https://transportnsw.info/trip#/?to=Springwood\">transportnsw.info</a>.",
 			"lat" : -33.699158999999995,
 			"lon" : 150.563733
 		},
 		"end" : {
 			"location" : "Richmond",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Richmond at <a href=\"https://transportnsw.info/trip#/?from=Richmond\" target=\"_system\">transportnsw.info</a>.",
+			"description" : "Plan your return trip from Richmond at <a href=\"https://transportnsw.info/trip#/?from=Richmond\">transportnsw.info</a>.",
 			"lat" : -33.59847776999144,
 			"lon" : 150.75223465000673
 		},
 		"bus" : {
-			"location" : "Winmalee",
-			"method" : "bus",
+			"type" : "bus",
 			"icon" : "./inc/img/marker-bus.png",
-			"description" : "To cut some urban walking time off the start, take the bus from Springwood Station to the Winmalee Shops using <a href=\"https://transportnsw.info/trip#/?to=Winmalee\" target=\"_system\">transportnsw.info</a>.",
+			"description" : "To cut some urban walking time off the start, take the bus from Springwood Station to the Winmalee Shops using <a href=\"https://transportnsw.info/trip#/?to=Winmalee\">transportnsw.info</a>.",
 			"lat" : -33.672309999999996,
 			"lon" : 150.60895399999998
 		},
 		"alternative" : {
+			"type" : "warning",
 			"icon" : "./inc/img/marker-warning.png",
 			"description" : "The left fork leads down through the Blue Gum Swamp, the right across Beehive Ridge. Both are equally valid.",
 			"lat" : -33.66343,

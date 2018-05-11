@@ -1,8 +1,8 @@
 {
 	"location" : "Bouddi",
 	"description" : [
-		"Part of this walk follows the <a href=\"http://www.5landswalk.com.au/\" target=\"_system\">5 Lands Walk</a> from Terrigal.",
-		"This walk follows the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/bouddi-coastal-walk\" target=\"_system\">Bouddi Coastal Walk</a>.",
+		"Part of this walk follows the <a href=\"http://www.5landswalk.com.au/\">5 Lands Walk</a> from Terrigal.",
+		"This walk follows the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/bouddi-coastal-walk\">Bouddi Coastal Walk</a>.",
 		"Please note that this is not a very detailed guide yet. Be sure to check the map often for direction."
 	],
 	"duration" : 9,
@@ -11,17 +11,17 @@
 	"markers" : {
 		"start" : {
 			"location" : "Terrigal",
-			"method" : "bus",
+			"type" : "bus",
 			"icon" : "./inc/img/marker-bus.png",
-			"description" : "Get the train to Gosford and then a bus to Terrigal using <a href=\"https://transportnsw.info/trip#/?to=Terrigal\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Gosford and then a bus to Terrigal using <a href=\"https://transportnsw.info/trip#/?to=Terrigal\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Woy Woy",
-			"method" : "train",
+			"type" : "train",
 			"lat" : -33.485401154,
 			"lon" : 151.323638916,
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Woy Woy at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Woy Woy at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>."
 		}
 	},
 	"indicator" : {

@@ -1,8 +1,8 @@
 {
 	"location" : "Berowra Valley",
 	"description" : [
-		"This walk follows a section of the Great North Walk in <a href=\"http://www.nationalparks.nsw.gov.au/berowra-valley-national-park/great-north-walk/walking\" target=\"_system\">Berowra Valley National Park</a>.",
-		"The rules for passing near the rifle range are prone to change, follow the instructions on the signs near the Steele bridge and check <a href=\"http://www.nationalparks.nsw.gov.au/visit-a-park/parks/Berowra-Valley-National-Park/Local-alerts\" target=\"_system\">here</a>."
+		"This walk follows a section of the Great North Walk in <a href=\"http://www.nationalparks.nsw.gov.au/berowra-valley-national-park/great-north-walk/walking\">Berowra Valley National Park</a>.",
+		"The rules for passing near the rifle range are prone to change, follow the instructions on the signs near the Steele bridge and check <a href=\"http://www.nationalparks.nsw.gov.au/visit-a-park/parks/Berowra-Valley-National-Park/Local-alerts\">here</a>."
 	],
 	"duration" : 7,
 	"length" : 20,
@@ -10,17 +10,18 @@
 	"markers" : {
 		"start" : {
 			"location" : "Berowra",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Berowra using <a href=\"https://transportnsw.info/trip#/?to=Berowra\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Berowra using <a href=\"https://transportnsw.info/trip#/?to=Berowra\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Asquith",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Asquith at <a href=\"https://transportnsw.info/trip#/?from=Asquith\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Asquith at <a href=\"https://transportnsw.info/trip#/?from=Asquith\">transportnsw.info</a>."
 		},
 		"warning" : {
+			"type" : "warning",
 			"icon" : "./inc/img/marker-warning.png",
 			"description" : "Read the signs near the Steele bridge to find out if the detour past the rifle range is still in effect.",
 			"lat" : -33.68011,

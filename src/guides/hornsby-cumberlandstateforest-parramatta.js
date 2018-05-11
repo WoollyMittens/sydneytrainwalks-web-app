@@ -1,8 +1,8 @@
 {
 	"location" : "Cumberland State Forest",
 	"description" : [
-		"This walk follow part of the <a href=\"http://www.thegreatnorthwalk.com/\" target=\"_system\">Great North Walk</a> through.", "<a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/berowra-valley-national-park\" target=\"_system\">Berowara Valley National Park</a>.",
-		"Then continues through <a href=\"http://www.forestrycorporation.com.au/visit/forests/cumberland-state-forest\" target=\"_system\">Cumberland State Forest</a> and <a href=\"https://en.wikipedia.org/wiki/Lake_Parramatta\" target=\"_system\">Lake Parramatta Reserve</a> to <a href=\"https://www.parrapark.com.au/\" target=\"_system\">Parramatta Park</a>."
+		"This walk follow part of the <a href=\"http://www.thegreatnorthwalk.com/\">Great North Walk</a> through.", "<a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/berowra-valley-national-park\">Berowara Valley National Park</a>.",
+		"Then continues through <a href=\"http://www.forestrycorporation.com.au/visit/forests/cumberland-state-forest\">Cumberland State Forest</a> and <a href=\"https://en.wikipedia.org/wiki/Lake_Parramatta\">Lake Parramatta Reserve</a> to <a href=\"https://www.parrapark.com.au/\">Parramatta Park</a>."
 	],
 	"duration" : 8,
 	"length" : 30,
@@ -10,25 +10,24 @@
 	"markers" : {
 		"start" : {
 			"location" : "Hornsby",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Parramatta using <a href=\"https://transportnsw.info/trip#/?to=Parramatta\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Parramatta using <a href=\"https://transportnsw.info/trip#/?to=Parramatta\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Parramatta",
-			"lat" : -33.8138302,
-			"lon" : 151.0015822,
-			"method" : "ferry",
+			"lat" : -33.813842,
+			"lon" : 151.010350,
+			"type" : "ferry",
 			"icon" : "./inc/img/marker-ferry.png",
-			"description" : "Plan your return trip from Parramatta Wharf at <a href=\"https://transportnsw.info/trip#/?from=Parramatta Wharf\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Parramatta Wharf at <a href=\"https://transportnsw.info/trip#/?from=Parramatta Wharf\">transportnsw.info</a>."
 		},
 		"train" : {
-			"location" : "Parramatta",
-			"lat" : -33.8169132,
-			"lon" : 150.9960142,
-			"method" : "train",
+			"lat" : -33.817044,
+			"lon" : 151.005077,
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Parramatta Station at <a href=\"https://transportnsw.info/trip#/?from=Parramatta Station\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Parramatta Station at <a href=\"https://transportnsw.info/trip#/?from=Parramatta Station\">transportnsw.info</a>."
 		}
 	},
 	"indicator" : {

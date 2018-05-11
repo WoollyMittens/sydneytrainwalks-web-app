@@ -1,25 +1,26 @@
 {
 	"location" : "Illawarra",
-	"description" : ["This walk follows part of the <a href=\"http://www.grandpacificdrive.com.au/\" target=\"_system\">Grand Pacific Drive</a>."],
+	"description" : ["This walk follows part of the <a href=\"http://www.grandpacificdrive.com.au/\">Grand Pacific Drive</a>."],
 	"duration" : 6,
 	"length" : 20,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Port Kembla",
-			"method" : "train",
+			"type" : "train",
 			"lat" : -34.477161407,
 			"lon" : 150.902664185,
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Port Kembla at <a href=\"https://transportnsw.info/trip#/?from=Port Kembla\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Port Kembla at <a href=\"https://transportnsw.info/trip#/?from=Port Kembla\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Shell Harbour",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Shell Harbour Junction using <a href=\"https://transportnsw.info/trip#/?to=Shell Harbour Junction\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Shell Harbour Junction using <a href=\"https://transportnsw.info/trip#/?to=Shell Harbour Junction\">transportnsw.info</a>."
 		},
 		"kiosk" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -34.57801111111112,
 			"lon" : 150.87062500000002,

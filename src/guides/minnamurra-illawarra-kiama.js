@@ -1,21 +1,21 @@
 {
 	"location" : "Illawarra",
-	"description" : ["This walk follows part of the <a href=\"http://www.visitnsw.com/destinations/south-coast/kiama-area/kiama-coast-walk\" target=\"_system\">Kiama Coast Walk</a>."],
+	"description" : ["This walk follows part of the <a href=\"http://www.visitnsw.com/destinations/south-coast/kiama-area/kiama-coast-walk\">Kiama Coast Walk</a>."],
 	"duration" : 3,
 	"length" : 9,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Minnamurra",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Minnamurra at <a href=\"https://transportnsw.info/trip#/?from=Minnamurra\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Minnamurra at <a href=\"https://transportnsw.info/trip#/?from=Minnamurra\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Kiama",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Kiama using <a href=\"https://transportnsw.info/trip#/?to=Kiama\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Kiama using <a href=\"https://transportnsw.info/trip#/?to=Kiama\">transportnsw.info</a>."
 		}
 	},
 	"indicator" : {

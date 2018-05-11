@@ -2,7 +2,8 @@
 var ex = require('exif');
 var fs = require('fs');
 var source = './src/large/';
-var destination = './inc/js/exif-data.js';
+var destPath = './inc/js/exif-data.js';
+var jsonPath = './inc/json/photos.json';
 var exifs = {};
 
 // generates a resize queue
@@ -70,12 +71,21 @@ var parseImages = function (queue) {
 			}
 		});
 	} else {
-		// write the exif data to disk
-		fs.writeFile(destination, 'var ExifData = ' + JSON.stringify(exifs) + ';', function (error) {
+		var data = JSON.stringify(exifs);
+		// export as json
+		fs.writeFile(jsonPath, data, function (error) {
 			if (error) {
 				console.log('ERROR: ' + error);
 			} else {
-				console.log('SAVED AS: ' + destination);
+				console.log('SAVED AS: ' + jsonPath);
+			}
+		});
+		// write the exif data to disk
+		fs.writeFile(destPath, 'var ExifData = ' + data + ';', function (error) {
+			if (error) {
+				console.log('ERROR: ' + error);
+			} else {
+				console.log('SAVED AS: ' + destPath);
 			}
 		});
 	}

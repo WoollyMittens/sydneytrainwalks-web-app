@@ -98,9 +98,9 @@
 					?>
 					<h3>What to bring</h3>
 					<ul>
-						<li>Check the <a href="http://www.nationalparks.nsw.gov.au/alert/state-alerts" target="_blank">national parks website</a> for possible detours, closures and restrictions.</li>
-						<li>Install an OpenStreetMap app for <a href="http://wiki.openstreetmap.org/wiki/Android" target="_blank">Android</a> or <a href="http://wiki.openstreetmap.org/wiki/Apple_iOS" target="_system">iOS</a> and preload the area.</li>
-						<li>Download the <a href="<?php print $inc ?>gpx/<?php print $id ?>.gpx" target="_blank">GPS data</a> if your device can import it.</li>
+						<li>Check the <a href="http://www.nationalparks.nsw.gov.au/alert/state-alerts">national parks website</a> for possible detours, closures and restrictions.</li>
+						<li>Install an OpenStreetMap app for <a href="http://wiki.openstreetmap.org/wiki/Android">Android</a> or <a href="http://wiki.openstreetmap.org/wiki/Apple_iOS">iOS</a> and preload the area.</li>
+						<li>Download the <a href="<?php print $inc ?>gpx/<?php print $id ?>.gpx">GPS data</a> if your device can import it.</li>
 						<li>Print out this map and get a better one from a visitor information centre if possible.</li>
 						<li>Be sure to leave enough charge in your phone's battery for emergency calls.</li>
 						<li>Bring plenty of water, comfortable shoes, a hat and SPF 30 sunscreen.</li>
@@ -202,7 +202,7 @@
 					photomapSettings.missing = './inc/img/missing.png';
 					photomapSettings.minZoom = 10;
 					photomapSettings.maxZoom = 15;
-					photomapSettings.credit = 'Maps &copy; <a href="http://www.4umaps.eu/mountain-bike-hiking-bicycle-outdoor-topographic-map.htm" target="_blank">4UMaps</a>, Data &copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> and contributors, CC BY-SA';
+					photomapSettings.credit = 'Maps &copy; <a href="http://www.4umaps.eu/mountain-bike-hiking-bicycle-outdoor-topographic-map.htm">4UMaps</a>, Data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> and contributors, CC BY-SA';
 					photomapSettings.indicator = { 'icon' : './inc/img/marker-photo.png', 'description' : 'Photo taken at this location.' };
 					photomapSettings.element = document.querySelector('.photomap-leaflet');
 					photomapSettings.indicator.clicked = function () { document.body.className = document.body.className.replace('screen-map', 'screen-photos'); };
@@ -213,11 +213,13 @@
 				</script>
 			</aside>
 			<footer class="toolbar">
-				<a id="footer-to-menu" href="index.php">Menu</a>
-				<a id="footer-to-overview" href="overview.php">Overview</a>
-				<a id="footer-to-guide" onclick="document.body.className='screen-guide'" href="#">Guide</a>
-				<a id="footer-to-photos" onclick="document.body.className='screen-photos'" href="#">Photos</a>
-				<a id="footer-to-map" onclick="document.body.className='screen-map'" href="#">Map</a>
+				<nav>
+					<a id="footer-to-menu" href="index.php">Menu</a>
+					<a id="footer-to-overview" href="overview.php">Overview</a>
+					<a id="footer-to-map" onclick="document.body.className='screen-map'" href="#">Map</a>
+					<a id="footer-to-guide" onclick="document.body.className='screen-guide'" href="#">Guide</a>
+					<a id="footer-to-photos" onclick="document.body.className='screen-photos'" href="#">Photos</a>
+				</nav>
 			</footer>
 		</section>
 	</body>

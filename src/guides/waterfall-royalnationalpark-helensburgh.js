@@ -1,25 +1,26 @@
 {
 	"location" : "Royal National Park",
-	"description" : ["This walk traverses the <a href=\"http://www.nationalparks.nsw.gov.au/Royal-National-Park\" target=\"_system\">Royal National Park</a>."],
+	"description" : ["This walk traverses the <a href=\"http://www.nationalparks.nsw.gov.au/Royal-National-Park\">Royal National Park</a>."],
 	"duration" : 9,
 	"length" : 26,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Waterfall",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Waterfall using <a href=\"https://transportnsw.info/trip#/?to=Waterfall\" target=\"_system\">transportnsw.info</a>.",
+			"description" : "Get the train to Waterfall using <a href=\"https://transportnsw.info/trip#/?to=Waterfall\">transportnsw.info</a>.",
 			"lat" : -34.1350492,
 			"lon" : 150.99596526007738
 		},
 		"end" : {
 			"location" : "Helensburgh",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Helensburgh at <a href=\"https://transportnsw.info/trip#/?from=Helensburgh\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Helensburgh at <a href=\"https://transportnsw.info/trip#/?from=Helensburgh\">transportnsw.info</a>."
 		},
 		"kiosk" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -34.17031111111111,
 			"lon" : 151.06652222222223,

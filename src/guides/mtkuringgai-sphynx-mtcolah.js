@@ -1,6 +1,6 @@
 {
 	"location" : "Sphynx Memorial",
-	"description" : ["This walk covers part of Ku-ring-gai Chase National Park near the <a href=\"http://www.nationalparks.nsw.gov.au/ku-ring-gai-chase-national-park/kalkari-discovery-centre/tourist-information\" target=\"_system\">Kalkari Discovery Centre</a>."],
+	"description" : ["This walk covers part of Ku-ring-gai Chase National Park near the <a href=\"http://www.nationalparks.nsw.gov.au/ku-ring-gai-chase-national-park/kalkari-discovery-centre/tourist-information\">Kalkari Discovery Centre</a>."],
 	"duration" : 7,
 	"length" : 23,
 	"zoom" : 13,
@@ -9,29 +9,32 @@
 			"location" : "Mount Kuring-gai",
 			"lat" : -33.653977777777776,
 			"lon" : 151.13766388888888,
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Mount Kuring-gai using <a href=\"https://transportnsw.info/trip#/?to=Mount Kuring-gai\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Mount Kuring-gai using <a href=\"https://transportnsw.info/trip#/?to=Mount Kuring-gai\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Mount Colah",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Mount Colah at <a href=\"https://transportnsw.info/trip#/?from=Mount Colah\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Mount Colah at <a href=\"https://transportnsw.info/trip#/?from=Mount Colah\">transportnsw.info</a>."
 		},
 		"kioska" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.65230555555556,
 			"lon" : 151.15553333333335,
 			"description" : "Apply Tree Bay Kiosk"
 		},
 		"kioskb" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.65925555555555,
 			"lon" : 151.1600138888889,
 			"description" : "Bobbin Head Inn"
 		},
 		"info" : {
+			"type" : "info",
 			"icon" : "./inc/img/marker-info.png",
 			"lat" : -33.66540833333333,
 			"lon" : 151.14903611111112,

@@ -1,35 +1,38 @@
 {
 	"location" : "Royal National Park",
-	"description" : ["This walk follows the coastal walk through the <a href=\"http://www.nationalparks.nsw.gov.au/royal-national-park\" target=\"_system\">Royal National Park</a>."],
+	"description" : ["This walk follows the coastal walk through the <a href=\"http://www.nationalparks.nsw.gov.au/royal-national-park\">Royal National Park</a>."],
 	"duration" : 9,
 	"length" : 25,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Cronulla",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Cronulla and ferry to Bundeena using <a href=\"https://transportnsw.info/trip#/?to=Bundeena\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Cronulla and ferry to Bundeena using <a href=\"https://transportnsw.info/trip#/?to=Bundeena\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Loftus",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Loftus at <a href=\"https://transportnsw.info/trip#/?from=Loftus\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Loftus at <a href=\"https://transportnsw.info/trip#/?from=Loftus\">transportnsw.info</a>."
 		},
 		"ferrya" : {
+			"type" : "ferry",
 			"icon" : "./inc/img/marker-ferry.png",
 			"lat" : -34.05625833333333,
 			"lon" : 151.1499861111111,
-			"description" : "Transport from this location: <a href=\"https://transportnsw.info/trip#/?from=Cronulla&itd_name_destination=Bundeena\" target=\"_system\">transportnsw.info</a>"
+			"description" : "Transport from this location: <a href=\"https://transportnsw.info/trip#/?from=Cronulla&itd_name_destination=Bundeena\">transportnsw.info</a>"
 		},
 		"ferryb" : {
+			"type" : "ferry",
 			"icon" : "./inc/img/marker-ferry.png",
 			"lat" : -34.082769444444445,
 			"lon" : 151.15113055555557,
-			"description" : "Transport to this location: <a href=\"https://transportnsw.info/trip#/?from=Cronulla&itd_name_destination=Bundeena\" target=\"_system\">transportnsw.info</a>"
+			"description" : "Transport to this location: <a href=\"https://transportnsw.info/trip#/?from=Cronulla&itd_name_destination=Bundeena\">transportnsw.info</a>"
 		},
 		"kiosk" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -34.075375,
 			"lon" : 151.0561138888889,

@@ -1,7 +1,8 @@
 // constants
 var fs = require('fs');
 var source = './src/guides/';
-var destination = './inc/js/guide-data.js';
+var destPath = './inc/js/guide-data.js';
+var jsonPath = './inc/json/guides.json';
 var GuideData = {};
 
 // generates a resize queue
@@ -47,12 +48,21 @@ var parseGuides = function (queue) {
 			}
 		});
 	} else {
-		// write the exif data to disk
-		fs.writeFile(destination, 'var GuideData = ' + JSON.stringify(GuideData) + ';', function (error) {
+		var data = JSON.stringify(GuideData);
+		// export as json
+		fs.writeFile(jsonPath, data, function (error) {
 			if (error) {
 				console.log('ERROR: ' + error);
 			} else {
-				console.log('SAVED AS: ' + destination);
+				console.log('SAVED AS: ' + jsonPath);
+			}
+		});
+		// write the exif data to disk
+		fs.writeFile(destPath, 'var GuideData = ' + data + ';', function (error) {
+			if (error) {
+				console.log('ERROR: ' + error);
+			} else {
+				console.log('SAVED AS: ' + destPath);
 			}
 		});
 	}

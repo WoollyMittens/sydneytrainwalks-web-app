@@ -1,7 +1,7 @@
 {
 	"location" : "Ku-ring-gai Chase",
 	"description" : [
-		"This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/ku-ring-gai-chase-national-park\" target=\"_system\">Ku-ring-gai Chase National Park</a>."
+		"This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/ku-ring-gai-chase-national-park\">Ku-ring-gai Chase National Park</a>."
 	],
 	"duration" : 3,
 	"length" : 9,
@@ -9,15 +9,15 @@
 	"markers" : {
 		"start" : {
 			"location" : "Mount Kuring-gai",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Mount Kuring-gai using <a href=\"https://transportnsw.info/trip#/?to=Mount Kuring-gai\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Mount Kuring-gai using <a href=\"https://transportnsw.info/trip#/?to=Mount Kuring-gai\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Berowra",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Berowra at <a href=\"https://transportnsw.info/trip#/?from=Berowra\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Berowra at <a href=\"https://transportnsw.info/trip#/?from=Berowra\">transportnsw.info</a>."
 		}
 	},
 	"indicator" : {

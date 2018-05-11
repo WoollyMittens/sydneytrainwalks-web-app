@@ -1,23 +1,24 @@
 {
 	"location" : "Nepean River",
-	"description" : ["Part of this walk covers <a href=\"http://www.nationalparks.nsw.gov.au/yellomundee-regional-park\" target=\"_system\">Yellomundee Regional Park</a>."],
+	"description" : ["Part of this walk covers <a href=\"http://www.nationalparks.nsw.gov.au/yellomundee-regional-park\">Yellomundee Regional Park</a>."],
 	"duration" : 8,
 	"length" : 31,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Blaxland",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Blaxland using <a href=\"https://transportnsw.info/trip#/?to=Blaxland\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Blaxland using <a href=\"https://transportnsw.info/trip#/?to=Blaxland\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Richmond",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Richmond at <a href=\"https://transportnsw.info/trip#/?from=Richmond\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Richmond at <a href=\"https://transportnsw.info/trip#/?from=Richmond\">transportnsw.info</a>."
 		},
 		"kiosk" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.61356299992081,
 			"lon" : 150.691867,

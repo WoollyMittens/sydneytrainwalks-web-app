@@ -42,22 +42,15 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 	};
 
 	this.updateTitle = function(id) {
-		var iconReg = new RegExp('.\/inc\/img\/marker-|.png');
 		// fill in the title template
 		this.config.title.innerHTML = this.config.titleTemplate.innerHTML
-			.replace(/{startTransport}/g, GuideData[id].markers.start.method)
+			.replace(/{startTransport}/g, GuideData[id].markers.start.type)
 			.replace(/{startLocation}/g, GuideData[id].markers.start.location)
 			.replace(/{walkLocation}/g, GuideData[id].location)
 			.replace(/{walkDuration}/g, GuideData[id].duration)
 			.replace(/{walkLength}/g, GuideData[id].length)
-			.replace(/{endTransport}/g, GuideData[id].markers.end.method)
+			.replace(/{endTransport}/g, GuideData[id].markers.end.type)
 			.replace(/{endLocation}/g, GuideData[id].markers.end.location);
-		// add event handlers to expand the labels
-		var allSigns = document.querySelectorAll('.sign-short');
-		for (var a = 0, b = allSigns.length; a < b; a += 1) {
-			// add a click event handler
-			allSigns[a].addEventListener('click', this.onSignExpanded.bind(this, allSigns[a], allSigns));
-		}
 	};
 
 	this.updateGuide = function(id) {
@@ -79,12 +72,6 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			.replace(/{there}/g, there)
 			.replace(/{back}/g, back)
 			.replace(/{landmarks}/g, landmarks);
-		// update the event handlers
-		var allLinks = this.config.guide.querySelectorAll('a[target]');
-		for (var a = 0, b = allLinks.length; a < b; a += 1) {
-			// add a click event handler
-			allLinks[a].addEventListener('click', this.onLinkClicked.bind(this, allLinks[a]));
-		}
 		// start the script for the image viewer
 		this.config.photocylinder = new useful.Photocylinder().init({
 			'elements': document.querySelectorAll('.guide .cylinder-image'),
@@ -116,7 +103,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			: id;
 		var landmark,
 			landmarks = (!GuideData[id].landmarks)
-				? "<p>Detailed guides like <a href=\"http://www.sydneytrainwalks.com/details.php?id=adamstown-awabakal-newcastle\" target=\"_system\">this</a> will be rolled out in increments as they are completed.</p>"
+				? "<p>Detailed guides like <a href=\"http://www.sydneytrainwalks.com/details.php?id=adamstown-awabakal-newcastle\">this</a> will be rolled out in increments as they are completed.</p>"
 				: "";
 		var thumbnailTemplate = this.config.thumbnailTemplate.innerHTML;
 		// fill the guide with landmarks
@@ -229,16 +216,6 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		evt.preventDefault();
 		// return from the map
 		document.body.className = document.body.className.replace(/screen-map/, 'screen-' + this.returnTo);
-	};
-
-	this.onLinkClicked = function(link, evt) {
-		// if the link goes to _blank or _system
-		if (link.getAttribute('target') && link.getAttribute('target').match(/_blank|_system/i)) {
-			// cancel the click
-			evt.preventDefault();
-			// open it using javascript
-			window.open(link.getAttribute('href'), '_system', 'location=yes');
-		}
 	};
 
 	this.onSignExpanded = function(sign, signs, evt) {

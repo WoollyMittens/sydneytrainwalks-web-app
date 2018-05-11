@@ -1,31 +1,33 @@
 {
 	"location" : "Patonga",
-	"description" : ["This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/brisbane-water-national-park\" target=\"_system\">Brisbane Water National Park</a>."],
+	"description" : ["This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/brisbane-water-national-park\">Brisbane Water National Park</a>."],
 	"duration" : 10,
 	"length" : 35,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Woy Woy",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Woy Woy using <a href=\"https://transportnsw.info/trip#/?to=Woy Woy\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Woy Woy using <a href=\"https://transportnsw.info/trip#/?to=Woy Woy\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Woy Woy",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Woy Woy at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\" target=\"_system\">transportnsw.info</a>.",
+			"description" : "Plan your return trip from Woy Woy at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>.",
 			"lat" : -33.485393,
 			"lon" : 151.32345
 		},
 		"kioska" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.514833333333335,
 			"lon" : 151.33609722222224,
 			"description" : "Ettalong Beach Kiosk"
 		},
 		"kioskb" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.550048,
 			"lon" : 151.274933,

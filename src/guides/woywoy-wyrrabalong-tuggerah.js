@@ -1,10 +1,10 @@
 {
 	"location" : "Wyrrabalong",
 	"description" : [
-		"This walk passes through part of <a href=\"http://www.nationalparks.nsw.gov.au/bouddi-national-park\" target=\"_system\">Bouddi National Park</a>.",
-		"It then follow the <a href=\"http://www.5landswalk.com.au/\" target=\"_system\">5 Lands Walk</a> to Terrigal.",
-		"Then continues along the Coast through <a href=\"http://www.nationalparks.nsw.gov.au/visit-a-park/parks/wyrrabalong-national-park\" target=\"_system\">Wyrrabalong National Park</a>.",
-		"From Bateau Bay the walk then cuts across to the <a href=\"https://www.icentralcoast.com/tuggerah-lake.html\" target=\"_system\">Tuggerah Lake Cycle Way</a> to Chittaway bay."
+		"This walk passes through part of <a href=\"http://www.nationalparks.nsw.gov.au/bouddi-national-park\">Bouddi National Park</a>.",
+		"It then follow the <a href=\"http://www.5landswalk.com.au/\">5 Lands Walk</a> to Terrigal.",
+		"Then continues along the Coast through <a href=\"http://www.nationalparks.nsw.gov.au/visit-a-park/parks/wyrrabalong-national-park\">Wyrrabalong National Park</a>.",
+		"From Bateau Bay the walk then cuts across to the <a href=\"https://www.icentralcoast.com/tuggerah-lake.html\">Tuggerah Lake Cycle Way</a> to Chittaway bay."
 	],
 	"duration" : 12,
 	"length" : 50,
@@ -12,15 +12,15 @@
 	"markers" : {
 		"start" : {
 			"location" : "Woy Woy",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Woy Woy using <a href=\"https://transportnsw.info/trip#/?to=Woy Woy\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Woy Woy using <a href=\"https://transportnsw.info/trip#/?to=Woy Woy\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Tuggerah",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Tuggerah at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Tuggerah at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>."
 		}
 	},
 	"indicator" : {

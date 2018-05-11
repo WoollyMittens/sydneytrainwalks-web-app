@@ -1,23 +1,24 @@
 {
 	"location" : "Red Hand Cave",
-	"description" : ["Part of this walk covers the <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park/red-hands-cave-walking-track/walking\" target=\"_system\">Red Hands Cave walking track</a>."],
+	"description" : ["Part of this walk covers the <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park/red-hands-cave-walking-track/walking\">Red Hands Cave walking track</a>."],
 	"duration" : 6,
 	"length" : 21,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Glenbrook",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Glenbrook using <a href=\"https://transportnsw.info/trip#/?to=Glenbrook\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Glenbrook using <a href=\"https://transportnsw.info/trip#/?to=Glenbrook\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Glenbrook",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Glenbrook at <a href=\"https://transportnsw.info/trip#/?from=Glenbrook\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Glenbrook at <a href=\"https://transportnsw.info/trip#/?from=Glenbrook\">transportnsw.info</a>."
 		},
 		"warning" : {
+			"type" : "warning",
 			"icon" : "./inc/img/marker-warning.png",
 			"lat" : -33.78941388888889,
 			"lon" : 150.60356944444445,

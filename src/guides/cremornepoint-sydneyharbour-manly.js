@@ -2,8 +2,8 @@
 	"location" : "Sydney Harbour",
 	"description" : [
 		"The first part of this walk follows the <a href=\"http://www.northsydney.nsw.gov.au/Recreation_Facilities/Parks_Reserves/Search_Parks/Cremorne_Reserve\">Cremorne Reserve Foreshore Walk</a> to Mosman.",
-		"It then continues onto the <a href=\"http://www.nationalparks.nsw.gov.au/things-to-do/Walking-tracks/Bradleys-Head-to-Chowder-Bay-walk\" target=\"_system\">Bradleys Head to Chowder Bay Walk</a>.",
-		"The third section follows the <a href=\"https://www.sydneycoastwalks.com.au/spit-to-manly-walk/\" target=\"_system\">Spit to Manly Walk</a>."
+		"It then continues onto the <a href=\"http://www.nationalparks.nsw.gov.au/things-to-do/Walking-tracks/Bradleys-Head-to-Chowder-Bay-walk\">Bradleys Head to Chowder Bay Walk</a>.",
+		"The third section follows the <a href=\"https://www.sydneycoastwalks.com.au/spit-to-manly-walk/\">Spit to Manly Walk</a>."
 	],
 	"duration" : 7,
 	"length" : 24,
@@ -11,15 +11,15 @@
 	"markers" : {
 		"start" : {
 			"location" : "Cremorne Point",
-			"method" : "ferry",
+			"type" : "ferry",
 			"icon" : "./inc/img/marker-ferry.png",
-			"description" : "Get the ferry to Cremorne Point using <a href=\"https://transportnsw.info/trip#/?to=Cremorne Point\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the ferry to Cremorne Point using <a href=\"https://transportnsw.info/trip#/?to=Cremorne Point\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Manly",
-			"method" : "ferry",
+			"type" : "ferry",
 			"icon" : "./inc/img/marker-ferry.png",
-			"description" : "Plan your return trip from Manly at <a href=\"https://transportnsw.info/trip#/?from=Manly\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Manly at <a href=\"https://transportnsw.info/trip#/?from=Manly\">transportnsw.info</a>."
 		}
 	},
 	"indicator" : {

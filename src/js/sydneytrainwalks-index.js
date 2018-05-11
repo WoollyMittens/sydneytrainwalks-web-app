@@ -65,7 +65,7 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 			id = sorted[a];
 			// if the id occurs in the search results
 			if (searched.indexOf(id) > -1) {
-				titleHtml = titleTemplate.replace(/{startTransport}/g, GuideData[id].markers.start.method).replace(/{startLocation}/g, GuideData[id].markers.start.location).replace(/{walkLocation}/g, GuideData[id].location).replace(/{walkDuration}/g, GuideData[id].duration).replace(/{walkLength}/g, GuideData[id].length).replace(/{endTransport}/g, GuideData[id].markers.end.method).replace(/{endLocation}/g, GuideData[id].markers.end.location);
+				titleHtml = titleTemplate.replace(/{startTransport}/g, GuideData[id].markers.start.type).replace(/{startLocation}/g, GuideData[id].markers.start.location).replace(/{walkLocation}/g, GuideData[id].location).replace(/{walkDuration}/g, GuideData[id].duration).replace(/{walkLength}/g, GuideData[id].length).replace(/{endTransport}/g, GuideData[id].markers.end.type).replace(/{endLocation}/g, GuideData[id].markers.end.location);
 				menuHtml += menuTemplate.replace(/{id}/g, id).replace(/{title}/g, titleHtml);
 			}
 		}

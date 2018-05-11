@@ -1,25 +1,26 @@
 {
 	"location" : "Garigal",
-	"description" : ["This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/garigal-national-park\" target=\"_system\">Garigal National Park</a>."],
+	"description" : ["This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/garigal-national-park\">Garigal National Park</a>."],
 	"duration" : 11,
 	"length" : 32,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Roseville",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Roseville using <a href=\"https://transportnsw.info/trip#/?to=Roseville\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Roseville using <a href=\"https://transportnsw.info/trip#/?to=Roseville\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Manly",
-			"method" : "ferry",
+			"type" : "ferry",
 			"icon" : "./inc/img/marker-ferry.png",
-			"description" : "Plan your return trip from Manly at <a href=\"https://transportnsw.info/trip#/?from=Manly\" target=\"_system\">transportnsw.info</a>.",
+			"description" : "Plan your return trip from Manly at <a href=\"https://transportnsw.info/trip#/?from=Manly\">transportnsw.info</a>.",
 			"lat" : -33.80003333333333,
 			"lon" : 151.2852861111111
 		},
 		"shortcut" : {
+			"type" : "warning",
 			"icon" : "./inc/img/marker-warning.png",
 			"description" : "Enter the shopping arcade here for a shortcut to the ferry.",
 			"lat" : -33.796893,

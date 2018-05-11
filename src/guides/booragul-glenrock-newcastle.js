@@ -1,8 +1,8 @@
 {
 	"location" : "Glenrock",
 	"description" : [
-		"This walk follows the last leg of <a href=\"http://www.thegreatnorthwalk.com\" target=\"_system\">the Great North Walk</a> from rural Teralba along Lake Macquarie to Newcastle and covers mostly urban environments.",
-		"<a href=\"http://www.nationalparks.nsw.gov.au/Glenrock-State-Conservation-Area\" target=\"_system\">Glenrock</a> is a national park in the middle of suburban Newcastle with bushland, a lagoon and a beach."
+		"This walk follows the last leg of <a href=\"http://www.thegreatnorthwalk.com\">the Great North Walk</a> from rural Teralba along Lake Macquarie to Newcastle and covers mostly urban environments.",
+		"<a href=\"http://www.nationalparks.nsw.gov.au/Glenrock-State-Conservation-Area\">Glenrock</a> is a national park in the middle of suburban Newcastle with bushland, a lagoon and a beach."
 	],
 	"duration" : 8,
 	"length" : 28,
@@ -10,29 +10,32 @@
 	"markers" : {
 		"start" : {
 			"location" : "Booragul",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Booragul using <a href=\"https://transportnsw.info/trip#/?to=Adamstown\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Booragul using <a href=\"https://transportnsw.info/trip#/?to=Adamstown\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Newcastle",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Newcastle at <a href=\"https://transportnsw.info/trip#/?from=Newcastle\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Newcastle at <a href=\"https://transportnsw.info/trip#/?from=Newcastle\">transportnsw.info</a>."
 		},
 		"kioska" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -32.97394722222222,
 			"lon" : 151.64323888888887,
 			"description" : "Warners Bay shops"
 		},
 		"kioskb" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -32.966108109910635,
 			"lon" : 151.6950429299911,
 			"description" : "Charlestown Mall"
 		},
 		"kioskc" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -32.948907999999996,
 			"lon" : 151.75664,

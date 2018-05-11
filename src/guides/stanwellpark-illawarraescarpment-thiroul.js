@@ -1,23 +1,24 @@
 {
 	"location" : "Illawarra Escarpment",
-	"description" : ["This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/illawarra-escarpment-state-conservation-area\" target=\"_system\">Illawarra Escarpment State Conservation Area</a>."],
+	"description" : ["This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/illawarra-escarpment-state-conservation-area\">Illawarra Escarpment State Conservation Area</a>."],
 	"duration" : 8,
 	"length" : 17,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Stanwell Park",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Stanwell Park using <a href=\"https://transportnsw.info/trip#/?to=Stanwell Park\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Stanwell Park using <a href=\"https://transportnsw.info/trip#/?to=Stanwell Park\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Thirroul",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Thiroul at <a href=\"https://transportnsw.info/trip#/?from=Thiroul\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Thiroul at <a href=\"https://transportnsw.info/trip#/?from=Thiroul\">transportnsw.info</a>."
 		},
 		"kiosk" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -34.29655277777778,
 			"lon" : 150.92490277777776,

@@ -1,21 +1,21 @@
 {
 	"location" : "Munmorah",
-	"description" : ["Part of this walk crosses <a href=\"http://www.nationalparks.nsw.gov.au/munmorah-state-conservation-area\" target=\"_system\">Munmorah State Conservation Area</a> and <a href=\"http://www.nationalparks.nsw.gov.au/wallarah-national-park\" target=\"_system\">Wallarah National Park</a>."],
+	"description" : ["Part of this walk crosses <a href=\"http://www.nationalparks.nsw.gov.au/munmorah-state-conservation-area\">Munmorah State Conservation Area</a> and <a href=\"http://www.nationalparks.nsw.gov.au/wallarah-national-park\">Wallarah National Park</a>."],
 	"duration" : 9,
 	"length" : 32,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Norah Head",
-			"method" : "bus",
+			"type" : "bus",
 			"icon" : "./inc/img/marker-bus.png",
-			"description" : "Plan your trip to Norah Head using <a href=\"https://transportnsw.info/trip#/?to=Norah Head\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your trip to Norah Head using <a href=\"https://transportnsw.info/trip#/?to=Norah Head\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Swansea Heads",
-			"method" : "bus",
+			"type" : "bus",
 			"icon" : "./inc/img/marker-bus.png",
-			"description" : "Plan your return trip from Swansea Heads at <a href=\"https://transportnsw.info/trip#/?from=Swansea Heads\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Swansea Heads at <a href=\"https://transportnsw.info/trip#/?from=Swansea Heads\">transportnsw.info</a>."
 		}
 	},
 	"landmarks" : {

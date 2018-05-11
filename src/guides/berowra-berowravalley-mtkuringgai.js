@@ -1,7 +1,7 @@
 {
 	"location" : "Berowra Valley",
 	"description" : [
-		"This walk follows a section of the Great North Walk in <a href=\"http://www.nationalparks.nsw.gov.au/berowra-valley-national-park/great-north-walk/walking\" target=\"_system\">Berowra Valley National Park</a>."
+		"This walk follows a section of the Great North Walk in <a href=\"http://www.nationalparks.nsw.gov.au/berowra-valley-national-park/great-north-walk/walking\">Berowra Valley National Park</a>."
 	],
 	"duration" : 3,
 	"length" : 9,
@@ -9,17 +9,18 @@
 	"markers" : {
 		"start" : {
 			"location" : "Berowra",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Berowra using <a href=\"https://transportnsw.info/trip#/?to=Berowra\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Berowra using <a href=\"https://transportnsw.info/trip#/?to=Berowra\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Mount Kuring-gai",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Mount Kuring-gai at <a href=\"https://transportnsw.info/trip#/?from=Mount Kuring-gai\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Mount Kuring-gai at <a href=\"https://transportnsw.info/trip#/?from=Mount Kuring-gai\">transportnsw.info</a>."
 		},
 		"warning" : {
+			"type" : "warning",
 			"icon" : "./inc/img/marker-warning.png",
 			"description" : "The wetlands are prone to flooding at high tide or during long periods of wet weather.",
 			"lat" : -33.62815555555556,

@@ -1,23 +1,24 @@
 {
 	"location" : "Kiama Coast Walk",
-	"description" : ["This walk follows part of the <a href=\"http://www.visitnsw.com/destinations/south-coast/kiama-area/kiama-coast-walk\" target=\"_system\">Kiama Coast Walk</a>."],
+	"description" : ["This walk follows part of the <a href=\"http://www.visitnsw.com/destinations/south-coast/kiama-area/kiama-coast-walk\">Kiama Coast Walk</a>."],
 	"duration" : 6,
 	"length" : 19,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Gerringong",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Gerringong using <a href=\"https://transportnsw.info/trip#/?to=Gerringong\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Gerringong using <a href=\"https://transportnsw.info/trip#/?to=Gerringong\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Kiama",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Kiama at <a href=\"https://transportnsw.info/trip#/?from=Kiama\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Kiama at <a href=\"https://transportnsw.info/trip#/?from=Kiama\">transportnsw.info</a>."
 		},
 		"warning" : {
+			"type" : "warning",
 			"icon" : "./inc/img/marker-warning.png",
 			"lat" : -34.72793888888889,
 			"lon" : 150.8387888888889,

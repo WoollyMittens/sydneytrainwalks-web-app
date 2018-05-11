@@ -1,21 +1,21 @@
 {
 	"location" : "Northern Beaches",
-	"description" : ["This walk visits the <a href=\"http://www.nationalparks.nsw.gov.au/ku-ring-gai-chase-national-park/barrenjoey-lighthouse/historic-site\" target=\"_system\">Barrenjoey Lighthouse</a> and Syndey's northern beaches."],
+	"description" : ["This walk visits the <a href=\"http://www.nationalparks.nsw.gov.au/ku-ring-gai-chase-national-park/barrenjoey-lighthouse/historic-site\">Barrenjoey Lighthouse</a> and Syndey's northern beaches."],
 	"duration" : 6,
 	"length" : 25,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Palm Beach",
-			"method" : "bus",
+			"type" : "bus",
 			"icon" : "./inc/img/marker-bus.png",
-			"description" : "Get the bus to Palm Beach using <a href=\"https://transportnsw.info/trip#/?to=Palm Beach\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the bus to Palm Beach using <a href=\"https://transportnsw.info/trip#/?to=Palm Beach\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Narrabeen",
-			"method" : "bus",
+			"type" : "bus",
 			"icon" : "./inc/img/marker-bus.png",
-			"description" : "Plan your return trip from Narrabeen at <a href=\"https://transportnsw.info/trip#/?from=Narrabeen\" target=\"_system\">transportnsw.info</a>.",
+			"description" : "Plan your return trip from Narrabeen at <a href=\"https://transportnsw.info/trip#/?from=Narrabeen\">transportnsw.info</a>.",
 			"lat" : -33.70486666666667,
 			"lon" : 151.29741666666666
 		}

@@ -1,23 +1,24 @@
 {
 	"location" : "Berowra Valley",
-	"description" : ["This walk follow a section of the Great North Walk in <a href=\"http://www.nationalparks.nsw.gov.au/berowra-valley-national-park/great-north-walk/walking\" target=\"_system\">Berowra Valley National Park</a>."],
+	"description" : ["This walk follow a section of the Great North Walk in <a href=\"http://www.nationalparks.nsw.gov.au/berowra-valley-national-park/great-north-walk/walking\">Berowra Valley National Park</a>."],
 	"duration" : 9,
 	"length" : 18,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Mount Kuring-gai",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Mount Kuring-gai using <a href=\"https://transportnsw.info/trip#/?to=Mount Kuring-gai\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Mount Kuring-gai using <a href=\"https://transportnsw.info/trip#/?to=Mount Kuring-gai\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Cowan",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Cowan at <a href=\"https://transportnsw.info/trip#/?from=Cowan\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Cowan at <a href=\"https://transportnsw.info/trip#/?from=Cowan\">transportnsw.info</a>."
 		},
 		"kioska" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.599133333333334,
 			"lon" : 151.12018333333333,

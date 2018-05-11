@@ -1,23 +1,24 @@
 {
 	"location" : "Kamay Botany Bay",
-	"description" : ["A large part of this is a walk passes through <a href=\"http://www.nationalparks.nsw.gov.au/kamay-botany-bay-national-park\" target=\"_system\">Kamay Botany Bay National Park</a>."],
+	"description" : ["A large part of this is a walk passes through <a href=\"http://www.nationalparks.nsw.gov.au/kamay-botany-bay-national-park\">Kamay Botany Bay National Park</a>."],
 	"duration" : 7,
 	"length" : 21,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Cronulla",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Cronulla using <a href=\"https://transportnsw.info/trip#/?to=Cronulla\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Cronulla using <a href=\"https://transportnsw.info/trip#/?to=Cronulla\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Cronulla",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Cronulla at <a href=\"https://transportnsw.info/trip#/?from=Cronulla\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Cronulla at <a href=\"https://transportnsw.info/trip#/?from=Cronulla\">transportnsw.info</a>."
 		},
 		"warning" : {
+			"type" : "info",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -34.00504166666666,
 			"lon" : 151.22191111111113,

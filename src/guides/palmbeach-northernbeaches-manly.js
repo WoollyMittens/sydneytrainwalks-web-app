@@ -1,31 +1,30 @@
 {
 	"location" : "Northern Beaches",
-	"description" : ["This walk visits the <a href=\"http://www.nationalparks.nsw.gov.au/ku-ring-gai-chase-national-park/barrenjoey-lighthouse/historic-site\" target=\"_system\">Barrenjoey Lighthouse</a> and Syndey's northern beaches."],
+	"description" : ["This walk visits the <a href=\"http://www.nationalparks.nsw.gov.au/ku-ring-gai-chase-national-park/barrenjoey-lighthouse/historic-site\">Barrenjoey Lighthouse</a> and Syndey's northern beaches."],
 	"duration" : 10,
 	"length" : 40,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Palm Beach",
-			"method" : "bus",
+			"type" : "bus",
 			"icon" : "./inc/img/marker-bus.png",
-			"description" : "Get the bus to Palm Beach using <a href=\"https://transportnsw.info/trip#/?to=Palm Beach\" target=\"_system\">transportnsw.info</a>."
-		},
-		"exit" : {
-			"location" : "Narrabeen",
-			"method" : "bus",
-			"icon" : "./inc/img/marker-bus.png",
-			"description" : "Plan your return trip from Narrabeen at <a href=\"https://transportnsw.info/trip#/?from=Narrabeen\" target=\"_system\">transportnsw.info</a>.",
-			"lat" : -33.70486666666667,
-			"lon" : 151.29741666666666
+			"description" : "Get the bus to Palm Beach using <a href=\"https://transportnsw.info/trip#/?to=Palm Beach\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Manly",
-			"method" : "ferry",
+			"type" : "ferry",
 			"icon" : "./inc/img/marker-ferry.png",
-			"description" : "Plan your return trip from Narrabeen at <a href=\"https://transportnsw.info/trip#/?from=Manly\" target=\"_system\">transportnsw.info</a>.",
+			"description" : "Plan your return trip from Narrabeen at <a href=\"https://transportnsw.info/trip#/?from=Manly\">transportnsw.info</a>.",
 			"lat" : -33.80003333333333,
 			"lon" : 151.2852861111111
+		},
+		"exit" : {
+			"type" : "bus",
+			"icon" : "./inc/img/marker-bus.png",
+			"description" : "Plan your return trip from Narrabeen at <a href=\"https://transportnsw.info/trip#/?from=Narrabeen\">transportnsw.info</a>.",
+			"lat" : -33.70486666666667,
+			"lon" : 151.29741666666666
 		}
 	},
 	"indicator" : {

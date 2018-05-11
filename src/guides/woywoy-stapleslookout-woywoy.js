@@ -1,21 +1,21 @@
 {
 	"location" : "Staples Lookout",
-	"description" : ["The <a href=\"http://www.nationalparks.nsw.gov.au/things-to-do/Aboriginal-sites/Bulgandry-Aboriginal-art-site\" target=\"_system\">Bulgandry Aborigal rock art site</a>, <a href=\"http://www.nationalparks.nsw.gov.au/things-to-do/Lookouts/Staples-lookout\" target=\"_system\">Staples Lookout</a>, and Mount Wondabyne are prominent stops along this walk."],
+	"description" : ["The <a href=\"http://www.nationalparks.nsw.gov.au/things-to-do/Aboriginal-sites/Bulgandry-Aboriginal-art-site\">Bulgandry Aborigal rock art site</a>, <a href=\"http://www.nationalparks.nsw.gov.au/things-to-do/Lookouts/Staples-lookout\">Staples Lookout</a>, and Mount Wondabyne are prominent stops along this walk."],
 	"duration" : 7,
 	"length" : 25,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Woy Woy",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Woy Woy using <a href=\"https://transportnsw.info/trip#/?to=Woy Woy\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Woy Woy using <a href=\"https://transportnsw.info/trip#/?to=Woy Woy\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Woy Woy",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Woy Woy at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\" target=\"_system\">transportnsw.info</a>.",
+			"description" : "Plan your return trip from Woy Woy at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>.",
 			"lat" : -33.485393,
 			"lon" : 151.32345
 		}

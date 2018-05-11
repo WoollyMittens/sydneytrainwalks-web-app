@@ -1,35 +1,38 @@
 {
 	"location" : "Parramatta River",
-	"description" : ["This walk follows the <a href=\"http://www.walkingcoastalsydney.com.au/brochures/ryde_bridge_to_parramatta.htm\" target=\"_system\">Parramata River</a>."],
+	"description" : ["This walk follows the <a href=\"http://www.walkingcoastalsydney.com.au/brochures/ryde_bridge_to_parramatta.htm\">Parramata River</a>."],
 	"duration" : 10,
 	"length" : 34,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Parramatta",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Parramatta using <a href=\"https://transportnsw.info/trip#/?to=Parramatta\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Parramatta using <a href=\"https://transportnsw.info/trip#/?to=Parramatta\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Town Hall",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Town Hall at <a href=\"https://transportnsw.info/trip#/?from=Town Hall\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Town Hall at <a href=\"https://transportnsw.info/trip#/?from=Town Hall\">transportnsw.info</a>."
 		},
 		"shopsa" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.830302,
 			"lon" : 151.1200046,
 			"description" : "Shops"
 		},
 		"shopsb" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.85858888888889,
 			"lon" : 151.16195000000002,
 			"description" : "Birkenhead Mall"
 		},
 		"shopsc" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.858696,
 			"lon" : 151.1826270001119,

@@ -1,21 +1,21 @@
 {
 	"location" : "Grand Canyon",
-	"description" : ["The <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park/grand-canyon-track/walking\" target=\"_system\">Grand Canyon</a> at Blackheath in the Blue Mountains is not quite as grand the American version, but definitely manages to match the overwhelming visual experience."],
+	"description" : ["The <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park/grand-canyon-track/walking\">Grand Canyon</a> at Blackheath in the Blue Mountains is not quite as grand the American version, but definitely manages to match the overwhelming visual experience."],
 	"duration" : 7,
 	"length" : 17,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Blackheath",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Blackheath using <a href=\"https://transportnsw.info/trip#/?to=Blackheath\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Blackheath using <a href=\"https://transportnsw.info/trip#/?to=Blackheath\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Blackheath",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Blackheath at <a href=\"https://transportnsw.info/trip#/?from=Blackheath\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Blackheath at <a href=\"https://transportnsw.info/trip#/?from=Blackheath\">transportnsw.info</a>."
 		}
 	},
 	"indicator" : {

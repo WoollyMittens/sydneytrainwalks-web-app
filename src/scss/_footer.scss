@@ -15,9 +15,16 @@
 		bottom: 0;
 		z-index: 8;
     display: flex;
-    justify-content: space-evenly;
 		align-items: center;
-		padding: 0 0.5rem;
+		padding: 0 1rem;
+
+		nav {
+			flex: 1 1 auto;
+    	display: flex;
+	    justify-content: space-evenly;
+			align-items: center;
+			width: 100%;
+		}
 
 		a {
 			color: #0D47A1;
@@ -27,7 +34,7 @@
 			padding: 0;
 			text-align: center;
 			text-decoration: none;
-			min-width: 70px;
+			min-width: 3rem;
 	    flex: 0 1 auto;
 	    color: #0D47A1;
 	    filter: grayscale(1);

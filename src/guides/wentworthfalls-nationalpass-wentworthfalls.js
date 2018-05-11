@@ -1,23 +1,24 @@
 {
 	"location" : "Blue Mountains",
-	"description" : ["This walk follows the tracks around <a href=\"http://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/wentworth-falls-track/map\" target=\"_system\">Wentworth Falls</a>."],
+	"description" : ["This walk follows the tracks around <a href=\"http://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/wentworth-falls-track/map\">Wentworth Falls</a>."],
 	"duration" : 6,
 	"length" : 14,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Wentworth Falls",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Wentworth Falls using <a href=\"https://transportnsw.info/trip#/?to=Wentworth Falls\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Wentworth Falls using <a href=\"https://transportnsw.info/trip#/?to=Wentworth Falls\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Wentworth Falls",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Wentworth Falls at <a href=\"https://transportnsw.info/trip#/?from=Wentworth Falls\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Wentworth Falls at <a href=\"https://transportnsw.info/trip#/?from=Wentworth Falls\">transportnsw.info</a>."
 		},
 		"kiosk" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.72029722222222,
 			"lon" : 150.36265555555556,

@@ -1,29 +1,31 @@
 {
 	"location" : "Garigal",
-	"description" : ["This walk covers parts of the <a href=\"http://www.nationalparks.nsw.gov.au/ku-ring-gai-chase-national-park\" target=\"_system\">Ku-ring-gai Chase National Park</a> and <a href=\"http://www.nationalparks.nsw.gov.au/garigal-national-park\" target=\"_system\">Garigal National Park</a>."],
+	"description" : ["This walk covers parts of the <a href=\"http://www.nationalparks.nsw.gov.au/ku-ring-gai-chase-national-park\">Ku-ring-gai Chase National Park</a> and <a href=\"http://www.nationalparks.nsw.gov.au/garigal-national-park\">Garigal National Park</a>."],
 	"duration" : 10,
 	"length" : 30,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Mount Kuring-gai",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Mount Kuring-gai using <a href=\"https://transportnsw.info/trip#/?to=Mount Kuring-gai\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Mount Kuring-gai using <a href=\"https://transportnsw.info/trip#/?to=Mount Kuring-gai\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Roseville",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Roseville at <a href=\"https://transportnsw.info/trip#/?from=Roseville\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Roseville at <a href=\"https://transportnsw.info/trip#/?from=Roseville\">transportnsw.info</a>."
 		},
 		"kioska" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.65976666666666,
 			"lon" : 151.15893333333335,
 			"description" : "Bobbin Head Inn"
 		},
 		"kioskb" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.65260277777778,
 			"lon" : 151.1558361111111,

@@ -1,21 +1,21 @@
 {
 	"location" : "Heathcote Valley",
-	"description" : ["This walk covers <a href=\"http://www.nationalparks.nsw.gov.au/heathcote-national-park\" target=\"_system\">Heathcote National Park</a>."],
+	"description" : ["This walk covers <a href=\"http://www.nationalparks.nsw.gov.au/heathcote-national-park\">Heathcote National Park</a>."],
 	"duration" : 4,
 	"length" : 11,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Waterfall",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Waterfall using <a href=\"https://transportnsw.info/trip#/?to=Waterfall\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Waterfall using <a href=\"https://transportnsw.info/trip#/?to=Waterfall\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Heathcote",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Heathcote at <a href=\"https://transportnsw.info/trip#/?from=Heathcote\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Heathcote at <a href=\"https://transportnsw.info/trip#/?from=Heathcote\">transportnsw.info</a>."
 		}
 	},
 	"indicator" : {

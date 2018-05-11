@@ -1,21 +1,21 @@
 {
 	"location" : "Wyrrabalong",
-	"description" : ["Part of this walk covers <a href=\"http://www.nationalparks.nsw.gov.au/visit-a-park/parks/Wyrrabalong-National-Park\" target=\"_system\">Wyrrabalong National Park</a>."],
+	"description" : ["Part of this walk covers <a href=\"http://www.nationalparks.nsw.gov.au/visit-a-park/parks/Wyrrabalong-National-Park\">Wyrrabalong National Park</a>."],
 	"duration" : 4,
 	"length" : 15,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "The Entrance",
-			"method" : "bus",
+			"type" : "bus",
 			"icon" : "./inc/img/marker-bus.png",
-			"description" : "Get the train to Gosford and then a bus to The Entrance using <a href=\"https://transportnsw.info/trip#/?to=The Entrance\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Gosford and then a bus to The Entrance using <a href=\"https://transportnsw.info/trip#/?to=The Entrance\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Terrigal",
-			"method" : "bus",
+			"type" : "bus",
 			"icon" : "./inc/img/marker-bus.png",
-			"description" : "Plan your return trip from Terrigal at <a href=\"https://transportnsw.info/trip#/?from=Terrigal\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Terrigal at <a href=\"https://transportnsw.info/trip#/?from=Terrigal\">transportnsw.info</a>."
 		}
 	},
 	"indicator" : {

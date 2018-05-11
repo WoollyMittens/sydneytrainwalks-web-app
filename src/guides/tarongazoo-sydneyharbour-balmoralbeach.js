@@ -1,7 +1,7 @@
 {
 	"location" : "Sydney Harbour",
 	"description" : [
-		"Part of this walk follows the <a href=\"http://www.nationalparks.nsw.gov.au/things-to-do/Walking-tracks/Bradleys-Head-to-Chowder-Bay-walk\" target=\"_system\">Bradleys Head to Chwoder Bay</a>."
+		"Part of this walk follows the <a href=\"http://www.nationalparks.nsw.gov.au/things-to-do/Walking-tracks/Bradleys-Head-to-Chowder-Bay-walk\">Bradleys Head to Chwoder Bay</a>."
 	],
 	"duration" : 2,
 	"length" : 7,
@@ -9,15 +9,15 @@
 	"markers" : {
 		"start" : {
 			"location" : "Taronga Zoo",
-			"method" : "ferry",
+			"type" : "ferry",
 			"icon" : "./inc/img/marker-ferry.png",
-			"description" : "Get the ferry to Taronga Zoo using <a href=\"https://transportnsw.info/trip#/?to=Taronga Zoo\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the ferry to Taronga Zoo using <a href=\"https://transportnsw.info/trip#/?to=Taronga Zoo\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Balmoral Beach",
-			"method" : "bus",
+			"type" : "bus",
 			"icon" : "./inc/img/marker-bus.png",
-			"description" : "Plan your return trip from Balmoral Beach at <a href=\"https://transportnsw.info/trip#/?from=Balmoral Beach\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Balmoral Beach at <a href=\"https://transportnsw.info/trip#/?from=Balmoral Beach\">transportnsw.info</a>."
 		}
 	},
 	"indicator" : {

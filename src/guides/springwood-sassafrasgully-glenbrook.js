@@ -1,23 +1,24 @@
 {
 	"location" : "Sassafras Gully",
-	"description" : ["Part of this walk follows Sassafras Gully in <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park\" target=\"_system\">Blue Mountains National Park</a>."],
+	"description" : ["Part of this walk follows Sassafras Gully in <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park\">Blue Mountains National Park</a>."],
 	"duration" : 8,
 	"length" : 18,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Springwood",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Springwood using <a href=\"https://transportnsw.info/trip#/?to=Springwood\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Springwood using <a href=\"https://transportnsw.info/trip#/?to=Springwood\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Glenbrook",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Glenbrook at <a href=\"https://transportnsw.info/trip#/?from=Glenbrook\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Glenbrook at <a href=\"https://transportnsw.info/trip#/?from=Glenbrook\">transportnsw.info</a>."
 		},
 		"warning" : {
+			"type" : "warning",
 			"icon" : "./inc/img/marker-warning.png",
 			"lat" : -33.737497222222224,
 			"lon" : 150.57790277777778,

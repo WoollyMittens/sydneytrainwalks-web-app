@@ -1,23 +1,24 @@
 {
 	"location" : "Royal National Park",
-	"description" : ["This walk covers the central part of the <a href=\"http://www.nationalparks.nsw.gov.au/royal-national-park\" target=\"_system\">Royal National Park</a>."],
+	"description" : ["This walk covers the central part of the <a href=\"http://www.nationalparks.nsw.gov.au/royal-national-park\">Royal National Park</a>."],
 	"duration" : 6,
 	"length" : 14,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Heathcote",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Heathcote using <a href=\"https://transportnsw.info/trip#/?to=Heathcote\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Heathcote using <a href=\"https://transportnsw.info/trip#/?to=Heathcote\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Engadine",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Engadine at <a href=\"https://transportnsw.info/trip#/?from=Engadine\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Engadine at <a href=\"https://transportnsw.info/trip#/?from=Engadine\">transportnsw.info</a>."
 		},
 		"kiosk" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -34.075375,
 			"lon" : 151.0561138888889,

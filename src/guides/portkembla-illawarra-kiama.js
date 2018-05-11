@@ -1,25 +1,26 @@
 {
 	"location" : "Illawarra",
-	"description" : ["This walk follows part of the <a href=\"http://www.visitnsw.com/destinations/south-coast/kiama-area/kiama-coast-walk\" target=\"_system\">Kiama Coast Walk</a>."],
+	"description" : ["This walk follows part of the <a href=\"http://www.visitnsw.com/destinations/south-coast/kiama-area/kiama-coast-walk\">Kiama Coast Walk</a>."],
 	"duration" : 9,
 	"length" : 33,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Port Kembla",
-			"method" : "train",
+			"type" : "train",
 			"lat" : -34.477161407,
 			"lon" : 150.902664185,
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Port Kembla at <a href=\"https://transportnsw.info/trip#/?from=Port Kembla\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Port Kembla at <a href=\"https://transportnsw.info/trip#/?from=Port Kembla\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Kiama",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Kiama using <a href=\"https://transportnsw.info/trip#/?to=Kiama\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Kiama using <a href=\"https://transportnsw.info/trip#/?to=Kiama\">transportnsw.info</a>."
 		},
 		"kiosk" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -34.57801111111112,
 			"lon" : 150.87062500000002,

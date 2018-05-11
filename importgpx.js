@@ -3,7 +3,8 @@ var fs = require('fs');
 var tg = require('./src/lib/togeojson.js');
 var jd = require('jsdom');
 var source = './inc/gpx/';
-var destination = './inc/js/gpx-data.js';
+var destPath = './inc/js/gpx-data.js';
+var jsonPath = './inc/json/routes.json';
 var geojsons = {};
 
 const { JSDOM } = jd;
@@ -55,12 +56,21 @@ var parseFiles = function (queue) {
 			}
 		});
 	} else {
-		// write the exif data to disk
-		fs.writeFile(destination, 'var GpxData = ' + JSON.stringify(geojsons) + ';', function (error) {
+		var data = JSON.stringify(geojsons);
+		// export as json
+		fs.writeFile(jsonPath, data, function (error) {
 			if (error) {
 				console.log('ERROR: ' + error);
 			} else {
-				console.log('SAVED AS: ' + destination);
+				console.log('SAVED AS: ' + jsonPath);
+			}
+		});
+		// write the exif data to disk
+		fs.writeFile(destPath, 'var GpxData = ' + data + ';', function (error) {
+			if (error) {
+				console.log('ERROR: ' + error);
+			} else {
+				console.log('SAVED AS: ' + destPath);
 			}
 		});
 	}

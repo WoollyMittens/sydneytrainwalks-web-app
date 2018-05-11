@@ -1,23 +1,24 @@
 {
 	"location" : "Ku-ring-gai Chase",
-	"description" : ["Most of this is a walk follows the Great North Walk through <a href=\"http://www.nationalparks.nsw.gov.au/ku-ring-gai-chase-national-park/great-north-walk/walking\" target=\"_system\">Ku-Ring-Gai Chase National Park</a>."],
+	"description" : ["Most of this is a walk follows the Great North Walk through <a href=\"http://www.nationalparks.nsw.gov.au/ku-ring-gai-chase-national-park/great-north-walk/walking\">Ku-Ring-Gai Chase National Park</a>."],
 	"duration" : 9,
 	"length" : 21,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Cowan",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Cowan using <a href=\"https://transportnsw.info/trip#/?to=Cowan\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Cowan using <a href=\"https://transportnsw.info/trip#/?to=Cowan\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Hawkesbury River",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Hawkesbury River at <a href=\"https://transportnsw.info/trip#/?from=Hawkesbury River\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Hawkesbury River at <a href=\"https://transportnsw.info/trip#/?from=Hawkesbury River\">transportnsw.info</a>."
 		},
 		"warning" : {
+			"type" : "warning",
 			"icon" : "./inc/img/marker-warning.png",
 			"lat" : -33.58414166666667,
 			"lon" : 151.1958111111111,

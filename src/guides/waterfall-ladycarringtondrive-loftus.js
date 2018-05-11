@@ -1,25 +1,26 @@
 {
 	"location" : "Lady Carrington Drive",
-	"description" : ["This walk follows <a href=\"http://www.nationalparks.nsw.gov.au/royal-national-park/lady-carrington-drive/cycling\" target=\"_system\">Lady Carrington Drive</a> in the Royal National Park."],
+	"description" : ["This walk follows <a href=\"http://www.nationalparks.nsw.gov.au/royal-national-park/lady-carrington-drive/cycling\">Lady Carrington Drive</a> in the Royal National Park."],
 	"duration" : 7,
 	"length" : 23,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Waterfall",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Waterfall using <a href=\"https://transportnsw.info/trip#/?to=Waterfall\" target=\"_system\">transportnsw.info</a>.",
+			"description" : "Get the train to Waterfall using <a href=\"https://transportnsw.info/trip#/?to=Waterfall\">transportnsw.info</a>.",
 			"lat" : -34.1350492,
 			"lon" : 150.99596526007738
 		},
 		"end" : {
 			"location" : "Loftus",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Loftus at <a href=\"https://transportnsw.info/trip#/?from=Loftus\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Loftus at <a href=\"https://transportnsw.info/trip#/?from=Loftus\">transportnsw.info</a>."
 		},
 		"kiosk" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -34.075375,
 			"lon" : 151.0561138888889,

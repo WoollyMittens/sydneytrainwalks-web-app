@@ -1,21 +1,21 @@
 {
 	"location" : "Rumbalara",
-	"description" : ["This walk covers <a href=\"http://www.gosford.nsw.gov.au/recreation/natural_areas/bushland_reserves/rumbalara\" target=\"_system\">Rumbalara Reserve</a>."],
+	"description" : ["This walk covers <a href=\"http://www.gosford.nsw.gov.au/recreation/natural_areas/bushland_reserves/rumbalara\">Rumbalara Reserve</a>."],
 	"duration" : 3,
 	"length" : 12,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Gosford",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Gosford using <a href=\"https://transportnsw.info/trip#/?to=Gosford\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Gosford using <a href=\"https://transportnsw.info/trip#/?to=Gosford\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Lisarow",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Lisarow at <a href=\"https://transportnsw.info/trip#/?from=Lisarow\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Lisarow at <a href=\"https://transportnsw.info/trip#/?from=Lisarow\">transportnsw.info</a>."
 		}
 	},
 	"indicator" : {

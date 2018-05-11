@@ -25,8 +25,7 @@ SydneyTrainWalks.prototype.Overview = function(parent) {
 	// METHODS
 
 	this.init = function() {
-		var a,
-			b;
+		var a, b;
 		// get the markers from the exif data
 		var markers = this.getMarkers();
 		// calculate the bounds of the map
@@ -45,9 +44,7 @@ SydneyTrainWalks.prototype.Overview = function(parent) {
 		// create an icon
 		var icon = L.icon({
 			iconUrl: "./inc/img/marker-walk.png",
-			iconSize: [
-				32, 32
-			],
+			iconSize: [32, 32],
 			iconAnchor: [16, 32]
 		});
 		// add the markers
@@ -66,68 +63,35 @@ SydneyTrainWalks.prototype.Overview = function(parent) {
 		}
 		// limit the bounds
 		map.fitBounds([
-			[
-				bounds.minLat, bounds.minLon
-			],
-			[
-				bounds.maxLat, bounds.maxLon
-			]
+			[bounds.minLat, bounds.minLon],
+			[bounds.maxLat , bounds.maxLon]
 		]);
 		map.setMaxBounds([
-			[
-				bounds.minLat, bounds.minLon
-			],
-			[
-				bounds.maxLat, bounds.maxLon
-			]
+			[bounds.minLat, bounds.minLon],
+			[bounds.maxLat, bounds.maxLon]
 		]);
-		map.setView([
-			bounds.avgLat, bounds.avgLon
-		], 8);
+		map.setView([bounds.avgLat, bounds.avgLon], 8);
 		// return the object
 		return this;
 	};
 
 	this.getMarkers = function() {
 		var route,
-			photo,
-			index,
-			totNum,
-			totLat,
-			totLon,
+			landmarks,
 			markers = [],
 			prefix,
-			start,
-			end;
+			photo;
 		// for every walk
 		for (route in GuideData) {
 			// get the source of the assets
-			prefix = (GuideData[route].assets)
-				? GuideData[route].assets.prefix
-				: route;
-			start = (GuideData[route].assets)
-				? GuideData[route].assets.start
-				: -1;
-			end = (GuideData[route].assets)
-				? GuideData[route].assets.end
-				: 9999;
-			// calculate the center of the route
-			index = 0;
-			totNum = 0;
-			totLat = 0;
-			totLon = 0;
-			for (photo in ExifData[prefix]) {
-				index += 1;
-				if (index > start && index < end) {
-					totNum += 1;
-					totLon += ExifData[prefix][photo].lon;
-					totLat += ExifData[prefix][photo].lat;
-				}
-			}
+			prefix = (GuideData[route].assets) ? GuideData[route].assets.prefix : route;
+			// pick a point halfway through the route
+			landmarks = Object.keys(GuideData[route].landmarks);
+			photo = landmarks[parseInt(landmarks.length/2)].toLowerCase() + '.jpg';
 			// create a marker between the start and end point
 			markers.push({
-				'lon': totLon / totNum,
-				'lat': totLat / totNum,
+				'lon': ExifData[prefix][photo].lon,
+				'lat': ExifData[prefix][photo].lat,
 				'id': route
 			});
 		}
@@ -144,27 +108,19 @@ SydneyTrainWalks.prototype.Overview = function(parent) {
 			totLon = 0;
 		// calculate the bounds of the map
 		for (a = 0, b = markers.length; a < b; a += 1) {
-			minLon = (markers[a].lon < minLon)
-				? markers[a].lon
-				: minLon;
-			minLat = (markers[a].lat < minLat)
-				? markers[a].lat
-				: minLat;
-			maxLon = (markers[a].lon > maxLon)
-				? markers[a].lon
-				: maxLon;
-			maxLat = (markers[a].lat > maxLat)
-				? markers[a].lat
-				: maxLat;
+			minLon = (markers[a].lon < minLon) ? markers[a].lon : minLon;
+			minLat = (markers[a].lat < minLat) ? markers[a].lat : minLat;
+			maxLon = (markers[a].lon > maxLon) ? markers[a].lon : maxLon;
+			maxLat = (markers[a].lat > maxLat) ? markers[a].lat : maxLat;
 			totLat += markers[a].lat;
 			totLon += markers[a].lon;
 		}
 		// return the result
 		return {
-			'minLat': minLat - 0.1,
-			'maxLat': maxLat + 0.1,
-			'minLon': minLon - 0.1,
-			'maxLon': maxLon + 0.1,
+			'minLat': minLat - 0.3,
+			'maxLat': maxLat + 0.3,
+			'minLon': minLon - 0.3,
+			'maxLon': maxLon + 0.3,
 			'avgLat': totLat / markers.length,
 			'avgLon': totLon / markers.length
 		};

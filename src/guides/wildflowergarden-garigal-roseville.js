@@ -1,21 +1,21 @@
 {
 	"location" : "Garigal",
-	"description" : ["This walk covers parts of the <a href=\"http://www.nationalparks.nsw.gov.au/garigal-national-park\" target=\"_system\">Garigal National Park</a> and the <a href=\"http://www.kmc.nsw.gov.au/Services_facilities/Facilities_and_venues/St_Ives_Precinct/Ku-ring-gai_Wildflower_Garden\" target=\"_system\">Wildflower Garden</a>."],
+	"description" : ["This walk covers parts of the <a href=\"http://www.nationalparks.nsw.gov.au/garigal-national-park\">Garigal National Park</a> and the <a href=\"http://www.kmc.nsw.gov.au/Services_facilities/Facilities_and_venues/St_Ives_Precinct/Ku-ring-gai_Wildflower_Garden\">Wildflower Garden</a>."],
 	"duration" : 6,
 	"length" : 17,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Wildflower Garden",
-			"method" : "bus",
+			"type" : "bus",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Ku-ring-gai Wildflower Garden using <a href=\"https://transportnsw.info/trip#/?to=Ku-ring-gai Wildflower Garden\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Ku-ring-gai Wildflower Garden using <a href=\"https://transportnsw.info/trip#/?to=Ku-ring-gai Wildflower Garden\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Roseville",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Roseville at <a href=\"https://transportnsw.info/trip#/?from=Roseville\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Roseville at <a href=\"https://transportnsw.info/trip#/?from=Roseville\">transportnsw.info</a>."
 		}
 	},
 	"indicator" : {

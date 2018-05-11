@@ -1,23 +1,24 @@
 {
 	"location" : "Grose Valley",
-	"description" : ["This walk follows part of the  <a href=\"http://www.nationalparks.nsw.gov.au/whats-on/blue-mountains/blue-gum-forest-walk\" target=\"_system\">Blue Gum Forest</a> walk."],
+	"description" : ["This walk follows part of the  <a href=\"http://www.nationalparks.nsw.gov.au/whats-on/blue-mountains/blue-gum-forest-walk\">Blue Gum Forest</a> walk."],
 	"duration" : 9,
 	"length" : 24,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Blackheath",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Blackheath using <a href=\"https://transportnsw.info/trip#/?to=Blackheath\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Blackheath using <a href=\"https://transportnsw.info/trip#/?to=Blackheath\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Blackheath",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Blackheath at <a href=\"https://transportnsw.info/trip#/?from=Blackheath\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Blackheath at <a href=\"https://transportnsw.info/trip#/?from=Blackheath\">transportnsw.info</a>."
 		},
 		"kiosk" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-info.png",
 			"lat" : -33.62985277777778,
 			"lon" : 150.30654444444446,

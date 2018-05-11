@@ -1,7 +1,7 @@
 {
 	"location" : "Fingal Bay",
 	"description" : [
-		"This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/tomaree-national-park\" target=\"_system\">Tomaree National Park</a>.",
+		"This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/tomaree-national-park\">Tomaree National Park</a>.",
 		"Be mindful that the bus back to Newcastle leaves very infrequently. Make sure you don't get stranded in Nelson Bay without transport."
 	],
 	"duration" : 6,
@@ -10,23 +10,25 @@
 	"markers" : {
 		"start" : {
 			"location" : "Nelson Bay",
-			"method" : "bus",
+			"type" : "bus",
 			"icon" : "./inc/img/marker-bus.png",
-			"description" : "Get the train and bus to Nelson Bay using <a href=\"https://transportnsw.info/trip#/?to=Nelson Bay\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train and bus to Nelson Bay using <a href=\"https://transportnsw.info/trip#/?to=Nelson Bay\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Nelson Bay",
-			"method" : "bus",
+			"type" : "bus",
 			"icon" : "./inc/img/marker-bus.png",
-			"description" : "Plan your return trip from Nelson Bay at <a href=\"https://transportnsw.info/trip#/?from=Nelson Bay\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Nelson Bay at <a href=\"https://transportnsw.info/trip#/?from=Nelson Bay\">transportnsw.info</a>."
 		},
 		"cafe" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -32.71056747004358,
 			"lon" : 152.1596679700228,
 			"description" : "Cafe at the lighthouse"
 		},
 		"kiosk" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -32.74295277777778,
 			"lon" : 152.1709972222222,

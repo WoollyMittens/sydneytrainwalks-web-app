@@ -1,27 +1,28 @@
 {
 	"location" : "Bouddi",
-	"description" : ["This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/bouddi-national-park\" target=\"_system\">Bouddi National Park</a>."],
+	"description" : ["This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/bouddi-national-park\">Bouddi National Park</a>."],
 	"duration" : 9,
 	"length" : 30,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Woy Woy",
-			"method" : "train",
+			"type" : "train",
 			"lat" : -33.484130859,
 			"lon" : 151.324539185,
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Woy Woy using <a href=\"https://transportnsw.info/trip#/?to=Woy Woy\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Woy Woy using <a href=\"https://transportnsw.info/trip#/?to=Woy Woy\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Woy Woy",
-			"method" : "train",
+			"type" : "train",
 			"lat" : -33.485313416,
 			"lon" : 151.323776245,
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Woy Woy at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Woy Woy at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>."
 		},
 		"kiosk" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.532202777777776,
 			"lon" : 151.35897777777777,

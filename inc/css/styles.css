@@ -251,11 +251,18 @@
     bottom: 0;
     z-index: 8;
     display: flex;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  /* line 21, ../../src/scss/_footer.scss */
+  .toolbar nav {
+    flex: 1 1 auto;
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0 0.5rem;
+    width: 100%;
   }
-  /* line 22, ../../src/scss/_footer.scss */
+  /* line 29, ../../src/scss/_footer.scss */
   .toolbar a {
     color: #0D47A1;
     display: inline-block;
@@ -264,12 +271,12 @@
     padding: 0;
     text-align: center;
     text-decoration: none;
-    min-width: 70px;
+    min-width: 3rem;
     flex: 0 1 auto;
     color: #0D47A1;
     filter: grayscale(1);
   }
-  /* line 35, ../../src/scss/_footer.scss */
+  /* line 42, ../../src/scss/_footer.scss */
   .toolbar a:before {
     background-size: contain;
     background-repeat: no-repeat;
@@ -283,38 +290,38 @@
   }
 
   /* icons per menu */
-  /* line 49, ../../src/scss/_footer.scss */
+  /* line 56, ../../src/scss/_footer.scss */
   #footer-to-menu:before {
     background-image: url("../img/base.svg");
   }
 
-  /* line 53, ../../src/scss/_footer.scss */
+  /* line 60, ../../src/scss/_footer.scss */
   #footer-to-overview:before {
     background-image: url("../img/languages.svg");
   }
 
-  /* line 57, ../../src/scss/_footer.scss */
+  /* line 64, ../../src/scss/_footer.scss */
   #footer-to-guide:before {
     background-image: url("../img/info_2.svg");
   }
 
-  /* line 61, ../../src/scss/_footer.scss */
+  /* line 68, ../../src/scss/_footer.scss */
   #footer-to-photos:before {
     background-image: url("../img/nature_1.svg");
   }
 
-  /* line 65, ../../src/scss/_footer.scss */
+  /* line 72, ../../src/scss/_footer.scss */
   #footer-to-map:before {
     background-image: url("../img/map_1.svg");
   }
 
-  /* line 69, ../../src/scss/_footer.scss */
+  /* line 76, ../../src/scss/_footer.scss */
   #footer-to-about:before {
     background-image: url("../img/profile_1.svg");
   }
 
   /* what icons to show on the menu screen */
-  /* line 76, ../../src/scss/_footer.scss */
+  /* line 83, ../../src/scss/_footer.scss */
   body.screen-about #footer-to-about,
   body.screen-about #footer-to-menu,
   body.screen-about #footer-to-overview,
@@ -326,7 +333,7 @@
   body.screen-overview #footer-to-overview {
     display: inline-block;
   }
-  /* line 82, ../../src/scss/_footer.scss */
+  /* line 89, ../../src/scss/_footer.scss */
   body.screen-about #footer-to-guide,
   body.screen-about #footer-to-map,
   body.screen-about #footer-to-photos,
@@ -340,7 +347,7 @@
   }
 
   /* what icons to show on the map screen */
-  /* line 92, ../../src/scss/_footer.scss */
+  /* line 99, ../../src/scss/_footer.scss */
   body.screen-guide #footer-to-about,
   body.screen-map #footer-to-about,
   body.screen-photos #footer-to-about {
@@ -348,7 +355,7 @@
   }
 
   /* what icons are active on per screen */
-  /* line 97, ../../src/scss/_footer.scss */
+  /* line 104, ../../src/scss/_footer.scss */
   body.screen-about #footer-to-about,
   body.screen-guide #footer-to-guide,
   body.screen-map #footer-to-map,
@@ -360,34 +367,34 @@
   }
 
   /* the photos icon is active on the map screen since they are combined */
-  /* line 107, ../../src/scss/_footer.scss */
+  /* line 114, ../../src/scss/_footer.scss */
   body.screen-map #footer-to-guide {
     opacity: 1;
     filter: grayscale(0);
   }
 
   /* hide the map icon on wider screens */
-  /* line 112, ../../src/scss/_footer.scss */
+  /* line 119, ../../src/scss/_footer.scss */
   #footer-to-map {
     display: none;
   }
 }
 @media (orientation: portrait) {
   /* show the map icon on narrow screens */
-  /* line 118, ../../src/scss/_footer.scss */
+  /* line 125, ../../src/scss/_footer.scss */
   #footer-to-map {
     display: inline-block;
   }
 
   /* the photos icon is passive on the map screen */
-  /* line 122, ../../src/scss/_footer.scss */
+  /* line 129, ../../src/scss/_footer.scss */
   body.screen-map #footer-to-guide {
     opacity: 0.5;
     filter: grayscale(1);
   }
 }
 @media print {
-  /* line 128, ../../src/scss/_footer.scss */
+  /* line 135, ../../src/scss/_footer.scss */
   .toolbar {
     display: none;
   }

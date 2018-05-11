@@ -1,29 +1,31 @@
 {
 	"location" : "Kuring-gai Chase",
-	"description" : ["This walk covers parts of the <a href=\"http://www.nationalparks.nsw.gov.au/ku-ring-gai-chase-national-park\" target=\"_system\">Ku-ring-gai Chase National Park</a> and ends at the <a href=\"http://www.kmc.nsw.gov.au/Services_facilities/Facilities_and_venues/St_Ives_Precinct/Ku-ring-gai_Wildflower_Garden\" target=\"_system\">Wildflower Garden</a>."],
+	"description" : ["This walk covers parts of the <a href=\"http://www.nationalparks.nsw.gov.au/ku-ring-gai-chase-national-park\">Ku-ring-gai Chase National Park</a> and ends at the <a href=\"http://www.kmc.nsw.gov.au/Services_facilities/Facilities_and_venues/St_Ives_Precinct/Ku-ring-gai_Wildflower_Garden\">Wildflower Garden</a>."],
 	"duration" : 5,
 	"length" : 14,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Mount Kuring-gai",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Mount Kuring-gai using <a href=\"https://transportnsw.info/trip#/?to=Mount Kuring-gai\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Mount Kuring-gai using <a href=\"https://transportnsw.info/trip#/?to=Mount Kuring-gai\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Wildflower Garden",
-			"method" : "bus",
+			"type" : "bus",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Ku-ring-gai Wildflower Garden at <a href=\"https://transportnsw.info/trip#/?from=Ku-ring-gai Wildflower Garden\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Ku-ring-gai Wildflower Garden at <a href=\"https://transportnsw.info/trip#/?from=Ku-ring-gai Wildflower Garden\">transportnsw.info</a>."
 		},
 		"kioska" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.65976666666666,
 			"lon" : 151.15893333333335,
 			"description" : "Bobbin Head Inn"
 		},
 		"kioskb" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.65260277777778,
 			"lon" : 151.1558361111111,

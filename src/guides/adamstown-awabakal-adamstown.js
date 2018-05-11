@@ -1,8 +1,8 @@
 {
 	"location" : "Awabakal",
 	"description" : [
-		"The <a href=\"http://www.railtrails.org.au/trail?view=trail&id=80\" target=\"_system\">Fernleigh track</a> is an old railway line from Newcastle to Lake Macquarie that has been turned into a bike path. The platforms of the stations are still visible along the way and food and drinks conveniently available nearby every stop.",
-		"<a href=\"http://www.environment.nsw.gov.au/NationalParks/parkHome.aspx?id=N0522\" target=\"_system\">Awabakal</a> is a nature reserve in the middle of suburban Newcastle. Despite the encroachment of the surrounding suburbs, the coastal heath and lagoon are in breathtaking condition."
+		"The <a href=\"http://www.railtrails.org.au/trail?view=trail&id=80\">Fernleigh track</a> is an old railway line from Newcastle to Lake Macquarie that has been turned into a bike path. The platforms of the stations are still visible along the way and food and drinks conveniently available nearby every stop.",
+		"<a href=\"http://www.environment.nsw.gov.au/NationalParks/parkHome.aspx?id=N0522\">Awabakal</a> is a nature reserve in the middle of suburban Newcastle. Despite the encroachment of the surrounding suburbs, the coastal heath and lagoon are in breathtaking condition."
 	],
 	"duration" : 9,
 	"length" : 31,
@@ -10,34 +10,38 @@
 	"markers" : {
 		"start" : {
 			"location" : "Adamstown",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Adamstown using <a href=\"https://transportnsw.info/trip#/?to=Adamstown\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Adamstown using <a href=\"https://transportnsw.info/trip#/?to=Adamstown\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Adamstown",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-bus.png",
-			"description" : "Plan your return trip from Adamstown at <a href=\"https://transportnsw.info/trip#/?from=Adamstown\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Adamstown at <a href=\"https://transportnsw.info/trip#/?from=Adamstown\">transportnsw.info</a>."
 		},
 		"toileta" : {
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -32.977214000000004,
 			"lon" : 151.708441
 		},
 		"kioska" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -32.978277000000006,
 			"lon" : 151.708188,
 			"description" : "Whitebridge shops"
 		},
 		"kioskb" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.01304,
 			"lon" : 151.718354,
 			"description" : "Redhead Surf Club"
 		},
 		"kioskc" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -32.989667000000004,
 			"lon" : 151.719252,

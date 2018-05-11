@@ -1,21 +1,21 @@
 {
 	"location" : "Illawarra",
-	"description" : ["This walk follows part of the <a href=\"http://www.grandpacificdrive.com.au/\" target=\"_system\">Grand Pacific Drive</a>."],
+	"description" : ["This walk follows part of the <a href=\"http://www.grandpacificdrive.com.au/\">Grand Pacific Drive</a>."],
 	"duration" : 5,
 	"length" : 20,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Wollongong",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Wollongong using <a href=\"https://transportnsw.info/trip#/?to=Wollongong\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Wollongong using <a href=\"https://transportnsw.info/trip#/?to=Wollongong\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Thirroul",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Thirroul using <a href=\"https://transportnsw.info/trip#/?to=Thirroul\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Thirroul using <a href=\"https://transportnsw.info/trip#/?to=Thirroul\">transportnsw.info</a>."
 		}
 	},
 	"indicator" : {

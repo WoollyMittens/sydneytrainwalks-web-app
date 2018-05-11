@@ -47,8 +47,8 @@
 				</p>
 				<p class="app-banners">
 					<span>Take these guides with you as an app:</span>
-					<a href="https://play.google.com/store/apps/details?id=com.sydneytrainwalks.ios"><img alt="Get it on Google Play" src="./inc/img/banner-android.png" target="_blank"/></a>
-					<a href="https://itunes.apple.com/us/app/sydney-train-walks/id917041642?ls=1&mt=8"><img alt="Download on the App Store" src="./inc/img/banner-ios.png" target="_blank"/></a>
+					<a href="https://play.google.com/store/apps/details?id=com.sydneytrainwalks.ios"><img alt="Get it on Google Play" src="./inc/img/banner-android.png"/></a>
+					<a href="https://itunes.apple.com/us/app/sydney-train-walks/id917041642?ls=1&mt=8"><img alt="Download on the App Store" src="./inc/img/banner-ios.png"/></a>
 				</p>
 				<form id="sorting" data-target=".navigation > menu > li">
 					<label>
@@ -98,9 +98,11 @@
 				</menu>
 			</nav>
 			<footer class="toolbar">
-				<a id="footer-to-menu" href="index.php">Menu</a>
-				<a id="footer-to-overview" href="overview.php">Overview</a>
-				<a id="footer-to-about" href="about.php">About</a>
+				<nav>
+					<a id="footer-to-menu" href="index.php">Menu</a>
+					<a id="footer-to-overview" href="overview.php">Overview</a>
+					<a id="footer-to-about" href="about.php">About</a>
+				</nav>
 			</footer>
 		</section>
 		<script src="./inc/js/scripts.js"></script>

@@ -1,7 +1,7 @@
 {
 	"location" : "Brisbane Water",
 	"description" : [
-		"This walk follow the Great North Walk through <a href=\"http://www.nationalparks.nsw.gov.au/visit-a-park/parks/brisbane-water-national-park\" target=\"_system\">Brisbane Water National Park</a>.",
+		"This walk follow the Great North Walk through <a href=\"http://www.nationalparks.nsw.gov.au/visit-a-park/parks/brisbane-water-national-park\">Brisbane Water National Park</a>.",
 		"<em>Make sure to board the rear door of the train to Wondabyne and warn the guard that you want alight at Wondabyne, otherwise the train will not stop.</em>"
 	],
 	"duration" : 8,
@@ -10,15 +10,15 @@
 	"markers" : {
 		"start" : {
 			"location" : "Wondabyne",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Wondabyne using <a href=\"https://transportnsw.info/trip#/?to=Wondabyne\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Wondabyne using <a href=\"https://transportnsw.info/trip#/?to=Wondabyne\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Woy Woy",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Woy Woy at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Woy Woy at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>."
 		}
 	},
 	"indicator" : {

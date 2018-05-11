@@ -1,7 +1,7 @@
 {
 	"location" : "Blue Gum Swamp",
 	"description" : [
-		"This walk is a loop around the <a href=\"https://www.bluemts.com.au/info/thingstodo/mountain-bike-trails/blue-gum-swamp-winmalee/\" target=\"_system\">Blue Gum Swamp</a> and Grose Head Lookout."
+		"This walk is a loop around the <a href=\"https://www.bluemts.com.au/info/thingstodo/mountain-bike-trails/blue-gum-swamp-winmalee/\">Blue Gum Swamp</a> and Grose Head Lookout."
 	],
 	"duration" : 4,
 	"length" : 14,
@@ -9,17 +9,17 @@
 	"markers" : {
 		"start" : {
 			"location" : "Winmalee",
-			"method" : "bus",
+			"type" : "bus",
 			"icon" : "./inc/img/marker-bus.png",
-			"description" : "Plan your trip to the Winmalee Shopping Centre using <a href=\"https://transportnsw.info/trip#/?to=Winmalee\" target=\"_system\">transportnsw.info</a>.",
+			"description" : "Plan your trip to the Winmalee Shopping Centre using <a href=\"https://transportnsw.info/trip#/?to=Winmalee\">transportnsw.info</a>.",
 			"lat" : -33.672309999999996,
 			"lon" : 150.60895399999998
 		},
 		"end" : {
 			"location" : "Winmalee",
-			"method" : "bus",
+			"type" : "bus",
 			"icon" : "./inc/img/marker-bus.png",
-			"description" : "Plan your return trip from Winmalee Shopping Centre at <a href=\"https://transportnsw.info/trip#/?from=Winmalee\" target=\"_system\">transportnsw.info</a>.",
+			"description" : "Plan your return trip from Winmalee Shopping Centre at <a href=\"https://transportnsw.info/trip#/?from=Winmalee\">transportnsw.info</a>.",
 			"lat" : -33.672309999999996,
 			"lon" : 150.60895399999998
 		}

@@ -1,21 +1,21 @@
 {
 	"location" : "Box Vale",
-	"description" : ["Part of this walk follows the <a href=\"http://www.visitnsw.com/destinations/country-nsw/southern-highlands/mittagong/attractions/box-vale-mine-walking-track-and-lookout\" target=\"_system\">Box Vale Mine Walking Track and Lookout</a>."],
+	"description" : ["Part of this walk follows the <a href=\"http://www.visitnsw.com/destinations/country-nsw/southern-highlands/mittagong/attractions/box-vale-mine-walking-track-and-lookout\">Box Vale Mine Walking Track and Lookout</a>."],
 	"duration" : 7,
 	"length" : 17,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Mittagong",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Mittagong using <a href=\"https://transportnsw.info/trip#/?to=Mittagong\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Mittagong using <a href=\"https://transportnsw.info/trip#/?to=Mittagong\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Mittagong",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Mittagong at <a href=\"https://transportnsw.info/trip#/?from=Mittagong\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Mittagong at <a href=\"https://transportnsw.info/trip#/?from=Mittagong\">transportnsw.info</a>."
 		}
 	},
 	"indicator" : {

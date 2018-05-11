@@ -1,21 +1,21 @@
 {
 	"location" : "Kedumba Pass",
-	"description" : ["This walk descends at the <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park/leura-cascades-fern-bower-circuit/walking\" target=\"_system\">Leura Fern Bower</a>, crosses <a href=\"http://en.wikipedia.org/wiki/Jamison_Valley\" target=\"_system\">Jamison Valley</a> and ascends at the Kedumba pass at the other side."],
+	"description" : ["This walk descends at the <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park/leura-cascades-fern-bower-circuit/walking\">Leura Fern Bower</a>, crosses <a href=\"http://en.wikipedia.org/wiki/Jamison_Valley\">Jamison Valley</a> and ascends at the Kedumba pass at the other side."],
 	"duration" : 8,
 	"length" : 25,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Katoomba",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Katoomba using <a href=\"https://transportnsw.info/trip#/?to=Katoomba\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Katoomba using <a href=\"https://transportnsw.info/trip#/?to=Katoomba\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Wentworth Falls",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Wentworth Falls at <a href=\"https://transportnsw.info/trip#/?from=Wentworth Falls\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Wentworth Falls at <a href=\"https://transportnsw.info/trip#/?from=Wentworth Falls\">transportnsw.info</a>."
 		}
 	},
 	"indicator" : {

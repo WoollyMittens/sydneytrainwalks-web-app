@@ -1,21 +1,21 @@
 {
 	"location" : "Worimi",
-	"description" : ["<a href=\"http://en.wikipedia.org/wiki/Stockton_Beach\" target=\"_system\">Stockton beach</a> is a 32 kilometre stretch of beach and dunes along <a href=\"http://www.nationalparks.nsw.gov.au/worimi-national-park\" target=\"_system\">Worimi National Park</a>. The beach has a varied history of mining, settlement, shipwrecks and recreation to enjoy along the way."],
+	"description" : ["<a href=\"http://en.wikipedia.org/wiki/Stockton_Beach\">Stockton beach</a> is a 32 kilometre stretch of beach and dunes along <a href=\"http://www.nationalparks.nsw.gov.au/worimi-national-park\">Worimi National Park</a>. The beach has a varied history of mining, settlement, shipwrecks and recreation to enjoy along the way."],
 	"duration" : 9,
 	"length" : 36,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Anna Bay",
-			"method" : "bus",
+			"type" : "bus",
 			"icon" : "./inc/img/marker-bus.png",
-			"description" : "Get the train to Hamilton, followed by the bus to Anna Bay using <a href=\"https://transportnsw.info/trip#/?to=Anna Bay\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Hamilton, followed by the bus to Anna Bay using <a href=\"https://transportnsw.info/trip#/?to=Anna Bay\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Stockton",
-			"method" : "ferry",
+			"type" : "ferry",
 			"icon" : "./inc/img/marker-ferry.png",
-			"description" : "Plan your return trip from Stockton at <a href=\"https://transportnsw.info/trip#/?from=Stockton\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Stockton at <a href=\"https://transportnsw.info/trip#/?from=Stockton\">transportnsw.info</a>."
 		}
 	},
 	"indicator" : {

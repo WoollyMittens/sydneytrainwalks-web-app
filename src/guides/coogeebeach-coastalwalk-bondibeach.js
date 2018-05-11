@@ -1,21 +1,21 @@
 {
 	"location" : "Coastal Walk",
-	"description" : ["This walk covers the famous <a href=\"http://bonditocoogeewalk.com.au/\" target=\"_system\">Bondi to Coogee walk</a>."],
+	"description" : ["This walk covers the famous <a href=\"http://bonditocoogeewalk.com.au/\">Bondi to Coogee walk</a>."],
 	"duration" : 2,
 	"length" : 6,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Coogee Beach",
-			"method" : "bus",
+			"type" : "bus",
 			"icon" : "./inc/img/marker-bus.png",
-			"description" : "Get the bus to Coogee Beach using <a href=\"https://transportnsw.info/trip#/?to=Coogee Beach\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the bus to Coogee Beach using <a href=\"https://transportnsw.info/trip#/?to=Coogee Beach\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Bondi Beach",
-			"method" : "bus",
+			"type" : "bus",
 			"icon" : "./inc/img/marker-bus.png",
-			"description" : "Plan your return trip from Bondi Beach at <a href=\"https://transportnsw.info/trip#/?from=Bondi Beach\" target=\"_system\">transportnsw.info</a>.",
+			"description" : "Plan your return trip from Bondi Beach at <a href=\"https://transportnsw.info/trip#/?from=Bondi Beach\">transportnsw.info</a>.",
 			"lat" : -33.892822,
 			"lon" : 151.273468
 		}

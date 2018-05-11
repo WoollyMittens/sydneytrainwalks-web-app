@@ -1,8 +1,8 @@
 {
 	"location" : "Federal Pass",
 	"description" : [
-		"This walk follows part of the <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park/federal-pass/walking\" target=\"_system\">Federal Pass</a>.",
-		"Instead of climbing out of Jamison Valley, there is an option to take the <a href=\"http://www.scenicworld.com.au/ticket-options-passes-2/\" target=\"_system\">Scenic World's cable car</a> back up instead."
+		"This walk follows part of the <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park/federal-pass/walking\">Federal Pass</a>.",
+		"Instead of climbing out of Jamison Valley, there is an option to take the <a href=\"http://www.scenicworld.com.au/ticket-options-passes-2/\">Scenic World's cable car</a> back up instead."
 	],
 	"duration" : 7,
 	"length" : 14,
@@ -10,23 +10,25 @@
 	"markers" : {
 		"start" : {
 			"location" : "Katoomba",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Katoomba using <a href=\"https://transportnsw.info/trip#/?to=Katoomba\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Katoomba using <a href=\"https://transportnsw.info/trip#/?to=Katoomba\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Katoomba",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Katoomba at <a href=\"https://transportnsw.info/trip#/?from=Katoomba\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Katoomba at <a href=\"https://transportnsw.info/trip#/?from=Katoomba\">transportnsw.info</a>."
 		},
 		"warning" : {
+			"type" : "warning",
 			"icon" : "./inc/img/marker-warning.png",
 			"lat" : -33.72815277777778,
 			"lon" : 150.30450000000002,
 			"description" : "Instead of climbing you<br/>can also use the scenic railway."
 		},
 		"kiosk" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.72815277777778,
 			"lon" : 150.30450000000002,

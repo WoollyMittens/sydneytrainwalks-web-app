@@ -38,16 +38,18 @@
 			</header>
 			<figure class="overview" id="leafletMap2"></figure>
 			<footer class="toolbar">
-				<a id="footer-to-menu" href="index.php">Menu</a>
-				<a id="footer-to-overview" href="overview.php">Overview</a>
-				<a id="footer-to-about" href="about.php">About</a>
+				<nav>
+					<a id="footer-to-menu" href="index.php">Menu</a>
+					<a id="footer-to-overview" href="overview.php">Overview</a>
+					<a id="footer-to-about" href="about.php">About</a>
+				</nav>
 			</footer>
 		</section>
 		<script src="./inc/js/exif-data.js"></script>
 		<script src="./inc/js/guide-data.js"></script>
 		<script src="./inc/js/scripts.js"></script>
 		<script id="credit-template" type="text/template">
-			Maps &copy; <a href="http://www.thunderforest.com/" target="_blank">Thunderforest</a>, Data &copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> and contributors, CC BY-SA
+			Maps &copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, Data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> and contributors, CC BY-SA
 		</script>
 		<script>
 			window.addEventListener('load', function () {

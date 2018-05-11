@@ -1,23 +1,24 @@
 {
 	"location" : "Burramoko Ridge",
-	"description" : ["This walk strings together <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park/burramoko-ridge-cycle-trail/cycling\" target=\"_system\">Baltzer Lookout, Hanging Rock</a>, Hat Hill, <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park/pulpit-rock-lookout/lookout\" target=\"_system\">Pulpit Rock</a>, and <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park/govetts-leap-lookout/lookout\" target=\"_system\">Govetts Leap</a>."],
+	"description" : ["This walk strings together <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park/burramoko-ridge-cycle-trail/cycling\">Baltzer Lookout, Hanging Rock</a>, Hat Hill, <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park/pulpit-rock-lookout/lookout\">Pulpit Rock</a>, and <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park/govetts-leap-lookout/lookout\">Govetts Leap</a>."],
 	"duration" : 7,
 	"length" : 26,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Blackheath",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Blackheath using <a href=\"https://transportnsw.info/trip#/?to=Blackheath\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Blackheath using <a href=\"https://transportnsw.info/trip#/?to=Blackheath\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Blackheath",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Blackheath at <a href=\"https://transportnsw.info/trip#/?from=Blackheath\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Blackheath at <a href=\"https://transportnsw.info/trip#/?from=Blackheath\">transportnsw.info</a>."
 		},
 		"kiosk" : {
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-info.png",
 			"lat" : -33.62985277777778,
 			"lon" : 150.30654444444446,

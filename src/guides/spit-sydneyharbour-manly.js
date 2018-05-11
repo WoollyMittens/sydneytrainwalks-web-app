@@ -1,7 +1,7 @@
 {
 	"location" : "Sydney Harbour",
 	"description" : [
-		"This walk follows the <a href=\"https://www.sydneycoastwalks.com.au/spit-to-manly-walk/\" target=\"_system\">Spit to Manly Walk</a>."
+		"This walk follows the <a href=\"https://www.sydneycoastwalks.com.au/spit-to-manly-walk/\">Spit to Manly Walk</a>."
 	],
 	"duration" : 3,
 	"length" : 10,
@@ -9,15 +9,15 @@
 	"markers" : {
 		"start" : {
 			"location" : "Spit Junction",
-			"method" : "bus",
+			"type" : "bus",
 			"icon" : "./inc/img/marker-bus.png",
-			"description" : "Get the bus to Spit Junction using <a href=\"https://transportnsw.info/trip#/?to=Spit Junction\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the bus to Spit Junction using <a href=\"https://transportnsw.info/trip#/?to=Spit Junction\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Manly",
-			"method" : "ferry",
+			"type" : "ferry",
 			"icon" : "./inc/img/marker-ferry.png",
-			"description" : "Plan your return trip from Manly at <a href=\"https://transportnsw.info/trip#/?from=Manly\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Manly at <a href=\"https://transportnsw.info/trip#/?from=Manly\">transportnsw.info</a>."
 		}
 	},
 	"indicator" : {

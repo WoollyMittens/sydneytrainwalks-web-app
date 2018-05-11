@@ -1,21 +1,21 @@
 {
 	"location" : "Mount York",
-	"description" : ["This walk follows some of the mountain passes around <a href=\"http://en.wikipedia.org/wiki/Mount_York\" target=\"_system\">Mount York</a> at Mount Victoria in the Blue Mountains and ends at the monuments to the crossing of the Blue Mountains there."],
+	"description" : ["This walk follows some of the mountain passes around <a href=\"http://en.wikipedia.org/wiki/Mount_York\">Mount York</a> at Mount Victoria in the Blue Mountains and ends at the monuments to the crossing of the Blue Mountains there."],
 	"duration" : 6,
 	"length" : 18,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Mount Victoria",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Mount Victoria using <a href=\"https://transportnsw.info/trip#/?to=Mount Victoria\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Mount Victoria using <a href=\"https://transportnsw.info/trip#/?to=Mount Victoria\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Mount Victoria",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Mount Victoria at <a href=\"https://transportnsw.info/trip#/?from=Mount Victoria\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Mount Victoria at <a href=\"https://transportnsw.info/trip#/?from=Mount Victoria\">transportnsw.info</a>."
 		}
 	},
 	"landmarks" : {

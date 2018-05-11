@@ -1,21 +1,21 @@
 {
 	"location" : "Koolewong Ridge",
-	"description" : ["This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/visit-a-park/parks/Brisbane-Water-National-Park\" target=\"_system\">Brisbane Water National Park</a>."],
+	"description" : ["This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/visit-a-park/parks/Brisbane-Water-National-Park\">Brisbane Water National Park</a>."],
 	"duration" : 4,
 	"length" : 13,
 	"zoom" : 13,
 	"markers" : {
 		"start" : {
 			"location" : "Woy Woy",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Get the train to Woy Woy using <a href=\"https://transportnsw.info/trip#/?to=Woy Woy\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Get the train to Woy Woy using <a href=\"https://transportnsw.info/trip#/?to=Woy Woy\">transportnsw.info</a>."
 		},
 		"end" : {
 			"location" : "Gosford",
-			"method" : "train",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Gosford at <a href=\"https://transportnsw.info/trip#/?from=Gosford\" target=\"_system\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Gosford at <a href=\"https://transportnsw.info/trip#/?from=Gosford\">transportnsw.info</a>."
 		}
 	},
 	"indicator" : {
