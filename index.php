@@ -84,11 +84,11 @@
 
 								?>
 									<span class="sign from">From</span>
-									<span class="sign start <?php print $value->{'markers'}->{'start'}->{'method'}?>"><?php print $value->{'markers'}->{'start'}->{'location'}?></span>
+									<span class="sign start <?php print $value->{'markers'}->{'start'}->{'type'}?>"><?php print $value->{'markers'}->{'start'}->{'location'}?></span>
 									<span class="sign to">via</span>
 									<span class="sign park"><?php print $value->{'location'}?> <i><?php print $value->{'duration'}?>h / <span><?php print $value->{'length'}?>km</span></i></span>
 									<span class="sign to">to</span>
-									<span class="sign finish <?php print $value->{'markers'}->{'end'}->{'method'}?>"><?php print $value->{'markers'}->{'end'}->{'location'}?></span>
+									<span class="sign finish <?php print $value->{'markers'}->{'end'}->{'type'}?>"><?php print $value->{'markers'}->{'end'}->{'location'}?></span>
 								<?php
 
 								echo '</a></li>';

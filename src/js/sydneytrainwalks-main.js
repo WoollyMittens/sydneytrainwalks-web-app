@@ -66,7 +66,7 @@ SydneyTrainWalks.prototype.Main = function(config, context) {
 
 	this.remoteLink = function(evt) {
 		var href = evt.target.getAttribute("href");
-		if(/^http/i.test(href)) {
+		if(/^http/i.test(href) && !/.jpg$/i.test(href)) {
 			evt.preventDefault();
 			window.open(href, '_system', 'location=yes');
 		}

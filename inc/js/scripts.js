@@ -18921,7 +18921,7 @@ SydneyTrainWalks.prototype.Main = function(config, context) {
 
 	this.remoteLink = function(evt) {
 		var href = evt.target.getAttribute("href");
-		if(/^http/i.test(href)) {
+		if(/^http/i.test(href) && !/.jpg$/i.test(href)) {
 			evt.preventDefault();
 			window.open(href, '_system', 'location=yes');
 		}
@@ -18952,6 +18952,8 @@ SydneyTrainWalks.prototype.Overview = function(parent) {
 
 	this.parent = parent;
 	this.config = parent.config;
+	this.overviewMap = null;
+	this.overviewMarker = null;
 	this.config.extend = function(properties) {
 		for (var name in properties) {
 			this[name] = properties[name];
@@ -19011,7 +19013,10 @@ SydneyTrainWalks.prototype.Overview = function(parent) {
 			[bounds.maxLat, bounds.maxLon]
 		]);
 		map.setView([bounds.avgLat, bounds.avgLon], 8);
+		// watch the location
+		this.watchLocation();
 		// return the object
+		this.overviewMap = map;
 		return this;
 	};
 
@@ -19066,6 +19071,18 @@ SydneyTrainWalks.prototype.Overview = function(parent) {
 		};
 	};
 
+	this.watchLocation = function(evt) {
+		// if geolocation is available
+		if (navigator.geolocation) {
+			// request the position
+			navigator.geolocation.watchPosition(
+				this.onGeoSuccess(),
+				this.onGeoFailure(),
+				{ maximumAge : 10000,  timeout : 5000,  enableHighAccuracy : true }
+			);
+		}
+	};
+
 	// EVENTS
 
 	this.onMarkerClicked = function(id, evt) {
@@ -19091,6 +19108,36 @@ SydneyTrainWalks.prototype.Overview = function(parent) {
 				element.tile.src = url.replace('{z}', z).replace('{x}', x).replace('{y}', y);
 			}
 		});
+	};
+
+	// geo location events
+	this.onGeoSuccess = function () {
+		var _this = this;
+		return function (geo) {
+			// if the marker doesn't exist yet
+			if (_this.overviewMarker === null) {
+				// create the icon
+				var icon = L.icon({
+					iconUrl: "./inc/img/marker-location.png",
+					iconSize: [32, 32],
+					iconAnchor: [16, 32]
+				});
+				// add the marker with the icon
+				_this.overviewMarker = L.marker(
+					[geo.coords.latitude, geo.coords.longitude],
+					{'icon': icon}
+				);
+				_this.overviewMarker.addTo(_this.overviewMap);
+			} else {
+				_this.overviewMarker.setLatLng([geo.coords.latitude, geo.coords.longitude]);
+			}
+		};
+	};
+
+	this.onGeoFailure = function () {
+		return function () {
+			console.log('geolocation failed');
+		};
 	};
 
 };

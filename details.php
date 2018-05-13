@@ -62,11 +62,11 @@
 			<header class="subtitle">
 				<h2>
 					<span class="sign from">From</span>
-					<span class="sign <?php print $json->{'markers'}->{'start'}->{'method'}?>"><?php print $json->{'markers'}->{'start'}->{'location'}?></span>
+					<span class="sign <?php print $json->{'markers'}->{'start'}->{'type'}?>"><?php print $json->{'markers'}->{'start'}->{'location'}?></span>
 					<span class="sign to">via</span>
 					<span class="sign park"><?php print $json->{'location'}?> <i><?php print $json->{'duration'}?>h / <?php print $json->{'length'}?>km</i></span>
 					<span class="sign to">to</span>
-					<span class="sign <?php print $json->{'markers'}->{'end'}->{'method'}?>"><?php print $json->{'markers'}->{'end'}->{'location'}?></span>
+					<span class="sign <?php print $json->{'markers'}->{'end'}->{'type'}?>"><?php print $json->{'markers'}->{'end'}->{'location'}?></span>
 				</h2>
 			</header>
 			<article class="guide guide-closed">
