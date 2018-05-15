@@ -18,6 +18,9 @@
     <allow-navigation href="http://*/*" />
     <allow-navigation href="https://*/*" />
     <allow-navigation href="data:*" />
+    <preference name="StatusBarBackgroundColor" value="#000000" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
     <platform name="android">
         <allow-intent href="market:*" />
         <icon density="ldpi" src="assets/logos/icon-36.png" />
@@ -52,7 +55,6 @@
     <plugin name="cordova-plugin-geolocation" spec="^4.0.1" />
     <plugin name="cordova-plugin-inappbrowser" spec="^2.0.2" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
-    <plugin name="cordova-plugin-statusbar" spec="^2.4.1" />
-    <engine name="android" spec="^7.0.0" />
     <engine name="ios" spec="^4.5.4" />
+    <engine name="android" spec="~7.1.0" />
 </widget>

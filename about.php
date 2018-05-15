@@ -32,30 +32,32 @@
 		</script>
 	</head>
 	<body class="screen-about">
-		<section id="appView">
-			<header class="title">
-				<h1><a href="./">Sydney Train Walks</a></h1>
-			</header>
-			<section class="about">
-				<div class="about-scroller">
-					<h2>About Sydney Train Walks</h2>
-					<p>This guide was created to give my exploration of Sydney's amazing national parks a useful purpose. I hope it will motivate people to venture out on nature walks by making it easier to get started.</p>
-					<p>Please send suggestions and bug reports to <a href="mailto:info@sydneytrainwalks.com">info@sydneytrainwalks.com</a>.</p>
-					<h2>Credits</h2>
-					<p>App, photography and GPS logs &copy; Maurice van Creij, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>.</p>
-					<p>Maps &copy; <a href="http://www.4umaps.eu/">4UMaps</a>, &copy; <a href="http://www.thunderforest.com/">Thunderforest</a>.</p>
-					<p>Data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> and contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>.</p>
-					<h2>Disclaimer</h2>
-					<p>Please do not rely solely on this app for your navigation. There is no warranty on the accuracy or reliability of this app. Always carry a real paper map, which are readily available from park offices and tourist information centres.</p>
-				</div>
+		<div class="ios-margins">
+			<section id="appView">
+				<header class="title">
+					<h1><a href="./">Sydney Train Walks</a></h1>
+				</header>
+				<section class="about">
+					<div class="about-scroller">
+						<h2>About Sydney Train Walks</h2>
+						<p>This guide was created to give my exploration of Sydney's amazing national parks a useful purpose. I hope it will motivate people to venture out on nature walks by making it easier to get started.</p>
+						<p>Please send suggestions and bug reports to <a href="mailto:info@sydneytrainwalks.com">info@sydneytrainwalks.com</a>.</p>
+						<h2>Credits</h2>
+						<p>App, photography and GPS logs &copy; Maurice van Creij, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>.</p>
+						<p>Maps &copy; <a href="http://www.4umaps.eu/">4UMaps</a>, &copy; <a href="http://www.thunderforest.com/">Thunderforest</a>.</p>
+						<p>Data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> and contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>.</p>
+						<h2>Disclaimer</h2>
+						<p>Please do not rely solely on this app for your navigation. There is no warranty on the accuracy or reliability of this app. Always carry a real paper map, which are readily available from park offices and tourist information centres.</p>
+					</div>
+				</section>
+				<footer class="toolbar">
+					<nav>
+						<a id="footer-to-menu" href="index.php">Menu</a>
+						<a id="footer-to-overview" href="overview.php">Overview</a>
+						<a id="footer-to-about" href="about.php">About</a>
+					</nav>
+				</footer>
 			</section>
-			<footer class="toolbar">
-				<nav>
-					<a id="footer-to-menu" href="index.php">Menu</a>
-					<a id="footer-to-overview" href="overview.php">Overview</a>
-					<a id="footer-to-about" href="about.php">About</a>
-				</nav>
-			</footer>
-		</section>
+		</div>
 	</body>
 </html>

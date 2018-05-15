@@ -4,11 +4,20 @@
 
 @media all {
 
+	.ios-margins {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+	}
+
 	#appView {
 		height : 100%;
 		width : 100%;
 		overflow : hidden;
-		position : absolute;
+		position : relative;
 		&.status-busy:after {
 			content: '';
 			display: block;

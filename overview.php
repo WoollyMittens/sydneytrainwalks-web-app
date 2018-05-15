@@ -32,19 +32,21 @@
 		</script>
 	</head>
 	<body class="screen-overview">
-		<section id="appView">
-			<header class="title">
-				<h1><a href="./">Sydney Train Walks</a></h1>
-			</header>
-			<figure class="overview" id="leafletMap2"></figure>
-			<footer class="toolbar">
-				<nav>
-					<a id="footer-to-menu" href="index.php">Menu</a>
-					<a id="footer-to-overview" href="overview.php">Overview</a>
-					<a id="footer-to-about" href="about.php">About</a>
-				</nav>
-			</footer>
-		</section>
+		<div class="ios-margins">
+			<section id="appView">
+				<header class="title">
+					<h1><a href="./">Sydney Train Walks</a></h1>
+				</header>
+				<figure class="overview" id="leafletMap2"></figure>
+				<footer class="toolbar">
+					<nav>
+						<a id="footer-to-menu" href="index.php">Menu</a>
+						<a id="footer-to-overview" href="overview.php">Overview</a>
+						<a id="footer-to-about" href="about.php">About</a>
+					</nav>
+				</footer>
+			</section>
+		</div>
 		<script src="./inc/js/exif-data.js"></script>
 		<script src="./inc/js/guide-data.js"></script>
 		<script src="./inc/js/scripts.js"></script>
