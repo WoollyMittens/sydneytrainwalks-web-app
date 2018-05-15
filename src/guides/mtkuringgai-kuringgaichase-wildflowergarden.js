@@ -39,10 +39,10 @@
 	"landmarks" : {
 		"p8182142" : "Exit the station to the left, across the pedestrian bridge. Follow Harwood Ave to the trailhead.",
 		"p8182149" : "A side trail to the right leads to a lookout overlooking Apple Tree Bay.",
-		"P8182163" : "An easy to miss side trail on the left, just before a rocky staircase, leads to the Firefighter's Rest memorial.",
+		"p8182163" : "An easy to miss side trail on the left, just before a rocky staircase, leads to the Firefighter's Rest memorial.",
 		"p8182220" : "The trail down the ridge ends at a lookout overlooking Cowan Creek.",
 		"p8182225" : "To the right of the lookout a trail zig zags down to the water level.",
-		"P8182311" : "At the bottom of the descent, follow the trail along the water to the right.",
+		"p8182311" : "At the bottom of the descent, follow the trail along the water to the right.",
 		"p8182332" : "The trail ends at the Apple Tree Bay pinic area. ",
 		"p8182362" : "Continue up the road to Bobbin Head straight across the bay.",
 		"p8182391" : "Traverse the picnic area of Bobbin Head and cross the bridge over the creek.",
@@ -55,7 +55,7 @@
 		"p8182636" : "The fire trail eventually ends at a gate to suburban streets.",
 		"p8182641" : "Follow the stubby white markers down Warrimoo Ave and turn left into Phillip Road.",
 		"p8182643" : "At the end of Pillip Road, across a grassy field another firetrail descends into the next fully.",
-		"P8182655" : "Follow the firetrail down into the gully and take the Mueller Track on the right up to the Wildflower Garden.",
+		"p8182655" : "Follow the firetrail down into the gully and take the Mueller Track on the right up to the Wildflower Garden.",
 		"p8182662" : "At the top of the ridge, follow the directions to Cunningman's Rest picnic area.",
 		"p8182672" : "From the picnic area follow the road out of the Wildflower Garden.",
 		"p8182673" : "The bus stops across the street from the Wildflower Garden will take you back to the city."

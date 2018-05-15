@@ -45,7 +45,7 @@
 		"p5070423" : "On the other side of the creek follow the signs to the incline.",
 		"p5070428" : "The incline is a steep climb up to the top of the ridge. Use the steel cable for balance.",
 		"p5070436" : "At the top of the incline, follow the sign to the lookout.",
-		"P5070462" : "Coming back from the lookout to the intersection, follow the old tramway along the ridge to the left.",
+		"p5070462" : "Coming back from the lookout to the intersection, follow the old tramway along the ridge to the left.",
 		"p5070470" : "The path passes through an old railway tunnel. Take care in the dark because the floor is uneven.",
 		"p5070478" : "The path crosses several firetrails before ending at a gate near farm land.",
 		"p5070481" : "Follow the path to the left along the farm land to the next gate on the left.",

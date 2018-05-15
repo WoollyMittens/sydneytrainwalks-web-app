@@ -4,42 +4,43 @@ var fs = require('fs');
 var large = './src/large/';
 var medium = './inc/medium/';
 var small = './inc/small/';
+var gpx = './inc/gpx/';
 
 // generates a resize queue
 var generateQueue = function() {
-  // get the guide list
+  // get the folder list
   var queue = [],
     images = [],
     srcPath, dstPath,
-    guides = fs.readdirSync(wideIn),
+    folders = fs.readdirSync(gpx),
     isInvisible = new RegExp('^[.]'),
     isPhoto = new RegExp('.jpg$', 'i'),
-    guide;
-  // for every guide
-  for (var a = 0, b = guides.length; a < b; a += 1) {
+    folder;
+  // for every folder
+  for (var a = 0, b = folders.length; a < b; a += 1) {
     // if this isn't a bogus file
-    if (!isInvisible.test(guides[a])) {
-      // construct the guide name
-      guide = guides[a].split('.')[0];
-      // create the guides in the destination guide
-      if (!fs.existsSync(small + guide)) {
-        fs.mkdirSync(small + guide);
+    if (!isInvisible.test(folders[a])) {
+      // construct the folder name
+      folder = folders[a].split('.')[0];
+      // create the folders in the destination folder
+      if (!fs.existsSync(small + folder)) {
+        fs.mkdirSync(small + folder);
       }
-      if (!fs.existsSync(medium + guide)) {
-        fs.mkdirSync(medium + guide);
+      if (!fs.existsSync(medium + folder)) {
+        fs.mkdirSync(medium + folder);
       }
-      // get the guide contents
-      images = (fs.existsSync(large + guide)) ? fs.readdirSync(large + guide) : [];
+      // get the folder contents
+      images = (fs.existsSync(large + folder)) ? fs.readdirSync(large + folder) : [];
       //images.length = 1;
-      // for every image in the guide
+      // for every image in the folder
       for (var c = 0, d = images.length; c < d; c += 1) {
         // if this isn't a bogus file
         if (isPhoto.test(images[c])) {
           // create the source path
-          srcPath = large + guide + '/' + images[c];
+          srcPath = large + folder + '/' + images[c];
           // TODO: add .crop(width, height, x, y) to operation if the image is spherical
           // if the destination photo doesn't exist yet
-          dstPath = (medium + guide + '/' + images[c]).toLowerCase();
+          dstPath = (medium + folder + '/' + images[c]).toLowerCase();
           if (!fs.existsSync(dstPath)) {
             // add the full size to the queue
             queue.push({
@@ -52,7 +53,7 @@ var generateQueue = function() {
             });
           }
           // if the destination photo doesn't exist yet
-          dstPath = (small + guide + '/' + images[c]).toLowerCase();
+          dstPath = (small + folder + '/' + images[c]).toLowerCase();
           if (!fs.existsSync(dstPath)) {
             // add the thumbnail to the queue
             queue.push({

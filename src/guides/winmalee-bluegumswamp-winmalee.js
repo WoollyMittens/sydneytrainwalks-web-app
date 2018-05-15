@@ -36,12 +36,12 @@
 	"landmarks" : {
 		"016_p4080016" : "Continue past the shopping center until the road ends at the carpark for the park entrance.",
 		"018_p4080017" : "Follow the firetrail the continues past the gate.",
-		"022_P4080020" : "A sign at the split in the trail offers either the Blue Gum Swamp or Shaws Ridge. Both are valid.",
-		"056_P4080040" : "Either trail ends at a sign pointing to Grose Head South, wich should be followed.",
-		"065_P4080044" : "The trail zig zags up hill and ends at another sign. Follow it to Grose Head South",
-		"071_P4080047" : "The firetrail ends at the lookout. Please be very careful near the edge.",
-		"077_P4080068" : "From the end of the firetrail a narrow path starts following the cliff line.",
-		"079_P4080069" : "The rough trail continues along several more lookout spots.",
-		"055_P4080039" : "From the lookouts retrace your steps, but take the other route back at the fork between the Blue Gum Swamp or Shaws Ridge."
+		"022_p4080020" : "A sign at the split in the trail offers either the Blue Gum Swamp or Shaws Ridge. Both are valid.",
+		"056_p4080040" : "Either trail ends at a sign pointing to Grose Head South, wich should be followed.",
+		"065_p4080044" : "The trail zig zags up hill and ends at another sign. Follow it to Grose Head South",
+		"071_p4080047" : "The firetrail ends at the lookout. Please be very careful near the edge.",
+		"077_p4080068" : "From the end of the firetrail a narrow path starts following the cliff line.",
+		"079_p4080069" : "The rough trail continues along several more lookout spots.",
+		"055_p4080039" : "From the lookouts retrace your steps, but take the other route back at the fork between the Blue Gum Swamp or Shaws Ridge."
 	}
 }
