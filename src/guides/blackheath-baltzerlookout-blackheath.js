@@ -18,7 +18,7 @@
 			"description" : "Plan your return trip from Blackheath at <a href=\"https://transportnsw.info/trip#/?from=Blackheath\">transportnsw.info</a>."
 		},
 		"kiosk" : {
-			"type" : "kiosk",
+			"type" : "info",
 			"icon" : "./inc/img/marker-info.png",
 			"lat" : -33.62985277777778,
 			"lon" : 150.30654444444446,
