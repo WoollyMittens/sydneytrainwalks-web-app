@@ -51,6 +51,9 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			.replace(/{walkLength}/g, GuideData[id].length)
 			.replace(/{endTransport}/g, GuideData[id].markers.end.type)
 			.replace(/{endLocation}/g, GuideData[id].markers.end.location);
+		// add the onclick handler
+		console.log("title clicked");
+		this.config.title.onclick = function(evt) { document.location.replace('./'); };
 	};
 
 	this.updateGuide = function(id) {
@@ -101,21 +104,23 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		var prefix = (GuideData[id].assets)
 			? GuideData[id].assets.prefix
 			: id;
-		var landmark,
-			landmarks = (!GuideData[id].landmarks)
+		var landmark, optional;
+		var landmarks = (!GuideData[id].landmarks)
 				? "<p>Detailed guides like <a href=\"http://www.sydneytrainwalks.com/details.php?id=adamstown-awabakal-newcastle\">this</a> will be rolled out in increments as they are completed.</p>"
 				: "";
 		var thumbnailTemplate = this.config.thumbnailTemplate.innerHTML;
 		// fill the guide with landmarks
 		for (var name in GuideData[id].landmarks) {
+			// add the optional colour if needed
+			optional = GuideData[id].landmarks[name].split(':')[0].toLowerCase();
 			// get the description
 			landmark = thumbnailTemplate
 				.replace(/{id}/g, prefix)
 				.replace(/{src}/g, name.toLowerCase() + '.jpg')
 				.replace(/{description}/g, GuideData[id].landmarks[name]);
 			// add extra markup for optional landmarks
-			landmarks += (/optional: |detour: /gi.test(landmark))
-				? '<div class="guide-optional">' + landmark.replace(/optional: |detour: /gi, '') + '</div>'
+			landmarks += (/optional: |detour: | attention:/gi.test(landmark))
+				? '<div class="guide-' + optional + '">' + landmark.replace(/optional: |detour:| attention:/gi, '') + '</div>'
 				: landmark;
 		}
 		// return the landmarks

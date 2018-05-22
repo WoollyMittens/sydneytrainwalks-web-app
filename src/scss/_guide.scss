@@ -28,10 +28,18 @@
 				display : table;
 			}
 		}
-		.guide-optional {
+		.guide-optional,
+		.guide-detour,
+		.guide-attention {
 			background-color: #ddeecc;
 		  margin: -0.7em 0 0 0;
 		  padding: 1px 0.7em;
+		}
+		.guide-detour {
+			background-color: #eeccdd;
+		}
+		.guide-attention {
+			background-color: #ccddee;
 		}
 		.cylinder-image,
 		.zoom-image {

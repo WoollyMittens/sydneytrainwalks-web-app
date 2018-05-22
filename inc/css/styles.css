@@ -209,8 +209,9 @@
     right: 0;
     top: 4rem;
     z-index: 8;
+    cursor: pointer;
   }
-  /* line 54, ../../src/scss/_header.scss */
+  /* line 55, ../../src/scss/_header.scss */
   header.subtitle h2 {
     display: flex;
     flex-wrap: nowrap;
@@ -224,7 +225,7 @@
     font-weight: normal;
   }
 
-  /* line 71, ../../src/scss/_header.scss */
+  /* line 72, ../../src/scss/_header.scss */
   body.screen-menu header.subtitle,
   body.screen-overview header.subtitle,
   body.screen-about header.subtitle {
@@ -232,13 +233,13 @@
   }
 }
 @media (max-width: 800px) {
-  /* line 81, ../../src/scss/_header.scss */
+  /* line 82, ../../src/scss/_header.scss */
   header.title h1 {
     text-align: center;
   }
 }
 @media print {
-  /* line 89, ../../src/scss/_header.scss */
+  /* line 90, ../../src/scss/_header.scss */
   header.title, header.subtitle {
     display: none;
   }
@@ -657,12 +658,22 @@
     display: table;
   }
   /* line 31, ../../src/scss/_guide.scss */
-  .guide .guide-optional {
+  .guide .guide-optional,
+  .guide .guide-detour,
+  .guide .guide-attention {
     background-color: #ddeecc;
     margin: -0.7em 0 0 0;
     padding: 1px 0.7em;
   }
-  /* line 36, ../../src/scss/_guide.scss */
+  /* line 38, ../../src/scss/_guide.scss */
+  .guide .guide-detour {
+    background-color: #eeccdd;
+  }
+  /* line 41, ../../src/scss/_guide.scss */
+  .guide .guide-attention {
+    background-color: #ccddee;
+  }
+  /* line 44, ../../src/scss/_guide.scss */
   .guide .cylinder-image,
   .guide .zoom-image {
     background-color: #000;
@@ -674,7 +685,7 @@
     float: right;
     margin: 0 0 0.7em 1em;
   }
-  /* line 46, ../../src/scss/_guide.scss */
+  /* line 54, ../../src/scss/_guide.scss */
   .guide .cylinder-image:before,
   .guide .zoom-image:before {
     display: inline-block;
@@ -684,7 +695,7 @@
     vertical-align: middle;
     margin-left: -1px;
   }
-  /* line 54, ../../src/scss/_guide.scss */
+  /* line 62, ../../src/scss/_guide.scss */
   .guide .cylinder-image img,
   .guide .zoom-image img {
     display: inline-block;
@@ -692,7 +703,7 @@
     max-width: 128px;
     vertical-align: middle;
   }
-  /* line 61, ../../src/scss/_guide.scss */
+  /* line 69, ../../src/scss/_guide.scss */
   .guide .guide-scroller {
     height: 100%;
     overflow-x: hidden;
@@ -700,7 +711,7 @@
     -webkit-overflow-scrolling: touch;
     padding: 0 15px;
   }
-  /* line 67, ../../src/scss/_guide.scss */
+  /* line 75, ../../src/scss/_guide.scss */
   .guide .guide-scroller h2 {
     margin-top: 15px;
   }
@@ -708,7 +719,7 @@
   /*
   on which screen should this be visible
   */
-  /* line 77, ../../src/scss/_guide.scss */
+  /* line 85, ../../src/scss/_guide.scss */
   body.screen-map .guide,
   body.screen-guide .guide {
     -moz-transform: translate(0, 0);
@@ -718,7 +729,7 @@
   }
 }
 @media (min-width: 481px) {
-  /* line 84, ../../src/scss/_guide.scss */
+  /* line 92, ../../src/scss/_guide.scss */
   .guide .cylinder-image,
   .guide .zoom-image {
     float: left;
@@ -726,7 +737,7 @@
   }
 }
 @media (orientation: portrait) {
-  /* line 94, ../../src/scss/_guide.scss */
+  /* line 102, ../../src/scss/_guide.scss */
   .guide {
     border-left: none;
     width: 100%;
@@ -735,7 +746,7 @@
   /*
   on which screen should this be visible
   */
-  /* line 103, ../../src/scss/_guide.scss */
+  /* line 111, ../../src/scss/_guide.scss */
   body.screen-map .guide {
     -moz-transform: translate(100%, 0);
     -ms-transform: translate(100%, 0);
@@ -743,7 +754,7 @@
     transform: translate(100%, 0);
   }
 
-  /* line 104, ../../src/scss/_guide.scss */
+  /* line 112, ../../src/scss/_guide.scss */
   body.screen-guide .guide {
     -moz-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
@@ -752,7 +763,7 @@
   }
 }
 @media print {
-  /* line 109, ../../src/scss/_guide.scss */
+  /* line 117, ../../src/scss/_guide.scss */
   .guide {
     -moz-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
@@ -771,7 +782,7 @@
     width: 100% !important;
     height: auto !important;
   }
-  /* line 123, ../../src/scss/_guide.scss */
+  /* line 131, ../../src/scss/_guide.scss */
   .guide .guide-scroller {
     height: auto !important;
     overflow: visible !important;

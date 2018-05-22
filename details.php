@@ -61,7 +61,7 @@
 					<h1><a href="./">Sydney Train Walks</a></h1>
 				</header>
 				<header class="subtitle">
-					<h2>
+					<h2 onclick="document.location.replace('./')">
 						<span class="sign from">From</span>
 						<span class="sign <?php print $json->{'markers'}->{'start'}->{'type'}?>"><?php print $json->{'markers'}->{'start'}->{'location'}?></span>
 						<span class="sign to">via</span>
@@ -85,10 +85,11 @@
 						<?php
 							if (property_exists($json, 'landmarks')) {
 								foreach ($json->{'landmarks'} as $name => $value) {
-									$isOptional = '/optional: |detour: /i';
+									$isOptional = '/optional: |detour: |attention: /i';
 									if (preg_match($isOptional, $value)) {
+										$highlightClass = explode(':', $value);
 										$value = preg_replace($isOptional, '', $value);
-										?><div class="guide-optional"><p><a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg" class="cylinder-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg);" data-desc="<?php echo $value ?>"><img alt="" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg"></a> <?php echo $value ?></p></div><?php
+										?><div class="guide-<?php echo strtolower($highlightClass[0]) ?>"><p><a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg" class="cylinder-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg);" data-desc="<?php echo $value ?>"><img alt="" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg"></a> <?php echo $value ?></p></div><?php
 									} else {
 										?><p><a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg" class="cylinder-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg);" data-desc="<?php echo $value ?>"><img alt="" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg"></a> <?php echo $value ?></p><?php
 									}
