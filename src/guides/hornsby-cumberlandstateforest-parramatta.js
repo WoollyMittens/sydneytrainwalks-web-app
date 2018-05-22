@@ -94,8 +94,8 @@
 		"2670_dcs_7481": "Continue down the footpath along the river on the left.",
 		"2710_dcs_7485": "Cross the bridge and follow the footpath to the right through the the park.",
 		"2730_dcs_7487": "After the car park follow the footpath under the bridge.",
+		"2760_dcs_7490": "OPTIONAL: Optionally cross the bridge at Church Street and follow the shopping arcade to the train station.",
 		"2770_dcs_7491": "After passing under several more bridges, the path opens up to a riverside park.",
-		"2780_dcs_7492": "Cross the damn on the far side of the riverside park and continue left to the ferry dock.",
-		"2760_dcs_7490": "OPTIONAL: Optionally cross the bridge at Church Street and follow the shopping arcade to the train station."
+		"2780_dcs_7492": "Cross the damn on the far side of the riverside park and continue left to the ferry dock."
 	}
 }
