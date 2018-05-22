@@ -1,8 +1,9 @@
 {
 	"location" : "Cumberland State Forest",
 	"description" : [
-		"This walk follow part of the <a href=\"http://www.thegreatnorthwalk.com/\">Great North Walk</a> through.", "<a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/berowra-valley-national-park\">Berowara Valley National Park</a>.",
-		"Then continues through <a href=\"http://www.forestrycorporation.com.au/visit/forests/cumberland-state-forest\">Cumberland State Forest</a> and <a href=\"https://en.wikipedia.org/wiki/Lake_Parramatta\">Lake Parramatta Reserve</a> to <a href=\"https://www.parrapark.com.au/\">Parramatta Park</a>."
+		"This walk follow part of the <a href=\"http://www.thegreatnorthwalk.com/\">Great North Walk</a> through <a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/berowra-valley-national-park\">Berowara Valley National Park</a>.",
+		"Then continues through <a href=\"http://www.forestrycorporation.com.au/visit/forests/cumberland-state-forest\">Cumberland State Forest</a> and <a href=\"https://en.wikipedia.org/wiki/Lake_Parramatta\">Lake Parramatta Reserve</a> to <a href=\"https://www.parrapark.com.au/\">Parramatta Park</a>.",
+		"Thanks to Nick Collins from the <a href=\"https://anbwalkers.org.au/\">All Nations Bushwalkers</a> for pioneering his route."
 	],
 	"duration" : 8,
 	"length" : 30,
