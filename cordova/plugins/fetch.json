@@ -30,5 +30,13 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-plugin-headercolor": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-headercolor"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

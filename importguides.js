@@ -25,7 +25,7 @@ var generateQueue = function () {
 
 // processes a script from the queue the master json object
 var parseGuides = function (queue) {
-	var rawJS;
+	var rawJS, key, landmarks;
 	// if the queue is not empty
 	if (queue.length > 0) {
 		// pick an item from the queue
@@ -40,7 +40,12 @@ var parseGuides = function (queue) {
 				// sanitise the incoming string
 				rawJS = data.toString().split('"] = ').reverse()[0].replace('};', '}');
 				// parse the json and add to master object
-				GuideData[item.replace('.js', '')] = JSON.parse(rawJS);
+				key = item.replace('.js', '');
+				GuideData[key] = JSON.parse(rawJS);
+				// stort the landmarks alphabetically
+				landmarks = Object.keys(GuideData[key].landmarks).sort().map(function(name) {
+					return GuideData[key].landmarks[name];
+				});
 				// remove the item from the queue
 				queue.length = queue.length - 1;
 				// next iteration in the queue
@@ -48,8 +53,9 @@ var parseGuides = function (queue) {
 			}
 		});
 	} else {
+		// convert to string
 		var data = JSON.stringify(GuideData);
-		// export as json
+		// write the JSON data to disk
 		fs.writeFile(jsonPath, data, function (error) {
 			if (error) {
 				console.log('ERROR: ' + error);

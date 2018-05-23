@@ -15,6 +15,9 @@
     },
     "cordova-plugin-inappbrowser": {
       "PACKAGE_NAME": "com.sydneytrainwalks.ios"
+    },
+    "cordova-plugin-headercolor": {
+      "PACKAGE_NAME": "com.sydneytrainwalks.ios"
     }
   },
   "dependent_plugins": {}
