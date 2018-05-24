@@ -51,7 +51,7 @@
 		<script src="./inc/js/guide-data.js"></script>
 		<script src="./inc/js/scripts.js"></script>
 		<script id="credit-template" type="text/template">
-			Maps &copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, Data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> and contributors, CC BY-SA
+			Maps &copy; <a href="http://www.4umaps.eu/">4UMaps</a>. Data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> and contributors, CC BY-SA
 		</script>
 		<script>
 			window.addEventListener('load', function () {

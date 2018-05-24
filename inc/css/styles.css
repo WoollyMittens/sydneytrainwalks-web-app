@@ -593,7 +593,7 @@
     -webkit-transform: translate(-100%, 0);
     transform: translate(-100%, 0);
     background: #fff none;
-    bottom: 50px;
+    bottom: 4rem;
     left: 0;
     margin: 0;
     overflow: hidden;
@@ -1148,7 +1148,7 @@ header.subtitle .sign {
     display: block;
     margin: 0;
     padding: 0;
-    bottom: 50px;
+    bottom: 4rem;
     height: auto;
     left: 0;
     max-height: 100%;
