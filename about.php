@@ -41,7 +41,7 @@
 					<div class="about-scroller">
 						<h2>About Sydney Train Walks</h2>
 						<p>This guide was created to give my exploration of Sydney's amazing national parks a useful purpose. I hope it will motivate people to venture out on nature walks by making it easier to get started.</p>
-						<p>Please send suggestions and bug reports to <a href="mailto:info@sydneytrainwalks.com">info@sydneytrainwalks.com</a>.</p>
+						<p>Please add your <a href="https://github.com/WoollyMittens/sydneytrainwalks-web-app/issues">suggestions and bug reports on GitHub</a>, or send them to <a href="mailto:info@sydneytrainwalks.com">info@sydneytrainwalks.com</a>.</p>
 						<h2>Credits</h2>
 						<p>App, photography and GPS logs &copy; Maurice van Creij, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>.</p>
 						<p>Maps &copy; <a href="http://www.4umaps.eu/">4UMaps</a>, &copy; <a href="http://www.thunderforest.com/">Thunderforest</a>.</p>

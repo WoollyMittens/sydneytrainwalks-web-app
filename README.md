@@ -1,50 +1,17 @@
-# TrainWalks
+## Sydney Train Walks
 
-A visual guide to 40+ hiking day trips from Sydney using public transport.
+Version 1.9.2
 
-An implementation may be found on http://www.sydneytrainwalks.com/
+Thank you for supporting Sydney Train Walks. You make it possible for me to expand this guide and motivate people to enjoy Sydney's varied landscapes.
 
-## Introduction
+Please add your [suggestions and bug reports on GitHub](https://github.com/WoollyMittens/sydneytrainwalks-web-app/issues), or send them to [info@sydneytrainwalks.com](mailto:info@sydneytrainwalks.com).
 
-Don't let organising a bushwalk intimidate you. These 40+ hikes are easy day trips from Sydney using public transport.
+## Credits
 
-All hikes come with a map, route, public transport stops, and photo guide to help you find your way. If your device supports GPS, your location will be updated on the map.
+App, photography and GPS logs &copy; Maurice van Creij, [CC BY-SA](http://creativecommons.org/licenses/by-sa/2.0/).
 
-Map data and photos of the walk are stored on the device, so an internet connection is not necessary out in the bush.
+Maps &copy; [4UMaps](http://www.4umaps.eu/). Data &copy; [OpenStreetMap and contributors](http://www.openstreetmap.org/copyright), [CC BY-SA<](http://creativecommons.org/licenses/by-sa/2.0/).
 
-"bushwalk,hiking,hikes,maps,guides,public transport,sydney,blue mountains,australia"
+## Disclaimer
 
-## How to install
-
-This project uses node.js from http://nodejs.org/
-
-This project uses grunt.js from http://gruntjs.com/
-
-The following commands are available for development:
-+ `npm install` - Install the prerequisites.
-+ `node importjpg` - Convert images from "/src/large" into "/inc/small" and "/inc/medium/".
-+ `node importexif` - Prepare a cache of lat and lon data of all the photos.
-+ `node importgpx` - Prepare a cache of GPX data of all routes.
-+ `node importtiles` - Coverts the PNG tile store to JPG.
-+ `node importguides` - Prepare a cache of JSON data for all the guides.
-+ `grunt dev` - Build the project for development purposes.
-+ `grunt prod` - Build the project for deployment purposes.
-+ `grunt watch` - Continuously recompile updated files during development sessions.
-
-To get a collection of offline map tiles create an "osmdroid zip" archive using http://mobac.sourceforge.net/.
-
-## How to use
-
-The site should now work from any relative path on an Apache/PHP server like `http://localhost/TrainWalks/`.
-
-The offline.html page eliminates the reliance on PHP and an online tile server.
-
-## License
-
-This work is licensed under a Creative Commons Attribution 3.0 Unported License. The latest version of this and other scripts by the same author can be found at http://www.woollymittens.nl/
-
-App, photography and GPS logs &copy; Maurice van Creij, CC BY-SA (http://creativecommons.org/licenses/by-sa/2.0/).
-
-Maps &copy; 4UMaps (http://www.4umaps.eu/mountain-bike-hiking-bicycle-outdoor-topographic-map.htm), &copy; Thunderforest (http://www.thunderforest.com/).
-
-Data &copy; OpenStreetMap (http://www.openstreetmap.org/copyright) and contributors, CC BY-SA (http://creativecommons.org/licenses/by-sa/2.0/).
+Please do not rely solely on this app for your navigation. There is no warranty on the accuracy or reliability of this app. Always carry a real paper map, which are readily available from park offices and tourist information centres.
