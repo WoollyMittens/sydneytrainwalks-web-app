@@ -7,6 +7,8 @@
 	"duration" : 8,
 	"length" : 28,
 	"zoom" : 13,
+	"rain" : false,
+	"fireban" : false,
 	"markers" : {
 		"start" : {
 			"location" : "Booragul",

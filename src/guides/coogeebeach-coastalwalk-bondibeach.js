@@ -4,6 +4,8 @@
 	"duration" : 2,
 	"length" : 6,
 	"zoom" : 13,
+	"rain" : true,
+	"fireban" : true,
 	"markers" : {
 		"start" : {
 			"location" : "Coogee Beach",

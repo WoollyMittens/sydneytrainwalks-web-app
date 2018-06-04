@@ -6,6 +6,8 @@
 	"duration" : 3,
 	"length" : 10,
 	"zoom" : 14,
+	"rain" : true,
+	"fireban" : false,
 	"markers" : {
 		"start" : {
 			"location" : "Spit Junction",

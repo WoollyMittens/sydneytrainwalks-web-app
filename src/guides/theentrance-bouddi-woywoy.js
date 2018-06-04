@@ -8,6 +8,8 @@
 	"duration" : 11,
 	"length" : 43,
 	"zoom" : 13,
+	"rain" : false,
+	"fireban" : false,
 	"markers" : {
 		"start" : {
 			"location" : "The Entrance",

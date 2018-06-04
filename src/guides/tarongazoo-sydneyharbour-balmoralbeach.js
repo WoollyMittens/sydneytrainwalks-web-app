@@ -6,6 +6,8 @@
 	"duration" : 2,
 	"length" : 7,
 	"zoom" : 14,
+	"rain" : true,
+	"fireban" : false,
 	"markers" : {
 		"start" : {
 			"location" : "Taronga Zoo",

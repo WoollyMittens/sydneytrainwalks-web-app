@@ -4,6 +4,8 @@
 	"duration" : 8,
 	"length" : 17,
 	"zoom" : 13,
+	"rain" : false,
+	"fireban" : false,
 	"markers" : {
 		"start" : {
 			"location" : "Stanwell Park",

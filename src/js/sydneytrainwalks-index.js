@@ -144,6 +144,16 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 					return a - b;
 				});
 				break;
+			case 'rain':
+				sorted = unsorted.map(function(a) {
+					return (guide[a].rain) ? a : null;
+				});
+				break;
+			case 'fireban':
+				sorted = unsorted.map(function(a) {
+					return (guide[a].fireban) ? a : null;
+				});
+				break;
 			default:
 				sorted = unsorted;
 		}

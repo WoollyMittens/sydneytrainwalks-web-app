@@ -4,6 +4,8 @@
 	"duration" : 13,
 	"length" : 61,
 	"zoom" : 13,
+	"rain" : true,
+	"fireban" : true,
 	"markers" : {
 		"start" : {
 			"location" : "Wyong",

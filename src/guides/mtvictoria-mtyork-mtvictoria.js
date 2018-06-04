@@ -4,6 +4,8 @@
 	"duration" : 6,
 	"length" : 18,
 	"zoom" : 13,
+	"rain" : false,
+	"fireban" : false,
 	"markers" : {
 		"start" : {
 			"location" : "Mount Victoria",

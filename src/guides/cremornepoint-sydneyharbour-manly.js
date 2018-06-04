@@ -8,6 +8,8 @@
 	"duration" : 7,
 	"length" : 24,
 	"zoom" : 14,
+	"rain" : true,
+	"fireban" : false,
 	"markers" : {
 		"start" : {
 			"location" : "Cremorne Point",

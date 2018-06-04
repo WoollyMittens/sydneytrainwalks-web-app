@@ -4,6 +4,8 @@
 	"duration" : 10,
 	"length" : 34,
 	"zoom" : 13,
+	"rain" : true,
+	"fireban" : true,
 	"markers" : {
 		"start" : {
 			"location" : "Parramatta",

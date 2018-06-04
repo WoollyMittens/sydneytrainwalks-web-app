@@ -8,6 +8,8 @@
 	"duration" : 8,
 	"length" : 30,
 	"zoom" : 13,
+	"rain" : false,
+	"fireban" : false,
 	"markers" : {
 		"start" : {
 			"location" : "Hornsby",

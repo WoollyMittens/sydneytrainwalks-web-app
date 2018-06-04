@@ -4,6 +4,8 @@
 	"duration" : 4,
 	"length" : 15,
 	"zoom" : 13,
+	"rain" : true,
+	"fireban" : false,
 	"markers" : {
 		"start" : {
 			"location" : "The Entrance",

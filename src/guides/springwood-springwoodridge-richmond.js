@@ -7,6 +7,8 @@
 	"duration" : 8,
 	"length" : 32,
 	"zoom" : 13,
+	"rain" : false,
+	"fireban" : false,
 	"markers" : {
 		"start" : {
 			"location" : "Springwood",

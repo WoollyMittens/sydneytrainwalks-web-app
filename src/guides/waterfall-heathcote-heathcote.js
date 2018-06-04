@@ -4,6 +4,8 @@
 	"duration" : 4,
 	"length" : 11,
 	"zoom" : 13,
+	"rain" : false,
+	"fireban" : false,
 	"markers" : {
 		"start" : {
 			"location" : "Waterfall",

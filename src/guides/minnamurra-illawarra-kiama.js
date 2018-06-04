@@ -4,6 +4,8 @@
 	"duration" : 3,
 	"length" : 9,
 	"zoom" : 13,
+	"rain" : true,
+	"fireban" : true,
 	"markers" : {
 		"start" : {
 			"location" : "Minnamurra",

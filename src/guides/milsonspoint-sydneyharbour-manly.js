@@ -8,6 +8,8 @@
 	"duration" : 9,
 	"length" : 28,
 	"zoom" : 13,
+	"rain" : true,
+	"fireban" : false,
 	"markers" : {
 		"start" : {
 			"location" : "Milsons Point",

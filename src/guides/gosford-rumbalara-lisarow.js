@@ -4,6 +4,8 @@
 	"duration" : 3,
 	"length" : 12,
 	"zoom" : 13,
+	"rain" : true,
+	"fireban" : false,
 	"markers" : {
 		"start" : {
 			"location" : "Gosford",

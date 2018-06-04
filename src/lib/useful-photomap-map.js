@@ -30,6 +30,8 @@ useful.Photomap.prototype.Map = function (parent) {
 		// define the map
 		this.config.map = {};
 		this.config.map.object = L.map(id);
+		// add the scale
+		L.control.scale({imperial:false}).addTo(this.config.map.object);
 		// add the tiles
 		var tileLayer = L.tileLayer(this.config.tiles, {
 			attribution: this.config.credit,

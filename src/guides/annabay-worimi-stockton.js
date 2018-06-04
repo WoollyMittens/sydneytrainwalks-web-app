@@ -4,6 +4,8 @@
 	"duration" : 9,
 	"length" : 36,
 	"zoom" : 13,
+	"rain" : false,
+	"fireban" : true,
 	"markers" : {
 		"start" : {
 			"location" : "Anna Bay",

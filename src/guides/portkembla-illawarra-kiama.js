@@ -4,6 +4,8 @@
 	"duration" : 9,
 	"length" : 33,
 	"zoom" : 13,
+	"rain" : true,
+	"fireban" : true,
 	"markers" : {
 		"start" : {
 			"location" : "Port Kembla",

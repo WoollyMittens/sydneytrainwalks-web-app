@@ -6,6 +6,8 @@
 	"duration" : 3,
 	"length" : 9,
 	"zoom" : 13,
+	"rain" : false,
+	"fireban" : false,
 	"markers" : {
 		"start" : {
 			"location" : "Berowra",

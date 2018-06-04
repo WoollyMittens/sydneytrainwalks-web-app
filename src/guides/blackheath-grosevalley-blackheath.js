@@ -4,6 +4,8 @@
 	"duration" : 9,
 	"length" : 24,
 	"zoom" : 13,
+	"rain" : false,
+	"fireban" : false,
 	"markers" : {
 		"start" : {
 			"location" : "Blackheath",

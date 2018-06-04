@@ -34,6 +34,8 @@ SydneyTrainWalks.prototype.Overview = function(parent) {
 		var bounds = this.getBounds(markers);
 		// start a map
 		var map = L.map(this.config.overview.id);
+		// add the scale
+		L.control.scale({imperial:false}).addTo(map);
 		// add the tiles
 		var tiles = L.tileLayer(this.config.onlineTiles, {
 			attribution: this.config.creditTemplate.innerHTML,

@@ -8,6 +8,8 @@
 	"duration" : 12,
 	"length" : 50,
 	"zoom" : 13,
+	"rain" : false,
+	"fireban" : false,
 	"markers" : {
 		"start" : {
 			"location" : "Woy Woy",

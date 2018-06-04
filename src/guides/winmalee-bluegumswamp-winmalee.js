@@ -6,6 +6,8 @@
 	"duration" : 4,
 	"length" : 14,
 	"zoom" : 14,
+	"rain" : false,
+	"fireban" : false,
 	"markers" : {
 		"start" : {
 			"location" : "Winmalee",

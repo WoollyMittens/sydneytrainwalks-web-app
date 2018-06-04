@@ -4,6 +4,8 @@
 	"duration" : 7,
 	"length" : 28,
 	"zoom" : 13,
+	"rain" : true,
+	"fireban" : true,
 	"markers" : {
 		"start" : {
 			"location" : "Wollongong",

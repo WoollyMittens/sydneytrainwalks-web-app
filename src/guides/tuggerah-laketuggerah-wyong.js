@@ -4,6 +4,8 @@
 	"duration" : 11,
 	"length" : 45,
 	"zoom" : 13,
+	"rain" : true,
+	"fireban" : true,
 	"markers" : {
 		"start" : {
 			"location" : "Tuggerah",

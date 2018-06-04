@@ -4,6 +4,8 @@
 	"duration" : 6,
 	"length" : 25,
 	"zoom" : 13,
+	"rain" : true,
+	"fireban" : true,
 	"markers" : {
 		"start" : {
 			"location" : "Palm Beach",

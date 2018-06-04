@@ -4,6 +4,8 @@
 	"duration" : 6,
 	"length" : 19,
 	"zoom" : 13,
+	"rain" : false,
+	"fireban" : true,
 	"markers" : {
 		"start" : {
 			"location" : "Gerringong",

@@ -4,6 +4,8 @@
 	"duration" : 9,
 	"length" : 35,
 	"zoom" : 13,
+	"rain" : true,
+	"fireban" : true,
 	"markers" : {
 		"start" : {
 			"location" : "Adamstown",

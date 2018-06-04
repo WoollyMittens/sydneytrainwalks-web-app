@@ -4,6 +4,8 @@
 	"duration" : 9,
 	"length" : 21,
 	"zoom" : 13,
+	"rain" : false,
+	"fireban" : false,
 	"markers" : {
 		"start" : {
 			"location" : "Cowan",
