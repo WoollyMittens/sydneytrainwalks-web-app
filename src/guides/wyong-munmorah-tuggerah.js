@@ -53,7 +53,7 @@
 		"dsc_0764": "Follow Evans Road to the left.",
 		"dsc_0765": "At the end of Evans Road, pass the gate into Wyrrabalong National Park.",
 		"dsc_0767": "Follow the Wetlands trail and continue right down the Red Gum trail.",
-		"dsc_0777": "From the intersection, continue ahead down the Lilly Pilly trail.",
+		"DSC_0778_DSC_2308": "From the intersection, continue ahead down the Lilly Pilly trail.",
 		"dsc_0781": "At the end of the trail, follow the Central Coast Highway to the right.",
 		"dsc_0782": "A short distance past the Magento Shores golf course turn right onto the bike path.",
 		"dsc_0785": "Follow the bike path through the bushland and past the holiday park.",
