@@ -21,6 +21,20 @@
 			"lat" : -33.80003333333333,
 			"lon" : 151.2852861111111
 		},
+		"closure" : {
+			"type" : "warning",
+			"icon" : "./inc/img/marker-warning.png",
+			"description" : "At the closure follow the firetrail up to the road.",
+			"lat" : -33.775952,
+			"lon" : 151.211738
+		},
+		"engravings" : {
+			"type" : "warning",
+			"icon" : "./inc/img/marker-warning.png",
+			"description" : "Continue along the Engravings Track to the aboriginal engravings and cross the road there to avoid the mountain bike course.",
+			"lat" : -33.77517838999609,
+			"lon" : 151.2376064499874
+		},
 		"shortcut" : {
 			"type" : "warning",
 			"icon" : "./inc/img/marker-warning.png",
@@ -42,6 +56,9 @@
 		"p7200338" : "Cross Middle Harbour across the Roseville Bridge",
 		"p7200340" : "On the far side of the bridge, follow the offramp into the reserve on the left hand side.",
 		"p7200348" : "Find the entrance to he Flatrock Track on the left hand side of the car park.",
+		"p7200355_img_20180630_070622" : "DETOUR: Currently Flat Rock Beach Track is closed. Follow the firetrail up to Downpatrick Road.",
+		"p7200355_img_20180630_072448" : "DETOUR: Turn right on Drumcliff Avenue and follow it along the ridge.",
+		"p7200355_img_20180630_073224" : "DETOUR: Turn right onto Killarney Drive and follow it to the trackhead at the far end.",
 		"p7200390" : "At the trackhead of Killarney Drive, follow the Magazine Track down to Flatrock Beach.",
 		"p7200400_p7200415" : "OPTIONAL: Take the side trail onto Flatrock Beach. Return to the intersection after.",
 		"p7200397" : "At the intersection, follow the Magazine Track along the water.",
