@@ -41,6 +41,30 @@
 			"lat" : -33.66540833333333,
 			"lon" : 151.14903611111112,
 			"description" : "Kalkari Discovery Centre"
+		},
+		"toileta" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.652774,
+			"lon" : 151.154997
+		},
+		"toiletb" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.658858,
+			"lon" : 151.159032
+		},
+		"toiletc" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.662127,
+			"lon" : 151.161988
+		},
+		"toiletd" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.665577,
+			"lon" : 151.149204
 		}
 	},
 	"landmarks" : {

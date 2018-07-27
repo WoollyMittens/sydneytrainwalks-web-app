@@ -18,6 +18,30 @@
 			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
 			"description" : "Plan your return trip from Lisarow at <a href=\"https://transportnsw.info/trip#/?from=Lisarow\">transportnsw.info</a>."
+		},
+		"toileta" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.431419,
+			"lon" : 151.340166
+		},
+		"toiletb" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.423065,
+			"lon" : 151.349398
+		},
+		"toiletc" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.425517,
+			"lon" : 151.354545
+		},
+		"toiletd" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.406049,
+			"lon" : 151.391496
 		}
 	},
 	"indicator" : {

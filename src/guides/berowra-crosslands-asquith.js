@@ -28,6 +28,12 @@
 			"description" : "Read the signs near the Steele bridge to find out if the detour past the rifle range is still in effect.",
 			"lat" : -33.68011,
 			"lon" : 151.085275
+		},
+		"toileta" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.631144,
+			"lon" : 151.109019
 		}
 	},
 	"indicator" : {

@@ -18,6 +18,54 @@
 			"type" : "bus",
 			"icon" : "./inc/img/marker-bus.png",
 			"description" : "Plan your return trip from Swansea Heads at <a href=\"https://transportnsw.info/trip#/?from=Swansea Heads\">transportnsw.info</a>."
+		},
+		"toileta" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.280237,
+			"lon" : 151.569664
+		},
+		"toiletb" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.271350,
+			"lon" : 151.562289
+		},
+		"toiletc" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.253819,
+			"lon" : 151.562170
+		},
+		"toiletd" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.204683,
+			"lon" : 151.605321
+		},
+		"toilete" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.200793,
+			"lon" : 151.603839
+		},
+		"toiletf" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.186956,
+			"lon" : 151.622009
+		},
+		"toiletg" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.157721,
+			"lon" : 151.628871
+		},
+		"toileth" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.110054,
+			"lon" : 151.646228
 		}
 	},
 	"landmarks" : {

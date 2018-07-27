@@ -22,12 +22,6 @@
 			"icon" : "./inc/img/marker-bus.png",
 			"description" : "Plan your return trip from Adamstown at <a href=\"https://transportnsw.info/trip#/?from=Adamstown\">transportnsw.info</a>."
 		},
-		"toileta" : {
-			"type" : "toilet",
-			"icon" : "./inc/img/marker-toilet.png",
-			"lat" : -32.977214000000004,
-			"lon" : 151.708441
-		},
 		"kioska" : {
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
@@ -48,6 +42,24 @@
 			"lat" : -32.989667000000004,
 			"lon" : 151.719252,
 			"description" : "Dudley Pub"
+		},
+		"toileta" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -32.977214000000004,
+			"lon" : 151.708441
+		},
+		"toiletb" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.013643,
+			"lon" : 151.719724
+		},
+		"toiletc" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -32.991790,
+			"lon" : 151.717743
 		}
 	},
 	"indicator" : {

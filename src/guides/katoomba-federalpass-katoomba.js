@@ -35,6 +35,18 @@
 			"lat" : -33.72815277777778,
 			"lon" : 150.30450000000002,
 			"description" : "Echo Point shops."
+		},
+		"toileta" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.731955,
+			"lon" : 150.312470
+		},
+		"toiletb" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.728338,
+			"lon" : 150.301417
 		}
 	},
 	"indicator" : {

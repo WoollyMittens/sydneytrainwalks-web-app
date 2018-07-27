@@ -25,6 +25,18 @@
 			"description" : "Plan your return trip from Lithgow at <a href=\"https://transportnsw.info/trip#/?from=Lithgow\">transportnsw.info</a>.",
 			"lat": -33.48087887989204,
 			"lon": 150.15715679000132
+		},
+		"toileta" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.535802,
+			"lon" : 150.233274
+		},
+		"toiletb" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.482969,
+			"lon" : 150.151766
 		}
 	},
 	"landmarks" : {

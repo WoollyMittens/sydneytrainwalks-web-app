@@ -32,6 +32,43 @@
 			"lat" : -33.65260277777778,
 			"lon" : 151.1558361111111,
 			"description" : "Apple Tree Bay Kiosk"
+		},
+		"kioskc" : {
+			"type" : "cafe",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.716950,
+			"lon" : 151.173790,
+			"description" : "Apple Tree Bay Kiosk"
+		},
+		"toileta" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.652713,
+			"lon" : 151.155004
+		},
+		"toiletb" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.658888,
+			"lon" : 151.159000
+		},
+		"toiletc" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.662128,
+			"lon" : 151.162006
+		},
+		"toiletd" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.705185,
+			"lon" : 151.177346
+		},
+		"toilete" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.768988,
+			"lon" : 151.204023
 		}
 	},
 	"indicator" : {

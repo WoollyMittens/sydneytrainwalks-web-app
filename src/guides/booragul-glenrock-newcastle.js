@@ -18,7 +18,7 @@
 		},
 		"end" : {
 			"location" : "Newcastle",
-			"type" : "train",
+			"type" : "bus",
 			"icon" : "./inc/img/marker-train.png",
 			"description" : "Plan your return trip from Newcastle at <a href=\"https://transportnsw.info/trip#/?from=Newcastle\">transportnsw.info</a>."
 		},
@@ -42,6 +42,30 @@
 			"lat" : -32.948907999999996,
 			"lon" : 151.75664,
 			"description" : "Merewether Surf Club"
+		},
+		"toileta" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -32.974799,
+			"lon" : 151.644187
+		},
+		"toiletb" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -32.965469,
+			"lon" : 151.694524
+		},
+		"toiletc" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -32.948198,
+			"lon" : 151.756880
+		},
+		"toiletd" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -32.933663,
+			"lon" : 151.778709
 		}
 	},
 	"indicator" : {

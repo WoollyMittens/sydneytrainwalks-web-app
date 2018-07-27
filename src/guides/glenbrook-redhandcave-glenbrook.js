@@ -25,6 +25,18 @@
 			"lat" : -33.78941388888889,
 			"lon" : 150.60356944444445,
 			"description" : "The trail up to the ridge can be hard to find,<br/>but is near the Aboriginal sandstone workshop sign."
+		},
+		"toileta" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.778427,
+			"lon" : 150.620693
+		},
+		"toiletb" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.797949,
+			"lon" : 150.618014
 		}
 	},
 	"indicator" : {

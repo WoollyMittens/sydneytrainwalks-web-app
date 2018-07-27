@@ -25,6 +25,12 @@
 			"lat" : -32.978277000000006,
 			"lon" : 151.708188,
 			"description" : "Whitebridge shops"
+		},
+		"toileta" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -32.977214000000004,
+			"lon" : 151.708441
 		}
 	},
 	"indicator" : {

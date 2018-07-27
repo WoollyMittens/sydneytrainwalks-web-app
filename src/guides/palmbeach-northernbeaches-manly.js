@@ -27,6 +27,102 @@
 			"description" : "Plan your return trip from Narrabeen at <a href=\"https://transportnsw.info/trip#/?from=Narrabeen\">transportnsw.info</a>.",
 			"lat" : -33.70486666666667,
 			"lon" : 151.29741666666666
+		},
+		"toileta" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.595585,
+			"lon" : 151.320238
+		},
+		"toiletb" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.586657,
+			"lon" : 151.325344
+		},
+		"toiletc" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.597592,
+			"lon" : 151.324520
+		},
+		"toiletd" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.613253,
+			"lon" : 151.331370
+		},
+		"toilete" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.632796,
+			"lon" : 151.335094
+		},
+		"toiletf" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.646110,
+			"lon" : 151.326765
+		},
+		"toiletg" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.654029,
+			"lon" : 151.322947
+		},
+		"toileth" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.678118,
+			"lon" : 151.315032
+		},
+		"toileti" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.719871,
+			"lon" : 151.299246
+		},
+		"toiletj" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.733134,
+			"lon" : 151.302283
+		},
+		"toiletk" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.755004,
+			"lon" : 151.298470
+		},
+		"toiletl" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.774427,
+			"lon" : 151.292883
+		},
+		"toiletm" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.781104,
+			"lon" : 151.294408
+		},
+		"toiletn" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.786142,
+			"lon" : 151.287682
+		},
+		"toileto" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.790587,
+			"lon" : 151.287254
+		},
+		"toiletp" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.799612,
+			"lon" : 151.290180
 		}
 	},
 	"indicator" : {

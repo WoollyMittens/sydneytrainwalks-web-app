@@ -41,6 +41,18 @@
 			"lat" : -32.97394722222222,
 			"lon" : 151.64323888888887,
 			"description" : "Warners Bay shops"
+		},
+		"toileta" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -32.977214000000004,
+			"lon" : 151.708441
+		},
+		"toiletb" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -32.974841,
+			"lon" : 151.644288
 		}
 	},
 	"indicator" : {

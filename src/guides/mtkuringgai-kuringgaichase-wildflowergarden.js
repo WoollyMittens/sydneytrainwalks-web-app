@@ -16,7 +16,7 @@
 		"end" : {
 			"location" : "Wildflower Garden",
 			"type" : "bus",
-			"icon" : "./inc/img/marker-train.png",
+			"icon" : "./inc/img/marker-bus.png",
 			"description" : "Plan your return trip from Ku-ring-gai Wildflower Garden at <a href=\"https://transportnsw.info/trip#/?from=Ku-ring-gai Wildflower Garden\">transportnsw.info</a>."
 		},
 		"kioska" : {
@@ -32,6 +32,30 @@
 			"lat" : -33.65260277777778,
 			"lon" : 151.1558361111111,
 			"description" : "Apple Tree Bay Kiosk"
+		},
+		"toileta" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.652713,
+			"lon" : 151.155004
+		},
+		"toiletb" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.658888,
+			"lon" : 151.159000
+		},
+		"toiletc" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.662128,
+			"lon" : 151.162006
+		},
+		"toiletd" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.705185,
+			"lon" : 151.177346
 		}
 	},
 	"indicator" : {

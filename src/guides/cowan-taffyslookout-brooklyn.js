@@ -25,6 +25,12 @@
 			"lat" : -33.58414166666667,
 			"lon" : 151.1958111111111,
 			"description" : "The entrance to this side track is cleverly hidden<br/>behind the \"Brooklyn dam\" sign at the top of the ridge."
+		},
+		"toileta" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.546565,
+			"lon" : 151.231486
 		}
 	},
 	"indicator" : {

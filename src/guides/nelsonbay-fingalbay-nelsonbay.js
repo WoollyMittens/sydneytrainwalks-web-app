@@ -35,6 +35,24 @@
 			"lat" : -32.74295277777778,
 			"lon" : 152.1709972222222,
 			"description" : "Kiosk at Fingal Bay"
+		},
+		"toileta" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -32.720502,
+			"lon" : 152.144634
+		},
+		"toiletb" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -32.712967,
+			"lon" : 152.158516
+		},
+		"toiletc" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -32.742580,
+			"lon" : 152.170929
 		}
 	},
 	"landmarks" : {

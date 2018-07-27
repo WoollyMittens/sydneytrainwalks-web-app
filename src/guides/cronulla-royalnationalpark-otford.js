@@ -41,6 +41,30 @@
 			"lat" : -34.17031111111111,
 			"lon" : 151.06652222222223,
 			"description" : "Garie Beach kiosk"
+		},
+		"toileta" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -34.055473,
+			"lon" : 151.150565
+		},
+		"toiletb" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -34.083591,
+			"lon" : 151.152169
+		},
+		"toiletc" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -34.138306,
+			"lon" : 151.114931
+		},
+		"toiletd" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -34.170103,
+			"lon" : 151.066045
 		}
 	},
 	"indicator" : {

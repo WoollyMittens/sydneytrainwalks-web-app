@@ -20,6 +20,32 @@
 			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
 			"description" : "Plan your return trip from Berowra at <a href=\"https://transportnsw.info/trip#/?from=Berowra\">transportnsw.info</a>."
+		},
+		"kioska" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.622975,
+			"lon" : 151.152660,
+			"description" : "Cafe"
+		},
+		"kioskb" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.656189,
+			"lon" : 151.134181,
+			"description" : "Cafe"
+		},
+		"toileta" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.623681,
+			"lon" : 151.152960
+		},
+		"toiletb" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.656152,
+			"lon" : 151.134068
 		}
 	},
 	"indicator" : {

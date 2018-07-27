@@ -39,6 +39,48 @@
 			"lat" : -34.075375,
 			"lon" : 151.0561138888889,
 			"description" : "Kiosk at Audley"
+		},
+		"toileta" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -34.055473,
+			"lon" : 151.150565
+		},
+		"toiletb" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -34.083591,
+			"lon" : 151.152169
+		},
+		"toiletc" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -34.082204,
+			"lon" : 151.141548
+		},
+		"toiletd" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -34.083938,
+			"lon" : 151.135689
+		},
+		"toilete" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -34.074994,
+			"lon" : 151.056467
+		},
+		"toiletf" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -34.072873,
+			"lon" : 151.056678
+		},
+		"toiletg" : {
+			"type" : "pubic toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -34.069737,
+			"lon" : 151.059289
 		}
 	},
 	"indicator" : {
