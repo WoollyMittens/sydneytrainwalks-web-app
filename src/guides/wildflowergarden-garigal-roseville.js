@@ -20,13 +20,13 @@
 			"description" : "Plan your return trip from Roseville at <a href=\"https://transportnsw.info/trip#/?from=Roseville\">transportnsw.info</a>."
 		},
 		"toiletd" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.705185,
 			"lon" : 151.177346
 		},
 		"toilete" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.768988,
 			"lon" : 151.204023

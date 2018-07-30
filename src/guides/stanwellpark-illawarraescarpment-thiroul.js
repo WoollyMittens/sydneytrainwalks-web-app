@@ -25,6 +25,12 @@
 			"lat" : -34.29655277777778,
 			"lon" : 150.92490277777776,
 			"description" : "Sublime point lookout."
+		},
+		"toileta" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -34.296049,
+			"lon" : 150.924931
 		}
 	},
 	"indicator" : {

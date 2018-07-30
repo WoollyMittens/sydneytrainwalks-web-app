@@ -41,6 +41,42 @@
 			"description" : "Enter the shopping arcade here for a shortcut to the ferry.",
 			"lat" : -33.796893,
 			"lon" : 151.288385
+		},
+		"toileta" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.774931,
+			"lon" : 151.208025
+		},
+		"toiletb" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.782855,
+			"lon" : 151.253875
+		},
+		"toiletc" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.785526,
+			"lon" : 151.287180
+		},
+		"toiletd" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.790661,
+			"lon" : 151.287187
+		},
+		"toilete" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.796548,
+			"lon" : 151.288072
+		},
+		"toiletf" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.799510,
+			"lon" : 151.290299
 		}
 	},
 	"indicator" : {

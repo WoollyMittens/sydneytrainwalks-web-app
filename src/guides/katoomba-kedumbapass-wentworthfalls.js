@@ -20,7 +20,7 @@
 			"description" : "Plan your return trip from Wentworth Falls at <a href=\"https://transportnsw.info/trip#/?from=Wentworth Falls\">transportnsw.info</a>."
 		},
 		"toileta" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.711032,
 			"lon" : 150.373517

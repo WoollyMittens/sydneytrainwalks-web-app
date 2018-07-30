@@ -25,6 +25,12 @@
 			"lat" : -33.737497222222224,
 			"lon" : 150.57790277777778,
 			"description" : "Colourful ribbons show the exact creek crossing."
+		},
+		"toileta" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.698715,
+			"lon" : 150.564402
 		}
 	},
 	"indicator" : {

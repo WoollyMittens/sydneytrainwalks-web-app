@@ -24,73 +24,73 @@
 			"description" : "Plan your return trip from Manly at <a href=\"https://transportnsw.info/trip#/?from=Manly\">transportnsw.info</a>."
 		},
 		"toiletb" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.847503,
 			"lon" : 151.231410
 		},
 		"toiletc" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.838456,
 			"lon" : 151.232651
 		},
 		"toiletd" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.852988,
 			"lon" : 151.246311
 		},
 		"toilete" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.838256,
 			"lon" : 151.252851
 		},
 		"toiletf" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.829190,
 			"lon" : 151.253390
 		},
 		"toiletg" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.822261,
 			"lon" : 151.250798
 		},
 		"toileth" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.805507,
 			"lon" : 151.246086
 		},
 		"toileti" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.806933,
 			"lon" : 151.252112
 		},
 		"toiletj" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.809316,
 			"lon" : 151.265898
 		},
 		"toiletk" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.807122,
 			"lon" : 151.273478
 		},
 		"toiletl" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.799009,
 			"lon" : 151.264619
 		},
 		"toiletm" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.799834,
 			"lon" : 151.275478

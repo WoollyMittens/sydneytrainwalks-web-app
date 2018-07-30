@@ -44,25 +44,25 @@
 			"description" : "Merewether Surf Club"
 		},
 		"toileta" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -32.974799,
 			"lon" : 151.644187
 		},
 		"toiletb" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -32.965469,
 			"lon" : 151.694524
 		},
 		"toiletc" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -32.948198,
 			"lon" : 151.756880
 		},
 		"toiletd" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -32.933663,
 			"lon" : 151.778709

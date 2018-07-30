@@ -20,19 +20,19 @@
 			"description" : "Plan your return trip from Blackheath at <a href=\"https://transportnsw.info/trip#/?from=Blackheath\">transportnsw.info</a>."
 		},
 		"toileta" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.646621,
 			"lon" : 150.324658
 		},
 		"toiletb" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.628026,
 			"lon" : 150.311160
 		},
 		"toiletc" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.634060,
 			"lon" : 150.288373

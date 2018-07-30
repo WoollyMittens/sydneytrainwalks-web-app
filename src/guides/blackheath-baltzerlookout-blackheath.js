@@ -27,7 +27,7 @@
 			"description" : "Tourist Information."
 		},
 		"toileta" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.628057,
 			"lon" : 150.311105

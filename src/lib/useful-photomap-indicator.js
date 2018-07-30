@@ -45,10 +45,13 @@ useful.Photomap.prototype.Indicator = function (parent) {
 				{'icon': icon}
 			);
 			indicator.object.addTo(map.object);
-			// add the popup to the marker
-			indicator.popup = indicator.object.bindPopup(indicator.description);
-			// add the click handler
-			indicator.object.on('click', this.onIndicatorClicked(indicator));
+			// if there is a description
+			if (indicator.description) {
+				// add the popup to the marker
+				indicator.popup = indicator.object.bindPopup(indicator.description);
+				// add the click handler
+				indicator.object.on('click', this.onIndicatorClicked(indicator));
+			}
 			// focus the map on the indicator
 			this.focus();
 		}

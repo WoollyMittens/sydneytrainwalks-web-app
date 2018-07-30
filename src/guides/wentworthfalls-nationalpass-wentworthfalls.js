@@ -25,6 +25,24 @@
 			"lat" : -33.72029722222222,
 			"lon" : 150.36265555555556,
 			"description" : "The conservation hut."
+		},
+		"toileta" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.710751,
+			"lon" : 150.373617
+		},
+		"toiletb" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.725055,
+			"lon" : 150.369268
+		},
+		"toiletc" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.720065,
+			"lon" : 150.362915
 		}
 	},
 	"indicator" : {

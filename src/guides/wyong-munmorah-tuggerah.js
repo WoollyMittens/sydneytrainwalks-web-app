@@ -18,6 +18,96 @@
 			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
 			"description" : "Plan your return trip from Tuggerah using <a href=\"https://transportnsw.info/trip#/?to=Tuggerah\">transportnsw.info</a>."
+		},
+		"toileta" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.263909,
+			"lon" : 151.493369
+		},
+		"toiletb" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.259972,
+			"lon" : 151.517490
+		},
+		"toiletca" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.219880,
+			"lon" : 151.526735
+		},
+		"toiletcb" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.229813,
+			"lon" : 151.530250
+		},
+		"toiletcc" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.239500,
+			"lon" : 151.564167
+		},
+		"toiletcd" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.239500,
+			"lon" : 151.564167
+		},
+		"toiletce" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.253776,
+			"lon" : 151.562156
+		},
+		"toiletd" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.327058,
+			"lon" : 151.503513
+		},
+		"toilete" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.339043,
+			"lon" : 151.498697
+		},
+		"toiletf" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.337121,
+			"lon" : 151.494540
+		},
+		"toiletg" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.352971,
+			"lon" : 151.486190
+		},
+		"toileth" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.365270,
+			"lon" : 151.476145
+		},
+		"toileti" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.361419,
+			"lon" : 151.459533
+		},
+		"toiletj" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.339270,
+			"lon" : 151.438316
+		},
+		"toiletk" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.309932,
+			"lon" : 151.421433
 		}
 	},
 	"indicator" : {

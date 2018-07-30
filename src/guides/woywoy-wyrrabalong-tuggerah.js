@@ -22,6 +22,84 @@
 			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
 			"description" : "Plan your return trip from Tuggerah at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>."
+		},
+		"toiletd" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.383636,
+			"lon" : 151.482088
+		},
+		"toilete" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.412805,
+			"lon" : 151.464008
+		},
+		"toiletf" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.446559,
+			"lon" : 151.444595
+		},
+		"toiletg" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.465399,
+			"lon" : 151.434228
+		},
+		"toileth" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.470640,
+			"lon" : 151.437657
+		},
+		"toileti" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.490607,
+			"lon" : 151.431688
+		},
+		"toiletj" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.498939,
+			"lon" : 151.424463
+		},
+		"toiletk" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.510356,
+			"lon" : 151.417669
+		},
+		"toileto" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.485012,
+			"lon" : 151.336232
+		},
+		"toiletp" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.484002,
+			"lon" : 151.326270
+		},
+		"toiletq" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.361419,
+			"lon" : 151.459533
+		},
+		"toiletr" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.339270,
+			"lon" : 151.438316
+		},
+		"toilets" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.309932,
+			"lon" : 151.421433
 		}
 	},
 	"indicator" : {

@@ -20,25 +20,25 @@
 			"description" : "Get the train to Kiama using <a href=\"https://transportnsw.info/trip#/?to=Kiama\">transportnsw.info</a>."
 		},
 		"toileth" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -34.637309,
 			"lon" : 150.854720
 		},
 		"toileti" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -34.653122,
 			"lon" : 150.857694
 		},
 		"toiletj" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -34.670916,
 			"lon" : 150.855821
 		},
 		"toiletk" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -34.671716,
 			"lon" : 150.860989

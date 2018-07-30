@@ -43,13 +43,13 @@
 			"description" : "Cafe"
 		},
 		"toileta" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.623681,
 			"lon" : 151.152960
 		},
 		"toiletb" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.656152,
 			"lon" : 151.134068

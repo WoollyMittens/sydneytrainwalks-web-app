@@ -29,67 +29,67 @@
 			"description" : "Shell Harbour has many restaurants."
 		},
 		"toileta" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -34.492419,
 			"lon" : 150.909638
 		},
 		"toiletb" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -34.538312,
 			"lon" : 150.872317
 		},
 		"toiletc" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -34.545924,
 			"lon" : 150.870030
 		},
 		"toiletd" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -34.549881,
 			"lon" : 150.868652
 		},
 		"toilete" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -34.561208,
 			"lon" : 150.868163
 		},
 		"toiletf" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -34.571368,
 			"lon" : 150.867077
 		},
 		"toiletg" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -34.577315,
 			"lon" : 150.869894
 		},
 		"toileth" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -34.637309,
 			"lon" : 150.854720
 		},
 		"toileti" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -34.653122,
 			"lon" : 150.857694
 		},
 		"toiletj" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -34.670916,
 			"lon" : 150.855821
 		},
 		"toiletk" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -34.671716,
 			"lon" : 150.860989

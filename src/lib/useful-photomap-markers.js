@@ -18,7 +18,7 @@ useful.Photomap = useful.Photomap || function () {};
 useful.Photomap.prototype.Markers = function (parent) {
 
 	// PROPERTIES
-	
+
 	"use strict";
 	this.parent = parent;
 	this.config = parent.config;
@@ -54,14 +54,17 @@ useful.Photomap.prototype.Markers = function (parent) {
 					{'icon': icon}
 				);
 				marker.object.addTo(this.config.map.object);
-				// add the popup to the marker
-				marker.popup = marker.object.bindPopup(marker.description);
-				// add the click handler
-				marker.object.on('click', this.onMarkerClicked(marker));
+				// if there is a desciption
+				if (marker.description) {
+					// add the popup to the marker
+					marker.popup = marker.object.bindPopup(marker.description);
+					// add the click handler
+					marker.object.on('click', this.onMarkerClicked(marker));
+				}
 			}
 		}
 	};
-	
+
 	this.onMarkerClicked = function (marker) {
 		var _this = this;
 		return function (evt) {

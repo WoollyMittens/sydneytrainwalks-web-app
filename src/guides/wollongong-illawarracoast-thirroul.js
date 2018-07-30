@@ -18,6 +18,66 @@
 			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
 			"description" : "Get the train to Thirroul using <a href=\"https://transportnsw.info/trip#/?to=Thirroul\">transportnsw.info</a>."
+		},
+		"toileta" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -34.425463,
+			"lon" : 150.904094
+		},
+		"toiletb" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -34.421820,
+			"lon" : 150.904804
+		},
+		"toiletc" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -34.396007,
+			"lon" : 150.905016
+		},
+		"toiletd" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -34.386673,
+			"lon" : 150.911992
+		},
+		"toilete" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -34.385234,
+			"lon" : 150.915085
+		},
+		"toiletf" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -34.368591,
+			"lon" : 150.928993
+		},
+		"toiletg" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -34.348947,
+			"lon" : 150.918923
+		},
+		"toileth" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -34.339607,
+			"lon" : 150.925402
+		},
+		"toileti" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -34.330984,
+			"lon" : 150.927952
+		},
+		"toiletj" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -34.316503,
+			"lon" : 150.927209
 		}
 	},
 	"indicator" : {

@@ -26,6 +26,102 @@
 			"lon" : 151.323638916,
 			"icon" : "./inc/img/marker-train.png",
 			"description" : "Plan your return trip from Woy Woy at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>."
+		},
+		"toileta" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.342245,
+			"lon" : 151.499009
+		},
+		"toiletb" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.350065,
+			"lon" : 151.503363
+		},
+		"toiletc" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.362352,
+			"lon" : 151.499918
+		},
+		"toiletd" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.383636,
+			"lon" : 151.482088
+		},
+		"toilete" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.412805,
+			"lon" : 151.464008
+		},
+		"toiletf" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.446559,
+			"lon" : 151.444595
+		},
+		"toiletg" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.465399,
+			"lon" : 151.434228
+		},
+		"toileth" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.470640,
+			"lon" : 151.437657
+		},
+		"toileti" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.490607,
+			"lon" : 151.431688
+		},
+		"toiletj" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.498939,
+			"lon" : 151.424463
+		},
+		"toiletk" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.510356,
+			"lon" : 151.417669
+		},
+		"toiletl" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.527785,
+			"lon" : 151.371968
+		},
+		"toiletm" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.532312,
+			"lon" : 151.358966
+		},
+		"toiletn" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.523876,
+			"lon" : 151.361068
+		},
+		"toileto" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.485012,
+			"lon" : 151.336232
+		},
+		"toiletp" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.484002,
+			"lon" : 151.326270
 		}
 	},
 	"indicator" : {

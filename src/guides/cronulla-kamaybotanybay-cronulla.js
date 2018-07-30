@@ -27,13 +27,13 @@
 			"description" : "Botany Bay Visitor Centre."
 		},
 		"toileta" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -34.055744,
 			"lon" : 151.154582
 		},
 		"toiletb" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -34.004823,
 			"lon" : 151.221888

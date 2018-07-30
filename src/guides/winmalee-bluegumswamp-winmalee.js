@@ -24,6 +24,12 @@
 			"description" : "Plan your return trip from Winmalee Shopping Centre at <a href=\"https://transportnsw.info/trip#/?from=Winmalee\">transportnsw.info</a>.",
 			"lat" : -33.672309999999996,
 			"lon" : 150.60895399999998
+		},
+		"toileta" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.671368,
+			"lon" : 150.608357
 		}
 	},
 	"indicator" : {

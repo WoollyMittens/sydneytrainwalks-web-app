@@ -27,13 +27,13 @@
 			"description" : "Trees Adventure kiosk"
 		},
 		"toileta" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.730942,
 			"lon" : 150.629398
 		},
 		"toiletb" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.611034,
 			"lon" : 150.696584

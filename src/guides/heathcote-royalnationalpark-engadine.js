@@ -27,7 +27,7 @@
 			"description" : "Kiosk at Audley"
 		},
 		"toileta" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -34.074998,
 			"lon" : 151.056467

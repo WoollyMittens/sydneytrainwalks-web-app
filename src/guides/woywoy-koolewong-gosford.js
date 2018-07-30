@@ -22,6 +22,24 @@
 			"description" : "Plan your return trip from Gosford at <a href=\"https://transportnsw.info/trip#/?from=Gosford\">transportnsw.info</a>.",
 			"lat" : -33.423488,
 			"lon" : 151.341869
+		},
+		"toileta" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.457724,
+			"lon" : 151.314530
+		},
+		"toiletb" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.439156,
+			"lon" : 151.331053
+		},
+		"toiletc" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.435772,
+			"lon" : 151.323081
 		}
 	},
 	"indicator" : {

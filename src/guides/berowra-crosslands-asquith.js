@@ -30,7 +30,7 @@
 			"lon" : 151.085275
 		},
 		"toileta" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.631144,
 			"lon" : 151.109019

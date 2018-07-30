@@ -20,7 +20,7 @@
 			"description" : "Plan your return trip from Mittagong at <a href=\"https://transportnsw.info/trip#/?from=Mittagong\">transportnsw.info</a>."
 		},
 		"toileta" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -34.447122,
 			"lon" : 150.446470

@@ -29,6 +29,36 @@
 			"lat" : -33.532202777777776,
 			"lon" : 151.35897777777777,
 			"description" : "Kiosk at Putty Beach."
+		},
+		"toiletl" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.527785,
+			"lon" : 151.371968
+		},
+		"toiletm" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.532312,
+			"lon" : 151.358966
+		},
+		"toiletn" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.523876,
+			"lon" : 151.361068
+		},
+		"toileto" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.485012,
+			"lon" : 151.336232
+		},
+		"toiletp" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.484002,
+			"lon" : 151.326270
 		}
 	},
 	"indicator" : {

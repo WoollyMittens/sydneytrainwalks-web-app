@@ -27,6 +27,12 @@
 			"lat" : -34.17031111111111,
 			"lon" : 151.06652222222223,
 			"description" : "Garie Beach kiosk"
+		},
+		"toileta" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -34.170117,
+			"lon" : 151.066044
 		}
 	},
 	"indicator" : {

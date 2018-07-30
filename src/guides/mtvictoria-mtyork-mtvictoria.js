@@ -20,13 +20,13 @@
 			"description" : "Plan your return trip from Mount Victoria at <a href=\"https://transportnsw.info/trip#/?from=Mount Victoria\">transportnsw.info</a>."
 		},
 		"toileta" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.553546,
 			"lon" : 150.219574
 		},
 		"toiletb" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.535627,
 			"lon" : 150.233181

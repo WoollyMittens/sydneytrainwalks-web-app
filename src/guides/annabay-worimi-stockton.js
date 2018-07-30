@@ -20,13 +20,13 @@
 			"description" : "Plan your return trip from Stockton at <a href=\"https://transportnsw.info/trip#/?from=Stockton\">transportnsw.info</a>."
 		},
 		"toileta" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -32.911148,
 			"lon" : 151.787002
 		},
 		"toiletb" : {
-			"type" : "pubic toilet",
+			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -32.777786,
 			"lon" : 152.082206

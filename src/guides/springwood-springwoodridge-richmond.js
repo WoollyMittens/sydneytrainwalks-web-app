@@ -39,6 +39,24 @@
 			"description" : "The left fork leads down through the Blue Gum Swamp, the right across Beehive Ridge. Both are equally valid.",
 			"lat" : -33.66343,
 			"lon" : 150.6113430000752
+		},
+		"toileta" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.698715,
+			"lon" : 150.564402
+		},
+		"toiletb" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.671321,
+			"lon" : 150.608356
+		},
+		"toiletc" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.611050,
+			"lon" : 150.696605
 		}
 	},
 	"indicator" : {
