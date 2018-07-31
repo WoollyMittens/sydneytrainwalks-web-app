@@ -19,6 +19,18 @@
 			"icon" : "./inc/img/marker-train.png",
 			"description" : "Get the train to Bellambi using <a href=\"https://transportnsw.info/trip#/?to=Bellambi\">transportnsw.info</a>."
 		},
+		"kioska" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -34.421703,
+			"lon" : 150.904859
+		},
+		"kioskb" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -34.414249,
+			"lon" : 150.901291
+		},
 		"toileta" : {
 			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",

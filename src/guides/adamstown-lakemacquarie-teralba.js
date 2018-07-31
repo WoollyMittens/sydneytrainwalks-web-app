@@ -25,22 +25,25 @@
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -32.978277000000006,
-			"lon" : 151.708188,
-			"description" : "Whitebridge shops"
+			"lon" : 151.708188
 		},
 		"kioskb" : {
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.035152777777775,
-			"lon" : 151.6571138888889,
-			"description" : "Belmont shops"
+			"lon" : 151.6571138888889
 		},
 		"kioskc" : {
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -32.97394722222222,
-			"lon" : 151.64323888888887,
-			"description" : "Warners Bay shops"
+			"lon" : 151.64323888888887
+		},
+		"kioskd" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.009511,
+			"lon" : 151.635204
 		},
 		"toileta" : {
 			"type" : "toilet",
@@ -53,6 +56,18 @@
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -32.974841,
 			"lon" : 151.644288
+		},
+		"toiletc" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.036977,
+			"lon" : 151.659464
+		},
+		"toiletd" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.011038,
+			"lon" : 151.628616
 		}
 	},
 	"indicator" : {

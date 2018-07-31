@@ -21,12 +21,47 @@
 			"icon" : "./inc/img/marker-train.png",
 			"description" : "Get the train to Kiama using <a href=\"https://transportnsw.info/trip#/?to=Kiama\">transportnsw.info</a>."
 		},
-		"kiosk" : {
+		"kioska" : {
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
-			"lat" : -34.57801111111112,
-			"lon" : 150.87062500000002,
-			"description" : "Shell Harbour has many restaurants."
+			"lat" : -34.475450,
+			"lon" : 150.913362
+		},
+		"kioskb" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -34.492222,
+			"lon" : 150.909641
+		},
+		"kioskc" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -34.546009,
+			"lon" : 150.869634
+		},
+		"kioskd" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -34.578391,
+			"lon" : 150.869845
+		},
+		"kioske" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -34.627403,
+			"lon" : 150.855834
+		},
+		"kioskf" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -34.636742,
+			"lon" : 150.853610
+		},
+		"kioskg" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -34.671694,
+			"lon" : 150.861108
 		},
 		"toileta" : {
 			"type" : "toilet",

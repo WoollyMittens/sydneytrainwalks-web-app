@@ -33,12 +33,23 @@
 			"lon" : 151.15113055555557,
 			"description" : "Transport to this location: <a href=\"https://transportnsw.info/trip#/?from=Cronulla&itd_name_destination=Bundeena\">transportnsw.info</a>"
 		},
-		"kiosk" : {
+		"kioska" : {
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -34.075375,
-			"lon" : 151.0561138888889,
-			"description" : "Kiosk at Audley"
+			"lon" : 151.0561138888889
+		},
+		"kioskb" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -34.084202,
+			"lon" : 151.151515
+		},
+		"kioskc" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -34.077906,
+			"lon" : 151.130287
 		},
 		"toileta" : {
 			"type" : "toilet",

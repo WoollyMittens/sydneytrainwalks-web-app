@@ -21,6 +21,18 @@
 			"lat" : -33.70486666666667,
 			"lon" : 151.29741666666666
 		},
+		"kioska" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.598634,
+			"lon" : 151.324697
+		},
+		"kioskb" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.636737,
+			"lon" : 151.330149
+		},
 		"toileta" : {
 			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",

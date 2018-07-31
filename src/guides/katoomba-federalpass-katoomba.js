@@ -29,12 +29,17 @@
 			"lon" : 150.30450000000002,
 			"description" : "Instead of climbing you<br/>can also use the scenic railway."
 		},
-		"kiosk" : {
+		"kioska" : {
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
-			"lat" : -33.72815277777778,
-			"lon" : 150.30450000000002,
-			"description" : "Echo Point shops."
+			"lat" : -33.731191,
+			"lon" : 150.311825
+		},
+		"kioskb" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.728828,
+			"lon" : 150.301355
 		},
 		"toileta" : {
 			"type" : "toilet",

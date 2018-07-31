@@ -21,6 +21,48 @@
 			"lat" : -33.28545277777778,
 			"lon" : 151.42558333333332
 		},
+		"kioska" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.327049,
+			"lon" : 151.429406
+		},
+		"kioskb" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.327049,
+			"lon" : 151.429406
+		},
+		"kioskc" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.339399,
+			"lon" : 151.437834
+		},
+		"kioskd" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.339775,
+			"lon" : 151.498848
+		},
+		"kioske" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.327141,
+			"lon" : 151.503049
+		},
+		"kioskf" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.258454,
+			"lon" : 151.512536
+		},
+		"kioskg" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.275047,
+			"lon" : 151.490498
+		},
 		"toileta" : {
 			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",

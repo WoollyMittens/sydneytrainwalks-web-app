@@ -45,8 +45,8 @@ useful.Photomap.prototype.Markers = function (parent) {
 				// create the icon
 				icon = L.icon({
 					iconUrl: marker.icon,
-					iconSize: [32, 32],
-					iconAnchor: [16, 32]
+					iconSize: [28, 28],
+					iconAnchor: [14, 28]
 				});
 				// add the marker with the icon
 				marker.object = L.marker(

@@ -19,6 +19,12 @@
 			"icon" : "./inc/img/marker-bus.png",
 			"description" : "Plan your return trip from Terrigal at <a href=\"https://transportnsw.info/trip#/?from=Terrigal\">transportnsw.info</a>."
 		},
+		"kioska" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.362016,
+			"lon" : 151.499920
+		},
 		"toileta" : {
 			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",

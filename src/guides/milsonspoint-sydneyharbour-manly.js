@@ -23,6 +23,54 @@
 			"icon" : "./inc/img/marker-ferry.png",
 			"description" : "Plan your return trip from Manly at <a href=\"https://transportnsw.info/trip#/?from=Manly\">transportnsw.info</a>."
 		},
+		"kioska" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.846209,
+			"lon" : 151.212776
+		},
+		"kioskb" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.838381,
+			"lon" : 151.232746
+		},
+		"kioskc" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.847691,
+			"lon" : 151.231060
+		},
+		"kioskd" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.838870,
+			"lon" : 151.254731
+		},
+		"kioske" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.827322,
+			"lon" : 151.252231
+		},
+		"kioskf" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.804023,
+			"lon" : 151.246259
+		},
+		"kioskg" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.806342,
+			"lon" : 151.252304
+		},
+		"kioskh" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.799453,
+			"lon" : 151.284148
+		},
 		"toileta" : {
 			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",

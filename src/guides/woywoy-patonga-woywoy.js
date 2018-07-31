@@ -24,16 +24,32 @@
 		"kioska" : {
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
-			"lat" : -33.514833333333335,
-			"lon" : 151.33609722222224,
-			"description" : "Ettalong Beach Kiosk"
+			"lat" : -33.515515,
+			"lon" : 151.334699
 		},
 		"kioskb" : {
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
-			"lat" : -33.550048,
-			"lon" : 151.274933,
-			"description" : "Patonga Beach Kiosk"
+			"lat" : -33.524517,
+			"lon" : 151.321322
+		},
+		"kioskc" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.545298,
+			"lon" : 151.307008
+		},
+		"kioskd" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.550364,
+			"lon" : 151.274202
+		},
+		"kioske" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.485161,
+			"lon" : 151.324358
 		},
 		"toileta" : {
 			"type" : "toilet",

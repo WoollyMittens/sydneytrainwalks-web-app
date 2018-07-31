@@ -16627,8 +16627,8 @@ useful.Photomap.prototype.Indicator = function (parent) {
 			// create the icon
 			icon = L.icon({
 				iconUrl: indicator.icon,
-				iconSize: [32, 32],
-				iconAnchor: [16, 32]
+				iconSize: [28, 28],
+				iconAnchor: [14, 28]
 			});
 			// report the location for reference
 			console.log('location:', indicator);
@@ -16752,8 +16752,8 @@ useful.Photomap.prototype.Location = function (parent) {
 				// create the icon
 				var icon = L.icon({
 					iconUrl: _config.pointer,
-					iconSize: [32, 32],
-					iconAnchor: [16, 32]
+					iconSize: [28, 28],
+					iconAnchor: [14, 28]
 				});
 				// add the marker with the icon
 				_this.object = L.marker(
@@ -17084,8 +17084,8 @@ useful.Photomap.prototype.Markers = function (parent) {
 				// create the icon
 				icon = L.icon({
 					iconUrl: marker.icon,
-					iconSize: [32, 32],
-					iconAnchor: [16, 32]
+					iconSize: [28, 28],
+					iconAnchor: [14, 28]
 				});
 				// add the marker with the icon
 				marker.object = L.marker(
@@ -19034,8 +19034,8 @@ SydneyTrainWalks.prototype.Overview = function(parent) {
 		// create an icon
 		var icon = L.icon({
 			iconUrl: "./inc/img/marker-walk.png",
-			iconSize: [32, 32],
-			iconAnchor: [16, 32]
+			iconSize: [28, 28],
+			iconAnchor: [14, 28]
 		});
 		// add the markers
 		var marker;
@@ -19167,8 +19167,8 @@ SydneyTrainWalks.prototype.Overview = function(parent) {
 				// create the icon
 				var icon = L.icon({
 					iconUrl: "./inc/img/marker-location.png",
-					iconSize: [32, 32],
-					iconAnchor: [16, 32]
+					iconSize: [28, 28],
+					iconAnchor: [14, 28]
 				});
 				// add the marker with the icon
 				_this.overviewMarker = L.marker(

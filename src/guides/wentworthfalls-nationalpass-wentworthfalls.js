@@ -23,8 +23,7 @@
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.72029722222222,
-			"lon" : 150.36265555555556,
-			"description" : "The conservation hut."
+			"lon" : 150.36265555555556
 		},
 		"toileta" : {
 			"type" : "toilet",

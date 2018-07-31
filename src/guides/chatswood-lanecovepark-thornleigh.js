@@ -19,6 +19,12 @@
 			"icon" : "./inc/img/marker-train.png",
 			"description" : "Plan your return trip from Thornleigh at <a href=\"https://transportnsw.info/trip#/?from=Thornleigh\">transportnsw.info</a>."
 		},
+		"kioska" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.792096,
+			"lon" : 151.152099
+		},
 		"toileta" : {
 			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
@@ -30,6 +36,24 @@
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.735526,
 			"lon" : 151.086533
+		},
+		"toiletc" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.789734,
+			"lon" : 151.146831
+		},
+		"toiletd" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.793244,
+			"lon" : 151.150729
+		},
+		"toilete" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.792087,
+			"lon" : 151.155906
 		}
 	},
 	"indicator" : {

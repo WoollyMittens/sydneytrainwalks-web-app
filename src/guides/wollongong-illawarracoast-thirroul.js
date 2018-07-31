@@ -19,6 +19,30 @@
 			"icon" : "./inc/img/marker-train.png",
 			"description" : "Get the train to Thirroul using <a href=\"https://transportnsw.info/trip#/?to=Thirroul\">transportnsw.info</a>."
 		},
+		"kioska" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -34.421703,
+			"lon" : 150.904859
+		},
+		"kioskb" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -34.414249,
+			"lon" : 150.901291
+		},
+		"kioskc" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -34.339335,
+			"lon" : 150.925343
+		},
+		"kioskd" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -34.316387,
+			"lon" : 150.927633
+		},
 		"toileta" : {
 			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",

@@ -19,12 +19,23 @@
 			"icon" : "./inc/img/marker-train.png",
 			"description" : "Plan your return trip from Richmond at <a href=\"https://transportnsw.info/trip#/?from=Richmond\">transportnsw.info</a>."
 		},
-		"kiosk" : {
+		"kioska" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.731507,
+			"lon" : 150.629647
+		},
+		"kioskb" : {
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.61356299992081,
-			"lon" : 150.691867,
-			"description" : "Trees Adventure kiosk"
+			"lon" : 150.691867
+		},
+		"kioskc" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.596132,
+			"lon" : 150.749507
 		},
 		"toileta" : {
 			"type" : "toilet",

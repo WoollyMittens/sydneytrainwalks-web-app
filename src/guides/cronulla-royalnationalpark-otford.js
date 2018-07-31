@@ -35,12 +35,17 @@
 			"lon" : 151.15113055555557,
 			"description" : "Transport to this location: <a href=\"https://transportnsw.info/trip#/?from=Cronulla&itd_name_destination=Bundeena\">transportnsw.info</a>"
 		},
-		"kiosk" : {
+		"kioska" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -34.084211,
+			"lon" : 151.151508
+		},
+		"kioskb" : {
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -34.17031111111111,
-			"lon" : 151.06652222222223,
-			"description" : "Garie Beach kiosk"
+			"lon" : 151.06652222222223
 		},
 		"toileta" : {
 			"type" : "toilet",

@@ -23,15 +23,13 @@
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.65976666666666,
-			"lon" : 151.15893333333335,
-			"description" : "Bobbin Head Inn"
+			"lon" : 151.15893333333335
 		},
 		"kioskb" : {
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.65260277777778,
-			"lon" : 151.1558361111111,
-			"description" : "Apple Tree Bay Kiosk"
+			"lon" : 151.1558361111111
 		},
 		"toileta" : {
 			"type" : "toilet",

@@ -19,6 +19,24 @@
 			"icon" : "./inc/img/marker-train.png",
 			"description" : "Get the train to Kiama using <a href=\"https://transportnsw.info/trip#/?to=Kiama\">transportnsw.info</a>."
 		},
+		"kioske" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -34.627403,
+			"lon" : 150.855834
+		},
+		"kioskf" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -34.636742,
+			"lon" : 150.853610
+		},
+		"kioskg" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -34.671694,
+			"lon" : 150.861108
+		},
 		"toileth" : {
 			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",

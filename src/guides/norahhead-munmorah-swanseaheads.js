@@ -19,6 +19,24 @@
 			"icon" : "./inc/img/marker-bus.png",
 			"description" : "Plan your return trip from Swansea Heads at <a href=\"https://transportnsw.info/trip#/?from=Swansea Heads\">transportnsw.info</a>."
 		},
+		"kioska" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.278807,
+			"lon" : 151.565990
+		},
+		"kioskb" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.157775,
+			"lon" : 151.628880
+		},
+		"kioskc" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.110295,
+			"lon" : 151.646381
+		},
 		"toileta" : {
 			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",

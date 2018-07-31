@@ -23,8 +23,13 @@
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.599133333333334,
-			"lon" : 151.12018333333333,
-			"description" : "Berowra Waters"
+			"lon" : 151.12018333333333
+		},
+		"kioskb" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.589685,
+			"lon" : 151.170904
 		},
 		"toileta" : {
 			"type" : "toilet",

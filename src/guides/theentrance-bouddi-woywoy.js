@@ -27,6 +27,36 @@
 			"icon" : "./inc/img/marker-train.png",
 			"description" : "Plan your return trip from Woy Woy at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>."
 		},
+		"kioska" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.362016,
+			"lon" : 151.499920
+		},
+		"kioskb" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.446963,
+			"lon" : 151.444839
+		},
+		"kioskd" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.470558,
+			"lon" : 151.436401
+		},
+		"kioske" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.490582,
+			"lon" : 151.431336
+		},
+		"kioskf" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.500675,
+			"lon" : 151.425001
+		},
 		"toileta" : {
 			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
@@ -92,24 +122,6 @@
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.510356,
 			"lon" : 151.417669
-		},
-		"toiletl" : {
-			"type" : "toilet",
-			"icon" : "./inc/img/marker-toilet.png",
-			"lat" : -33.527785,
-			"lon" : 151.371968
-		},
-		"toiletm" : {
-			"type" : "toilet",
-			"icon" : "./inc/img/marker-toilet.png",
-			"lat" : -33.532312,
-			"lon" : 151.358966
-		},
-		"toiletn" : {
-			"type" : "toilet",
-			"icon" : "./inc/img/marker-toilet.png",
-			"lat" : -33.523876,
-			"lon" : 151.361068
 		},
 		"toileto" : {
 			"type" : "toilet",

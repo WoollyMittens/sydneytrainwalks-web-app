@@ -40,15 +40,13 @@
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.622975,
-			"lon" : 151.152660,
-			"description" : "Cafe"
+			"lon" : 151.152660
 		},
 		"kioskb" : {
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.656189,
-			"lon" : 151.134181,
-			"description" : "Cafe"
+			"lon" : 151.134181
 		},
 		"toileta" : {
 			"type" : "toilet",

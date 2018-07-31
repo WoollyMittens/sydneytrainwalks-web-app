@@ -19,12 +19,17 @@
 			"icon" : "./inc/img/marker-train.png",
 			"description" : "Plan your return trip from Blackheath at <a href=\"https://transportnsw.info/trip#/?from=Blackheath\">transportnsw.info</a>."
 		},
-		"kiosk" : {
-			"type" : "kiosk",
+		"info" : {
+			"type" : "info",
 			"icon" : "./inc/img/marker-info.png",
 			"lat" : -33.62985277777778,
-			"lon" : 150.30654444444446,
-			"description" : "Tourist Information."
+			"lon" : 150.30654444444446
+		},
+		"kioska" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.635700,
+			"lon" : 150.285457
 		},
 		"toileta" : {
 			"type" : "toilet",

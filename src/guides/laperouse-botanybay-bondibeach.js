@@ -28,6 +28,42 @@
 			"lat" : -33.920504780004606,
 			"lon" : 151.2570640600152
 		},
+		"kioska" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.964803,
+			"lon" : 151.251308
+		},
+		"kioskb" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.948279,
+			"lon" : 151.256623
+		},
+		"kioskc" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.920457,
+			"lon" : 151.257153
+		},
+		"kioskd" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.914345,
+			"lon" : 151.266844
+		},
+		"kioske" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.903498,
+			"lon" : 151.267770
+		},
+		"kioskf" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.899976,
+			"lon" : 151.269459
+		},
 		"toiletg" : {
 			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",

@@ -19,26 +19,23 @@
 			"icon" : "./inc/img/marker-train.png",
 			"description" : "Plan your return trip from Town Hall at <a href=\"https://transportnsw.info/trip#/?from=Town Hall\">transportnsw.info</a>."
 		},
-		"shopsa" : {
+		"kioska" : {
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.830302,
-			"lon" : 151.1200046,
-			"description" : "Shops"
+			"lon" : 151.1200046
 		},
-		"shopsb" : {
+		"kioskb" : {
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
-			"lat" : -33.85858888888889,
-			"lon" : 151.16195000000002,
-			"description" : "Birkenhead Mall"
+			"lat" : -33.856828,
+			"lon" : 151.160703
 		},
-		"shopsc" : {
+		"kioskc" : {
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.858696,
-			"lon" : 151.1826270001119,
-			"description" : "Shops"
+			"lon" : 151.1826270001119
 		},
 		"toileta" : {
 			"type" : "toilet",
@@ -87,12 +84,6 @@
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.852087,
 			"lon" : 151.188208
-		},
-		"toileti" : {
-			"type" : "toilet",
-			"icon" : "./inc/img/marker-toilet.png",
-			"lat" : -33.869340,
-			"lon" : 151.170916
 		},
 		"toiletj" : {
 			"type" : "toilet",

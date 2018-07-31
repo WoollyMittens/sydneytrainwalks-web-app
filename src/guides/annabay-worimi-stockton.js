@@ -19,6 +19,12 @@
 			"icon" : "./inc/img/marker-ferry.png",
 			"description" : "Plan your return trip from Stockton at <a href=\"https://transportnsw.info/trip#/?from=Stockton\">transportnsw.info</a>."
 		},
+		"kioska" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -32.777812,
+			"lon" : 152.082409
+		},
 		"toileta" : {
 			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",

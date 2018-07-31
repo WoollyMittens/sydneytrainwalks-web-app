@@ -19,29 +19,26 @@
 		"end" : {
 			"location" : "Adamstown",
 			"type" : "train",
-			"icon" : "./inc/img/marker-bus.png",
+			"icon" : "./inc/img/marker-train.png",
 			"description" : "Plan your return trip from Adamstown at <a href=\"https://transportnsw.info/trip#/?from=Adamstown\">transportnsw.info</a>."
 		},
 		"kioska" : {
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -32.978277000000006,
-			"lon" : 151.708188,
-			"description" : "Whitebridge shops"
+			"lon" : 151.708188
 		},
 		"kioskb" : {
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.01304,
-			"lon" : 151.718354,
-			"description" : "Redhead Surf Club"
+			"lon" : 151.718354
 		},
 		"kioskc" : {
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -32.989667000000004,
-			"lon" : 151.719252,
-			"description" : "Dudley Pub"
+			"lon" : 151.719252
 		},
 		"toileta" : {
 			"type" : "toilet",

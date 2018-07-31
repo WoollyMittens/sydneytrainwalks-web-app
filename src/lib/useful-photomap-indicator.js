@@ -34,8 +34,8 @@ useful.Photomap.prototype.Indicator = function (parent) {
 			// create the icon
 			icon = L.icon({
 				iconUrl: indicator.icon,
-				iconSize: [32, 32],
-				iconAnchor: [16, 32]
+				iconSize: [28, 28],
+				iconAnchor: [14, 28]
 			});
 			// report the location for reference
 			console.log('location:', indicator);

@@ -25,15 +25,13 @@
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.65230555555556,
-			"lon" : 151.15553333333335,
-			"description" : "Apply Tree Bay Kiosk"
+			"lon" : 151.15553333333335
 		},
 		"kioskb" : {
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.65925555555555,
-			"lon" : 151.1600138888889,
-			"description" : "Bobbin Head Inn"
+			"lon" : 151.1600138888889
 		},
 		"info" : {
 			"type" : "info",

@@ -23,12 +23,17 @@
 			"icon" : "./inc/img/marker-train.png",
 			"description" : "Plan your return trip from Woy Woy at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>."
 		},
-		"kiosk" : {
+		"kioska" : {
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -33.532202777777776,
-			"lon" : 151.35897777777777,
-			"description" : "Kiosk at Putty Beach."
+			"lon" : 151.35897777777777
+		},
+		"kioskb" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.524205,
+			"lon" : 151.361228
 		},
 		"toiletl" : {
 			"type" : "toilet",

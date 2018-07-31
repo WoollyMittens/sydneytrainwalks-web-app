@@ -19,12 +19,30 @@
 			"icon" : "./inc/img/marker-train.png",
 			"description" : "Plan your return trip from Cronulla at <a href=\"https://transportnsw.info/trip#/?from=Cronulla\">transportnsw.info</a>."
 		},
-		"warning" : {
+		"info" : {
 			"type" : "info",
-			"icon" : "./inc/img/marker-kiosk.png",
+			"icon" : "./inc/img/marker-info.png",
 			"lat" : -34.00504166666666,
 			"lon" : 151.22191111111113,
 			"description" : "Botany Bay Visitor Centre."
+		},
+		"kioska" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -34.055423,
+			"lon" : 151.151867
+		},
+		"kioskb" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -34.006834,
+			"lon" : 151.215851
+		},
+		"kioskc" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -34.011527,
+			"lon" : 151.209677
 		},
 		"toileta" : {
 			"type" : "toilet",

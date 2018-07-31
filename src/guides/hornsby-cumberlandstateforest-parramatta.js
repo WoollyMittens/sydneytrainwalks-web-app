@@ -34,6 +34,18 @@
 			"icon" : "./inc/img/marker-train.png",
 			"description" : "Plan your return trip from Parramatta Station at <a href=\"https://transportnsw.info/trip#/?from=Parramatta Station\">transportnsw.info</a>."
 		},
+		"kioska" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.744700,
+			"lon" : 151.038212
+		},
+		"kioskb" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.791608,
+			"lon" : 151.007297
+		},
 		"toileta" : {
 			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",

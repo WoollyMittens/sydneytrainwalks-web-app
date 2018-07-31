@@ -22,6 +22,18 @@
 			"icon" : "./inc/img/marker-train.png",
 			"description" : "Plan your return trip from Asquith at <a href=\"https://transportnsw.info/trip#/?from=Asquith\">transportnsw.info</a>."
 		},
+		"kioska" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.623568,
+			"lon" : 151.151757
+		},
+		"kioskb" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.688607,
+			"lon" : 151.107549
+		},
 		"warning" : {
 			"type" : "warning",
 			"icon" : "./inc/img/marker-warning.png",

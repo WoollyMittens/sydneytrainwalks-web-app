@@ -43,6 +43,13 @@
 			"lon" : 151.75664,
 			"description" : "Merewether Surf Club"
 		},
+		"kioskd" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -32.927243,
+			"lon" : 151.782071,
+			"description" : "Merewether Surf Club"
+		},
 		"toileta" : {
 			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",

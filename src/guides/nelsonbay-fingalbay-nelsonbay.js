@@ -22,19 +22,11 @@
 			"icon" : "./inc/img/marker-bus.png",
 			"description" : "Plan your return trip from Nelson Bay at <a href=\"https://transportnsw.info/trip#/?from=Nelson Bay\">transportnsw.info</a>."
 		},
-		"cafe" : {
-			"type" : "kiosk",
-			"icon" : "./inc/img/marker-kiosk.png",
-			"lat" : -32.71056747004358,
-			"lon" : 152.1596679700228,
-			"description" : "Cafe at the lighthouse"
-		},
-		"kiosk" : {
+		"kioska" : {
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -32.74295277777778,
-			"lon" : 152.1709972222222,
-			"description" : "Kiosk at Fingal Bay"
+			"lon" : 152.1709972222222
 		},
 		"toileta" : {
 			"type" : "toilet",

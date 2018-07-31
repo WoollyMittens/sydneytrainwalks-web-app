@@ -21,6 +21,24 @@
 			"lat" : -33.80003333333333,
 			"lon" : 151.2852861111111
 		},
+		"kioska" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.598634,
+			"lon" : 151.324697
+		},
+		"kioskb" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.636737,
+			"lon" : 151.330149
+		},
+		"kioskc" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.732466,
+			"lon" : 151.301482
+		},
 		"exit" : {
 			"type" : "bus",
 			"icon" : "./inc/img/marker-bus.png",

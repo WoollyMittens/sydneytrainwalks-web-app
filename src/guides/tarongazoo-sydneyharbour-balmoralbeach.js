@@ -21,6 +21,18 @@
 			"icon" : "./inc/img/marker-bus.png",
 			"description" : "Plan your return trip from Balmoral Beach at <a href=\"https://transportnsw.info/trip#/?from=Balmoral Beach\">transportnsw.info</a>."
 		},
+		"kioskd" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.838870,
+			"lon" : 151.254731
+		},
+		"kioske" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.827322,
+			"lon" : 151.252231
+		},
 		"toiletd" : {
 			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",

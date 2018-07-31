@@ -23,14 +23,25 @@
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -32.978277000000006,
-			"lon" : 151.708188,
-			"description" : "Whitebridge shops"
+			"lon" : 151.708188
+		},
+		"kioskb" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.037087,
+			"lon" : 151.659823
 		},
 		"toileta" : {
 			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -32.977214000000004,
 			"lon" : 151.708441
+		},
+		"toiletb" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.036970,
+			"lon" : 151.659540
 		}
 	},
 	"indicator" : {

@@ -19,6 +19,18 @@
 			"icon" : "./inc/img/marker-train.png",
 			"description" : "Plan your return trip from Hawkesbury River at <a href=\"https://transportnsw.info/trip#/?from=Hawkesbury River\">transportnsw.info</a>."
 		},
+		"kioska" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.589739,
+			"lon" : 151.170915
+		},
+		"kioskb" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.547883,
+			"lon" : 151.225998
+		},
 		"warning" : {
 			"type" : "warning",
 			"icon" : "./inc/img/marker-warning.png",

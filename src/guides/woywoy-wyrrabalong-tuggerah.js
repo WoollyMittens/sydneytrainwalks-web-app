@@ -23,6 +23,54 @@
 			"icon" : "./inc/img/marker-train.png",
 			"description" : "Plan your return trip from Tuggerah at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>."
 		},
+		"kioskaa" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.327049,
+			"lon" : 151.429406
+		},
+		"kioskab" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.327049,
+			"lon" : 151.429406
+		},
+		"kioskac" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.339399,
+			"lon" : 151.437834
+		},
+		"kioskad" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.373231,
+			"lon" : 151.474719
+		},
+		"kioskb" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.446963,
+			"lon" : 151.444839
+		},
+		"kioskd" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.470558,
+			"lon" : 151.436401
+		},
+		"kioske" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.490582,
+			"lon" : 151.431336
+		},
+		"kioskf" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.500675,
+			"lon" : 151.425001
+		},
 		"toiletd" : {
 			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",

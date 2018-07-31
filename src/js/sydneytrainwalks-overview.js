@@ -48,8 +48,8 @@ SydneyTrainWalks.prototype.Overview = function(parent) {
 		// create an icon
 		var icon = L.icon({
 			iconUrl: "./inc/img/marker-walk.png",
-			iconSize: [32, 32],
-			iconAnchor: [16, 32]
+			iconSize: [28, 28],
+			iconAnchor: [14, 28]
 		});
 		// add the markers
 		var marker;
@@ -181,8 +181,8 @@ SydneyTrainWalks.prototype.Overview = function(parent) {
 				// create the icon
 				var icon = L.icon({
 					iconUrl: "./inc/img/marker-location.png",
-					iconSize: [32, 32],
-					iconAnchor: [16, 32]
+					iconSize: [28, 28],
+					iconAnchor: [14, 28]
 				});
 				// add the marker with the icon
 				_this.overviewMarker = L.marker(

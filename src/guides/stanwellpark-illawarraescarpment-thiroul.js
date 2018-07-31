@@ -23,8 +23,7 @@
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -34.29655277777778,
-			"lon" : 150.92490277777776,
-			"description" : "Sublime point lookout."
+			"lon" : 150.92490277777776
 		},
 		"toileta" : {
 			"type" : "toilet",

@@ -25,6 +25,36 @@
 			"icon" : "./inc/img/marker-train.png",
 			"description" : "Plan your return trip from Woy Woy at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>."
 		},
+		"kioskd" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.470558,
+			"lon" : 151.436401
+		},
+		"kioske" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.490582,
+			"lon" : 151.431336
+		},
+		"kioskf" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.500675,
+			"lon" : 151.425001
+		},
+		"kioskg" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.532510,
+			"lon" : 151.359037
+		},
+		"kioskh" : {
+			"type" : "kiosk",
+			"icon" : "./inc/img/marker-kiosk.png",
+			"lat" : -33.524175,
+			"lon" : 151.361116
+		},
 		"toiletf" : {
 			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",

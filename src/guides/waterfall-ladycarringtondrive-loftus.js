@@ -21,12 +21,11 @@
 			"icon" : "./inc/img/marker-train.png",
 			"description" : "Plan your return trip from Loftus at <a href=\"https://transportnsw.info/trip#/?from=Loftus\">transportnsw.info</a>."
 		},
-		"kiosk" : {
+		"kioska" : {
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat" : -34.075375,
-			"lon" : 151.0561138888889,
-			"description" : "Kiosk at Audley"
+			"lon" : 151.0561138888889
 		},
 		"toileta" : {
 			"type" : "toilet",
