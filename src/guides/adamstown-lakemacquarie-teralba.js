@@ -30,8 +30,8 @@
 		"kioskb" : {
 			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
-			"lat" : -33.035152777777775,
-			"lon" : 151.6571138888889
+			"lat" : -33.036977,
+			"lon" : 151.659464
 		},
 		"kioskc" : {
 			"type" : "kiosk",
@@ -60,14 +60,50 @@
 		"toiletc" : {
 			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
-			"lat" : -33.036977,
-			"lon" : 151.659464
+			"lat" : -33.035152777777775,
+			"lon" : 151.6571138888889
 		},
 		"toiletd" : {
 			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
 			"lat" : -33.011038,
 			"lon" : 151.628616
+		},
+		"toilete" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.028398,
+			"lon" : 151.635704
+		},
+		"toiletf" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.009252,
+			"lon" : 151.634937
+		},
+		"toiletg" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -33.000419,
+			"lon" : 151.640301
+		},
+		"toileth" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -32.961178,
+			"lon" : 151.614977
+		},
+		"toileti" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -32.988935,
+			"lon" : 151.636190
+		},
+		"toiletj" : {
+			"type" : "toilet",
+			"icon" : "./inc/img/marker-toilet.png",
+			"lat" : -32.963656,
+			"lon" : 151.604771
 		}
 	},
 	"indicator" : {
