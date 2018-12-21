@@ -31,7 +31,7 @@
 		<title>Sydney Train Walks - <?php echo $title?></title>
 		<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width, user-scalable=yes"/>
 		<meta property="og:url" content="http://www.sydneytrainwalks.com/details.php?id=<?php echo $id ?>" />
-		<meta property="og:image" content="http://www.sydneytrainwalks.com/inc/img/favicon.png" />
+		<meta property="og:image" content="http://www.sydneytrainwalks.com/inc/social/<?php echo $id ?>.png" />
 		<meta property="og:title" content="Sydney Train Walks - <?php echo $title ?>" />
 		<meta property="og:description" content="<?php echo $description ?>" />
 		<link rel="apple-touch-icon" href="./inc/img/favicon.png"/>
