@@ -79,8 +79,10 @@
 							A brisk walker can do this much faster, but consider that there's a lot to see along the way.
 						</p>
 						<h3>Getting there and back</h3>
-						<?php print $json->{'markers'}->{'start'}->{'description'}?>
-						<?php print $json->{'markers'}->{'end'}->{'description'}?>
+						<p>
+							<?php print $json->{'markers'}->{'start'}->{'description'}?>
+							<?php print $json->{'markers'}->{'end'}->{'description'}?>
+						</p>
 						<h3>Along the way</h3>
 						<?php
 							if (property_exists($json, 'landmarks')) {
