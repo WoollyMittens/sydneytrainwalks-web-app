@@ -1,90 +1,89 @@
 /*
 	info
 */
-
 @media all {
-
 	.about {
 		@include transition-property(transform);
 		@include transition-duration(300ms);
 		@include translate(-100%, 0);
-		background : #fff;
-		bottom : 4rem;
-		padding : 0;
-		position : absolute;
-		right : 0;
-		top : 4rem;
-		width : 100%;
-		z-index : 7;
+		background: #fff;
+		bottom: 4rem;
+		padding: 0;
+		position: absolute;
+		right: 0;
+		top: 4rem;
+		width: 100%;
+		z-index: 7;
+
 		.about-scroller {
-			height : 100%;
-			overflow-x : hidden;
-			overflow-y : auto;
-			-webkit-overflow-scrolling : touch;
-			padding : 0 15px;
+			height: 100%;
+			overflow-x: hidden;
+			overflow-y: auto;
+			-webkit-overflow-scrolling: touch;
+			padding: 0 15px;
+
 			h2 {
-				margin-top : 15px;
+				margin-top: 15px;
 			}
+
 			figure {
-				margin : 1em 0;
-				padding : 0;
+				margin: 1em 0;
+				padding: 0;
+
 				img {
-					border-radius : 12px;
-					height : 64px;
-					width : 64px;
-					margin-right : 0.3em;
-					vertical-align : middle;
+					border-radius: 12px;
+					height: 64px;
+					width: 64px;
+					margin-right: 0.3em;
+					vertical-align: middle;
 				}
+
 				figcaption {
-					display : inline-block;
-					font-size : 12px;
-					vertical-align : middle;
+					display: inline-block;
+					font-size: 12px;
+					vertical-align: middle;
+
 					strong {
-						display : block;
-						font-size : 16px;
+						display: block;
+						font-size: 16px;
 					}
 				}
 			}
 		}
 	}
-
 	/*
 	on which screen should this be visible
 	*/
-
-	body.screen-about .about { @include translate(0, 0); }
-
+	body.screen-about .about {
+		@include translate(0, 0);
+	}
 }
 @media (orientation: portrait) {
-
 	.about {
-		border-left : none;
-		width : 100%;
+		border-left: none;
+		width: 100%;
 	}
-
 	/*
 	on which screen should this be visible
 	*/
-
-	body.screen-about .about { @include translate(0, 0); }
-
+	body.screen-about .about {
+		@include translate(0, 0);
+	}
 }
 @media print {
-
 	.about {
 		@include translate(0, 0);
-		position : relative !important;
-		top : auto !important;
-		right : auto !important;
-		bottom : auto !important;
-		left : auto !important;
-		opacity : 1 !important;
-		-webkit-opacity : 1 !important;
-		visibility : visible !important;
-		border : none !important;
-		padding : 0.5cm !important;
-		width : 100% !important;
-		height : auto !important;
+		position: relative !important;
+		top: auto !important;
+		right: auto !important;
+		bottom: auto !important;
+		left: auto !important;
+		opacity: 1 !important;
+		-webkit-opacity: 1 !important;
+		visibility: visible !important;
+		border: none !important;
+		padding: 0.5cm !important;
+		width: 100% !important;
+		height: auto !important;
 	}
-
 }

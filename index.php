@@ -98,6 +98,7 @@
 						?>
 					</menu>
 				</nav>
+				<figure class="overview" id="leafletMap2"></figure>
 				<footer class="toolbar">
 					<nav>
 						<a id="footer-to-menu" href="index.php">Menu</a>
@@ -107,7 +108,29 @@
 				</footer>
 			</section>
 		</div>
+		<script src="./inc/js/exif-data.js"></script>
+		<script src="./inc/js/guide-data.js"></script>
 		<script src="./inc/js/scripts.js"></script>
+		<script id="credit-template" type="text/template">
+			Maps &copy; <a href="http://www.4umaps.eu/">4UMaps</a>. Data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> and contributors, CC BY-SA
+		</script>
+		<script>
+			window.addEventListener('load', function () {
+				// emulate the app's scope for the overview module
+				var sydneyTrainWalks = new SydneyTrainWalks();
+				var sydneyTrainWalksOverview = new sydneyTrainWalks.Overview({
+					'config' : {
+						'onlineTiles' : 'http://4umaps.eu/{z}/{x}/{y}.png',
+						'offlineTiles' : './inc/tiles/{z}/{x}/{y}.jpg',
+						'missing' : './inc/img/missing.png'
+					},
+					'update' : function (id) {
+						document.location.href = './details.php?id=' + id;
+					}
+				});
+				sydneyTrainWalksOverview.init();
+			});
+		</script>
 		<script>
 
 			// ordering the menu

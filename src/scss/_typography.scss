@@ -1,67 +1,81 @@
 /*
 	typography
 */
-
 @media all {
+	*,
+	*:after,
+	*:before {
+		box-sizing: border-box;
+	}
 
-	*, *:after, *:before {
-		box-sizing : border-box;
-	}
 	html {
-		font-family : Sans-Serif;
-		font-size : 100%;
-		height : 100%;
-		min-height : 100%;
+		font-family: Sans-Serif;
+		font-size: 100%;
+		height: 100%;
+		min-height: 100%;
 	}
+
 	body {
-		_height : 100%;
-		min-height : 100%;
-		color : #333;
-		line-height : 1.3;
-		margin : 0;
-		padding : 0;
+		_height: 100%;
+		min-height: 100%;
+		color: #333;
+		line-height: 1.3;
+		margin: 0;
+		padding: 0;
 	}
+
 	h1 {
-		font-size : 22px;
+		font-size: 22px;
 	}
+
 	h2 {
-		font-size : 18px;
+		font-size: 18px;
 	}
+
 	h3 {
-		font-size : 16px;
+		font-size: 16px;
 	}
-	h1, h2, h3, p, ul, dl, table {
-		margin-top : 0.7rem;
-		margin-top : 10px\9;
-		margin-bottom : 0.7rem;
-		margin-bottom : 10px\9;
-	}
+
+	dl,
+	h1,
+	h2,
+	h3,
+	p,
+	table,
 	ul {
-		margin-left : 0;
-		padding-left : 0;
+		margin-top: 0.7rem;
+		margin-top: 10px\9;
+		margin-bottom: 0.7rem;
+		margin-bottom: 10px\9;
+	}
+
+	ul {
+		margin-left: 0;
+		padding-left: 0;
+
 		li {
-			margin-left : 1.2em;
-			margin-bottom : 0.7rem;
-			margin-bottom : 10px\9;
+			margin-left: 1.2em;
+			margin-bottom: 0.7rem;
+			margin-bottom: 10px\9;
 		}
 	}
+
 	a {
-		color : #0D47A1;
-	}
-	img {
-		border : none;
-	}
-	*:focus {
-	    outline: none;
+		color: #0D47A1;
 	}
 
+	img {
+		border: none;
+	}
+
+	*:focus {
+		outline: none;
+	}
 }
 @media (max-width: 768px) {
-
 	html {
-		font-family : Sans-Serif;
-		font-size : 87.5%;
-		height : 100%;
+		font-family: Sans-Serif;
+		font-size: 87.5%;
+		height: 100%;
 	}
-
 }

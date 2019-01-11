@@ -22,7 +22,8 @@
 			img {
 				display: none;
 			}
-			margin: 1em;
+			margin: 0;
+			padding: 1em;
 		}
 
 		.app-banners {
@@ -41,23 +42,23 @@
 
 		menu {
 			margin: 0;
-	    padding: 0;
-	    list-style: none;
+			padding: 0;
+			list-style: none;
 
 			li {
 				display: block;
-		    width: 100%;
-		    padding: 0;
+				width: 100%;
+				padding: 0;
 				min-height: 3.667rem;
 
 				a {
-			    display: flex;
-			    flex-wrap: nowrap;
-			    justify-content: center;
-			    align-items: stretch;
-			    min-height: 3.667rem;
-			    position: relative;
-			    font-size: 1.166666666666667rem;
+					display: flex;
+					flex-wrap: nowrap;
+					justify-content: center;
+					align-items: stretch;
+					min-height: 3.667rem;
+					position: relative;
+					font-size: 1.166666666666667rem;
 					text-decoration: none;
 				}
 			}
@@ -74,12 +75,19 @@
 		@include translate(0, 0);
 	}
 }
-@media (min-width: 1000px) {
+@media (orientation: landscape) {
 	.navigation {
+		@include translate(100%, 0);
+		left: 50%;
+
+		p {
+			float: left;
+			width: 49%;
+		}
+
 		.app-banners {
-			position: absolute;
-			right: 0;
-			top: -5px;
+			float: right;
+			width: 49%;
 
 			span {
 				display: inline-block;
@@ -91,6 +99,8 @@
 			}
 		}
 	}
+
+	body.screen-menu .navigation {
+		@include translate(0, 0);
+	}
 }
-@media (max-width: 640px) {}
-@media (max-width: 560px), (max-height: 480px) {}

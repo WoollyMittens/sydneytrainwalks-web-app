@@ -14,14 +14,14 @@
 		right: 0;
 		bottom: 0;
 		z-index: 8;
-    display: flex;
+		display: flex;
 		align-items: center;
 		padding: 0 1rem;
 
 		nav {
 			flex: 1 1 auto;
-    	display: flex;
-	    justify-content: space-around;
+			display: flex;
+			justify-content: space-around;
 			align-items: center;
 			width: 100%;
 		}
@@ -35,20 +35,20 @@
 			text-align: center;
 			text-decoration: none;
 			min-width: 3rem;
-	    flex: 0 1 auto;
-	    color: #0D47A1;
-	    filter: grayscale(1);
+			flex: 0 1 auto;
+			color: #0D47A1;
+			filter: grayscale(1);
 
 			&:before {
 				background-size: contain;
-		    background-repeat: no-repeat;
-		    background-position: 50% 50%;
-		    content: '';
-		    display: block;
-		    height: 1.6rem;
-		    margin: 0 auto 2px;
-		    vertical-align: middle;
-		    width: 1.6rem;
+				background-repeat: no-repeat;
+				background-position: 50% 50%;
+				content: '';
+				display: block;
+				height: 1.6rem;
+				margin: 0 auto 2px;
+				vertical-align: middle;
+				width: 1.6rem;
 			}
 		}
 	}
@@ -129,6 +129,11 @@
 	body.screen-map #footer-to-guide {
 		opacity: 0.5;
 		filter: grayscale(1);
+	}
+}
+@media (orientation: landscape) {
+	#footer-to-overview {
+		display: none !important;
 	}
 }
 @media print {

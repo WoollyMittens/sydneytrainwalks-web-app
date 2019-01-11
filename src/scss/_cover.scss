@@ -1,9 +1,7 @@
 /*
 	cover page
 */
-
 @media all {
-
 	.ios-margins {
 		position: absolute;
 		top: 0;
@@ -14,10 +12,11 @@
 	}
 
 	#appView {
-		height : 100%;
-		width : 100%;
-		overflow : hidden;
-		position : relative;
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+
 		&.status-busy:after {
 			content: '';
 			display: block;
@@ -28,15 +27,10 @@
 			height: 100%;
 			z-index: 9999;
 			background-color: #000;
-			background-image: url(../img/busy.gif);
+			background-image: url("../img/busy.gif");
 			background-position: center;
 			background-repeat: no-repeat;
 			opacity: 0.7;
 		}
 	}
-
-}
-@media (max-width: 768px) {
-
-
 }

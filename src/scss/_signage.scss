@@ -5,16 +5,16 @@
 	.sign {
 		background-color: #F57C00;
 		color: #FFF;
-    flex: 1 1 auto;
-    display: inline-block;
-    padding: 0.5rem 0.3rem 0.2rem;
-    border: solid 1px #fff;
-    line-height: 1.5rem;
-    z-index: 1;
-    position: relative;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+		flex: 1 1 auto;
+		display: inline-block;
+		padding: 0.5rem 0.3rem 0.2rem;
+		border: solid 1px #fff;
+		line-height: 1.5rem;
+		z-index: 1;
+		position: relative;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
 		text-align: center;
 
 		&:before {
@@ -23,10 +23,10 @@
 			background-size: contain;
 			content: '';
 			width: 1.5rem;
-	    height: 1.5rem;
-	    display: block;
-	    vertical-align: middle;
-	    margin: -1px auto 0;
+			height: 1.5rem;
+			display: block;
+			vertical-align: middle;
+			margin: -1px auto 0;
 		}
 
 		&.from,
@@ -69,7 +69,7 @@
 
 		&.sign.park i {
 			display: block;
-	    font-size: 1rem;
+			font-size: 1rem;
 		}
 	}
 }

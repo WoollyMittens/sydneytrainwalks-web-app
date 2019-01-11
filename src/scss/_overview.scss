@@ -1,29 +1,37 @@
 /*
 	menu
 */
-
 @media all {
-
 	.overview {
 		@include transition-property(transform);
 		@include transition-duration(300ms);
 		@include translate(-100%, 0);
-		background : #fff none;
-		bottom : 4rem;
-		left : 0;
-		margin : 0;
-		overflow : hidden;
-		padding : 0;
-		position : absolute;
-		right : 0;
-		top : 4rem;
-		z-index : 6;
+		background: #fff none;
+		bottom: 4rem;
+		left: 0;
+		margin: 0;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		right: 0;
+		top: 4rem;
+		z-index: 6;
 	}
-
 	/*
 	on which screen should this be visible
 	*/
-
-	body.screen-overview .overview { @include translate(0, 0); }
-
+	body.screen-overview .overview {
+		@include translate(0, 0);
+	}
+}
+@media (orientation: landscape) {
+	.overview {
+		right: 50%;
+	}
+	/*
+		on which screen should this be visible
+	*/
+	body.screen-menu .overview {
+		@include translate(0, 0);
+	}
 }
