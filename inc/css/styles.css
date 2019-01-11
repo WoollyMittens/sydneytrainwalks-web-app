@@ -538,14 +538,15 @@
   /* line 92, ../../src/scss/_menu.scss */
   .navigation .app-banners span {
     display: block;
+    width: auto;
   }
-  /* line 96, ../../src/scss/_menu.scss */
+  /* line 97, ../../src/scss/_menu.scss */
   .navigation .app-banners img {
     height: 32px;
     width: auto;
   }
 
-  /* line 103, ../../src/scss/_menu.scss */
+  /* line 104, ../../src/scss/_menu.scss */
   body.screen-menu .navigation {
     -moz-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
