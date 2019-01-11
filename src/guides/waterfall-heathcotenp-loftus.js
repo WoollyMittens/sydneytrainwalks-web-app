@@ -121,7 +121,7 @@
 		"dsc_9815" : "From the lookout, turn right and follow the clearing down.",
 		"dsc_9821" : "Find the stone staircase at the edge of the clearing and climb down.",
 		"dsc_9822" : "At the bottom of the descend turn right and follow the sign to Audley.",
-		"p4215084" : "OPTIONAL: From Robertson Roundabout, follow the Engadine track down to Kangaroo Creek.",
+		"p4215084" : "OPTIONAL: Optionally, from Robertson Roundabout follow the Engadine track to Kangaroo Creek.",
 		"p4215091" : "OPTIONAL: A metal stairway leads safely down the steep ridge to a swim spot in the creek.",
 		"p4215113" : "OPTIONAL: Follow the creek a short way to the left of the pool, to find a place to cross.",
 		"p4215131" : "OPTIONAL: A worn path will leads up to the next ridge on the other side.",

@@ -28,8 +28,8 @@
 		"toiletc" : {
 			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
-			"lat" : -34.072705,
-			"lon" : 151.056802
+			"lat" : -34.126377,
+			"lon" : 150.978071
 		}
 	},
 	"indicator" : {
