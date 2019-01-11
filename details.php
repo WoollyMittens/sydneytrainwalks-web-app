@@ -4,6 +4,7 @@
 
 		// variables
 		$id = (@$_REQUEST['id']) ? @$_REQUEST['id'] : 'cowan-taffyslookout-brooklyn';
+		$screen = (@$_REQUEST['screen']) ? @$_REQUEST['screen'] : 'map';
 		$inc = './inc/';
 
 		$jsonText = file_get_contents($inc . 'js/guide-data.js');
@@ -54,7 +55,7 @@
 			})();
 		</script>
 	</head>
-	<body class="screen-map">
+	<body class="screen-<?php print $screen ?>">
 		<div class="ios-margins">
 			<section id="appView">
 				<header class="title">
