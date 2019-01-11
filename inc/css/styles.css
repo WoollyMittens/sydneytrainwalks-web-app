@@ -537,7 +537,7 @@
   }
   /* line 92, ../../src/scss/_menu.scss */
   .navigation .app-banners span {
-    display: inline-block;
+    display: block;
   }
   /* line 96, ../../src/scss/_menu.scss */
   .navigation .app-banners img {
