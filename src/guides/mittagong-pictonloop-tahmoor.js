@@ -23,13 +23,13 @@
 			"description" : "Plan your return trip from Tahmoor at <a href=\"https://transportnsw.info/trip#/?from=Tahmoor\">transportnsw.info</a>."
 		},
 		"kioska" : {
-			"type" : "Take away",
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat": -34.35313598998312,
 			"lon": 150.4939696999867
 		},
 		"kioskb" : {
-			"type" : "General store",
+			"type" : "kiosk",
 			"icon" : "./inc/img/marker-kiosk.png",
 			"lat": -34.254959,
 			"lon": 150.534824

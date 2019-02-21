@@ -117,7 +117,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-php');
 	grunt.loadNpmTasks('grunt-pngmin');
-	grunt.loadNpmTasks('grunt-image-resize');
 	grunt.loadNpmTasks('grunt-font-optimizer');
 	grunt.loadNpmTasks('grunt-autoprefixer');
 
