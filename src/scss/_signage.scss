@@ -67,6 +67,10 @@
 			background-image: url("../img/sign_water_transport.svg");
 		}
 
+		&.tram:before {
+			background-image: url("../img/sign_tramway.svg");
+		}
+
 		&.sign.park i {
 			display: block;
 			font-size: 1rem;

@@ -2,7 +2,8 @@
 	"location" : "Tomaree",
 	"description" : [
 		"This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/tomaree-national-park\">Tomaree National Park</a>.",
-		"Be mindful that the bus back to Newcastle leaves very infrequently. Make sure you don't get stranded in Nelson Bay without transport."
+		"Be mindful that the bus back to Newcastle leaves very infrequently. Make sure you don't get stranded in Nelson Bay without transport.",
+		"Thanks to Nick Breen for his help documenting this walk."
 	],
 	"duration" : 8,
 	"length" : 28,

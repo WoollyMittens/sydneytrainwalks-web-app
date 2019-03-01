@@ -18,9 +18,9 @@
 		},
 		"end" : {
 			"location" : "Newcastle",
-			"type" : "bus",
-			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Newcastle at <a href=\"https://transportnsw.info/trip#/?from=Newcastle\">transportnsw.info</a>."
+			"type" : "tram",
+			"icon" : "./inc/img/marker-tram.png",
+			"description" : "Plan your return trip from Teralba at <a href=\"https://transportnsw.info/trip#/?from=Queens Wharf\">transportnsw.info</a>."
 		},
 		"kioska" : {
 			"type" : "kiosk",

@@ -1029,24 +1029,28 @@
     background-image: url("../img/sign_water_transport.svg");
   }
   /* line 70, ../../src/scss/_signage.scss */
+  .sign.tram:before {
+    background-image: url("../img/sign_tramway.svg");
+  }
+  /* line 74, ../../src/scss/_signage.scss */
   .sign.sign.park i {
     display: block;
     font-size: 1rem;
   }
 }
-/* line 77, ../../src/scss/_signage.scss */
+/* line 81, ../../src/scss/_signage.scss */
 header.subtitle .sign {
   font-size: 14px;
 }
 
 @media (max-width: 640px), (max-height: 480px) {
-  /* line 77, ../../src/scss/_signage.scss */
+  /* line 81, ../../src/scss/_signage.scss */
   .sign {
     font-size: 14px;
   }
 }
 @media (max-width: 769px) {
-  /* line 90, ../../src/scss/_signage.scss */
+  /* line 94, ../../src/scss/_signage.scss */
   .sign.to {
     display: none;
   }
