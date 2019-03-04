@@ -45,6 +45,11 @@ var parseFiles = function (queue) {
 				console.log('indexed:', source + file);
 				// convert the data into xml dom
 				var xml = new JSDOM(data).window.document;
+				// eliminate every second trackpoint
+				var trkpt = xml.getElementsByTagName('trkpt');
+				for (var a = trkpt.length - 2, b = 0; a > b; a -= 2) {
+					trkpt[a].parentNode.removeChild(trkpt[a]);
+				}
 				// convert the GPX into geoJson
 				var geojson = toGeoJSON.gpx(xml);
 				// add the geoJson object to the list
