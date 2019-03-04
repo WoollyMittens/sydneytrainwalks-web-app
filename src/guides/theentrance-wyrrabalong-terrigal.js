@@ -11,7 +11,9 @@
 			"location" : "The Entrance",
 			"type" : "bus",
 			"icon" : "./inc/img/marker-bus.png",
-			"description" : "Get the train to Gosford and then a bus to The Entrance using <a href=\"https://transportnsw.info/trip#/?to=The Entrance\">transportnsw.info</a>."
+			"description" : "Get the train to Gosford and then a bus to The Entrance using <a href=\"https://transportnsw.info/trip#/?to=The Entrance\">transportnsw.info</a>.",
+			"lat" : -33.341078,
+			"lon" : 151.496767
 		},
 		"end" : {
 			"location" : "Terrigal",
@@ -84,6 +86,6 @@
 		"p7139670" : "Follow the firetrail out of the park past the radio tower.",
 		"p7139689" : "From the park entrance follow the road past Forrester Beach to Spoon Bay Beach.",
 		"p7139696" : "Take the path down from the headland onto Spoon Bay Beach",
-		"p7139723" : "Follow the beach to the bus stop behind the Terrigal Surf Club at the far end."
+		"p7139723" : "Follow the beach to the bus stop behind the Terrigal Surf Club."
 	}
 }

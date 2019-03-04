@@ -21,7 +21,9 @@
 			"location" : "Tuggerah",
 			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Tuggerah at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Tuggerah at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>.",
+			"lat" : -33.307802,
+			"lon" : 151.420358
 		},
 		"kioskaa" : {
 			"type" : "kiosk",

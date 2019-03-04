@@ -14,8 +14,8 @@
 		"start" : {
 			"location" : "The Entrance",
 			"type" : "bus",
-			"lat" : -33.3409729,
-			"lon" : 151.499145508,
+			"lat" : -33.341078,
+			"lon" : 151.496767,
 			"icon" : "./inc/img/marker-bus.png",
 			"description" : "Get the train to Gosford and then a bus to The Entrance using <a href=\"https://transportnsw.info/trip#/?to=The Entrance\">transportnsw.info</a>."
 		},
