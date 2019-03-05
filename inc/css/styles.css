@@ -1008,49 +1008,53 @@
     background-color: #7CB342;
   }
   /* line 49, ../../src/scss/_signage.scss */
+  .sign.tram {
+    background-color: #D32F2F;
+  }
+  /* line 53, ../../src/scss/_signage.scss */
   .sign.park {
     background-color: #1B5E20;
     color: #F0F4C3;
   }
-  /* line 54, ../../src/scss/_signage.scss */
+  /* line 58, ../../src/scss/_signage.scss */
   .sign.park:before {
     display: none;
   }
-  /* line 58, ../../src/scss/_signage.scss */
+  /* line 62, ../../src/scss/_signage.scss */
   .sign.train:before {
     background-image: url("../img/sign_train_3.svg");
   }
-  /* line 62, ../../src/scss/_signage.scss */
+  /* line 66, ../../src/scss/_signage.scss */
   .sign.bus:before {
     background-image: url("../img/sign_bus.svg");
   }
-  /* line 66, ../../src/scss/_signage.scss */
+  /* line 70, ../../src/scss/_signage.scss */
   .sign.ferry:before {
     background-image: url("../img/sign_water_transport.svg");
   }
-  /* line 70, ../../src/scss/_signage.scss */
+  /* line 74, ../../src/scss/_signage.scss */
   .sign.tram:before {
     background-image: url("../img/sign_tramway.svg");
   }
-  /* line 74, ../../src/scss/_signage.scss */
+  /* line 78, ../../src/scss/_signage.scss */
   .sign.sign.park i {
     display: block;
     font-size: 1rem;
   }
 }
-/* line 81, ../../src/scss/_signage.scss */
+/* line 85, ../../src/scss/_signage.scss */
 header.subtitle .sign {
   font-size: 14px;
 }
 
 @media (max-width: 640px), (max-height: 480px) {
-  /* line 81, ../../src/scss/_signage.scss */
+  /* line 85, ../../src/scss/_signage.scss */
   .sign {
     font-size: 14px;
   }
 }
 @media (max-width: 769px) {
-  /* line 94, ../../src/scss/_signage.scss */
+  /* line 98, ../../src/scss/_signage.scss */
   .sign.to {
     display: none;
   }
