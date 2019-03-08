@@ -20,7 +20,9 @@
 			"location" : "Newcastle",
 			"type" : "tram",
 			"icon" : "./inc/img/marker-tram.png",
-			"description" : "Plan your return trip from Teralba at <a href=\"https://transportnsw.info/trip#/?from=Queens Wharf\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Teralba at <a href=\"https://transportnsw.info/trip#/?from=Queens Wharf\">transportnsw.info</a>.",
+			"lat" : -32.926356,
+			"lon" : 151.781664
 		},
 		"kioska" : {
 			"type" : "kiosk",
@@ -105,6 +107,6 @@
 		"pc309439" : "From there the Great North Walk markers lead to the defence batteries of Shepherds Hill.",
 		"pc309445" : "After crossing the little valley in the reserve, the walk leads to the Newcastle Obelisk.",
 		"pc309456p" : "The obelisk marks the official end of the Great North walk, but the white markers continue down to the foreshore.",
-		"pc309460p" : "The foreshore has many restaurant and resting spots. From there a shuttle bus to Hamilton Station takes you to the train back to Sydney."
+		"pc309460p" : "Take tram to Newcastle Interchange from the Queens Wharf stop."
 	}
 }
