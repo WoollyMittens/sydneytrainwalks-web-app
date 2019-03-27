@@ -7,19 +7,30 @@
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<title>Sydney Train Walks - Easy bushwalks around Sydney using the train, bus and ferry.</title>
 		<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width, user-scalable=yes"/>
-		<meta property="og:url" content="http://www.sydneytrainwalks.com/" />
-		<meta property="og:image" content="http://www.sydneytrainwalks.com/inc/img/favicon.png" />
+		<meta property="og:url" content="https://www.sydneytrainwalks.com/" />
+		<meta property="og:image" content="https://www.sydneytrainwalks.com/inc/img/favicon.png" />
 		<meta property="og:title" content="Sydney Train Walks - Easy bushwalks around Sydney using the train, bus and ferry." />
 		<meta property="og:description" content="Don't let organising a bushwalk intimidate you. These 40+ hikes are easy day trips from Sydney using public transport." />
-		<link rel="apple-touch-icon" href="./inc/img/favicon.png"/>
-		<link rel="icon" href="./inc/img/favicon.png"/>
-		<!--[if IE]>
-			<link rel="shortcut icon" href="./inc/img/favicon.ico">
-			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		<meta name="msapplication-TileColor" content="#0D47A1"/>
-		<meta name="msapplication-TileImage" content="./inc/img/favicon.png"/>
-		<link rel="stylesheet" href="./inc/css/styles.css"/>
+		<meta name="msapplication-TileColor" content="#558b2f" />
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+		<meta name="theme-color" content="#558b2f" />
+		<link rel="mask-icon" href="./inc/ico/safari-pinned-tab.svg" color="#558b2f" />
+		<link rel="shortcut icon" href="./inc/ico/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="57x57" href="./inc/ico/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="./inc/ico/apple-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="./inc/ico/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="./inc/ico/apple-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="./inc/ico/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="./inc/ico/apple-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="./inc/ico/apple-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="./inc/ico/apple-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./inc/ico/apple-icon-180x180.png" />
+		<link rel="icon" type="image/png" sizes="192x192"  href="./inc/ico/android-icon-192x192.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./inc/ico/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="96x96" href="./inc/ico/favicon-96x96.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="./inc/ico/favicon-16x16.png" />
+		<link rel="manifest" href="./manifest.json" />
+		<link rel="stylesheet" href="./inc/css/styles.css" />
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -120,7 +131,7 @@
 				var sydneyTrainWalks = new SydneyTrainWalks();
 				var sydneyTrainWalksOverview = new sydneyTrainWalks.Overview({
 					'config' : {
-						'onlineTiles' : 'http://4umaps.eu/{z}/{x}/{y}.png',
+						'onlineTiles' : '//4umaps.eu/{z}/{x}/{y}.png',
 						'offlineTiles' : './inc/tiles/{z}/{x}/{y}.jpg',
 						'missing' : './inc/img/missing.png'
 					},
@@ -156,6 +167,13 @@
 
 			}, 0);
 
+		</script>
+		<script>
+			if('serviceWorker' in navigator) {
+				navigator.serviceWorker.register('service-worker.js', {scope: '.'}).then(function(registration) {
+					console.log('The service worker has been registered ', registration)
+				});
+			}
 		</script>
 	</body>
 </html>

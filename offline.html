@@ -10,18 +10,28 @@
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<title>Sydney Train Walks - Easily accessible bushwalks using public transport</title>
 	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, viewport-fit=cover">
-	<meta property="og:url" content="http://www.sydneytrainwalks.com/offline.html" />
-	<meta property="og:image" content="http://www.sydneytrainwalks.com/inc/img/favicon.png" />
+	<meta property="og:url" content="https://www.sydneytrainwalks.com/offline.html" />
+	<meta property="og:image" content="https://www.sydneytrainwalks.com/inc/img/favicon.png" />
 	<meta property="og:title" content="Sydney Train Walks - 40+ Easily accessible bushwalks using public transport" />
 	<meta property="og:description" content="Don't let organising a bushwalk intimidate you. These 40+ hikes are easy day trips from Sydney using public transport." />
-	<link rel="apple-touch-icon" href="./inc/img/favicon.png" />
-	<link rel="icon" href="./inc/img/favicon.png" />
-	<!--[if IE]>
-			<link rel="shortcut icon" href="./inc/img/favicon.ico">
-			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-	<meta name="msapplication-TileColor" content="#0D47A1" />
-	<meta name="msapplication-TileImage" content="./inc/img/favicon.png" />
+	<meta name="msapplication-TileColor" content="#558b2f" />
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+	<meta name="theme-color" content="#558b2f" />
+	<link rel="mask-icon" href="./inc/ico/safari-pinned-tab.svg" color="#558b2f" />
+	<link rel="shortcut icon" href="./inc/ico/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="57x57" href="./inc/ico/apple-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="./inc/ico/apple-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="./inc/ico/apple-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="./inc/ico/apple-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="./inc/ico/apple-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="./inc/ico/apple-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="./inc/ico/apple-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="./inc/ico/apple-icon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="./inc/ico/apple-icon-180x180.png" />
+	<link rel="icon" type="image/png" sizes="192x192"  href="./inc/ico/android-icon-192x192.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="./inc/ico/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="96x96" href="./inc/ico/favicon-96x96.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="./inc/ico/favicon-16x16.png" />
 	<link rel="stylesheet" href="./inc/css/styles.css" />
 	<script type="text/javascript">
 		var _gaq = _gaq || [];
@@ -186,23 +196,23 @@
 	<script src="./inc/js/scripts.js"></script>
 	<script>
 		var sydneyTrainWalks = new SydneyTrainWalks().init({
-			'onlineTiles': 'http://4umaps.eu/{z}/{x}/{y}.png',
-			//'onlineTiles' : 'http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png',
-			//'onlineTiles' : 'http://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png',
-			//'onlineTiles' : 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
-			//'onlineTiles' : 'http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png',
+			'onlineTiles': '//4umaps.eu/{z}/{x}/{y}.png',
+			//'onlineTiles' : '//{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png',
+			//'onlineTiles' : '//{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png',
+			//'onlineTiles' : '//{s}.tile.osm.org/{z}/{x}/{y}.png',
+			//'onlineTiles' : '//{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png',
 
 			'offlineTiles': './inc/tiles/{z}/{x}/{y}.jpg',
 
 			//'exif': 'imageexif.php?src={src}',
-			'exif': 'http://www.sydneytrainwalks.com/imageexif.php?src={src}',
+			'exif': '//www.sydneytrainwalks.com/imageexif.php?src={src}',
 
 			//'slice': 'imageslice.php?src={src}&{size}',
-			//'slice': 'http://www.sydneytrainwalks.com/{src}',
-			'slice' : 'http://www.sydneytrainwalks.com/imageslice.php?src={src}&{size}',
+			//'slice': '//www.sydneytrainwalks.com/{src}',
+			'slice' : '//www.sydneytrainwalks.com/imageslice.php?src={src}&{size}',
 
 			//'gpx': './inc/gpx/{id}.gpx',
-			'gpx': 'http://www.sydneytrainwalks.com/inc/gpx/{id}.gpx',
+			'gpx': '//www.sydneytrainwalks.com/inc/gpx/{id}.gpx',
 
 			'pointer': './inc/img/marker-location.png',
 			'missing': './inc/img/missing.png'
