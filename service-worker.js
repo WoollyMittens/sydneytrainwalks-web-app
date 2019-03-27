@@ -7,7 +7,8 @@ var CACHE_NAME = 'dependencies-cache';
 var REQUIRED_FILES = [
   './inc/css/styles.css',
   './inc/js/scripts.js',
-  './offline.html'
+  './offline.html',
+  './index.php'
 ];
 
 self.addEventListener('install', function(event) {
