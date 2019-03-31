@@ -30,7 +30,7 @@
 			"lon" : 151.12015833333334
 		},
 		"stationa" : {
-			"type" : "station",
+			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
 			"lat" : -33.623206,
 			"lon" : 151.153460,
