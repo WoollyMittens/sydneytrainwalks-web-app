@@ -166,7 +166,13 @@
 	</script>
 
 	<script id="thumbnail-template" type="text/template">
-		<p><a class="cylinder-image" href="./inc/medium/{id}/{src}" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/{id}/{src});" data-desc="{description}"><img alt="" src="./inc/small/{id}/{src}"/></a> {description}</p>
+		<p>
+			<a class="cylinder-image" href="./inc/medium/{id}/{src}" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/{id}/{src});" data-desc="{description}">
+				<img alt="" src="./inc/small/{id}/{src}"/>
+			</a>
+			{description}
+			<button class="guide-locate" data-url="./inc/medium/{id}/{src}">Show location</button>
+		</p>
 	</script>
 
 	<script id="wall-template" type="text/template">
@@ -200,7 +206,6 @@
 			//'onlineTiles' : '//{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png',
 			//'onlineTiles' : '//{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png',
 			//'onlineTiles' : '//{s}.tile.osm.org/{z}/{x}/{y}.png',
-			//'onlineTiles' : '//{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png',
 
 			'offlineTiles': './inc/tiles/{z}/{x}/{y}.jpg',
 

@@ -102,9 +102,27 @@
 									if (preg_match($isOptional, $value)) {
 										$highlightClass = explode(':', $value);
 										$value = preg_replace($isOptional, '', $value);
-										?><div class="guide-<?php echo strtolower($highlightClass[0]) ?>"><p><a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg" class="cylinder-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg);" data-desc="<?php echo $value ?>"><img alt="" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg"></a> <?php echo $value ?></p></div><?php
+										?>
+											<div class="guide-<?php echo strtolower($highlightClass[0]) ?>">
+												<p>
+													<a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg" class="cylinder-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg);" data-desc="<?php echo $value ?>">
+														<img alt="" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg">
+													</a>
+													<?php echo $value ?>
+													<button class="guide-locate" data-url="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg">Show location</button>
+												</p>
+											</div>
+										<?php
 									} else {
-										?><p><a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg" class="cylinder-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg);" data-desc="<?php echo $value ?>"><img alt="" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg"></a> <?php echo $value ?></p><?php
+										?>
+											<p>
+												<a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg" class="cylinder-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg);" data-desc="<?php echo $value ?>">
+													<img alt="" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg">
+												</a>
+												<?php echo $value ?>
+												<button class="guide-locate" data-url="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg">Show location</button>
+											</p>
+										<?php
 									}
 								}
 							} else {
@@ -194,6 +212,20 @@
 						});
 
 						/*
+							locator buttons
+						*/
+
+						var buttons = document.querySelectorAll('.guide .guide-locate');
+						var locate = function (button, evt) {
+							evt.preventDefault();
+							photomap.indicate(button);
+							document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
+						};
+						for (var a = 0, b = buttons.length; a < b; a += 1) {
+							buttons[a].addEventListener('click', locate.bind(this, buttons[a]));
+						}
+
+						/*
 							photo map configuration
 						*/
 
@@ -204,9 +236,9 @@
 
 						var photomapSettings = <?php print json_encode($json) ?>;
 
-						//photomapSettings.onlineTiles = '//{s}.tile.osm.org/{z}/{x}/{y}.png';
-						//photomapSettings.onlineTiles = '//{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png';
-						//photomapSettings.onlineTiles = '//{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png';
+						//photomapSettings.tiles = '//{s}.tile.osm.org/{z}/{x}/{y}.png';
+						//photomapSettings.tiles = '//{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png';
+						//photomapSettings.tiles = '//{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png';
 						photomapSettings.tiles = '//4umaps.eu/{z}/{x}/{y}.png';
 						photomapSettings.local = './inc/tiles/{z}/{x}/{y}.jpg';
 						photomapSettings.exif = 'imageexif.php?src={src}';

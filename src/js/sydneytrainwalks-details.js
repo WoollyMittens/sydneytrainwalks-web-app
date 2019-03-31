@@ -75,6 +75,11 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			.replace(/{there}/g, there)
 			.replace(/{back}/g, back)
 			.replace(/{landmarks}/g, landmarks);
+		// add event handlers for the locator icons
+		var buttons = document.querySelectorAll('.guide .guide-locate');
+		for (var a = 0, b = buttons.length; a < b; a += 1) {
+			buttons[a].addEventListener('click', this.onLocate.bind(this, buttons[a]));
+		}
 		// start the script for the image viewer
 		this.config.photocylinder = new useful.Photocylinder().init({
 			'elements': document.querySelectorAll('.guide .cylinder-image'),
@@ -215,6 +220,18 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 	};
 
 	// EVENTS
+
+	this.onLocate = function(button, evt) {
+		console.log('onLocate', button);
+		// cancel the click
+		evt.preventDefault();
+		// remember where to return to
+		this.returnTo = 'guide';
+		// as the map to show the location
+		this.config.photomap.indicate(button);
+		// show the map screen
+		document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
+	};
 
 	this.onReturnFromMap = function(evt) {
 		// cancel the click

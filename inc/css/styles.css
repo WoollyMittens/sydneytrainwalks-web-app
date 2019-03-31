@@ -731,6 +731,25 @@
     background-color: #ccddee;
   }
   /* line 53, ../../src/scss/_guide.scss */
+  .guide .guide-locate {
+    border: none;
+    background-color: Transparent;
+    background-image: url("../img/marker-location.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    width: 1em;
+    height: 1.778em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-indent: 125%;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+  /* line 72, ../../src/scss/_guide.scss */
   .guide .cylinder-image,
   .guide .zoom-image {
     background-color: #000;
@@ -741,26 +760,18 @@
     text-align: center;
     float: right;
     margin: 0 0 0.7em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  /* line 64, ../../src/scss/_guide.scss */
-  .guide .cylinder-image:before,
-  .guide .zoom-image:before {
-    display: inline-block;
-    content: '';
-    height: 96px;
-    width: 1px;
-    vertical-align: middle;
-    margin-left: -1px;
-  }
-  /* line 73, ../../src/scss/_guide.scss */
+  /* line 86, ../../src/scss/_guide.scss */
   .guide .cylinder-image img,
   .guide .zoom-image img {
-    display: inline-block;
     max-height: 96px;
     max-width: 128px;
     vertical-align: middle;
   }
-  /* line 81, ../../src/scss/_guide.scss */
+  /* line 93, ../../src/scss/_guide.scss */
   .guide .guide-scroller {
     height: 100%;
     overflow-x: hidden;
@@ -768,7 +779,7 @@
     -webkit-overflow-scrolling: touch;
     padding: 0 15px;
   }
-  /* line 88, ../../src/scss/_guide.scss */
+  /* line 100, ../../src/scss/_guide.scss */
   .guide .guide-scroller h2 {
     margin-top: 15px;
   }
@@ -776,7 +787,7 @@
   /*
   on which screen should this be visible
   */
-  /* line 96, ../../src/scss/_guide.scss */
+  /* line 108, ../../src/scss/_guide.scss */
   body.screen-guide .guide,
   body.screen-map .guide {
     -moz-transform: translate(0, 0);
@@ -786,7 +797,7 @@
   }
 }
 @media (min-width: 481px) {
-  /* line 103, ../../src/scss/_guide.scss */
+  /* line 115, ../../src/scss/_guide.scss */
   .guide .cylinder-image,
   .guide .zoom-image {
     float: left;
@@ -794,7 +805,7 @@
   }
 }
 @media (orientation: portrait) {
-  /* line 111, ../../src/scss/_guide.scss */
+  /* line 123, ../../src/scss/_guide.scss */
   .guide {
     border-left: none;
     width: 100%;
@@ -803,7 +814,7 @@
   /*
   on which screen should this be visible
   */
-  /* line 118, ../../src/scss/_guide.scss */
+  /* line 130, ../../src/scss/_guide.scss */
   body.screen-map .guide {
     -moz-transform: translate(100%, 0);
     -ms-transform: translate(100%, 0);
@@ -811,7 +822,7 @@
     transform: translate(100%, 0);
   }
 
-  /* line 122, ../../src/scss/_guide.scss */
+  /* line 134, ../../src/scss/_guide.scss */
   body.screen-guide .guide {
     -moz-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
@@ -820,7 +831,7 @@
   }
 }
 @media print {
-  /* line 127, ../../src/scss/_guide.scss */
+  /* line 139, ../../src/scss/_guide.scss */
   .guide {
     -moz-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
@@ -839,7 +850,7 @@
     width: 100% !important;
     height: auto !important;
   }
-  /* line 142, ../../src/scss/_guide.scss */
+  /* line 154, ../../src/scss/_guide.scss */
   .guide .guide-scroller {
     height: auto !important;
     overflow: visible !important;

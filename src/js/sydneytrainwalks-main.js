@@ -31,8 +31,6 @@ SydneyTrainWalks.prototype.Main = function(config, context) {
 	// METHODS
 
 	this.init = function() {
-		// start the fast click event
-		FastClick.attach(document.body);
 		// notice if this is iOS
 		var parent = document.getElementsByTagName('html')[0];
 		parent.className = (navigator.userAgent.match(/ipad;|iphone|ipod touch;/i))
