@@ -86,8 +86,9 @@
 						<h2>About this walk</h2>
 						<p><?php print join('</p><p>', $json->{'description'}) ?></p>
 						<p>
-							It takes about <?php print $json->{'duration'}?> hours to complete the full <?php print $json->{'length'}?> kilometre walk, with plenty of breaks and photography stops.
-							A brisk walker can do this much faster, but consider that there's a lot to see along the way.
+							It takes about <?php print $json->{'duration'}?> hours to complete the full <?php print $json->{'length'}?> kilometre walk,
+							but plan extra for plenty of breaks and photography stops.
+							Consider that there's a lot to see along the way.
 						</p>
 						<h3>Getting there and back</h3>
 						<p>
