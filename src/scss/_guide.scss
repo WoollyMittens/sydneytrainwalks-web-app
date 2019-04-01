@@ -50,25 +50,6 @@
 			background-color: #ccddee;
 		}
 
-		.guide-locate {
-			border: none;
-			background-color: Transparent;
-			background-image: url('../img/marker-location.png');
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: auto 100%;
-			padding: 0;
-			margin: 0;
-			display: inline-block;
-			width: 1em;
-			height: 1.778em;
-			white-space: nowrap;
-			overflow: hidden;
-			text-indent: 125%;
-			cursor: pointer;
-			vertical-align: middle;
-		}
-
 		.cylinder-image,
 		.zoom-image {
 			background-color: #000;
@@ -88,6 +69,26 @@
 				max-width: 128px;
 				vertical-align: middle;
 			}
+		}
+
+		.guide-locate {
+			border: none;
+			background-color: Transparent;
+			background-image: url('../img/marker-location.png');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: auto 80%;
+			padding: 0;
+			margin: 0;
+			display: inline-block;
+			width: 28px;
+			height: 28px;
+			margin: -3px -9px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-indent: 125%;
+			cursor: pointer;
+			vertical-align: middle;
 		}
 
 		.guide-scroller {
