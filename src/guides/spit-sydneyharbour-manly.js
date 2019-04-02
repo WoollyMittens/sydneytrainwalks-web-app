@@ -4,7 +4,7 @@
 		"This walk follows the <a href=\"https://www.sydneycoastwalks.com.au/spit-to-manly-walk/\">Spit to Manly Walk</a>."
 	],
 	"duration" : 3,
-	"length" : 10,
+	"length" : 11,
 	"zoom" : 14,
 	"rain" : true,
 	"fireban" : false,
@@ -87,7 +87,7 @@
 		"p1310912" : "After a bushtrail around Fisher Bay, continue on the footpath along the shore.",
 		"p1310930" : "Cross Clontarf reserve to the beach at the far end.",
 		"p1310932" : "At low tide this beach can be followed to the next section of bush trails.",
-		"p1310933" : "OPTIONAL: At high tide exit the reserve at the car park near the beach instead.",
+		"p1310933" : "OPTIONAL: <i>+ 0h / 0km</i> At high tide exit the reserve at the car park near the beach instead.",
 		"p1310934" : "OPTIONAL: Follow the street to the right, around the houses nearest to the beach.",
 		"p1310935" : "OPTIONAL: At the end of the street a footpath leads back to the beach, past the flooded section.",
 		"p1310937" : "At the far end of the beach follow the signs along the next section of the Spit to Manly bushtrail.",

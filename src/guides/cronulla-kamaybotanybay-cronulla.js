@@ -2,7 +2,7 @@
 	"location" : "Kamay Botany Bay",
 	"description" : ["A large part of this is a walk passes through <a href=\"http://www.nationalparks.nsw.gov.au/kamay-botany-bay-national-park\">Kamay Botany Bay National Park</a>."],
 	"duration" : 7,
-	"length" : 21,
+	"length" : 26,
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,

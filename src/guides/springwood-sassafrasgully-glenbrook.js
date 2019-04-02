@@ -2,7 +2,7 @@
 	"location" : "Sassafras Gully",
 	"description" : ["Part of this walk follows Sassafras Gully in <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park\">Blue Mountains National Park</a>."],
 	"duration" : 8,
-	"length" : 18,
+	"length" : 19,
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,

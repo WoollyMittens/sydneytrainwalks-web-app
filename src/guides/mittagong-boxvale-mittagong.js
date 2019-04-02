@@ -2,7 +2,7 @@
 	"location" : "Box Vale",
 	"description" : ["Part of this walk follows the <a href=\"http://www.visitnsw.com/destinations/country-nsw/southern-highlands/mittagong/attractions/box-vale-mine-walking-track-and-lookout\">Box Vale Mine Walking Track and Lookout</a>."],
 	"duration" : 7,
-	"length" : 17,
+	"length" : 18,
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,

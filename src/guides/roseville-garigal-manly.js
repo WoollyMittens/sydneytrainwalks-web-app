@@ -1,7 +1,7 @@
 {
 	"location" : "Garigal",
 	"description" : ["This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/garigal-national-park\">Garigal National Park</a>."],
-	"duration" : 11,
+	"duration" : 8,
 	"length" : 32,
 	"zoom" : 13,
 	"rain" : false,
@@ -102,7 +102,7 @@
 		"p7200355_img_20180630_072448" : "DETOUR: Turn right on Drumcliff Avenue and follow it along the ridge.",
 		"p7200355_img_20180630_073224" : "DETOUR: Turn right onto Killarney Drive and follow it to the trackhead at the far end.",
 		"p7200390" : "At the trackhead of Killarney Drive, follow the Magazine Track down to Flatrock Beach.",
-		"p7200400_p7200415" : "OPTIONAL: Take the side trail onto Flatrock Beach. Return to the intersection after.",
+		"p7200400_p7200415" : "OPTIONAL: <i>+ 0.25h / 0km</i> Take the side trail onto Flatrock Beach. Return to the intersection after.",
 		"p7200397" : "At the intersection, follow the Magazine Track along the water.",
 		"p7200428_p7200429" : "The trail crosses a creek near a small cascade. Take care on the slippery rocks.",
 		"p7200462" : "After the cascade follow the track along the shore.",

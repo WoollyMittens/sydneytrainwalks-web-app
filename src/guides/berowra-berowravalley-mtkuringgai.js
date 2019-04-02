@@ -61,7 +61,7 @@
 		"p5046280" : "From the station follow Berowra Waters Road down to the second roundabout.",
 		"p5046281" : "Look for the Great North Walk sign to find the start of the walk.",
 		"p5046289" : "This walk follows the Great North Walk and is very well marked",
-		"p5046297_p5046310" : "OPTIONAL: Before following the Great North walk into the valley, be sure to visit Naa Badu Lookout.",
+		"p5046297_p5046310" : "OPTIONAL: <i>+ 0.5h / 0.5km</i> Before following the Great North walk into the valley, be sure to visit Naa Badu Lookout.",
 		"p5046311" : "Follow the Great North Walk sign to Crosslands down the steep descent.",
 		"p5046314" : "After descending into the gully cross Sams Creek using the stepping stones.",
 		"p5046323" : "After crossing Sams Creek, the track follows the shore of Berowra Creek",

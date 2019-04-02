@@ -19,7 +19,9 @@
 			"location" : "Loftus",
 			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Loftus at <a href=\"https://transportnsw.info/trip#/?from=Loftus\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Loftus at <a href=\"https://transportnsw.info/trip#/?from=Loftus\">transportnsw.info</a>.",
+			"lat" : -34.044750,
+			"lon" : 151.051377
 		},
 		"kioska" : {
 			"type" : "kiosk",
@@ -69,7 +71,7 @@
 		"pa056147" : "Lady Carington Drive eventually reaches the riverside picnic area at Audley.",
 		"pa056168" : "Continue to the car park behind the Visitor Centre.",
 		"pa056180_pa056182" : "Cross the weir over the Hacking River and turn right down Riverside Drive.",
-		"pa056179" : "OPTIONAL: For a shortcut take the Honeymoon track up the ridge to the Park Office.",
+		"pa056179" : "OPTIONAL: <i>- 1h / 3km</i> For a shortcut take the Honeymoon track up the ridge to the Park Office.",
 		"pa056183" : "Follow the road down to the Reids Flat picnic area.",
 		"pa056223" : "Continue down the firetrail along the river on the far side of the picnic area.",
 		"pa056237" : "The firetrail turns into a narrow bushtrail along the way.",

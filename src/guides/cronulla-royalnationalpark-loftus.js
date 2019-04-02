@@ -1,8 +1,8 @@
 {
 	"location" : "Royal National Park",
 	"description" : ["This walk follows the coastal walk through the <a href=\"http://www.nationalparks.nsw.gov.au/royal-national-park\">Royal National Park</a>."],
-	"duration" : 9,
-	"length" : 25,
+	"duration" : 8,
+	"length" : 28,
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
@@ -17,7 +17,9 @@
 			"location" : "Loftus",
 			"type" : "train",
 			"icon" : "./inc/img/marker-train.png",
-			"description" : "Plan your return trip from Loftus at <a href=\"https://transportnsw.info/trip#/?from=Loftus\">transportnsw.info</a>."
+			"description" : "Plan your return trip from Loftus at <a href=\"https://transportnsw.info/trip#/?from=Loftus\">transportnsw.info</a>.",
+			"lat" : -34.045131,
+			"lon" : 151.051388
 		},
 		"ferrya" : {
 			"type" : "ferry",
@@ -158,8 +160,8 @@
 		"p5240622" : "The park office at Audley offers public toilets, park information and refreshments.",
 		"p5240630_p5240641" : "Continue the walk by crossing the Hacking River across the weir.",
 		"p5240686" : "On the other side a sign indicated the road to Reids Flat.",
-		"p5240687" : "To the left a sign shows the steep descent up the Honeymoon Track. This is an alternative shortcut up to the park office and car park.",
-		"p5240735_p5240740" : "OPTIONAL: If time allows follow the road to Reids Flat campground.",
+		"p5240687" : "To the left a sign shows the steep descent up the Honeymoon Track. This is the shorter route up to the park office and car park.",
+		"p5240735_p5240740" : "OPTIONAL: <i>+ 1h / 3km</i> If time allows follow the road to Reids Flat campground.",
 		"p5240741" : "OPTIONAL: At the far end of the campground an old road follows the Hacking river.",
 		"p5240783" : "OPTIONAL: The road steadily shrinks down to a narrow walking path.",
 		"p5240806" : "OPTIONAL: Follow the trail up the small staircase around, or down across an overgrown campground.",

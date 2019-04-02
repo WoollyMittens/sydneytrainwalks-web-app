@@ -1,7 +1,7 @@
 {
 	"location" : "Berowra Valley",
 	"description" : ["This walk follow a section of the Great North Walk in <a href=\"http://www.nationalparks.nsw.gov.au/berowra-valley-national-park/great-north-walk/walking\">Berowra Valley National Park</a>."],
-	"duration" : 9,
+	"duration" : 7,
 	"length" : 18,
 	"zoom" : 13,
 	"rain" : false,
@@ -61,7 +61,7 @@
 		"pc218709" : "A few hundred meters along the trail there is a lookout and picnic area on the left.",
 		"pc218727" : "Continue along the trail until a sign to Berowra Waters points down a bush trail on the left.",
 		"pc218753_pc218765" : "The trail winds a way all the way down to the creek and continues along its bank.",
-		"pc218774" : "OPTIONAL: Take the free ferry to find a restaurant and picnic area across the creek.",
+		"pc218774" : "OPTIONAL: <i>+ 0.5h / 0km</i> Take the free ferry to find a restaurant and picnic area across the creek.",
 		"pc218795_pc218799" : "Continue along the parking lot until the bush trail continues along the bank.",
 		"pc218803" : "Follow the sign to Cowan to start your climb back up the ridge.",
 		"pc218822_pc218828" : "At the top a slightly hidden lookout overlooks Berowra Waters.",

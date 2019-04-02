@@ -722,15 +722,31 @@
     margin: -0.7em 0 0;
     padding: 1px 0.7em;
   }
-  /* line 45, ../../src/scss/_guide.scss */
+  /* line 44, ../../src/scss/_guide.scss */
+  .guide .guide-attention i,
+  .guide .guide-detour i,
+  .guide .guide-optional i {
+    float: right;
+    display: inline-block;
+    background-color: #1B5E20;
+    border-radius: 3px;
+    color: #F0F4C3;
+    font-style: normal;
+    font-size: 0.875em;
+    padding: 0.2rem 0.3rem;
+    margin: -0.1rem 0 -0.1rem 0.3em;
+    vertical-align: middle;
+    line-height: 1;
+  }
+  /* line 59, ../../src/scss/_guide.scss */
   .guide .guide-detour {
     background-color: #eeccdd;
   }
-  /* line 49, ../../src/scss/_guide.scss */
+  /* line 63, ../../src/scss/_guide.scss */
   .guide .guide-attention {
     background-color: #ccddee;
   }
-  /* line 53, ../../src/scss/_guide.scss */
+  /* line 67, ../../src/scss/_guide.scss */
   .guide .cylinder-image,
   .guide .zoom-image {
     background-color: #000;
@@ -739,20 +755,20 @@
     width: 128px;
     height: 96px;
     text-align: center;
-    float: right;
-    margin: 0 0 0.7em 1em;
+    float: left;
+    margin: 0 1em 0.7em 0;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  /* line 67, ../../src/scss/_guide.scss */
+  /* line 81, ../../src/scss/_guide.scss */
   .guide .cylinder-image img,
   .guide .zoom-image img {
     max-height: 96px;
     max-width: 128px;
     vertical-align: middle;
   }
-  /* line 74, ../../src/scss/_guide.scss */
+  /* line 88, ../../src/scss/_guide.scss */
   .guide .guide-locate {
     border: none;
     background-color: Transparent;
@@ -772,7 +788,7 @@
     cursor: pointer;
     vertical-align: middle;
   }
-  /* line 94, ../../src/scss/_guide.scss */
+  /* line 108, ../../src/scss/_guide.scss */
   .guide .guide-scroller {
     height: 100%;
     overflow-x: hidden;
@@ -780,7 +796,7 @@
     -webkit-overflow-scrolling: touch;
     padding: 0 15px;
   }
-  /* line 101, ../../src/scss/_guide.scss */
+  /* line 115, ../../src/scss/_guide.scss */
   .guide .guide-scroller h2 {
     margin-top: 15px;
   }
@@ -788,7 +804,7 @@
   /*
   on which screen should this be visible
   */
-  /* line 109, ../../src/scss/_guide.scss */
+  /* line 123, ../../src/scss/_guide.scss */
   body.screen-guide .guide,
   body.screen-map .guide {
     -moz-transform: translate(0, 0);
@@ -797,16 +813,8 @@
     transform: translate(0, 0);
   }
 }
-@media (min-width: 481px) {
-  /* line 116, ../../src/scss/_guide.scss */
-  .guide .cylinder-image,
-  .guide .zoom-image {
-    float: left;
-    margin: 0 1em 0.7em 0;
-  }
-}
 @media (orientation: portrait) {
-  /* line 124, ../../src/scss/_guide.scss */
+  /* line 129, ../../src/scss/_guide.scss */
   .guide {
     border-left: none;
     width: 100%;
@@ -815,7 +823,7 @@
   /*
   on which screen should this be visible
   */
-  /* line 131, ../../src/scss/_guide.scss */
+  /* line 136, ../../src/scss/_guide.scss */
   body.screen-map .guide {
     -moz-transform: translate(100%, 0);
     -ms-transform: translate(100%, 0);
@@ -823,7 +831,7 @@
     transform: translate(100%, 0);
   }
 
-  /* line 135, ../../src/scss/_guide.scss */
+  /* line 140, ../../src/scss/_guide.scss */
   body.screen-guide .guide {
     -moz-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
@@ -832,7 +840,7 @@
   }
 }
 @media print {
-  /* line 140, ../../src/scss/_guide.scss */
+  /* line 145, ../../src/scss/_guide.scss */
   .guide {
     -moz-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
@@ -851,7 +859,7 @@
     width: 100% !important;
     height: auto !important;
   }
-  /* line 155, ../../src/scss/_guide.scss */
+  /* line 160, ../../src/scss/_guide.scss */
   .guide .guide-scroller {
     height: auto !important;
     overflow: visible !important;

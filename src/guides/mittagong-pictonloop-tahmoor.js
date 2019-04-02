@@ -5,7 +5,7 @@
 		"Thanks to Kynan Batt for his local knowledge in clarifying this route."
 	],
 	"duration" : 8,
-	"length" : 40,
+	"length" : 38,
 	"zoom" : 13,
 	"rain" : true,
 	"fireban" : true,

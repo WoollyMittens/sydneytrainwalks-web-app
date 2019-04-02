@@ -4,7 +4,7 @@
 		"This walk follows the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/bullawarring-walking-track\">Bullawarring walking track</a> in Heathcote National Park."
 	],
 	"duration" : 4,
-	"length" : 12,
+	"length" : 11,
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,

@@ -2,7 +2,7 @@
 	"location" : "Parramatta River",
 	"description" : ["This walk follows the <a href=\"http://www.walkingcoastalsydney.com.au/brochures/ryde_bridge_to_parramatta.htm\">Parramata River</a>."],
 	"duration" : 10,
-	"length" : 34,
+	"length" : 35,
 	"zoom" : 13,
 	"rain" : true,
 	"fireban" : true,

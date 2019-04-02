@@ -1,8 +1,8 @@
 {
 	"location" : "Ku-ring-gai Chase",
 	"description" : ["Most of this is a walk follows the Great North Walk through <a href=\"http://www.nationalparks.nsw.gov.au/ku-ring-gai-chase-national-park/great-north-walk/walking\">Ku-Ring-Gai Chase National Park</a>."],
-	"duration" : 9,
-	"length" : 21,
+	"duration" : 4,
+	"length" : 12,
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
@@ -56,7 +56,7 @@
 		"p7058903_p7058904" : "From the picnic area of Jerusalem Bay, follow the Great North Walk Markers along the shore to the ridge on the far end.",
 		"p7058910" : "At the far end of the track along the bay, starts a long climb up to the top of the ridge.",
 		"p7058921" : "A short way past the top of the climb, an optional side track is hidden behind the sign to Brooklyn Dam:",
-		"p7058922" : "OPTIONAL: The start of this track is obscured by heavy growth, but quickly opens up to a trail along a ridge with views down on both sides.",
+		"p7058922" : "OPTIONAL: <i>+ 2h / 8km</i> The start of this track is obscured by heavy growth, but quickly opens up to a trail along a ridge with views down on both sides.",
 		"p7058925_p7058931" : "OPTIONAL: If there is not enough time to follow the side track all the way to Taffy's Rock, consider visiting just the first lookout.",
 		"p7058940" : "OPTIONAL: Taffy's Rock Track lacks the sign posts of the Great North Walk, instead keep an eye out for the piles of rocks (cairns) used as markers.",
 		"p7058956" : "OPTIONAL: A large sandstone constructs lines the trail along the way, confirming that you're still on the right path.",
@@ -75,6 +75,7 @@
 		"p7059304_p7059308" : "After reaching the large lake of Brooklyn Dam, take the shortcut through the picnic area or follow the trail all the way around.",
 		"p7059331" : "From the lake, the fire trail continues along the ridge to Brooklyn.",
 		"p7059335" : "An steep trail heads off to the left to take a faster descent. The split is indicated with signs, but both directions end up in Brooklyn.",
-		"p7059342" : "At the bottom of the descent, follow the main road into town and to the train station."
+		"p7059342" : "At the bottom of the descent, follow the main road into town and to the train station.",
+		"p7059360_p7059368": "OPTIONAL: <i>+ 0.5h / 2km</i> If there's a long wait before the train, consider adding this loop around the harbour."
 	}
 }

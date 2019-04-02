@@ -2,7 +2,7 @@
 	"location" : "Nepean River",
 	"description" : ["Part of this walk covers <a href=\"http://www.nationalparks.nsw.gov.au/yellomundee-regional-park\">Yellomundee Regional Park</a>."],
 	"duration" : 8,
-	"length" : 31,
+	"length" : 33,
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,

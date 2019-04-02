@@ -4,7 +4,7 @@
 		"This walk is a loop around the <a href=\"https://www.bluemts.com.au/info/thingstodo/mountain-bike-trails/blue-gum-swamp-winmalee/\">Blue Gum Swamp</a> and Grose Head Lookout."
 	],
 	"duration" : 4,
-	"length" : 14,
+	"length" : 12,
 	"zoom" : 14,
 	"rain" : false,
 	"fireban" : false,

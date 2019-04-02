@@ -1,7 +1,7 @@
 {
 	"location" : "Illawarra Escarpment",
 	"description" : ["This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/illawarra-escarpment-state-conservation-area\">Illawarra Escarpment State Conservation Area</a>."],
-	"duration" : 8,
+	"duration" : 5,
 	"length" : 17,
 	"zoom" : 13,
 	"rain" : false,

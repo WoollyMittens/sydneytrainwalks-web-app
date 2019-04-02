@@ -1,6 +1,10 @@
 {
 	"location" : "Botany Bay",
-	"description" : ["This walk covers <a href=\"http://www.nationalparks.nsw.gov.au/kamay-botany-bay-national-park\">Kamay Botany Bay National Park</a> and the famous <a href=\"http://bonditocoogeewalk.com.au/\">Bondi to Coogee walk</a>."],
+	"description" : [
+		"This walk covers <a href=\"http://www.nationalparks.nsw.gov.au/kamay-botany-bay-national-park\">Kamay Botany Bay National Park</a>",
+		"Add a visit to the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/events/blak-markets-at-bare-island\">Blak market</a> on Bare Island if they are on.",
+		"This walk includes the famous <a href=\"http://bonditocoogeewalk.com.au/\">Bondi to Coogee walk</a>."
+	],
 	"duration" : 8,
 	"length" : 23,
 	"zoom" : 13,
@@ -136,7 +140,7 @@
 		"description" : "Photo taken at this location."
 	},
 	"landmarks" : {
-		"p4073835p" : "OPTIONAL: Visit the market on Bare Island, if it's the first Sunday of the month.",
+		"p4073835p" : "OPTIONAL: <i>+ 1h / 0km</i> Visit the fort on Bare Island,if it's open for the market or tours.",
 		"p4073828" : "From the bus stop find the path to Congwong Beach.",
 		"p4073884" : "At the far side of the beach the optional right trail leads to Little Congwong and the left one continues on to Henry Head.",
 		"p4073931" : "Follow the signs to Henry Head along the trail.",
@@ -152,13 +156,13 @@
 		"p4074134p" : "Across the reserve of Malabar Beach follow the cycle path along the sports fields.",
 		"p4074144" : "The cycle path eventually joins the main road to Maroubra Beach.",
 		"p4074159p" : "On the far end of Maroubra Beach follow the footpath along the coast.",
-		"p4074191p" : "The footpath ends a rocky bay. Follow the street back up to the main road before or after crossing the rocks.",
-		"p4074197" : "OPTIONAL: At the far end of the rocky bay a staircase leads back up to the street. Follow it up to the main road.",
+		"p4074191p" : "OPTIONAL: <i>+ 0.5h / 1km</i> The footpath ends at a rock bay. If the sea is too rough, follow Inman St back up to Malabar Rd from here.",
+		"p4074197" : " At the far end of the bay a staircase leads back up Edgecliffe Ave.",
 		"p4074220p" : "From the main road follow Cuzco Street where through a narrow alley the coastal walkway continues.",
 		"p4074225" : "Follow the signage to Coogee along the coastal walk.",
 		"p4074228" : "From here on this path continues unbroken all the way to Bondi Beach.",
 		"p4074244p" : "At the far end of Coogee Beach the coastal walk continues on to Gordons Bay.",
-		"p4074248" : "OPTIONAL: To start or end the walk from here, use the bus stops near the Chish and Fips kiosk.",
+		"p4074248" : "OPTIONAL: <i>- 1.5h / 5km</i> To end the walk from here, use the bus stops near the Chish and Fips kiosk.",
 		"p4074259p" : "From the north end of Coogee beach follow the coastal track to Gordons Bay.",
 		"p4074274p" : "The track then goes around Clovelly Bay and continues on the far side.",
 		"p4074290p" : "The next landmark along the coast is the Clovelly cemetery.",

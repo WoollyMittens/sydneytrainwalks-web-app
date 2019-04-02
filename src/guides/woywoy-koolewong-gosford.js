@@ -66,7 +66,7 @@
 	"landmarks" : {
 		"p9154457" : "From the station follow Brisbane Water Drive along along the railway.",
 		"p9154479_p9154484" : "Cross the bridge and go down the steps under the bridge immeately after.",
-		"p9154479_p9154484_dsc_9071" : "OPTIONAL: Alternatively continue following the bike park along the bay to Point Claire.",
+		"p9154479_p9154484_dsc_9071" : "OPTIONAL: <i>- 1h / 2km</i> Alternatively continue following the bike park along the bay to Point Claire.",
 		"p9154491_p9154494" : "Pass under the bridge and train line to Lare Street.",
 		"p9154499" : "From the right side of Lara Street, follow the firetrail up the ridge.",
 		"p9154504" : "After the steep climb follow the firetail along the ridge past several lookouts.",

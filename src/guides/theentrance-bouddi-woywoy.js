@@ -6,7 +6,7 @@
 		"Please note that this is not a very detailed guide yet. Be sure to check the map often for direction."
 	],
 	"duration" : 11,
-	"length" : 43,
+	"length" : 44,
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,

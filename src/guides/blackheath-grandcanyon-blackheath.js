@@ -2,7 +2,7 @@
 	"location" : "Grand Canyon",
 	"description" : ["The <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park/grand-canyon-track/walking\">Grand Canyon</a> at Blackheath in the Blue Mountains is not quite as grand the American version, but definitely manages to match the overwhelming visual experience."],
 	"duration" : 7,
-	"length" : 17,
+	"length" : 18,
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,

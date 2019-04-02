@@ -91,7 +91,7 @@
 	"landmarks" : {
 		"p9154457" : "From the station follow Brisbane Water Drive along along the railway.",
 		"p9154479_p9154484" : "Cross the bridge and go down the steps under the bridge immeately after.",
-		"p9154479_p9154484_dsc_9071" : "OPTIONAL: Alternatively continue following the bike park along the bay to Point Claire.",
+		"p9154479_p9154484_dsc_9071" : "OPTIONAL: <i>- 1h / 2km</i> Alternatively continue following the bike park along the bay to Point Claire.",
 		"p9154491_p9154494" : "Pass under the bridge and train line to Lare Street.",
 		"p9154499" : "From the right side of Lara Street, follow the firetrail up the ridge.",
 		"p9154504" : "After th steep climb follow the firetail along the ridge past several lookouts.",
@@ -106,7 +106,7 @@
 		"p9154660" : "From the reserve along the lake, follow Georgiana Terrace all the way uphill.",
 		"p9154661" : "Turn left at the intersection with John Whiteway Dr to find the carpark of Rumbala Reserve on the right.",
 		"p9154665" : "Ascend the steps from the carpark and follow the walking trail to the right and then up to the top of the hill.",
-		"p9154674" : "OPTIONAL: Optionally follow the Casuarina track around the picnic area.",
+		"p9154674" : "OPTIONAL: <i>+ 0.25h / 1km</i> Optionally follow the Casuarina track around the picnic area.",
 		"p9154679" : "Near the top of the hill, past the Rain Forest track, start following the Flannel Flower track.",
 		"p9154683" : "The Flanel Flower track ends at a picnic area and lookout.",
 		"p9154693" : "On the side of the road, past the lookout, the walking trail continues on the left.",

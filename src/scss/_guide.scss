@@ -40,6 +40,20 @@
 			background-color: #ddeecc;
 			margin: -0.7em 0 0;
 			padding: 1px 0.7em;
+
+			i {
+				float: right;
+		    display: inline-block;
+		    background-color: #1B5E20;
+		    border-radius: 3px;
+		    color: #F0F4C3;
+		    font-style: normal;
+		    font-size: 0.875em;
+		    padding: 0.2rem 0.3rem;
+		    margin: -0.1rem 0 -0.1rem 0.3em;
+		    vertical-align: middle;
+		    line-height: 1;
+			}
 		}
 
 		.guide-detour {
@@ -58,8 +72,8 @@
 			width: 128px;
 			height: 96px;
 			text-align: center;
-			float: right;
-			margin: 0 0 0.7em 1em;
+			float: left;
+			margin: 0 1em 0.7em 0;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -109,15 +123,6 @@
 	body.screen-guide .guide,
 	body.screen-map .guide {
 		@include translate(0, 0);
-	}
-}
-@media (min-width: 481px) {
-	.guide {
-		.cylinder-image,
-		.zoom-image {
-			float: left;
-			margin: 0 1em 0.7em 0;
-		}
 	}
 }
 @media (orientation: portrait) {

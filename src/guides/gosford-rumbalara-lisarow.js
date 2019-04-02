@@ -63,7 +63,7 @@
 	"landmarks" : {
 		"p9154661" : "From the station follow Mann Street towards the lake and take Donnison Street up to the entrance of Rumbala Reserve.",
 		"p9154665" : "Follow the walking trail to the right and then up to the top of the hill.",
-		"p9154674" : "OPTIONAL: Optionally follow the Casuarina track around the picnic area.",
+		"p9154674" : "OPTIONAL: <i>+ 0.5h / 1km</i> Optionally follow the Casuarina track around the picnic area.",
 		"p9154679" : "Near the top of the hill, past the Rain Forest track, start following the Flannel Flower track.",
 		"p9154683" : "The Flanel Flower track ends at a picnic area and lookout.",
 		"p9154693" : "On the side of the road, past the lookout, the walking trail continues on the left.",

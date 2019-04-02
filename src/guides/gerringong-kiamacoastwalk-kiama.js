@@ -2,7 +2,7 @@
 	"location" : "Kiama Coast Walk",
 	"description" : ["This walk follows part of the <a href=\"http://www.visitnsw.com/destinations/south-coast/kiama-area/kiama-coast-walk\">Kiama Coast Walk</a>."],
 	"duration" : 6,
-	"length" : 19,
+	"length" : 17,
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : true,

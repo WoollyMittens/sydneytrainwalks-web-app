@@ -74,7 +74,7 @@
 	"assets" : {
 		"prefix" : "waterfall-heathcotenp-loftus",
 		"start" : 51,
-		"end" : 139
+		"end" : 158
 	},
 	"landmarks" : {
 		"dsc_9674" : "From the Heathcote Station carpark turn right down Wilson Parade.",
@@ -93,7 +93,7 @@
 		"dsc_9815" : "From the lookout, turn right and follow the clearing down.",
 		"dsc_9821" : "Find the stone staircase at the edge of the clearing and climb down.",
 		"dsc_9822" : "At the bottom of the descend turn right and follow the sign to Audley.",
-		"p4215084" : "OPTIONAL: Optionally, from Robertson Roundabout follow the Engadine track to Kangaroo Creek.",
+		"p4215084" : "OPTIONAL: <i>- 0.5h / 1km</i> Optionally, from Robertson Roundabout follow the Engadine track to Kangaroo Creek.",
 		"p4215091" : "OPTIONAL: A metal stairway leads safely down the steep ridge to a swim spot in the creek.",
 		"p4215113" : "OPTIONAL: Follow the creek a short way to the left of the pool, to find a place to cross.",
 		"p4215131" : "OPTIONAL: A worn path will leads up to the next ridge on the other side.",
@@ -105,6 +105,17 @@
 		"dsc_9847" : "Turn left after the bridge and continue past the Park Visitor Centre to the carpark.",
 		"dsc_9849" : "From the carpark follow Sir Bertram Stevens Drive to the left to the weir.",
 		"dsc_9861" : "Cross the road after the weir and enter Riverside Drive.",
+		"dsc_9862_p5240735_p5240740" : "OPTIONAL: <i>+ 1h / 3km</i> If time allows follow the road to Reids Flat campground.",
+		"dsc_9862_p5240741" : "OPTIONAL: At the far end of the campground an old road follows the Hacking river.",
+		"dsc_9862_p5240783" : "OPTIONAL: The road steadily shrinks down to a narrow walking path.",
+		"dsc_9862_p5240806" : "OPTIONAL: Follow the trail up the small staircase around, or down across an overgrown campground.",
+		"dsc_9862_p5240808" : "OPTIONAL: Eventually the trail peters out completely at a huge pile of branches and a yellow sign reading 'track end'.",
+		"dsc_9862_p5240809" : "OPTIONAL: Directly to the left of the sign a well worn scrable leads up the ridge.",
+		"dsc_9862_p5240812" : "OPTIONAL: Follow the walking trail the scamble joins at the top to the left.",
+		"dsc_9862_p5240813" : "OPTIONAL: The walking trail ends at a fire trail. Follow this to the left as well.",
+		"dsc_9862_p5240815" : "OPTIONAL: Where the Temptation Creek fire trail joins this one, follow the directions to the Visitor Centre.",
+		"dsc_9862_p5240818" : "OPTIONAL: On the left side of the fire trail, a paved walking path leads to Bungoona Lookout.",
+		"dsc_9862_p5240839" : "OPTIONAL: Follow the paved walking path to the car park.",
 		"dsc_9862" : "Ascend the long staircase of the Honeymoon Track, to the left of the toilet block.",
 		"dsc_9865" : "At the top of the Honeymoon Track, continue across the field past the park office.",
 		"dsc_9868" : "Cross the entrance to the carpark and find the tram platform. Wednesdays and Sundays there is a tram service to the museum at Loftus.",

@@ -6,7 +6,7 @@
 		"Thanks to Nick Collins from the <a href=\"https://anbwalkers.org.au/\">All Nations Bushwalkers</a> for pioneering this route."
 	],
 	"duration" : 8,
-	"length" : 30,
+	"length" : 31,
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
@@ -81,7 +81,7 @@
 		"0030_dcs_7159": "Follow Dural Street and follow the split to the right down Quarry Road.",
 		"0040_dcs_7160": "Watch for the little white markers that show the way to the Great North Walk.",
 		"0110_dcs_7169": "At the end of Quarry Road follow the stone staircase down.",
-		"0130_dcs_7171": "OPTIONAL: For a rougher alternative start following the Great North Walk from the trackhead in the park.",
+		"0130_dcs_7171": "OPTIONAL: <i>+ 0.5h / 1km</i> For a rougher alternative start following the Great North Walk from the trackhead in the park.",
 		"0131_dsc_1811": "OPTIONAL: From the trackhead follow the signs to Thornleigh down the Rosemead firetrail.",
 		"0132_dsc_1814": "OPTIONAL: Follow the markers for for the Blue Gum Walk along the way.",
 		"0133_dsc_1815": "OPTIONAL: At the trail to Galston Gorge, continue along the Blue Gum Walk.",
@@ -133,7 +133,7 @@
 		"2670_dcs_7481": "Continue down the footpath along the river on the left.",
 		"2710_dcs_7485": "Cross the bridge and follow the footpath to the right through the the park.",
 		"2730_dcs_7487": "After the car park follow the footpath under the bridge.",
-		"2760_dcs_7490": "OPTIONAL: Optionally cross the bridge at Church Street and follow the shopping arcade to the train station.",
+		"2760_dcs_7490": "OPTIONAL: <i>+ 0h / 0km</i> Optionally cross the bridge at Church Street and follow the shopping arcade to the train station.",
 		"2770_dcs_7491": "After passing under several more bridges, the path opens up to a riverside park.",
 		"2780_dcs_7492": "Cross the damn on the far side of the riverside park and continue left to the ferry dock."
 	}
