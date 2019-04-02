@@ -131,8 +131,7 @@
 		<span class="sign from">From</span>
 		<span class="sign sign-short {startTransport}">{startLocation}</span>
 		<span class="sign to">via</span>
-		<span class="sign sign-short park">{walkLocation} <i>{walkDuration}h / <span>{walkLength}</span>km</i>
-		</span>
+		<span class="sign sign-short park">{walkLocation} <i>{walkDuration}h / <span>{walkLength}</span>km</i></span>
 		<span class="sign to">to</span>
 		<span class="sign sign-short {endTransport}">{endLocation}</span>
 	</script>
@@ -168,12 +167,11 @@
 	</script>
 
 	<script id="thumbnail-template" type="text/template">
-		<p>
+		<p class="guide-landmark">
 			<a class="cylinder-image" href="./inc/medium/{id}/{src}" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/{id}/{src});" data-desc="{description}">
 				<img alt="" src="./inc/small/{id}/{src}"/>
 			</a>
-			{description}
-			<button class="guide-locate" data-url="./inc/medium/{id}/{src}">Show location</button>
+			<span class="guide-text">{description} <button class="guide-locate" data-url="./inc/medium/{id}/{src}">Show location</button></span>
 		</p>
 	</script>
 

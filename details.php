@@ -105,23 +105,27 @@
 										$value = preg_replace($isOptional, '', $value);
 										?>
 											<div class="guide-<?php echo strtolower($highlightClass[0]) ?>">
-												<p>
+												<p class="guide-landmark">
 													<a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg" class="cylinder-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg);" data-desc="<?php echo $value ?>">
 														<img alt="" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg">
 													</a>
-													<?php echo $value ?>
-													<button class="guide-locate" data-url="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg">Show location</button>
+													<span class="guide-text">
+														<?php echo $value ?>
+														<button class="guide-locate" data-url="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg">Show location</button>
+													</span>
 												</p>
 											</div>
 										<?php
 									} else {
 										?>
-											<p>
+											<p class="guide-landmark">
 												<a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg" class="cylinder-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg);" data-desc="<?php echo $value ?>">
 													<img alt="" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg">
 												</a>
-												<?php echo $value ?>
-												<button class="guide-locate" data-url="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg">Show location</button>
+												<span class="guide-text">
+													<?php echo $value ?>
+													<button class="guide-locate" data-url="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg">Show location</button>
+												</span>
 											</p>
 										<?php
 									}

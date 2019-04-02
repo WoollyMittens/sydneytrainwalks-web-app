@@ -457,7 +457,7 @@
   /* line 21, ../../src/scss/_menu.scss */
   .navigation p {
     margin: 0;
-    padding: 1em;
+    padding: 15px;
   }
   /* line 22, ../../src/scss/_menu.scss */
   .navigation p img {
@@ -466,31 +466,32 @@
   /* line 29, ../../src/scss/_menu.scss */
   .navigation .app-banners {
     line-height: 1.5;
+    padding: 0 15px 5px;
   }
-  /* line 32, ../../src/scss/_menu.scss */
+  /* line 33, ../../src/scss/_menu.scss */
   .navigation .app-banners span {
     display: block;
     width: 280px;
   }
-  /* line 37, ../../src/scss/_menu.scss */
+  /* line 38, ../../src/scss/_menu.scss */
   .navigation .app-banners img {
     display: inline-block;
     vertical-align: middle;
   }
-  /* line 43, ../../src/scss/_menu.scss */
+  /* line 44, ../../src/scss/_menu.scss */
   .navigation menu {
     margin: 0;
     padding: 0;
     list-style: none;
   }
-  /* line 48, ../../src/scss/_menu.scss */
+  /* line 49, ../../src/scss/_menu.scss */
   .navigation menu li {
     display: block;
     width: 100%;
     padding: 0;
     min-height: 3.667rem;
   }
-  /* line 54, ../../src/scss/_menu.scss */
+  /* line 55, ../../src/scss/_menu.scss */
   .navigation menu li a {
     display: flex;
     flex-wrap: nowrap;
@@ -501,14 +502,14 @@
     font-size: 1.166666666666667rem;
     text-decoration: none;
   }
-  /* line 66, ../../src/scss/_menu.scss */
+  /* line 67, ../../src/scss/_menu.scss */
   .navigation menu li.no-results {
     background-color: #fff;
     padding: 2em;
     text-align: center;
   }
 
-  /* line 74, ../../src/scss/_menu.scss */
+  /* line 75, ../../src/scss/_menu.scss */
   body.screen-menu .navigation {
     -moz-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
@@ -517,7 +518,7 @@
   }
 }
 @media (orientation: landscape) {
-  /* line 79, ../../src/scss/_menu.scss */
+  /* line 80, ../../src/scss/_menu.scss */
   .navigation {
     -moz-transform: translate(100%, 0);
     -ms-transform: translate(100%, 0);
@@ -525,28 +526,29 @@
     transform: translate(100%, 0);
     left: 50%;
   }
-  /* line 83, ../../src/scss/_menu.scss */
+  /* line 84, ../../src/scss/_menu.scss */
   .navigation p {
     float: left;
     width: 49%;
   }
-  /* line 88, ../../src/scss/_menu.scss */
+  /* line 89, ../../src/scss/_menu.scss */
   .navigation .app-banners {
     float: right;
     width: 49%;
+    padding: 15px;
   }
-  /* line 92, ../../src/scss/_menu.scss */
+  /* line 94, ../../src/scss/_menu.scss */
   .navigation .app-banners span {
     display: block;
     width: auto;
   }
-  /* line 97, ../../src/scss/_menu.scss */
+  /* line 99, ../../src/scss/_menu.scss */
   .navigation .app-banners img {
     height: 32px;
     width: auto;
   }
 
-  /* line 104, ../../src/scss/_menu.scss */
+  /* line 106, ../../src/scss/_menu.scss */
   body.screen-menu .navigation {
     -moz-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
@@ -563,7 +565,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0;
-    padding: 0.5rem;
+    padding: 10px;
     width: 100%;
     height: 4rem;
   }
@@ -571,7 +573,7 @@
   #sorting label {
     display: inline-block;
     flex: 1 1 auto;
-    padding: 0 0.667rem;
+    padding: 0 10px;
   }
   /* line 18, ../../src/scss/_sorting.scss */
   #sorting label span {
@@ -715,60 +717,79 @@
     margin-top: 1.4rem;
   }
   /* line 37, ../../src/scss/_guide.scss */
+  .guide .guide-landmark {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+    padding: 0;
+  }
+  /* line 44, ../../src/scss/_guide.scss */
   .guide .guide-attention,
   .guide .guide-detour,
   .guide .guide-optional {
-    background-color: #ddeecc;
-    margin: -0.7em 0 0;
-    padding: 1px 0.7em;
+    margin: 0 -2rem;
+    padding: 1px 2rem;
+    position: relative;
   }
-  /* line 44, ../../src/scss/_guide.scss */
+  /* line 51, ../../src/scss/_guide.scss */
   .guide .guide-attention i,
   .guide .guide-detour i,
   .guide .guide-optional i {
-    float: right;
     display: inline-block;
     background-color: #1B5E20;
-    border-radius: 3px;
     color: #F0F4C3;
     font-style: normal;
     font-size: 0.875em;
-    padding: 0.2rem 0.3rem;
-    margin: -0.1rem 0 -0.1rem 0.3em;
-    vertical-align: middle;
+    padding: 0.3rem 0.5rem;
+    margin: 0;
     line-height: 1;
+    opacity: 0.5;
+    position: absolute;
+    right: 0.5rem;
+    top: 0;
   }
-  /* line 59, ../../src/scss/_guide.scss */
+  /* line 67, ../../src/scss/_guide.scss */
   .guide .guide-detour {
     background-color: #eeccdd;
   }
-  /* line 63, ../../src/scss/_guide.scss */
+  /* line 71, ../../src/scss/_guide.scss */
   .guide .guide-attention {
     background-color: #ccddee;
   }
-  /* line 67, ../../src/scss/_guide.scss */
+  /* line 75, ../../src/scss/_guide.scss */
+  .guide .guide-optional {
+    background-color: #ddeecc;
+  }
+  /* line 79, ../../src/scss/_guide.scss */
+  .guide .guide-detour + .guide-detour,
+  .guide .guide-attention + .guide-attention,
+  .guide .guide-optional + .guide-optional {
+    margin-top: -2rem;
+  }
+  /* line 85, ../../src/scss/_guide.scss */
   .guide .cylinder-image,
   .guide .zoom-image {
     background-color: #000;
     background-size: cover;
     background-position: 50%;
     width: 128px;
+    min-width: 128px;
     height: 96px;
     text-align: center;
     float: left;
-    margin: 0 1em 0.7em 0;
+    margin: 0 1em 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  /* line 81, ../../src/scss/_guide.scss */
+  /* line 100, ../../src/scss/_guide.scss */
   .guide .cylinder-image img,
   .guide .zoom-image img {
     max-height: 96px;
     max-width: 128px;
     vertical-align: middle;
   }
-  /* line 88, ../../src/scss/_guide.scss */
+  /* line 107, ../../src/scss/_guide.scss */
   .guide .guide-locate {
     border: none;
     background-color: Transparent;
@@ -788,23 +809,23 @@
     cursor: pointer;
     vertical-align: middle;
   }
-  /* line 108, ../../src/scss/_guide.scss */
+  /* line 127, ../../src/scss/_guide.scss */
   .guide .guide-scroller {
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    padding: 0 15px;
+    padding: 0 20px;
   }
-  /* line 115, ../../src/scss/_guide.scss */
+  /* line 134, ../../src/scss/_guide.scss */
   .guide .guide-scroller h2 {
-    margin-top: 15px;
+    margin-top: 20px;
   }
 
   /*
   on which screen should this be visible
   */
-  /* line 123, ../../src/scss/_guide.scss */
+  /* line 142, ../../src/scss/_guide.scss */
   body.screen-guide .guide,
   body.screen-map .guide {
     -moz-transform: translate(0, 0);
@@ -814,7 +835,7 @@
   }
 }
 @media (orientation: portrait) {
-  /* line 129, ../../src/scss/_guide.scss */
+  /* line 148, ../../src/scss/_guide.scss */
   .guide {
     border-left: none;
     width: 100%;
@@ -823,7 +844,7 @@
   /*
   on which screen should this be visible
   */
-  /* line 136, ../../src/scss/_guide.scss */
+  /* line 155, ../../src/scss/_guide.scss */
   body.screen-map .guide {
     -moz-transform: translate(100%, 0);
     -ms-transform: translate(100%, 0);
@@ -831,7 +852,7 @@
     transform: translate(100%, 0);
   }
 
-  /* line 140, ../../src/scss/_guide.scss */
+  /* line 159, ../../src/scss/_guide.scss */
   body.screen-guide .guide {
     -moz-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
@@ -840,7 +861,7 @@
   }
 }
 @media print {
-  /* line 145, ../../src/scss/_guide.scss */
+  /* line 164, ../../src/scss/_guide.scss */
   .guide {
     -moz-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
@@ -859,7 +880,7 @@
     width: 100% !important;
     height: auto !important;
   }
-  /* line 160, ../../src/scss/_guide.scss */
+  /* line 179, ../../src/scss/_guide.scss */
   .guide .guide-scroller {
     height: auto !important;
     overflow: visible !important;
@@ -898,11 +919,11 @@
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    padding: 0 15px;
+    padding: 0 20px;
   }
   /* line 25, ../../src/scss/_about.scss */
   .about .about-scroller h2 {
-    margin-top: 15px;
+    margin-top: 20px;
   }
   /* line 29, ../../src/scss/_about.scss */
   .about .about-scroller figure {

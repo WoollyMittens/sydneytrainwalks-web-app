@@ -23,11 +23,12 @@
 				display: none;
 			}
 			margin: 0;
-			padding: 1em;
+			padding: 15px;
 		}
 
 		.app-banners {
 			line-height: 1.5;
+			padding: 0 15px 5px;
 
 			span {
 				display: block;
@@ -88,6 +89,7 @@
 		.app-banners {
 			float: right;
 			width: 49%;
+			padding: 15px;
 
 			span {
 				display: block;
