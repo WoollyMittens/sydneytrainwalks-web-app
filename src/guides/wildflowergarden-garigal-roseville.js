@@ -22,8 +22,8 @@
 		"toiletd" : {
 			"type" : "toilet",
 			"icon" : "./inc/img/marker-toilet.png",
-			"lat" : -33.705185,
-			"lon" : 151.177346
+			"lat" : -33.662128,
+			"lon" : 151.162006
 		},
 		"toilete" : {
 			"type" : "toilet",
