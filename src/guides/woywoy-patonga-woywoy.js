@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "woywoy-patonga-woywoy",
+	"bounds" : {"_southWest":{"lat":-33.56342579495369,"lng":151.2571907043457},"_northEast":{"lat":-33.474122092161885,"lng":151.36705398559573}},
 	"markers" : {
 		"start" : {
 			"location" : "Woy Woy",

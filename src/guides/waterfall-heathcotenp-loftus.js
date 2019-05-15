@@ -10,6 +10,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "waterfall-heathcotenp-loftus",
+	"bounds" : {"_southWest":{"lat":-34.13930149360052,"lng":150.95146179199222},"_northEast":{"lat":-34.039218051302385,"lng":151.08879089355472}},
 	"markers" : {
 		"start" : {
 			"location" : "Waterfall",

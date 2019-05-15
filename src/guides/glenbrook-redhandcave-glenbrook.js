@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "glenbrook-redhandcave-glenbrook",
+	"bounds" : {"_southWest":{"lat":-33.80414882131447,"lng":150.5882263183594},"_northEast":{"lat":-33.75963325212468,"lng":150.6431579589844}},
 	"markers" : {
 		"start" : {
 			"location" : "Glenbrook",

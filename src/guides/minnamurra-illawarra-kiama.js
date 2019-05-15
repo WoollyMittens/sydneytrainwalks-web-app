@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : true,
 	"fireban" : true,
+	"gps" : "minnamurra-illawarra-kiama",
+	"bounds" : {"_southWest":{"lat":-34.69321497154489,"lng":150.8024597167969},"_northEast":{"lat":-34.605095553689345,"lng":150.9123229980469}},
 	"markers" : {
 		"start" : {
 			"location" : "Minnamurra",

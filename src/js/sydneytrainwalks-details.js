@@ -52,7 +52,6 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			.replace(/{endTransport}/g, GuideData[id].markers.end.type)
 			.replace(/{endLocation}/g, GuideData[id].markers.end.location);
 		// add the onclick handler
-		console.log("title clicked");
 		this.config.title.onclick = function(evt) { document.location.replace('./'); };
 	};
 

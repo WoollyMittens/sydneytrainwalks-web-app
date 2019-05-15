@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : true,
 	"fireban" : true,
+	"gps" : "adamstown-fernleightrack-belmont",
+	"bounds" : {"_southWest":{"lat":-33.07643938437061,"lng":151.57974243164062},"_northEast":{"lat":-32.89674097065466,"lng":151.79946899414065}},
 	"markers" : {
 		"start" : {
 			"location" : "Adamstown",

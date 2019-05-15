@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "cronulla-kamaybotanybay-cronulla",
+	"bounds" : {"_southWest":{"lat":-34.07434602722432,"lng":151.13634109497073},"_northEast":{"lat":-33.985573609022126,"lng":151.24620437622073}},
 	"markers" : {
 		"start" : {
 			"location" : "Cronulla",

@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "cronulla-royalnationalpark-loftus",
+	"bounds" : {"_southWest":{"lat":-34.11457597001386,"lng":151.0470771789551},"_northEast":{"lat":-34.025845686063434,"lng":151.1569404602051}},
 	"markers" : {
 		"start" : {
 			"location" : "Cronulla",

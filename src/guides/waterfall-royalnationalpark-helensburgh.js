@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "waterfall-royalnationalpark-helensburgh",
+	"bounds" : {"_southWest":{"lat":-34.196717779833726,"lng":150.99030017852786},"_northEast":{"lat":-34.12185938270247,"lng":151.08900547027588}},
 	"markers" : {
 		"start" : {
 			"location" : "Waterfall",

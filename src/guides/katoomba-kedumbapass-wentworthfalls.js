@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "katoomba-kedumbapass-wentworthfalls",
+	"bounds" : {"_southWest":{"lat":-33.78892053747406,"lng":150.29176712036136},"_northEast":{"lat":-33.699850442936985,"lng":150.40163040161136}},
 	"markers" : {
 		"start" : {
 			"location" : "Katoomba",

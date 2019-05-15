@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : true,
 	"fireban" : true,
+	"gps" : "tuggerah-laketuggerah-theentrance",
+	"bounds" : {"_southWest":{"lat":-33.381429457365826,"lng":151.40430450439456},"_northEast":{"lat":-33.291938219961345,"lng":151.51416778564456}},
 	"markers" : {
 		"start" : {
 			"location" : "Tuggerah",

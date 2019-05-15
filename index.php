@@ -30,7 +30,7 @@
 		<link rel="icon" type="image/png" sizes="96x96" href="./inc/ico/favicon-96x96.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="./inc/ico/favicon-16x16.png" />
 		<link rel="manifest" href="./manifest.json" />
-		<link rel="stylesheet" href="./inc/css/styles.css?v=20190401112300"/>
+		<link rel="stylesheet" href="./inc/css/styles.css"/>
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -169,11 +169,8 @@
 
 		</script>
 		<script>
-			if('serviceWorker' in navigator) {
-				navigator.serviceWorker.register('service-worker.js', {scope: '.'}).then(function(registration) {
-					console.log('The service worker has been registered ', registration)
-				});
-			}
+			// register the service worker for offline content
+			if('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js');
 		</script>
 	</body>
 </html>

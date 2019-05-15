@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "lakehaven-munmorah-swansea",
+	"bounds" : {"_southWest":{"lat":-33.26567576354252,"lng":151.46507263183597},"_northEast":{"lat":-33.086363955913264,"lng":151.68479919433597}},
 	"markers" : {
 		"start" : {
 			"location" : "Lake Haven",

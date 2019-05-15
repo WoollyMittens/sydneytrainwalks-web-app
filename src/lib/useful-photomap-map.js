@@ -47,9 +47,25 @@ useful.Photomap.prototype.Map = function (parent) {
 		this.bounds();
 		// refresh the map after scrolling
 		var _this = this;
-		this.config.map.object.on('moveend', function (e) { _this.parent.redraw(); });
+		this.config.map.object.on('moveend', function (e) { /*console.log('"bounds" :', JSON.stringify(_this.config.map.object.getBounds()) + ',');*/ _this.parent.redraw(); });
 		this.config.map.object.on('zoomend', function (e) { _this.parent.redraw(); });
 	};
+
+	/*
+		Screengrab mode:
+
+		.leaflet-top.leaflet-left {
+		  visibility: hidden;
+		}
+
+		.leaflet-marker-icon {
+			visibility: hidden;
+		}
+
+		img[src="./inc/img/marker-location.png"] {
+		  visibility: hidden;
+		}
+	*/
 
 	this.remove = function () {
 		// ask leaflet to remove itself if available

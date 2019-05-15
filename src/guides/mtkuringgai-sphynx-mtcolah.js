@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "mtkuringgai-sphynx-mtcolah",
+	"bounds" : {"_southWest":{"lat":-33.71513025015379,"lng":151.08698844909668},"_northEast":{"lat":-33.625983558009,"lng":151.1968517303467}},
 	"markers" : {
 		"start" : {
 			"location" : "Mount Kuring-gai",

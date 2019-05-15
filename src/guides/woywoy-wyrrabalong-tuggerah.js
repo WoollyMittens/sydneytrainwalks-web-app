@@ -10,6 +10,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "woywoy-wyrrabalong-tuggerah",
+	"bounds" : {"_southWest":{"lat":-33.54697451132706,"lng":151.23264312744143},"_northEast":{"lat":-33.28792043260644,"lng":151.57596588134768}},
 	"markers" : {
 		"start" : {
 			"location" : "Woy Woy",

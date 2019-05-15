@@ -10,6 +10,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "nelsonbay-fingalbay-nelsonbay",
+	"bounds" : {"_southWest":{"lat":-32.74778368084451,"lng":152.13810946501326},"_northEast":{"lat":-32.70272651251163,"lng":152.19304110563826}},
 	"markers" : {
 		"start" : {
 			"location" : "Nelson Bay",

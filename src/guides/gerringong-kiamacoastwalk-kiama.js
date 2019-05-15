@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : true,
+	"gps" : "gerringong-kiamacoastwalk-kiama",
+	"bounds" : {"_southWest":{"lat":-34.75240283563326,"lng":150.78512191772464},"_northEast":{"lat":-34.66434641062826,"lng":150.8949851989746}},
 	"markers" : {
 		"start" : {
 			"location" : "Gerringong",

@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : true,
 	"fireban" : true,
+	"gps" : "wollongong-illawarracoast-thirroul",
+	"bounds" : {"_southWest":{"lat":-34.43586765457537,"lng":150.8237457275391},"_northEast":{"lat":-34.30778194085079,"lng":150.99540710449222}},
 	"markers" : {
 		"start" : {
 			"location" : "Wollongong",

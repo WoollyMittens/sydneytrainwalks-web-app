@@ -10,6 +10,8 @@
 	"zoom" : 13,
 	"rain" : true,
 	"fireban" : true,
+	"gps" : "laperouse-botanybay-bondibeach",
+	"bounds" : {"_southWest":{"lat":-34.03473712116844,"lng":151.14423751831058},"_northEast":{"lat":-33.8570166354414,"lng":151.36396408081058}},
 	"markers" : {
 		"start" : {
 			"location" : "La Perouse",

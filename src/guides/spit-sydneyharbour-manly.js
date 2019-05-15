@@ -8,6 +8,8 @@
 	"zoom" : 14,
 	"rain" : true,
 	"fireban" : false,
+	"gps" : "spit-sydneyharbour-manly",
+	"bounds" : {"_southWest":{"lat":-33.82768135318136,"lng":151.2389945983887},"_northEast":{"lat":-33.78317802225982,"lng":151.2939262390137}},
 	"markers" : {
 		"start" : {
 			"location" : "Spit Junction",

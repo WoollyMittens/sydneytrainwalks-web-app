@@ -8,6 +8,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "mtkuringgai-kuringgaichase-berowra",
+	"bounds" : {"_southWest":{"lat":-33.66121039923453,"lng":151.12647056579593},"_northEast":{"lat":-33.616620655389106,"lng":151.18140220642093}},
 	"markers" : {
 		"start" : {
 			"location" : "Mount Kuring-gai",

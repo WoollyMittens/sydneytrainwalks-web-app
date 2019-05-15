@@ -9,6 +9,8 @@
 	"zoom" : 13,
 	"rain" : true,
 	"fireban" : true,
+	"gps" : "teralba-greenpoint-belmont",
+	"bounds" : {"_southWest":{"lat":-33.043277444537274,"lng":151.57708168029788},"_northEast":{"lat":-32.9534401674646,"lng":151.68694496154788}},
 	"markers" : {
 		"start" : {
 			"location" : "Teralba",

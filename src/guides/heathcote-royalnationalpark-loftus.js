@@ -9,6 +9,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "heathcote-royalnationalpark-loftus",
+	"bounds" : {"_southWest":{"lat":-34.1215396362864,"lng":150.9836483001709},"_northEast":{"lat":-34.03281665008062,"lng":151.09351158142093}},
 	"markers" : {
 		"start" : {
 			"location" : "Heathcote",

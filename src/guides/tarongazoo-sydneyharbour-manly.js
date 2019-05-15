@@ -9,6 +9,8 @@
 	"zoom" : 14,
 	"rain" : true,
 	"fireban" : false,
+	"gps" : "tarongazoo-sydneyharbour-manly",
+	"bounds" : {"_southWest":{"lat":-33.85612567555415,"lng":151.21912479400638},"_northEast":{"lat":-33.79166682166097,"lng":151.30495548248294}},
 	"markers" : {
 		"start" : {
 			"location" : "Taronga Zoo",

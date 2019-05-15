@@ -10,6 +10,8 @@
 	"zoom" : 14,
 	"rain" : true,
 	"fireban" : false,
+	"gps" : "cremornepoint-sydneyharbour-manly",
+	"bounds" : {"_southWest":{"lat":-33.86963162976042,"lng":151.2016582489014},"_northEast":{"lat":-33.78064548636391,"lng":151.3115215301514}},
 	"markers" : {
 		"start" : {
 			"location" : "Cremorne Point",

@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : true,
 	"fireban" : true,
+	"gps" : "woywoy-koolewong-gosford",
+	"bounds" : {"_southWest":{"lat":-33.49881863347519,"lng":151.2682628631592},"_northEast":{"lat":-33.4094482540654,"lng":151.3781261444092}},
 	"markers" : {
 		"start" : {
 			"location" : "Woy Woy",

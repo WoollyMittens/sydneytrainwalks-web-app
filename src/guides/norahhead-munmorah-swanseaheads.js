@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "norahhead-munmorah-swanseaheads",
+	"bounds" : {"_southWest":{"lat":-33.291794730741415,"lng":151.4700508117676},"_northEast":{"lat":-33.089528076594526,"lng":151.7447090148926}},
 	"markers" : {
 		"start" : {
 			"location" : "Norah Head",

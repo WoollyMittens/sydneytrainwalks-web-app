@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : true,
 	"fireban" : true,
+	"gps" : "palmbeach-northernbeaches-manly",
+	"bounds" : {"_southWest":{"lat":-33.819089163941285,"lng":151.1408042907715},"_northEast":{"lat":-33.56085101825269,"lng":151.48412704467773}},
 	"markers" : {
 		"start" : {
 			"location" : "Palm Beach",

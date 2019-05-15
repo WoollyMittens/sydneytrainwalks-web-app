@@ -9,6 +9,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "mtvictoria-hassanswalls-lithgow",
+	"bounds" : {"_southWest":{"lat":-33.62476858229138,"lng":150.09006500244143},"_northEast":{"lat":-33.44619578458782,"lng":150.30979156494143}},
 	"markers" : {
 		"start" : {
 			"location" : "Mount Victoria",

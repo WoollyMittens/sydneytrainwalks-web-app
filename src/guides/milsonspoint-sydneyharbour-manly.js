@@ -10,6 +10,8 @@
 	"zoom" : 13,
 	"rain" : true,
 	"fireban" : false,
+	"gps" : "milsonspoint-sydneyharbour-manly",
+	"bounds" : {"_southWest":{"lat":-33.86941783182514,"lng":151.19444847106934},"_northEast":{"lat":-33.780431465814345,"lng":151.30431175231936}},
 	"markers" : {
 		"start" : {
 			"location" : "Milsons Point",

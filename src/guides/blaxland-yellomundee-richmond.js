@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "blaxland-yellomundee-richmond",
+	"bounds" : {"_southWest":{"lat":-33.759883003328966,"lng":150.57123184204104},"_northEast":{"lat":-33.581590093283396,"lng":150.79095840454104}},
 	"markers" : {
 		"start" : {
 			"location" : "Blaxland",

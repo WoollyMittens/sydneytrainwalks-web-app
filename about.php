@@ -29,7 +29,8 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="./inc/ico/favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="96x96" href="./inc/ico/favicon-96x96.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="./inc/ico/favicon-16x16.png" />
-		<link rel="stylesheet" href="./inc/css/styles.css?v=20190401112300"/>
+		<link rel="manifest" href="./manifest.json" />
+		<link rel="stylesheet" href="./inc/css/styles.css"/>
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-52552-7']);
@@ -152,5 +153,9 @@
 				</footer>
 			</section>
 		</div>
+		<script>
+			// register the service worker for offline content
+			if('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js');
+		</script>
 	</body>
 </html>

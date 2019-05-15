@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : true,
 	"fireban" : true,
+	"gps" : "wyong-munmorah-tuggerah",
+	"bounds" : {"_southWest":{"lat":-33.37181681339529,"lng":151.38989254483025},"_northEast":{"lat":-33.21340616119981,"lng":151.59588619717397}},
 	"markers" : {
 		"start" : {
 			"location" : "Wyong",

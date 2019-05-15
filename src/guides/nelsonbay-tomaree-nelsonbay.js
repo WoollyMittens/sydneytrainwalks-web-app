@@ -10,6 +10,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "nelsonbay-tomaree-nelsonbay",
+	"bounds" : {"_southWest":{"lat":-32.78366661703089,"lng":152.1047687530518},"_northEast":{"lat":-32.69356579952683,"lng":152.2146320343018}},
 	"markers" : {
 		"start" : {
 			"location" : "Nelson Bay",

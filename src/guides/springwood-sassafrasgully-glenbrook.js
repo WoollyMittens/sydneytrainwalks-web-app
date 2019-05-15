@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "springwood-sassafrasgully-glenbrook",
+	"bounds" : {"_southWest":{"lat":-33.779147331286474,"lng":150.5362129211426},"_northEast":{"lat":-33.690067083222004,"lng":150.6460762023926}},
 	"markers" : {
 		"start" : {
 			"location" : "Springwood",

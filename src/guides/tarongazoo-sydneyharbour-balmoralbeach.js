@@ -8,6 +8,8 @@
 	"zoom" : 14,
 	"rain" : true,
 	"fireban" : false,
+	"gps" : "tarongazoo-sydneyharbour-balmoralbeach",
+	"bounds" : {"_southWest":{"lat":-33.85922617585291,"lng":151.22187137603763},"_northEast":{"lat":-33.81473926183642,"lng":151.2768030166626}},
 	"markers" : {
 		"start" : {
 			"location" : "Taronga Zoo",

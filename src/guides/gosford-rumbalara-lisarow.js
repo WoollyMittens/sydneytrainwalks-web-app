@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : true,
 	"fireban" : false,
+	"gps" : "gosford-rumbalara-lisarow",
+	"bounds" : {"_southWest":{"lat":-33.45013465484076,"lng":151.31126403808597},"_northEast":{"lat":-33.3607141072248,"lng":151.42112731933597}},
 	"markers" : {
 		"start" : {
 			"location" : "Gosford",

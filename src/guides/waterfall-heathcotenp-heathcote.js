@@ -8,6 +8,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "waterfall-heathcotenp-heathcote",
+	"bounds" : {"_southWest":{"lat":-34.13802276456568,"lng":150.9507751464844},"_northEast":{"lat":-34.08088647118511,"lng":151.0280227661133}},
 	"markers" : {
 		"start" : {
 			"location" : "Waterfall",

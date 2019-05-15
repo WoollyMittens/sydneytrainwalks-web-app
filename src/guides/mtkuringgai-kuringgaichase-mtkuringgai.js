@@ -9,6 +9,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "mtkuringgai-kuringgaichase-mtkuringgai",
+	"bounds" : {"_southWest":{"lat":-33.659352093095364,"lng":151.11661582603122},"_northEast":{"lat":-33.6147613867519,"lng":151.1715474666562}},
 	"markers" : {
 		"start" : {
 			"location" : "Mount Kuring-gai",

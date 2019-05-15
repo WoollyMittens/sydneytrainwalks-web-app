@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "waterfall-ladycarringtondrive-loftus",
+	"bounds" : {"_southWest":{"lat":-34.15549705303857,"lng":150.95498085021973},"_northEast":{"lat":-34.041209499825804,"lng":151.10947608947757}},
 	"markers" : {
 		"start" : {
 			"location" : "Waterfall",

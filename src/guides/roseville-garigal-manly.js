@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "roseville-garigal-manly",
+	"bounds" : {"_southWest":{"lat":-33.840265034499396,"lng":151.17041587829593},"_northEast":{"lat":-33.7398292336687,"lng":151.30774497985843}},
 	"markers" : {
 		"start" : {
 			"location" : "Roseville",

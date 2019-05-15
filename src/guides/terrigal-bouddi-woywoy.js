@@ -10,6 +10,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "terrigal-bouddi-woywoy",
+	"bounds" : {"_southWest":{"lat":-33.5403931206837,"lng":151.31787300109866},"_northEast":{"lat":-33.43960672905686,"lng":151.45520210266116}},
 	"markers" : {
 		"start" : {
 			"location" : "Terrigal",

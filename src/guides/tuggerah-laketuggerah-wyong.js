@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : true,
 	"fireban" : true,
+	"gps" : "tuggerah-laketuggerah-wyong",
+	"bounds" : {"_southWest":{"lat":-33.37705742396265,"lng":151.40001296997073},"_northEast":{"lat":-33.24737348115245,"lng":151.57167434692386}},
 	"markers" : {
 		"start" : {
 			"location" : "Tuggerah",

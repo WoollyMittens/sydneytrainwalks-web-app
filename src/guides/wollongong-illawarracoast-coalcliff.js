@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : true,
 	"fireban" : true,
+	"gps" : "wollongong-illawarracoast-coalcliff",
+	"bounds" : {"_southWest":{"lat":-34.434381057870155,"lng":150.79610824584964},"_northEast":{"lat":-34.23479620118046,"lng":151.07076644897464}},
 	"markers" : {
 		"start" : {
 			"location" : "Wollongong",

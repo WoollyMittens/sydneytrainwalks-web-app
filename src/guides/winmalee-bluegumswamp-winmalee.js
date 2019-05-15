@@ -8,6 +8,8 @@
 	"zoom" : 14,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "winmalee-bluegumswamp-winmalee",
+	"bounds" : {"_southWest":{"lat":-33.67378281830217,"lng":150.57603836059573},"_northEast":{"lat":-33.62348211873861,"lng":150.64470291137698}},
 	"markers" : {
 		"start" : {
 			"location" : "Winmalee",

@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "woywoy-bouddi-woywoy",
+	"bounds" : {"_southWest":{"lat":-33.55262552286562,"lng":151.30328178405762},"_northEast":{"lat":-33.463310665935204,"lng":151.41314506530765}},
 	"markers" : {
 		"start" : {
 			"location" : "Woy Woy",

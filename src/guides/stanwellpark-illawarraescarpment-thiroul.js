@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "stanwellpark-illawarraescarpment-thiroul",
+	"bounds" : {"_southWest":{"lat":-34.32224389028628,"lng":150.88005065917972},"_northEast":{"lat":-34.222377358473686,"lng":151.01737976074222}},
 	"markers" : {
 		"start" : {
 			"location" : "Stanwell Park",

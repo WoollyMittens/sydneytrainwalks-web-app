@@ -9,6 +9,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "katoomba-federalpass-katoomba",
+	"bounds" : {"_southWest":{"lat":-33.74889326198356,"lng":150.28494358062747},"_northEast":{"lat":-33.70434898627285,"lng":150.33987522125247}},
 	"markers" : {
 		"start" : {
 			"location" : "Katoomba",

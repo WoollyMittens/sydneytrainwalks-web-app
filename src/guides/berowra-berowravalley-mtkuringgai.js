@@ -8,6 +8,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "berowra-berowravalley-mtkuringgai",
+	"bounds" : {"_southWest":{"lat":-33.659460115652394,"lng":151.10767364501956},"_northEast":{"lat":-33.614869465257264,"lng":151.16260528564456}},
 	"markers" : {
 		"start" : {
 			"location" : "Berowra",

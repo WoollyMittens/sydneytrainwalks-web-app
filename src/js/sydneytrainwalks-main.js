@@ -37,8 +37,11 @@ SydneyTrainWalks.prototype.Main = function(config, context) {
 			? parent.className.replace('ios-false', 'ios-true')
 			: parent.className.replace('ios-true', 'ios-false');
 		// recover the previous state
-		var storedId = window.localStorage.getItem('id'),
-			storedMode = window.localStorage.getItem('mode');
+		var storedId = window.localStorage.getItem('id');
+		var storedMode = window.localStorage.getItem('mode') || 'map';
+		// recover the state from the url
+		storedId = this.getQuery('id') || storedId ;
+		storedMode = this.getQuery('mode') || storedMode;
 		// restore the previous state
 		if (storedId && storedMode && GuideData[storedId]) {
 			// update the interface to the stored state
@@ -60,6 +63,11 @@ SydneyTrainWalks.prototype.Main = function(config, context) {
 		this.details.update(id);
 		// update the footer
 		this.footer.update(id);
+	};
+
+	this.getQuery = function(property) {
+		var param = document.location.search.split(property + '=');
+		return (param.length > 1) ? param[1].split(/&|#/)[0] : null;
 	};
 
 	this.remoteLink = function(evt) {

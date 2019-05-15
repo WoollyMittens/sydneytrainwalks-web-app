@@ -9,6 +9,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "wondabyne-brisbanewater-woywoy",
+	"bounds" : {"_southWest":{"lat":-33.533024229991724,"lng":151.23247146606448},"_northEast":{"lat":-33.44368913765931,"lng":151.34233474731445}},
 	"markers" : {
 		"start" : {
 			"location" : "Wondabyne",

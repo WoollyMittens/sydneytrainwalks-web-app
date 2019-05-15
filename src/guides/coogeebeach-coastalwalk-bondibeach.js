@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : true,
 	"fireban" : true,
+	"gps" : "coogeebeach-coastalwalk-bondibeach",
+	"bounds" : {"_southWest":{"lat":-33.92730186781892,"lng":151.23903751373294},"_northEast":{"lat":-33.882850428486684,"lng":151.29396915435794}},
 	"markers" : {
 		"start" : {
 			"location" : "Coogee Beach",

@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : true,
 	"fireban" : true,
+	"gps" : "parramatta-darlingharbour-townhall",
+	"bounds" : {"_southWest":{"lat":-33.92370529770908,"lng":150.99746704101565},"_northEast":{"lat":-33.759169426528985,"lng":151.21204376220706}},
 	"markers" : {
 		"start" : {
 			"location" : "Parramatta",

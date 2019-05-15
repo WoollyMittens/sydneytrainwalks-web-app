@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "mtkuringgai-kuringgaichase-wildflowergarden",
+	"bounds" : {"_southWest":{"lat":-33.72362578919716,"lng":151.10252380371097},"_northEast":{"lat":-33.63448790825947,"lng":151.21238708496097}},
 	"markers" : {
 		"start" : {
 			"location" : "Mount Kuring-gai",

@@ -10,6 +10,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "theentrance-bouddi-woywoy",
+	"bounds" : {"_southWest":{"lat":-33.5340258636721,"lng":151.28517150878906},"_northEast":{"lat":-33.33289473938821,"lng":151.54266357421875}},
 	"markers" : {
 		"start" : {
 			"location" : "The Entrance",

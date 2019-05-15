@@ -11,6 +11,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "teralba-belmont-newcastle",
+	"bounds" : {"_southWest":{"lat":-33.05507618229347,"lng":151.60420417785647},"_northEast":{"lat":-32.910504851359,"lng":151.7930316925049}},
 	"markers" : {
 		"start" : {
 			"location" : "Teralba",

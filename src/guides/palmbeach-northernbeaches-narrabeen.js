@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : true,
 	"fireban" : true,
+	"gps" : "palmbeach-northernbeaches-narrabeen",
+	"bounds" : {"_southWest":{"lat":-33.71363095011231,"lng":151.2247467041016},"_northEast":{"lat":-33.57014846108379,"lng":151.41357421875}},
 	"markers" : {
 		"start" : {
 			"location" : "Palm Beach",

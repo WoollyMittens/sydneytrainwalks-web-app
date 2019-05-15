@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "blackheath-grandcanyon-blackheath",
+	"bounds" : {"_southWest":{"lat":-33.66272882668669,"lng":150.27950918156424},"_northEast":{"lat":-33.61813986933612,"lng":150.33444082218924}},
 	"markers" : {
 		"start" : {
 			"location" : "Blackheath",

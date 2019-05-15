@@ -9,6 +9,8 @@
 	"zoom" : 13,
 	"rain" : true,
 	"fireban" : true,
+	"gps" : "mittagong-pictonloop-tahmoor",
+	"bounds" : {"_southWest":{"lat":-34.514760869308304,"lng":150.29949188232425},"_northEast":{"lat":-34.1609659045798,"lng":150.73894500732425}},
 	"markers" : {
 		"start" : {
 			"location" : "Mittagong",

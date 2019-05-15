@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : true,
 	"fireban" : true,
+	"gps" : "portkembla-illawarra-shellharbour",
+	"bounds" : {"_southWest":{"lat":-34.59873716790235,"lng":150.79421997070315},"_northEast":{"lat":-34.4709012031305,"lng":150.96588134765628}},
 	"markers" : {
 		"start" : {
 			"location" : "Port Kembla",

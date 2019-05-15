@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "mittagong-boxvale-mittagong",
+	"bounds" : {"_southWest":{"lat":-34.452501575690015,"lng":150.4071664810181},"_northEast":{"lat":-34.408325928756256,"lng":150.4620981216431}},
 	"markers" : {
 		"start" : {
 			"location" : "Mittagong",

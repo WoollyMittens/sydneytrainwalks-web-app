@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "cowan-taffyslookout-brooklyn",
+	"bounds" : {"_southWest":{"lat":-33.61447633605147,"lng":151.14749908447268},"_northEast":{"lat":-33.52522539945859,"lng":151.25736236572268}},
 	"markers" : {
 		"start" : {
 			"location" : "Cowan",

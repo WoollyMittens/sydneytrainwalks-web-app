@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : true,
 	"fireban" : false,
+	"gps" : "woywoy-rumbalara-lisarow",
+	"bounds" : {"_southWest":{"lat":-33.4907303969559,"lng":151.2708377838135},"_northEast":{"lat":-33.375552246849594,"lng":151.42533302307132}},
 	"markers" : {
 		"start" : {
 			"location" : "Woy Woy",

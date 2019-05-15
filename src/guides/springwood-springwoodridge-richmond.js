@@ -9,6 +9,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "springwood-springwoodridge-richmond",
+	"bounds" : {"_southWest":{"lat":-33.7364745866532,"lng":150.54822921752933},"_northEast":{"lat":-33.55813311512291,"lng":150.7679557800293}},
 	"markers" : {
 		"start" : {
 			"location" : "Springwood",

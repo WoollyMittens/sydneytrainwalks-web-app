@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : true,
 	"fireban" : true,
+	"gps" : "adamstown-lakemacquarie-teralba",
+	"bounds" : {"_southWest":{"lat":-33.07643938437061,"lng":151.5521049499512},"_northEast":{"lat":-32.89674097065466,"lng":151.7718315124512}},
 	"markers" : {
 		"start" : {
 			"location" : "Adamstown",

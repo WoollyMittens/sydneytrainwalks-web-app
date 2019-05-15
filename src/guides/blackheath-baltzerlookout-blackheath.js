@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "blackheath-baltzerlookout-blackheath",
+	"bounds" : {"_southWest":{"lat":-33.654994945249186,"lng":150.25151252746585},"_northEast":{"lat":-33.56578593949263,"lng":150.36137580871585}},
 	"markers" : {
 		"start" : {
 			"location" : "Blackheath",

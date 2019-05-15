@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "blackheath-grosevalley-blackheath",
+	"bounds" : {"_southWest":{"lat":-33.662924928220384,"lng":150.26644706726077},"_northEast":{"lat":-33.57372413406571,"lng":150.37631034851077}},
 	"markers" : {
 		"start" : {
 			"location" : "Blackheath",

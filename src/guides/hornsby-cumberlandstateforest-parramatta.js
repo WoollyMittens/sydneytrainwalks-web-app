@@ -10,6 +10,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "hornsby-cumberlandstateforest-parramatta",
+	"bounds" : {"_southWest":{"lat":-33.8436156174601,"lng":150.93532562255862},"_northEast":{"lat":-33.66549665763364,"lng":151.15505218505862}},
 	"markers" : {
 		"start" : {
 			"location" : "Hornsby",

@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "mtvictoria-mtyork-mtvictoria",
+	"bounds" : {"_southWest":{"lat":-33.60797157438098,"lng":150.18301963806155},"_northEast":{"lat":-33.51871391047472,"lng":150.29288291931155}},
 	"markers" : {
 		"start" : {
 			"location" : "Mount Victoria",

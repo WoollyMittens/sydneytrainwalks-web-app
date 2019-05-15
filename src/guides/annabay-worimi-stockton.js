@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : true,
+	"gps" : "annabay-worimi-stockton",
+	"bounds" : {"_southWest":{"lat":-33.03198083052668,"lng":151.71192169189456},"_northEast":{"lat":-32.67203787301395,"lng":152.15137481689456}},
 	"markers" : {
 		"start" : {
 			"location" : "Anna Bay",

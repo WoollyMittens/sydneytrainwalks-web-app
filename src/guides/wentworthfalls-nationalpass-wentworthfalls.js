@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "wentworthfalls-nationalpass-wentworthfalls",
+	"bounds" : {"_southWest":{"lat":-33.74282689234993,"lng":150.3403472900391},"_northEast":{"lat":-33.69827946754741,"lng":150.3952789306641}},
 	"markers" : {
 		"start" : {
 			"location" : "Wentworth Falls",

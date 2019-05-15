@@ -9,6 +9,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "booragul-glenrock-newcastle",
+	"bounds" : {"_southWest":{"lat":-33.04032751310684,"lng":151.58489227294925},"_northEast":{"lat":-32.86055554684998,"lng":151.80461883544925}},
 	"markers" : {
 		"start" : {
 			"location" : "Booragul",

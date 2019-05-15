@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "mtkuringgai-garigal-roseville",
+	"bounds" : {"_southWest":{"lat":-33.80496900326637,"lng":151.06269836425784},"_northEast":{"lat":-33.62676970963718,"lng":151.28242492675784}},
 	"markers" : {
 		"start" : {
 			"location" : "Mount Kuring-gai",

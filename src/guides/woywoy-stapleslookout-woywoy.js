@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "woywoy-stapleslookout-woywoy",
+	"bounds" : {"_southWest":{"lat":-33.50933936780059,"lng":151.2540149688721},"_northEast":{"lat":-33.444620186402524,"lng":151.33984565734866}},
 	"markers" : {
 		"start" : {
 			"location" : "Woy Woy",

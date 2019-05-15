@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "mtkuringgai-berowravalley-cowan",
+	"bounds" : {"_southWest":{"lat":-33.66742540424046,"lng":151.08947753906253},"_northEast":{"lat":-33.578229271149276,"lng":151.1993408203125}},
 	"markers" : {
 		"start" : {
 			"location" : "Mount Kuring-gai",

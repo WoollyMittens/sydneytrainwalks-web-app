@@ -9,6 +9,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "belmont-awabakal-newcastle",
+	"bounds" : {"_southWest":{"lat":-33.07255555154735,"lng":151.61167144775393},"_northEast":{"lat":-32.89284922381665,"lng":151.83139801025393}},
 	"markers" : {
 		"start" : {
 			"location" : "Belmont",

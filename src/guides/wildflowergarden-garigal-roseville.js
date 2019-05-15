@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "wildflowergarden-garigal-roseville",
+	"bounds" : {"_southWest":{"lat":-33.79127450074178,"lng":151.1349678039551},"_northEast":{"lat":-33.70220685215959,"lng":151.2448310852051}},
 	"markers" : {
 		"start" : {
 			"location" : "Wildflower Garden",

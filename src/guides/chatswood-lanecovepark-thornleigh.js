@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "chatswood-lanecovepark-thornleigh",
+	"bounds" : {"_southWest":{"lat":-33.80896282042453,"lng":151.0727405548096},"_northEast":{"lat":-33.719913556228484,"lng":151.18260383605957}},
 	"markers" : {
 		"start" : {
 			"location" : "Chatswood",

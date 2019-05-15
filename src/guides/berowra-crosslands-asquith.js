@@ -9,6 +9,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "berowra-crosslands-asquith",
+	"bounds" : {"_southWest":{"lat":-33.70120717129238,"lng":151.06158256530765},"_northEast":{"lat":-33.6120460429748,"lng":151.17144584655762}},
 	"markers" : {
 		"start" : {
 			"location" : "Berowra",

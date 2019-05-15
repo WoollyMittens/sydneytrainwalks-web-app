@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : true,
 	"fireban" : true,
+	"gps" : "portkembla-illawarra-kiama",
+	"bounds" : {"_southWest":{"lat":-34.68785140368446,"lng":150.72246551513675},"_northEast":{"lat":-34.46056960385838,"lng":151.03145599365237}},
 	"markers" : {
 		"start" : {
 			"location" : "Port Kembla",

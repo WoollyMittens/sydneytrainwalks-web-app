@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : true,
 	"fireban" : true,
+	"gps" : "wollongong-illawarracoast-bellambi",
+	"bounds" : {"_southWest":{"lat":-34.439053129892514,"lng":150.85464477539065},"_northEast":{"lat":-34.35066428243385,"lng":150.96450805664065}},
 	"markers" : {
 		"start" : {
 			"location" : "Wollongong",

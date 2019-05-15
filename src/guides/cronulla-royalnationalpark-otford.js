@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : false,
 	"fireban" : false,
+	"gps" : "cronulla-royalnationalpark-otford",
+	"bounds" : {"_southWest":{"lat":-34.222022507488326,"lng":150.97841262817386},"_northEast":{"lat":-34.04469442222684,"lng":151.19813919067386}},
 	"markers" : {
 		"start" : {
 			"location" : "Cronulla",

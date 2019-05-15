@@ -6,6 +6,8 @@
 	"zoom" : 13,
 	"rain" : true,
 	"fireban" : false,
+	"gps" : "theentrance-wyrrabalong-terrigal",
+	"bounds" : {"_southWest":{"lat":-33.458727932653474,"lng":151.387996673584},"_northEast":{"lat":-33.32916569511524,"lng":151.55965805053714}},
 	"markers" : {
 		"start" : {
 			"location" : "The Entrance",
