@@ -1,5 +1,7 @@
 {
 	"location" : "Brisbane Water",
+	"lon": 151.2790174000277,
+	"lat": -33.48782478999618,
 	"description" : [
 		"This walk follow the Great North Walk through <a href=\"http://www.nationalparks.nsw.gov.au/visit-a-park/parks/brisbane-water-national-park\">Brisbane Water National Park</a>.",
 		"<em>Make sure to board the rear door of the train to Wondabyne and warn the guard that you want alight at Wondabyne, otherwise the train will not stop.</em>"

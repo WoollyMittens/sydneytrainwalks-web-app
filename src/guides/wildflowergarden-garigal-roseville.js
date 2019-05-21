@@ -1,5 +1,7 @@
 {
 	"location" : "Garigal",
+	"lon": 151.1845673700016,
+	"lat": -33.73069106002554,
 	"description" : ["This walk covers parts of the <a href=\"http://www.nationalparks.nsw.gov.au/garigal-national-park\">Garigal National Park</a> and the <a href=\"http://www.kmc.nsw.gov.au/Services_facilities/Facilities_and_venues/St_Ives_Precinct/Ku-ring-gai_Wildflower_Garden\">Wildflower Garden</a>."],
 	"duration" : 6,
 	"length" : 17,

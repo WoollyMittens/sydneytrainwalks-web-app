@@ -1,5 +1,7 @@
 {
 	"location" : "Sydney Harbour",
+	"lon": 151.254994,
+	"lat": -33.839036,
 	"description" : [
 		"Part of this walk follows the <a href=\"http://www.nationalparks.nsw.gov.au/things-to-do/Walking-tracks/Bradleys-Head-to-Chowder-Bay-walk\">Bradleys Head to Chwoder Bay</a>."
 	],

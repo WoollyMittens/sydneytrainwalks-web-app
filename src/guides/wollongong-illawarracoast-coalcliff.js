@@ -1,5 +1,7 @@
 {
 	"location" : "Illawarra",
+	"lon": 150.91976111111111,
+	"lat": -34.362569444444446,
 	"description" : ["This walk follows part of the <a href=\"http://www.grandpacificdrive.com.au/\">Grand Pacific Drive</a>."],
 	"duration" : 7,
 	"length" : 28,

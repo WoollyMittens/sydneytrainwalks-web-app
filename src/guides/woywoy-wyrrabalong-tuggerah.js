@@ -1,5 +1,7 @@
 {
 	"location" : "Wyrrabalong",
+	"lon": 151.4403898400156,
+	"lat": -33.48451677999815,
 	"description" : [
 		"This walk follow the coastal walk through part of <a href=\"http://www.nationalparks.nsw.gov.au/bouddi-national-park\">Bouddi National Park</a>.",
 		"It then follow the <a href=\"http://www.5landswalk.com.au/\">5 Lands Walk</a> to Terrigal, and continues along the coast through <a href=\"http://www.nationalparks.nsw.gov.au/visit-a-park/parks/wyrrabalong-national-park\">Wyrrabalong National Park</a>.",

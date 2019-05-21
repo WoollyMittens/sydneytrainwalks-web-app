@@ -654,16 +654,12 @@
   }
 }
 @media (orientation: landscape) {
-  /* line 28, ../../src/scss/_overview.scss */
-  .overview {
-    right: 50%;
-  }
-
   /*
   	on which screen should this be visible
   */
-  /* line 34, ../../src/scss/_overview.scss */
+  /* line 31, ../../src/scss/_overview.scss */
   body.screen-menu .overview {
+    right: 50%;
     -moz-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     -webkit-transform: translate(0, 0);

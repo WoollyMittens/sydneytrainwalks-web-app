@@ -1,5 +1,7 @@
 {
 	"location" : "Staples Lookout",
+	"lon": 151.279989,
+	"lat": -33.46316300009283,
 	"description" : ["The <a href=\"http://www.nationalparks.nsw.gov.au/things-to-do/Aboriginal-sites/Bulgandry-Aboriginal-art-site\">Bulgandry Aborigal rock art site</a>, <a href=\"http://www.nationalparks.nsw.gov.au/things-to-do/Lookouts/Staples-lookout\">Staples Lookout</a>, and Mount Wondabyne are prominent stops along this walk."],
 	"duration" : 7,
 	"length" : 25,

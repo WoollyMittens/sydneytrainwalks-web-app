@@ -1,5 +1,7 @@
 {
 	"location" : "Glenrock",
+	"lon": 151.7182188,
+	"lat": -32.96279644997695,
 	"description" : [
 		"This walk follows the last leg of <a href=\"http://www.thegreatnorthwalk.com\">the Great North Walk</a> from rural Teralba along Lake Macquarie to Newcastle and covers mostly urban environments.",
 		"<a href=\"http://www.nationalparks.nsw.gov.au/Glenrock-State-Conservation-Area\">Glenrock</a> is a national park in the middle of suburban Newcastle with bushland, a lagoon and a beach."

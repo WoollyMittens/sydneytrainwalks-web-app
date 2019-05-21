@@ -1,5 +1,7 @@
 {
 	"location" : "Lake Macquarie",
+	"lon": 151.633846,
+	"lat": -33.027716,
 	"description" : ["The <a href=\"http://www.railtrails.org.au/trail?view=trail&id=80\">Fernleigh track</a> is an old railway line from Newcastle to Lake Macquarie that has been turned into a bike path. The platforms of the stations are still visible along the way and food and drinks conveniently available nearby every stop."],
 	"duration" : 9,
 	"length" : 38,

@@ -1,5 +1,7 @@
 {
 	"location" : "Illawarra",
+	"lon": 150.838513,
+	"lat": -34.610138999911186,
 	"description" : ["This walk follows part of the <a href=\"http://www.visitnsw.com/destinations/south-coast/kiama-area/kiama-coast-walk\">Kiama Coast Walk</a>."],
 	"duration" : 9,
 	"length" : 33,

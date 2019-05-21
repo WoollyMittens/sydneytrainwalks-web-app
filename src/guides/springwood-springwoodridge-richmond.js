@@ -1,5 +1,7 @@
 {
 	"location" : "Springwood Ridge",
+	"lon": 150.61256,
+	"lat": -33.627129000000004,
 	"description" : [
 		"The first part of this walk follows Springwood Ridge in <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park\">Blue Mountains National Park</a>.",
 		"The second part of this walk covers <a href=\"http://www.nationalparks.nsw.gov.au/yellomundee-regional-park\">Yellomundee Regional Park</a>."

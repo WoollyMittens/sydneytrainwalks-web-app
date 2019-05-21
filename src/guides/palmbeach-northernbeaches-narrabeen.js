@@ -1,5 +1,7 @@
 {
 	"location" : "Northern Beaches",
+	"lon": 151.32703140001746,
+	"lat": -33.64600594991006,
 	"description" : ["This walk visits the <a href=\"http://www.nationalparks.nsw.gov.au/ku-ring-gai-chase-national-park/barrenjoey-lighthouse/historic-site\">Barrenjoey Lighthouse</a> and Syndey's northern beaches."],
 	"duration" : 7,
 	"length" : 26,

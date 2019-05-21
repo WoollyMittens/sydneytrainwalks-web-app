@@ -1,5 +1,7 @@
 {
 	"location" : "Worimi",
+	"lon": 151.889943,
+	"lat": -32.836037000000005,
 	"description" : ["<a href=\"http://en.wikipedia.org/wiki/Stockton_Beach\">Stockton beach</a> is a 32 kilometre stretch of beach and dunes along <a href=\"http://www.nationalparks.nsw.gov.au/worimi-national-park\">Worimi National Park</a>. The beach has a varied history of mining, settlement, shipwrecks and recreation to enjoy along the way."],
 	"duration" : 9,
 	"length" : 36,

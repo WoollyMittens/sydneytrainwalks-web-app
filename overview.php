@@ -58,7 +58,7 @@
 				</footer>
 			</section>
 		</div>
-		<script src="./inc/js/exif-data.js"></script>
+		<script src="./inc/js/gpx-data.js"></script>
 		<script src="./inc/js/guide-data.js"></script>
 		<script src="./inc/js/scripts.js"></script>
 		<script id="credit-template" type="text/template">

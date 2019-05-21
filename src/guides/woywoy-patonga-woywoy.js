@@ -1,5 +1,7 @@
 {
 	"location" : "Patonga",
+	"lon": 151.289932,
+	"lat": -33.553278,
 	"description" : ["This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/brisbane-water-national-park\">Brisbane Water National Park</a>."],
 	"duration" : 10,
 	"length" : 35,

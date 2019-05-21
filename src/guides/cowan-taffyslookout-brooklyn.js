@@ -1,5 +1,7 @@
 {
 	"location" : "Ku-ring-gai Chase",
+	"lon": 151.221324,
+	"lat": -33.586655,
 	"description" : ["Most of this is a walk follows the Great North Walk through <a href=\"http://www.nationalparks.nsw.gov.au/ku-ring-gai-chase-national-park/great-north-walk/walking\">Ku-Ring-Gai Chase National Park</a>."],
 	"duration" : 4,
 	"length" : 12,

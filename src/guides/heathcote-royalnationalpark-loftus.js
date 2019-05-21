@@ -1,5 +1,7 @@
 {
 	"location" : "Royal National Parl",
+	"lon": 151.0557125200046,
+	"lat": -34.07566248993559,
 	"description" : [
 		"This walk follows the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/karloo-walking-track\">Karloo Pools</a> and <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/uloola-walking-track\">Uloola Falls</a> wlaking tracks.",
 		"From the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/visitor-centres/royal-national-park-visitor-centre\">Royal National Park Visitor Centre</a> the walk follows the tramway to the <a href=\"https://www.sydneytramwaymuseum.com.au/\">Sydney Tramway Museum</a>. On Wednesdays and Sundays it's possible to ride the tram there."

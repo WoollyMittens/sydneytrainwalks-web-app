@@ -1,5 +1,7 @@
 {
 	"location" : "Sydney Harbour",
+	"lon": 151.27086200000002,
+	"lat": -33.804666,
 	"description" : [
 		"This walk follows the <a href=\"https://www.sydneycoastwalks.com.au/spit-to-manly-walk/\">Spit to Manly Walk</a>."
 	],

@@ -1,5 +1,7 @@
 {
 	"location" : "Blue Gum Swamp",
+	"lon": 150.60405799999998,
+	"lat": -33.632242,
 	"description" : [
 		"This walk is a loop around the <a href=\"https://www.bluemts.com.au/info/thingstodo/mountain-bike-trails/blue-gum-swamp-winmalee/\">Blue Gum Swamp</a> and Grose Head Lookout."
 	],

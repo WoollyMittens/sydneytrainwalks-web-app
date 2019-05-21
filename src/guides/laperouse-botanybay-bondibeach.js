@@ -1,5 +1,7 @@
 {
 	"location" : "Botany Bay",
+	"lon": 151.24818061002176,
+	"lat": -33.95768154000059,
 	"description" : [
 		"This walk covers <a href=\"http://www.nationalparks.nsw.gov.au/kamay-botany-bay-national-park\">Kamay Botany Bay National Park</a>",
 		"Add a visit to the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/events/blak-markets-at-bare-island\">Blak market</a> on Bare Island if they are on.",

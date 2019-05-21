@@ -143,6 +143,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			this.config.photomap.stop();
 		}
 		// start the map
+		// TODO: start Photomap if there's reliable internet, start Parkmap if not
 		this.config.photomap = new useful.Photomap().init({
 			'element': this.config.leaflet,
 			'pointer': this.config.pointer,

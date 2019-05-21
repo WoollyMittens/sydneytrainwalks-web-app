@@ -1,5 +1,7 @@
 {
 	"location" : "Heathcote National Park",
+	"lon": 151.05083847000188,
+	"lat": -34.07697380008807,
 	"description" : [
 		"This walk follows the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/bullawarring-walking-track\">Bullawarring walking track</a> in Heathcote National Park.",
 		"Then crosses over to the Royal National Park to continue to the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/karloo-walking-track\">Karloo Pools</a> and <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/uloola-walking-track\">Uloola Falls</a>.",

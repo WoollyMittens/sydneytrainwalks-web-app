@@ -1,5 +1,7 @@
 {
 	"location" : "Lady Carrington Drive",
+	"lon": 151.05458266000687,
+	"lat": -34.08118894009217,
 	"description" : ["This walk follows <a href=\"http://www.nationalparks.nsw.gov.au/royal-national-park/lady-carrington-drive/cycling\">Lady Carrington Drive</a> in the Royal National Park."],
 	"duration" : 7,
 	"length" : 23,

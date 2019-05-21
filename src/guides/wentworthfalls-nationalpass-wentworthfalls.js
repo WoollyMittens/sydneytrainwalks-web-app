@@ -1,5 +1,7 @@
 {
 	"location" : "Blue Mountains",
+	"lon": 150.3589353200026,
+	"lat": -33.72106157001808,
 	"description" : ["This walk follows the tracks around <a href=\"http://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/wentworth-falls-track/map\">Wentworth Falls</a>."],
 	"duration" : 6,
 	"length" : 15,

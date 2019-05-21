@@ -1,5 +1,7 @@
 {
 	"location" : "Wyrrabalong",
+	"lon": 151.48196388888888,
+	"lat": -33.385172222222224,
 	"description" : ["Part of this walk covers <a href=\"http://www.nationalparks.nsw.gov.au/visit-a-park/parks/Wyrrabalong-National-Park\">Wyrrabalong National Park</a>."],
 	"duration" : 4,
 	"length" : 15,

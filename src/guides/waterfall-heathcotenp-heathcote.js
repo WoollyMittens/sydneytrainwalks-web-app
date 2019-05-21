@@ -1,5 +1,7 @@
 {
 	"location" : "Heathcote National Park",
+	"lon": 150.97923849001512,
+	"lat": -34.096091590028344,
 	"description" : [
 		"This walk follows the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/bullawarring-walking-track\">Bullawarring walking track</a> in Heathcote National Park."
 	],

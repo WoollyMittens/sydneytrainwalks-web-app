@@ -1,5 +1,7 @@
 {
 	"location" : "Picton-Mittagong Loop",
+	"lon": 150.47990221001967,
+	"lat": -34.38740551001821,
 	"description" : [
 		"This walk follows the <a href=\"http://www.railtrailsnsw.com.au/wp-content/uploads/2016/05/MittagongPictonRT_brochure.pdf\">proposed</a> <a href=\"https://en.wikipedia.org/wiki/Picton%E2%80%93Mittagong_loop_railway_line\">Picton-Mittagong rail trail</a>.",
 		"Thanks to Kynan Batt for his local knowledge in clarifying this route."

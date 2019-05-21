@@ -1,5 +1,7 @@
 {
 	"location" : "Mount York",
+	"lon": 150.23269,
+	"lat": -33.536825,
 	"description" : ["This walk follows some of the mountain passes around <a href=\"http://en.wikipedia.org/wiki/Mount_York\">Mount York</a> at Mount Victoria in the Blue Mountains and ends at the monuments to the crossing of the Blue Mountains there."],
 	"duration" : 6,
 	"length" : 18,

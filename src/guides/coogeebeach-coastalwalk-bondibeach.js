@@ -1,5 +1,7 @@
 {
 	"location" : "Coastal Walk",
+	"lon": 151.2699638888889,
+	"lat": -33.910447222222224,
 	"description" : ["This walk covers the famous <a href=\"http://bonditocoogeewalk.com.au/\">Bondi to Coogee walk</a>."],
 	"duration" : 2,
 	"length" : 6,

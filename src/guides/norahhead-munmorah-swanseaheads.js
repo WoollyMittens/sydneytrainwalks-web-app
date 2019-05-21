@@ -1,5 +1,7 @@
 {
 	"location" : "Munmorah",
+	"lon": 151.62107222222224,
+	"lat": -33.18886388888888,
 	"description" : ["Part of this walk crosses <a href=\"http://www.nationalparks.nsw.gov.au/munmorah-state-conservation-area\">Munmorah State Conservation Area</a> and <a href=\"http://www.nationalparks.nsw.gov.au/wallarah-national-park\">Wallarah National Park</a>."],
 	"duration" : 9,
 	"length" : 35,

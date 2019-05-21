@@ -1,5 +1,7 @@
 {
 	"location" : "Kuring-gai Chase",
+	"lon": 151.16413177988414,
+	"lat": -33.663700620062,
 	"description" : ["This walk covers parts of the <a href=\"http://www.nationalparks.nsw.gov.au/ku-ring-gai-chase-national-park\">Ku-ring-gai Chase National Park</a> and ends at the <a href=\"http://www.kmc.nsw.gov.au/Services_facilities/Facilities_and_venues/St_Ives_Precinct/Ku-ring-gai_Wildflower_Garden\">Wildflower Garden</a>."],
 	"duration" : 5,
 	"length" : 14,

@@ -1,5 +1,7 @@
 {
 	"location" : "Berowra Valley",
+	"lon": 151.12097222222224,
+	"lat": -33.62777777777778,
 	"description" : [
 		"This walk follows a section of the Great North Walk in <a href=\"http://www.nationalparks.nsw.gov.au/berowra-valley-national-park/great-north-walk/walking\">Berowra Valley National Park</a>."
 	],

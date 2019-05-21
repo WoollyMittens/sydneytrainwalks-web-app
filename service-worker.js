@@ -7,6 +7,9 @@ var CACHE_NAME = 'dependencies-cache';
 
 var REQUIRED_FILES = [
   './index.php',
+  './details.php',
+  './overview.php',
+  './about.php',
   './offline.html',
   './inc/css/styles.css',
   './inc/js/scripts.js',

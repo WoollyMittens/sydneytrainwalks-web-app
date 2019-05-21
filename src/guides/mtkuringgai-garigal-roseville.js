@@ -1,5 +1,7 @@
 {
 	"location" : "Garigal",
+	"lon": 151.17449951000978,
+	"lat": -33.709468840003034,
 	"description" : ["This walk covers parts of the <a href=\"http://www.nationalparks.nsw.gov.au/ku-ring-gai-chase-national-park\">Ku-ring-gai Chase National Park</a> and <a href=\"http://www.nationalparks.nsw.gov.au/garigal-national-park\">Garigal National Park</a>."],
 	"duration" : 8,
 	"length" : 31,

@@ -1,5 +1,7 @@
 {
 	"location" : "Hassans Walls",
+	"lon": 150.16690831000096,
+	"lat": -33.50325410001006,
 	"description" : [
 		"This walk follows some of the mountain passes around <a href=\"http://en.wikipedia.org/wiki/Mount_York\">Mount York</a> at Mount Victoria in the Blue Mountains.",
 		"After crossing <a href=\"http://www.hartley-nsw.com/\">Hartley Vale</a>, the walk follows the trails through <a href=\"http://www.lithgow-tourism.com/hassans.htm\">Hassans Walls</a> to Lithgow."

@@ -1,5 +1,7 @@
 {
 	"location" : "Bouddi",
+	"lon": 151.3789277777778,
+	"lat": -33.53115555555556,
 	"description" : ["This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/bouddi-national-park\">Bouddi National Park</a>."],
 	"duration" : 8,
 	"length" : 27,

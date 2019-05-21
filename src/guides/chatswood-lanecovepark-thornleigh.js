@@ -1,5 +1,7 @@
 {
 	"location" : "Lane Cove Park",
+	"lon": 151.1338597700018,
+	"lat": -33.77250661999895,
 	"description" : ["This walk covers the full length of <a href=\"http://www.nationalparks.nsw.gov.au/lane-cove-national-park\">Lane Cove National Park</a>."],
 	"duration" : 6,
 	"length" : 19,

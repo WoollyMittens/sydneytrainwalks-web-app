@@ -1,5 +1,7 @@
 {
 	"location" : "Berowra Valley",
+	"lon": 151.10904399999998,
+	"lat": -33.631513,
 	"description" : [
 		"This walk follows a section of the Great North Walk in <a href=\"http://www.nationalparks.nsw.gov.au/berowra-valley-national-park/great-north-walk/walking\">Berowra Valley National Park</a>.",
 		"The rules for passing near the rifle range are prone to change, follow the instructions on the signs near the Steele bridge and check <a href=\"http://www.nationalparks.nsw.gov.au/visit-a-park/parks/Berowra-Valley-National-Park/Local-alerts\">here</a>."

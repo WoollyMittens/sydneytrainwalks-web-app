@@ -16044,7 +16044,7 @@ useful.Photomap.prototype.Main = function (config, context) {
 		clearTimeout(this.config.redrawTimeout);
 		this.config.redrawTimeout = setTimeout(function () {
 			// redraw the map
-			_this.route.redraw();
+			//_this.map.redraw();
 			// redraw the plotted route
 			_this.route.redraw();
 		}, 500);
@@ -17700,6 +17700,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			this.config.photomap.stop();
 		}
 		// start the map
+		// TODO: start Photomap if there's reliable internet, start Parkmap if not
 		this.config.photomap = new useful.Photomap().init({
 			'element': this.config.leaflet,
 			'pointer': this.config.pointer,
@@ -18261,8 +18262,10 @@ SydneyTrainWalks.prototype.Overview = function(parent) {
 
 	this.init = function() {
 		var a, b;
-		// get the markers from the exif data
+		// get the markers from the guide data
 		var markers = this.getMarkers();
+		// get the routes from the gpx data
+		var routes = this.getRoutes();
 		// calculate the bounds of the map
 		var bounds = this.getBounds(markers);
 		// start a map
@@ -18298,6 +18301,11 @@ SydneyTrainWalks.prototype.Overview = function(parent) {
 			marker.addTo(map);
 			marker.on('click', this.onMarkerClicked.bind(this, markers[a].id));
 		}
+		// add the routes
+		var route;
+		for (a = 0, b = routes.length; a < b; a += 1) {
+			routes[a].addTo(map);
+		};
 		// limit the bounds
 		map.fitBounds([
 			[bounds.minLat, bounds.minLon],
@@ -18316,27 +18324,39 @@ SydneyTrainWalks.prototype.Overview = function(parent) {
 	};
 
 	this.getMarkers = function() {
-		var route,
-			landmarks,
-			markers = [],
-			prefix,
-			photo;
+		var markers = [];
 		// for every walk
-		for (route in GuideData) {
-			// get the source of the assets
-			prefix = (GuideData[route].assets) ? GuideData[route].assets.prefix : route;
-			// pick a point halfway through the route
-			landmarks = Object.keys(GuideData[route].landmarks);
-			photo = landmarks[parseInt(landmarks.length/2)].toLowerCase() + '.jpg';
+		for (var key in GuideData) {
 			// create a marker between the start and end point
 			markers.push({
-				'lon': ExifData[prefix][photo].lon,
-				'lat': ExifData[prefix][photo].lat,
-				'id': route
+				'lon': GuideData[key].lon,
+				'lat': GuideData[key].lat,
+				'id': key
 			});
 		}
 		// return the result
 		return markers;
+	};
+
+	this.getRoutes = function() {
+		var routes = [];
+		// if the GPX data is available anyway
+		if (typeof GpxData != 'undefined') {
+			// for every walk
+			for (var key in GuideData) {
+				// only if this isn't an alias
+				if (!GuideData[key].assets) {
+					// create a route
+					routes.push(
+						L.geoJson(GpxData[key], {
+							style : function (feature) { return { 'color': '#ff6600', 'weight': 5, 'opacity': 0.66 }; }
+						})
+					);
+				}
+			}
+		}
+		// return the result
+		return routes;
 	};
 
 	this.getBounds = function(markers) {

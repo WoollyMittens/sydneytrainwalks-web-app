@@ -1,5 +1,7 @@
 {
 	"location" : "Koolewong Ridge",
+	"lon": 151.3053138888889,
+	"lat": -33.44789722222222,
 	"description" : ["This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/visit-a-park/parks/Brisbane-Water-National-Park\">Brisbane Water National Park</a>."],
 	"duration" : 4,
 	"length" : 13,

@@ -1,5 +1,7 @@
 {
 	"location" : "Lake Tuggerah",
+	"lon": 151.56444892989876,
+	"lat": -33.244925750037694,
 	"description" : ["Part of this walk covers <a href=\"http://www.nationalparks.nsw.gov.au/wyrrabalong-national-park\">Wyrrabalong National Park</a>."],
 	"duration" : 13,
 	"length" : 61,

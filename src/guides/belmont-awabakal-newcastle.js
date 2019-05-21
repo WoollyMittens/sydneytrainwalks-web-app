@@ -1,5 +1,7 @@
 {
 	"location" : "Awabakal",
+	"lon": 151.72906664003727,
+	"lat": -32.969502240005475,
 	"description" : [
 		"From Belmont this walk follows the <a href=\"http://www.railtrails.org.au/trail?view=trail&id=80\">Fernleigh track</a> through <a href=\"http://www.belmontwetlands.com.au/\">Belmont Wetlands State Park</a> to Redhead.",
 		"There the walk follows the coastal track through <a href=\"http://www.environment.nsw.gov.au/NationalParks/parkHome.aspx?id=N0522\">Awabakal</a> and <a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/glenrock-state-conservation-area\">Glenrock State Conservation Area</a>."

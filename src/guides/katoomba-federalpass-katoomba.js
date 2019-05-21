@@ -1,5 +1,7 @@
 {
 	"location" : "Federal Pass",
+	"lon": 150.31551381998582,
+	"lat": -33.738190729974164,
 	"description" : [
 		"This walk follows part of the <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park/federal-pass/walking\">Federal Pass</a>.",
 		"Instead of climbing out of Jamison Valley, there is an option to take the <a href=\"http://www.scenicworld.com.au/ticket-options-passes-2/\">Scenic World's cable car</a> back up instead."

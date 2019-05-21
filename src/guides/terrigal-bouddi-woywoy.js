@@ -1,5 +1,7 @@
 {
 	"location" : "Bouddi",
+	"lon": 151.40164000000001,
+	"lat": -33.526948,
 	"description" : [
 		"part of this walk follows the <a href=\"http://www.5landswalk.com.au/\">5 Lands Walk</a> from Terrigal.",
 		"This walk follows the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/bouddi-coastal-walk\">Bouddi Coastal Walk</a>.",

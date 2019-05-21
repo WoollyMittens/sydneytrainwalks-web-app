@@ -1,5 +1,7 @@
 {
 	"location" : "Grose Valley",
+	"lon": 150.35662222222223,
+	"lat": -33.613725,
 	"description" : ["This walk follows part of the  <a href=\"http://www.nationalparks.nsw.gov.au/whats-on/blue-mountains/blue-gum-forest-walk\">Blue Gum Forest</a> walk."],
 	"duration" : 9,
 	"length" : 25,

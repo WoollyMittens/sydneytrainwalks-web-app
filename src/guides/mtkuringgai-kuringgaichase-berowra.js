@@ -1,5 +1,7 @@
 {
 	"location" : "Ku-ring-gai Chase",
+	"lon": 151.16092777777777,
+	"lat": -33.64727777777778,
 	"description" : [
 		"This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/ku-ring-gai-chase-national-park\">Ku-ring-gai Chase National Park</a>."
 	],

@@ -1,5 +1,7 @@
 {
 	"location" : "Munmorah",
+	"lon": 151.62426215993406,
+	"lat": -33.18697330999781,
 	"description" : ["Part of this walk covers <a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/munmorah-state-conservation-area\">Munmorah State Conservation Area</a>."],
 	"duration" : 8,
 	"length" : 37,

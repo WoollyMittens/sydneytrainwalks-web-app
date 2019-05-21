@@ -53,7 +53,7 @@ useful.Photomap.prototype.Main = function (config, context) {
 		clearTimeout(this.config.redrawTimeout);
 		this.config.redrawTimeout = setTimeout(function () {
 			// redraw the map
-			_this.route.redraw();
+			//_this.map.redraw();
 			// redraw the plotted route
 			_this.route.redraw();
 		}, 500);

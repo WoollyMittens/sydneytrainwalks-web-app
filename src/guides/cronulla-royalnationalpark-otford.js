@@ -1,5 +1,7 @@
 {
 	"location" : "Royal National Park",
+	"lon": 151.14166388888887,
+	"lat": -34.1161,
 	"description" : ["This walk follows the <a href=\"http://www.nationalparks.nsw.gov.au/Royal-National-Park/the-coast-track/walking\">Royal National Park Coast Walk</a>."],
 	"duration" : 10,
 	"length" : 31,

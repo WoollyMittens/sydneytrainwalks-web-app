@@ -1,5 +1,7 @@
 {
 	"location" : "Red Hand Cave",
+	"lon": 150.615994,
+	"lat": -33.799265999999996,
 	"description" : ["Part of this walk covers the <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park/red-hands-cave-walking-track/walking\">Red Hands Cave walking track</a>."],
 	"duration" : 6,
 	"length" : 22,

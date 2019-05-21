@@ -1,5 +1,7 @@
 {
 	"location" : "Sphynx Memorial",
+	"lon": 151.155941,
+	"lat": -33.688495999999994,
 	"description" : ["This walk covers part of Ku-ring-gai Chase National Park near the <a href=\"http://www.nationalparks.nsw.gov.au/ku-ring-gai-chase-national-park/kalkari-discovery-centre/tourist-information\">Kalkari Discovery Centre</a>."],
 	"duration" : 7,
 	"length" : 25,

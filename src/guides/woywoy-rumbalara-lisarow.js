@@ -1,5 +1,7 @@
 {
 	"location" : "Rumbalara",
+	"lon": 151.3387027777778,
+	"lat": -33.42977777777777,
 	"description" : ["Part of this walk covers <a href=\"http://www.gosford.nsw.gov.au/recreation/natural_areas/bushland_reserves/rumbalara\">Rumbalara Reserve</a>."],
 	"duration" : 7,
 	"length" : 25,

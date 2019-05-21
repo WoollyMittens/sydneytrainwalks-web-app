@@ -1,5 +1,7 @@
 {
 	"location" : "Garigal",
+	"lon": 151.23243888888888,
+	"lat": -33.77780555555555,
 	"description" : ["This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/garigal-national-park\">Garigal National Park</a>."],
 	"duration" : 6,
 	"length" : 25,

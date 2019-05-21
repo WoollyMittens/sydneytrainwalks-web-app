@@ -1,5 +1,7 @@
 {
 	"location" : "Awabakal",
+	"lon": 151.729788,
+	"lat": -32.997962,
 	"description" : [
 		"The <a href=\"http://www.railtrails.org.au/trail?view=trail&id=80\">Fernleigh track</a> is an old railway line from Newcastle to Lake Macquarie that has been turned into a bike path. The platforms of the stations are still visible along the way and food and drinks conveniently available nearby every stop.",
 		"<a href=\"http://www.environment.nsw.gov.au/NationalParks/parkHome.aspx?id=N0522\">Awabakal</a> is a nature reserve in the middle of suburban Newcastle. Despite the encroachment of the surrounding suburbs, the coastal heath and lagoon are in breathtaking condition."

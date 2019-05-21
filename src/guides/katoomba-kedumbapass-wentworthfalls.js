@@ -1,5 +1,7 @@
 {
 	"location" : "Kedumba Pass",
+	"lon": 150.37420277777778,
+	"lat": -33.77803888888889,
 	"description" : ["This walk descends at the <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park/leura-cascades-fern-bower-circuit/walking\">Leura Fern Bower</a>, crosses <a href=\"http://en.wikipedia.org/wiki/Jamison_Valley\">Jamison Valley</a> and ascends at the Kedumba pass at the other side."],
 	"duration" : 8,
 	"length" : 25,

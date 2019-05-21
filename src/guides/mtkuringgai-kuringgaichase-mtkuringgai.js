@@ -1,5 +1,7 @@
 {
 	"location" : "Ku-ring-gai Chase",
+	"lon": 151.15443055555556,
+	"lat": -33.623469444444446,
 	"description" : [
 		"This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/ku-ring-gai-chase-national-park\">Ku-ring-gai Chase National Park</a>.",
 		"This walk also follows a section of the Great North Walk in <a href=\"http://www.nationalparks.nsw.gov.au/berowra-valley-national-park/great-north-walk/walking\">Berowra Valley National Park</a>."

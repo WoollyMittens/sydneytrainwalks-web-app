@@ -1,5 +1,7 @@
 {
 	"location" : "Royal National Park",
+	"lon": 151.08374700000002,
+	"lat": -34.093643,
 	"description" : ["This walk follows the coastal walk through the <a href=\"http://www.nationalparks.nsw.gov.au/royal-national-park\">Royal National Park</a>."],
 	"duration" : 8,
 	"length" : 28,

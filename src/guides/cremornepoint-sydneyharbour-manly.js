@@ -1,5 +1,7 @@
 {
 	"location" : "Sydney Harbour",
+	"lon": 151.250036,
+	"lat": -33.81630099983873,
 	"description" : [
 		"The first part of this walk follows the <a href=\"http://www.northsydney.nsw.gov.au/Recreation_Facilities/Parks_Reserves/Search_Parks/Cremorne_Reserve\">Cremorne Reserve Foreshore Walk</a> to Mosman.",
 		"It then continues onto the <a href=\"http://www.nationalparks.nsw.gov.au/things-to-do/Walking-tracks/Bradleys-Head-to-Chowder-Bay-walk\">Bradleys Head to Chowder Bay Walk</a>.",

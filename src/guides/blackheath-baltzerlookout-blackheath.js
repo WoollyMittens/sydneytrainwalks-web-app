@@ -1,5 +1,7 @@
 {
 	"location" : "Burramoko Ridge",
+	"lon": 150.32497222222221,
+	"lat": -33.610327777777776,
 	"description" : ["This walk strings together <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park/burramoko-ridge-cycle-trail/cycling\">Baltzer Lookout, Hanging Rock</a>, Hat Hill, <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park/pulpit-rock-lookout/lookout\">Pulpit Rock</a>, and <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park/govetts-leap-lookout/lookout\">Govetts Leap</a>."],
 	"duration" : 7,
 	"length" : 26,

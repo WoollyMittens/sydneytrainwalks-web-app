@@ -1,5 +1,7 @@
 {
 	"location" : "Lake Macquarie",
+	"lon": 151.71613053000436,
+	"lat": -33.01342625,
 	"description" : [
 		"This walk follow the <a href=\"http://www.visitlakemac.com.au/what-to-see-and-do/adventure/cyclepaths\">Warners Bay Foreshore Shared Pathway</a> along the shore of Lake Macquarie.",
 		"Along the way this walk passes through <a href=\"http://www.visitlakemac.com.au/valentine/green-point-reserve\">Green Point Reserve</a>.",

@@ -1,5 +1,7 @@
 {
 	"location" : "Fingal Bay",
+	"lon": 152.18703715002374,
+	"lat": -32.71667154,
 	"description" : [
 		"This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/tomaree-national-park\">Tomaree National Park</a>.",
 		"Be mindful that the bus back to Newcastle leaves very infrequently. Make sure you don't get stranded in Nelson Bay without transport.",

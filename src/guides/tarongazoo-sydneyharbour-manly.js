@@ -1,5 +1,7 @@
 {
 	"location" : "Sydney Harbour",
+	"lon": 151.246499,
+	"lat": -33.801305,
 	"description" : [
 		"The first part of this walk follows the <a href=\"http://www.nationalparks.nsw.gov.au/things-to-do/Walking-tracks/Bradleys-Head-to-Chowder-Bay-walk\">Bradleys Head to Chowder Bay Walk</a>.",
 		"The second part follows the <a href=\"https://www.sydneycoastwalks.com.au/spit-to-manly-walk/\">Spit to Manly Walk</a>."
