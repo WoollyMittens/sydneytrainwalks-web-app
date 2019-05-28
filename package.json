@@ -23,6 +23,7 @@
     "xmldom": ""
   },
   "dependencies": {
-    "shelljs": "^0.8.1"
+    "canvas": "",
+    "shelljs": ""
   }
 }

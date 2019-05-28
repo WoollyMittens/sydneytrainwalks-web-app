@@ -1,8 +1,8 @@
 // constants
 var gm = require('gm');
 var fs = require('fs');
-var source = './src/tiles';
-var destination = './inc/tiles';
+var source = '../src/tiles';
+var destination = '../inc/tiles';
 var queue = [];
 
 // generates a resize queue

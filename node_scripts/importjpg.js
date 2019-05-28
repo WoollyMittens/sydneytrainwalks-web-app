@@ -1,10 +1,10 @@
 // constants
 var gm = require('gm');
 var fs = require('fs');
-var large = './src/large/';
-var medium = './inc/medium/';
-var small = './inc/small/';
-var gpx = './inc/gpx/';
+var large = '../src/large/';
+var medium = '../inc/medium/';
+var small = '../inc/small/';
+var gpx = '../inc/gpx/';
 
 // generates a resize queue
 var generateQueue = function() {

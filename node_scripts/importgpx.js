@@ -1,10 +1,10 @@
 // constants
 var fs = require('fs');
-var tg = require('./src/lib/togeojson.js');
+var tg = require('../src/lib/togeojson.js');
 var jd = require('jsdom');
-var source = './inc/gpx/';
-var destPath = './inc/js/gpx-data.js';
-var jsonPath = './inc/json/routes.json';
+var source = '../inc/gpx/';
+var destPath = '../inc/js/gpx-data.js';
+var jsonPath = '../inc/json/routes.json';
 var geojsons = {};
 
 const { JSDOM } = jd;
