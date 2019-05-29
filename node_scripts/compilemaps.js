@@ -2,6 +2,8 @@ const fs = require('fs');
 const {Image, createCanvas} = require('canvas');
 //const request = require('request');
 const sourcePath = '../src/guides_redux/';
+const tileTemplate = 'https://b.tile.openstreetmap.org/{z}/{x}/{y}.png';
+const mapZoom = 15;
 const gridSize = 256;
 var canvas, ctx;
 
@@ -37,14 +39,27 @@ var parseGuides = function(queue) {
     // process the item in the queue
     new fs.readFile(sourcePath + name, function(error, data) {
       if (error) throw error;
+      // convert the bounds to tiles
+      var guideData = JSON.parse(data.toString());
+      minX = long2tile(guideData.bounds.west, 15);
+      minY = lat2tile(guideData.bounds.north, 15);
+      maxX = long2tile(guideData.bounds.east, 15);
+      maxY = lat2tile(guideData.bounds.south, 15);
       // TODO: the canvas needs to be based on the bounds in the guide
-      canvas = createCanvas(256, 512);
+      canvas = createCanvas((maxX - minX) * 256, (maxY - minY) * 256);
       ctx = canvas.getContext('2d');
       // TODO: create a list if tiles within the map bounds
-      downloadTiles([
-        { url:'https://b.tile.openstreetmap.org/17/120563/78560.png', x:0, y:0 },
-        { url:'https://b.tile.openstreetmap.org/17/120563/78561.png', x:0, y:1 },
-      ], name.split('.')[0], function() {
+      tilesList = [];
+      for (let x = minX; x <= maxX; x += 1) {
+        for (let y = minY; y <= maxY; y += 1) {
+          tilesList.push({
+            url: tileTemplate.replace('{x}', x).replace('{y}', y).replace('{z}', mapZoom),
+            x: x - minX,
+            y: y - minY
+          });
+        }
+      }
+      downloadTiles(tilesList, name.split('.')[0], function() {
         // remove the guide from the queue
         queue.length = queue.length - 1;
         // next iteration in the queue

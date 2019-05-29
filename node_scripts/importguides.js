@@ -7,6 +7,12 @@ var destPath = '../inc/js/guide-data.js';
 var jsonPath = '../inc/json/guides.json';
 var GuideData = {};
 
+// Slippy map tilenames - https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#ECMAScript_.28JavaScript.2FActionScript.2C_etc..29
+var long2tile = function long2tile(lon,zoom) { return (Math.floor((lon+180)/360*Math.pow(2,zoom))); }
+var lat2tile = function lat2tile(lat,zoom)  { return (Math.floor((1-Math.log(Math.tan(lat*Math.PI/180) + 1/Math.cos(lat*Math.PI/180))/Math.PI)/2 *Math.pow(2,zoom))); }
+var tile2long = function tile2long(x,z) { return (x/Math.pow(2,z)*360-180); }
+var tile2lat = function tile2lat(y,z) { var n=Math.PI-2*Math.PI*y/Math.pow(2,z); return (180/Math.PI*Math.atan(0.5*(Math.exp(n)-Math.exp(-n)))); }
+
 // flatten geojson segments
 var flattenCoordinates = function(route) {
 	var features = route.features;
@@ -32,6 +38,7 @@ var generateQueue = function () {
 		}
 	}
 	// return the queue
+	queue.length = 1;
 	return queue.reverse();
 };
 
@@ -73,6 +80,25 @@ var parseGuides = function (queue) {
 						markerData.lat = exifData[alias][markerData.photo].lat
 					}
 				}
+				// determine map bounds
+				var north = -999, west = 999, south = 999, east = -999;
+				for (var a = 0, b = routeData.length; a < b; a += 1) {
+					// get min and max from flattened gps
+					north = Math.max(routeData[a][1], north);
+					west = Math.min(routeData[a][0], west);
+					south = Math.min(routeData[a][1], south);
+					east = Math.max(routeData[a][0], east);
+				}
+				// convert the bounds to tiles
+				north = tile2lat(lat2tile(north, 15) - 1, 15);
+				west = tile2long(long2tile(west, 15) - 1, 15);
+				south = tile2lat(lat2tile(south, 15) + 2, 15);
+				east = tile2long(long2tile(east, 15) + 2, 15);
+				// reconvert to align the bounds to the tile grid
+				GuideData[key].bounds.north = tile2lat(lat2tile(north, 15), 15);
+				GuideData[key].bounds.west = tile2long(long2tile(west, 15), 15);
+				GuideData[key].bounds.south = tile2lat(lat2tile(south, 15), 15);
+				GuideData[key].bounds.east = tile2long(long2tile(east, 15), 15);
 				// save the converted guide
 				fs.writeFile(source + item, JSON.stringify(GuideData[key]), function (error) {
 					// remove the item from the queue
