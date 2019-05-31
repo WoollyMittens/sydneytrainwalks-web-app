@@ -15825,58 +15825,46 @@ useful.Photomap.prototype.Indicator = function (parent) {
 	this.parent = parent;
 	this.config = parent.config;
 	// this methods
-	this.add = function () {
-		var icon, map = this.config.map, indicator = this.config.indicator;
+	this.add = function (lat, lon) {
+		var icon;
+		var map = this.config.map;
+		var indicator = this.config.indicator;
 		// if the indicator has coordinates
-		if (indicator.lon && indicator.lat) {
+		if (lon && lat) {
+			// store the coordinates
+			this.lon = lon;
+			this.lat = lat;
 			// remove any previous indicator
-			if (indicator.object) {
-				map.object.removeLayer(indicator.object);
+			if (this.object) {
+				map.object.removeLayer(this.object);
 			}
 			// create the icon
 			icon = L.icon({
-				iconUrl: indicator.icon,
+				iconUrl: this.config.indicator,
 				iconSize: [28, 28],
 				iconAnchor: [14, 28]
 			});
 			// report the location for reference
-			console.log('location:', indicator);
+			console.log('location:', lat, lon);
 			// add the marker with the icon
-			indicator.object = L.marker(
-				[indicator.lat, indicator.lon],
+			this.object = L.marker(
+				[this.lat, this.lon],
 				{'icon': icon}
 			);
-			indicator.object.addTo(map.object);
-			// if there is a description
-			if (indicator.description) {
-				// add the popup to the marker
-				indicator.popup = indicator.object.bindPopup(indicator.description);
-				// add the click handler
-				indicator.object.on('click', this.onIndicatorClicked(indicator));
-			}
+			this.object.addTo(map.object);
 			// focus the map on the indicator
 			this.focus();
 		}
 	};
 
-	this.onIndicatorClicked = function (indicator) {
-		var _this = this;
-		return function (evt) {
-			// trigger the click event
-			if (indicator.clicked) { indicator.clicked(evt, indicator); }
-			// or show the indicator message in a balloon
-			else if (indicator.object) { indicator.object.openPopup(); }
-		};
-	};
-
 	this.remove = function () {
-		var map = this.config.map, indicator = this.config.indicator;
+		var map = this.config.map;
 		// remove the indicator
-		if (indicator.object) {
+		if (this.object) {
 			// remove the balloon
-			indicator.object.closePopup();
-			map.object.removeLayer(indicator.object);
-			indicator.object = null;
+			this.object.closePopup();
+			map.object.removeLayer(this.object);
+			this.object = null;
 		}
 		// unfocus the indicator
 		this.unfocus();
@@ -15884,14 +15872,14 @@ useful.Photomap.prototype.Indicator = function (parent) {
 
 	this.focus = function () {
 		// focus the map on the indicator
-		this.config.map.object.setView([this.config.indicator.lat, this.config.indicator.lon], this.config.zoom + 2);
+		this.config.map.object.setView([this.lat, this.lon], this.config.zoom + 2);
 		// call for a  redraw
 		this.parent.redraw();
 	};
 
 	this.unfocus = function () {
 		// focus the map on the indicator
-		this.config.map.object.setView([this.config.indicator.lat, this.config.indicator.lon], this.config.zoom);
+		this.config.map.object.setView([this.lat, this.lon], this.config.zoom);
 		// call for a  redraw
 		this.parent.redraw();
 	};
@@ -16069,9 +16057,7 @@ useful.Photomap.prototype.Main = function (config, context) {
 			url = element.getAttribute('data-url') || element.getAttribute('src') || element.getAttribute('href'),
 			title = element.getAttribute('data-title') || element.getAttribute('title');
 		this.exif.load(url, function (coords) {
-			config.indicator.lat = coords.lat;
-			config.indicator.lon = coords.lon;
-			_this.indicator.add();
+			_this.indicator.add(coords.lat, coords.lon);
 		});
 	};
 
@@ -16292,23 +16278,13 @@ useful.Photomap.prototype.Markers = function (parent) {
 		// get the track points from the GPX file
 		var points = this.parent.gpx.coordinates();
 		// for all markers
-		for (name in this.config.markers) {
-			if (this.config.markers.hasOwnProperty(name)) {
-				marker = this.config.markers[name];
-				// special markers
-				switch (name) {
-					case 'start' :
-						marker.lon = marker.lon || points[0][0];
-						marker.lat = marker.lat || points[0][1];
-						break;
-					case 'end' :
-						marker.lon = marker.lon || points[points.length - 1][0];
-						marker.lat = marker.lat || points[points.length - 1][1];
-						break;
-				}
+		var _this = this;
+		this.config.markers.map(function (marker, index) {
+			// disregard the waypoints with photos
+			if (!marker.photo) {
 				// create the icon
 				icon = L.icon({
-					iconUrl: marker.icon,
+					iconUrl: _this.config.marker.replace('{type}', marker.type),
 					iconSize: [28, 28],
 					iconAnchor: [14, 28]
 				});
@@ -16317,16 +16293,16 @@ useful.Photomap.prototype.Markers = function (parent) {
 					[marker.lat, marker.lon],
 					{'icon': icon}
 				);
-				marker.object.addTo(this.config.map.object);
+				marker.object.addTo(_this.config.map.object);
 				// if there is a desciption
 				if (marker.description) {
 					// add the popup to the marker
 					marker.popup = marker.object.bindPopup(marker.description);
 					// add the click handler
-					marker.object.on('click', this.onMarkerClicked(marker));
+					marker.object.on('click', _this.onMarkerClicked(marker));
 				}
 			}
-		}
+		});
 	};
 
 	this.onMarkerClicked = function (marker) {
@@ -17600,28 +17576,30 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 
 	this.updateTitle = function(id) {
 		// fill in the title template
+		var markers = GuideData[id].markers;
 		this.config.title.innerHTML = this.config.titleTemplate.innerHTML
-			.replace(/{startTransport}/g, GuideData[id].markers.start.type)
-			.replace(/{startLocation}/g, GuideData[id].markers.start.location)
+			.replace(/{startTransport}/g, markers[0].type)
+			.replace(/{startLocation}/g, markers[0].location)
 			.replace(/{walkLocation}/g, GuideData[id].location)
 			.replace(/{walkDuration}/g, GuideData[id].duration)
 			.replace(/{walkLength}/g, GuideData[id].length)
-			.replace(/{endTransport}/g, GuideData[id].markers.end.type)
-			.replace(/{endLocation}/g, GuideData[id].markers.end.location);
+			.replace(/{endTransport}/g, markers[markers.length - 1].type)
+			.replace(/{endLocation}/g, markers[markers.length - 1].location);
 		// add the onclick handler
 		this.config.title.onclick = function(evt) { document.location.replace('./'); };
 	};
 
 	this.updateGuide = function(id) {
 		// gather the information
-		var _this = this,
-			description = '<p>' + GuideData[id].description.join('</p><p>') + '</p>',
-			duration = GuideData[id].duration,
-			length = GuideData[id].length,
-			gpx = this.config.gpx.replace(/{id}/g, id),
-			there = '<p>' + GuideData[id].markers.start.description + '</p>',
-			back = '<p>' + GuideData[id].markers.end.description + '</p>',
-			landmarks = this.updateLandmarks(id);
+		var _this = this;
+		var description = '<p>' + GuideData[id].description.join('</p><p>') + '</p>';
+		var duration = GuideData[id].duration;
+		var length = GuideData[id].length;
+		var gpx = this.config.gpx.replace(/{id}/g, id);
+		var markers = GuideData[id].markers;
+		var there = '<p>' + markers[0].description + '</p>';
+		var back = '<p>' + markers[markers.length - 1].description + '</p>';
+		var landmarks = this.updateLandmarks(id);
 		// fill the guide with information
 		this.config.guide.innerHTML = this.config.guideTemplate.innerHTML
 			.replace(/{description}/g, description)
@@ -17662,28 +17640,25 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 
 	this.updateLandmarks = function(id) {
 		// gather the information
-		var prefix = (GuideData[id].assets)
-			? GuideData[id].assets.prefix
-			: id;
-		var landmark, optional;
-		var landmarks = (!GuideData[id].landmarks)
-				? "<p>Detailed guides like <a href=\"http://www.sydneytrainwalks.com/details.php?id=adamstown-awabakal-newcastle\">this</a> will be rolled out in increments as they are completed.</p>"
-				: "";
+		var prefix = (GuideData[id].assets) ? GuideData[id].assets.prefix : id;
+		var landmark, landmarks = "";
 		var thumbnailTemplate = this.config.thumbnailTemplate.innerHTML;
 		// fill the guide with landmarks
-		for (var name in GuideData[id].landmarks) {
-			// add the optional colour if needed
-			optional = GuideData[id].landmarks[name].split(':')[0].toLowerCase();
-			// get the description
-			landmark = thumbnailTemplate
-				.replace(/{id}/g, prefix)
-				.replace(/{src}/g, name.toLowerCase() + '.jpg')
-				.replace(/{description}/g, GuideData[id].landmarks[name]);
-			// add extra markup for optional landmarks
-			landmarks += (/optional: |detour: | attention:/gi.test(landmark))
-				? '<div class="guide-' + optional + '">' + landmark.replace(/optional: |detour:| attention:/gi, '') + '</div>'
-				: landmark;
-		}
+		GuideData[id].markers.map(function (marker) {
+			// it is a landmark if it has a photo
+			if (marker.photo) {
+				// get the description
+				landmark = thumbnailTemplate
+					.replace(/{id}/g, prefix)
+					.replace(/{src}/g, marker.photo.toLowerCase())
+					.replace(/{description}/g, marker.description);
+				// add extra markup for optional landmarks
+				if (marker.optional) { landmarks += '<div class="guide-optional">' + landmark + '</div>'; }
+				else if (marker.detour) { landmarks += '<div class="guide-detour">' + landmark + '</div>'; }
+				else if (marker.attention) { landmarks += '<div class="guide-attention">' + landmark + '</div>'; }
+				else { landmarks += landmark; }
+			}
+		});
 		// return the landmarks
 		return landmarks;
 	};
@@ -17715,7 +17690,8 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			'minZoom': 10,
 			'maxZoom': 15,
 			'markers': GuideData[id].markers,
-			'indicator': GuideData[id].indicator,
+			'marker': './inc/img/marker-{type}.png',
+			'indicator': './inc/img/marker-photo.png',
 			'credit': this.config.creditTemplate.innerHTML
 		});
 	};
@@ -17956,7 +17932,7 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 	};
 
 	this.update = function() {
-		var id,
+		var id, markers,
 			menuTemplate = this.config.menuTemplate.innerHTML,
 			titleTemplate = this.config.titleTemplate.innerHTML,
 			menuHtml = '',
@@ -17969,8 +17945,18 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 			id = sorted[a];
 			// if the id occurs in the search results
 			if (searched.indexOf(id) > -1) {
-				titleHtml = titleTemplate.replace(/{startTransport}/g, GuideData[id].markers.start.type).replace(/{startLocation}/g, GuideData[id].markers.start.location).replace(/{walkLocation}/g, GuideData[id].location).replace(/{walkDuration}/g, GuideData[id].duration).replace(/{walkLength}/g, GuideData[id].length).replace(/{endTransport}/g, GuideData[id].markers.end.type).replace(/{endLocation}/g, GuideData[id].markers.end.location);
-				menuHtml += menuTemplate.replace(/{id}/g, id).replace(/{title}/g, titleHtml);
+				markers = GuideData[id].markers;
+				titleHtml = titleTemplate
+					.replace(/{startTransport}/g, markers[0].type)
+					.replace(/{startLocation}/g, markers[0].location)
+					.replace(/{walkLocation}/g, GuideData[id].location)
+					.replace(/{walkDuration}/g, GuideData[id].duration)
+					.replace(/{walkLength}/g, GuideData[id].length)
+					.replace(/{endTransport}/g, markers[markers.length - 1].type)
+					.replace(/{endLocation}/g, markers[markers.length - 1].location);
+				menuHtml += menuTemplate
+					.replace(/{id}/g, id)
+					.replace(/{title}/g, titleHtml);
 			}
 		}
 		// fill the menu with options
@@ -17987,7 +17973,8 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 		// create an array of guides
 		for (id in guide) {
 			// fetch the locations to search for
-			locations = guide[id].location + ' ' + guide[id].markers.start.location + ' ' + guide[id].markers.end.location;
+			locations = guide[id].location;
+			guide[id].markers.map(function(marker) { if (marker.location) locations += ' ' + marker.location; });
 			// add the guide if it includes the keyword
 			if (search.test(locations)) {
 				searched.push(id);
@@ -18009,8 +17996,8 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 		switch (option) {
 			case 'start':
 				sorted = unsorted.sort(function(a, b) {
-					a = guide[a].markers.start.location;
-					b = guide[b].markers.start.location;
+					a = guide[a].markers[0].location;
+					b = guide[b].markers[0].location;
 					return (a < b)
 						? -1
 						: 1;
@@ -18018,8 +18005,8 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 				break;
 			case 'finish':
 				sorted = unsorted.sort(function(a, b) {
-					a = guide[a].markers.end.location;
-					b = guide[b].markers.end.location;
+					a = guide[a].markers[markers.length - 1].location;
+					b = guide[b].markers[markers.length - 1].location;
 					return (a < b)
 						? -1
 						: 1;

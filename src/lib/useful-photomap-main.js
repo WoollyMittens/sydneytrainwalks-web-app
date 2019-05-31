@@ -78,9 +78,7 @@ useful.Photomap.prototype.Main = function (config, context) {
 			url = element.getAttribute('data-url') || element.getAttribute('src') || element.getAttribute('href'),
 			title = element.getAttribute('data-title') || element.getAttribute('title');
 		this.exif.load(url, function (coords) {
-			config.indicator.lat = coords.lat;
-			config.indicator.lon = coords.lon;
-			_this.indicator.add();
+			_this.indicator.add(coords.lat, coords.lon);
 		});
 	};
 

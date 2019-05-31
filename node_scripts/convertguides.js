@@ -2,9 +2,8 @@
 var fs = require('fs');
 var exifData = require('../inc/json/photos.json');
 var gpsData = require('../inc/json/routes.json');
-var source = '../src/guides/';
-var destPath = '../inc/js/guide-data.js';
-var jsonPath = '../inc/json/guides.json';
+var srcPath = '../src/guides_old/';
+var destPath = '../src/guides/';
 var GuideData = {};
 
 // Slippy map tilenames - https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#ECMAScript_.28JavaScript.2FActionScript.2C_etc..29
@@ -27,9 +26,7 @@ var flattenCoordinates = function(route) {
 var generateQueue = function() {
   // get the file list
   var queue = [],
-    srcPath,
-    dstPath,
-    scripts = fs.readdirSync(source),
+    scripts = fs.readdirSync(srcPath),
     isScript = new RegExp('.js$', 'i');
   // for every script in the folder
   for (var a = 0, b = scripts.length; a < b; a += 1) {
@@ -50,7 +47,7 @@ var parseGuides = function(queue) {
     // pick an item from the queue
     var item = queue[queue.length - 1];
     // process the item in the queue
-    new fs.readFile(source + item, function(error, data) {
+    new fs.readFile(srcPath + item, function(error, data) {
       if (error) {
         console.log('ERROR: ' + error);
       } else {
@@ -74,12 +71,18 @@ var parseGuides = function(queue) {
         // TODO: add the trackpoints
         // GuideData[key].trackpoints = routeData;
         // convert the markers into an array
-        var markerData,
-          markers = [];
+        var markerData, markers = [];
+        // add the start marker
+        markerData = GuideData[key].markers.start;
+        delete(markerData.icon);
+        markers.push(markerData);
+        // add all other markers
         for (var marker in GuideData[key].markers) {
-          markerData = GuideData[key].markers[marker];
-          delete(markerData.icon);
-          markers.push(markerData);
+          if (marker !== 'start' && marker !== 'end') {
+            markerData = GuideData[key].markers[marker];
+            delete(markerData.icon);
+            markers.push(markerData);
+          }
         }
         // convert the landmarks into markers of type "waypoint"
         var landmarkData;
@@ -88,7 +91,6 @@ var parseGuides = function(queue) {
           : key;
         for (var landmark in GuideData[key].landmarks) {
           landmarkData = GuideData[key].landmarks[landmark];
-          console.log(alias, landmark);
           markerData = {
             'type': 'waypoint',
             'photo': landmark + '.jpg',
@@ -104,6 +106,11 @@ var parseGuides = function(queue) {
             markerData.attention = true;
           markers.push(markerData);
         }
+        // add the end marker
+        markerData = GuideData[key].markers.end;
+        delete(markerData.icon);
+        markers.push(markerData);
+        // delete the old landmarks
         delete(GuideData[key].landmarks);
         // clean up the bounds
         GuideData[key].bounds = {
@@ -117,31 +124,14 @@ var parseGuides = function(queue) {
         // overwrite the old markers
         GuideData[key].markers = markers;
         // save the converted guide
-        fs.writeFile('./src/guides_redux/' + key + '.json', JSON.stringify(GuideData[key]), function(error) {
+        fs.writeFile(destPath + key + '.json', JSON.stringify(GuideData[key]), function(error) {
+          if (error) throw(error);
+          console.log('SAVED AS:', './src/guides_redux/' + key + '.json');
           // remove the item from the queue
           queue.length = queue.length - 1;
           // next iteration in the queue
           parseGuides(queue);
         });
-      }
-    });
-  } else {
-    // convert to string
-    var data = JSON.stringify(GuideData);
-    // write the JSON data to disk
-    fs.writeFile(jsonPath, data, function(error) {
-      if (error) {
-        console.log('ERROR: ' + error);
-      } else {
-        console.log('SAVED AS: ' + jsonPath);
-      }
-    });
-    // write the exif data to disk
-    fs.writeFile(destPath, 'var GuideData = ' + data + ';', function(error) {
-      if (error) {
-        console.log('ERROR: ' + error);
-      } else {
-        console.log('SAVED AS: ' + destPath);
       }
     });
   }

@@ -43,28 +43,30 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 
 	this.updateTitle = function(id) {
 		// fill in the title template
+		var markers = GuideData[id].markers;
 		this.config.title.innerHTML = this.config.titleTemplate.innerHTML
-			.replace(/{startTransport}/g, GuideData[id].markers.start.type)
-			.replace(/{startLocation}/g, GuideData[id].markers.start.location)
+			.replace(/{startTransport}/g, markers[0].type)
+			.replace(/{startLocation}/g, markers[0].location)
 			.replace(/{walkLocation}/g, GuideData[id].location)
 			.replace(/{walkDuration}/g, GuideData[id].duration)
 			.replace(/{walkLength}/g, GuideData[id].length)
-			.replace(/{endTransport}/g, GuideData[id].markers.end.type)
-			.replace(/{endLocation}/g, GuideData[id].markers.end.location);
+			.replace(/{endTransport}/g, markers[markers.length - 1].type)
+			.replace(/{endLocation}/g, markers[markers.length - 1].location);
 		// add the onclick handler
 		this.config.title.onclick = function(evt) { document.location.replace('./'); };
 	};
 
 	this.updateGuide = function(id) {
 		// gather the information
-		var _this = this,
-			description = '<p>' + GuideData[id].description.join('</p><p>') + '</p>',
-			duration = GuideData[id].duration,
-			length = GuideData[id].length,
-			gpx = this.config.gpx.replace(/{id}/g, id),
-			there = '<p>' + GuideData[id].markers.start.description + '</p>',
-			back = '<p>' + GuideData[id].markers.end.description + '</p>',
-			landmarks = this.updateLandmarks(id);
+		var _this = this;
+		var description = '<p>' + GuideData[id].description.join('</p><p>') + '</p>';
+		var duration = GuideData[id].duration;
+		var length = GuideData[id].length;
+		var gpx = this.config.gpx.replace(/{id}/g, id);
+		var markers = GuideData[id].markers;
+		var there = '<p>' + markers[0].description + '</p>';
+		var back = '<p>' + markers[markers.length - 1].description + '</p>';
+		var landmarks = this.updateLandmarks(id);
 		// fill the guide with information
 		this.config.guide.innerHTML = this.config.guideTemplate.innerHTML
 			.replace(/{description}/g, description)
@@ -105,28 +107,25 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 
 	this.updateLandmarks = function(id) {
 		// gather the information
-		var prefix = (GuideData[id].assets)
-			? GuideData[id].assets.prefix
-			: id;
-		var landmark, optional;
-		var landmarks = (!GuideData[id].landmarks)
-				? "<p>Detailed guides like <a href=\"http://www.sydneytrainwalks.com/details.php?id=adamstown-awabakal-newcastle\">this</a> will be rolled out in increments as they are completed.</p>"
-				: "";
+		var prefix = (GuideData[id].assets) ? GuideData[id].assets.prefix : id;
+		var landmark, landmarks = "";
 		var thumbnailTemplate = this.config.thumbnailTemplate.innerHTML;
 		// fill the guide with landmarks
-		for (var name in GuideData[id].landmarks) {
-			// add the optional colour if needed
-			optional = GuideData[id].landmarks[name].split(':')[0].toLowerCase();
-			// get the description
-			landmark = thumbnailTemplate
-				.replace(/{id}/g, prefix)
-				.replace(/{src}/g, name.toLowerCase() + '.jpg')
-				.replace(/{description}/g, GuideData[id].landmarks[name]);
-			// add extra markup for optional landmarks
-			landmarks += (/optional: |detour: | attention:/gi.test(landmark))
-				? '<div class="guide-' + optional + '">' + landmark.replace(/optional: |detour:| attention:/gi, '') + '</div>'
-				: landmark;
-		}
+		GuideData[id].markers.map(function (marker) {
+			// it is a landmark if it has a photo
+			if (marker.photo) {
+				// get the description
+				landmark = thumbnailTemplate
+					.replace(/{id}/g, prefix)
+					.replace(/{src}/g, marker.photo.toLowerCase())
+					.replace(/{description}/g, marker.description);
+				// add extra markup for optional landmarks
+				if (marker.optional) { landmarks += '<div class="guide-optional">' + landmark + '</div>'; }
+				else if (marker.detour) { landmarks += '<div class="guide-detour">' + landmark + '</div>'; }
+				else if (marker.attention) { landmarks += '<div class="guide-attention">' + landmark + '</div>'; }
+				else { landmarks += landmark; }
+			}
+		});
 		// return the landmarks
 		return landmarks;
 	};
@@ -158,7 +157,8 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			'minZoom': 10,
 			'maxZoom': 15,
 			'markers': GuideData[id].markers,
-			'indicator': GuideData[id].indicator,
+			'marker': './inc/img/marker-{type}.png',
+			'indicator': './inc/img/marker-photo.png',
 			'credit': this.config.creditTemplate.innerHTML
 		});
 	};

@@ -94,13 +94,16 @@
 
 									echo '<li class="off-stage"><a href="details.php?id='. $name . '">';
 
+									$markers = $value->{'markers'};
+									$firstMarker = $markers[0];
+									$lastMarker = array_values(array_slice($markers, -1))[0];
 									?>
 										<span class="sign from">From</span>
-										<span class="sign start <?php print $value->{'markers'}->{'start'}->{'type'}?>"><?php print $value->{'markers'}->{'start'}->{'location'}?></span>
+										<span class="sign start <?php print $firstMarker->{'type'}?>"><?php print $firstMarker->{'location'}?></span>
 										<span class="sign to">via</span>
 										<span class="sign park"><?php print $value->{'location'}?> <i><?php print $value->{'duration'}?>h / <span><?php print $value->{'length'}?>km</span></i></span>
 										<span class="sign to">to</span>
-										<span class="sign finish <?php print $value->{'markers'}->{'end'}->{'type'}?>"><?php print $value->{'markers'}->{'end'}->{'location'}?></span>
+										<span class="sign finish <?php print $lastMarker->{'type'}?>"><?php print $lastMarker->{'location'}?></span>
 									<?php
 
 									echo '</a></li>';

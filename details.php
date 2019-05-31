@@ -14,8 +14,13 @@
 		$jsonText = $jsonText[0];
 		$json = json_decode($jsonText)->$id;
 
+		// extract the important markers
+		$markers =  $json->{'markers'};
+		$firstMarker = $markers[0];
+		$lastMarker = array_values(array_slice($markers, -1))[0];
+
 		// formal title
-		$title = "From " . $json->{'markers'}->{'start'}->{'location'} . " via " . $json->{'location'} . " to " . $json->{'markers'}->{'end'}->{'location'};
+		$title = "From " . $firstMarker->{'location'} . " via " . $json->{'location'} . " to " . $lastMarker->{'location'};
 		$description = join(' ', $json->{'description'});
 		$description = strip_tags($description);
 
@@ -75,11 +80,11 @@
 				<header class="subtitle">
 					<h2 onclick="document.location.replace('./')">
 						<span class="sign from">From</span>
-						<span class="sign <?php print $json->{'markers'}->{'start'}->{'type'}?>"><?php print $json->{'markers'}->{'start'}->{'location'}?></span>
+						<span class="sign <?php print $firstMarker->{'type'}?>"><?php print $firstMarker->{'location'}?></span>
 						<span class="sign to">via</span>
 						<span class="sign park"><?php print $json->{'location'}?> <i><?php print $json->{'duration'}?>h / <?php print $json->{'length'}?>km</i></span>
 						<span class="sign to">to</span>
-						<span class="sign <?php print $json->{'markers'}->{'end'}->{'type'}?>"><?php print $json->{'markers'}->{'end'}->{'location'}?></span>
+						<span class="sign <?php print $lastMarker->{'type'}?>"><?php print $firstMarker->{'end'}->{'location'}?></span>
 					</h2>
 				</header>
 				<article class="guide guide-closed">
@@ -93,26 +98,29 @@
 						</p>
 						<h3>Getting there and back</h3>
 						<p>
-							<?php print $json->{'markers'}->{'start'}->{'description'}?>
-							<?php print $json->{'markers'}->{'end'}->{'description'}?>
+							<?php print $firstMarker->{'description'}?>
+							<?php print $lastMarker->{'description'}?>
 						</p>
 						<h3>Along the way</h3>
 						<?php
-							if (property_exists($json, 'landmarks')) {
-								foreach ($json->{'landmarks'} as $name => $value) {
-									$isOptional = '/optional: |detour: |attention: /i';
-									if (preg_match($isOptional, $value)) {
-										$highlightClass = explode(':', $value);
-										$value = preg_replace($isOptional, '', $value);
+							foreach ($json->{'markers'} as $marker) {
+								if ($marker->{'photo'}) {
+
+									$highlightClass = '';
+									if ($marker->{'optional'}) { $highlightClass = 'optional'; }
+									if ($marker->{'detour'}) { $highlightClass = 'detour'; }
+									if ($marker->{'attention'}) { $highlightClass = 'attention'; }
+
+									if ($highlightClass != '') {
 										?>
-											<div class="guide-<?php echo strtolower($highlightClass[0]) ?>">
+											<div class="guide-<?php echo $highlightClass ?>">
 												<p class="guide-landmark">
-													<a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg" class="cylinder-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg);" data-desc="<?php echo $value ?>">
-														<img alt="" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg">
+													<a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>" class="cylinder-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>);" data-desc="<?php echo $marker->{'description'} ?>">
+														<img alt="" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>">
 													</a>
 													<span class="guide-text">
-														<?php echo $value ?>
-														<button class="guide-locate" data-url="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg">Show location</button>
+														<?php echo $marker->{'description'} ?>
+														<button class="guide-locate" data-url="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>">Show location</button>
 													</span>
 												</p>
 											</div>
@@ -120,19 +128,17 @@
 									} else {
 										?>
 											<p class="guide-landmark">
-												<a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg" class="cylinder-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg);" data-desc="<?php echo $value ?>">
-													<img alt="" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg">
+												<a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>" class="cylinder-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>);" data-desc="<?php echo $marker->{'description'} ?>">
+													<img alt="" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>">
 												</a>
 												<span class="guide-text">
-													<?php echo $value ?>
-													<button class="guide-locate" data-url="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($name) ?>.jpg">Show location</button>
+													<?php echo $marker->{'description'} ?>
+													<button class="guide-locate" data-url="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>">Show location</button>
 												</span>
 											</p>
 										<?php
 									}
 								}
-							} else {
-								?><p>Detailed guides like <a href="http://errantventure.local/~woolly/Trainwalks/details.php?id=adamstown-awabakal-newcastle">this</a> will be rolled out in increments as they are completed.</p><?php
 							}
 						?>
 						<h3>What to bring</h3>
@@ -235,32 +241,27 @@
 							photo map configuration
 						*/
 
-						var guideSettings = {
-							"location" : "Awabakal",
-							"description" : [""],
-						};
-
-						var photomapSettings = <?php print json_encode($json) ?>;
-
-						//photomapSettings.tiles = '//{s}.tile.osm.org/{z}/{x}/{y}.png';
-						//photomapSettings.tiles = '//{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png';
-						//photomapSettings.tiles = '//{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png';
-						photomapSettings.tiles = '//4umaps.eu/{z}/{x}/{y}.png';
-						photomapSettings.local = './inc/tiles/{z}/{x}/{y}.jpg';
-						photomapSettings.exif = 'imageexif.php?src={src}';
-						photomapSettings.exifData = ExifData['<?php echo $assets?>'];
-						photomapSettings.gpx = '<?php echo $inc . "gpx/" . $id?>.gpx';
-						photomapSettings.gpxData = GpxData['<?php echo $id?>'];
-						photomapSettings.pointer = './inc/img/marker-location.png';
-						photomapSettings.missing = './inc/img/missing.png';
-						photomapSettings.minZoom = 10;
-						photomapSettings.maxZoom = 15;
-						photomapSettings.credit = 'Maps &copy; <a href="https://www.4umaps.eu/mountain-bike-hiking-bicycle-outdoor-topographic-map.htm">4UMaps</a>, Data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> and contributors, CC BY-SA';
-						photomapSettings.indicator = { 'icon' : './inc/img/marker-photo.png', 'description' : 'Photo taken at this location.' };
-						photomapSettings.element = document.querySelector('.photomap-leaflet');
-						photomapSettings.indicator.clicked = function () { document.body.className = document.body.className.replace('screen-map', 'screen-photos'); };
-
-						var photomap = new useful.Photomap().init(photomapSettings);
+						var photomap = new useful.Photomap().init({
+							'element': document.querySelector('.photomap-leaflet'),
+							'pointer': './inc/img/marker-location.png',
+							//'tiles': '//{s}.tile.osm.org/{z}/{x}/{y}.png',
+							//'tiles': '//{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png',
+							//'tiles': '//{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png',
+							'tiles': '//4umaps.eu/{z}/{x}/{y}.png',
+							'local': './inc/tiles/{z}/{x}/{y}.jpg',
+							'missing': './inc/img/missing.png',
+							'gpx': '<?php echo $inc . "gpx/" . $id?>.gpx',
+							'gpxData': GpxData['<?php echo $id?>'],
+							'exif': 'imageexif.php?src={src}',
+							'exifData': ExifData['<?php echo $assets?>'],
+							'zoom': <?php echo $json->{'zoom'}?>,
+							'minZoom': 10,
+							'maxZoom': 15,
+							'markers': <?php print json_encode($json->{'markers'}) ?>,
+							'marker': './inc/img/marker-{type}.png',
+							'indicator': './inc/img/marker-photo.png',
+							'credit': 'Maps &copy; <a href="https://www.4umaps.eu/mountain-bike-hiking-bicycle-outdoor-topographic-map.htm">4UMaps</a>, Data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> and contributors, CC BY-SA'
+						});
 
 					//-->
 					</script>

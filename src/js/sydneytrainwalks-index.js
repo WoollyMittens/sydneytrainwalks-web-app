@@ -52,7 +52,7 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 	};
 
 	this.update = function() {
-		var id,
+		var id, markers,
 			menuTemplate = this.config.menuTemplate.innerHTML,
 			titleTemplate = this.config.titleTemplate.innerHTML,
 			menuHtml = '',
@@ -65,8 +65,18 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 			id = sorted[a];
 			// if the id occurs in the search results
 			if (searched.indexOf(id) > -1) {
-				titleHtml = titleTemplate.replace(/{startTransport}/g, GuideData[id].markers.start.type).replace(/{startLocation}/g, GuideData[id].markers.start.location).replace(/{walkLocation}/g, GuideData[id].location).replace(/{walkDuration}/g, GuideData[id].duration).replace(/{walkLength}/g, GuideData[id].length).replace(/{endTransport}/g, GuideData[id].markers.end.type).replace(/{endLocation}/g, GuideData[id].markers.end.location);
-				menuHtml += menuTemplate.replace(/{id}/g, id).replace(/{title}/g, titleHtml);
+				markers = GuideData[id].markers;
+				titleHtml = titleTemplate
+					.replace(/{startTransport}/g, markers[0].type)
+					.replace(/{startLocation}/g, markers[0].location)
+					.replace(/{walkLocation}/g, GuideData[id].location)
+					.replace(/{walkDuration}/g, GuideData[id].duration)
+					.replace(/{walkLength}/g, GuideData[id].length)
+					.replace(/{endTransport}/g, markers[markers.length - 1].type)
+					.replace(/{endLocation}/g, markers[markers.length - 1].location);
+				menuHtml += menuTemplate
+					.replace(/{id}/g, id)
+					.replace(/{title}/g, titleHtml);
 			}
 		}
 		// fill the menu with options
@@ -83,7 +93,8 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 		// create an array of guides
 		for (id in guide) {
 			// fetch the locations to search for
-			locations = guide[id].location + ' ' + guide[id].markers.start.location + ' ' + guide[id].markers.end.location;
+			locations = guide[id].location;
+			guide[id].markers.map(function(marker) { if (marker.location) locations += ' ' + marker.location; });
 			// add the guide if it includes the keyword
 			if (search.test(locations)) {
 				searched.push(id);
@@ -105,8 +116,8 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 		switch (option) {
 			case 'start':
 				sorted = unsorted.sort(function(a, b) {
-					a = guide[a].markers.start.location;
-					b = guide[b].markers.start.location;
+					a = guide[a].markers[0].location;
+					b = guide[b].markers[0].location;
 					return (a < b)
 						? -1
 						: 1;
@@ -114,8 +125,8 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 				break;
 			case 'finish':
 				sorted = unsorted.sort(function(a, b) {
-					a = guide[a].markers.end.location;
-					b = guide[b].markers.end.location;
+					a = guide[a].markers[markers.length - 1].location;
+					b = guide[b].markers[markers.length - 1].location;
 					return (a < b)
 						? -1
 						: 1;

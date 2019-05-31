@@ -2,7 +2,7 @@
 var fs = require('fs');
 var exifData = require('../inc/json/photos.json');
 var gpsData = require('../inc/json/routes.json');
-var source = '../src/guides_redux/';
+var source = '../src/guides/';
 var destPath = '../inc/js/guide-data.js';
 var jsonPath = '../inc/json/guides.json';
 var GuideData = {};
@@ -38,7 +38,7 @@ var generateQueue = function () {
 		}
 	}
 	// return the queue
-	queue.length = 1;
+	//queue.length = 1;
 	return queue.reverse();
 };
 
