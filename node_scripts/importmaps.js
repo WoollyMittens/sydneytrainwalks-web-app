@@ -1,8 +1,11 @@
 const fs = require('fs');
 const {Image, createCanvas} = require('canvas');
 //const request = require('request');
-const sourcePath = '../src/guides_redux/';
-const tileTemplate = 'https://b.tile.openstreetmap.org/{z}/{x}/{y}.png';
+const sourcePath = '../src/guides/';
+const targetPath = '../inc/maps/';
+//const tileTemplate = 'https://b.tile.openstreetmap.org/{z}/{x}/{y}.png';
+//const tileTemplate = 'https://b.tile.thunderforest.com/cycle/{z}/{x}/{y}.png';
+const tileTemplate = 'https://4umaps.eu/{z}/{x}/{y}.png';
 const mapZoom = 15;
 const gridSize = 256;
 var canvas, ctx;
@@ -83,7 +86,8 @@ var downloadTiles = function(list, name, callback) {
       // else
     } else {
       // save the map
-      canvas.createPNGStream().pipe(fs.createWriteStream(name + '.png')).on('close', callback);
+      canvas.createPNGStream().pipe(fs.createWriteStream(targetPath + name + '.png')).on('close', callback);
+      //canvas.createJPEGStream({quality: 0.75, progressive: false, chromaSubsampling: true}).pipe(fs.createWriteStream(targetPath + name + '.jpg')).on('close', callback);
     }
   });
 };
