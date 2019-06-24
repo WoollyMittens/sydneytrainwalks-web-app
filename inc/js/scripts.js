@@ -1,3 +1,160 @@
+/*
+	Source:
+	van Creij, Maurice (2018). "filters.js: Sorting and filtering a list of options.", http://www.woollymittens.nl/.
+
+	License:
+	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
+*/
+
+// establish the class
+// extend the global object
+var Filters = function (config) {
+
+	// PROPERTIES
+
+	this.element = null;
+	this.promise = null;
+	this.input = null;
+	this.select = null;
+	this.delay = null;
+
+	// METHODS
+
+	this.init = function (config) {
+		// store the configuration
+		this.element = config.element;
+		this.promise = config.promise || function () {};
+		// get the sorter elements
+		this.input = this.element.getElementsByTagName('input')[0];
+		this.select = this.element.getElementsByTagName('select')[0];
+		this.sorters = this.select.getElementsByTagName('option');
+		// add the event listener for the input
+		this.input.addEventListener('blur', this.onSearchChanged());
+		this.input.addEventListener('keyup', this.onSearchChanged());
+		this.input.addEventListener('change', this.onSearchChanged());
+		// add the event listener for the select
+		this.select.addEventListener('change', this.onSorterSelected());
+		// add the event listener for the form
+		this.element.addEventListener('submit', this.onSearchSubmit());
+		// add the reset button to browsers that need it
+		if (!/MSIE/i.test(navigator.userAgent)) { this.input.addEventListener('click', this.onSearchReset()); }
+		else { this.input.style.backgroundImage = 'none'; }
+		// return the object
+		return this;
+	};
+
+	this.redraw = function (index) {
+		// update the drop down
+		this.select.selectedIndex = index;
+	};
+
+	this.searchFor = function (keyword) {
+		var a, b, contents,
+			sortees = document.querySelectorAll( this.element.getAttribute('data-target') ),
+			findTags = new RegExp('<[^>]*>', 'g'),
+			findKeyword = new RegExp(keyword, 'i');
+		// for all elements
+		for (a = 0, b = sortees.length; a < b; a += 1) {
+			// clear the contents of the sortee
+			contents = sortees[a].innerHTML.replace(findTags, ' ');
+			// show or hide the elements based on the keyword
+			sortees[a].style.display = (findKeyword.test(contents)) ? 'block' : 'none';
+		}
+		// trigger the promise
+		this.promise();
+	};
+
+	this.sortBy = function (index) {
+		var a, b, unsorted = [],
+			sorted = [],
+			source = this.sorters[index].getAttribute('data-source'),
+			method = this.sorters[index].getAttribute('data-type'),
+			sortees = document.querySelectorAll( this.element.getAttribute('data-target') ),
+			parent = sortees[0].parentNode,
+			fragment = document.createDocumentFragment();
+		// get the sortee elements
+		for (a = 0, b = sortees.length; a < b; a += 1) { unsorted.push(sortees[a]); }
+		// sort the elements
+		sorted = unsorted.sort(function (a, b) {
+			// get the source value
+			a = a.querySelector(source).innerHTML;
+			b = b.querySelector(source).innerHTML;
+			// process the source value
+			if (method === 'number') {
+				a = parseFloat(a);
+				b = parseFloat(b);
+			}
+			// compare the values
+			return (a < b) ? -1 : 1;
+		});
+		// clone the sorted elements into the document fragment
+		for (a = 0, b = sorted.length; a < b; a += 1) { fragment.appendChild( parent.removeChild(sorted[a], true) ); }
+		parent.appendChild(fragment);
+		// redraw the interface element
+		this.redraw(index);
+		// trigger the promise
+		this.promise();
+	};
+
+	// EVENTS
+
+	this.onSearchSubmit = function () {
+		var _this = this;
+		return function (evt) {
+			// cancel the submit
+			evt.preventDefault();
+			// search manually instead
+			_this.searchFor(_this.input.value.trim());
+			// deselect the field
+			_this.input.blur();
+		};
+	};
+
+	this.onSearchReset = function () {
+		var _this = this;
+		return function (evt) {
+			// if the  right side of the element is clicked
+			if (_this.input.offsetWidth - evt.layerX < 32) {
+				// cancel the click
+				evt.preventDefault();
+				// reset the search
+				_this.input.blur();
+				_this.input.value = '';
+				_this.searchFor('');
+			}
+		};
+	};
+
+	this.onSearchChanged = function () {
+		var _this = this;
+		return function (evt) {
+			// wait for the typing to pause
+			clearTimeout(_this.delay);
+			_this.delay = setTimeout(function () {
+				// perform the search
+				_this.searchFor(_this.input.value.trim());
+			}, 700);
+		};
+	};
+
+	this.onSorterSelected = function () {
+		var _this = this;
+		return function (evt) {
+			// cancel the click
+			evt.preventDefault();
+			// sort the sortees by the selected sorter
+			_this.sortBy(_this.select.selectedIndex);
+		};
+	};
+
+	this.init(config);
+
+};
+
+// return as a require.js module
+if (typeof define != 'undefined') define([], function () { return Filters });
+if (typeof module != 'undefined') module.exports = Filters;
+
 /* @preserve
  * Leaflet 1.2.0+Detached: 1ac320ba232cb85b73ac81f3d82780c9d07f0d4e.1ac320b, a JS library for interactive maps. http://leafletjs.com
  * (c) 2010-2017 Vladimir Agafonkin, (c) 2010-2011 CloudMade
@@ -13608,6 +13765,2122 @@ exports.map = createMap;
 })));
 //# sourceMappingURL=leaflet-src.js.map
 
+/*
+	Source:
+	van Creij, Maurice (2018). "photocylinder.js: Displays a cylindrical projection of a panoramic image.", http://www.woollymittens.nl/.
+
+	License:
+	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
+*/
+
+// establish the class
+var Photocylinder = function (config) {
+
+		this.only = function (config) {
+			// start an instance of the script
+			return new this.Main(config, this).init();
+		};
+
+		this.each = function (config) {
+			var _config, _context = this, instances = [];
+			// for all element
+			for (var a = 0, b = config.elements.length; a < b; a += 1) {
+				// clone the configuration
+				_config = Object.create(config);
+				// insert the current element
+				_config.element = config.elements[a];
+				// start a new instance of the object
+				instances[a] = new this.Main(_config, _context);
+			}
+			// return the instances
+			return instances;
+		};
+
+		return (config.elements) ? this.each(config) : this.only(config);
+
+};
+
+// return as a require.js module
+if (typeof define != 'undefined') define([], function () { return Photocylinder });
+if (typeof module != 'undefined') module.exports = Photocylinder;
+
+// extend the class
+Photocylinder.prototype.Busy = function (container) {
+
+	// PROPERTIES
+
+	this.container = container;
+
+	// METHODS
+
+	this.show = function () {
+		// construct the spinner
+		this.spinner = document.createElement('div');
+		this.spinner.className = (this.container === document.body) ?
+			'photocylinder-busy photocylinder-busy-fixed photocylinder-busy-active':
+			'photocylinder-busy photocylinder-busy-active';
+		this.container.appendChild(this.spinner);
+	};
+
+	this.hide = function () {
+		// deconstruct the spinner
+		if (this.spinner && this.spinner.parentNode) {
+			this.spinner.parentNode.removeChild(this.spinner);
+			this.spinner = null;
+		}
+	};
+
+};
+
+// extend the class
+Photocylinder.prototype.Fallback = function (parent) {
+
+	// PROPERTIES
+
+	this.parent = parent;
+	this.config = parent.config;
+	this.popup = this.config.popup;
+	this.image = this.config.image;
+	this.imageAspect = null;
+	this.wrapper = null;
+	this.wrapperAspect = null;
+	this.fov = null;
+	this.magnification = {};
+	this.horizontal = {};
+	this.vertical = {};
+	this.tracked = null;
+	this.increment = this.config.idle / 200;
+	this.auto = true;
+
+	// METHODS
+
+	this.init = function() {
+		// prepare the markup
+		this.build();
+		// render the display
+		this.render();
+		// add the controls
+		this.controls();
+		// rescale after resize
+		this.resizeListener = this.resize.bind(this);
+		window.addEventListener('resize', this.resizeListener, true);
+
+	};
+
+	this.destroy = function() {
+		// cancel all global event listeners
+		window.removeEventListener('resize', this.resizeListener, true);
+		window.removeEventListener('deviceorientation', this.tiltListener, true);
+	};
+
+	this.build = function() {
+		// add the wrapper
+		this.wrapper = document.createElement('div');
+		this.wrapper.setAttribute('class', 'photo-cylinder pc-fallback');
+		// TODO: for 360deg images the image needs to be doubled to allow looping
+		var clonedImage = this.image.cloneNode(true);
+		// add markup here
+		this.wrapper.appendChild(this.image);
+		// insert the object
+		this.popup.appendChild(this.wrapper);
+	};
+
+	this.render = function() {
+		// get the aspect ratio from the image
+		this.imageAspect = this.image.offsetWidth / this.image.offsetHeight;
+		// calculate the zoom limits
+		this.magnification.min = 1; // TODO: make sure the image fills the width and height
+		this.magnification.max = 4;
+		// set the initial rotation
+		this.recentre();
+		// set the initial zoom
+		this.resize();
+		// if the image is wide enough, start the idle animation
+		if (this.imageAspect - this.wrapperAspect >= 1) this.animate();
+	};
+
+	this.controls = function() {
+		// add touch controls
+		this.wrapper.addEventListener('touchstart', this.touch.bind(this, 'start'));
+		this.wrapper.addEventListener('touchmove', this.touch.bind(this, 'move'));
+		this.wrapper.addEventListener('touchend', this.touch.bind(this, 'end'));
+		// add mouse controls
+		this.wrapper.addEventListener('mousedown', this.touch.bind(this, 'start'));
+		this.wrapper.addEventListener('mousemove', this.touch.bind(this, 'move'));
+		this.wrapper.addEventListener('mouseup', this.touch.bind(this, 'end'));
+		this.wrapper.addEventListener('mousewheel', this.wheel.bind(this));
+	    this.wrapper.addEventListener('DOMMouseScroll', this.wheel.bind(this));
+		// add tilt contols
+		this.tiltListener = this.tilt.bind(this);
+		window.addEventListener("deviceorientation", this.tiltListener, true);
+	};
+
+	this.coords = function(evt) {
+		return {
+			x: evt.screenX || evt.touches[0].screenX,
+			y: evt.screenY || evt.touches[0].screenY,
+			z: (evt.touches && evt.touches.length > 1) ? Math.abs(evt.touches[0].screenX - evt.touches[1].screenX + evt.touches[0].screenY - evt.touches[1].screenY) : 0
+		}
+	};
+
+	this.recentre = function() {
+		// reset the initial position
+		this.magnification.current = this.magnification.min * 1.25;
+		this.horizontal.current = 0.5;
+		this.vertical.current = 0.5;
+	};
+
+	this.magnify = function(factor) {
+		// limit the zoom
+		this.magnification.current = Math.max(Math.min(factor, this.magnification.max), this.magnification.min);
+		// (re)calculate the movement limits
+		this.horizontal.min = Math.min(0.5 - (this.magnification.current -  this.wrapperAspect / this.imageAspect) / 2, 0.5);
+		this.horizontal.max = Math.max(1 - this.horizontal.min, 0.5);
+		this.horizontal.current = Math.max(Math.min(this.horizontal.current, this.horizontal.max), this.horizontal.min);
+		this.vertical.min = Math.min(0.5 - (this.magnification.current - 1) / 2, 0.5);
+		this.vertical.max = Math.max(1 - this.vertical.min, 0.5);
+		this.vertical.current = Math.max(Math.min(this.vertical.current, this.vertical.max), this.vertical.min);
+		// implement the zoom
+		this.redraw();
+	};
+
+	this.move = function(horizontal, vertical) {
+		// implement the movement
+		this.horizontal.current = Math.max(Math.min(horizontal, this.horizontal.max), this.horizontal.min);
+		this.vertical.current = Math.max(Math.min(vertical, this.vertical.max), this.vertical.min);
+		// implement the zoom
+		this.redraw();
+	};
+
+	this.momentum = function() {
+		// on requestAnimationFrame count down the delta vectors to ~0
+		if (this.magnification.delta || this.horizontal.delta || this.vertical.delta) {
+			// reduce the increment
+			this.magnification.delta = (Math.abs(this.magnification.delta) > 0.0001) ? this.magnification.delta / 1.05 : 0;
+			this.horizontal.delta = (Math.abs(this.horizontal.delta) > 0.001) ? this.horizontal.delta / 1.05 : 0;
+			this.vertical.delta = (Math.abs(this.vertical.delta) > 0.001) ? this.vertical.delta / 1.05 : 0;
+			// advance rotation incrementally
+			this.move(this.horizontal.current + this.horizontal.delta, this.vertical.current + this.vertical.delta);
+			this.magnify(this.magnification.current + this.magnification.delta);
+			// wait for the next render
+			window.requestAnimationFrame(this.momentum.bind(this));
+		}
+	};
+
+	this.redraw = function() {
+		// apply all transformations in one go
+		this.image.style.transform = 'translate(' + (this.horizontal.current * -100) + '%, ' + (this.vertical.current * -100) + '%) scale(' + this.magnification.current + ', ' + this.magnification.current + ')';
+	};
+
+	this.animate = function(allow) {
+		// accept overrides
+		if (typeof allow === 'boolean') {
+			this.auto = allow;
+		}
+		// if animation is allowed
+		if (this.auto) {
+			// in 180 degree pictures adjust increment and reverse, otherwise loop forever
+			if (this.horizontal.current + this.increment * 2 > this.horizontal.max) this.increment = -this.config.idle / 200;
+			if (this.horizontal.current + this.increment * 2 < this.horizontal.min) this.increment = this.config.idle / 200;
+			var step = this.horizontal.current + this.increment;
+			// advance rotation incrementally, until interrupted
+			this.move(step, this.vertical.current);
+			window.requestAnimationFrame(this.animate.bind(this));
+		}
+	};
+
+	// EVENTS
+
+	this.tilt = function(evt) {
+		// stop animating
+		this.auto = false;
+		// if there was tilt before and the jump is not extreme
+		if (this.horizontal.tilted && this.vertical.tilted && Math.abs(evt.alpha - this.horizontal.tilted) < 45 && Math.abs(evt.beta - this.vertical.tilted) < 45) {
+			// update the rotation
+			this.move(
+				this.horizontal.current - (evt.alpha - this.horizontal.tilted) / 180,
+				this.vertical.current - (evt.beta - this.vertical.tilted) / 180
+			);
+		}
+		// store the tilt
+		this.horizontal.tilted = evt.alpha;
+		this.vertical.tilted = evt.beta;
+	};
+
+	this.wheel = function(evt) {
+		// cancel the scrolling
+		evt.preventDefault();
+		// stop animating
+		this.auto = false;
+		// reset the deltas
+		this.magnification.delta = 0;
+		// get the feedback
+		var coords = this.coords(evt);
+		var distance = evt.deltaY || evt.wheelDeltaY || evt.wheelDelta;
+		this.magnification.delta = distance / this.wrapper.offsetHeight;
+		this.magnify(this.magnification.current + this.magnification.delta);
+		// continue based on inertia
+		this.momentum();
+	};
+
+	this.touch = function(phase, evt) {
+		// cancel the click
+		evt.preventDefault();
+		// pick the phase of interaction
+		var coords, scale = this.magnification.current / this.magnification.min;
+		switch(phase) {
+			case 'start':
+				// stop animating
+				this.auto = false;
+				// reset the deltas
+				this.magnification.delta = 0;
+				this.horizontal.delta = 0;
+				this.vertical.delta = 0;
+				// start tracking
+				this.tracked = this.coords(evt);
+				break;
+			case 'move':
+				if (this.tracked) {
+					coords = this.coords(evt);
+					// store the momentum
+					this.magnification.delta = (this.tracked.z - coords.z) / this.wrapper.offsetWidth * scale * 2;
+					this.horizontal.delta = (this.tracked.x - coords.x) / this.wrapper.offsetWidth * scale / this.imageAspect;
+					this.vertical.delta = (this.tracked.y - coords.y) / this.wrapper.offsetHeight * scale;
+					// calculate the position
+					this.move(this.horizontal.current + this.horizontal.delta, this.vertical.current + this.vertical.delta);
+					// calculate the zoom
+					this.magnify(this.magnification.current - this.magnification.delta);
+					// update the step
+					this.tracked.x = coords.x;
+					this.tracked.y = coords.y;
+					this.tracked.z = coords.z;
+				}
+				break;
+			case 'end':
+				// stop tracking
+				this.tracked = null;
+				// continue based on inertia
+				this.momentum();
+				break;
+		}
+	};
+
+	this.resize = function() {
+		// update the aspect ratio
+		this.wrapperAspect = this.wrapper.offsetWidth / this.wrapper.offsetHeight;
+		// restore current values
+		var factor = this.magnification.current || 1;
+		var horizontal = this.horizontal.current || 0.5;
+		var vertical = this.vertical.current || 0.5;
+		// reset to zoom
+		this.magnify(factor);
+		// reset the rotation
+		this.move(horizontal, vertical);
+	};
+
+};
+
+// extend the class
+Photocylinder.prototype.Main = function(config, context) {
+
+	// PROPERTIES
+
+	this.context = context;
+	this.element = config.element;
+	this.config = {
+		'container': document.body,
+		'spherical' : /r(\d+).jpg/i,
+		'standalone': false,
+		'slicer': '{src}',
+		'idle': 0.1
+	};
+
+	for (var key in config) {
+		this.config[key] = config[key];
+	}
+
+	// METHODS
+
+	this.success = function(url, fov) {
+		console.log("success", url);
+		var config = this.config;
+		// hide the busy indicator
+		this.busy.hide();
+		// check if the aspect ratio of the image can be determined
+		var image = config.image;
+		var isWideEnough = (image.naturalWidth && image.naturalHeight && image.naturalWidth / image.naturalHeight > 3);
+		// show the popup, or use the container directly
+		if (config.standalone) {
+			config.popup = config.container;
+			config.popup.innerHTML = '';
+		} else {
+			this.popup = new this.context.Popup(this);
+			this.popup.show();
+		}
+		// insert the viewer, but MSIE and low FOV should default to fallback
+		this.stage = (!/msie|trident|edge/i.test(navigator.userAgent) && (this.config.spherical.test(url) || isWideEnough))
+		  ? new this.context.Stage(this)
+		  : new this.context.Fallback(this);
+		this.stage.init();
+		// trigger the success handler
+		if (config.success) {
+			config.success(config.popup);
+		}
+	};
+
+	this.failure = function(url, fov) {
+		var config = this.config;
+		// get rid of the image
+		this.config.image = null;
+		// give up on the popup
+		if (this.popup) {
+			// remove the popup
+			config.popup.parentNode.removeChild(config.popup);
+			// remove its reference
+			this.popup = null;
+		}
+		// give up on the stage
+		if (this.stage) {
+			// remove the stage
+			this.stage.destroy();
+			config.stage.parentNode.removeChild(config.stage);
+			// remove the reference
+			this.stage = null;
+		}
+		// trigger the failure handler
+		if (config.failure) {
+			config.failure(config.popup);
+		}
+		// hide the busy indicator
+		this.busy.hide();
+	};
+
+	this.destroy = function() {
+		// shut down sub components
+		this.stage.destroy();
+	};
+
+	// EVENTS
+
+	this.onElementClicked = function(evt) {
+		// prevent the click
+		if (evt) evt.preventDefault();
+		// show the busy indicator
+		this.busy = new this.context.Busy(this.config.container);
+		this.busy.show();
+		// create the url for the image sizing webservice
+	  var url = this.config.url || this.element.getAttribute('href') || this.element.getAttribute('data-url');
+	  var size = (this.config.spherical.test(url)) ? 'height=1080&top=0.2&bottom=0.8' : 'height=1080';
+		// load the image asset
+		this.config.image = new Image();
+		this.config.image.src = this.config.slicer.replace('{src}', url).replace('{size}', size);
+		// load the viewer when done
+		this.config.image.addEventListener('load', this.success.bind(this, url));
+		this.config.image.addEventListener('error', this.failure.bind(this, url));
+	};
+
+	if (this.config.element) this.config.element.addEventListener('click', this.onElementClicked.bind(this));
+	if (this.config.url) this.onElementClicked();
+
+};
+
+// extend the class
+Photocylinder.prototype.Popup = function(parent) {
+
+	// PROPERTIES
+
+	this.parent = parent;
+	this.config = parent.config;
+
+	// METHODS
+
+	this.show = function() {
+		var config = this.config;
+		// if the popup doesn't exist
+		if (!config.popup) {
+			// create a container for the popup
+			config.popup = document.createElement('figure');
+			config.popup.className = (config.container === document.body)
+				? 'photocylinder-popup photocylinder-popup-fixed photocylinder-popup-passive'
+				: 'photocylinder-popup photocylinder-popup-passive';
+			// add a close gadget
+			this.addCloser();
+			// add a locator gadget
+			this.addLocator();
+			// add the popup to the document
+			config.container.appendChild(config.popup);
+			// reveal the popup when ready
+			setTimeout(this.onShow.bind(this), 0);
+		}
+	};
+
+	this.hide = function() {
+		var config = this.config;
+		// if there is a popup
+		if (config.popup) {
+			// unreveal the popup
+			config.popup.className = config.popup.className.replace(/-active/gi, '-passive');
+			// and after a while
+			var _this = this;
+			setTimeout(function() {
+				// remove it
+				config.container.removeChild(config.popup);
+				// remove its reference
+				config.popup = null;
+				// ask the parent to self destruct
+				_this.parent.destroy();
+			}, 500);
+		}
+	};
+
+	this.addCloser = function() {
+		var config = this.config;
+		// build a close gadget
+		var closer = document.createElement('a');
+		closer.className = 'photocylinder-closer';
+		closer.innerHTML = 'x';
+		closer.href = '#close';
+		// add the close event handler
+		closer.addEventListener('click', this.onHide.bind(this));
+		closer.addEventListener('touchstart', this.onHide.bind(this));
+		// add the close gadget to the image
+		config.popup.appendChild(closer);
+	};
+
+	this.addLocator = function(url) {
+		var config = this.config;
+		// only add if a handler was specified
+		if (config.located) {
+			// build the geo marker icon
+			var locator = document.createElement('a');
+			locator.className = 'photocylinder-locator';
+			locator.innerHTML = 'Show on a map';
+			locator.href = '#map';
+			// add the event handler
+			locator.addEventListener('click', this.onLocate.bind(this));
+			locator.addEventListener('touchstart', this.onLocate.bind(this));
+			// add the location marker to the image
+			config.popup.appendChild(locator);
+		}
+	};
+
+	// EVENTS
+
+	this.onShow = function() {
+		var config = this.config;
+		// show the popup
+		config.popup.className = config.popup.className.replace(/-passive/gi, '-active');
+		// trigger the closed event if available
+		if (config.opened) {
+			config.opened(config.element);
+		}
+	};
+
+	this.onHide = function(evt) {
+		var config = this.config;
+		// cancel the click
+		evt.preventDefault();
+		// close the popup
+		this.hide();
+		// trigger the closed event if available
+		if (config.closed) {
+			config.closed(config.element);
+		}
+	};
+
+	this.onLocate = function(evt) {
+		var config = this.config;
+		// cancel the click
+		evt.preventDefault();
+		// trigger the located event if available
+		if (config.located) {
+			config.located(config.element);
+		}
+	};
+
+};
+
+// extend the class
+Photocylinder.prototype.Stage = function (parent) {
+
+	// PROPERTIES
+
+	this.parent = parent;
+  this.config = parent.config;
+	this.popup = this.config.popup;
+	this.image = this.config.image;
+	this.imageAspect = null;
+	this.wrapper = null;
+	this.wrapperAspect = null;
+	this.baseAngle = 60;
+	this.baseSize = 500;
+	this.obj = null;
+	this.objRow = null;
+	this.objCols = [];
+	this.fov = null;
+	this.magnification = {};
+	this.rotation = {};
+	this.offset = {};
+	this.tracked = null;
+	this.increment = this.config.idle;
+	this.auto = true;
+
+	// METHODS
+
+	this.init = function() {
+		// prepare the markup
+		this.build();
+		// render the display
+		this.render();
+		// add the controls
+		this.controls();
+		// rescale after resize
+		this.resizeListener = this.resize.bind(this);
+		window.addEventListener('resize', this.resizeListener, true);
+	};
+
+	this.destroy = function() {
+		// cancel all global event listeners
+		window.removeEventListener('resize', this.resizeListener, true);
+		window.removeEventListener('deviceorientation', this.tiltListener, true);
+	};
+
+	this.build = function() {
+		// add the wrapper
+		this.wrapper = document.createElement('div');
+		this.wrapper.setAttribute('class', 'photo-cylinder');
+		// add the row object
+		this.objRow = document.createElement('div');
+		this.objRow.setAttribute('class', 'pc-obj-row');
+		this.wrapper.appendChild(this.objRow);
+		// add the column oblects
+		for (var a = 0, b = 8; a < b; a += 1) {
+			this.objCols[a] = document.createElement('span');
+			this.objCols[a].setAttribute('class', 'pc-obj-col pc-obj-col-' + a);
+			this.objRow.appendChild(this.objCols[a]);
+		}
+		// add the image
+		this.wrapper.appendChild(this.image);
+		// insert the object
+		this.popup.appendChild(this.wrapper);
+		// remember the object
+		this.config.stage = this.wrapper;
+	};
+
+	this.render = function() {
+		// retrieve the field of view from the image source
+		var url = this.image.getAttribute('src');
+		this.fov = this.config.spherical.test(url) ? 360 : 180;
+		// get the aspect ratio from the image
+		this.imageAspect = this.image.offsetWidth / this.image.offsetHeight;
+		// get the field of view property or guess one
+		this.wrapper.className += (this.fov < 360) ? ' pc-180' : ' pc-360';
+		// calculate the zoom limits - scale = aspect * (360 / fov) * 0.3
+		this.magnification.min = Math.max(this.imageAspect * (360 / this.fov) * 0.3, 1);
+		this.magnification.max = 4;
+		this.magnification.current = this.magnification.min * 1.25;
+		// the offset limits are 0 at zoom level 1 be definition, because there is no overscan
+		this.offset.min = 0;
+		this.offset.max = 0;
+		// set the image source as the background image for the polygons
+		for (var a = 0, b = this.objCols.length; a < b; a += 1) {
+			this.objCols[a].style.backgroundImage = "url('" + url + "')";
+		}
+		// set the initial zoom
+		this.resize();
+		// set the initial rotation
+		this.recentre();
+		// start the idle animation
+		this.animate();
+	};
+
+	this.controls = function() {
+		// add touch controls
+		this.wrapper.addEventListener('touchstart', this.touch.bind(this, 'start'));
+		this.wrapper.addEventListener('touchmove', this.touch.bind(this, 'move'));
+		this.wrapper.addEventListener('touchend', this.touch.bind(this, 'end'));
+		// add mouse controls
+		this.wrapper.addEventListener('mousedown', this.touch.bind(this, 'start'));
+		this.wrapper.addEventListener('mousemove', this.touch.bind(this, 'move'));
+		this.wrapper.addEventListener('mouseup', this.touch.bind(this, 'end'));
+		this.wrapper.addEventListener('mousewheel', this.wheel.bind(this));
+		this.wrapper.addEventListener('DOMMouseScroll', this.wheel.bind(this));
+		// add tilt contols
+		this.tiltListener = this.tilt.bind(this);
+		window.addEventListener("deviceorientation", this.tiltListener, true);
+	};
+
+	this.coords = function(evt) {
+		return {
+			x: evt.screenX || evt.touches[0].screenX,
+			y: evt.screenY || evt.touches[0].screenY,
+			z: (evt.touches && evt.touches.length > 1) ? Math.abs(evt.touches[0].screenX - evt.touches[1].screenX + evt.touches[0].screenY - evt.touches[1].screenY) : 0
+		}
+	};
+
+	this.recentre = function() {
+		// reset the initial rotation
+		this.rotate(this.fov/2);
+	};
+
+	this.magnify = function(factor, offset) {
+		// limit the zoom
+		this.magnification.current = Math.max(Math.min(factor, this.magnification.max), this.magnification.min);
+		// calculate the view angle
+		this.baseAngle = 60 * this.wrapperAspect * (this.magnification.min / this.magnification.current);
+		// centre the zoom
+		this.offset.max = (this.magnification.current - this.magnification.min) / 8;
+		this.offset.min = -1 * this.offset.max;
+		this.offset.current = Math.max(Math.min(offset, this.offset.max), this.offset.min);
+		// calculate the rotation limits
+		var overscanAngle = (this.baseAngle - 360 / this.objCols.length) / 2;
+		this.rotation.min = (this.fov < 360) ? overscanAngle : 0;
+		this.rotation.max = (this.fov < 360) ? this.fov - this.baseAngle + overscanAngle : this.fov;
+		// redraw the object
+		this.redraw();
+	};
+
+	this.rotate = function(angle) {
+		// limit or loop the rotation
+		this.rotation.current = (this.fov < 360) ? Math.max(Math.min(angle, this.rotation.max), this.rotation.min) : angle%360 ;
+		// redraw the object
+		this.redraw();
+	};
+
+	this.momentum = function() {
+		// on requestAnimationFrame count down the delta vectors to ~0
+		if (this.rotation.delta || this.magnification.delta || this.offset.delta) {
+			// reduce the increment
+			this.rotation.delta = (Math.abs(this.rotation.delta) > 0.1) ? this.rotation.delta / 1.05 : 0;
+			this.magnification.delta = (Math.abs(this.magnification.delta) > 0.0001) ? this.magnification.delta / 1.05 : 0;
+			this.offset.delta = (Math.abs(this.offset.delta) > 0.001) ? this.offset.delta / 1.05 : 0;
+			// advance rotation incrementally
+			this.rotate(this.rotation.current + this.rotation.delta);
+			this.magnify(this.magnification.current + this.magnification.delta, this.offset.current + this.offset.delta);
+			// wait for the next render
+			window.requestAnimationFrame(this.momentum.bind(this));
+		}
+	};
+
+	this.redraw = function() {
+		// update the relative scale
+		var scale = this.wrapper.offsetHeight / this.baseSize;
+		// apply all transformations in one go
+		this.objRow.style.transform = 'translate(-50%, ' + ((0.5 + this.offset.current * scale) * -100) + '%) scale(' + (this.magnification.current * scale) + ') rotateY(' + this.rotation.current + 'deg)';
+	};
+
+	this.animate = function(allow) {
+		// accept overrides
+		if (typeof allow === 'boolean') {
+			this.auto = allow;
+		}
+		// if animation is allowed
+		if (this.auto) {
+			// in 180 degree pictures adjust increment and reverse, otherwise loop forever
+			if (this.rotation.current + this.increment * 2 > this.rotation.max) this.increment = -this.config.idle;
+			if (this.rotation.current + this.increment * 2 < this.rotation.min) this.increment = this.config.idle;
+			var step = (this.fov < 360) ? this.rotation.current + this.increment : (this.rotation.current + this.increment) % 360;
+			// advance rotation incrementally, until interrupted
+			this.rotate(step);
+			window.requestAnimationFrame(this.animate.bind(this));
+		}
+	};
+
+	// EVENTS
+
+	this.tilt = function(evt) {
+		// stop animating
+		this.auto = false;
+		// if there was tilt before and the jump is not extreme
+		if (this.rotation.tilted && Math.abs(evt.alpha - this.rotation.tilted) < 45) {
+			// update the rotation
+			this.rotate(this.rotation.current + evt.alpha - this.rotation.tilted);
+		}
+		// store the tilt
+		this.rotation.tilted = evt.alpha;
+	};
+
+	this.wheel = function(evt) {
+		// cancel the scrolling
+		evt.preventDefault();
+		// stop animating
+		this.auto = false;
+		// reset the deltas
+		this.magnification.delta = 0;
+		// get the feedback
+		var coords = this.coords(evt);
+		var distance = evt.deltaY || evt.wheelDeltaY || evt.wheelDelta;
+		this.magnification.delta = distance / this.wrapper.offsetHeight;
+		this.magnify(this.magnification.current + this.magnification.delta, this.offset.current);
+		// continue based on inertia
+		this.momentum();
+	};
+
+	this.touch = function(phase, evt) {
+		// cancel the click
+		evt.preventDefault();
+		// pick the phase of interaction
+		var coords, scale = this.magnification.current / this.magnification.min;
+		switch(phase) {
+			case 'start':
+				// stop animating
+				this.auto = false;
+				// reset the deltas
+				this.rotation.delta = 0;
+				this.magnification.delta = 0;
+				this.offset.delta = 0;
+				// start tracking
+				this.tracked = this.coords(evt);
+				break;
+			case 'move':
+				if (this.tracked) {
+					coords = this.coords(evt);
+					// store the momentum
+					this.rotation.delta = this.baseAngle * (this.tracked.x - coords.x) / this.wrapper.offsetWidth * scale;
+					this.magnification.delta = (this.tracked.z - coords.z) / this.wrapper.offsetWidth * scale * 2;
+					this.offset.delta = (this.tracked.y - coords.y) / this.wrapper.offsetHeight;
+					// calculate the rotation
+					this.rotate(this.rotation.current + this.rotation.delta);
+					// calculate the zoom
+					this.magnify(this.magnification.current - this.magnification.delta, this.offset.current + this.offset.delta);
+					// update the step
+					this.tracked.x = coords.x;
+					this.tracked.y = coords.y;
+					this.tracked.z = coords.z;
+				}
+				break;
+			case 'end':
+				// stop tracking
+				this.tracked = null;
+				// continue based on inertia
+				this.momentum();
+				break;
+		}
+	};
+
+	this.resize = function() {
+		// update the wrapper aspect ratio
+		this.wrapperAspect = (this.wrapper.offsetWidth / this.wrapper.offsetHeight);
+		// restore current values
+		var factor = this.magnification.current || 1;
+		var offset = this.offset.current || 0;
+		var angle = this.rotation.current || this.fov/2;
+		// reset to zoom
+		this.magnify(factor, offset);
+		// reset the rotation
+		this.rotate(angle);
+	};
+
+};
+
+/*
+	Source:
+	van Creij, Maurice (2014). "useful.photomap.js: Plots the GPS data of the photos in a slideshow on a map", version 20141127, http://www.woollymittens.nl/.
+
+	License:
+	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
+
+	Dependencies:
+	http://www.leaflet.com/
+	https://github.com/mapbox/togeojson
+*/
+
+// establish the class
+var Photomap = function (config) {
+
+	this.only = function (config) {
+		// start an instance of the script
+		return new this.Main(config, this);
+	};
+
+	this.each = function (config) {
+		var _config, _context = this, instances = [];
+		// for all element
+		for (var a = 0, b = config.elements.length; a < b; a += 1) {
+			// clone the configuration
+			_config = Object.create(config);
+			// insert the current element
+			_config.element = config.elements[a];
+			// delete the list of elements from the clone
+			delete _config.elements;
+			// start a new instance of the object
+			instances[a] = new this.Main(_config, _context).init();
+		}
+		// return the instances
+		return instances;
+	};
+
+	return (config.elements) ? this.each(config) : this.only(config);
+
+};
+
+// return as a require.js module
+if (typeof define != 'undefined') define([], function () { return Photomap });
+if (typeof module != 'undefined') module.exports = Photomap;
+
+// extend the class
+Photomap.prototype.Busy = function (parent) {
+
+	// PROPERTIES
+
+	this.parent = parent;
+	this.config = parent.config;
+
+	// METHODS
+
+	this.setup = function () {};
+	this.show = function () {};
+	this.hide = function () {};
+};
+
+// extend the class
+Photomap.prototype.Exif = function (parent) {
+
+	// PROPERTIES
+
+	this.parent = parent;
+	this.config = parent.config;
+
+	// METHODS
+
+	this.load = function (url, onComplete) {
+		var _this = this, path = url.split('/'), name = path[path.length - 1];
+		// if the lat and lon have been cached in exifData
+		if (this.config.exifData && this.config.exifData[name] && this.config.exifData[name].lat && this.config.exifData[name].lon) {
+			// send back the stored coordinates from the exifData
+			onComplete({
+				'lat' : this.config.exifData[name].lat,
+				'lon' : this.config.exifData[name].lon,
+			});
+		// else
+		} else {
+			console.log('PhotomapExif: ajax');
+			// retrieve the exif data of a photo
+			requests.send({
+				url : this.config.exif.replace('{src}', url),
+				post : null,
+				onProgress : function (reply) {
+					return reply;
+				},
+				onFailure : function (reply) {
+					return reply;
+				},
+				onSuccess : function (reply) {
+					var json = requests.decode(reply.responseText);
+					var latLon = _this.convert(json);
+					// exifData the values
+					_this.config.exifData[name] = json;
+					// call back the values
+					onComplete(latLon);
+				}
+			});
+		}
+	};
+
+	this.convert = function (exif) {
+		var deg, min, sec, lon, lat;
+		// latitude
+		deg = (exif.GPS.GPSLatitude[0].match(/\//)) ?
+			parseInt(exif.GPS.GPSLatitude[0].split('/')[0], 10) / parseInt(exif.GPS.GPSLatitude[0].split('/')[1], 10):
+			parseInt(exif.GPS.GPSLatitude[0], 10);
+		min = (exif.GPS.GPSLatitude[1].match(/\//)) ?
+			parseInt(exif.GPS.GPSLatitude[1].split('/')[0], 10) / parseInt(exif.GPS.GPSLatitude[1].split('/')[1], 10):
+			parseInt(exif.GPS.GPSLatitude[1], 10);
+		sec = (exif.GPS.GPSLatitude[2].match(/\//)) ?
+			parseInt(exif.GPS.GPSLatitude[2].split('/')[0], 10) / parseInt(exif.GPS.GPSLatitude[2].split('/')[1], 10):
+			parseInt(exif.GPS.GPSLatitude[2], 10);
+		lat = (deg + min / 60 + sec / 3600) * (exif.GPS.GPSLatitudeRef === "N" ? 1 : -1);
+		// longitude
+		deg = (exif.GPS.GPSLongitude[0].match(/\//)) ?
+			parseInt(exif.GPS.GPSLongitude[0].split('/')[0], 10) / parseInt(exif.GPS.GPSLongitude[0].split('/')[1], 10):
+			parseInt(exif.GPS.GPSLongitude[0], 10);
+		min = (exif.GPS.GPSLongitude[1].match(/\//)) ?
+			parseInt(exif.GPS.GPSLongitude[1].split('/')[0], 10) / parseInt(exif.GPS.GPSLongitude[1].split('/')[1], 10):
+			parseInt(exif.GPS.GPSLongitude[1], 10);
+		sec = (exif.GPS.GPSLongitude[2].match(/\//)) ?
+			parseInt(exif.GPS.GPSLongitude[2].split('/')[0], 10) / parseInt(exif.GPS.GPSLongitude[2].split('/')[1], 10):
+			parseInt(exif.GPS.GPSLongitude[2], 10);
+		lon = (deg + min / 60 + sec / 3600) * (exif.GPS.GPSLongitudeRef === "W" ? -1 : 1);
+		// temporary console report
+		if (typeof(console) !== 'undefined') {
+			console.log(this.config.indicator);
+		}
+		// return the values
+		return {'lat' : lat, 'lon' : lon};
+	};
+
+};
+
+// extend the class
+Photomap.prototype.Gpx = function (parent) {
+
+	// PROPERTIES
+
+	this.parent = parent;
+	this.config = parent.config;
+
+	// METHODS
+
+	this.load = function (oncomplete) {
+		var _this = this;
+		// if the GPX have been cached in gpxData
+		if (this.config.gpxData) {
+			// call back
+			oncomplete();
+		// lead it from disk
+		} else {
+			// show the busy indicator
+			parent.busy.show();
+			// onload
+			requests.send({
+				url : this.config.gpx,
+				post : null,
+				onProgress : function () {},
+				onFailure : function () {},
+				onSuccess : function (reply) {
+					// store the result
+					_this.config.gpxData = _this.config.togeojson.gpx(reply.responseXML);
+					// call back
+					oncomplete();
+					// hide the busy indicator
+					_this.parent.busy.hide();
+				}
+			});
+		}
+	};
+
+	this.coordinates = function () {
+		// get the line data from the geojson file
+		var features = this.config.gpxData.features, segments = [], coordinates;
+		// for all features
+		for (var a = 0, b = features.length; a < b; a += 1) {
+			// if the coordinates come in sections
+			if (features[a].geometry.coordinates[0][0] instanceof Array) {
+				// flatten the sections
+				coordinates = [].concat.apply([], features[a].geometry.coordinates);
+			// else
+			} else {
+				// use the coordinates directly
+				coordinates = features[a].geometry.coordinates;
+			}
+			// gather all the segments
+			segments.push(coordinates);
+		}
+		// return the flattened segments
+		return [].concat.apply([], segments);
+	};
+
+};
+
+// extend the class
+Photomap.prototype.Indicator = function (parent) {
+
+	// PROPERTIES
+
+	this.parent = parent;
+	this.config = parent.config;
+
+	// METHODS
+
+	this.add = function (lat, lon) {
+		var icon;
+		var map = this.config.map;
+		var indicator = this.config.indicator;
+		// if the indicator has coordinates
+		if (lon && lat) {
+			// store the coordinates
+			this.lon = lon;
+			this.lat = lat;
+			// remove any previous indicator
+			if (this.object) {
+				map.object.removeLayer(this.object);
+			}
+			// create the icon
+			icon = this.config.leaflet.icon({
+				iconUrl: this.config.indicator,
+				iconSize: [28, 28],
+				iconAnchor: [14, 28]
+			});
+			// report the location for reference
+			console.log('location:', lat, lon);
+			// add the marker with the icon
+			this.object = this.config.leaflet.marker(
+				[this.lat, this.lon],
+				{'icon': icon}
+			);
+			this.object.addTo(map.object);
+			// focus the map on the indicator
+			this.focus();
+		}
+	};
+
+	this.remove = function () {
+		var map = this.config.map;
+		// remove the indicator
+		if (this.object) {
+			// remove the balloon
+			this.object.closePopup();
+			map.object.removeLayer(this.object);
+			this.object = null;
+		}
+		// unfocus the indicator
+		this.unfocus();
+	};
+
+	this.focus = function () {
+		// focus the map on the indicator
+		this.config.map.object.setView([this.lat, this.lon], this.config.zoom + 2);
+		// call for a  redraw
+		this.parent.redraw();
+	};
+
+	this.unfocus = function () {
+		// focus the map on the indicator
+		this.config.map.object.setView([this.lat, this.lon], this.config.zoom);
+		// call for a  redraw
+		this.parent.redraw();
+	};
+
+};
+
+// extend the class
+Photomap.prototype.Location = function (parent) {
+
+	// PROPERTIES
+
+	this.parent = parent;
+	this.config = parent.config;
+	this.object = null;
+	this.interval = null;
+
+	// METHODS
+
+	// add the Layer with the GPX Track
+	this.point = function () {
+		// if geolocation is available
+		if (navigator.geolocation) {
+			// request the position
+			navigator.geolocation.watchPosition(
+				this.onGeoSuccess(),
+				this.onGeoFailure(),
+				{ maximumAge : 10000,  timeout : 5000,  enableHighAccuracy : true }
+			);
+		}
+	};
+
+	// redraw the pointer layer
+	this.redraw = function () {
+		// if geolocation is available
+		if (navigator.geolocation) {
+			// request the position
+			navigator.geolocation.getCurrentPosition(
+				this.onGeoSuccess(),
+				this.onGeoFailure(),
+				{ enableHighAccuracy : true }
+			);
+		}
+	};
+
+	// geo location events
+	this.onGeoSuccess = function () {
+		var _this = this, _config = this.parent.config;
+		return function (geo) {
+			// if the marker doesn't exist yet
+			if (_this.object === null) {
+				// create the icon
+				var icon = _this.config.leaflet.icon({
+					iconUrl: _config.pointer,
+					iconSize: [28, 28],
+					iconAnchor: [14, 28]
+				});
+				// add the marker with the icon
+				_this.object = _this.config.leaflet.marker(
+					[geo.coords.latitude, geo.coords.longitude],
+					{'icon': icon}
+				);
+				_this.object.addTo(_config.map.object);
+			} else {
+				_this.object.setLatLng([geo.coords.latitude, geo.coords.longitude]);
+			}
+		};
+	};
+
+	this.onGeoFailure = function () {
+		var _this = this;
+		return function () {
+			console.log('geolocation failed');
+		};
+	};
+
+};
+
+// extend the class
+Photomap.prototype.Main = function (config, context) {
+
+	// PROPERTIES
+
+	this.config = config;
+	this.context = context;
+	this.element = config.element;
+
+	// METHODS
+
+	this.init = function () {
+		var _this = this;
+		// show the busy indicator
+		this.busy.setup();
+		// load the gpx track
+		this.gpx.load(function () {
+			// draw the map
+			_this.map.setup();
+			// plot the route
+			_this.route.plot();
+			// show the permanent markers
+			_this.markers.add();
+			// show the indicator
+			_this.indicator.add();
+			// start the location pointer
+			_this.location.point();
+		});
+		// return the object
+		return this;
+	};
+
+	this.redraw = function () {
+		var _this = this;
+		// wait for a change to redraw
+		clearTimeout(this.config.redrawTimeout);
+		this.config.redrawTimeout = setTimeout(function () {
+			// redraw the map
+			//_this.map.redraw();
+			// redraw the plotted route
+			_this.route.redraw();
+		}, 500);
+	};
+
+	// PUBLIC
+
+	this.indicate = function (element) {
+		var _this = this,
+			config = this.config,
+			url = element.getAttribute('data-url') || element.getAttribute('src') || element.getAttribute('href'),
+			title = element.getAttribute('data-title') || element.getAttribute('title');
+		this.exif.load(url, function (coords) {
+			_this.indicator.add(coords.lat, coords.lon);
+		});
+	};
+
+	this.unindicate = function () {
+		this.indicator.remove();
+	};
+
+	this.stop = function () {
+		this.map.remove();
+	};
+
+	// CLASSES
+
+	this.busy = new this.context.Busy(this);
+	this.exif = new this.context.Exif(this);
+	this.gpx = new this.context.Gpx(this);
+	this.map = new this.context.Map(this);
+	this.route = new this.context.Route(this);
+	this.markers = new this.context.Markers(this);
+	this.indicator = new this.context.Indicator(this);
+	this.location = new this.context.Location(this);
+
+	// EVENTS
+
+	this.init();
+
+};
+
+// extend the class
+Photomap.prototype.Map = function (parent) {
+
+	// PROPERTIES
+
+	this.parent = parent;
+	this.config = parent.config;
+
+	// METHODS
+
+	this.setup = function () {
+		var id = this.parent.element.id;
+		// define the map
+		this.config.map = {};
+		this.config.map.object = this.config.leaflet.map(id);
+		// add the scale
+		this.config.leaflet.control.scale({imperial:false}).addTo(this.config.map.object);
+		// add the tiles
+		var tileLayer = this.config.leaflet.tileLayer(this.config.tiles, {
+			attribution: this.config.credit,
+			errorTileUrl: this.config.missing,
+			minZoom: this.config.minZoom,
+			maxZoom: this.config.maxZoom
+		}).addTo(this.config.map.object);
+		// if there is a local tile store, try and handle failing tiles
+		if (this.config.local) {
+			tileLayer.on('tileloadstart', this.onFallback(this.config.local));
+		}
+		// get the centre of the map
+		this.bounds();
+		// refresh the map after scrolling
+		var _this = this;
+		this.config.map.object.on('moveend', function (e) { _this.parent.redraw(); });
+		this.config.map.object.on('zoomend', function (e) { _this.parent.redraw(); });
+	};
+
+	this.remove = function () {
+		// ask leaflet to remove itself if available
+		if (this.config.map && this.config.map.object) {
+			this.config.map.object.remove();
+		}
+	};
+
+	this.bounds = function () {
+		var a, b, points, minLat = 999, minLon = 999, maxLat = -999, maxLon = -999;
+		// for all navigation points
+		points = this.parent.gpx.coordinates();
+		for (a = 0 , b = points.length; a < b; a += 1) {
+			minLon = (points[a][0] < minLon) ? points[a][0] : minLon;
+			minLat = (points[a][1] < minLat) ? points[a][1] : minLat;
+			maxLon = (points[a][0] > maxLon) ? points[a][0] : maxLon;
+			maxLat = (points[a][1] > maxLat) ? points[a][1] : maxLat;
+		}
+		// extend the bounds a little
+		minLat -= 0.01;
+		minLon -= 0.01;
+		maxLat += 0.01;
+		maxLon += 0.01;
+		// limit the bounds
+		this.config.map.object.fitBounds([
+			[minLat, minLon],
+			[maxLat, maxLon]
+		]);
+		this.config.map.object.setMaxBounds([
+			[minLat, minLon],
+			[maxLat, maxLon]
+		]);
+	};
+
+	this.beginning = function () {
+		var a, b,
+			points = this.parent.gpx.coordinates(),
+			totLon = points[0][0] * points.length,
+			totLat = points[0][1] * points.length;
+		// for all navigation points
+		for (a = 0 , b = points.length; a < b; a += 1) {
+			totLon += points[a][0];
+			totLat += points[a][1];
+		}
+		// average the centre
+		this.config.map.centre = {
+			'lon' : totLon / points.length / 2,
+			'lat' : totLat / points.length / 2
+		};
+		// apply the centre
+		this.config.map.object.setView([this.config.map.centre.lat, this.config.map.centre.lon], this.config.zoom);
+		// call for a redraw
+		this.parent.redraw();
+	};
+
+	this.centre = function () {
+		var a, b, points,
+			totLat = 0, totLon = 0;
+		// for all navigation points
+		points = this.parent.gpx.coordinates();
+		for (a = 0 , b = points.length; a < b; a += 1) {
+			totLon += points[a][0];
+			totLat += points[a][1];
+		}
+		// average the centre
+		this.config.map.centre = {
+			'lon' : totLon / points.length,
+			'lat' : totLat / points.length
+		};
+		// apply the centre
+		this.config.map.object.setView([this.config.map.centre.lat, this.config.map.centre.lon], this.config.zoom);
+		// call for a redraw
+		this.parent.redraw();
+	};
+
+	this.onFallback = function (local) {
+		return function (element) {
+			var src = element.tile.getAttribute('src');
+			element.tile.setAttribute('data-failed', 'false');
+			element.tile.addEventListener('error', function () {
+				// if this tile has not failed before
+				if (element.tile.getAttribute('data-failed') === 'false') {
+					// mark the element as a failure
+					element.tile.setAttribute('data-failed', 'true');
+					// recover the coordinates
+					var parts = src.split('/'),
+						length = parts.length,
+						z = parseInt(parts[length - 3]),
+						x =	parseInt(parts[length - 2]),
+						y = parseInt(parts[length - 1]);
+					// try the local source instead
+					element.tile.src = local.replace('{z}', z).replace('{x}', x).replace('{y}', y);
+					console.log('fallback to:', element.tile.src);
+				}
+			});
+		};
+	};
+
+};
+
+// extend the class
+Photomap.prototype.Markers = function (parent) {
+
+	// PROPERTIES
+
+	this.parent = parent;
+	this.config = parent.config;
+
+	// METHODS
+
+	// add the Layer with the permanent markers
+	this.add = function () {
+		var name, marker, icon;
+		// get the track points from the GPX file
+		var points = this.parent.gpx.coordinates();
+		// for all markers
+		var _this = this;
+		this.config.markers.map(function (marker, index) {
+			// disregard the waypoints with photos
+			if (!marker.photo) {
+				// create the icon
+				icon = _this.config.leaflet.icon({
+					iconUrl: _this.config.marker.replace('{type}', marker.type),
+					iconSize: [28, 28],
+					iconAnchor: [14, 28]
+				});
+				// add the marker with the icon
+				marker.object = _this.config.leaflet.marker(
+					[marker.lat, marker.lon],
+					{'icon': icon}
+				);
+				marker.object.addTo(_this.config.map.object);
+				// if there is a desciption
+				if (marker.description) {
+					// add the popup to the marker
+					marker.popup = marker.object.bindPopup(marker.description);
+					// add the click handler
+					marker.object.on('click', _this.onMarkerClicked(marker));
+				}
+			}
+		});
+	};
+
+	this.onMarkerClicked = function (marker) {
+		var _this = this;
+		return function (evt) {
+			// show the marker message in a balloon
+			marker.object.openPopup();
+		};
+	};
+
+};
+
+// extend the class
+Photomap.prototype.Route = function (parent) {
+
+	// PROPERTIES
+
+	this.parent = parent;
+	this.config = parent.config;
+
+	// METHODS
+
+	// add the Layer with the GPX Track
+	this.plot = function () {
+		// plot the geoJson object
+		this.config.route = {};
+		this.config.route.object = this.config.leaflet.geoJson(this.config.gpxData, {
+			style : function (feature) { return { 'color': '#ff6600', 'weight': 5, 'opacity': 0.66 }; }
+		});
+		this.config.route.object.addTo(this.config.map.object);
+	};
+
+	// redraw the geoJSON layer
+	this.redraw = function () {
+		if (this.config.route) {
+			// remove the layer
+			this.config.map.object.removeLayer(this.config.route.object);
+			// re-add the layer
+			this.plot();
+		}
+	};
+
+};
+
+/*
+	Source:
+	van Creij, Maurice (2018). "photowall.js: Simple photo wall", http://www.woollymittens.nl/.
+
+	License:
+	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
+*/
+
+// establish the class
+var Photowall = function (config) {
+
+		this.only = function (config) {
+			// start an instance of the script
+			return new this.Main(config, this);
+		};
+
+		this.each = function (config) {
+			var _config, _context = this, instances = [];
+			// for all element
+			for (var a = 0, b = config.elements.length; a < b; a += 1) {
+				// clone the configuration
+				_config = Object.create(config);
+				// insert the current element
+				_config.element = config.elements[a];
+				// start a new instance of the object
+				instances[a] = new this.Main(_config, _context);
+			}
+			// return the instances
+			return instances;
+		};
+
+		return (config.elements) ? this.each(config) : this.only(config);
+
+};
+
+// return as a require.js module
+if (typeof define != 'undefined') define([], function () { return Photowall });
+if (typeof module != 'undefined') module.exports = Photowall;
+
+// extend the class
+Photowall.prototype.Main = function(config, context) {
+
+  // PROPERTIES
+
+  this.config = config;
+  this.context = context;
+  this.element = config.element;
+
+  // METHODS
+
+  this.init = function() {
+    // find all the links
+    var photos = this.element.getElementsByTagName('img');
+    // process all photos
+    for (var a = 0, b = photos.length; a < b; a += 1) {
+      // move the image to the tile's background
+      photos[a].style.visibility = 'hidden';
+      photos[a].parentNode.style.backgroundImage = "url('" + photos[a].getAttribute('src') + "')";
+    }
+    // return the object
+    return this;
+  };
+
+  this.init();
+
+};
+
+/*
+	Source:
+	van Creij, Maurice (2018). "polyfills.js: A library of useful polyfills to ease working with HTML5 in legacy environments.", http://www.woollymittens.nl/.
+
+	License:
+	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
+*/
+
+// establish the class
+var Polyfills = function () {
+
+  // enabled the use of HTML5 elements in Internet Explorer
+  this.html5 = function() {
+    var a, b, elementsList = ['section', 'nav', 'article', 'aside', 'hgroup', 'header', 'footer', 'dialog', 'mark', 'dfn', 'time', 'progress', 'meter', 'ruby', 'rt', 'rp', 'ins', 'del', 'figure', 'figcaption', 'video', 'audio', 'source', 'canvas', 'datalist', 'keygen', 'output', 'details', 'datagrid', 'command', 'bb', 'menu', 'legend'];
+    if (navigator.userAgent.match(/msie/gi)) {
+      for (a = 0, b = elementsList.length; a < b; a += 1) {
+        document.createElement(elementsList[a]);
+      }
+    }
+  };
+
+  // allow array.indexOf in older browsers
+  this.arrayIndexOf = function() {
+    if (!Array.prototype.indexOf) {
+      Array.prototype.indexOf = function(obj, start) {
+        for (var i = (start || 0), j = this.length; i < j; i += 1) {
+          if (this[i] === obj) {
+            return i;
+          }
+        }
+        return -1;
+      };
+    }
+  };
+
+  // allow array.isArray in older browsers
+  this.arrayIsArray = function() {
+    if (!Array.isArray) {
+      Array.isArray = function(arg) {
+        return Object.prototype.toString.call(arg) === '[object Array]';
+      };
+    }
+  };
+
+  // allow array.map in older browsers (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+  this.arrayMap = function() {
+
+    // Production steps of ECMA-262, Edition 5, 15.4.4.19
+    // Reference: http://es5.github.io/#x15.4.4.19
+    if (!Array.prototype.map) {
+
+      Array.prototype.map = function(callback, thisArg) {
+
+        var T, A, k;
+
+        if (this == null) {
+          throw new TypeError(' this is null or not defined');
+        }
+
+        // 1. Let O be the result of calling ToObject passing the |this|
+        //    value as the argument.
+        var O = Object(this);
+
+        // 2. Let lenValue be the result of calling the Get internal
+        //    method of O with the argument "length".
+        // 3. Let len be ToUint32(lenValue).
+        var len = O.length >>> 0;
+
+        // 4. If IsCallable(callback) is false, throw a TypeError exception.
+        // See: http://es5.github.com/#x9.11
+        if (typeof callback !== 'function') {
+          throw new TypeError(callback + ' is not a function');
+        }
+
+        // 5. If thisArg was supplied, let T be thisArg; else let T be undefined.
+        if (arguments.length > 1) {
+          T = thisArg;
+        }
+
+        // 6. Let A be a new array created as if by the expression new Array(len)
+        //    where Array is the standard built-in constructor with that name and
+        //    len is the value of len.
+        A = new Array(len);
+
+        // 7. Let k be 0
+        k = 0;
+
+        // 8. Repeat, while k < len
+        while (k < len) {
+
+          var kValue, mappedValue;
+
+          // a. Let Pk be ToString(k).
+          //   This is implicit for LHS operands of the in operator
+          // b. Let kPresent be the result of calling the HasProperty internal
+          //    method of O with argument Pk.
+          //   This step can be combined with c
+          // c. If kPresent is true, then
+          if (k in O) {
+
+            // i. Let kValue be the result of calling the Get internal
+            //    method of O with argument Pk.
+            kValue = O[k];
+
+            // ii. Let mappedValue be the result of calling the Call internal
+            //     method of callback with T as the this value and argument
+            //     list containing kValue, k, and O.
+            mappedValue = callback.call(T, kValue, k, O);
+
+            // iii. Call the DefineOwnProperty internal method of A with arguments
+            // Pk, Property Descriptor
+            // { Value: mappedValue,
+            //   Writable: true,
+            //   Enumerable: true,
+            //   Configurable: true },
+            // and false.
+
+            // In browsers that support Object.defineProperty, use the following:
+            // Object.defineProperty(A, k, {
+            //   value: mappedValue,
+            //   writable: true,
+            //   enumerable: true,
+            //   configurable: true
+            // });
+
+            // For best browser support, use the following:
+            A[k] = mappedValue;
+          }
+          // d. Increase k by 1.
+          k++;
+        }
+
+        // 9. return A
+        return A;
+      };
+    }
+
+  };
+
+  // allow document.querySelectorAll (https://gist.github.com/connrs/2724353)
+  this.querySelectorAll = function() {
+    if (!document.querySelectorAll) {
+      document.querySelectorAll = function(a) {
+        var b = document,
+          c = b.documentElement.firstChild,
+          d = b.createElement("STYLE");
+        return c.appendChild(d), b.__qsaels = [], d.styleSheet.cssText = a + "{x:expression(document.__qsaels.push(this))}", window.scrollBy(0, 0), b.__qsaels;
+      };
+    }
+  };
+
+  // allow addEventListener (https://gist.github.com/jonathantneal/3748027)
+  this.addEventListener = function() {
+    !window.addEventListener && (function(WindowPrototype, DocumentPrototype, ElementPrototype, addEventListener, removeEventListener, dispatchEvent, registry) {
+      WindowPrototype[addEventListener] = DocumentPrototype[addEventListener] = ElementPrototype[addEventListener] = function(type, listener) {
+        var target = this;
+        registry.unshift([target, type, listener, function(event) {
+          event.currentTarget = target;
+          event.preventDefault = function() {
+            event.returnValue = false;
+          };
+          event.stopPropagation = function() {
+            event.cancelBubble = true;
+          };
+          event.target = event.srcElement || target;
+          listener.call(target, event);
+        }]);
+        this.attachEvent("on" + type, registry[0][3]);
+      };
+      WindowPrototype[removeEventListener] = DocumentPrototype[removeEventListener] = ElementPrototype[removeEventListener] = function(type, listener) {
+        for (var index = 0, register; register = registry[index]; ++index) {
+          if (register[0] == this && register[1] == type && register[2] == listener) {
+            return this.detachEvent("on" + type, registry.splice(index, 1)[0][3]);
+          }
+        }
+      };
+      WindowPrototype[dispatchEvent] = DocumentPrototype[dispatchEvent] = ElementPrototype[dispatchEvent] = function(eventObject) {
+        return this.fireEvent("on" + eventObject.type, eventObject);
+      };
+    })(Window.prototype, HTMLDocument.prototype, Element.prototype, "addEventListener", "removeEventListener", "dispatchEvent", []);
+  };
+
+  // allow console.log
+  this.consoleLog = function() {
+    var overrideTest = new RegExp('console-log', 'i');
+    if (!window.console || overrideTest.test(document.querySelectorAll('html')[0].className)) {
+      window.console = {};
+      window.console.log = function() {
+        // if the reporting panel doesn't exist
+        var a, b, messages = '',
+          reportPanel = document.getElementById('reportPanel');
+        if (!reportPanel) {
+          // create the panel
+          reportPanel = document.createElement('DIV');
+          reportPanel.id = 'reportPanel';
+          reportPanel.style.background = '#fff none';
+          reportPanel.style.border = 'solid 1px #000';
+          reportPanel.style.color = '#000';
+          reportPanel.style.fontSize = '12px';
+          reportPanel.style.padding = '10px';
+          reportPanel.style.position = (navigator.userAgent.indexOf('MSIE 6') > -1) ? 'absolute' : 'fixed';
+          reportPanel.style.right = '10px';
+          reportPanel.style.bottom = '10px';
+          reportPanel.style.width = '180px';
+          reportPanel.style.height = '320px';
+          reportPanel.style.overflow = 'auto';
+          reportPanel.style.zIndex = '100000';
+          reportPanel.innerHTML = '&nbsp;';
+          // store a copy of this node in the move buffer
+          document.body.appendChild(reportPanel);
+        }
+        // truncate the queue
+        var reportString = (reportPanel.innerHTML.length < 1000) ? reportPanel.innerHTML : reportPanel.innerHTML.substring(0, 800);
+        // process the arguments
+        for (a = 0, b = arguments.length; a < b; a += 1) {
+          messages += arguments[a] + '<br/>';
+        }
+        // add a break after the message
+        messages += '<hr/>';
+        // output the queue to the panel
+        reportPanel.innerHTML = messages + reportString;
+      };
+    }
+  };
+
+  // allows Object.create (https://gist.github.com/rxgx/1597825)
+  this.objectCreate = function() {
+    if (typeof Object.create !== "function") {
+      Object.create = function(original) {
+        function Clone() {}
+        Clone.prototype = original;
+        return new Clone();
+      };
+    }
+  };
+
+  // allows String.trim (https://gist.github.com/eliperelman/1035982)
+  this.stringTrim = function() {
+    if (!String.prototype.trim) {
+      String.prototype.trim = function() {
+        return this.replace(/^[\s\uFEFF]+|[\s\uFEFF]+$/g, '');
+      };
+    }
+    if (!String.prototype.ltrim) {
+      String.prototype.ltrim = function() {
+        return this.replace(/^\s+/, '');
+      };
+    }
+    if (!String.prototype.rtrim) {
+      String.prototype.rtrim = function() {
+        return this.replace(/\s+$/, '');
+      };
+    }
+    if (!String.prototype.fulltrim) {
+      String.prototype.fulltrim = function() {
+        return this.replace(/(?:(?:^|\n)\s+|\s+(?:$|\n))/g, '').replace(/\s+/g, ' ');
+      };
+    }
+  };
+
+  // allows localStorage support
+  this.localStorage = function() {
+    if (!window.localStorage) {
+      if (/MSIE 8|MSIE 7|MSIE 6/i.test(navigator.userAgent)) {
+        window.localStorage = {
+          getItem: function(sKey) {
+            if (!sKey || !this.hasOwnProperty(sKey)) {
+              return null;
+            }
+            return unescape(document.cookie.replace(new RegExp("(?:^|.*;\\s*)" + escape(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=\\s*((?:[^;](?!;))*[^;]?).*"), "$1"));
+          },
+          key: function(nKeyId) {
+            return unescape(document.cookie.replace(/\s*\=(?:.(?!;))*$/, "").split(/\s*\=(?:[^;](?!;))*[^;]?;\s*/)[nKeyId]);
+          },
+          setItem: function(sKey, sValue) {
+            if (!sKey) {
+              return;
+            }
+            document.cookie = escape(sKey) + "=" + escape(sValue) + "; expires=Tue, 19 Jan 2038 03:14:07 GMT; path=/";
+            this.length = document.cookie.match(/\=/g).length;
+          },
+          length: 0,
+          removeItem: function(sKey) {
+            if (!sKey || !this.hasOwnProperty(sKey)) {
+              return;
+            }
+            document.cookie = escape(sKey) + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
+            this.length--;
+          },
+          hasOwnProperty: function(sKey) {
+            return (new RegExp("(?:^|;\\s*)" + escape(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=")).test(document.cookie);
+          }
+        };
+        window.localStorage.length = (document.cookie.match(/\=/g) || window.localStorage).length;
+      } else {
+        Object.defineProperty(window, "localStorage", new(function() {
+          var aKeys = [],
+            oStorage = {};
+          Object.defineProperty(oStorage, "getItem", {
+            value: function(sKey) {
+              return sKey ? this[sKey] : null;
+            },
+            writable: false,
+            configurable: false,
+            enumerable: false
+          });
+          Object.defineProperty(oStorage, "key", {
+            value: function(nKeyId) {
+              return aKeys[nKeyId];
+            },
+            writable: false,
+            configurable: false,
+            enumerable: false
+          });
+          Object.defineProperty(oStorage, "setItem", {
+            value: function(sKey, sValue) {
+              if (!sKey) {
+                return;
+              }
+              document.cookie = escape(sKey) + "=" + escape(sValue) + "; expires=Tue, 19 Jan 2038 03:14:07 GMT; path=/";
+            },
+            writable: false,
+            configurable: false,
+            enumerable: false
+          });
+          Object.defineProperty(oStorage, "length", {
+            get: function() {
+              return aKeys.length;
+            },
+            configurable: false,
+            enumerable: false
+          });
+          Object.defineProperty(oStorage, "removeItem", {
+            value: function(sKey) {
+              if (!sKey) {
+                return;
+              }
+              document.cookie = escape(sKey) + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
+            },
+            writable: false,
+            configurable: false,
+            enumerable: false
+          });
+          this.get = function() {
+            var iThisIndx;
+            for (var sKey in oStorage) {
+              iThisIndx = aKeys.indexOf(sKey);
+              if (iThisIndx === -1) {
+                oStorage.setItem(sKey, oStorage[sKey]);
+              } else {
+                aKeys.splice(iThisIndx, 1);
+              }
+              delete oStorage[sKey];
+            }
+            for (aKeys; aKeys.length > 0; aKeys.splice(0, 1)) {
+              oStorage.removeItem(aKeys[0]);
+            }
+            for (var aCouple, iKey, nIdx = 0, aCouples = document.cookie.split(/\s*;\s*/); nIdx < aCouples.length; nIdx++) {
+              aCouple = aCouples[nIdx].split(/\s*=\s*/);
+              if (aCouple.length > 1) {
+                oStorage[iKey = unescape(aCouple[0])] = unescape(aCouple[1]);
+                aKeys.push(iKey);
+              }
+            }
+            return oStorage;
+          };
+          this.configurable = false;
+          this.enumerable = true;
+        })());
+      }
+    }
+  };
+
+  // allows bind support
+  this.functionBind = function() {
+    // Credit to Douglas Crockford for this bind method
+    if (!Function.prototype.bind) {
+      Function.prototype.bind = function(oThis) {
+        if (typeof this !== "function") {
+          // closest thing possible to the ECMAScript 5 internal IsCallable function
+          throw new TypeError("Function.prototype.bind - what is trying to be bound is not callable");
+        }
+        var aArgs = Array.prototype.slice.call(arguments, 1),
+          fToBind = this,
+          fNOP = function() {},
+          fBound = function() {
+            return fToBind.apply(this instanceof fNOP && oThis ? this : oThis, aArgs.concat(Array.prototype.slice.call(arguments)));
+          };
+        fNOP.prototype = this.prototype;
+        fBound.prototype = new fNOP();
+        return fBound;
+      };
+    }
+  };
+
+  // startup
+  this.html5();
+  this.arrayIndexOf();
+  this.arrayIsArray();
+  this.arrayMap();
+  this.querySelectorAll();
+  this.addEventListener();
+  this.consoleLog();
+  this.objectCreate();
+  this.stringTrim();
+  this.localStorage();
+  this.functionBind();
+
+};
+
+// return as a require.js module
+if (typeof define != 'undefined') define([], function () { return polyfills });
+if (typeof module != 'undefined') module.exports = polyfills;
+
+/*
+	Source:
+	van Creij, Maurice (2018). "requests.js: A library of useful functions to ease working with AJAX and JSON.", http://www.woollymittens.nl/.
+
+	License:
+	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
+*/
+
+
+// establish the class
+var requests = {
+
+	// adds a random argument to the AJAX URL to bust the cache
+	randomise : function (url) {
+		return url.replace('?', '?time=' + new Date().getTime() + '&');
+	},
+
+	// perform all requests in a single application
+	all : function (queue, results) {
+		// set up storage for the results
+		var _this = this, _url = queue.urls[queue.urls.length - 1], _results = results || [];
+		// perform the first request in the queue
+		this.send({
+			url : _url,
+			post : queue.post || null,
+			contentType : queue.contentType || 'text/xml',
+			timeout : queue.timeout || 4000,
+			onTimeout : queue.onTimeout || function (reply) { return reply; },
+			onProgress : function (reply) {
+				// report the fractional progress of the whole queue
+				queue.onProgress({});
+			},
+			onFailure : queue.onFailure || function (reply) { return reply; },
+			onSuccess : function (reply) {
+				// store the results
+				_results.push({
+					'url' : _url,
+					'response' : reply.response,
+					'responseText' : reply.responseText,
+					'responseXML' : reply.responseXML,
+					'status' : reply.status,
+				});
+				// pop one request off the queue
+				queue.urls.length = queue.urls.length - 1;
+				// if there are more items in the queue
+				if (queue.urls.length > 0) {
+					// perform the next request
+					_this.all(queue, _results);
+				// else
+				} else {
+					// trigger the success handler
+					queue.onSuccess(_results);
+				}
+			}
+		});
+	},
+
+	// create a request that is compatible with the browser
+	create : function (properties) {
+		var serverRequest,
+			_this = this;
+		// create a microsoft only xdomain request
+		if (window.XDomainRequest && properties.xdomain) {
+			// create the request object
+			serverRequest = new XDomainRequest();
+			// add the event handler(s)
+			serverRequest.onload = function () { properties.onSuccess(serverRequest, properties); };
+			serverRequest.onerror = function () { properties.onFailure(serverRequest, properties); };
+			serverRequest.ontimeout = function () { properties.onTimeout(serverRequest, properties); };
+			serverRequest.onprogress = function () { properties.onProgress(serverRequest, properties); };
+		}
+		// or create a standard HTTP request
+		else if (window.XMLHttpRequest) {
+			// create the request object
+			serverRequest = new XMLHttpRequest();
+			// set the optional timeout if available
+			if (serverRequest.timeout) { serverRequest.timeout = properties.timeout || 0; }
+			// add the event handler(s)
+			serverRequest.ontimeout = function () { properties.onTimeout(serverRequest, properties); };
+			serverRequest.onreadystatechange = function () { _this.update(serverRequest, properties); };
+		}
+		// or use the fall back
+		else {
+			// create the request object
+			serverRequest = new ActiveXObject("Microsoft.XMLHTTP");
+			// add the event handler(s)
+			serverRequest.onreadystatechange = function () { _this.update(serverRequest, properties); };
+		}
+		// return the request object
+		return serverRequest;
+	},
+
+	// perform and handle an AJAX request
+	send : function (properties) {
+		// add any event handlers that weren't provided
+		properties.onSuccess = properties.onSuccess || function () {};
+		properties.onFailure = properties.onFailure || function () {};
+		properties.onTimeout = properties.onTimeout || function () {};
+		properties.onProgress = properties.onProgress || function () {};
+		// create the request object
+		var serverRequest = this.create(properties);
+		// if the request is a POST
+		if (properties.post) {
+			try {
+				// open the request
+				serverRequest.open('POST', properties.url, true);
+				// set its header
+				serverRequest.setRequestHeader("Content-type", properties.contentType || "application/x-www-form-urlencoded");
+				// send the request, or fail gracefully
+				serverRequest.send(properties.post);
+			}
+			catch (errorMessage) { properties.onFailure({ readyState : -1, status : -1, statusText : errorMessage }); }
+		// else treat it as a GET
+		} else {
+			try {
+				// open the request
+				serverRequest.open('GET', this.randomise(properties.url), true);
+				// send the request
+				serverRequest.send();
+			}
+			catch (errorMessage) { properties.onFailure({ readyState : -1, status : -1, statusText : errorMessage }); }
+		}
+	},
+
+	// regularly updates the status of the request
+	update : function (serverRequest, properties) {
+		// react to the status of the request
+		if (serverRequest.readyState === 4) {
+			switch (serverRequest.status) {
+				case 200 :
+					properties.onSuccess(serverRequest, properties);
+					break;
+				case 304 :
+					properties.onSuccess(serverRequest, properties);
+					break;
+				default :
+					properties.onFailure(serverRequest, properties);
+			}
+		} else {
+			properties.onProgress(serverRequest, properties);
+		}
+	},
+
+	// turns a string back into a DOM object
+	deserialize : function (text) {
+		var parser, xmlDoc;
+		// if the DOMParser exists
+		if (window.DOMParser) {
+			// parse the text as an XML DOM
+			parser = new DOMParser();
+			xmlDoc = parser.parseFromString(text, "text/xml");
+		// else assume this is Microsoft doing things differently again
+		} else {
+			// parse the text as an XML DOM
+			xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+			xmlDoc.async = "false";
+			xmlDoc.loadXML(text);
+		}
+		// return the XML DOM object
+		return xmlDoc;
+	},
+
+	// turns a json string into a JavaScript object
+	decode : function (text) {
+		var object;
+		object = {};
+		// if JSON.parse is available
+		if (typeof JSON !== 'undefined' && typeof JSON.parse !== 'undefined') {
+			// use it
+			object = JSON.parse(text);
+		// if jQuery is available
+		} else if (typeof jQuery !== 'undefined') {
+			// use it
+			object = jQuery.parseJSON(text);
+		}
+		// return the object
+		return object;
+	}
+
+};
+
+// return as a require.js module
+if (typeof define != 'undefined') define([], function () { return requests });
+if (typeof module != 'undefined') module.exports = requests;
+
 toGeoJSON = (function() {
     'use strict';
 
@@ -13898,3562 +16171,6 @@ toGeoJSON = (function() {
 if (typeof module !== 'undefined') module.exports = toGeoJSON;
 
 /*
-	Source:
-	van Creij, Maurice (2015). "useful.filters.js: Sort HTML Lists", version 20150116, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-*/
-
-// create the global object if needed
-var useful = useful || {};
-
-// extend the global object
-useful.Filters = function () {
-
-	// PROPERTIES
-
-	this.element = null;
-	this.promise = null;
-	this.input = null;
-	this.select = null;
-	this.delay = null;
-
-	// METHODS
-
-	this.init = function (config) {
-		// store the configuration
-		this.element = config.element;
-		this.promise = config.promise || function () {};
-		// get the sorter elements
-		this.input = this.element.getElementsByTagName('input')[0];
-		this.select = this.element.getElementsByTagName('select')[0];
-		this.sorters = this.select.getElementsByTagName('option');
-		// add the event listener for the input
-		this.input.addEventListener('blur', this.onSearchChanged());
-		this.input.addEventListener('keyup', this.onSearchChanged());
-		this.input.addEventListener('change', this.onSearchChanged());
-		// add the event listener for the select
-		this.select.addEventListener('change', this.onSorterSelected());
-		// add the event listener for the form
-		this.element.addEventListener('submit', this.onSearchSubmit());
-		// add the reset button to browsers that need it
-		if (!/MSIE/i.test(navigator.userAgent)) { this.input.addEventListener('click', this.onSearchReset()); }
-		else { this.input.style.backgroundImage = 'none'; }
-		// return the object
-		return this;
-	};
-
-	this.redraw = function (index) {
-		// update the drop down
-		this.select.selectedIndex = index;
-	};
-
-	this.searchFor = function (keyword) {
-		var a, b, contents,
-			sortees = document.querySelectorAll( this.element.getAttribute('data-target') ),
-			findTags = new RegExp('<[^>]*>', 'g'),
-			findKeyword = new RegExp(keyword, 'i');
-		// for all elements
-		for (a = 0, b = sortees.length; a < b; a += 1) {
-			// clear the contents of the sortee
-			contents = sortees[a].innerHTML.replace(findTags, ' ');
-			// show or hide the elements based on the keyword
-			sortees[a].style.display = (findKeyword.test(contents)) ? 'block' : 'none';
-		}
-		// trigger the promise
-		this.promise();
-	};
-
-	this.sortBy = function (index) {
-		var a, b, unsorted = [],
-			sorted = [],
-			source = this.sorters[index].getAttribute('data-source'),
-			method = this.sorters[index].getAttribute('data-type'),
-			sortees = document.querySelectorAll( this.element.getAttribute('data-target') ),
-			parent = sortees[0].parentNode,
-			fragment = document.createDocumentFragment();
-		// get the sortee elements
-		for (a = 0, b = sortees.length; a < b; a += 1) { unsorted.push(sortees[a]); }
-		// sort the elements
-		sorted = unsorted.sort(function (a, b) {
-			// get the source value
-			a = a.querySelector(source).innerHTML;
-			b = b.querySelector(source).innerHTML;
-			// process the source value
-			if (method === 'number') {
-				a = parseFloat(a);
-				b = parseFloat(b);
-			}
-			// compare the values
-			return (a < b) ? -1 : 1;
-		});
-		// clone the sorted elements into the document fragment
-		for (a = 0, b = sorted.length; a < b; a += 1) { fragment.appendChild( parent.removeChild(sorted[a], true) ); }
-		parent.appendChild(fragment);
-		// redraw the interface element
-		this.redraw(index);
-		// trigger the promise
-		this.promise();
-	};
-
-	// EVENTS
-
-	this.onSearchSubmit = function () {
-		var _this = this;
-		return function (evt) {
-			// cancel the submit
-			evt.preventDefault();
-			// search manually instead
-			_this.searchFor(_this.input.value.trim());
-			// deselect the field
-			_this.input.blur();
-		};
-	};
-
-	this.onSearchReset = function () {
-		var _this = this;
-		return function (evt) {
-			// if the  right side of the element is clicked
-			if (_this.input.offsetWidth - evt.layerX < 32) {
-				// cancel the click
-				evt.preventDefault();
-				// reset the search
-				_this.input.blur();
-				_this.input.value = '';
-				_this.searchFor('');
-			}
-		};
-	};
-
-	this.onSearchChanged = function () {
-		var _this = this;
-		return function (evt) {
-			// wait for the typing to pause
-			clearTimeout(_this.delay);
-			_this.delay = setTimeout(function () {
-				// perform the search
-				_this.searchFor(_this.input.value.trim());
-			}, 700);
-		};
-	};
-
-	this.onSorterSelected = function () {
-		var _this = this;
-		return function (evt) {
-			// cancel the click
-			evt.preventDefault();
-			// sort the sortees by the selected sorter
-			_this.sortBy(_this.select.selectedIndex);
-		};
-	};
-
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = useful.Filters;
-}
-
-/*
-	Source:
-	van Creij, Maurice (2014). "useful.gestures.js: A library of useful functions to ease working with touch and gestures.", version 20141127, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-*/
-
-// create the constructor if needed
-var useful = useful || {};
-useful.Gestures = useful.Gestures || function () {};
-
-// extend the constructor
-useful.Gestures.prototype.Main = function (config, context) {
-
-	// PROPERTIES
-
-	"use strict";
-	this.config = config;
-	this.context = context;
-	this.element = config.element;
-	this.paused = false;
-
-	// METHODS
-
-	this.init = function () {
-		// check the configuration properties
-		this.config = this.checkConfig(config);
-		// add the single touch events
-		this.single = new this.context.Single(this).init();
-		// add the multi touch events
-		this.multi = new this.context.Multi(this).init();
-		// return the object
-		return this;
-	};
-
-	this.checkConfig = function (config) {
-		// add default values for missing ones
-		config.threshold = config.threshold || 50;
-		config.increment = config.increment || 0.1;
-		// cancel all events by default
-		if (config.cancelTouch === undefined || config.cancelTouch === null) { config.cancelTouch = true; }
-		if (config.cancelGesture === undefined || config.cancelGesture === null) { config.cancelGesture = true; }
-		// add dummy event handlers for missing ones
-		config.swipeUp = config.swipeUp || function () {};
-		config.swipeLeft = config.swipeLeft || function () {};
-		config.swipeRight = config.swipeRight || function () {};
-		config.swipeDown = config.swipeDown || function () {};
-		config.drag = config.drag || function () {};
-		config.pinch = config.pinch || function () {};
-		config.twist = config.twist || function () {};
-		config.doubleTap = config.doubleTap || function () {};
-		// return the fixed config
-		return config;
-	};
-
-	this.readEvent = function (event) {
-		var coords = {}, offsets;
-		// try all likely methods of storing coordinates in an event
-		if (event.touches && event.touches[0]) {
-			coords.x = event.touches[0].pageX;
-			coords.y = event.touches[0].pageY;
-		} else if (event.pageX !== undefined) {
-			coords.x = event.pageX;
-			coords.y = event.pageY;
-		} else {
-			coords.x = event.clientX + (document.documentElement.scrollLeft || document.body.scrollLeft);
-			coords.y = event.clientY + (document.documentElement.scrollTop || document.body.scrollTop);
-		}
-		return coords;
-	};
-
-	this.correctOffset = function (element) {
-		var offsetX = 0, offsetY = 0;
-		// if there is an offset
-		if (element.offsetParent) {
-			// follow the offsets back to the right parent element
-			while (element !== this.element) {
-				offsetX += element.offsetLeft;
-				offsetY += element.offsetTop;
-				element = element.offsetParent;
-			}
-		}
-		// return the offsets
-		return { 'x' : offsetX, 'y' : offsetY };
-	};
-
-	// EXTERNAL
-
-	this.enableDefaultTouch = function () {
-		this.config.cancelTouch = false;
-	};
-
-	this.disableDefaultTouch = function () {
-		this.config.cancelTouch = true;
-	};
-
-	this.enableDefaultGesture = function () {
-		this.config.cancelGesture = false;
-	};
-
-	this.disableDefaultGesture = function () {
-		this.config.cancelGesture = true;
-	};
-
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = useful.Gestures.Main;
-}
-
-/*
-	Source:
-	van Creij, Maurice (2014). "useful.gestures.js: A library of useful functions to ease working with touch and gestures.", version 20141127, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-*/
-
-// create the constructor if needed
-var useful = useful || {};
-useful.Gestures = useful.Gestures || function () {};
-
-// extend the constructor
-useful.Gestures.prototype.Multi = function (parent) {
-
-	// PROPERTIES
-
-	"use strict";
-	this.parent = parent;
-	this.config = parent.config;
-	this.element = parent.config.element;
-	this.gestureOrigin = null;
-	this.gestureProgression = null;
-
-	// METHODS
-
-	this.init = function () {
-		// set the required events for gestures
-		if ('ongesturestart' in window) {
-			this.element.addEventListener('gesturestart', this.onStartGesture());
-			this.element.addEventListener('gesturechange', this.onChangeGesture());
-			this.element.addEventListener('gestureend', this.onEndGesture());
-		} else if ('msgesturestart' in window) {
-			this.element.addEventListener('msgesturestart', this.onStartGesture());
-			this.element.addEventListener('msgesturechange', this.onChangeGesture());
-			this.element.addEventListener('msgestureend', this.onEndGesture());
-		} else {
-			this.element.addEventListener('touchstart', this.onStartFallback());
-			this.element.addEventListener('touchmove', this.onChangeFallback());
-			this.element.addEventListener('touchend', this.onEndFallback());
-		}
-		// return the object
-		return this;
-	};
-
-	this.cancelGesture = function (event) {
-		if (this.config.cancelGesture) {
-			event = event || window.event;
-			event.preventDefault();
-		}
-	};
-
-	this.startGesture = function (event) {
-		// if the functionality wasn't paused
-		if (!this.parent.paused) {
-			// note the start position
-			this.gestureOrigin = {
-				'scale' : event.scale,
-				'rotation' : event.rotation,
-				'target' : event.target || event.srcElement
-			};
-			this.gestureProgression = {
-				'scale' : this.gestureOrigin.scale,
-				'rotation' : this.gestureOrigin.rotation
-			};
-		}
-	};
-
-	this.changeGesture = function (event) {
-		// if there is an origin
-		if (this.gestureOrigin) {
-			// get the distances from the event
-			var scale = event.scale,
-				rotation = event.rotation;
-			// get the coordinates from the event
-			var coords = this.parent.readEvent(event);
-			// get the gesture parameters
-			this.config.pinch({
-				'x' : coords.x,
-				'y' : coords.y,
-				'scale' : scale - this.gestureProgression.scale,
-				'event' : event,
-				'target' : this.gestureOrigin.target
-			});
-			this.config.twist({
-				'x' : coords.x,
-				'y' : coords.y,
-				'rotation' : rotation - this.gestureProgression.rotation,
-				'event' : event,
-				'target' : this.gestureOrigin.target
-			});
-			// update the current position
-			this.gestureProgression = {
-				'scale' : event.scale,
-				'rotation' : event.rotation
-			};
-		}
-	};
-
-	this.endGesture = function () {
-		// note the start position
-		this.gestureOrigin = null;
-	};
-
-	// FALLBACK
-
-	this.startFallback = function (event) {
-		// if the functionality wasn't paused
-		if (!this.parent.paused && event.touches.length === 2) {
-			// note the start position
-			this.gestureOrigin = {
-				'touches' : [
-					{ 'pageX' : event.touches[0].pageX, 'pageY' : event.touches[0].pageY },
-					{ 'pageX' : event.touches[1].pageX, 'pageY' : event.touches[1].pageY }
-				],
-				'target' : event.target || event.srcElement
-			};
-			this.gestureProgression = {
-				'touches' : this.gestureOrigin.touches
-			};
-		}
-	};
-
-	this.changeFallback = function (event) {
-		// if there is an origin
-		if (this.gestureOrigin && event.touches.length === 2) {
-			// get the coordinates from the event
-			var coords = this.parent.readEvent(event);
-			// calculate the scale factor
-			var scale = 0, progression = this.gestureProgression;
-			scale += (event.touches[0].pageX - event.touches[1].pageX) / (progression.touches[0].pageX - progression.touches[1].pageX);
-			scale += (event.touches[0].pageY - event.touches[1].pageY) / (progression.touches[0].pageY - progression.touches[1].pageY);
-			scale = scale - 2;
-			// get the gesture parameters
-			this.config.pinch({
-				'x' : coords.x,
-				'y' : coords.y,
-				'scale' : scale,
-				'event' : event,
-				'target' : this.gestureOrigin.target
-			});
-			// update the current position
-			this.gestureProgression = {
-				'touches' : [
-					{ 'pageX' : event.touches[0].pageX, 'pageY' : event.touches[0].pageY },
-					{ 'pageX' : event.touches[1].pageX, 'pageY' : event.touches[1].pageY }
-				]
-			};
-		}
-	};
-
-	this.endFallback = function () {
-		// note the start position
-		this.gestureOrigin = null;
-	};
-
-	// GESTURE EVENTS
-
-	this.onStartGesture = function () {
-		// store the _this
-		var _this = this;
-		// return and event handler
-		return function (event) {
-			// optionally cancel the default behaviour
-			_this.cancelGesture(event);
-			// handle the event
-			_this.startGesture(event);
-			_this.changeGesture(event);
-		};
-	};
-
-	this.onChangeGesture = function () {
-		// store the _this
-		var _this = this;
-		// return and event handler
-		return function (event) {
-			// optionally cancel the default behaviour
-			_this.cancelGesture(event);
-			// handle the event
-			_this.changeGesture(event);
-		};
-	};
-
-	this.onEndGesture = function () {
-		// store the _this
-		var _this = this;
-		// return and event handler
-		return function (event) {
-			// handle the event
-			_this.endGesture(event);
-		};
-	};
-
-	// FALLBACK EVENTS
-
-	this.onStartFallback = function () {
-		// store the _this
-		var _this = this;
-		// return and event handler
-		return function (event) {
-			// optionally cancel the default behaviour
-			//_this.cancelGesture(event);
-			// handle the event
-			_this.startFallback(event);
-			_this.changeFallback(event);
-		};
-	};
-
-	this.onChangeFallback = function () {
-		// store the _this
-		var _this = this;
-		// return and event handler
-		return function (event) {
-			// optionally cancel the default behaviour
-			_this.cancelGesture(event);
-			// handle the event
-			_this.changeFallback(event);
-		};
-	};
-
-	this.onEndFallback = function () {
-		// store the _this
-		var _this = this;
-		// return and event handler
-		return function (event) {
-			// handle the event
-			_this.endGesture(event);
-		};
-	};
-
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = useful.Gestures.Multi;
-}
-
-/*
-	Source:
-	van Creij, Maurice (2014). "useful.gestures.js: A library of useful functions to ease working with touch and gestures.", version 20141127, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-*/
-
-// create the constructor if needed
-var useful = useful || {};
-useful.Gestures = useful.Gestures || function () {};
-
-// extend the constructor
-useful.Gestures.prototype.Single = function (parent) {
-
-	// PROPERTIES
-
-	"use strict";
-	this.parent = parent;
-	this.config = parent.config;
-	this.element = parent.config.element;
-	this.lastTouch = null;
-	this.touchOrigin = null;
-	this.touchProgression = null;
-
-	// METHODS
-
-	this.init = function () {
-		// set the required events for mouse
-		this.element.addEventListener('mousedown', this.onStartTouch());
-		this.element.addEventListener('mousemove', this.onChangeTouch());
-		document.body.addEventListener('mouseup', this.onEndTouch());
-		this.element.addEventListener('mousewheel', this.onChangeWheel());
-		if (navigator.userAgent.match(/firefox/gi)) { this.element.addEventListener('DOMMouseScroll', this.onChangeWheel()); }
-		// set the required events for touch
-		this.element.addEventListener('touchstart', this.onStartTouch());
-		this.element.addEventListener('touchmove', this.onChangeTouch());
-		document.body.addEventListener('touchend', this.onEndTouch());
-		this.element.addEventListener('mspointerdown', this.onStartTouch());
-		this.element.addEventListener('mspointermove', this.onChangeTouch());
-		document.body.addEventListener('mspointerup', this.onEndTouch());
-		// return the object
-		return this;
-	};
-
-	this.cancelTouch = function (event) {
-		if (this.config.cancelTouch) {
-			event = event || window.event;
-			event.preventDefault();
-		}
-	};
-
-	this.startTouch = function (event) {
-		// if the functionality wasn't paused
-		if (!this.parent.paused) {
-			// get the coordinates from the event
-			var coords = this.parent.readEvent(event);
-			// note the start position
-			this.touchOrigin = {
-				'x' : coords.x,
-				'y' : coords.y,
-				'target' : event.target || event.srcElement
-			};
-			this.touchProgression = {
-				'x' : this.touchOrigin.x,
-				'y' : this.touchOrigin.y
-			};
-		}
-	};
-
-	this.changeTouch = function (event) {
-		// if there is an origin
-		if (this.touchOrigin) {
-			// get the coordinates from the event
-			var coords = this.parent.readEvent(event);
-			// get the gesture parameters
-			this.config.drag({
-				'x' : this.touchOrigin.x,
-				'y' : this.touchOrigin.y,
-				'horizontal' : coords.x - this.touchProgression.x,
-				'vertical' : coords.y - this.touchProgression.y,
-				'event' : event,
-				'source' : this.touchOrigin.target
-			});
-			// update the current position
-			this.touchProgression = {
-				'x' : coords.x,
-				'y' : coords.y
-			};
-		}
-	};
-
-	this.endTouch = function (event) {
-		// if the numbers are valid
-		if (this.touchOrigin && this.touchProgression) {
-			// calculate the motion
-			var distance = {
-				'x' : this.touchProgression.x - this.touchOrigin.x,
-				'y' : this.touchProgression.y - this.touchOrigin.y
-			};
-			// if there was very little movement, but this is the second touch in quick successionif (
-			if (
-				this.lastTouch &&
-				Math.abs(this.touchOrigin.x - this.lastTouch.x) < 10 &&
-				Math.abs(this.touchOrigin.y - this.lastTouch.y) < 10 &&
-				new Date().getTime() - this.lastTouch.time < 500 &&
-				new Date().getTime() - this.lastTouch.time > 100
-			) {
-				// treat this as a double tap
-				this.config.doubleTap({'x' : this.touchOrigin.x, 'y' : this.touchOrigin.y, 'event' : event, 'source' : this.touchOrigin.target});
-			// if the horizontal motion was the largest
-			} else if (Math.abs(distance.x) > Math.abs(distance.y)) {
-				// if there was a right swipe
-				if (distance.x > this.config.threshold) {
-					// report the associated swipe
-					this.config.swipeRight({'x' : this.touchOrigin.x, 'y' : this.touchOrigin.y, 'distance' : distance.x, 'event' : event, 'source' : this.touchOrigin.target});
-				// else if there was a left swipe
-				} else if (distance.x < -this.config.threshold) {
-					// report the associated swipe
-					this.config.swipeLeft({'x' : this.touchOrigin.x, 'y' : this.touchOrigin.y, 'distance' : -distance.x, 'event' : event, 'source' : this.touchOrigin.target});
-				}
-			// else
-			} else {
-				// if there was a down swipe
-				if (distance.y > this.config.threshold) {
-					// report the associated swipe
-					this.config.swipeDown({'x' : this.touchOrigin.x, 'y' : this.touchOrigin.y, 'distance' : distance.y, 'event' : event, 'source' : this.touchOrigin.target});
-				// else if there was an up swipe
-				} else if (distance.y < -this.config.threshold) {
-					// report the associated swipe
-					this.config.swipeUp({'x' : this.touchOrigin.x, 'y' : this.touchOrigin.y, 'distance' : -distance.y, 'event' : event, 'source' : this.touchOrigin.target});
-				}
-			}
-			// store the history of this touch
-			this.lastTouch = {
-				'x' : this.touchOrigin.x,
-				'y' : this.touchOrigin.y,
-				'time' : new Date().getTime()
-			};
-		}
-		// clear the input
-		this.touchProgression = null;
-		this.touchOrigin = null;
-	};
-
-	this.changeWheel = function (event) {
-		// measure the wheel distance
-		var scale = 1, distance = ((window.event) ? window.event.wheelDelta / 120 : -event.detail / 3);
-		// get the coordinates from the event
-		var coords = this.parent.readEvent(event);
-		// equate wheeling up / down to zooming in / out
-		scale = (distance > 0) ? +this.config.increment : scale = -this.config.increment;
-		// report the zoom
-		this.config.pinch({
-			'x' : coords.x,
-			'y' : coords.y,
-			'scale' : scale,
-			'event' : event,
-			'source' : event.target || event.srcElement
-		});
-	};
-
-	// TOUCH EVENTS
-
-	this.onStartTouch = function () {
-		// store the _this
-		var _this = this;
-		// return and event handler
-		return function (event) {
-			// get event elementect
-			event = event || window.event;
-			// handle the event
-			_this.startTouch(event);
-			_this.changeTouch(event);
-		};
-	};
-
-	this.onChangeTouch = function () {
-		// store the _this
-		var _this = this;
-		// return and event handler
-		return function (event) {
-			// get event elementect
-			event = event || window.event;
-			// optionally cancel the default behaviour
-			_this.cancelTouch(event);
-			// handle the event
-			_this.changeTouch(event);
-		};
-	};
-
-	this.onEndTouch = function () {
-		// store the _this
-		var _this = this;
-		// return and event handler
-		return function (event) {
-			// get event elementect
-			event = event || window.event;
-			// handle the event
-			_this.endTouch(event);
-		};
-	};
-
-	// MOUSE EVENTS
-
-	this.onChangeWheel = function () {
-		// store the _this
-		var _this = this;
-		// return and event handler
-		return function (event) {
-			// get event elementect
-			event = event || window.event;
-			// optionally cancel the default behaviour
-			_this.cancelTouch(event);
-			// handle the event
-			_this.changeWheel(event);
-		};
-	};
-
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = useful.Gestures.Single;
-}
-
-/*
-	Source:
-	van Creij, Maurice (2014). "useful.gestures.js: A library of useful functions to ease working with touch and gestures.", version 20141127, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-*/
-
-// create the constructor if needed
-var useful = useful || {};
-useful.Gestures = useful.Gestures || function () {};
-
-// extend the constructor
-useful.Gestures.prototype.init = function (config) {
-
-	// PROPERTIES
-	
-	"use strict";
-
-	// METHODS
-	
-	this.only = function (config) {
-		// start an instance of the script
-		return new this.Main(config, this).init();
-	};
-	
-	this.each = function (config) {
-		var _config, _context = this, instances = [];
-		// for all element
-		for (var a = 0, b = config.elements.length; a < b; a += 1) {
-			// clone the configuration
-			_config = Object.create(config);
-			// insert the current element
-			_config.element = config.elements[a];
-			// delete the list of elements from the clone
-			delete _config.elements;
-			// start a new instance of the object
-			instances[a] = new this.Main(_config, _context).init();
-		}
-		// return the instances
-		return instances;
-	};
-
-	// START
-
-	return (config.elements) ? this.each(config) : this.only(config);
-
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = useful.Gestures;
-}
-
-/*
-	Source:
-	van Creij, Maurice (2018). "useful-photocylinder.js: Displays a cylindrical projection of a panoramic image.", version 20180102, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-*/
-
-// create the constructor if needed
-var useful = useful || {};
-useful.Photocylinder = useful.Photocylinder || function () {};
-
-// extend the constructor
-useful.Photocylinder.prototype.Busy = function (container) {
-
-	// PROPERTIES
-
-	"use strict";
-	this.container = container;
-
-	// METHODS
-
-	this.init = function () {
-		// not needed yet
-	};
-
-	this.show = function () {
-		// construct the spinner
-		this.spinner = document.createElement('div');
-		this.spinner.className = (this.container === document.body) ?
-			'photocylinder-busy photocylinder-busy-fixed photocylinder-busy-active':
-			'photocylinder-busy photocylinder-busy-active';
-		this.container.appendChild(this.spinner);
-	};
-
-	this.hide = function () {
-		// deconstruct the spinner
-		if (this.spinner) {
-			this.container.removeChild(this.spinner);
-			this.spinner = null;
-		}
-	};
-
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = useful.Photocylinder.Busy;
-}
-
-/*
-	Source:
-	van Creij, Maurice (2018). "useful-photocylinder.js: Displays a cylindrical projection of a panoramic image.", version 20180102, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-*/
-
-// create the constructor if needed
-var useful = useful || {};
-useful.Photocylinder = useful.Photocylinder || function () {};
-
-// extend the constructor
-useful.Photocylinder.prototype.Fallback = function (parent) {
-
-	"use strict";
-
-	// PROPERTIES
-
-	this.parent = parent;
-    this.config = parent.config;
-	this.popup = this.config.popup;
-	this.image = this.config.image;
-	this.imageAspect = null;
-	this.wrapper = null;
-	this.wrapperAspect = null;
-	this.fov = null;
-	this.magnification = {};
-	this.horizontal = {};
-	this.vertical = {};
-	this.tracked = null;
-	this.increment = this.config.idle / 200;
-	this.auto = true;
-
-	// METHODS
-
-	this.init = function() {
-		// prepare the markup
-		this.build();
-		// render the display
-		this.render();
-		// add the controls
-		this.controls();
-		// rescale after resize
-		this.resizeListener = this.resize.bind(this);
-		window.addEventListener('resize', this.resizeListener, true);
-
-	};
-
-	this.destroy = function() {
-		// cancel all global event listeners
-		window.removeEventListener('resize', this.resizeListener, true);
-		window.removeEventListener('deviceorientation', this.tiltListener, true);
-	};
-
-	this.build = function() {
-		// add the wrapper
-		this.wrapper = document.createElement('div');
-		this.wrapper.setAttribute('class', 'photo-cylinder pc-fallback');
-		// TODO: for 360deg images the image needs to be doubled to allow looping
-		var clonedImage = this.image.cloneNode(true);
-		// add markup here
-		this.wrapper.appendChild(this.image);
-		// insert the object
-		this.popup.appendChild(this.wrapper);
-	};
-
-	this.render = function() {
-		// get the aspect ratio from the image
-		this.imageAspect = this.image.offsetWidth / this.image.offsetHeight;
-		// calculate the zoom limits
-		this.magnification.min = 1; // TODO: make sure the image fills the width and height
-		this.magnification.max = 4;
-		// set the initial rotation
-		this.recentre();
-		// set the initial zoom
-		this.resize();
-		// if the image is wide enough, start the idle animation
-		if (this.imageAspect - this.wrapperAspect >= 1) this.animate();
-	};
-
-	this.controls = function() {
-		// add touch controls
-		this.wrapper.addEventListener('touchstart', this.touch.bind(this, 'start'));
-		this.wrapper.addEventListener('touchmove', this.touch.bind(this, 'move'));
-		this.wrapper.addEventListener('touchend', this.touch.bind(this, 'end'));
-		// add mouse controls
-		this.wrapper.addEventListener('mousedown', this.touch.bind(this, 'start'));
-		this.wrapper.addEventListener('mousemove', this.touch.bind(this, 'move'));
-		this.wrapper.addEventListener('mouseup', this.touch.bind(this, 'end'));
-		this.wrapper.addEventListener('mousewheel', this.wheel.bind(this));
-	    this.wrapper.addEventListener('DOMMouseScroll', this.wheel.bind(this));
-		// add tilt contols
-		this.tiltListener = this.tilt.bind(this);
-		window.addEventListener("deviceorientation", this.tiltListener, true);
-	};
-
-	this.coords = function(evt) {
-		return {
-			x: evt.screenX || evt.touches[0].screenX,
-			y: evt.screenY || evt.touches[0].screenY,
-			z: (evt.touches && evt.touches.length > 1) ? Math.abs(evt.touches[0].screenX - evt.touches[1].screenX + evt.touches[0].screenY - evt.touches[1].screenY) : 0
-		}
-	};
-
-	this.recentre = function() {
-		// reset the initial position
-		this.magnification.current = this.magnification.min * 1.25;
-		this.horizontal.current = 0.5;
-		this.vertical.current = 0.5;
-	};
-
-	this.magnify = function(factor) {
-		// limit the zoom
-		this.magnification.current = Math.max(Math.min(factor, this.magnification.max), this.magnification.min);
-		// (re)calculate the movement limits
-		this.horizontal.min = Math.min(0.5 - (this.magnification.current -  this.wrapperAspect / this.imageAspect) / 2, 0.5);
-		this.horizontal.max = Math.max(1 - this.horizontal.min, 0.5);
-		this.horizontal.current = Math.max(Math.min(this.horizontal.current, this.horizontal.max), this.horizontal.min);
-		this.vertical.min = Math.min(0.5 - (this.magnification.current - 1) / 2, 0.5);
-		this.vertical.max = Math.max(1 - this.vertical.min, 0.5);
-		this.vertical.current = Math.max(Math.min(this.vertical.current, this.vertical.max), this.vertical.min);
-		// implement the zoom
-		this.redraw();
-	};
-
-	this.move = function(horizontal, vertical) {
-		// implement the movement
-		this.horizontal.current = Math.max(Math.min(horizontal, this.horizontal.max), this.horizontal.min);
-		this.vertical.current = Math.max(Math.min(vertical, this.vertical.max), this.vertical.min);
-		// implement the zoom
-		this.redraw();
-	};
-
-	this.momentum = function() {
-		// on requestAnimationFrame count down the delta vectors to ~0
-		if (this.magnification.delta || this.horizontal.delta || this.vertical.delta) {
-			// reduce the increment
-			this.magnification.delta = (Math.abs(this.magnification.delta) > 0.0001) ? this.magnification.delta / 1.05 : 0;
-			this.horizontal.delta = (Math.abs(this.horizontal.delta) > 0.001) ? this.horizontal.delta / 1.05 : 0;
-			this.vertical.delta = (Math.abs(this.vertical.delta) > 0.001) ? this.vertical.delta / 1.05 : 0;
-			// advance rotation incrementally
-			this.move(this.horizontal.current + this.horizontal.delta, this.vertical.current + this.vertical.delta);
-			this.magnify(this.magnification.current + this.magnification.delta);
-			// wait for the next render
-			window.requestAnimationFrame(this.momentum.bind(this));
-		}
-	};
-
-	this.redraw = function() {
-		// apply all transformations in one go
-		this.image.style.transform = 'translate(' + (this.horizontal.current * -100) + '%, ' + (this.vertical.current * -100) + '%) scale(' + this.magnification.current + ', ' + this.magnification.current + ')';
-	};
-
-	this.animate = function(allow) {
-		// accept overrides
-		if (typeof allow === 'boolean') {
-			this.auto = allow;
-		}
-		// if animation is allowed
-		if (this.auto) {
-			// in 180 degree pictures adjust increment and reverse, otherwise loop forever
-			if (this.horizontal.current + this.increment * 2 > this.horizontal.max) this.increment = -this.config.idle / 200;
-			if (this.horizontal.current + this.increment * 2 < this.horizontal.min) this.increment = this.config.idle / 200;
-			var step = this.horizontal.current + this.increment;
-			// advance rotation incrementally, until interrupted
-			this.move(step, this.vertical.current);
-			window.requestAnimationFrame(this.animate.bind(this));
-		}
-	};
-
-	// EVENTS
-
-	this.tilt = function(evt) {
-		// stop animating
-		this.auto = false;
-		// if there was tilt before and the jump is not extreme
-		if (this.horizontal.tilted && this.vertical.tilted && Math.abs(evt.alpha - this.horizontal.tilted) < 45 && Math.abs(evt.beta - this.vertical.tilted) < 45) {
-			// update the rotation
-			this.move(
-				this.horizontal.current - (evt.alpha - this.horizontal.tilted) / 180,
-				this.vertical.current - (evt.beta - this.vertical.tilted) / 180
-			);
-		}
-		// store the tilt
-		this.horizontal.tilted = evt.alpha;
-		this.vertical.tilted = evt.beta;
-	};
-
-	this.wheel = function(evt) {
-		// cancel the scrolling
-		evt.preventDefault();
-		// stop animating
-		this.auto = false;
-		// reset the deltas
-		this.magnification.delta = 0;
-		// get the feedback
-		var coords = this.coords(evt);
-		var distance = evt.deltaY || evt.wheelDeltaY || evt.wheelDelta;
-		this.magnification.delta = distance / this.wrapper.offsetHeight;
-		this.magnify(this.magnification.current + this.magnification.delta);
-		// continue based on inertia
-		this.momentum();
-	};
-
-	this.touch = function(phase, evt) {
-		// cancel the click
-		evt.preventDefault();
-		// pick the phase of interaction
-		var coords, scale = this.magnification.current / this.magnification.min;
-		switch(phase) {
-			case 'start':
-				// stop animating
-				this.auto = false;
-				// reset the deltas
-				this.magnification.delta = 0;
-				this.horizontal.delta = 0;
-				this.vertical.delta = 0;
-				// start tracking
-				this.tracked = this.coords(evt);
-				break;
-			case 'move':
-				if (this.tracked) {
-					coords = this.coords(evt);
-					// store the momentum
-					this.magnification.delta = (this.tracked.z - coords.z) / this.wrapper.offsetWidth * scale * 2;
-					this.horizontal.delta = (this.tracked.x - coords.x) / this.wrapper.offsetWidth * scale / this.imageAspect;
-					this.vertical.delta = (this.tracked.y - coords.y) / this.wrapper.offsetHeight * scale;
-					// calculate the position
-					this.move(this.horizontal.current + this.horizontal.delta, this.vertical.current + this.vertical.delta);
-					// calculate the zoom
-					this.magnify(this.magnification.current - this.magnification.delta);
-					// update the step
-					this.tracked.x = coords.x;
-					this.tracked.y = coords.y;
-					this.tracked.z = coords.z;
-				}
-				break;
-			case 'end':
-				// stop tracking
-				this.tracked = null;
-				// continue based on inertia
-				this.momentum();
-				break;
-		}
-	};
-
-	this.resize = function() {
-		// update the aspect ratio
-		this.wrapperAspect = this.wrapper.offsetWidth / this.wrapper.offsetHeight;
-		// restore current values
-		var factor = this.magnification.current || 1;
-		var horizontal = this.horizontal.current || 0.5;
-		var vertical = this.vertical.current || 0.5;
-		// reset to zoom
-		this.magnify(factor);
-		// reset the rotation
-		this.move(horizontal, vertical);
-	};
-
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = useful.Photocylinder.Fallback;
-}
-
-/*
-	Source:
-	van Creij, Maurice (2018). "useful-photocylinder.js: Displays a cylindrical projection of a panoramic image.", version 20180102, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-*/
-
-// create the constructor if needed
-var useful = useful || {};
-useful.Photocylinder = useful.Photocylinder || function() {};
-
-// extend the constructor
-useful.Photocylinder.prototype.Main = function(config, context) {
-
-	"use strict";
-
-	// PROPERTIES
-
-	this.context = context;
-	this.element = config.element;
-	this.config = {
-		'container': document.body,
-		'spherical' : /fov360/,
-		'cylindrical' : /fov180/,
-		'slicer': '{src}',
-		'idle': 0.1
-	};
-
-	for (name in config) {
-		this.config[name] = config[name];
-	}
-
-	// METHODS
-
-	this.init = function() {
-		// set the event handler on the target element
-		this.element.addEventListener('click', this.onElementClicked.bind(this));
-	};
-
-	this.success = function(url) {
-		// check if the aspect ratio of the image can be determined
-		var image = this.config.image;
-		var isWideEnough = (image.naturalWidth && image.naturalHeight && image.naturalWidth / image.naturalHeight > 3);
-		// show the popup
-		this.popup = new this.context.Popup(this);
-		this.popup.show();
-		// insert the viewer, but MSIE and low FOV should default to fallback
-		this.stage = (!/msie|trident|edge/i.test(navigator.userAgent) && (this.config.spherical.test(url) || this.config.cylindrical.test(url) || isWideEnough)) ? new this.context.Stage(this) : new this.context.Fallback(this);
-		this.stage.init();
-		// hide the busy indicator
-		this.busy.hide();
-		// resolve the opened promise
-		if (this.config.opened) {
-			this.config.opened(this.config.element);
-		}
-	};
-
-	this.failure = function(url) {
-		var config = this.config;
-		// get rid of the image
-		this.config.image = null;
-		// give up on the popup
-		if (this.popup) {
-			// remove the popup
-			config.container.removeChild(this.popup);
-			// remove its reference
-			this.popup = null;
-			this.stage = null;
-		}
-		// trigger the located handler directly
-		if (config.located) {
-			config.located(this.element);
-		}
-		// hide the busy indicator
-		this.busy.hide();
-	};
-
-	this.destroy = function() {
-		console.log('main: destroy');
-		// shut down sub components
-		this.stage.destroy();
-	};
-
-	// EVENTS
-
-	this.onElementClicked = function(evt) {
-		// prevent the click
-		evt.preventDefault();
-		// show the busy indicator
-		this.busy = new this.context.Busy(this.config.container);
-		this.busy.show();
-		// create the url for the image sizing webservice
-	    var url = this.config.url || this.element.getAttribute('href') || this.image.getAttribute('src');
-	    var size = (this.config.spherical.test(url)) ? 'height=800&top=0.2&bottom=0.8' : 'height=800';
-		// load the image asset
-		this.config.image = new Image();
-		this.config.image.src = this.config.slicer.replace('{src}', url).replace('{size}', size);
-		// load the viewer when done
-		this.config.image.addEventListener('load', this.success.bind(this, url));
-		this.config.image.addEventListener('error', this.failure.bind(this, url));
-	};
-
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = useful.Photocylinder.Main;
-}
-
-/*
-	Source:
-	van Creij, Maurice (2018). "useful-photocylinder.js: Displays a cylindrical projection of a panoramic image.", version 20180102, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-*/
-
-// create the constructor if needed
-var useful = useful || {};
-useful.Photocylinder = useful.Photocylinder || function() {};
-
-// extend the constructor
-useful.Photocylinder.prototype.Popup = function(parent) {
-
-	"use strict";
-
-	// PROPERTIES
-
-	this.parent = parent;
-	this.config = parent.config;
-
-	// METHODS
-
-	this.show = function() {
-		// if the popup doesn't exist
-		if (!this.config.popup) {
-			// create a container for the popup
-			this.config.popup = document.createElement('figure');
-			this.config.popup.className = (this.config.container === document.body)
-				? 'photocylinder-popup photocylinder-popup-fixed photocylinder-popup-passive'
-				: 'photocylinder-popup photocylinder-popup-passive';
-			// add a close gadget
-			this.addCloser();
-			// add a locator gadget
-			this.addLocator();
-			// add the popup to the document
-			this.config.container.appendChild(this.config.popup);
-			// reveal the popup when ready
-			setTimeout(this.onShow.bind(this), 0);
-		}
-	};
-
-	this.hide = function() {
-		// if there is a popup
-		if (this.config.popup) {
-			// unreveal the popup
-			this.config.popup.className = this.config.popup.className.replace(/-active/gi, '-passive');
-			// and after a while
-			var _this = this;
-			setTimeout(function() {
-				// remove it
-				_this.config.container.removeChild(_this.config.popup);
-				// remove its reference
-				_this.config.popup = null;
-				// ask the parent to self destruct
-				_this.parent.destroy();
-			}, 500);
-		}
-	};
-
-	this.addCloser = function() {
-		// build a close gadget
-		var closer = document.createElement('a');
-		closer.className = 'photocylinder-closer';
-		closer.innerHTML = 'x';
-		closer.href = '#close';
-		// add the close event handler
-		closer.addEventListener('click', this.onHide.bind(this));
-		closer.addEventListener('touchstart', this.onHide.bind(this));
-		// add the close gadget to the image
-		this.config.popup.appendChild(closer);
-	};
-
-	this.addLocator = function(url) {
-		// only add if a handler was specified
-		if (this.config.located) {
-			// build the geo marker icon
-			var locator = document.createElement('a');
-			locator.className = 'photocylinder-locator';
-			locator.innerHTML = 'Show on a map';
-			locator.href = '#map';
-			// add the event handler
-			locator.addEventListener('click', this.onLocate.bind(this));
-			locator.addEventListener('touchstart', this.onLocate.bind(this));
-			// add the location marker to the image
-			this.config.popup.appendChild(locator);
-		}
-	};
-
-	// EVENTS
-
-	this.onShow = function() {
-		// show the popup
-		this.config.popup.className = this.config.popup.className.replace(/-passive/gi, '-active');
-		// trigger the closed event if available
-		if (this.config.opened) {
-			this.config.opened(this.config.element);
-		}
-	};
-
-	this.onHide = function(evt) {
-		// cancel the click
-		evt.preventDefault();
-		// close the popup
-		this.hide();
-		// trigger the closed event if available
-		if (this.config.closed) {
-			this.config.closed(this.config.element);
-		}
-	};
-
-	this.onLocate = function(evt) {
-		// cancel the click
-		evt.preventDefault();
-		// trigger the located event if available
-		if (this.config.located) {
-			this.config.located(this.config.element);
-		}
-	};
-
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = useful.Photocylinder.Popup;
-}
-
-/*
-	Source:
-	van Creij, Maurice (2018). "useful-photocylinder.js: Displays a cylindrical projection of a panoramic image.", version 20180102, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-*/
-
-// create the constructor if needed
-var useful = useful || {};
-useful.Photocylinder = useful.Photocylinder || function () {};
-
-// extend the constructor
-useful.Photocylinder.prototype.Stage = function (parent) {
-
-	"use strict";
-
-	// PROPERTIES
-
-	this.parent = parent;
-    this.config = parent.config;
-	this.popup = this.config.popup;
-	this.image = this.config.image;
-	this.imageAspect = null;
-	this.wrapper = null;
-	this.wrapperAspect = null;
-	this.baseAngle = 60;
-	this.baseSize = 500;
-	this.obj = null;
-	this.objRow = null;
-	this.objCols = [];
-	this.fov = null;
-	this.magnification = {};
-	this.rotation = {};
-	this.offset = {};
-	this.tracked = null;
-	this.increment = this.config.idle;
-	this.auto = true;
-
-	// METHODS
-
-	this.init = function() {
-		// prepare the markup
-		this.build();
-		// render the display
-		this.render();
-		// add the controls
-		this.controls();
-		// rescale after resize
-		this.resizeListener = this.resize.bind(this);
-		window.addEventListener('resize', this.resizeListener, true);
-	};
-
-	this.destroy = function() {
-		// cancel all global event listeners
-		window.removeEventListener('resize', this.resizeListener, true);
-		window.removeEventListener('deviceorientation', this.tiltListener, true);
-	};
-
-	this.build = function() {
-		// add the wrapper
-		this.wrapper = document.createElement('div');
-		this.wrapper.setAttribute('class', 'photo-cylinder');
-		// add the row object
-		this.objRow = document.createElement('div');
-		this.objRow.setAttribute('class', 'pc-obj-row');
-		this.wrapper.appendChild(this.objRow);
-		// add the column oblects
-		for (var a = 0, b = 8; a < b; a += 1) {
-			this.objCols[a] = document.createElement('span');
-			this.objCols[a].setAttribute('class', 'pc-obj-col pc-obj-col-' + a);
-			this.objRow.appendChild(this.objCols[a]);
-		}
-		// add the image
-		this.wrapper.appendChild(this.image);
-		// insert the object
-		this.popup.appendChild(this.wrapper);
-	};
-
-	this.render = function() {
-		// retrieve the field of view from the image source
-		var url = this.image.getAttribute('src');
-		this.fov = this.config.spherical.test(url) ? 360 : 180;
-		// get the aspect ratio from the image
-		this.imageAspect = this.image.offsetWidth / this.image.offsetHeight;
-		// get the field of view property or guess one
-		this.wrapper.className += (this.fov < 360) ? ' pc-180' : ' pc-360';
-		// calculate the zoom limits - scale = aspect * (360 / fov) * 0.3
-		this.magnification.min = Math.max(this.imageAspect * (360 / this.fov) * 0.3, 1);
-		this.magnification.max = 4;
-		this.magnification.current = this.magnification.min * 1.25;
-		// the offset limits are 0 at zoom level 1 be definition, because there is no overscan
-		this.offset.min = 0;
-		this.offset.max = 0;
-		// set the image source as the background image for the polygons
-		for (var a = 0, b = this.objCols.length; a < b; a += 1) {
-			this.objCols[a].style.backgroundImage = "url('" + url + "')";
-		}
-		// set the initial zoom
-		this.resize();
-		// set the initial rotation
-		this.recentre();
-		// start the idle animation
-		this.animate();
-	};
-
-	this.controls = function() {
-		// add touch controls
-		this.wrapper.addEventListener('touchstart', this.touch.bind(this, 'start'));
-		this.wrapper.addEventListener('touchmove', this.touch.bind(this, 'move'));
-		this.wrapper.addEventListener('touchend', this.touch.bind(this, 'end'));
-		// add mouse controls
-		this.wrapper.addEventListener('mousedown', this.touch.bind(this, 'start'));
-		this.wrapper.addEventListener('mousemove', this.touch.bind(this, 'move'));
-		this.wrapper.addEventListener('mouseup', this.touch.bind(this, 'end'));
-		this.wrapper.addEventListener('mousewheel', this.wheel.bind(this));
-	    this.wrapper.addEventListener('DOMMouseScroll', this.wheel.bind(this));
-		// add tilt contols
-		this.tiltListener = this.tilt.bind(this);
-		window.addEventListener("deviceorientation", this.tiltListener, true);
-	};
-
-	this.coords = function(evt) {
-		return {
-			x: evt.screenX || evt.touches[0].screenX,
-			y: evt.screenY || evt.touches[0].screenY,
-			z: (evt.touches && evt.touches.length > 1) ? Math.abs(evt.touches[0].screenX - evt.touches[1].screenX + evt.touches[0].screenY - evt.touches[1].screenY) : 0
-		}
-	};
-
-	this.recentre = function() {
-		// reset the initial rotation
-		this.rotate(this.fov/2);
-	};
-
-	this.magnify = function(factor, offset) {
-		// limit the zoom
-		this.magnification.current = Math.max(Math.min(factor, this.magnification.max), this.magnification.min);
-		// calculate the view angle
-		this.baseAngle = 60 * this.wrapperAspect * (this.magnification.min / this.magnification.current);
-		// centre the zoom
-		this.offset.max = (this.magnification.current - this.magnification.min) / 8;
-		this.offset.min = -1 * this.offset.max;
-		this.offset.current = Math.max(Math.min(offset, this.offset.max), this.offset.min);
-		// calculate the rotation limits
-		var overscanAngle = (this.baseAngle - 360 / this.objCols.length) / 2;
-		this.rotation.min = (this.fov < 360) ? overscanAngle : 0;
-		this.rotation.max = (this.fov < 360) ? this.fov - this.baseAngle + overscanAngle : this.fov;
-		// redraw the object
-		this.redraw();
-	};
-
-	this.rotate = function(angle) {
-		// limit or loop the rotation
-		this.rotation.current = (this.fov < 360) ? Math.max(Math.min(angle, this.rotation.max), this.rotation.min) : angle%360 ;
-		// redraw the object
-		this.redraw();
-	};
-
-	this.momentum = function() {
-		// on requestAnimationFrame count down the delta vectors to ~0
-		if (this.rotation.delta || this.magnification.delta || this.offset.delta) {
-			// reduce the increment
-			this.rotation.delta = (Math.abs(this.rotation.delta) > 0.1) ? this.rotation.delta / 1.05 : 0;
-			this.magnification.delta = (Math.abs(this.magnification.delta) > 0.0001) ? this.magnification.delta / 1.05 : 0;
-			this.offset.delta = (Math.abs(this.offset.delta) > 0.001) ? this.offset.delta / 1.05 : 0;
-			// advance rotation incrementally
-			this.rotate(this.rotation.current + this.rotation.delta);
-			this.magnify(this.magnification.current + this.magnification.delta, this.offset.current + this.offset.delta);
-			// wait for the next render
-			window.requestAnimationFrame(this.momentum.bind(this));
-		}
-	};
-
-	this.redraw = function() {
-		// update the relative scale
-		var scale = this.wrapper.offsetHeight / this.baseSize;
-		// apply all transformations in one go
-		this.objRow.style.transform = 'translate(-50%, ' + ((0.5 + this.offset.current * scale) * -100) + '%) scale(' + (this.magnification.current * scale) + ') rotateY(' + this.rotation.current + 'deg)';
-	};
-
-	this.animate = function(allow) {
-		// accept overrides
-		if (typeof allow === 'boolean') {
-			this.auto = allow;
-		}
-		// if animation is allowed
-		if (this.auto) {
-			// in 180 degree pictures adjust increment and reverse, otherwise loop forever
-			if (this.rotation.current + this.increment * 2 > this.rotation.max) this.increment = -this.config.idle;
-			if (this.rotation.current + this.increment * 2 < this.rotation.min) this.increment = this.config.idle;
-			var step = (this.fov < 360) ? this.rotation.current + this.increment : (this.rotation.current + this.increment) % 360;
-			// advance rotation incrementally, until interrupted
-			this.rotate(step);
-			window.requestAnimationFrame(this.animate.bind(this));
-		}
-	};
-
-	// EVENTS
-
-	this.tilt = function(evt) {
-		// stop animating
-		this.auto = false;
-		// if there was tilt before and the jump is not extreme
-		if (this.rotation.tilted && Math.abs(evt.alpha - this.rotation.tilted) < 45) {
-			// update the rotation
-			this.rotate(this.rotation.current + evt.alpha - this.rotation.tilted);
-		}
-		// store the tilt
-		this.rotation.tilted = evt.alpha;
-	};
-
-	this.wheel = function(evt) {
-		// cancel the scrolling
-		evt.preventDefault();
-		// stop animating
-		this.auto = false;
-		// reset the deltas
-		this.magnification.delta = 0;
-		// get the feedback
-		var coords = this.coords(evt);
-		var distance = evt.deltaY || evt.wheelDeltaY || evt.wheelDelta;
-		this.magnification.delta = distance / this.wrapper.offsetHeight;
-		this.magnify(this.magnification.current + this.magnification.delta, this.offset.current);
-		// continue based on inertia
-		this.momentum();
-	};
-
-	this.touch = function(phase, evt) {
-		// cancel the click
-		evt.preventDefault();
-		// pick the phase of interaction
-		var coords, scale = this.magnification.current / this.magnification.min;
-		switch(phase) {
-			case 'start':
-				// stop animating
-				this.auto = false;
-				// reset the deltas
-				this.rotation.delta = 0;
-				this.magnification.delta = 0;
-				this.offset.delta = 0;
-				// start tracking
-				this.tracked = this.coords(evt);
-				break;
-			case 'move':
-				if (this.tracked) {
-					coords = this.coords(evt);
-					// store the momentum
-					this.rotation.delta = this.baseAngle * (this.tracked.x - coords.x) / this.wrapper.offsetWidth * scale;
-					this.magnification.delta = (this.tracked.z - coords.z) / this.wrapper.offsetWidth * scale * 2;
-					this.offset.delta = (this.tracked.y - coords.y) / this.wrapper.offsetHeight;
-					// calculate the rotation
-					this.rotate(this.rotation.current + this.rotation.delta);
-					// calculate the zoom
-					this.magnify(this.magnification.current - this.magnification.delta, this.offset.current + this.offset.delta);
-					// update the step
-					this.tracked.x = coords.x;
-					this.tracked.y = coords.y;
-					this.tracked.z = coords.z;
-				}
-				break;
-			case 'end':
-				// stop tracking
-				this.tracked = null;
-				// continue based on inertia
-				this.momentum();
-				break;
-		}
-	};
-
-	this.resize = function() {
-		// update the wrapper aspect ratio
-		this.wrapperAspect = (this.wrapper.offsetWidth / this.wrapper.offsetHeight);
-		// restore current values
-		var factor = this.magnification.current || 1;
-		var offset = this.offset.current || 0;
-		var angle = this.rotation.current || this.fov/2;
-		// reset to zoom
-		this.magnify(factor, offset);
-		// reset the rotation
-		this.rotate(angle);
-	};
-
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = useful.Photocylinder.Stage;
-}
-
-/*
-	Source:
-	van Creij, Maurice (2018). "useful-photocylinder.js: Displays a cylindrical projection of a panoramic image.", version 20180102, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-*/
-
-// create the class if needed
-var useful = useful || {};
-useful.Photocylinder = useful.Photocylinder || function () {};
-
-// add the prototype methods
-useful.Photocylinder.prototype.init = function (config) {
-
-	// PROPERTIES
-
-	"use strict";
-
-	// METHODS
-
-	this.only = function (config) {
-		// start an instance of the script
-		return new this.Main(config, this).init();
-	};
-
-	this.each = function (config) {
-		var _config, _context = this, instances = [];
-		// for all element
-		for (var a = 0, b = config.elements.length; a < b; a += 1) {
-			// clone the configuration
-			_config = Object.create(config);
-			// insert the current element
-			_config.element = config.elements[a];
-			// start a new instance of the object
-			instances[a] = new this.Main(_config, _context).init();
-		}
-		// return the instances
-		return instances;
-	};
-
-	// EXECUTE SELF
-
-	return (config.elements) ? this.each(config) : this.only(config);
-
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = useful.Photocylinder;
-}
-
-/*
-	Source:
-	van Creij, Maurice (2014). "useful.photomap.js: Plots the GPS data of the photos in a slideshow on a map", version 20141127, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-
-	Dependencies:
-	http://www.leaflet.com/
-	https://github.com/mapbox/togeojson
-*/
-
-// create the constructor if needed
-var useful = useful || {};
-useful.Photomap = useful.Photomap || function () {};
-
-// extend the constructor
-useful.Photomap.prototype.Busy = function (parent) {
-
-	// PROPERTIES
-	
-	"use strict";
-	this.parent = parent;
-	this.config = parent.config;
-
-	// METHODS
-	
-	this.setup = function () {};
-	this.show = function () {};
-	this.hide = function () {};
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = useful.Photomap.Busy;
-}
-
-/*
-	Source:
-	van Creij, Maurice (2014). "useful.photomap.js: Plots the GPS data of the photos in a slideshow on a map", version 20141127, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-
-	Dependencies:
-	http://www.leaflet.com/
-	https://github.com/mapbox/togeojson
-*/
-
-// create the constructor if needed
-var useful = useful || {};
-useful.Photomap = useful.Photomap || function () {};
-
-// extend the constructor
-useful.Photomap.prototype.Exif = function (parent) {
-
-	// PROPERTIES
-
-	"use strict";
-	this.parent = parent;
-	this.config = parent.config;
-
-	// METHODS
-
-	this.load = function (url, onComplete) {
-		var _this = this, path = url.split('/'), name = path[path.length - 1];
-		// if the lat and lon have been cached in exifData
-		if (this.config.exifData && this.config.exifData[name] && this.config.exifData[name].lat && this.config.exifData[name].lon) {
-			// send back the stored coordinates from the exifData
-			onComplete({
-				'lat' : this.config.exifData[name].lat,
-				'lon' : this.config.exifData[name].lon,
-			});
-		// else
-		} else {
-			console.log('PhotomapExif: ajax');
-			// retrieve the exif data of a photo
-			useful.request.send({
-				url : this.config.exif.replace('{src}', url),
-				post : null,
-				onProgress : function (reply) {
-					return reply;
-				},
-				onFailure : function (reply) {
-					return reply;
-				},
-				onSuccess : function (reply) {
-					var json = useful.request.decode(reply.responseText);
-					var latLon = _this.convert(json);
-					// exifData the values
-					_this.config.exifData[name] = json;
-					// call back the values
-					onComplete(latLon);
-				}
-			});
-		}
-	};
-
-	this.convert = function (exif) {
-		var deg, min, sec, lon, lat;
-		// latitude
-		deg = (exif.GPS.GPSLatitude[0].match(/\//)) ?
-			parseInt(exif.GPS.GPSLatitude[0].split('/')[0], 10) / parseInt(exif.GPS.GPSLatitude[0].split('/')[1], 10):
-			parseInt(exif.GPS.GPSLatitude[0], 10);
-		min = (exif.GPS.GPSLatitude[1].match(/\//)) ?
-			parseInt(exif.GPS.GPSLatitude[1].split('/')[0], 10) / parseInt(exif.GPS.GPSLatitude[1].split('/')[1], 10):
-			parseInt(exif.GPS.GPSLatitude[1], 10);
-		sec = (exif.GPS.GPSLatitude[2].match(/\//)) ?
-			parseInt(exif.GPS.GPSLatitude[2].split('/')[0], 10) / parseInt(exif.GPS.GPSLatitude[2].split('/')[1], 10):
-			parseInt(exif.GPS.GPSLatitude[2], 10);
-		lat = (deg + min / 60 + sec / 3600) * (exif.GPS.GPSLatitudeRef === "N" ? 1 : -1);
-		// longitude
-		deg = (exif.GPS.GPSLongitude[0].match(/\//)) ?
-			parseInt(exif.GPS.GPSLongitude[0].split('/')[0], 10) / parseInt(exif.GPS.GPSLongitude[0].split('/')[1], 10):
-			parseInt(exif.GPS.GPSLongitude[0], 10);
-		min = (exif.GPS.GPSLongitude[1].match(/\//)) ?
-			parseInt(exif.GPS.GPSLongitude[1].split('/')[0], 10) / parseInt(exif.GPS.GPSLongitude[1].split('/')[1], 10):
-			parseInt(exif.GPS.GPSLongitude[1], 10);
-		sec = (exif.GPS.GPSLongitude[2].match(/\//)) ?
-			parseInt(exif.GPS.GPSLongitude[2].split('/')[0], 10) / parseInt(exif.GPS.GPSLongitude[2].split('/')[1], 10):
-			parseInt(exif.GPS.GPSLongitude[2], 10);
-		lon = (deg + min / 60 + sec / 3600) * (exif.GPS.GPSLongitudeRef === "W" ? -1 : 1);
-		// temporary console report
-		if (typeof(console) !== 'undefined') {
-			console.log(this.config.indicator);
-		}
-		// return the values
-		return {'lat' : lat, 'lon' : lon};
-	};
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = useful.Photomap.Exif;
-}
-
-/*
-	Source:
-	van Creij, Maurice (2014). "useful.photomap.js: Plots the GPS data of the photos in a slideshow on a map", version 20141127, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-
-	Dependencies:
-	http://www.leaflet.com/
-	https://github.com/mapbox/togeojson
-*/
-
-// create the constructor if needed
-var useful = useful || {};
-useful.Photomap = useful.Photomap || function () {};
-
-// extend the constructor
-useful.Photomap.prototype.Gpx = function (parent) {
-
-	// PROPERTIES
-
-	"use strict";
-	this.parent = parent;
-	this.config = parent.config;
-
-	// METHODS
-
-	this.load = function (oncomplete) {
-		var _this = this;
-		// if the GPX have been cached in gpxData
-		if (this.config.gpxData) {
-			// call back
-			oncomplete();
-		// lead it from disk
-		} else {
-			// show the busy indicator
-			parent.busy.show();
-			// onload
-			useful.request.send({
-				url : this.config.gpx,
-				post : null,
-				onProgress : function () {},
-				onFailure : function () {},
-				onSuccess : function (reply) {
-					// store the result
-					_this.config.gpxData = toGeoJSON.gpx(reply.responseXML);
-					// call back
-					oncomplete();
-					// hide the busy indicator
-					_this.parent.busy.hide();
-				}
-			});
-		}
-	};
-
-	this.coordinates = function () {
-		// get the line data from the geojson file
-		var features = this.config.gpxData.features, segments = [], coordinates;
-		// for all features
-		for (var a = 0, b = features.length; a < b; a += 1) {
-			// if the coordinates come in sections
-			if (features[a].geometry.coordinates[0][0] instanceof Array) {
-				// flatten the sections
-				coordinates = [].concat.apply([], features[a].geometry.coordinates);
-			// else
-			} else {
-				// use the coordinates directly
-				coordinates = features[a].geometry.coordinates;
-			}
-			// gather all the segments
-			segments.push(coordinates);
-		}
-		// return the flattened segments
-		return [].concat.apply([], segments);
-	};
-
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = useful.Photomap.Gpx;
-}
-
-/*
-	Source:
-	van Creij, Maurice (2014). "useful.photomap.js: Plots the GPS data of the photos in a slideshow on a map", version 20141127, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-
-	Dependencies:
-	http://www.leaflet.com/
-	https://github.com/mapbox/togeojson
-*/
-
-// create the constructor if needed
-var useful = useful || {};
-useful.Photomap = useful.Photomap || function () {};
-
-// extend the constructor
-useful.Photomap.prototype.Indicator = function (parent) {
-
-	// PROPERTIES
-
-	"use strict";
-	this.parent = parent;
-	this.config = parent.config;
-	// this methods
-	this.add = function (lat, lon) {
-		var icon;
-		var map = this.config.map;
-		var indicator = this.config.indicator;
-		// if the indicator has coordinates
-		if (lon && lat) {
-			// store the coordinates
-			this.lon = lon;
-			this.lat = lat;
-			// remove any previous indicator
-			if (this.object) {
-				map.object.removeLayer(this.object);
-			}
-			// create the icon
-			icon = L.icon({
-				iconUrl: this.config.indicator,
-				iconSize: [28, 28],
-				iconAnchor: [14, 28]
-			});
-			// report the location for reference
-			console.log('location:', lat, lon);
-			// add the marker with the icon
-			this.object = L.marker(
-				[this.lat, this.lon],
-				{'icon': icon}
-			);
-			this.object.addTo(map.object);
-			// focus the map on the indicator
-			this.focus();
-		}
-	};
-
-	this.remove = function () {
-		var map = this.config.map;
-		// remove the indicator
-		if (this.object) {
-			// remove the balloon
-			this.object.closePopup();
-			map.object.removeLayer(this.object);
-			this.object = null;
-		}
-		// unfocus the indicator
-		this.unfocus();
-	};
-
-	this.focus = function () {
-		// focus the map on the indicator
-		this.config.map.object.setView([this.lat, this.lon], this.config.zoom + 2);
-		// call for a  redraw
-		this.parent.redraw();
-	};
-
-	this.unfocus = function () {
-		// focus the map on the indicator
-		this.config.map.object.setView([this.lat, this.lon], this.config.zoom);
-		// call for a  redraw
-		this.parent.redraw();
-	};
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = useful.Photomap.Indicator;
-}
-
-/*
-	Source:
-	van Creij, Maurice (2014). "useful.photomap.js: Plots the GPS data of the photos in a slideshow on a map", version 20141127, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-
-	Dependencies:
-	http://www.leaflet.com/
-	https://github.com/mapbox/togeojson
-*/
-
-// create the constructor if needed
-var useful = useful || {};
-useful.Photomap = useful.Photomap || function () {};
-
-// extend the constructor
-useful.Photomap.prototype.Location = function (parent) {
-
-	// PROPERTIES
-
-	"use strict";
-	this.parent = parent;
-	this.config = parent.config;
-	this.object = null;
-	this.interval = null;
-	// add the Layer with the GPX Track
-	this.point = function () {
-		// if geolocation is available
-		if (navigator.geolocation) {
-			// request the position
-			navigator.geolocation.watchPosition(
-				this.onGeoSuccess(),
-				this.onGeoFailure(),
-				{ maximumAge : 10000,  timeout : 5000,  enableHighAccuracy : true }
-			);
-		}
-	};
-	// redraw the pointer layer
-	this.redraw = function () {
-		// if geolocation is available
-		if (navigator.geolocation) {
-			// request the position
-			navigator.geolocation.getCurrentPosition(
-				this.onGeoSuccess(),
-				this.onGeoFailure(),
-				{ enableHighAccuracy : true }
-			);
-		}
-	};
-	// geo location events
-	this.onGeoSuccess = function () {
-		var _this = this, _config = this.parent.config;
-		return function (geo) {
-			// if the marker doesn't exist yet
-			if (_this.object === null) {
-				// create the icon
-				var icon = L.icon({
-					iconUrl: _config.pointer,
-					iconSize: [28, 28],
-					iconAnchor: [14, 28]
-				});
-				// add the marker with the icon
-				_this.object = L.marker(
-					[geo.coords.latitude, geo.coords.longitude],
-					{'icon': icon}
-				);
-				_this.object.addTo(_config.map.object);
-			} else {
-				_this.object.setLatLng([geo.coords.latitude, geo.coords.longitude]);
-			}
-		};
-	};
-
-	this.onGeoFailure = function () {
-		var _this = this;
-		return function () {
-			console.log('geolocation failed');
-		};
-	};
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = useful.Photomap.Location;
-}
-
-/*
-	Source:
-	van Creij, Maurice (2014). "useful.photomap.js: Plots the GPS data of the photos in a slideshow on a map", version 20141127, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-
-	Dependencies:
-	http://www.leaflet.com/
-	https://github.com/mapbox/togeojson
-*/
-
-// create the constructor if needed
-var useful = useful || {};
-useful.Photomap = useful.Photomap || function () {};
-
-// extend the constructor
-useful.Photomap.prototype.Main = function (config, context) {
-
-	// PROPERTIES
-
-	"use strict";
-	this.config = config;
-	this.context = context;
-	this.element = config.element;
-
-	// METHODS
-
-	this.init = function () {
-		var _this = this;
-		// show the busy indicator
-		this.busy.setup();
-		// load the gpx track
-		this.gpx.load(function () {
-			// draw the map
-			_this.map.setup();
-			// plot the route
-			_this.route.plot();
-			// show the permanent markers
-			_this.markers.add();
-			// show the indicator
-			_this.indicator.add();
-			// start the location pointer
-			_this.location.point();
-		});
-		// return the object
-		return this;
-	};
-
-	this.redraw = function () {
-		var _this = this;
-		// wait for a change to redraw
-		clearTimeout(this.config.redrawTimeout);
-		this.config.redrawTimeout = setTimeout(function () {
-			// redraw the map
-			//_this.map.redraw();
-			// redraw the plotted route
-			_this.route.redraw();
-		}, 500);
-	};
-
-	// COMPONENTS
-
-	this.busy = new this.context.Busy(this);
-	this.exif = new this.context.Exif(this);
-	this.gpx = new this.context.Gpx(this);
-	this.map = new this.context.Map(this);
-	this.route = new this.context.Route(this);
-	this.markers = new this.context.Markers(this);
-	this.indicator = new this.context.Indicator(this);
-	this.location = new this.context.Location(this);
-
-	// PUBLIC
-
-	this.indicate = function (element) {
-		var _this = this,
-			config = this.config,
-			url = element.getAttribute('data-url') || element.getAttribute('src') || element.getAttribute('href'),
-			title = element.getAttribute('data-title') || element.getAttribute('title');
-		this.exif.load(url, function (coords) {
-			_this.indicator.add(coords.lat, coords.lon);
-		});
-	};
-
-	this.unindicate = function () {
-		this.indicator.remove();
-	};
-
-	this.stop = function () {
-		this.map.remove();
-	};
-
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = useful.Photomap.Main;
-}
-
-/*
-	Source:
-	van Creij, Maurice (2014). "useful.photomap.js: Plots the GPS data of the photos in a slideshow on a map", version 20141127, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-
-	Dependencies:
-	http://www.leaflet.com/
-	https://github.com/mapbox/togeojson
-*/
-
-// create the constructor if needed
-var useful = useful || {};
-useful.Photomap = useful.Photomap || function () {};
-
-// extend the constructor
-useful.Photomap.prototype.Map = function (parent) {
-
-	// PROPERTIES
-
-	"use strict";
-	this.parent = parent;
-	this.config = parent.config;
-
-	// METHODS
-
-	this.setup = function () {
-		var id = this.parent.element.id;
-		// define the map
-		this.config.map = {};
-		this.config.map.object = L.map(id);
-		// add the scale
-		L.control.scale({imperial:false}).addTo(this.config.map.object);
-		// add the tiles
-		var tileLayer = L.tileLayer(this.config.tiles, {
-			attribution: this.config.credit,
-			errorTileUrl: this.config.missing,
-			minZoom: this.config.minZoom,
-			maxZoom: this.config.maxZoom
-		}).addTo(this.config.map.object);
-		// if there is a local tile store, try and handle failing tiles
-		if (this.config.local) {
-			tileLayer.on('tileloadstart', this.onFallback(this.config.local));
-		}
-		// get the centre of the map
-		this.bounds();
-		// refresh the map after scrolling
-		var _this = this;
-		this.config.map.object.on('moveend', function (e) { /*console.log('"bounds" :', JSON.stringify(_this.config.map.object.getBounds()) + ',');*/ _this.parent.redraw(); });
-		this.config.map.object.on('zoomend', function (e) { _this.parent.redraw(); });
-	};
-
-	/*
-		Screengrab mode:
-
-		.leaflet-top.leaflet-left {
-		  visibility: hidden;
-		}
-
-		.leaflet-marker-icon {
-			visibility: hidden;
-		}
-
-		img[src="./inc/img/marker-location.png"] {
-		  visibility: hidden;
-		}
-	*/
-
-	this.remove = function () {
-		// ask leaflet to remove itself if available
-		if (this.config.map && this.config.map.object) {
-			this.config.map.object.remove();
-		}
-	};
-
-	this.bounds = function () {
-		var a, b, points, minLat = 999, minLon = 999, maxLat = -999, maxLon = -999;
-		// for all navigation points
-		points = this.parent.gpx.coordinates();
-		for (a = 0 , b = points.length; a < b; a += 1) {
-			minLon = (points[a][0] < minLon) ? points[a][0] : minLon;
-			minLat = (points[a][1] < minLat) ? points[a][1] : minLat;
-			maxLon = (points[a][0] > maxLon) ? points[a][0] : maxLon;
-			maxLat = (points[a][1] > maxLat) ? points[a][1] : maxLat;
-		}
-		// extend the bounds a little
-		minLat -= 0.01;
-		minLon -= 0.01;
-		maxLat += 0.01;
-		maxLon += 0.01;
-		// limit the bounds
-		this.config.map.object.fitBounds([
-			[minLat, minLon],
-			[maxLat, maxLon]
-		]);
-		this.config.map.object.setMaxBounds([
-			[minLat, minLon],
-			[maxLat, maxLon]
-		]);
-	};
-
-	this.beginning = function () {
-		var a, b,
-			points = this.parent.gpx.coordinates(),
-			totLon = points[0][0] * points.length,
-			totLat = points[0][1] * points.length;
-		// for all navigation points
-		for (a = 0 , b = points.length; a < b; a += 1) {
-			totLon += points[a][0];
-			totLat += points[a][1];
-		}
-		// average the centre
-		this.config.map.centre = {
-			'lon' : totLon / points.length / 2,
-			'lat' : totLat / points.length / 2
-		};
-		// apply the centre
-		this.config.map.object.setView([this.config.map.centre.lat, this.config.map.centre.lon], this.config.zoom);
-		// call for a redraw
-		this.parent.redraw();
-	};
-
-	this.centre = function () {
-		var a, b, points,
-			totLat = 0, totLon = 0;
-		// for all navigation points
-		points = this.parent.gpx.coordinates();
-		for (a = 0 , b = points.length; a < b; a += 1) {
-			totLon += points[a][0];
-			totLat += points[a][1];
-		}
-		// average the centre
-		this.config.map.centre = {
-			'lon' : totLon / points.length,
-			'lat' : totLat / points.length
-		};
-		// apply the centre
-		this.config.map.object.setView([this.config.map.centre.lat, this.config.map.centre.lon], this.config.zoom);
-		// call for a redraw
-		this.parent.redraw();
-	};
-
-	this.onFallback = function (local) {
-		return function (element) {
-			var src = element.tile.getAttribute('src');
-			element.tile.setAttribute('data-failed', 'false');
-			element.tile.addEventListener('error', function () {
-				// if this tile has not failed before
-				if (element.tile.getAttribute('data-failed') === 'false') {
-					// mark the element as a failure
-					element.tile.setAttribute('data-failed', 'true');
-					// recover the coordinates
-					var parts = src.split('/'),
-						length = parts.length,
-						z = parseInt(parts[length - 3]),
-						x =	parseInt(parts[length - 2]),
-						y = parseInt(parts[length - 1]);
-					// try the local source instead
-					element.tile.src = local.replace('{z}', z).replace('{x}', x).replace('{y}', y);
-					console.log('fallback to:', element.tile.src);
-				}
-			});
-		};
-	};
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = useful.Photomap.Map;
-}
-
-/*
-	Source:
-	van Creij, Maurice (2014). "useful.photomap.js: Plots the GPS data of the photos in a slideshow on a map", version 20141127, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-
-	Dependencies:
-	http://www.leaflet.com/
-	https://github.com/mapbox/togeojson
-*/
-
-// create the constructor if needed
-var useful = useful || {};
-useful.Photomap = useful.Photomap || function () {};
-
-// extend the constructor
-useful.Photomap.prototype.Markers = function (parent) {
-
-	// PROPERTIES
-
-	"use strict";
-	this.parent = parent;
-	this.config = parent.config;
-	// add the Layer with the permanent markers
-	this.add = function () {
-		var name, marker, icon;
-		// get the track points from the GPX file
-		var points = this.parent.gpx.coordinates();
-		// for all markers
-		var _this = this;
-		this.config.markers.map(function (marker, index) {
-			// disregard the waypoints with photos
-			if (!marker.photo) {
-				// create the icon
-				icon = L.icon({
-					iconUrl: _this.config.marker.replace('{type}', marker.type),
-					iconSize: [28, 28],
-					iconAnchor: [14, 28]
-				});
-				// add the marker with the icon
-				marker.object = L.marker(
-					[marker.lat, marker.lon],
-					{'icon': icon}
-				);
-				marker.object.addTo(_this.config.map.object);
-				// if there is a desciption
-				if (marker.description) {
-					// add the popup to the marker
-					marker.popup = marker.object.bindPopup(marker.description);
-					// add the click handler
-					marker.object.on('click', _this.onMarkerClicked(marker));
-				}
-			}
-		});
-	};
-
-	this.onMarkerClicked = function (marker) {
-		var _this = this;
-		return function (evt) {
-			// show the marker message in a balloon
-			marker.object.openPopup();
-		};
-	};
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = useful.Photomap.Markers;
-}
-
-/*
-	Source:
-	van Creij, Maurice (2014). "useful.photomap.js: Plots the GPS data of the photos in a slideshow on a map", version 20141127, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-
-	Dependencies:
-	http://www.leaflet.com/
-	https://github.com/mapbox/togeojson
-*/
-
-// create the constructor if needed
-var useful = useful || {};
-useful.Photomap = useful.Photomap || function () {};
-
-// extend the constructor
-useful.Photomap.prototype.Route = function (parent) {
-
-	// PROPERTIES
-
-	"use strict";
-	this.parent = parent;
-	this.config = parent.config;
-	// add the Layer with the GPX Track
-	this.plot = function () {
-		// plot the geoJson object
-		this.config.route = {};
-		this.config.route.object = L.geoJson(this.config.gpxData, {
-			style : function (feature) { return { 'color': '#ff6600', 'weight': 5, 'opacity': 0.66 }; }
-		});
-		this.config.route.object.addTo(this.config.map.object);
-	};
-	// redraw the geoJSON layer
-	this.redraw = function () {
-		if (this.config.route) {
-			// remove the layer
-			this.config.map.object.removeLayer(this.config.route.object);
-			// re-add the layer
-			this.plot();
-		}
-	};
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = useful.Photomap.Route;
-}
-
-/*
-	Source:
-	van Creij, Maurice (2014). "useful.photowall.js: Simple photo wall", version 20141127, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-*/
-
-// create the constructor if needed
-var useful = useful || {};
-useful.Photomap = useful.Photomap || function () {};
-
-// extend the constructor
-useful.Photomap.prototype.init = function (config) {
-
-	// PROPERTIES
-	
-	"use strict";
-
-	// METHODS
-	
-	this.only = function (config) {
-		// start an instance of the script
-		return new this.Main(config, this).init();
-	};
-	
-	this.each = function (config) {
-		var _config, _context = this, instances = [];
-		// for all element
-		for (var a = 0, b = config.elements.length; a < b; a += 1) {
-			// clone the configuration
-			_config = Object.create(config);
-			// insert the current element
-			_config.element = config.elements[a];
-			// delete the list of elements from the clone
-			delete _config.elements;
-			// start a new instance of the object
-			instances[a] = new this.Main(_config, _context).init();
-		}
-		// return the instances
-		return instances;
-	};
-
-	// START
-
-	return (config.elements) ? this.each(config) : this.only(config);
-
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = useful.Photomap;
-}
-
-/*
-	Source:
-	van Creij, Maurice (2014). "useful.photowall.js: Simple photo wall", version 20141127, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-*/
-
-// create the constructor if needed
-var useful = useful || {};
-useful.Photowall = useful.Photowall || function() {};
-
-// extend the constructor
-useful.Photowall.prototype.Main = function(config, context) {
-
-  // PROPERTIES
-
-  "use strict";
-  this.config = config;
-  this.context = context;
-  this.element = config.element;
-
-  // METHODS
-
-  this.init = function() {
-    // find all the links
-    var photos = this.element.getElementsByTagName('img');
-    // process all photos
-    for (var a = 0, b = photos.length; a < b; a += 1) {
-      // move the image to the tile's background
-      photos[a].style.visibility = 'hidden';
-      photos[a].parentNode.style.backgroundImage = "url('" + photos[a].getAttribute('src') + "')";
-    }
-    // return the object
-    return this;
-  };
-
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-  exports = module.exports = useful.Photowall.Main;
-}
-
-/*
-	Source:
-	van Creij, Maurice (2014). "useful.photowall.js: Simple photo wall", version 20141127, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-*/
-
-// create the constructor if needed
-var useful = useful || {};
-useful.Photowall = useful.Photowall || function () {};
-
-// extend the constructor
-useful.Photowall.prototype.init = function (config) {
-
-	// PROPERTIES
-
-	"use strict";
-
-	// METHODS
-
-	this.only = function (config) {
-		// start an instance of the script
-		return new this.Main(config, this).init();
-	};
-
-	this.each = function (config) {
-		var _config, _context = this, instances = [];
-		// for all element
-		for (var a = 0, b = config.elements.length; a < b; a += 1) {
-			// clone the configuration
-			_config = Object.create(config);
-			// insert the current element
-			_config.element = config.elements[a];
-			// delete the list of elements from the clone
-			delete _config.elements;
-			// start a new instance of the object
-			instances[a] = new this.Main(_config, _context).init();
-		}
-		// return the instances
-		return instances;
-	};
-
-	// START
-
-	return (config.elements) ? this.each(config) : this.only(config);
-
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = useful.Photowall;
-}
-
-/*
-	Source:
-	van Creij, Maurice (2014). "useful.polyfills.js: A library of useful polyfills to ease working with HTML5 in legacy environments.", version 20141127, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-*/
-
-// public object
-var useful = useful || {};
-
-(function() {
-
-  // Invoke strict mode
-  "use strict";
-
-  // Create a private object for this library
-  useful.polyfills = {
-
-    // enabled the use of HTML5 elements in Internet Explorer
-    html5: function() {
-      var a, b, elementsList = ['section', 'nav', 'article', 'aside', 'hgroup', 'header', 'footer', 'dialog', 'mark', 'dfn', 'time', 'progress', 'meter', 'ruby', 'rt', 'rp', 'ins', 'del', 'figure', 'figcaption', 'video', 'audio', 'source', 'canvas', 'datalist', 'keygen', 'output', 'details', 'datagrid', 'command', 'bb', 'menu', 'legend'];
-      if (navigator.userAgent.match(/msie/gi)) {
-        for (a = 0, b = elementsList.length; a < b; a += 1) {
-          document.createElement(elementsList[a]);
-        }
-      }
-    },
-
-    // allow array.indexOf in older browsers
-    arrayIndexOf: function() {
-      if (!Array.prototype.indexOf) {
-        Array.prototype.indexOf = function(obj, start) {
-          for (var i = (start || 0), j = this.length; i < j; i += 1) {
-            if (this[i] === obj) {
-              return i;
-            }
-          }
-          return -1;
-        };
-      }
-    },
-
-    // allow array.isArray in older browsers
-    arrayIsArray: function() {
-      if (!Array.isArray) {
-        Array.isArray = function(arg) {
-          return Object.prototype.toString.call(arg) === '[object Array]';
-        };
-      }
-    },
-
-    // allow array.map in older browsers (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-    arrayMap: function() {
-
-      // Production steps of ECMA-262, Edition 5, 15.4.4.19
-      // Reference: http://es5.github.io/#x15.4.4.19
-      if (!Array.prototype.map) {
-
-        Array.prototype.map = function(callback, thisArg) {
-
-          var T, A, k;
-
-          if (this == null) {
-            throw new TypeError(' this is null or not defined');
-          }
-
-          // 1. Let O be the result of calling ToObject passing the |this|
-          //    value as the argument.
-          var O = Object(this);
-
-          // 2. Let lenValue be the result of calling the Get internal
-          //    method of O with the argument "length".
-          // 3. Let len be ToUint32(lenValue).
-          var len = O.length >>> 0;
-
-          // 4. If IsCallable(callback) is false, throw a TypeError exception.
-          // See: http://es5.github.com/#x9.11
-          if (typeof callback !== 'function') {
-            throw new TypeError(callback + ' is not a function');
-          }
-
-          // 5. If thisArg was supplied, let T be thisArg; else let T be undefined.
-          if (arguments.length > 1) {
-            T = thisArg;
-          }
-
-          // 6. Let A be a new array created as if by the expression new Array(len)
-          //    where Array is the standard built-in constructor with that name and
-          //    len is the value of len.
-          A = new Array(len);
-
-          // 7. Let k be 0
-          k = 0;
-
-          // 8. Repeat, while k < len
-          while (k < len) {
-
-            var kValue, mappedValue;
-
-            // a. Let Pk be ToString(k).
-            //   This is implicit for LHS operands of the in operator
-            // b. Let kPresent be the result of calling the HasProperty internal
-            //    method of O with argument Pk.
-            //   This step can be combined with c
-            // c. If kPresent is true, then
-            if (k in O) {
-
-              // i. Let kValue be the result of calling the Get internal
-              //    method of O with argument Pk.
-              kValue = O[k];
-
-              // ii. Let mappedValue be the result of calling the Call internal
-              //     method of callback with T as the this value and argument
-              //     list containing kValue, k, and O.
-              mappedValue = callback.call(T, kValue, k, O);
-
-              // iii. Call the DefineOwnProperty internal method of A with arguments
-              // Pk, Property Descriptor
-              // { Value: mappedValue,
-              //   Writable: true,
-              //   Enumerable: true,
-              //   Configurable: true },
-              // and false.
-
-              // In browsers that support Object.defineProperty, use the following:
-              // Object.defineProperty(A, k, {
-              //   value: mappedValue,
-              //   writable: true,
-              //   enumerable: true,
-              //   configurable: true
-              // });
-
-              // For best browser support, use the following:
-              A[k] = mappedValue;
-            }
-            // d. Increase k by 1.
-            k++;
-          }
-
-          // 9. return A
-          return A;
-        };
-      }
-
-    },
-
-    // allow document.querySelectorAll (https://gist.github.com/connrs/2724353)
-    querySelectorAll: function() {
-      if (!document.querySelectorAll) {
-        document.querySelectorAll = function(a) {
-          var b = document,
-            c = b.documentElement.firstChild,
-            d = b.createElement("STYLE");
-          return c.appendChild(d), b.__qsaels = [], d.styleSheet.cssText = a + "{x:expression(document.__qsaels.push(this))}", window.scrollBy(0, 0), b.__qsaels;
-        };
-      }
-    },
-
-    // allow addEventListener (https://gist.github.com/jonathantneal/3748027)
-    addEventListener: function() {
-      !window.addEventListener && (function(WindowPrototype, DocumentPrototype, ElementPrototype, addEventListener, removeEventListener, dispatchEvent, registry) {
-        WindowPrototype[addEventListener] = DocumentPrototype[addEventListener] = ElementPrototype[addEventListener] = function(type, listener) {
-          var target = this;
-          registry.unshift([target, type, listener, function(event) {
-            event.currentTarget = target;
-            event.preventDefault = function() {
-              event.returnValue = false;
-            };
-            event.stopPropagation = function() {
-              event.cancelBubble = true;
-            };
-            event.target = event.srcElement || target;
-            listener.call(target, event);
-          }]);
-          this.attachEvent("on" + type, registry[0][3]);
-        };
-        WindowPrototype[removeEventListener] = DocumentPrototype[removeEventListener] = ElementPrototype[removeEventListener] = function(type, listener) {
-          for (var index = 0, register; register = registry[index]; ++index) {
-            if (register[0] == this && register[1] == type && register[2] == listener) {
-              return this.detachEvent("on" + type, registry.splice(index, 1)[0][3]);
-            }
-          }
-        };
-        WindowPrototype[dispatchEvent] = DocumentPrototype[dispatchEvent] = ElementPrototype[dispatchEvent] = function(eventObject) {
-          return this.fireEvent("on" + eventObject.type, eventObject);
-        };
-      })(Window.prototype, HTMLDocument.prototype, Element.prototype, "addEventListener", "removeEventListener", "dispatchEvent", []);
-    },
-
-    // allow console.log
-    consoleLog: function() {
-      var overrideTest = new RegExp('console-log', 'i');
-      if (!window.console || overrideTest.test(document.querySelectorAll('html')[0].className)) {
-        window.console = {};
-        window.console.log = function() {
-          // if the reporting panel doesn't exist
-          var a, b, messages = '',
-            reportPanel = document.getElementById('reportPanel');
-          if (!reportPanel) {
-            // create the panel
-            reportPanel = document.createElement('DIV');
-            reportPanel.id = 'reportPanel';
-            reportPanel.style.background = '#fff none';
-            reportPanel.style.border = 'solid 1px #000';
-            reportPanel.style.color = '#000';
-            reportPanel.style.fontSize = '12px';
-            reportPanel.style.padding = '10px';
-            reportPanel.style.position = (navigator.userAgent.indexOf('MSIE 6') > -1) ? 'absolute' : 'fixed';
-            reportPanel.style.right = '10px';
-            reportPanel.style.bottom = '10px';
-            reportPanel.style.width = '180px';
-            reportPanel.style.height = '320px';
-            reportPanel.style.overflow = 'auto';
-            reportPanel.style.zIndex = '100000';
-            reportPanel.innerHTML = '&nbsp;';
-            // store a copy of this node in the move buffer
-            document.body.appendChild(reportPanel);
-          }
-          // truncate the queue
-          var reportString = (reportPanel.innerHTML.length < 1000) ? reportPanel.innerHTML : reportPanel.innerHTML.substring(0, 800);
-          // process the arguments
-          for (a = 0, b = arguments.length; a < b; a += 1) {
-            messages += arguments[a] + '<br/>';
-          }
-          // add a break after the message
-          messages += '<hr/>';
-          // output the queue to the panel
-          reportPanel.innerHTML = messages + reportString;
-        };
-      }
-    },
-
-    // allows Object.create (https://gist.github.com/rxgx/1597825)
-    objectCreate: function() {
-      if (typeof Object.create !== "function") {
-        Object.create = function(original) {
-          function Clone() {}
-          Clone.prototype = original;
-          return new Clone();
-        };
-      }
-    },
-
-    // allows String.trim (https://gist.github.com/eliperelman/1035982)
-    stringTrim: function() {
-      if (!String.prototype.trim) {
-        String.prototype.trim = function() {
-          return this.replace(/^[\s\uFEFF]+|[\s\uFEFF]+$/g, '');
-        };
-      }
-      if (!String.prototype.ltrim) {
-        String.prototype.ltrim = function() {
-          return this.replace(/^\s+/, '');
-        };
-      }
-      if (!String.prototype.rtrim) {
-        String.prototype.rtrim = function() {
-          return this.replace(/\s+$/, '');
-        };
-      }
-      if (!String.prototype.fulltrim) {
-        String.prototype.fulltrim = function() {
-          return this.replace(/(?:(?:^|\n)\s+|\s+(?:$|\n))/g, '').replace(/\s+/g, ' ');
-        };
-      }
-    },
-
-    // allows localStorage support
-    localStorage: function() {
-      if (!window.localStorage) {
-        if (/MSIE 8|MSIE 7|MSIE 6/i.test(navigator.userAgent)) {
-          window.localStorage = {
-            getItem: function(sKey) {
-              if (!sKey || !this.hasOwnProperty(sKey)) {
-                return null;
-              }
-              return unescape(document.cookie.replace(new RegExp("(?:^|.*;\\s*)" + escape(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=\\s*((?:[^;](?!;))*[^;]?).*"), "$1"));
-            },
-            key: function(nKeyId) {
-              return unescape(document.cookie.replace(/\s*\=(?:.(?!;))*$/, "").split(/\s*\=(?:[^;](?!;))*[^;]?;\s*/)[nKeyId]);
-            },
-            setItem: function(sKey, sValue) {
-              if (!sKey) {
-                return;
-              }
-              document.cookie = escape(sKey) + "=" + escape(sValue) + "; expires=Tue, 19 Jan 2038 03:14:07 GMT; path=/";
-              this.length = document.cookie.match(/\=/g).length;
-            },
-            length: 0,
-            removeItem: function(sKey) {
-              if (!sKey || !this.hasOwnProperty(sKey)) {
-                return;
-              }
-              document.cookie = escape(sKey) + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
-              this.length--;
-            },
-            hasOwnProperty: function(sKey) {
-              return (new RegExp("(?:^|;\\s*)" + escape(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=")).test(document.cookie);
-            }
-          };
-          window.localStorage.length = (document.cookie.match(/\=/g) || window.localStorage).length;
-        } else {
-          Object.defineProperty(window, "localStorage", new(function() {
-            var aKeys = [],
-              oStorage = {};
-            Object.defineProperty(oStorage, "getItem", {
-              value: function(sKey) {
-                return sKey ? this[sKey] : null;
-              },
-              writable: false,
-              configurable: false,
-              enumerable: false
-            });
-            Object.defineProperty(oStorage, "key", {
-              value: function(nKeyId) {
-                return aKeys[nKeyId];
-              },
-              writable: false,
-              configurable: false,
-              enumerable: false
-            });
-            Object.defineProperty(oStorage, "setItem", {
-              value: function(sKey, sValue) {
-                if (!sKey) {
-                  return;
-                }
-                document.cookie = escape(sKey) + "=" + escape(sValue) + "; expires=Tue, 19 Jan 2038 03:14:07 GMT; path=/";
-              },
-              writable: false,
-              configurable: false,
-              enumerable: false
-            });
-            Object.defineProperty(oStorage, "length", {
-              get: function() {
-                return aKeys.length;
-              },
-              configurable: false,
-              enumerable: false
-            });
-            Object.defineProperty(oStorage, "removeItem", {
-              value: function(sKey) {
-                if (!sKey) {
-                  return;
-                }
-                document.cookie = escape(sKey) + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
-              },
-              writable: false,
-              configurable: false,
-              enumerable: false
-            });
-            this.get = function() {
-              var iThisIndx;
-              for (var sKey in oStorage) {
-                iThisIndx = aKeys.indexOf(sKey);
-                if (iThisIndx === -1) {
-                  oStorage.setItem(sKey, oStorage[sKey]);
-                } else {
-                  aKeys.splice(iThisIndx, 1);
-                }
-                delete oStorage[sKey];
-              }
-              for (aKeys; aKeys.length > 0; aKeys.splice(0, 1)) {
-                oStorage.removeItem(aKeys[0]);
-              }
-              for (var aCouple, iKey, nIdx = 0, aCouples = document.cookie.split(/\s*;\s*/); nIdx < aCouples.length; nIdx++) {
-                aCouple = aCouples[nIdx].split(/\s*=\s*/);
-                if (aCouple.length > 1) {
-                  oStorage[iKey = unescape(aCouple[0])] = unescape(aCouple[1]);
-                  aKeys.push(iKey);
-                }
-              }
-              return oStorage;
-            };
-            this.configurable = false;
-            this.enumerable = true;
-          })());
-        }
-      }
-    },
-
-    // allows bind support
-    functionBind: function() {
-      // Credit to Douglas Crockford for this bind method
-      if (!Function.prototype.bind) {
-        Function.prototype.bind = function(oThis) {
-          if (typeof this !== "function") {
-            // closest thing possible to the ECMAScript 5 internal IsCallable function
-            throw new TypeError("Function.prototype.bind - what is trying to be bound is not callable");
-          }
-          var aArgs = Array.prototype.slice.call(arguments, 1),
-            fToBind = this,
-            fNOP = function() {},
-            fBound = function() {
-              return fToBind.apply(this instanceof fNOP && oThis ? this : oThis, aArgs.concat(Array.prototype.slice.call(arguments)));
-            };
-          fNOP.prototype = this.prototype;
-          fBound.prototype = new fNOP();
-          return fBound;
-        };
-      }
-    }
-
-  };
-
-  // startup
-  useful.polyfills.html5();
-  useful.polyfills.arrayIndexOf();
-  useful.polyfills.arrayIsArray();
-  useful.polyfills.arrayMap();
-  useful.polyfills.querySelectorAll();
-  useful.polyfills.addEventListener();
-  useful.polyfills.consoleLog();
-  useful.polyfills.objectCreate();
-  useful.polyfills.stringTrim();
-  useful.polyfills.localStorage();
-  useful.polyfills.functionBind();
-
-  // return as a require.js module
-  if (typeof module !== 'undefined') {
-    exports = module.exports = useful.polyfills;
-  }
-
-})();
-
-/*
-Source:
-van Creij, Maurice (2014). "useful.positions.js: A library of useful functions to ease working with screen positions.", version 20141127, http://www.woollymittens.nl/.
-
-License:
-This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-*/
-
-// public object
-var useful = useful || {};
-
-(function(){
-
-	// Invoke strict mode
-	"use strict";
-
-	// Create a private object for this library
-	useful.positions = {
-
-		// find the dimensions of the window
-		window : function (parent) {
-			// define a position object
-			var dimensions = {x : 0, y : 0};
-			// if an alternative was given to use as a window
-			if (parent && parent !== window) {
-				// find the current dimensions of surrogate window
-				dimensions.x = parent.offsetWidth;
-				dimensions.y = parent.offsetHeight;
-			} else {
-				// find the current dimensions of the window
-				dimensions.x = window.innerWidth || document.body.clientWidth;
-				dimensions.y = window.innerHeight || document.body.clientHeight;
-			}
-			// return the object
-			return dimensions;
-		},
-
-		// find the scroll position of an element
-		document : function (parent) {
-			// define a position object
-			var position = {x : 0, y : 0};
-			// find the current position in the document
-			if (parent && parent !== window) {
-				position.x = parent.scrollLeft;
-				position.y = parent.scrollTop;
-			} else {
-				position.x = (window.pageXOffset) ?
-				window.pageXOffset :
-				(document.documentElement) ?
-				document.documentElement.scrollLeft :
-				document.body.scrollLeft;
-				position.y = (window.pageYOffset) ?
-				window.pageYOffset :
-				(document.documentElement) ?
-				document.documentElement.scrollTop :
-				document.body.scrollTop;
-			}
-			// return the object
-			return position;
-		},
-
-		// finds the position of the element, relative to the document
-		object : function (node) {
-			// define a position object
-			var position = {x : 0, y : 0};
-			// if offsetparent exists
-			if (node.offsetParent) {
-				// add every parent's offset
-				while (node.offsetParent) {
-					position.x += node.offsetLeft;
-					position.y += node.offsetTop;
-					node = node.offsetParent;
-				}
-			}
-			// return the object
-			return position;
-		},
-
-		// find the position of the mouse cursor relative to an element
-		cursor : function (event, parent) {
-			// get the event properties
-			event = event || window.event;
-			// define a position object
-			var position = {x : 0, y : 0};
-			// find the current position on the document
-			if (event.touches && event.touches[0]) {
-				position.x = event.touches[0].pageX;
-				position.y = event.touches[0].pageY;
-			} else if (event.pageX !== undefined) {
-				position.x = event.pageX;
-				position.y = event.pageY;
-			} else {
-				position.x = event.clientX + (document.documentElement.scrollLeft || document.body.scrollLeft);
-				position.y = event.clientY + (document.documentElement.scrollTop || document.body.scrollTop);
-			}
-			// if a parent was given
-			if (parent) {
-				// retrieve the position of the parent
-				var offsets = this.object(parent);
-				// adjust the coordinates to fit the parent
-				position.x -= offsets.x;
-				position.y -= offsets.y;
-			}
-			// return the object
-			return position;
-		}
-
-	};
-
-	// return as a require.js module
-	if (typeof module !== 'undefined') {
-		exports = module.exports = useful.positions;
-	}
-
-})();
-
-/*
-	Source:
-	van Creij, Maurice (2014). "useful.requests.js: A library of useful functions to ease working with AJAX and JSON.", version 20141127, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-*/
-
-// public object
-var useful = useful || {};
-
-(function(){
-
-	// Invoke strict mode
-	"use strict";
-
-	// Create a private object for this library
-	useful.request = {
-
-		// adds a random argument to the AJAX URL to bust the cache
-		randomise : function (url) {
-			return url.replace('?', '?time=' + new Date().getTime() + '&');
-		},
-
-		// create a request that is compatible with the browser
-		create : function (properties) {
-			var serverRequest,
-				_this = this;
-			// create a microsoft only xdomain request
-			if (window.XDomainRequest && properties.xdomain) {
-				// create the request object
-				serverRequest = new XDomainRequest();
-				// add the event handler(s)
-				serverRequest.onload = function () { properties.onSuccess(serverRequest, properties); };
-				serverRequest.onerror = function () { properties.onFailure(serverRequest, properties); };
-				serverRequest.ontimeout = function () { properties.onTimeout(serverRequest, properties); };
-				serverRequest.onprogress = function () { properties.onProgress(serverRequest, properties); };
-			}
-			// or create a standard HTTP request
-			else if (window.XMLHttpRequest) {
-				// create the request object
-				serverRequest = new XMLHttpRequest();
-				// set the optional timeout if available
-				if (serverRequest.timeout) { serverRequest.timeout = properties.timeout || 0; }
-				// add the event handler(s)
-				serverRequest.ontimeout = function () { properties.onTimeout(serverRequest, properties); };
-				serverRequest.onreadystatechange = function () { _this.update(serverRequest, properties); };
-			}
-			// or use the fall back
-			else {
-				// create the request object
-				serverRequest = new ActiveXObject("Microsoft.XMLHTTP");
-				// add the event handler(s)
-				serverRequest.onreadystatechange = function () { _this.update(serverRequest, properties); };
-			}
-			// return the request object
-			return serverRequest;
-		},
-
-		// perform and handle an AJAX request
-		send : function (properties) {
-			// add any event handlers that weren't provided
-			properties.onSuccess = properties.onSuccess || function () {};
-			properties.onFailure = properties.onFailure || function () {};
-			properties.onTimeout = properties.onTimeout || function () {};
-			properties.onProgress = properties.onProgress || function () {};
-			// create the request object
-			var serverRequest = this.create(properties);
-			// if the request is a POST
-			if (properties.post) {
-				try {
-					// open the request
-					serverRequest.open('POST', properties.url, true);
-					// set its header
-					serverRequest.setRequestHeader("Content-type", properties.contentType || "application/x-www-form-urlencoded");
-					// send the request, or fail gracefully
-					serverRequest.send(properties.post);
-				}
-				catch (errorMessage) { properties.onFailure({ readyState : -1, status : -1, statusText : errorMessage }); }
-			// else treat it as a GET
-			} else {
-				try {
-					// open the request
-					serverRequest.open('GET', this.randomise(properties.url), true);
-					// send the request
-					serverRequest.send();
-				}
-				catch (errorMessage) { properties.onFailure({ readyState : -1, status : -1, statusText : errorMessage }); }
-			}
-		},
-
-		// regularly updates the status of the request
-		update : function (serverRequest, properties) {
-			// react to the status of the request
-			if (serverRequest.readyState === 4) {
-				switch (serverRequest.status) {
-					case 200 :
-						properties.onSuccess(serverRequest, properties);
-						break;
-					case 304 :
-						properties.onSuccess(serverRequest, properties);
-						break;
-					default :
-						properties.onFailure(serverRequest, properties);
-				}
-			} else {
-				properties.onProgress(serverRequest, properties);
-			}
-		},
-
-		// turns a string back into a DOM object
-		deserialize : function (text) {
-			var parser, xmlDoc;
-			// if the DOMParser exists
-			if (window.DOMParser) {
-				// parse the text as an XML DOM
-				parser = new DOMParser();
-				xmlDoc = parser.parseFromString(text, "text/xml");
-			// else assume this is Microsoft doing things differently again
-			} else {
-				// parse the text as an XML DOM
-				xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
-				xmlDoc.async = "false";
-				xmlDoc.loadXML(text);
-			}
-			// return the XML DOM object
-			return xmlDoc;
-		},
-
-		// turns a json string into a JavaScript object
-		decode : function (text) {
-			var object;
-			object = {};
-			// if JSON.parse is available
-			if (typeof JSON !== 'undefined' && typeof JSON.parse !== 'undefined') {
-				// use it
-				object = JSON.parse(text);
-			// if jQuery is available
-			} else if (typeof jQuery !== 'undefined') {
-				// use it
-				object = jQuery.parseJSON(text);
-			}
-			// return the object
-			return object;
-		}
-
-	};
-
-	// return as a require.js module
-	if (typeof module !== 'undefined') {
-		exports = module.exports = useful.request;
-	}
-
-})();
-
-/*
-	Source:
-	van Creij, Maurice (2015). "useful.staging.js: Applies a classname to things that are inside the viewport", version 20150116, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-*/
-
-// create the global object if needed
-var useful = useful || {};
-
-// extend the global object
-useful.Staging = function() {
-
-	// PROPERTIES
-
-	this.stage = null;
-	this.actors = null;
-	this.config = null;
-
-	// METHODS
-
-	this.init = function(config) {
-		// store the configuration
-		this.config = config;
-		this.stage = config.stage;
-		this.actors = config.actors || document.querySelectorAll('.off-stage');
-		// set the default offset if there wasn't one
-		this.config.offset = this.config.offset || 0;
-		// set the scrolling event handler
-		this.stage.addEventListener('scroll', this.onUpdate(), true);
-		// perform the first redraw
-		this.update();
-		// return the object
-		return this;
-	};
-
-	this.update = function() {
-		// if we can measure the stage
-		if (this.stage.offsetHeight > 0) {
-			// for every watched element
-			for (var a = 0, b = this.actors.length; a < b; a += 1) {
-				// if the object is in the viewport
-				if (this.isElementInViewport(this.actors[a], this.config.offset).visible) {
-					// mark its visibility
-					this.actors[a].className = this.actors[a].className.replace(/ off-stage| on-stage|off-stage|on-stage/i, '') + ' on-stage';
-				} else {
-					// mark the object is outsidie the viewport
-					this.actors[a].className = this.actors[a].className.replace(/ off-stage| on-stage|off-stage|on-stage/i, '') + ' off-stage';
-				}
-			}
-		}
-	};
-
-	this.isElementInViewport = function(el, dy) {
-		var rect = el.getBoundingClientRect(),
-			offset = dy || 0,
-			height = (window.innerHeight || document.documentElement.clientHeight),
-			width = (window.innerWidth || document.documentElement.clientWidth);
-		return ({
-			'above': rect.bottom < offset,
-			'below': rect.top > (height + offset),
-			'visible': rect.top < (height + offset) && rect.bottom > offset
-		});
-	};
-
-	// EVENTS
-
-	this.onUpdate = function() {
-		var _this = this;
-		return function() {
-			_this.update();
-		};
-	};
-
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = useful.Staging;
-}
-
-/*
-	Source:
-	van Creij, Maurice (2014). "useful.urls.js: A library of useful functions to ease working with URL query parameters.", version 20141127, http://www.woollymittens.nl/.
-
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-*/
-
-// public object
-var useful = useful || {};
-
-(function(){
-
-	// Invoke strict mode
-	"use strict";
-
-	// Create a private object for this library
-	useful.urls = {
-
-		// retrieves the query parameters from an url
-		load : function (url) {
-			var a, b, parts = [], data = {}, namevalue, value;
-			parts = url.split('#')[0].replace('?', '&').split('&');
-			for (a = 1, b = parts.length; a < b; a += 1) {
-				namevalue = parts[a].split('=');
-				value = parseFloat(namevalue[1]);
-				data[namevalue[0]] = (!isNaN(value)) ? value : namevalue[1];
-			}
-			return data;
-		},
-
-		// stores query parameters to an url
-		save : function (url, data) {
-			var name;
-			// clean the url
-			url = url.split('?')[0].split('#')[0];
-			// for all name value pairs
-			for (name in data) {
-				if (data.hasOwnProperty(name)) {
-					// add them to the url
-					url += '&' + name + '=' + data[name];
-				}
-			}
-			// make sure the first value starts with a ?
-			return url.replace('&', '?');
-		},
-
-		// replace a value in a query parameter
-		replace : function (url, name, value) {
-			var old, match, nameValue;
-			// if the value is present in the url
-			match = new RegExp(name + '=', 'gi');
-			if (match.test(url)) {
-				// isolate the old value
-				old  = url.split('#')[0].split(name + '=')[1].split('&')[0];
-				// insert the new value
-				return url.replace(name + '=' + old, name + '=' + value);
-			} else {
-				// add the value instead of replacing it
-				nameValue = this.load(url);
-				nameValue[name] = value;
-				return this.save(url, nameValue);
-			}
-		},
-
-		// source - http://phpjs.org/functions/base64_encode/
-		// http://kevin.vanzonneveld.net
-		// +  original by: Tyler Akins (http://rumkin.com)
-		// +  improved by: Bayron Guevara
-		// +  improved by: Thunder.m
-		// +  improved by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
-		// +  bugfixed by: Pellentesque Malesuada
-		// +  improved by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
-		// +  improved by: Rafał Kukawski (http://kukawski.pl)
-		// *   example 1: base64_encode('Kevin van Zonneveld');
-		// *   returns 1: 'S2V2aW4gdmFuIFpvbm5ldmVsZA=='
-		encode : function (data) {
-			var b64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
-			var o1, o2, o3, h1, h2, h3, h4, bits, i = 0,
-				ac = 0,
-				enc = "",
-				tmpArr = [];
-			if (!data) {
-				return data;
-			}
-			do { // pack three octets into four hexets
-				o1 = data.charCodeAt(i++);
-				o2 = data.charCodeAt(i++);
-				o3 = data.charCodeAt(i++);
-				bits = o1 << 16 | o2 << 8 | o3;
-				h1 = bits >> 18 & 0x3f;
-				h2 = bits >> 12 & 0x3f;
-				h3 = bits >> 6 & 0x3f;
-				h4 = bits & 0x3f;
-				// use hexets to index into b64, and append result to encoded string
-				tmpArr[ac++] = b64.charAt(h1) + b64.charAt(h2) + b64.charAt(h3) + b64.charAt(h4);
-			} while (i < data.length);
-			enc = tmpArr.join('');
-			var r = data.length % 3;
-			return (r ? enc.slice(0, r - 3) : enc) + '==='.slice(r || 3);
-		},
-
-		// source - http://phpjs.org/functions/base64_decode/
-		// http://kevin.vanzonneveld.net
-		// +  original by: Tyler Akins (http://rumkin.com)
-		// +  improved by: Thunder.m
-		// +   input by: Aman Gupta
-		// +  improved by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
-		// +  bugfixed by: Onno Marsman
-		// +  bugfixed by: Pellentesque Malesuada
-		// +  improved by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
-		// +   input by: Brett Zamir (http://brett-zamir.me)
-		// +  bugfixed by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
-		// *   example 1: base64_decode('S2V2aW4gdmFuIFpvbm5ldmVsZA==');
-		// *   returns 1: 'Kevin van Zonneveld'
-		decode : function (data) {
-			var b64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
-			var o1, o2, o3, h1, h2, h3, h4, bits, i = 0,
-				ac = 0,
-				dec = "",
-				tmpArr = [];
-			if (!data) {
-				return data;
-			}
-			data += '';
-			do { // unpack four hexets into three octets using index points in b64
-				h1 = b64.indexOf(data.charAt(i++));
-				h2 = b64.indexOf(data.charAt(i++));
-				h3 = b64.indexOf(data.charAt(i++));
-				h4 = b64.indexOf(data.charAt(i++));
-				bits = h1 << 18 | h2 << 12 | h3 << 6 | h4;
-				o1 = bits >> 16 & 0xff;
-				o2 = bits >> 8 & 0xff;
-				o3 = bits & 0xff;
-				if (h3 == 64) {
-					tmpArr[ac++] = String.fromCharCode(o1);
-				} else if (h4 == 64) {
-					tmpArr[ac++] = String.fromCharCode(o1, o2);
-				} else {
-					tmpArr[ac++] = String.fromCharCode(o1, o2, o3);
-				}
-			} while (i < data.length);
-			dec = tmpArr.join('');
-			return dec;
-		}
-
-	};
-
-	// return as a require.js module
-	if (typeof module !== 'undefined') {
-		exports = module.exports = useful.urls;
-	}
-
-})();
-
-/*
 	Sydney Train Walks - About View
 */
 
@@ -17615,7 +16332,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			buttons[a].addEventListener('click', this.onLocate.bind(this, buttons[a]));
 		}
 		// start the script for the image viewer
-		this.config.photocylinder = new useful.Photocylinder().init({
+		this.config.photocylinder = new Photocylinder({
 			'elements': document.querySelectorAll('.guide .cylinder-image'),
 			'container': this.config.guide,
 			'spherical': /fov360|\d{3}_r\d{6}/i,
@@ -17675,10 +16392,12 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			this.config.photomap.stop();
 		}
 		// start the map
-		// TODO: start Photomap if there's reliable internet, start Parkmap if not
-		this.config.photomap = new useful.Photomap().init({
+		// TODO: start Photomap if there's reliable internet, start Localmap if not
+		this.config.photomap = new Photomap({
 			'element': this.config.leaflet,
 			'pointer': this.config.pointer,
+			'leaflet' : L,
+			'togeojson': toGeoJSON,
 			'tiles': this.config.onlineTiles,
 			'local': this.config.offlineTiles,
 			'missing': this.config.missing,
@@ -17727,9 +16446,11 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		// fill the wall with the photos
 		this.config.wall.innerHTML = '<ul>' + wallHtml + '</ul>';
 		// start the script for the wall
-		this.config.photowall = new useful.Photowall().init({'element': this.config.wall});
+		this.config.photowall = new Photowall({
+			'element': this.config.wall
+		});
 		// start the script for the image viewer
-		this.config.photocylinder = new useful.Photocylinder().init({
+		this.config.photocylinder = new Photocylinder({
 			'elements': document.querySelectorAll('.photowall .cylinder-image'),
 			'container': this.config.wall,
 			'spherical': /fov360|\d{3}_r\d{6}/i,

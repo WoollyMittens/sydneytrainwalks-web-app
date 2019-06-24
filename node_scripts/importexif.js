@@ -30,7 +30,7 @@ var generateQueue = function () {
 		}
 	}
 	// truncate the queue for testing
-	//queue.length = 16;
+	//queue.length = 3;
 	// return the queue
 	return queue.reverse();
 };

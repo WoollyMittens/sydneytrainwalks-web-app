@@ -1,11 +1,36 @@
+/* TILE SERVERS
+// 4UMaps.eu
+const tileTemplate = 'http://4umaps.eu/{z}/{x}/{y}.png';
+// OpenStreetMap
+const tileTemplate = 'https://b.tile.openstreetmap.org/{z}/{x}/{y}.png';
+// OpenCycleMap
+const tileTemplate = 'https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=b3f44588368a4290a39e55433a281e99';
+// Transport
+const tileTemplate = 'https://tile.thunderforest.com/transport/{z}/{x}/{y}.png?apikey=b3f44588368a4290a39e55433a281e99';
+// Landscape
+const tileTemplate = 'https://tile.thunderforest.com/landscape/{z}/{x}/{y}.png?apikey=b3f44588368a4290a39e55433a281e99';
+// Outdoors
+const tileTemplate = 'https://tile.thunderforest.com/outdoors/{z}/{x}/{y}.png?apikey=b3f44588368a4290a39e55433a281e99';
+// Transport Dark
+const tileTemplate = 'https://tile.thunderforest.com/transport-dark/{z}/{x}/{y}.png?apikey=b3f44588368a4290a39e55433a281e99';
+// Spinal Map
+const tileTemplate = 'https://tile.thunderforest.com/spinal-map/{z}/{x}/{y}.png?apikey=b3f44588368a4290a39e55433a281e99';
+// Pioneer
+const tileTemplate = 'https://tile.thunderforest.com/pioneer/{z}/{x}/{y}.png?apikey=b3f44588368a4290a39e55433a281e99';
+// Mobile Atlas
+const tileTemplate = 'https://tile.thunderforest.com/mobile-atlas/{z}/{x}/{y}.png?apikey=b3f44588368a4290a39e55433a281e99';
+// Neighbourhood
+const tileTemplate = 'https://tile.thunderforest.com/neighbourhood/{z}/{x}/{y}.png?apikey=b3f44588368a4290a39e55433a281e99';
+*/
+
 const fs = require('fs');
 const {Image, createCanvas} = require('canvas');
-//const request = require('request');
+const request = require('request');
 const sourcePath = '../src/guides/';
-const targetPath = '../inc/maps/';
-//const tileTemplate = 'https://b.tile.openstreetmap.org/{z}/{x}/{y}.png';
-//const tileTemplate = 'https://b.tile.thunderforest.com/cycle/{z}/{x}/{y}.png';
-const tileTemplate = 'https://4umaps.eu/{z}/{x}/{y}.png';
+const targetPath = '../src/maps/';
+const tileCache = '../src/tiles/{z}/{x}/{y}.png';
+const tileTemplate = 'http://4umaps.eu/{z}/{x}/{y}.png';
+const tileMissing = '../inc/img/missing.png';
 const mapZoom = 15;
 const gridSize = 256;
 var canvas, ctx;
@@ -29,8 +54,9 @@ var generateQueue = function() {
       queue.push(scripts[a]);
     }
   }
-  // return the queue
-  queue.length = 1;
+	// truncate the queue for testing
+	//queue.length = 1;
+	// return the queue
   return queue.reverse();
 };
 
@@ -48,14 +74,15 @@ var parseGuides = function(queue) {
       minY = lat2tile(guideData.bounds.north, 15);
       maxX = long2tile(guideData.bounds.east, 15);
       maxY = lat2tile(guideData.bounds.south, 15);
-      // TODO: the canvas needs to be based on the bounds in the guide
+      // the canvas needs to be based on the bounds in the guide
       canvas = createCanvas((maxX - minX) * 256, (maxY - minY) * 256);
       ctx = canvas.getContext('2d');
-      // TODO: create a list if tiles within the map bounds
+      // create a list if tiles within the map bounds
       tilesList = [];
       for (let x = minX; x <= maxX; x += 1) {
         for (let y = minY; y <= maxY; y += 1) {
           tilesList.push({
+            cache: tileCache.replace('{x}', x).replace('{y}', y).replace('{z}', mapZoom),
             url: tileTemplate.replace('{x}', x).replace('{y}', y).replace('{z}', mapZoom),
             x: x - minX,
             y: y - minY
@@ -92,22 +119,34 @@ var downloadTiles = function(list, name, callback) {
   });
 };
 
-var downloadTile = function(tile, callback) {
-  /*
-    NOTE: download the tile instead
-    request(url).pipe(fs.createWriteStream('test.png')).on('close', callback);
-  */
-  // load the image
+var downloadTile = function(tile, callback, retry) {
+  // create an image
   var image = new Image();
   image.onload = function() {
     // process the tile
-    console.log('processing:', tile.url, tile.x, tile.y);
+    console.log('processing:', tile.cache, tile.x, tile.y);
     ctx.drawImage(image, tile.x * gridSize, tile.y * gridSize);
     // report back
     callback();
   };
-  image.onerror = function(error) { throw error; };
-  image.src = tile.url;
+  // if loading the tile fails
+  image.onerror = function(error) {
+    console.log('retrieving:', tile.url, 'saving as:', tile.cache);
+    // try to download the tile from the online service
+    if (!retry) {
+      request(tile.url)
+        .pipe(fs.createWriteStream(tile.cache))
+        .on('error', function() { console.log('missing tile:', tile.cache); image.src = tileMissing; })
+        .on('close', downloadTile.bind(this, tile, callback, true));
+    }
+    // and failing that, substitute a missing tile
+    else {
+      console.log('missing tile:', tile.cache);
+      image.src = tileMissing;
+    }
+  };
+  // try the local store first
+  image.src = tile.cache;
 };
 
 // start processing the queue

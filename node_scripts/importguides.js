@@ -37,8 +37,9 @@ var generateQueue = function () {
 			queue.push(scripts[a]);
 		}
 	}
+	// truncate the queue for testing
+	//queue.length = 3;
 	// return the queue
-	//queue.length = 1;
 	return queue.reverse();
 };
 

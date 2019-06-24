@@ -147,26 +147,16 @@
 		<script>
 
 			// ordering the menu
-			var _staging;
-			var _filters = new useful.Filters().init({
+			var _filters = new Filters({
 				'element' : document.getElementById('sorting'),
-				'promise' : function () { if (_staging && _staging.update) _staging.update(); }
+				'promise' : function () {}
 			});
 
 			// after the page has rendered
 			setTimeout(function() {
-
 				// order by length initially
 				document.querySelector('.sorting-selected').selectedIndex = 4;
 				_filters.sortBy(4);
-
-				// start the on/off stage rendering
-				_staging = new useful.Staging().init({
-					'stage' : document.querySelectorAll('nav')[0],
-					'actors' : document.querySelectorAll('.off-stage'),
-					'offset' : 32
-				});
-
 			}, 0);
 
 		</script>

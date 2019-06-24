@@ -191,7 +191,7 @@
 							photo wall configuration
 						*/
 
-						var photowall = new useful.Photowall().init({
+						var photowall = new Photowall({
 							'element' : document.querySelector('.photowall')
 						});
 
@@ -199,7 +199,7 @@
 							photo cylinder configuration
 						*/
 
-						var photocylinder_guide = new useful.Photocylinder().init({
+						var photocylinder_guide = new Photocylinder({
 							'elements' : document.querySelectorAll('.guide .cylinder-image'),
 							'container' : document.querySelector('.guide'),
 							'spherical': /fov360|\d{3}_r\d{7}/i,
@@ -211,7 +211,7 @@
 							'closed' : function () { photomap.unindicate(); }
 						});
 
-						var photocylinder_wall = new useful.Photocylinder().init({
+						var photocylinder_wall = new Photocylinder({
 							'elements' : document.querySelectorAll('.photowall .cylinder-image'),
 							'container' : document.querySelector('.photowall'),
 							'spherical': /fov360|\d{3}_r\d{7}/i,
@@ -241,9 +241,11 @@
 							photo map configuration
 						*/
 
-						var photomap = new useful.Photomap().init({
+						var photomap = new Photomap({
 							'element': document.querySelector('.photomap-leaflet'),
 							'pointer': './inc/img/marker-location.png',
+							'leaflet' : L,
+							'togeojson': toGeoJSON,
 							//'tiles': '//{s}.tile.osm.org/{z}/{x}/{y}.png',
 							//'tiles': '//{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png',
 							//'tiles': '//{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png',

@@ -69,7 +69,9 @@ var generateQueue = function() {
       }
     }
   }
-  // return the queue
+	// truncate the queue for testing
+	//queue.length = 3;
+	// return the queue
   return queue;
 };
 

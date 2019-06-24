@@ -82,7 +82,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			buttons[a].addEventListener('click', this.onLocate.bind(this, buttons[a]));
 		}
 		// start the script for the image viewer
-		this.config.photocylinder = new useful.Photocylinder().init({
+		this.config.photocylinder = new Photocylinder({
 			'elements': document.querySelectorAll('.guide .cylinder-image'),
 			'container': this.config.guide,
 			'spherical': /fov360|\d{3}_r\d{6}/i,
@@ -142,10 +142,12 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			this.config.photomap.stop();
 		}
 		// start the map
-		// TODO: start Photomap if there's reliable internet, start Parkmap if not
-		this.config.photomap = new useful.Photomap().init({
+		// TODO: start Photomap if there's reliable internet, start Localmap if not
+		this.config.photomap = new Photomap({
 			'element': this.config.leaflet,
 			'pointer': this.config.pointer,
+			'leaflet' : L,
+			'togeojson': toGeoJSON,
 			'tiles': this.config.onlineTiles,
 			'local': this.config.offlineTiles,
 			'missing': this.config.missing,
@@ -194,9 +196,11 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		// fill the wall with the photos
 		this.config.wall.innerHTML = '<ul>' + wallHtml + '</ul>';
 		// start the script for the wall
-		this.config.photowall = new useful.Photowall().init({'element': this.config.wall});
+		this.config.photowall = new Photowall({
+			'element': this.config.wall
+		});
 		// start the script for the image viewer
-		this.config.photocylinder = new useful.Photocylinder().init({
+		this.config.photocylinder = new Photocylinder({
 			'elements': document.querySelectorAll('.photowall .cylinder-image'),
 			'container': this.config.wall,
 			'spherical': /fov360|\d{3}_r\d{6}/i,
