@@ -40,7 +40,7 @@ var parseImages = function (queue) {
 	// if the queue is not empty
 	if (queue.length > 0) {
 		// pick an item from the queue
-		var item = queue[queue.length - 1];
+		var item = queue.pop();
 		// process the item in the queue
 		new ex.ExifImage({ image : source + item.folder + '/' + item.image }, function (error, exifData) {
 			if (error) {
@@ -64,8 +64,6 @@ var parseImages = function (queue) {
 				exifs[item.folder][item.image.toLowerCase()] = { 'lon' : lon, 'lat' : lat };
 				// report what was done
 				console.log('indexed:', source + item.folder + '/' + item.image);
-				// remove the item from the queue
-				queue.length = queue.length - 1;
 				// next iteration in the queue
 				parseImages(queue);
 			}

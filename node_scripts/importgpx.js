@@ -35,7 +35,7 @@ var parseFiles = function (queue) {
 	// if the queue is not empty
 	if (queue.length > 0) {
 		// pick an item from the queue
-		var file = queue[queue.length - 1];
+		var file = queue.pop();
 		// process the item in the queue
 		new fs.readFile( source + file, function (error, data) {
 			if (error) {
@@ -54,8 +54,6 @@ var parseFiles = function (queue) {
 				var geojson = toGeoJSON.gpx(xml);
 				// add the geoJson object to the list
 				geojsons[file.split('.')[0].toLowerCase()] = geojson;
-				// remove the item from the queue
-				queue.length = queue.length - 1;
 				// next iteration in the queue
 				parseFiles(queue);
 			}

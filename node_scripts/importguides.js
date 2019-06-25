@@ -48,7 +48,7 @@ var parseGuides = function (queue) {
 	// if the queue is not empty
 	if (queue.length > 0) {
 		// pick an item from the queue
-		var item = queue[queue.length - 1];
+		var item = queue.pop();
 		// process the item in the queue
 		new fs.readFile(source + item, function (error, data) {
 			if (error) {
@@ -102,8 +102,6 @@ var parseGuides = function (queue) {
 				GuideData[key].bounds.east = tile2long(long2tile(east, 15), 15);
 				// save the converted guide
 				fs.writeFile(source + item, JSON.stringify(GuideData[key]), function (error) {
-					// remove the item from the queue
-					queue.length = queue.length - 1;
 					// next iteration in the queue
 					parseGuides(queue);
 				});

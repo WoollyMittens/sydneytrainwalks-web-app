@@ -80,8 +80,7 @@ var makeImages = function(queue) {
   // if the queue is not empty
   if (queue.length > 0) {
     // pick the next item from the queue
-    var item = queue[queue.length - 1];
-    queue.length = queue.length - 1;
+    var item = queue.pop();
     // if exif has to be stripped
     if (item.strip) {
       // resize the image

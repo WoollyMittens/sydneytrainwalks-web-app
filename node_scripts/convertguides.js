@@ -45,7 +45,7 @@ var parseGuides = function(queue) {
   // if the queue is not empty
   if (queue.length > 0) {
     // pick an item from the queue
-    var item = queue[queue.length - 1];
+    var item = queue.pop();
     // process the item in the queue
     new fs.readFile(srcPath + item, function(error, data) {
       if (error) {
@@ -127,8 +127,6 @@ var parseGuides = function(queue) {
         fs.writeFile(destPath + key + '.json', JSON.stringify(GuideData[key]), function(error) {
           if (error) throw(error);
           console.log('SAVED AS:', './src/guides_redux/' + key + '.json');
-          // remove the item from the queue
-          queue.length = queue.length - 1;
           // next iteration in the queue
           parseGuides(queue);
         });

@@ -3,6 +3,7 @@ var gm = require('gm');
 var fs = require('fs');
 var source = '../src/maps';
 var destination = '../inc/maps';
+var zoom = 15;
 var queue = [];
 
 // generates a resize queue
@@ -12,17 +13,18 @@ var generateQueue = function(folder) {
     srcPath, dstPath,
     contents = fs.readdirSync(folder),
     isInvisible = new RegExp('^[.]'),
-    isImage = new RegExp('.png$', 'i');
+    isImage = new RegExp('.png$', 'i'),
+    isCorrectZoom = new RegExp('_' + zoom + '.png', 'i');
 
   // for every folder
   for (var a = 0, b = contents.length; a < b; a += 1) {
     // if this isn't a bogus file
-    if (!isInvisible.test(contents[a])) {
+    if (!isInvisible.test(contents[a]) && isCorrectZoom.test(contents[a])) {
 
       // create the source path
       srcPath = folder + '/' + contents[a];
       // create the destination path
-      dstPath = srcPath.replace(source, destination).replace(/.png/gi, '.jpg').toLowerCase();
+      dstPath = srcPath.replace(source, destination).replace(isCorrectZoom, '.jpg').toLowerCase();
 
       // if this is a photo
       if (isImage.test(contents[a])) {
@@ -61,7 +63,7 @@ var makeImages = function() {
   // if the queue is not empty
   if (queue.length > 0) {
     // pick an item from the queue
-    var item = queue[queue.length - 1];
+    var item = queue.pop();
     // process the item in the queue
     gm(item.srcPath)
       .resize(item.width, item.height)
@@ -74,8 +76,6 @@ var makeImages = function() {
         } else {
 					// report what was done
 	        console.log('generated:', item.dstPath);
-	        // remove the item from the queue
-	        queue.length = queue.length - 1;
 	        // next iteration in the queue
 	        makeImages(queue);
         }
