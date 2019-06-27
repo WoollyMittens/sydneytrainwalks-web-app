@@ -7,11 +7,7 @@
 		$screen = (@$_REQUEST['screen']) ? @$_REQUEST['screen'] : 'map';
 		$inc = './inc/';
 
-		$jsonText = file_get_contents($inc . 'js/guide-data.js');
-		$jsonText = preg_split('/ = /i', $jsonText);
-		$jsonText = $jsonText[1];
-		$jsonText = preg_split('/;/i', $jsonText);
-		$jsonText = $jsonText[0];
+		$jsonText = file_get_contents($inc . 'json/guides.json');
 		$json = json_decode($jsonText)->$id;
 
 		// extract the important markers
@@ -154,10 +150,8 @@
 					</div>
 				</article>
 				<aside>
-					<figure class="photomap">
-						<a class="photomap-return" href="#" onclick="document.body.className='screen-' + returnTo;">Back</a>
-						<div class="photomap-leaflet" id="leaflet"></div>
-						<div class="photomap-local localmap"></div>
+					<figure class="localmap">
+						<button class="localmap-return" onclick="document.body.className='screen-' + returnTo;">Back</button>
 					</figure>
 					<figure class="photowall">
 						<ul>
@@ -176,8 +170,8 @@
 							?>
 						</ul>
 					</figure>
-					<script src="./inc/js/exif-data.js"></script>
 					<script src="./inc/js/gpx-data.js"></script>
+					<script src="./inc/js/exif-data.js"></script>
 					<script src="./inc/js/scripts.js"></script>
 					<script>
 					//<!--
@@ -207,9 +201,9 @@
 					        'cylindrical': /fov180/i,
 							'slicer' : 'imageslice.php?src={src}&{size}',
 					        'idle': 0.1,
-							'opened' : function (referer) { photomap.indicate(referer); return true; },
+							'opened' : function (referer) { localmap.indicate(referer); return true; },
 							'located' : function () { returnTo = 'guide'; document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map'); },
-							'closed' : function () { photomap.unindicate(); }
+							'closed' : function () { localmap.unindicate(); }
 						});
 
 						var photocylinder_wall = new Photocylinder({
@@ -219,9 +213,9 @@
 					        'cylindrical': /fov180/i,
 							'slicer' : 'imageslice.php?src={src}&{size}',
 					        'idle': 0.1,
-							'opened' : function (referer) { photomap.indicate(referer); return true; },
+							'opened' : function (referer) { localmap.indicate(referer); return true; },
 							'located' : function () { returnTo = 'photos'; document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map'); },
-							'closed' : function () { photomap.unindicate(); }
+							'closed' : function () { localmap.unindicate(); }
 						});
 
 						/*
@@ -231,7 +225,7 @@
 						var buttons = document.querySelectorAll('.guide .guide-locate');
 						var locate = function (button, evt) {
 							evt.preventDefault();
-							photomap.indicate(button);
+							localmap.indicate(button);
 							document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
 						};
 						for (var a = 0, b = buttons.length; a < b; a += 1) {
@@ -239,31 +233,21 @@
 						}
 
 						/*
-							photo map configuration
+							local map configuration
 						*/
 
-						var photomap = new Photomap({
-							'element': document.querySelector('.photomap-leaflet'),
-							'pointer': './inc/img/marker-location.png',
-							'leaflet' : L,
-							'togeojson': toGeoJSON,
-							//'tiles': '//{s}.tile.osm.org/{z}/{x}/{y}.png',
-							//'tiles': '//{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png',
-							//'tiles': '//{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png',
-							'tiles': '//4umaps.eu/{z}/{x}/{y}.png',
-							'local': './inc/tiles/{z}/{x}/{y}.jpg',
-							'missing': './inc/img/missing.png',
-							'gpx': '<?php echo $inc . "gpx/" . $id?>.gpx',
-							'gpxData': GpxData['<?php echo $id?>'],
-							'exif': 'imageexif.php?src={src}',
+						var localmap = new Localmap({
+							'container': document.querySelector('.localmap'),
+							'legend': null,
+							'assetsUrl': './inc/medium/<?php echo $assets?>/',
+							'markersUrl': './inc/img/marker-{type}.svg',
+							'guideUrl': './inc/guides/<?php echo $id?>.json',
+							'routeUrl': '<?php echo $inc . "gpx/" . $id?>.gpx',
+							'mapUrl': './inc/maps/<?php echo $assets?>.jpg',
+							'exifUrl': 'imageexif.php?src={src}',
 							'exifData': ExifData['<?php echo $assets?>'],
-							'zoom': <?php echo $json->{'zoom'}?>,
-							'minZoom': 10,
-							'maxZoom': 15,
-							'markers': <?php print json_encode($json->{'markers'}) ?>,
-							'marker': './inc/img/marker-{type}.png',
-							'indicator': './inc/img/marker-photo.png',
-							'credit': 'Maps &copy; <a href="https://www.4umaps.eu/mountain-bike-hiking-bicycle-outdoor-topographic-map.htm">4UMaps</a>, Data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> and contributors, CC BY-SA'
+							'guideData': <?php print json_encode($json) ?>,
+							'creditsTemplate': 'Maps &copy; <a href="http://www.4umaps.eu/mountain-bike-hiking-bicycle-outdoor-topographic-map.htm" target="_blank">4UMaps</a>, Data &copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> and contributors, CC BY-SA'
 						});
 
 					//-->

@@ -23,7 +23,8 @@ SydneyTrainWalks.prototype.Main = function(config, context) {
 
 	this.busy = new context.Busy(this).init();
 	this.index = new context.Index(this).init();
-	this.overview = new context.Overview(this).init();
+	// TODO: generate an overview using localmap instead of leaflet
+	//this.overview = new context.Overview(this).init();
 	this.details = new context.Details(this).init();
 	this.about = new context.About(this).init();
 	this.footer = new context.Footer(this).init();

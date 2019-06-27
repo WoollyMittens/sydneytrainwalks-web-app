@@ -1,5 +1,5 @@
 /*
-	Local Map
+	Photo Map
 */
 
 @mixin time-estimate {
@@ -19,15 +19,21 @@
 @media all {
 
 	.localmap {
-		display: block;
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		width: 100%;
-		left: 0;
-		top: 0;
+		@include transition-property(transform);
+		@include transition-duration(300ms);
+		@include translate(-100%, 0);
+		display : block;
+		margin : 0;
+		padding : 0;
+		bottom : 4rem;
+		height : auto;
+		left : 0;
+		max-height : 100%;
+		position : absolute;
+		top : 8rem;
+		width : 50%;
+		z-index : 3;
 		overflow: hidden;
-		position: absolute;
 
   	button {
   		width: 3rem;
@@ -136,8 +142,8 @@
 
   	&-controls {
   		position: absolute;
-  		right: 0;
-  		top: 0;
+  		left: 10px;
+  		top: 10px;
   		z-index: 9;
 
   		button {
@@ -153,6 +159,15 @@
   			background-image: url("../img/icon-zoomout.svg");
   		}
   	}
+
+		&-return {
+			display: none;
+			position: absolute;
+  		right: 10px;
+  		top: 10px;
+  		z-index: 9;
+			background-image: url("../img/icon-east.svg");
+		}
 
   	&-scale {
   		position: absolute;
@@ -237,4 +252,46 @@
   		}
   	}
 	}
+
+	/*
+		on which screen should this be visible
+	*/
+
+	body.screen-guide .localmap,
+	body.screen-photos .localmap,
+	body.screen-map .localmap { @include translate(0, 0); }
+
+}
+@media (orientation: portrait) {
+
+	.localmap {
+		width : 100%;
+		&-return {
+			display : block;
+		}
+	}
+
+	/*
+	on which screen should this be visible
+	*/
+
+	body.screen-guide .localmap { @include translate(-100%, 0); }
+	body.screen-photos .localmap { @include translate(-100%, 0); }
+	body.screen-map .localmap { @include translate(0, 0); }
+
+}
+@media print {
+
+	.localmap {
+		@include translate(0, 0);
+		position : relative !important;
+		top : auto !important;
+		right : auto !important;
+		bottom : auto !important;
+		left : auto !important;
+		page-break-before : always;
+		height : 20cm !important;
+		width : 20cm !important;
+	}
+
 }

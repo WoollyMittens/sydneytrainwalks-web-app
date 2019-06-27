@@ -789,7 +789,7 @@
   .guide .guide-locate {
     border: none;
     background-color: Transparent;
-    background-image: url("../img/marker-location.png");
+    background-image: url("../img/marker-location.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 80%;
@@ -1233,8 +1233,8 @@ header.subtitle .sign {
 	Photo Map
 */
 @media all {
-  /* line 7, ../../src/scss/_photomap.scss */
-  .photomap {
+  /* line 21, ../../src/scss/_localmap.scss */
+  .localmap {
     -moz-transition-property: -moz-transform;
     -o-transition-property: -o-transform;
     -webkit-transition-property: -webkit-transform;
@@ -1258,78 +1258,239 @@ header.subtitle .sign {
     top: 8rem;
     width: 50%;
     z-index: 3;
-  }
-
-  /* line 24, ../../src/scss/_photomap.scss */
-  .photomap-return {
     overflow: hidden;
-    position: relative;
-    text-align: left;
-    text-indent: 58px;
-    white-space: nowrap;
-    /* Because of Internet Explorer 8 we can't have nice thing. */
-    overflow: visible;
-    text-indent: -999em;
-    width: 36px;
-    width: 3rem;
-    height: 36px;
-    height: 3rem;
-    right: 12px;
-    right: 1rem;
-    top: 12px;
-    top: 1rem;
-    background: #0D47A1;
-    color: #fff;
-    cursor: pointer;
-    display: none;
-    font-weight: bold;
-    position: absolute;
-    text-align: center;
-    text-decoration: none;
-    z-index: 2;
   }
-  /* line 39, ../../src/scss/_photomap.scss */
-  .photomap-return:before {
-    content: '';
-    display: block;
-    height: 24px;
-    position: absolute;
-    left: 50%;
-    margin-left: -12px;
-    margin-top: -12px;
-    top: 50%;
-    width: 24px;
-    background-size: 24px 24px;
+  /* line 38, ../../src/scss/_localmap.scss */
+  .localmap button {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    background-color: #0d47a1;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../img/forward.svg);
+    background-size: 50% auto;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 200%;
+    transition: background-color 300ms ease;
   }
-  /* line 43, ../../src/scss/_photomap.scss */
-  .photomap-return:hover {
-    background: #ff9800;
+  /* line 53, ../../src/scss/_localmap.scss */
+  .localmap button:hover {
+    background-color: #1565C0;
   }
-
-  /* line 48, ../../src/scss/_photomap.scss */
-  .photomap-local,
-  .photomap-leaflet {
+  /* line 58, ../../src/scss/_localmap.scss */
+  .localmap-canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(0, 0) scale(1);
+    transform-origin: 0 0;
+  }
+  /* line 65, ../../src/scss/_localmap.scss */
+  .localmap-canvas-transition, .localmap-canvas-transition span, .localmap-canvas-transition img {
+    transition: transform ease 300ms;
+  }
+  /* line 72, ../../src/scss/_localmap.scss */
+  .localmap-background {
+    display: block;
+  }
+  /* line 76, ../../src/scss/_localmap.scss */
+  .localmap-indicator, .localmap-location, .localmap-marker {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    margin-left: -14px;
+    margin-top: -28px;
+    transform: scale(1);
+    transform-origin: 50% 100%;
+    z-index: 3;
+  }
+  /* line 89, ../../src/scss/_localmap.scss */
+  .localmap-indicator {
+    display: none;
+    z-index: 4;
+  }
+  /* line 94, ../../src/scss/_localmap.scss */
+  .localmap-location {
+    display: none;
+    z-index: 5;
+  }
+  /* line 99, ../../src/scss/_localmap.scss */
+  .localmap-permissions {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9;
+  }
+  /* line 105, ../../src/scss/_localmap.scss */
+  .localmap-permissions button {
+    background-image: url("../img/icon-location.svg");
+    background-size: 70% auto;
+  }
+  /* line 111, ../../src/scss/_localmap.scss */
+  .localmap-waypoint {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin-left: -8px;
+    margin-top: -8px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    border: solid 4px rgba(255, 128, 0, 0.5);
+    border-radius: 50%;
+    z-index: 2;
+  }
+  /* line 123, ../../src/scss/_localmap.scss */
+  .localmap-waypoint:before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  /* line 133, ../../src/scss/_localmap.scss */
+  .localmap-route {
+    position: absolute;
+    opacity: 0.7;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    position: relative;
     z-index: 1;
   }
-
-  /* line 56, ../../src/scss/_photomap.scss */
-  .photomap-leaflet {
+  /* line 143, ../../src/scss/_localmap.scss */
+  .localmap-controls {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 9;
+  }
+  /* line 149, ../../src/scss/_localmap.scss */
+  .localmap-controls button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  /* line 154, ../../src/scss/_localmap.scss */
+  .localmap-controls-zoomin {
+    background-image: url("../img/icon-zoomin.svg");
+  }
+  /* line 158, ../../src/scss/_localmap.scss */
+  .localmap-controls-zoomout {
+    background-image: url("../img/icon-zoomout.svg");
+  }
+  /* line 163, ../../src/scss/_localmap.scss */
+  .localmap-return {
     display: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 9;
+    background-image: url("../img/icon-east.svg");
+  }
+  /* line 172, ../../src/scss/_localmap.scss */
+  .localmap-scale {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: solid 1px #333;
+    border-top: none;
+    padding: 2px 4px;
+    line-height: 1;
+    z-index: 6;
+    text-align: center;
+  }
+  /* line 185, ../../src/scss/_localmap.scss */
+  .localmap-credits {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 7;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333;
+    font-size: 10px;
+    padding: 2px 4px;
+    line-height: 1;
+  }
+  /* line 198, ../../src/scss/_localmap.scss */
+  .localmap-modal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    z-index: 8;
+    transform: translate(-125%, 0);
+    transition: transform ease 500ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  /* line 214, ../../src/scss/_localmap.scss */
+  .localmap-modal-icon {
+    display: block;
+    width: 25%;
+    height: auto;
+    margin: 0 auto 1em;
+  }
+  /* line 221, ../../src/scss/_localmap.scss */
+  .localmap-modal-photo {
+    flex: 0;
+    margin: 0;
+    min-height: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #eee;
+  }
+  /* line 231, ../../src/scss/_localmap.scss */
+  .localmap-modal-content {
+    flex: 1;
+    padding: 1rem 2rem;
+    overflow: auto;
+    width: 100%;
+    position: relative;
+  }
+  /* line 238, ../../src/scss/_localmap.scss */
+  .localmap-modal-content i {
+    display: inline-block;
+    background-color: #1B5E20;
+    color: #F0F4C3;
+    font-style: normal;
+    font-size: 0.875em;
+    padding: 0 5px;
+    margin: 0;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  /* line 243, ../../src/scss/_localmap.scss */
+  .localmap-modal-visible {
+    transform: translate(0, 0);
+  }
+  /* line 247, ../../src/scss/_localmap.scss */
+  .localmap-modal-closer {
+    background-image: url("../img/icon-close.svg");
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 
   /*
   	on which screen should this be visible
   */
-  /* line 64, ../../src/scss/_photomap.scss */
-  body.screen-guide .photomap,
-  body.screen-photos .photomap,
-  body.screen-map .photomap {
+  /* line 260, ../../src/scss/_localmap.scss */
+  body.screen-guide .localmap,
+  body.screen-photos .localmap,
+  body.screen-map .localmap {
     -moz-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     -webkit-transform: translate(0, 0);
@@ -1337,37 +1498,36 @@ header.subtitle .sign {
   }
 }
 @media (orientation: portrait) {
-  /* line 71, ../../src/scss/_photomap.scss */
-  .photomap {
+  /* line 267, ../../src/scss/_localmap.scss */
+  .localmap {
     width: 100%;
   }
-
-  /* line 75, ../../src/scss/_photomap.scss */
-  .photomap-return {
+  /* line 269, ../../src/scss/_localmap.scss */
+  .localmap-return {
     display: block;
   }
 
   /*
   on which screen should this be visible
   */
-  /* line 83, ../../src/scss/_photomap.scss */
-  body.screen-guide .photomap {
+  /* line 278, ../../src/scss/_localmap.scss */
+  body.screen-guide .localmap {
     -moz-transform: translate(-100%, 0);
     -ms-transform: translate(-100%, 0);
     -webkit-transform: translate(-100%, 0);
     transform: translate(-100%, 0);
   }
 
-  /* line 84, ../../src/scss/_photomap.scss */
-  body.screen-photos .photomap {
+  /* line 279, ../../src/scss/_localmap.scss */
+  body.screen-photos .localmap {
     -moz-transform: translate(-100%, 0);
     -ms-transform: translate(-100%, 0);
     -webkit-transform: translate(-100%, 0);
     transform: translate(-100%, 0);
   }
 
-  /* line 85, ../../src/scss/_photomap.scss */
-  body.screen-map .photomap {
+  /* line 280, ../../src/scss/_localmap.scss */
+  body.screen-map .localmap {
     -moz-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     -webkit-transform: translate(0, 0);
@@ -1375,8 +1535,8 @@ header.subtitle .sign {
   }
 }
 @media print {
-  /* line 90, ../../src/scss/_photomap.scss */
-  .photomap {
+  /* line 285, ../../src/scss/_localmap.scss */
+  .localmap {
     -moz-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     -webkit-transform: translate(0, 0);
@@ -1689,1081 +1849,5 @@ header.subtitle .sign {
   /* line 260, ../../src/scss/_photocylinder.scss */
   .photocylinder-popup .photocylinder-locator {
     display: block;
-  }
-}
-/* required styles */
-/* line 3, ../../src/scss/_leaflet.scss */
-.leaflet-pane,
-.leaflet-tile,
-.leaflet-marker-icon,
-.leaflet-marker-shadow,
-.leaflet-tile-container,
-.leaflet-pane > svg,
-.leaflet-pane > canvas,
-.leaflet-zoom-box,
-.leaflet-image-layer,
-.leaflet-layer {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-/* line 17, ../../src/scss/_leaflet.scss */
-.leaflet-container {
-  overflow: hidden;
-}
-
-/* line 20, ../../src/scss/_leaflet.scss */
-.leaflet-tile,
-.leaflet-marker-icon,
-.leaflet-marker-shadow {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  -webkit-user-drag: none;
-}
-
-/* Safari renders non-retina tile on retina better with this, but Chrome is worse */
-/* line 29, ../../src/scss/_leaflet.scss */
-.leaflet-safari .leaflet-tile {
-  image-rendering: -webkit-optimize-contrast;
-}
-
-/* hack that prevents hw layers "stretching" when loading new tiles */
-/* line 33, ../../src/scss/_leaflet.scss */
-.leaflet-safari .leaflet-tile-container {
-  width: 1600px;
-  height: 1600px;
-  -webkit-transform-origin: 0 0;
-}
-
-/* line 38, ../../src/scss/_leaflet.scss */
-.leaflet-marker-icon,
-.leaflet-marker-shadow {
-  display: block;
-}
-
-/* .leaflet-container svg: reset svg max-width decleration shipped in Joomla! (joomla.org) 3.x */
-/* .leaflet-container img: map is broken in FF if you have max-width: 100% on tiles */
-/* line 44, ../../src/scss/_leaflet.scss */
-.leaflet-container .leaflet-overlay-pane svg,
-.leaflet-container .leaflet-marker-pane img,
-.leaflet-container .leaflet-shadow-pane img,
-.leaflet-container .leaflet-tile-pane img,
-.leaflet-container img.leaflet-image-layer {
-  max-width: none !important;
-}
-
-/* line 52, ../../src/scss/_leaflet.scss */
-.leaflet-container.leaflet-touch-zoom {
-  -ms-touch-action: pan-x pan-y;
-  touch-action: pan-x pan-y;
-}
-
-/* line 56, ../../src/scss/_leaflet.scss */
-.leaflet-container.leaflet-touch-drag {
-  -ms-touch-action: pinch-zoom;
-}
-
-/* line 59, ../../src/scss/_leaflet.scss */
-.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {
-  -ms-touch-action: none;
-  touch-action: none;
-}
-
-/* line 63, ../../src/scss/_leaflet.scss */
-.leaflet-container {
-  -webkit-tap-highlight-color: transparent;
-}
-
-/* line 66, ../../src/scss/_leaflet.scss */
-.leaflet-container a {
-  -webkit-tap-highlight-color: rgba(51, 181, 229, 0.4);
-}
-
-/* line 69, ../../src/scss/_leaflet.scss */
-.leaflet-tile {
-  filter: inherit;
-  visibility: hidden;
-}
-
-/* line 73, ../../src/scss/_leaflet.scss */
-.leaflet-tile-loaded {
-  visibility: inherit;
-}
-
-/* line 76, ../../src/scss/_leaflet.scss */
-.leaflet-zoom-box {
-  width: 0;
-  height: 0;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  z-index: 800;
-}
-
-/* workaround for https://bugzilla.mozilla.org/show_bug.cgi?id=888319 */
-/* line 84, ../../src/scss/_leaflet.scss */
-.leaflet-overlay-pane svg {
-  -moz-user-select: none;
-}
-
-/* line 88, ../../src/scss/_leaflet.scss */
-.leaflet-pane {
-  z-index: 400;
-}
-
-/* line 90, ../../src/scss/_leaflet.scss */
-.leaflet-tile-pane {
-  z-index: 200;
-}
-
-/* line 91, ../../src/scss/_leaflet.scss */
-.leaflet-overlay-pane {
-  z-index: 400;
-}
-
-/* line 92, ../../src/scss/_leaflet.scss */
-.leaflet-shadow-pane {
-  z-index: 500;
-}
-
-/* line 93, ../../src/scss/_leaflet.scss */
-.leaflet-marker-pane {
-  z-index: 600;
-}
-
-/* line 94, ../../src/scss/_leaflet.scss */
-.leaflet-tooltip-pane {
-  z-index: 650;
-}
-
-/* line 95, ../../src/scss/_leaflet.scss */
-.leaflet-popup-pane {
-  z-index: 700;
-}
-
-/* line 97, ../../src/scss/_leaflet.scss */
-.leaflet-map-pane canvas {
-  z-index: 100;
-}
-
-/* line 98, ../../src/scss/_leaflet.scss */
-.leaflet-map-pane svg {
-  z-index: 200;
-}
-
-/* line 100, ../../src/scss/_leaflet.scss */
-.leaflet-vml-shape {
-  width: 1px;
-  height: 1px;
-}
-
-/* line 104, ../../src/scss/_leaflet.scss */
-.lvml {
-  behavior: url(#default#VML);
-  display: inline-block;
-  position: absolute;
-}
-
-/* control positioning */
-/* line 113, ../../src/scss/_leaflet.scss */
-.leaflet-control {
-  position: relative;
-  z-index: 800;
-  pointer-events: visiblePainted;
-  /* IE 9-10 doesn't have auto */
-  pointer-events: auto;
-}
-
-/* line 119, ../../src/scss/_leaflet.scss */
-.leaflet-top,
-.leaflet-bottom {
-  position: absolute;
-  z-index: 1000;
-  pointer-events: none;
-}
-
-/* line 125, ../../src/scss/_leaflet.scss */
-.leaflet-top {
-  top: 0;
-}
-
-/* line 128, ../../src/scss/_leaflet.scss */
-.leaflet-right {
-  right: 0;
-}
-
-/* line 131, ../../src/scss/_leaflet.scss */
-.leaflet-bottom {
-  bottom: 0;
-}
-
-/* line 134, ../../src/scss/_leaflet.scss */
-.leaflet-left {
-  left: 0;
-}
-
-/* line 137, ../../src/scss/_leaflet.scss */
-.leaflet-control {
-  float: left;
-  clear: both;
-}
-
-/* line 141, ../../src/scss/_leaflet.scss */
-.leaflet-right .leaflet-control {
-  float: right;
-}
-
-/* line 144, ../../src/scss/_leaflet.scss */
-.leaflet-top .leaflet-control {
-  margin-top: 10px;
-}
-
-/* line 147, ../../src/scss/_leaflet.scss */
-.leaflet-bottom .leaflet-control {
-  margin-bottom: 10px;
-}
-
-/* line 150, ../../src/scss/_leaflet.scss */
-.leaflet-left .leaflet-control {
-  margin-left: 10px;
-}
-
-/* line 153, ../../src/scss/_leaflet.scss */
-.leaflet-right .leaflet-control {
-  margin-right: 10px;
-}
-
-/* zoom and fade animations */
-/* line 160, ../../src/scss/_leaflet.scss */
-.leaflet-fade-anim .leaflet-tile {
-  will-change: opacity;
-}
-
-/* line 163, ../../src/scss/_leaflet.scss */
-.leaflet-fade-anim .leaflet-popup {
-  opacity: 0;
-  -webkit-transition: opacity 0.2s linear;
-  -moz-transition: opacity 0.2s linear;
-  -o-transition: opacity 0.2s linear;
-  transition: opacity 0.2s linear;
-}
-
-/* line 170, ../../src/scss/_leaflet.scss */
-.leaflet-fade-anim .leaflet-map-pane .leaflet-popup {
-  opacity: 1;
-}
-
-/* line 173, ../../src/scss/_leaflet.scss */
-.leaflet-zoom-animated {
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-}
-
-/* line 178, ../../src/scss/_leaflet.scss */
-.leaflet-zoom-anim .leaflet-zoom-animated {
-  will-change: transform;
-}
-
-/* line 181, ../../src/scss/_leaflet.scss */
-.leaflet-zoom-anim .leaflet-zoom-animated {
-  -webkit-transition: -webkit-transform 0.25s cubic-bezier(0, 0, 0.25, 1);
-  -moz-transition: -moz-transform 0.25s cubic-bezier(0, 0, 0.25, 1);
-  -o-transition: -o-transform 0.25s cubic-bezier(0, 0, 0.25, 1);
-  transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1);
-}
-
-/* line 187, ../../src/scss/_leaflet.scss */
-.leaflet-zoom-anim .leaflet-tile,
-.leaflet-pan-anim .leaflet-tile {
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  transition: none;
-}
-
-/* line 195, ../../src/scss/_leaflet.scss */
-.leaflet-zoom-anim .leaflet-zoom-hide {
-  visibility: hidden;
-}
-
-/* cursors */
-/* line 202, ../../src/scss/_leaflet.scss */
-.leaflet-interactive {
-  cursor: pointer;
-}
-
-/* line 205, ../../src/scss/_leaflet.scss */
-.leaflet-grab {
-  cursor: -webkit-grab;
-  cursor: -moz-grab;
-}
-
-/* line 209, ../../src/scss/_leaflet.scss */
-.leaflet-crosshair,
-.leaflet-crosshair .leaflet-interactive {
-  cursor: crosshair;
-}
-
-/* line 213, ../../src/scss/_leaflet.scss */
-.leaflet-popup-pane,
-.leaflet-control {
-  cursor: auto;
-}
-
-/* line 217, ../../src/scss/_leaflet.scss */
-.leaflet-dragging .leaflet-grab,
-.leaflet-dragging .leaflet-grab .leaflet-interactive,
-.leaflet-dragging .leaflet-marker-draggable {
-  cursor: move;
-  cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
-}
-
-/* marker & overlays interactivity */
-/* line 226, ../../src/scss/_leaflet.scss */
-.leaflet-marker-icon,
-.leaflet-marker-shadow,
-.leaflet-image-layer,
-.leaflet-pane > svg path,
-.leaflet-tile-container {
-  pointer-events: none;
-}
-
-/* line 234, ../../src/scss/_leaflet.scss */
-.leaflet-marker-icon.leaflet-interactive,
-.leaflet-image-layer.leaflet-interactive,
-.leaflet-pane > svg path.leaflet-interactive {
-  pointer-events: visiblePainted;
-  /* IE 9-10 doesn't have auto */
-  pointer-events: auto;
-}
-
-/* visual tweaks */
-/* line 243, ../../src/scss/_leaflet.scss */
-.leaflet-container {
-  background: #ddd;
-  outline: 0;
-}
-
-/* line 247, ../../src/scss/_leaflet.scss */
-.leaflet-container a {
-  color: #0078A8;
-}
-
-/* line 250, ../../src/scss/_leaflet.scss */
-.leaflet-container a.leaflet-active {
-  outline: 2px solid orange;
-}
-
-/* line 253, ../../src/scss/_leaflet.scss */
-.leaflet-zoom-box {
-  border: 2px dotted #38f;
-  background: rgba(255, 255, 255, 0.5);
-}
-
-/* general typography */
-/* line 260, ../../src/scss/_leaflet.scss */
-.leaflet-container {
-  font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
-}
-
-/* general toolbar styles */
-/* line 267, ../../src/scss/_leaflet.scss */
-.leaflet-bar {
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
-  border-radius: 4px;
-}
-
-/* line 271, ../../src/scss/_leaflet.scss */
-.leaflet-bar a,
-.leaflet-bar a:hover {
-  background-color: #fff;
-  border-bottom: 1px solid #ccc;
-  width: 26px;
-  height: 26px;
-  line-height: 26px;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-}
-
-/* line 283, ../../src/scss/_leaflet.scss */
-.leaflet-bar a,
-.leaflet-control-layers-toggle {
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  display: block;
-}
-
-/* line 289, ../../src/scss/_leaflet.scss */
-.leaflet-bar a:hover {
-  background-color: #f4f4f4;
-}
-
-/* line 292, ../../src/scss/_leaflet.scss */
-.leaflet-bar a:first-child {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-}
-
-/* line 296, ../../src/scss/_leaflet.scss */
-.leaflet-bar a:last-child {
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-bottom: none;
-}
-
-/* line 301, ../../src/scss/_leaflet.scss */
-.leaflet-bar a.leaflet-disabled {
-  cursor: default;
-  background-color: #f4f4f4;
-  color: #bbb;
-}
-
-/* line 307, ../../src/scss/_leaflet.scss */
-.leaflet-touch .leaflet-bar a {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-}
-
-/* line 312, ../../src/scss/_leaflet.scss */
-.leaflet-touch .leaflet-bar a:first-child {
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-}
-
-/* line 316, ../../src/scss/_leaflet.scss */
-.leaflet-touch .leaflet-bar a:last-child {
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-}
-
-/* zoom control */
-/* line 323, ../../src/scss/_leaflet.scss */
-.leaflet-control-zoom-in,
-.leaflet-control-zoom-out {
-  font: bold 18px 'Lucida Console', Monaco, monospace;
-  text-indent: 1px;
-}
-
-/* line 329, ../../src/scss/_leaflet.scss */
-.leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out {
-  font-size: 22px;
-}
-
-/* layers control */
-/* line 336, ../../src/scss/_leaflet.scss */
-.leaflet-control-layers {
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
-  background: #fff;
-  border-radius: 5px;
-}
-
-/* line 341, ../../src/scss/_leaflet.scss */
-.leaflet-control-layers-toggle {
-  background-image: url(../img/layers.png);
-  width: 36px;
-  height: 36px;
-}
-
-/* line 346, ../../src/scss/_leaflet.scss */
-.leaflet-retina .leaflet-control-layers-toggle {
-  background-image: url(../img/layers-2x.png);
-  background-size: 26px 26px;
-}
-
-/* line 350, ../../src/scss/_leaflet.scss */
-.leaflet-touch .leaflet-control-layers-toggle {
-  width: 44px;
-  height: 44px;
-}
-
-/* line 354, ../../src/scss/_leaflet.scss */
-.leaflet-control-layers .leaflet-control-layers-list,
-.leaflet-control-layers-expanded .leaflet-control-layers-toggle {
-  display: none;
-}
-
-/* line 358, ../../src/scss/_leaflet.scss */
-.leaflet-control-layers-expanded .leaflet-control-layers-list {
-  display: block;
-  position: relative;
-}
-
-/* line 362, ../../src/scss/_leaflet.scss */
-.leaflet-control-layers-expanded {
-  padding: 6px 10px 6px 6px;
-  color: #333;
-  background: #fff;
-}
-
-/* line 367, ../../src/scss/_leaflet.scss */
-.leaflet-control-layers-scrollbar {
-  overflow-y: scroll;
-  overflow-x: hidden;
-  padding-right: 5px;
-}
-
-/* line 372, ../../src/scss/_leaflet.scss */
-.leaflet-control-layers-selector {
-  margin-top: 2px;
-  position: relative;
-  top: 1px;
-}
-
-/* line 377, ../../src/scss/_leaflet.scss */
-.leaflet-control-layers label {
-  display: block;
-}
-
-/* line 380, ../../src/scss/_leaflet.scss */
-.leaflet-control-layers-separator {
-  height: 0;
-  border-top: 1px solid #ddd;
-  margin: 5px -10px 5px -6px;
-}
-
-/* Default icon URLs */
-/* line 387, ../../src/scss/_leaflet.scss */
-.leaflet-default-icon-path {
-  background-image: url(../img/marker-icon.png);
-}
-
-/* attribution and scale controls */
-/* line 394, ../../src/scss/_leaflet.scss */
-.leaflet-container .leaflet-control-attribution {
-  background: #fff;
-  background: rgba(255, 255, 255, 0.7);
-  margin: 0;
-}
-
-/* line 399, ../../src/scss/_leaflet.scss */
-.leaflet-control-attribution,
-.leaflet-control-scale-line {
-  padding: 0 5px;
-  color: #333;
-}
-
-/* line 404, ../../src/scss/_leaflet.scss */
-.leaflet-control-attribution a {
-  text-decoration: none;
-}
-
-/* line 407, ../../src/scss/_leaflet.scss */
-.leaflet-control-attribution a:hover {
-  text-decoration: underline;
-}
-
-/* line 410, ../../src/scss/_leaflet.scss */
-.leaflet-container .leaflet-control-attribution,
-.leaflet-container .leaflet-control-scale {
-  font-size: 11px;
-}
-
-/* line 414, ../../src/scss/_leaflet.scss */
-.leaflet-left .leaflet-control-scale {
-  margin-left: 5px;
-}
-
-/* line 417, ../../src/scss/_leaflet.scss */
-.leaflet-bottom .leaflet-control-scale {
-  margin-bottom: 5px;
-}
-
-/* line 420, ../../src/scss/_leaflet.scss */
-.leaflet-control-scale-line {
-  border: 2px solid #777;
-  border-top: none;
-  line-height: 1.1;
-  padding: 2px 5px 1px;
-  font-size: 11px;
-  white-space: nowrap;
-  overflow: hidden;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background: #fff;
-  background: rgba(255, 255, 255, 0.5);
-}
-
-/* line 434, ../../src/scss/_leaflet.scss */
-.leaflet-control-scale-line:not(:first-child) {
-  border-top: 2px solid #777;
-  border-bottom: none;
-  margin-top: -2px;
-}
-
-/* line 439, ../../src/scss/_leaflet.scss */
-.leaflet-control-scale-line:not(:first-child):not(:last-child) {
-  border-bottom: 2px solid #777;
-}
-
-/* line 443, ../../src/scss/_leaflet.scss */
-.leaflet-touch .leaflet-control-attribution,
-.leaflet-touch .leaflet-control-layers,
-.leaflet-touch .leaflet-bar {
-  box-shadow: none;
-}
-
-/* line 448, ../../src/scss/_leaflet.scss */
-.leaflet-touch .leaflet-control-layers,
-.leaflet-touch .leaflet-bar {
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  background-clip: padding-box;
-}
-
-/* popup */
-/* line 457, ../../src/scss/_leaflet.scss */
-.leaflet-popup {
-  position: absolute;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* line 462, ../../src/scss/_leaflet.scss */
-.leaflet-popup-content-wrapper {
-  padding: 1px;
-  text-align: left;
-  border-radius: 12px;
-}
-
-/* line 467, ../../src/scss/_leaflet.scss */
-.leaflet-popup-content {
-  margin: 13px 19px;
-  line-height: 1.4;
-}
-
-/* line 471, ../../src/scss/_leaflet.scss */
-.leaflet-popup-content p {
-  margin: 18px 0;
-}
-
-/* line 474, ../../src/scss/_leaflet.scss */
-.leaflet-popup-tip-container {
-  width: 40px;
-  height: 20px;
-  position: absolute;
-  left: 50%;
-  margin-left: -20px;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-/* line 483, ../../src/scss/_leaflet.scss */
-.leaflet-popup-tip {
-  width: 17px;
-  height: 17px;
-  padding: 1px;
-  margin: -10px auto 0;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-/* line 496, ../../src/scss/_leaflet.scss */
-.leaflet-popup-content-wrapper,
-.leaflet-popup-tip {
-  background: white;
-  color: #333;
-  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
-}
-
-/* line 502, ../../src/scss/_leaflet.scss */
-.leaflet-container a.leaflet-popup-close-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 4px 4px 0 0;
-  border: none;
-  text-align: center;
-  width: 18px;
-  height: 14px;
-  font: 16px/14px Tahoma, Verdana, sans-serif;
-  color: #c3c3c3;
-  text-decoration: none;
-  font-weight: bold;
-  background: transparent;
-}
-
-/* line 517, ../../src/scss/_leaflet.scss */
-.leaflet-container a.leaflet-popup-close-button:hover {
-  color: #999;
-}
-
-/* line 520, ../../src/scss/_leaflet.scss */
-.leaflet-popup-scrolled {
-  overflow: auto;
-  border-bottom: 1px solid #ddd;
-  border-top: 1px solid #ddd;
-}
-
-/* line 526, ../../src/scss/_leaflet.scss */
-.leaflet-oldie .leaflet-popup-content-wrapper {
-  zoom: 1;
-}
-
-/* line 529, ../../src/scss/_leaflet.scss */
-.leaflet-oldie .leaflet-popup-tip {
-  width: 24px;
-  margin: 0 auto;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)";
-  filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678);
-}
-
-/* line 536, ../../src/scss/_leaflet.scss */
-.leaflet-oldie .leaflet-popup-tip-container {
-  margin-top: -1px;
-}
-
-/* line 540, ../../src/scss/_leaflet.scss */
-.leaflet-oldie .leaflet-control-zoom,
-.leaflet-oldie .leaflet-control-layers,
-.leaflet-oldie .leaflet-popup-content-wrapper,
-.leaflet-oldie .leaflet-popup-tip {
-  border: 1px solid #999;
-}
-
-/* div icon */
-/* line 550, ../../src/scss/_leaflet.scss */
-.leaflet-div-icon {
-  background: #fff;
-  border: 1px solid #666;
-}
-
-/* Tooltip */
-/* Base styles for the element that has a tooltip */
-/* line 558, ../../src/scss/_leaflet.scss */
-.leaflet-tooltip {
-  position: absolute;
-  padding: 6px;
-  background-color: #fff;
-  border: 1px solid #fff;
-  border-radius: 3px;
-  color: #222;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  pointer-events: none;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-}
-
-/* line 573, ../../src/scss/_leaflet.scss */
-.leaflet-tooltip.leaflet-clickable {
-  cursor: pointer;
-  pointer-events: auto;
-}
-
-/* line 577, ../../src/scss/_leaflet.scss */
-.leaflet-tooltip-top:before,
-.leaflet-tooltip-bottom:before,
-.leaflet-tooltip-left:before,
-.leaflet-tooltip-right:before {
-  position: absolute;
-  pointer-events: none;
-  border: 6px solid transparent;
-  background: transparent;
-  content: "";
-}
-
-/* Directions */
-/* line 590, ../../src/scss/_leaflet.scss */
-.leaflet-tooltip-bottom {
-  margin-top: 6px;
-}
-
-/* line 593, ../../src/scss/_leaflet.scss */
-.leaflet-tooltip-top {
-  margin-top: -6px;
-}
-
-/* line 596, ../../src/scss/_leaflet.scss */
-.leaflet-tooltip-bottom:before,
-.leaflet-tooltip-top:before {
-  left: 50%;
-  margin-left: -6px;
-}
-
-/* line 601, ../../src/scss/_leaflet.scss */
-.leaflet-tooltip-top:before {
-  bottom: 0;
-  margin-bottom: -12px;
-  border-top-color: #fff;
-}
-
-/* line 606, ../../src/scss/_leaflet.scss */
-.leaflet-tooltip-bottom:before {
-  top: 0;
-  margin-top: -12px;
-  margin-left: -6px;
-  border-bottom-color: #fff;
-}
-
-/* line 612, ../../src/scss/_leaflet.scss */
-.leaflet-tooltip-left {
-  margin-left: -6px;
-}
-
-/* line 615, ../../src/scss/_leaflet.scss */
-.leaflet-tooltip-right {
-  margin-left: 6px;
-}
-
-/* line 618, ../../src/scss/_leaflet.scss */
-.leaflet-tooltip-left:before,
-.leaflet-tooltip-right:before {
-  top: 50%;
-  margin-top: -6px;
-}
-
-/* line 623, ../../src/scss/_leaflet.scss */
-.leaflet-tooltip-left:before {
-  right: 0;
-  margin-right: -12px;
-  border-left-color: #fff;
-}
-
-/* line 628, ../../src/scss/_leaflet.scss */
-.leaflet-tooltip-right:before {
-  left: 0;
-  margin-left: -12px;
-  border-right-color: #fff;
-}
-
-/*
-	Local Map
-*/
-@media all {
-  /* line 21, ../../src/scss/_localmap.scss */
-  .localmap {
-    display: block;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    left: 0;
-    top: 0;
-    overflow: hidden;
-    position: absolute;
-  }
-  /* line 32, ../../src/scss/_localmap.scss */
-  .localmap button {
-    width: 3rem;
-    height: 3rem;
-    border: none;
-    background-color: #0d47a1;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 50% auto;
-    color: #fff;
-    cursor: pointer;
-    overflow: hidden;
-    white-space: nowrap;
-    text-indent: 200%;
-    transition: background-color 300ms ease;
-  }
-  /* line 47, ../../src/scss/_localmap.scss */
-  .localmap button:hover {
-    background-color: #1565C0;
-  }
-  /* line 52, ../../src/scss/_localmap.scss */
-  .localmap-canvas {
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: translate(0, 0) scale(1);
-    transform-origin: 0 0;
-  }
-  /* line 59, ../../src/scss/_localmap.scss */
-  .localmap-canvas-transition, .localmap-canvas-transition span, .localmap-canvas-transition img {
-    transition: transform ease 300ms;
-  }
-  /* line 66, ../../src/scss/_localmap.scss */
-  .localmap-background {
-    display: block;
-  }
-  /* line 70, ../../src/scss/_localmap.scss */
-  .localmap-indicator, .localmap-location, .localmap-marker {
-    position: absolute;
-    width: 28px;
-    height: 28px;
-    margin-left: -14px;
-    margin-top: -28px;
-    transform: scale(1);
-    transform-origin: 50% 100%;
-    z-index: 3;
-  }
-  /* line 83, ../../src/scss/_localmap.scss */
-  .localmap-indicator {
-    display: none;
-    z-index: 4;
-  }
-  /* line 88, ../../src/scss/_localmap.scss */
-  .localmap-location {
-    display: none;
-    z-index: 5;
-  }
-  /* line 93, ../../src/scss/_localmap.scss */
-  .localmap-permissions {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 9;
-  }
-  /* line 99, ../../src/scss/_localmap.scss */
-  .localmap-permissions button {
-    background-image: url("../img/icon-location.svg");
-    background-size: 70% auto;
-  }
-  /* line 105, ../../src/scss/_localmap.scss */
-  .localmap-waypoint {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    margin-left: -8px;
-    margin-top: -8px;
-    transform: scale(1);
-    transform-origin: 50% 50%;
-    border: solid 4px rgba(255, 128, 0, 0.5);
-    border-radius: 50%;
-    z-index: 2;
-  }
-  /* line 117, ../../src/scss/_localmap.scss */
-  .localmap-waypoint:before {
-    content: '';
-    display: block;
-    width: 8px;
-    height: 8px;
-    background-color: #fff;
-    border-radius: 50%;
-  }
-  /* line 127, ../../src/scss/_localmap.scss */
-  .localmap-route {
-    position: absolute;
-    opacity: 0.7;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
-  /* line 137, ../../src/scss/_localmap.scss */
-  .localmap-controls {
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 9;
-  }
-  /* line 143, ../../src/scss/_localmap.scss */
-  .localmap-controls button {
-    display: block;
-    margin-bottom: 10px;
-  }
-  /* line 148, ../../src/scss/_localmap.scss */
-  .localmap-controls-zoomin {
-    background-image: url("../img/icon-zoomin.svg");
-  }
-  /* line 152, ../../src/scss/_localmap.scss */
-  .localmap-controls-zoomout {
-    background-image: url("../img/icon-zoomout.svg");
-  }
-  /* line 157, ../../src/scss/_localmap.scss */
-  .localmap-scale {
-    position: absolute;
-    left: 5px;
-    bottom: 5px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border: solid 1px #333;
-    border-top: none;
-    padding: 2px 4px;
-    line-height: 1;
-    z-index: 6;
-    text-align: center;
-  }
-  /* line 170, ../../src/scss/_localmap.scss */
-  .localmap-credits {
-    display: block;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 7;
-    background-color: rgba(255, 255, 255, 0.7);
-    color: #333;
-    font-size: 10px;
-    padding: 2px 4px;
-    line-height: 1;
-  }
-  /* line 183, ../../src/scss/_localmap.scss */
-  .localmap-modal {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 70%;
-    background-color: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-    z-index: 8;
-    transform: translate(-125%, 0);
-    transition: transform ease 500ms;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-  }
-  /* line 199, ../../src/scss/_localmap.scss */
-  .localmap-modal-icon {
-    display: block;
-    width: 25%;
-    height: auto;
-    margin: 0 auto 1em;
-  }
-  /* line 206, ../../src/scss/_localmap.scss */
-  .localmap-modal-photo {
-    flex: 0;
-    margin: 0;
-    min-height: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: #eee;
-  }
-  /* line 216, ../../src/scss/_localmap.scss */
-  .localmap-modal-content {
-    flex: 1;
-    padding: 1rem 2rem;
-    overflow: auto;
-    width: 100%;
-    position: relative;
-  }
-  /* line 223, ../../src/scss/_localmap.scss */
-  .localmap-modal-content i {
-    display: inline-block;
-    background-color: #1B5E20;
-    color: #F0F4C3;
-    font-style: normal;
-    font-size: 0.875em;
-    padding: 0 5px;
-    margin: 0;
-    opacity: 0.5;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  /* line 228, ../../src/scss/_localmap.scss */
-  .localmap-modal-visible {
-    transform: translate(0, 0);
-  }
-  /* line 232, ../../src/scss/_localmap.scss */
-  .localmap-modal-closer {
-    background-image: url("../img/icon-close.svg");
-    position: absolute;
-    right: 0;
-    top: 0;
   }
 }

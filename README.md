@@ -16,17 +16,18 @@ This project uses Cordova from https://cordova.apache.org/
 
 The following commands are available for development:
 + `npm install` - Install the prerequisites.
-+ `node importjpg` - Convert images from "/src/large" into "/inc/small" and "/inc/medium/".
-+ `node importexif` - Prepare a cache of lat and lon data of all the photos.
-+ `node importgpx` - Prepare a cache of GPX data of all routes.
-+ `node importtiles` - Coverts the PNG tile store to JPG.
-+ `node importguides` - Prepare a cache of JSON data for all the guides.
 + `grunt dev` - Build the project for development purposes.
 + `grunt prod` - Build the project for deployment purposes.
 + `grunt php` - Preview the project on http://localhost:8080.
 + `grunt watch` - Continuously recompile updated files during development sessions.
-
-To get a collection of offline map tiles create an "osmdroid zip" archive using http://mobac.sourceforge.net/.
++ `cd node_scripts`
+  + `node convertmaps` - Compresses the generated PNG maps to JPG.
+  + `node converttiles` - Compresses the local PNG tile store to JPG.
+  + `node importexif` - Prepare a cache of GPS of all the photos.
+  + `node importgpx` - Prepare a cache of GPX data of all routes.
+  + `node importguides` - Prepare a cache of JSON data for all the guides.
+  + `node importjpg` - Convert images from "/src/large" into "/inc/small" and "/inc/medium/".
+  + `node importmaps` - Downloads the required map tiles from an OpenStreetMap server".
 
 ## Credits
 

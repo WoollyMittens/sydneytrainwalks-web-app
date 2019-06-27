@@ -17,9 +17,8 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 	this.config.extend({
 		'title': document.querySelector('.subtitle > h2'),
 		'guide': document.querySelector('.guide'),
-		'leaflet': document.querySelector('.photomap-leaflet'),
-		'localmap': document.querySelector('.photomap-local'),
-		'return': document.querySelector('.photomap-return'),
+		'localmap': document.querySelector('.localmap'),
+		'return': document.querySelector('.localmap-return'),
 		'wall': document.querySelector('.photowall'),
 		'titleTemplate': document.getElementById('title-template'),
 		'thumbnailTemplate': document.getElementById('thumbnail-template'),
@@ -155,31 +154,8 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			'guideData': GuideData[id],
 			'routeData': GpxData[id],
 			'exifData': ExifData[prefix],
-			'creditsTemplate': 'Maps &copy; <a href="http://www.4umaps.eu/mountain-bike-hiking-bicycle-outdoor-topographic-map.htm" target="_blank">4UMaps</a>, Data &copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> and contributors, CC BY-SA',
-			'bounds': GuideData[prefix].bounds
+			'creditsTemplate': 'Maps &copy; <a href="http://www.4umaps.eu/mountain-bike-hiking-bicycle-outdoor-topographic-map.htm" target="_blank">4UMaps</a>, Data &copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> and contributors, CC BY-SA'
 		});
-		/* TODO: start Photomap if there's reliable internet, start Localmap if not
-		this.config.photomap = new Photomap({
-			'element': this.config.leaflet,
-			'pointer': this.config.pointer,
-			'leaflet' : L,
-			'togeojson': toGeoJSON,
-			'tiles': this.config.onlineTiles,
-			'local': this.config.offlineTiles,
-			'missing': this.config.missing,
-			'gpx': this.config.gpx.replace(/{id}/g, id),
-			'gpxData': GpxData[id],
-			'exif': this.config.exif,
-			'exifData': ExifData[prefix],
-			'zoom': GuideData[id].zoom,
-			'minZoom': 10,
-			'maxZoom': 15,
-			'markers': GuideData[id].markers,
-			'marker': './inc/img/marker-{type}.png',
-			'indicator': './inc/img/marker-photo.png',
-			'credit': this.config.creditTemplate.innerHTML
-		});
-		*/
 	};
 
 	this.updateWall = function(id) {

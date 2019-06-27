@@ -1,5 +1,6 @@
 // constants
 var fs = require('fs');
+var guidesData = require('../inc/json/guides.json');
 var exifData = require('../inc/json/photos.json');
 var gpsData = require('../inc/json/routes.json');
 var source = '../src/guides/';
@@ -100,6 +101,11 @@ var parseGuides = function (queue) {
 				GuideData[key].bounds.west = tile2long(long2tile(west, 15), 15);
 				GuideData[key].bounds.south = tile2lat(lat2tile(south, 15), 15);
 				GuideData[key].bounds.east = tile2long(long2tile(east, 15), 15);
+				// TODO: prefill the "bounds" from guides that are a subset of another guide
+				if (GuideData[key].assets) {
+					var prefix = GuideData[key].assets.prefix;
+					GuideData[key].assets.bounds = guidesData[prefix].bounds;
+				}
 				// save the converted guide
 				fs.writeFile(source + item, JSON.stringify(GuideData[key]), function (error) {
 					// next iteration in the queue
