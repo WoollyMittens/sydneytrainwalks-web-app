@@ -18,6 +18,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		'title': document.querySelector('.subtitle > h2'),
 		'guide': document.querySelector('.guide'),
 		'leaflet': document.querySelector('.photomap-leaflet'),
+		'localmap': document.querySelector('.photomap-local'),
 		'return': document.querySelector('.photomap-return'),
 		'wall': document.querySelector('.photowall'),
 		'titleTemplate': document.getElementById('title-template'),
@@ -142,7 +143,22 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			this.config.photomap.stop();
 		}
 		// start the map
-		// TODO: start Photomap if there's reliable internet, start Localmap if not
+		this.config.photomap = new Localmap({
+			'container': this.config.localmap,
+			'legend': null,
+			'assetsUrl': './inc/medium/' + prefix + '/',
+			'markersUrl': './inc/img/marker-{type}.svg',
+			'guideUrl': './inc/guides/' + id + '.json',
+			'routeUrl': './inc/gpx/' + id + '.gpx',
+			'mapUrl': './inc/maps/' + prefix + '.jpg',
+			'exifUrl': this.config.exif,
+			'guideData': GuideData[id],
+			'routeData': GpxData[id],
+			'exifData': ExifData[prefix],
+			'creditsTemplate': 'Maps &copy; <a href="http://www.4umaps.eu/mountain-bike-hiking-bicycle-outdoor-topographic-map.htm" target="_blank">4UMaps</a>, Data &copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> and contributors, CC BY-SA',
+			'bounds': GuideData[prefix].bounds
+		});
+		/* TODO: start Photomap if there's reliable internet, start Localmap if not
 		this.config.photomap = new Photomap({
 			'element': this.config.leaflet,
 			'pointer': this.config.pointer,
@@ -163,6 +179,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			'indicator': './inc/img/marker-photo.png',
 			'credit': this.config.creditTemplate.innerHTML
 		});
+		*/
 	};
 
 	this.updateWall = function(id) {

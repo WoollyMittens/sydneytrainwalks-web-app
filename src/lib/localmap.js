@@ -174,7 +174,7 @@ Localmap.prototype.Background = function (parent, onComplete) {
 		var max = this.config.maximum;
 		// extract the interpolation limits
 		min.zoom = Math.max(container.offsetWidth / this.element.naturalWidth, container.offsetHeight / this.element.naturalHeight);
-		max.zoom = 1.5;
+		max.zoom = 1;
 		// center the background
 		this.redraw();
 		// resolve the promise
@@ -603,7 +603,7 @@ Localmap.prototype.Legend = function (parent, onLegendClicked) {
       // format the path to the external assets
       var guideData = this.config.guideData;
       var key = (guideData.assets) ? guideData.assets.prefix : guideData.gps;
-      var image = (markerData.photo) ? this.config.assetsUrl + '/' + key + '/' + markerData.photo : this.config.markersUrl.replace('{type}', markerData.type);
+      var image = (markerData.photo) ? this.config.assetsUrl + markerData.photo : this.config.markersUrl.replace('{type}', markerData.type);
       var text = markerData.description || markerData.type;
       // create a container for the elements
       var fragment = document.createDocumentFragment();
@@ -776,8 +776,8 @@ Localmap.prototype.Markers = function (parent, onMarkerClicked) {
 		max.lon = (this.config.bounds) ? this.config.bounds.east : guideData.bounds.east;
 		max.lat = (this.config.bounds) ? this.config.bounds.south : guideData.bounds.south;
 		// store the initial position
-		config.position.lon = (config.maximum.lon - config.minimum.lon) / 2;
-		config.position.lat = (config.maximum.lat - config.minimum.lat) / 2;
+		config.position.lon = (max.lon - min.lon) / 2;
+		config.position.lat = (max.lat - min.lat) / 2;
 		// position every marker in the guide
 		guideData.markers.map(this.addMarker.bind(this));
 	};
@@ -870,7 +870,7 @@ Localmap.prototype.Modal = function (parent) {
 		// display the photo if available
 		if (markerData.photo) {
 			this.photo.style.display = null;
-			this.photo.style.backgroundImage = 'url(' + this.config.assetsUrl + 'medium/' + this.config.guideData.gps + '/' + markerData.photo + ')';
+			this.photo.style.backgroundImage = 'url(' + this.config.assetsUrl + markerData.photo + ')';
 		} else {
 			this.photo.style.display = 'none';
 		}

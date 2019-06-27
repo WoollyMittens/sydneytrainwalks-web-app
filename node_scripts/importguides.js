@@ -93,8 +93,8 @@ var parseGuides = function (queue) {
 				// convert the bounds to tiles
 				north = tile2lat(lat2tile(north, 15) - 1, 15);
 				west = tile2long(long2tile(west, 15) - 1, 15);
-				south = tile2lat(lat2tile(south, 15) + 2, 15);
-				east = tile2long(long2tile(east, 15) + 2, 15);
+				south = tile2lat(lat2tile(south, 15) + 3, 15);
+				east = tile2long(long2tile(east, 15) + 3, 15);
 				// reconvert to align the bounds to the tile grid
 				GuideData[key].bounds.north = tile2lat(lat2tile(north, 15), 15);
 				GuideData[key].bounds.west = tile2long(long2tile(west, 15), 15);

@@ -157,6 +157,7 @@
 					<figure class="photomap">
 						<a class="photomap-return" href="#" onclick="document.body.className='screen-' + returnTo;">Back</a>
 						<div class="photomap-leaflet" id="leaflet"></div>
+						<div class="photomap-local localmap"></div>
 					</figure>
 					<figure class="photowall">
 						<ul>

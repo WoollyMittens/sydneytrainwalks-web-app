@@ -2,24 +2,32 @@
 	Local Map
 */
 
+@mixin time-estimate {
+	display: inline-block;
+	background-color: #1B5E20;
+	color: #F0F4C3;
+	font-style: normal;
+	font-size: 0.875em;
+	padding: 0 5px;
+	margin: 0;
+	opacity: 0.5;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
 @media all {
 
 	.localmap {
-		@include transition-property(transform);
-		@include transition-duration(300ms);
-		@include translate(-100%, 0);
-		display : block;
-		margin : 0;
-		padding : 0;
-		bottom : 4rem;
-		height : auto;
-		left : 0;
-		max-height : 100%;
-    overflow: hidden;
-		position : absolute;
-		top : 8rem;
-		width : 50%;
-		z-index : 3;
+		display: block;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		left: 0;
+		top: 0;
+		overflow: hidden;
+		position: absolute;
 
   	button {
   		width: 3rem;
@@ -228,86 +236,5 @@
   			top: 0;
   		}
   	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	}
-
-	.localmap-return {
-		@include iconParent(48);
-		@include rem('width', 3);
-		@include rem('height', 3);
-		@include rem('right', 1);
-		@include rem('top', 1);
-		background : #0D47A1;
-		color : #fff;
-		cursor : pointer;
-		display : none;
-		font-weight : bold;
-		position : absolute;
-		text-align : center;
-		text-decoration : none;
-		z-index : 2;
-		&:before {
-			@include iconCenter(24);
-			background-image : url(../img/forward.svg);
-		}
-		&:hover {
-			background : $color-hover;
-		}
-	}
-
-	/*
-		on which screen should this be visible
-	*/
-
-	body.screen-guide .localmap,
-	body.screen-photos .localmap,
-	body.screen-map .localmap { @include translate(0, 0); }
-
-}
-@media (orientation: portrait) {
-
-	.localmap {
-		width : 100%;
-	}
-
-	.localmap-return {
-		display : block;
-	}
-
-	/*
-	on which screen should this be visible
-	*/
-
-	body.screen-guide .localmap { @include translate(-100%, 0); }
-	body.screen-photos .localmap { @include translate(-100%, 0); }
-	body.screen-map .localmap { @include translate(0, 0); }
-
-}
-@media print {
-
-	.localmap {
-		@include translate(0, 0);
-		position : relative !important;
-		top : auto !important;
-		right : auto !important;
-		bottom : auto !important;
-		left : auto !important;
-		page-break-before : always;
-		height : 20cm !important;
-		width : 20cm !important;
-	}
-
 }
