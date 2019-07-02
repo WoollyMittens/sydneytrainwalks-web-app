@@ -85,6 +85,8 @@ var Localmap = function(config) {
   this.describe = function(markerdata) {
     // show a popup describing the markerdata
     this.components.modal.show(markerdata);
+    // resolve any callback
+    if (markerdata.callback) callback(markerdata);
   };
 
   this.stop = function() {
@@ -958,13 +960,9 @@ Localmap.prototype.Route = function (parent) {
 				x1 = parseInt((this.coordinates[key][0] - this.config.minimum.lon) / (this.config.maximum.lon - this.config.minimum.lon) * w);
 				y1 = parseInt((this.coordinates[key][1] - this.config.minimum.lat) / (this.config.maximum.lat - this.config.minimum.lat) * h);
         // if the step seems valid, draw the step
-  			if ((x1 - x0 + y1 - y0) < 100) {
-          ctx.lineTo(x1, y1);
-        }
+  			if ((Math.abs(x1 - x0) + Math.abs(y1 - y0)) < 100) { ctx.lineTo(x1, y1); }
         // or jump unlikely/erroneous steps
-        else {
-          ctx.moveTo(x1, y1);
-        }
+        else { ctx.moveTo(x1, y1); }
         // store current step as the previous step
         x0 = x1;
         y0 = y1;
