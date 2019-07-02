@@ -247,8 +247,7 @@ var Localmap = function(config) {
   };
 
   this.stop = function() {
-    // release the container
-    // TODO: remove each component
+    // remove each component
     for (var key in this.components)
       if (this.components[key].stop)
         this.components[key].stop(this.config);
@@ -377,6 +376,10 @@ Localmap.prototype.Canvas = function (parent, onBackgroundComplete, onMarkerClic
 	};
 
   this.stop = function() {
+    // remove each sub-component
+    for (var key in this.components)
+      if (this.components[key].stop)
+        this.components[key].stop(this.config);
     // remove the element
     this.config.container.removeChild(this.element);
   };
@@ -467,7 +470,7 @@ Localmap.prototype.Controls = function (parent) {
 
   this.stop = function() {
     // remove the element
-    this.element.removeChild(this.elements.zoomout);
+    this.config.container.removeChild(this.element);
   };
 
 	this.update = function() {};
