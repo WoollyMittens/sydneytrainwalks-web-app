@@ -48,7 +48,7 @@
 				<header class="title">
 					<h1><a href="./">Sydney Train Walks</a></h1>
 				</header>
-				<figure class="overview" id="leafletMap2"></figure>
+				<figure class="overview localmap"></figure>
 				<footer class="toolbar">
 					<nav>
 						<a id="footer-to-menu" href="index.php">Menu</a>

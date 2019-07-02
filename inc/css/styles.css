@@ -613,10 +613,103 @@
   }
 }
 /*
+	Directions
+*/
+@media all {
+  /* line 7, ../../src/scss/_directions.scss */
+  .directions {
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    -moz-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+    -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+    display: block;
+    bottom: 4rem;
+    height: auto;
+    left: 0;
+    max-height: 100%;
+    position: absolute;
+    top: 8rem;
+    width: 50%;
+    z-index: 3;
+    overflow: hidden;
+  }
+
+  /*
+  	on which screen should this be visible
+  */
+  /* line 27, ../../src/scss/_directions.scss */
+  body.screen-guide .directions,
+  body.screen-photos .directions,
+  body.screen-map .directions {
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@media (orientation: portrait) {
+  /* line 34, ../../src/scss/_directions.scss */
+  .directions {
+    width: 100%;
+  }
+
+  	/*
+      on which screen should this be visible
+  	*/
+  /* line 42, ../../src/scss/_directions.scss */
+  body.screen-guide .directions {
+    -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+  }
+
+  /* line 43, ../../src/scss/_directions.scss */
+  body.screen-photos .directions {
+    -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+  }
+
+  /* line 44, ../../src/scss/_directions.scss */
+  body.screen-map .directions {
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@media print {
+  /* line 49, ../../src/scss/_directions.scss */
+  .directions {
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    page-break-before: always;
+    height: 20cm !important;
+    width: 20cm !important;
+  }
+}
+/*
 	menu
 */
 @media all {
-  /* line 5, ../../src/scss/_overview.scss */
+  /* line 6, ../../src/scss/_overview.scss */
   .overview {
     -moz-transition-property: -moz-transform;
     -o-transition-property: -o-transform;
@@ -633,9 +726,6 @@
     background: #fff none;
     bottom: 4rem;
     left: 0;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
     position: absolute;
     right: 0;
     top: 4rem;
@@ -643,7 +733,7 @@
   }
 
   /*
-  on which screen should this be visible
+  	on which screen should this be visible
   */
   /* line 23, ../../src/scss/_overview.scss */
   body.screen-overview .overview {
@@ -657,7 +747,7 @@
   /*
   	on which screen should this be visible
   */
-  /* line 31, ../../src/scss/_overview.scss */
+  /* line 35, ../../src/scss/_overview.scss */
   body.screen-menu .overview {
     right: 50%;
     -moz-transform: translate(0, 0);
@@ -1235,32 +1325,12 @@ header.subtitle .sign {
 @media all {
   /* line 21, ../../src/scss/_localmap.scss */
   .localmap {
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    -webkit-transition-property: -webkit-transform;
-    transition-property: transform;
-    -moz-transition-duration: 300ms;
-    -o-transition-duration: 300ms;
-    -webkit-transition-duration: 300ms;
-    transition-duration: 300ms;
-    -moz-transform: translate(-100%, 0);
-    -ms-transform: translate(-100%, 0);
-    -webkit-transform: translate(-100%, 0);
-    transform: translate(-100%, 0);
     display: block;
     margin: 0;
     padding: 0;
-    bottom: 4rem;
-    height: auto;
-    left: 0;
-    max-height: 100%;
-    position: absolute;
-    top: 8rem;
-    width: 50%;
-    z-index: 3;
     overflow: hidden;
   }
-  /* line 38, ../../src/scss/_localmap.scss */
+  /* line 27, ../../src/scss/_localmap.scss */
   .localmap button {
     width: 3rem;
     height: 3rem;
@@ -1276,11 +1346,11 @@ header.subtitle .sign {
     text-indent: 200%;
     transition: background-color 300ms ease;
   }
-  /* line 53, ../../src/scss/_localmap.scss */
+  /* line 42, ../../src/scss/_localmap.scss */
   .localmap button:hover {
     background-color: #1565C0;
   }
-  /* line 58, ../../src/scss/_localmap.scss */
+  /* line 47, ../../src/scss/_localmap.scss */
   .localmap-canvas {
     position: absolute;
     left: 0;
@@ -1288,15 +1358,15 @@ header.subtitle .sign {
     transform: translate(0, 0) scale(1);
     transform-origin: 0 0;
   }
-  /* line 65, ../../src/scss/_localmap.scss */
+  /* line 54, ../../src/scss/_localmap.scss */
   .localmap-canvas-transition, .localmap-canvas-transition span, .localmap-canvas-transition img {
     transition: transform ease 300ms;
   }
-  /* line 72, ../../src/scss/_localmap.scss */
+  /* line 61, ../../src/scss/_localmap.scss */
   .localmap-background {
     display: block;
   }
-  /* line 76, ../../src/scss/_localmap.scss */
+  /* line 65, ../../src/scss/_localmap.scss */
   .localmap-indicator, .localmap-location, .localmap-marker {
     position: absolute;
     width: 28px;
@@ -1307,29 +1377,29 @@ header.subtitle .sign {
     transform-origin: 50% 100%;
     z-index: 3;
   }
-  /* line 89, ../../src/scss/_localmap.scss */
+  /* line 78, ../../src/scss/_localmap.scss */
   .localmap-indicator {
     display: none;
     z-index: 4;
   }
-  /* line 94, ../../src/scss/_localmap.scss */
+  /* line 83, ../../src/scss/_localmap.scss */
   .localmap-location {
     display: none;
     z-index: 5;
   }
-  /* line 99, ../../src/scss/_localmap.scss */
+  /* line 88, ../../src/scss/_localmap.scss */
   .localmap-permissions {
     position: absolute;
     left: 0;
     top: 0;
     z-index: 9;
   }
-  /* line 105, ../../src/scss/_localmap.scss */
+  /* line 94, ../../src/scss/_localmap.scss */
   .localmap-permissions button {
     background-image: url("../img/icon-location.svg");
     background-size: 70% auto;
   }
-  /* line 111, ../../src/scss/_localmap.scss */
+  /* line 100, ../../src/scss/_localmap.scss */
   .localmap-waypoint {
     position: absolute;
     width: 16px;
@@ -1342,7 +1412,7 @@ header.subtitle .sign {
     border-radius: 50%;
     z-index: 2;
   }
-  /* line 123, ../../src/scss/_localmap.scss */
+  /* line 112, ../../src/scss/_localmap.scss */
   .localmap-waypoint:before {
     content: '';
     display: block;
@@ -1351,7 +1421,7 @@ header.subtitle .sign {
     background-color: #fff;
     border-radius: 50%;
   }
-  /* line 133, ../../src/scss/_localmap.scss */
+  /* line 122, ../../src/scss/_localmap.scss */
   .localmap-route {
     position: absolute;
     opacity: 0.7;
@@ -1361,27 +1431,27 @@ header.subtitle .sign {
     height: 100%;
     z-index: 1;
   }
-  /* line 143, ../../src/scss/_localmap.scss */
+  /* line 132, ../../src/scss/_localmap.scss */
   .localmap-controls {
     position: absolute;
     left: 10px;
     top: 10px;
     z-index: 9;
   }
-  /* line 149, ../../src/scss/_localmap.scss */
+  /* line 138, ../../src/scss/_localmap.scss */
   .localmap-controls button {
     display: block;
     margin-bottom: 10px;
   }
-  /* line 154, ../../src/scss/_localmap.scss */
+  /* line 143, ../../src/scss/_localmap.scss */
   .localmap-controls-zoomin {
     background-image: url("../img/icon-zoomin.svg");
   }
-  /* line 158, ../../src/scss/_localmap.scss */
+  /* line 147, ../../src/scss/_localmap.scss */
   .localmap-controls-zoomout {
     background-image: url("../img/icon-zoomout.svg");
   }
-  /* line 163, ../../src/scss/_localmap.scss */
+  /* line 152, ../../src/scss/_localmap.scss */
   .localmap-return {
     display: none;
     position: absolute;
@@ -1390,7 +1460,7 @@ header.subtitle .sign {
     z-index: 9;
     background-image: url("../img/icon-east.svg");
   }
-  /* line 172, ../../src/scss/_localmap.scss */
+  /* line 161, ../../src/scss/_localmap.scss */
   .localmap-scale {
     position: absolute;
     left: 5px;
@@ -1403,7 +1473,7 @@ header.subtitle .sign {
     z-index: 6;
     text-align: center;
   }
-  /* line 185, ../../src/scss/_localmap.scss */
+  /* line 174, ../../src/scss/_localmap.scss */
   .localmap-credits {
     display: block;
     position: absolute;
@@ -1416,7 +1486,7 @@ header.subtitle .sign {
     padding: 2px 4px;
     line-height: 1;
   }
-  /* line 198, ../../src/scss/_localmap.scss */
+  /* line 187, ../../src/scss/_localmap.scss */
   .localmap-modal {
     position: absolute;
     top: 0;
@@ -1433,14 +1503,14 @@ header.subtitle .sign {
     justify-content: flex-start;
     align-items: stretch;
   }
-  /* line 214, ../../src/scss/_localmap.scss */
+  /* line 203, ../../src/scss/_localmap.scss */
   .localmap-modal-icon {
     display: block;
     width: 25%;
     height: auto;
     margin: 0 auto 1em;
   }
-  /* line 221, ../../src/scss/_localmap.scss */
+  /* line 210, ../../src/scss/_localmap.scss */
   .localmap-modal-photo {
     flex: 0;
     margin: 0;
@@ -1450,7 +1520,7 @@ header.subtitle .sign {
     background-size: cover;
     background-color: #eee;
   }
-  /* line 231, ../../src/scss/_localmap.scss */
+  /* line 220, ../../src/scss/_localmap.scss */
   .localmap-modal-content {
     flex: 1;
     padding: 1rem 2rem;
@@ -1458,7 +1528,7 @@ header.subtitle .sign {
     width: 100%;
     position: relative;
   }
-  /* line 238, ../../src/scss/_localmap.scss */
+  /* line 227, ../../src/scss/_localmap.scss */
   .localmap-modal-content i {
     display: inline-block;
     background-color: #1B5E20;
@@ -1472,83 +1542,26 @@ header.subtitle .sign {
     right: 0;
     top: 0;
   }
-  /* line 243, ../../src/scss/_localmap.scss */
+  /* line 232, ../../src/scss/_localmap.scss */
   .localmap-modal-visible {
     transform: translate(0, 0);
   }
-  /* line 247, ../../src/scss/_localmap.scss */
+  /* line 236, ../../src/scss/_localmap.scss */
   .localmap-modal-closer {
     background-image: url("../img/icon-close.svg");
     position: absolute;
     right: 0;
     top: 0;
   }
-
-  /*
-  	on which screen should this be visible
-  */
-  /* line 260, ../../src/scss/_localmap.scss */
-  body.screen-guide .localmap,
-  body.screen-photos .localmap,
-  body.screen-map .localmap {
-    -moz-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
 }
 @media (orientation: portrait) {
-  /* line 267, ../../src/scss/_localmap.scss */
+  /* line 248, ../../src/scss/_localmap.scss */
   .localmap {
     width: 100%;
   }
-  /* line 269, ../../src/scss/_localmap.scss */
+  /* line 250, ../../src/scss/_localmap.scss */
   .localmap-return {
     display: block;
-  }
-
-  /*
-  on which screen should this be visible
-  */
-  /* line 278, ../../src/scss/_localmap.scss */
-  body.screen-guide .localmap {
-    -moz-transform: translate(-100%, 0);
-    -ms-transform: translate(-100%, 0);
-    -webkit-transform: translate(-100%, 0);
-    transform: translate(-100%, 0);
-  }
-
-  /* line 279, ../../src/scss/_localmap.scss */
-  body.screen-photos .localmap {
-    -moz-transform: translate(-100%, 0);
-    -ms-transform: translate(-100%, 0);
-    -webkit-transform: translate(-100%, 0);
-    transform: translate(-100%, 0);
-  }
-
-  /* line 280, ../../src/scss/_localmap.scss */
-  body.screen-map .localmap {
-    -moz-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-}
-@media print {
-  /* line 285, ../../src/scss/_localmap.scss */
-  .localmap {
-    -moz-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    position: relative !important;
-    top: auto !important;
-    right: auto !important;
-    bottom: auto !important;
-    left: auto !important;
-    page-break-before: always;
-    height: 20cm !important;
-    width: 20cm !important;
   }
 }
 /*

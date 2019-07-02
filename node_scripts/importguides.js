@@ -44,6 +44,42 @@ var generateQueue = function () {
 	return queue.reverse();
 };
 
+// compile a summary of the guide in the output file
+var addIndex = function () {
+	var overview = {
+		'gps': '_index',
+		'bounds': {
+			'north': -999,
+			'east': -999,
+			'south': 999,
+			'west': 999
+		},
+		'markers': []
+	};
+	// for every guide
+	for (var key in GuideData) {
+		// expand the bounds based on the guides
+		overview.bounds.north = Math.max(GuideData[key].bounds.north, overview.bounds.north);
+		overview.bounds.east = Math.max(GuideData[key].bounds.east, overview.bounds.east);
+		overview.bounds.south = Math.min(GuideData[key].bounds.south, overview.bounds.south);
+		overview.bounds.west = Math.min(GuideData[key].bounds.west, overview.bounds.west);
+		// add a marker from the centre of the guide
+		overview.markers.push({
+			'type': 'walk',
+			'lon': GuideData[key].lon,
+			'lat': GuideData[key].lat,
+			'id': key
+		});
+	}
+	// round the bounds to the the nearest tile
+	overview.bounds.north = tile2lat(lat2tile(overview.bounds.north, 10) - 1, 10);
+	overview.bounds.west = tile2long(long2tile(overview.bounds.west, 10) - 1, 10);
+	overview.bounds.south = tile2lat(lat2tile(overview.bounds.south, 10) + 2, 10);
+	overview.bounds.east = tile2long(long2tile(overview.bounds.east, 10) + 2, 10);
+	// insert the index into the guides
+	GuideData['_index'] = overview;
+};
+
 // processes a script from the queue the master json object
 var parseGuides = function (queue) {
 	// if the queue is not empty
@@ -109,6 +145,8 @@ var parseGuides = function (queue) {
 			}
 		});
 	} else {
+		// add the index
+		addIndex();
 		// convert to string
 		var data = JSON.stringify(GuideData);
 		// write the JSON data to disk

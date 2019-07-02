@@ -243,12 +243,15 @@ var Localmap = function(config) {
     // show a popup describing the markerdata
     this.components.modal.show(markerdata);
     // resolve any callback
-    if (markerdata.callback) callback(markerdata);
+    if (markerdata.callback) markerdata.callback(markerdata);
   };
 
   this.stop = function() {
     // release the container
-    this.container.innerHTML = '';
+    // TODO: remove each component
+    for (var key in this.components)
+      if (this.components[key].remove)
+        this.components[key].remove(this.config);
   };
 
   this.indicate = function(input) {
@@ -3728,7 +3731,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 	this.config.extend({
 		'title': document.querySelector('.subtitle > h2'),
 		'guide': document.querySelector('.guide'),
-		'localmap': document.querySelector('.localmap'),
+		'localmap': document.querySelector('.localmap.directions'),
 		'return': document.querySelector('.localmap-return'),
 		'wall': document.querySelector('.photowall'),
 		'titleTemplate': document.getElementById('title-template'),
@@ -3856,16 +3859,16 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		this.config.photomap = new Localmap({
 			'container': this.config.localmap,
 			'legend': null,
-			'assetsUrl': './inc/medium/' + prefix + '/',
-			'markersUrl': './inc/img/marker-{type}.svg',
-			'guideUrl': './inc/guides/' + id + '.json',
-			'routeUrl': './inc/gpx/' + id + '.gpx',
-			'mapUrl': './inc/maps/' + prefix + '.jpg',
+			'assetsUrl': this.config.assets + '/medium/' + prefix + '/',
+			'markersUrl': this.config.assets + '/img/marker-{type}.svg',
+			'guideUrl': this.config.assets + '/guides/' + id + '.json',
+			'routeUrl': this.config.assets + '/gpx/' + id + '.gpx',
+			'mapUrl': this.config.assets + '/maps/' + prefix + '.jpg',
 			'exifUrl': this.config.exif,
 			'guideData': GuideData[id],
 			'routeData': GpxData[id],
 			'exifData': ExifData[prefix],
-			'creditsTemplate': 'Maps &copy; <a href="http://www.4umaps.eu/mountain-bike-hiking-bicycle-outdoor-topographic-map.htm" target="_blank">4UMaps</a>, Data &copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> and contributors, CC BY-SA'
+			'creditsTemplate': this.config.creditTemplate.innerHTML
 		});
 	};
 
@@ -4404,73 +4407,81 @@ var SydneyTrainWalks = SydneyTrainWalks || function() {};
 // extend the constructor
 SydneyTrainWalks.prototype.Overview = function(parent) {
 
-	// PROPERTIES
+  // PROPERTIES
 
-	this.parent = parent;
-	this.config = parent.config;
-	this.overviewMap = null;
-	this.config.extend = function(properties) {
-		for (var name in properties) {
-			this[name] = properties[name];
-		}
-	};
-	this.config.extend({
-		'overview': document.querySelector('.overview'),
-		'creditTemplate': document.getElementById('credit-template')
-	});
+  this.parent = parent;
+  this.config = parent.config;
+  this.overviewMap = null;
+  this.config.extend = function(properties) {
+    for (var name in properties) {
+      this[name] = properties[name];
+    }
+  };
+  this.config.extend({
+    'overview': document.querySelector('.localmap.overview'),
+    'creditTemplate': document.getElementById('credit-template')
+  });
 
-	// METHODS
+  // METHODS
 
-	this.init = function() {
-		// TODO: generate the map
-		this.overviewMap = null;
-		// return the object
-		return this;
-	};
+  this.init = function() {
+    // generate the map
+    this.overviewMap = new Localmap({
+      'container': this.config.overview,
+      'legend': null,
+      'assetsUrl': null,
+      'markersUrl': this.config.assets + '/img/marker-{type}.svg',
+      'guideUrl': null,
+      'routeUrl': null,
+      'mapUrl': this.config.assets + '/maps/_index.jpg',
+      'exifUrl': null,
+      'guideData': this.processMarkers(),
+      'routeData': this.mergeRoutes(),
+      'exifData': null,
+      'creditsTemplate': this.config.creditTemplate.innerHTML
+    });
+    // return the object
+    return this;
+  };
 
-	this.getMarkers = function() {
-		var markers = [];
-		// for every walk
-		for (var key in GuideData) {
-			// create a marker between the start and end point
-			markers.push({
-				'lon': GuideData[key].lon,
-				'lat': GuideData[key].lat,
-				'id': key
-			});
-		}
-		// return the result
-		return markers;
-	};
+  this.processMarkers = function() {
+    // add "onMarkerClicked" event handlers to markers
+    var _this = this;
+    GuideData['_index'].markers.map(function(marker) {
+      marker.callback = _this.onMarkerClicked.bind(_this, marker.id);
+    });
+    return GuideData['_index'];
+  };
 
-	this.getRoutes = function() {
-		var routes = [];
-		// if the GPX data is available anyway
-		if (typeof GpxData != 'undefined') {
-			// for every walk
-			for (var key in GuideData) {
-				// only if this isn't an alias
-				if (!GuideData[key].assets) {
-					// TODO: add the route
-				}
-			}
-		}
-		// return the result
-		return routes;
-	};
+  this.mergeRoutes = function() {
+    var routes = {'features':[]};
+    // if the GPX data is available anyway
+    if (typeof GpxData != 'undefined') {
+      // for every walk
+      for (var key in GuideData) {
+        // only if this isn't an alias
+        if (!GuideData[key].assets && GuideData[key].gps !== '_index') {
+          // add the route
+					routes.features = routes.features.concat(GpxData[key].features);
+        }
+      }
+    }
+    // return the result
+    return routes;
+  };
 
-	// EVENTS
+  // EVENTS
 
-	this.onMarkerClicked = function(id, evt) {
-		// update the app for this id
-		this.parent.update(id, 'map');
-	};
+  this.onMarkerClicked = function(id, evt) {
+    // update the app for this id
+    this.parent.update(id, 'map');
+  };
 
 };
 
 // return as a require.js module
 if (typeof module !== 'undefined') {
-	exports = module.exports = SydneyTrainWalks.Overview;
+  exports = module.exports = SydneyTrainWalks.Overview;
 }
 
 /*

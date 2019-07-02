@@ -150,7 +150,7 @@
 					</div>
 				</article>
 				<aside>
-					<figure class="localmap">
+					<figure class="directions localmap">
 						<button class="localmap-return" onclick="document.body.className='screen-' + returnTo;">Back</button>
 					</figure>
 					<figure class="photowall">
@@ -198,9 +198,9 @@
 							'elements' : document.querySelectorAll('.guide .cylinder-image'),
 							'container' : document.querySelector('.guide'),
 							'spherical': /fov360|\d{3}_r\d{7}/i,
-					        'cylindrical': /fov180/i,
+					    'cylindrical': /fov180/i,
 							'slicer' : 'imageslice.php?src={src}&{size}',
-					        'idle': 0.1,
+					    'idle': 0.1,
 							'opened' : function (referer) { localmap.indicate(referer); return true; },
 							'located' : function () { returnTo = 'guide'; document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map'); },
 							'closed' : function () { localmap.unindicate(); }
@@ -210,9 +210,9 @@
 							'elements' : document.querySelectorAll('.photowall .cylinder-image'),
 							'container' : document.querySelector('.photowall'),
 							'spherical': /fov360|\d{3}_r\d{7}/i,
-					        'cylindrical': /fov180/i,
+					    'cylindrical': /fov180/i,
 							'slicer' : 'imageslice.php?src={src}&{size}',
-					        'idle': 0.1,
+					    'idle': 0.1,
 							'opened' : function (referer) { localmap.indicate(referer); return true; },
 							'located' : function () { returnTo = 'photos'; document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map'); },
 							'closed' : function () { localmap.unindicate(); }
@@ -237,7 +237,7 @@
 						*/
 
 						var localmap = new Localmap({
-							'container': document.querySelector('.localmap'),
+							'container': document.querySelector('.directions.localmap'),
 							'legend': null,
 							'assetsUrl': './inc/medium/<?php echo $assets?>/',
 							'markersUrl': './inc/img/marker-{type}.svg',

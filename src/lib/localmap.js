@@ -86,12 +86,15 @@ var Localmap = function(config) {
     // show a popup describing the markerdata
     this.components.modal.show(markerdata);
     // resolve any callback
-    if (markerdata.callback) callback(markerdata);
+    if (markerdata.callback) markerdata.callback(markerdata);
   };
 
   this.stop = function() {
     // release the container
-    this.container.innerHTML = '';
+    // TODO: remove each component
+    for (var key in this.components)
+      if (this.components[key].remove)
+        this.components[key].remove(this.config);
   };
 
   this.indicate = function(input) {

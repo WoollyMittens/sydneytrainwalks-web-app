@@ -1,0 +1,60 @@
+/*
+	Directions
+*/
+
+@media all {
+
+	.directions {
+		@include transition-property(transform);
+		@include transition-duration(300ms);
+		@include translate(-100%, 0);
+		display : block;
+		bottom : 4rem;
+		height : auto;
+		left : 0;
+		max-height : 100%;
+		position : absolute;
+		top : 8rem;
+		width : 50%;
+		z-index : 3;
+	}
+
+	/*
+		on which screen should this be visible
+	*/
+
+	body.screen-guide .directions,
+	body.screen-photos .directions,
+	body.screen-map .directions { @include translate(0, 0); }
+
+}
+@media (orientation: portrait) {
+
+	.directions {
+		width : 100%;
+	}
+
+	/*
+    on which screen should this be visible
+	*/
+
+	body.screen-guide .directions { @include translate(-100%, 0); }
+	body.screen-photos .directions { @include translate(-100%, 0); }
+	body.screen-map .directions { @include translate(0, 0); }
+
+}
+@media print {
+
+  .directions {
+		@include translate(0, 0);
+		position : relative !important;
+		top : auto !important;
+		right : auto !important;
+		bottom : auto !important;
+		left : auto !important;
+		page-break-before : always;
+		height : 20cm !important;
+		width : 20cm !important;
+	}
+
+}

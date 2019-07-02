@@ -17,7 +17,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 	this.config.extend({
 		'title': document.querySelector('.subtitle > h2'),
 		'guide': document.querySelector('.guide'),
-		'localmap': document.querySelector('.localmap'),
+		'localmap': document.querySelector('.localmap.directions'),
 		'return': document.querySelector('.localmap-return'),
 		'wall': document.querySelector('.photowall'),
 		'titleTemplate': document.getElementById('title-template'),
@@ -145,16 +145,16 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		this.config.photomap = new Localmap({
 			'container': this.config.localmap,
 			'legend': null,
-			'assetsUrl': './inc/medium/' + prefix + '/',
-			'markersUrl': './inc/img/marker-{type}.svg',
-			'guideUrl': './inc/guides/' + id + '.json',
-			'routeUrl': './inc/gpx/' + id + '.gpx',
-			'mapUrl': './inc/maps/' + prefix + '.jpg',
+			'assetsUrl': this.config.assets + '/medium/' + prefix + '/',
+			'markersUrl': this.config.assets + '/img/marker-{type}.svg',
+			'guideUrl': this.config.assets + '/guides/' + id + '.json',
+			'routeUrl': this.config.assets + '/gpx/' + id + '.gpx',
+			'mapUrl': this.config.assets + '/maps/' + prefix + '.jpg',
 			'exifUrl': this.config.exif,
 			'guideData': GuideData[id],
 			'routeData': GpxData[id],
 			'exifData': ExifData[prefix],
-			'creditsTemplate': 'Maps &copy; <a href="http://www.4umaps.eu/mountain-bike-hiking-bicycle-outdoor-topographic-map.htm" target="_blank">4UMaps</a>, Data &copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> and contributors, CC BY-SA'
+			'creditsTemplate': this.config.creditTemplate.innerHTML
 		});
 	};
 

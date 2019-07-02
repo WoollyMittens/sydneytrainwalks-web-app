@@ -26,11 +26,12 @@ const tileTemplate = 'https://tile.thunderforest.com/neighbourhood/{z}/{x}/{y}.p
 const fs = require('fs');
 const {Image, createCanvas} = require('canvas');
 const request = require('request');
-const sourcePath = '../src/guides/';
+const guidesData = require('../inc/json/guides.json');
 const targetPath = '../src/maps/';
 const tileCache = '../src/tiles/{z}/{x}/{y}.png';
 const tileTemplate = 'http://4umaps.eu/{z}/{x}/{y}.png';
 const tileMissing = '../inc/img/missing.png';
+const overviewZoom = 10;
 const mapZoom = 15; // default = 15
 const gridSize = 256;
 var canvas, ctx;
@@ -45,17 +46,7 @@ var tile2lat = function tile2lat(y,z) { var n=Math.PI-2*Math.PI*y/Math.pow(2,z);
 
 var generateGuidesQueue = function() {
   // get the file list
-  var guidesQueue = [];
-  var scripts = fs.readdirSync(sourcePath);
-  var isScript = new RegExp('.js$|.json$', 'i');
-  // for every script in the folder
-  for (var a = 0, b = scripts.length; a < b; a += 1) {
-    // if this isn't a bogus file
-    if (isScript.test(scripts[a])) {
-      // add the image to the guidesQueue
-      guidesQueue.push(scripts[a]);
-    }
-  }
+  var guidesQueue = Object.keys(guidesData).map(function(index){ return guidesData[index]; });
 	// truncate the guidesQueue for testing
 	//guidesQueue.length = 3;
 	// return the guidesQueue
@@ -66,41 +57,38 @@ var parseGuides = function() {
   // if the guidesQueue is not empty
   if (guidesQueue.length > 0) {
     // pick an item from the guidesQueue
-    fileName = guidesQueue.pop();
-    // process the item in the guidesQueue
-    new fs.readFile(sourcePath + fileName, function(error, data) {
-      if (error) throw error;
-      // parse the guide as JSON
-      var guideData = JSON.parse(data.toString());
-      // if this map isn't a subset of a larger walk
-      if (!guideData.assets) {
-        // convert the bounds to tiles
-        minX = long2tile(guideData.bounds.west, mapZoom);
-        minY = lat2tile(guideData.bounds.north, mapZoom);
-        maxX = long2tile(guideData.bounds.east, mapZoom);
-        maxY = lat2tile(guideData.bounds.south, mapZoom);
-        // the canvas needs to be based on the bounds in the guide
-        canvas = createCanvas(Math.max(maxX - minX, 1) * 256, Math.max(maxY - minY, 1) * 256);
-        ctx = canvas.getContext('2d');
-        // create a list of tiles within the map bounds
-        tilesQueue = [];
-        for (let x = minX; x <= maxX; x += 1) {
-          for (let y = minY; y <= maxY; y += 1) {
-            tilesQueue.push({
-              cache: tileCache.replace('{x}', x).replace('{y}', y).replace('{z}', mapZoom),
-              url: tileTemplate.replace('{x}', x).replace('{y}', y).replace('{z}', mapZoom),
-              x: x - minX,
-              y: y - minY
-            });
-          }
+    var guideData = guidesQueue.pop();
+    // if this map isn't a subset of a larger walk
+    if (!guideData.assets) {
+      // use the appropriate zoom level
+      var zoom = (guideData.gps === '_index') ? overviewZoom : mapZoom;
+      // convert the bounds to tiles
+      minX = long2tile(guideData.bounds.west, zoom);
+      minY = lat2tile(guideData.bounds.north, zoom);
+      maxX = long2tile(guideData.bounds.east, zoom);
+      maxY = lat2tile(guideData.bounds.south, zoom);
+      // the canvas needs to be based on the bounds in the guide
+      canvas = createCanvas(Math.max(maxX - minX, 1) * 256, Math.max(maxY - minY, 1) * 256);
+      ctx = canvas.getContext('2d');
+      // create a list of tiles within the map bounds
+      tilesQueue = [];
+      for (let x = minX; x <= maxX; x += 1) {
+        for (let y = minY; y <= maxY; y += 1) {
+          tilesQueue.push({
+            cache: tileCache.replace('{x}', x).replace('{y}', y).replace('{z}', zoom),
+            url: tileTemplate.replace('{x}', x).replace('{y}', y).replace('{z}', zoom),
+            x: x - minX,
+            y: y - minY
+          });
         }
-        downloadTiles(fileName.split('.')[0] + '_' + mapZoom);
       }
-      // otherwise skip it
-      else {
-        parseGuides();
-      }
-    });
+      downloadTiles(guideData.gps + '_' + zoom);
+    }
+    // otherwise skip it
+    else {
+      parseGuides();
+    }
+
   } else {
     console.log('Finished.');
   }
@@ -144,7 +132,7 @@ var downloadTiles = function(fileName) {
 
 var onDownloadedTile = function(tile, image) {
   console.log('downloaded tile:', tile.cache);
-  image.onerror = null;
+  image.onerror = function (error) { onFailedTile(tile, image) };
   image.src = tile.cache;
 };
 
