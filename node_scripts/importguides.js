@@ -91,18 +91,13 @@ var parseGuides = function (queue) {
 					south = Math.min(routeData[a][1], south);
 					east = Math.max(routeData[a][0], east);
 				}
-				// convert the bounds to tiles
-				north = tile2lat(lat2tile(north, 15) - 1, 15);
-				west = tile2long(long2tile(west, 15) - 1, 15);
-				south = tile2lat(lat2tile(south, 15) + 3, 15);
-				east = tile2long(long2tile(east, 15) + 3, 15);
 				// reconvert to align the bounds to the tile grid
-				GuideData[key].bounds.north = tile2lat(lat2tile(north, 15), 15);
-				GuideData[key].bounds.west = tile2long(long2tile(west, 15), 15);
-				GuideData[key].bounds.south = tile2lat(lat2tile(south, 15), 15);
-				GuideData[key].bounds.east = tile2long(long2tile(east, 15), 15);
-				// TODO: prefill the "bounds" from guides that are a subset of another guide
-				if (GuideData[key].assets) {
+				GuideData[key].bounds.north = tile2lat(lat2tile(north, 15) - 1, 15);
+				GuideData[key].bounds.west = tile2long(long2tile(west, 15) - 1, 15);
+				GuideData[key].bounds.south = tile2lat(lat2tile(south, 15) + 2, 15);
+				GuideData[key].bounds.east = tile2long(long2tile(east, 15) + 2, 15);
+				// prefill the "bounds" from guides that are a subset of another guide
+				if (GuideData[key].assets && guidesData[prefix] && guidesData[prefix].bounds) {
 					var prefix = GuideData[key].assets.prefix;
 					GuideData[key].assets.bounds = guidesData[prefix].bounds;
 				}

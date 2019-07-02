@@ -57,7 +57,7 @@ var generateGuidesQueue = function() {
     }
   }
 	// truncate the guidesQueue for testing
-	//guidesQueue.length = 1;
+	//guidesQueue.length = 3;
 	// return the guidesQueue
   return guidesQueue.reverse();
 };
@@ -80,7 +80,7 @@ var parseGuides = function() {
         maxX = long2tile(guideData.bounds.east, mapZoom);
         maxY = lat2tile(guideData.bounds.south, mapZoom);
         // the canvas needs to be based on the bounds in the guide
-        canvas = createCanvas((maxX - minX + 1) * 256, (maxY - minY + 1) * 256);
+        canvas = createCanvas(Math.max(maxX - minX, 1) * 256, Math.max(maxY - minY, 1) * 256);
         ctx = canvas.getContext('2d');
         // create a list of tiles within the map bounds
         tilesQueue = [];

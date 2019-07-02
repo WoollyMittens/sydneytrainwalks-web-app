@@ -185,11 +185,15 @@ var Localmap = function(config) {
 		'minimum': {
 			'lon': null,
 			'lat': null,
+			'lon_cover': null,
+			'lat_cover': null,
 			'zoom': null
 		},
 		'maximum': {
 			'lon': null,
 			'lat': null,
+			'lon_cover': null,
+			'lat_cover': null,
 			'zoom': null
 		},
 		'position': {
@@ -229,8 +233,8 @@ var Localmap = function(config) {
   this.focus = function(lon, lat, zoom, smoothly) {
     // try to keep the focus within bounds
     this.config.useTransitions = smoothly;
-    this.config.position.lon = Math.max(Math.min(lon, this.config.maximum.lon), this.config.minimum.lon);
-    this.config.position.lat = Math.min(Math.max(lat, this.config.maximum.lat), this.config.minimum.lat);
+    this.config.position.lon = Math.max(Math.min(lon, this.config.maximum.lon_cover), this.config.minimum.lon_cover);
+    this.config.position.lat = Math.min(Math.max(lat, this.config.maximum.lat_cover), this.config.minimum.lat_cover);
     this.config.position.zoom = Math.max(Math.min(zoom, this.config.maximum.zoom), this.config.minimum.zoom);
     this.update();
   };
@@ -314,8 +318,8 @@ Localmap.prototype.Background = function (parent, onComplete) {
 		var centerX = (container.offsetWidth - element.naturalWidth * min.zoom) / 2;
 		var centerY = (container.offsetHeight - element.naturalHeight * min.zoom) / 2;
 		// store the initial position
-		this.config.position.lon = (min.lon + max.lon) / 2;
-		this.config.position.lat = (min.lat + max.lat) / 2;
+    this.config.position.lon = (min.lon_cover + max.lon_cover) / 2;
+		this.config.position.lat = (min.lat_cover + max.lat_cover) / 2;
 		this.config.position.zoom = min.zoom;
 		// position the canvas
 		this.parent.element.style.transform = 'translate(' + centerX + 'px, ' + centerY + 'px) scale(' + min.zoom + ')';
@@ -904,8 +908,6 @@ Localmap.prototype.Markers = function (parent, onMarkerClicked) {
 		}
 	};
 
-	// TODO: use cached data or load the JSON file
-
 	this.update = function() {
 		// only resize if the zoom has changed
 		if (this.zoom !== this.config.position.zoom) this.resize();
@@ -914,7 +916,6 @@ Localmap.prototype.Markers = function (parent, onMarkerClicked) {
 	};
 
 	this.resize = function() {
-		console.log('markers resize', this.config.position.zoom);
 		// resize the markers according to scale
 		var scale = 1 / this.config.position.zoom;
 		for (var key in this.elements) {
@@ -932,9 +933,14 @@ Localmap.prototype.Markers = function (parent, onMarkerClicked) {
 		min.lat = (guideData.assets) ? guideData.assets.bounds.north : guideData.bounds.north;
 		max.lon = (guideData.assets) ? guideData.assets.bounds.east : guideData.bounds.east;
 		max.lat = (guideData.assets) ? guideData.assets.bounds.south : guideData.bounds.south;
+    // store the coverage limits
+		min.lon_cover = guideData.bounds.west;
+		min.lat_cover = guideData.bounds.north;
+		max.lon_cover = guideData.bounds.east;
+		max.lat_cover = guideData.bounds.south;
 		// store the initial position
-		config.position.lon = (max.lon - min.lon) / 2;
-		config.position.lat = (max.lat - min.lat) / 2;
+		config.position.lon = (max.lon_cover - min.lon_cover) / 2;
+		config.position.lat = (max.lat_cover - min.lat_cover) / 2;
 		// position every marker in the guide
 		guideData.markers.map(this.addMarker.bind(this));
 	};
@@ -1098,17 +1104,27 @@ Localmap.prototype.Route = function (parent) {
 		// position every trackpoint in the route
 		var ctx = this.canvas.getContext('2d');
 		// (re)draw the route
-		var x, y, z = this.config.position.zoom, w = this.canvas.width, h = this.canvas.height;
+		var x0, y0, x1, y1, z = this.config.position.zoom, w = this.canvas.width, h = this.canvas.height;
 		ctx.clearRect(0, 0, w, h);
 		ctx.lineWidth = 4 / z;
 		ctx.strokeStyle = 'orange';
 		ctx.beginPath();
 		for (var key in this.coordinates) {
 			if (this.coordinates.hasOwnProperty(key) && key % 1 == 0) {
-				if (x = null) ctx.moveTo(x, y);
-				x = parseInt((this.coordinates[key][0] - this.config.minimum.lon) / (this.config.maximum.lon - this.config.minimum.lon) * w);
-				y = parseInt((this.coordinates[key][1] - this.config.minimum.lat) / (this.config.maximum.lat - this.config.minimum.lat) * h);
-				ctx.lineTo(x, y);
+        // calculate the current step
+				x1 = parseInt((this.coordinates[key][0] - this.config.minimum.lon) / (this.config.maximum.lon - this.config.minimum.lon) * w);
+				y1 = parseInt((this.coordinates[key][1] - this.config.minimum.lat) / (this.config.maximum.lat - this.config.minimum.lat) * h);
+        // if the step seems valid, draw the step
+  			if ((x1 - x0 + y1 - y0) < 100) {
+          ctx.lineTo(x1, y1);
+        }
+        // or jump unlikely/erroneous steps
+        else {
+          ctx.moveTo(x1, y1);
+        }
+        // store current step as the previous step
+        x0 = x1;
+        y0 = y1;
 			}
 		}
 		ctx.stroke();

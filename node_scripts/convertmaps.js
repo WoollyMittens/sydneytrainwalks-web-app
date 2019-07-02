@@ -4,7 +4,7 @@ var fs = require('fs');
 var source = '../src/maps';
 var destination = '../inc/maps';
 var zoom = 15;
-var queue = [];
+var mapsQueue = [];
 
 // generates a resize queue
 var generateQueue = function(folder) {
@@ -33,7 +33,7 @@ var generateQueue = function(folder) {
         if (!fs.existsSync(dstPath)) {
 
           // add the thumbnail to the queue
-          queue.push({
+          mapsQueue.push({
             'srcPath': srcPath,
             'dstPath': dstPath,
             'quality': 0.6,
@@ -56,14 +56,19 @@ var generateQueue = function(folder) {
       }
     }
   }
+
+  // truncate the guidesQueue for testing
+	//mapsQueue.length = 3;
+	// return the guidesQueue
+  return mapsQueue.reverse();
 };
 
 // processes an original from the queue into a thumbnail and a full size
 var makeImages = function() {
   // if the queue is not empty
-  if (queue.length > 0) {
+  if (mapsQueue.length > 0) {
     // pick an item from the queue
-    var item = queue.pop();
+    var item = mapsQueue.pop();
     // process the item in the queue
     gm(item.srcPath)
       .resize(item.width, item.height)
@@ -77,12 +82,12 @@ var makeImages = function() {
 					// report what was done
 	        console.log('generated:', item.dstPath);
 	        // next iteration in the queue
-	        makeImages(queue);
+	        makeImages(mapsQueue);
         }
       });
   }
 };
 
 // start processing the queue
-generateQueue(source)
+mapsQueue = generateQueue(source)
 makeImages();
