@@ -639,13 +639,12 @@
     top: 8rem;
     width: 50%;
     z-index: 3;
-    overflow: hidden;
   }
 
   /*
   	on which screen should this be visible
   */
-  /* line 27, ../../src/scss/_directions.scss */
+  /* line 26, ../../src/scss/_directions.scss */
   body.screen-guide .directions,
   body.screen-photos .directions,
   body.screen-map .directions {
@@ -656,7 +655,7 @@
   }
 }
 @media (orientation: portrait) {
-  /* line 34, ../../src/scss/_directions.scss */
+  /* line 33, ../../src/scss/_directions.scss */
   .directions {
     width: 100%;
   }
@@ -664,7 +663,7 @@
   	/*
       on which screen should this be visible
   	*/
-  /* line 42, ../../src/scss/_directions.scss */
+  /* line 41, ../../src/scss/_directions.scss */
   body.screen-guide .directions {
     -moz-transform: translate(-100%, 0);
     -ms-transform: translate(-100%, 0);
@@ -672,7 +671,7 @@
     transform: translate(-100%, 0);
   }
 
-  /* line 43, ../../src/scss/_directions.scss */
+  /* line 42, ../../src/scss/_directions.scss */
   body.screen-photos .directions {
     -moz-transform: translate(-100%, 0);
     -ms-transform: translate(-100%, 0);
@@ -680,7 +679,7 @@
     transform: translate(-100%, 0);
   }
 
-  /* line 44, ../../src/scss/_directions.scss */
+  /* line 43, ../../src/scss/_directions.scss */
   body.screen-map .directions {
     -moz-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
@@ -689,7 +688,7 @@
   }
 }
 @media print {
-  /* line 49, ../../src/scss/_directions.scss */
+  /* line 48, ../../src/scss/_directions.scss */
   .directions {
     -moz-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
@@ -1436,7 +1435,7 @@ header.subtitle .sign {
     position: absolute;
     left: 10px;
     top: 10px;
-    z-index: 9;
+    z-index: 8;
   }
   /* line 138, ../../src/scss/_localmap.scss */
   .localmap-controls button {
@@ -1495,7 +1494,7 @@ header.subtitle .sign {
     width: 70%;
     background-color: #fff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-    z-index: 8;
+    z-index: 9;
     transform: translate(-125%, 0);
     transition: transform ease 500ms;
     display: flex;

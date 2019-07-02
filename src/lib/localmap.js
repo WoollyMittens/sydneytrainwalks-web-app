@@ -93,8 +93,8 @@ var Localmap = function(config) {
     // release the container
     // TODO: remove each component
     for (var key in this.components)
-      if (this.components[key].remove)
-        this.components[key].remove(this.config);
+      if (this.components[key].stop)
+        this.components[key].stop(this.config);
   };
 
   this.indicate = function(input) {
@@ -155,6 +155,11 @@ Localmap.prototype.Background = function (parent, onComplete) {
 		this.element.setAttribute('src', this.config.mapUrl);
 	};
 
+  this.stop = function() {
+    // remove the element
+    this.parent.element.removeChild(this.element);
+  };
+
 	this.update = function() {};
 
 	this.redraw = function() {
@@ -213,6 +218,11 @@ Localmap.prototype.Canvas = function (parent, onBackgroundComplete, onMarkerClic
 		// add the canvas to the parent container
 		this.config.container.appendChild(this.element);
 	};
+
+  this.stop = function() {
+    // remove the element
+    this.config.container.removeChild(this.element);
+  };
 
 	this.update = function() {
 		// redraw this component
@@ -298,7 +308,10 @@ Localmap.prototype.Controls = function (parent) {
 		this.element.appendChild(this.elements.zoomout);
 	};
 
-	// TODO: buttons to incrementally zoom in, zoom out, move north, move south, move east, move west.
+  this.stop = function() {
+    // remove the element
+    this.element.removeChild(this.elements.zoomout);
+  };
 
 	this.update = function() {};
 
@@ -422,6 +435,11 @@ Localmap.prototype.Credits = function (parent) {
 		this.config.container.appendChild(this.element);
 	};
 
+  this.stop = function() {
+    // remove the element
+    this.config.container.removeChild(this.element);
+  };
+
 	this.update = function() {};
 
 	// EVENTS
@@ -455,6 +473,11 @@ Localmap.prototype.Indicator = function (parent, onMarkerClicked, onMapFocus) {
 		this.element.addEventListener('click', this.onIndicatorClicked.bind(this));
 		this.parent.element.appendChild(this.element);
 	};
+
+  this.stop = function() {
+    // remove the element
+    this.parent.element.removeChild(this.element);
+  };
 
 	this.update = function() {
 		// only resize if the zoom has changed
@@ -600,6 +623,11 @@ Localmap.prototype.Legend = function (parent, onLegendClicked) {
 
 	this.start = function() {};
 
+  this.stop = function() {
+    // remove the element
+    if (this.config.legend) this.config.legend.innerHTML = '';
+  };
+
 	this.update = function() {
     // write the legend if needed and available
     if (this.config.legend && this.elements.length === 0) this.elements = this.config.guideData.markers.map(this.addDefinition.bind(this));
@@ -676,6 +704,11 @@ Localmap.prototype.Location = function (parent) {
 			this.requestPosition();
 		}
 	};
+
+  this.stop = function() {
+    // remove the element
+    this.config.container.removeChild(this.permissions);
+  };
 
 	this.update = function() {
 		// only resize if the zoom has changed
@@ -755,6 +788,10 @@ Localmap.prototype.Markers = function (parent, onMarkerClicked) {
 			guideXhr.send();
 		}
 	};
+
+  this.stop = function() {
+    // TODO: remove the elements
+  };
 
 	this.update = function() {
 		// only resize if the zoom has changed
@@ -872,11 +909,16 @@ Localmap.prototype.Modal = function (parent) {
 		this.config.container.appendChild(this.element);
 	};
 
+  this.stop = function() {
+    // remove the element
+    this.config.container.removeChild(this.element);
+  };
+
 	this.update = function() {};
 
 	this.show = function(markerData) {
 
-// TODO: if there is no photo use the icon but as an aside
+    // TODO: if there is no photo use the icon but as an aside
 
 		// display the photo if available
 		if (markerData.photo) {
@@ -937,6 +979,11 @@ Localmap.prototype.Route = function (parent) {
 		this.canvas.setAttribute('class', 'localmap-route')
 		this.parent.element.appendChild(this.canvas);
 	};
+
+  this.stop = function() {
+    // remove the element
+    this.parent.element.removeChild(this.canvas);
+  };
 
 	this.update = function() {
 		// only redraw if the zoom has changed
@@ -1022,6 +1069,11 @@ Localmap.prototype.Scale = function (parent) {
 		this.element.setAttribute('class', 'localmap-scale');
 		this.config.container.appendChild(this.element);
 	};
+
+  this.stop = function() {
+    // remove the element
+    this.config.container.removeChild(this.element);
+  };
 
 	this.update = function() {
 		// only redraw if the zoom has changed

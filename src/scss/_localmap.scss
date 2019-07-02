@@ -133,7 +133,7 @@
   		position: absolute;
   		left: 10px;
   		top: 10px;
-  		z-index: 9;
+  		z-index: 8;
 
   		button {
   			display: block;
@@ -192,7 +192,7 @@
   		width: 70%;
   		background-color: #fff;
   		box-shadow: 0 5px 10px rgba(0,0,0,0.5);
-  		z-index: 8;
+  		z-index: 9;
   		transform: translate(-125%, 0);
   		transition: transform ease 500ms;
   		display: flex;
