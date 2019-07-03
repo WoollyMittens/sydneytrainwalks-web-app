@@ -48,21 +48,17 @@ var generateQueue = function () {
 var addIndex = function () {
 	var overview = {
 		'gps': '_index',
-		'bounds': {
-			'north': -999,
-			'east': -999,
-			'south': 999,
-			'west': 999
-		},
+		'bounds': {},
 		'markers': []
 	};
 	// for every guide
+	var north = -999, west = 999, south = 999, east = -999;
 	for (var key in GuideData) {
 		// expand the bounds based on the guides
-		overview.bounds.north = Math.max(GuideData[key].bounds.north, overview.bounds.north);
-		overview.bounds.east = Math.max(GuideData[key].bounds.east, overview.bounds.east);
-		overview.bounds.south = Math.min(GuideData[key].bounds.south, overview.bounds.south);
-		overview.bounds.west = Math.min(GuideData[key].bounds.west, overview.bounds.west);
+		north = Math.max(GuideData[key].bounds.north, north);
+		west = Math.min(GuideData[key].bounds.west, west);
+		south = Math.min(GuideData[key].bounds.south, south);
+		east = Math.max(GuideData[key].bounds.east, east);
 		// add a marker from the centre of the guide
 		overview.markers.push({
 			'type': 'walk',
@@ -71,11 +67,16 @@ var addIndex = function () {
 			'id': key
 		});
 	}
-	// round the bounds to the the nearest tile
-	overview.bounds.north = tile2lat(lat2tile(overview.bounds.north, 10) - 1, 10);
-	overview.bounds.west = tile2long(long2tile(overview.bounds.west, 10) - 1, 10);
-	overview.bounds.south = tile2lat(lat2tile(overview.bounds.south, 10) + 2, 10);
-	overview.bounds.east = tile2long(long2tile(overview.bounds.east, 10) + 2, 10);
+	// expand the bounds by one map tile
+	north = tile2lat(lat2tile(north, 11) - 1, 11);
+	west = tile2long(long2tile(west, 11) - 1, 11);
+	south = tile2lat(lat2tile(south, 11) + 2, 11);
+	east = tile2long(long2tile(east, 11) + 2, 11);
+	// align the bounds to the tile grid
+	overview.bounds.north = tile2lat(lat2tile(north, 11), 11);
+	overview.bounds.west = tile2long(long2tile(west, 11), 11);
+	overview.bounds.south = tile2lat(lat2tile(south, 11), 11);
+	overview.bounds.east = tile2long(long2tile(east, 11), 11);
 	// insert the index into the guides
 	GuideData['_index'] = overview;
 };

@@ -70,6 +70,7 @@
 				var sydneyTrainWalks = new SydneyTrainWalks();
 				var sydneyTrainWalksOverview = new sydneyTrainWalks.Overview({
 					'config' : {
+						'assets': './inc',
 						'onlineTiles' : '//4umaps.eu/{z}/{x}/{y}.png',
 						'offlineTiles' : './inc/tiles/{z}/{x}/{y}.jpg',
 						'missing' : './inc/img/missing.png'

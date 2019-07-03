@@ -168,10 +168,10 @@
 
 	<script id="thumbnail-template" type="text/template">
 		<p class="guide-landmark">
-			<a class="cylinder-image" href="./inc/medium/{id}/{src}" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/{id}/{src});" data-desc="{description}">
+			<a class="cylinder-image" href="./inc/medium/{id}/{src}" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/{id}/{src});" data-title="{description}">
 				<img alt="" src="./inc/small/{id}/{src}"/>
 			</a>
-			<span class="guide-text">{description} <button class="guide-locate" data-url="./inc/medium/{id}/{src}">Show location</button></span>
+			<span class="guide-text">{description} <button class="guide-locate" data-url="./inc/medium/{id}/{src}" data-title="{description}">Show location</button></span>
 		</p>
 	</script>
 

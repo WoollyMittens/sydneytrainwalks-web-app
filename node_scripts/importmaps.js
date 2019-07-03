@@ -31,7 +31,7 @@ const targetPath = '../src/maps/';
 const tileCache = '../src/tiles/{z}/{x}/{y}.png';
 const tileTemplate = 'http://4umaps.eu/{z}/{x}/{y}.png';
 const tileMissing = '../inc/img/missing.png';
-const overviewZoom = 10;
+const overviewZoom = 11;
 const mapZoom = 15; // default = 15
 const gridSize = 256;
 var canvas, ctx;

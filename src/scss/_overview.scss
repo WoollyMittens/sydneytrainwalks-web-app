@@ -28,12 +28,15 @@
 
 @media (orientation: landscape) {
 
+	.overview {
+		right: 50%;
+	}
+
 	/*
 		on which screen should this be visible
 	*/
 
 	body.screen-menu .overview {
-		right: 50%;
 		@include translate(0, 0);
 	}
 

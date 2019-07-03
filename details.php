@@ -80,7 +80,7 @@
 						<span class="sign to">via</span>
 						<span class="sign park"><?php print $json->{'location'}?> <i><?php print $json->{'duration'}?>h / <?php print $json->{'length'}?>km</i></span>
 						<span class="sign to">to</span>
-						<span class="sign <?php print $lastMarker->{'type'}?>"><?php print $firstMarker->{'end'}->{'location'}?></span>
+						<span class="sign <?php print $lastMarker->{'type'}?>"><?php print $lastMarker->{'location'}?></span>
 					</h2>
 				</header>
 				<article class="guide guide-closed">
@@ -111,12 +111,12 @@
 										?>
 											<div class="guide-<?php echo $highlightClass ?>">
 												<p class="guide-landmark">
-													<a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>" class="cylinder-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>);" data-desc="<?php echo $marker->{'description'} ?>">
+													<a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>" class="cylinder-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>);" data-title="<?php echo $marker->{'description'} ?>">
 														<img alt="" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>">
 													</a>
 													<span class="guide-text">
 														<?php echo $marker->{'description'} ?>
-														<button class="guide-locate" data-url="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>">Show location</button>
+														<button class="guide-locate" data-url="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>" data-title="<?php echo $marker->{'description'} ?>">Show location</button>
 													</span>
 												</p>
 											</div>
@@ -124,12 +124,12 @@
 									} else {
 										?>
 											<p class="guide-landmark">
-												<a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>" class="cylinder-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>);" data-desc="<?php echo $marker->{'description'} ?>">
+												<a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>" class="cylinder-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>);" data-title="<?php echo $marker->{'description'} ?>">
 													<img alt="" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>">
 												</a>
 												<span class="guide-text">
 													<?php echo $marker->{'description'} ?>
-													<button class="guide-locate" data-url="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>">Show location</button>
+													<button class="guide-locate" data-url="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>" data-title="<?php echo $marker->{'description'} ?>">Show location</button>
 												</span>
 											</p>
 										<?php

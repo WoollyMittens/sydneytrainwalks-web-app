@@ -118,10 +118,26 @@ var Localmap = function(config) {
 
   // EVENTS
 
+  this.onComplete = function() {
+    console.log('this.onComplete');
+    // remove the busy indicator
+    this.config.container.className = this.config.container.className.replace(/ localmap-busy/g, '');
+    // global update
+    this.update();
+  };
+
+  this.onResize = function() {
+    // TODO: update measurements after resize
+  };
+
+  window.addEventListener('resize', this.onResize.bind(this));
+
   // CLASSES
 
+  this.config.container.className += ' localmap-busy';
+
   this.components = {
-    canvas: new this.Canvas(this, this.update.bind(this), this.describe.bind(this), this.focus.bind(this)),
+    canvas: new this.Canvas(this, this.onComplete.bind(this), this.describe.bind(this), this.focus.bind(this)),
     controls: new this.Controls(this),
     scale: new this.Scale(this),
     credits: new this.Credits(this),
@@ -492,7 +508,6 @@ Localmap.prototype.Indicator = function (parent, onMarkerClicked, onMapFocus) {
 	};
 
 	this.show = function(input) {
-		console.log('indicator.show', input);
 		// handle the event if this was used as one
     if (input.target) input = input.target;
     // gather the parameters from diverse input
@@ -923,6 +938,8 @@ Localmap.prototype.Modal = function (parent) {
 
     // TODO: if there is no photo use the icon but as an aside
 
+    // TODO: if the medium res photo won't load, defer to the thumbnail
+
 		// display the photo if available
 		if (markerData.photo) {
 			this.photo.style.display = null;
@@ -1013,7 +1030,7 @@ Localmap.prototype.Route = function (parent) {
 				x1 = parseInt((this.coordinates[key][0] - this.config.minimum.lon) / (this.config.maximum.lon - this.config.minimum.lon) * w);
 				y1 = parseInt((this.coordinates[key][1] - this.config.minimum.lat) / (this.config.maximum.lat - this.config.minimum.lat) * h);
         // if the step seems valid, draw the step
-  			if ((Math.abs(x1 - x0) + Math.abs(y1 - y0)) < 100) { ctx.lineTo(x1, y1); }
+  			if ((Math.abs(x1 - x0) + Math.abs(y1 - y0)) < 50) { ctx.lineTo(x1, y1); }
         // or jump unlikely/erroneous steps
         else { ctx.moveTo(x1, y1); }
         // store current step as the previous step

@@ -112,7 +112,7 @@
 						?>
 					</menu>
 				</nav>
-				<figure class="overview" id="leafletMap2"></figure>
+				<figure class="overview localmap" id="leafletMap2"></figure>
 				<footer class="toolbar">
 					<nav>
 						<a id="footer-to-menu" href="index.php">Menu</a>
@@ -133,6 +133,7 @@
 				var sydneyTrainWalks = new SydneyTrainWalks();
 				var sydneyTrainWalksOverview = new sydneyTrainWalks.Overview({
 					'config' : {
+						'assets': './inc',
 						'onlineTiles' : '//4umaps.eu/{z}/{x}/{y}.png',
 						'offlineTiles' : './inc/tiles/{z}/{x}/{y}.jpg',
 						'missing' : './inc/img/missing.png'

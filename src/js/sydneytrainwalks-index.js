@@ -64,7 +64,7 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 		for (var a = 0, b = sorted.length; a < b; a += 1) {
 			id = sorted[a];
 			// if the id occurs in the search results
-			if (searched.indexOf(id) > -1) {
+			if (searched.indexOf(id) > -1 && id !== '_index') {
 				markers = GuideData[id].markers;
 				titleHtml = titleTemplate
 					.replace(/{startTransport}/g, markers[0].type)
