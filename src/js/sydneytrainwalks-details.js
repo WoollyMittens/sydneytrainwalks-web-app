@@ -107,7 +107,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 
 	this.updateLandmarks = function(id) {
 		// gather the information
-		var prefix = (GuideData[id].local) ? GuideData[id].local.prefix : id;
+		var prefix = (GuideData[id].assets) ? GuideData[id].assets.prefix : id;
 		var landmark, landmarks = "";
 		var thumbnailTemplate = this.config.thumbnailTemplate.innerHTML;
 		// fill the guide with landmarks
@@ -132,8 +132,8 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 
 	this.updateMap = function(id) {
 		// get the properties if this is a segment of another walk
-		var prefix = (GuideData[id].local && GuideData[id].local.prefix)
-			? GuideData[id].local.prefix
+		var prefix = (GuideData[id].assets && GuideData[id].assets.prefix)
+			? GuideData[id].assets.prefix
 			: id;
 		// add the click event to the map back button
 		this.config.return.addEventListener('click', this.onReturnFromMap.bind(this));
@@ -168,14 +168,14 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		// reset the wall
 		this.config.wall.className = this.config.wall.className.replace(/-active/g, '-passive');
 		// get the properties if this is a segment of another walk
-		var prefix = (GuideData[id].local && GuideData[id].local.prefix)
-			? GuideData[id].local.prefix
+		var prefix = (GuideData[id].assets && GuideData[id].assets.prefix)
+			? GuideData[id].assets.prefix
 			: id;
-		var start = (GuideData[id].local && GuideData[id].local.start)
-			? GuideData[id].local.start
+		var start = (GuideData[id].assets && GuideData[id].assets.start)
+			? GuideData[id].assets.start
 			: 0;
-		var end = (GuideData[id].local && GuideData[id].local.end)
-			? GuideData[id].local.end + 1
+		var end = (GuideData[id].assets && GuideData[id].assets.end)
+			? GuideData[id].assets.end + 1
 			: null;
 		// get the photos
 		for (src in ExifData[prefix]) {
@@ -220,7 +220,6 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 	// EVENTS
 
 	this.onLocate = function(button, evt) {
-		console.log('onLocate', button);
 		// cancel the click
 		evt.preventDefault();
 		// remember where to return to
