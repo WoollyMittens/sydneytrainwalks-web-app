@@ -1055,6 +1055,7 @@ Localmap.prototype.Route = function (parent) {
 	this.onGpxLoaded = function(evt) {
 		// convert GPX into an array of coordinates
 		var gpx = evt.target.responseXML;
+    console.log('onGpxLoaded', evt);
 		var trackpoints = gpx.querySelectorAll('trkpt,rtept');
 		for (var key in trackpoints) {
 			if (trackpoints.hasOwnProperty(key) && key % 1 == 0) {
