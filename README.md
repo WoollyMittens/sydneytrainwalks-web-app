@@ -23,9 +23,9 @@ The following commands are available for development:
 + `cd node_scripts`
   + `node convertmaps` - Compresses the generated PNG maps to JPG.
   + `node converttiles` - Compresses the local PNG tile store to JPG.
-  + `node importexif` - Prepare a cache of GPS data of all the photos.
-  + `node importgpx` - Prepare a cache of GPS data of all routes.
-  + `node importguides` - Prepare a cache of JSON data for all the guides.
+  + `node importexif` - Prepares a cache of GPS data of all the photos.
+  + `node importgpx` - Prepares a cache of GPS data of all routes.
+  + `node importguides` - Prepares a cache of JSON data for all the guides.
   + `node importjpg` - Convert images from "/src/large" into "/inc/small" and "/inc/medium/".
   + `node importmaps` - Downloads the required map tiles from an OpenStreetMap server".
 
