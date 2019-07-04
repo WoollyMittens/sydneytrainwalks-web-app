@@ -861,7 +861,6 @@ Localmap.prototype.Markers = function (parent, onMarkerClicked) {
 		var max = this.config.maximum;
 		var element = document.createElement('span');
 		element.setAttribute('class', 'localmap-waypoint');
-		element.addEventListener('click', this.onMarkerClicked.bind(this, markerData));
 		element.style.left = ((markerData.lon - min.lon) / (max.lon - min.lon) * 100) + '%';
 		element.style.top = ((markerData.lat - min.lat) / (max.lat - min.lat) * 100) + '%';
 		element.style.cursor = 'pointer';
@@ -873,11 +872,11 @@ Localmap.prototype.Markers = function (parent, onMarkerClicked) {
 		var max = this.config.maximum;
 		var element = new Image();
 		element.setAttribute('src', this.config.markersUrl.replace('{type}', markerData.type));
-		element.setAttribute('alt', '');
+		element.setAttribute('title', markerData.description || '');
 		element.setAttribute('class', 'localmap-marker');
 		element.style.left = ((markerData.lon - min.lon) / (max.lon - min.lon) * 100) + '%';
 		element.style.top = ((markerData.lat - min.lat) / (max.lat - min.lat) * 100) + '%';
-		element.style.cursor = (markerData.description) ? 'pointer' : null;
+		element.style.cursor = (markerData.description || markerData.callback) ? 'pointer' : null;
 		return element;
 	};
 
@@ -979,6 +978,10 @@ Localmap.prototype.Route = function (parent) {
 	// METHODS
 
 	this.start = function() {
+    // create a canvas
+    this.canvas = document.createElement('canvas');
+    this.canvas.setAttribute('class', 'localmap-route')
+    this.parent.element.appendChild(this.canvas);
 		// use the JSON immediately
 		if (this.config.routeData) {
 			this.onJsonLoaded(this.config.routeData);
@@ -989,10 +992,6 @@ Localmap.prototype.Route = function (parent) {
 			routeXhr.open('GET', this.config.routeUrl, true);
 			routeXhr.send();
 		}
-		// create a canvas
-		this.canvas = document.createElement('canvas');
-		this.canvas.setAttribute('class', 'localmap-route')
-		this.parent.element.appendChild(this.canvas);
 	};
 
   this.stop = function() {
@@ -1050,18 +1049,21 @@ Localmap.prototype.Route = function (parent) {
 			segments.push(coordinates);
 		}
 		this.coordinates = [].concat.apply([], segments);
+    // redraw
+    this.redraw();
 	};
 
 	this.onGpxLoaded = function(evt) {
 		// convert GPX into an array of coordinates
 		var gpx = evt.target.responseXML;
-    console.log('onGpxLoaded', evt);
 		var trackpoints = gpx.querySelectorAll('trkpt,rtept');
 		for (var key in trackpoints) {
 			if (trackpoints.hasOwnProperty(key) && key % 1 == 0) {
 				this.coordinates.push([parseFloat(trackpoints[key].getAttribute('lon')), parseFloat(trackpoints[key].getAttribute('lat')), null]);
 			}
 		}
+    // redraw
+    this.redraw();
 	};
 
 	this.start();

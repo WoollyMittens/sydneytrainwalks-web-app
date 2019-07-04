@@ -52,16 +52,21 @@ var addIndex = function () {
 		'markers': []
 	};
 	// for every guide
-	var north = -999, west = 999, south = 999, east = -999;
+	var north = -999, west = 999, south = 999, east = -999, markers, first, last;
 	for (var key in GuideData) {
 		// expand the bounds based on the guides
 		north = Math.max(GuideData[key].bounds.north, north);
 		west = Math.min(GuideData[key].bounds.west, west);
 		south = Math.min(GuideData[key].bounds.south, south);
 		east = Math.max(GuideData[key].bounds.east, east);
+		// formulate a description
+		markers = GuideData[key].markers;
+		first = markers[0].location;
+		last = markers[markers.length - 1].location;
 		// add a marker from the centre of the guide
 		overview.markers.push({
 			'type': 'walk',
+			'description': first + ' to ' + last + ' via ' + GuideData[key].location,
 			'lon': GuideData[key].lon,
 			'lat': GuideData[key].lat,
 			'id': key

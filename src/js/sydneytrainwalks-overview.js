@@ -49,6 +49,7 @@ SydneyTrainWalks.prototype.Overview = function(parent) {
     // add "onMarkerClicked" event handlers to markers
     var _this = this;
     GuideData['_index'].markers.map(function(marker) {
+      marker.description = '';
       marker.callback = _this.onMarkerClicked.bind(_this, marker.id);
     });
     return GuideData['_index'];
