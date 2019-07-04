@@ -31,10 +31,10 @@ SydneyTrainWalks.prototype.Overview = function(parent) {
       'container': this.config.overview,
       'legend': null,
       'assetsUrl': null,
-      'markersUrl': this.config.assets + '/img/marker-{type}.svg',
+      'markersUrl': this.config.local + '/img/marker-{type}.svg',
       'guideUrl': null,
       'routeUrl': null,
-      'mapUrl': this.config.assets + '/maps/_index.jpg',
+      'mapUrl': this.config.local + '/maps/_index.jpg',
       'exifUrl': null,
       'guideData': this.processMarkers(),
       'routeData': this.mergeRoutes(),
@@ -61,7 +61,7 @@ SydneyTrainWalks.prototype.Overview = function(parent) {
       // for every walk
       for (var key in GuideData) {
         // only if this isn't an alias
-        if (!GuideData[key].assets && GuideData[key].gps !== '_index') {
+        if (!GuideData[key].local && GuideData[key].gps !== '_index') {
           // add the route
 					routes.features = routes.features.concat(GpxData[key].features);
         }

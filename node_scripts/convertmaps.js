@@ -22,7 +22,7 @@ var generateQueue = function(folder) {
       // create the source path
       srcPath = folder + '/' + contents[a];
       // create the destination path
-      dstPath = srcPath.replace(source, destination).replace(/_[0-9]{2}.png/, '.jpg').toLowerCase();
+      dstPath = srcPath.replace(source, destination).replace('.png', '.jpg').toLowerCase();
 
       // if this is a photo
       if (isImage.test(contents[a])) {

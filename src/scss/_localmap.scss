@@ -213,14 +213,8 @@
   		justify-content: flex-start;
   		align-items: stretch;
 
-  		&-icon {
-  			display: block;
-  			width: 25%;
-  			height: auto;
-  			margin: 0 auto 1em;
-  		}
-
-  		&-photo {
+			&-icon,
+			&-photo {
   			flex: 0;
   			margin: 0;
   			min-height: 50%;
@@ -228,6 +222,11 @@
   			background-position: center;
   			background-size: cover;
   			background-color: #eee;
+  		}
+
+  		&-icon {
+				min-height: 25%;
+  			background-size: auto 75%;
   		}
 
   		&-content {

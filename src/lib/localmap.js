@@ -14,7 +14,8 @@ var Localmap = function(config) {
   this.config = {
     'container': null,
     'canvasElement': null,
-    'assetsUrl': null,
+    'thumbsUrl': null,
+    'photosUrl': null,
     'markersUrl': null,
     'guideUrl': null,
     'routeUrl': null,
@@ -119,7 +120,6 @@ var Localmap = function(config) {
   // EVENTS
 
   this.onComplete = function() {
-    console.log('this.onComplete');
     // remove the busy indicator
     this.config.container.className = this.config.container.className.replace(/ localmap-busy/g, '');
     // global update
@@ -658,7 +658,7 @@ Localmap.prototype.Legend = function (parent, onLegendClicked) {
       // format the path to the external assets
       var guideData = this.config.guideData;
       var key = (guideData.assets) ? guideData.assets.prefix : guideData.gps;
-      var image = (markerData.photo) ? this.config.assetsUrl + markerData.photo : this.config.markersUrl.replace('{type}', markerData.type);
+      var image = (markerData.photo) ? this.config.thumbsUrl + markerData.photo : this.config.markersUrl.replace('{type}', markerData.type);
       var text = markerData.description || markerData.type;
       // create a container for the elements
       var fragment = document.createDocumentFragment();
@@ -935,22 +935,17 @@ Localmap.prototype.Modal = function (parent) {
 	this.update = function() {};
 
 	this.show = function(markerData) {
-
-    // TODO: if there is no photo use the icon but as an aside
-
-    // TODO: if the medium res photo won't load, defer to the thumbnail
-
 		// display the photo if available
 		if (markerData.photo) {
-			this.photo.style.display = null;
-			this.photo.style.backgroundImage = 'url(' + this.config.assetsUrl + markerData.photo + ')';
+			this.photo.style.backgroundImage = 'url(' + this.config.photosUrl + markerData.photo + '), url(' + this.config.thumbsUrl + markerData.photo + ')';
+      this.photo.className = 'localmap-modal-photo';
 		} else {
-			this.photo.style.display = 'none';
+			this.photo.style.backgroundImage = 'url(' + this.config.markersUrl.replace('{type}', markerData.type) + ')';
+      this.photo.className = 'localmap-modal-icon';
 		}
 		// display the content if available
 		if (markerData.description) {
-			this.description.innerHTML = (markerData.photo) ? '' : '<img class="localmap-modal-icon" src="' + this.config.markersUrl.replace('{type}', markerData.type) + '" alt=""/>';
-			this.description.innerHTML += '<p>' + markerData.description + '</p>';
+			this.description.innerHTML = '<p>' + markerData.description + '</p>';
 		} else {
 			return false;
 		}

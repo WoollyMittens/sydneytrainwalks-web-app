@@ -239,7 +239,8 @@
 						var localmap = new Localmap({
 							'container': document.querySelector('.directions.localmap'),
 							'legend': null,
-							'assetsUrl': './inc/medium/<?php echo $assets?>/',
+							'thumbsUrl': './inc/small/<?php echo $assets?>/',
+							'photosUrl': './inc/medium/<?php echo $assets?>/',
 							'markersUrl': './inc/img/marker-{type}.svg',
 							'guideUrl': './inc/guides/<?php echo $id?>.json',
 							'routeUrl': '<?php echo $inc . "gpx/" . $id?>.gpx',

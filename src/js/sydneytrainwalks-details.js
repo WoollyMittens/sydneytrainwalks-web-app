@@ -91,23 +91,23 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			'idle': 0.1,
 			'opened': function(link) {
 				_this.returnTo = 'guide';
-				_this.config.photomap.indicate(link);
+				_this.config.guideMap.indicate(link);
 				return true;
 			},
 			'located': function(link) {
 				_this.returnTo = 'guide';
-				_this.config.photomap.indicate(link);
+				_this.config.guideMap.indicate(link);
 				document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
 			},
 			'closed': function() {
-				_this.config.photomap.unindicate();
+				_this.config.guideMap.unindicate();
 			}
 		});
 	};
 
 	this.updateLandmarks = function(id) {
 		// gather the information
-		var prefix = (GuideData[id].assets) ? GuideData[id].assets.prefix : id;
+		var prefix = (GuideData[id].local) ? GuideData[id].local.prefix : id;
 		var landmark, landmarks = "";
 		var thumbnailTemplate = this.config.thumbnailTemplate.innerHTML;
 		// fill the guide with landmarks
@@ -132,24 +132,25 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 
 	this.updateMap = function(id) {
 		// get the properties if this is a segment of another walk
-		var prefix = (GuideData[id].assets && GuideData[id].assets.prefix)
-			? GuideData[id].assets.prefix
+		var prefix = (GuideData[id].local && GuideData[id].local.prefix)
+			? GuideData[id].local.prefix
 			: id;
 		// add the click event to the map back button
 		this.config.return.addEventListener('click', this.onReturnFromMap.bind(this));
 		// clear the old map if active
-		if (this.config.photomap) {
-			this.config.photomap.stop();
+		if (this.config.guideMap) {
+			this.config.guideMap.stop();
 		}
 		// start the map
-		this.config.photomap = new Localmap({
+		this.config.guideMap = new Localmap({
 			'container': this.config.localmap,
 			'legend': null,
-			'assetsUrl': this.config.assets + '/medium/' + prefix + '/',
-			'markersUrl': this.config.assets + '/img/marker-{type}.svg',
-			'guideUrl': this.config.assets + '/guides/' + id + '.json',
-			'routeUrl': this.config.assets + '/gpx/' + id + '.gpx',
-			'mapUrl': this.config.assets + '/maps/' + prefix + '.jpg',
+			'thumbsUrl': this.config.local + '/small/' + prefix + '/',
+			'photosUrl': this.config.remote + '/medium/' + prefix + '/',
+			'markersUrl': this.config.local + '/img/marker-{type}.svg',
+			'guideUrl': this.config.local + '/guides/' + id + '.json',
+			'routeUrl': this.config.remote + '/gpx/' + id + '.gpx',
+			'mapUrl': this.config.local + '/maps/' + prefix + '.jpg',
 			'exifUrl': this.config.exif,
 			'guideData': GuideData[id],
 			'routeData': GpxData[id],
@@ -167,14 +168,14 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		// reset the wall
 		this.config.wall.className = this.config.wall.className.replace(/-active/g, '-passive');
 		// get the properties if this is a segment of another walk
-		var prefix = (GuideData[id].assets && GuideData[id].assets.prefix)
-			? GuideData[id].assets.prefix
+		var prefix = (GuideData[id].local && GuideData[id].local.prefix)
+			? GuideData[id].local.prefix
 			: id;
-		var start = (GuideData[id].assets && GuideData[id].assets.start)
-			? GuideData[id].assets.start
+		var start = (GuideData[id].local && GuideData[id].local.start)
+			? GuideData[id].local.start
 			: 0;
-		var end = (GuideData[id].assets && GuideData[id].assets.end)
-			? GuideData[id].assets.end + 1
+		var end = (GuideData[id].local && GuideData[id].local.end)
+			? GuideData[id].local.end + 1
 			: null;
 		// get the photos
 		for (src in ExifData[prefix]) {
@@ -202,16 +203,16 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			'idle': 0.1,
 			'opened': function(link) {
 				_this.returnTo = 'photos';
-				_this.config.photomap.indicate(link);
+				_this.config.guideMap.indicate(link);
 				return true;
 			},
 			'located': function(link) {
 				_this.returnTo = 'photos';
-				_this.config.photomap.indicate(link);
+				_this.config.guideMap.indicate(link);
 				document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
 			},
 			'closed': function() {
-				_this.config.photomap.unindicate();
+				_this.config.guideMap.unindicate();
 			}
 		});
 	};
@@ -225,7 +226,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		// remember where to return to
 		this.returnTo = 'guide';
 		// as the map to show the location
-		this.config.photomap.indicate(button);
+		this.config.guideMap.indicate(button);
 		// show the map screen
 		document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
 	};

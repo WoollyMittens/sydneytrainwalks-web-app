@@ -1520,14 +1520,7 @@ header.subtitle .sign {
     align-items: stretch;
   }
   /* line 216, ../../src/scss/_localmap.scss */
-  .localmap-modal-icon {
-    display: block;
-    width: 25%;
-    height: auto;
-    margin: 0 auto 1em;
-  }
-  /* line 223, ../../src/scss/_localmap.scss */
-  .localmap-modal-photo {
+  .localmap-modal-icon, .localmap-modal-photo {
     flex: 0;
     margin: 0;
     min-height: 50%;
@@ -1536,7 +1529,12 @@ header.subtitle .sign {
     background-size: cover;
     background-color: #eee;
   }
-  /* line 233, ../../src/scss/_localmap.scss */
+  /* line 227, ../../src/scss/_localmap.scss */
+  .localmap-modal-icon {
+    min-height: 25%;
+    background-size: auto 75%;
+  }
+  /* line 232, ../../src/scss/_localmap.scss */
   .localmap-modal-content {
     flex: 1;
     padding: 1rem 2rem;
@@ -1544,7 +1542,7 @@ header.subtitle .sign {
     width: 100%;
     position: relative;
   }
-  /* line 240, ../../src/scss/_localmap.scss */
+  /* line 239, ../../src/scss/_localmap.scss */
   .localmap-modal-content i {
     display: inline-block;
     background-color: #1B5E20;
@@ -1558,11 +1556,11 @@ header.subtitle .sign {
     right: 0;
     top: 0;
   }
-  /* line 245, ../../src/scss/_localmap.scss */
+  /* line 244, ../../src/scss/_localmap.scss */
   .localmap-modal-visible {
     transform: translate(0, 0);
   }
-  /* line 249, ../../src/scss/_localmap.scss */
+  /* line 248, ../../src/scss/_localmap.scss */
   .localmap-modal-closer {
     background-image: url("../img/icon-close.svg");
     position: absolute;
@@ -1571,11 +1569,11 @@ header.subtitle .sign {
   }
 }
 @media (orientation: portrait) {
-  /* line 261, ../../src/scss/_localmap.scss */
+  /* line 260, ../../src/scss/_localmap.scss */
   .localmap {
     width: 100%;
   }
-  /* line 263, ../../src/scss/_localmap.scss */
+  /* line 262, ../../src/scss/_localmap.scss */
   .localmap-return {
     display: block;
   }

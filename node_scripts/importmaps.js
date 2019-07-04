@@ -82,7 +82,7 @@ var parseGuides = function() {
           });
         }
       }
-      downloadTiles(guideData.gps + '_' + zoom);
+      downloadTiles(guideData.gps);
     }
     // otherwise skip it
     else {

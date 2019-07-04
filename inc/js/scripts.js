@@ -171,7 +171,8 @@ var Localmap = function(config) {
   this.config = {
     'container': null,
     'canvasElement': null,
-    'assetsUrl': null,
+    'thumbsUrl': null,
+    'photosUrl': null,
     'markersUrl': null,
     'guideUrl': null,
     'routeUrl': null,
@@ -276,7 +277,6 @@ var Localmap = function(config) {
   // EVENTS
 
   this.onComplete = function() {
-    console.log('this.onComplete');
     // remove the busy indicator
     this.config.container.className = this.config.container.className.replace(/ localmap-busy/g, '');
     // global update
@@ -815,7 +815,7 @@ Localmap.prototype.Legend = function (parent, onLegendClicked) {
       // format the path to the external assets
       var guideData = this.config.guideData;
       var key = (guideData.assets) ? guideData.assets.prefix : guideData.gps;
-      var image = (markerData.photo) ? this.config.assetsUrl + markerData.photo : this.config.markersUrl.replace('{type}', markerData.type);
+      var image = (markerData.photo) ? this.config.thumbsUrl + markerData.photo : this.config.markersUrl.replace('{type}', markerData.type);
       var text = markerData.description || markerData.type;
       // create a container for the elements
       var fragment = document.createDocumentFragment();
@@ -1092,22 +1092,17 @@ Localmap.prototype.Modal = function (parent) {
 	this.update = function() {};
 
 	this.show = function(markerData) {
-
-    // TODO: if there is no photo use the icon but as an aside
-
-    // TODO: if the medium res photo won't load, defer to the thumbnail
-
 		// display the photo if available
 		if (markerData.photo) {
-			this.photo.style.display = null;
-			this.photo.style.backgroundImage = 'url(' + this.config.assetsUrl + markerData.photo + ')';
+			this.photo.style.backgroundImage = 'url(' + this.config.photosUrl + markerData.photo + '), url(' + this.config.thumbsUrl + markerData.photo + ')';
+      this.photo.className = 'localmap-modal-photo';
 		} else {
-			this.photo.style.display = 'none';
+			this.photo.style.backgroundImage = 'url(' + this.config.markersUrl.replace('{type}', markerData.type) + ')';
+      this.photo.className = 'localmap-modal-icon';
 		}
 		// display the content if available
 		if (markerData.description) {
-			this.description.innerHTML = (markerData.photo) ? '' : '<img class="localmap-modal-icon" src="' + this.config.markersUrl.replace('{type}', markerData.type) + '" alt=""/>';
-			this.description.innerHTML += '<p>' + markerData.description + '</p>';
+			this.description.innerHTML = '<p>' + markerData.description + '</p>';
 		} else {
 			return false;
 		}
@@ -3235,23 +3230,23 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			'idle': 0.1,
 			'opened': function(link) {
 				_this.returnTo = 'guide';
-				_this.config.photomap.indicate(link);
+				_this.config.guideMap.indicate(link);
 				return true;
 			},
 			'located': function(link) {
 				_this.returnTo = 'guide';
-				_this.config.photomap.indicate(link);
+				_this.config.guideMap.indicate(link);
 				document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
 			},
 			'closed': function() {
-				_this.config.photomap.unindicate();
+				_this.config.guideMap.unindicate();
 			}
 		});
 	};
 
 	this.updateLandmarks = function(id) {
 		// gather the information
-		var prefix = (GuideData[id].assets) ? GuideData[id].assets.prefix : id;
+		var prefix = (GuideData[id].local) ? GuideData[id].local.prefix : id;
 		var landmark, landmarks = "";
 		var thumbnailTemplate = this.config.thumbnailTemplate.innerHTML;
 		// fill the guide with landmarks
@@ -3276,24 +3271,25 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 
 	this.updateMap = function(id) {
 		// get the properties if this is a segment of another walk
-		var prefix = (GuideData[id].assets && GuideData[id].assets.prefix)
-			? GuideData[id].assets.prefix
+		var prefix = (GuideData[id].local && GuideData[id].local.prefix)
+			? GuideData[id].local.prefix
 			: id;
 		// add the click event to the map back button
 		this.config.return.addEventListener('click', this.onReturnFromMap.bind(this));
 		// clear the old map if active
-		if (this.config.photomap) {
-			this.config.photomap.stop();
+		if (this.config.guideMap) {
+			this.config.guideMap.stop();
 		}
 		// start the map
-		this.config.photomap = new Localmap({
+		this.config.guideMap = new Localmap({
 			'container': this.config.localmap,
 			'legend': null,
-			'assetsUrl': this.config.assets + '/medium/' + prefix + '/',
-			'markersUrl': this.config.assets + '/img/marker-{type}.svg',
-			'guideUrl': this.config.assets + '/guides/' + id + '.json',
-			'routeUrl': this.config.assets + '/gpx/' + id + '.gpx',
-			'mapUrl': this.config.assets + '/maps/' + prefix + '.jpg',
+			'thumbsUrl': this.config.local + '/small/' + prefix + '/',
+			'photosUrl': this.config.remote + '/medium/' + prefix + '/',
+			'markersUrl': this.config.local + '/img/marker-{type}.svg',
+			'guideUrl': this.config.local + '/guides/' + id + '.json',
+			'routeUrl': this.config.remote + '/gpx/' + id + '.gpx',
+			'mapUrl': this.config.local + '/maps/' + prefix + '.jpg',
 			'exifUrl': this.config.exif,
 			'guideData': GuideData[id],
 			'routeData': GpxData[id],
@@ -3311,14 +3307,14 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		// reset the wall
 		this.config.wall.className = this.config.wall.className.replace(/-active/g, '-passive');
 		// get the properties if this is a segment of another walk
-		var prefix = (GuideData[id].assets && GuideData[id].assets.prefix)
-			? GuideData[id].assets.prefix
+		var prefix = (GuideData[id].local && GuideData[id].local.prefix)
+			? GuideData[id].local.prefix
 			: id;
-		var start = (GuideData[id].assets && GuideData[id].assets.start)
-			? GuideData[id].assets.start
+		var start = (GuideData[id].local && GuideData[id].local.start)
+			? GuideData[id].local.start
 			: 0;
-		var end = (GuideData[id].assets && GuideData[id].assets.end)
-			? GuideData[id].assets.end + 1
+		var end = (GuideData[id].local && GuideData[id].local.end)
+			? GuideData[id].local.end + 1
 			: null;
 		// get the photos
 		for (src in ExifData[prefix]) {
@@ -3346,16 +3342,16 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			'idle': 0.1,
 			'opened': function(link) {
 				_this.returnTo = 'photos';
-				_this.config.photomap.indicate(link);
+				_this.config.guideMap.indicate(link);
 				return true;
 			},
 			'located': function(link) {
 				_this.returnTo = 'photos';
-				_this.config.photomap.indicate(link);
+				_this.config.guideMap.indicate(link);
 				document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
 			},
 			'closed': function() {
-				_this.config.photomap.unindicate();
+				_this.config.guideMap.unindicate();
 			}
 		});
 	};
@@ -3369,7 +3365,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		// remember where to return to
 		this.returnTo = 'guide';
 		// as the map to show the location
-		this.config.photomap.indicate(button);
+		this.config.guideMap.indicate(button);
 		// show the map screen
 		document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
 	};
@@ -3860,10 +3856,10 @@ SydneyTrainWalks.prototype.Overview = function(parent) {
       'container': this.config.overview,
       'legend': null,
       'assetsUrl': null,
-      'markersUrl': this.config.assets + '/img/marker-{type}.svg',
+      'markersUrl': this.config.local + '/img/marker-{type}.svg',
       'guideUrl': null,
       'routeUrl': null,
-      'mapUrl': this.config.assets + '/maps/_index.jpg',
+      'mapUrl': this.config.local + '/maps/_index.jpg',
       'exifUrl': null,
       'guideData': this.processMarkers(),
       'routeData': this.mergeRoutes(),
@@ -3890,7 +3886,7 @@ SydneyTrainWalks.prototype.Overview = function(parent) {
       // for every walk
       for (var key in GuideData) {
         // only if this isn't an alias
-        if (!GuideData[key].assets && GuideData[key].gps !== '_index') {
+        if (!GuideData[key].local && GuideData[key].gps !== '_index') {
           // add the route
 					routes.features = routes.features.concat(GpxData[key].features);
         }
