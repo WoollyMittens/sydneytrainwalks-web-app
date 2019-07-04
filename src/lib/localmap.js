@@ -1055,7 +1055,7 @@ Localmap.prototype.Route = function (parent) {
 	this.onGpxLoaded = function(evt) {
 		// convert GPX into an array of coordinates
 		var gpx = evt.target.responseXML;
-		var trackpoints = gpx.getElementsByTagName('trkpt');
+		var trackpoints = gpx.querySelectorAll('trkpt,rtept');
 		for (var key in trackpoints) {
 			if (trackpoints.hasOwnProperty(key) && key % 1 == 0) {
 				this.coordinates.push([parseFloat(trackpoints[key].getAttribute('lon')), parseFloat(trackpoints[key].getAttribute('lat')), null]);
