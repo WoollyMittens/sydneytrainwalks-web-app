@@ -4,7 +4,6 @@ var fs = require('fs');
 var large = '../src/large/';
 var medium = '../inc/medium/';
 var small = '../inc/small/';
-var gpx = '../inc/gpx/';
 
 // generates a resize queue
 var generateQueue = function() {
@@ -12,7 +11,7 @@ var generateQueue = function() {
   var queue = [],
     images = [],
     srcPath, dstPath,
-    folders = fs.readdirSync(gpx),
+    folders = fs.readdirSync(large),
     isInvisible = new RegExp('^[.]'),
     isPhoto = new RegExp('.jpg$', 'i'),
     folder;

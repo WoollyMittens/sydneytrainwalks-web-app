@@ -4,9 +4,9 @@
 @media all {
 
 	.overview {
-		@include transition-property(transform);
-		@include transition-duration(300ms);
-		@include translate(-100%, 0);
+		transition-property: transform;
+		transition-duration: 300ms;
+		transform: translate(-100%, 0);
 		background: #fff none;
 		bottom: 4rem;
 		left: 0;
@@ -21,7 +21,7 @@
 	*/
 
 	body.screen-overview .overview {
-		@include translate(0, 0);
+		transform: translate(0, 0);
 	}
 
 }
@@ -37,7 +37,7 @@
 	*/
 
 	body.screen-menu .overview {
-		@include translate(0, 0);
+		transform: translate(0, 0);
 	}
 
 }

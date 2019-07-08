@@ -10,23 +10,23 @@ Please add your [suggestions and bug reports on GitHub](https://github.com/Wooll
 
 This project uses node.js from http://nodejs.org/
 
-This project uses grunt.js from http://gruntjs.com/
+This project uses gulp.js from http://gulpjs.com/
 
 This project uses Cordova from https://cordova.apache.org/
 
 The following commands are available for development:
 + `npm install` - Install the prerequisites.
-+ `grunt dev` - Build the project for development purposes.
-+ `grunt prod` - Build the project for deployment purposes.
-+ `grunt php` - Preview the project on http://localhost:8080.
-+ `grunt watch` - Continuously recompile updated files during development sessions.
++ `gulp dev` - Build the project for development purposes.
++ `gulp prod` - Build the project for deployment purposes.
++ `gulp php` - Preview the project on http://localhost:8080.
++ `gulp watch` - Continuously recompile updated files during development sessions.
 + `cd node_scripts`
   + `node convertmaps` - Compresses the generated PNG maps to JPG.
   + `node converttiles` - Compresses the local PNG tile store to JPG.
   + `node importexif` - Prepares a cache of GPS data of all the photos.
   + `node importgpx` - Prepares a cache of GPS data of all routes.
   + `node importguides` - Prepares a cache of JSON data for all the guides.
-  + `node importjpg` - Convert images from "/src/large" into "/inc/small" and "/inc/medium/".
+  + `node importphotos` - Process images from "/src/large" into "/inc/small" and "/inc/medium/".
   + `node importmaps` - Downloads the required map tiles from an OpenStreetMap server".
 
 ## Credits

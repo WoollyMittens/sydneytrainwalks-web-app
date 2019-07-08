@@ -1,11 +1,4 @@
-/*
-	Sydney Train Walks - Footer Navigation
-*/
-
-// create the constructor if needed
-var SydneyTrainWalks = SydneyTrainWalks || function() {};
-
-// extend the constructor
+// extend the class
 SydneyTrainWalks.prototype.Footer = function(parent) {
 
 	// PROPERTIES
@@ -27,8 +20,6 @@ SydneyTrainWalks.prototype.Footer = function(parent) {
 		this.config.footer.addEventListener('click', this.onFooterClicked.bind(this));
 		// add the event handler for the browser back button
 		document.addEventListener("backbutton", this.onBackButton.bind(this));
-		// return the object
-		return this;
 	};
 
 	this.update = function() {
@@ -75,9 +66,7 @@ SydneyTrainWalks.prototype.Footer = function(parent) {
 			document.body.className = 'screen-' + id.substr(10);
 		}
 	};
-};
 
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = SydneyTrainWalks.Footer;
-}
+  if(parent) this.init();
+
+};

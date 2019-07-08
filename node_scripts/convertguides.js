@@ -68,8 +68,6 @@ var parseGuides = function(queue) {
           endMarker.lon = routeData[routeData.length - 1][0];
           endMarker.lat = routeData[routeData.length - 1][1];
         }
-        // TODO: add the trackpoints
-        // GuideData[key].trackpoints = routeData;
         // convert the markers into an array
         var markerData, markers = [];
         // add the start marker
@@ -86,8 +84,8 @@ var parseGuides = function(queue) {
         }
         // convert the landmarks into markers of type "waypoint"
         var landmarkData;
-        var alias = (GuideData[key].assets)
-          ? GuideData[key].assets.prefix
+        var alias = (GuideData[key].alias)
+          ? GuideData[key].alias.prefix
           : key;
         for (var landmark in GuideData[key].landmarks) {
           landmarkData = GuideData[key].landmarks[landmark];
@@ -123,6 +121,11 @@ var parseGuides = function(queue) {
         delete(GuideData[key].indicator);
         // overwrite the old markers
         GuideData[key].markers = markers;
+        // rename keys
+        GuideData[key].distance = GuideData[key].length;
+        delete(GuideData[key].length);
+        GuideData[key].alias = GuideData[key].alias;
+        delete(GuideData[key].alias);
         // save the converted guide
         fs.writeFile(destPath + key + '.json', JSON.stringify(GuideData[key]), function(error) {
           if (error) throw(error);

@@ -80,7 +80,7 @@
 								<option value="finish">Sort by end</option>
 								<option value="region">Sort by region</option>
 								<option value="duration" data-type="number">Sort by duration</option>
-								<option value="length" data-type="number" selected>Sort by length</option>
+								<option value="distance" data-type="number" selected>Sort by distance</option>
 								<option value="rain">For rainy days</option>
 								<option value="fireban">During bushfires</option>
 							</select>
@@ -131,7 +131,7 @@
 		<span class="sign from">From</span>
 		<span class="sign sign-short {startTransport}">{startLocation}</span>
 		<span class="sign to">via</span>
-		<span class="sign sign-short park">{walkLocation} <i>{walkDuration}h / <span>{walkLength}</span>km</i></span>
+		<span class="sign sign-short park">{walkLocation} <i>{walkDuration}h / <span>{walkDistance}</span>km</i></span>
 		<span class="sign to">to</span>
 		<span class="sign sign-short {endTransport}">{endLocation}</span>
 	</script>
@@ -146,7 +146,7 @@
 		<div class="guide-scroller">
 			<h2>About this walk</h2> {description}
 			<p>
-				It takes about {duration} hours to complete the full {length} kilometre walk,
+				It takes about {duration} hours to complete the full {distance} kilometre walk,
 				but plan extra for plenty of breaks and photography stops.
 				Consider that there's a lot to see along the way.
 			</p>
@@ -201,7 +201,7 @@
 	<script src="./inc/js/gpx-data.js"></script>
 	<script src="./inc/js/scripts.js"></script>
 	<script>
-		var sydneyTrainWalks = new SydneyTrainWalks().init({
+		var sydneyTrainWalks = new SydneyTrainWalks({
 			'local': './inc',
 			'remote': '//www.sydneytrainwalks.com/inc',
 			//'exif': 'imageexif.php?src={src}',

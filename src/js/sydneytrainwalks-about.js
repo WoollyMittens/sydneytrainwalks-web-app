@@ -1,11 +1,4 @@
-/*
-	Sydney Train Walks - About View
-*/
-
-// create the constructor if needed
-var SydneyTrainWalks = SydneyTrainWalks || function() {};
-
-// extend the constructor
+// extend the class
 SydneyTrainWalks.prototype.About = function(parent) {
 
 	// PROPERTIES
@@ -18,18 +11,10 @@ SydneyTrainWalks.prototype.About = function(parent) {
 
 	// METHODS
 
-	this.init = function() {
-		
-		// return the object
-		return this;
-	};
+	this.init = function() {};
 
 	// EVENTS
 
+	if(parent) this.init();
 
 };
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = SydneyTrainWalks.About;
-}

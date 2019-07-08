@@ -1,9 +1,8 @@
 /*
 	Combined Stylesheet
 */
-@import "compass/css3";
-@import "compass/utilities";
-@import "definitions";
+
+@import "mixins";
 @import "typography";
 @import "cover";
 @import "header";

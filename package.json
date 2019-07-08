@@ -1,29 +1,27 @@
 {
-  "name": "sydneytrainwalks",
-  "version": "0.0.0",
-  "devDependencies": {
-    "compass": "",
-    "exif": "",
-    "gm": "",
-    "grunt": "",
-    "grunt-autoprefixer": "",
-    "grunt-contrib-compass": "",
-    "grunt-contrib-concat": "",
-    "grunt-contrib-connect": "",
-    "grunt-contrib-imagemin": "",
-    "grunt-contrib-uglify": "",
-    "grunt-contrib-watch": "",
-    "grunt-font-optimizer": "",
-    "grunt-image-resize": "",
-    "grunt-imagemagick": "",
-    "grunt-php": "",
-    "grunt-pngmin": "",
-    "jsdom": "",
-    "sass": "",
-    "xmldom": ""
-  },
-  "dependencies": {
-    "canvas": "",
-    "shelljs": ""
-  }
+		"name": "sydneytrainwalks",
+		"version": "0.0.0",
+		"devDependencies": {
+				"canvas": "",
+				"del": "",
+				"exif": "",
+				"fs": "",
+				"gm": "",
+				"gulp": "",
+				"gulp-autoprefixer": "",
+				"gulp-clean": "",
+				"gulp-concat": "",
+				"gulp-connect": "",
+				"gulp-connect-php": "",
+				"gulp-imagemin": "",
+				"gulp-sass": "",
+				"gulp-sourcemaps": "",
+				"gulp-special-html": "",
+				"gulp-uglify": "",
+				"imagemin-pngquant": "",
+				"jsdom": "",
+				"request": "",
+				"xmldom": "",
+				"shelljs": ""
+		}
 }

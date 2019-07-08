@@ -1,4 +1,772 @@
 /*
+	Sydney Train Walks
+*/
+
+// establish the class
+var SydneyTrainWalks = function(config) {
+
+	// PROPERTIES
+
+	this.config = config || {};
+	this.config.extend = function(properties) {
+		for (var name in properties) {
+			this[name] = properties[name];
+		}
+	};
+
+	// METHODS
+
+	this.init = function() {
+		// notice if this is iOS
+		var parent = document.getElementsByTagName('html')[0];
+		parent.className = (navigator.userAgent.match(/ipad;|iphone|ipod touch;/i))
+			? parent.className.replace('ios-false', 'ios-true')
+			: parent.className.replace('ios-true', 'ios-false');
+		// recover the previous state
+		var storedId = window.localStorage.getItem('id');
+		var storedMode = window.localStorage.getItem('mode') || 'map';
+		// recover the state from the url
+		storedId = this.getQuery('id') || storedId ;
+		storedMode = this.getQuery('mode') || storedMode;
+		// restore the previous state
+		if (storedId && storedMode && GuideData[storedId]) {
+			// update the interface to the stored state
+			this.update(storedId, storedMode);
+		}
+		// remove busy screen after a redraw
+		setTimeout(this.busy.hide.bind(this), 300);
+		// handle external links
+		document.body.addEventListener("click", this.remoteLink.bind(this));
+	};
+
+	this.update = function(id, mode) {
+		// store the current state
+		window.localStorage.setItem('id', id);
+		window.localStorage.setItem('mode', mode);
+		// update the body class
+		document.body.className = 'screen-' + mode;
+		// update the details
+		this.details.update(id);
+		// update the footer
+		this.footer.update(id);
+	};
+
+	this.getQuery = function(property) {
+		var param = document.location.search.split(property + '=');
+		return (param.length > 1) ? param[1].split(/&|#/)[0] : null;
+	};
+
+	this.remoteLink = function(evt) {
+		var href = evt.target.getAttribute("href");
+		if(/^http/i.test(href) && !/.jpg$/i.test(href)) {
+			evt.preventDefault();
+			window.open(href, '_system', 'location=yes');
+		}
+	};
+
+	// EVENTS
+
+	// COMPONENTS
+
+	if(config) {
+		this.busy = new this.Busy(this);
+		this.index = new this.Index(this);
+		this.overview = new this.Overview(this);
+		this.details = new this.Details(this);
+		this.about = new this.About(this);
+		this.footer = new this.Footer(this);
+		this.init();
+	}
+};
+
+// return as a require.js module
+if (typeof define != 'undefined') define([], function() { return SydneyTrainWalks });
+if (typeof module != 'undefined') module.exports = SydneyTrainWalks;
+
+// extend the class
+SydneyTrainWalks.prototype.About = function(parent) {
+
+	// PROPERTIES
+
+	this.parent = parent;
+	this.config = parent.config;
+	this.config.extend({
+		'about': document.querySelector('.about')
+	});
+
+	// METHODS
+
+	this.init = function() {};
+
+	// EVENTS
+
+	if(parent) this.init();
+
+};
+
+// extend the class
+SydneyTrainWalks.prototype.Busy = function(parent) {
+
+	// PROPERTIES
+
+	this.parent = parent;
+	this.config = parent.config;
+	this.config.extend({
+		'appView': document.querySelector('#appView')
+	});
+
+	// METHODS
+
+	this.init = function() {};
+
+	this.show = function() {
+		// remove the cover page
+		this.config.appView.className = this.config.appView.className.replace(/-ready/g, '-busy');
+	};
+
+	this.hide = function() {
+		// remove the cover page
+		this.config.appView.className = this.config.appView.className.replace(/-busy/g, '-ready');
+	};
+
+  if(parent) this.init();
+
+};
+
+// extend the class
+SydneyTrainWalks.prototype.Details = function(parent) {
+
+	// PROPERTIES
+
+	this.parent = parent;
+	this.config = parent.config;
+	this.returnTo = 'guide';
+	this.config.extend({
+		'title': document.querySelector('.subtitle > h2'),
+		'guide': document.querySelector('.guide'),
+		'localmap': document.querySelector('.localmap.directions'),
+		'return': document.querySelector('.localmap-return'),
+		'wall': document.querySelector('.photowall'),
+		'titleTemplate': document.getElementById('title-template'),
+		'thumbnailTemplate': document.getElementById('thumbnail-template'),
+		'wallTemplate': document.getElementById('wall-template'),
+		'creditTemplate': document.getElementById('credit-template')
+	});
+
+	// METHODS
+
+	this.init = function() {};
+
+	this.update = function(id) {
+		// update all the elements with the id
+		this.updateTitle(id);
+		this.updateGuide(id);
+		this.updateMap(id);
+		this.updateWall(id);
+	};
+
+	this.updateTitle = function(id) {
+		// fill in the title template
+		var markers = GuideData[id].markers;
+		this.config.title.innerHTML = this.config.titleTemplate.innerHTML
+			.replace(/{startTransport}/g, markers[0].type)
+			.replace(/{startLocation}/g, markers[0].location)
+			.replace(/{walkLocation}/g, GuideData[id].location)
+			.replace(/{walkDuration}/g, GuideData[id].duration)
+			.replace(/{walkDistance}/g, GuideData[id].distance)
+			.replace(/{endTransport}/g, markers[markers.length - 1].type)
+			.replace(/{endLocation}/g, markers[markers.length - 1].location);
+		// add the onclick handler
+		this.config.title.onclick = function(evt) { document.location.replace('./'); };
+	};
+
+	this.updateGuide = function(id) {
+		// gather the information
+		var _this = this;
+		var description = '<p>' + GuideData[id].description.join('</p><p>') + '</p>';
+		var duration = GuideData[id].duration;
+		var distance = GuideData[id].distance;
+		var gpx = this.config.gpx.replace(/{id}/g, id);
+		var markers = GuideData[id].markers;
+		var there = '<p>' + markers[0].description + '</p>';
+		var back = '<p>' + markers[markers.length - 1].description + '</p>';
+		var landmarks = this.updateLandmarks(id);
+		// fill the guide with information
+		this.config.guide.innerHTML = this.config.guideTemplate.innerHTML
+			.replace(/{description}/g, description)
+			.replace(/{duration}/g, duration)
+			.replace(/{distance}/g, distance)
+			.replace(/{gpx}/g, gpx)
+			.replace(/{there}/g, there)
+			.replace(/{back}/g, back)
+			.replace(/{landmarks}/g, landmarks);
+		// add event handlers for the locator icons
+		var buttons = document.querySelectorAll('.guide .guide-locate');
+		for (var a = 0, b = buttons.length; a < b; a += 1) {
+			buttons[a].addEventListener('click', this.onLocate.bind(this, buttons[a]));
+		}
+		// start the script for the image viewer
+		this.config.photocylinder = new Photocylinder({
+			'elements': document.querySelectorAll('.guide .cylinder-image'),
+			'container': this.config.guide,
+			'spherical': /fov360|\d{3}_r\d{6}/i,
+			'cylindrical': /fov180/i,
+			'slicer': this.config.slice,
+			'idle': 0.1,
+			'opened': function(link) {
+				_this.returnTo = 'guide';
+				_this.config.guideMap.indicate(link);
+				return true;
+			},
+			'located': function(link) {
+				_this.returnTo = 'guide';
+				_this.config.guideMap.indicate(link);
+				document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
+			},
+			'closed': function() {
+				_this.config.guideMap.unindicate();
+			}
+		});
+	};
+
+	this.updateLandmarks = function(id) {
+		// gather the information
+		var prefix = (GuideData[id].alias) ? GuideData[id].alias.prefix : id;
+		var landmark, landmarks = "";
+		var thumbnailTemplate = this.config.thumbnailTemplate.innerHTML;
+		// fill the guide with landmarks
+		GuideData[id].markers.map(function (marker) {
+			// it is a landmark if it has a photo
+			if (marker.photo) {
+				// get the description
+				landmark = thumbnailTemplate
+					.replace(/{id}/g, prefix)
+					.replace(/{src}/g, marker.photo.toLowerCase())
+					.replace(/{description}/g, marker.description);
+				// add extra markup for optional landmarks
+				if (marker.optional) { landmarks += '<div class="guide-optional">' + landmark + '</div>'; }
+				else if (marker.detour) { landmarks += '<div class="guide-detour">' + landmark + '</div>'; }
+				else if (marker.attention) { landmarks += '<div class="guide-attention">' + landmark + '</div>'; }
+				else { landmarks += landmark; }
+			}
+		});
+		// return the landmarks
+		return landmarks;
+	};
+
+	this.updateMap = function(id) {
+		// get the properties if this is a segment of another walk
+		var prefix = (GuideData[id].alias && GuideData[id].alias.prefix)
+			? GuideData[id].alias.prefix
+			: id;
+		// add the click event to the map back button
+		this.config.return.addEventListener('click', this.onReturnFromMap.bind(this));
+		// clear the old map if active
+		if (this.config.guideMap) {
+			this.config.guideMap.stop();
+		}
+		// start the map
+		this.config.guideMap = new Localmap({
+			'container': this.config.localmap,
+			'legend': null,
+			'thumbsUrl': this.config.local + '/small/' + prefix + '/',
+			'photosUrl': this.config.remote + '/medium/' + prefix + '/',
+			'markersUrl': this.config.local + '/img/marker-{type}.svg',
+			'guideUrl': this.config.local + '/guides/' + id + '.json',
+			'routeUrl': this.config.remote + '/gpx/' + id + '.gpx',
+			'mapUrl': this.config.local + '/maps/' + prefix + '.jpg',
+			'exifUrl': this.config.exif,
+			'guideData': GuideData[id],
+			'routeData': GpxData[id],
+			'exifData': ExifData[prefix],
+			'creditsTemplate': this.config.creditTemplate.innerHTML
+		});
+	};
+
+	this.updateWall = function(id) {
+		var _this = this,
+			src,
+			srcs = [],
+			wallTemplate = this.config.wallTemplate.innerHTML,
+			wallHtml = '';
+		// reset the wall
+		this.config.wall.className = this.config.wall.className.replace(/-active/g, '-passive');
+		// get the properties if this is a segment of another walk
+		var prefix = (GuideData[id].alias && GuideData[id].alias.prefix)
+			? GuideData[id].alias.prefix
+			: id;
+		var start = (GuideData[id].alias && GuideData[id].alias.start)
+			? GuideData[id].alias.start
+			: 0;
+		var end = (GuideData[id].alias && GuideData[id].alias.end)
+			? GuideData[id].alias.end + 1
+			: null;
+		// get the photos
+		for (src in ExifData[prefix]) {
+			srcs.push(src);
+		}
+		// create a list of photos
+		for (var a = start, b = end || srcs.length; a < b; a += 1) {
+			wallHtml += wallTemplate
+				.replace(/{id}/g, prefix)
+				.replace(/{src}/g, srcs[a]);
+		}
+		// fill the wall with the photos
+		this.config.wall.innerHTML = '<ul>' + wallHtml + '</ul>';
+		// start the script for the wall
+		this.config.photowall = new Photowall({
+			'element': this.config.wall
+		});
+		// start the script for the image viewer
+		this.config.photocylinder = new Photocylinder({
+			'elements': document.querySelectorAll('.photowall .cylinder-image'),
+			'container': this.config.wall,
+			'spherical': /fov360|\d{3}_r\d{6}/i,
+			'cylindrical': /fov180/i,
+			'slicer': this.config.slice,
+			'idle': 0.1,
+			'opened': function(link) {
+				_this.returnTo = 'photos';
+				_this.config.guideMap.indicate(link);
+				return true;
+			},
+			'located': function(link) {
+				_this.returnTo = 'photos';
+				_this.config.guideMap.indicate(link);
+				document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
+			},
+			'closed': function() {
+				_this.config.guideMap.unindicate();
+			}
+		});
+	};
+
+	// EVENTS
+
+	this.onLocate = function(button, evt) {
+		// cancel the click
+		evt.preventDefault();
+		// remember where to return to
+		this.returnTo = 'guide';
+		// as the map to show the location
+		this.config.guideMap.indicate(button);
+		// show the map screen
+		document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
+	};
+
+	this.onReturnFromMap = function(evt) {
+		// cancel the click
+		evt.preventDefault();
+		// return from the map
+		document.body.className = document.body.className.replace(/screen-map/, 'screen-' + this.returnTo);
+	};
+
+	this.onSignExpanded = function(sign, signs, evt) {
+		// get the current size
+		var isLong = sign.className.match(/-long/);
+		// reset all signs
+		for (var a = 0, b = signs.length; a < b; a += 1) {
+			// add a click event handler
+			signs[a].className = signs[a].className.replace('-long', '-short');
+		}
+		// expand this sign
+		if (!isLong) {
+			sign.className = sign.className.replace('-short', '-long');
+		}
+	};
+
+  if(parent) this.init();
+
+};
+
+// extend the class
+SydneyTrainWalks.prototype.Footer = function(parent) {
+
+	// PROPERTIES
+
+	this.parent = parent;
+	this.config = parent.config;
+	this.config.extend({
+		'origin': 'menu',
+		'footer': document.querySelector('.toolbar'),
+		'footerTemplate': document.getElementById('footer-template')
+	});
+
+	// METHODS
+
+	this.init = function() {
+		// build the footer with a blank id
+		this.update(null);
+		// add a global click handler to the footer
+		this.config.footer.addEventListener('click', this.onFooterClicked.bind(this));
+		// add the event handler for the browser back button
+		document.addEventListener("backbutton", this.onBackButton.bind(this));
+	};
+
+	this.update = function() {
+		// fill the menu with options
+		this.config.footer.innerHTML = this.config.footerTemplate.innerHTML;
+	};
+
+	// EVENTS
+
+	this.onBackButton = function(evt) {
+		// if this is not an entry page
+		console.log("onBackButton", document.body.className);
+		if (!/menu|overview/.test(document.body.className)) {
+			// cancel the back button
+			evt.preventDefault();
+			// return to the origin page
+			window.localStorage.removeItem('id');
+			window.localStorage.removeItem('mode');
+			document.body.className = 'screen-' + this.config.origin;
+		// if this is a cordova app
+		} else if (navigator.app && navigator.app.exitApp) {
+			// close the app
+			navigator.app.exitApp();
+		}
+	}
+
+	this.onFooterClicked = function(evt) {
+		// get the target of the click
+		var target = evt.target || evt.srcElement,
+			id = target.getAttribute('id');
+		// if a button was clicked
+		if (id && id.match(/footer-to-/)) {
+			// cancel any clicks
+			evt.preventDefault();
+			// if this is a menu page
+			if (id.match(/-menu|-overview|-about/)) {
+				// reset the local storage when returning to the menu
+				window.localStorage.removeItem('id');
+				window.localStorage.removeItem('mode');
+				// remember what menu screen was the origin
+				this.config.origin = id.substr(10);
+			}
+			// apply the mode to the body
+			document.body.className = 'screen-' + id.substr(10);
+		}
+	};
+
+  if(parent) this.init();
+
+};
+
+// extend the class
+SydneyTrainWalks.prototype.Index = function(parent) {
+
+	// PROPERTIES
+
+	this.parent = parent;
+	this.searchFor = '';
+	this.searchDelay = null;
+	this.sortBy = 'length';
+	this.config = parent.config;
+	this.config.extend({
+		'sorting': document.getElementById('sorting'),
+		'menu': document.querySelector('.navigation > menu'),
+		'titleTemplate': document.getElementById('title-template'),
+		'menuTemplate': document.getElementById('menu-template'),
+		'guideTemplate': document.getElementById('guide-template')
+	});
+
+	// METHODS
+
+	this.init = function() {
+		var input = this.config.sorting.getElementsByTagName('input')[0],
+			select = this.config.sorting.getElementsByTagName('select')[0];
+		// build the menu
+		this.update();
+		// add the global click handler to the menu
+		this.config.menu.addEventListener('click', this.onMenuClicked.bind(this));
+		// event handler for sorting options
+		input.addEventListener('focus', this.onSearchFocus.bind(this, input));
+		input.addEventListener('blur', this.onSearchChanged.bind(this, input));
+		input.addEventListener('keyup', this.onSearchChanged.bind(this, input));
+		input.addEventListener('change', this.onSearchChanged.bind(this, input));
+		select.addEventListener('focus', this.onSortingFocus.bind(this, select));
+		select.addEventListener('change', this.onSortingSelected.bind(this, select));
+		// event handler for the form
+		input.parentNode.parentNode.addEventListener('submit', this.onSearchSubmitted.bind(this, input));
+		// add the reset button to browsers that need it
+		if (!/MSIE/i.test(navigator.userAgent)) {
+			input.addEventListener('click', this.onSearchReset.bind(this, input));
+		} else {
+			input.style.backgroundImage = 'none';
+		}
+	};
+
+	this.update = function() {
+		var id, markers,
+			menuTemplate = this.config.menuTemplate.innerHTML,
+			titleTemplate = this.config.titleTemplate.innerHTML,
+			menuHtml = '',
+			titleHtml = '';
+		// sort the guides
+		var searched = this.searchGuide(GuideData, this.searchFor);
+		var sorted = this.sortGuide(GuideData, this.sortBy);
+		// for every available guide
+		for (var a = 0, b = sorted.length; a < b; a += 1) {
+			id = sorted[a];
+			// if the id occurs in the search results
+			if (searched.indexOf(id) > -1 && id !== '_index') {
+				markers = GuideData[id].markers;
+				titleHtml = titleTemplate
+					.replace(/{startTransport}/g, markers[0].type)
+					.replace(/{startLocation}/g, markers[0].location)
+					.replace(/{walkLocation}/g, GuideData[id].location)
+					.replace(/{walkDuration}/g, GuideData[id].duration)
+					.replace(/{walkDistance}/g, GuideData[id].distance)
+					.replace(/{endTransport}/g, markers[markers.length - 1].type)
+					.replace(/{endLocation}/g, markers[markers.length - 1].location);
+				menuHtml += menuTemplate
+					.replace(/{id}/g, id)
+					.replace(/{title}/g, titleHtml);
+			}
+		}
+		// fill the menu with options
+		this.config.menu.innerHTML = (menuHtml === '')
+			? '<li class="no-results">No results...</li>'
+			: menuHtml;
+	};
+
+	this.searchGuide = function(guide, keyword) {
+		var id,
+			locations,
+			searched = [],
+			search = new RegExp(keyword, 'i');
+		// create an array of guides
+		for (id in guide) {
+			// fetch the locations to search for
+			locations = guide[id].location;
+			guide[id].markers.map(function(marker) { if (marker.location) locations += ' ' + marker.location; });
+			// add the guide if it includes the keyword
+			if (search.test(locations)) {
+				searched.push(id);
+			}
+		}
+		// return the searched guides
+		return searched;
+	};
+
+	this.sortGuide = function(guide, option) {
+		var id,
+			unsorted = [];
+		sorted = [];
+		// create an array of guides
+		for (id in guide) {
+			unsorted.push(id);
+		}
+		// sort the array by the prefered method
+		switch (option) {
+			case 'start':
+				sorted = unsorted.sort(function(a, b) {
+					a = guide[a].markers[0].location;
+					b = guide[b].markers[0].location;
+					return (a < b)
+						? -1
+						: 1;
+				});
+				break;
+			case 'finish':
+				sorted = unsorted.sort(function(a, b) {
+					a = guide[a].markers[markers.length - 1].location;
+					b = guide[b].markers[markers.length - 1].location;
+					return (a < b)
+						? -1
+						: 1;
+				});
+				break;
+			case 'region':
+				sorted = unsorted.sort(function(a, b) {
+					a = guide[a].location;
+					b = guide[b].location;
+					return (a < b)
+						? -1
+						: 1;
+				});
+				break;
+			case 'duration':
+				sorted = unsorted.sort(function(a, b) {
+					a = guide[a].duration;
+					b = guide[b].duration;
+					return a - b;
+				});
+				break;
+			case 'length':
+				sorted = unsorted.sort(function(a, b) {
+					a = guide[a].distance;
+					b = guide[b].distance;
+					return a - b;
+				});
+				break;
+			case 'rain':
+				sorted = unsorted.map(function(a) {
+					return (guide[a].rain) ? a : null;
+				});
+				break;
+			case 'fireban':
+				sorted = unsorted.map(function(a) {
+					return (guide[a].fireban) ? a : null;
+				});
+				break;
+			default:
+				sorted = unsorted;
+		}
+		// return the ordered guides
+		return sorted;
+	};
+
+	// EVENTS
+
+	this.onSearchFocus = function(input, evt) {
+		// reset the previous state
+		window.localStorage.setItem('id', null);
+		window.localStorage.setItem('mode', null);
+	};
+
+	this.onSearchReset = function(input, evt) {
+		// if the  right side of the element is clicked
+		if (input.offsetWidth - evt.layerX < 32) {
+			// cancel the click
+			evt.preventDefault();
+			// reset the search
+			input.blur();
+			input.value = '';
+			this.searchFor = '';
+			this.update();
+		}
+	};
+
+	this.onSearchSubmitted = function(input, evt) {
+		// cancel the submit
+		evt.preventDefault();
+		// perform the search
+		this.searchFor = input.value.trim();
+		this.update();
+		// deselect the input field
+		input.blur();
+	};
+
+	this.onSearchChanged = function(input, evt) {
+		var _this = this;
+		// wait for the typing to pause
+		clearTimeout(_this.searchDelay);
+		this.searchDelay = setTimeout(function() {
+			// perform the search
+			_this.searchFor = input.value.trim();
+			_this.update();
+		}, 700);
+	};
+
+	this.onSortingFocus = function(input, evt) {
+		// reset the previous state
+		window.localStorage.setItem('id', null);
+		window.localStorage.setItem('mode', null);
+	};
+
+	this.onSortingSelected = function(select, evt) {
+		// perform the sort
+		this.sortBy = select.value;
+		this.update();
+	};
+
+	this.onMenuClicked = function(evt) {
+		// cancel the click
+		evt.preventDefault();
+		// get the target of the click
+		var id,
+			target = evt.target || evt.srcElement;
+		// get the id of the click
+		while (!id) {
+			id = target.getAttribute('data-id');
+			target = target.parentNode;
+		}
+		// update the app for this id
+		this.parent.update(id, 'map');
+	};
+
+  if(parent) this.init();
+
+};
+
+// extend the class
+SydneyTrainWalks.prototype.Overview = function (parent) {
+
+  // PROPERTIES
+
+  this.parent = parent;
+  this.config = parent.config;
+  this.overviewMap = null;
+  this.config.extend = function(properties) {
+    for (var name in properties) {
+      this[name] = properties[name];
+    }
+  };
+  this.config.extend({
+    'overview': document.querySelector('.localmap.overview'),
+    'creditTemplate': document.getElementById('credit-template')
+  });
+
+  // METHODS
+
+  this.init = function() {
+    // generate the map
+    this.overviewMap = new Localmap({
+      'container': this.config.overview,
+      'legend': null,
+      'assetsUrl': null,
+      'markersUrl': this.config.local + '/img/marker-{type}.svg',
+      'guideUrl': null,
+      'routeUrl': null,
+      'mapUrl': this.config.local + '/maps/_index.jpg',
+      'exifUrl': null,
+      'guideData': this.processMarkers(),
+      'routeData': this.mergeRoutes(),
+      'exifData': null,
+      'creditsTemplate': this.config.creditTemplate.innerHTML
+    });
+  };
+
+  this.processMarkers = function() {
+    // add "onMarkerClicked" event handlers to markers
+    var _this = this;
+    GuideData['_index'].markers.map(function(marker) {
+      marker.description = '';
+      marker.callback = _this.onMarkerClicked.bind(_this, marker.id);
+    });
+    return GuideData['_index'];
+  };
+
+  this.mergeRoutes = function() {
+    var routes = {'features':[]};
+    // if the GPX data is available anyway
+    if (typeof GpxData != 'undefined') {
+      // for every walk
+      for (var key in GpxData) {
+        // only if this isn't an alias
+        if (!GuideData[key].alias) {
+          // add the route
+					routes.features = routes.features.concat(GpxData[key].features);
+        }
+      }
+    }
+    // return the result
+    return routes;
+  };
+
+  // EVENTS
+
+  this.onMarkerClicked = function(id, evt) {
+    // update the app for this id
+    this.parent.update(id, 'map');
+  };
+
+  if(parent) this.init();
+
+};
+
+/*
 	Source:
 	van Creij, Maurice (2018). "filters.js: Sorting and filtering a list of options.", http://www.woollymittens.nl/.
 
@@ -814,7 +1582,7 @@ Localmap.prototype.Legend = function (parent, onLegendClicked) {
     if (markerData.description) {
       // format the path to the external assets
       var guideData = this.config.guideData;
-      var key = (guideData.assets) ? guideData.assets.prefix : guideData.gps;
+      var key = (guideData.alias) ? guideData.alias.prefix : guideData.gps;
       var image = (markerData.photo) ? this.config.thumbsUrl + markerData.photo : this.config.markersUrl.replace('{type}', markerData.type);
       var text = markerData.description || markerData.type;
       // create a container for the elements
@@ -989,10 +1757,10 @@ Localmap.prototype.Markers = function (parent, onMarkerClicked) {
 		// store the interpolation limits
 		var min = this.config.minimum;
 		var max = this.config.maximum;
-		min.lon = (guideData.assets) ? guideData.assets.bounds.west : guideData.bounds.west;
-		min.lat = (guideData.assets) ? guideData.assets.bounds.north : guideData.bounds.north;
-		max.lon = (guideData.assets) ? guideData.assets.bounds.east : guideData.bounds.east;
-		max.lat = (guideData.assets) ? guideData.assets.bounds.south : guideData.bounds.south;
+		min.lon = (guideData.alias) ? guideData.alias.bounds.west : guideData.bounds.west;
+		min.lat = (guideData.alias) ? guideData.alias.bounds.north : guideData.bounds.north;
+		max.lon = (guideData.alias) ? guideData.alias.bounds.east : guideData.bounds.east;
+		max.lat = (guideData.alias) ? guideData.alias.bounds.south : guideData.bounds.south;
     // store the coverage limits
 		min.lon_cover = guideData.bounds.west;
 		min.lat_cover = guideData.bounds.north;
@@ -3061,907 +3829,3 @@ toGeoJSON = (function() {
 })();
 
 if (typeof module !== 'undefined') module.exports = toGeoJSON;
-
-/*
-	Sydney Train Walks - About View
-*/
-
-// create the constructor if needed
-var SydneyTrainWalks = SydneyTrainWalks || function() {};
-
-// extend the constructor
-SydneyTrainWalks.prototype.About = function(parent) {
-
-	// PROPERTIES
-
-	this.parent = parent;
-	this.config = parent.config;
-	this.config.extend({
-		'about': document.querySelector('.about')
-	});
-
-	// METHODS
-
-	this.init = function() {
-		
-		// return the object
-		return this;
-	};
-
-	// EVENTS
-
-
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = SydneyTrainWalks.About;
-}
-
-/*
-	Sydney Train Walks - Footer Navigation
-*/
-
-// create the constructor if needed
-var SydneyTrainWalks = SydneyTrainWalks || function() {};
-
-// extend the constructor
-SydneyTrainWalks.prototype.Busy = function(parent) {
-
-	// PROPERTIES
-
-	this.parent = parent;
-	this.config = parent.config;
-	this.config.extend({
-		'appView': document.querySelector('#appView')
-	});
-
-	// METHODS
-
-	this.init = function() {
-		// return the object
-		return this;
-	};
-
-	this.show = function() {
-		// remove the cover page
-		this.config.appView.className = this.config.appView.className.replace(/-ready/g, '-busy');
-	};
-
-	this.hide = function() {
-		// remove the cover page
-		this.config.appView.className = this.config.appView.className.replace(/-busy/g, '-ready');
-	};
-
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = SydneyTrainWalks.Busy;
-}
-
-/*
-	Sydney Train Walks - Details View
-*/
-
-// create the constructor if needed
-var SydneyTrainWalks = SydneyTrainWalks || function() {};
-
-// extend the constructor
-SydneyTrainWalks.prototype.Details = function(parent) {
-
-	// PROPERTIES
-
-	this.parent = parent;
-	this.config = parent.config;
-	this.returnTo = 'guide';
-
-	this.config.extend({
-		'title': document.querySelector('.subtitle > h2'),
-		'guide': document.querySelector('.guide'),
-		'localmap': document.querySelector('.localmap.directions'),
-		'return': document.querySelector('.localmap-return'),
-		'wall': document.querySelector('.photowall'),
-		'titleTemplate': document.getElementById('title-template'),
-		'thumbnailTemplate': document.getElementById('thumbnail-template'),
-		'wallTemplate': document.getElementById('wall-template'),
-		'creditTemplate': document.getElementById('credit-template')
-	});
-
-	// METHODS
-
-	this.init = function() {
-		// return the object
-		return this;
-	};
-
-	this.update = function(id) {
-		// update all the elements with the id
-		this.updateTitle(id);
-		this.updateGuide(id);
-		this.updateMap(id);
-		this.updateWall(id);
-	};
-
-	this.updateTitle = function(id) {
-		// fill in the title template
-		var markers = GuideData[id].markers;
-		this.config.title.innerHTML = this.config.titleTemplate.innerHTML
-			.replace(/{startTransport}/g, markers[0].type)
-			.replace(/{startLocation}/g, markers[0].location)
-			.replace(/{walkLocation}/g, GuideData[id].location)
-			.replace(/{walkDuration}/g, GuideData[id].duration)
-			.replace(/{walkLength}/g, GuideData[id].length)
-			.replace(/{endTransport}/g, markers[markers.length - 1].type)
-			.replace(/{endLocation}/g, markers[markers.length - 1].location);
-		// add the onclick handler
-		this.config.title.onclick = function(evt) { document.location.replace('./'); };
-	};
-
-	this.updateGuide = function(id) {
-		// gather the information
-		var _this = this;
-		var description = '<p>' + GuideData[id].description.join('</p><p>') + '</p>';
-		var duration = GuideData[id].duration;
-		var length = GuideData[id].length;
-		var gpx = this.config.gpx.replace(/{id}/g, id);
-		var markers = GuideData[id].markers;
-		var there = '<p>' + markers[0].description + '</p>';
-		var back = '<p>' + markers[markers.length - 1].description + '</p>';
-		var landmarks = this.updateLandmarks(id);
-		// fill the guide with information
-		this.config.guide.innerHTML = this.config.guideTemplate.innerHTML
-			.replace(/{description}/g, description)
-			.replace(/{duration}/g, duration)
-			.replace(/{length}/g, length)
-			.replace(/{gpx}/g, gpx)
-			.replace(/{there}/g, there)
-			.replace(/{back}/g, back)
-			.replace(/{landmarks}/g, landmarks);
-		// add event handlers for the locator icons
-		var buttons = document.querySelectorAll('.guide .guide-locate');
-		for (var a = 0, b = buttons.length; a < b; a += 1) {
-			buttons[a].addEventListener('click', this.onLocate.bind(this, buttons[a]));
-		}
-		// start the script for the image viewer
-		this.config.photocylinder = new Photocylinder({
-			'elements': document.querySelectorAll('.guide .cylinder-image'),
-			'container': this.config.guide,
-			'spherical': /fov360|\d{3}_r\d{6}/i,
-			'cylindrical': /fov180/i,
-			'slicer': this.config.slice,
-			'idle': 0.1,
-			'opened': function(link) {
-				_this.returnTo = 'guide';
-				_this.config.guideMap.indicate(link);
-				return true;
-			},
-			'located': function(link) {
-				_this.returnTo = 'guide';
-				_this.config.guideMap.indicate(link);
-				document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
-			},
-			'closed': function() {
-				_this.config.guideMap.unindicate();
-			}
-		});
-	};
-
-	this.updateLandmarks = function(id) {
-		// gather the information
-		var prefix = (GuideData[id].assets) ? GuideData[id].assets.prefix : id;
-		var landmark, landmarks = "";
-		var thumbnailTemplate = this.config.thumbnailTemplate.innerHTML;
-		// fill the guide with landmarks
-		GuideData[id].markers.map(function (marker) {
-			// it is a landmark if it has a photo
-			if (marker.photo) {
-				// get the description
-				landmark = thumbnailTemplate
-					.replace(/{id}/g, prefix)
-					.replace(/{src}/g, marker.photo.toLowerCase())
-					.replace(/{description}/g, marker.description);
-				// add extra markup for optional landmarks
-				if (marker.optional) { landmarks += '<div class="guide-optional">' + landmark + '</div>'; }
-				else if (marker.detour) { landmarks += '<div class="guide-detour">' + landmark + '</div>'; }
-				else if (marker.attention) { landmarks += '<div class="guide-attention">' + landmark + '</div>'; }
-				else { landmarks += landmark; }
-			}
-		});
-		// return the landmarks
-		return landmarks;
-	};
-
-	this.updateMap = function(id) {
-		// get the properties if this is a segment of another walk
-		var prefix = (GuideData[id].assets && GuideData[id].assets.prefix)
-			? GuideData[id].assets.prefix
-			: id;
-		// add the click event to the map back button
-		this.config.return.addEventListener('click', this.onReturnFromMap.bind(this));
-		// clear the old map if active
-		if (this.config.guideMap) {
-			this.config.guideMap.stop();
-		}
-		// start the map
-		this.config.guideMap = new Localmap({
-			'container': this.config.localmap,
-			'legend': null,
-			'thumbsUrl': this.config.local + '/small/' + prefix + '/',
-			'photosUrl': this.config.remote + '/medium/' + prefix + '/',
-			'markersUrl': this.config.local + '/img/marker-{type}.svg',
-			'guideUrl': this.config.local + '/guides/' + id + '.json',
-			'routeUrl': this.config.remote + '/gpx/' + id + '.gpx',
-			'mapUrl': this.config.local + '/maps/' + prefix + '.jpg',
-			'exifUrl': this.config.exif,
-			'guideData': GuideData[id],
-			'routeData': GpxData[id],
-			'exifData': ExifData[prefix],
-			'creditsTemplate': this.config.creditTemplate.innerHTML
-		});
-	};
-
-	this.updateWall = function(id) {
-		var _this = this,
-			src,
-			srcs = [],
-			wallTemplate = this.config.wallTemplate.innerHTML,
-			wallHtml = '';
-		// reset the wall
-		this.config.wall.className = this.config.wall.className.replace(/-active/g, '-passive');
-		// get the properties if this is a segment of another walk
-		var prefix = (GuideData[id].assets && GuideData[id].assets.prefix)
-			? GuideData[id].assets.prefix
-			: id;
-		var start = (GuideData[id].assets && GuideData[id].assets.start)
-			? GuideData[id].assets.start
-			: 0;
-		var end = (GuideData[id].assets && GuideData[id].assets.end)
-			? GuideData[id].assets.end + 1
-			: null;
-		// get the photos
-		for (src in ExifData[prefix]) {
-			srcs.push(src);
-		}
-		// create a list of photos
-		for (var a = start, b = end || srcs.length; a < b; a += 1) {
-			wallHtml += wallTemplate
-				.replace(/{id}/g, prefix)
-				.replace(/{src}/g, srcs[a]);
-		}
-		// fill the wall with the photos
-		this.config.wall.innerHTML = '<ul>' + wallHtml + '</ul>';
-		// start the script for the wall
-		this.config.photowall = new Photowall({
-			'element': this.config.wall
-		});
-		// start the script for the image viewer
-		this.config.photocylinder = new Photocylinder({
-			'elements': document.querySelectorAll('.photowall .cylinder-image'),
-			'container': this.config.wall,
-			'spherical': /fov360|\d{3}_r\d{6}/i,
-			'cylindrical': /fov180/i,
-			'slicer': this.config.slice,
-			'idle': 0.1,
-			'opened': function(link) {
-				_this.returnTo = 'photos';
-				_this.config.guideMap.indicate(link);
-				return true;
-			},
-			'located': function(link) {
-				_this.returnTo = 'photos';
-				_this.config.guideMap.indicate(link);
-				document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
-			},
-			'closed': function() {
-				_this.config.guideMap.unindicate();
-			}
-		});
-	};
-
-	// EVENTS
-
-	this.onLocate = function(button, evt) {
-		// cancel the click
-		evt.preventDefault();
-		// remember where to return to
-		this.returnTo = 'guide';
-		// as the map to show the location
-		this.config.guideMap.indicate(button);
-		// show the map screen
-		document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
-	};
-
-	this.onReturnFromMap = function(evt) {
-		// cancel the click
-		evt.preventDefault();
-		// return from the map
-		document.body.className = document.body.className.replace(/screen-map/, 'screen-' + this.returnTo);
-	};
-
-	this.onSignExpanded = function(sign, signs, evt) {
-		// get the current size
-		var isLong = sign.className.match(/-long/);
-		// reset all signs
-		for (var a = 0, b = signs.length; a < b; a += 1) {
-			// add a click event handler
-			signs[a].className = signs[a].className.replace('-long', '-short');
-		}
-		// expand this sign
-		if (!isLong) {
-			sign.className = sign.className.replace('-short', '-long');
-		}
-	};
-
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = SydneyTrainWalks.Details;
-}
-
-/*
-	Sydney Train Walks - Footer Navigation
-*/
-
-// create the constructor if needed
-var SydneyTrainWalks = SydneyTrainWalks || function() {};
-
-// extend the constructor
-SydneyTrainWalks.prototype.Footer = function(parent) {
-
-	// PROPERTIES
-
-	this.parent = parent;
-	this.config = parent.config;
-	this.config.extend({
-		'origin': 'menu',
-		'footer': document.querySelector('.toolbar'),
-		'footerTemplate': document.getElementById('footer-template')
-	});
-
-	// METHODS
-
-	this.init = function() {
-		// build the footer with a blank id
-		this.update(null);
-		// add a global click handler to the footer
-		this.config.footer.addEventListener('click', this.onFooterClicked.bind(this));
-		// add the event handler for the browser back button
-		document.addEventListener("backbutton", this.onBackButton.bind(this));
-		// return the object
-		return this;
-	};
-
-	this.update = function() {
-		// fill the menu with options
-		this.config.footer.innerHTML = this.config.footerTemplate.innerHTML;
-	};
-
-	// EVENTS
-
-	this.onBackButton = function(evt) {
-		// if this is not an entry page
-		console.log("onBackButton", document.body.className);
-		if (!/menu|overview/.test(document.body.className)) {
-			// cancel the back button
-			evt.preventDefault();
-			// return to the origin page
-			window.localStorage.removeItem('id');
-			window.localStorage.removeItem('mode');
-			document.body.className = 'screen-' + this.config.origin;
-		// if this is a cordova app
-		} else if (navigator.app && navigator.app.exitApp) {
-			// close the app
-			navigator.app.exitApp();
-		}
-	}
-
-	this.onFooterClicked = function(evt) {
-		// get the target of the click
-		var target = evt.target || evt.srcElement,
-			id = target.getAttribute('id');
-		// if a button was clicked
-		if (id && id.match(/footer-to-/)) {
-			// cancel any clicks
-			evt.preventDefault();
-			// if this is a menu page
-			if (id.match(/-menu|-overview|-about/)) {
-				// reset the local storage when returning to the menu
-				window.localStorage.removeItem('id');
-				window.localStorage.removeItem('mode');
-				// remember what menu screen was the origin
-				this.config.origin = id.substr(10);
-			}
-			// apply the mode to the body
-			document.body.className = 'screen-' + id.substr(10);
-		}
-	};
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = SydneyTrainWalks.Footer;
-}
-
-/*
-	Sydney Train Walks - Index View
-*/
-
-// create the constructor if needed
-var SydneyTrainWalks = SydneyTrainWalks || function() {};
-
-// extend the constructor
-SydneyTrainWalks.prototype.Index = function(parent) {
-
-	// PROPERTIES
-
-	this.parent = parent;
-	this.searchFor = '';
-	this.searchDelay = null;
-	this.sortBy = 'length';
-	this.config = parent.config;
-	this.config.extend({
-		'sorting': document.getElementById('sorting'),
-		'menu': document.querySelector('.navigation > menu'),
-		'titleTemplate': document.getElementById('title-template'),
-		'menuTemplate': document.getElementById('menu-template'),
-		'guideTemplate': document.getElementById('guide-template')
-	});
-
-	// METHODS
-
-	this.init = function() {
-		var input = this.config.sorting.getElementsByTagName('input')[0],
-			select = this.config.sorting.getElementsByTagName('select')[0];
-		// build the menu
-		this.update();
-		// add the global click handler to the menu
-		this.config.menu.addEventListener('click', this.onMenuClicked.bind(this));
-		// event handler for sorting options
-		input.addEventListener('focus', this.onSearchFocus.bind(this, input));
-		input.addEventListener('blur', this.onSearchChanged.bind(this, input));
-		input.addEventListener('keyup', this.onSearchChanged.bind(this, input));
-		input.addEventListener('change', this.onSearchChanged.bind(this, input));
-		select.addEventListener('focus', this.onSortingFocus.bind(this, select));
-		select.addEventListener('change', this.onSortingSelected.bind(this, select));
-		// event handler for the form
-		input.parentNode.parentNode.addEventListener('submit', this.onSearchSubmitted.bind(this, input));
-		// add the reset button to browsers that need it
-		if (!/MSIE/i.test(navigator.userAgent)) {
-			input.addEventListener('click', this.onSearchReset.bind(this, input));
-		} else {
-			input.style.backgroundImage = 'none';
-		}
-		// return the object
-		return this;
-	};
-
-	this.update = function() {
-		var id, markers,
-			menuTemplate = this.config.menuTemplate.innerHTML,
-			titleTemplate = this.config.titleTemplate.innerHTML,
-			menuHtml = '',
-			titleHtml = '';
-		// sort the guides
-		var searched = this.searchGuide(GuideData, this.searchFor);
-		var sorted = this.sortGuide(GuideData, this.sortBy);
-		// for every available guide
-		for (var a = 0, b = sorted.length; a < b; a += 1) {
-			id = sorted[a];
-			// if the id occurs in the search results
-			if (searched.indexOf(id) > -1 && id !== '_index') {
-				markers = GuideData[id].markers;
-				titleHtml = titleTemplate
-					.replace(/{startTransport}/g, markers[0].type)
-					.replace(/{startLocation}/g, markers[0].location)
-					.replace(/{walkLocation}/g, GuideData[id].location)
-					.replace(/{walkDuration}/g, GuideData[id].duration)
-					.replace(/{walkLength}/g, GuideData[id].length)
-					.replace(/{endTransport}/g, markers[markers.length - 1].type)
-					.replace(/{endLocation}/g, markers[markers.length - 1].location);
-				menuHtml += menuTemplate
-					.replace(/{id}/g, id)
-					.replace(/{title}/g, titleHtml);
-			}
-		}
-		// fill the menu with options
-		this.config.menu.innerHTML = (menuHtml === '')
-			? '<li class="no-results">No results...</li>'
-			: menuHtml;
-	};
-
-	this.searchGuide = function(guide, keyword) {
-		var id,
-			locations,
-			searched = [],
-			search = new RegExp(keyword, 'i');
-		// create an array of guides
-		for (id in guide) {
-			// fetch the locations to search for
-			locations = guide[id].location;
-			guide[id].markers.map(function(marker) { if (marker.location) locations += ' ' + marker.location; });
-			// add the guide if it includes the keyword
-			if (search.test(locations)) {
-				searched.push(id);
-			}
-		}
-		// return the searched guides
-		return searched;
-	};
-
-	this.sortGuide = function(guide, option) {
-		var id,
-			unsorted = [];
-		sorted = [];
-		// create an array of guides
-		for (id in guide) {
-			unsorted.push(id);
-		}
-		// sort the array by the prefered method
-		switch (option) {
-			case 'start':
-				sorted = unsorted.sort(function(a, b) {
-					a = guide[a].markers[0].location;
-					b = guide[b].markers[0].location;
-					return (a < b)
-						? -1
-						: 1;
-				});
-				break;
-			case 'finish':
-				sorted = unsorted.sort(function(a, b) {
-					a = guide[a].markers[markers.length - 1].location;
-					b = guide[b].markers[markers.length - 1].location;
-					return (a < b)
-						? -1
-						: 1;
-				});
-				break;
-			case 'region':
-				sorted = unsorted.sort(function(a, b) {
-					a = guide[a].location;
-					b = guide[b].location;
-					return (a < b)
-						? -1
-						: 1;
-				});
-				break;
-			case 'duration':
-				sorted = unsorted.sort(function(a, b) {
-					a = guide[a].duration;
-					b = guide[b].duration;
-					return a - b;
-				});
-				break;
-			case 'length':
-				sorted = unsorted.sort(function(a, b) {
-					a = guide[a].length;
-					b = guide[b].length;
-					return a - b;
-				});
-				break;
-			case 'rain':
-				sorted = unsorted.map(function(a) {
-					return (guide[a].rain) ? a : null;
-				});
-				break;
-			case 'fireban':
-				sorted = unsorted.map(function(a) {
-					return (guide[a].fireban) ? a : null;
-				});
-				break;
-			default:
-				sorted = unsorted;
-		}
-		// return the ordered guides
-		return sorted;
-	};
-
-	// EVENTS
-
-	this.onSearchFocus = function(input, evt) {
-		// reset the previous state
-		window.localStorage.setItem('id', null);
-		window.localStorage.setItem('mode', null);
-	};
-
-	this.onSearchReset = function(input, evt) {
-		// if the  right side of the element is clicked
-		if (input.offsetWidth - evt.layerX < 32) {
-			// cancel the click
-			evt.preventDefault();
-			// reset the search
-			input.blur();
-			input.value = '';
-			this.searchFor = '';
-			this.update();
-		}
-	};
-
-	this.onSearchSubmitted = function(input, evt) {
-		// cancel the submit
-		evt.preventDefault();
-		// perform the search
-		this.searchFor = input.value.trim();
-		this.update();
-		// deselect the input field
-		input.blur();
-	};
-
-	this.onSearchChanged = function(input, evt) {
-		var _this = this;
-		// wait for the typing to pause
-		clearTimeout(_this.searchDelay);
-		this.searchDelay = setTimeout(function() {
-			// perform the search
-			_this.searchFor = input.value.trim();
-			_this.update();
-		}, 700);
-	};
-
-	this.onSortingFocus = function(input, evt) {
-		// reset the previous state
-		window.localStorage.setItem('id', null);
-		window.localStorage.setItem('mode', null);
-	};
-
-	this.onSortingSelected = function(select, evt) {
-		// perform the sort
-		this.sortBy = select.value;
-		this.update();
-	};
-
-	this.onMenuClicked = function(evt) {
-		// cancel the click
-		evt.preventDefault();
-		// get the target of the click
-		var id,
-			target = evt.target || evt.srcElement;
-		// get the id of the click
-		while (!id) {
-			id = target.getAttribute('data-id');
-			target = target.parentNode;
-		}
-		// update the app for this id
-		this.parent.update(id, 'map');
-	};
-
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = SydneyTrainWalks.Index;
-}
-
-/*
-	Sydney Train Walks
-*/
-
-// create the constructor if needed
-var SydneyTrainWalks = SydneyTrainWalks || function() {};
-
-// extend the constructor
-SydneyTrainWalks.prototype.Main = function(config, context) {
-
-	// PROPERTIES
-
-	this.context = context;
-	this.config = config;
-
-	this.config.extend = function(properties) {
-		for (var name in properties) {
-			this[name] = properties[name];
-		}
-	};
-
-	// COMPONENTS
-
-	this.busy = new context.Busy(this).init();
-	this.index = new context.Index(this).init();
-	this.overview = new context.Overview(this).init();
-	this.details = new context.Details(this).init();
-	this.about = new context.About(this).init();
-	this.footer = new context.Footer(this).init();
-
-	// METHODS
-
-	this.init = function() {
-		// notice if this is iOS
-		var parent = document.getElementsByTagName('html')[0];
-		parent.className = (navigator.userAgent.match(/ipad;|iphone|ipod touch;/i))
-			? parent.className.replace('ios-false', 'ios-true')
-			: parent.className.replace('ios-true', 'ios-false');
-		// recover the previous state
-		var storedId = window.localStorage.getItem('id');
-		var storedMode = window.localStorage.getItem('mode') || 'map';
-		// recover the state from the url
-		storedId = this.getQuery('id') || storedId ;
-		storedMode = this.getQuery('mode') || storedMode;
-		// restore the previous state
-		if (storedId && storedMode && GuideData[storedId]) {
-			// update the interface to the stored state
-			this.update(storedId, storedMode);
-		}
-		// remove busy screen after a redraw
-		setTimeout(this.busy.hide.bind(this), 300);
-		// return the object
-		return this;
-	};
-
-	this.update = function(id, mode) {
-		// store the current state
-		window.localStorage.setItem('id', id);
-		window.localStorage.setItem('mode', mode);
-		// update the body class
-		document.body.className = 'screen-' + mode;
-		// update the details
-		this.details.update(id);
-		// update the footer
-		this.footer.update(id);
-	};
-
-	this.getQuery = function(property) {
-		var param = document.location.search.split(property + '=');
-		return (param.length > 1) ? param[1].split(/&|#/)[0] : null;
-	};
-
-	this.remoteLink = function(evt) {
-		var href = evt.target.getAttribute("href");
-		if(/^http/i.test(href) && !/.jpg$/i.test(href)) {
-			evt.preventDefault();
-			window.open(href, '_system', 'location=yes');
-		}
-	};
-
-	// EVENTS
-
-	document.body.addEventListener("click", this.remoteLink.bind(this));
-
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = SydneyTrainWalks.Main;
-}
-
-/*
-	Sydney Train Walks - Overview Map
-*/
-
-// create the constructor if needed
-var SydneyTrainWalks = SydneyTrainWalks || function() {};
-
-// extend the constructor
-SydneyTrainWalks.prototype.Overview = function(parent) {
-
-  // PROPERTIES
-
-  this.parent = parent;
-  this.config = parent.config;
-  this.overviewMap = null;
-  this.config.extend = function(properties) {
-    for (var name in properties) {
-      this[name] = properties[name];
-    }
-  };
-  this.config.extend({
-    'overview': document.querySelector('.localmap.overview'),
-    'creditTemplate': document.getElementById('credit-template')
-  });
-
-  // METHODS
-
-  this.init = function() {
-    // generate the map
-    this.overviewMap = new Localmap({
-      'container': this.config.overview,
-      'legend': null,
-      'assetsUrl': null,
-      'markersUrl': this.config.local + '/img/marker-{type}.svg',
-      'guideUrl': null,
-      'routeUrl': null,
-      'mapUrl': this.config.local + '/maps/_index.jpg',
-      'exifUrl': null,
-      'guideData': this.processMarkers(),
-      'routeData': this.mergeRoutes(),
-      'exifData': null,
-      'creditsTemplate': this.config.creditTemplate.innerHTML
-    });
-    // return the object
-    return this;
-  };
-
-  this.processMarkers = function() {
-    // add "onMarkerClicked" event handlers to markers
-    var _this = this;
-    GuideData['_index'].markers.map(function(marker) {
-      marker.description = '';
-      marker.callback = _this.onMarkerClicked.bind(_this, marker.id);
-    });
-    return GuideData['_index'];
-  };
-
-  this.mergeRoutes = function() {
-    var routes = {'features':[]};
-    // if the GPX data is available anyway
-    if (typeof GpxData != 'undefined') {
-      // for every walk
-      for (var key in GuideData) {
-        // only if this isn't an alias
-        if (!GuideData[key].local && GuideData[key].gps !== '_index') {
-          // add the route
-					routes.features = routes.features.concat(GpxData[key].features);
-        }
-      }
-    }
-    // return the result
-    return routes;
-  };
-
-  // EVENTS
-
-  this.onMarkerClicked = function(id, evt) {
-    // update the app for this id
-    this.parent.update(id, 'map');
-  };
-
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-  exports = module.exports = SydneyTrainWalks.Overview;
-}
-
-/*
-	Sydney Train Walks
-*/
-
-// create the constructor if needed
-SydneyTrainWalks = SydneyTrainWalks || function() {};
-
-// extend the constructor
-SydneyTrainWalks.prototype.init = function(config) {
-
-	// PROPERTIES
-
-	"use strict";
-
-	// METHODS
-
-	this.only = function(config) {
-		// start an instance of the script
-		return new this.Main(config, this).init();
-	};
-
-	this.each = function(config) {
-		var _config,
-			_context = this,
-			instances = [];
-		// for all element
-		for (var a = 0, b = config.elements.length; a < b; a += 1) {
-			// clone the configuration
-			_config = Object.create(config);
-			// insert the current element
-			_config.element = config.elements[a];
-			// delete the list of elements from the clone
-			delete _config.elements;
-			// start a new instance of the object
-			instances[a] = new this.Main(_config, _context).init();
-		}
-		// return the instances
-		return instances;
-	};
-
-	// START
-
-	return (config.elements)
-		? this.each(config)
-		: this.only(config);
-
-};
-
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = SydneyTrainWalks;
-}

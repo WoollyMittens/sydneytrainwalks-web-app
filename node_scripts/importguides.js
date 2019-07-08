@@ -61,12 +61,11 @@ var addIndex = function () {
 		east = Math.max(GuideData[key].bounds.east, east);
 		// formulate a description
 		markers = GuideData[key].markers;
-		first = markers[0].location;
-		last = markers[markers.length - 1].location;
+		first = markers[0];
+		last = markers[markers.length - 1];
 		// add a marker from the centre of the guide
 		overview.markers.push({
 			'type': 'walk',
-			'description': first + ' to ' + last + ' via ' + GuideData[key].location,
 			'lon': GuideData[key].lon,
 			'lat': GuideData[key].lat,
 			'id': key
@@ -116,7 +115,7 @@ var parseGuides = function (queue) {
 				}
 				// add the photo exif data to markers with a photo
 				var markerData;
-				var alias = (GuideData[key].assets) ? GuideData[key].assets.prefix : key;
+				var alias = (GuideData[key].alias) ? GuideData[key].alias.prefix : key;
 				for (var marker in GuideData[key].markers) {
 					markerData = GuideData[key].markers[marker];
 					if (markerData.photo) {
@@ -144,9 +143,9 @@ var parseGuides = function (queue) {
 				GuideData[key].bounds.south = tile2lat(lat2tile(south, 15), 15);
 				GuideData[key].bounds.east = tile2long(long2tile(east, 15), 15);
 				// prefill the "bounds" from guides that are a subset of another guide
-				if (GuideData[key].assets && guidesData[prefix] && guidesData[prefix].bounds) {
-					var prefix = GuideData[key].assets.prefix;
-					GuideData[key].assets.bounds = guidesData[prefix].bounds;
+				if (GuideData[key].alias && guidesData[prefix] && guidesData[prefix].bounds) {
+					var prefix = GuideData[key].alias.prefix;
+					GuideData[key].alias.bounds = guidesData[prefix].bounds;
 				}
 				// save the converted guide
 				fs.writeFile(source + item, JSON.stringify(GuideData[key]), function (error) {

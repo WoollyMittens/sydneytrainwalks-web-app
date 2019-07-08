@@ -657,7 +657,7 @@ Localmap.prototype.Legend = function (parent, onLegendClicked) {
     if (markerData.description) {
       // format the path to the external assets
       var guideData = this.config.guideData;
-      var key = (guideData.assets) ? guideData.assets.prefix : guideData.gps;
+      var key = (guideData.alias) ? guideData.alias.prefix : guideData.gps;
       var image = (markerData.photo) ? this.config.thumbsUrl + markerData.photo : this.config.markersUrl.replace('{type}', markerData.type);
       var text = markerData.description || markerData.type;
       // create a container for the elements
@@ -832,10 +832,10 @@ Localmap.prototype.Markers = function (parent, onMarkerClicked) {
 		// store the interpolation limits
 		var min = this.config.minimum;
 		var max = this.config.maximum;
-		min.lon = (guideData.assets) ? guideData.assets.bounds.west : guideData.bounds.west;
-		min.lat = (guideData.assets) ? guideData.assets.bounds.north : guideData.bounds.north;
-		max.lon = (guideData.assets) ? guideData.assets.bounds.east : guideData.bounds.east;
-		max.lat = (guideData.assets) ? guideData.assets.bounds.south : guideData.bounds.south;
+		min.lon = (guideData.alias) ? guideData.alias.bounds.west : guideData.bounds.west;
+		min.lat = (guideData.alias) ? guideData.alias.bounds.north : guideData.bounds.north;
+		max.lon = (guideData.alias) ? guideData.alias.bounds.east : guideData.bounds.east;
+		max.lat = (guideData.alias) ? guideData.alias.bounds.south : guideData.bounds.south;
     // store the coverage limits
 		min.lon_cover = guideData.bounds.west;
 		min.lat_cover = guideData.bounds.north;

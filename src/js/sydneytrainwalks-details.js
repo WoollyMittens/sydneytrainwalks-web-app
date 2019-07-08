@@ -1,11 +1,4 @@
-/*
-	Sydney Train Walks - Details View
-*/
-
-// create the constructor if needed
-var SydneyTrainWalks = SydneyTrainWalks || function() {};
-
-// extend the constructor
+// extend the class
 SydneyTrainWalks.prototype.Details = function(parent) {
 
 	// PROPERTIES
@@ -13,7 +6,6 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 	this.parent = parent;
 	this.config = parent.config;
 	this.returnTo = 'guide';
-
 	this.config.extend({
 		'title': document.querySelector('.subtitle > h2'),
 		'guide': document.querySelector('.guide'),
@@ -28,10 +20,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 
 	// METHODS
 
-	this.init = function() {
-		// return the object
-		return this;
-	};
+	this.init = function() {};
 
 	this.update = function(id) {
 		// update all the elements with the id
@@ -49,7 +38,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			.replace(/{startLocation}/g, markers[0].location)
 			.replace(/{walkLocation}/g, GuideData[id].location)
 			.replace(/{walkDuration}/g, GuideData[id].duration)
-			.replace(/{walkLength}/g, GuideData[id].length)
+			.replace(/{walkDistance}/g, GuideData[id].distance)
 			.replace(/{endTransport}/g, markers[markers.length - 1].type)
 			.replace(/{endLocation}/g, markers[markers.length - 1].location);
 		// add the onclick handler
@@ -61,7 +50,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		var _this = this;
 		var description = '<p>' + GuideData[id].description.join('</p><p>') + '</p>';
 		var duration = GuideData[id].duration;
-		var length = GuideData[id].length;
+		var distance = GuideData[id].distance;
 		var gpx = this.config.gpx.replace(/{id}/g, id);
 		var markers = GuideData[id].markers;
 		var there = '<p>' + markers[0].description + '</p>';
@@ -71,7 +60,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		this.config.guide.innerHTML = this.config.guideTemplate.innerHTML
 			.replace(/{description}/g, description)
 			.replace(/{duration}/g, duration)
-			.replace(/{length}/g, length)
+			.replace(/{distance}/g, distance)
 			.replace(/{gpx}/g, gpx)
 			.replace(/{there}/g, there)
 			.replace(/{back}/g, back)
@@ -107,7 +96,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 
 	this.updateLandmarks = function(id) {
 		// gather the information
-		var prefix = (GuideData[id].assets) ? GuideData[id].assets.prefix : id;
+		var prefix = (GuideData[id].alias) ? GuideData[id].alias.prefix : id;
 		var landmark, landmarks = "";
 		var thumbnailTemplate = this.config.thumbnailTemplate.innerHTML;
 		// fill the guide with landmarks
@@ -132,8 +121,8 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 
 	this.updateMap = function(id) {
 		// get the properties if this is a segment of another walk
-		var prefix = (GuideData[id].assets && GuideData[id].assets.prefix)
-			? GuideData[id].assets.prefix
+		var prefix = (GuideData[id].alias && GuideData[id].alias.prefix)
+			? GuideData[id].alias.prefix
 			: id;
 		// add the click event to the map back button
 		this.config.return.addEventListener('click', this.onReturnFromMap.bind(this));
@@ -168,14 +157,14 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		// reset the wall
 		this.config.wall.className = this.config.wall.className.replace(/-active/g, '-passive');
 		// get the properties if this is a segment of another walk
-		var prefix = (GuideData[id].assets && GuideData[id].assets.prefix)
-			? GuideData[id].assets.prefix
+		var prefix = (GuideData[id].alias && GuideData[id].alias.prefix)
+			? GuideData[id].alias.prefix
 			: id;
-		var start = (GuideData[id].assets && GuideData[id].assets.start)
-			? GuideData[id].assets.start
+		var start = (GuideData[id].alias && GuideData[id].alias.start)
+			? GuideData[id].alias.start
 			: 0;
-		var end = (GuideData[id].assets && GuideData[id].assets.end)
-			? GuideData[id].assets.end + 1
+		var end = (GuideData[id].alias && GuideData[id].alias.end)
+			? GuideData[id].alias.end + 1
 			: null;
 		// get the photos
 		for (src in ExifData[prefix]) {
@@ -251,9 +240,6 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		}
 	};
 
-};
+  if(parent) this.init();
 
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = SydneyTrainWalks.Details;
-}
+};

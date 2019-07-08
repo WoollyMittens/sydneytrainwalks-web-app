@@ -1,11 +1,4 @@
-/*
-	Sydney Train Walks - Index View
-*/
-
-// create the constructor if needed
-var SydneyTrainWalks = SydneyTrainWalks || function() {};
-
-// extend the constructor
+// extend the class
 SydneyTrainWalks.prototype.Index = function(parent) {
 
 	// PROPERTIES
@@ -47,8 +40,6 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 		} else {
 			input.style.backgroundImage = 'none';
 		}
-		// return the object
-		return this;
 	};
 
 	this.update = function() {
@@ -71,7 +62,7 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 					.replace(/{startLocation}/g, markers[0].location)
 					.replace(/{walkLocation}/g, GuideData[id].location)
 					.replace(/{walkDuration}/g, GuideData[id].duration)
-					.replace(/{walkLength}/g, GuideData[id].length)
+					.replace(/{walkDistance}/g, GuideData[id].distance)
 					.replace(/{endTransport}/g, markers[markers.length - 1].type)
 					.replace(/{endLocation}/g, markers[markers.length - 1].location);
 				menuHtml += menuTemplate
@@ -150,8 +141,8 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 				break;
 			case 'length':
 				sorted = unsorted.sort(function(a, b) {
-					a = guide[a].length;
-					b = guide[b].length;
+					a = guide[a].distance;
+					b = guide[b].distance;
 					return a - b;
 				});
 				break;
@@ -241,9 +232,6 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 		this.parent.update(id, 'map');
 	};
 
-};
+  if(parent) this.init();
 
-// return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = SydneyTrainWalks.Index;
-}
+};

@@ -5,9 +5,9 @@
 @media all {
 
 	.directions {
-		@include transition-property(transform);
-		@include transition-duration(300ms);
-		@include translate(-100%, 0);
+		transition-property: transform;
+		transition-duration: 300ms;
+		transform: translate(-100%, 0);
 		display : block;
 		bottom : 4rem;
 		height : auto;
@@ -25,7 +25,7 @@
 
 	body.screen-guide .directions,
 	body.screen-photos .directions,
-	body.screen-map .directions { @include translate(0, 0); }
+	body.screen-map .directions { transform: translate(0, 0); }
 
 }
 @media (orientation: portrait) {
@@ -38,15 +38,15 @@
     on which screen should this be visible
 	*/
 
-	body.screen-guide .directions { @include translate(-100%, 0); }
-	body.screen-photos .directions { @include translate(-100%, 0); }
-	body.screen-map .directions { @include translate(0, 0); }
+	body.screen-guide .directions { transform: translate(-100%, 0); }
+	body.screen-photos .directions { transform: translate(-100%, 0); }
+	body.screen-map .directions { transform: translate(0, 0); }
 
 }
 @media print {
 
   .directions {
-		@include translate(0, 0);
+		transform: translate(0, 0);
 		position : relative !important;
 		top : auto !important;
 		right : auto !important;

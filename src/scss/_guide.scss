@@ -3,9 +3,9 @@
 */
 @media all {
 	.guide {
-		@include transition-property(transform);
-		@include transition-duration(300ms);
-		@include translate(100%, 0);
+		transition-property: transform;
+		transition-duration: 300ms;
+		transform: translate(100%, 0);
 		background: #fff;
 		border-left: solid 1px #000;
 		bottom: 4rem;
@@ -141,7 +141,7 @@
 	*/
 	body.screen-guide .guide,
 	body.screen-map .guide {
-		@include translate(0, 0);
+		transform: translate(0, 0);
 	}
 }
 @media (orientation: portrait) {
@@ -153,16 +153,16 @@
 	on which screen should this be visible
 	*/
 	body.screen-map .guide {
-		@include translate(100%, 0);
+		transform: translate(100%, 0);
 	}
 
 	body.screen-guide .guide {
-		@include translate(0, 0);
+		transform: translate(0, 0);
 	}
 }
 @media print {
 	.guide {
-		@include translate(0, 0);
+		transform: translate(0, 0);
 		position: relative !important;
 		top: auto !important;
 		right: auto !important;

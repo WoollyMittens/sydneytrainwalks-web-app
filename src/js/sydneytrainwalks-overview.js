@@ -1,12 +1,5 @@
-/*
-	Sydney Train Walks - Overview Map
-*/
-
-// create the constructor if needed
-var SydneyTrainWalks = SydneyTrainWalks || function() {};
-
-// extend the constructor
-SydneyTrainWalks.prototype.Overview = function(parent) {
+// extend the class
+SydneyTrainWalks.prototype.Overview = function (parent) {
 
   // PROPERTIES
 
@@ -41,8 +34,6 @@ SydneyTrainWalks.prototype.Overview = function(parent) {
       'exifData': null,
       'creditsTemplate': this.config.creditTemplate.innerHTML
     });
-    // return the object
-    return this;
   };
 
   this.processMarkers = function() {
@@ -60,9 +51,9 @@ SydneyTrainWalks.prototype.Overview = function(parent) {
     // if the GPX data is available anyway
     if (typeof GpxData != 'undefined') {
       // for every walk
-      for (var key in GuideData) {
+      for (var key in GpxData) {
         // only if this isn't an alias
-        if (!GuideData[key].local && GuideData[key].gps !== '_index') {
+        if (!GuideData[key].alias) {
           // add the route
 					routes.features = routes.features.concat(GpxData[key].features);
         }
@@ -79,9 +70,6 @@ SydneyTrainWalks.prototype.Overview = function(parent) {
     this.parent.update(id, 'map');
   };
 
-};
+  if(parent) this.init();
 
-// return as a require.js module
-if (typeof module !== 'undefined') {
-  exports = module.exports = SydneyTrainWalks.Overview;
-}
+};

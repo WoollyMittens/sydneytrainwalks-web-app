@@ -22,7 +22,7 @@
 
 		// determine the path of the assets
 		$assets = $id;
-		if (property_exists($json, 'assets')) { $assets = $json->{'assets'}->{'prefix'}; }
+		if (property_exists($json, 'alias')) { $assets = $json->{'alias'}->{'prefix'}; }
 
 	?>
 	<head>
@@ -78,7 +78,7 @@
 						<span class="sign from">From</span>
 						<span class="sign <?php print $firstMarker->{'type'}?>"><?php print $firstMarker->{'location'}?></span>
 						<span class="sign to">via</span>
-						<span class="sign park"><?php print $json->{'location'}?> <i><?php print $json->{'duration'}?>h / <?php print $json->{'length'}?>km</i></span>
+						<span class="sign park"><?php print $json->{'location'}?> <i><?php print $json->{'duration'}?>h / <?php print $json->{'distance'}?>km</i></span>
 						<span class="sign to">to</span>
 						<span class="sign <?php print $lastMarker->{'type'}?>"><?php print $lastMarker->{'location'}?></span>
 					</h2>
@@ -88,7 +88,7 @@
 						<h2>About this walk</h2>
 						<p><?php print join('</p><p>', $json->{'description'}) ?></p>
 						<p>
-							It takes about <?php print $json->{'duration'}?> hours to complete the full <?php print $json->{'length'}?> kilometre walk,
+							It takes about <?php print $json->{'duration'}?> hours to complete the full <?php print $json->{'distance'}?> kilometre walk,
 							but plan extra for plenty of breaks and photography stops.
 							Consider that there's a lot to see along the way.
 						</p>
@@ -156,17 +156,21 @@
 					<figure class="photowall">
 						<ul>
 							<?php
+
 								// find the files
 								$small = glob($inc . "small/" . $assets . "/*.jpg");
 								$medium = glob($inc . "medium/" . $assets . "/*.jpg");
 								$min = 0;
 								$max = count($small);
+
 								// apply the optional limit
-								if (property_exists($json, 'assets')) { $min = $json->{'assets'}->{'start'}; $max = $json->{'assets'}->{'end'} + 1; }
+								if (property_exists($json, 'alias')) { $min = $json->{'alias'}->{'start'}; $max = $json->{'alias'}->{'end'} + 1; }
+
 								// write the thumbnails
 								for ($a = $min; $a < $max; $a++) {
 									?><li><a class="cylinder-image" style="background-image:url('<?php echo $small[$a]?>');" href="<?php echo $medium[$a]?>"><img alt="" src="<?php echo $small[$a]?>"/></a></li><?php
 								}
+
 							?>
 						</ul>
 					</figure>
@@ -174,26 +178,16 @@
 					<script src="./inc/js/exif-data.js"></script>
 					<script src="./inc/js/scripts.js"></script>
 					<script>
-					//<!--
 
-						/*
-							map back button
-						*/
-
+						// map back button
 						var returnTo = 'guide';
 
-						/*
-							photo wall configuration
-						*/
-
+						// photo wall configuration
 						var photowall = new Photowall({
 							'element' : document.querySelector('.photowall')
 						});
 
-						/*
-							photo cylinder configuration
-						*/
-
+						// photo cylinder configuration
 						var photocylinder_guide = new Photocylinder({
 							'elements' : document.querySelectorAll('.guide .cylinder-image'),
 							'container' : document.querySelector('.guide'),
@@ -218,10 +212,7 @@
 							'closed' : function () { localmap.unindicate(); }
 						});
 
-						/*
-							locator buttons
-						*/
-
+						// locator buttons
 						var buttons = document.querySelectorAll('.guide .guide-locate');
 						var locate = function (button, evt) {
 							evt.preventDefault();
@@ -232,10 +223,7 @@
 							buttons[a].addEventListener('click', locate.bind(this, buttons[a]));
 						}
 
-						/*
-							local map configuration
-						*/
-
+						// local map configuration
 						var localmap = new Localmap({
 							'container': document.querySelector('.directions.localmap'),
 							'legend': null,
@@ -251,7 +239,6 @@
 							'creditsTemplate': 'Maps &copy; <a href="http://www.4umaps.eu/mountain-bike-hiking-bicycle-outdoor-topographic-map.htm" target="_blank">4UMaps</a>, Data &copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> and contributors, CC BY-SA'
 						});
 
-					//-->
 					</script>
 				</aside>
 				<footer class="toolbar">

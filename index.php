@@ -74,7 +74,7 @@
 								<option value="finish" data-source=".finish">Sort by end</option>
 								<option value="region" data-source=".park">Sort by region</option>
 								<option value="duration" data-source=".park i" data-type="number">Sort by duration</option>
-								<option value="length" data-source=".park i span" data-type="number">Sort by length</option>
+								<option value="distance" data-source=".park i span" data-type="number">Sort by distance</option>
 							</select>
 						</label>
 					</form>
@@ -101,7 +101,7 @@
 										<span class="sign from">From</span>
 										<span class="sign start <?php print $firstMarker->{'type'}?>"><?php print $firstMarker->{'location'}?></span>
 										<span class="sign to">via</span>
-										<span class="sign park"><?php print $value->{'location'}?> <i><?php print $value->{'duration'}?>h / <span><?php print $value->{'length'}?>km</span></i></span>
+										<span class="sign park"><?php print $value->{'location'}?> <i><?php print $value->{'duration'}?>h / <span><?php print $value->{'distance'}?>km</span></i></span>
 										<span class="sign to">to</span>
 										<span class="sign finish <?php print $lastMarker->{'type'}?>"><?php print $lastMarker->{'location'}?></span>
 									<?php
@@ -128,6 +128,8 @@
 			Maps &copy; <a href="http://www.4umaps.eu/">4UMaps</a>. Data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> and contributors, CC BY-SA
 		</script>
 		<script>
+
+			// after the page loads
 			window.addEventListener('load', function () {
 				// emulate the app's scope for the overview module
 				var sydneyTrainWalks = new SydneyTrainWalks();
@@ -143,10 +145,7 @@
 						document.location.href = './details.php?id=' + id;
 					}
 				});
-				sydneyTrainWalksOverview.init();
 			});
-		</script>
-		<script>
 
 			// ordering the menu
 			var _filters = new Filters({
@@ -161,10 +160,9 @@
 				_filters.sortBy(4);
 			}, 0);
 
-		</script>
-		<script>
 			// register the service worker for offline content
 			if('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js');
+			
 		</script>
 	</body>
 </html>

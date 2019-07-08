@@ -3,9 +3,9 @@
 */
 @media all {
 	.about {
-		@include transition-property(transform);
-		@include transition-duration(300ms);
-		@include translate(-100%, 0);
+		transition-property: transform;
+		transition-duration: 300ms;
+		transform: translate(-100%, 0);
 		background: #fff;
 		bottom: 4rem;
 		padding: 0;
@@ -55,7 +55,7 @@
 	on which screen should this be visible
 	*/
 	body.screen-about .about {
-		@include translate(0, 0);
+		transform: translate(0, 0);
 	}
 }
 @media (orientation: portrait) {
@@ -67,12 +67,12 @@
 	on which screen should this be visible
 	*/
 	body.screen-about .about {
-		@include translate(0, 0);
+		transform: translate(0, 0);
 	}
 }
 @media print {
 	.about {
-		@include translate(0, 0);
+		transform: translate(0, 0);
 		position: relative !important;
 		top: auto !important;
 		right: auto !important;

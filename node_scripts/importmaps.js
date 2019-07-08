@@ -59,7 +59,7 @@ var parseGuides = function() {
     // pick an item from the guidesQueue
     var guideData = guidesQueue.pop();
     // if this map isn't a subset of a larger walk
-    if (!guideData.assets) {
+    if (!guideData.alias) {
       // use the appropriate zoom level
       var zoom = (guideData.gps === '_index') ? overviewZoom : mapZoom;
       // convert the bounds to tiles

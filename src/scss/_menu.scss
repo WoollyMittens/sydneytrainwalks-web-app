@@ -3,9 +3,9 @@
 */
 @media all {
 	.navigation {
-		@include transition-property(transform);
-		@include transition-duration(300ms);
-		@include translate(-100%, 0);
+		transition-property: transform;
+		transition-duration: 300ms;
+		transform: translate(-100%, 0);
 		background: #fff none;
 		bottom: 4rem;
 		left: 0;
@@ -73,12 +73,12 @@
 	}
 
 	body.screen-menu .navigation {
-		@include translate(0, 0);
+		transform: translate(0, 0);
 	}
 }
 @media (orientation: landscape) {
 	.navigation {
-		@include translate(100%, 0);
+		transform: translate(100%, 0);
 		left: 50%;
 
 		p {
@@ -104,6 +104,6 @@
 	}
 
 	body.screen-menu .navigation {
-		@include translate(0, 0);
+		transform: translate(0, 0);
 	}
 }
