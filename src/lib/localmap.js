@@ -190,7 +190,7 @@ Localmap.prototype.Background = function (parent, onComplete) {
 		// store the initial position
     this.config.position.lon = (min.lon_cover + max.lon_cover) / 2;
 		this.config.position.lat = (min.lat_cover + max.lat_cover) / 2;
-		this.config.position.zoom = min.zoom;
+		this.config.position.zoom = min.zoom * 1.1;
 		// position the canvas
 		this.parent.element.style.transform = 'translate(' + centerX + 'px, ' + centerY + 'px) scale(' + min.zoom + ')';
 		// insert the image into the canvas
@@ -312,7 +312,8 @@ Localmap.prototype.Controls = function (parent) {
 	this.inertia = {x:0, y:0, z:0};
 	this.elements = {};
 	this.range = {};
-	this.steps = {x:0, y:0, z:0.02};
+	this.steps = {x:0, y:0, z:0.05};
+	this.zoom = null;
 
 	// METHODS
 
@@ -340,7 +341,16 @@ Localmap.prototype.Controls = function (parent) {
     this.config.container.removeChild(this.element);
   };
 
-	this.update = function() {};
+	this.update = function() {
+		// only redraw if the zoom has changed
+		if (this.zoom !== this.config.position.zoom) {
+			// check if the buttons are at their limits
+			this.elements.zoomin.disabled = (this.config.position.zoom === this.config.maximum.zoom);
+			this.elements.zoomout.disabled = (this.config.position.zoom === this.config.minimum.zoom);
+		}
+		// store the current zoom level
+		this.zoom = this.config.position.zoom;
+	};
 
 	this.reposition = function(hasInertia) {
 		// cancel any pending timeout
@@ -422,6 +432,10 @@ Localmap.prototype.Controls = function (parent) {
 
 	this.wheelInteraction = function(evt) {
 		evt.preventDefault();
+		// update the range
+		this.range.lon = this.config.maximum.lon - this.config.minimum.lon;
+		this.range.lat = this.config.maximum.lat - this.config.minimum.lat;
+		this.range.zoom = this.config.maximum.zoom - this.config.minimum.zoom;
 		// update the inertia
 		this.inertia.z += (evt.deltaY > 0) ? this.steps.z : -this.steps.z;
 		// movement with inertia
@@ -810,6 +824,7 @@ Localmap.prototype.Markers = function (parent, onMarkerClicked) {
 	this.elements = [];
 	this.onMarkerClicked = onMarkerClicked;
 	this.zoom = null;
+	this.delay = null;
 
 	// METHODS
 
@@ -833,14 +848,17 @@ Localmap.prototype.Markers = function (parent, onMarkerClicked) {
   };
 
 	this.update = function() {
-		// only resize if the zoom has changed
-		if (this.zoom !== this.config.position.zoom) this.resize();
+		// defer redraw until idle
+		if (this.config.position.zoom !== this.zoom) {
+			clearTimeout(this.delay);
+			this.delay = setTimeout(this.redraw.bind(this), 10);
+		}
 		// store the current zoom level
 		this.zoom = this.config.position.zoom;
 	};
 
-	this.resize = function() {
-		// resize the markers according to scale
+	this.redraw = function() {
+		// redraw the markers according to scale
 		var scale = 1 / this.config.position.zoom;
 		for (var key in this.elements) {
 			this.elements[key].style.transform = 'scale(' + scale + ')'
@@ -995,6 +1013,7 @@ Localmap.prototype.Route = function (parent) {
 	this.elements = [];
 	this.coordinates = [];
 	this.zoom = null;
+	this.delay = null;
 
 	// METHODS
 
@@ -1021,8 +1040,11 @@ Localmap.prototype.Route = function (parent) {
   };
 
 	this.update = function() {
-		// only redraw if the zoom has changed
-		if (this.zoom !== this.config.position.zoom) this.redraw();
+		// defer redraw until idle
+		if (this.config.position.zoom !== this.zoom) {
+			clearTimeout(this.delay);
+			this.delay = setTimeout(this.redraw.bind(this), 10);
+		}
 		// store the current zoom level
 		this.zoom = this.config.position.zoom;
 	};
@@ -1100,6 +1122,7 @@ Localmap.prototype.Scale = function (parent) {
 	this.config = parent.config;
 	this.element = document.createElement('div');
 	this.zoom = null;
+	this.delay = null;
 
 	// METHODS
 
@@ -1115,8 +1138,11 @@ Localmap.prototype.Scale = function (parent) {
   };
 
 	this.update = function() {
-		// only redraw if the zoom has changed
-		if (this.zoom !== this.config.position.zoom) this.redraw();
+		// defer redraw until idle
+		if (this.config.position.zoom !== this.zoom) {
+			clearTimeout(this.delay);
+			this.delay = setTimeout(this.redraw.bind(this), 10);
+		}
 		// store the current zoom level
 		this.zoom = this.config.position.zoom;
 	};
