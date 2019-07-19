@@ -42,6 +42,13 @@
   		&:hover {
   			background-color: #1565C0;
   		}
+
+			&[disabled],
+			&[disabled]:hover {
+				opacity: 0.7;
+				cursor: default;
+				background-color: #999;
+			}
   	}
 
 		&-busy {
