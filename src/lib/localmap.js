@@ -312,7 +312,7 @@ Localmap.prototype.Controls = function (parent) {
 	this.inertia = {x:0, y:0, z:0};
 	this.elements = {};
 	this.range = {};
-	this.steps = {x:0, y:0, z:0.03};
+	this.steps = {x:0.003, y:0.003, z:0.03};
 	this.zoom = null;
 	this.last = null;
 
@@ -410,6 +410,10 @@ Localmap.prototype.Controls = function (parent) {
 				this.inertia.y = (touches[0].clientY - previous[0].clientY) / this.range.y;
 				this.inertia.z = 0;
 			}
+			// limit the innertia
+			this.inertia.x = Math.max(Math.min(this.inertia.x, this.steps.x), -this.steps.x);
+			this.inertia.y = Math.max(Math.min(this.inertia.y, this.steps.y), -this.steps.y);
+			this.inertia.z *= this.config.position.zoom;
 			// movement without inertia
 			this.reposition(false);
 			// store the touches
