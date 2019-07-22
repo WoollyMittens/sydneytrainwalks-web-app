@@ -312,8 +312,9 @@ Localmap.prototype.Controls = function (parent) {
 	this.inertia = {x:0, y:0, z:0};
 	this.elements = {};
 	this.range = {};
-	this.steps = {x:0, y:0, z:0.05};
+	this.steps = {x:0, y:0, z:0.03};
 	this.zoom = null;
+	this.last = null;
 
 	// METHODS
 
@@ -363,11 +364,11 @@ Localmap.prototype.Controls = function (parent) {
 			false
 		);
 		// if the inertia is above a certain level
-		if (hasInertia && (Math.abs(this.inertia.x) > 0.0001 || Math.abs(this.inertia.y) > 0.0001 || Math.abs(this.inertia.z) > 0.0001)) {
+		if (hasInertia && (Math.abs(this.inertia.x) > 0.001 || Math.abs(this.inertia.y) > 0.001 || Math.abs(this.inertia.z) > 0.001)) {
 			// attenuate the inertia
 			this.inertia.x *= 0.9;
 			this.inertia.y *= 0.9;
-			this.inertia.z *= 0.7;
+			this.inertia.z *= 0.5;
 			// continue monitoring
 			this.animationFrame = window.requestAnimationFrame(this.reposition.bind(this, hasInertia));
 		}
@@ -395,6 +396,8 @@ Localmap.prototype.Controls = function (parent) {
 		var previous = this.touches;
 		// if there is interaction
 		if (previous) {
+			// cancel the double click
+			this.last = new Date() - 500;
 			// for multi touch
 			if (touches.length > 1 && previous.length > 1) {
 				var dX = (Math.abs(touches[0].clientX - touches[1].clientX) - Math.abs(previous[0].clientX - previous[1].clientX)) / this.range.x;
@@ -422,6 +425,9 @@ Localmap.prototype.Controls = function (parent) {
 	};
 
 	this.buttonInteraction = function(factor, evt) {
+		// cancel the double click
+		this.last = new Date() - 500;
+		// perform the zoom
 		this.parent.focus(
 			this.config.position.lon,
 			this.config.position.lat,
@@ -442,6 +448,22 @@ Localmap.prototype.Controls = function (parent) {
 		this.reposition(true);
 	};
 
+	this.dblclickInteraction = function(evt) {
+		// if the previous tap was short enough ago
+		if (new Date() - this.last < 250) {
+			console.log('double click', new Date() - this.last);
+			// zoom in on the map
+			this.parent.focus(
+				this.config.position.lon,
+				this.config.position.lat,
+				this.config.position.zoom * 1.5,
+				true
+			);
+		}
+		// update the time since the last click
+		this.last = new Date();
+	};
+
 	this.cancelInteraction = function(evt) {};
 
 	// EVENTS
@@ -450,6 +472,7 @@ Localmap.prototype.Controls = function (parent) {
 	this.config.container.addEventListener('mousemove', this.moveInteraction.bind(this));
 	this.config.container.addEventListener('mouseup', this.endInteraction.bind(this));
 	this.config.container.addEventListener('wheel', this.wheelInteraction.bind(this));
+	this.config.container.addEventListener('click', this.dblclickInteraction.bind(this));
 
 	this.config.container.addEventListener('touchstart', this.startInteraction.bind(this));
 	this.config.container.addEventListener('touchmove', this.moveInteraction.bind(this));
