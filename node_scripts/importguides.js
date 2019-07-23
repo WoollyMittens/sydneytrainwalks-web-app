@@ -145,7 +145,7 @@ var parseGuides = function (queue) {
 				// prefill the "bounds" from guides that are a subset of another guide
 				if (GuideData[key].alias && guidesData[prefix] && guidesData[prefix].bounds) {
 					var prefix = GuideData[key].alias.prefix;
-					GuideData[key].alias.bounds = guidesData[prefix].bounds;
+					GuideData[key].alias.bounds = GuideData[prefix] ? GuideData[prefix].bounds : guidesData[prefix].bounds;
 				}
 				// save the converted guide
 				fs.writeFile(source + item, JSON.stringify(GuideData[key]), function (error) {
