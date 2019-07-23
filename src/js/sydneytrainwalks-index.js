@@ -97,8 +97,8 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 
 	this.sortGuide = function(guide, option) {
 		var id,
-			unsorted = [];
-		sorted = [];
+			unsorted = [],
+			sorted = [];
 		// create an array of guides
 		for (id in guide) {
 			unsorted.push(id);

@@ -126,12 +126,6 @@ var Localmap = function(config) {
     this.update();
   };
 
-  this.onResize = function() {
-    // TODO: update measurements after resize
-  };
-
-  window.addEventListener('resize', this.onResize.bind(this));
-
   // CLASSES
 
   this.config.container.className += ' localmap-busy';
@@ -168,6 +162,8 @@ Localmap.prototype.Background = function (parent, onComplete) {
 		this.element.addEventListener('load', this.onBackgroundLoaded.bind(this));
 		this.element.setAttribute('class', 'localmap-background');
 		this.element.setAttribute('src', this.config.mapUrl);
+		// catch window resizes
+		window.addEventListener('resize', this.redraw.bind(this));
 	};
 
   this.stop = function() {
@@ -184,6 +180,9 @@ Localmap.prototype.Background = function (parent, onComplete) {
 		var max = this.config.maximum;
 		var displayWidth = this.element.naturalWidth / 2;
 		var displayHeight = this.element.naturalHeight / 2;
+		// calculate the limits
+		min.zoom = Math.max(container.offsetWidth / displayWidth, container.offsetHeight / displayHeight);
+		max.zoom = 2;
 		// calculate the center
 		var centerX = (container.offsetWidth - displayWidth * min.zoom) / 2;
 		var centerY = (container.offsetHeight - displayHeight * min.zoom) / 2;
@@ -200,16 +199,9 @@ Localmap.prototype.Background = function (parent, onComplete) {
 	// EVENTS
 
 	this.onBackgroundLoaded = function(evt) {
-		var container = this.config.container;
-		var min = this.config.minimum;
-		var max = this.config.maximum;
-		var displayWidth = this.element.naturalWidth / 2;
-		var displayHeight = this.element.naturalHeight / 2;
-		this.element.style.width = displayWidth + 'px';
-		this.element.style.height = displayHeight + 'px';
-		// extract the interpolation limits
-		min.zoom = Math.max(container.offsetWidth / displayWidth, container.offsetHeight / displayHeight);
-		max.zoom = 2;
+		// double up the bitmap to retina size
+		this.element.style.width = (this.element.naturalWidth / 2) + 'px';
+		this.element.style.height = (this.element.naturalHeight / 2) + 'px';
 		// center the background
 		this.redraw();
 		// resolve the promise
@@ -312,7 +304,7 @@ Localmap.prototype.Controls = function (parent) {
 	this.inertia = {x:0, y:0, z:0};
 	this.elements = {};
 	this.range = {};
-	this.steps = {x:0.003, y:0.003, z:0.03};
+	this.steps = {x:0.03, y:0.03, z:0.05};
 	this.zoom = null;
 	this.last = null;
 
@@ -368,7 +360,7 @@ Localmap.prototype.Controls = function (parent) {
 			// attenuate the inertia
 			this.inertia.x *= 0.9;
 			this.inertia.y *= 0.9;
-			this.inertia.z *= 0.5;
+			this.inertia.z = 0;
 			// continue monitoring
 			this.animationFrame = window.requestAnimationFrame(this.reposition.bind(this, hasInertia));
 		}
@@ -455,7 +447,6 @@ Localmap.prototype.Controls = function (parent) {
 	this.dblclickInteraction = function(evt) {
 		// if the previous tap was short enough ago
 		if (new Date() - this.last < 250) {
-			console.log('double click', new Date() - this.last);
 			// zoom in on the map
 			this.parent.focus(
 				this.config.position.lon,
@@ -878,7 +869,7 @@ Localmap.prototype.Markers = function (parent, onMarkerClicked) {
 		// defer redraw until idle
 		if (this.config.position.zoom !== this.zoom) {
 			clearTimeout(this.delay);
-			this.delay = setTimeout(this.redraw.bind(this), 10);
+			this.delay = setTimeout(this.redraw.bind(this), 100);
 		}
 		// store the current zoom level
 		this.zoom = this.config.position.zoom;
@@ -1070,7 +1061,7 @@ Localmap.prototype.Route = function (parent) {
 		// defer redraw until idle
 		if (this.config.position.zoom !== this.zoom) {
 			clearTimeout(this.delay);
-			this.delay = setTimeout(this.redraw.bind(this), 10);
+			this.delay = setTimeout(this.redraw.bind(this), 100);
 		}
 		// store the current zoom level
 		this.zoom = this.config.position.zoom;
