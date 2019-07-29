@@ -1229,7 +1229,7 @@ Localmap.prototype.Controls = function (parent) {
 	this.inertia = {x:0, y:0, z:0};
 	this.elements = {};
 	this.range = {};
-	this.steps = {x:0.03, y:0.03, z:0.05};
+	this.steps = {x:0.03, y:0.03, z:0.03};
 	this.zoom = null;
 	this.last = null;
 
@@ -1270,7 +1270,7 @@ Localmap.prototype.Controls = function (parent) {
 		this.zoom = this.config.position.zoom;
 	};
 
-	this.reposition = function(hasInertia) {
+	this.reposition = function(hasInertia, controlMethod) {
 		// cancel any pending timeout
 		window.cancelAnimationFrame(this.animationFrame);
 		// move the map according to the inertia
@@ -1283,15 +1283,16 @@ Localmap.prototype.Controls = function (parent) {
 		// if the inertia is above a certain level
 		if (hasInertia && (Math.abs(this.inertia.x) > 0.001 || Math.abs(this.inertia.y) > 0.001 || Math.abs(this.inertia.z) > 0.001)) {
 			// attenuate the inertia
-			this.inertia.x *= 0.9;
-			this.inertia.y *= 0.9;
+			var decay = (controlMethod == 'touch') ? 0.7 : 0.9;
+			this.inertia.x *= decay;
+			this.inertia.y *= decay;
 			this.inertia.z = 0;
 			// continue monitoring
-			this.animationFrame = window.requestAnimationFrame(this.reposition.bind(this, hasInertia));
+			this.animationFrame = window.requestAnimationFrame(this.reposition.bind(this, hasInertia, controlMethod));
 		}
 	};
 
-	this.startInteraction = function(evt) {
+	this.startInteraction = function(method, evt) {
 		// reset inertial movement
 		this.inertia.x = 0;
 		this.inertia.y = 0;
@@ -1306,7 +1307,7 @@ Localmap.prototype.Controls = function (parent) {
 		this.touches = evt.touches || [{ 'clientX': evt.clientX, 'clientY': evt.clientY }];
 	};
 
-	this.moveInteraction = function(evt) {
+	this.moveInteraction = function(method, evt) {
 		evt.preventDefault();
 		// retrieve the current and previous touches
 		var touches = evt.touches || [{ 'clientX': evt.clientX, 'clientY': evt.clientY }];
@@ -1332,17 +1333,17 @@ Localmap.prototype.Controls = function (parent) {
 			this.inertia.y = Math.max(Math.min(this.inertia.y, this.steps.y), -this.steps.y);
 			this.inertia.z *= this.config.position.zoom;
 			// movement without inertia
-			this.reposition(false);
+			this.reposition(false, method);
 			// store the touches
 			this.touches = touches;
 		}
 	};
 
-	this.endInteraction = function(evt) {
+	this.endInteraction = function(method, evt) {
 		// clear the interaction
 		this.touches = null;
 		// movement with inertia
-		this.reposition(true);
+		this.reposition(true, method);
 	};
 
 	this.buttonInteraction = function(factor, evt) {
@@ -1357,7 +1358,7 @@ Localmap.prototype.Controls = function (parent) {
 		);
 	};
 
-	this.wheelInteraction = function(evt) {
+	this.wheelInteraction = function(method, evt) {
 		evt.preventDefault();
 		// update the range
 		this.range.lon = this.config.maximum.lon - this.config.minimum.lon;
@@ -1366,10 +1367,10 @@ Localmap.prototype.Controls = function (parent) {
 		// update the inertia
 		this.inertia.z += (evt.deltaY > 0) ? this.steps.z : -this.steps.z;
 		// movement with inertia
-		this.reposition(true);
+		this.reposition(true, method);
 	};
 
-	this.dblclickInteraction = function(evt) {
+	this.dblclickInteraction = function(method, evt) {
 		// if the previous tap was short enough ago
 		if (new Date() - this.last < 250) {
 			// zoom in on the map
@@ -1384,20 +1385,22 @@ Localmap.prototype.Controls = function (parent) {
 		this.last = new Date();
 	};
 
-	this.cancelInteraction = function(evt) {};
+	this.cancelInteraction = function(method, evt) {
+		console.log('cancelInteraction');
+	};
 
 	// EVENTS
 
-	this.config.container.addEventListener('mousedown', this.startInteraction.bind(this));
-	this.config.container.addEventListener('mousemove', this.moveInteraction.bind(this));
-	this.config.container.addEventListener('mouseup', this.endInteraction.bind(this));
-	this.config.container.addEventListener('wheel', this.wheelInteraction.bind(this));
-	this.config.container.addEventListener('click', this.dblclickInteraction.bind(this));
+	this.config.container.addEventListener('mousedown', this.startInteraction.bind(this, 'mouse'));
+	this.config.container.addEventListener('mousemove', this.moveInteraction.bind(this, 'mouse'));
+	this.config.container.addEventListener('mouseup', this.endInteraction.bind(this, 'mouse'));
+	this.config.container.addEventListener('wheel', this.wheelInteraction.bind(this, 'mouse'));
+	this.config.container.addEventListener('click', this.dblclickInteraction.bind(this, 'mouse'));
 
-	this.config.container.addEventListener('touchstart', this.startInteraction.bind(this));
-	this.config.container.addEventListener('touchmove', this.moveInteraction.bind(this));
-	this.config.container.addEventListener('touchend', this.endInteraction.bind(this));
-	this.config.container.addEventListener('touchcancel', this.cancelInteraction.bind(this));
+	this.config.container.addEventListener('touchstart', this.startInteraction.bind(this, 'touch'));
+	this.config.container.addEventListener('touchmove', this.moveInteraction.bind(this, 'touch'));
+	this.config.container.addEventListener('touchend', this.endInteraction.bind(this, 'touch'));
+	this.config.container.addEventListener('touchcancel', this.cancelInteraction.bind(this, 'touch'));
 
 	this.start();
 
@@ -2010,7 +2013,7 @@ Localmap.prototype.Route = function (parent) {
 				x1 = parseInt((this.coordinates[key][0] - this.config.minimum.lon) / (this.config.maximum.lon - this.config.minimum.lon) * w);
 				y1 = parseInt((this.coordinates[key][1] - this.config.minimum.lat) / (this.config.maximum.lat - this.config.minimum.lat) * h);
         // if the step seems valid, draw the step
-  			if ((Math.abs(x1 - x0) + Math.abs(y1 - y0)) < 50) { ctx.lineTo(x1, y1); }
+  			if ((Math.abs(x1 - x0) + Math.abs(y1 - y0)) < 30) { ctx.lineTo(x1, y1); }
         // or jump unlikely/erroneous steps
         else { ctx.moveTo(x1, y1); }
         // store current step as the previous step
