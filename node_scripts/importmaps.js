@@ -26,7 +26,7 @@ const tileTemplate = 'https://tile.thunderforest.com/neighbourhood/{z}/{x}/{y}.p
 const fs = require('fs');
 const {Image, createCanvas} = require('canvas');
 const request = require('request');
-const guidesData = require('../inc/json/guides.json');
+const guideCache = require('../inc/json/guides.json');
 const targetPath = '../src/maps/';
 const tileCache = '../src/tiles/{z}/{x}/{y}.png';
 const tileTemplate = 'http://4umaps.eu/{z}/{x}/{y}.png';
@@ -46,7 +46,7 @@ var tile2lat = function tile2lat(y,z) { var n=Math.PI-2*Math.PI*y/Math.pow(2,z);
 
 var generateGuidesQueue = function() {
   // get the file list
-  var guidesQueue = Object.keys(guidesData).map(function(index){ return guidesData[index]; });
+  var guidesQueue = Object.keys(guideCache).map(function(index){ return guideCache[index]; });
 	// truncate the guidesQueue for testing
 	//guidesQueue.length = 3;
 	// return the guidesQueue
@@ -61,7 +61,7 @@ var parseGuides = function() {
     // if this map isn't a subset of a larger walk
     if (!guideData.alias) {
       // use the appropriate zoom level
-      var zoom = (guideData.gps === '_index') ? overviewZoom : mapZoom;
+      var zoom = (guideData.key === '_index') ? overviewZoom : mapZoom;
       // convert the bounds to tiles
       minX = long2tile(guideData.bounds.west, zoom);
       minY = lat2tile(guideData.bounds.north, zoom);
@@ -82,7 +82,7 @@ var parseGuides = function() {
           });
         }
       }
-      downloadTiles(guideData.gps);
+      downloadTiles(guideData.key);
     }
     // otherwise skip it
     else {

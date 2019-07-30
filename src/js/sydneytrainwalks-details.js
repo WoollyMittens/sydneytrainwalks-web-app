@@ -96,7 +96,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 
 	this.updateLandmarks = function(id) {
 		// gather the information
-		var prefix = (GuideData[id].alias) ? GuideData[id].alias.prefix : id;
+		var prefix = (GuideData[id].alias) ? GuideData[id].alias.key : id;
 		var landmark, landmarks = "";
 		var thumbnailTemplate = this.config.thumbnailTemplate.innerHTML;
 		// fill the guide with landmarks
@@ -121,8 +121,8 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 
 	this.updateMap = function(id) {
 		// get the properties if this is a segment of another walk
-		var prefix = (GuideData[id].alias && GuideData[id].alias.prefix)
-			? GuideData[id].alias.prefix
+		var prefix = (GuideData[id].alias && GuideData[id].alias.key)
+			? GuideData[id].alias.key
 			: id;
 		// add the click event to the map back button
 		this.config.return.addEventListener('click', this.onReturnFromMap.bind(this));
@@ -132,18 +132,22 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		}
 		// start the map
 		this.config.guideMap = new Localmap({
+			'key': id,
 			'container': this.config.localmap,
 			'legend': null,
-			'thumbsUrl': this.config.local + '/small/' + prefix + '/',
-			'photosUrl': this.config.remote + '/medium/' + prefix + '/',
+			// assets
+			'thumbsUrl': this.config.local + '/small/{key}/',
+			'photosUrl': this.config.remote + '/medium/{key}/',
 			'markersUrl': this.config.local + '/img/marker-{type}.svg',
-			'guideUrl': this.config.local + '/guides/' + id + '.json',
-			'routeUrl': this.config.remote + '/gpx/' + id + '.gpx',
-			'mapUrl': this.config.local + '/maps/' + prefix + '.jpg',
 			'exifUrl': this.config.exif,
-			'guideData': GuideData[id],
-			'routeData': GpxData[id],
-			'exifData': ExifData[prefix],
+			'guideUrl': this.config.local + '/guides/{key}.json',
+			'routeUrl': this.config.remote + '/gpx/{key}.gpx',
+			'mapUrl': this.config.local + '/maps/{key}.jpg',
+			// cache
+			'guideData': GuideData,
+			'routeData': GpxData,
+			'exifData': ExifData,
+			// attribution
 			'creditsTemplate': this.config.creditTemplate.innerHTML
 		});
 	};
@@ -157,8 +161,8 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		// reset the wall
 		this.config.wall.className = this.config.wall.className.replace(/-active/g, '-passive');
 		// get the properties if this is a segment of another walk
-		var prefix = (GuideData[id].alias && GuideData[id].alias.prefix)
-			? GuideData[id].alias.prefix
+		var prefix = (GuideData[id].alias && GuideData[id].alias.key)
+			? GuideData[id].alias.key
 			: id;
 		var start = (GuideData[id].alias && GuideData[id].alias.start)
 			? GuideData[id].alias.start

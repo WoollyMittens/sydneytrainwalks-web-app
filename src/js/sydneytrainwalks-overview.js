@@ -20,18 +20,23 @@ SydneyTrainWalks.prototype.Overview = function (parent) {
 
   this.init = function() {
     // generate the map
-    this.overviewMap = new Localmap({
+    var localmap = new Localmap({
+      'key': '_index',
       'container': this.config.overview,
       'legend': null,
-      'assetsUrl': null,
+      // assets
+      'thumbsUrl': null,
+      'photosUrl': null,
       'markersUrl': this.config.local + '/img/marker-{type}.svg',
+      'exifUrl': null,
       'guideUrl': null,
       'routeUrl': null,
-      'mapUrl': this.config.local + '/maps/_index.jpg',
-      'exifUrl': null,
+      'mapUrl': this.config.local + '/maps/{key}.jpg',
+      // cache
       'guideData': this.processMarkers(),
       'routeData': this.mergeRoutes(),
       'exifData': null,
+      // attribution
       'creditsTemplate': this.config.creditTemplate.innerHTML
     });
   };
@@ -43,11 +48,11 @@ SydneyTrainWalks.prototype.Overview = function (parent) {
       marker.description = '';
       marker.callback = _this.onMarkerClicked.bind(_this, marker.id);
     });
-    return GuideData['_index'];
+    return GuideData;
   };
 
   this.mergeRoutes = function() {
-    var routes = {'features':[]};
+    var routes = {'_index':{'features':[]}};
     // if the GPX data is available anyway
     if (typeof GpxData != 'undefined') {
       // for every walk
@@ -55,7 +60,7 @@ SydneyTrainWalks.prototype.Overview = function (parent) {
         // only if this isn't an alias
         if (!GuideData[key].alias) {
           // add the route
-					routes.features = routes.features.concat(GpxData[key].features);
+					routes['_index'].features = routes['_index'].features.concat(GpxData[key].features);
         }
       }
     }

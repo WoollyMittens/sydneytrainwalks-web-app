@@ -1,8 +1,8 @@
 // constants
 var fs = require('fs');
-var guidesData = require('../inc/json/guides.json');
-var exifData = require('../inc/json/photos.json');
-var gpsData = require('../inc/json/routes.json');
+var guideCache = require('../inc/json/guides.json');
+var exifCache = require('../inc/json/photos.json');
+var gpsCache = require('../inc/json/routes.json');
 var source = '../src/guides/';
 var destPath = '../inc/js/guide-data.js';
 var jsonPath = '../inc/json/guides.json';
@@ -47,7 +47,7 @@ var generateQueue = function () {
 // compile a summary of the guide in the output file
 var addIndex = function () {
 	var overview = {
-		'gps': '_index',
+		'key': '_index',
 		'bounds': {},
 		'markers': []
 	};
@@ -102,7 +102,7 @@ var parseGuides = function (queue) {
 				var key = item.split('.js')[0];
 				GuideData[key] = JSON.parse(data.toString());
 				// provide lat and lon for the end points
-				var routeData = flattenCoordinates(gpsData[key]);
+				var routeData = flattenCoordinates(gpsCache[key]);
 				var startMarker = GuideData[key].markers[0];
 				if (!startMarker.lon) {
 					startMarker.lon = routeData[0][0];
@@ -115,12 +115,12 @@ var parseGuides = function (queue) {
 				}
 				// add the photo exif data to markers with a photo
 				var markerData;
-				var alias = (GuideData[key].alias) ? GuideData[key].alias.prefix : key;
+				var alias = (GuideData[key].alias) ? GuideData[key].alias.key : key;
 				for (var marker in GuideData[key].markers) {
 					markerData = GuideData[key].markers[marker];
 					if (markerData.photo) {
-						markerData.lon = exifData[alias][markerData.photo].lon,
-						markerData.lat = exifData[alias][markerData.photo].lat
+						markerData.lon = exifCache[alias][markerData.photo].lon,
+						markerData.lat = exifCache[alias][markerData.photo].lat
 					}
 				}
 				// determine map bounds
@@ -143,9 +143,8 @@ var parseGuides = function (queue) {
 				GuideData[key].bounds.south = tile2lat(lat2tile(south, 15), 15);
 				GuideData[key].bounds.east = tile2long(long2tile(east, 15), 15);
 				// prefill the "bounds" from guides that are a subset of another guide
-				if (GuideData[key].alias && guidesData[prefix] && guidesData[prefix].bounds) {
-					var prefix = GuideData[key].alias.prefix;
-					GuideData[key].alias.bounds = GuideData[prefix] ? GuideData[prefix].bounds : guidesData[prefix].bounds;
+				if (GuideData[key].alias && guideCache[alias] && guideCache[alias].bounds) {
+					GuideData[key].alias.bounds = guideCache[alias].bounds;
 				}
 				// save the converted guide
 				fs.writeFile(source + item, JSON.stringify(GuideData[key]), function (error) {

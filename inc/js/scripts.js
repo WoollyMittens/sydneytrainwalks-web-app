@@ -231,7 +231,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 
 	this.updateLandmarks = function(id) {
 		// gather the information
-		var prefix = (GuideData[id].alias) ? GuideData[id].alias.prefix : id;
+		var prefix = (GuideData[id].alias) ? GuideData[id].alias.key : id;
 		var landmark, landmarks = "";
 		var thumbnailTemplate = this.config.thumbnailTemplate.innerHTML;
 		// fill the guide with landmarks
@@ -256,8 +256,8 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 
 	this.updateMap = function(id) {
 		// get the properties if this is a segment of another walk
-		var prefix = (GuideData[id].alias && GuideData[id].alias.prefix)
-			? GuideData[id].alias.prefix
+		var prefix = (GuideData[id].alias && GuideData[id].alias.key)
+			? GuideData[id].alias.key
 			: id;
 		// add the click event to the map back button
 		this.config.return.addEventListener('click', this.onReturnFromMap.bind(this));
@@ -267,18 +267,22 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		}
 		// start the map
 		this.config.guideMap = new Localmap({
+			'key': id,
 			'container': this.config.localmap,
 			'legend': null,
-			'thumbsUrl': this.config.local + '/small/' + prefix + '/',
-			'photosUrl': this.config.remote + '/medium/' + prefix + '/',
+			// assets
+			'thumbsUrl': this.config.local + '/small/{key}/',
+			'photosUrl': this.config.remote + '/medium/{key}/',
 			'markersUrl': this.config.local + '/img/marker-{type}.svg',
-			'guideUrl': this.config.local + '/guides/' + id + '.json',
-			'routeUrl': this.config.remote + '/gpx/' + id + '.gpx',
-			'mapUrl': this.config.local + '/maps/' + prefix + '.jpg',
 			'exifUrl': this.config.exif,
-			'guideData': GuideData[id],
-			'routeData': GpxData[id],
-			'exifData': ExifData[prefix],
+			'guideUrl': this.config.local + '/guides/{key}.json',
+			'routeUrl': this.config.remote + '/gpx/{key}.gpx',
+			'mapUrl': this.config.local + '/maps/{key}.jpg',
+			// cache
+			'guideData': GuideData,
+			'routeData': GpxData,
+			'exifData': ExifData,
+			// attribution
 			'creditsTemplate': this.config.creditTemplate.innerHTML
 		});
 	};
@@ -292,8 +296,8 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		// reset the wall
 		this.config.wall.className = this.config.wall.className.replace(/-active/g, '-passive');
 		// get the properties if this is a segment of another walk
-		var prefix = (GuideData[id].alias && GuideData[id].alias.prefix)
-			? GuideData[id].alias.prefix
+		var prefix = (GuideData[id].alias && GuideData[id].alias.key)
+			? GuideData[id].alias.key
 			: id;
 		var start = (GuideData[id].alias && GuideData[id].alias.start)
 			? GuideData[id].alias.start
@@ -712,18 +716,23 @@ SydneyTrainWalks.prototype.Overview = function (parent) {
 
   this.init = function() {
     // generate the map
-    this.overviewMap = new Localmap({
+    var localmap = new Localmap({
+      'key': '_index',
       'container': this.config.overview,
       'legend': null,
-      'assetsUrl': null,
+      // assets
+      'thumbsUrl': null,
+      'photosUrl': null,
       'markersUrl': this.config.local + '/img/marker-{type}.svg',
+      'exifUrl': null,
       'guideUrl': null,
       'routeUrl': null,
-      'mapUrl': this.config.local + '/maps/_index.jpg',
-      'exifUrl': null,
+      'mapUrl': this.config.local + '/maps/{key}.jpg',
+      // cache
       'guideData': this.processMarkers(),
       'routeData': this.mergeRoutes(),
       'exifData': null,
+      // attribution
       'creditsTemplate': this.config.creditTemplate.innerHTML
     });
   };
@@ -735,11 +744,11 @@ SydneyTrainWalks.prototype.Overview = function (parent) {
       marker.description = '';
       marker.callback = _this.onMarkerClicked.bind(_this, marker.id);
     });
-    return GuideData['_index'];
+    return GuideData;
   };
 
   this.mergeRoutes = function() {
-    var routes = {'features':[]};
+    var routes = {'_index':{'features':[]}};
     // if the GPX data is available anyway
     if (typeof GpxData != 'undefined') {
       // for every walk
@@ -747,7 +756,7 @@ SydneyTrainWalks.prototype.Overview = function (parent) {
         // only if this isn't an alias
         if (!GuideData[key].alias) {
           // add the route
-					routes.features = routes.features.concat(GpxData[key].features);
+					routes['_index'].features = routes['_index'].features.concat(GpxData[key].features);
         }
       }
     }
@@ -937,6 +946,8 @@ var Localmap = function(config) {
   // PROPERTIES
 
   this.config = {
+    'key': null,
+    'alias': null,
     'container': null,
     'canvasElement': null,
     'thumbsUrl': null,
@@ -1048,7 +1059,14 @@ var Localmap = function(config) {
     // remove the busy indicator
     this.config.container.className = this.config.container.className.replace(/ localmap-busy/g, '');
     // global update
-    this.update();
+    var max = this.config.maximum;
+    var min = this.config.minimum;
+    this.focus(
+      (max.lon - min.lon) / 2 + min.lon,
+      (max.lat - min.lat) / 2 + min.lat,
+      1.1,
+      false
+    );
   };
 
   // CLASSES
@@ -1077,16 +1095,22 @@ Localmap.prototype.Background = function (parent, onComplete) {
 
 	this.parent = parent;
 	this.config = parent.config;
-	this.element = new Image();
+	this.element = null;
+	this.image = null;
 	this.onComplete = onComplete;
 
 	// METHODS
 
 	this.start = function() {
-		// load the map
-		this.element.addEventListener('load', this.onBackgroundLoaded.bind(this));
+		var key = this.config.alias || this.config.key;
+		// create the canvas
+		this.element = document.createElement('canvas');
 		this.element.setAttribute('class', 'localmap-background');
-		this.element.setAttribute('src', this.config.mapUrl);
+		this.parent.element.appendChild(this.element);
+		// load the map
+		this.image = new Image();
+		this.image.addEventListener('load', this.onBackgroundLoaded.bind(this));
+		this.image.setAttribute('src', this.config.mapUrl.replace('{key}', key));
 		// catch window resizes
 		window.addEventListener('resize', this.redraw.bind(this));
 	};
@@ -1101,33 +1125,35 @@ Localmap.prototype.Background = function (parent, onComplete) {
 	this.redraw = function() {
 		var container = this.config.container;
 		var element = this.element;
+		var image = this.image;
 		var min = this.config.minimum;
 		var max = this.config.maximum;
-		var displayWidth = this.element.naturalWidth / 2;
-		var displayHeight = this.element.naturalHeight / 2;
+		// use the bounds of subsets of walks
+		var pixelsPerLon = image.naturalWidth / (max.lon - min.lon);
+		var pixelsPerLat = image.naturalHeight / (max.lat - min.lat);
+		var offsetWidth = (min.lon - min.lon_cover) * pixelsPerLon;
+		var offsetHeight = (min.lat - min.lat_cover) * pixelsPerLat;
+		var croppedWidth = (max.lon_cover - min.lon_cover) * pixelsPerLon;
+		var croppedHeight = (max.lat_cover - min.lat_cover) * pixelsPerLat;
+		var displayWidth = croppedWidth / 2;
+		var displayHeight = croppedHeight / 2;
+		// set the size of the canvas to the bitmap
+		element.width = croppedWidth;
+		element.height = croppedHeight;
+		// double up the bitmap to retina size
+		element.style.width = displayWidth + 'px';
+		element.style.height = displayHeight + 'px';
 		// calculate the limits
 		min.zoom = Math.max(container.offsetWidth / displayWidth, container.offsetHeight / displayHeight);
 		max.zoom = 2;
-		// calculate the center
-		var centerX = (container.offsetWidth - displayWidth * min.zoom) / 2;
-		var centerY = (container.offsetHeight - displayHeight * min.zoom) / 2;
-		// store the initial position
-    this.config.position.lon = (min.lon_cover + max.lon_cover) / 2;
-		this.config.position.lat = (min.lat_cover + max.lat_cover) / 2;
-		this.config.position.zoom = min.zoom * 1.1;
-		// position the canvas
-		this.parent.element.style.transform = 'translate(' + centerX + 'px, ' + centerY + 'px) scale(' + min.zoom + ')';
-		// insert the image into the canvas
-		this.parent.element.appendChild(this.element);
+		// paste the image into the canvas
+		element.getContext('2d').drawImage(image, offsetWidth, offsetHeight);
 	};
 
 	// EVENTS
 
 	this.onBackgroundLoaded = function(evt) {
-		// double up the bitmap to retina size
-		this.element.style.width = (this.element.naturalWidth / 2) + 'px';
-		this.element.style.height = (this.element.naturalHeight / 2) + 'px';
-		// center the background
+		// position the background
 		this.redraw();
 		// resolve the promise
 		onComplete();
@@ -1138,7 +1164,7 @@ Localmap.prototype.Background = function (parent, onComplete) {
 };
 
 // extend the class
-Localmap.prototype.Canvas = function (parent, onBackgroundComplete, onMarkerClicked, onMapFocus) {
+Localmap.prototype.Canvas = function (parent, onComplete, onMarkerClicked, onMapFocus) {
 
 	// PROPERTIES
 
@@ -1146,6 +1172,9 @@ Localmap.prototype.Canvas = function (parent, onBackgroundComplete, onMarkerClic
 	this.config = parent.config;
 	this.element = document.createElement('div');
 	this.config.canvasElement = this.element;
+	this.onComplete = onComplete;
+	this.onMarkerClicked = onMarkerClicked;
+	this.onMapFocus = onMapFocus;
 
 	// METHODS
 
@@ -1155,6 +1184,8 @@ Localmap.prototype.Canvas = function (parent, onBackgroundComplete, onMarkerClic
 		this.element.addEventListener('transitionend', this.onUpdated.bind(this));
 		// add the canvas to the parent container
 		this.config.container.appendChild(this.element);
+		// start adding components in turn
+		this.addMarkers();
 	};
 
   this.stop = function() {
@@ -1182,8 +1213,8 @@ Localmap.prototype.Canvas = function (parent, onBackgroundComplete, onMarkerClic
 		var max = this.config.maximum;
 		var pos = this.config.position;
 		// convert the lon,lat to x,y
-		var centerX = (pos.lon - min.lon) / (max.lon - min.lon) * element.offsetWidth;
-		var centerY = (pos.lat - min.lat) / (max.lat - min.lat) * element.offsetHeight;
+		var centerX = (pos.lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * element.offsetWidth;
+		var centerY = (pos.lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * element.offsetHeight;
 		// limit the zoom
 		var zoom = Math.max(Math.min(pos.zoom, max.zoom), min.zoom);
 		// convert the center into an offset
@@ -1200,16 +1231,28 @@ Localmap.prototype.Canvas = function (parent, onBackgroundComplete, onMarkerClic
 	// CLASSES
 
   this.components = {
-		background: new parent.Background(this, onBackgroundComplete),
-		markers: new parent.Markers(this, onMarkerClicked),
-		indicator: new parent.Indicator(this, onMarkerClicked, onMapFocus),
-		route: new parent.Route(this),
+		indicator: new parent.Indicator(this, this.onMarkerClicked.bind(this), this.onMapFocus.bind(this)),
 		location: new parent.Location(this)
   };
 
 	// EVENTS
 
-	this.onUpdated = function (evt) {
+	this.addMarkers = function() {
+		// add the markers to the canvas
+		this.components.markers = new parent.Markers(this, this.onMarkerClicked.bind(this), this.addBackground.bind(this));
+	};
+
+	this.addBackground = function() {
+		// add the background to the canvas
+		this.components.background = new parent.Background(this, this.addRoute.bind(this));
+	};
+
+	this.addRoute = function() {
+		// add the route to the canvas
+		this.components.route = new parent.Route(this, this.onComplete.bind(this));
+	};
+
+	this.onUpdated = function(evt) {
 		// remove the transition
 		this.element.className = this.element.className.replace(/ localmap-canvas-transition/g, '');
 	};
@@ -1298,8 +1341,8 @@ Localmap.prototype.Controls = function (parent) {
 		this.inertia.y = 0;
 		this.inertia.z = 0;
 		// update the interpolation interval
-		this.range.lon = this.config.maximum.lon - this.config.minimum.lon;
-		this.range.lat = this.config.maximum.lat - this.config.minimum.lat;
+		this.range.lon = this.config.maximum.lon_cover - this.config.minimum.lon_cover;
+		this.range.lat = this.config.maximum.lat_cover - this.config.minimum.lat_cover;
 		this.range.zoom = this.config.maximum.zoom - this.config.minimum.zoom;
 		this.range.x = this.config.canvasElement.offsetWidth * this.config.position.zoom;
 		this.range.y = this.config.canvasElement.offsetHeight * this.config.position.zoom;
@@ -1361,8 +1404,8 @@ Localmap.prototype.Controls = function (parent) {
 	this.wheelInteraction = function(method, evt) {
 		evt.preventDefault();
 		// update the range
-		this.range.lon = this.config.maximum.lon - this.config.minimum.lon;
-		this.range.lat = this.config.maximum.lat - this.config.minimum.lat;
+		this.range.lon = this.config.maximum.lon_cover - this.config.minimum.lon_cover;
+		this.range.lat = this.config.maximum.lat_cover - this.config.minimum.lat_cover;
 		this.range.zoom = this.config.maximum.zoom - this.config.minimum.zoom;
 		// update the inertia
 		this.inertia.z += (evt.deltaY > 0) ? this.steps.z : -this.steps.z;
@@ -1488,8 +1531,9 @@ Localmap.prototype.Indicator = function (parent, onMarkerClicked, onMapFocus) {
     var lon = input.getAttribute('data-lon') || input.getAttribute('lon');
     var lat = input.getAttribute('data-lat') || input.getAttribute('lat');
     // try to get the coordinates from the cached exif data
+		var key = this.config.alias || this.config.key;
     var filename = (source) ? source.split('/').pop() : null;
-    var cached = (this.config.exifData) ? this.config.exifData[filename] : {};
+    var cached = (this.config.exifData && this.config.exifData[key]) ? this.config.exifData[key][filename] : {};
     // populate the indicator's model
     this.config.indicator = {
       'photo': filename,
@@ -1538,15 +1582,15 @@ Localmap.prototype.Indicator = function (parent, onMarkerClicked, onMapFocus) {
 		var lon = this.config.indicator.lon;
 		var lat = this.config.indicator.lat;
 		// if the location is within bounds
-		if (lon > min.lon && lon < max.lon && lat < min.lat && lat > max.lat) {
+		if (lon > min.lon_cover && lon < max.lon_cover && lat < min.lat_cover && lat > max.lat_cover) {
 			// store the new position
 			this.lon = lon;
 			this.lat = lat;
 			// display the marker
 			this.element.style.cursor = (this.config.indicator.description) ? 'pointer' : 'default';
 			this.element.style.display = 'block';
-			this.element.style.left = ((lon - min.lon) / (max.lon - min.lon) * 100) + '%';
-			this.element.style.top = ((lat - min.lat) / (max.lat - min.lat) * 100) + '%';
+			this.element.style.left = ((lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
+			this.element.style.top = ((lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';
 		// otherwise
 		} else {
 			// hide the marker
@@ -1617,18 +1661,21 @@ Localmap.prototype.Legend = function (parent, onLegendClicked) {
   };
 
 	this.update = function() {
+		var key = this.config.key;
+		var guideData = this.config.guideData[key];
     // write the legend if needed and available
-    if (this.config.legend && this.elements.length === 0) this.elements = this.config.guideData.markers.map(this.addDefinition.bind(this));
+    if (this.config.legend && this.elements.length === 0){
+			this.elements = guideData.markers.map(this.addDefinition.bind(this));
+		}
   };
 
-  this.addDefinition = function(markerData, index) {
+  this.addDefinition = function(markerData) {
     var definitionData = {};
     // if the marker has a description
     if (markerData.description) {
       // format the path to the external assets
-      var guideData = this.config.guideData;
-      var key = (guideData.alias) ? guideData.alias.prefix : guideData.gps;
-      var image = (markerData.photo) ? this.config.thumbsUrl + markerData.photo : this.config.markersUrl.replace('{type}', markerData.type);
+			var key = this.config.alias || this.config.key;
+      var image = (markerData.photo) ? this.config.thumbsUrl.replace('{key}', key) + markerData.photo : this.config.markersUrl.replace('{type}', markerData.type);
       var text = markerData.description || markerData.type;
       // create a container for the elements
       var fragment = document.createDocumentFragment();
@@ -1740,11 +1787,11 @@ Localmap.prototype.Location = function (parent) {
 		var lon = position.coords.longitude;
 		var lat = position.coords.latitude;
 		// if the location is within bounds
-		if (lon > min.lon && lon < max.lon && lat < min.lat && lat > max.lat) {
+		if (lon > min.lon_cover && lon < max.lon_cover && lat < min.lat_cover && lat > max.lat_cover) {
 			// display the marker
 			this.element.style.display = 'block';
-			this.element.style.left = ((lon - min.lon) / (max.lon - min.lon) * 100) + '%';
-			this.element.style.top = ((lat - min.lat) / (max.lat - min.lat) * 100) + '%';
+			this.element.style.left = ((lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
+			this.element.style.top = ((lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';
 		// otherwise
 		} else {
 			// hide the marker
@@ -1761,22 +1808,24 @@ Localmap.prototype.Location = function (parent) {
 };
 
 // extend the class
-Localmap.prototype.Markers = function (parent, onMarkerClicked) {
+Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
 
 	// PROPERTIES
 
 	this.parent = parent;
 	this.config = parent.config;
 	this.elements = [];
-	this.onMarkerClicked = onMarkerClicked;
 	this.zoom = null;
 	this.delay = null;
+	this.onComplete = onComplete;
+	this.onClicked = onClicked;
 
 	// METHODS
 
 	this.start = function() {
+		var key = this.config.key;
 		// if cached data is available
-		if (this.config.guideData) {
+		if (this.config.guideData && this.config.guideData[key]) {
 			// add the markers from the guide
 			this.addGuide();
 		// otherwise
@@ -1784,7 +1833,7 @@ Localmap.prototype.Markers = function (parent, onMarkerClicked) {
 			// load the guide's JSON first
 			var guideXhr = new XMLHttpRequest();
 			guideXhr.addEventListener('load', this.onGuideLoaded.bind(this));
-			guideXhr.open('GET', this.config.guideUrl, true);
+			guideXhr.open('GET', this.config.guideUrl.replace('{key}', this.config.key), true);
 			guideXhr.send();
 		}
 	};
@@ -1813,10 +1862,13 @@ Localmap.prototype.Markers = function (parent, onMarkerClicked) {
 
 	this.addGuide = function() {
 		var config = this.config;
-		var guideData = this.config.guideData;
+		var key = this.config.key;
+		var guideData = this.config.guideData[key];
+		// store the key
+		config.alias = (guideData.alias) ? guideData.alias.key : guideData.key;
 		// store the interpolation limits
-		var min = this.config.minimum;
-		var max = this.config.maximum;
+		var min = config.minimum;
+		var max = config.maximum;
 		min.lon = (guideData.alias) ? guideData.alias.bounds.west : guideData.bounds.west;
 		min.lat = (guideData.alias) ? guideData.alias.bounds.north : guideData.bounds.north;
 		max.lon = (guideData.alias) ? guideData.alias.bounds.east : guideData.bounds.east;
@@ -1831,12 +1883,14 @@ Localmap.prototype.Markers = function (parent, onMarkerClicked) {
 		config.position.lat = (max.lat_cover - min.lat_cover) / 2;
 		// position every marker in the guide
 		guideData.markers.map(this.addMarker.bind(this));
+		// resolve completion
+		this.onComplete();
 	};
 
 	this.addMarker = function(markerData) {
 		// add either a landmark or a waypoint to the map
 		markerData.element = (markerData.photo) ? this.addLandmark(markerData) : this.addWaypoint(markerData);
-		markerData.element.addEventListener('click', this.onMarkerClicked.bind(this, markerData));
+		markerData.element.addEventListener('click', this.onClicked.bind(this, markerData));
 		this.parent.element.appendChild(markerData.element);
 		this.elements.push(markerData.element);
 	}
@@ -1846,8 +1900,8 @@ Localmap.prototype.Markers = function (parent, onMarkerClicked) {
 		var max = this.config.maximum;
 		var element = document.createElement('span');
 		element.setAttribute('class', 'localmap-waypoint');
-		element.style.left = ((markerData.lon - min.lon) / (max.lon - min.lon) * 100) + '%';
-		element.style.top = ((markerData.lat - min.lat) / (max.lat - min.lat) * 100) + '%';
+		element.style.left = ((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
+		element.style.top = ((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';
 		element.style.cursor = 'pointer';
 		return element;
 	};
@@ -1859,8 +1913,8 @@ Localmap.prototype.Markers = function (parent, onMarkerClicked) {
 		element.setAttribute('src', this.config.markersUrl.replace('{type}', markerData.type));
 		element.setAttribute('title', markerData.description || '');
 		element.setAttribute('class', 'localmap-marker');
-		element.style.left = ((markerData.lon - min.lon) / (max.lon - min.lon) * 100) + '%';
-		element.style.top = ((markerData.lat - min.lat) / (max.lat - min.lat) * 100) + '%';
+		element.style.left = ((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
+		element.style.top = ((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';
 		element.style.cursor = (markerData.description || markerData.callback) ? 'pointer' : null;
 		return element;
 	};
@@ -1869,7 +1923,8 @@ Localmap.prototype.Markers = function (parent, onMarkerClicked) {
 
 	this.onGuideLoaded = function(evt) {
 		// decode the guide data
-		this.config.guideData = JSON.parse(evt.target.response);
+		this.config.guideData = this.config.guideData || {};
+		this.config.guideData[this.config.key] = JSON.parse(evt.target.response);
 		// add the markers from the guide
 		this.addGuide();
 	};
@@ -1919,9 +1974,10 @@ Localmap.prototype.Modal = function (parent) {
 	this.update = function() {};
 
 	this.show = function(markerData) {
+		var key = this.config.alias || this.config.key;
 		// display the photo if available
 		if (markerData.photo) {
-			this.photo.style.backgroundImage = 'url(' + this.config.photosUrl + markerData.photo + '), url(' + this.config.thumbsUrl + markerData.photo + ')';
+			this.photo.style.backgroundImage = 'url(' + this.config.photosUrl.replace('{key}', key) + markerData.photo + '), url(' + this.config.thumbsUrl.replace('{key}', key) + markerData.photo + ')';
       this.photo.className = 'localmap-modal-photo';
 		} else {
 			this.photo.style.backgroundImage = 'url(' + this.config.markersUrl.replace('{type}', markerData.type) + ')';
@@ -1950,39 +2006,42 @@ Localmap.prototype.Modal = function (parent) {
 };
 
 // extend the class
-Localmap.prototype.Route = function (parent) {
+Localmap.prototype.Route = function (parent, onComplete) {
 
 	// PROPERTIES
 
 	this.parent = parent;
 	this.config = parent.config;
-	this.elements = [];
+	this.element = null;
 	this.coordinates = [];
 	this.zoom = null;
 	this.delay = null;
+	this.onComplete = onComplete;
 
 	// METHODS
 
 	this.start = function() {
+		var key = this.config.key;
 		// create a canvas
-		this.canvas = document.createElement('canvas');
-		this.canvas.setAttribute('class', 'localmap-route')
-		this.parent.element.appendChild(this.canvas);
+		this.element = document.createElement('canvas');
+		this.element.setAttribute('class', 'localmap-route')
+		this.parent.element.appendChild(this.element);
 		// use the JSON immediately
-		if (this.config.routeData) {
-			this.onJsonLoaded(this.config.routeData);
+		if (this.config.routeData && this.config.routeData[key]) {
+			this.onJsonLoaded(this.config.routeData[key]);
+		}
 		// or load the route's GPX first
-		} else {
+		else {
 			var routeXhr = new XMLHttpRequest();
 			routeXhr.addEventListener('load', this.onGpxLoaded.bind(this));
-			routeXhr.open('GET', this.config.routeUrl, true);
+			routeXhr.open('GET', this.config.routeUrl.replace('{key}', key), true);
 			routeXhr.send();
 		}
 	};
 
   this.stop = function() {
     // remove the element
-    this.parent.element.removeChild(this.canvas);
+    this.parent.element.removeChild(this.element);
   };
 
 	this.update = function() {
@@ -1996,13 +2055,15 @@ Localmap.prototype.Route = function (parent) {
 	};
 
 	this.redraw = function() {
+		var min = this.config.minimum;
+		var max = this.config.maximum;
 		// adjust the height of the canvas
-		this.canvas.width = this.parent.element.offsetWidth;
-		this.canvas.height = this.parent.element.offsetHeight;
+		this.element.width = this.parent.element.offsetWidth;
+		this.element.height = this.parent.element.offsetHeight;
 		// position every trackpoint in the route
-		var ctx = this.canvas.getContext('2d');
+		var ctx = this.element.getContext('2d');
 		// (re)draw the route
-		var x0, y0, x1, y1, z = this.config.position.zoom, w = this.canvas.width, h = this.canvas.height;
+		var x0, y0, x1, y1, z = this.config.position.zoom, w = this.element.width, h = this.element.height;
 		ctx.clearRect(0, 0, w, h);
 		ctx.lineWidth = 4 / z;
 		ctx.strokeStyle = 'orange';
@@ -2010,8 +2071,8 @@ Localmap.prototype.Route = function (parent) {
 		for (var key in this.coordinates) {
 			if (this.coordinates.hasOwnProperty(key) && key % 1 == 0) {
         // calculate the current step
-				x1 = parseInt((this.coordinates[key][0] - this.config.minimum.lon) / (this.config.maximum.lon - this.config.minimum.lon) * w);
-				y1 = parseInt((this.coordinates[key][1] - this.config.minimum.lat) / (this.config.maximum.lat - this.config.minimum.lat) * h);
+				x1 = parseInt((this.coordinates[key][0] - min.lon_cover) / (max.lon_cover - min.lon_cover) * w);
+				y1 = parseInt((this.coordinates[key][1] - min.lat_cover) / (max.lat_cover - min.lat_cover) * h);
         // if the step seems valid, draw the step
   			if ((Math.abs(x1 - x0) + Math.abs(y1 - y0)) < 30) { ctx.lineTo(x1, y1); }
         // or jump unlikely/erroneous steps
@@ -2040,6 +2101,8 @@ Localmap.prototype.Route = function (parent) {
 		this.coordinates = [].concat.apply([], segments);
     // redraw
     this.redraw();
+		// resolve completion
+		this.onComplete();
 	};
 
 	this.onGpxLoaded = function(evt) {
@@ -2053,6 +2116,8 @@ Localmap.prototype.Route = function (parent) {
 		}
     // redraw
     this.redraw();
+		// resolve completion
+		this.onComplete();
 	};
 
 	this.start();
@@ -2096,8 +2161,8 @@ Localmap.prototype.Scale = function (parent) {
 	this.redraw = function() {
 		// how big is the map in kilometres along the bottom
 		var mapSize = this.distance(
-			{'lon': this.config.minimum.lon, 'lat': this.config.maximum.lat},
-			{'lon': this.config.maximum.lon, 'lat': this.config.maximum.lat}
+			{'lon': this.config.minimum.lon_cover, 'lat': this.config.maximum.lat_cover},
+			{'lon': this.config.maximum.lon_cover, 'lat': this.config.maximum.lat_cover}
 		);
 		// what portion of that is in the container
 		var visible = this.config.container.offsetWidth / this.config.canvasElement.offsetWidth / this.config.position.zoom;

@@ -22,7 +22,7 @@
 
 		// determine the path of the assets
 		$assets = $id;
-		if (property_exists($json, 'alias')) { $assets = $json->{'alias'}->{'prefix'}; }
+		if (property_exists($json, 'alias')) { $assets = $json->{'alias'}->{'key'}; }
 
 	?>
 	<head>
@@ -225,17 +225,22 @@
 
 						// local map configuration
 						var localmap = new Localmap({
+							'key': '<?php echo $id?>',
 							'container': document.querySelector('.directions.localmap'),
 							'legend': null,
-							'thumbsUrl': './inc/small/<?php echo $assets?>/',
-							'photosUrl': './inc/medium/<?php echo $assets?>/',
+							// assets
+							'thumbsUrl': './inc/small/{key}/',
+							'photosUrl': './inc/medium/{key}/',
 							'markersUrl': './inc/img/marker-{type}.svg',
-							'guideUrl': './inc/guides/<?php echo $id?>.json',
-							'routeUrl': '<?php echo $inc . "gpx/" . $id?>.gpx',
-							'mapUrl': './inc/maps/<?php echo $assets?>.jpg',
 							'exifUrl': 'imageexif.php?src={src}',
-							'exifData': ExifData['<?php echo $assets?>'],
-							'guideData': <?php print json_encode($json) ?>,
+							'guideUrl': './inc/guides/{key}.json',
+							'routeUrl': './inc/gpx/{key}.gpx',
+							'mapUrl': './inc/maps/{key}.jpg',
+							// cache
+							'guideData': {"<?php echo $id?>": <?php print json_encode($json) ?>},
+							'routeData': null,
+							'exifData': ExifData,
+							// attribution
 							'creditsTemplate': 'Maps &copy; <a href="http://www.4umaps.eu/mountain-bike-hiking-bicycle-outdoor-topographic-map.htm" target="_blank">4UMaps</a>, Data &copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> and contributors, CC BY-SA'
 						});
 
