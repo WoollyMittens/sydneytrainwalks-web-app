@@ -236,6 +236,8 @@
 							'guideUrl': './inc/guides/{key}.json',
 							'routeUrl': './inc/gpx/{key}.gpx',
 							'mapUrl': './inc/maps/{key}.jpg',
+				      'tilesUrl': './inc/tiles/{z}/{x}/{y}.jpg',
+				      'tilesZoom': 15,
 							// cache
 							'guideData': {"<?php echo $id?>": <?php print json_encode($json) ?>},
 							'routeData': null,

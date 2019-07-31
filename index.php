@@ -92,6 +92,8 @@
 							// for each entry
 							foreach ($json as $name => $value) {
 
+								if ($value->{'key'} !== '_index') {
+
 									echo '<li class="off-stage"><a href="details.php?id='. $name . '">';
 
 									$markers = $value->{'markers'};
@@ -107,6 +109,8 @@
 									<?php
 
 									echo '</a></li>';
+
+								}
 							}
 
 						?>
@@ -162,7 +166,7 @@
 
 			// register the service worker for offline content
 			if('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js');
-			
+
 		</script>
 	</body>
 </html>

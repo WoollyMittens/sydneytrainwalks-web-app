@@ -3,6 +3,7 @@ var gm = require('gm');
 var fs = require('fs');
 var source = '../src/tiles';
 var destination = '../inc/tiles';
+var tileMissing = '../inc/img/missing.png';
 var queue = [];
 
 // generates a resize queue

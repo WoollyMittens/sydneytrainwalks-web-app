@@ -143,6 +143,8 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			'guideUrl': this.config.local + '/guides/{key}.json',
 			'routeUrl': this.config.remote + '/gpx/{key}.gpx',
 			'mapUrl': this.config.local + '/maps/{key}.jpg',
+      'tilesUrl': this.config.local + '/tiles/{z}/{x}/{y}.jpg',
+      'tilesZoom': 15,
 			// cache
 			'guideData': GuideData,
 			'routeData': GpxData,

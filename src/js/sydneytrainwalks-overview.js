@@ -32,6 +32,8 @@ SydneyTrainWalks.prototype.Overview = function (parent) {
       'guideUrl': null,
       'routeUrl': null,
       'mapUrl': this.config.local + '/maps/{key}.jpg',
+      'tilesUrl': this.config.local + '/tiles/{z}/{x}/{y}.jpg',
+      'tilesZoom': 11,
       // cache
       'guideData': this.processMarkers(),
       'routeData': this.mergeRoutes(),
