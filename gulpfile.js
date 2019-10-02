@@ -122,6 +122,9 @@ exports.serve = gulp.series(
 	task_default,
 	task_connect
 );
+exports.watch = gulp.series(
+	task_default
+);
 exports.default = task_default;
 
 // errors

@@ -1,6 +1,6 @@
 /* TILE SERVERS
 // 4UMaps.eu
-const tileTemplate = 'http://4umaps.eu/{z}/{x}/{y}.png';
+const tileTemplate = 'http://4umaps.com/{z}/{x}/{y}.png';
 // OpenStreetMap
 const tileTemplate = 'https://b.tile.openstreetmap.org/{z}/{x}/{y}.png';
 // OpenCycleMap
@@ -29,7 +29,7 @@ const request = require('request');
 const guideCache = require('../inc/json/guides.json');
 const targetPath = '../src/maps/';
 const tileCache = '../src/tiles/{z}/{x}/{y}.png';
-const tileTemplate = 'http://4umaps.eu/{z}/{x}/{y}.png';
+const tileTemplate = 'http://4umaps.com/{z}/{x}/{y}.png';
 const tileMissing = '../inc/img/missing.png';
 const overviewZoom = 11;
 const mapZoom = 15; // default = 15

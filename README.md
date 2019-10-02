@@ -33,7 +33,7 @@ The following commands are available for development:
 
 App, photography and GPS logs &copy; Maurice van Creij, [CC BY-SA](http://creativecommons.org/licenses/by-sa/2.0/).
 
-Maps &copy; [4UMaps](http://www.4umaps.eu/). Data &copy; [OpenStreetMap and contributors](http://www.openstreetmap.org/copyright), [CC BY-SA<](http://creativecommons.org/licenses/by-sa/2.0/).
+Maps &copy; [4UMaps](http://www.4umaps.com/). Data &copy; [OpenStreetMap and contributors](http://www.openstreetmap.org/copyright), [CC BY-SA<](http://creativecommons.org/licenses/by-sa/2.0/).
 
 ## Disclaimer
 
