@@ -19,6 +19,25 @@ SydneyTrainWalks.prototype.Overview = function (parent) {
   // METHODS
 
   this.init = function() {
+    // wait for the viewport to become visible
+    var timeout;
+    var overview = this.config.overview;
+    var resolver = this.createMap.bind(this);
+    var mutationObserver = new MutationObserver(function(mutations, observer) {
+      clearTimeout(timeout);
+      timeout = setTimeout(function() {
+        if (overview.getBoundingClientRect().right > 0) {
+          // generate the map
+          resolver();
+          // stop waiting
+          observer.disconnect();
+        }
+      }, 100);
+    });
+    mutationObserver.observe(document.body, {'attributes': true, 'attributeFilter': ['id', 'class', 'style'], 'subtree': true});
+  };
+
+  this.createMap = function() {
     // generate the map
     var localmap = new Localmap({
       'key': '_index',

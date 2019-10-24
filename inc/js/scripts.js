@@ -717,6 +717,25 @@ SydneyTrainWalks.prototype.Overview = function (parent) {
   // METHODS
 
   this.init = function() {
+    // wait for the viewport to become visible
+    var timeout;
+    var overview = this.config.overview;
+    var resolver = this.createMap.bind(this);
+    var mutationObserver = new MutationObserver(function(mutations, observer) {
+      clearTimeout(timeout);
+      timeout = setTimeout(function() {
+        if (overview.getBoundingClientRect().right > 0) {
+          // generate the map
+          resolver();
+          // stop waiting
+          observer.disconnect();
+        }
+      }, 100);
+    });
+    mutationObserver.observe(document.body, {'attributes': true, 'attributeFilter': ['id', 'class', 'style'], 'subtree': true});
+  };
+
+  this.createMap = function() {
     // generate the map
     var localmap = new Localmap({
       'key': '_index',
@@ -1133,6 +1152,12 @@ Localmap.prototype.Background = function (parent, onComplete) {
 
 	// METHODS
 
+  // Slippy map tilenames - https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#ECMAScript_.28JavaScript.2FActionScript.2C_etc..29
+  var long2tile = function long2tile(lon,zoom) { return (Math.floor((lon+180)/360*Math.pow(2,zoom))); }
+  var lat2tile = function lat2tile(lat,zoom)  { return (Math.floor((1-Math.log(Math.tan(lat*Math.PI/180) + 1/Math.cos(lat*Math.PI/180))/Math.PI)/2 *Math.pow(2,zoom))); }
+  var tile2long = function tile2long(x,z) { return (x/Math.pow(2,z)*360-180); }
+  var tile2lat = function tile2lat(y,z) { var n=Math.PI-2*Math.PI*y/Math.pow(2,z); return (180/Math.PI*Math.atan(0.5*(Math.exp(n)-Math.exp(-n)))); }
+
 	this.start = function() {
 		// create the canvas
 		this.element = document.createElement('canvas');
@@ -1161,7 +1186,7 @@ Localmap.prototype.Background = function (parent, onComplete) {
 		var max = this.config.maximum;
 		// calculate the limits
 		min.zoom = Math.max(container.offsetWidth / element.width * 2, container.offsetHeight / element.height * 2);
-		max.zoom = 2;
+		max.zoom = 3;
 	};
 
 	this.loadBitmap = function() {
@@ -1204,11 +1229,6 @@ Localmap.prototype.Background = function (parent, onComplete) {
 		var min = this.config.minimum;
 		var max = this.config.maximum;
 		var pos = this.config.position;
-		// Slippy map tilenames - https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#ECMAScript_.28JavaScript.2FActionScript.2C_etc..29
-		var long2tile = function long2tile(lon,zoom) { return (Math.floor((lon+180)/360*Math.pow(2,zoom))); }
-		var lat2tile = function lat2tile(lat,zoom)  { return (Math.floor((1-Math.log(Math.tan(lat*Math.PI/180) + 1/Math.cos(lat*Math.PI/180))/Math.PI)/2 *Math.pow(2,zoom))); }
-		var tile2long = function tile2long(x,z) { return (x/Math.pow(2,z)*360-180); }
-		var tile2lat = function tile2lat(y,z) { var n=Math.PI-2*Math.PI*y/Math.pow(2,z); return (180/Math.PI*Math.atan(0.5*(Math.exp(n)-Math.exp(-n)))); }
 		// calculate the cols and rows of tiles
 		var minX = long2tile(min.lon_cover, this.config.tilesZoom);
 		var minY = lat2tile(min.lat_cover, this.config.tilesZoom);
@@ -1231,6 +1251,34 @@ Localmap.prototype.Background = function (parent, onComplete) {
 		};
 	};
 
+  this.scoreMarkers = function() {
+    var markers = this.config.guideData[this.config.key].markers;
+    var lookup = {};
+    var x, y, t, r, b, l;
+    for (var idx = 0, max = markers.length; idx < max; idx += 1) {
+      x = long2tile(markers[idx].lon, this.config.tilesZoom);
+      y = lat2tile(markers[idx].lat, this.config.tilesZoom);
+      // select coordinates around
+      t = y - 1;
+      r = x + 1;
+      b = t + 1;
+      l = x - 1;
+      // top row
+      lookup[l + '_' + t] = -10;
+      lookup[x + '_' + t] = -10;
+      lookup[r + '_' + t] = -10;
+      // middle row
+      lookup[l + '_' + y] = -10;
+      lookup[x + '_' + y] = -20;
+      lookup[r + '_' + y] = -10;
+      // bottom row
+      lookup[l + '_' + b] = -10;
+      lookup[x + '_' + b] = -10;
+      lookup[r + '_' + b] = -10;
+    }
+    return lookup;
+  };
+
 	this.loadTiles = function() {
 		var container = this.config.container;
 		var element = this.element;
@@ -1251,6 +1299,7 @@ Localmap.prototype.Background = function (parent, onComplete) {
 		element.style.height = displayHeight + 'px';
 		// create a queue of tiles
 		this.tilesQueue = [];
+    var scoreLookup = this.scoreMarkers();
 		for (var x = coords.minX; x <= coords.maxX; x += 1) {
 			for (var y = coords.minY; y <= coords.maxY; y += 1) {
 				this.tilesQueue.push({
@@ -1259,12 +1308,13 @@ Localmap.prototype.Background = function (parent, onComplete) {
 					y: y - coords.minY,
           w: tileSize,
           h: tileSize,
-					d: Math.abs(x - coords.posX) + Math.abs(y - coords.posY)
+					d: Math.abs(x - coords.posX) + Math.abs(y - coords.posY),
+          r: scoreLookup[x + '_' + y] || 0
 				});
 			}
 		}
 		// render the tiles closest to the centre first
-		this.tilesQueue.sort(function(a, b){return b.d - a.d});
+		this.tilesQueue.sort(function(a, b){return (b.d + b.r) - (a.d + a.r)});
 		// load the first tile
 		this.image = new Image();
 		this.image.addEventListener('load', this.onTileLoaded.bind(this));
