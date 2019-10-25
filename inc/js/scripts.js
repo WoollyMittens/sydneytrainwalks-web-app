@@ -704,6 +704,7 @@ SydneyTrainWalks.prototype.Overview = function (parent) {
   this.parent = parent;
   this.config = parent.config;
   this.overviewMap = null;
+  this.awaitTimeout = null;
   this.config.extend = function(properties) {
     for (var name in properties) {
       this[name] = properties[name];
@@ -718,21 +719,29 @@ SydneyTrainWalks.prototype.Overview = function (parent) {
 
   this.init = function() {
     // wait for the viewport to become visible
-    var timeout;
+    var observer = this.awaitView.bind(this);
+    var mutationObserver = new MutationObserver(observer);
+    mutationObserver.observe(document.body, {
+      'attributes': true,
+      'attributeFilter': ['id', 'class', 'style'], 
+      'subtree': true
+    });
+    // try at least once
+    this.awaitView();
+  };
+
+  this.awaitView = function(mutations, observer) {
     var overview = this.config.overview;
     var resolver = this.createMap.bind(this);
-    var mutationObserver = new MutationObserver(function(mutations, observer) {
-      clearTimeout(timeout);
-      timeout = setTimeout(function() {
-        if (overview.getBoundingClientRect().right > 0) {
-          // generate the map
-          resolver();
-          // stop waiting
-          observer.disconnect();
-        }
-      }, 100);
-    });
-    mutationObserver.observe(document.body, {'attributes': true, 'attributeFilter': ['id', 'class', 'style'], 'subtree': true});
+    clearTimeout(this.awaitTimeout);
+    this.awaitTimeout = setTimeout(function() {
+      if (overview.getBoundingClientRect().right > 0) {
+        // generate the map
+        resolver();
+        // stop waiting
+        if(observer) observer.disconnect();
+      }
+    }, 100);
   };
 
   this.createMap = function() {
