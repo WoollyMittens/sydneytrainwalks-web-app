@@ -1157,7 +1157,7 @@ Localmap.prototype.Background = function (parent, onComplete) {
 	this.element = null;
 	this.image = new Image();
 	this.tilesQueue = null;
-  this.resolution = 4096;
+  this.resolution = (/android 5|android 6|android 7/i.test(navigator.userAgent)) ? 3072 : 4096;
 
 	// METHODS
 
