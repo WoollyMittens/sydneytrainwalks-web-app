@@ -1562,11 +1562,11 @@ Localmap.prototype.Controls = function (parent) {
 			this.last = new Date() - 500;
 			// for multi touch
 			if (touches.length > 1 && previous.length > 1) {
-				var dX = (Math.abs(touches[0].clientX - touches[1].clientX) - Math.abs(previous[0].clientX - previous[1].clientX)) / this.range.x;
-				var dY = (Math.abs(touches[0].clientY - touches[1].clientY) - Math.abs(previous[0].clientY - previous[1].clientY)) / this.range.y;
+				var dX = (Math.abs(touches[0].clientX - touches[1].clientX) - Math.abs(previous[0].clientX - previous[1].clientX)) / this.config.container.offsetWidth;
+				var dY = (Math.abs(touches[0].clientY - touches[1].clientY) - Math.abs(previous[0].clientY - previous[1].clientY)) / this.config.container.offsetHeight;
 				this.inertia.x = ((touches[0].clientX - previous[0].clientX) + (touches[1].clientX - previous[1].clientX)) / 2 / this.range.x;
 				this.inertia.y = ((touches[0].clientY - previous[0].clientY) + (touches[1].clientY - previous[1].clientY)) / 2 / this.range.y;
-				this.inertia.z = ((dX + dY) > 0) ? this.steps.z : ((dX + dY) < 0) ? -this.steps.z : 0;
+				this.inertia.z = (dX + dY) / 2;
 			} else {
 				this.inertia.x = (touches[0].clientX - previous[0].clientX) / this.range.x;
 				this.inertia.y = (touches[0].clientY - previous[0].clientY) / this.range.y;
