@@ -66,7 +66,7 @@
   		position: absolute;
   		left: 0;
   		top: 0;
-  		transform: translate(0, 0) scale(1);
+  		transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
   		transform-origin: 0 0;
 
   		&-transition,
@@ -89,7 +89,7 @@
   		height: 28px;
   		margin-left: -14px;
   		margin-top: -28px;
-  		transform: scale(1);
+  		transform: scale3d(1, 1, 1);
   		transform-origin: 50% 100%;
 			transition: transform ease 100ms;
   		z-index: 3;
@@ -123,7 +123,7 @@
   		height: 16px;
   		margin-left: -8px;
   		margin-top: -8px;
-  		transform: scale(1);
+  		transform: scale3d(1, 1, 1);
   		transform-origin: 50% 50%;
   		border: solid 4px rgba(255, 128, 0, 0.5);
   		border-radius: 50%;
@@ -222,7 +222,7 @@
   		background-color: #fff;
   		box-shadow: 0 5px 10px rgba(0,0,0,0.5);
   		z-index: 9;
-  		transform: translate(-125%, 0);
+  		transform: translate3d(-125%, 0, 0);
   		transition: transform ease 500ms;
   		display: flex;
   		flex-direction: column;
@@ -258,7 +258,7 @@
   		}
 
   		&-visible {
-  			transform: translate(0, 0);
+  			transform: translate3d(0, 0, 0);
   		}
 
   		&-closer {
