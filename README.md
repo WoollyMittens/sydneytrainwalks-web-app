@@ -21,13 +21,12 @@ The following commands are available for development:
 + `gulp php` - Preview the project on http://localhost:8080.
 + `gulp watch` - Continuously recompile updated files during development sessions.
 + `cd node_scripts`
-  + `node convertmaps` - Compresses the generated PNG maps to JPG.
-  + `node converttiles` - Compresses the local PNG tile store to JPG.
   + `node importexif` - Prepares a cache of GPS data of all the photos.
   + `node importgpx` - Prepares a cache of GPS data of all routes.
   + `node importguides` - Prepares a cache of JSON data for all the guides.
   + `node importphotos` - Process images from "/src/large" into "/inc/small" and "/inc/medium/".
-  + `node importmaps` - Downloads the required map tiles from an OpenStreetMap server".
+  + `node importtiles` - Downloads the tiles needed to cover the guides.
+  + `node converttiles` - Compresses the local PNG tile store to JPG.
 
 ## Credits
 

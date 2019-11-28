@@ -1,0 +1,48 @@
+{
+  "location": "Great West Walk",
+  "lon": 150.801589,
+  "lat": -33.763267,
+  "description": ["This walk follows the <a href=\"https://greatwestwalk.com.au/\">Great West Walk</a> through <a href=\"https://www.parrapark.com.au/\">Parramatta Park</a> and the <a href=\"https://www.westernsydneyparklands.com.au/\">Western Sydney Parklands</a>.", "Followed by the newly created <a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/wianamatta-nature-reserve\">Wianamatta Nature Reserve</a> and <a href=\"https://www.penrithcity.nsw.gov.au/facilities-recreation/outdoor-recreation/great-river-walk\">Great River Walk</a>."],
+  "duration": 10,
+  "distance": 47,
+  "zoom": 13,
+  "rain": false,
+  "fireban": false,
+  "key": "blacktown-greatwestwalk-penrith",
+  "bounds": {
+    "west": 150.66650390625,
+    "north": -33.69692269295768,
+    "east": 150.919189453125,
+    "south": -33.79740876757248
+  },
+  "markers": [{
+    "location": "Blacktown",
+    "lat": -33.768747,
+    "lon": 150.90715,
+    "type": "train",
+    "description": "Get the train to Blacktown using <a href=\"https://transportnsw.info/trip#/?to=Blacktown Station\">transportnsw.info</a>."
+  }, {
+    "type": "waypoint",
+    "photo": "0000_img_20191019_055918.jpg",
+    "description": "Lorem ipsum dolor sit amet.",
+    "lon": 151.003157,
+    "lat": -33.815506
+  }, {
+    "location": "Penrith",
+    "lat": -33.750329,
+    "lon": 150.695488,
+    "type": "train",
+    "description": "Plan your return trip from Penrith Station at <a href=\"https://transportnsw.info/trip#/?from=Penrith Station\">transportnsw.info</a>."
+  }],
+  "alias": {
+    "key": "parramatta-greatwestwalk-penrith",
+    "start": 104,
+    "end": 358,
+    "bounds": {
+      "west": 150.66650390625,
+      "north": -33.69692269295768,
+      "east": 151.01806640625,
+      "south": -33.82479361826489
+    }
+  }
+}

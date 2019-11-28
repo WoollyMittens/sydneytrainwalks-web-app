@@ -52,17 +52,13 @@ var addIndex = function () {
 		'markers': []
 	};
 	// for every guide
-	var north = -999, west = 999, south = 999, east = -999, markers, first, last;
+	var north = -999, west = 999, south = 999, east = -999;
 	for (var key in GuideData) {
 		// expand the bounds based on the guides
 		north = Math.max(GuideData[key].bounds.north, north);
 		west = Math.min(GuideData[key].bounds.west, west);
 		south = Math.min(GuideData[key].bounds.south, south);
 		east = Math.max(GuideData[key].bounds.east, east);
-		// formulate a description
-		markers = GuideData[key].markers;
-		first = markers[0];
-		last = markers[markers.length - 1];
 		// add a marker from the centre of the guide
 		overview.markers.push({
 			'type': 'walk',
@@ -108,7 +104,7 @@ var parseGuides = function (queue) {
 					startMarker.lon = routeData[0][0];
 					startMarker.lat = routeData[0][1];
 				}
-				var endMarker = GuideData[key].markers[1];
+				var endMarker = GuideData[key].markers[GuideData[key].markers.length - 1];
 				if (!endMarker.lon) {
 					endMarker.lon = routeData[routeData.length - 1][0];
 					endMarker.lat = routeData[routeData.length - 1][1];
@@ -123,6 +119,10 @@ var parseGuides = function (queue) {
 						markerData.lat = exifCache[alias][markerData.photo].lat
 					}
 				}
+				// determine the centrepoint
+				var halfWay = parseInt(routeData.length/2);
+				GuideData[key].lon = routeData[halfWay][0];
+				GuideData[key].lat = routeData[halfWay][1];
 				// determine map bounds
 				var north = -999, west = 999, south = 999, east = -999;
 				for (var a = 0, b = routeData.length; a < b; a += 1) {

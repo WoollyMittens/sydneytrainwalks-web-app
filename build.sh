@@ -1,6 +1,9 @@
-node importguides
-node importjpg
-node importexif
+cd node_scripts
 node importgpx
+node importexif
+node importguides
 node importtiles
-grunt prod
+node importphotos
+node converttiles
+cd ..
+gulp dev
