@@ -1,1 +1,384 @@
-{"location":"Garigal","lon":151.219163,"lat":-33.781456,"description":["This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/garigal-national-park\">Garigal National Park</a>."],"duration":6,"distance":25,"zoom":13,"rain":false,"fireban":false,"key":"roseville-garigal-manly","bounds":{"west":151.160888671875,"north":-33.75174787568194,"east":151.314697265625,"south":-33.82479361826489},"markers":[{"location":"Roseville","type":"train","description":"Get the train to Roseville using <a href=\"https://transportnsw.info/trip#/?to=Roseville\">transportnsw.info</a>.","lon":151.177582,"lat":-33.784401},{"type":"warning","description":"At the closure follow the firetrail up to the road.","lat":-33.775952,"lon":151.211738},{"type":"warning","description":"Cross the road here to avoid the mountain bike course.","lat":-33.768416,"lon":151.234643},{"type":"warning","description":"Enter the shopping arcade here for a shortcut to the ferry.","lat":-33.796893,"lon":151.288385},{"type":"kiosk","lat":-33.786203,"lon":151.266604},{"type":"toilet","lat":-33.774931,"lon":151.208025},{"type":"toilet","lat":-33.782855,"lon":151.253875},{"type":"toilet","lat":-33.785526,"lon":151.28718},{"type":"toilet","lat":-33.790661,"lon":151.287187},{"type":"toilet","lat":-33.796548,"lon":151.288072},{"type":"toilet","lat":-33.79951,"lon":151.290299},{"type":"waypoint","photo":"p7200321.jpg","lon":151.1779519600164,"lat":-33.78437343000045,"description":"Exit the station to the left and cross the street to the shops."},{"type":"waypoint","photo":"p7200324.jpg","lon":151.18791199002317,"lat":-33.78029633002766,"description":"Follow Lord Street and Park Ave, then cross Warringah Road at the golf club."},{"type":"waypoint","photo":"p7200325.jpg","lon":151.20007118000007,"lat":-33.77482800999484,"description":"Follow Babbage Road down hills to the Roseville Bridge."},{"type":"waypoint","photo":"p7200327.jpg","lon":151.20216685001833,"lat":-33.77415729000076,"description":"Watch for a footpath under the bridge on the left."},{"type":"waypoint","photo":"p7200329.jpg","lon":151.20153809000013,"lat":-33.774013519980855,"description":"Pass underneath the bridge and up to the footpath on the other side."},{"type":"waypoint","photo":"p7200338.jpg","lon":151.20477857001384,"lat":-33.77177851001512,"description":"Cross Middle Harbour across the Roseville Bridge"},{"type":"waypoint","photo":"p7200340.jpg","lon":151.20491028002075,"lat":-33.77258300999412,"description":"On the far side of the bridge, follow the offramp into the reserve on the left hand side."},{"type":"waypoint","photo":"p7200348.jpg","lon":151.20611318001653,"lat":-33.77312384996461,"description":"Find the entrance to he Flatrock Track on the left hand side of the car park."},{"type":"waypoint","photo":"p7200355_img_20180630_070622.jpg","lon":151.20905833333333,"lat":-33.77464722222222,"description":"<i>+ 0.25h / 0km</i> Currently Flat Rock Beach Track is closed. Follow the firetrail up to Downpatrick Road.","detour":true},{"type":"waypoint","photo":"p7200355_img_20180630_072448.jpg","lon":151.21628888888887,"lat":-33.779688888888884,"description":"Turn right on Drumcliff Avenue and follow it along the ridge.","detour":true},{"type":"waypoint","photo":"p7200355_img_20180630_073224.jpg","lon":151.22369166666667,"lat":-33.78180277777778,"description":"Turn right onto Killarney Drive and follow it to the trackhead at the far end.","detour":true},{"type":"waypoint","photo":"p7200390.jpg","lon":151.2241552,"lat":-33.78226560999039,"description":"At the trackhead of Killarney Drive, follow the Magazine Track down to Flatrock Beach."},{"type":"waypoint","photo":"p7200400_p7200415.jpg","lon":151.22525,"lat":-33.78278611111111,"description":"<i>+ 0.25h / 0km</i> Take the side trail onto Flatrock Beach. Return to the intersection after.","optional":true},{"type":"waypoint","photo":"p7200397.jpg","lon":151.22480907001892,"lat":-33.7828541600592,"description":"At the intersection, follow the Magazine Track along the water."},{"type":"waypoint","photo":"p7200428_p7200429.jpg","lon":151.2252388888889,"lat":-33.78241944444444,"description":"The trail crosses a creek near a small cascade. Take care on the slippery rocks."},{"type":"waypoint","photo":"p7200462.jpg","lon":151.22648558999455,"lat":-33.78265674999208,"description":"After the cascade follow the track along the shore."},{"type":"waypoint","photo":"p7200508_p7200510.jpg","lon":151.2294222222222,"lat":-33.77804722222222,"description":"The track follow the bay to the left past an old powder magazine."},{"type":"waypoint","photo":"p7200531.jpg","lon":151.2222246400172,"lat":-33.76992743001667,"description":"Before the Magazine Track reaches its trackhead, follow Bates Creek Track on the right."},{"type":"waypoint","photo":"p7200545.jpg","lon":151.22137122995852,"lat":-33.76747392000413,"description":"After crossing the creek, continue past the intersection with the mountainbike trails."},{"type":"waypoint","photo":"p7200552.jpg","lon":151.2216253400293,"lat":-33.76620336013193,"description":"At the junction of fire trails, follow the Natural Bridge Track."},{"type":"waypoint","photo":"p7200559_p7200561.jpg","lon":151.2238638888889,"lat":-33.76609722222222,"description":"Cross the Natural Bridge and climb up to the next ridge."},{"type":"waypoint","photo":"p7200585.jpg","lon":151.22795394001892,"lat":-33.765534379990875,"description":"<i>- 1h / 2km</i> For a shortcut, follow the Bluf Track up to the sports fields and follow the Engravings Trail right.","optional":true},{"type":"waypoint","photo":"p7200588.jpg","lon":151.22830050998263,"lat":-33.76663465007215,"description":"The trail ends at a lookout overlooking Bantry Bay. The Bay Track continues down from there."},{"type":"waypoint","photo":"p7200609.jpg","lon":151.2303555599876,"lat":-33.77157364000391,"description":"A bush trail leads back down the bay, past several lookouts and caves."},{"type":"waypoint","photo":"p7200631_p7200634.jpg","lon":151.23243888888888,"lat":-33.77780555555555,"description":"The trail finally ends at Bantry Bay's picnic area."},{"type":"waypoint","photo":"p7200647.jpg","lon":151.23284464013915,"lat":-33.777938890004236,"description":"From the picnic area follow the Timber Getters Track up the ridge."},{"type":"waypoint","photo":"p7200661.jpg","lon":151.23744677999846,"lat":-33.781122409956886,"description":"At the top of the ridge near the car park, follow the Engravings Track to the left."},{"type":"waypoint","photo":"p7200686.jpg","lon":151.23571777000257,"lat":-33.765931449915826,"description":"The trail joins a firetrail. Follow it to the right, down to the lake."},{"type":"waypoint","photo":"p7200689.jpg","lon":151.2378504700181,"lat":-33.763948669931814,"description":"On the right side of the trail there will be a junction with a sign to Manly Dam"},{"type":"waypoint","photo":"p7200702.jpg","lon":151.24132803997227,"lat":-33.76921036999321,"description":"Follow the trail along the creek until you reach the lake."},{"type":"waypoint","photo":"p7200791_p7200794.jpg","lon":151.25510833333334,"lat":-33.78308611111111,"description":"Continue along the lakefront to the picnic areas at the dam."},{"type":"waypoint","photo":"p7200802.jpg","lon":151.25563125998676,"lat":-33.781486699988506,"description":"Cross the dam across the footpath."},{"type":"waypoint","photo":"p7200814.jpg","lon":151.2585410099816,"lat":-33.77976392998028,"description":"Follow the trail to the trackhead at King Street and continue to the main road and shops."},{"type":"waypoint","photo":"p7200817.jpg","lon":151.27166748000155,"lat":-33.786971199999996,"description":"Head right past the shops, cross the highway at the trafic lights and follow Kenneth Road."},{"type":"waypoint","photo":"p7200823.jpg","lon":151.28445526999508,"lat":-33.7848928,"description":"Turn left down Balgowlah Road and look for the footpath through Manly Lagoon Reserve on the right."},{"type":"waypoint","photo":"p7200827.jpg","lon":151.28800361000881,"lat":-33.7861691899969,"description":"Follow the footpath all the way through the reserve to Manly Beach."},{"type":"waypoint","photo":"p7200831_p7200832.jpg","lon":151.28792222222222,"lat":-33.787930555555555,"description":"Continue along the beachfront to the far side of Manly Beach."},{"type":"waypoint","photo":"p7200834_p7200836.jpg","lon":151.29111111111112,"lat":-33.799438888888886,"description":"Follow the shopping arcade from the Surf Club straight to the ferry."},{"type":"waypoint","photo":"p7200842_p7200844.jpg","lon":151.29250277777777,"lat":-33.79978055555555,"description":"<i>+ 2h / 8km</i> If time allows continue following the promenade to Shelly Beach.","optional":true},{"type":"waypoint","photo":"p7200859_p7200861.jpg","lon":151.29858611111112,"lat":-33.80081388888889,"description":"Cross Shelly Beach and continue to the car park.","optional":true},{"type":"waypoint","photo":"p7200866.jpg","lon":151.29972838998538,"lat":-33.801140940003386,"description":"From the car park a bush trail starts following the cliffs with several lookouts along the way.","optional":true},{"type":"waypoint","photo":"p7200880_p7200882.jpg","lon":151.29977777777776,"lat":-33.80588888888889,"description":"The trail curves away from the cliffs and crosses the coastal heath.","optional":true},{"type":"waypoint","photo":"p7200885.jpg","lon":151.29761832001253,"lat":-33.811360769996675,"description":"The trail ends at the parade grounds. Follow the road past the square to the left.","optional":true},{"type":"waypoint","photo":"p7200887.jpg","lon":151.30135193000643,"lat":-33.81404850997842,"description":"At the end of the road, continue along the trail through the Hanging Swamp.","optional":true},{"type":"waypoint","photo":"p7200905.jpg","lon":151.29580629995297,"lat":-33.818313439986674,"description":"The trail ends at a North Head.","optional":true},{"type":"waypoint","photo":"p7200918.jpg","lon":151.29313914000096,"lat":-33.81782553000079,"description":"Follow the road from North Head back off the headlands.","optional":true},{"type":"waypoint","photo":"p7200921.jpg","lon":151.29500419008184,"lat":-33.80548135999167,"description":"After the gate follow Daley Road to the left.","optional":true},{"type":"waypoint","photo":"p7200922.jpg","lon":151.29062358996052,"lat":-33.80377460998705,"description":"Head left down Ashburner Street to get to the bay.","optional":true},{"type":"waypoint","photo":"p7200939_p7200940.jpg","lon":151.2852861111111,"lat":-33.80003333333333,"description":"Follow the esplanade along the bay to the Manly Ferry and the bus stops.","optional":true},{"location":"Manly","type":"ferry","description":"Plan your return trip from Manly at <a href=\"https://transportnsw.info/trip#/?from=Manly\">transportnsw.info</a>.","lat":-33.80003333333333,"lon":151.2852861111111}]}
+{
+  "location": "Garigal",
+  "lon": 151.219163,
+  "lat": -33.781456,
+  "description": ["This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/garigal-national-park\">Garigal National Park</a>."],
+  "duration": 6,
+  "distance": 25,
+  "zoom": 13,
+  "rain": false,
+  "fireban": false,
+  "key": "roseville-garigal-manly",
+  "bounds": {
+    "west": 151.160888671875,
+    "north": -33.75174787568194,
+    "east": 151.314697265625,
+    "south": -33.82479361826489
+  },
+  "markers": [{
+    "location": "Roseville",
+    "type": "train",
+    "description": "Get the train to Roseville using <a href=\"https://transportnsw.info/trip#/?to=Roseville\">transportnsw.info</a>.",
+    "lon": 151.177582,
+    "lat": -33.784401
+  }, {
+    "type": "warning",
+    "description": "At the closure follow the firetrail up to the road.",
+    "lat": -33.775952,
+    "lon": 151.211738
+  }, {
+    "type": "warning",
+    "description": "Cross the road here to avoid the mountain bike course.",
+    "lat": -33.768416,
+    "lon": 151.234643
+  }, {
+    "type": "warning",
+    "description": "Enter the shopping arcade here for a shortcut to the ferry.",
+    "lat": -33.796893,
+    "lon": 151.288385
+  }, {
+    "type": "kiosk",
+    "lat": -33.786203,
+    "lon": 151.266604
+  }, {
+    "type": "toilet",
+    "lat": -33.774931,
+    "lon": 151.208025
+  }, {
+    "type": "toilet",
+    "lat": -33.782855,
+    "lon": 151.253875
+  }, {
+    "type": "toilet",
+    "lat": -33.785526,
+    "lon": 151.28718
+  }, {
+    "type": "toilet",
+    "lat": -33.790661,
+    "lon": 151.287187
+  }, {
+    "type": "toilet",
+    "lat": -33.796548,
+    "lon": 151.288072
+  }, {
+    "type": "toilet",
+    "lat": -33.79951,
+    "lon": 151.290299
+  }, {
+    "type": "waypoint",
+    "photo": "p7200321.jpg",
+    "lon": 151.1779519600164,
+    "lat": -33.78437343000045,
+    "description": "Exit the station to the left and cross the street to the shops."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200324.jpg",
+    "lon": 151.18791199002317,
+    "lat": -33.78029633002766,
+    "description": "Follow Lord Street and Park Ave, then cross Warringah Road at the golf club."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200325.jpg",
+    "lon": 151.20007118000007,
+    "lat": -33.77482800999484,
+    "description": "Follow Babbage Road down hills to the Roseville Bridge."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200327.jpg",
+    "lon": 151.20216685001833,
+    "lat": -33.77415729000076,
+    "description": "Watch for a footpath under the bridge on the left."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200329.jpg",
+    "lon": 151.20153809000013,
+    "lat": -33.774013519980855,
+    "description": "Pass underneath the bridge and up to the footpath on the other side."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200338.jpg",
+    "lon": 151.20477857001384,
+    "lat": -33.77177851001512,
+    "description": "Cross Middle Harbour across the Roseville Bridge"
+  }, {
+    "type": "waypoint",
+    "photo": "p7200340.jpg",
+    "lon": 151.20491028002075,
+    "lat": -33.77258300999412,
+    "description": "On the far side of the bridge, follow the offramp into the reserve on the left hand side."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200348.jpg",
+    "lon": 151.20611318001653,
+    "lat": -33.77312384996461,
+    "description": "Find the entrance to he Flatrock Track on the left hand side of the car park."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200355_img_20180630_070622.jpg",
+    "lon": 151.20905833333333,
+    "lat": -33.77464722222222,
+    "description": "<i>+ 0.25h / 0km</i> Currently Flat Rock Beach Track is closed. Follow the firetrail up to Downpatrick Road.",
+    "detour": true
+  }, {
+    "type": "waypoint",
+    "photo": "p7200355_img_20180630_072448.jpg",
+    "lon": 151.21628888888887,
+    "lat": -33.779688888888884,
+    "description": "Turn right on Drumcliff Avenue and follow it along the ridge.",
+    "detour": true
+  }, {
+    "type": "waypoint",
+    "photo": "p7200355_img_20180630_073224.jpg",
+    "lon": 151.22369166666667,
+    "lat": -33.78180277777778,
+    "description": "Turn right onto Killarney Drive and follow it to the trackhead at the far end.",
+    "detour": true
+  }, {
+    "type": "waypoint",
+    "photo": "p7200390.jpg",
+    "lon": 151.2241552,
+    "lat": -33.78226560999039,
+    "description": "At the trackhead of Killarney Drive, follow the Magazine Track down to Flatrock Beach."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200400_p7200415.jpg",
+    "lon": 151.22525,
+    "lat": -33.78278611111111,
+    "description": "<i>+ 0.25h / 0km</i> Take the side trail onto Flatrock Beach. Return to the intersection after.",
+    "optional": true
+  }, {
+    "type": "waypoint",
+    "photo": "p7200397.jpg",
+    "lon": 151.22480907001892,
+    "lat": -33.7828541600592,
+    "description": "At the intersection, follow the Magazine Track along the water."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200428_p7200429.jpg",
+    "lon": 151.2252388888889,
+    "lat": -33.78241944444444,
+    "description": "The trail crosses a creek near a small cascade. Take care on the slippery rocks."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200462.jpg",
+    "lon": 151.22648558999455,
+    "lat": -33.78265674999208,
+    "description": "After the cascade follow the track along the shore."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200508_p7200510.jpg",
+    "lon": 151.2294222222222,
+    "lat": -33.77804722222222,
+    "description": "The track follow the bay to the left past an old powder magazine."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200531.jpg",
+    "lon": 151.2222246400172,
+    "lat": -33.76992743001667,
+    "description": "Before the Magazine Track reaches its trackhead, follow Bates Creek Track on the right."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200545.jpg",
+    "lon": 151.22137122995852,
+    "lat": -33.76747392000413,
+    "description": "After crossing the creek, continue past the intersection with the mountainbike trails."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200552.jpg",
+    "lon": 151.2216253400293,
+    "lat": -33.76620336013193,
+    "description": "At the junction of fire trails, follow the Natural Bridge Track."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200559_p7200561.jpg",
+    "lon": 151.2238638888889,
+    "lat": -33.76609722222222,
+    "description": "Cross the Natural Bridge and climb up to the next ridge."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200585.jpg",
+    "lon": 151.22795394001892,
+    "lat": -33.765534379990875,
+    "description": "<i>- 1h / 2km</i> For a shortcut, follow the Bluf Track up to the sports fields and follow the Engravings Trail right.",
+    "optional": true
+  }, {
+    "type": "waypoint",
+    "photo": "p7200588.jpg",
+    "lon": 151.22830050998263,
+    "lat": -33.76663465007215,
+    "description": "The trail ends at a lookout overlooking Bantry Bay. The Bay Track continues down from there."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200609.jpg",
+    "lon": 151.2303555599876,
+    "lat": -33.77157364000391,
+    "description": "A bush trail leads back down the bay, past several lookouts and caves."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200631_p7200634.jpg",
+    "lon": 151.23243888888888,
+    "lat": -33.77780555555555,
+    "description": "The trail finally ends at Bantry Bay's picnic area."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200647.jpg",
+    "lon": 151.23284464013915,
+    "lat": -33.777938890004236,
+    "description": "From the picnic area follow the Timber Getters Track up the ridge."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200661.jpg",
+    "lon": 151.23744677999846,
+    "lat": -33.781122409956886,
+    "description": "At the top of the ridge near the car park, follow the Engravings Track to the left."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200686.jpg",
+    "lon": 151.23571777000257,
+    "lat": -33.765931449915826,
+    "description": "The trail joins a firetrail. Follow it to the right, down to the lake."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200689.jpg",
+    "lon": 151.2378504700181,
+    "lat": -33.763948669931814,
+    "description": "On the right side of the trail there will be a junction with a sign to Manly Dam"
+  }, {
+    "type": "waypoint",
+    "photo": "p7200702.jpg",
+    "lon": 151.24132803997227,
+    "lat": -33.76921036999321,
+    "description": "Follow the trail along the creek until you reach the lake."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200791_p7200794.jpg",
+    "lon": 151.25510833333334,
+    "lat": -33.78308611111111,
+    "description": "Continue along the lakefront to the picnic areas at the dam."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200802.jpg",
+    "lon": 151.25563125998676,
+    "lat": -33.781486699988506,
+    "description": "Cross the dam across the footpath."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200814.jpg",
+    "lon": 151.2585410099816,
+    "lat": -33.77976392998028,
+    "description": "Follow the trail to the trackhead at King Street and continue to the main road and shops."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200817.jpg",
+    "lon": 151.27166748000155,
+    "lat": -33.786971199999996,
+    "description": "Head right past the shops, cross the highway at the trafic lights and follow Kenneth Road."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200823.jpg",
+    "lon": 151.28445526999508,
+    "lat": -33.7848928,
+    "description": "Turn left down Balgowlah Road and look for the footpath through Manly Lagoon Reserve on the right."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200827.jpg",
+    "lon": 151.28800361000881,
+    "lat": -33.7861691899969,
+    "description": "Follow the footpath all the way through the reserve to Manly Beach."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200831_p7200832.jpg",
+    "lon": 151.28792222222222,
+    "lat": -33.787930555555555,
+    "description": "Continue along the beachfront to the far side of Manly Beach."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200834_p7200836.jpg",
+    "lon": 151.29111111111112,
+    "lat": -33.799438888888886,
+    "description": "Follow the shopping arcade from the Surf Club straight to the ferry."
+  }, {
+    "type": "waypoint",
+    "photo": "p7200842_p7200844.jpg",
+    "lon": 151.29250277777777,
+    "lat": -33.79978055555555,
+    "description": "<i>+ 2h / 8km</i> If time allows continue following the promenade to Shelly Beach.",
+    "optional": true
+  }, {
+    "type": "waypoint",
+    "photo": "p7200859_p7200861.jpg",
+    "lon": 151.29858611111112,
+    "lat": -33.80081388888889,
+    "description": "Cross Shelly Beach and continue to the car park.",
+    "optional": true
+  }, {
+    "type": "waypoint",
+    "photo": "p7200866.jpg",
+    "lon": 151.29972838998538,
+    "lat": -33.801140940003386,
+    "description": "From the car park a bush trail starts following the cliffs with several lookouts along the way.",
+    "optional": true
+  }, {
+    "type": "waypoint",
+    "photo": "p7200880_p7200882.jpg",
+    "lon": 151.29977777777776,
+    "lat": -33.80588888888889,
+    "description": "The trail curves away from the cliffs and crosses the coastal heath.",
+    "optional": true
+  }, {
+    "type": "waypoint",
+    "photo": "p7200885.jpg",
+    "lon": 151.29761832001253,
+    "lat": -33.811360769996675,
+    "description": "The trail ends at the parade grounds. Follow the road past the square to the left.",
+    "optional": true
+  }, {
+    "type": "waypoint",
+    "photo": "p7200887.jpg",
+    "lon": 151.30135193000643,
+    "lat": -33.81404850997842,
+    "description": "At the end of the road, continue along the trail through the Hanging Swamp.",
+    "optional": true
+  }, {
+    "type": "waypoint",
+    "photo": "p7200905.jpg",
+    "lon": 151.29580629995297,
+    "lat": -33.818313439986674,
+    "description": "The trail ends at a North Head.",
+    "optional": true
+  }, {
+    "type": "waypoint",
+    "photo": "p7200918.jpg",
+    "lon": 151.29313914000096,
+    "lat": -33.81782553000079,
+    "description": "Follow the road from North Head back off the headlands.",
+    "optional": true
+  }, {
+    "type": "waypoint",
+    "photo": "p7200921.jpg",
+    "lon": 151.29500419008184,
+    "lat": -33.80548135999167,
+    "description": "After the gate follow Daley Road to the left.",
+    "optional": true
+  }, {
+    "type": "waypoint",
+    "photo": "p7200922.jpg",
+    "lon": 151.29062358996052,
+    "lat": -33.80377460998705,
+    "description": "Head left down Ashburner Street to get to the bay.",
+    "optional": true
+  }, {
+    "type": "waypoint",
+    "photo": "p7200939_p7200940.jpg",
+    "lon": 151.2852861111111,
+    "lat": -33.80003333333333,
+    "description": "Follow the esplanade along the bay to the Manly Ferry and the bus stops.",
+    "optional": true
+  }, {
+    "location": "Manly",
+    "type": "ferry",
+    "description": "Plan your return trip from Manly at <a href=\"https://transportnsw.info/trip#/?from=Manly\">transportnsw.info</a>.",
+    "lat": -33.80003333333333,
+    "lon": 151.2852861111111
+  }]
+}

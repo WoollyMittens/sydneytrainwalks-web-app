@@ -1,1 +1,189 @@
-{"location":"Fernleigh Track","lon":151.709437,"lat":-32.99588499999999,"description":["The <a href=\"http://www.railtrails.org.au/trail?view=trail&id=80\">Fernleigh track</a> is an old railway line from Newcastle to Lake Macquarie that has been turned into a bike path. The platforms of the stations are still visible along the way and food and drinks conveniently available nearby every stop."],"duration":4,"distance":18,"zoom":13,"rain":true,"fireban":true,"key":"adamstown-fernleightrack-belmont","bounds":{"west":151.644287109375,"north":-32.9164853473144,"east":151.732177734375,"south":-33.054716488042736},"markers":[{"location":"Adamstown","type":"train","description":"Get the train to Adamstown using <a href=\"https://transportnsw.info/trip#/?to=Adamstown\">transportnsw.info</a>.","lon":151.72021,"lat":-32.93396},{"type":"kiosk","lat":-32.978277000000006,"lon":151.708188},{"type":"kiosk","lat":-33.037087,"lon":151.659823},{"type":"toilet","lat":-32.977214000000004,"lon":151.708441},{"type":"toilet","lat":-33.03697,"lon":151.65954},{"type":"waypoint","photo":"002_p2180002.jpg","lon":151.719448,"lat":-32.93446599999999,"description":"Exit the station on the right and head follow Park Avenue."},{"type":"waypoint","photo":"003_p2180003.jpg","lon":151.717746,"lat":-32.935731,"description":"Cross the road at the intersection to the Fernleigh Track signpost."},{"type":"waypoint","photo":"004_p2180004.jpg","lon":151.717448,"lat":-32.935979999999994,"description":"Take note of the map and information, then follow the signs down the Fernleigh Track."},{"type":"waypoint","photo":"008_p2180008.jpg","lon":151.71556299999997,"lat":-32.950732,"description":"The old railway equipment, stretches of track, and tunnels can still be found along the way."},{"type":"waypoint","photo":"005_p2180006.jpg","lon":151.71513399999998,"lat":-32.939786,"description":"The track crosses several roads at former railway crossings."},{"type":"waypoint","photo":"014_p2180012.jpg","lon":151.718307,"lat":-32.962160000000004,"description":"First stop along the way is Kahibah Station, of which only the sign remains."},{"type":"waypoint","photo":"019_p2180016.jpg","lon":151.71106699999999,"lat":-32.977796000000005,"description":"Next along the line it Whitebridge Station."},{"type":"waypoint","photo":"020_p2180017.jpg","lon":151.711278,"lat":-32.977560000000004,"description":"<i>+ 0.5h / 1km</i> Leave the track here on the right to visit the shops, cafes, and public restrooms.","optional":true},{"type":"waypoint","photo":"022_p2180019.jpg","lon":151.709992,"lat":-32.976738000000005,"description":"Follow the street up from the track and turn left at the intersection.","optional":true},{"type":"waypoint","photo":"023_p2180020.jpg","lon":151.708641,"lat":-32.977298000000005,"description":"Turn right after the tennis courts to find a public restrooms block.","optional":true},{"type":"waypoint","photo":"026_p2180023.jpg","lon":151.708235,"lat":-32.978238000000005,"description":"Follow the road to the roundabout to find the shops and cafes on the left.","optional":true},{"type":"waypoint","photo":"027_p2180024.jpg","lon":151.710566,"lat":-32.978325000000005,"description":"Retrace your steps back and continue along the Fernleigh Track.","optional":true},{"type":"waypoint","photo":"033_p2180029.jpg","lon":151.70940299999998,"lat":-33.005987,"description":"The next stop is Redhead Station. The platform is still there and there's some historical information."},{"type":"waypoint","photo":"037_p2180031.jpg","lon":151.70629399999999,"lat":-33.008389,"description":"After the station there's a turn off to Redhead Beach, which makes a nice side trip if time allows."},{"type":"waypoint","photo":"040_r0011758.jpg","lon":151.695695,"lat":-33.016591,"description":"The track continues past an industrial estate and a long stretch of wetlands."},{"type":"waypoint","photo":"043_p2180035.jpg","lon":151.68693,"lat":-33.020251,"description":"After crossing a major road the track continues to Jewwells Station."},{"type":"waypoint","photo":"044_p2180036.jpg","lon":151.686093,"lat":-33.021014,"description":"Only the station sign remains of Jewells Station. A sign points to nearby shops."},{"type":"waypoint","photo":"052_p2180039.jpg","lon":151.670334,"lat":-33.037791,"description":"Another long stretch of wetlands follows. Optionally watch for signs on the right to a short wildflower walk."},{"type":"waypoint","photo":"053_p2180040.jpg","lon":151.66148,"lat":-33.039107,"description":"The Fernleigh Track finally reaches the end of the line at Belmont Station."},{"type":"waypoint","photo":"055_p2180041.jpg","lon":151.66110600000002,"lat":-33.039007,"description":"From the station continue up the urban streets to the main road."},{"type":"waypoint","photo":"056_p2180042.jpg","lon":151.65947500000001,"lat":-33.038393,"description":"At the intersection turn right and follow the main road to the shops and the bus stop."},{"location":"Belmont","type":"bus","description":"Plan your return trip from Belmont at <a href=\"https://transportnsw.info/trip#/?from=Belmont\">transportnsw.info</a>.","lon":151.660328,"lat":-33.03633000000001}],"alias":{"key":"adamstown-lakemacquarie-teralba","start":0,"end":55,"bounds":{"west":151.58935546875,"north":-32.9164853473144,"east":151.732177734375,"south":-33.054716488042736}}}
+{
+  "location": "Fernleigh Track",
+  "lon": 151.709437,
+  "lat": -32.99588499999999,
+  "description": ["The <a href=\"http://www.railtrails.org.au/trail?view=trail&id=80\">Fernleigh track</a> is an old railway line from Newcastle to Lake Macquarie that has been turned into a bike path. The platforms of the stations are still visible along the way and food and drinks conveniently available nearby every stop."],
+  "duration": 4,
+  "distance": 18,
+  "zoom": 13,
+  "rain": true,
+  "fireban": true,
+  "key": "adamstown-fernleightrack-belmont",
+  "bounds": {
+    "west": 151.644287109375,
+    "north": -32.9164853473144,
+    "east": 151.732177734375,
+    "south": -33.054716488042736
+  },
+  "markers": [{
+    "location": "Adamstown",
+    "type": "train",
+    "description": "Get the train to Adamstown using <a href=\"https://transportnsw.info/trip#/?to=Adamstown\">transportnsw.info</a>.",
+    "lon": 151.72021,
+    "lat": -32.93396
+  }, {
+    "type": "kiosk",
+    "lat": -32.978277000000006,
+    "lon": 151.708188
+  }, {
+    "type": "kiosk",
+    "lat": -33.037087,
+    "lon": 151.659823
+  }, {
+    "type": "toilet",
+    "lat": -32.977214000000004,
+    "lon": 151.708441
+  }, {
+    "type": "toilet",
+    "lat": -33.03697,
+    "lon": 151.65954
+  }, {
+    "type": "waypoint",
+    "photo": "002_p2180002.jpg",
+    "lon": 151.719448,
+    "lat": -32.93446599999999,
+    "description": "Exit the station on the right and head follow Park Avenue."
+  }, {
+    "type": "waypoint",
+    "photo": "003_p2180003.jpg",
+    "lon": 151.717746,
+    "lat": -32.935731,
+    "description": "Cross the road at the intersection to the Fernleigh Track signpost."
+  }, {
+    "type": "waypoint",
+    "photo": "004_p2180004.jpg",
+    "lon": 151.717448,
+    "lat": -32.935979999999994,
+    "description": "Take note of the map and information, then follow the signs down the Fernleigh Track."
+  }, {
+    "type": "waypoint",
+    "photo": "008_p2180008.jpg",
+    "lon": 151.71556299999997,
+    "lat": -32.950732,
+    "description": "The old railway equipment, stretches of track, and tunnels can still be found along the way."
+  }, {
+    "type": "waypoint",
+    "photo": "005_p2180006.jpg",
+    "lon": 151.71513399999998,
+    "lat": -32.939786,
+    "description": "The track crosses several roads at former railway crossings."
+  }, {
+    "type": "waypoint",
+    "photo": "014_p2180012.jpg",
+    "lon": 151.718307,
+    "lat": -32.962160000000004,
+    "description": "First stop along the way is Kahibah Station, of which only the sign remains."
+  }, {
+    "type": "waypoint",
+    "photo": "019_p2180016.jpg",
+    "lon": 151.71106699999999,
+    "lat": -32.977796000000005,
+    "description": "Next along the line it Whitebridge Station."
+  }, {
+    "type": "waypoint",
+    "photo": "020_p2180017.jpg",
+    "lon": 151.711278,
+    "lat": -32.977560000000004,
+    "description": "<i>+ 0.5h / 1km</i> Leave the track here on the right to visit the shops, cafes, and public restrooms.",
+    "optional": true
+  }, {
+    "type": "waypoint",
+    "photo": "022_p2180019.jpg",
+    "lon": 151.709992,
+    "lat": -32.976738000000005,
+    "description": "Follow the street up from the track and turn left at the intersection.",
+    "optional": true
+  }, {
+    "type": "waypoint",
+    "photo": "023_p2180020.jpg",
+    "lon": 151.708641,
+    "lat": -32.977298000000005,
+    "description": "Turn right after the tennis courts to find a public restrooms block.",
+    "optional": true
+  }, {
+    "type": "waypoint",
+    "photo": "026_p2180023.jpg",
+    "lon": 151.708235,
+    "lat": -32.978238000000005,
+    "description": "Follow the road to the roundabout to find the shops and cafes on the left.",
+    "optional": true
+  }, {
+    "type": "waypoint",
+    "photo": "027_p2180024.jpg",
+    "lon": 151.710566,
+    "lat": -32.978325000000005,
+    "description": "Retrace your steps back and continue along the Fernleigh Track.",
+    "optional": true
+  }, {
+    "type": "waypoint",
+    "photo": "033_p2180029.jpg",
+    "lon": 151.70940299999998,
+    "lat": -33.005987,
+    "description": "The next stop is Redhead Station. The platform is still there and there's some historical information."
+  }, {
+    "type": "waypoint",
+    "photo": "037_p2180031.jpg",
+    "lon": 151.70629399999999,
+    "lat": -33.008389,
+    "description": "After the station there's a turn off to Redhead Beach, which makes a nice side trip if time allows."
+  }, {
+    "type": "waypoint",
+    "photo": "040_r0011758.jpg",
+    "lon": 151.695695,
+    "lat": -33.016591,
+    "description": "The track continues past an industrial estate and a long stretch of wetlands."
+  }, {
+    "type": "waypoint",
+    "photo": "043_p2180035.jpg",
+    "lon": 151.68693,
+    "lat": -33.020251,
+    "description": "After crossing a major road the track continues to Jewwells Station."
+  }, {
+    "type": "waypoint",
+    "photo": "044_p2180036.jpg",
+    "lon": 151.686093,
+    "lat": -33.021014,
+    "description": "Only the station sign remains of Jewells Station. A sign points to nearby shops."
+  }, {
+    "type": "waypoint",
+    "photo": "052_p2180039.jpg",
+    "lon": 151.670334,
+    "lat": -33.037791,
+    "description": "Another long stretch of wetlands follows. Optionally watch for signs on the right to a short wildflower walk."
+  }, {
+    "type": "waypoint",
+    "photo": "053_p2180040.jpg",
+    "lon": 151.66148,
+    "lat": -33.039107,
+    "description": "The Fernleigh Track finally reaches the end of the line at Belmont Station."
+  }, {
+    "type": "waypoint",
+    "photo": "055_p2180041.jpg",
+    "lon": 151.66110600000002,
+    "lat": -33.039007,
+    "description": "From the station continue up the urban streets to the main road."
+  }, {
+    "type": "waypoint",
+    "photo": "056_p2180042.jpg",
+    "lon": 151.65947500000001,
+    "lat": -33.038393,
+    "description": "At the intersection turn right and follow the main road to the shops and the bus stop."
+  }, {
+    "location": "Belmont",
+    "type": "bus",
+    "description": "Plan your return trip from Belmont at <a href=\"https://transportnsw.info/trip#/?from=Belmont\">transportnsw.info</a>.",
+    "lon": 151.660328,
+    "lat": -33.03633000000001
+  }],
+  "alias": {
+    "key": "adamstown-lakemacquarie-teralba",
+    "start": 0,
+    "end": 55,
+    "bounds": {
+      "west": 151.58935546875,
+      "north": -32.9164853473144,
+      "east": 151.732177734375,
+      "south": -33.054716488042736
+    }
+  }
+}

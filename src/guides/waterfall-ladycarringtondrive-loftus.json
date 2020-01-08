@@ -1,1 +1,234 @@
-{"location":"Lady Carrington Drive","lon":151.040833,"lat":-34.126251,"description":["This walk follows <a href=\"http://www.nationalparks.nsw.gov.au/royal-national-park/lady-carrington-drive/cycling\">Lady Carrington Drive</a> in the Royal National Park."],"duration":7,"distance":23,"zoom":13,"rain":false,"fireban":false,"key":"waterfall-ladycarringtondrive-loftus","bounds":{"west":150.97412109375,"north":-34.03445260967645,"east":151.083984375,"south":-34.161818161230386},"markers":[{"location":"Waterfall","type":"train","description":"Get the train to Waterfall using <a href=\"https://transportnsw.info/trip#/?to=Waterfall\">transportnsw.info</a>.","lat":-34.1350492,"lon":150.99596526007738},{"type":"kiosk","lat":-34.075375,"lon":151.0561138888889},{"type":"toilet","lat":-34.074991,"lon":151.056555},{"type":"toilet","lat":-34.072787,"lon":151.056754},{"type":"toilet","lat":-34.069799,"lon":151.059286},{"type":"waypoint","photo":"pa055975.jpg","lon":150.99596526007738,"lat":-34.1350492,"description":"From the station stair turn left and cross the carpark."},{"type":"waypoint","photo":"pa055976.jpg","lon":150.99714503996236,"lat":-34.13574943000456,"description":"On the far end of the car park a staircase leads to the trailhead."},{"type":"waypoint","photo":"pa055980.jpg","lon":150.99850555555554,"lat":-34.137344444444444,"description":"Follow the narrow bushtrail away from the station."},{"type":"waypoint","photo":"pa055981.jpg","lon":150.99876228001048,"lat":-34.137386470037455,"description":"Cross the cricket field to the firetrail on the other side."},{"type":"waypoint","photo":"pa055984.jpg","lon":151.005075,"lat":-34.137594444444446,"description":"Follow the Uloola Firetrail from the gate at the cricket field."},{"type":"waypoint","photo":"pa055987.jpg","lon":151.006375,"lat":-34.137858333333334,"description":"Find the sign to the Couranga Track on the right side of the trail."},{"type":"waypoint","photo":"pa055995.jpg","lon":151.00913333333332,"lat":-34.13986944444444,"description":"Follow the Couranga Track down the ridge."},{"type":"waypoint","photo":"pa056028.jpg","lon":151.02218960996396,"lat":-34.147004079998,"description":"Watch for the Carpark sign pointing to the creek crossing."},{"type":"waypoint","photo":"pa056029.jpg","lon":151.02221944444446,"lat":-34.147025,"description":"If the creek is flooded, continue down Couranga Track to McKell Ave instead."},{"type":"waypoint","photo":"pa056030.jpg","lon":151.0222545299853,"lat":-34.14705026999817,"description":"Cross the creek across the rocks and find the trail directly up the ridge."},{"type":"waypoint","photo":"pa056047.jpg","lon":151.02309722222225,"lat":-34.14795,"description":"Follow the trail up the ridge to the intersection with the Forest Path."},{"type":"waypoint","photo":"pa056050.jpg","lon":151.02294768995802,"lat":-34.14648485000334,"description":"At the intersection follow the Forest Path to the left."},{"type":"waypoint","photo":"pa056091.jpg","lon":151.03166666666667,"lat":-34.14173888888889,"description":"Follow the forest path through the rainforest until it joins Lady Carington Drive."},{"type":"waypoint","photo":"pa056093.jpg","lon":151.03145053996883,"lat":-34.14088657996419,"description":"From the intersection with Lady Carington Drive, follow the sign to Audley."},{"type":"waypoint","photo":"pa056133.jpg","lon":151.05182103000368,"lat":-34.09747804999617,"description":"Continue past the old springs on the side of the road along the way."},{"type":"waypoint","photo":"pa056147.jpg","lon":151.05458266000687,"lat":-34.08118894009217,"description":"Lady Carington Drive eventually reaches the riverside picnic area at Audley."},{"type":"waypoint","photo":"pa056168.jpg","lon":151.05607669999569,"lat":-34.075184670066456,"description":"Continue to the car park behind the Visitor Centre."},{"type":"waypoint","photo":"pa056180_pa056182.jpg","lon":151.05841944444447,"lat":-34.071672222222226,"description":"Cross the weir over the Hacking River and turn right down Riverside Drive."},{"type":"waypoint","photo":"pa056179.jpg","lon":151.0581311500615,"lat":-34.071789900034474,"description":"<i>- 1h / 3km</i> For a shortcut take the Honeymoon track up the ridge to the Park Office.","optional":true},{"type":"waypoint","photo":"pa056183.jpg","lon":151.05972036002484,"lat":-34.06983642997302,"description":"Follow the road down to the Reids Flat picnic area."},{"type":"waypoint","photo":"pa056223.jpg","lon":151.0594777777778,"lat":-34.06695277777778,"description":"Continue down the firetrail along the river on the far side of the picnic area."},{"type":"waypoint","photo":"pa056237.jpg","lon":151.06030273007488,"lat":-34.06483077998959,"description":"The firetrail turns into a narrow bushtrail along the way."},{"type":"waypoint","photo":"pa056248.jpg","lon":151.06848888888888,"lat":-34.06261388888888,"description":"Find the scramble up the ridge marked with painted arrows near the end of the trail."},{"type":"waypoint","photo":"pa056251.jpg","lon":151.06749919000467,"lat":-34.06044393996721,"description":"At the top of the ridge follow the firetrail to the left."},{"type":"waypoint","photo":"pa056256.jpg","lon":151.0615478800003,"lat":-34.06237946998723,"description":"Partway down the firetrail a paved path leads to a lookout."},{"type":"waypoint","photo":"pa056297.jpg","lon":151.05747282997285,"lat":-34.062985089999856,"description":"Follow the pathway back to the carpark at the Park Office."},{"type":"waypoint","photo":"pa056299.jpg","lon":151.05638586000705,"lat":-34.06192469000729,"description":"Across the carpark along the road a trail leads up to the tram platform."},{"type":"waypoint","photo":"pa056300.jpg","lon":151.05631666666667,"lat":-34.061816666666665,"description":"On Holidays and Sundays there may be an antique tram service to Loftus."},{"type":"waypoint","photo":"pa056304.jpg","lon":151.055125,"lat":-34.05776944444444,"description":"Follow the trail along the tramway to the Loftus Oval."},{"type":"waypoint","photo":"pa056320.jpg","lon":151.0531888888889,"lat":-34.04923611111111,"description":"Follow the Rawson Parade Trail to the traffic lights across the Princess Highway."},{"type":"waypoint","photo":"pa056322.jpg","lon":151.05148066000095,"lat":-34.04532900994379,"description":"Cross at the traffic lights and enter the Loftus Station carpark."},{"location":"Loftus","type":"train","description":"Plan your return trip from Loftus at <a href=\"https://transportnsw.info/trip#/?from=Loftus\">transportnsw.info</a>.","lat":-34.04475,"lon":151.051377}]}
+{
+  "location": "Lady Carrington Drive",
+  "lon": 151.040833,
+  "lat": -34.126251,
+  "description": ["This walk follows <a href=\"http://www.nationalparks.nsw.gov.au/royal-national-park/lady-carrington-drive/cycling\">Lady Carrington Drive</a> in the Royal National Park."],
+  "duration": 7,
+  "distance": 23,
+  "zoom": 13,
+  "rain": false,
+  "fireban": false,
+  "key": "waterfall-ladycarringtondrive-loftus",
+  "bounds": {
+    "west": 150.97412109375,
+    "north": -34.03445260967645,
+    "east": 151.083984375,
+    "south": -34.161818161230386
+  },
+  "markers": [{
+    "location": "Waterfall",
+    "type": "train",
+    "description": "Get the train to Waterfall using <a href=\"https://transportnsw.info/trip#/?to=Waterfall\">transportnsw.info</a>.",
+    "lat": -34.1350492,
+    "lon": 150.99596526007738
+  }, {
+    "type": "kiosk",
+    "lat": -34.075375,
+    "lon": 151.0561138888889
+  }, {
+    "type": "toilet",
+    "lat": -34.074991,
+    "lon": 151.056555
+  }, {
+    "type": "toilet",
+    "lat": -34.072787,
+    "lon": 151.056754
+  }, {
+    "type": "toilet",
+    "lat": -34.069799,
+    "lon": 151.059286
+  }, {
+    "type": "waypoint",
+    "photo": "pa055975.jpg",
+    "lon": 150.99596526007738,
+    "lat": -34.1350492,
+    "description": "From the station stair turn left and cross the carpark."
+  }, {
+    "type": "waypoint",
+    "photo": "pa055976.jpg",
+    "lon": 150.99714503996236,
+    "lat": -34.13574943000456,
+    "description": "On the far end of the car park a staircase leads to the trailhead."
+  }, {
+    "type": "waypoint",
+    "photo": "pa055980.jpg",
+    "lon": 150.99850555555554,
+    "lat": -34.137344444444444,
+    "description": "Follow the narrow bushtrail away from the station."
+  }, {
+    "type": "waypoint",
+    "photo": "pa055981.jpg",
+    "lon": 150.99876228001048,
+    "lat": -34.137386470037455,
+    "description": "Cross the cricket field to the firetrail on the other side."
+  }, {
+    "type": "waypoint",
+    "photo": "pa055984.jpg",
+    "lon": 151.005075,
+    "lat": -34.137594444444446,
+    "description": "Follow the Uloola Firetrail from the gate at the cricket field."
+  }, {
+    "type": "waypoint",
+    "photo": "pa055987.jpg",
+    "lon": 151.006375,
+    "lat": -34.137858333333334,
+    "description": "Find the sign to the Couranga Track on the right side of the trail."
+  }, {
+    "type": "waypoint",
+    "photo": "pa055995.jpg",
+    "lon": 151.00913333333332,
+    "lat": -34.13986944444444,
+    "description": "Follow the Couranga Track down the ridge."
+  }, {
+    "type": "waypoint",
+    "photo": "pa056028.jpg",
+    "lon": 151.02218960996396,
+    "lat": -34.147004079998,
+    "description": "Watch for the Carpark sign pointing to the creek crossing."
+  }, {
+    "type": "waypoint",
+    "photo": "pa056029.jpg",
+    "lon": 151.02221944444446,
+    "lat": -34.147025,
+    "description": "If the creek is flooded, continue down Couranga Track to McKell Ave instead."
+  }, {
+    "type": "waypoint",
+    "photo": "pa056030.jpg",
+    "lon": 151.0222545299853,
+    "lat": -34.14705026999817,
+    "description": "Cross the creek across the rocks and find the trail directly up the ridge."
+  }, {
+    "type": "waypoint",
+    "photo": "pa056047.jpg",
+    "lon": 151.02309722222225,
+    "lat": -34.14795,
+    "description": "Follow the trail up the ridge to the intersection with the Forest Path."
+  }, {
+    "type": "waypoint",
+    "photo": "pa056050.jpg",
+    "lon": 151.02294768995802,
+    "lat": -34.14648485000334,
+    "description": "At the intersection follow the Forest Path to the left."
+  }, {
+    "type": "waypoint",
+    "photo": "pa056091.jpg",
+    "lon": 151.03166666666667,
+    "lat": -34.14173888888889,
+    "description": "Follow the forest path through the rainforest until it joins Lady Carington Drive."
+  }, {
+    "type": "waypoint",
+    "photo": "pa056093.jpg",
+    "lon": 151.03145053996883,
+    "lat": -34.14088657996419,
+    "description": "From the intersection with Lady Carington Drive, follow the sign to Audley."
+  }, {
+    "type": "waypoint",
+    "photo": "pa056133.jpg",
+    "lon": 151.05182103000368,
+    "lat": -34.09747804999617,
+    "description": "Continue past the old springs on the side of the road along the way."
+  }, {
+    "type": "waypoint",
+    "photo": "pa056147.jpg",
+    "lon": 151.05458266000687,
+    "lat": -34.08118894009217,
+    "description": "Lady Carington Drive eventually reaches the riverside picnic area at Audley."
+  }, {
+    "type": "waypoint",
+    "photo": "pa056168.jpg",
+    "lon": 151.05607669999569,
+    "lat": -34.075184670066456,
+    "description": "Continue to the car park behind the Visitor Centre."
+  }, {
+    "type": "waypoint",
+    "photo": "pa056180_pa056182.jpg",
+    "lon": 151.05841944444447,
+    "lat": -34.071672222222226,
+    "description": "Cross the weir over the Hacking River and turn right down Riverside Drive."
+  }, {
+    "type": "waypoint",
+    "photo": "pa056179.jpg",
+    "lon": 151.0581311500615,
+    "lat": -34.071789900034474,
+    "description": "<i>- 1h / 3km</i> For a shortcut take the Honeymoon track up the ridge to the Park Office.",
+    "optional": true
+  }, {
+    "type": "waypoint",
+    "photo": "pa056183.jpg",
+    "lon": 151.05972036002484,
+    "lat": -34.06983642997302,
+    "description": "Follow the road down to the Reids Flat picnic area."
+  }, {
+    "type": "waypoint",
+    "photo": "pa056223.jpg",
+    "lon": 151.0594777777778,
+    "lat": -34.06695277777778,
+    "description": "Continue down the firetrail along the river on the far side of the picnic area."
+  }, {
+    "type": "waypoint",
+    "photo": "pa056237.jpg",
+    "lon": 151.06030273007488,
+    "lat": -34.06483077998959,
+    "description": "The firetrail turns into a narrow bushtrail along the way."
+  }, {
+    "type": "waypoint",
+    "photo": "pa056248.jpg",
+    "lon": 151.06848888888888,
+    "lat": -34.06261388888888,
+    "description": "Find the scramble up the ridge marked with painted arrows near the end of the trail."
+  }, {
+    "type": "waypoint",
+    "photo": "pa056251.jpg",
+    "lon": 151.06749919000467,
+    "lat": -34.06044393996721,
+    "description": "At the top of the ridge follow the firetrail to the left."
+  }, {
+    "type": "waypoint",
+    "photo": "pa056256.jpg",
+    "lon": 151.0615478800003,
+    "lat": -34.06237946998723,
+    "description": "Partway down the firetrail a paved path leads to a lookout."
+  }, {
+    "type": "waypoint",
+    "photo": "pa056297.jpg",
+    "lon": 151.05747282997285,
+    "lat": -34.062985089999856,
+    "description": "Follow the pathway back to the carpark at the Park Office."
+  }, {
+    "type": "waypoint",
+    "photo": "pa056299.jpg",
+    "lon": 151.05638586000705,
+    "lat": -34.06192469000729,
+    "description": "Across the carpark along the road a trail leads up to the tram platform."
+  }, {
+    "type": "waypoint",
+    "photo": "pa056300.jpg",
+    "lon": 151.05631666666667,
+    "lat": -34.061816666666665,
+    "description": "On Holidays and Sundays there may be an antique tram service to Loftus."
+  }, {
+    "type": "waypoint",
+    "photo": "pa056304.jpg",
+    "lon": 151.055125,
+    "lat": -34.05776944444444,
+    "description": "Follow the trail along the tramway to the Loftus Oval."
+  }, {
+    "type": "waypoint",
+    "photo": "pa056320.jpg",
+    "lon": 151.0531888888889,
+    "lat": -34.04923611111111,
+    "description": "Follow the Rawson Parade Trail to the traffic lights across the Princess Highway."
+  }, {
+    "type": "waypoint",
+    "photo": "pa056322.jpg",
+    "lon": 151.05148066000095,
+    "lat": -34.04532900994379,
+    "description": "Cross at the traffic lights and enter the Loftus Station carpark."
+  }, {
+    "location": "Loftus",
+    "type": "train",
+    "description": "Plan your return trip from Loftus at <a href=\"https://transportnsw.info/trip#/?from=Loftus\">transportnsw.info</a>.",
+    "lat": -34.04475,
+    "lon": 151.051377
+  }]
+}

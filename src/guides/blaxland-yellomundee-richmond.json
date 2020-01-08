@@ -1,1 +1,159 @@
-{"location":"Nepean River","lon":150.664047,"lat":-33.65303,"description":["Part of this walk covers <a href=\"http://www.nationalparks.nsw.gov.au/yellomundee-regional-park\">Yellomundee Regional Park</a>."],"duration":8,"distance":33,"zoom":13,"rain":false,"fireban":false,"key":"blaxland-yellomundee-richmond","bounds":{"west":150.589599609375,"north":-33.58716733904656,"east":150.765380859375,"south":-33.76088200086919},"markers":[{"location":"Blaxland","type":"train","description":"Get the train to Blaxland using <a href=\"https://transportnsw.info/trip#/?to=Blaxland\">transportnsw.info</a>.","lon":150.609756,"lat":-33.74329},{"type":"kiosk","lat":-33.731507,"lon":150.629647},{"type":"kiosk","lat":-33.61356299992081,"lon":150.691867},{"type":"kiosk","lat":-33.596132,"lon":150.749507},{"type":"toilet","lat":-33.730942,"lon":150.629398},{"type":"toilet","lat":-33.611034,"lon":150.696584},{"type":"waypoint","photo":"p9140003.jpg","lon":150.60966,"lat":-33.743217,"description":"Exit the station on the side of platform one."},{"type":"waypoint","photo":"p9140016.jpg","lon":150.61409799999998,"lat":-33.74408100006813,"description":"Follow the first street on the left all the way to the end, along Boorea Road, Rusden Road and Grandview Drive."},{"type":"waypoint","photo":"p9140028.jpg","lon":150.642688,"lat":-33.721109,"description":"After a gate the road turns into fire trail, which you should also follow to the end."},{"type":"waypoint","photo":"p9140049.jpg","lon":150.6461611111111,"lat":-33.71597777777778,"description":"After passing a junction with a mountain bike run, the fire trail ends at a lookout across a deep gorge."},{"type":"waypoint","photo":"p9140073.jpg","lon":150.643543,"lat":-33.718101000000004,"description":"Follow the fire trail back to the junction and follow the mountain bike run down to the Nepean River."},{"type":"waypoint","photo":"p9140107.jpg","lon":150.654918,"lat":-33.712618000000006,"description":"After a long descent, the mountain bike run ends at a powerline service trail along the bank of the Nepean River."},{"type":"waypoint","photo":"p9140126.jpg","lon":150.657254,"lat":-33.675126999999996,"description":"Follow the powerline service trail until it becomes a path through Yellomundee Regional Park,"},{"type":"waypoint","photo":"p9140172_p9140176.jpg","lon":150.6625611111111,"lat":-33.66117777777777,"description":"Several bush trails through Yellomundee Regional Park lead to a picnic area with access to the river."},{"type":"waypoint","photo":"p9140178.jpg","lon":150.661076,"lat":-33.661553,"description":"From the picnic area of Yellomundee, the walk continues along Springwood Road."},{"type":"waypoint","photo":"p9140187.jpg","lon":150.672607,"lat":-33.62742300010512,"description":"Be careful along the highway and stay on the footpaths and shoulders."},{"type":"waypoint","photo":"p9140191.jpg","lon":150.691867,"lat":-33.61356299992081,"description":"At the Trees Adventure Park along the road, refreshments are available."},{"type":"waypoint","photo":"p9140192.jpg","lon":150.696145,"lat":-33.612028,"description":"Near the end of Springwood Road, before the bridge there are entrances on both side of the road to Yarramundi Riverside Reserve"},{"type":"waypoint","photo":"p9140193.jpg","lon":150.696335,"lat":-33.611938,"description":"Take plenty of time to follow the self guided tours through both halves of the reserve, but leave about an hour and a half to reach Richmond"},{"type":"waypoint","photo":"p9140207_p9140210.jpg","lon":150.6985888888889,"lat":-33.60927222222222,"description":"On the left you can follow a loop through the park to see the Grose and Nepean rivers merge into the Hawkesbury River."},{"type":"waypoint","photo":"p9140258_p9140262.jpg","lon":150.69062222222223,"lat":-33.620511111111114,"description":"On the right of the highway is a self guided tour along an island in the Nepean River"},{"type":"waypoint","photo":"p9140230.jpg","lon":150.698756,"lat":-33.613665000000005,"description":"Exit the reserve across the bridge and follow Hawkesbury Road."},{"type":"waypoint","photo":"p9140290.jpg","lon":150.71048199999998,"lat":-33.614093000000004,"description":"Follow the directions to Richmond, taking great care to stay on the shoulder and footpaths of the highway."},{"type":"waypoint","photo":"p9140294.jpg","lon":150.73424699999998,"lat":-33.601851,"description":"As well as the train station, several restaurants can be found in the centre of town."},{"location":"Richmond","type":"train","description":"Plan your return trip from Richmond at <a href=\"https://transportnsw.info/trip#/?from=Richmond\">transportnsw.info</a>.","lon":150.752472,"lat":-33.59879299999999}]}
+{
+  "location": "Nepean River",
+  "lon": 150.664047,
+  "lat": -33.65303,
+  "description": ["Part of this walk covers <a href=\"http://www.nationalparks.nsw.gov.au/yellomundee-regional-park\">Yellomundee Regional Park</a>."],
+  "duration": 8,
+  "distance": 33,
+  "zoom": 13,
+  "rain": false,
+  "fireban": false,
+  "key": "blaxland-yellomundee-richmond",
+  "bounds": {
+    "west": 150.589599609375,
+    "north": -33.58716733904656,
+    "east": 150.765380859375,
+    "south": -33.76088200086919
+  },
+  "markers": [{
+    "location": "Blaxland",
+    "type": "train",
+    "description": "Get the train to Blaxland using <a href=\"https://transportnsw.info/trip#/?to=Blaxland\">transportnsw.info</a>.",
+    "lon": 150.609756,
+    "lat": -33.74329
+  }, {
+    "type": "kiosk",
+    "lat": -33.731507,
+    "lon": 150.629647
+  }, {
+    "type": "kiosk",
+    "lat": -33.61356299992081,
+    "lon": 150.691867
+  }, {
+    "type": "kiosk",
+    "lat": -33.596132,
+    "lon": 150.749507
+  }, {
+    "type": "toilet",
+    "lat": -33.730942,
+    "lon": 150.629398
+  }, {
+    "type": "toilet",
+    "lat": -33.611034,
+    "lon": 150.696584
+  }, {
+    "type": "waypoint",
+    "photo": "p9140003.jpg",
+    "lon": 150.60966,
+    "lat": -33.743217,
+    "description": "Exit the station on the side of platform one."
+  }, {
+    "type": "waypoint",
+    "photo": "p9140016.jpg",
+    "lon": 150.61409799999998,
+    "lat": -33.74408100006813,
+    "description": "Follow the first street on the left all the way to the end, along Boorea Road, Rusden Road and Grandview Drive."
+  }, {
+    "type": "waypoint",
+    "photo": "p9140028.jpg",
+    "lon": 150.642688,
+    "lat": -33.721109,
+    "description": "After a gate the road turns into fire trail, which you should also follow to the end."
+  }, {
+    "type": "waypoint",
+    "photo": "p9140049.jpg",
+    "lon": 150.6461611111111,
+    "lat": -33.71597777777778,
+    "description": "After passing a junction with a mountain bike run, the fire trail ends at a lookout across a deep gorge."
+  }, {
+    "type": "waypoint",
+    "photo": "p9140073.jpg",
+    "lon": 150.643543,
+    "lat": -33.718101000000004,
+    "description": "Follow the fire trail back to the junction and follow the mountain bike run down to the Nepean River."
+  }, {
+    "type": "waypoint",
+    "photo": "p9140107.jpg",
+    "lon": 150.654918,
+    "lat": -33.712618000000006,
+    "description": "After a long descent, the mountain bike run ends at a powerline service trail along the bank of the Nepean River."
+  }, {
+    "type": "waypoint",
+    "photo": "p9140126.jpg",
+    "lon": 150.657254,
+    "lat": -33.675126999999996,
+    "description": "Follow the powerline service trail until it becomes a path through Yellomundee Regional Park,"
+  }, {
+    "type": "waypoint",
+    "photo": "p9140172_p9140176.jpg",
+    "lon": 150.6625611111111,
+    "lat": -33.66117777777777,
+    "description": "Several bush trails through Yellomundee Regional Park lead to a picnic area with access to the river."
+  }, {
+    "type": "waypoint",
+    "photo": "p9140178.jpg",
+    "lon": 150.661076,
+    "lat": -33.661553,
+    "description": "From the picnic area of Yellomundee, the walk continues along Springwood Road."
+  }, {
+    "type": "waypoint",
+    "photo": "p9140187.jpg",
+    "lon": 150.672607,
+    "lat": -33.62742300010512,
+    "description": "Be careful along the highway and stay on the footpaths and shoulders."
+  }, {
+    "type": "waypoint",
+    "photo": "p9140191.jpg",
+    "lon": 150.691867,
+    "lat": -33.61356299992081,
+    "description": "At the Trees Adventure Park along the road, refreshments are available."
+  }, {
+    "type": "waypoint",
+    "photo": "p9140192.jpg",
+    "lon": 150.696145,
+    "lat": -33.612028,
+    "description": "Near the end of Springwood Road, before the bridge there are entrances on both side of the road to Yarramundi Riverside Reserve"
+  }, {
+    "type": "waypoint",
+    "photo": "p9140193.jpg",
+    "lon": 150.696335,
+    "lat": -33.611938,
+    "description": "Take plenty of time to follow the self guided tours through both halves of the reserve, but leave about an hour and a half to reach Richmond"
+  }, {
+    "type": "waypoint",
+    "photo": "p9140207_p9140210.jpg",
+    "lon": 150.6985888888889,
+    "lat": -33.60927222222222,
+    "description": "On the left you can follow a loop through the park to see the Grose and Nepean rivers merge into the Hawkesbury River."
+  }, {
+    "type": "waypoint",
+    "photo": "p9140258_p9140262.jpg",
+    "lon": 150.69062222222223,
+    "lat": -33.620511111111114,
+    "description": "On the right of the highway is a self guided tour along an island in the Nepean River"
+  }, {
+    "type": "waypoint",
+    "photo": "p9140230.jpg",
+    "lon": 150.698756,
+    "lat": -33.613665000000005,
+    "description": "Exit the reserve across the bridge and follow Hawkesbury Road."
+  }, {
+    "type": "waypoint",
+    "photo": "p9140290.jpg",
+    "lon": 150.71048199999998,
+    "lat": -33.614093000000004,
+    "description": "Follow the directions to Richmond, taking great care to stay on the shoulder and footpaths of the highway."
+  }, {
+    "type": "waypoint",
+    "photo": "p9140294.jpg",
+    "lon": 150.73424699999998,
+    "lat": -33.601851,
+    "description": "As well as the train station, several restaurants can be found in the centre of town."
+  }, {
+    "location": "Richmond",
+    "type": "train",
+    "description": "Plan your return trip from Richmond at <a href=\"https://transportnsw.info/trip#/?from=Richmond\">transportnsw.info</a>.",
+    "lon": 150.752472,
+    "lat": -33.59879299999999
+  }]
+}

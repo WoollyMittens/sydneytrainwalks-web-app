@@ -1,1 +1,170 @@
-{"location":"Garigal","lon":151.191269,"lat":-33.74744,"description":["This walk covers parts of the <a href=\"http://www.nationalparks.nsw.gov.au/garigal-national-park\">Garigal National Park</a> and the <a href=\"http://www.kmc.nsw.gov.au/Services_facilities/Facilities_and_venues/St_Ives_Precinct/Ku-ring-gai_Wildflower_Garden\">Wildflower Garden</a>."],"duration":6,"distance":17,"zoom":13,"rain":false,"fireban":false,"key":"wildflowergarden-garigal-roseville","bounds":{"west":151.160888671875,"north":-33.69692269295768,"east":151.226806640625,"south":-33.79740876757248},"markers":[{"location":"Wildflower Garden","type":"bus","description":"Get the train to Ku-ring-gai Wildflower Garden using <a href=\"https://transportnsw.info/trip#/?to=Ku-ring-gai Wildflower Garden\">transportnsw.info</a>.","lon":151.17482,"lat":-33.711716},{"type":"toilet","lat":-33.662128,"lon":151.162006},{"type":"toilet","lat":-33.768988,"lon":151.204023},{"type":"waypoint","photo":"p8182673.jpg","lon":151.17475539000014,"lat":-33.71133804000673,"description":"The bus stops near the Wildflower Garden, which is well worth a visit too."},{"type":"waypoint","photo":"p8182674.jpg","lon":151.17468757000447,"lat":-33.71320498001253,"description":"Cross at the traffic lights and walk down Kitchener Street."},{"type":"waypoint","photo":"p8182676.jpg","lon":151.1777524099442,"lat":-33.712703269995586,"description":"At the right turn in the road, follow the firetrail that starts at the gate to the left."},{"type":"waypoint","photo":"p8182680.jpg","lon":151.17773001996653,"lat":-33.710975099963655,"description":"Follow the zigzag down and to the left into Garrigal National Park."},{"type":"waypoint","photo":"p8182700.jpg","lon":151.19066796000814,"lat":-33.718676349998795,"description":"The firetrail goes past the recycling centre and down into the gully. Continue to the right after the creek."},{"type":"waypoint","photo":"p8182706.jpg","lon":151.188499269991,"lat":-33.71972114999714,"description":"At the junction of firetrails, continue to the left down the Bare Creek trail."},{"type":"waypoint","photo":"p8182713.jpg","lon":151.1913955399945,"lat":-33.72697354999824,"description":"The fire trail crosses a creek and continues on to another junction."},{"type":"waypoint","photo":"p8182716.jpg","lon":151.1912115600449,"lat":-33.728196110000745,"description":"At the junction follow the directions down the Cascades Track."},{"type":"waypoint","photo":"p8182720.jpg","lon":151.18981452000102,"lat":-33.72867503995553,"description":"The track crosses another creek, before going on to the cascades."},{"type":"waypoint","photo":"p8182729_p8182738.jpg","lon":151.18843611111112,"lat":-33.72833611111111,"description":"Cross the cascades and follow the trail to the right."},{"type":"waypoint","photo":"p8182762.jpg","lon":151.1845673700016,"lat":-33.73069106002554,"description":"The trail follows the steadily widening creek away from the cascades."},{"type":"waypoint","photo":"p8182795.jpg","lon":151.19109089997997,"lat":-33.74738819992484,"description":"The next promiment landmark along the creek is a pipe line crossing."},{"type":"waypoint","photo":"p8182833.jpg","lon":151.19496001999002,"lat":-33.75264014998655,"description":"The path turns left to follow a side creek for some distance."},{"type":"waypoint","photo":"p8182848.jpg","lon":151.19970461998457,"lat":-33.75343461000586,"description":"At a set of cascades the trail crosses this side creek and follows it back down."},{"type":"waypoint","photo":"p8182894.jpg","lon":151.1945232,"lat":-33.759649970050916,"description":"The trail gradually becomes a road along Middle Harbour."},{"type":"waypoint","photo":"p8182913.jpg","lon":151.20099003999383,"lat":-33.767260869996626,"description":"Eventually the trail ends at a gate to Davidson Park picnic area."},{"type":"waypoint","photo":"p8182930.jpg","lon":151.2046582000049,"lat":-33.77169000999313,"description":"Follow the picnic area to the Roseville Bridge."},{"type":"waypoint","photo":"p8182933_p8182938.jpg","lon":151.20324166666666,"lat":-33.773225,"description":"Take the road from the park up to the bridge and cross it."},{"type":"waypoint","photo":"p8182942.jpg","lon":151.20210604999852,"lat":-33.774200689983346,"description":"On the other side of the bridge, take the underpass to end up on Babbage Road."},{"type":"waypoint","photo":"p8182943.jpg","lon":151.17784118997173,"lat":-33.78395844,"description":"From the bridge, follow the suburban streets to Roseville Station."},{"location":"Roseville","type":"train","description":"Plan your return trip from Roseville at <a href=\"https://transportnsw.info/trip#/?from=Roseville\">transportnsw.info</a>.","lon":151.177841,"lat":-33.783958}],"alias":{"key":"mtkuringgai-garigal-roseville","start":98,"end":172,"bounds":{"west":151.1279296875,"north":-33.63291573870478,"east":151.226806640625,"south":-33.79740876757248}}}
+{
+  "location": "Garigal",
+  "lon": 151.191269,
+  "lat": -33.74744,
+  "description": ["This walk covers parts of the <a href=\"http://www.nationalparks.nsw.gov.au/garigal-national-park\">Garigal National Park</a> and the <a href=\"http://www.kmc.nsw.gov.au/Services_facilities/Facilities_and_venues/St_Ives_Precinct/Ku-ring-gai_Wildflower_Garden\">Wildflower Garden</a>."],
+  "duration": 6,
+  "distance": 17,
+  "zoom": 13,
+  "rain": false,
+  "fireban": false,
+  "key": "wildflowergarden-garigal-roseville",
+  "bounds": {
+    "west": 151.160888671875,
+    "north": -33.69692269295768,
+    "east": 151.226806640625,
+    "south": -33.79740876757248
+  },
+  "markers": [{
+    "location": "Wildflower Garden",
+    "type": "bus",
+    "description": "Get the train to Ku-ring-gai Wildflower Garden using <a href=\"https://transportnsw.info/trip#/?to=Ku-ring-gai Wildflower Garden\">transportnsw.info</a>.",
+    "lon": 151.17482,
+    "lat": -33.711716
+  }, {
+    "type": "toilet",
+    "lat": -33.662128,
+    "lon": 151.162006
+  }, {
+    "type": "toilet",
+    "lat": -33.768988,
+    "lon": 151.204023
+  }, {
+    "type": "waypoint",
+    "photo": "p8182673.jpg",
+    "lon": 151.17475539000014,
+    "lat": -33.71133804000673,
+    "description": "The bus stops near the Wildflower Garden, which is well worth a visit too."
+  }, {
+    "type": "waypoint",
+    "photo": "p8182674.jpg",
+    "lon": 151.17468757000447,
+    "lat": -33.71320498001253,
+    "description": "Cross at the traffic lights and walk down Kitchener Street."
+  }, {
+    "type": "waypoint",
+    "photo": "p8182676.jpg",
+    "lon": 151.1777524099442,
+    "lat": -33.712703269995586,
+    "description": "At the right turn in the road, follow the firetrail that starts at the gate to the left."
+  }, {
+    "type": "waypoint",
+    "photo": "p8182680.jpg",
+    "lon": 151.17773001996653,
+    "lat": -33.710975099963655,
+    "description": "Follow the zigzag down and to the left into Garrigal National Park."
+  }, {
+    "type": "waypoint",
+    "photo": "p8182700.jpg",
+    "lon": 151.19066796000814,
+    "lat": -33.718676349998795,
+    "description": "The firetrail goes past the recycling centre and down into the gully. Continue to the right after the creek."
+  }, {
+    "type": "waypoint",
+    "photo": "p8182706.jpg",
+    "lon": 151.188499269991,
+    "lat": -33.71972114999714,
+    "description": "At the junction of firetrails, continue to the left down the Bare Creek trail."
+  }, {
+    "type": "waypoint",
+    "photo": "p8182713.jpg",
+    "lon": 151.1913955399945,
+    "lat": -33.72697354999824,
+    "description": "The fire trail crosses a creek and continues on to another junction."
+  }, {
+    "type": "waypoint",
+    "photo": "p8182716.jpg",
+    "lon": 151.1912115600449,
+    "lat": -33.728196110000745,
+    "description": "At the junction follow the directions down the Cascades Track."
+  }, {
+    "type": "waypoint",
+    "photo": "p8182720.jpg",
+    "lon": 151.18981452000102,
+    "lat": -33.72867503995553,
+    "description": "The track crosses another creek, before going on to the cascades."
+  }, {
+    "type": "waypoint",
+    "photo": "p8182729_p8182738.jpg",
+    "lon": 151.18843611111112,
+    "lat": -33.72833611111111,
+    "description": "Cross the cascades and follow the trail to the right."
+  }, {
+    "type": "waypoint",
+    "photo": "p8182762.jpg",
+    "lon": 151.1845673700016,
+    "lat": -33.73069106002554,
+    "description": "The trail follows the steadily widening creek away from the cascades."
+  }, {
+    "type": "waypoint",
+    "photo": "p8182795.jpg",
+    "lon": 151.19109089997997,
+    "lat": -33.74738819992484,
+    "description": "The next promiment landmark along the creek is a pipe line crossing."
+  }, {
+    "type": "waypoint",
+    "photo": "p8182833.jpg",
+    "lon": 151.19496001999002,
+    "lat": -33.75264014998655,
+    "description": "The path turns left to follow a side creek for some distance."
+  }, {
+    "type": "waypoint",
+    "photo": "p8182848.jpg",
+    "lon": 151.19970461998457,
+    "lat": -33.75343461000586,
+    "description": "At a set of cascades the trail crosses this side creek and follows it back down."
+  }, {
+    "type": "waypoint",
+    "photo": "p8182894.jpg",
+    "lon": 151.1945232,
+    "lat": -33.759649970050916,
+    "description": "The trail gradually becomes a road along Middle Harbour."
+  }, {
+    "type": "waypoint",
+    "photo": "p8182913.jpg",
+    "lon": 151.20099003999383,
+    "lat": -33.767260869996626,
+    "description": "Eventually the trail ends at a gate to Davidson Park picnic area."
+  }, {
+    "type": "waypoint",
+    "photo": "p8182930.jpg",
+    "lon": 151.2046582000049,
+    "lat": -33.77169000999313,
+    "description": "Follow the picnic area to the Roseville Bridge."
+  }, {
+    "type": "waypoint",
+    "photo": "p8182933_p8182938.jpg",
+    "lon": 151.20324166666666,
+    "lat": -33.773225,
+    "description": "Take the road from the park up to the bridge and cross it."
+  }, {
+    "type": "waypoint",
+    "photo": "p8182942.jpg",
+    "lon": 151.20210604999852,
+    "lat": -33.774200689983346,
+    "description": "On the other side of the bridge, take the underpass to end up on Babbage Road."
+  }, {
+    "type": "waypoint",
+    "photo": "p8182943.jpg",
+    "lon": 151.17784118997173,
+    "lat": -33.78395844,
+    "description": "From the bridge, follow the suburban streets to Roseville Station."
+  }, {
+    "location": "Roseville",
+    "type": "train",
+    "description": "Plan your return trip from Roseville at <a href=\"https://transportnsw.info/trip#/?from=Roseville\">transportnsw.info</a>.",
+    "lon": 151.177841,
+    "lat": -33.783958
+  }],
+  "alias": {
+    "key": "mtkuringgai-garigal-roseville",
+    "start": 98,
+    "end": 172,
+    "bounds": {
+      "west": 151.1279296875,
+      "north": -33.63291573870478,
+      "east": 151.226806640625,
+      "south": -33.79740876757248
+    }
+  }
+}
