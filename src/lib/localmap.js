@@ -191,7 +191,8 @@ Localmap.prototype.Background = function (parent, onComplete) {
 	this.element = null;
 	this.image = new Image();
 	this.tilesQueue = null;
-  this.resolution = (/android 5|android 6|android 7/i.test(navigator.userAgent)) ? 3072 : 4096;
+  this.tilesSize = 256;
+
 
 	// METHODS
 
@@ -203,7 +204,7 @@ Localmap.prototype.Background = function (parent, onComplete) {
 
 	this.start = function() {
 		// create the canvas
-		this.element = document.createElement('canvas');
+		this.element = document.createElement('div');
 		this.element.setAttribute('class', 'localmap-background');
 		this.parent.element.appendChild(this.element);
     this.parent.canvasElement = this.element;
@@ -228,8 +229,8 @@ Localmap.prototype.Background = function (parent, onComplete) {
 		var min = this.config.minimum;
 		var max = this.config.maximum;
 		// calculate the limits
-		min.zoom = Math.max(container.offsetWidth / element.width * 2, container.offsetHeight / element.height * 2);
-		max.zoom = 3;
+		min.zoom = Math.max(container.offsetWidth / element.offsetWidth, container.offsetHeight / element.offsetHeight);
+		max.zoom = 2;
 	};
 
 	this.loadBitmap = function() {
@@ -255,13 +256,13 @@ Localmap.prototype.Background = function (parent, onComplete) {
 		var displayWidth = croppedWidth / 2;
 		var displayHeight = croppedHeight / 2;
 		// set the size of the canvas to the bitmap
-		element.width = croppedWidth;
-		element.height = croppedHeight;
+		element.style.width = croppedWidth + 'px';
+		element.style.height = croppedHeight + 'px';
 		// double up the bitmap to retina size
-		element.style.width = displayWidth + 'px';
-		element.style.height = displayHeight + 'px';
-		// paste the image into the canvas
-		element.getContext('2d').drawImage(image, offsetWidth, offsetHeight);
+		image.style.marginLeft = offsetWidth + 'px';
+		image.style.marginTop = offsetHeight + 'px';
+		// insert image instead of canvas
+		element.appendChild(image);
 		// redraw the component
 		this.redraw();
 		// resolve the promise
@@ -326,10 +327,10 @@ Localmap.prototype.Background = function (parent, onComplete) {
 		var container = this.config.container;
 		var element = this.element;
 		var coords = this.measureTiles();
-		// calculate the size of the canvas, limit the dimensions to 4096x4096
+		// calculate the size of the grid
     var gridWidth = Math.max(coords.maxX - coords.minX, 1);
     var gridHeight = Math.max(coords.maxY - coords.minY, 1);
-    var tileSize = Math.min(this.resolution / gridWidth, this.resolution / gridHeight, 256);
+    var tileSize = this.tilesSize;
 		var croppedWidth = gridWidth * tileSize;
 		var croppedHeight = gridHeight * tileSize;
 		var displayWidth = croppedWidth / 2;
@@ -370,9 +371,19 @@ Localmap.prototype.Background = function (parent, onComplete) {
 	};
 
 	this.drawTile = function(image) {
+		// take the last item from the queue
 		var props = this.tilesQueue.pop();
-		// draw the image onto the canvas
-		if (image) this.element.getContext('2d').drawImage(image, props.x * props.w, props.y * props.h, props.w, props.h);
+		// if an image was returned
+		if (image) {
+			// clone the image into the container
+			var tile = image.cloneNode();
+			tile.style.left = (props.x * props.w / 2) + 'px';
+			tile.style.top = (props.y * props.h / 2) + 'px';
+			tile.style.width = (props.w / 2) + 'px';
+			tile.style.height = (props.h / 2) + 'px';
+			tile.setAttribute('class', 'localmap-tile');
+			this.element.appendChild(tile);
+		}
 		// if there's more tiles in the queue
 		if (this.tilesQueue.length > 0) {
 			// load the next tile
@@ -409,7 +420,6 @@ Localmap.prototype.Canvas = function (parent, onComplete, onMarkerClicked, onMap
 	this.config = parent.config;
 	this.element = document.createElement('div');
 	this.config.canvasWrapper = this.element;
-  this.config.canvasElement = null;
 
 	// METHODS
 

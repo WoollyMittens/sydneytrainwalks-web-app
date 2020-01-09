@@ -76,10 +76,15 @@
   		}
   	}
 
-  	&-background {
-  		display: block;
-  		user-select: none;
-  	}
+		&-background {
+		  display: block;
+		  user-select: none;
+		  position: relative;
+		}
+
+		&-tile {
+		  position: absolute;
+		}
 
   	&-indicator,
   	&-location,

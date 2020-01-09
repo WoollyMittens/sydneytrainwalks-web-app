@@ -23,5 +23,14 @@
 				"request": "",
 				"xmldom": "",
 				"shelljs": ""
+		},
+		"dependencies": {
+				"canvas": "^2.6.1",
+				"del": "^5.1.0",
+				"fs": "0.0.2",
+				"gulp-autoprefixer": "^7.0.1",
+				"gulp-imagemin": "^6.2.0",
+				"jsdom": "^15.2.1",
+				"xmldom": "^0.2.1"
 		}
 }
