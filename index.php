@@ -46,6 +46,21 @@
 			// variables
 			$inc = './inc/';
 
+			// load and process the json file
+			$jsonText = file_get_contents($inc . "js/guide-data.js");
+			$jsonText = preg_split('/ = /i', $jsonText);
+			$jsonText = $jsonText[1];
+			$jsonText = preg_split('/;/i', $jsonText);
+			$jsonText = $jsonText[0];
+			$json = json_decode($jsonText);
+
+			$keys = array_keys(get_object_vars($json));
+			$keysIndex = rand(0 , count($keys) - 1);
+			$highlighted = $json->{$keys[$keysIndex]};
+			
+			$markers =  $highlighted->{'markers'};
+			$firstMarker = $markers[0];
+			$lastMarker = array_values(array_slice($markers, -1))[0];
 		?>
 		<div class="ios-margins">
 			<section id="appView">
@@ -53,15 +68,27 @@
 					<h1><a href="./">Sydney Train Walks</a></h1>
 				</header>
 				<nav class="navigation">
-					<p>
-						<img class="intro" alt="" src="./inc/img/favicon.png"/>
-						Easy bushwalks around Sydney using the train, bus and ferry.
-					</p>
+
 					<p class="app-banners">
-						<span>Take these guides with you as an app:</span>
+						<span>Take these guides for easy bushwalks around Sydney using public transport, with you as an app:</span>
 						<a href="https://play.google.com/store/apps/details?id=com.sydneytrainwalks.ios"><img alt="Get it on Google Play" src="./inc/img/banner-android.png"/></a>
 						<a href="https://itunes.apple.com/us/app/sydney-train-walks/id917041642?ls=1&mt=8"><img alt="Download on the App Store" src="./inc/img/banner-ios.png"/></a>
 					</p>
+
+					<article style="background-image:linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(inc/social/<?php print $highlighted->{'key'}?>.png)">
+						<hgroup>
+							<h2>Suggested:</h2>
+							<h3>
+								This <?php print $highlighted->{'distance'}?>km walk
+								from <?php print $firstMarker->{'location'}?>
+								to <?php print $lastMarker->{'location'}?>
+								via <?php print $highlighted->{'location'}?>
+							</h3>
+						</hgroup>
+						<p><?php print join('</p><p>', $highlighted->{'description'}) ?></p>
+						<a href="details.php?id=<?php print $highlighted->{'key'}?>" class="btn">More</a>
+					</article>
+
 					<form id="sorting" data-target=".navigation > menu > li">
 						<label>
 							<span>Search for:</span>
@@ -79,16 +106,8 @@
 						</label>
 					</form>
 					<menu>
+
 						<?php
-
-							// load and process the json file
-							$jsonText = file_get_contents($inc . "js/guide-data.js");
-							$jsonText = preg_split('/ = /i', $jsonText);
-							$jsonText = $jsonText[1];
-							$jsonText = preg_split('/;/i', $jsonText);
-							$jsonText = $jsonText[0];
-							$json = json_decode($jsonText);
-
 							// for each entry
 							foreach ($json as $name => $value) {
 
