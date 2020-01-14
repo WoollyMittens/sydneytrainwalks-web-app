@@ -20,6 +20,9 @@
 		$description = join(' ', $json->{'description'});
 		$description = strip_tags($description);
 
+		// format date
+		$displayDate = date("d M Y", strtotime($json->{'updated'}));
+
 		// determine the path of the assets
 		$assets = $id;
 		if (property_exists($json, 'alias')) { $assets = $json->{'alias'}->{'key'}; }
@@ -86,6 +89,7 @@
 				<article class="guide guide-closed">
 					<div class="guide-scroller">
 						<h2>About this walk</h2>
+						<time datetime="<?php print $json->{'updated'}?>">Updated: <?php print $displayDate?></time>
 						<p><?php print join('</p><p>', $json->{'description'}) ?></p>
 						<p>
 							It takes about <?php print $json->{'duration'}?> hours to complete the full <?php print $json->{'distance'}?> kilometre walk,

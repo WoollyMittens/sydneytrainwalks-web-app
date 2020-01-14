@@ -15,7 +15,7 @@
 		width: 100%;
 		z-index: 7;
 
-		.about-scroller {
+		&-scroller {
 			height: 100%;
 			overflow-x: hidden;
 			overflow-y: auto;

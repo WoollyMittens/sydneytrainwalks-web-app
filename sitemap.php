@@ -21,7 +21,7 @@
 		// for each entry
 		foreach ($json as $name => $value) {
 			if ($value->{'key'} !== '_index') {
-				echo '<url><loc>https://www.sydneytrainwalks.com/details.php?id='. $name . '</loc><lastmod>2020-01-10</lastmod></url>';
+				echo '<url><loc>https://www.sydneytrainwalks.com/details.php?id='. $value->{'key'} . '</loc><lastmod>' . $value->{'updated'} . '</lastmod></url>';
 			}
 		}
 	?>

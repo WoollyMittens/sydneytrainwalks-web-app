@@ -56,8 +56,16 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		var there = '<p>' + markers[0].description + '</p>';
 		var back = '<p>' + markers[markers.length - 1].description + '</p>';
 		var landmarks = this.updateLandmarks(id);
+		var updated = GuideData[id].updated;
+		var date = new Date(updated).toLocaleDateString('en-AU', {
+			year: 'numeric',
+			month: 'short', 
+			day: 'numeric'
+		});
 		// fill the guide with information
 		this.config.guide.innerHTML = this.config.guideTemplate.innerHTML
+			.replace(/{updated}/g, updated)
+			.replace(/{date}/g, date)
 			.replace(/{description}/g, description)
 			.replace(/{duration}/g, duration)
 			.replace(/{distance}/g, distance)

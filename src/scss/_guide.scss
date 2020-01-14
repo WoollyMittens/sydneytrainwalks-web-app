@@ -34,16 +34,16 @@
 			margin-top: 1.4rem;
 		}
 
-		.guide-landmark {
+		&-landmark {
 			display: flex;
 			align-items: center;
 			margin: 1.5rem 0;
 			padding: 0;
 		}
 
-		.guide-attention,
-		.guide-detour,
-		.guide-optional {
+		&-attention,
+		&-detour,
+		&-optional {
 			margin: 0 -2rem;
 			padding: 1px 2rem;
 			position: relative;
@@ -64,15 +64,15 @@
 			}
 		}
 
-		.guide-detour {
+		&-detour {
 			background-color: #eeccdd;
 		}
 
-		.guide-attention {
+		&-attention {
 			background-color: #ccddee;
 		}
 
-		.guide-optional {
+		&-optional {
 			background-color: #ddeecc;
 		}
 
@@ -104,7 +104,7 @@
 			}
 		}
 
-		.guide-locate {
+		&-locate {
 			border: none;
 			background-color: Transparent;
 			background-image: url('../img/marker-location.svg');
@@ -124,7 +124,7 @@
 			vertical-align: middle;
 		}
 
-		.guide-scroller {
+		&-scroller {
 			height: 100%;
 			overflow-x: hidden;
 			overflow-y: auto;
@@ -133,6 +133,12 @@
 
 			h2 {
 				margin-top: 20px;
+			}
+
+			time {
+				float: right;
+				font-size: 0.75em;
+				margin-top: -1.75rem;
 			}
 		}
 	}
@@ -176,7 +182,7 @@
 		width: 100% !important;
 		height: auto !important;
 
-		.guide-scroller {
+		&-scroller {
 			height: auto !important;
 			overflow: visible !important;
 		}
