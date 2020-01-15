@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html class="ios-false">
+	<?php
+
+		// constants
+		$title = 'Sydney Hiking Trips';
+		$domain = 'www.sydneyhikingtrips.com';
+
+	?>
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta http-equiv="imagetoolbar" content="no"/>
 		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<title>Sydney Train Walks - About this Website</title>
+		<title><?php print $title ?> - About this Website</title>
 		<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width, user-scalable=yes"/>
-		<meta property="og:url" content="https://www.sydneytrainwalks.com/about.php" />
-		<meta property="og:image" content="https://www.sydneytrainwalks.com/inc/img/favicon.png" />
-		<meta property="og:title" content="Sydney Train Walks - About this Website" />
+		<meta property="og:url" content="https://<?php print $domain ?>/about.php" />
+		<meta property="og:image" content="https://<?php print $domain ?>/inc/img/favicon.png" />
+		<meta property="og:title" content="<?php print $title ?> - About this Website" />
 		<meta property="og:description" content="Don't let organising a bushwalk intimidate you. These walks are easy day trips from Sydney using public transport." />
 		<meta name="msapplication-TileColor" content="#558b2f" />
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
@@ -46,13 +53,13 @@
 		<div class="ios-margins">
 			<section id="appView">
 				<header class="title">
-					<h1><a href="./">Sydney Train Walks</a></h1>
+					<h1><a href="./"><?php print $title ?></a></h1>
 				</header>
 				<section class="about">
 					<div class="about-scroller">
-						<h2>About Sydney Train Walks</h2>
+						<h2>About <?php print $title ?></h2>
 						<p>This guide was created to give my exploration of Sydney's amazing national parks a useful purpose. I hope it will motivate people to venture out on nature walks by making it easier to get started.</p>
-						<p>Please add your <a href="https://github.com/WoollyMittens/sydneytrainwalks-web-app/issues">suggestions and bug reports on GitHub</a>, or send them to <a href="mailto:info@sydneytrainwalks.com">info@sydneytrainwalks.com</a>.</p>
+						<p>Please add your <a href="https://github.com/WoollyMittens/sydneytrainwalks-web-app/issues">suggestions and bug reports on GitHub</a>, or send them to <a href="mailto:maurice@sydneytrainwalks.com">maurice@sydneytrainwalks.com</a>.</p>
 						<h2>Credits</h2>
 						<p>App, photography and GPS logs &copy; Maurice van Creij, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>.</p>
 						<p>Maps &copy; <a href="http://www.4umaps.com/">4UMaps</a>, &copy; <a href="http://www.thunderforest.com/">Thunderforest</a>.</p>

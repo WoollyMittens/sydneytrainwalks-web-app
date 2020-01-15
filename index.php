@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html class="ios-false">
+	<?php
+
+		// constants
+		$title = 'Sydney Hiking Trips';
+		$domain = 'www.sydneyhikingtrips.com';
+
+		// load and process the json file
+		$jsonText = file_get_contents("./inc/js/guide-data.js");
+		$jsonText = preg_split('/ = /i', $jsonText);
+		$jsonText = $jsonText[1];
+		$jsonText = preg_split('/;/i', $jsonText);
+		$jsonText = $jsonText[0];
+		$json = json_decode($jsonText);
+
+		$keys = array_keys(get_object_vars($json));
+		$keysIndex = rand(0 , count($keys) - 1);
+		$highlighted = $json->{$keys[$keysIndex]};
+
+		$markers =  $highlighted->{'markers'};
+		$firstMarker = $markers[0];
+		$lastMarker = array_values(array_slice($markers, -1))[0];
+	?>
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta http-equiv="imagetoolbar" content="no"/>
 		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<title>Sydney Train Walks - Easy bushwalks around Sydney using the train, bus and ferry.</title>
+		<title><?php print $title ?> - Easy bushwalks around Sydney using the train, bus and ferry.</title>
 		<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width, user-scalable=yes"/>
-		<meta property="og:url" content="https://www.sydneytrainwalks.com/" />
-		<meta property="og:image" content="https://www.sydneytrainwalks.com/inc/img/favicon.png" />
-		<meta property="og:title" content="Sydney Train Walks - Easy bushwalks around Sydney using the train, bus and ferry." />
+		<meta property="og:url" content="https://<?php print $domain ?>/" />
+		<meta property="og:image" content="https://<?php print $domain ?>/inc/img/favicon.png" />
+		<meta property="og:title" content="<?php print $title ?> - Easy bushwalks around Sydney using the train, bus and ferry." />
 		<meta property="og:description" content="Don't let organising a bushwalk intimidate you. These 40+ hikes are easy day trips from Sydney using public transport." />
 		<meta name="msapplication-TileColor" content="#558b2f" />
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
@@ -41,31 +63,10 @@
 		</script>
 	</head>
 	<body class="screen-menu">
-		<?php
-
-			// variables
-			$inc = './inc/';
-
-			// load and process the json file
-			$jsonText = file_get_contents($inc . "js/guide-data.js");
-			$jsonText = preg_split('/ = /i', $jsonText);
-			$jsonText = $jsonText[1];
-			$jsonText = preg_split('/;/i', $jsonText);
-			$jsonText = $jsonText[0];
-			$json = json_decode($jsonText);
-
-			$keys = array_keys(get_object_vars($json));
-			$keysIndex = rand(0 , count($keys) - 1);
-			$highlighted = $json->{$keys[$keysIndex]};
-			
-			$markers =  $highlighted->{'markers'};
-			$firstMarker = $markers[0];
-			$lastMarker = array_values(array_slice($markers, -1))[0];
-		?>
 		<div class="ios-margins">
 			<section id="appView">
 				<header class="title">
-					<h1><a href="./">Sydney Train Walks</a></h1>
+					<h1><a href="./"><?php print $title ?></a></h1>
 				</header>
 				<nav class="navigation">
 
@@ -159,7 +160,7 @@
 				var sydneyTrainWalksOverview = new sydneyTrainWalks.Overview({
 					'config' : {
 						'local': './inc',
-						'remote': '//www.sydneytrainwalks.com/inc',
+						'remote': '//<?php print $domain ?>/inc',
 						'onlineTiles' : '//4umaps.com/{z}/{x}/{y}.png',
 						'offlineTiles' : './inc/tiles/{z}/{x}/{y}.jpg',
 						'missing' : './inc/img/missing.png'

@@ -147,7 +147,7 @@ var parseGuides = function (queue) {
 					GuideData[key].alias.bounds = guideCache[alias].bounds;
 				}
 				// save the converted guide
-				fs.writeFile(source + item, JSON.stringify(GuideData[key]), function (error) {
+				fs.writeFile(source + item, JSON.stringify(GuideData[key], null, '\t'), function (error) {
 					// next iteration in the queue
 					parseGuides(queue);
 				});

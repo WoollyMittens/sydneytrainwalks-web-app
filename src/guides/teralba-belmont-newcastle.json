@@ -1,1 +1,747 @@
-{"location":"Lake Macquarie","lon":151.6784999426,"lat":-33.0296226963,"description":["This walk follow the <a href=\"http://www.visitlakemac.com.au/what-to-see-and-do/adventure/cyclepaths\">Warners Bay Foreshore Shared Pathway</a> along the shore of Lake Macquarie.","Along the way this walk passes through <a href=\"http://www.visitlakemac.com.au/valentine/green-point-reserve\">Green Point Reserve</a>.","From Belmont this walk follows the <a href=\"http://www.railtrails.org.au/trail?view=trail&id=80\">Fernleigh track</a> through <a href=\"http://www.belmontwetlands.com.au/\">Belmont Wetlands State Park</a> to Redhead.","There the walk follows the coastal track through <a href=\"http://www.environment.nsw.gov.au/NationalParks/parkHome.aspx?id=N0522\">Awabakal</a> and <a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/glenrock-state-conservation-area\">Glenrock State Conservation Area</a>."],"duration":10,"distance":43,"zoom":13,"rain":false,"fireban":false,"key":"teralba-belmont-newcastle","updated":"2019-02-22","bounds":{"west":151.58935546875,"north":-32.9164853473144,"east":151.798095703125,"south":-33.054716488042736},"markers":[{"location":"Teralba","type":"train","description":"Get the train to Adamstown using <a href=\"https://transportnsw.info/trip#/?to=Teralba\">transportnsw.info</a>.","lon":151.6034559254,"lat":-32.9623152595},{"type":"kiosk","lat":-32.948477,"lon":151.756778},{"type":"kiosk","lat":-33.036977,"lon":151.659464},{"type":"kiosk","lat":-32.97394722222222,"lon":151.64323888888887},{"type":"kiosk","lat":-33.009511,"lon":151.635204},{"type":"kiosk","lat":-33.014041,"lon":151.71969},{"type":"toilet","lat":-32.948155,"lon":151.756841},{"type":"toilet","lat":-32.974841,"lon":151.644288},{"type":"toilet","lat":-33.035152777777775,"lon":151.6571138888889},{"type":"toilet","lat":-33.011038,"lon":151.628616},{"type":"toilet","lat":-33.028398,"lon":151.635704},{"type":"toilet","lat":-33.009252,"lon":151.634937},{"type":"toilet","lat":-33.000419,"lon":151.640301},{"type":"toilet","lat":-32.961178,"lon":151.614977},{"type":"toilet","lat":-32.988935,"lon":151.63619},{"type":"toilet","lat":-32.963656,"lon":151.604771},{"type":"toilet","lat":-33.013587,"lon":151.719824},{"type":"toilet","lat":-32.99191,"lon":151.7255},{"type":"toilet","lat":-32.933671,"lon":151.778788},{"type":"waypoint","photo":"dsc_3128.jpg","lon":151.6038286199969,"lat":-32.962388950073425,"description":"Exit the station to the right across the pedestrian bridge."},{"type":"waypoint","photo":"dsc_3131.jpg","lon":151.6041641999671,"lat":-32.96277165000265,"description":"From the station exit follow the Great North Walk signs down ANZAC Parade."},{"type":"waypoint","photo":"dsc_3132.jpg","lon":151.60740870999956,"lat":-32.966001450063445,"description":"At the highway, turn left down Lake Crescent"},{"type":"waypoint","photo":"dsc_3133.jpg","lon":151.60799056000445,"lat":-32.96494031996001,"description":"From the end of Lake Crescent, follow the bike path past the holiday park."},{"type":"waypoint","photo":"dsc_3134.jpg","lon":151.60912069000324,"lat":-32.962958669944975,"description":"Turn right and follow the path underneath the highway."},{"type":"waypoint","photo":"dsc_3136.jpg","lon":151.60943272995698,"lat":-32.96355602993886,"description":"After the underpass follow the bike path right along Five Islands Road."},{"type":"waypoint","photo":"dsc_3139.jpg","lon":151.6156589100065,"lat":-32.95872517006803,"description":"Follow the bike path across Cockle Creek and take the ramp down at a small roundabout."},{"type":"waypoint","photo":"dsc_3141.jpg","lon":151.6152693099555,"lat":-32.96060585004302,"description":"At the bottom of the ramp turn left and follow the path along Cockle Creek to the park."},{"type":"waypoint","photo":"dsc_3155.jpg","lon":151.6220543,"lat":-32.96497841005475,"description":"Follow the bike path through the park and along the lake."},{"type":"waypoint","photo":"dsc_3177.jpg","lon":151.64325257000252,"lat":-32.97373297002725,"description":"The bike path continues along the edge of the lake to Warners Bay."},{"type":"waypoint","photo":"dsc_3181.jpg","lon":151.64128027995358,"lat":-32.98576752,"description":"Cross the walkway past the viewing platforms to the carpark and a boat ramp."},{"type":"waypoint","photo":"dsc_3202.jpg","lon":151.63580817000252,"lat":-32.99010454002389,"description":"From the car park exit cross Macquarrie Drive and enter Harkins Street on the left."},{"type":"waypoint","photo":"dsc_3203.jpg","lon":151.6357790100081,"lat":-32.990627099988416,"description":"Turn right down Croft Road."},{"type":"waypoint","photo":"dsc_3204.jpg","lon":151.63566806000236,"lat":-32.99278809001671,"description":"And right again down Pannamena Crescent."},{"type":"waypoint","photo":"dsc_3206.jpg","lon":151.63280289999398,"lat":-32.99421326000611,"description":"At the end of the street descend from the embankment and cross Bereki Road at the bus stop."},{"type":"waypoint","photo":"dsc_3211.jpg","lon":151.63248464001384,"lat":-32.9941447800394,"description":"From the bus stop enter Eleebana Road and immediately turn left down Toonibal Avenue."},{"type":"waypoint","photo":"dsc_3212.jpg","lon":151.63248471994163,"lat":-32.9955976999727,"description":"Continue along the bike path at the end of the street."},{"type":"waypoint","photo":"dsc_3214.jpg","lon":151.6381492699596,"lat":-32.99856927010693,"description":"Cross the carpark and continue along the bike path through the park."},{"type":"waypoint","photo":"dsc_3218.jpg","lon":151.64307636996668,"lat":-33.00639738000032,"description":"At the end of the park continue on the footpath along Macquarie Drive and cross Sheppards Creek."},{"type":"waypoint","photo":"dsc_3219.jpg","lon":151.64286370997232,"lat":-33.00802480997523,"description":"From the petrol station turn right down Tallawalla Road."},{"type":"waypoint","photo":"dsc_3223.jpg","lon":151.63355017999993,"lat":-33.009878010008016,"description":"Continue past the Valentine shops along Dilkera Avenue."},{"type":"waypoint","photo":"dsc_3224.jpg","lon":151.63163143989433,"lat":-33.01051463005929,"description":"Follow the park along the lakefront to the end."},{"type":"waypoint","photo":"dsc_3232.jpg","lon":151.62868571000152,"lat":-33.013796150020475,"description":"Enter the trailhead into Green Point at the end of Dilkera Avenue."},{"type":"waypoint","photo":"dsc_3235.jpg","lon":151.6303741299304,"lat":-33.018728889981965,"description":"Follow the trail through lake through Green Point along the lake."},{"type":"waypoint","photo":"dsc_3254.jpg","lon":151.63299244000555,"lat":-33.02606035999459,"description":"Keep right at the paved path to continue the lakeside path."},{"type":"waypoint","photo":"dsc_3267_dsc_3274.jpg","lon":151.63589010000135,"lat":-33.027560170104955,"description":"<i>+ 0.25h / 0.1km</i> Optionally follow the stairs up to the Sea Eagle Lookout.","optional":true},{"type":"waypoint","photo":"dsc_3283.jpg","lon":151.64150486992182,"lat":-33.030011619986375,"description":"From the lookout continue through the park on the footpath along the lake."},{"type":"waypoint","photo":"dsc_3284.jpg","lon":151.64441049003548,"lat":-33.03014565992866,"description":"At the end of the park, continue along Ross Street."},{"type":"waypoint","photo":"dsc_3287.jpg","lon":151.65074560999923,"lat":-33.02939702000203,"description":"Turn right at the intersection and follow the footpath past the Sailing Club."},{"type":"waypoint","photo":"dsc_3299.jpg","lon":151.6568853000287,"lat":-33.034569460000675,"description":"Continue along the footpath through the lakeside reserve."},{"type":"waypoint","photo":"dsc_3301.jpg","lon":151.65774496000225,"lat":-33.03588424999205,"description":"From the end of the reserve turn left and follow Macquarie Street."},{"type":"waypoint","photo":"dsc_3302.jpg","lon":151.659915390007,"lat":-33.03600716000331,"description":"At the intersection with the Pacific Highway, continue right past the shops."},{"type":"waypoint","photo":"dsc_3303.jpg","lon":151.65959631999127,"lat":-33.037915750005915,"description":"Cross at the second set of traffic lights and turn left into Gen Street."},{"type":"waypoint","photo":"dsc_3304.jpg","lon":151.66049436003684,"lat":-33.03866375,"description":"Enter the reserve to the right at the corner to the old Belmont train station."},{"type":"waypoint","photo":"dsc_3305.jpg","lon":151.66103334996674,"lat":-33.03898022999856,"description":"From the old train station platform, follow the signs to Adamstown along the Fernleigh Track."},{"type":"waypoint","photo":"dsc_3334.jpg","lon":151.68625956999486,"lat":-33.020625060021125,"description":"Cross Kalaroo Road and continue along the Fernleigh track."},{"type":"waypoint","photo":"dsc_3337.jpg","lon":151.70580960999652,"lat":-33.0086981999482,"description":"At Liles Oval follow the sign to Redhead Beach down Cowlishaw Street."},{"type":"waypoint","photo":"dsc_3338.jpg","lon":151.70783285002034,"lat":-33.009271719960125,"description":"At the intersection with Elsdon Street follow the sign right to Redhead Beach."},{"type":"waypoint","photo":"dsc_3339.jpg","lon":151.70724663995324,"lat":-33.011705620030085,"description":"Before the dog park, turn left down Brown Street."},{"type":"waypoint","photo":"dsc_3340.jpg","lon":151.7072841300603,"lat":-33.01242195004803,"description":"Then immediately right again into Elsdon Street."},{"type":"waypoint","photo":"dsc_3342.jpg","lon":151.70765826998237,"lat":-33.014602799967726,"description":"After a turn to the left, enter the trailhead on the right of side of the street."},{"type":"waypoint","photo":"dsc_3343.jpg","lon":151.7076293199554,"lat":-33.0147258800241,"description":"From the trailhead follow the footpath left through the dunes."},{"type":"waypoint","photo":"dsc_3364.jpg","lon":151.7163758500033,"lat":-33.01446031002913,"description":"At the end of the walkway, turn left to Webb Park Playground."},{"type":"waypoint","photo":"dsc_3365.jpg","lon":151.71613053000436,"lat":-33.01342625,"description":"From the playground follow Beach Road to the right."},{"type":"waypoint","photo":"dsc_3366.jpg","lon":151.7163102499701,"lat":-33.012680770007066,"description":"Cross Freshwater Creek on the footpath along Beach Road."},{"type":"waypoint","photo":"dsc_3367.jpg","lon":151.71765272999988,"lat":-33.01264540000719,"description":"At the surf club carpark, turn left into Alison Street."},{"type":"waypoint","photo":"dsc_3368.jpg","lon":151.719605300007,"lat":-33.010106690000306,"description":"Follow the right turn down Collier Street."},{"type":"waypoint","photo":"dsc_3369.jpg","lon":151.7249681100019,"lat":-33.01080157992565,"description":"Enter the trailhead into Awabakal on the left at the top of the hill."},{"type":"waypoint","photo":"dsc_3373.jpg","lon":151.72737112997015,"lat":-33.00654936998855,"description":"Follow the bushtrail through the coastal heath."},{"type":"waypoint","photo":"dsc_3376.jpg","lon":151.7282001899859,"lat":-32.997689530050025,"description":"The trail ends at the intersection with the Bluff Trail."},{"type":"waypoint","photo":"dsc_3385_dsc_3393.jpg","lon":151.7297612701085,"lat":-32.99791628000495,"description":"<i>+ 0.5h / 0.5km</i> Optinally turn right and follow Bluff Trail to the lookout.","optional":true},{"type":"waypoint","photo":"dsc_3397.jpg","lon":151.7277938599932,"lat":-32.99666057990261,"description":"From the intersection, follow Bluff trail to the left to a forested picnic area."},{"type":"waypoint","photo":"dsc_3399.jpg","lon":151.72705646002922,"lat":-32.995079099976806,"description":"Continue past the picnic table and continue down Ocean Street Trail to the gate."},{"type":"waypoint","photo":"dsc_3400.jpg","lon":151.72587836998386,"lat":-32.99376798999878,"description":"From the gate follow Ocean Street."},{"type":"waypoint","photo":"dsc_3401.jpg","lon":151.72361690000358,"lat":-32.98987338999795,"description":"Follow Ocean Street to the intersection with Bombala Street and follow it to the right."},{"type":"waypoint","photo":"dsc_3404.jpg","lon":151.72581857999077,"lat":-32.9859726199947,"description":"At the end of Bombala Street enter the trailhead."},{"type":"waypoint","photo":"dsc_3406.jpg","lon":151.7260632499771,"lat":-32.98523473999594,"description":"At the split follow the sign left towards the beach."},{"type":"waypoint","photo":"dsc_3408.jpg","lon":151.72717244997185,"lat":-32.9824697100201,"description":"From the end of the trail follow the beach towards the next headland."},{"type":"waypoint","photo":"dsc_3420.jpg","lon":151.73139895993555,"lat":-32.97148174001684,"description":"Find the entrance to the Dudley North Trail near the end of the beach and follow it into the dunes."},{"type":"waypoint","photo":"dsc_3422.jpg","lon":151.72906664003727,"lat":-32.969502240005475,"description":"Turn right at the worn trail and follow it up the ridge."},{"type":"waypoint","photo":"dsc_3424.jpg","lon":151.73131825006826,"lat":-32.96754438999974,"description":"At the top of the ridge follow the Goat Trail to the right."},{"type":"waypoint","photo":"dsc_3428.jpg","lon":151.7351172400158,"lat":-32.966106219939675,"description":"At the lookout overlooking Glenrock Lagoon, follow the staircase down."},{"type":"waypoint","photo":"dsc_3429_dsc_3436.jpg","lon":151.73603618997547,"lat":-32.965034280117536,"description":"Follow the trail down the ridge to Glenrock Lagoon and continue along the beach."},{"type":"waypoint","photo":"dsc_3455.jpg","lon":151.745888850066,"lat":-32.95627742996269,"description":"At the next headland continue along the ocean if it's safe or climb the trail up the headland."},{"type":"waypoint","photo":"dsc_3497.jpg","lon":151.7464477599252,"lat":-32.95315584000929,"description":"<i>+ 0.5h / 2km</i> From the lookout at the top follow the trail to Hickson Street.","optional":true},{"type":"waypoint","photo":"dsc_3499.jpg","lon":151.74700847005468,"lat":-32.952042099996426,"description":"At the carpark follow Hickson Street to the right.","optional":true},{"type":"waypoint","photo":"dsc_3500.jpg","lon":151.75128822000073,"lat":-32.95203308999262,"description":"Take the staircase down between the houses.","optional":true},{"type":"waypoint","photo":"dsc_3502.jpg","lon":151.75187462000304,"lat":-32.95157230000819,"description":"At the bottom follow Lloyd Street to the left.","optional":true},{"type":"waypoint","photo":"dsc_3503.jpg","lon":151.7520560500106,"lat":-32.95154265999265,"description":"Turn right at the intersection and follow Scenic Drive to the Merewether Ocean Bath.","optional":true},{"type":"waypoint","photo":"dsc_3504.jpg","lon":151.7545657099698,"lat":-32.95102378999981,"description":"Enter the carpark of the Merewether Ocean Bath and follow the path to the surf club.","optional":true},{"type":"waypoint","photo":"dsc_3507.jpg","lon":151.75686328000197,"lat":-32.94820262991128,"description":"From the Merewether Ocean Bath follow the path along the beach past the surf club."},{"type":"waypoint","photo":"dsc_3512.jpg","lon":151.76947318,"lat":-32.9408098100126,"description":"Cross the carpark and continue along Memorial Drive."},{"type":"waypoint","photo":"dsc_3515.jpg","lon":151.7720149800079,"lat":-32.938382559999994,"description":"Turn right and climb the staircase onto the Memorial Walk"},{"type":"waypoint","photo":"dsc_3529.jpg","lon":151.77680503000423,"lat":-32.93663838999962,"description":"On the other side of the Memorial Walk, continue along Memorial Drive."},{"type":"waypoint","photo":"dsc_3530.jpg","lon":151.77705923999423,"lat":-32.93630430999743,"description":"At the intersection turn right down Cliff Street past the Shepherds Hill Complex."},{"type":"waypoint","photo":"dsc_3531.jpg","lon":151.77793411005794,"lat":-32.935719899999995,"description":"At Shepherds Hill Complex, follow the Great North Walk sign to Newcastle."},{"type":"waypoint","photo":"dsc_3532.jpg","lon":151.77847266001228,"lat":-32.934780890003715,"description":"Cross York Street and follow the path down into King Edward Park."},{"type":"waypoint","photo":"dsc_3533.jpg","lon":151.7786778099218,"lat":-32.933644239999,"description":"In the park follow the path left up to Reserve Road."},{"type":"waypoint","photo":"dsc_3535.jpg","lon":151.77786489006675,"lat":-32.933210110041266,"description":"Cross Reserve Road and turn left into Wolfe Street."},{"type":"waypoint","photo":"dsc_3538.jpg","lon":151.77836206000106,"lat":-32.93183563998781,"description":"On the right side of Wolfe Street climb the staircase to the Obelisk."},{"type":"waypoint","photo":"dsc_3540.jpg","lon":151.7790426700465,"lat":-32.932071940104166,"description":"On the other side of the Obelisk follow the staircase down."},{"type":"waypoint","photo":"dsc_3542.jpg","lon":151.780221289898,"lat":-32.93201308999669,"description":"At the bottom of the stairs follow Newcomen Street to the left."},{"type":"waypoint","photo":"dsc_3543.jpg","lon":151.78108673001586,"lat":-32.92980756000106,"description":"At the intersection with Church Street, turn right."},{"type":"waypoint","photo":"dsc_3544.jpg","lon":151.78226796998422,"lat":-32.929989329918904,"description":"Turn left at the intersection with Bolton Street."},{"type":"waypoint","photo":"dsc_3547.jpg","lon":151.78328043996078,"lat":-32.92754535996671,"description":"Follow Hunter Street to the left towards the shops."},{"type":"waypoint","photo":"dsc_3548.jpg","lon":151.78144764999956,"lat":-32.9269547799891,"description":"Find the Great North Walk marker on the right and follow the footpath to Scott Street."},{"type":"waypoint","photo":"dsc_3550.jpg","lon":151.78131376000673,"lat":-32.926532929930715,"description":"Take tram to Newcastle Interchange from the Queens Wharf stop."},{"location":"Newcastle","type":"tram","description":"Plan your return trip from Teralba at <a href=\"https://transportnsw.info/trip#/?from=Queens Wharf\">transportnsw.info</a>.","lon":151.7814960144,"lat":-32.9263810348}]}
+{
+	"location": "Lake Macquarie",
+	"lon": 151.6784999426,
+	"lat": -33.0296226963,
+	"description": [
+		"This walk follow the <a href=\"http://www.visitlakemac.com.au/what-to-see-and-do/adventure/cyclepaths\">Warners Bay Foreshore Shared Pathway</a> along the shore of Lake Macquarie.",
+		"Along the way this walk passes through <a href=\"http://www.visitlakemac.com.au/valentine/green-point-reserve\">Green Point Reserve</a>.",
+		"From Belmont this walk follows the <a href=\"http://www.railtrails.org.au/trail?view=trail&id=80\">Fernleigh track</a> through <a href=\"http://www.belmontwetlands.com.au/\">Belmont Wetlands State Park</a> to Redhead.",
+		"There the walk follows the coastal track through <a href=\"http://www.environment.nsw.gov.au/NationalParks/parkHome.aspx?id=N0522\">Awabakal</a> and <a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/glenrock-state-conservation-area\">Glenrock State Conservation Area</a>."
+	],
+	"duration": 10,
+	"distance": 43,
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "teralba-belmont-newcastle",
+	"updated": "2019-02-22",
+	"bounds": {
+		"west": 151.58935546875,
+		"north": -32.9164853473144,
+		"east": 151.798095703125,
+		"south": -33.054716488042736
+	},
+	"markers": [
+		{
+			"location": "Teralba",
+			"type": "train",
+			"description": "Get the train to Adamstown using <a href=\"https://transportnsw.info/trip#/?to=Teralba\">transportnsw.info</a>.",
+			"lon": 151.6034559254,
+			"lat": -32.9623152595
+		},
+		{
+			"type": "kiosk",
+			"lat": -32.948477,
+			"lon": 151.756778
+		},
+		{
+			"type": "kiosk",
+			"lat": -33.036977,
+			"lon": 151.659464
+		},
+		{
+			"type": "kiosk",
+			"lat": -32.97394722222222,
+			"lon": 151.64323888888887
+		},
+		{
+			"type": "kiosk",
+			"lat": -33.009511,
+			"lon": 151.635204
+		},
+		{
+			"type": "kiosk",
+			"lat": -33.014041,
+			"lon": 151.71969
+		},
+		{
+			"type": "toilet",
+			"lat": -32.948155,
+			"lon": 151.756841
+		},
+		{
+			"type": "toilet",
+			"lat": -32.974841,
+			"lon": 151.644288
+		},
+		{
+			"type": "toilet",
+			"lat": -33.035152777777775,
+			"lon": 151.6571138888889
+		},
+		{
+			"type": "toilet",
+			"lat": -33.011038,
+			"lon": 151.628616
+		},
+		{
+			"type": "toilet",
+			"lat": -33.028398,
+			"lon": 151.635704
+		},
+		{
+			"type": "toilet",
+			"lat": -33.009252,
+			"lon": 151.634937
+		},
+		{
+			"type": "toilet",
+			"lat": -33.000419,
+			"lon": 151.640301
+		},
+		{
+			"type": "toilet",
+			"lat": -32.961178,
+			"lon": 151.614977
+		},
+		{
+			"type": "toilet",
+			"lat": -32.988935,
+			"lon": 151.63619
+		},
+		{
+			"type": "toilet",
+			"lat": -32.963656,
+			"lon": 151.604771
+		},
+		{
+			"type": "toilet",
+			"lat": -33.013587,
+			"lon": 151.719824
+		},
+		{
+			"type": "toilet",
+			"lat": -32.99191,
+			"lon": 151.7255
+		},
+		{
+			"type": "toilet",
+			"lat": -32.933671,
+			"lon": 151.778788
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3128.jpg",
+			"lon": 151.6038286199969,
+			"lat": -32.962388950073425,
+			"description": "Exit the station to the right across the pedestrian bridge."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3131.jpg",
+			"lon": 151.6041641999671,
+			"lat": -32.96277165000265,
+			"description": "From the station exit follow the Great North Walk signs down ANZAC Parade."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3132.jpg",
+			"lon": 151.60740870999956,
+			"lat": -32.966001450063445,
+			"description": "At the highway, turn left down Lake Crescent"
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3133.jpg",
+			"lon": 151.60799056000445,
+			"lat": -32.96494031996001,
+			"description": "From the end of Lake Crescent, follow the bike path past the holiday park."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3134.jpg",
+			"lon": 151.60912069000324,
+			"lat": -32.962958669944975,
+			"description": "Turn right and follow the path underneath the highway."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3136.jpg",
+			"lon": 151.60943272995698,
+			"lat": -32.96355602993886,
+			"description": "After the underpass follow the bike path right along Five Islands Road."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3139.jpg",
+			"lon": 151.6156589100065,
+			"lat": -32.95872517006803,
+			"description": "Follow the bike path across Cockle Creek and take the ramp down at a small roundabout."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3141.jpg",
+			"lon": 151.6152693099555,
+			"lat": -32.96060585004302,
+			"description": "At the bottom of the ramp turn left and follow the path along Cockle Creek to the park."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3155.jpg",
+			"lon": 151.6220543,
+			"lat": -32.96497841005475,
+			"description": "Follow the bike path through the park and along the lake."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3177.jpg",
+			"lon": 151.64325257000252,
+			"lat": -32.97373297002725,
+			"description": "The bike path continues along the edge of the lake to Warners Bay."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3181.jpg",
+			"lon": 151.64128027995358,
+			"lat": -32.98576752,
+			"description": "Cross the walkway past the viewing platforms to the carpark and a boat ramp."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3202.jpg",
+			"lon": 151.63580817000252,
+			"lat": -32.99010454002389,
+			"description": "From the car park exit cross Macquarrie Drive and enter Harkins Street on the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3203.jpg",
+			"lon": 151.6357790100081,
+			"lat": -32.990627099988416,
+			"description": "Turn right down Croft Road."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3204.jpg",
+			"lon": 151.63566806000236,
+			"lat": -32.99278809001671,
+			"description": "And right again down Pannamena Crescent."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3206.jpg",
+			"lon": 151.63280289999398,
+			"lat": -32.99421326000611,
+			"description": "At the end of the street descend from the embankment and cross Bereki Road at the bus stop."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3211.jpg",
+			"lon": 151.63248464001384,
+			"lat": -32.9941447800394,
+			"description": "From the bus stop enter Eleebana Road and immediately turn left down Toonibal Avenue."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3212.jpg",
+			"lon": 151.63248471994163,
+			"lat": -32.9955976999727,
+			"description": "Continue along the bike path at the end of the street."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3214.jpg",
+			"lon": 151.6381492699596,
+			"lat": -32.99856927010693,
+			"description": "Cross the carpark and continue along the bike path through the park."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3218.jpg",
+			"lon": 151.64307636996668,
+			"lat": -33.00639738000032,
+			"description": "At the end of the park continue on the footpath along Macquarie Drive and cross Sheppards Creek."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3219.jpg",
+			"lon": 151.64286370997232,
+			"lat": -33.00802480997523,
+			"description": "From the petrol station turn right down Tallawalla Road."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3223.jpg",
+			"lon": 151.63355017999993,
+			"lat": -33.009878010008016,
+			"description": "Continue past the Valentine shops along Dilkera Avenue."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3224.jpg",
+			"lon": 151.63163143989433,
+			"lat": -33.01051463005929,
+			"description": "Follow the park along the lakefront to the end."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3232.jpg",
+			"lon": 151.62868571000152,
+			"lat": -33.013796150020475,
+			"description": "Enter the trailhead into Green Point at the end of Dilkera Avenue."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3235.jpg",
+			"lon": 151.6303741299304,
+			"lat": -33.018728889981965,
+			"description": "Follow the trail through lake through Green Point along the lake."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3254.jpg",
+			"lon": 151.63299244000555,
+			"lat": -33.02606035999459,
+			"description": "Keep right at the paved path to continue the lakeside path."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3267_dsc_3274.jpg",
+			"lon": 151.63589010000135,
+			"lat": -33.027560170104955,
+			"description": "<i>+ 0.25h / 0.1km</i> Optionally follow the stairs up to the Sea Eagle Lookout.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3283.jpg",
+			"lon": 151.64150486992182,
+			"lat": -33.030011619986375,
+			"description": "From the lookout continue through the park on the footpath along the lake."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3284.jpg",
+			"lon": 151.64441049003548,
+			"lat": -33.03014565992866,
+			"description": "At the end of the park, continue along Ross Street."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3287.jpg",
+			"lon": 151.65074560999923,
+			"lat": -33.02939702000203,
+			"description": "Turn right at the intersection and follow the footpath past the Sailing Club."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3299.jpg",
+			"lon": 151.6568853000287,
+			"lat": -33.034569460000675,
+			"description": "Continue along the footpath through the lakeside reserve."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3301.jpg",
+			"lon": 151.65774496000225,
+			"lat": -33.03588424999205,
+			"description": "From the end of the reserve turn left and follow Macquarie Street."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3302.jpg",
+			"lon": 151.659915390007,
+			"lat": -33.03600716000331,
+			"description": "At the intersection with the Pacific Highway, continue right past the shops."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3303.jpg",
+			"lon": 151.65959631999127,
+			"lat": -33.037915750005915,
+			"description": "Cross at the second set of traffic lights and turn left into Gen Street."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3304.jpg",
+			"lon": 151.66049436003684,
+			"lat": -33.03866375,
+			"description": "Enter the reserve to the right at the corner to the old Belmont train station."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3305.jpg",
+			"lon": 151.66103334996674,
+			"lat": -33.03898022999856,
+			"description": "From the old train station platform, follow the signs to Adamstown along the Fernleigh Track."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3334.jpg",
+			"lon": 151.68625956999486,
+			"lat": -33.020625060021125,
+			"description": "Cross Kalaroo Road and continue along the Fernleigh track."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3337.jpg",
+			"lon": 151.70580960999652,
+			"lat": -33.0086981999482,
+			"description": "At Liles Oval follow the sign to Redhead Beach down Cowlishaw Street."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3338.jpg",
+			"lon": 151.70783285002034,
+			"lat": -33.009271719960125,
+			"description": "At the intersection with Elsdon Street follow the sign right to Redhead Beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3339.jpg",
+			"lon": 151.70724663995324,
+			"lat": -33.011705620030085,
+			"description": "Before the dog park, turn left down Brown Street."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3340.jpg",
+			"lon": 151.7072841300603,
+			"lat": -33.01242195004803,
+			"description": "Then immediately right again into Elsdon Street."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3342.jpg",
+			"lon": 151.70765826998237,
+			"lat": -33.014602799967726,
+			"description": "After a turn to the left, enter the trailhead on the right of side of the street."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3343.jpg",
+			"lon": 151.7076293199554,
+			"lat": -33.0147258800241,
+			"description": "From the trailhead follow the footpath left through the dunes."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3364.jpg",
+			"lon": 151.7163758500033,
+			"lat": -33.01446031002913,
+			"description": "At the end of the walkway, turn left to Webb Park Playground."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3365.jpg",
+			"lon": 151.71613053000436,
+			"lat": -33.01342625,
+			"description": "From the playground follow Beach Road to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3366.jpg",
+			"lon": 151.7163102499701,
+			"lat": -33.012680770007066,
+			"description": "Cross Freshwater Creek on the footpath along Beach Road."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3367.jpg",
+			"lon": 151.71765272999988,
+			"lat": -33.01264540000719,
+			"description": "At the surf club carpark, turn left into Alison Street."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3368.jpg",
+			"lon": 151.719605300007,
+			"lat": -33.010106690000306,
+			"description": "Follow the right turn down Collier Street."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3369.jpg",
+			"lon": 151.7249681100019,
+			"lat": -33.01080157992565,
+			"description": "Enter the trailhead into Awabakal on the left at the top of the hill."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3373.jpg",
+			"lon": 151.72737112997015,
+			"lat": -33.00654936998855,
+			"description": "Follow the bushtrail through the coastal heath."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3376.jpg",
+			"lon": 151.7282001899859,
+			"lat": -32.997689530050025,
+			"description": "The trail ends at the intersection with the Bluff Trail."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3385_dsc_3393.jpg",
+			"lon": 151.7297612701085,
+			"lat": -32.99791628000495,
+			"description": "<i>+ 0.5h / 0.5km</i> Optinally turn right and follow Bluff Trail to the lookout.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3397.jpg",
+			"lon": 151.7277938599932,
+			"lat": -32.99666057990261,
+			"description": "From the intersection, follow Bluff trail to the left to a forested picnic area."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3399.jpg",
+			"lon": 151.72705646002922,
+			"lat": -32.995079099976806,
+			"description": "Continue past the picnic table and continue down Ocean Street Trail to the gate."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3400.jpg",
+			"lon": 151.72587836998386,
+			"lat": -32.99376798999878,
+			"description": "From the gate follow Ocean Street."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3401.jpg",
+			"lon": 151.72361690000358,
+			"lat": -32.98987338999795,
+			"description": "Follow Ocean Street to the intersection with Bombala Street and follow it to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3404.jpg",
+			"lon": 151.72581857999077,
+			"lat": -32.9859726199947,
+			"description": "At the end of Bombala Street enter the trailhead."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3406.jpg",
+			"lon": 151.7260632499771,
+			"lat": -32.98523473999594,
+			"description": "At the split follow the sign left towards the beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3408.jpg",
+			"lon": 151.72717244997185,
+			"lat": -32.9824697100201,
+			"description": "From the end of the trail follow the beach towards the next headland."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3420.jpg",
+			"lon": 151.73139895993555,
+			"lat": -32.97148174001684,
+			"description": "Find the entrance to the Dudley North Trail near the end of the beach and follow it into the dunes."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3422.jpg",
+			"lon": 151.72906664003727,
+			"lat": -32.969502240005475,
+			"description": "Turn right at the worn trail and follow it up the ridge."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3424.jpg",
+			"lon": 151.73131825006826,
+			"lat": -32.96754438999974,
+			"description": "At the top of the ridge follow the Goat Trail to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3428.jpg",
+			"lon": 151.7351172400158,
+			"lat": -32.966106219939675,
+			"description": "At the lookout overlooking Glenrock Lagoon, follow the staircase down."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3429_dsc_3436.jpg",
+			"lon": 151.73603618997547,
+			"lat": -32.965034280117536,
+			"description": "Follow the trail down the ridge to Glenrock Lagoon and continue along the beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3455.jpg",
+			"lon": 151.745888850066,
+			"lat": -32.95627742996269,
+			"description": "At the next headland continue along the ocean if it's safe or climb the trail up the headland."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3497.jpg",
+			"lon": 151.7464477599252,
+			"lat": -32.95315584000929,
+			"description": "<i>+ 0.5h / 2km</i> From the lookout at the top follow the trail to Hickson Street.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3499.jpg",
+			"lon": 151.74700847005468,
+			"lat": -32.952042099996426,
+			"description": "At the carpark follow Hickson Street to the right.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3500.jpg",
+			"lon": 151.75128822000073,
+			"lat": -32.95203308999262,
+			"description": "Take the staircase down between the houses.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3502.jpg",
+			"lon": 151.75187462000304,
+			"lat": -32.95157230000819,
+			"description": "At the bottom follow Lloyd Street to the left.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3503.jpg",
+			"lon": 151.7520560500106,
+			"lat": -32.95154265999265,
+			"description": "Turn right at the intersection and follow Scenic Drive to the Merewether Ocean Bath.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3504.jpg",
+			"lon": 151.7545657099698,
+			"lat": -32.95102378999981,
+			"description": "Enter the carpark of the Merewether Ocean Bath and follow the path to the surf club.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3507.jpg",
+			"lon": 151.75686328000197,
+			"lat": -32.94820262991128,
+			"description": "From the Merewether Ocean Bath follow the path along the beach past the surf club."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3512.jpg",
+			"lon": 151.76947318,
+			"lat": -32.9408098100126,
+			"description": "Cross the carpark and continue along Memorial Drive."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3515.jpg",
+			"lon": 151.7720149800079,
+			"lat": -32.938382559999994,
+			"description": "Turn right and climb the staircase onto the Memorial Walk"
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3529.jpg",
+			"lon": 151.77680503000423,
+			"lat": -32.93663838999962,
+			"description": "On the other side of the Memorial Walk, continue along Memorial Drive."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3530.jpg",
+			"lon": 151.77705923999423,
+			"lat": -32.93630430999743,
+			"description": "At the intersection turn right down Cliff Street past the Shepherds Hill Complex."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3531.jpg",
+			"lon": 151.77793411005794,
+			"lat": -32.935719899999995,
+			"description": "At Shepherds Hill Complex, follow the Great North Walk sign to Newcastle."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3532.jpg",
+			"lon": 151.77847266001228,
+			"lat": -32.934780890003715,
+			"description": "Cross York Street and follow the path down into King Edward Park."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3533.jpg",
+			"lon": 151.7786778099218,
+			"lat": -32.933644239999,
+			"description": "In the park follow the path left up to Reserve Road."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3535.jpg",
+			"lon": 151.77786489006675,
+			"lat": -32.933210110041266,
+			"description": "Cross Reserve Road and turn left into Wolfe Street."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3538.jpg",
+			"lon": 151.77836206000106,
+			"lat": -32.93183563998781,
+			"description": "On the right side of Wolfe Street climb the staircase to the Obelisk."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3540.jpg",
+			"lon": 151.7790426700465,
+			"lat": -32.932071940104166,
+			"description": "On the other side of the Obelisk follow the staircase down."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3542.jpg",
+			"lon": 151.780221289898,
+			"lat": -32.93201308999669,
+			"description": "At the bottom of the stairs follow Newcomen Street to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3543.jpg",
+			"lon": 151.78108673001586,
+			"lat": -32.92980756000106,
+			"description": "At the intersection with Church Street, turn right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3544.jpg",
+			"lon": 151.78226796998422,
+			"lat": -32.929989329918904,
+			"description": "Turn left at the intersection with Bolton Street."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3547.jpg",
+			"lon": 151.78328043996078,
+			"lat": -32.92754535996671,
+			"description": "Follow Hunter Street to the left towards the shops."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3548.jpg",
+			"lon": 151.78144764999956,
+			"lat": -32.9269547799891,
+			"description": "Find the Great North Walk marker on the right and follow the footpath to Scott Street."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3550.jpg",
+			"lon": 151.78131376000673,
+			"lat": -32.926532929930715,
+			"description": "Take tram to Newcastle Interchange from the Queens Wharf stop."
+		},
+		{
+			"location": "Newcastle",
+			"type": "tram",
+			"description": "Plan your return trip from Teralba at <a href=\"https://transportnsw.info/trip#/?from=Queens Wharf\">transportnsw.info</a>.",
+			"lon": 151.7814960144,
+			"lat": -32.9263810348
+		}
+	]
+}

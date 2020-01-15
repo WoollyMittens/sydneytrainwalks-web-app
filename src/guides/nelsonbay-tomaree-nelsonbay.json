@@ -1,1 +1,472 @@
-{"location":"Tomaree","lon":152.171461,"lat":-32.754002,"description":["This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/tomaree-national-park\">Tomaree National Park</a>.","Be mindful that the bus back to Newcastle leaves very infrequently. Make sure you don't get stranded in Nelson Bay without transport.","Thanks to Nick Breen for his help documenting this walk."],"duration":7,"distance":26,"zoom":13,"rain":false,"fireban":false,"key":"nelsonbay-tomaree-nelsonbay","updated":"2019-01-11","bounds":{"west":152.11669921875,"north":-32.694865977875054,"east":152.20458984375,"south":-32.77803798536367},"markers":[{"location":"Nelson Bay","type":"bus","description":"Get the train and bus to Nelson Bay using <a href=\"https://transportnsw.info/trip#/?to=Nelson Bay\">transportnsw.info</a>.","lat":-32.721758,"lon":152.142754},{"type":"kiosk","lat":-32.74295277777778,"lon":152.1709972222222},{"type":"toilet","lat":-32.720502,"lon":152.144634},{"type":"toilet","lat":-32.712967,"lon":152.158516},{"type":"toilet","lat":-32.74258,"lon":152.170929},{"type":"waypoint","photo":"dsc_1595.jpg","lon":152.14327261999924,"lat":-32.72196669999048,"description":"From the bus stop follow Donald Street past the carpark."},{"type":"waypoint","photo":"dsc_1596.jpg","lon":152.143349830034,"lat":-32.7219870299689,"description":"Turn left at the intersection with Stockton Street."},{"type":"waypoint","photo":"dsc_1598.jpg","lon":152.14383573008848,"lat":-32.720583000000005,"description":"Cross Government Road and continue down the steps to the harbour."},{"type":"waypoint","photo":"dsc_1600.jpg","lon":152.14540429999823,"lat":-32.71966256000218,"description":"Follow the path along the harbour to the right."},{"type":"waypoint","photo":"dsc_1633.jpg","lon":152.15510019996523,"lat":-32.71376119010006,"description":"At Neil Cross Rotary Park, continue along the side of Victoria Parade."},{"type":"waypoint","photo":"dsc_1634.jpg","lon":152.15732191003264,"lat":-32.714020240014335,"description":"Turn left at Little Beach and follow the path through the park."},{"type":"waypoint","photo":"dsc_1644.jpg","lon":152.15903684003152,"lat":-32.71252447002115,"description":"At the intersection to the lighthouse, follow Beach Road to the right."},{"type":"waypoint","photo":"dsc_1645.jpg","lon":152.16076865005834,"lat":-32.712440119999364,"description":"Continue past the holiday park and cross the reserve past the gate to the beach."},{"type":"waypoint","photo":"dsc_1664_dsc_1671.jpg","lon":152.1667075400004,"lat":-32.71641991991992,"description":"From the end of the reserve, follow the beach to the right."},{"type":"waypoint","photo":"dsc_1672.jpg","lon":152.16993473997428,"lat":-32.71884938998738,"description":"Switch to the footpath along the beach about halfway down the beach."},{"type":"waypoint","photo":"dsc_1683.jpg","lon":152.18281896997928,"lat":-32.71826488000846,"description":"At the end of the beach, cross the car park and find the gate to Tomaree Mountain."},{"type":"waypoint","photo":"dsc_1687_dsc_1691.jpg","lon":152.18414857000064,"lat":-32.717473220000755,"description":"<i>+ 1h / 2km</i> Optionally, from the carpark follow the walking track to Tomaree Mountain.","optional":true},{"type":"waypoint","photo":"dsc_1692.jpg","lon":152.18578262000298,"lat":-32.715293,"description":"Follow the signs to the summit, or optionally the gun emplacements.","optional":true},{"type":"waypoint","photo":"dsc_1722.jpg","lon":152.18703715002374,"lat":-32.71667154,"description":"Folow the loop around the summit of Tomaree Mountain and return down the staircase.","optional":true},{"type":"waypoint","photo":"dsc_1740.jpg","lon":152.18288358008076,"lat":-32.71830451000339,"description":"From the carpark, follow Zenith Beach Loop Road to the left."},{"type":"waypoint","photo":"dsc_1741.jpg","lon":152.18266171993912,"lat":-32.71995008001113,"description":"At the second carpark find the trailhead to the Tomaree Coastal Walk."},{"type":"waypoint","photo":"dsc_1748.jpg","lon":152.17955602999945,"lat":-32.72635773004508,"description":"Follow the firetrail past the side trails to the beaches."},{"type":"waypoint","photo":"dsc_1757.jpg","lon":152.1784262899859,"lat":-32.73092608011842,"description":"Cross Box Beach Road and continue along the firetrail on the other side."},{"type":"waypoint","photo":"dsc_1760.jpg","lon":152.1739476200232,"lat":-32.73224802994484,"description":"At the intersection of trails, turn left down Ocean Beach Trail."},{"type":"waypoint","photo":"dsc_1762.jpg","lon":152.17576043997016,"lat":-32.73582794000238,"description":"Follow Ocean Beach Trail to the dunes."},{"type":"waypoint","photo":"dsc_1764.jpg","lon":152.17796238009592,"lat":-32.736871560027524,"description":"Climb the dune at the end of the trail and continue towards the Fingal Spit."},{"type":"waypoint","photo":"dsc_1773.jpg","lon":152.1786439600363,"lat":-32.73966446995465,"description":"Resist the temptation to cross the Fingal Spit and turn right to follow the beach to the surf club."},{"type":"waypoint","photo":"dsc_1775.jpg","lon":152.17134534002557,"lat":-32.742246770025844,"description":"Follow the trail off the beach at the surf club."},{"type":"waypoint","photo":"dsc_1776_p3303381.jpg","lon":152.1729227700369,"lat":-32.7381312100177,"description":"<i>- 3h / 9km</i> Optionally to halve the distance, follow the bike path right from the surf club back towards Shoal Bay.","optional":true},{"type":"waypoint","photo":"dsc_1776_p3303387.jpg","lon":152.16527541998232,"lat":-32.72621769999911,"description":"At the corner of Marine Drive and Government Road, don't follow the road to the right, but continue straight on along the firetrail instead.","optional":true},{"type":"waypoint","photo":"dsc_1776_p3303393.jpg","lon":152.15511562998407,"lat":-32.719056180001616,"description":"The firetrail end on on Kerigan Street. Continue straight on down this street, following its curve to the left.","optional":true},{"type":"waypoint","photo":"dsc_1776_p3303397p.jpg","lon":152.1481083333333,"lat":-32.719144444444446,"description":"Kerigan Street joins Fingal Street and this leads back Nelson Bay's harbour. The bus leaves from the parking lot behind the arcade.","optional":true},{"type":"waypoint","photo":"dsc_1778.jpg","lon":152.1705316300101,"lat":-32.743159430011794,"description":"Turn left past the surf club and follow the footpath along Fingal Beach."},{"type":"waypoint","photo":"dsc_1779.jpg","lon":152.17035346997483,"lat":-32.74809866000139,"description":"Follow Marine Drive left along the beach."},{"type":"waypoint","photo":"dsc_1787.jpg","lon":152.17292188001284,"lat":-32.749234309958375,"description":"Enter Barry Park through the gatre on the left side of Pacific Drive."},{"type":"waypoint","photo":"dsc_1788.jpg","lon":152.17348906005805,"lat":-32.74940303000716,"description":"Follow the sign down the boardwalk on the right side of the park past the toilets."},{"type":"waypoint","photo":"dsc_1791.jpg","lon":152.17271748995202,"lat":-32.750809,"description":"Continue along the trail and across the boardwalk."},{"type":"waypoint","photo":"dsc_1793.jpg","lon":152.17218759000056,"lat":-32.7523750899928,"description":"At the intersection follow the trail left past a low fence."},{"type":"waypoint","photo":"dsc_1803.jpg","lon":152.17416874999998,"lat":-32.75438988000085,"description":"Follow the trail markers down the coastal walk."},{"type":"waypoint","photo":"dsc_1821.jpg","lon":152.16286306997497,"lat":-32.756003660002186,"description":"At the waste water treatment plant, cross Boulder Bay Road."},{"type":"waypoint","photo":"dsc_1822.jpg","lon":152.16284134007586,"lat":-32.75585057997558,"description":"Follow the trail past the waste water treatment plant on the other side."},{"type":"waypoint","photo":"dsc_1824.jpg","lon":152.16059047003816,"lat":-32.75823351996267,"description":"Continue past the two fire trails intersecting the trail."},{"type":"waypoint","photo":"dsc_1834.jpg","lon":152.15645940999138,"lat":-32.76311887000967,"description":"Follow the coastal walk markers down the trail."},{"type":"waypoint","photo":"dsc_1845.jpg","lon":152.14278152003808,"lat":-32.76338008996212,"description":"At the end of the trail at the carpark for Big Rock, follow the the track left to the beach."},{"type":"waypoint","photo":"dsc_1858_dsc_1869.jpg","lon":152.14298359997076,"lat":-32.76504518995098,"description":"Follow Big Rock Trail to the ocean."},{"type":"waypoint","photo":"dsc_1870.jpg","lon":152.142710299979,"lat":-32.76332698009318,"description":"Return back down the trail to the carpark."},{"type":"waypoint","photo":"dsc_1875.jpg","lon":152.138369719981,"lat":-32.75894605999833,"description":"From the carpark follow the 4x4 part of Big Rocky Track away from the beach."},{"type":"waypoint","photo":"dsc_1876.jpg","lon":152.13621387000194,"lat":-32.75671258999805,"description":"Continue past the second carpark for normal road vehicles."},{"type":"waypoint","photo":"dsc_1879.jpg","lon":152.13226092997866,"lat":-32.75254176998465,"description":"Enter the gated Skid Pan Trail on the right."},{"type":"waypoint","photo":"dsc_1881.jpg","lon":152.13269180994638,"lat":-32.74989502999143,"description":"At the intersection turn right down the Anna Bay Boreline."},{"type":"waypoint","photo":"dsc_1883.jpg","lon":152.14424717999017,"lat":-32.747190350102976,"description":"Follow the left fork to continue down the Anna Bay Boreline."},{"type":"waypoint","photo":"dsc_1884.jpg","lon":152.14589228999424,"lat":-32.74709712009804,"description":"Before the steep hill, turn left to coninue following the Anna Bay Boreline."},{"type":"waypoint","photo":"dsc_1885.jpg","lon":152.1490727798955,"lat":-32.74326854998584,"description":"Take the intersecting Meteorological Station Trail left."},{"type":"waypoint","photo":"dsc_1886.jpg","lon":152.1482357100125,"lat":-32.739449750008994,"description":"At the fork follow the Meteorological Station Link Trail left."},{"type":"waypoint","photo":"dsc_1888.jpg","lon":152.1407543700242,"lat":-32.73418274000306,"description":"Follow the sandy trail around the bend."},{"type":"waypoint","photo":"dsc_1889.jpg","lon":152.14066631003328,"lat":-32.733990460000314,"description":"Immediately after the bend take the intersecting trail to the left."},{"type":"waypoint","photo":"dsc_1891.jpg","lon":152.1401968799925,"lat":-32.73273876002291,"description":"Cross the Gan Gan Powerline Trail and continue up the narrow bushtrail."},{"type":"waypoint","photo":"dsc_1893.jpg","lon":152.13828990999525,"lat":-32.731258779993404,"description":"The bushtrail ends at a trailhead along Tallean Road."},{"type":"waypoint","photo":"dsc_1894.jpg","lon":152.13848996000436,"lat":-32.73094188000177,"description":"Follow Tallean Road to the right around the suburban street."},{"type":"waypoint","photo":"dsc_1895.jpg","lon":152.14071271999828,"lat":-32.726401650047485,"description":"Take the staircase on the left side of Tallean Road down Talmora Lane, past the cemetery."},{"type":"waypoint","photo":"dsc_1897.jpg","lon":152.1410468499927,"lat":-32.725137019987415,"description":"Turn right after the cemetery and follow Stockton Street."},{"type":"waypoint","photo":"dsc_1899.jpg","lon":152.14304028000237,"lat":-32.72395213999579,"description":"Follow Stockton Street left at the next roundabout towards the shops."},{"type":"waypoint","photo":"dsc_1900.jpg","lon":152.14350932000417,"lat":-32.72201775002239,"description":"Turn left at Donald Street to find the busstop back to Newcastle."},{"location":"Nelson Bay","type":"bus","description":"Plan your return trip from Nelson Bay at <a href=\"https://transportnsw.info/trip#/?from=Nelson Bay\">transportnsw.info</a>.","lat":-32.72192,"lon":152.143128}]}
+{
+	"location": "Tomaree",
+	"lon": 152.171461,
+	"lat": -32.754002,
+	"description": [
+		"This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/tomaree-national-park\">Tomaree National Park</a>.",
+		"Be mindful that the bus back to Newcastle leaves very infrequently. Make sure you don't get stranded in Nelson Bay without transport.",
+		"Thanks to Nick Breen for his help documenting this walk."
+	],
+	"duration": 7,
+	"distance": 26,
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "nelsonbay-tomaree-nelsonbay",
+	"updated": "2019-01-11",
+	"bounds": {
+		"west": 152.11669921875,
+		"north": -32.694865977875054,
+		"east": 152.20458984375,
+		"south": -32.77803798536367
+	},
+	"markers": [
+		{
+			"location": "Nelson Bay",
+			"type": "bus",
+			"description": "Get the train and bus to Nelson Bay using <a href=\"https://transportnsw.info/trip#/?to=Nelson Bay\">transportnsw.info</a>.",
+			"lat": -32.721758,
+			"lon": 152.142754
+		},
+		{
+			"type": "kiosk",
+			"lat": -32.74295277777778,
+			"lon": 152.1709972222222
+		},
+		{
+			"type": "toilet",
+			"lat": -32.720502,
+			"lon": 152.144634
+		},
+		{
+			"type": "toilet",
+			"lat": -32.712967,
+			"lon": 152.158516
+		},
+		{
+			"type": "toilet",
+			"lat": -32.74258,
+			"lon": 152.170929
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1595.jpg",
+			"lon": 152.14327261999924,
+			"lat": -32.72196669999048,
+			"description": "From the bus stop follow Donald Street past the carpark."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1596.jpg",
+			"lon": 152.143349830034,
+			"lat": -32.7219870299689,
+			"description": "Turn left at the intersection with Stockton Street."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1598.jpg",
+			"lon": 152.14383573008848,
+			"lat": -32.720583000000005,
+			"description": "Cross Government Road and continue down the steps to the harbour."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1600.jpg",
+			"lon": 152.14540429999823,
+			"lat": -32.71966256000218,
+			"description": "Follow the path along the harbour to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1633.jpg",
+			"lon": 152.15510019996523,
+			"lat": -32.71376119010006,
+			"description": "At Neil Cross Rotary Park, continue along the side of Victoria Parade."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1634.jpg",
+			"lon": 152.15732191003264,
+			"lat": -32.714020240014335,
+			"description": "Turn left at Little Beach and follow the path through the park."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1644.jpg",
+			"lon": 152.15903684003152,
+			"lat": -32.71252447002115,
+			"description": "At the intersection to the lighthouse, follow Beach Road to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1645.jpg",
+			"lon": 152.16076865005834,
+			"lat": -32.712440119999364,
+			"description": "Continue past the holiday park and cross the reserve past the gate to the beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1664_dsc_1671.jpg",
+			"lon": 152.1667075400004,
+			"lat": -32.71641991991992,
+			"description": "From the end of the reserve, follow the beach to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1672.jpg",
+			"lon": 152.16993473997428,
+			"lat": -32.71884938998738,
+			"description": "Switch to the footpath along the beach about halfway down the beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1683.jpg",
+			"lon": 152.18281896997928,
+			"lat": -32.71826488000846,
+			"description": "At the end of the beach, cross the car park and find the gate to Tomaree Mountain."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1687_dsc_1691.jpg",
+			"lon": 152.18414857000064,
+			"lat": -32.717473220000755,
+			"description": "<i>+ 1h / 2km</i> Optionally, from the carpark follow the walking track to Tomaree Mountain.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1692.jpg",
+			"lon": 152.18578262000298,
+			"lat": -32.715293,
+			"description": "Follow the signs to the summit, or optionally the gun emplacements.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1722.jpg",
+			"lon": 152.18703715002374,
+			"lat": -32.71667154,
+			"description": "Folow the loop around the summit of Tomaree Mountain and return down the staircase.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1740.jpg",
+			"lon": 152.18288358008076,
+			"lat": -32.71830451000339,
+			"description": "From the carpark, follow Zenith Beach Loop Road to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1741.jpg",
+			"lon": 152.18266171993912,
+			"lat": -32.71995008001113,
+			"description": "At the second carpark find the trailhead to the Tomaree Coastal Walk."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1748.jpg",
+			"lon": 152.17955602999945,
+			"lat": -32.72635773004508,
+			"description": "Follow the firetrail past the side trails to the beaches."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1757.jpg",
+			"lon": 152.1784262899859,
+			"lat": -32.73092608011842,
+			"description": "Cross Box Beach Road and continue along the firetrail on the other side."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1760.jpg",
+			"lon": 152.1739476200232,
+			"lat": -32.73224802994484,
+			"description": "At the intersection of trails, turn left down Ocean Beach Trail."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1762.jpg",
+			"lon": 152.17576043997016,
+			"lat": -32.73582794000238,
+			"description": "Follow Ocean Beach Trail to the dunes."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1764.jpg",
+			"lon": 152.17796238009592,
+			"lat": -32.736871560027524,
+			"description": "Climb the dune at the end of the trail and continue towards the Fingal Spit."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1773.jpg",
+			"lon": 152.1786439600363,
+			"lat": -32.73966446995465,
+			"description": "Resist the temptation to cross the Fingal Spit and turn right to follow the beach to the surf club."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1775.jpg",
+			"lon": 152.17134534002557,
+			"lat": -32.742246770025844,
+			"description": "Follow the trail off the beach at the surf club."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1776_p3303381.jpg",
+			"lon": 152.1729227700369,
+			"lat": -32.7381312100177,
+			"description": "<i>- 3h / 9km</i> Optionally to halve the distance, follow the bike path right from the surf club back towards Shoal Bay.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1776_p3303387.jpg",
+			"lon": 152.16527541998232,
+			"lat": -32.72621769999911,
+			"description": "At the corner of Marine Drive and Government Road, don't follow the road to the right, but continue straight on along the firetrail instead.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1776_p3303393.jpg",
+			"lon": 152.15511562998407,
+			"lat": -32.719056180001616,
+			"description": "The firetrail end on on Kerigan Street. Continue straight on down this street, following its curve to the left.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1776_p3303397p.jpg",
+			"lon": 152.1481083333333,
+			"lat": -32.719144444444446,
+			"description": "Kerigan Street joins Fingal Street and this leads back Nelson Bay's harbour. The bus leaves from the parking lot behind the arcade.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1778.jpg",
+			"lon": 152.1705316300101,
+			"lat": -32.743159430011794,
+			"description": "Turn left past the surf club and follow the footpath along Fingal Beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1779.jpg",
+			"lon": 152.17035346997483,
+			"lat": -32.74809866000139,
+			"description": "Follow Marine Drive left along the beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1787.jpg",
+			"lon": 152.17292188001284,
+			"lat": -32.749234309958375,
+			"description": "Enter Barry Park through the gatre on the left side of Pacific Drive."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1788.jpg",
+			"lon": 152.17348906005805,
+			"lat": -32.74940303000716,
+			"description": "Follow the sign down the boardwalk on the right side of the park past the toilets."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1791.jpg",
+			"lon": 152.17271748995202,
+			"lat": -32.750809,
+			"description": "Continue along the trail and across the boardwalk."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1793.jpg",
+			"lon": 152.17218759000056,
+			"lat": -32.7523750899928,
+			"description": "At the intersection follow the trail left past a low fence."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1803.jpg",
+			"lon": 152.17416874999998,
+			"lat": -32.75438988000085,
+			"description": "Follow the trail markers down the coastal walk."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1821.jpg",
+			"lon": 152.16286306997497,
+			"lat": -32.756003660002186,
+			"description": "At the waste water treatment plant, cross Boulder Bay Road."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1822.jpg",
+			"lon": 152.16284134007586,
+			"lat": -32.75585057997558,
+			"description": "Follow the trail past the waste water treatment plant on the other side."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1824.jpg",
+			"lon": 152.16059047003816,
+			"lat": -32.75823351996267,
+			"description": "Continue past the two fire trails intersecting the trail."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1834.jpg",
+			"lon": 152.15645940999138,
+			"lat": -32.76311887000967,
+			"description": "Follow the coastal walk markers down the trail."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1845.jpg",
+			"lon": 152.14278152003808,
+			"lat": -32.76338008996212,
+			"description": "At the end of the trail at the carpark for Big Rock, follow the the track left to the beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1858_dsc_1869.jpg",
+			"lon": 152.14298359997076,
+			"lat": -32.76504518995098,
+			"description": "Follow Big Rock Trail to the ocean."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1870.jpg",
+			"lon": 152.142710299979,
+			"lat": -32.76332698009318,
+			"description": "Return back down the trail to the carpark."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1875.jpg",
+			"lon": 152.138369719981,
+			"lat": -32.75894605999833,
+			"description": "From the carpark follow the 4x4 part of Big Rocky Track away from the beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1876.jpg",
+			"lon": 152.13621387000194,
+			"lat": -32.75671258999805,
+			"description": "Continue past the second carpark for normal road vehicles."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1879.jpg",
+			"lon": 152.13226092997866,
+			"lat": -32.75254176998465,
+			"description": "Enter the gated Skid Pan Trail on the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1881.jpg",
+			"lon": 152.13269180994638,
+			"lat": -32.74989502999143,
+			"description": "At the intersection turn right down the Anna Bay Boreline."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1883.jpg",
+			"lon": 152.14424717999017,
+			"lat": -32.747190350102976,
+			"description": "Follow the left fork to continue down the Anna Bay Boreline."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1884.jpg",
+			"lon": 152.14589228999424,
+			"lat": -32.74709712009804,
+			"description": "Before the steep hill, turn left to coninue following the Anna Bay Boreline."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1885.jpg",
+			"lon": 152.1490727798955,
+			"lat": -32.74326854998584,
+			"description": "Take the intersecting Meteorological Station Trail left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1886.jpg",
+			"lon": 152.1482357100125,
+			"lat": -32.739449750008994,
+			"description": "At the fork follow the Meteorological Station Link Trail left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1888.jpg",
+			"lon": 152.1407543700242,
+			"lat": -32.73418274000306,
+			"description": "Follow the sandy trail around the bend."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1889.jpg",
+			"lon": 152.14066631003328,
+			"lat": -32.733990460000314,
+			"description": "Immediately after the bend take the intersecting trail to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1891.jpg",
+			"lon": 152.1401968799925,
+			"lat": -32.73273876002291,
+			"description": "Cross the Gan Gan Powerline Trail and continue up the narrow bushtrail."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1893.jpg",
+			"lon": 152.13828990999525,
+			"lat": -32.731258779993404,
+			"description": "The bushtrail ends at a trailhead along Tallean Road."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1894.jpg",
+			"lon": 152.13848996000436,
+			"lat": -32.73094188000177,
+			"description": "Follow Tallean Road to the right around the suburban street."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1895.jpg",
+			"lon": 152.14071271999828,
+			"lat": -32.726401650047485,
+			"description": "Take the staircase on the left side of Tallean Road down Talmora Lane, past the cemetery."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1897.jpg",
+			"lon": 152.1410468499927,
+			"lat": -32.725137019987415,
+			"description": "Turn right after the cemetery and follow Stockton Street."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1899.jpg",
+			"lon": 152.14304028000237,
+			"lat": -32.72395213999579,
+			"description": "Follow Stockton Street left at the next roundabout towards the shops."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1900.jpg",
+			"lon": 152.14350932000417,
+			"lat": -32.72201775002239,
+			"description": "Turn left at Donald Street to find the busstop back to Newcastle."
+		},
+		{
+			"location": "Nelson Bay",
+			"type": "bus",
+			"description": "Plan your return trip from Nelson Bay at <a href=\"https://transportnsw.info/trip#/?from=Nelson Bay\">transportnsw.info</a>.",
+			"lat": -32.72192,
+			"lon": 152.143128
+		}
+	]
+}

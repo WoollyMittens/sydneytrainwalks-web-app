@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html class="ios-false">
+	<?php
+
+		// constants
+		$title = 'Sydney Hiking Trips';
+		$domain = 'www.sydneyhikingtrips.com';
+
+	?>
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta http-equiv="imagetoolbar" content="no"/>
 		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<title>Sydney Train Walks - About this Website</title>
+		<title><?php print $title ?> - Overview</title>
 		<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width, user-scalable=yes"/>
-		<meta property="og:url" content="https://www.sydneytrainwalks.com/about.php" />
-		<meta property="og:image" content="https://www.sydneytrainwalks.com/inc/img/favicon.png" />
-		<meta property="og:title" content="Sydney Train Walks - About this Website" />
+		<meta property="og:url" content="https://<?php print $domain ?>/overview.php" />
+		<meta property="og:image" content="https://<?php print $domain ?>/inc/img/favicon.png" />
+		<meta property="og:title" content="<?php print $title ?> - Overview" />
 		<meta property="og:description" content="Don't let organising a bushwalk intimidate you. These walks are easy day trips from Sydney using public transport." />
 		<meta name="msapplication-TileColor" content="#558b2f" />
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
@@ -46,7 +53,7 @@
 		<div class="ios-margins">
 			<section id="appView">
 				<header class="title">
-					<h1><a href="./">Sydney Train Walks</a></h1>
+					<h1><a href="./"><?php print $title ?></a></h1>
 				</header>
 				<figure class="overview localmap"></figure>
 				<footer class="toolbar">
@@ -71,7 +78,7 @@
 				var sydneyTrainWalksOverview = new sydneyTrainWalks.Overview({
 					'config' : {
 						'local': './inc',
-						'remote': '//www.sydneytrainwalks.com/inc',
+						'remote': '//<?php print $domain ?>/inc',
 						'onlineTiles' : '//4umaps.com/{z}/{x}/{y}.png',
 						'offlineTiles' : './inc/tiles/{z}/{x}/{y}.jpg',
 						'missing' : './inc/img/missing.png'

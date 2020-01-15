@@ -1,1 +1,175 @@
-{"location":"Wyrrabalong","lon":151.482239,"lat":-33.395802,"description":["Part of this walk covers <a href=\"http://www.nationalparks.nsw.gov.au/visit-a-park/parks/Wyrrabalong-National-Park\">Wyrrabalong National Park</a>."],"duration":4,"distance":15,"zoom":13,"rain":true,"fireban":false,"key":"theentrance-wyrrabalong-terrigal","updated":"2014-07-12","bounds":{"west":151.424560546875,"north":-33.33052824902808,"east":151.5234375,"south":-33.45894275368762},"markers":[{"location":"The Entrance","type":"bus","description":"Get the train to Gosford and then a bus to The Entrance using <a href=\"https://transportnsw.info/trip#/?to=The Entrance\">transportnsw.info</a>.","lat":-33.341078,"lon":151.496767},{"type":"kiosk","lat":-33.362016,"lon":151.49992},{"type":"toilet","lat":-33.342245,"lon":151.499009},{"type":"toilet","lat":-33.350065,"lon":151.503363},{"type":"toilet","lat":-33.362352,"lon":151.499918},{"type":"toilet","lat":-33.383636,"lon":151.482088},{"type":"toilet","lat":-33.412805,"lon":151.464008},{"type":"toilet","lat":-33.446559,"lon":151.444595},{"type":"waypoint","photo":"p7139457.jpg","lon":151.50108055555555,"lat":-33.34407777777778,"description":"From The Entrance follow the footpath along the shore."},{"type":"waypoint","photo":"p7139515.jpg","lon":151.5028888888889,"lat":-33.348930555555555,"description":"The path continues past the rockpools' carpark."},{"type":"waypoint","photo":"p7139541.jpg","lon":151.5038638888889,"lat":-33.351147222222224,"description":"At the end of the footpath continue along the beach."},{"type":"waypoint","photo":"p7139582_p7139583.jpg","lon":151.49824166666664,"lat":-33.36513055555556,"description":"Follow Shelly Beach to the holiday park on the far side."},{"type":"waypoint","photo":"p7139590.jpg","lon":151.48424444444444,"lat":-33.37900277777778,"description":"Take the road up from the holiday park and follow the footpath to the headland."},{"type":"waypoint","photo":"p7139601.jpg","lon":151.48582777777776,"lat":-33.38148888888889,"description":"Follow the bushtrail along the headland overlooking the Bateau Bay Beach."},{"type":"waypoint","photo":"p7139609.jpg","lon":151.48196388888888,"lat":-33.385172222222224,"description":"Cross the reserve around Bateau Bay Beach and follow the Coast Track to Crackneck Lookout."},{"type":"waypoint","photo":"p7139626_p7139629.jpg","lon":151.48288333333335,"lat":-33.39405277777778,"description":"Cross the reserve at Crackneck Lookout to the gated firetrail on the other end."},{"type":"waypoint","photo":"p7139636.jpg","lon":151.48260277777777,"lat":-33.394688888888886,"description":"From the trailhead at Crackneck Lookout follow the signs to Wyrrabalong Lookout."},{"type":"waypoint","photo":"p7139670.jpg","lon":151.47564722222222,"lat":-33.40488055555556,"description":"Follow the firetrail out of the park past the radio tower."},{"type":"waypoint","photo":"p7139689.jpg","lon":151.4661611111111,"lat":-33.41023333333333,"description":"From the park entrance follow the road past Forrester Beach to Spoon Bay Beach."},{"type":"waypoint","photo":"p7139696.jpg","lon":151.458275,"lat":-33.41896111111111,"description":"Take the path down from the headland onto Spoon Bay Beach"},{"type":"waypoint","photo":"p7139723.jpg","lon":151.45421944444442,"lat":-33.42393055555555,"description":"Follow the beach to the bus stop behind the Terrigal Surf Club."},{"location":"Terrigal","type":"bus","description":"Plan your return trip from Terrigal at <a href=\"https://transportnsw.info/trip#/?from=Terrigal\">transportnsw.info</a>.","lon":151.444489,"lat":-33.44693399999999}],"alias":{"key":"theentrance-bouddi-woywoy","start":0,"end":54,"updated":"2020-01-10","bounds":{"west":151.3037109375,"north":-33.33052824902808,"east":151.5234375,"south":-33.54139466898275}}}
+{
+	"location": "Wyrrabalong",
+	"lon": 151.482239,
+	"lat": -33.395802,
+	"description": [
+		"Part of this walk covers <a href=\"http://www.nationalparks.nsw.gov.au/visit-a-park/parks/Wyrrabalong-National-Park\">Wyrrabalong National Park</a>."
+	],
+	"duration": 4,
+	"distance": 15,
+	"zoom": 13,
+	"rain": true,
+	"fireban": false,
+	"key": "theentrance-wyrrabalong-terrigal",
+	"updated": "2014-07-12",
+	"bounds": {
+		"west": 151.424560546875,
+		"north": -33.33052824902808,
+		"east": 151.5234375,
+		"south": -33.45894275368762
+	},
+	"markers": [
+		{
+			"location": "The Entrance",
+			"type": "bus",
+			"description": "Get the train to Gosford and then a bus to The Entrance using <a href=\"https://transportnsw.info/trip#/?to=The Entrance\">transportnsw.info</a>.",
+			"lat": -33.341078,
+			"lon": 151.496767
+		},
+		{
+			"type": "kiosk",
+			"lat": -33.362016,
+			"lon": 151.49992
+		},
+		{
+			"type": "toilet",
+			"lat": -33.342245,
+			"lon": 151.499009
+		},
+		{
+			"type": "toilet",
+			"lat": -33.350065,
+			"lon": 151.503363
+		},
+		{
+			"type": "toilet",
+			"lat": -33.362352,
+			"lon": 151.499918
+		},
+		{
+			"type": "toilet",
+			"lat": -33.383636,
+			"lon": 151.482088
+		},
+		{
+			"type": "toilet",
+			"lat": -33.412805,
+			"lon": 151.464008
+		},
+		{
+			"type": "toilet",
+			"lat": -33.446559,
+			"lon": 151.444595
+		},
+		{
+			"type": "waypoint",
+			"photo": "p7139457.jpg",
+			"lon": 151.50108055555555,
+			"lat": -33.34407777777778,
+			"description": "From The Entrance follow the footpath along the shore."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p7139515.jpg",
+			"lon": 151.5028888888889,
+			"lat": -33.348930555555555,
+			"description": "The path continues past the rockpools' carpark."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p7139541.jpg",
+			"lon": 151.5038638888889,
+			"lat": -33.351147222222224,
+			"description": "At the end of the footpath continue along the beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p7139582_p7139583.jpg",
+			"lon": 151.49824166666664,
+			"lat": -33.36513055555556,
+			"description": "Follow Shelly Beach to the holiday park on the far side."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p7139590.jpg",
+			"lon": 151.48424444444444,
+			"lat": -33.37900277777778,
+			"description": "Take the road up from the holiday park and follow the footpath to the headland."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p7139601.jpg",
+			"lon": 151.48582777777776,
+			"lat": -33.38148888888889,
+			"description": "Follow the bushtrail along the headland overlooking the Bateau Bay Beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p7139609.jpg",
+			"lon": 151.48196388888888,
+			"lat": -33.385172222222224,
+			"description": "Cross the reserve around Bateau Bay Beach and follow the Coast Track to Crackneck Lookout."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p7139626_p7139629.jpg",
+			"lon": 151.48288333333335,
+			"lat": -33.39405277777778,
+			"description": "Cross the reserve at Crackneck Lookout to the gated firetrail on the other end."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p7139636.jpg",
+			"lon": 151.48260277777777,
+			"lat": -33.394688888888886,
+			"description": "From the trailhead at Crackneck Lookout follow the signs to Wyrrabalong Lookout."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p7139670.jpg",
+			"lon": 151.47564722222222,
+			"lat": -33.40488055555556,
+			"description": "Follow the firetrail out of the park past the radio tower."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p7139689.jpg",
+			"lon": 151.4661611111111,
+			"lat": -33.41023333333333,
+			"description": "From the park entrance follow the road past Forrester Beach to Spoon Bay Beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p7139696.jpg",
+			"lon": 151.458275,
+			"lat": -33.41896111111111,
+			"description": "Take the path down from the headland onto Spoon Bay Beach"
+		},
+		{
+			"type": "waypoint",
+			"photo": "p7139723.jpg",
+			"lon": 151.45421944444442,
+			"lat": -33.42393055555555,
+			"description": "Follow the beach to the bus stop behind the Terrigal Surf Club."
+		},
+		{
+			"location": "Terrigal",
+			"type": "bus",
+			"description": "Plan your return trip from Terrigal at <a href=\"https://transportnsw.info/trip#/?from=Terrigal\">transportnsw.info</a>.",
+			"lon": 151.444489,
+			"lat": -33.44693399999999
+		}
+	],
+	"alias": {
+		"key": "theentrance-bouddi-woywoy",
+		"start": 0,
+		"end": 54,
+		"updated": "2020-01-10",
+		"bounds": {
+			"west": 151.3037109375,
+			"north": -33.33052824902808,
+			"east": 151.5234375,
+			"south": -33.54139466898275
+		}
+	}
+}

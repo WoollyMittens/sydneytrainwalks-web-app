@@ -1,1 +1,467 @@
-{"location":"Munmorah","lon":151.600996,"lat":-33.195254,"description":["Part of this walk covers <a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/munmorah-state-conservation-area\">Munmorah State Conservation Area</a>."],"duration":8,"distance":37,"zoom":13,"rain":false,"fireban":false,"key":"lakehaven-munmorah-swansea","updated":"2018-12-07","bounds":{"west":151.490478515625,"north":-33.091541548655194,"east":151.666259765625,"south":-33.257063402365475},"markers":[{"location":"Lake Haven","type":"bus","description":"Get the train to Wyong and the connecting bus to <a href=\"https://transportnsw.info/trip#/?to=Lake Haven\">transportnsw.info</a>.","lat":-33.241745,"lon":151.505208},{"type":"kiosk","lat":-33.157889,"lon":151.629089},{"type":"kiosk","lat":-33.206129,"lon":151.586565},{"type":"kiosk","lat":-33.237165,"lon":151.563105},{"type":"kiosk","lat":-33.21808,"lon":151.522581},{"type":"toilet","lat":-33.157655,"lon":151.628964},{"type":"toilet","lat":-33.186904,"lon":151.621928},{"type":"toilet","lat":-33.207205,"lon":151.586544},{"type":"toilet","lat":-33.239487,"lon":151.564125},{"type":"toilet","lat":-33.2298,"lon":151.530249},{"type":"toilet","lat":-33.219919,"lon":151.526651},{"type":"waypoint","photo":"dsc_8423.jpg","lon":151.50523225998808,"lat":-33.24235203999355,"description":"Leave the bus from Wyong station at the Lake Haven shopping centre."},{"type":"waypoint","photo":"dsc_8425.jpg","lon":151.50556986004793,"lat":-33.24150291005291,"description":"Follow the footpath around the cinema to the car park of the recreation centre."},{"type":"waypoint","photo":"dsc_8428.jpg","lon":151.50748469999587,"lat":-33.24016810997539,"description":"From the car park follow Kanimble Ave past the next intersection."},{"type":"waypoint","photo":"dsc_8429.jpg","lon":151.50775008005124,"lat":-33.2383668600107,"description":"Follow Moala Parade to the right."},{"type":"waypoint","photo":"dsc_8430.jpg","lon":151.50871169992368,"lat":-33.237966670011375,"description":"At the roundabout follow Panorama Ave to the left along the lakeside houses."},{"type":"waypoint","photo":"dsc_8432.jpg","lon":151.50644608000343,"lat":-33.22383193998898,"description":"From the dog park and wetlands turn left down Lowana Ave."},{"type":"waypoint","photo":"dsc_8442.jpg","lon":151.5045049600056,"lat":-33.22274563000303,"description":"At the intersection follow the footpath along the Pacific Highway to the right."},{"type":"waypoint","photo":"dsc_8452.jpg","lon":151.50766627996907,"lat":-33.21798418000104,"description":"Cross the bridge over Wallarah Creek and us the off ramp to the right."},{"type":"waypoint","photo":"dsc_8454.jpg","lon":151.5080847299814,"lat":-33.217703479999784,"description":"From the boat ramp follow the footpath along the water's edge."},{"type":"waypoint","photo":"dsc_8465.jpg","lon":151.51095600991326,"lat":-33.218802420003215,"description":"The path continues unbroken all the way to Budgewoi"},{"type":"waypoint","photo":"dsc_8491.jpg","lon":151.53017010998047,"lat":-33.229783950000005,"description":"Don't miss the right turn at Edgewater Park."},{"type":"waypoint","photo":"dsc_8497.jpg","lon":151.56191012002182,"lat":-33.237599169976576,"description":"Cross the bridge across Budgewoi Creek along the footpath."},{"type":"waypoint","photo":"dsc_8508.jpg","lon":151.56478274999188,"lat":-33.239598,"description":"Continue past the boat ramp and turn left onto Ourringo Street from the roundabout."},{"type":"waypoint","photo":"dsc_8509.jpg","lon":151.56692340999973,"lat":-33.23576664999583,"description":"Follow the footpaths and nature strips along the holiday park down Mimosa Road."},{"type":"waypoint","photo":"dsc_8511.jpg","lon":151.57306413004645,"lat":-33.23056447999769,"description":"Enter the powerline service trail on the left of Elizabeth Bay Drive."},{"type":"waypoint","photo":"dsc_8516.jpg","lon":151.57746888999503,"lat":-33.22165894999956,"description":"Follow the powerline trail to Monmorah."},{"type":"waypoint","photo":"dsc_8523-dsc_8530.jpg","lon":151.58616211000844,"lat":-33.20790493000024,"description":"From the end of the trail, cross the reserve at the boat ramp."},{"type":"waypoint","photo":"dsc_8532.jpg","lon":151.5864943099887,"lat":-33.206022970000035,"description":"From the roundabout, follow Elizabeth Bay Drive to the left."},{"type":"waypoint","photo":"dsc_8533.jpg","lon":151.58659181998166,"lat":-33.204741229969684,"description":"From the next roundabout follow Birdie Beach Drive to the National Park entrance."},{"type":"waypoint","photo":"dsc_8538.jpg","lon":151.59570869990225,"lat":-33.20357927003137,"description":"Follow Birdie Beach Drive into the national park."},{"type":"waypoint","photo":"dsc_8542.jpg","lon":151.5970742799932,"lat":-33.199056219897024,"description":"At the intersection with Campbell Drive follow the sign to Frazer Beach."},{"type":"waypoint","photo":"dsc_8553.jpg","lon":151.59361596009975,"lat":-33.19423868994989,"description":"At the intersection with Blue Wren Drive follow the sign to Frazer Beach."},{"type":"waypoint","photo":"dsc_8555.jpg","lon":151.60084946000097,"lat":-33.19516671993182,"description":"Enter the parking bay on the right and follow the sign down the Coast Walk."},{"type":"waypoint","photo":"dsc_8663.jpg","lon":151.61775243000145,"lat":-33.19471119999999,"description":"The trail ends at a similar parking bay on the far end."},{"type":"waypoint","photo":"dsc_8664.jpg","lon":151.61691184,"lat":-33.19400824000728,"description":"<i>+ 0h / 0km</i> Follow the dirt road left a short distance to find a lookout point","optional":true},{"type":"waypoint","photo":"dsc_8674.jpg","lon":151.6178846800007,"lat":-33.19411189999393,"description":"Follow the dirt road right a short distance and enter the trail marked on the left."},{"type":"waypoint","photo":"dsc_8677.jpg","lon":151.6192370200055,"lat":-33.191296319995445,"description":"The trail leads down to Frazer Beach."},{"type":"waypoint","photo":"dsc_8687.jpg","lon":151.62426215993406,"lat":-33.18697330999781,"description":"Cross Frazer Beach and the rock platform to the smaller Bongon Beach."},{"type":"waypoint","photo":"dsc_8720.jpg","lon":151.62785786992393,"lat":-33.18630008998994,"description":"From Bongon Beach climb the trail up to the Snapper Point carpark."},{"type":"waypoint","photo":"dsc_8733.jpg","lon":151.6232769599957,"lat":-33.180515760067465,"description":"Follow Snapper Point Road up to the gated firetrail at the top of the ridge."},{"type":"waypoint","photo":"dsc_8735.jpg","lon":151.62314680995615,"lat":-33.180043820055666,"description":"Enter the Moonee Beach Trail on the right."},{"type":"waypoint","photo":"dsc_8749.jpg","lon":151.63018703989044,"lat":-33.168197090000135,"description":"At the intersection follow the marker to the beach."},{"type":"waypoint","photo":"dsc_8751-dsc_8758.jpg","lon":151.63061683986146,"lat":-33.169252840024896,"description":"Follow the beach to the left."},{"type":"waypoint","photo":"dsc_8759.jpg","lon":151.63184391000487,"lat":-33.16663188002474,"description":"From the end of the beach follow either of the trails up to the suburban street."},{"type":"waypoint","photo":"dsc_8765.jpg","lon":151.62973896011397,"lat":-33.16190727998641,"description":"From the beach access follow Montefiore Street to the left."},{"type":"waypoint","photo":"dsc_8766.jpg","lon":151.62808218001572,"lat":-33.161586,"description":"At the roundabout follow Clarke Street past the Catho Pub."},{"type":"waypoint","photo":"dsc_8767.jpg","lon":151.6271393699665,"lat":-33.15852812000912,"description":"Past the Catho Pub, turn right down Flowers Drive."},{"type":"waypoint","photo":"dsc_8768.jpg","lon":151.62781374007938,"lat":-33.15780844997408,"description":"Enter the surf club carpark on the right."},{"type":"waypoint","photo":"dsc_8769.jpg","lon":151.62832105004563,"lat":-33.15756028998372,"description":"Continue left along Catherine Hill Bay Beach."},{"type":"waypoint","photo":"dsc_8772.jpg","lon":151.63643644000632,"lat":-33.14588417994189,"description":"At the far end of the beach follow the dirt trail up the headland."},{"type":"waypoint","photo":"dsc_8790.jpg","lon":151.63759020001913,"lat":-33.13806102003643,"description":"Follow the dirt road through the forest."},{"type":"waypoint","photo":"dsc_8791.jpg","lon":151.63488627999894,"lat":-33.13502972000626,"description":"Turn right at the intersection and continue down the dirt road."},{"type":"waypoint","photo":"dsc_8792.jpg","lon":151.63488887000528,"lat":-33.134333109994415,"description":"Pass the gate at the quarry and continue to the concrete structures."},{"type":"waypoint","photo":"dsc_8793.jpg","lon":151.63507163000563,"lat":-33.13418342000027,"description":"Follow the trail to the left past the concrete structures and the quarry fence."},{"type":"waypoint","photo":"dsc_8795.jpg","lon":151.63435169000027,"lat":-33.130858229988725,"description":"At the intersection past the quarry, follow the trail right."},{"type":"waypoint","photo":"dsc_8797.jpg","lon":151.63646913997894,"lat":-33.13145351999771,"description":"Continue past the Wallarah National Park sign."},{"type":"waypoint","photo":"dsc_8803.jpg","lon":151.64061148998962,"lat":-33.12785397001666,"description":"At the intersection follow the signs to Coastal Walk."},{"type":"waypoint","photo":"dsc_8805.jpg","lon":151.64189292000228,"lat":-33.128670090049866,"description":"Use the bridge on the left to cross the lagoon."},{"type":"waypoint","photo":"dsc_8812.jpg","lon":151.64272922998987,"lat":-33.12829391000264,"description":"Follow the gated firetrail up on the other side of the lagoon."},{"type":"waypoint","photo":"dsc_8814.jpg","lon":151.6429570999571,"lat":-33.12813466003317,"description":"<i>+ 0.5h / 1km</i> A (degraded) section of a guided walk starts at the right side of the trail.","optional":true},{"type":"waypoint","photo":"dsc_8816.jpg","lon":151.6450958699998,"lat":-33.124652359941166,"description":"At the split in the trail follow the right fork around the hill."},{"type":"waypoint","photo":"dsc_8819.jpg","lon":151.64438517999793,"lat":-33.120723589997795,"description":"The firetrail ends at Spoon Rocks Road. Follow the footpath from there."},{"type":"waypoint","photo":"dsc_8821.jpg","lon":151.64517617992055,"lat":-33.112173130057236,"description":"Continue past the first bus stop at Caves Beach, since it is only for school busses."},{"type":"waypoint","photo":"dsc_8822.jpg","lon":151.64540713999196,"lat":-33.11040790001002,"description":"Take the bus to Newcastle from the bus stop at the Caves Beach car park."},{"location":"Swansea","type":"bus","description":"Plan your return trip from Cave Beach in Swansea using <a href=\"https://transportnsw.info/trip#/?from=Cave Beach\">transportnsw.info</a>.","lat":-33.109987,"lon":151.645422}]}
+{
+	"location": "Munmorah",
+	"lon": 151.600996,
+	"lat": -33.195254,
+	"description": [
+		"Part of this walk covers <a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/munmorah-state-conservation-area\">Munmorah State Conservation Area</a>."
+	],
+	"duration": 8,
+	"distance": 37,
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "lakehaven-munmorah-swansea",
+	"updated": "2018-12-07",
+	"bounds": {
+		"west": 151.490478515625,
+		"north": -33.091541548655194,
+		"east": 151.666259765625,
+		"south": -33.257063402365475
+	},
+	"markers": [
+		{
+			"location": "Lake Haven",
+			"type": "bus",
+			"description": "Get the train to Wyong and the connecting bus to <a href=\"https://transportnsw.info/trip#/?to=Lake Haven\">transportnsw.info</a>.",
+			"lat": -33.241745,
+			"lon": 151.505208
+		},
+		{
+			"type": "kiosk",
+			"lat": -33.157889,
+			"lon": 151.629089
+		},
+		{
+			"type": "kiosk",
+			"lat": -33.206129,
+			"lon": 151.586565
+		},
+		{
+			"type": "kiosk",
+			"lat": -33.237165,
+			"lon": 151.563105
+		},
+		{
+			"type": "kiosk",
+			"lat": -33.21808,
+			"lon": 151.522581
+		},
+		{
+			"type": "toilet",
+			"lat": -33.157655,
+			"lon": 151.628964
+		},
+		{
+			"type": "toilet",
+			"lat": -33.186904,
+			"lon": 151.621928
+		},
+		{
+			"type": "toilet",
+			"lat": -33.207205,
+			"lon": 151.586544
+		},
+		{
+			"type": "toilet",
+			"lat": -33.239487,
+			"lon": 151.564125
+		},
+		{
+			"type": "toilet",
+			"lat": -33.2298,
+			"lon": 151.530249
+		},
+		{
+			"type": "toilet",
+			"lat": -33.219919,
+			"lon": 151.526651
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8423.jpg",
+			"lon": 151.50523225998808,
+			"lat": -33.24235203999355,
+			"description": "Leave the bus from Wyong station at the Lake Haven shopping centre."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8425.jpg",
+			"lon": 151.50556986004793,
+			"lat": -33.24150291005291,
+			"description": "Follow the footpath around the cinema to the car park of the recreation centre."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8428.jpg",
+			"lon": 151.50748469999587,
+			"lat": -33.24016810997539,
+			"description": "From the car park follow Kanimble Ave past the next intersection."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8429.jpg",
+			"lon": 151.50775008005124,
+			"lat": -33.2383668600107,
+			"description": "Follow Moala Parade to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8430.jpg",
+			"lon": 151.50871169992368,
+			"lat": -33.237966670011375,
+			"description": "At the roundabout follow Panorama Ave to the left along the lakeside houses."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8432.jpg",
+			"lon": 151.50644608000343,
+			"lat": -33.22383193998898,
+			"description": "From the dog park and wetlands turn left down Lowana Ave."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8442.jpg",
+			"lon": 151.5045049600056,
+			"lat": -33.22274563000303,
+			"description": "At the intersection follow the footpath along the Pacific Highway to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8452.jpg",
+			"lon": 151.50766627996907,
+			"lat": -33.21798418000104,
+			"description": "Cross the bridge over Wallarah Creek and us the off ramp to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8454.jpg",
+			"lon": 151.5080847299814,
+			"lat": -33.217703479999784,
+			"description": "From the boat ramp follow the footpath along the water's edge."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8465.jpg",
+			"lon": 151.51095600991326,
+			"lat": -33.218802420003215,
+			"description": "The path continues unbroken all the way to Budgewoi"
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8491.jpg",
+			"lon": 151.53017010998047,
+			"lat": -33.229783950000005,
+			"description": "Don't miss the right turn at Edgewater Park."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8497.jpg",
+			"lon": 151.56191012002182,
+			"lat": -33.237599169976576,
+			"description": "Cross the bridge across Budgewoi Creek along the footpath."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8508.jpg",
+			"lon": 151.56478274999188,
+			"lat": -33.239598,
+			"description": "Continue past the boat ramp and turn left onto Ourringo Street from the roundabout."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8509.jpg",
+			"lon": 151.56692340999973,
+			"lat": -33.23576664999583,
+			"description": "Follow the footpaths and nature strips along the holiday park down Mimosa Road."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8511.jpg",
+			"lon": 151.57306413004645,
+			"lat": -33.23056447999769,
+			"description": "Enter the powerline service trail on the left of Elizabeth Bay Drive."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8516.jpg",
+			"lon": 151.57746888999503,
+			"lat": -33.22165894999956,
+			"description": "Follow the powerline trail to Monmorah."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8523-dsc_8530.jpg",
+			"lon": 151.58616211000844,
+			"lat": -33.20790493000024,
+			"description": "From the end of the trail, cross the reserve at the boat ramp."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8532.jpg",
+			"lon": 151.5864943099887,
+			"lat": -33.206022970000035,
+			"description": "From the roundabout, follow Elizabeth Bay Drive to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8533.jpg",
+			"lon": 151.58659181998166,
+			"lat": -33.204741229969684,
+			"description": "From the next roundabout follow Birdie Beach Drive to the National Park entrance."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8538.jpg",
+			"lon": 151.59570869990225,
+			"lat": -33.20357927003137,
+			"description": "Follow Birdie Beach Drive into the national park."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8542.jpg",
+			"lon": 151.5970742799932,
+			"lat": -33.199056219897024,
+			"description": "At the intersection with Campbell Drive follow the sign to Frazer Beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8553.jpg",
+			"lon": 151.59361596009975,
+			"lat": -33.19423868994989,
+			"description": "At the intersection with Blue Wren Drive follow the sign to Frazer Beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8555.jpg",
+			"lon": 151.60084946000097,
+			"lat": -33.19516671993182,
+			"description": "Enter the parking bay on the right and follow the sign down the Coast Walk."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8663.jpg",
+			"lon": 151.61775243000145,
+			"lat": -33.19471119999999,
+			"description": "The trail ends at a similar parking bay on the far end."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8664.jpg",
+			"lon": 151.61691184,
+			"lat": -33.19400824000728,
+			"description": "<i>+ 0h / 0km</i> Follow the dirt road left a short distance to find a lookout point",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8674.jpg",
+			"lon": 151.6178846800007,
+			"lat": -33.19411189999393,
+			"description": "Follow the dirt road right a short distance and enter the trail marked on the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8677.jpg",
+			"lon": 151.6192370200055,
+			"lat": -33.191296319995445,
+			"description": "The trail leads down to Frazer Beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8687.jpg",
+			"lon": 151.62426215993406,
+			"lat": -33.18697330999781,
+			"description": "Cross Frazer Beach and the rock platform to the smaller Bongon Beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8720.jpg",
+			"lon": 151.62785786992393,
+			"lat": -33.18630008998994,
+			"description": "From Bongon Beach climb the trail up to the Snapper Point carpark."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8733.jpg",
+			"lon": 151.6232769599957,
+			"lat": -33.180515760067465,
+			"description": "Follow Snapper Point Road up to the gated firetrail at the top of the ridge."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8735.jpg",
+			"lon": 151.62314680995615,
+			"lat": -33.180043820055666,
+			"description": "Enter the Moonee Beach Trail on the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8749.jpg",
+			"lon": 151.63018703989044,
+			"lat": -33.168197090000135,
+			"description": "At the intersection follow the marker to the beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8751-dsc_8758.jpg",
+			"lon": 151.63061683986146,
+			"lat": -33.169252840024896,
+			"description": "Follow the beach to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8759.jpg",
+			"lon": 151.63184391000487,
+			"lat": -33.16663188002474,
+			"description": "From the end of the beach follow either of the trails up to the suburban street."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8765.jpg",
+			"lon": 151.62973896011397,
+			"lat": -33.16190727998641,
+			"description": "From the beach access follow Montefiore Street to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8766.jpg",
+			"lon": 151.62808218001572,
+			"lat": -33.161586,
+			"description": "At the roundabout follow Clarke Street past the Catho Pub."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8767.jpg",
+			"lon": 151.6271393699665,
+			"lat": -33.15852812000912,
+			"description": "Past the Catho Pub, turn right down Flowers Drive."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8768.jpg",
+			"lon": 151.62781374007938,
+			"lat": -33.15780844997408,
+			"description": "Enter the surf club carpark on the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8769.jpg",
+			"lon": 151.62832105004563,
+			"lat": -33.15756028998372,
+			"description": "Continue left along Catherine Hill Bay Beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8772.jpg",
+			"lon": 151.63643644000632,
+			"lat": -33.14588417994189,
+			"description": "At the far end of the beach follow the dirt trail up the headland."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8790.jpg",
+			"lon": 151.63759020001913,
+			"lat": -33.13806102003643,
+			"description": "Follow the dirt road through the forest."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8791.jpg",
+			"lon": 151.63488627999894,
+			"lat": -33.13502972000626,
+			"description": "Turn right at the intersection and continue down the dirt road."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8792.jpg",
+			"lon": 151.63488887000528,
+			"lat": -33.134333109994415,
+			"description": "Pass the gate at the quarry and continue to the concrete structures."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8793.jpg",
+			"lon": 151.63507163000563,
+			"lat": -33.13418342000027,
+			"description": "Follow the trail to the left past the concrete structures and the quarry fence."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8795.jpg",
+			"lon": 151.63435169000027,
+			"lat": -33.130858229988725,
+			"description": "At the intersection past the quarry, follow the trail right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8797.jpg",
+			"lon": 151.63646913997894,
+			"lat": -33.13145351999771,
+			"description": "Continue past the Wallarah National Park sign."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8803.jpg",
+			"lon": 151.64061148998962,
+			"lat": -33.12785397001666,
+			"description": "At the intersection follow the signs to Coastal Walk."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8805.jpg",
+			"lon": 151.64189292000228,
+			"lat": -33.128670090049866,
+			"description": "Use the bridge on the left to cross the lagoon."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8812.jpg",
+			"lon": 151.64272922998987,
+			"lat": -33.12829391000264,
+			"description": "Follow the gated firetrail up on the other side of the lagoon."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8814.jpg",
+			"lon": 151.6429570999571,
+			"lat": -33.12813466003317,
+			"description": "<i>+ 0.5h / 1km</i> A (degraded) section of a guided walk starts at the right side of the trail.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8816.jpg",
+			"lon": 151.6450958699998,
+			"lat": -33.124652359941166,
+			"description": "At the split in the trail follow the right fork around the hill."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8819.jpg",
+			"lon": 151.64438517999793,
+			"lat": -33.120723589997795,
+			"description": "The firetrail ends at Spoon Rocks Road. Follow the footpath from there."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8821.jpg",
+			"lon": 151.64517617992055,
+			"lat": -33.112173130057236,
+			"description": "Continue past the first bus stop at Caves Beach, since it is only for school busses."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8822.jpg",
+			"lon": 151.64540713999196,
+			"lat": -33.11040790001002,
+			"description": "Take the bus to Newcastle from the bus stop at the Caves Beach car park."
+		},
+		{
+			"location": "Swansea",
+			"type": "bus",
+			"description": "Plan your return trip from Cave Beach in Swansea using <a href=\"https://transportnsw.info/trip#/?from=Cave Beach\">transportnsw.info</a>.",
+			"lat": -33.109987,
+			"lon": 151.645422
+		}
+	]
+}

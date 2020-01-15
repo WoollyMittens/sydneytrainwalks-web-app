@@ -1,1 +1,274 @@
-{"location":"Lake Tuggerah","lon":151.549835,"lat":-33.275192,"description":["Part of this walk covers <a href=\"http://www.nationalparks.nsw.gov.au/wyrrabalong-national-park\">Wyrrabalong National Park</a>."],"duration":11,"distance":45,"zoom":13,"rain":true,"fireban":true,"key":"tuggerah-laketuggerah-wyong","updated":"2013-08-30","bounds":{"west":151.402587890625,"north":-33.24787594792438,"east":151.5673828125,"south":-33.37641235124678},"markers":[{"location":"Tuggerah","type":"train","description":"Get the train to Tuggerah using <a href=\"https://transportnsw.info/trip#/?to=Tuggerah\">transportnsw.info</a>.","lon":151.420197,"lat":-33.308128},{"type":"kiosk","lat":-33.327049,"lon":151.429406},{"type":"kiosk","lat":-33.327049,"lon":151.429406},{"type":"kiosk","lat":-33.339399,"lon":151.437834},{"type":"kiosk","lat":-33.339775,"lon":151.498848},{"type":"kiosk","lat":-33.327141,"lon":151.503049},{"type":"kiosk","lat":-33.258454,"lon":151.512536},{"type":"kiosk","lat":-33.275047,"lon":151.490498},{"type":"toilet","lat":-33.263909,"lon":151.493369},{"type":"toilet","lat":-33.259972,"lon":151.51749},{"type":"toilet","lat":-33.270393,"lon":151.542375},{"type":"toilet","lat":-33.327058,"lon":151.503513},{"type":"toilet","lat":-33.339043,"lon":151.498697},{"type":"toilet","lat":-33.337121,"lon":151.49454},{"type":"toilet","lat":-33.352971,"lon":151.48619},{"type":"toilet","lat":-33.36527,"lon":151.476145},{"type":"toilet","lat":-33.361419,"lon":151.459533},{"type":"toilet","lat":-33.33927,"lon":151.438316},{"type":"toilet","lat":-33.309932,"lon":151.421433},{"type":"waypoint","photo":"p8313395.jpg","lon":151.4227111111111,"lat":-33.31030555555555,"description":"From Tuggerah Station follow the road past the shopping mall to the roundabout at Wyong Road."},{"type":"waypoint","photo":"p8313396.jpg","lon":151.42326666666665,"lat":-33.31523055555555,"description":"Cross at the roundabout and follow the footpath along the industrial estate to the left."},{"type":"waypoint","photo":"p8313402_p8313405.jpg","lon":151.4281111111111,"lat":-33.32648888888889,"description":"After the bridge across Ourimbah Creek, cross Wyong Road to the shopping centre on the other side."},{"type":"waypoint","photo":"p8313408.jpg","lon":151.43829166666666,"lat":-33.32718055555556,"description":"From the shopping centre follow James Watts Drive and enter the footpath through the reserve."},{"type":"waypoint","photo":"p8313451_p8313452.jpg","lon":151.44089722222222,"lat":-33.33094444444445,"description":"Cross Lakedge Ave and enter the lakeside reserve."},{"type":"waypoint","photo":"p8313552.jpg","lon":151.46704166666666,"lat":-33.36485833333334,"description":"Follow the shared foot and bike path around the lake to the Entrance."},{"type":"waypoint","photo":"p8313625.jpg","lon":151.49878888888887,"lat":-33.33875555555556,"description":"The bike path eventually ends at the Entrance Bridge."},{"type":"waypoint","photo":"p8313645.jpg","lon":151.5059777777778,"lat":-33.335836111111114,"description":"From the bridge continue along the lake, or cross the dunes to the beach immediately."},{"type":"waypoint","photo":"p8313665.jpg","lon":151.52013333333335,"lat":-33.31897777777778,"description":"Follow the beach past the Magento Shores golf club."},{"type":"waypoint","photo":"p8313686.jpg","lon":151.5496222222222,"lat":-33.29654444444444,"description":"Cross the dunes at the fire trail (which can be hard to spot), or at Pelican Beach carpark."},{"type":"waypoint","photo":"p8313688.jpg","lon":151.54629722222222,"lat":-33.29344444444444,"description":"Follow the Pacific Highway back a little bit to find the park entrance on the other side."},{"type":"waypoint","photo":"p8313691.jpg","lon":151.54521944444446,"lat":-33.293299999999995,"description":"From the park entrance follow the signs down the Burrawang Walking Track."},{"type":"waypoint","photo":"p8313711_p8313713.jpg","lon":151.53778888888888,"lat":-33.29131944444444,"description":"At the end of the track continue right down the Redgum Trail."},{"type":"waypoint","photo":"p8313758.jpg","lon":151.5509027777778,"lat":-33.28182777777778,"description":"Follow the bushtrails all the way to the wetlands trailhead."},{"type":"waypoint","photo":"p8313762.jpg","lon":151.55082777777778,"lat":-33.27716111111111,"description":"Continue down the footpath past the holiday parks along the lake."},{"type":"waypoint","photo":"p8313768_p8313770.jpg","lon":151.54387777777777,"lat":-33.27196111111111,"description":"Past the holiday parks find the footpath along the lake and follow it to to Toukley."},{"type":"waypoint","photo":"p8313786.jpg","lon":151.51973611111111,"lat":-33.26226111111111,"description":"Follow the footpaths along Main Roadd and cross the bridge to Gorokan."},{"type":"waypoint","photo":"p8313804.jpg","lon":151.49493055555556,"lat":-33.26298333333333,"description":"From Gorokan follow the roads along the lake and pass through Graigie Park."},{"type":"waypoint","photo":"p8313809.jpg","lon":151.48848055555555,"lat":-33.27743611111111,"description":"The walk follows Tuggerawong Road, with the occasional reserve along the way."},{"type":"waypoint","photo":"p8313842.jpg","lon":151.46115277777776,"lat":-33.29255555555555,"description":"Turn right at the river and follow Wolseley Ave past the wetlands."},{"type":"waypoint","photo":"p8313849.jpg","lon":151.44483888888888,"lat":-33.290613888888885,"description":"Follow Boyce Ave past the golf course and past the sports fields to Wyong Station."},{"location":"Wyong","type":"train","description":"Plan your return trip from Wyong at <a href=\"https://transportnsw.info/trip#/?from=Wyong\">transportnsw.info</a>.","lat":-33.28545277777778,"lon":151.42558333333332}]}
+{
+	"location": "Lake Tuggerah",
+	"lon": 151.549835,
+	"lat": -33.275192,
+	"description": [
+		"Part of this walk covers <a href=\"http://www.nationalparks.nsw.gov.au/wyrrabalong-national-park\">Wyrrabalong National Park</a>."
+	],
+	"duration": 11,
+	"distance": 45,
+	"zoom": 13,
+	"rain": true,
+	"fireban": true,
+	"key": "tuggerah-laketuggerah-wyong",
+	"updated": "2013-08-30",
+	"bounds": {
+		"west": 151.402587890625,
+		"north": -33.24787594792438,
+		"east": 151.5673828125,
+		"south": -33.37641235124678
+	},
+	"markers": [
+		{
+			"location": "Tuggerah",
+			"type": "train",
+			"description": "Get the train to Tuggerah using <a href=\"https://transportnsw.info/trip#/?to=Tuggerah\">transportnsw.info</a>.",
+			"lon": 151.420197,
+			"lat": -33.308128
+		},
+		{
+			"type": "kiosk",
+			"lat": -33.327049,
+			"lon": 151.429406
+		},
+		{
+			"type": "kiosk",
+			"lat": -33.327049,
+			"lon": 151.429406
+		},
+		{
+			"type": "kiosk",
+			"lat": -33.339399,
+			"lon": 151.437834
+		},
+		{
+			"type": "kiosk",
+			"lat": -33.339775,
+			"lon": 151.498848
+		},
+		{
+			"type": "kiosk",
+			"lat": -33.327141,
+			"lon": 151.503049
+		},
+		{
+			"type": "kiosk",
+			"lat": -33.258454,
+			"lon": 151.512536
+		},
+		{
+			"type": "kiosk",
+			"lat": -33.275047,
+			"lon": 151.490498
+		},
+		{
+			"type": "toilet",
+			"lat": -33.263909,
+			"lon": 151.493369
+		},
+		{
+			"type": "toilet",
+			"lat": -33.259972,
+			"lon": 151.51749
+		},
+		{
+			"type": "toilet",
+			"lat": -33.270393,
+			"lon": 151.542375
+		},
+		{
+			"type": "toilet",
+			"lat": -33.327058,
+			"lon": 151.503513
+		},
+		{
+			"type": "toilet",
+			"lat": -33.339043,
+			"lon": 151.498697
+		},
+		{
+			"type": "toilet",
+			"lat": -33.337121,
+			"lon": 151.49454
+		},
+		{
+			"type": "toilet",
+			"lat": -33.352971,
+			"lon": 151.48619
+		},
+		{
+			"type": "toilet",
+			"lat": -33.36527,
+			"lon": 151.476145
+		},
+		{
+			"type": "toilet",
+			"lat": -33.361419,
+			"lon": 151.459533
+		},
+		{
+			"type": "toilet",
+			"lat": -33.33927,
+			"lon": 151.438316
+		},
+		{
+			"type": "toilet",
+			"lat": -33.309932,
+			"lon": 151.421433
+		},
+		{
+			"type": "waypoint",
+			"photo": "p8313395.jpg",
+			"lon": 151.4227111111111,
+			"lat": -33.31030555555555,
+			"description": "From Tuggerah Station follow the road past the shopping mall to the roundabout at Wyong Road."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p8313396.jpg",
+			"lon": 151.42326666666665,
+			"lat": -33.31523055555555,
+			"description": "Cross at the roundabout and follow the footpath along the industrial estate to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p8313402_p8313405.jpg",
+			"lon": 151.4281111111111,
+			"lat": -33.32648888888889,
+			"description": "After the bridge across Ourimbah Creek, cross Wyong Road to the shopping centre on the other side."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p8313408.jpg",
+			"lon": 151.43829166666666,
+			"lat": -33.32718055555556,
+			"description": "From the shopping centre follow James Watts Drive and enter the footpath through the reserve."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p8313451_p8313452.jpg",
+			"lon": 151.44089722222222,
+			"lat": -33.33094444444445,
+			"description": "Cross Lakedge Ave and enter the lakeside reserve."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p8313552.jpg",
+			"lon": 151.46704166666666,
+			"lat": -33.36485833333334,
+			"description": "Follow the shared foot and bike path around the lake to the Entrance."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p8313625.jpg",
+			"lon": 151.49878888888887,
+			"lat": -33.33875555555556,
+			"description": "The bike path eventually ends at the Entrance Bridge."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p8313645.jpg",
+			"lon": 151.5059777777778,
+			"lat": -33.335836111111114,
+			"description": "From the bridge continue along the lake, or cross the dunes to the beach immediately."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p8313665.jpg",
+			"lon": 151.52013333333335,
+			"lat": -33.31897777777778,
+			"description": "Follow the beach past the Magento Shores golf club."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p8313686.jpg",
+			"lon": 151.5496222222222,
+			"lat": -33.29654444444444,
+			"description": "Cross the dunes at the fire trail (which can be hard to spot), or at Pelican Beach carpark."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p8313688.jpg",
+			"lon": 151.54629722222222,
+			"lat": -33.29344444444444,
+			"description": "Follow the Pacific Highway back a little bit to find the park entrance on the other side."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p8313691.jpg",
+			"lon": 151.54521944444446,
+			"lat": -33.293299999999995,
+			"description": "From the park entrance follow the signs down the Burrawang Walking Track."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p8313711_p8313713.jpg",
+			"lon": 151.53778888888888,
+			"lat": -33.29131944444444,
+			"description": "At the end of the track continue right down the Redgum Trail."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p8313758.jpg",
+			"lon": 151.5509027777778,
+			"lat": -33.28182777777778,
+			"description": "Follow the bushtrails all the way to the wetlands trailhead."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p8313762.jpg",
+			"lon": 151.55082777777778,
+			"lat": -33.27716111111111,
+			"description": "Continue down the footpath past the holiday parks along the lake."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p8313768_p8313770.jpg",
+			"lon": 151.54387777777777,
+			"lat": -33.27196111111111,
+			"description": "Past the holiday parks find the footpath along the lake and follow it to to Toukley."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p8313786.jpg",
+			"lon": 151.51973611111111,
+			"lat": -33.26226111111111,
+			"description": "Follow the footpaths along Main Roadd and cross the bridge to Gorokan."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p8313804.jpg",
+			"lon": 151.49493055555556,
+			"lat": -33.26298333333333,
+			"description": "From Gorokan follow the roads along the lake and pass through Graigie Park."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p8313809.jpg",
+			"lon": 151.48848055555555,
+			"lat": -33.27743611111111,
+			"description": "The walk follows Tuggerawong Road, with the occasional reserve along the way."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p8313842.jpg",
+			"lon": 151.46115277777776,
+			"lat": -33.29255555555555,
+			"description": "Turn right at the river and follow Wolseley Ave past the wetlands."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p8313849.jpg",
+			"lon": 151.44483888888888,
+			"lat": -33.290613888888885,
+			"description": "Follow Boyce Ave past the golf course and past the sports fields to Wyong Station."
+		},
+		{
+			"location": "Wyong",
+			"type": "train",
+			"description": "Plan your return trip from Wyong at <a href=\"https://transportnsw.info/trip#/?from=Wyong\">transportnsw.info</a>.",
+			"lat": -33.28545277777778,
+			"lon": 151.42558333333332
+		}
+	]
+}

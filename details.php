@@ -2,12 +2,14 @@
 <html class="ios-false">
 	<?php
 
-		// variables
+		// constants
+		$title = 'Sydney Hiking Trips';
+		$domain = 'www.sydneyhikingtrips.com';
+
+		// variable
 		$id = (@$_REQUEST['id']) ? @$_REQUEST['id'] : 'cowan-taffyslookout-brooklyn';
 		$screen = (@$_REQUEST['screen']) ? @$_REQUEST['screen'] : 'map';
-		$inc = './inc/';
-
-		$jsonText = file_get_contents($inc . 'json/guides.json');
+		$jsonText = file_get_contents('./inc/json/guides.json');
 		$json = json_decode($jsonText)->$id;
 
 		// extract the important markers
@@ -16,7 +18,7 @@
 		$lastMarker = array_values(array_slice($markers, -1))[0];
 
 		// formal title
-		$title = "From " . $firstMarker->{'location'} . " via " . $json->{'location'} . " to " . $lastMarker->{'location'};
+		$subtitle = "From " . $firstMarker->{'location'} . " via " . $json->{'location'} . " to " . $lastMarker->{'location'};
 		$description = join(' ', $json->{'description'});
 		$description = strip_tags($description);
 
@@ -33,11 +35,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta http-equiv="imagetoolbar" content="no"/>
 		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<title>Sydney Train Walks - <?php echo $title?></title>
+		<title><?php print $title ?> - <?php echo $subtitle?></title>
 		<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width, user-scalable=yes"/>
-		<meta property="og:url" content="https://www.sydneytrainwalks.com/details.php?id=<?php echo $id ?>" />
-		<meta property="og:image" content="https://www.sydneytrainwalks.com/inc/social/<?php echo $id ?>.png" />
-		<meta property="og:title" content="Sydney Train Walks - <?php echo $title ?>" />
+		<meta property="og:url" content="https://<?php print $domain ?>/details.php?id=<?php echo $id ?>" />
+		<meta property="og:image" content="https://<?php print $domain ?>/inc/social/<?php echo $id ?>.png" />
+		<meta property="og:title" content="<?php print $title ?> - <?php echo $subtitle ?>" />
 		<meta property="og:description" content="<?php echo $description ?>" />
 		<meta name="msapplication-TileColor" content="#558b2f" />
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
@@ -74,7 +76,7 @@
 		<div class="ios-margins">
 			<section id="appView">
 				<header class="title">
-					<h1><a href="./">Sydney Train Walks</a></h1>
+					<h1><a href="./"><?php print $title ?></a></h1>
 				</header>
 				<header class="subtitle">
 					<h2 onclick="document.location.replace('./')">
@@ -145,7 +147,7 @@
 						<ul>
 							<li>Check the <a href="http://www.nationalparks.nsw.gov.au/alert/state-alerts">national parks website</a> for possible detours, closures and restrictions.</li>
 							<li>Install an OpenStreetMap app for <a href="http://wiki.openstreetmap.org/wiki/Android">Android</a> or <a href="http://wiki.openstreetmap.org/wiki/Apple_iOS">iOS</a> and preload the area.</li>
-							<li>Download the <a href="<?php print $inc ?>gpx/<?php print $id ?>.gpx">GPS data</a> if your device can import it.</li>
+							<li>Download the <a href="./inc/gpx/<?php print $id ?>.gpx">GPS data</a> if your device can import it.</li>
 							<li>Print out this map and get a better one from a visitor information centre if possible.</li>
 							<li>Be sure to leave enough charge in your phone's battery for emergency calls.</li>
 							<li>Bring plenty of water, comfortable shoes, a hat and SPF 30 sunscreen.</li>
@@ -162,8 +164,8 @@
 							<?php
 
 								// find the files
-								$small = glob($inc . "small/" . $assets . "/*.jpg");
-								$medium = glob($inc . "medium/" . $assets . "/*.jpg");
+								$small = glob("./inc/small/" . $assets . "/*.jpg");
+								$medium = glob("./inc/medium/" . $assets . "/*.jpg");
 								$min = 0;
 								$max = count($small);
 

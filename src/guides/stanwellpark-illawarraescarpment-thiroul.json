@@ -1,1 +1,145 @@
-{"location":"Illawarra Escarpment","lon":150.94722,"lat":-34.26797499999999,"description":["This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/illawarra-escarpment-state-conservation-area\">Illawarra Escarpment State Conservation Area</a>."],"duration":5,"distance":17,"zoom":13,"rain":false,"fireban":false,"key":"stanwellpark-illawarraescarpment-thiroul","updated":"2012-12-08","bounds":{"west":150.897216796875,"north":-34.21634468843464,"east":150.99609375,"south":-34.3343644870263},"markers":[{"location":"Stanwell Park","type":"train","description":"Get the train to Stanwell Park using <a href=\"https://transportnsw.info/trip#/?to=Stanwell Park\">transportnsw.info</a>.","lon":150.980408,"lat":-34.227482},{"type":"kiosk","lat":-34.29655277777778,"lon":150.92490277777776},{"type":"toilet","lat":-34.296049,"lon":150.924931},{"type":"waypoint","photo":"pc093760.jpg","lon":150.98074196000803,"lat":-34.226655340019356,"description":"The trail starts directly at the train platform."},{"type":"waypoint","photo":"pc093761.jpg","lon":150.98055179005908,"lat":-34.226604820017975,"description":"From the platform trackhead follow the Wodi Wodi Track."},{"type":"waypoint","photo":"pc093773.jpg","lon":150.97126821999876,"lat":-34.229045739986425,"description":"Watch for arrows and signs pointing out the rough bushtrail."},{"type":"waypoint","photo":"pc093774.jpg","lon":150.97134135999684,"lat":-34.22926565008026,"description":"The track crosses a rocky creek. It's easy to miss the trail marker on the far side."},{"type":"waypoint","photo":"pc093789.jpg","lon":150.97686944444445,"lat":-34.234316666666665,"description":"At the sign leave the Wodi Wodi track and follow the Forest Walk up the ridge."},{"type":"waypoint","photo":"pc093796.jpg","lon":150.97411666666667,"lat":-34.23594722222222,"description":"Follow the walking track to the left along the top of the ridge."},{"type":"waypoint","photo":"pc093849.jpg","lon":150.9765122100122,"lat":-34.238377900004615,"description":"Watch out for several small side trails leading to lookouts."},{"type":"waypoint","photo":"pc093879.jpg","lon":150.9539203599667,"lat":-34.264602990033225,"description":"The trail intersects several fire trails. Watch for signs showing where the trail continues."},{"type":"waypoint","photo":"pc093897.jpg","lon":150.9249011400071,"lat":-34.29655357994414,"description":"The trail ends at the Siblime Point Lookout and visitor centre."},{"type":"waypoint","photo":"pc093941.jpg","lon":150.92445269000248,"lat":-34.297264840001056,"description":"The Sublime Point Track starts down the escarpment on the south end of the lookouts."},{"type":"waypoint","photo":"pc093964.jpg","lon":150.92421666666667,"lat":-34.29877222222222,"description":"Follow the many stairs and steps down the escarpment to the forest below."},{"type":"waypoint","photo":"pc093967.jpg","lon":150.9248546299867,"lat":-34.301252889999844,"description":"At the bottom of the climb follow the directions down the Gibson Track."},{"type":"waypoint","photo":"pc093971.jpg","lon":150.91810856000274,"lat":-34.30604089999354,"description":"Follow the signs down the Gibson Track all the way to the trailhead."},{"type":"waypoint","photo":"pc093976.jpg","lon":150.91826498000788,"lat":-34.3107414200701,"description":"From the tralhead follow Phillip Street back to the town centre and train station."},{"location":"Thirroul","type":"train","description":"Plan your return trip from Thiroul at <a href=\"https://transportnsw.info/trip#/?from=Thiroul\">transportnsw.info</a>.","lon":150.918686,"lat":-34.31794799999999}]}
+{
+	"location": "Illawarra Escarpment",
+	"lon": 150.94722,
+	"lat": -34.26797499999999,
+	"description": [
+		"This walk covers part of <a href=\"http://www.nationalparks.nsw.gov.au/illawarra-escarpment-state-conservation-area\">Illawarra Escarpment State Conservation Area</a>."
+	],
+	"duration": 5,
+	"distance": 17,
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "stanwellpark-illawarraescarpment-thiroul",
+	"updated": "2012-12-08",
+	"bounds": {
+		"west": 150.897216796875,
+		"north": -34.21634468843464,
+		"east": 150.99609375,
+		"south": -34.3343644870263
+	},
+	"markers": [
+		{
+			"location": "Stanwell Park",
+			"type": "train",
+			"description": "Get the train to Stanwell Park using <a href=\"https://transportnsw.info/trip#/?to=Stanwell Park\">transportnsw.info</a>.",
+			"lon": 150.980408,
+			"lat": -34.227482
+		},
+		{
+			"type": "kiosk",
+			"lat": -34.29655277777778,
+			"lon": 150.92490277777776
+		},
+		{
+			"type": "toilet",
+			"lat": -34.296049,
+			"lon": 150.924931
+		},
+		{
+			"type": "waypoint",
+			"photo": "pc093760.jpg",
+			"lon": 150.98074196000803,
+			"lat": -34.226655340019356,
+			"description": "The trail starts directly at the train platform."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pc093761.jpg",
+			"lon": 150.98055179005908,
+			"lat": -34.226604820017975,
+			"description": "From the platform trackhead follow the Wodi Wodi Track."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pc093773.jpg",
+			"lon": 150.97126821999876,
+			"lat": -34.229045739986425,
+			"description": "Watch for arrows and signs pointing out the rough bushtrail."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pc093774.jpg",
+			"lon": 150.97134135999684,
+			"lat": -34.22926565008026,
+			"description": "The track crosses a rocky creek. It's easy to miss the trail marker on the far side."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pc093789.jpg",
+			"lon": 150.97686944444445,
+			"lat": -34.234316666666665,
+			"description": "At the sign leave the Wodi Wodi track and follow the Forest Walk up the ridge."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pc093796.jpg",
+			"lon": 150.97411666666667,
+			"lat": -34.23594722222222,
+			"description": "Follow the walking track to the left along the top of the ridge."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pc093849.jpg",
+			"lon": 150.9765122100122,
+			"lat": -34.238377900004615,
+			"description": "Watch out for several small side trails leading to lookouts."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pc093879.jpg",
+			"lon": 150.9539203599667,
+			"lat": -34.264602990033225,
+			"description": "The trail intersects several fire trails. Watch for signs showing where the trail continues."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pc093897.jpg",
+			"lon": 150.9249011400071,
+			"lat": -34.29655357994414,
+			"description": "The trail ends at the Siblime Point Lookout and visitor centre."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pc093941.jpg",
+			"lon": 150.92445269000248,
+			"lat": -34.297264840001056,
+			"description": "The Sublime Point Track starts down the escarpment on the south end of the lookouts."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pc093964.jpg",
+			"lon": 150.92421666666667,
+			"lat": -34.29877222222222,
+			"description": "Follow the many stairs and steps down the escarpment to the forest below."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pc093967.jpg",
+			"lon": 150.9248546299867,
+			"lat": -34.301252889999844,
+			"description": "At the bottom of the climb follow the directions down the Gibson Track."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pc093971.jpg",
+			"lon": 150.91810856000274,
+			"lat": -34.30604089999354,
+			"description": "Follow the signs down the Gibson Track all the way to the trailhead."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pc093976.jpg",
+			"lon": 150.91826498000788,
+			"lat": -34.3107414200701,
+			"description": "From the tralhead follow Phillip Street back to the town centre and train station."
+		},
+		{
+			"location": "Thirroul",
+			"type": "train",
+			"description": "Plan your return trip from Thiroul at <a href=\"https://transportnsw.info/trip#/?from=Thiroul\">transportnsw.info</a>.",
+			"lon": 150.918686,
+			"lat": -34.31794799999999
+		}
+	]
+}
