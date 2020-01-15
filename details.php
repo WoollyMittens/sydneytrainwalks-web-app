@@ -92,7 +92,7 @@
 					<div class="guide-scroller">
 						<h2>About this walk</h2>
 						<time datetime="<?php print $json->{'updated'}?>">Updated: <?php print $displayDate?></time>
-						<p><?php print join('</p><p>', $json->{'description'}) ?></p>
+						<p><?php print join(' ', $json->{'description'}) ?></p>
 						<p>
 							It takes about <?php print $json->{'duration'}?> hours to complete the full <?php print $json->{'distance'}?> kilometre walk,
 							but plan extra for plenty of breaks and photography stops.

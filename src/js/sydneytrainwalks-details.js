@@ -48,7 +48,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 	this.updateGuide = function(id) {
 		// gather the information
 		var _this = this;
-		var description = '<p>' + GuideData[id].description.join('</p><p>') + '</p>';
+		var description = '<p>' + GuideData[id].description.join(' ') + '</p>';
 		var duration = GuideData[id].duration;
 		var distance = GuideData[id].distance;
 		var gpx = this.config.gpx.replace(/{id}/g, id);
@@ -59,7 +59,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		var updated = GuideData[id].updated;
 		var date = new Date(updated).toLocaleDateString('en-AU', {
 			year: 'numeric',
-			month: 'short', 
+			month: 'short',
 			day: 'numeric'
 		});
 		// fill the guide with information

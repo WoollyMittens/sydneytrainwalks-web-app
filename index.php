@@ -86,7 +86,7 @@
 								via <?php print $highlighted->{'location'}?>
 							</h3>
 						</hgroup>
-						<p><?php print join('</p><p>', $highlighted->{'description'}) ?></p>
+						<p><?php print join(' ', $highlighted->{'description'}) ?></p>
 						<a href="details.php?id=<?php print $highlighted->{'key'}?>" class="btn">More</a>
 					</article>
 
