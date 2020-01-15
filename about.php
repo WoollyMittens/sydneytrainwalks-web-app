@@ -59,7 +59,7 @@
 					<div class="about-scroller">
 						<h2>About <?php print $title ?></h2>
 						<p>This guide was created to give my exploration of Sydney's amazing national parks a useful purpose. I hope it will motivate people to venture out on nature walks by making it easier to get started.</p>
-						<p>Please add your <a href="https://github.com/WoollyMittens/sydneytrainwalks-web-app/issues">suggestions and bug reports on GitHub</a>, or send them to <a href="mailto:maurice@sydneytrainwalks.com">maurice@sydneytrainwalks.com</a>.</p>
+						<p>Please add your <a href="https://github.com/WoollyMittens/sydneytrainwalks-web-app/issues">suggestions and bug reports on GitHub</a>, or send them to <a href="mailto:maurice@woollymittens.nl">maurice@woollymittens.nl</a>.</p>
 						<h2>Credits</h2>
 						<p>App, photography and GPS logs &copy; Maurice van Creij, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>.</p>
 						<p>Maps &copy; <a href="http://www.4umaps.com/">4UMaps</a>, &copy; <a href="http://www.thunderforest.com/">Thunderforest</a>.</p>
@@ -147,7 +147,7 @@
 						<h3>Contact Us</h3>
 						<p>If you have any questions about this Privacy Policy, please contact us:</p>
 						<ul>
-							<li>By email: <a href="mailto:maurice@sydneytrainwalks.com">maurice@sydneytrainwalks.com</a></li>
+							<li>By email: <a href="mailto:maurice@woollymittens.nl">maurice@woollymittens.nl</a></li>
 						</ul>
 					</div>
 				</section>

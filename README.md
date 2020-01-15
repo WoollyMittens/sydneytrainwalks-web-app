@@ -1,10 +1,10 @@
-## Sydney Train Walks
+## Sydney Hiking Trips
 
 Version 1.9.2
 
 Thank you for supporting Sydney Train Walks. You make it possible for me to expand this guide and motivate people to enjoy Sydney's varied landscapes.
 
-Please add your [suggestions and bug reports on GitHub](https://github.com/WoollyMittens/sydneytrainwalks-web-app/issues), or send them to [info@sydneytrainwalks.com](mailto:info@sydneytrainwalks.com).
+Please add your [suggestions and bug reports on GitHub](https://github.com/WoollyMittens/sydneytrainwalks-web-app/issues), or send them to [maurice@woollymittens.nl](mailto:maurice@woollymittens.nl).
 
 ## Instructions
 
