@@ -3,8 +3,8 @@
 	<?php
 
 		// constants
-		$title = 'Sydney Hiking Trips';
-		$domain = 'www.sydneyhikingtrips.com';
+		$title = 'Sydney Hiking Trips'; // 'Sydney Train Walks';
+		$domain = 'www.sydneyhikingtrips.com'; // 'www.sydneytrainwalks.com';
 
 		// variable
 		$id = (@$_REQUEST['id']) ? @$_REQUEST['id'] : 'cowan-taffyslookout-brooklyn';

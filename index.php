@@ -3,8 +3,8 @@
 	<?php
 
 		// constants
-		$title = 'Sydney Hiking Trips';
-		$domain = 'www.sydneyhikingtrips.com';
+		$title = 'Sydney Hiking Trips'; // 'Sydney Train Walks';
+		$domain = 'www.sydneyhikingtrips.com'; // 'www.sydneytrainwalks.com';
 
 		// load and process the json file
 		$jsonText = file_get_contents('./inc/js/guide-data.js');
