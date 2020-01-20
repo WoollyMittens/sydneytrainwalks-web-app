@@ -7,7 +7,7 @@
 		$domain = 'www.sydneyhikingtrips.com';
 
 		// load and process the json file
-		$jsonText = file_get_contents("./inc/js/guide-data.js");
+		$jsonText = file_get_contents('./inc/js/guide-data.js');
 		$jsonText = preg_split('/ = /i', $jsonText);
 		$jsonText = $jsonText[1];
 		$jsonText = preg_split('/;/i', $jsonText);
@@ -17,6 +17,7 @@
 		$keys = array_keys(get_object_vars($json));
 		$keysIndex = rand(0 , count($keys) - 1);
 		$highlighted = $json->{$keys[$keysIndex]};
+		if ($highlighted == '_index') $highlighted = 'mtkuringgai-kuringgaichase-berowra';
 
 		$markers =  $highlighted->{'markers'};
 		$firstMarker = $markers[0];

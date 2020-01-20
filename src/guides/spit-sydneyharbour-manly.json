@@ -3,7 +3,11 @@
 	"lon": 151.267107,
 	"lat": -33.810701,
 	"description": [
-		"This walk follows the <a href=\"https://www.sydneycoastwalks.com.au/spit-to-manly-walk/\">Spit to Manly Walk</a>."
+		"From Spit Junction this walk follows the famous <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/manly-scenic-walkway/\">Spit Bridge to Manly Walk</a>.",
+		"After a chance to get refreshments at <a href=\"https://www.northernbeaches.nsw.gov.au/things-to-do/recreation-area/clontarf\">Clontarf Reserve</a>,",
+		"the walk follows a bushtrail through a section of <a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/sydney-harbour-national-park\">Sydney Harbour National Park</a> past",
+		"the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/aboriginal-sites/grotto-point-aboriginal-engraving-site\">Grotto Point Aboriginal engraving site</a> and several lookouts.",
+		"The Fairlight Walk completes the final stretch to Manly past <a href=\"https://www.northernbeaches.nsw.gov.au/things-to-do/recreation-area/fairlight\">Fairlight Beach</a>."
 	],
 	"duration": 3,
 	"distance": 11,
@@ -20,9 +24,9 @@
 	},
 	"markers": [
 		{
-			"location": "Spit Junction",
+			"location": "Spit Bridge",
 			"type": "bus",
-			"description": "Get the bus to Spit Junction using <a href=\"https://transportnsw.info/trip#/?to=Spit Junction\">transportnsw.info</a>.",
+			"description": "Get the bus to Spit Bridge using <a href=\"https://transportnsw.info/trip#/?to=Spit Bridge\">transportnsw.info</a>.",
 			"lon": 151.246487,
 			"lat": -33.805695
 		},
@@ -76,7 +80,7 @@
 			"photo": "p1310845_p1310850.jpg",
 			"lon": 151.24614900008967,
 			"lat": -33.803732999999994,
-			"description": "Walk along the footpath past Spit Junction and across Spit Bridge."
+			"description": "Walk along the reserve from the bus stops and take the right side footpath across Spit Bridge."
 		},
 		{
 			"type": "waypoint",
