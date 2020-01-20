@@ -77,15 +77,22 @@
 					</p>
 
 					<article style="background-image:linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(inc/social/<?php print $highlighted->{'key'}?>.png)">
-						<hgroup>
-							<h2>Suggested:</h2>
-							<h3>
+						<h2>
+							Suggested:
+							<small>
 								This <?php print $highlighted->{'distance'}?>km walk
-								from <?php print $firstMarker->{'location'}?>
-								to <?php print $lastMarker->{'location'}?>
-								via <?php print $highlighted->{'location'}?>
-							</h3>
-						</hgroup>
+								<?php
+									if ($firstMarker->{'location'} == $lastMarker->{'location'}) {
+										print " near " . $firstMarker->{'location'};
+										print " in " . $highlighted->{'location'};
+									} else {
+										print " from " . $firstMarker->{'location'};
+										print " to " . $lastMarker->{'location'};
+										print " via " . $highlighted->{'location'};
+									}
+								?>
+							</small>
+						</h2>
 						<p><?php print join(' ', $highlighted->{'description'}) ?></p>
 						<a href="details.php?id=<?php print $highlighted->{'key'}?>" class="btn">More</a>
 					</article>
@@ -122,10 +129,10 @@
 									?>
 										<span class="sign from">From</span>
 										<span class="sign start <?php print $firstMarker->{'type'}?>"><?php print $firstMarker->{'location'}?></span>
-										<span class="sign to">via</span>
-										<span class="sign park"><?php print $value->{'location'}?> <i><?php print $value->{'duration'}?>h / <span><?php print $value->{'distance'}?>km</span></i></span>
 										<span class="sign to">to</span>
 										<span class="sign finish <?php print $lastMarker->{'type'}?>"><?php print $lastMarker->{'location'}?></span>
+										<span class="sign via">via</span>
+										<span class="sign park"><?php print $value->{'location'}?> <i><?php print $value->{'duration'}?>h / <span><?php print $value->{'distance'}?>km</span></i></span>
 									<?php
 
 									echo '</a></li>';

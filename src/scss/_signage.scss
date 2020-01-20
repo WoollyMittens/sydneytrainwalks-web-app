@@ -30,7 +30,8 @@
 		}
 
 		&.from,
-		&.to {
+		&.to,
+		&.via {
 			display: none;
 		}
 
@@ -50,9 +51,18 @@
 			background-color: #D32F2F;
 		}
 
+		&.start {
+			order: 1;
+		}
+
+		&.finish {
+			order: 3;
+		}
+
 		&.park {
 			background-color: #1B5E20;
 			color: #F0F4C3;
+			order: 2;
 		}
 
 		&.park:before {
@@ -95,7 +105,8 @@ header.subtitle {
 }
 @media (max-width: 769px) {
 	.sign {
-		&.to {
+		&.to,
+		&.via {
 			display: none;
 		}
 	}

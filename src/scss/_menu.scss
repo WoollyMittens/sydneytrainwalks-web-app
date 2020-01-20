@@ -49,13 +49,11 @@
 			background-position: center;
 			padding: 15px;
 
-			hgroup {
-				display: block;
-				align-items: flex-start;
+			h2 {
 				margin-bottom: 1rem;
 
-				h2, h3 {
-					display: inline;
+				small {
+					font-size: 0.889em;
 				}
 			}
 

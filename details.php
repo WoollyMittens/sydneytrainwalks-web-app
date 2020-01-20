@@ -18,7 +18,7 @@
 		$lastMarker = array_values(array_slice($markers, -1))[0];
 
 		// formal title
-		$subtitle = "From " . $firstMarker->{'location'} . " via " . $json->{'location'} . " to " . $lastMarker->{'location'};
+		$subtitle = "From " . $firstMarker->{'location'} . " to " . $lastMarker->{'location'} . " via " . $json->{'location'};
 		$description = join(' ', $json->{'description'});
 		$description = strip_tags($description);
 
@@ -81,22 +81,36 @@
 				<header class="subtitle">
 					<h2 onclick="document.location.replace('./')">
 						<span class="sign from">From</span>
-						<span class="sign <?php print $firstMarker->{'type'}?>"><?php print $firstMarker->{'location'}?></span>
-						<span class="sign to">via</span>
-						<span class="sign park"><?php print $json->{'location'}?> <i><?php print $json->{'duration'}?>h / <?php print $json->{'distance'}?>km</i></span>
+						<span class="sign start <?php print $firstMarker->{'type'}?>"><?php print $firstMarker->{'location'}?></span>
 						<span class="sign to">to</span>
-						<span class="sign <?php print $lastMarker->{'type'}?>"><?php print $lastMarker->{'location'}?></span>
+						<span class="sign finish <?php print $lastMarker->{'type'}?>"><?php print $lastMarker->{'location'}?></span>
+						<span class="sign via">via</span>
+						<span class="sign park"><?php print $json->{'location'}?> <i><?php print $json->{'duration'}?>h / <?php print $json->{'distance'}?>km</i></span>
 					</h2>
 				</header>
 				<article class="guide guide-closed">
 					<div class="guide-scroller">
-						<h2>About this walk</h2>
+						<h3>About this walk</h3>
 						<time datetime="<?php print $json->{'updated'}?>">Updated: <?php print $displayDate?></time>
-						<p><?php print join(' ', $json->{'description'}) ?></p>
 						<p>
+							<?php print join(' ', $json->{'description'}) ?>
+						</p>
+						<h3>The route to follow</h3>
+						<p>
+							Download the <a href="./inc/gpx/<?php print $id ?>.gpx">route
+							<?php
+								if ($firstMarker->{'location'} == $lastMarker->{'location'}) {
+									print " near " . $firstMarker->{'location'};
+									print " in " . $highlighted->{'location'};
+								} else {
+									print " from " . $firstMarker->{'location'};
+									print " to " . $lastMarker->{'location'};
+									print " via " . $highlighted->{'location'};
+								}
+							?>
+							as a GPX file</a> to your navigation software and GPS devices.
 							It takes about <?php print $json->{'duration'}?> hours to complete the full <?php print $json->{'distance'}?> kilometre walk,
 							but plan extra for plenty of breaks and photography stops.
-							Consider that there's a lot to see along the way.
 						</p>
 						<h3>Getting there and back</h3>
 						<p>
@@ -150,7 +164,7 @@
 							<li>Download the <a href="./inc/gpx/<?php print $id ?>.gpx">GPS data</a> if your device can import it.</li>
 							<li>Print out this map and get a better one from a visitor information centre if possible.</li>
 							<li>Be sure to leave enough charge in your phone's battery for emergency calls.</li>
-							<li>Bring plenty of water, comfortable shoes, a hat and SPF 30 sunscreen.</li>
+							<li>Bring plenty of water, comfortable shoes, a hat and SPF 50 sunscreen.</li>
 							<li>Also bring a light windbreaker/raincoat in case you get caught out in the rain.</li>
 						</ul>
 					</div>
