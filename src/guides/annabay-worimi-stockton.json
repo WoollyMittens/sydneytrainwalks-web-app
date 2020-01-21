@@ -3,7 +3,11 @@
 	"lon": 151.908569336,
 	"lat": -32.82862091100001,
 	"description": [
-		"<a href=\"http://en.wikipedia.org/wiki/Stockton_Beach\">Stockton beach</a> is a 32 kilometre stretch of beach and dunes along <a href=\"http://www.nationalparks.nsw.gov.au/worimi-national-park\">Worimi National Park</a>. The beach has a varied history of mining, settlement, shipwrecks and recreation to enjoy along the way."
+		"<a href=\"http://en.wikipedia.org/wiki/Stockton_Beach\">Stockton beach</a> is a 32 kilometre stretch of beach",
+		"and dunes along <a href=\"http://www.nationalparks.nsw.gov.au/worimi-national-park\">Worimi National Park</a>.",
+		"The beach has a varied history of mining, settlement, shipwrecks and recreation to enjoy along the way.",
+		"<br/><br/>",
+		"This is the ultimate test for someone who claims to like \"long walks along the beach\"."
 	],
 	"duration": 9,
 	"distance": 36,

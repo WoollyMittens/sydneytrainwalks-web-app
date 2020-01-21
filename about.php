@@ -37,7 +37,7 @@
 		<link rel="icon" type="image/png" sizes="96x96" href="./inc/ico/favicon-96x96.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="./inc/ico/favicon-16x16.png" />
 		<link rel="manifest" href="./manifest.json" />
-		<link rel="stylesheet" href="./inc/css/styles.css"/>
+		<link rel="stylesheet" href="./inc/css/styles.css?t=20200121"/>
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-52552-7']);
