@@ -16,7 +16,7 @@
 		width: 50%;
 		z-index: 5;
 
-		h3 {
+		h2, h3 {
 			clear: both;
 		}
 
@@ -30,6 +30,7 @@
 			}
 		}
 
+		p + h2,
 		p + h3 {
 			margin-top: 1.4rem;
 		}

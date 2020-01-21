@@ -6,6 +6,10 @@
 		$title = 'Sydney Hiking Trips';
 		$domain = 'www.sydneyhikingtrips.com';
 
+		// summary
+		$subtitle = "Easy bushwalks around Sydney using the train, bus and ferry.";
+		$description = "Don't let organising a bushwalk intimidate you. These 40+ hikes are easy day trips from Sydney using public transport.";
+
 	?>
 	<head>
 		<meta charset="UTF-8" />
@@ -18,8 +22,8 @@
 		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, viewport-fit=cover">
 		<meta property="og:url" content="https://<?php print $domain ?>/offline.html" />
 		<meta property="og:image" content="https://<?php print $domain ?>/inc/img/favicon.png" />
-		<meta property="og:title" content="<?php print $title ?> - Easy bushwalks around Sydney using the train, bus and ferry." />
-		<meta property="og:description" content="Don't let organising a bushwalk intimidate you. These 40+ hikes are easy day trips from Sydney using public transport." />
+		<meta property="og:title" content="<?php print $title ?> - <?php echo $subtitle ?>" />
+		<meta property="og:description" content="<?php echo $description ?>" />
 		<meta name="msapplication-TileColor" content="#558b2f" />
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
 		<meta name="theme-color" content="#558b2f" />
@@ -39,7 +43,7 @@
 		<link rel="icon" type="image/png" sizes="96x96" href="./inc/ico/favicon-96x96.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="./inc/ico/favicon-16x16.png" />
 		<link rel="manifest" href="./manifest.json" />
-		<link rel="stylesheet" href="./inc/css/styles.css?t=20200121"/>
+		<link rel="stylesheet" href="./inc/css/styles.css?t=20200122"/>
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-52552-7']);
@@ -63,7 +67,7 @@
 			<section id="appView" class="status-busy">
 
 				<header class="title">
-					<h1><a href="./"><?php print $title ?></a></h1>
+					<h1><a href="./"><?php print $title ?><i><?php print " - " . $subtitle ?></i></a></h1>
 				</header>
 
 				<header class="subtitle">
@@ -136,12 +140,12 @@
 		<!-- templates -->
 
 		<script id="title-template" type="text/template">
-			<span class="sign from">From</span>
-			<span class="sign sign-short {startTransport}">{startLocation}</span>
-			<span class="sign to">via</span>
-			<span class="sign sign-short park">{walkLocation} <i>{walkDuration}h / <span>{walkDistance}</span>km</i></span>
+			<span class="sign from">A hiking trip from</span>
+			<span class="sign start sign-short {startTransport}">{startLocation}</span>
 			<span class="sign to">to</span>
-			<span class="sign sign-short {endTransport}">{endLocation}</span>
+			<span class="sign finish sign-short {endTransport}">{endLocation}</span>
+			<span class="sign via">via</span>
+			<span class="sign park sign-short">{walkLocation} <em>{walkDuration}h / <span>{walkDistance}</span>km</em></span>
 		</script>
 
 		<script id="menu-template" type="text/template">

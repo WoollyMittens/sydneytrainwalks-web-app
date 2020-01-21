@@ -3,8 +3,12 @@
 	<?php
 
 		// constants
-		$title = 'Sydney Hiking Trips';
-		$domain = 'www.sydneyhikingtrips.com';
+		$title = 'Sydney Train Walks';
+		$domain = 'www.sydneytrainwalks.com';
+
+		// summary
+		$subtitle = "An overview of the documented walks";
+		$description = "Don't let organising a bushwalk intimidate you. These 40+ hikes are easy day trips from Sydney using public transport.";
 
 	?>
 	<head>
@@ -16,8 +20,8 @@
 		<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width, user-scalable=yes"/>
 		<meta property="og:url" content="https://<?php print $domain ?>/overview.php" />
 		<meta property="og:image" content="https://<?php print $domain ?>/inc/img/favicon.png" />
-		<meta property="og:title" content="<?php print $title ?> - Overview" />
-		<meta property="og:description" content="Don't let organising a bushwalk intimidate you. These walks are easy day trips from Sydney using public transport." />
+		<meta property="og:title" content="<?php print $title ?> - <?php print $subtitle ?>" />
+		<meta property="og:description" content="<?php echo $description ?>" />
 		<meta name="msapplication-TileColor" content="#558b2f" />
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
 		<meta name="theme-color" content="#558b2f" />
@@ -37,7 +41,7 @@
 		<link rel="icon" type="image/png" sizes="96x96" href="./inc/ico/favicon-96x96.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="./inc/ico/favicon-16x16.png" />
 		<link rel="manifest" href="./manifest.json" />
-		<link rel="stylesheet" href="./inc/css/styles.css?t=20200121"/>
+		<link rel="stylesheet" href="./inc/css/styles.css?t=20200122"/>
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-52552-7']);
@@ -53,7 +57,7 @@
 		<div class="ios-margins">
 			<section id="appView">
 				<header class="title">
-					<h1><a href="./"><?php print $title ?></a></h1>
+					<h1><a href="./"><?php print $title ?><i> - <?php print $subtitle ?></i></a></h1>
 				</header>
 				<figure class="overview localmap"></figure>
 				<footer class="toolbar">

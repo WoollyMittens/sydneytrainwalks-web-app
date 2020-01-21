@@ -2,6 +2,7 @@
 	signage
 */
 @media all {
+
 	.sign {
 		background-color: #F57C00;
 		color: #FFF;
@@ -85,7 +86,7 @@
 			background-image: url("../img/sign_tramway.svg");
 		}
 
-		&.sign.park i {
+		&.sign.park em {
 			display: block;
 			font-size: 1rem;
 		}

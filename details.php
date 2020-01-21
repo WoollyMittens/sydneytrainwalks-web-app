@@ -3,8 +3,8 @@
 	<?php
 
 		// constants
-		$title = 'Sydney Hiking Trips'; // 'Sydney Train Walks';
-		$domain = 'www.sydneyhikingtrips.com'; // 'www.sydneytrainwalks.com';
+		$title = 'Sydney Train Walks';
+		$domain = 'www.sydneytrainwalks.com';
 
 		// variable
 		$id = (@$_REQUEST['id']) ? @$_REQUEST['id'] : 'cowan-taffyslookout-brooklyn';
@@ -17,17 +17,15 @@
 		$firstMarker = $markers[0];
 		$lastMarker = array_values(array_slice($markers, -1))[0];
 
-		// formal title
-		$subtitle = "From " . $firstMarker->{'location'} . " to " . $lastMarker->{'location'} . " via " . $json->{'location'};
-		$description = join(' ', $json->{'description'});
-		$description = strip_tags($description);
-
-		// format date
-		$displayDate = date("d M Y", strtotime($json->{'updated'}));
-
 		// determine the path of the assets
 		$assets = $id;
 		if (property_exists($json, 'alias')) { $assets = $json->{'alias'}->{'key'}; }
+
+		// summary
+		$subtitle = "From " . $firstMarker->{'location'} . " to " . $lastMarker->{'location'} . " via " . $json->{'location'};
+		$description = join(' ', $json->{'description'});
+		$description = strip_tags($description);
+		$displayDate = date("d M Y", strtotime($json->{'updated'}));
 
 	?>
 	<head>
@@ -60,7 +58,7 @@
 		<link rel="icon" type="image/png" sizes="96x96" href="./inc/ico/favicon-96x96.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="./inc/ico/favicon-16x16.png" />
 		<link rel="manifest" href="./manifest.json" />
-		<link rel="stylesheet" href="./inc/css/styles.css?t=20200121"/>
+		<link rel="stylesheet" href="./inc/css/styles.css?t=20200122"/>
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-52552-7']);
@@ -76,48 +74,48 @@
 		<div class="ios-margins">
 			<section id="appView">
 				<header class="title">
-					<h1><a href="./"><?php print $title ?></a></h1>
+					<a href="./"><?php print $title ?></a>
 				</header>
 				<header class="subtitle">
-					<h2 onclick="document.location.replace('./')">
-						<span class="sign from">From</span>
+					<h1 onclick="document.location.replace('./')">
+						<span class="sign from">A hiking trip from</span>
 						<span class="sign start <?php print $firstMarker->{'type'}?>"><?php print $firstMarker->{'location'}?></span>
 						<span class="sign to">to</span>
 						<span class="sign finish <?php print $lastMarker->{'type'}?>"><?php print $lastMarker->{'location'}?></span>
 						<span class="sign via">via</span>
-						<span class="sign park"><?php print $json->{'location'}?> <i><?php print $json->{'duration'}?>h / <?php print $json->{'distance'}?>km</i></span>
-					</h2>
+						<span class="sign park"><?php print $json->{'location'}?> <em><?php print $json->{'duration'}?>h / <?php print $json->{'distance'}?>km</em></span>
+					</h1>
 				</header>
 				<article class="guide guide-closed">
 					<div class="guide-scroller">
-						<h3>About this walk</h3>
+						<h2>About this walk</h2>
 						<time datetime="<?php print $json->{'updated'}?>">Updated: <?php print $displayDate?></time>
 						<p>
 							<?php print join(' ', $json->{'description'}) ?>
 						</p>
-						<h3>The route to follow</h3>
+						<h2>The route to follow</h2>
 						<p>
-							Download the <a href="./inc/gpx/<?php print $id ?>.gpx">route
+							Download the <a href="./inc/gpx/<?php print $id ?>.gpx">GPS route
 							<?php
 								if ($firstMarker->{'location'} == $lastMarker->{'location'}) {
+									print " in " . $json->{'location'};
 									print " near " . $firstMarker->{'location'};
-									print " in " . $highlighted->{'location'};
 								} else {
 									print " from " . $firstMarker->{'location'};
 									print " to " . $lastMarker->{'location'};
-									print " via " . $highlighted->{'location'};
+									print " via " . $json->{'location'};
 								}
 							?>
-							as a GPX file</a> to your navigation software and GPS devices.
+							</a> as a GPX file to your navigation software and GPS devices.
 							It takes about <?php print $json->{'duration'}?> hours to complete the full <?php print $json->{'distance'}?> kilometre walk,
 							but plan extra for plenty of breaks and photography stops.
 						</p>
-						<h3>Getting there and back</h3>
+						<h2>Getting there and back</h2>
 						<p>
 							<?php print $firstMarker->{'description'}?>
 							<?php print $lastMarker->{'description'}?>
 						</p>
-						<h3>Along the way</h3>
+						<h2>Along the way</h2>
 						<?php
 							foreach ($json->{'markers'} as $marker) {
 								if ($marker->{'photo'}) {
@@ -157,7 +155,7 @@
 								}
 							}
 						?>
-						<h3>What to bring</h3>
+						<h2>What to bring</h2>
 						<ul>
 							<li>Check the <a href="http://www.nationalparks.nsw.gov.au/alert/state-alerts">national parks website</a> for possible detours, closures and restrictions.</li>
 							<li>Install an OpenStreetMap app for <a href="http://wiki.openstreetmap.org/wiki/Android">Android</a> or <a href="http://wiki.openstreetmap.org/wiki/Apple_iOS">iOS</a> and preload the area.</li>

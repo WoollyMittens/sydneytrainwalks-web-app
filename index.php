@@ -2,9 +2,15 @@
 <html class="ios-false">
 	<?php
 
-		// constants
-		$title = 'Sydney Hiking Trips'; // 'Sydney Train Walks';
-		$domain = 'www.sydneyhikingtrips.com'; // 'www.sydneytrainwalks.com';
+		/* constants
+			$title = 'Sydney Hiking Trips';
+			$domain = 'www.sydneyhikingtrips.com';
+
+			$title = 'Sydney Train Walks';
+			$domain = 'www.sydneytrainwalks.com';
+		*/
+		$title = 'Sydney Train Walks';
+		$domain = 'www.sydneytrainwalks.com';
 
 		// load and process the json file
 		$jsonText = file_get_contents('./inc/js/guide-data.js');
@@ -22,18 +28,23 @@
 		$markers =  $highlighted->{'markers'};
 		$firstMarker = $markers[0];
 		$lastMarker = array_values(array_slice($markers, -1))[0];
+
+		// summary
+		$subtitle = "Easy bushwalks around Sydney using the train, bus and ferry.";
+		$description = "Don't let organising a bushwalk intimidate you. These 40+ hikes are easy day trips from Sydney using public transport.";
+
 	?>
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta http-equiv="imagetoolbar" content="no"/>
 		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<title><?php print $title ?> - Easy bushwalks around Sydney using the train, bus and ferry.</title>
+		<title><?php print $title ?> - <?php echo $subtitle?></title>
 		<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width, user-scalable=yes"/>
 		<meta property="og:url" content="https://<?php print $domain ?>/" />
 		<meta property="og:image" content="https://<?php print $domain ?>/inc/img/favicon.png" />
-		<meta property="og:title" content="<?php print $title ?> - Easy bushwalks around Sydney using the train, bus and ferry." />
-		<meta property="og:description" content="Don't let organising a bushwalk intimidate you. These 40+ hikes are easy day trips from Sydney using public transport." />
+		<meta property="og:title" content="<?php print $title ?> - <?php echo $subtitle?>" />
+		<meta property="og:description" content="<?php echo $description ?>" />
 		<meta name="msapplication-TileColor" content="#558b2f" />
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
 		<meta name="theme-color" content="#558b2f" />
@@ -53,7 +64,7 @@
 		<link rel="icon" type="image/png" sizes="96x96" href="./inc/ico/favicon-96x96.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="./inc/ico/favicon-16x16.png" />
 		<link rel="manifest" href="./manifest.json" />
-		<link rel="stylesheet" href="./inc/css/styles.css?t=20200121"/>
+		<link rel="stylesheet" href="./inc/css/styles.css?t=20200122"/>
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -67,7 +78,7 @@
 		<div class="ios-margins">
 			<section id="appView">
 				<header class="title">
-					<h1><a href="./"><?php print $title ?></a></h1>
+					<h1><a href="./"><?php print $title ?><i> - <?php print $subtitle ?></i></a></h1>
 				</header>
 				<nav class="navigation">
 
@@ -133,7 +144,7 @@
 										<span class="sign to">to</span>
 										<span class="sign finish <?php print $lastMarker->{'type'}?>"><?php print $lastMarker->{'location'}?></span>
 										<span class="sign via">via</span>
-										<span class="sign park"><?php print $value->{'location'}?> <i><?php print $value->{'duration'}?>h / <span><?php print $value->{'distance'}?>km</span></i></span>
+										<span class="sign park"><?php print $value->{'location'}?> <em><?php print $value->{'duration'}?>h / <span><?php print $value->{'distance'}?>km</span></em></span>
 									<?php
 
 									echo '</a></li>';
