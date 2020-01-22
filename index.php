@@ -120,8 +120,8 @@
 								<option value="start" data-source=".start">Sort by start</option>
 								<option value="finish" data-source=".finish">Sort by end</option>
 								<option value="region" data-source=".park">Sort by region</option>
-								<option value="duration" data-source=".park i" data-type="number">Sort by duration</option>
-								<option value="distance" data-source=".park i span" data-type="number">Sort by distance</option>
+								<option value="duration" data-source=".park em" data-type="number">Sort by duration</option>
+								<option value="distance" data-source=".park em span" data-type="number">Sort by distance</option>
 							</select>
 						</label>
 					</form>
