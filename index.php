@@ -2,15 +2,11 @@
 <html class="ios-false">
 	<?php
 
-		/* constants
-			$title = 'Sydney Hiking Trips';
-			$domain = 'www.sydneyhikingtrips.com';
-
-			$title = 'Sydney Train Walks';
-			$domain = 'www.sydneytrainwalks.com';
-		*/
-		$title = 'Sydney Train Walks';
-		$domain = 'www.sydneytrainwalks.com';
+		// constants
+		//$title = 'Sydney Train Walks';
+		//$domain = 'www.sydneytrainwalks.com';
+		$title = 'Sydney Hiking Trips';
+		$domain = 'www.sydneyhikingtrips.com';
 
 		// load and process the json file
 		$jsonText = file_get_contents('./inc/js/guide-data.js');

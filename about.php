@@ -3,8 +3,10 @@
 	<?php
 
 		// constants
-		$title = 'Sydney Train Walks';
-		$domain = 'www.sydneytrainwalks.com';
+		//$title = 'Sydney Train Walks';
+		//$domain = 'www.sydneytrainwalks.com';
+		$title = 'Sydney Hiking Trips';
+		$domain = 'www.sydneyhikingtrips.com';
 
 		// summary
 		$subtitle = "About this Website";
