@@ -10,7 +10,7 @@ var REQUIRED_FILES = [
   './details.php',
   './overview.php',
   './about.php',
-  './offline.html',
+  './pwa.php',
   './inc/css/styles.css',
   './inc/js/scripts.js',
   './inc/js/exif-data.js',
