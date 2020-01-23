@@ -35,86 +35,72 @@
 		{
 			"type": "kiosk",
 			"lat": -33.766106,
-			"lon": 150.902629,
-			"description": "kiosk a"
+			"lon": 150.902629
 		},
 		{
 			"type": "kiosk",
 			"lat": -33.762676,
-			"lon": 150.860337,
-			"description": "kiosk b"
+			"lon": 150.860337
 		},
 		{
 			"type": "kiosk",
 			"lat": -33.78099,
-			"lon": 150.819348,
-			"description": "kiosk c"
+			"lon": 150.819348
 		},
 		{
 			"type": "kiosk",
 			"lat": -33.769194,
-			"lon": 150.812747,
-			"description": "kiosk d"
+			"lon": 150.812747
 		},
 		{
 			"type": "kiosk",
 			"lat": -33.732252,
-			"lon": 150.780735,
-			"description": "kiosk e"
+			"lon": 150.780735
 		},
 		{
 			"type": "kiosk",
 			"lat": -33.751237,
-			"lon": 150.694352,
-			"description": "kiosk f"
+			"lon": 150.694352
 		},
 		{
 			"type": "toilet",
 			"lat": -33.765982,
-			"lon": 150.902408,
-			"description": "toilet d"
+			"lon": 150.902408
 		},
 		{
 			"type": "toilet",
 			"lat": -33.762477,
-			"lon": 150.856474,
-			"description": "toilet e"
+			"lon": 150.856474
 		},
 		{
 			"type": "toilet",
 			"lat": -33.762409,
-			"lon": 150.85991,
-			"description": "toilet f"
+			"lon": 150.85991
 		},
 		{
 			"type": "toilet",
 			"lat": -33.765232,
-			"lon": 150.860451,
-			"description": "toilet g"
+			"lon": 150.860451
 		},
 		{
 			"type": "toilet",
 			"lat": -33.781311,
-			"lon": 150.819381,
-			"description": "toilet h"
+			"lon": 150.819381
 		},
 		{
 			"type": "toilet",
 			"lat": -33.732358,
-			"lon": 150.781666,
-			"description": "toilet i"
+			"lon": 150.781666
 		},
 		{
 			"type": "toilet",
 			"lat": -33.727248,
-			"lon": 150.772404,
-			"description": "toilet j"
+			"lon": 150.772404
 		},
 		{
 			"type": "toilet",
 			"lat": -33.751739,
-			"lon": 150.691777,
-			"description": "toilet k"
+			"lon": 150.691777
 		},
 		{
 			"type": "waypoint",
