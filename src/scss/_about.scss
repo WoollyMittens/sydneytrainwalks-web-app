@@ -21,9 +21,28 @@
 			overflow-y: auto;
 			-webkit-overflow-scrolling: touch;
 			padding: 0 20px;
+			font-size: 0.875rem;
 
-			h2 {
+			> :first-child {
 				margin-top: 20px;
+			}
+
+			> :last-child {
+				margin-bottom: 20px;
+			}
+
+			h2,
+			h3 {
+				font-size: 1.125rem;
+				margin-top: 1.4rem;
+			}
+
+			h4 {
+				font-size: 1rem;
+			}
+
+			h5 {
+				font-size: 0.875rem;
 			}
 
 			figure {
