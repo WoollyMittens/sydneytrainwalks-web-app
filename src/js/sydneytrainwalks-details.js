@@ -42,7 +42,9 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			.replace(/{endTransport}/g, markers[markers.length - 1].type)
 			.replace(/{endLocation}/g, markers[markers.length - 1].location);
 		// add the onclick handler
-		this.config.title.onclick = function(evt) { document.location.replace('./'); };
+		this.config.title.onclick = function(evt) {
+			document.body.className = document.body.className.replace(/screen-photos|screen-guide|screen-map/, 'screen-menu');
+		};
 	};
 
 	this.updateGuide = function(id) {
@@ -238,20 +240,6 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		evt.preventDefault();
 		// return from the map
 		document.body.className = document.body.className.replace(/screen-map/, 'screen-' + this.returnTo);
-	};
-
-	this.onSignExpanded = function(sign, signs, evt) {
-		// get the current size
-		var isLong = sign.className.match(/-long/);
-		// reset all signs
-		for (var a = 0, b = signs.length; a < b; a += 1) {
-			// add a click event handler
-			signs[a].className = signs[a].className.replace('-long', '-short');
-		}
-		// expand this sign
-		if (!isLong) {
-			sign.className = sign.className.replace('-short', '-long');
-		}
 	};
 
   if(parent) this.init();
