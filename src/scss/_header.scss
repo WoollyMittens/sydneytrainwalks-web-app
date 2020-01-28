@@ -91,13 +91,7 @@
 }
 @media print {
 	header {
-		&.title {
-			position: static;
-			box-shadow: none;
-			border: none;
-			text-align: left;
-			padding-left: 40px;
-		}
+		&.title,
 		&.subtitle {
 			position: static;
 			box-shadow: none;

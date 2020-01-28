@@ -133,3 +133,10 @@
 		transform: translate(0, 0);
 	}
 }
+@media print {
+	.navigation {
+		transform: none !important;
+		position: static !important;
+		display: inline !important;
+	}
+}

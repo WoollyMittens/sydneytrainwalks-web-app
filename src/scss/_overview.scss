@@ -41,3 +41,23 @@
 	}
 
 }
+@media print {
+
+  .overview {
+		transform: translate(0, 0);
+		position : relative !important;
+		top : auto !important;
+		right : auto !important;
+		bottom : auto !important;
+		left : auto !important;
+		page-break-before : always;
+		height : 20cm !important;
+		width : 20cm !important;
+		margin: 1cm auto !important;
+
+		button {
+			visibility: hidden !important;
+		}
+	}
+
+}
