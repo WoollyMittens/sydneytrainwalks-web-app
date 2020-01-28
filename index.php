@@ -92,7 +92,7 @@
 								<?php
 									if ($firstMarker->{'location'} == $lastMarker->{'location'}) {
 										print " near " . $firstMarker->{'location'};
-										print " in " . $highlighted->{'location'};
+										print " at " . $highlighted->{'location'};
 									} else {
 										print " from " . $firstMarker->{'location'};
 										print " to " . $lastMarker->{'location'};

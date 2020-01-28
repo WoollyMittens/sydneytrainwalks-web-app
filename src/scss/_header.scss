@@ -91,9 +91,17 @@
 }
 @media print {
 	header {
-		&.subtitle,
 		&.title {
-			display: none;
+			position: static;
+			box-shadow: none;
+			border: none;
+			text-align: left;
+			padding-left: 40px;
+		}
+		&.subtitle {
+			position: static;
+			box-shadow: none;
+			border: none;
 		}
 	}
 }
