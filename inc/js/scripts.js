@@ -75,6 +75,7 @@ var SydneyTrainWalks = function(config) {
 		this.overview = new this.Overview(this);
 		this.details = new this.Details(this);
 		this.about = new this.About(this);
+		this.achievements = new this.Achievements(this);
 		this.footer = new this.Footer(this);
 		this.init();
 	}
@@ -94,6 +95,30 @@ SydneyTrainWalks.prototype.About = function(parent) {
 	this.config.extend({
 		'about': document.querySelector('.about')
 	});
+
+	// METHODS
+
+	this.init = function() {};
+
+	// EVENTS
+
+	if(parent) this.init();
+
+};
+
+// extend the class
+SydneyTrainWalks.prototype.Achievements = function(parent) {
+
+	// PROPERTIES
+
+	this.parent = parent;
+	this.config = parent.config;
+	this.config.extend({
+		'achievements': document.querySelector('.achievements'),
+		'achievement': document.querySelector('.achievement')
+	});
+
+	// TODO: add geolocation trigger to localmap.js, like markers but with a promise
 
 	// METHODS
 
@@ -440,7 +465,7 @@ SydneyTrainWalks.prototype.Footer = function(parent) {
 			// cancel any clicks
 			evt.preventDefault();
 			// if this is a menu page
-			if (id.match(/-menu|-overview|-about/)) {
+			if (id.match(/-menu|-overview|-about|-achievements/)) {
 				// reset the local storage when returning to the menu
 				window.localStorage.removeItem('id');
 				window.localStorage.removeItem('mode');

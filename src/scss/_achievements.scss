@@ -1,0 +1,62 @@
+/*
+	info
+*/
+@media all {
+	.achievements {
+		transition-property: transform;
+		transition-duration: 300ms;
+		transform: translate(-100%, 0);
+		background: #fff;
+		bottom: 4rem;
+		padding: 0;
+		position: absolute;
+		right: 0;
+		top: 4rem;
+		width: 100%;
+		z-index: 8;
+
+		&-scroller {
+			height: 100%;
+			overflow-x: hidden;
+			overflow-y: auto;
+			-webkit-overflow-scrolling: touch;
+			padding: 0 20px;
+			font-size: 0.875rem;
+		}
+	}
+	/*
+	on which screen should this be visible
+	*/
+	body.screen-achievements .achievements {
+		transform: translate(0, 0);
+	}
+}
+@media (orientation: portrait) {
+	.achievements {
+		border-left: none;
+		width: 100%;
+	}
+	/*
+	on which screen should this be visible
+	*/
+	body.screen-achievements .achievements {
+		transform: translate(0, 0);
+	}
+}
+@media print {
+	.achievements {
+		transform: translate(0, 0);
+		position: relative !important;
+		top: auto !important;
+		right: auto !important;
+		bottom: auto !important;
+		left: auto !important;
+		opacity: 1 !important;
+		-webkit-opacity: 1 !important;
+		visibility: visible !important;
+		border: none !important;
+		padding: 0.5cm !important;
+		width: 100% !important;
+		height: auto !important;
+	}
+}

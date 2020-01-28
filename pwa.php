@@ -121,7 +121,7 @@
 						<h2>About This App</h2>
 						<figure>
 							<img src="./inc/img/icon.png" />
-							<figcaption><strong><?php print $title ?></strong> Version 2.0.8</figcaption>
+							<figcaption><strong><?php print $title ?></strong> Version 2.3.5</figcaption>
 						</figure>
 						<p>Thank you for supporting <?php print $title ?>. You make it possible for me to expand this guide and motivate people to enjoy Sydney's varied landscapes.</p>
 						<p>Please add your <a href="https://github.com/WoollyMittens/sydneytrainwalks-web-app/issues">suggestions and bug reports on GitHub</a>, or send them to <a href="mailto:maurice@woollymittens.nl">maurice@woollymittens.nl</a>.</p>
@@ -132,6 +132,15 @@
 						<p>Please do not rely solely on this app for your navigation. There is no warranty on the accuracy or reliability of this app. Always carry a real paper map, which are readily available from park offices and tourist information centres.</p>
 					</div>
 				</section>
+
+				<section class="achievements">
+					<div class="achievements-scroller">
+						<h2>Achievements</h2>
+						<ul></ul>
+					</div>
+				</section>
+
+				<article class="achievement"></article>
 
 				<footer class="toolbar"></footer>
 
@@ -202,12 +211,30 @@
 				<a id="footer-to-map" href="?id={id}&amp;screen=map">Map</a>
 				<a id="footer-to-guide" href="?id={id}&amp;screen=guide">Guide</a>
 				<a id="footer-to-photos" href="?id={id}&amp;screen=photos">Photos</a>
-				<a id="footer-to-about" href="?id={id}&amp;screen=about">About</a>
+				<a id="footer-to-about" href="?screen=about">About</a>
+				<a id="footer-to-achievements" href="?screen=achievements">Achievements</a>
 			</nav>
 		</script>
 
 		<script id="credit-template" type="text/template">
 			Maps &copy; <a href="http://www.4umaps.com/">4UMaps</a>. Data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> and contributors, CC BY-SA
+		</script>
+
+		<script id="achievements-template" type="text/template">
+			<li><button class="{status}"><img alt="" src="./inc/img/icon-{icon}.svg" /><b>{title}</b></button></li>
+		</script>
+
+		<script id="achievement-template" type="text/template">
+			<header>
+				<img alt="" src="./inc/img/icon-{icon}.svg" />
+				<h2>{title}</h2>
+			</header>
+			<div class="achievement-scroller">
+				{description}
+			</div>
+			<footer>
+				<button>Continue</button>
+			</footer>
 		</script>
 
 		<!-- scripts -->
