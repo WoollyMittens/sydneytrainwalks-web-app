@@ -55,6 +55,11 @@
 		page-break-before : always;
 		height : 20cm !important;
 		width : 20cm !important;
+		margin: 1cm auto !important;
+
+		button {
+			visibility: hidden !important;
+		}
 	}
 
 }

@@ -100,7 +100,7 @@
 							Download the <a href="./inc/gpx/<?php print $id ?>.gpx">GPS route
 							<?php
 								if ($firstMarker->{'location'} == $lastMarker->{'location'}) {
-									print " in " . $json->{'location'};
+									print " at " . $json->{'location'};
 									print " near " . $firstMarker->{'location'};
 								} else {
 									print " from " . $firstMarker->{'location'};

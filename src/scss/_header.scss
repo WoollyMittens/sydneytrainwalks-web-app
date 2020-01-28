@@ -91,9 +91,11 @@
 }
 @media print {
 	header {
-		&.subtitle,
-		&.title {
-			display: none;
+		&.title,
+		&.subtitle {
+			position: static;
+			box-shadow: none;
+			border: none;
 		}
 	}
 }

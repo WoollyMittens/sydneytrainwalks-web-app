@@ -34,3 +34,15 @@
 		}
 	}
 }
+@media print {
+	.ios-margins {
+		display: inline;
+		position: static;
+	}
+
+	#appView {
+		overflow: visible;
+		height: auto;
+	}
+
+}
