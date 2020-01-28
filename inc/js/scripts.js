@@ -70,6 +70,7 @@ var SydneyTrainWalks = function(config) {
 
 	if(config) {
 		this.busy = new this.Busy(this);
+		this.header = new this.Header(this);
 		this.index = new this.Index(this);
 		this.overview = new this.Overview(this);
 		this.details = new this.Details(this);
@@ -178,6 +179,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			.replace(/{endLocation}/g, markers[markers.length - 1].location);
 		// add the onclick handler
 		this.config.title.onclick = function(evt) {
+			evt.preventDefault();
 			document.body.className = document.body.className.replace(/screen-photos|screen-guide|screen-map/, 'screen-menu');
 		};
 	};
@@ -448,6 +450,31 @@ SydneyTrainWalks.prototype.Footer = function(parent) {
 			// apply the mode to the body
 			document.body.className = 'screen-' + id.substr(10);
 		}
+	};
+
+  if(parent) this.init();
+
+};
+
+// extend the class
+SydneyTrainWalks.prototype.Header = function(parent) {
+
+	// PROPERTIES
+
+	this.parent = parent;
+	this.config = parent.config;
+	this.config.extend({
+		'header': document.querySelector('.title a')
+	});
+
+	// METHODS
+
+	this.init = function() {
+		// add the onclick handler
+		this.config.header.onclick = function(evt) {
+			evt.preventDefault();
+			document.body.className = document.body.className.replace(/screen-photos|screen-guide|screen-map/, 'screen-menu');
+		};
 	};
 
   if(parent) this.init();

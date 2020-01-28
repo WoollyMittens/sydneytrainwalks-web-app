@@ -70,6 +70,7 @@ var SydneyTrainWalks = function(config) {
 
 	if(config) {
 		this.busy = new this.Busy(this);
+		this.header = new this.Header(this);
 		this.index = new this.Index(this);
 		this.overview = new this.Overview(this);
 		this.details = new this.Details(this);

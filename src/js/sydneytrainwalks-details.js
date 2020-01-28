@@ -43,6 +43,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			.replace(/{endLocation}/g, markers[markers.length - 1].location);
 		// add the onclick handler
 		this.config.title.onclick = function(evt) {
+			evt.preventDefault();
 			document.body.className = document.body.className.replace(/screen-photos|screen-guide|screen-map/, 'screen-menu');
 		};
 	};
