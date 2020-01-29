@@ -2,7 +2,7 @@
 	info
 */
 @media all {
-	.achievements {
+	.trophies {
 		transition-property: transform;
 		transition-duration: 300ms;
 		transform: translate(-100%, 0);
@@ -22,29 +22,43 @@
 			-webkit-overflow-scrolling: touch;
 			padding: 0 20px;
 			font-size: 0.875rem;
+
+			> :first-child {
+				margin-top: 20px;
+			}
+
+			> :last-child {
+				margin-bottom: 20px;
+			}
+
+			h2,
+			h3 {
+				font-size: 1.125rem;
+				margin-top: 1.4rem;
+			}
 		}
 	}
 	/*
 	on which screen should this be visible
 	*/
-	body.screen-achievements .achievements {
+	body.screen-trophies .trophies {
 		transform: translate(0, 0);
 	}
 }
 @media (orientation: portrait) {
-	.achievements {
+	.trophies {
 		border-left: none;
 		width: 100%;
 	}
 	/*
 	on which screen should this be visible
 	*/
-	body.screen-achievements .achievements {
+	body.screen-trophies .trophies {
 		transform: translate(0, 0);
 	}
 }
 @media print {
-	.achievements {
+	.trophies {
 		transform: translate(0, 0);
 		position: relative !important;
 		top: auto !important;

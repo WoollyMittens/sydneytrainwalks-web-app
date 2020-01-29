@@ -133,14 +133,14 @@
 					</div>
 				</section>
 
-				<section class="achievements">
-					<div class="achievements-scroller">
-						<h2>Achievements</h2>
+				<section class="trophies">
+					<div class="trophies-scroller">
+						<h2>Trophies</h2>
 						<ul></ul>
 					</div>
 				</section>
 
-				<article class="achievement"></article>
+				<article class="trophy"></article>
 
 				<footer class="toolbar"></footer>
 
@@ -212,7 +212,7 @@
 				<a id="footer-to-guide" href="?id={id}&amp;screen=guide">Guide</a>
 				<a id="footer-to-photos" href="?id={id}&amp;screen=photos">Photos</a>
 				<a id="footer-to-about" href="?screen=about">About</a>
-				<a id="footer-to-achievements" href="?screen=achievements">Achievements</a>
+				<a id="footer-to-trophies" href="?screen=trophies">Trophies</a>
 			</nav>
 		</script>
 
@@ -220,16 +220,16 @@
 			Maps &copy; <a href="http://www.4umaps.com/">4UMaps</a>. Data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> and contributors, CC BY-SA
 		</script>
 
-		<script id="achievements-template" type="text/template">
+		<script id="trophies-template" type="text/template">
 			<li><button class="{status}"><img alt="" src="./inc/img/icon-{icon}.svg" /><b>{title}</b></button></li>
 		</script>
 
-		<script id="achievement-template" type="text/template">
+		<script id="trophy-template" type="text/template">
 			<header>
 				<img alt="" src="./inc/img/icon-{icon}.svg" />
 				<h2>{title}</h2>
 			</header>
-			<div class="achievement-scroller">
+			<div class="trophy-scroller">
 				{description}
 			</div>
 			<footer>
