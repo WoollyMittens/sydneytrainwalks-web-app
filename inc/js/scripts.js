@@ -298,7 +298,11 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			'routeData': GpxData,
 			'exifData': ExifData,
 			// attribution
-			'creditsTemplate': this.config.creditTemplate.innerHTML
+			'creditsTemplate': this.config.creditTemplate.innerHTML,
+			// events
+			// TODO: hook up handling the hotspot events
+			'enterHotspot': function(data) { console.log('entering hotspot:', data); },
+			'leaveHotspot': function(data) { console.log('leaving hotspot:', data); }
 		});
 	};
 
@@ -2053,6 +2057,9 @@ Localmap.prototype.Location = function (parent) {
 			// hide the marker
 			this.element.style.display = 'none';
 		}
+    // TODO: check if the location is within a hotspot (anymore)
+    // TODO: show the modal that goes with the hotspot (once)
+    // TODO: trigger the enter/exit hotspot event (once)
 	};
 
 	this.onPositionFailed = function(error) {
@@ -2143,36 +2150,48 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
 	};
 
 	this.addMarker = function(markerData) {
-		// add either a landmark or a waypoint to the map
-		markerData.element = (markerData.photo) ? this.addLandmark(markerData) : this.addWaypoint(markerData);
-		markerData.element.addEventListener('click', onClicked.bind(this, markerData));
+		// add a landmark, waypoint, or a hotspot to the map
+    console.log('markerData.type', markerData.type);
+    switch(markerData.type) {
+      case 'waypoint': markerData.element = this.addWaypoint(markerData); break;
+      case 'hotspot': markerData.element = this.addHotspot(markerData); break;
+      default: markerData.element = this.addLandmark(markerData);
+    }
 		this.parent.element.appendChild(markerData.element);
 		this.elements.push(markerData.element);
-	}
+	};
 
-	this.addLandmark = function(markerData) {
+	this.addWaypoint = function(markerData) {
 		var min = this.config.minimum;
 		var max = this.config.maximum;
 		var element = document.createElement('span');
 		element.setAttribute('class', 'localmap-waypoint');
+		element.addEventListener('click', onClicked.bind(this, markerData));
 		element.style.left = ((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
 		element.style.top = ((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';
 		element.style.cursor = 'pointer';
 		return element;
 	};
 
-	this.addWaypoint = function(markerData) {
+	this.addLandmark = function(markerData) {
 		var min = this.config.minimum;
 		var max = this.config.maximum;
 		var element = new Image();
 		element.setAttribute('src', this.config.markersUrl.replace('{type}', markerData.type));
 		element.setAttribute('title', markerData.description || '');
 		element.setAttribute('class', 'localmap-marker');
+		element.addEventListener('click', onClicked.bind(this, markerData));
 		element.style.left = ((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
 		element.style.top = ((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';
 		element.style.cursor = (markerData.description || markerData.callback) ? 'pointer' : null;
 		return element;
 	};
+
+  this.addHotspot = function(markerData) {
+    // TODO: make an icon with a circle radius centered on the coordinates
+    console.log('adding hotspot', markerData);
+    return document.createElement('i');
+  };
 
 	// EVENTS
 
@@ -2234,6 +2253,9 @@ Localmap.prototype.Modal = function (parent) {
 		if (markerData.photo) {
 			this.photo.style.backgroundImage = 'url(' + this.config.photosUrl.replace('{key}', key) + markerData.photo + '), url(' + this.config.thumbsUrl.replace('{key}', key) + markerData.photo + ')';
       this.photo.className = 'localmap-modal-photo';
+    } else if (markerDate.badge) {
+      this.photo.style.backgroundImage = 'url(' + this.config.markersUrl.replace('{badge}', markerData.badge) + ')';
+      this.photo.className = 'localmap-modal-badge';
 		} else {
 			this.photo.style.backgroundImage = 'url(' + this.config.markersUrl.replace('{type}', markerData.type) + ')';
       this.photo.className = 'localmap-modal-icon';

@@ -161,7 +161,11 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			'routeData': GpxData,
 			'exifData': ExifData,
 			// attribution
-			'creditsTemplate': this.config.creditTemplate.innerHTML
+			'creditsTemplate': this.config.creditTemplate.innerHTML,
+			// events
+			// TODO: hook up handling the hotspot events
+			'enterHotspot': function(data) { console.log('entering hotspot:', data); },
+			'leaveHotspot': function(data) { console.log('leaving hotspot:', data); }
 		});
 	};
 
