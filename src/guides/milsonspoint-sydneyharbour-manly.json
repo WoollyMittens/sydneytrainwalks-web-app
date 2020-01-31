@@ -32,15 +32,6 @@
 			"lat": -33.846288
 		},
 		{
-			"type": "hotspot",
-			"badge": "leader",
-			"title": "The General's Last Stand",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.220085,
-			"lat": -33.830392,
-			"radius": 0.0001
-		},
-		{
 			"type": "kiosk",
 			"lat": -33.846209,
 			"lon": 151.212776

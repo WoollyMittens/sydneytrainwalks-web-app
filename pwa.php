@@ -136,7 +136,6 @@
 				<section class="trophies">
 					<div class="trophies-scroller">
 						<h2>Trophies</h2>
-						<ul></ul>
 					</div>
 				</section>
 
@@ -221,7 +220,7 @@
 		</script>
 
 		<script id="trophies-template" type="text/template">
-			<li><button class="{status}"><img alt="" src="./inc/img/icon-{icon}.svg" /><b>{title}</b></button></li>
+			<figure><img alt="" src="./inc/img/{icon}.svg" /><figcaption>{title}</figcaption></figure>
 		</script>
 
 		<script id="trophy-template" type="text/template">

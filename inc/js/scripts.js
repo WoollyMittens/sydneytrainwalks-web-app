@@ -73,9 +73,9 @@ var SydneyTrainWalks = function(config) {
 		this.header = new this.Header(this);
 		this.index = new this.Index(this);
 		this.overview = new this.Overview(this);
+		this.trophies = new this.Trophies(this);
 		this.details = new this.Details(this);
 		this.about = new this.About(this);
-		this.trophies = new this.Trophies(this);
 		this.footer = new this.Footer(this);
 		this.init();
 	}
@@ -300,9 +300,8 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			// attribution
 			'creditsTemplate': this.config.creditTemplate.innerHTML,
 			// events
-			// TODO: hook up handling the hotspot events
-			'enterHotspot': function(data) { console.log('entering hotspot:', data); },
-			'leaveHotspot': function(data) { console.log('leaving hotspot:', data); }
+			'enterHotspot': parent.trophies.enter.bind(parent.trophies),
+			'leaveHotspot': parent.trophies.leave.bind(parent.trophies)
 		});
 	};
 
@@ -844,16 +843,96 @@ SydneyTrainWalks.prototype.Trophies = function(parent) {
 	this.config = parent.config;
 	this.config.extend({
 		'trophies': document.querySelector('.trophies'),
-		'trophy': document.querySelector('.trophy')
+		'trophiesTemplate': document.getElementById('trophies-template'),
+		'trophy': document.querySelector('.trophy'),
+		'trophyTemplate': document.getElementById('trophy-template')
 	});
-
-	// TODO: add geolocation trigger to localmap.js, like markers but with a promise
 
 	// METHODS
 
-	this.init = function() {};
+	this.init = function() {
+		// fill the trophies page
+		this.update();
+		// add the event handler to close the modal popup
+	};
+
+	this.update = function() {
+		var a, b, id, marker, wrapper;
+		var guides = GuideData;
+		var container = this.config.trophies;
+		var template = this.config.trophiesTemplate;
+		// for all the hotspots from all the guides
+		this.config.trophies.innerHTML = '';
+		for (id in guides) {
+			for (a = 0, b = guides[id].markers.length; a < b; a += 1) {
+				marker = guides[id].markers[a];
+				if (marker.type === 'hotspot') {
+					// add a trophy badge
+					wrapper = document.createElement('a');
+					// if the hotspot is in local storage already
+					if (this.getTrophy(marker.title)) {
+						// show the full badge
+						wrapper.innerHTML += template.innerHTML.replace('{icon}', marker.badge).replace('{title}', marker.title);
+						// make it look active
+						wrapper.setAttribute('class', 'trophies-active');
+						// link it to the details modal
+						wrapper.addEventListener('click', this.details.bind(this, id, marker));
+					// else
+					} else {
+						// show a mystery badge
+						wrapper.innerHTML += template.innerHTML.replace('{icon}', marker.type).replace('{title}', '???');
+						// make it looks passive
+						wrapper.setAttribute('class', 'trophies-passive');
+						// deeplink to the guides page
+						wrapper.addEventListener('click', this.deeplink.bind(this, id));
+					}
+					container.appendChild(wrapper);
+				}
+			}
+		}
+	};
+
+	this.getTrophy = function(title) {
+		var storedTrophies = JSON.parse(window.localStorage.getItem('trophies') || "{}");
+		return storedTrophies[title];
+	};
+
+	this.setTrophy = function(title) {
+		var storedTrophies = JSON.parse(window.localStorage.getItem('trophies') || "{}");
+		storedTrophies[title] = true;
+		window.localStorage.setItem('trophies', JSON.stringify(storedTrophies));
+	};
 
 	// EVENTS
+
+	this.details = function(id, marker) {
+		console.log('trophy details:', id, marker);
+		// populate the modal
+		// show the modal
+	};
+
+	this.deeplink = function(id) {
+		console.log('trophy deeplink:', id);
+		// open the guide page for the id
+	};
+
+	this.enter = function(data) {
+		// if this trophy is not in local storage yet
+		console.log(this);
+		if (!this.getTrophy(data.title)) {
+			// show the trophy details
+			this.details(data);
+			// store the trophy in local storage
+			this.setTrophy(data.title);
+			// redraw the trophy page
+			this.update();
+		}
+		console.log('entering trophy location:', data);
+	};
+
+	this.leave = function(data) {
+		console.log('leaving trophy location:', data);
+	};
 
 	if(parent) this.init();
 
@@ -1076,7 +1155,10 @@ var Localmap = function(config) {
 			'lat': null,
 			'zoom': null,
       'referrer': null
-    }
+    },
+    'hotspots': [],
+    'enterHotspot': function() {},
+    'leaveHotspot': function() {}
   };
 
   for (var key in config)
@@ -1977,6 +2059,7 @@ Localmap.prototype.Location = function (parent) {
 	this.element = new Image();
 	this.zoom = null;
 	this.active = false;
+  this.hotspot = null;
 	this.options = {
 		enableHighAccuracy: true
 	};
@@ -2039,6 +2122,28 @@ Localmap.prototype.Location = function (parent) {
 		}
 	};
 
+  this.checkHotSpot = function(lon, lat) {
+    var config = this.config;
+		var key = this.config.key;
+    // for every marker
+    config.hotspots.map(function(marker) {
+      // if the marker just entered the hotspot
+      if ((lon > marker.minLon && lon < marker.maxLon && lat > marker.minLat && lat < marker.maxLat) && this.hotspot !== marker.title) {
+        // remember its name
+        this.hotspot = marker.title;
+        // trigger the corresponding event
+        config.enterHotspot(marker);
+      }
+      // else if the marker just exited the hotspot
+      else if ((lon < marker.minLon || lon > marker.maxLon || lat < marker.minLat || lat > marker.maxLat) && this.hotspot === marker.title) {
+        // forget its name
+        this.hotspot = null;
+        // trigger the corresponding event
+        config.leaveHotspot(marker);
+      }
+    });
+  };
+
 	// EVENTS
 
 	this.onReposition = function(position) {
@@ -2052,14 +2157,13 @@ Localmap.prototype.Location = function (parent) {
 			this.element.style.display = 'block';
 			this.element.style.left = ((lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
 			this.element.style.top = ((lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';
+      // check if the location is within a hotspot
+      this.checkHotSpot(lon, lat);
 		// otherwise
 		} else {
 			// hide the marker
 			this.element.style.display = 'none';
 		}
-    // TODO: check if the location is within a hotspot (anymore)
-    // TODO: show the modal that goes with the hotspot (once)
-    // TODO: trigger the enter/exit hotspot event (once)
 	};
 
 	this.onPositionFailed = function(error) {
@@ -2151,7 +2255,6 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
 
 	this.addMarker = function(markerData) {
 		// add a landmark, waypoint, or a hotspot to the map
-    console.log('markerData.type', markerData.type);
     switch(markerData.type) {
       case 'waypoint': markerData.element = this.addWaypoint(markerData); break;
       case 'hotspot': markerData.element = this.addHotspot(markerData); break;
@@ -2173,6 +2276,18 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
 		return element;
 	};
 
+  this.addHotspot = function(markerData) {
+    var config = this.config;
+    // pre-calculate the hotspot radius
+    markerData.maxLon = markerData.lon + markerData.radius;
+    markerData.minLon = markerData.lon - markerData.radius;
+    markerData.maxLat = markerData.lat + markerData.radius / 1.5;
+    markerData.minLat = markerData.lat - markerData.radius / 1.5;
+    this.config.hotspots.push(markerData);
+    // otherwise handle as a normal landmark
+    return this.addLandmark(markerData);
+  };
+
 	this.addLandmark = function(markerData) {
 		var min = this.config.minimum;
 		var max = this.config.maximum;
@@ -2186,12 +2301,6 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
 		element.style.cursor = (markerData.description || markerData.callback) ? 'pointer' : null;
 		return element;
 	};
-
-  this.addHotspot = function(markerData) {
-    // TODO: make an icon with a circle radius centered on the coordinates
-    console.log('adding hotspot', markerData);
-    return document.createElement('i');
-  };
 
 	// EVENTS
 
@@ -2253,15 +2362,12 @@ Localmap.prototype.Modal = function (parent) {
 		if (markerData.photo) {
 			this.photo.style.backgroundImage = 'url(' + this.config.photosUrl.replace('{key}', key) + markerData.photo + '), url(' + this.config.thumbsUrl.replace('{key}', key) + markerData.photo + ')';
       this.photo.className = 'localmap-modal-photo';
-    } else if (markerDate.badge) {
-      this.photo.style.backgroundImage = 'url(' + this.config.markersUrl.replace('{badge}', markerData.badge) + ')';
-      this.photo.className = 'localmap-modal-badge';
 		} else {
 			this.photo.style.backgroundImage = 'url(' + this.config.markersUrl.replace('{type}', markerData.type) + ')';
       this.photo.className = 'localmap-modal-icon';
 		}
 		// display the content if available
-		if (markerData.description) {
+    if (markerData.description) {
 			this.description.innerHTML = '<p>' + markerData.description + '</p>';
 		} else {
 			return false;
