@@ -30,42 +30,42 @@
 			> :last-child {
 				margin-bottom: 20px;
 			}
+		}
 
-			h2,
-			h3 {
-				font-size: 1.125rem;
-				margin-top: 1.4rem;
+		h2,
+		h3 {
+			font-size: 1.125rem;
+			margin-top: 1.4rem;
+		}
+
+		h4 {
+			font-size: 1rem;
+		}
+
+		h5 {
+			font-size: 0.875rem;
+		}
+
+		figure {
+			margin: 1em 0;
+			padding: 0;
+
+			img {
+				border-radius: 12px;
+				height: 64px;
+				width: 64px;
+				margin-right: 0.3em;
+				vertical-align: middle;
 			}
 
-			h4 {
-				font-size: 1rem;
-			}
+			figcaption {
+				display: inline-block;
+				font-size: 12px;
+				vertical-align: middle;
 
-			h5 {
-				font-size: 0.875rem;
-			}
-
-			figure {
-				margin: 1em 0;
-				padding: 0;
-
-				img {
-					border-radius: 12px;
-					height: 64px;
-					width: 64px;
-					margin-right: 0.3em;
-					vertical-align: middle;
-				}
-
-				figcaption {
-					display: inline-block;
-					font-size: 12px;
-					vertical-align: middle;
-
-					strong {
-						display: block;
-						font-size: 16px;
-					}
+				strong {
+					display: block;
+					font-size: 16px;
 				}
 			}
 		}

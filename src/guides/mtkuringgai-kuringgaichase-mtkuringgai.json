@@ -35,10 +35,24 @@
 			"lat": -33.62752,
 			"lon": 151.165525,
 			"radius": 0.0002,
-			"badge": "leader",
+			"badge": "shape_star",
 			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>",
 			"title": "The General's Last Stand",
-			"explanation": "Lorem ipsum dolor sit amet."
+			"explanation": [
+				"Lorem ipsum dolor sit amet."
+			]
+		},
+		{
+			"type": "hotspot",
+			"lat": -33.64920277777778,
+			"lon": 151.14811388888887,
+			"radius": 0.0002,
+			"badge": "flower_3",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>",
+			"title": "A Moment of Pause",
+			"explanation": [
+				"Lorem ipsum dolor sit amet."
+			]
 		},
 		{
 			"type": "warning",

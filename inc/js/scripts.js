@@ -300,6 +300,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			// attribution
 			'creditsTemplate': this.config.creditTemplate.innerHTML,
 			// events
+			'checkHotspot': parent.trophies.check.bind(parent.trophies),
 			'enterHotspot': parent.trophies.enter.bind(parent.trophies),
 			'leaveHotspot': parent.trophies.leave.bind(parent.trophies)
 		});
@@ -842,7 +843,7 @@ SydneyTrainWalks.prototype.Trophies = function(parent) {
 	this.parent = parent;
 	this.config = parent.config;
 	this.config.extend({
-		'trophies': document.querySelector('.trophies'),
+		'trophies': document.querySelector('.trophies ul'),
 		'trophiesTemplate': document.getElementById('trophies-template'),
 		'trophy': document.querySelector('.trophy'),
 		'trophyTemplate': document.getElementById('trophy-template')
@@ -851,13 +852,13 @@ SydneyTrainWalks.prototype.Trophies = function(parent) {
 	// METHODS
 
 	this.init = function() {
+		var trophy = this.config.trophy;
 		// fill the trophies page
 		this.update();
-		// add the event handler to close the modal popup
 	};
 
 	this.update = function() {
-		var a, b, id, marker, wrapper;
+		var a, b, id, marker, wrapper, link;
 		var guides = GuideData;
 		var container = this.config.trophies;
 		var template = this.config.trophiesTemplate;
@@ -868,24 +869,26 @@ SydneyTrainWalks.prototype.Trophies = function(parent) {
 				marker = guides[id].markers[a];
 				if (marker.type === 'hotspot') {
 					// add a trophy badge
-					wrapper = document.createElement('a');
+					wrapper = document.createElement('li');
+					link = document.createElement('a');
 					// if the hotspot is in local storage already
 					if (this.getTrophy(marker.title)) {
 						// show the full badge
-						wrapper.innerHTML += template.innerHTML.replace('{icon}', marker.badge).replace('{title}', marker.title);
+						link.innerHTML += template.innerHTML.replace('{icon}', marker.badge).replace('{title}', marker.title);
 						// make it look active
-						wrapper.setAttribute('class', 'trophies-active');
+						link.setAttribute('class', 'trophies-active');
 						// link it to the details modal
-						wrapper.addEventListener('click', this.details.bind(this, id, marker));
+						link.addEventListener('click', this.details.bind(this, marker));
 					// else
 					} else {
 						// show a mystery badge
-						wrapper.innerHTML += template.innerHTML.replace('{icon}', marker.type).replace('{title}', '???');
+						link.innerHTML += template.innerHTML.replace('{icon}', marker.type).replace('{title}', '???');
 						// make it looks passive
-						wrapper.setAttribute('class', 'trophies-passive');
+						link.setAttribute('class', 'trophies-passive');
 						// deeplink to the guides page
-						wrapper.addEventListener('click', this.deeplink.bind(this, id));
+						link.addEventListener('click', this.deeplink.bind(this, id));
 					}
+					wrapper.appendChild(link);
 					container.appendChild(wrapper);
 				}
 			}
@@ -903,35 +906,59 @@ SydneyTrainWalks.prototype.Trophies = function(parent) {
 		window.localStorage.setItem('trophies', JSON.stringify(storedTrophies));
 	};
 
-	// EVENTS
-
-	this.details = function(id, marker) {
-		console.log('trophy details:', id, marker);
-		// populate the modal
-		// show the modal
-	};
-
-	this.deeplink = function(id) {
-		console.log('trophy deeplink:', id);
-		// open the guide page for the id
+	this.check = function(data) {
+		// reply if a reaction to the hotspot is nessecary
+		return !this.getTrophy(data.title);
 	};
 
 	this.enter = function(data) {
 		// if this trophy is not in local storage yet
-		console.log(this);
 		if (!this.getTrophy(data.title)) {
 			// show the trophy details
 			this.details(data);
 			// store the trophy in local storage
-			this.setTrophy(data.title);
+			//this.setTrophy(data.title);
 			// redraw the trophy page
 			this.update();
 		}
-		console.log('entering trophy location:', data);
 	};
 
 	this.leave = function(data) {
-		console.log('leaving trophy location:', data);
+		var trophy = this.config.trophy;
+		// hide the modal window again
+		trophy.className = trophy.className.replace(/ trophy-active/g, '');
+	};
+
+	// EVENTS
+
+	this.details = function(marker) {
+		var guides = GuideData;
+		var container = this.config.trophy;
+		var template = this.config.trophyTemplate;
+		// populate the modal
+		container.innerHTML = template.innerHTML
+			.replace('{icon}', marker.badge)
+			.replace('{title}', marker.title)
+			.replace('{description}', '<p>' + marker.explanation.join('</p><p>') + '</p>');
+		// add the event handler to close the modal popup
+		var closer = container.querySelector('footer button');
+		closer.addEventListener('click', this.close.bind(this, marker, container));
+		// show the modal
+		container.className += ' trophy-active';
+	};
+
+	this.deeplink = function(id) {
+		// open the guide page for the id
+		this.parent.update(id, 'map');
+	};
+
+	this.close = function(marker, container, evt) {
+		// cancel the click
+		evt.preventDefault();
+		// store the trophy in local storage
+		this.setTrophy(marker.title);
+		// hide the modal
+		container.className = container.className.replace(/ trophy-active/g, '');
 	};
 
 	if(parent) this.init();
@@ -1157,8 +1184,9 @@ var Localmap = function(config) {
       'referrer': null
     },
     'hotspots': [],
-    'enterHotspot': function() {},
-    'leaveHotspot': function() {}
+    'checkHotspot': function() { return true; },
+    'enterHotspot': function() { return true; },
+    'leaveHotspot': function() { return true; }
   };
 
   for (var key in config)
@@ -2132,14 +2160,14 @@ Localmap.prototype.Location = function (parent) {
         // remember its name
         this.hotspot = marker.title;
         // trigger the corresponding event
-        config.enterHotspot(marker);
+        if (config.checkHotspot(marker)) config.enterHotspot(marker);
       }
       // else if the marker just exited the hotspot
       else if ((lon < marker.minLon || lon > marker.maxLon || lat < marker.minLat || lat > marker.maxLat) && this.hotspot === marker.title) {
         // forget its name
         this.hotspot = null;
         // trigger the corresponding event
-        config.leaveHotspot(marker);
+        if (config.checkHotspot(marker)) config.leaveHotspot(marker);
       }
     });
   };
@@ -2260,8 +2288,11 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
       case 'hotspot': markerData.element = this.addHotspot(markerData); break;
       default: markerData.element = this.addLandmark(markerData);
     }
-		this.parent.element.appendChild(markerData.element);
-		this.elements.push(markerData.element);
+    // add valid markers to the map
+    if (markerData.element) {
+		  this.parent.element.appendChild(markerData.element);
+		  this.elements.push(markerData.element);
+    }
 	};
 
 	this.addWaypoint = function(markerData) {
@@ -2285,7 +2316,7 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
     markerData.minLat = markerData.lat - markerData.radius / 1.5;
     this.config.hotspots.push(markerData);
     // otherwise handle as a normal landmark
-    return this.addLandmark(markerData);
+    return (config.checkHotspot(markerData)) ? this.addLandmark(markerData) : null;
   };
 
 	this.addLandmark = function(markerData) {

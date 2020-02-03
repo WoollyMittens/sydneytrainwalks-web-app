@@ -163,6 +163,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			// attribution
 			'creditsTemplate': this.config.creditTemplate.innerHTML,
 			// events
+			'checkHotspot': parent.trophies.check.bind(parent.trophies),
 			'enterHotspot': parent.trophies.enter.bind(parent.trophies),
 			'leaveHotspot': parent.trophies.leave.bind(parent.trophies)
 		});

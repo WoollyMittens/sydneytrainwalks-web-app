@@ -1,0 +1,77 @@
+/*
+	trophy
+*/
+@media all {
+	.trophy {
+		position: fixed;
+		left: 20px;
+		top: 5.5rem;
+		right: 20px;
+		bottom: 5.5rem;
+		z-index: 999;
+		opacity: 0;
+		transform: translate3d(0, -100%, 0);
+		transition-property: opacity, transform;
+		transition-timing-function: ease-in-out;
+		transition-duration: 500ms;
+		box-shadow: 0 0 10rem 10rem rgba(0,0,0,0.5);
+		background-color: #fff;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: stretch;
+		overflow: hidden;
+
+		&-active {
+			opacity: 1;
+			transform: translate3d(0, 0%, 0);
+		}
+
+		&-scroller {
+			flex: 1;
+			overflow: auto;
+			-webkit-overflow-scrolling: touch;
+			padding: 0.5rem 20px;
+		}
+
+		header {
+			flex: 0;
+			text-align: center;
+			padding: 0.5rem 20px;
+			box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+
+			h2 {}
+
+			img {
+				width: auto;
+				height: 4rem;
+			}
+
+			h3 {}
+		}
+
+		footer {
+			flex: 0;
+			text-align: center;
+			padding: 0.5rem 20px;
+			box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+
+			button {
+				border: none;
+				background: Transparent none;
+				padding: 0.7rem 1rem;
+				color: #0D47A1;
+				cursor: pointer;
+				font-size: 1rem;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+@media (orientation: portrait) {
+
+}
+@media print {
+
+}

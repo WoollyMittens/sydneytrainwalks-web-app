@@ -136,6 +136,8 @@
 				<section class="trophies">
 					<div class="trophies-scroller">
 						<h2>Trophies</h2>
+						<p>Lorem ipsum dolor sit amet.</p>
+						<ul></ul>
 					</div>
 				</section>
 
@@ -210,8 +212,8 @@
 				<a id="footer-to-map" href="?id={id}&amp;screen=map">Map</a>
 				<a id="footer-to-guide" href="?id={id}&amp;screen=guide">Guide</a>
 				<a id="footer-to-photos" href="?id={id}&amp;screen=photos">Photos</a>
-				<a id="footer-to-about" href="?screen=about">About</a>
 				<a id="footer-to-trophies" href="?screen=trophies">Trophies</a>
+				<a id="footer-to-about" href="?screen=about">About</a>
 			</nav>
 		</script>
 
@@ -225,8 +227,9 @@
 
 		<script id="trophy-template" type="text/template">
 			<header>
-				<img alt="" src="./inc/img/icon-{icon}.svg" />
-				<h2>{title}</h2>
+				<h2>Trophy awarded:</h2>
+				<img alt="" src="./inc/img/{icon}.svg" />
+				<h3>{title}</h3>
 			</header>
 			<div class="trophy-scroller">
 				{description}

@@ -60,8 +60,9 @@ var Localmap = function(config) {
       'referrer': null
     },
     'hotspots': [],
-    'enterHotspot': function() {},
-    'leaveHotspot': function() {}
+    'checkHotspot': function() { return true; },
+    'enterHotspot': function() { return true; },
+    'leaveHotspot': function() { return true; }
   };
 
   for (var key in config)
@@ -1035,14 +1036,14 @@ Localmap.prototype.Location = function (parent) {
         // remember its name
         this.hotspot = marker.title;
         // trigger the corresponding event
-        config.enterHotspot(marker);
+        if (config.checkHotspot(marker)) config.enterHotspot(marker);
       }
       // else if the marker just exited the hotspot
       else if ((lon < marker.minLon || lon > marker.maxLon || lat < marker.minLat || lat > marker.maxLat) && this.hotspot === marker.title) {
         // forget its name
         this.hotspot = null;
         // trigger the corresponding event
-        config.leaveHotspot(marker);
+        if (config.checkHotspot(marker)) config.leaveHotspot(marker);
       }
     });
   };
@@ -1163,8 +1164,11 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
       case 'hotspot': markerData.element = this.addHotspot(markerData); break;
       default: markerData.element = this.addLandmark(markerData);
     }
-		this.parent.element.appendChild(markerData.element);
-		this.elements.push(markerData.element);
+    // add valid markers to the map
+    if (markerData.element) {
+		  this.parent.element.appendChild(markerData.element);
+		  this.elements.push(markerData.element);
+    }
 	};
 
 	this.addWaypoint = function(markerData) {
@@ -1188,7 +1192,7 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
     markerData.minLat = markerData.lat - markerData.radius / 1.5;
     this.config.hotspots.push(markerData);
     // otherwise handle as a normal landmark
-    return this.addLandmark(markerData);
+    return (config.checkHotspot(markerData)) ? this.addLandmark(markerData) : null;
   };
 
 	this.addLandmark = function(markerData) {

@@ -1,5 +1,5 @@
 /*
-	info
+	trophies
 */
 @media all {
 	.trophies {
@@ -21,7 +21,7 @@
 			overflow-y: auto;
 			-webkit-overflow-scrolling: touch;
 			padding: 0 20px;
-			font-size: 0.875rem;
+			font-size: 1rem;
 
 			> :first-child {
 				margin-top: 20px;
@@ -30,23 +30,111 @@
 			> :last-child {
 				margin-bottom: 20px;
 			}
+		}
 
-			h2,
-			h3 {
-				font-size: 1.125rem;
-				margin-top: 1.4rem;
+		h2,
+		h3 {
+			font-size: 1.125rem;
+			margin-top: 1.4rem;
+		}
+
+		ul {
+			list-style: none;
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 -0.5rem;
+
+			li {
+				flex: 0 1 25%;
+				margin: 0;
+				padding: 0 0.5rem 1rem;
+				text-align: center;
+			}
+		}
+
+		figure {
+			margin: 0;
+
+			img {
+				width: auto;
+				height: 3rem;
+			}
+			figcaption {}
+		}
+
+		a {
+			display: block;
+		}
+
+		&-passive {
+			opacity: 0.5;
+		}
+
+		&-active {}
+	}
+	.trophy {
+		position: fixed;
+		left: 20px;
+		top: 5.5rem;
+		right: 20px;
+		bottom: 5.5rem;
+		z-index: 999;
+		opacity: 0;
+		transform: translate3d(0, -100%, 0);
+		transition-property: opacity, transform;
+		transition-duration: 500ms;
+		box-shadow: 0 0 10rem 10rem rgba(0,0,0,0.5);
+		background-color: #fff;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: stretch;
+		overflow: hidden;
+
+		&-active {
+			opacity: 1;
+			transform: translate3d(0, 0%, 0);
+		}
+
+		&-scroller {
+			flex: 1;
+			overflow: auto;
+			-webkit-overflow-scrolling: touch;
+			padding: 0.5rem 20px;
+		}
+
+		header {
+			flex: 0;
+			text-align: center;
+			padding: 0.5rem 20px;
+			box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+
+			h2 {}
+
+			img {
+				width: auto;
+				height: 4rem;
 			}
 
-			figure {
-				img {}
-				figcaption {}
+			h3 {}
+		}
+
+		footer {
+			flex: 0;
+			text-align: center;
+			padding: 0.5rem 20px;
+			box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+
+			button {
+				border: none;
+				background: Transparent none;
+				padding: 0.7rem 1rem;
+				color: #0D47A1;
+				cursor: pointer;
+				font-size: 1rem;
+				font-weight: bold;
+				text-transform: uppercase;
 			}
-
-			a {}
-
-			&-passive {}
-
-			&-active {}
 		}
 	}
 	/*
@@ -60,6 +148,11 @@
 	.trophies {
 		border-left: none;
 		width: 100%;
+		ul {
+			li {
+				flex: 0 1 33.333%;
+			}
+		}
 	}
 	/*
 	on which screen should this be visible
