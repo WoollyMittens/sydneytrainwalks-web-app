@@ -76,18 +76,17 @@
 		transform: translate(0, 0);
 	}
 }
-@media (max-width:767px) {
+@media (max-width:991px) {
+	.photowall {
+		width: 100%;
+	}
+
 	.photowall ul li {
 		max-width: none;
 	}
 
 	.photowall ul li a img {
 		height: 96px;
-	}
-}
-@media (orientation: portrait) {
-	.photowall {
-		width: 100%;
 	}
 	/*
 		on which screen should this be visible

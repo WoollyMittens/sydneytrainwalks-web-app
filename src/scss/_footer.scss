@@ -128,7 +128,7 @@
 		display: none;
 	}
 }
-@media (orientation: portrait) {
+@media (max-width:991px) {
 	/* show the map icon on narrow screens */
 	#footer-to-map {
 		display: inline-block;
@@ -139,7 +139,7 @@
 		filter: grayscale(1);
 	}
 }
-@media (orientation: landscape) {
+@media (min-width:992px) {
 	#footer-to-overview {
 		display: none !important;
 	}

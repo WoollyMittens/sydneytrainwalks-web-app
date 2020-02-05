@@ -862,12 +862,15 @@ SydneyTrainWalks.prototype.Trophies = function(parent) {
 		var guides = GuideData;
 		var container = this.config.trophies;
 		var template = this.config.trophiesTemplate;
+		var duplicates = {};
 		// for all the hotspots from all the guides
 		this.config.trophies.innerHTML = '';
 		for (id in guides) {
 			for (a = 0, b = guides[id].markers.length; a < b; a += 1) {
 				marker = guides[id].markers[a];
-				if (marker.type === 'hotspot') {
+				if (marker.type === 'hotspot' && !duplicates[marker.title]) {
+					// store the title to avoid duplicats
+					duplicates[marker.title] = true;
 					// add a trophy badge
 					wrapper = document.createElement('li');
 					link = document.createElement('a');
@@ -933,16 +936,26 @@ SydneyTrainWalks.prototype.Trophies = function(parent) {
 		trophy.className = trophy.className.replace(/ trophy-active/g, '');
 	};
 
+	// Slippy map tilenames - https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#ECMAScript_.28JavaScript.2FActionScript.2C_etc..29
+  var long2tile = function long2tile(lon,zoom) { return (Math.floor((lon+180)/360*Math.pow(2,zoom))); }
+  var lat2tile = function lat2tile(lat,zoom)  { return (Math.floor((1-Math.log(Math.tan(lat*Math.PI/180) + 1/Math.cos(lat*Math.PI/180))/Math.PI)/2 *Math.pow(2,zoom))); }
+  var tile2long = function tile2long(x,z) { return (x/Math.pow(2,z)*360-180); }
+  var tile2lat = function tile2lat(y,z) { var n=Math.PI-2*Math.PI*y/Math.pow(2,z); return (180/Math.PI*Math.atan(0.5*(Math.exp(n)-Math.exp(-n)))); }
+
 	// EVENTS
 
 	this.details = function(marker) {
 		var guides = GuideData;
 		var container = this.config.trophy;
 		var template = this.config.trophyTemplate;
+		console.log('trophy marker:', marker);
+		// calculate the tile this trophy occurs on
+		var tile = [15, long2tile(marker.lon, 15), lat2tile(marker.lat, 15)];
 		// populate the modal
 		container.innerHTML = template.innerHTML
 			.replace('{icon}', marker.badge)
 			.replace('{title}', marker.title)
+			.replace('{tile}', tile.join('/'))
 			.replace('{description}', '<p>' + marker.explanation.join('</p><p>') + '</p>');
 		// add the event handler to close the modal popup
 		var closer = container.querySelector('footer button');

@@ -222,9 +222,9 @@
 				<img alt="" src="./inc/img/{icon}.svg" />
 				<h3>{title}</h3>
 			</header>
-			<div class="trophy-scroller">
-				{description}
-			</div>
+			<figure style="background-image:url('./inc/tiles/{tile}.jpg');">
+				<figcaption>{description}</figcaption>
+			</figure>
 			<footer>
 				<button>Continue</button>
 			</footer>

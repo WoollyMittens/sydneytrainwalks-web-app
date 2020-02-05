@@ -155,7 +155,7 @@
 		transform: translate(0, 0);
 	}
 }
-@media (orientation: portrait) {
+@media (max-width:991px) {
 	.guide {
 		border-left: none;
 		width: 100%;
