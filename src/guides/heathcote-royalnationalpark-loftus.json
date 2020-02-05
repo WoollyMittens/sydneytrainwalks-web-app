@@ -47,6 +47,30 @@
 			"lon": 151.014839
 		},
 		{
+			"title": "You Turn Me Right Round",
+			"badge": "rotate_cw_1",
+			"lon": 151.049714792793,
+			"lat": -34.07782602406467,
+			"radius": 0.0002,
+			"explanation": [
+				"Clockwise or counter, both ways lead to icecream below."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
+			"title": "Ding Ding Ding!",
+			"badge": "tramway ",
+			"lon": 151.0567214560022,
+			"lat": -34.0625896528283,
+			"radius": 0.0002,
+			"explanation": [
+				"If you're not there on the lucky few days to get a tram ride, at least road along it is easy to follow."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "kiosk",
 			"lat": -34.075375,
 			"lon": 151.0561138888889

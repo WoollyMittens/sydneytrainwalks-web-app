@@ -31,6 +31,18 @@
 			"lat": -33.712921
 		},
 		{
+			"title": "The Easy Way Out",
+			"badge": "lift_2",
+			"lon": 150.301955742558,
+			"lat": -33.73094297677026,
+			"radius": 0.0002,
+			"explanation": [
+				"It is a valid excuse to want to experience the scenic ski lift, instead of climbing hundreds of meters out of the valley."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "warning",
 			"lat": -33.72815277777778,
 			"lon": 150.30450000000002,

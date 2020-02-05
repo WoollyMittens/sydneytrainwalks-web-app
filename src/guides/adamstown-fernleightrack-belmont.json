@@ -27,6 +27,78 @@
 			"lat": -32.93396
 		},
 		{
+			"title": "I'm a Choo Choo Train: Adamstown",
+			"badge": "railroad",
+			"lon": 151.7196822166376,
+			"lat": -32.9342364320964,
+			"radius": 0.0002,
+			"explanation": [
+				"All aboard the Belmont line, along which trains only run a regular service in your imagination."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
+			"title": "I'm a Choo Choo Train: Kahibah",
+			"badge": "railroad",
+			"lon": 151.7182798705948,
+			"lat": -32.96232362379441,
+			"radius": 0.0002,
+			"explanation": [
+				"First stop after Adamstown. Glenrock's a good reason to leave the train here."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
+			"title": "I'm a Choo Choo Train: Whitebridge",
+			"badge": "railroad",
+			"lon": 151.7109742419769,
+			"lat": -32.97788842791798,
+			"radius": 0.0002,
+			"explanation": [
+				"No longer a stop for trains, but now one for coffee and cakes up there."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
+			"title": "I'm a Choo Choo Train: Redhead",
+			"badge": "railroad",
+			"lon": 151.7095684711388,
+			"lat": -33.00581939444007,
+			"radius": 0.0002,
+			"explanation": [
+				"Alight here for Awabakal Nature Reserve and Redhead Beach."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
+			"title": "I'm a Choo Choo Train: Jewells",
+			"badge": "railroad",
+			"lon": 151.6860486138035,
+			"lat": -33.02089528519164,
+			"radius": 0.0002,
+			"explanation": [
+				"The wetlands make a lush green tunnel from here to Belmont."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
+			"title": "I'm a Choo Choo Train: Belmont",
+			"badge": "railroad",
+			"lon": 151.6613161295524,
+			"lat": -33.03900889600782,
+			"radius": 0.0002,
+			"explanation": [
+				"The end of the Fernleigh railway line, but also the start of an historic trek."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "kiosk",
 			"lat": -32.978277000000006,
 			"lon": 151.708188

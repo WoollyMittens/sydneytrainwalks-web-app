@@ -52,6 +52,18 @@
 			"description": "Transport to this location: <a href=\"https://transportnsw.info/trip#/?from=Cronulla&itd_name_destination=Bundeena\">transportnsw.info</a>"
 		},
 		{
+			"title": "Tadaa!",
+			"badge": "wizard_1",
+			"lon": 151.0766564,
+			"lat": -34.1665323,
+			"radius": 0.0002,
+			"explanation": [
+				"After many kilometres of coast, this is the place where the magic peaks."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "kiosk",
 			"lat": -34.084211,
 			"lon": 151.151508

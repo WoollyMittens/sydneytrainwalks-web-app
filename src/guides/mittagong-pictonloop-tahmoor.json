@@ -39,6 +39,66 @@
 			"lat": -34.45254
 		},
 		{
+			"title": "Slow Train to Nowhere: Colo Vale",
+			"badge": "tank_2",
+			"lon": 150.4875578509916,
+			"lat": -34.40035068976342,
+			"radius": 0.0002,
+			"explanation": [
+				"All aboard for a journey down railway history."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
+			"title": "Slow Train to Nowhere: Hilltop",
+			"badge": "tank_2",
+			"lon": 150.49442641706,
+			"lat": -34.35359189874801,
+			"radius": 0.0002,
+			"explanation": [
+				"Load up on supplies at this stop. The journey is about to get remote, but definitely not off the beaten track."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
+			"title": "Slow Train to Nowhere: Balmoral",
+			"badge": "tank_2",
+			"lon": 150.5225556,
+			"lat": -34.3054639,
+			"radius": 0.0002,
+			"explanation": [
+				"If the fire station keeps goats, it should count as rural New South Wales."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
+			"title": "Slow Train to Nowhere: Buxton",
+			"badge": "tank_2",
+			"lon": 150.5334083,
+			"lat": -34.2555167,
+			"radius": 0.0002,
+			"explanation": [
+				"The icecream and snacks from the general store are well deserved by now."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
+			"title": "Slow Train to Nowhere: Couridjah",
+			"badge": "tank_2",
+			"lon": 150.5496444,
+			"lat": -34.2328889,
+			"radius": 0.0002,
+			"explanation": [
+				"From this remnant historic station, thoughts turn to making our connection at the functional one just over an hour from here on foot."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "kiosk",
 			"lat": -34.35313598998312,
 			"lon": 150.4939696999867

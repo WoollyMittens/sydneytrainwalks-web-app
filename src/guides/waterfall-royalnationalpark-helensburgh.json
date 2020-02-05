@@ -30,6 +30,30 @@
 			"lon": 150.99596526007738
 		},
 		{
+			"title": "Tadaa!",
+			"badge": "wizard_1",
+			"lon": 151.0766564,
+			"lat": -34.1665323,
+			"radius": 0.0002,
+			"explanation": [
+				"After many kilometres of coast, this is the place where the magic peaks."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
+			"title": "It Looked Like a Shortcut",
+			"badge": "play_ping_pong",
+			"lon": 151.0033851235307,
+			"lat": -34.1770588504976,
+			"radius": 0.0002,
+			"explanation": [
+				"It's the road less travelled. Maybe for good reason."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "kiosk",
 			"lat": -34.17031111111111,
 			"lon": 151.06652222222223

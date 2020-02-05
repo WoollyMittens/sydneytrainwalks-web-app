@@ -37,7 +37,9 @@ SydneyTrainWalks.prototype.Trophies = function(parent) {
 					// if the hotspot is in local storage already
 					if (this.getTrophy(marker.title)) {
 						// show the full badge
-						link.innerHTML += template.innerHTML.replace('{icon}', marker.badge).replace('{title}', marker.title);
+						link.innerHTML += template.innerHTML
+							.replace('{icon}', marker.badge)
+							.replace('{title}', marker.title);
 						// make it look active
 						link.setAttribute('class', 'trophies-active');
 						// link it to the details modal
@@ -45,7 +47,9 @@ SydneyTrainWalks.prototype.Trophies = function(parent) {
 					// else
 					} else {
 						// show a mystery badge
-						link.innerHTML += template.innerHTML.replace('{icon}', marker.type).replace('{title}', '???');
+						link.innerHTML += template.innerHTML
+							.replace('{icon}', marker.type)
+							.replace('{title}', '???');
 						// make it looks passive
 						link.setAttribute('class', 'trophies-passive');
 						// deeplink to the guides page

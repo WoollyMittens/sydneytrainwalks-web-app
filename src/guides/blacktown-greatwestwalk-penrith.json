@@ -33,6 +33,78 @@
 			"description": "Get the train to Blacktown using <a href=\"https://transportnsw.info/trip#/?to=Blacktown Station\">transportnsw.info</a>."
 		},
 		{
+			"title": "Go West: Tempting Shortcut",
+			"badge": "compas_1",
+			"lon": 150.9552224159125,
+			"lat": -33.78190705220473,
+			"radius": 0.0002,
+			"explanation": [
+				"You will be back here on the other side... eventually."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
+			"title": "Go West: Strolling in the Park",
+			"badge": "compas_1",
+			"lon": 150.8677514332645,
+			"lat": -33.73801291844763,
+			"radius": 0.0002,
+			"explanation": [
+				"A band of green on the way out of the city that feels like breathing a sigh of relief."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
+			"title": "Go West: Didn't Know It Existed",
+			"badge": "compas_1",
+			"lon": 150.8601335828615,
+			"lat": -33.76350931726358,
+			"radius": 0.0002,
+			"explanation": [
+				"A Chinese Garden surrounded by bushland and seemingly no one the wiser it even exists."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
+			"title": "Go West: Survived Mount Druitt",
+			"badge": "compas_1",
+			"lon": 150.8015974320838,
+			"lat": -33.76326655370499,
+			"radius": 0.0002,
+			"explanation": [
+				"You climb through a fence to continue the trail, perfectly in keeping with the reputation."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
+			"title": "Go West: Emus and Bombs",
+			"badge": "compas_1",
+			"lon": 150.7722553655753,
+			"lat": -33.72721010312973,
+			"radius": 0.0002,
+			"explanation": [
+				"There's emus here and there used to be bombs. It's probably best to avoid either."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
+			"title": "Go West: Weir Almost There",
+			"badge": "compas_1",
+			"lon": 150.6852837769118,
+			"lat": -33.7415830753694,
+			"radius": 0.0002,
+			"explanation": [
+				"This stretch along the river is to celebrate putting most of Sydney behind you in a day."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "kiosk",
 			"lat": -33.766106,
 			"lon": 150.902629

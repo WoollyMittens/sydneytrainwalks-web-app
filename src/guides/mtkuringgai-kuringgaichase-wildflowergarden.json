@@ -29,6 +29,18 @@
 			"lat": -33.654518
 		},
 		{
+			"title": "Fireman's Rest",
+			"badge": "flower_3",
+			"lon": 151.147943,
+			"lat": -33.649026,
+			"radius": 0.0002,
+			"explanation": [
+				"A sobering look across this peaceful valley reminds us how treacherous this landscape becomes during bushfires."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "kiosk",
 			"lat": -33.65976666666666,
 			"lon": 151.15893333333335

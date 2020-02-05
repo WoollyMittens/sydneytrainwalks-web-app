@@ -37,6 +37,18 @@
 			"lat": -33.633377
 		},
 		{
+			"title": "You've Come a Long Way Baby",
+			"badge": "compas_2",
+			"lon": 150.3534433807429,
+			"lat": -33.61501323025417,
+			"radius": 0.0002,
+			"explanation": [
+				"This is legitimately the middle of nowhere, with only solitude surrounding you. May it comfort you during the long long climb ahead."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "info",
 			"lat": -33.62985277777778,
 			"lon": 150.30654444444446

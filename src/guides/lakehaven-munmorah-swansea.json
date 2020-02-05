@@ -31,6 +31,18 @@
 			"lon": 151.505208
 		},
 		{
+			"title": "The Other Hole: The Frazer Blowhole.",
+			"badge": "sink_bathroom",
+			"lon": 151.628035752481,
+			"lat": -33.18588747665788,
+			"radius": 0.0002,
+			"explanation": [
+				"Less famous than Kiama's, but they can only wish they had these beaches."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "kiosk",
 			"lat": -33.157889,
 			"lon": 151.629089

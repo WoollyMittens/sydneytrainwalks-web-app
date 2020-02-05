@@ -28,6 +28,42 @@
 			"lat": -33.036973
 		},
 		{
+			"title": "I'm a Choo Choo Train: Jewells",
+			"badge": "railroad",
+			"lon": 151.6860486138035,
+			"lat": -33.02089528519164,
+			"radius": 0.0002,
+			"explanation": [
+				"The wetlands make a lush green tunnel from here to Belmont."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
+			"title": "I'm a Choo Choo Train: Belmont",
+			"badge": "railroad",
+			"lon": 151.6613161295524,
+			"lat": -33.03900889600782,
+			"radius": 0.0002,
+			"explanation": [
+				"The end of the Fernleigh railway line, but also the start of an historic trek."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
+			"title": "The Rear Entrance",
+			"badge": "enter",
+			"lon": 151.725187539504,
+			"lat": -33.01065409517184,
+			"radius": 0.0002,
+			"explanation": [
+				"The narrow tunnel of dense vegetation opens up to expansive coastal heath."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "kiosk",
 			"lat": -32.948477,
 			"lon": 151.756778,

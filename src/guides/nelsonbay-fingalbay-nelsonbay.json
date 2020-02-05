@@ -32,6 +32,18 @@
 			"lon": 152.142754
 		},
 		{
+			"title": "Tempting, but don't Risk It",
+			"badge": "skull_and_bones",
+			"lon": 152.1786321851128,
+			"lat": -32.73720313825261,
+			"radius": 0.0002,
+			"explanation": [
+				"The impressive view from exactly this dune, make the Fingal Spit look irresistible."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "kiosk",
 			"lat": -32.74295277777778,
 			"lon": 152.1709972222222

@@ -29,6 +29,18 @@
 			"lat": -34.744682
 		},
 		{
+			"title": "The Tighter Hole: The Little Blowhole.",
+			"badge": "bidet",
+			"lon": 150.8586320907302,
+			"lat": -34.68666002715266,
+			"radius": 0.0002,
+			"explanation": [
+				"When the currents fail the big one, this is your second chance."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "warning",
 			"lat": -34.72793888888889,
 			"lon": 150.8387888888889,

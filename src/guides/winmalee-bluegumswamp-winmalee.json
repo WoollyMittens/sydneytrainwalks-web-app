@@ -29,6 +29,18 @@
 			"lon": 150.60895399999998
 		},
 		{
+			"title": "Shhh, it's a Secret",
+			"badge": "map_2_inv",
+			"lon": 150.6157016978932,
+			"lat": -33.6233346960489,
+			"radius": 0.0002,
+			"explanation": [
+				"Leave a friendly note in the geocache logbook. That it can lie here undisturbed means you're in a special place."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "kiosk",
 			"lat": -32.978277000000006,
 			"lon": 151.708188

@@ -33,6 +33,42 @@
 			"lat": -33.593074799
 		},
 		{
+			"title": "Blink and You'll Miss It ",
+			"badge": "glasses",
+			"lon": 151.1997894958327,
+			"lat": -33.55472321296468,
+			"radius": 0.0002,
+			"explanation": [
+				"You'll be around the hairpin bend downhill, before you realise this hidden view is worth turnning back for."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
+			"title": "Taffy Was Here",
+			"badge": "obelisk",
+			"lon": 151.2285972,
+			"lat": -33.5851722,
+			"radius": 0.0002,
+			"explanation": [
+				"Not many come here, but Taffy did."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
+			"title": "The Top of the World",
+			"badge": "geography_globe",
+			"lon": 151.2138850276913,
+			"lat": -33.58264408577045,
+			"radius": 0.0002,
+			"explanation": [
+				"Every point is the top, depending on how you rotate it."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "kiosk",
 			"lat": -33.589739,
 			"lon": 151.170915

@@ -28,6 +28,30 @@
 			"lon": 151.32345
 		},
 		{
+			"title": "Pretty but still Gosford",
+			"badge": "factory_2",
+			"lon": 151.3120139874374,
+			"lat": -33.46414070997027,
+			"radius": 0.0002,
+			"explanation": [
+				"The prettiest side of Gosford, makes you suffer the climb to get here."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
+			"title": "A Whale of a Time",
+			"badge": "fish",
+			"lon": 151.3242306,
+			"lat": -33.4781389,
+			"radius": 0.0002,
+			"explanation": [
+				"One of the few remaining Krillz not pillz graffiti dotted around Central Coast."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "kiosk",
 			"lat": -33.426951,
 			"lon": 151.329186

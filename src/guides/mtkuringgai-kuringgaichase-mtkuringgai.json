@@ -31,28 +31,29 @@
 			"lat": -33.6544384249
 		},
 		{
-			"type": "hotspot",
-			"lat": -33.62752,
-			"lon": 151.165525,
-			"radius": 0.0002,
-			"badge": "shape_star",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>",
 			"title": "The General's Last Stand",
+			"badge": "army_training",
+			"lon": 151.164749,
+			"lat": -33.627075,
+			"radius": 0.0002,
 			"explanation": [
-				"Lorem ipsum dolor sit amet."
-			]
+				"The paddle steamer General Gordon ferried goods and passengers around Broken Bay before the railway joined Brooklyn to Woy Woy.",
+				"Upon retirement she was split up into several house boats, what is left of one you see here."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
-			"type": "hotspot",
-			"lat": -33.64920277777778,
-			"lon": 151.14811388888887,
-			"radius": 0.0002,
+			"title": "Fireman's Rest",
 			"badge": "flower_3",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>",
-			"title": "A Moment of Pause",
+			"lon": 151.147943,
+			"lat": -33.649026,
+			"radius": 0.0002,
 			"explanation": [
-				"Lorem ipsum dolor sit amet."
-			]
+				"A sobering look across this peaceful valley reminds us how treacherous this landscape becomes during bushfires."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "warning",

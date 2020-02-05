@@ -34,6 +34,30 @@
 			"lat": -33.69906234699999
 		},
 		{
+			"title": "Always Greener on the Other Side",
+			"badge": "church",
+			"lon": 150.5731112426449,
+			"lat": -33.74012684182669,
+			"radius": 0.0002,
+			"explanation": [
+				"The lookouts opposite the valley, are not nearly as intimidating from below."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
+			"title": "Mandatory Foot Bath",
+			"badge": "duck_rubberduck ",
+			"lon": 150.60347501085,
+			"lat": -33.76656438789008,
+			"radius": 0.0002,
+			"explanation": [
+				"Maybe you can jump it, but who would want to finish their walk in wet shoes."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "warning",
 			"lat": -33.737497222222224,
 			"lon": 150.57790277777778,

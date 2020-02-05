@@ -31,6 +31,18 @@
 			"lat": -32.777629852
 		},
 		{
+			"title": "Are We There Yet?",
+			"badge": "count_new",
+			"lon": 151.9610443972656,
+			"lat": -32.80925637778527,
+			"radius": 0.0002,
+			"explanation": [
+				"Tin City is a break in the endless monotony of 27 kilometres of beach, but also not."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "kiosk",
 			"lat": -32.777812,
 			"lon": 152.082409
