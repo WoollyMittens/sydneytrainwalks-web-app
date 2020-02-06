@@ -111,7 +111,6 @@ SydneyTrainWalks.prototype.Trophies = function(parent) {
 		var guides = GuideData;
 		var container = this.config.trophy;
 		var template = this.config.trophyTemplate;
-		console.log('trophy marker:', marker);
 		// calculate the tile this trophy occurs on
 		var tile = [15, long2tile(marker.lon, 15), lat2tile(marker.lat, 15)];
 		// populate the modal
