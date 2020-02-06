@@ -42,6 +42,36 @@
 			padding: 0;
 		}
 
+		&-trophy {
+			margin: 0 -2rem;
+	    padding: 1.5rem 2rem;
+			background-color: #FFFDE7;
+
+			figure {
+				position: relative;
+				display: flex;
+				align-items: center;
+				margin: 0;
+			}
+			img {
+				position: absolute;
+				left: 64px;
+				top: 50%;
+				margin: -32px 0 0 -32px;
+				height: auto;
+				width: 64px;
+				vertical-align: middle;
+			}
+			figcaption {
+				margin-left: 128px;
+				padding-left: 1em;
+			}
+			center {
+				display: inline;
+			}
+			button {}
+		}
+
 		&-attention,
 		&-detour,
 		&-optional {
@@ -66,15 +96,15 @@
 		}
 
 		&-detour {
-			background-color: #eeccdd;
+			background-color: #FFEBEE;
 		}
 
 		&-attention {
-			background-color: #ccddee;
+			background-color: #E3F2FD;
 		}
 
 		&-optional {
-			background-color: #ddeecc;
+			background-color: #F1F8E9;
 		}
 
 		.guide-detour + .guide-detour,
@@ -155,7 +185,7 @@
 		transform: translate(0, 0);
 	}
 }
-@media (max-width:991px) {
+@media (max-width:959px) {
 	.guide {
 		border-left: none;
 		width: 100%;

@@ -127,7 +127,10 @@
 				<section class="trophies">
 					<div class="trophies-scroller">
 						<h2>Trophies</h2>
-						<p>Lorem ipsum dolor sit amet.</p>
+						<p>
+							Uncover these trophies by visiting special locations marked
+							(<img alt="Example trophy marker" src="./inc/img/marker-hotspot.svg" width="24px" height="24px" valign="middle" />)
+							on the map.</p>
 						<ul></ul>
 					</div>
 				</section>
@@ -213,7 +216,13 @@
 		</script>
 
 		<script id="trophies-template" type="text/template">
-			<figure><img alt="" src="./inc/img/{icon}.svg" /><figcaption>{title}</figcaption></figure>
+			<figure>
+				<img alt="" src="./inc/img/{icon}.svg" />
+				<figcaption>
+					{title}
+					<button class="guide-locate" data-type="{type}" data-lat="{lat}" data-lon="{lon}" data-title="{title}">Show location</button>
+				</figcaption>
+			</figure>
 		</script>
 
 		<script id="trophy-template" type="text/template">

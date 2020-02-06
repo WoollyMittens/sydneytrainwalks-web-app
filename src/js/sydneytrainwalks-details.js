@@ -14,6 +14,7 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		'wall': document.querySelector('.photowall'),
 		'titleTemplate': document.getElementById('title-template'),
 		'thumbnailTemplate': document.getElementById('thumbnail-template'),
+		'trophiesTemplate': document.getElementById('trophies-template'),
 		'wallTemplate': document.getElementById('wall-template'),
 		'creditTemplate': document.getElementById('credit-template')
 	});
@@ -107,27 +108,51 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 
 	this.updateLandmarks = function(id) {
 		// gather the information
+		var _this = this;
 		var prefix = (GuideData[id].alias) ? GuideData[id].alias.key : id;
 		var landmark, landmarks = "";
-		var thumbnailTemplate = this.config.thumbnailTemplate.innerHTML;
 		// fill the guide with landmarks
 		GuideData[id].markers.map(function (marker) {
-			// it is a landmark if it has a photo
+			// if is a landmark if it has a photo
 			if (marker.photo) {
 				// get the description
-				landmark = thumbnailTemplate
-					.replace(/{id}/g, prefix)
-					.replace(/{src}/g, marker.photo.toLowerCase())
-					.replace(/{description}/g, marker.description);
+				landmark = _this.addThumbnail(prefix, marker);
 				// add extra markup for optional landmarks
 				if (marker.optional) { landmarks += '<div class="guide-optional">' + landmark + '</div>'; }
 				else if (marker.detour) { landmarks += '<div class="guide-detour">' + landmark + '</div>'; }
 				else if (marker.attention) { landmarks += '<div class="guide-attention">' + landmark + '</div>'; }
 				else { landmarks += landmark; }
 			}
+			// if the landmark is a trophy location
+			else if (marker.badge) {
+				// get the description
+				landmark = _this.addTrophy(marker);
+				// add extra markup for optional landmarks
+				landmarks += '<div class="guide-trophy">' + landmark + '</div>';
+			}
 		});
 		// return the landmarks
 		return landmarks;
+	};
+
+	this.addThumbnail = function(prefix, marker) {
+		var thumbnailTemplate = this.config.thumbnailTemplate.innerHTML;
+		return thumbnailTemplate
+			.replace(/{id}/g, prefix)
+			.replace(/{src}/g, marker.photo.toLowerCase())
+			.replace(/{description}/g, marker.description);
+	};
+
+	this.addTrophy = function(marker) {
+		var trophiesTemplate = this.config.trophiesTemplate.innerHTML;
+		var storedTrophies = JSON.parse(window.localStorage.getItem('trophies') || "{}");
+		var hasTrophy = storedTrophies[marker.title];
+		return trophiesTemplate
+			.replace(/{icon}/g, (hasTrophy) ? marker.badge : marker.type)
+			.replace(/{title}/g, (hasTrophy) ? marker.explanation.join(' ') : marker.description)
+			.replace(/{type}/g, marker.type)
+			.replace(/{lon}/g, marker.lon)
+			.replace(/{lat}/g, marker.lat);
 	};
 
 	this.updateMap = function(id) {

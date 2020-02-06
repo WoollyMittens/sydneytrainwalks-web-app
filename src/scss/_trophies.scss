@@ -62,6 +62,10 @@
 
 			figcaption {
 				font-size: 0.875rem;
+
+				button {
+					display: none;
+				}
 			}
 		}
 
@@ -82,7 +86,7 @@
 		transform: translate(0, 0);
 	}
 }
-@media (max-width:991px) {
+@media (max-width:959px) {
 	.trophies {
 		border-left: none;
 		width: 100%;

@@ -128,7 +128,7 @@
 		display: none;
 	}
 }
-@media (max-width:991px) {
+@media (max-width:959px) {
 	/* show the map icon on narrow screens */
 	#footer-to-map {
 		display: inline-block;
@@ -139,7 +139,7 @@
 		filter: grayscale(1);
 	}
 }
-@media (min-width:992px) {
+@media (min-width:960px) {
 	#footer-to-overview {
 		display: none !important;
 	}

@@ -774,6 +774,7 @@ Localmap.prototype.Indicator = function (parent, onMarkerClicked, onMapFocus) {
     if (!input.getAttribute) input.getAttribute = function(attr) { return input[attr]; };
     if (!input.setAttribute) input.setAttribute = function(attr, value) { input[attr] = value; };
     var source = input.getAttribute('data-url') || input.getAttribute('src') || input.getAttribute('href') || input.getAttribute('photo');
+    var type = input.getAttribute('data-type');
     var description = input.getAttribute('data-title') || input.getAttribute('title') || input.getAttribute('description') || input.innerHTML;
     var lon = input.getAttribute('data-lon') || input.getAttribute('lon');
     var lat = input.getAttribute('data-lat') || input.getAttribute('lat');
@@ -784,6 +785,7 @@ Localmap.prototype.Indicator = function (parent, onMarkerClicked, onMapFocus) {
     // populate the indicator's model
     this.config.indicator = {
       'photo': filename,
+      'type': type,
       'description': description,
       'lon': lon || cached.lon,
       'lat': lat || cached.lat,
