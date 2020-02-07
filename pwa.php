@@ -86,6 +86,8 @@
 									<option value="region">Sort by region</option>
 									<option value="duration" data-type="number">Sort by duration</option>
 									<option value="distance" data-type="number" selected>Sort by distance</option>
+									<option value="revised">Sort by revision date</option>
+									<option value="looped">Just loops</option>
 									<option value="rain">For rainy days</option>
 									<option value="fireban">During bushfire danger</option>
 								</select>
