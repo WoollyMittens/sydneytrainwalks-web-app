@@ -33,78 +33,6 @@
 			"description": "Get the train to Blacktown using <a href=\"https://transportnsw.info/trip#/?to=Blacktown Station\">transportnsw.info</a>."
 		},
 		{
-			"title": "Go West: Tempting Shortcut",
-			"badge": "compas_1",
-			"lon": 150.9552224159125,
-			"lat": -33.78190705220473,
-			"radius": 0.0003,
-			"explanation": [
-				"You will be back here on the other side... eventually."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "Go West: Strolling in the Park",
-			"badge": "compas_1",
-			"lon": 150.8677514332645,
-			"lat": -33.73801291844763,
-			"radius": 0.0003,
-			"explanation": [
-				"A band of green on the way out of the city that feels like breathing a sigh of relief."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "Go West: Didn't Know It Existed",
-			"badge": "compas_1",
-			"lon": 150.8601335828615,
-			"lat": -33.76350931726358,
-			"radius": 0.0003,
-			"explanation": [
-				"A Chinese Garden surrounded by bushland and seemingly no one the wiser it even exists."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "Go West: Survived Mount Druitt",
-			"badge": "compas_1",
-			"lon": 150.8015974320838,
-			"lat": -33.76326655370499,
-			"radius": 0.0003,
-			"explanation": [
-				"You climb through a fence to continue the trail, perfectly in keeping with the reputation."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "Go West: Emus and Bombs",
-			"badge": "compas_1",
-			"lon": 150.7722553655753,
-			"lat": -33.72721010312973,
-			"radius": 0.0003,
-			"explanation": [
-				"There's emus here and there used to be bombs. It's probably best to avoid either."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "Go West: Weir Almost There",
-			"badge": "compas_1",
-			"lon": 150.6852837769118,
-			"lat": -33.7415830753694,
-			"radius": 0.0003,
-			"explanation": [
-				"This stretch along the river is to celebrate putting most of Sydney behind you in a day."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "kiosk",
 			"lat": -33.766106,
 			"lon": 150.902629
@@ -184,7 +112,7 @@
 		{
 			"type": "waypoint",
 			"photo": "1070_img_20191019_093651.jpg",
-			"description": "Follow Richmond Road across the railway line.",
+			"description": "From the mall side of Blacktown Station, follow Richmond Road across the railway line.",
 			"lon": 150.9065,
 			"lat": -33.768783
 		},
@@ -252,6 +180,18 @@
 			"lat": -33.741889
 		},
 		{
+			"title": "Go West: Strolling in the Park",
+			"badge": "compas_1",
+			"lon": 150.8677514332645,
+			"lat": -33.73801291844763,
+			"radius": 0.0003,
+			"explanation": [
+				"A band of green on the way out of the city that feels like breathing a sigh of relief."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "1370_img_20191019_104710.jpg",
 			"description": "Continue following the path to the exit at Richmond Road.",
@@ -292,6 +232,18 @@
 			"description": "The boardwalk ends at the pavilion. Continue past the Chinese Gardens.",
 			"lon": 150.86041099991445,
 			"lat": -33.764164
+		},
+		{
+			"title": "Go West: Didn't Know It Existed",
+			"badge": "compas_1",
+			"lon": 150.8601335828615,
+			"lat": -33.76350931726358,
+			"radius": 0.0003,
+			"explanation": [
+				"A Chinese Garden surrounded by bushland and seemingly no one the wiser it even exists."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",
@@ -420,6 +372,18 @@
 			"lat": -33.763167
 		},
 		{
+			"title": "Go West: Survived Mount Druitt",
+			"badge": "compas_1",
+			"lon": 150.8015974320838,
+			"lat": -33.76326655370499,
+			"radius": 0.0003,
+			"explanation": [
+				"You climb through a fence to continue the trail, perfectly in keeping with the reputation."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "2230_img_20191019_143511.jpg",
 			"description": "From the powerlines follow the paved path along the sports fields of Whalan Reserve.",
@@ -474,6 +438,18 @@
 			"description": "Enter Wianamatte Regional Park at the corner of Mainwarring Street.",
 			"lon": 150.777828,
 			"lat": -33.725622
+		},
+		{
+			"title": "Go West: Emus and Bombs",
+			"badge": "compas_1",
+			"lon": 150.7722553655753,
+			"lat": -33.72721010312973,
+			"radius": 0.0003,
+			"explanation": [
+				"There's emus here and there used to be bombs. It's probably best to avoid either."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",
@@ -565,6 +541,18 @@
 			"description": "Turn right down Cassola Place to the start of the Great River Walk",
 			"lon": 150.687061,
 			"lat": -33.735833
+		},
+		{
+			"title": "Go West: Weir Almost There",
+			"badge": "compas_1",
+			"lon": 150.6852837769118,
+			"lat": -33.7415830753694,
+			"radius": 0.0003,
+			"explanation": [
+				"This stretch along the river is to celebrate putting most of Sydney behind you in a day."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

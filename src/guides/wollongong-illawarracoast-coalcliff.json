@@ -30,30 +30,6 @@
 			"lat": -34.426712036
 		},
 		{
-			"title": "Between a Rock and a Hard Place",
-			"badge": "skyway",
-			"lon": 150.9752873609598,
-			"lat": -34.24991110509024,
-			"radius": 0.0003,
-			"explanation": [
-				"The temporary answer to the Illwarra crumbling into the ocean."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "Oh, I get it: Friend-Ship",
-			"badge": "smile_wink",
-			"lon": 150.950778,
-			"lat": -34.285261,
-			"radius": 0.0003,
-			"explanation": [
-				"The most wholesome pun along the Grand Pacific Drive."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "kiosk",
 			"lat": -34.421703,
 			"lon": 150.904859
@@ -282,6 +258,18 @@
 			"description": "Walk along Lawrence Hargrave Drive past Coledale Beach."
 		},
 		{
+			"title": "Oh, I get it: Friend-Ship",
+			"badge": "smile_wink",
+			"lon": 150.950778,
+			"lat": -34.285261,
+			"radius": 0.0003,
+			"explanation": [
+				"The most wholesome pun along the Grand Pacific Drive."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "p6288781.jpg",
 			"lon": 150.96320277777775,
@@ -294,6 +282,18 @@
 			"lon": 150.9753472222222,
 			"lat": -34.25024444444445,
 			"description": "Cross the Seacliff Bridge along the footpath."
+		},
+		{
+			"title": "Between a Rock and a Hard Place",
+			"badge": "skyway",
+			"lon": 150.9752873609598,
+			"lat": -34.24991110509024,
+			"radius": 0.0003,
+			"explanation": [
+				"The temporary answer to the Illwarra crumbling into the ocean."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

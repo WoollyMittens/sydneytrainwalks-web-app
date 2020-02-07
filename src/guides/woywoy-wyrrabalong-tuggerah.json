@@ -29,90 +29,6 @@
 			"lat": -33.48543
 		},
 		{
-			"title": "All Jetty's Short and Long: Berkeley Vale",
-			"badge": "elevation_5",
-			"lon": 151.4385593687707,
-			"lat": -33.3407906027926,
-			"radius": 0.0003,
-			"explanation": [
-				"You might have to fight the pelicans for this one."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "Take Five: Macmaster",
-			"badge": "map_3",
-			"lon": 151.4250983993459,
-			"lat": -33.49977581191715,
-			"radius": 0.0003,
-			"explanation": [
-				"Secluded enough to wonder where everyone else is instead."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "Take Five: Copacabana",
-			"badge": "map_3",
-			"lon": 151.4322736016543,
-			"lat": -33.49130593248137,
-			"radius": 0.0003,
-			"explanation": [
-				"The climb up the headland will make you appreciate the shady beach below."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "Take Five: Avoca",
-			"badge": "map_3",
-			"lon": 151.4362250820089,
-			"lat": -33.47007483535211,
-			"radius": 0.0003,
-			"explanation": [
-				"Too tempting to hang around for a while."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "Take Five: North Avoca",
-			"badge": "map_3",
-			"lon": 151.4399891431909,
-			"lat": -33.45869036154423,
-			"radius": 0.0003,
-			"explanation": [
-				"On a hot day, the next climb might end it all."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "Take Five: Terrigal",
-			"badge": "map_3",
-			"lon": 151.4443530972331,
-			"lat": -33.44606426360688,
-			"radius": 0.0003,
-			"explanation": [
-				"A boulevard so full of icecream and treats, but the hilltop lookout on the horizon beckons."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "Love Lift Me Up...",
-			"badge": "music_1",
-			"lon": 151.4756577864043,
-			"lat": -33.40488481128369,
-			"radius": 0.0003,
-			"explanation": [
-				"The high point of Central Coast in several ways."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "kiosk",
 			"lat": -33.327049,
 			"lon": 151.429406
@@ -488,7 +404,7 @@
 			"photo": "dsc_1460.jpg",
 			"lon": 151.42341713999332,
 			"lat": -33.501534269987125,
-			"description": "Pass the gate at the end of the trail and continue down Macmasters  Parade."
+			"description": "Pass the gate at the end of the trail and continue down Macmasters Parade."
 		},
 		{
 			"type": "waypoint",
@@ -503,6 +419,18 @@
 			"lon": 151.4241854800024,
 			"lat": -33.50009166000009,
 			"description": "From Marine Parade use the beach access."
+		},
+		{
+			"title": "Take Five: Macmaster",
+			"badge": "map_3",
+			"lon": 151.4250983993459,
+			"lat": -33.49977581191715,
+			"radius": 0.0003,
+			"explanation": [
+				"Secluded enough to wonder where everyone else is instead."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",
@@ -524,6 +452,18 @@
 			"lon": 151.43202228009258,
 			"lat": -33.49141468005019,
 			"description": "Leave the beach at the Copacabana Surf Club."
+		},
+		{
+			"title": "Take Five: Copacabana",
+			"badge": "map_3",
+			"lon": 151.4322736016543,
+			"lat": -33.49130593248137,
+			"radius": 0.0003,
+			"explanation": [
+				"The climb up the headland will make you appreciate the shady beach below."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",
@@ -635,6 +575,18 @@
 			"description": "From the park, cross the surf club car park."
 		},
 		{
+			"title": "Take Five: Avoca",
+			"badge": "map_3",
+			"lon": 151.4362250820089,
+			"lat": -33.47007483535211,
+			"radius": 0.0003,
+			"explanation": [
+				"Too tempting to hang around for a while."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "dsc_1511_dsc_1519.jpg",
 			"lon": 151.43741,
@@ -654,6 +606,18 @@
 			"lon": 151.43984867997426,
 			"lat": -33.45898912003826,
 			"description": "Leave the beach at North Avoca's surf club."
+		},
+		{
+			"title": "Take Five: North Avoca",
+			"badge": "map_3",
+			"lon": 151.4399891431909,
+			"lat": -33.45869036154423,
+			"radius": 0.0003,
+			"explanation": [
+				"On a hot day, the next climb might end it all."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",
@@ -696,6 +660,18 @@
 			"lon": 151.4425228800229,
 			"lat": -33.44925454998753,
 			"description": "Follow Kurawyba Ave all the way to Terrigal Beach."
+		},
+		{
+			"title": "Take Five: Terrigal",
+			"badge": "map_3",
+			"lon": 151.4443530972331,
+			"lat": -33.44606426360688,
+			"radius": 0.0003,
+			"explanation": [
+				"A boulevard so full of icecream and treats, but the hilltop lookout on the horizon beckons."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",
@@ -766,6 +742,18 @@
 			"lon": 151.4689876600024,
 			"lat": -33.408168489990324,
 			"description": "Follow North Scenic Road towards the radio tower at the top. The last section is narrow and steep. Be mindful of descending cars."
+		},
+		{
+			"title": "Love Lift Me Up...",
+			"badge": "music_1",
+			"lon": 151.4756577864043,
+			"lat": -33.40488481128369,
+			"radius": 0.0003,
+			"explanation": [
+				"The high point of Central Coast in several ways."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",
@@ -871,6 +859,18 @@
 			"lon": 151.4725932099976,
 			"lat": -33.365764569983874,
 			"description": "Follow the combined bike and footpath all the way  along lake Tuggerah"
+		},
+		{
+			"title": "All Jetty's Short and Long: Berkeley Vale",
+			"badge": "elevation_5",
+			"lon": 151.4385593687707,
+			"lat": -33.3407906027926,
+			"radius": 0.0003,
+			"explanation": [
+				"You might have to fight the pelicans for this one."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

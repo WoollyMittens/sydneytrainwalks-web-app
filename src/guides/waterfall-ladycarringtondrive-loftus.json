@@ -33,30 +33,6 @@
 			"lon": 150.99596526007738
 		},
 		{
-			"title": "Fill Her Up",
-			"badge": "station_petrol",
-			"lon": 151.050803958266,
-			"lat": -34.09854391937932,
-			"radius": 0.0003,
-			"explanation": [
-				"A spring to rest your horses, or just your legs."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "Ding Ding Ding!",
-			"badge": "tramway",
-			"lon": 151.0567214560022,
-			"lat": -34.0625896528283,
-			"radius": 0.0003,
-			"explanation": [
-				"You may be here on the lucky few days there is a historic tram ride to the Sydney Tramway Museum outside the park."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "kiosk",
 			"lat": -34.075375,
 			"lon": 151.0561138888889
@@ -182,6 +158,18 @@
 			"description": "Continue past the old springs on the side of the road along the way."
 		},
 		{
+			"title": "Fill Her Up",
+			"badge": "station_petrol",
+			"lon": 151.050803958266,
+			"lat": -34.09854391937932,
+			"radius": 0.0003,
+			"explanation": [
+				"A spring to rest your horses, or just your legs."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "pa056147.jpg",
 			"lon": 151.05458266000687,
@@ -265,6 +253,18 @@
 			"lon": 151.05638586000705,
 			"lat": -34.06192469000729,
 			"description": "Across the carpark along the road a trail leads up to the tram platform."
+		},
+		{
+			"title": "Ding Ding Ding!",
+			"badge": "tramway",
+			"lon": 151.0567214560022,
+			"lat": -34.0625896528283,
+			"radius": 0.0003,
+			"explanation": [
+				"You may be here on the lucky few days there is a historic tram ride to the Sydney Tramway Museum outside the park."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

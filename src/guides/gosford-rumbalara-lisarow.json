@@ -29,18 +29,6 @@
 			"lat": -33.423418
 		},
 		{
-			"title": "The Last Man Standing",
-			"badge": "registered_user",
-			"lon": 151.3618444,
-			"lat": -33.4228556,
-			"radius": 0.0003,
-			"explanation": [
-				"There used to be 4 explorers dotted around this park. Only this one was hidden well enough from vandals."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "kiosk",
 			"lat": -33.384894,
 			"lon": 151.367189
@@ -119,6 +107,18 @@
 			"lon": 151.36280833333333,
 			"lat": -33.42211666666667,
 			"description": "One of the remaining statues of explorer is left along the trail."
+		},
+		{
+			"title": "The Last Man Standing",
+			"badge": "registered_user",
+			"lon": 151.3618444,
+			"lat": -33.4228556,
+			"radius": 0.0003,
+			"explanation": [
+				"There used to be 4 explorers dotted around this park. Only this one was hidden well enough from vandals."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

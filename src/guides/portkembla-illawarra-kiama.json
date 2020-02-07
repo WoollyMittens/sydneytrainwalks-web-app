@@ -36,30 +36,6 @@
 			"description": "Plan your return trip from Port Kembla at <a href=\"https://transportnsw.info/trip#/?from=Port Kembla\">transportnsw.info</a>."
 		},
 		{
-			"title": "The Train Does Not Stop Here Anymore",
-			"badge": "tank_1",
-			"lon": 150.8400771350448,
-			"lat": -34.6066732670053,
-			"radius": 0.0003,
-			"explanation": [
-				"As tempting as it is to extend the Kiama Coastal Walk through the wetlands here, the next functioning train station is all the way back there somewhere."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "Too Big for the Photo",
-			"badge": "crop",
-			"lon": 150.8608821863694,
-			"lat": -34.63073175185122,
-			"radius": 0.0003,
-			"explanation": [
-				"It'll never fit in a single view, too wide for your vision to contain."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "kiosk",
 			"lat": -34.47545,
 			"lon": 150.913362
@@ -234,6 +210,18 @@
 			"description": "Follow Dunmore Road down to the now obsolete Dunmore Station and cross the train tracks there."
 		},
 		{
+			"title": "The Train Does Not Stop Here Anymore",
+			"badge": "tank_1",
+			"lon": 150.8400771350448,
+			"lat": -34.6066732670053,
+			"radius": 0.0003,
+			"explanation": [
+				"As tempting as it is to extend the Kiama Coastal Walk through the wetlands here, the next functioning train station is all the way back there somewhere."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "pc289602.jpg",
 			"lon": 150.838513,
@@ -260,6 +248,18 @@
 			"lon": 150.861201,
 			"lat": -34.631595,
 			"description": "Along the headland follow the signs for the Kiama Coastal walk."
+		},
+		{
+			"title": "Too Big for the Photo",
+			"badge": "crop",
+			"lon": 150.8608821863694,
+			"lat": -34.63073175185122,
+			"radius": 0.0003,
+			"explanation": [
+				"It'll never fit in a single view, too wide for your vision to contain."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

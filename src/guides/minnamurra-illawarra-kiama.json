@@ -29,18 +29,6 @@
 			"lat": -34.626153
 		},
 		{
-			"title": "Too Big for the Photo",
-			"badge": "crop",
-			"lon": 150.8608821863694,
-			"lat": -34.63073175185122,
-			"radius": 0.0003,
-			"explanation": [
-				"It'll never fit in a single view, too wide for your vision to contain."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "kiosk",
 			"lat": -34.627403,
 			"lon": 150.855834
@@ -95,6 +83,18 @@
 			"lon": 150.861201,
 			"lat": -34.631595,
 			"description": "Along the headland follow the signs for the Kiama Coastal walk."
+		},
+		{
+			"title": "Too Big for the Photo",
+			"badge": "crop",
+			"lon": 150.8608821863694,
+			"lat": -34.63073175185122,
+			"radius": 0.0003,
+			"explanation": [
+				"It'll never fit in a single view, too wide for your vision to contain."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

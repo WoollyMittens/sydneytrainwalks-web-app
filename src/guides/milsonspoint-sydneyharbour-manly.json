@@ -32,18 +32,6 @@
 			"lat": -33.846288
 		},
 		{
-			"title": "You Belong in the Zoo",
-			"badge": "monkey",
-			"lon": 151.2418762248886,
-			"lat": -33.84521960671415,
-			"radius": 0.0003,
-			"explanation": [
-				"Rarely there is a zoo that is as enjoyable from the outside."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "kiosk",
 			"lat": -33.846209,
 			"lon": 151.212776
@@ -328,7 +316,7 @@
 			"photo": "p1310361.jpg",
 			"lon": 151.23754599999998,
 			"lat": -33.839879,
-			"description": "At the far end of the reserve a footpathh follows the shore to the Zoo."
+			"description": "At the far end of the reserve a footpath follows the shore to the Zoo."
 		},
 		{
 			"type": "waypoint",
@@ -343,6 +331,18 @@
 			"lon": 151.24173499999998,
 			"lat": -33.84517,
 			"description": "Opposite the bottom entrance of the Zoo, follow the path down."
+		},
+		{
+			"title": "You Belong in the Zoo",
+			"badge": "monkey",
+			"lon": 151.2418762248886,
+			"lat": -33.84521960671415,
+			"radius": 0.0003,
+			"explanation": [
+				"Rarely there is a zoo that is as enjoyable from the outside."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

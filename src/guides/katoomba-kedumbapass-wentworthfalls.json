@@ -30,18 +30,6 @@
 			"lat": -33.71245956399999
 		},
 		{
-			"title": "None Shall Pass",
-			"badge": "bulldozer",
-			"lon": 150.378324,
-			"lat": -33.783254,
-			"radius": 0.0003,
-			"explanation": [
-				"If you've just walked up the pass, these bulldozer fragments will paint a vivid picture of the tragic accident that is memorialised."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "toilet",
 			"lat": -33.711032,
 			"lon": 150.373517
@@ -171,6 +159,18 @@
 			"lon": 150.37824722222223,
 			"lat": -33.781480555555554,
 			"description": "Halfway up the pass an arch overhang the road. Nearby are several unfenced lookouts across the valley."
+		},
+		{
+			"title": "None Shall Pass",
+			"badge": "bulldozer",
+			"lon": 150.378324,
+			"lat": -33.783254,
+			"radius": 0.0003,
+			"explanation": [
+				"If you've just walked up the pass, this monument built out of bulldozer fragments will paint a vivid picture of the tragic accident that is memorialised."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

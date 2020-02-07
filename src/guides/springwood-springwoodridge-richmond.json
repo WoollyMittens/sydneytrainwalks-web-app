@@ -38,18 +38,6 @@
 			"lon": 150.563733
 		},
 		{
-			"title": "Shhh, it's a Secret",
-			"badge": "map_2_inv",
-			"lon": 150.6157016978932,
-			"lat": -33.6233346960489,
-			"radius": 0.0003,
-			"explanation": [
-				"Leave a friendly note in the geocache logbook. That it can lie here undisturbed means you're in a special place."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "bus",
 			"description": "To cut some urban walking time off the start, take the bus from Springwood Station to the Winmalee Shops using <a href=\"https://transportnsw.info/trip#/?to=Winmalee\">transportnsw.info</a>.",
 			"lat": -33.672309999999996,
@@ -198,6 +186,18 @@
 			"lon": 150.61570799999998,
 			"lat": -33.623382,
 			"description": "Find the overgrown trig at the top."
+		},
+		{
+			"title": "Shhh, it's a Secret",
+			"badge": "map_2_inv",
+			"lon": 150.6157016978932,
+			"lat": -33.6233346960489,
+			"radius": 0.0003,
+			"explanation": [
+				"Leave a friendly note in the geocache logbook. That it can lie here undisturbed means you're in a special place."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

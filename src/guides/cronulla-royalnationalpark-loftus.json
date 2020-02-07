@@ -45,30 +45,6 @@
 			"description": "Transport to this location: <a href=\"https://transportnsw.info/trip#/?from=Cronulla&itd_name_destination=Bundeena\">transportnsw.info</a>"
 		},
 		{
-			"title": "Ah! Nice Falls",
-			"badge": "water",
-			"lon": 151.083762,
-			"lat": -34.093424,
-			"radius": 0.0003,
-			"explanation": [
-				"It's rarely more than a trickle, but it's here exclusively for ones as adventurous as you."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "Ding Ding Ding!",
-			"badge": "tramway",
-			"lon": 151.0567214560022,
-			"lat": -34.0625896528283,
-			"radius": 0.0003,
-			"explanation": [
-				"You may be here on the lucky few days there is a historic tram ride to the Sydney Tramway Museum outside the park."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "kiosk",
 			"lat": -34.075375,
 			"lon": 151.0561138888889
@@ -406,6 +382,18 @@
 			"description": "The trail ends right a the top of Anice Falls. Be careful near the edge."
 		},
 		{
+			"title": "Ah! Nice Falls",
+			"badge": "water",
+			"lon": 151.083762,
+			"lat": -34.093424,
+			"radius": 0.0003,
+			"explanation": [
+				"It's rarely more than a trickle, but it's here exclusively for ones as adventurous as you."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "p5240460.jpg",
 			"lon": 151.08371,
@@ -638,7 +626,19 @@
 			"photo": "p5240845.jpg",
 			"lon": 151.057063,
 			"lat": -34.063008999999994,
-			"description": "On Sundays the tram museum at Loftus runs an antique tram service."
+			"description": "On Sundays the tram museum at Loftus runs a historic tram service."
+		},
+		{
+			"title": "Ding Ding Ding!",
+			"badge": "tramway",
+			"lon": 151.0567214560022,
+			"lat": -34.0625896528283,
+			"radius": 0.0003,
+			"explanation": [
+				"You may be here on the lucky few days there is a historic tram ride to the Sydney Tramway Museum outside the park."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

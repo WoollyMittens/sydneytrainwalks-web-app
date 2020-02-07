@@ -31,18 +31,6 @@
 			"lat": -33.712921
 		},
 		{
-			"title": "The Easy Way Out",
-			"badge": "lift_2",
-			"lon": 150.301955742558,
-			"lat": -33.73094297677026,
-			"radius": 0.0003,
-			"explanation": [
-				"It is a valid excuse to want to experience the scenic ski lift, instead of climbing hundreds of meters out of the valley."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "warning",
 			"lat": -33.72815277777778,
 			"lon": 150.30450000000002,
@@ -151,6 +139,18 @@
 			"lon": 150.30479813000545,
 			"lat": -33.730007169950966,
 			"description": "Keep following the Federal Pass until the signs at Cooks Crossing offers two ways to get out of the valley."
+		},
+		{
+			"title": "The Easy Way Out",
+			"badge": "lift_2",
+			"lon": 150.301955742558,
+			"lat": -33.73094297677026,
+			"radius": 0.0003,
+			"explanation": [
+				"It is a valid excuse to want to experience the scenic ski lift, instead of climbing hundreds of meters out of the valley."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

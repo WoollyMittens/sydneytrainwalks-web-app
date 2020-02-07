@@ -31,18 +31,6 @@
 			"lat": -33.28063100000001
 		},
 		{
-			"title": "The Other Hole: The Frazer Blowhole.",
-			"badge": "sink_bathroom",
-			"lon": 151.628035752481,
-			"lat": -33.18588747665788,
-			"radius": 0.0003,
-			"explanation": [
-				"Less famous than Kiama's, but they can only wish they had these beaches."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "kiosk",
 			"lat": -33.278807,
 			"lon": 151.56599
@@ -278,6 +266,18 @@
 			"lon": 151.62800555555557,
 			"lat": -33.18638055555555,
 			"description": "Across the carpark you can find a small bay with a blowhole."
+		},
+		{
+			"title": "The Other Hole",
+			"badge": "sink_bathroom",
+			"lon": 151.628035752481,
+			"lat": -33.18588747665788,
+			"radius": 0.0003,
+			"explanation": [
+				"Less famous than Kiama's, but they can only wish they had these beaches."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

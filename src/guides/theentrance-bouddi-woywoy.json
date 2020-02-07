@@ -36,78 +36,6 @@
 			"description": "Get the train to Gosford and then a bus to The Entrance using <a href=\"https://transportnsw.info/trip#/?to=The Entrance\">transportnsw.info</a>."
 		},
 		{
-			"title": "Take Five: Macmaster",
-			"badge": "map_3",
-			"lon": 151.4250983993459,
-			"lat": -33.49977581191715,
-			"radius": 0.0003,
-			"explanation": [
-				"Secluded enough to wonder where everyone else is instead."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "Take Five: Copacabana",
-			"badge": "map_3",
-			"lon": 151.4322736016543,
-			"lat": -33.49130593248137,
-			"radius": 0.0003,
-			"explanation": [
-				"The climb up the headland will make you appreciate the shady beach below."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "Take Five: Avoca",
-			"badge": "map_3",
-			"lon": 151.4362250820089,
-			"lat": -33.47007483535211,
-			"radius": 0.0003,
-			"explanation": [
-				"Too tempting to hang around for a while."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "Take Five: North Avoca",
-			"badge": "map_3",
-			"lon": 151.4399891431909,
-			"lat": -33.45869036154423,
-			"radius": 0.0003,
-			"explanation": [
-				"On a hot day, the next climb might end it all."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "Take Five: Terrigal",
-			"badge": "map_3",
-			"lon": 151.4443530972331,
-			"lat": -33.44606426360688,
-			"radius": 0.0003,
-			"explanation": [
-				"A boulevard so full of icecream and treats, but the hilltop lookout on the horizon beckons."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "Love Lift Me Up...",
-			"badge": "music_1",
-			"lon": 151.4756577864043,
-			"lat": -33.40488481128369,
-			"radius": 0.0003,
-			"explanation": [
-				"The high point of Central Coast in several ways."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "kiosk",
 			"lat": -33.362016,
 			"lon": 151.49992
@@ -261,6 +189,18 @@
 			"description": "From the trailhead at Crackneck Lookout follow the signs to Wyrrabalong Lookout."
 		},
 		{
+			"title": "Love Lift Me Up...",
+			"badge": "music_1",
+			"lon": 151.4756577864043,
+			"lat": -33.40488481128369,
+			"radius": 0.0003,
+			"explanation": [
+				"The high point of Central Coast in several ways."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "p7139670.jpg",
 			"lon": 151.47564722222222,
@@ -289,6 +229,18 @@
 			"description": "Follow the beach to the Terrigal Surf Club at the far end."
 		},
 		{
+			"title": "Take Five: Terrigal",
+			"badge": "map_3",
+			"lon": 151.4443530972331,
+			"lat": -33.44606426360688,
+			"radius": 0.0003,
+			"explanation": [
+				"A boulevard so full of icecream and treats, but the hilltop lookout on the horizon beckons."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "p7139741.jpg",
 			"lon": 151.44168333333334,
@@ -303,11 +255,35 @@
 			"description": "Cross the intersection and follow Coast Road down to the Avoca Beach surf club."
 		},
 		{
+			"title": "Take Five: North Avoca",
+			"badge": "map_3",
+			"lon": 151.4399891431909,
+			"lat": -33.45869036154423,
+			"radius": 0.0003,
+			"explanation": [
+				"On a hot day, the next climb might end it all."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "p7139764_p7139771.jpg",
 			"lon": 151.43582777777777,
 			"lat": -33.464061111111114,
 			"description": "Follow Avoca Beach to the surf club at the other end."
+		},
+		{
+			"title": "Take Five: Avoca",
+			"badge": "map_3",
+			"lon": 151.4362250820089,
+			"lat": -33.47007483535211,
+			"radius": 0.0003,
+			"explanation": [
+				"Too tempting to hang around for a while."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",
@@ -345,11 +321,35 @@
 			"description": "Continue down Del Monte Place to the Copacabana surf club."
 		},
 		{
+			"title": "Take Five: Copacabana",
+			"badge": "map_3",
+			"lon": 151.4322736016543,
+			"lat": -33.49130593248137,
+			"radius": 0.0003,
+			"explanation": [
+				"The climb up the headland will make you appreciate the shady beach below."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "p7139885_p7139888.jpg",
 			"lon": 151.42617222222222,
 			"lat": -33.497147222222225,
 			"description": "Follow the beach to MacMasters surf club on the other end."
+		},
+		{
+			"title": "Take Five: Macmaster",
+			"badge": "map_3",
+			"lon": 151.4250983993459,
+			"lat": -33.49977581191715,
+			"radius": 0.0003,
+			"explanation": [
+				"Secluded enough to wonder where everyone else is instead."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

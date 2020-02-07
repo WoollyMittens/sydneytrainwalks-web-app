@@ -31,66 +31,6 @@
 			"lat": -32.9337152839
 		},
 		{
-			"title": "I'm a Choo Choo Train: Adamstown",
-			"badge": "railroad",
-			"lon": 151.7196822166376,
-			"lat": -32.9342364320964,
-			"radius": 0.0003,
-			"explanation": [
-				"All aboard the Belmont line, along which trains only run a regular service in your imagination."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "I'm a Choo Choo Train: Kahibah",
-			"badge": "railroad",
-			"lon": 151.7182798705948,
-			"lat": -32.96232362379441,
-			"radius": 0.0003,
-			"explanation": [
-				"First stop after Adamstown. Glenrock's a good reason to leave the train here."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "I'm a Choo Choo Train: Whitebridge",
-			"badge": "railroad",
-			"lon": 151.7109742419769,
-			"lat": -32.97788842791798,
-			"radius": 0.0003,
-			"explanation": [
-				"No longer a stop for trains, but now one for coffee and cakes up there."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "I'm a Choo Choo Train: Redhead",
-			"badge": "railroad",
-			"lon": 151.7095684711388,
-			"lat": -33.00581939444007,
-			"radius": 0.0003,
-			"explanation": [
-				"Alight here for Awabakal Nature Reserve and Redhead Beach."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "The Rear Entrance",
-			"badge": "enter",
-			"lon": 151.725187539504,
-			"lat": -33.01065409517184,
-			"radius": 0.0003,
-			"explanation": [
-				"The narrow tunnel of dense vegetation opens up to expansive coastal heath."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "kiosk",
 			"lat": -32.978277000000006,
 			"lon": 151.708188
@@ -128,6 +68,18 @@
 			"description": "Exit the station and follow Park Avenue."
 		},
 		{
+			"title": "I'm a Choo Choo Train: Adamstown",
+			"badge": "railroad",
+			"lon": 151.7196822166376,
+			"lat": -32.9342364320964,
+			"radius": 0.0003,
+			"explanation": [
+				"All aboard the Belmont line, along which trains only run a regular service in your imagination."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "pb130004.jpg",
 			"lon": 151.717919,
@@ -142,11 +94,35 @@
 			"description": "The old train line is now a foot/bike path, which this walk follow all the way to Redhead."
 		},
 		{
+			"title": "I'm a Choo Choo Train: Kahibah",
+			"badge": "railroad",
+			"lon": 151.7182798705948,
+			"lat": -32.96232362379441,
+			"radius": 0.0003,
+			"explanation": [
+				"First stop after Adamstown. Glenrock's a good reason to leave the train here."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "pb130012.jpg",
 			"lon": 151.71854,
 			"lat": -32.96175300008634,
 			"description": "The path crosses roads several times along the way."
+		},
+		{
+			"title": "I'm a Choo Choo Train: Whitebridge",
+			"badge": "railroad",
+			"lon": 151.7109742419769,
+			"lat": -32.97788842791798,
+			"radius": 0.0003,
+			"explanation": [
+				"No longer a stop for trains, but now one for coffee and cakes up there."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",
@@ -193,6 +169,18 @@
 			"lon": 151.70808699999998,
 			"lat": -33.00695,
 			"description": "After reaching the next station (Redhead) along the line, continue past the first sign to Redhead Beach."
+		},
+		{
+			"title": "I'm a Choo Choo Train: Redhead",
+			"badge": "railroad",
+			"lon": 151.7095684711388,
+			"lat": -33.00581939444007,
+			"radius": 0.0003,
+			"explanation": [
+				"Alight here for Awabakal Nature Reserve and Redhead Beach."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",
@@ -270,6 +258,18 @@
 			"lon": 151.724916,
 			"lat": -33.010845,
 			"description": "Halfway up Collier Street, at the top of the hill, a sign and a faint bushtrail allow entry into Awabakal."
+		},
+		{
+			"title": "The Rear Entrance",
+			"badge": "enter",
+			"lon": 151.725187539504,
+			"lat": -33.01065409517184,
+			"radius": 0.0003,
+			"explanation": [
+				"The narrow tunnel of dense vegetation opens up to expansive coastal heath."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

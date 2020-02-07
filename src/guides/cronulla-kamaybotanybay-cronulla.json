@@ -31,18 +31,6 @@
 			"lat": -34.055652618
 		},
 		{
-			"title": "The Guiding Light",
-			"badge": "lamp_on",
-			"lon": 151.2222179698302,
-			"lat": -34.03508340894466,
-			"radius": 0.0003,
-			"explanation": [
-				"The light is a warning not to sail a ship into the steep cliffs of the coast. Let it be a reminder not to fall off the same."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "info",
 			"lat": -34.00504166666666,
 			"lon": 151.22191111111113,
@@ -149,6 +137,18 @@
 			"lon": 151.22264722222224,
 			"lat": -34.036144444444446,
 			"description": "The next major landmark along the way is the Cape Baily Lighthouse."
+		},
+		{
+			"title": "The Guiding Light",
+			"badge": "lamp_on",
+			"lon": 151.2222179698302,
+			"lat": -34.03508340894466,
+			"radius": 0.0003,
+			"explanation": [
+				"The light is a warning not to sail a ship into the steep cliffs of the coast. Let it be a reminder not to fall off the same."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

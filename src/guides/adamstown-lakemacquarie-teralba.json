@@ -30,78 +30,6 @@
 			"lat": -32.93396
 		},
 		{
-			"title": "I'm a Choo Choo Train: Adamstown",
-			"badge": "railroad",
-			"lon": 151.7196822166376,
-			"lat": -32.9342364320964,
-			"radius": 0.0003,
-			"explanation": [
-				"All aboard the Belmont line, along which trains only run a regular service in your imagination."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "I'm a Choo Choo Train: Kahibah",
-			"badge": "railroad",
-			"lon": 151.7182798705948,
-			"lat": -32.96232362379441,
-			"radius": 0.0003,
-			"explanation": [
-				"First stop after Adamstown. Glenrock's a good reason to leave the train here."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "I'm a Choo Choo Train: Whitebridge",
-			"badge": "railroad",
-			"lon": 151.7109742419769,
-			"lat": -32.97788842791798,
-			"radius": 0.0003,
-			"explanation": [
-				"No longer a stop for trains, but now one for coffee and cakes up there."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "I'm a Choo Choo Train: Redhead",
-			"badge": "railroad",
-			"lon": 151.7095684711388,
-			"lat": -33.00581939444007,
-			"radius": 0.0003,
-			"explanation": [
-				"Alight here for Awabakal Nature Reserve and Redhead Beach."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "I'm a Choo Choo Train: Jewells",
-			"badge": "railroad",
-			"lon": 151.6860486138035,
-			"lat": -33.02089528519164,
-			"radius": 0.0003,
-			"explanation": [
-				"The wetlands make a lush green tunnel from here to Belmont."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "I'm a Choo Choo Train: Belmont",
-			"badge": "railroad",
-			"lon": 151.6613161295524,
-			"lat": -33.03900889600782,
-			"radius": 0.0003,
-			"explanation": [
-				"The end of the Fernleigh railway line, but also the start of an historic trek."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "kiosk",
 			"lat": -32.978277000000006,
 			"lon": 151.708188
@@ -179,6 +107,18 @@
 			"description": "Exit the station on the right and head follow Park Avenue."
 		},
 		{
+			"title": "I'm a Choo Choo Train: Adamstown",
+			"badge": "railroad",
+			"lon": 151.7196822166376,
+			"lat": -32.9342364320964,
+			"radius": 0.0003,
+			"explanation": [
+				"All aboard the Belmont line, along which trains only run a regular service in your imagination."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "003_p2180003.jpg",
 			"lon": 151.717746,
@@ -214,11 +154,35 @@
 			"description": "First stop along the way is Kahibah Station, of which only the sign remains."
 		},
 		{
+			"title": "I'm a Choo Choo Train: Kahibah",
+			"badge": "railroad",
+			"lon": 151.7182798705948,
+			"lat": -32.96232362379441,
+			"radius": 0.0003,
+			"explanation": [
+				"First stop after Adamstown. Glenrock's a good reason to leave the train here."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "019_p2180016.jpg",
 			"lon": 151.71106699999999,
 			"lat": -32.977796000000005,
 			"description": "Next along the line it Whitebridge Station."
+		},
+		{
+			"title": "I'm a Choo Choo Train: Whitebridge",
+			"badge": "railroad",
+			"lon": 151.7109742419769,
+			"lat": -32.97788842791798,
+			"radius": 0.0003,
+			"explanation": [
+				"No longer a stop for trains, but now one for coffee and cakes up there."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",
@@ -268,6 +232,18 @@
 			"description": "The next stop is Redhead Station. The platform is still there and there's some historical information."
 		},
 		{
+			"title": "I'm a Choo Choo Train: Redhead",
+			"badge": "railroad",
+			"lon": 151.7095684711388,
+			"lat": -33.00581939444007,
+			"radius": 0.0003,
+			"explanation": [
+				"Alight here for Awabakal Nature Reserve and Redhead Beach."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "037_p2180031.jpg",
 			"lon": 151.70629399999999,
@@ -296,6 +272,18 @@
 			"description": "Only the station sign remains of Jewells Station. A sign points to nearby shops."
 		},
 		{
+			"title": "I'm a Choo Choo Train: Jewells",
+			"badge": "railroad",
+			"lon": 151.6860486138035,
+			"lat": -33.02089528519164,
+			"radius": 0.0003,
+			"explanation": [
+				"The wetlands make a lush green tunnel from here to Belmont."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "052_p2180039.jpg",
 			"lon": 151.670334,
@@ -308,6 +296,18 @@
 			"lon": 151.66148,
 			"lat": -33.039107,
 			"description": "The Fernleigh Track finally reaches the end of the line at Belmont Station."
+		},
+		{
+			"title": "I'm a Choo Choo Train: Belmont",
+			"badge": "railroad",
+			"lon": 151.6613161295524,
+			"lat": -33.03900889600782,
+			"radius": 0.0003,
+			"explanation": [
+				"The end of the Fernleigh railway line, but also the start of an historic trek."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

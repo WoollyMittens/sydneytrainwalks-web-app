@@ -30,30 +30,6 @@
 			"lon": 150.99596526007738
 		},
 		{
-			"title": "Tadaa!",
-			"badge": "wizard_1",
-			"lon": 151.0766564,
-			"lat": -34.1665323,
-			"radius": 0.0003,
-			"explanation": [
-				"Even after many kilometres of coast, this place still manages to astonish."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
-			"title": "It Looked Like a Shortcut",
-			"badge": "play_ping_pong",
-			"lon": 151.0033851235307,
-			"lat": -34.1770588504976,
-			"radius": 0.0003,
-			"explanation": [
-				"It's the road less travelled. Maybe for good reason."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "kiosk",
 			"lat": -34.17031111111111,
 			"lon": 151.06652222222223
@@ -209,7 +185,7 @@
 			"photo": "p2081805.jpg",
 			"lon": 151.08225199999998,
 			"lat": -34.155629,
-			"description": "At the intersection follow the Curre Moors Track to the right."
+			"description": "At the intersection follow the Curra Moors Track to the right."
 		},
 		{
 			"type": "waypoint",
@@ -224,6 +200,18 @@
 			"lon": 151.080514,
 			"lat": -34.165518,
 			"description": "Eventually the Curra Moors Track joins the Coast Track. Follow it to the right."
+		},
+		{
+			"title": "Tadaa!",
+			"badge": "wizard_1",
+			"lon": 151.0766564,
+			"lat": -34.1665323,
+			"radius": 0.0003,
+			"explanation": [
+				"Even after many kilometres of coast, this place still manages to astonish."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",
@@ -336,6 +324,18 @@
 			"lon": 150.997864,
 			"lat": -34.17751299992353,
 			"description": "The trail passes a landfill and finally ends at Halls Road."
+		},
+		{
+			"title": "It Looked Like a Shortcut",
+			"badge": "play_ping_pong",
+			"lon": 151.0033851235307,
+			"lat": -34.1770588504976,
+			"radius": 0.0003,
+			"explanation": [
+				"It's the road less travelled. Maybe for good reason."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

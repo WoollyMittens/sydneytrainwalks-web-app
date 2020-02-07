@@ -30,18 +30,6 @@
 			"lat": -33.6331256758
 		},
 		{
-			"title": "Your Last Selfie",
-			"badge": "wet_floor",
-			"lon": 150.313957116202,
-			"lat": -33.58363653405524,
-			"radius": 0.0003,
-			"explanation": [
-				"It's a very fortunate thing this place is too hard to get to with a touring bus full of tourists."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "info",
 			"lat": -33.62985277777778,
 			"lon": 150.30654444444446
@@ -111,6 +99,18 @@
 			"lon": 150.31304722222222,
 			"lat": -33.58313888888889,
 			"description": "Hanging Rock can be climbed, but requires a jump across a precarious gap."
+		},
+		{
+			"title": "Your Last Selfie",
+			"badge": "wet_floor",
+			"lon": 150.313074,
+			"lat": -33.583145,
+			"radius": 0.0003,
+			"explanation": [
+				"It's a very fortunate thing this place is too hard to get to with a touring bus full of tourists."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

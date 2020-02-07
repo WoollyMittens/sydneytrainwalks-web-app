@@ -28,18 +28,6 @@
 			"lon": 150.2564418
 		},
 		{
-			"title": "He Wrote Rivulet",
-			"badge": "pen",
-			"lon": 150.2005471825524,
-			"lat": -33.52769530536342,
-			"radius": 0.0003,
-			"explanation": [
-				"For the surveyor it must have been frustrating to see a misunderstading paint the landscape forever."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "toilet",
 			"lat": -33.535802,
 			"lon": 150.233274
@@ -193,6 +181,18 @@
 			"lon": 150.21236824998837,
 			"lat": -33.53309593998658,
 			"description": "Follow Hartley Vale Road across the valley towards the hills on the other side."
+		},
+		{
+			"title": "He Wrote Rivulet",
+			"badge": "pen",
+			"lon": 150.2005471825524,
+			"lat": -33.52769530536342,
+			"radius": 0.0003,
+			"explanation": [
+				"For the surveyor it must have been frustrating to see a misunderstading paint the landscape forever."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

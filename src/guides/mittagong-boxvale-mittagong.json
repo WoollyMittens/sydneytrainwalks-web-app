@@ -31,18 +31,6 @@
 			"lat": -34.4526190683
 		},
 		{
-			"title": "Never Again",
-			"badge": "escalator",
-			"lon": 150.4307910362136,
-			"lat": -34.41540836695404,
-			"radius": 0.0003,
-			"explanation": [
-				"At least they were helpful enough to throw a coil of steel wire down. Heaven forbid it rusts."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "toilet",
 			"lat": -34.447122,
 			"lon": 150.44647
@@ -200,6 +188,18 @@
 			"lon": 150.43094599999998,
 			"lat": -34.415653,
 			"description": "At the top of the incline, follow the sign to the lookout."
+		},
+		{
+			"title": "Never Again",
+			"badge": "escalator",
+			"lon": 150.4307910362136,
+			"lat": -34.41540836695404,
+			"radius": 0.0003,
+			"explanation": [
+				"At least they were helpful enough to throw a coil of steel wire down. Heaven forbid it rusts."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

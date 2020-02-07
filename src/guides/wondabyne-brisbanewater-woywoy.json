@@ -33,18 +33,6 @@
 			"lat": -33.492191315
 		},
 		{
-			"title": "This is the End",
-			"badge": "cancel_2",
-			"lon": 151.2750087,
-			"lat": -33.4940091,
-			"radius": 0.0003,
-			"explanation": [
-				"The end is just the start of a new journey."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "kiosk",
 			"lat": -33.487338,
 			"lon": 151.323016
@@ -192,6 +180,18 @@
 			"lat": -33.49400987006497,
 			"description": "<i>+ 0.5h / 0.5km</i> Optionally climb the summit of Mount Wondabyne.",
 			"optional": true
+		},
+		{
+			"title": "This is the End",
+			"badge": "cancel_2",
+			"lon": 151.2750087,
+			"lat": -33.4940091,
+			"radius": 0.0003,
+			"explanation": [
+				"The end is just the start of a new journey."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

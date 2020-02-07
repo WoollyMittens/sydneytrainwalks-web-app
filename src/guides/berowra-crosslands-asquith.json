@@ -31,18 +31,6 @@
 			"lat": -33.6234793626
 		},
 		{
-			"title": "It Belongs in a Museum",
-			"badge": "bridge_1",
-			"lon": 151.0852692848733,
-			"lat": -33.67955093920438,
-			"radius": 0.0003,
-			"explanation": [
-				"A historic military bridge, out here as a surprise outdoor museum piece."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "kiosk",
 			"lat": -33.623568,
 			"lon": 151.151757
@@ -302,6 +290,18 @@
 			"lon": 151.085105,
 			"lat": -33.679168999999995,
 			"description": "Cross the historic Steele Military Bridge to the left."
+		},
+		{
+			"title": "It Belongs in a Museum",
+			"badge": "bridge_1",
+			"lon": 151.0852692848733,
+			"lat": -33.67955093920438,
+			"radius": 0.0003,
+			"explanation": [
+				"A historic military bridge, out here as a surprise outdoor museum piece."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",
