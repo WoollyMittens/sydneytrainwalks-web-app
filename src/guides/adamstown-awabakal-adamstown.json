@@ -69,10 +69,11 @@
 		},
 		{
 			"title": "I'm a Choo Choo Train: Adamstown",
+			"reference": "adamstown-lakemacquarie-teralba/001_p2180001.jpg",
 			"badge": "railroad",
 			"lon": 151.7196822166376,
 			"lat": -32.9342364320964,
-			"radius": 0.0003,
+			"radius": 0.0004,
 			"explanation": [
 				"All aboard the Belmont line, along which trains only run a regular service in your imagination."
 			],
@@ -94,11 +95,11 @@
 			"description": "The old train line is now a foot/bike path, which this walk follow all the way to Redhead."
 		},
 		{
-			"title": "I'm a Choo Choo Train: Kahibah",
+			"title": "I'm a Choo Choo Train: Kahibah", "adamstown-lakemacquarie-teralba/014_p2180012.jpg",
 			"badge": "railroad",
 			"lon": 151.7182798705948,
 			"lat": -32.96232362379441,
-			"radius": 0.0003,
+			"radius": 0.0004,
 			"explanation": [
 				"First stop after Adamstown. Glenrock's a good reason to leave the train here."
 			],
@@ -117,7 +118,7 @@
 			"badge": "railroad",
 			"lon": 151.7109742419769,
 			"lat": -32.97788842791798,
-			"radius": 0.0003,
+			"radius": 0.0004,
 			"explanation": [
 				"No longer a stop for trains, but now one for coffee and cakes up there."
 			],
@@ -175,7 +176,7 @@
 			"badge": "railroad",
 			"lon": 151.7095684711388,
 			"lat": -33.00581939444007,
-			"radius": 0.0003,
+			"radius": 0.0004,
 			"explanation": [
 				"Alight here for Awabakal Nature Reserve and Redhead Beach."
 			],
@@ -264,7 +265,7 @@
 			"badge": "enter",
 			"lon": 151.725187539504,
 			"lat": -33.01065409517184,
-			"radius": 0.0003,
+			"radius": 0.0004,
 			"explanation": [
 				"The narrow tunnel of dense vegetation opens up to expansive coastal heath."
 			],

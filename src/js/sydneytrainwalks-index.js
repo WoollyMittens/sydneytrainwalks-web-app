@@ -154,6 +154,7 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 				});
 				break;
 			case 'looped':
+				unsorted = this.sortGuide(guide, 'length');
 				sorted = unsorted.map(function(a) {
 					var markers = guide[a].markers;
 					var first = markers[0];
@@ -162,11 +163,13 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 				});
 				break;
 			case 'rain':
+				unsorted = this.sortGuide(guide, 'length');
 				sorted = unsorted.map(function(a) {
 					return (guide[a].rain) ? a : null;
 				});
 				break;
 			case 'fireban':
+				unsorted = this.sortGuide(guide, 'length');
 				sorted = unsorted.map(function(a) {
 					return (guide[a].fireban) ? a : null;
 				});
