@@ -29,6 +29,7 @@
 			"description": "Get the train to Hornsby using <a href=\"https://transportnsw.info/trip#/?to=Hornsby Station\">transportnsw.info</a>."
 		},
 		{
+			"location": "Parramatta",
 			"lat": -33.817044,
 			"lon": 151.005077,
 			"type": "train",
@@ -309,6 +310,18 @@
 			"lon": 151.00579166666665,
 			"lat": -33.774794444444446,
 			"description": "Use the tunnel underneath  the dam."
+		},
+		{
+			"title": "Dammed by Faint Praise",
+			"badge": "bridge_2",
+			"lon": 151.0055353,
+			"lat": -33.77542,
+			"radius": 0.0004,
+			"explanation": [
+				"The sudden towering walls make for an unexpected surprise walking along the gully."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

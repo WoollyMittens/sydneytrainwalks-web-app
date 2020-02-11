@@ -3,10 +3,7 @@
 	<?php
 
 		// constants
-		//$title = 'Sydney Train Walks';
-		//$domain = 'www.sydneytrainwalks.com';
-		$title = 'Sydney Hiking Trips';
-		$domain = 'www.sydneyhikingtrips.com';
+		include 'constants.php';
 
 		// variable
 		$id = (@$_REQUEST['id']) ? @$_REQUEST['id'] : 'cowan-taffyslookout-brooklyn';
@@ -61,15 +58,12 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="./inc/ico/favicon-16x16.png" />
 		<link rel="manifest" href="./manifest.json" />
 		<link rel="stylesheet" href="./inc/css/styles.css?t=20200122"/>
-		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-52552-7']);
-			_gaq.push(['_trackPageview']);
-			(function() {
-				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
+		<script async src="https://www.googletagmanager.com/gtag/js?id=<?php print $analytics ?>"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', '<?php print $analytics ?>');
 		</script>
 	</head>
 	<body class="screen-<?php print $screen ?>">
@@ -263,7 +257,9 @@
 							'routeData': null,
 							'exifData': ExifData,
 							// attribution
-							'creditsTemplate': 'Maps &copy; <a href="http://www.4umaps.com/mountain-bike-hiking-bicycle-outdoor-topographic-map.htm" target="_blank">4UMaps</a>, Data &copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> and contributors, CC BY-SA'
+							'creditsTemplate': 'Maps &copy; <a href="http://www.4umaps.com/mountain-bike-hiking-bicycle-outdoor-topographic-map.htm" target="_blank">4UMaps</a>, Data &copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> and contributors, CC BY-SA',
+							// events
+							'checkHotspot': function() { return false; }
 						});
 
 					</script>

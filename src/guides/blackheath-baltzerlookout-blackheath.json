@@ -101,6 +101,18 @@
 			"description": "Hanging Rock can be climbed, but requires a jump across a precarious gap."
 		},
 		{
+			"title": "Your Last Selfie",
+			"badge": "wet_floor",
+			"lon": 150.313074,
+			"lat": -33.583145,
+			"radius": 0.0004,
+			"explanation": [
+				"It's a very fortunate thing this place is too hard to get to with a touring bus full of tourists."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "p2280817.jpg",
 			"lon": 150.29195277777777,

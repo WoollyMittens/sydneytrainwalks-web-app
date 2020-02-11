@@ -92,6 +92,7 @@
 		}
 	}
 }
+
 @mixin smallSigns {
 	.sign {
 		font-size: 14px;
@@ -101,14 +102,7 @@
 header.subtitle {
 	@include smallSigns;
 }
-@media (max-width: 640px), (max-height: 480px) {
+
+@media (max-width: 959px) {
 	@include smallSigns;
-}
-@media (max-width: 769px) {
-	.sign {
-		&.to,
-		&.via {
-			display: none;
-		}
-	}
 }

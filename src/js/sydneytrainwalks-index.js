@@ -146,12 +146,30 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 					return a - b;
 				});
 				break;
+			case 'revised':
+				sorted = unsorted.sort(function(a, b) {
+					a = new Date(guide[a].updated);
+					b = new Date(guide[b].updated);
+					return b - a;
+				});
+				break;
+			case 'looped':
+				unsorted = this.sortGuide(guide, 'length');
+				sorted = unsorted.map(function(a) {
+					var markers = guide[a].markers;
+					var first = markers[0];
+					var last = markers[markers.length - 1];
+					return (first.location === last.location) ? a : null;
+				});
+				break;
 			case 'rain':
+				unsorted = this.sortGuide(guide, 'length');
 				sorted = unsorted.map(function(a) {
 					return (guide[a].rain) ? a : null;
 				});
 				break;
 			case 'fireban':
+				unsorted = this.sortGuide(guide, 'length');
 				sorted = unsorted.map(function(a) {
 					return (guide[a].fireban) ? a : null;
 				});

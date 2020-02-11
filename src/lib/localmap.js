@@ -58,7 +58,11 @@ var Localmap = function(config) {
 			'lat': null,
 			'zoom': null,
       'referrer': null
-    }
+    },
+    'hotspots': [],
+    'checkHotspot': function() { return true; },
+    'enterHotspot': function() { return true; },
+    'leaveHotspot': function() { return true; }
   };
 
   for (var key in config)
@@ -770,6 +774,7 @@ Localmap.prototype.Indicator = function (parent, onMarkerClicked, onMapFocus) {
     if (!input.getAttribute) input.getAttribute = function(attr) { return input[attr]; };
     if (!input.setAttribute) input.setAttribute = function(attr, value) { input[attr] = value; };
     var source = input.getAttribute('data-url') || input.getAttribute('src') || input.getAttribute('href') || input.getAttribute('photo');
+    var type = input.getAttribute('data-type');
     var description = input.getAttribute('data-title') || input.getAttribute('title') || input.getAttribute('description') || input.innerHTML;
     var lon = input.getAttribute('data-lon') || input.getAttribute('lon');
     var lat = input.getAttribute('data-lat') || input.getAttribute('lat');
@@ -780,6 +785,7 @@ Localmap.prototype.Indicator = function (parent, onMarkerClicked, onMapFocus) {
     // populate the indicator's model
     this.config.indicator = {
       'photo': filename,
+      'type': type,
       'description': description,
       'lon': lon || cached.lon,
       'lat': lat || cached.lat,
@@ -959,6 +965,7 @@ Localmap.prototype.Location = function (parent) {
 	this.element = new Image();
 	this.zoom = null;
 	this.active = false;
+  this.hotspot = null;
 	this.options = {
 		enableHighAccuracy: true
 	};
@@ -1021,6 +1028,28 @@ Localmap.prototype.Location = function (parent) {
 		}
 	};
 
+  this.checkHotSpot = function(lon, lat) {
+    var config = this.config;
+		var key = this.config.key;
+    // for every marker
+    config.hotspots.map(function(marker) {
+      // if the marker just entered the hotspot
+      if ((lon > marker.minLon && lon < marker.maxLon && lat > marker.minLat && lat < marker.maxLat) && this.hotspot !== marker.title) {
+        // remember its name
+        this.hotspot = marker.title;
+        // trigger the corresponding event
+        if (config.checkHotspot(marker)) config.enterHotspot(marker);
+      }
+      // else if the marker just exited the hotspot
+      else if ((lon < marker.minLon || lon > marker.maxLon || lat < marker.minLat || lat > marker.maxLat) && this.hotspot === marker.title) {
+        // forget its name
+        this.hotspot = null;
+        // trigger the corresponding event
+        if (config.checkHotspot(marker)) config.leaveHotspot(marker);
+      }
+    });
+  };
+
 	// EVENTS
 
 	this.onReposition = function(position) {
@@ -1034,6 +1063,8 @@ Localmap.prototype.Location = function (parent) {
 			this.element.style.display = 'block';
 			this.element.style.left = ((lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
 			this.element.style.top = ((lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';
+      // check if the location is within a hotspot
+      this.checkHotSpot(lon, lat);
 		// otherwise
 		} else {
 			// hide the marker
@@ -1129,31 +1160,51 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
 	};
 
 	this.addMarker = function(markerData) {
-		// add either a landmark or a waypoint to the map
-		markerData.element = (markerData.photo) ? this.addLandmark(markerData) : this.addWaypoint(markerData);
-		markerData.element.addEventListener('click', onClicked.bind(this, markerData));
-		this.parent.element.appendChild(markerData.element);
-		this.elements.push(markerData.element);
-	}
+		// add a landmark, waypoint, or a hotspot to the map
+    switch(markerData.type) {
+      case 'waypoint': markerData.element = this.addWaypoint(markerData); break;
+      case 'hotspot': markerData.element = this.addHotspot(markerData); break;
+      default: markerData.element = this.addLandmark(markerData);
+    }
+    // add valid markers to the map
+    if (markerData.element) {
+		  this.parent.element.appendChild(markerData.element);
+		  this.elements.push(markerData.element);
+    }
+	};
 
-	this.addLandmark = function(markerData) {
+	this.addWaypoint = function(markerData) {
 		var min = this.config.minimum;
 		var max = this.config.maximum;
 		var element = document.createElement('span');
 		element.setAttribute('class', 'localmap-waypoint');
+		element.addEventListener('click', onClicked.bind(this, markerData));
 		element.style.left = ((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
 		element.style.top = ((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';
 		element.style.cursor = 'pointer';
 		return element;
 	};
 
-	this.addWaypoint = function(markerData) {
+  this.addHotspot = function(markerData) {
+    var config = this.config;
+    // pre-calculate the hotspot radius
+    markerData.maxLon = markerData.lon + markerData.radius;
+    markerData.minLon = markerData.lon - markerData.radius;
+    markerData.maxLat = markerData.lat + markerData.radius / 1.5;
+    markerData.minLat = markerData.lat - markerData.radius / 1.5;
+    this.config.hotspots.push(markerData);
+    // otherwise handle as a normal landmark
+    return (config.checkHotspot(markerData)) ? this.addLandmark(markerData) : null;
+  };
+
+	this.addLandmark = function(markerData) {
 		var min = this.config.minimum;
 		var max = this.config.maximum;
 		var element = new Image();
 		element.setAttribute('src', this.config.markersUrl.replace('{type}', markerData.type));
 		element.setAttribute('title', markerData.description || '');
 		element.setAttribute('class', 'localmap-marker');
+		element.addEventListener('click', onClicked.bind(this, markerData));
 		element.style.left = ((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
 		element.style.top = ((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';
 		element.style.cursor = (markerData.description || markerData.callback) ? 'pointer' : null;
@@ -1225,7 +1276,7 @@ Localmap.prototype.Modal = function (parent) {
       this.photo.className = 'localmap-modal-icon';
 		}
 		// display the content if available
-		if (markerData.description) {
+    if (markerData.description) {
 			this.description.innerHTML = '<p>' + markerData.description + '</p>';
 		} else {
 			return false;

@@ -170,6 +170,18 @@
 			"description": "The path through the bushland and at a bike trail near a major road."
 		},
 		{
+			"title": "I'm a Choo Choo Train: Kahibah", "reference": "adamstown-lakemacquarie-teralba/014_p2180012.jpg",
+			"badge": "railroad",
+			"lon": 151.7182798705948,
+			"lat": -32.96232362379441,
+			"radius": 0.0004,
+			"explanation": [
+				"First stop after Adamstown. Glenrock's a good reason to leave the train here."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "pc309300.jpg",
 			"lon": 151.71860835000416,

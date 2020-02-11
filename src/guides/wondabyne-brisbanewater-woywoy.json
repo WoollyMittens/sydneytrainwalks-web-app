@@ -182,6 +182,18 @@
 			"optional": true
 		},
 		{
+			"title": "This is the End",
+			"badge": "cancel_2",
+			"lon": 151.2750087,
+			"lat": -33.4940091,
+			"radius": 0.0004,
+			"explanation": [
+				"The end is just the start of a new journey."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "p7271590.jpg",
 			"lon": 151.27647595990487,

@@ -28,7 +28,7 @@
 	body.screen-map .directions { transform: translate(0, 0); }
 
 }
-@media (orientation: portrait) {
+@media (max-width:959px) {
 
 	.directions {
 		width : 100%;

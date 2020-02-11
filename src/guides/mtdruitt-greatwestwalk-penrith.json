@@ -83,6 +83,18 @@
 			"lat": -33.763167
 		},
 		{
+			"title": "Go West: Survived Mount Druitt",
+			"badge": "compas_1",
+			"lon": 150.8015974320838,
+			"lat": -33.76326655370499,
+			"radius": 0.0004,
+			"explanation": [
+				"You climb through a fence to continue the trail, perfectly in keeping with the reputation."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "2230_img_20191019_143511.jpg",
 			"description": "From the powerlines follow the paved path along the sports fields of Whalan Reserve.",
@@ -137,6 +149,18 @@
 			"description": "Enter Wianamatte Regional Park at the corner of Mainwarring Street.",
 			"lon": 150.777828,
 			"lat": -33.725622
+		},
+		{
+			"title": "Go West: Emus and Bombs",
+			"badge": "compas_1",
+			"lon": 150.7722553655753,
+			"lat": -33.72721010312973,
+			"radius": 0.0004,
+			"explanation": [
+				"There's emus here and there used to be bombs. It's probably best to avoid either."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",
@@ -228,6 +252,18 @@
 			"description": "Turn right down Cassola Place to the start of the Great River Walk",
 			"lon": 150.687061,
 			"lat": -33.735833
+		},
+		{
+			"title": "Go West: Weir Almost There",
+			"badge": "compas_1",
+			"lon": 150.6852837769118,
+			"lat": -33.7415830753694,
+			"radius": 0.0004,
+			"explanation": [
+				"This stretch along the river is to celebrate putting most of Sydney behind you in a day."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

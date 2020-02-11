@@ -165,6 +165,18 @@
 			"description": "From the lookout, turn right and follow the clearing down."
 		},
 		{
+			"title": "You Turn Me Right Round",
+			"badge": "rotate_cw_1",
+			"lon": 151.049714792793,
+			"lat": -34.07782602406467,
+			"radius": 0.0004,
+			"explanation": [
+				"Clockwise or counter, both ways lead to icecream below."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "dsc_9821.jpg",
 			"lon": 151.05034380000293,
@@ -377,6 +389,18 @@
 			"lon": 151.05709304999772,
 			"lat": -34.06312310994049,
 			"description": "Cross the entrance to the carpark and find the tram platform. Wednesdays and Sundays there is a tram service to the museum at Loftus."
+		},
+		{
+			"title": "Ding Ding Ding!",
+			"badge": "tramway",
+			"lon": 151.0567214560022,
+			"lat": -34.0625896528283,
+			"radius": 0.0004,
+			"explanation": [
+				"You may be here on the lucky few days there is a historic tram ride to the Sydney Tramway Museum outside the park."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

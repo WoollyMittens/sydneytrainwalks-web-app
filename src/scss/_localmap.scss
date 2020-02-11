@@ -245,7 +245,7 @@
   			background-color: #eee;
   		}
 
-  		&-icon {
+  		&-icon{
 				min-height: 25%;
   			background-size: auto 75%;
   		}
@@ -276,7 +276,7 @@
 	}
 
 }
-@media (orientation: portrait) {
+@media (max-width:959px) {
 
 	.localmap {
 		width : 100%;

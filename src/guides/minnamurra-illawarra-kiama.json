@@ -85,6 +85,18 @@
 			"description": "Along the headland follow the signs for the Kiama Coastal walk."
 		},
 		{
+			"title": "Too Big for the Photo",
+			"badge": "crop",
+			"lon": 150.8608821863694,
+			"lat": -34.63073175185122,
+			"radius": 0.0004,
+			"explanation": [
+				"It'll never fit in a single view, too wide for your vision to contain."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "pc289674.jpg",
 			"lon": 150.861128,

@@ -255,7 +255,7 @@
 		visibility: visible;
 	}
 }
-@media (orientation: portrait) {
+@media (max-width:959px) {
 	.photocylinder-popup {
 		.photocylinder-locator {
 			display: block;

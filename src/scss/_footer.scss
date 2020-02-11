@@ -76,13 +76,19 @@
 	#footer-to-about:before {
 		background-image: url("../img/profile_1.svg");
 	}
+
+	#footer-to-trophies:before {
+		background-image: url("../img/hotspot.svg");
+	}
 	/* what icons to show on the menu screen */
 	body.screen-about,
 	body.screen-menu,
-	body.screen-overview {
+	body.screen-overview,
+	body.screen-trophies {
 		#footer-to-about,
 		#footer-to-menu,
-		#footer-to-overview {
+		#footer-to-overview,
+		#footer-to-trophies {
 			display: inline-block;
 		}
 
@@ -96,7 +102,8 @@
 	body.screen-guide,
 	body.screen-map,
 	body.screen-photos {
-		#footer-to-about {
+		#footer-to-about,
+		#footer-to-trophies, {
 			display: none;
 		}
 	}
@@ -106,7 +113,8 @@
 	body.screen-map #footer-to-map,
 	body.screen-menu #footer-to-menu,
 	body.screen-overview #footer-to-overview,
-	body.screen-photos #footer-to-photos {
+	body.screen-photos #footer-to-photos,
+	body.screen-trophies #footer-to-trophies {
 		opacity: 1;
 		filter: grayscale(0);
 	}
@@ -120,7 +128,7 @@
 		display: none;
 	}
 }
-@media (orientation: portrait) {
+@media (max-width:959px) {
 	/* show the map icon on narrow screens */
 	#footer-to-map {
 		display: inline-block;
@@ -131,7 +139,7 @@
 		filter: grayscale(1);
 	}
 }
-@media (orientation: landscape) {
+@media (min-width:960px) {
 	#footer-to-overview {
 		display: none !important;
 	}

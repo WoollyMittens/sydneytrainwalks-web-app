@@ -3,10 +3,7 @@
 	<?php
 
 		// constants
-		//$title = 'Sydney Train Walks';
-		//$domain = 'www.sydneytrainwalks.com';
-		$title = 'Sydney Hiking Trips';
-		$domain = 'www.sydneyhikingtrips.com';
+		include 'constants.php';
 
 		// load and process the json file
 		$jsonText = file_get_contents('./inc/js/guide-data.js');
@@ -61,13 +58,12 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="./inc/ico/favicon-16x16.png" />
 		<link rel="manifest" href="./manifest.json" />
 		<link rel="stylesheet" href="./inc/css/styles.css?t=20200122"/>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=<?php print $analytics ?>"></script>
 		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		  ga('create', 'UA-52552-7', 'sydneytrainwalks.com');
-		  ga('send', 'pageview');
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', '<?php print $analytics ?>');
 		</script>
 	</head>
 	<body class="screen-menu">

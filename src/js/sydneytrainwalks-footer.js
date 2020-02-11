@@ -55,7 +55,7 @@ SydneyTrainWalks.prototype.Footer = function(parent) {
 			// cancel any clicks
 			evt.preventDefault();
 			// if this is a menu page
-			if (id.match(/-menu|-overview|-about/)) {
+			if (id.match(/-menu|-overview|-about|-trophies/)) {
 				// reset the local storage when returning to the menu
 				window.localStorage.removeItem('id');
 				window.localStorage.removeItem('mode');

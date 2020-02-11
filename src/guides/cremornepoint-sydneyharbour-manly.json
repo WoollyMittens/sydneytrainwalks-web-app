@@ -224,6 +224,18 @@
 			"description": "Opposite the bottom entrance of the Zoo, follow the path down."
 		},
 		{
+			"title": "You Belong in the Zoo",
+			"badge": "monkey",
+			"lon": 151.2418762248886,
+			"lat": -33.84521960671415,
+			"radius": 0.0004,
+			"explanation": [
+				"Rarely there is a zoo that is as enjoyable from the outside."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "p1310454.jpg",
 			"lon": 151.242426,

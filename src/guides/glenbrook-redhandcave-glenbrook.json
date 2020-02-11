@@ -213,6 +213,18 @@
 			"description": "Follow the road across the campground to the left to find the information signs."
 		},
 		{
+			"title": "I was Promised Kangaroos",
+			"badge": "hovel_1",
+			"lon": 150.6169320721852,
+			"lat": -33.79894155167245,
+			"radius": 0.0004,
+			"explanation": [
+				"Neither campers nor eastern greys can resist these grassy fields."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "p7250186.jpg",
 			"lon": 150.61650299992405,
@@ -302,6 +314,18 @@
 			"lon": 150.627077,
 			"lat": -33.785602,
 			"description": "Return to the road from the lookout and follow it to the left where it will eventually end at Mount Portal lookout."
+		},
+		{
+			"title": "So where is it?",
+			"badge": "search",
+			"lon": 150.6276634120437,
+			"lat": -33.78381702230462,
+			"radius": 0.0004,
+			"explanation": [
+				"If you stand around long enough, there will probably be a train."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

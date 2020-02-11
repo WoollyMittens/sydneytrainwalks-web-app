@@ -202,6 +202,18 @@
 			"description": "Climb the dune at the end of the trail and continue towards the Fingal Spit."
 		},
 		{
+			"title": "Tempting, but don't Risk It",
+			"badge": "skull_and_bones",
+			"lon": 152.1786321851128,
+			"lat": -32.73720313825261,
+			"radius": 0.0004,
+			"explanation": [
+				"The impressive view from exactly this dune, make the Fingal Spit look irresistible."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "dsc_1773.jpg",
 			"lon": 152.1786439600363,

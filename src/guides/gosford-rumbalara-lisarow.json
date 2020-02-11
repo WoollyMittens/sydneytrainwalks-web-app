@@ -109,6 +109,18 @@
 			"description": "One of the remaining statues of explorer is left along the trail."
 		},
 		{
+			"title": "The Last Man Standing",
+			"badge": "registered_user",
+			"lon": 151.3618444,
+			"lat": -33.4228556,
+			"radius": 0.0004,
+			"explanation": [
+				"There used to be 4 explorers dotted around this park. Only this one was hidden well enough from vandals."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "p9154713.jpg",
 			"lon": 151.39010555555555,

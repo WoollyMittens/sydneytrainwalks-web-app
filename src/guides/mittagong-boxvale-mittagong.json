@@ -190,6 +190,18 @@
 			"description": "At the top of the incline, follow the sign to the lookout."
 		},
 		{
+			"title": "Never Again",
+			"badge": "escalator",
+			"lon": 150.4307910362136,
+			"lat": -34.41540836695404,
+			"radius": 0.0004,
+			"explanation": [
+				"At least they were helpful enough to throw a coil of steel wire down. Heaven forbid it rusts."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "p5070462.jpg",
 			"lon": 150.431424,

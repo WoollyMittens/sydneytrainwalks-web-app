@@ -209,6 +209,18 @@
 			"description": "Warrah and several unfenced lookouts, can be found along the left side of the trail."
 		},
 		{
+			"title": "I Can See My House from Here",
+			"badge": "house_3",
+			"lon": 151.2881417,
+			"lat": -33.552325,
+			"radius": 0.0004,
+			"explanation": [
+				"Let the tourists enjoy the fenced lookout. Welcome to the club of locals who know better."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "p3093623.jpg",
 			"lon": 151.285824,
@@ -264,6 +276,18 @@
 			"lon": 151.28862222222222,
 			"lat": -33.50935833333333,
 			"description": "Continue past the landfill up the ridge overlooking the park."
+		},
+		{
+			"title": "The View is Garbage",
+			"badge": "bag_bagful",
+			"lon": 151.2889917,
+			"lat": -33.5096139,
+			"radius": 0.0004,
+			"explanation": [
+				"With luck the wind is blowing away from it."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

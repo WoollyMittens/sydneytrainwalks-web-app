@@ -3,10 +3,7 @@
 	<?php
 
 		// constants
-		//$title = 'Sydney Train Walks';
-		//$domain = 'www.sydneytrainwalks.com';
-		$title = 'Sydney Hiking Trips';
-		$domain = 'www.sydneyhikingtrips.com';
+		include 'constants.php';
 
 		// summary
 		$subtitle = "Easy bushwalks around Sydney using the train, bus and ferry.";
@@ -46,18 +43,12 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="./inc/ico/favicon-16x16.png" />
 		<link rel="manifest" href="./manifest.json" />
 		<link rel="stylesheet" href="./inc/css/styles.css?t=20200122"/>
-		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-52552-7']);
-			_gaq.push(['_trackPageview']);
-			(function() {
-				var ga = document.createElement('script');
-				ga.type = 'text/javascript';
-				ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0];
-				s.parentNode.insertBefore(ga, s);
-			})();
+		<script async src="https://www.googletagmanager.com/gtag/js?id=<?php print $analytics ?>"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', '<?php print $analytics ?>');
 		</script>
 	</head>
 
@@ -95,6 +86,8 @@
 									<option value="region">Sort by region</option>
 									<option value="duration" data-type="number">Sort by duration</option>
 									<option value="distance" data-type="number" selected>Sort by distance</option>
+									<option value="revised">Sort by revision date</option>
+									<option value="looped">Just loops</option>
 									<option value="rain">For rainy days</option>
 									<option value="fireban">During bushfire danger</option>
 								</select>
@@ -121,7 +114,7 @@
 						<h2>About This App</h2>
 						<figure>
 							<img src="./inc/img/icon.png" />
-							<figcaption><strong><?php print $title ?></strong> Version 2.0.8</figcaption>
+							<figcaption><strong><?php print $title ?></strong> Version 2.4.5</figcaption>
 						</figure>
 						<p>Thank you for supporting <?php print $title ?>. You make it possible for me to expand this guide and motivate people to enjoy Sydney's varied landscapes.</p>
 						<p>Please add your <a href="https://github.com/WoollyMittens/sydneytrainwalks-web-app/issues">suggestions and bug reports on GitHub</a>, or send them to <a href="mailto:maurice@woollymittens.nl">maurice@woollymittens.nl</a>.</p>
@@ -132,6 +125,19 @@
 						<p>Please do not rely solely on this app for your navigation. There is no warranty on the accuracy or reliability of this app. Always carry a real paper map, which are readily available from park offices and tourist information centres.</p>
 					</div>
 				</section>
+
+				<section class="trophies">
+					<div class="trophies-scroller">
+						<h2>Trophies</h2>
+						<p>
+							Uncover these trophies by visiting special locations marked
+							(<img alt="Example trophy marker" src="./inc/img/marker-hotspot.svg" width="24px" height="24px" valign="middle" />)
+							on the map.</p>
+						<ul></ul>
+					</div>
+				</section>
+
+				<article class="trophy"></article>
 
 				<footer class="toolbar"></footer>
 
@@ -202,12 +208,38 @@
 				<a id="footer-to-map" href="?id={id}&amp;screen=map">Map</a>
 				<a id="footer-to-guide" href="?id={id}&amp;screen=guide">Guide</a>
 				<a id="footer-to-photos" href="?id={id}&amp;screen=photos">Photos</a>
-				<a id="footer-to-about" href="?id={id}&amp;screen=about">About</a>
+				<a id="footer-to-trophies" href="?screen=trophies">Trophies</a>
+				<a id="footer-to-about" href="?screen=about">About</a>
 			</nav>
 		</script>
 
 		<script id="credit-template" type="text/template">
 			Maps &copy; <a href="http://www.4umaps.com/">4UMaps</a>. Data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> and contributors, CC BY-SA
+		</script>
+
+		<script id="trophies-template" type="text/template">
+			<figure>
+				<img alt="" src="./inc/img/{icon}.svg" />
+				<figcaption>
+					{title}
+					<button class="guide-locate" data-type="{type}" data-lat="{lat}" data-lon="{lon}" data-title="{title}">Show location</button>
+				</figcaption>
+			</figure>
+		</script>
+
+		<script id="trophy-template" type="text/template">
+			<header>
+				<h2>Trophy awarded:</h2>
+				<img alt="" src="./inc/img/{icon}.svg" />
+				<h3>{title}</h3>
+			</header>
+			<figure style="background-image:url('./inc/{tile}.jpg');">
+				<div style="background-image:url('./inc/{background}.jpg');"></div>
+				<figcaption>{description}</figcaption>
+			</figure>
+			<footer>
+				<button>Continue</button>
+			</footer>
 		</script>
 
 		<!-- scripts -->

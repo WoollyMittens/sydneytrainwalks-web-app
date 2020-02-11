@@ -120,6 +120,18 @@
 			"description": "On the other side of the headland a small reserve indicated the location of the Little Blow Hole."
 		},
 		{
+			"title": "The Tighter Hole",
+			"badge": "bidet",
+			"lon": 150.8586320907302,
+			"lat": -34.68666002715266,
+			"radius": 0.0004,
+			"explanation": [
+				"When the currents fail the big one, this is your second chance."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "img_3160.jpg",
 			"lon": 150.8585118400058,
