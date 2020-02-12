@@ -102,18 +102,29 @@
 					</article>
 
 					<form id="sorting" data-target=".navigation > menu > li">
-						<label>
+						<label class="searching-label">
 							<span>Search for:</span>
 							<input placeholder="Location" name="searching-input" type="text"/>
 						</label>
-						<label>
+						<label class="sorting-label">
 							<span>Sort by:</span>
-							<select class="sorting-selected" name="sorting-selected">
-								<option value="start" data-source=".start">Sort by start</option>
-								<option value="finish" data-source=".finish">Sort by end</option>
-								<option value="region" data-source=".park">Sort by region</option>
-								<option value="duration" data-source=".park em" data-type="number">Sort by duration</option>
-								<option value="distance" data-source=".park em span" data-type="number">Sort by distance</option>
+							<select name="sorting-select">
+								<option value="start" data-source=".start">By start</option>
+								<option value="finish" data-source=".finish">By end</option>
+								<option value="region" data-source=".park">By region</option>
+								<option value="duration" data-source=".park em" data-type="number">By duration</option>
+								<option value="distance" data-source=".park em span" data-type="number">By distance</option>
+							</select>
+						</label>
+						<label class="filtering-label">
+							<span>Filter by:</span>
+							<select name="filtering-select">
+								<option value="all" data-source=".transport" data-filter="train|bus|ferry|tram|car">All transport</option>
+								<option value="public" data-source=".transport" data-filter="train|bus|ferry|tram">Public transport</option>
+								<option value="car" data-source=".transport" data-filter="car">Just by car</option>
+								<option value="looped" data-source=".looped" data-filter="loop">Just loops</option>
+								<option value="rain" data-source=".rain" data-filter="rain">For rainy days</option>
+								<option value="fireban" data-source=".fireban" data-filter="bushfire">Bushfire season</option>
 							</select>
 						</label>
 					</form>
@@ -125,7 +136,7 @@
 
 								if ($value->{'key'} !== '_index') {
 
-									echo '<li class="off-stage"><a href="details.php?id='. $name . '">';
+									echo '<li><a href="details.php?id='. $name . '">';
 
 									$markers = $value->{'markers'};
 									$firstMarker = $markers[0];
@@ -137,7 +148,12 @@
 										<span class="sign finish <?php print $lastMarker->{'type'}?>"><?php print $lastMarker->{'location'}?></span>
 										<span class="sign via">via</span>
 										<span class="sign park"><?php print $value->{'location'}?> <em><?php print $value->{'duration'}?>h / <span><?php print $value->{'distance'}?>km</span></em></span>
+										<span class="meta transport"><?php print $firstMarker->{'type'}?></span>
 									<?php
+
+									if ($firstMarker->{'location'} == $lastMarker->{'location'}) echo '<span class="meta looped">Forms a loop</span>';
+									if ($value->{'rain'}) echo '<span class="meta rain">Suitable for rainy days</span>';
+									if ($value->{'fireban'}) echo '<span class="meta fireban">Suitable during bushfire season</span>';
 
 									echo '</a></li>';
 
@@ -191,7 +207,7 @@
 			// after the page has rendered
 			setTimeout(function() {
 				// order by length initially
-				document.querySelector('.sorting-selected').selectedIndex = 4;
+				document.querySelector('.sorting-label select').selectedIndex = 4;
 				_filters.sortBy(4);
 			}, 0);
 

@@ -73,25 +73,33 @@
 						<a href="https://play.google.com/store/apps/details?id=com.sydneytrainwalks.ios"><img alt="Get it on Google Play" src="./inc/img/banner-android.png"/></a>
 						<a href="https://itunes.apple.com/us/app/sydney-train-walks/id917041642?ls=1&mt=8"><img alt="Download on the App Store" src="./inc/img/banner-ios.png"/></a>
 					</p>
-					<form id="sorting" data-target=".navigation > menu > li">
-						<label>
-								<span>Search by location:</span>
-								<input placeholder="Search..." name="searching-input" type="text"/>
-							</label>
-						<label>
-								<span>Sort by:</span>
-								<select class="sorting-selected" name="sorting-selected">
-									<option value="start">Sort by start</option>
-									<option value="finish">Sort by end</option>
-									<option value="region">Sort by region</option>
-									<option value="duration" data-type="number">Sort by duration</option>
-									<option value="distance" data-type="number" selected>Sort by distance</option>
-									<option value="revised">Sort by revision date</option>
-									<option value="looped">Just loops</option>
-									<option value="rain">For rainy days</option>
-									<option value="fireban">During bushfire danger</option>
-								</select>
-							</label>
+					<form id="sorting">
+						<label class="searching-label">
+							<span>Search by location:</span>
+							<input placeholder="Search..." name="searching-input" type="text"/>
+						</label>
+						<label class="sorting-label">
+							<span>Sort by:</span>
+							<select name="sorting-select">
+								<option value="start">By start</option>
+								<option value="finish">By end</option>
+								<option value="region">By region</option>
+								<option value="duration">By duration</option>
+								<option value="distance" selected>By distance</option>
+								<option value="revised">By revision date</option>
+							</select>
+						</label>
+						<label class="filtering-label">
+							<span>Filter by:</span>
+							<select name="filtering-select">
+								<option value="all" selected>All transport</option>
+								<option value="public">Public transport</option>
+								<option value="car">Just by car</option>
+								<option value="looped">Just loops</option>
+								<option value="rain">For rainy days</option>
+								<option value="fireban">Bushfire season</option>
+							</select>
+						</label>
 					</form>
 					<menu></menu>
 				</nav>

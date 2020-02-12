@@ -5,10 +5,20 @@
 	#sorting {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
 		margin: 0;
 		padding: 10px;
 		width: 100%;
-		height: 4rem;
+		min-height: 4rem;
+
+		.searching-label {
+			flex: 1 1 100%;
+		}
+
+		.sorting-label,
+		.filtering-label {
+			flex: 0 1 50%;
+		}
 
 		label {
 			display: inline-block;

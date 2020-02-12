@@ -14,8 +14,9 @@ var Filters = function (config) {
 
 	this.element = null;
 	this.promise = null;
-	this.input = null;
-	this.select = null;
+	this.searchInput = null;
+	this.sortSelect = null;
+	this.filterSelect = null;
 	this.delay = null;
 
 	// METHODS
@@ -24,32 +25,35 @@ var Filters = function (config) {
 		// store the configuration
 		this.element = config.element;
 		this.promise = config.promise || function () {};
+		// get the search element
+		this.searchInput = this.element.getElementsByTagName('input')[0];
+		this.searchInput.addEventListener('blur', this.onSearchChanged.bind(this));
+		this.searchInput.addEventListener('keyup', this.onSearchChanged.bind(this));
+		this.searchInput.addEventListener('change', this.onSearchChanged.bind(this));
 		// get the sorter elements
-		this.input = this.element.getElementsByTagName('input')[0];
-		this.select = this.element.getElementsByTagName('select')[0];
-		this.sorters = this.select.getElementsByTagName('option');
-		// add the event listener for the input
-		this.input.addEventListener('blur', this.onSearchChanged());
-		this.input.addEventListener('keyup', this.onSearchChanged());
-		this.input.addEventListener('change', this.onSearchChanged());
-		// add the event listener for the select
-		this.select.addEventListener('change', this.onSorterSelected());
+		this.sortSelect = this.element.getElementsByTagName('select')[0];
+		this.sorters = this.sortSelect.getElementsByTagName('option');
+		this.sortSelect.addEventListener('change', this.onSorterSelected.bind(this));
+		// get the filter elements
+		this.filterSelect = this.element.getElementsByTagName('select')[1];
+		this.filters = this.filterSelect.getElementsByTagName('option');
+		this.filterSelect.addEventListener('change', this.onFilterSelected.bind(this));
 		// add the event listener for the form
-		this.element.addEventListener('submit', this.onSearchSubmit());
+		this.element.addEventListener('submit', this.onSearchSubmit.bind(this));
 		// add the reset button to browsers that need it
-		if (!/MSIE/i.test(navigator.userAgent)) { this.input.addEventListener('click', this.onSearchReset()); }
-		else { this.input.style.backgroundImage = 'none'; }
+		if (!/MSIE/i.test(navigator.userAgent)) { this.searchInput.addEventListener('click', this.onSearchReset.bind(this)); }
+		else { this.searchInput.style.backgroundImage = 'none'; }
 		// return the object
 		return this;
 	};
 
 	this.redraw = function (index) {
 		// update the drop down
-		this.select.selectedIndex = index;
+		this.sortSelect.selectedIndex = index;
 	};
 
 	this.searchFor = function (keyword) {
-		var a, b, contents,
+		var a, b, contents, className,
 			sortees = document.querySelectorAll( this.element.getAttribute('data-target') ),
 			findTags = new RegExp('<[^>]*>', 'g'),
 			findKeyword = new RegExp(keyword, 'i');
@@ -58,7 +62,8 @@ var Filters = function (config) {
 			// clear the contents of the sortee
 			contents = sortees[a].innerHTML.replace(findTags, ' ');
 			// show or hide the elements based on the keyword
-			sortees[a].style.display = (findKeyword.test(contents)) ? 'block' : 'none';
+			className = sortees[a].className.replace(/ no-match/g, '');
+			sortees[a].className = (findKeyword.test(contents)) ? className : className + ' no-match';
 		}
 		// trigger the promise
 		this.promise();
@@ -69,7 +74,7 @@ var Filters = function (config) {
 			sorted = [],
 			source = this.sorters[index].getAttribute('data-source'),
 			method = this.sorters[index].getAttribute('data-type'),
-			sortees = document.querySelectorAll( this.element.getAttribute('data-target') ),
+			sortees = document.querySelectorAll(this.element.getAttribute('data-target')),
 			parent = sortees[0].parentNode,
 			fragment = document.createDocumentFragment();
 		// get the sortee elements
@@ -96,55 +101,64 @@ var Filters = function (config) {
 		this.promise();
 	};
 
+	this.filterBy = function (index) {
+		var a, b, element, className,
+			source = this.filters[index].getAttribute('data-source'),
+			condition = new RegExp(this.filters[index].getAttribute('data-filter'), 'i'),
+			filtrates = document.querySelectorAll(this.element.getAttribute('data-target'));
+		// test all sortees
+		for (a = 0, b = filtrates.length; a < b; a += 1) {
+			element = filtrates[a].querySelector(source);
+			className = filtrates[a].className.replace(/ filtered-out/g, '');
+			filtrates[a].className = (element && condition.test(element.innerHTML)) ? className : className + ' filtered-out';
+		}
+	};
+
 	// EVENTS
 
-	this.onSearchSubmit = function () {
-		var _this = this;
-		return function (evt) {
-			// cancel the submit
-			evt.preventDefault();
-			// search manually instead
-			_this.searchFor(_this.input.value.trim());
-			// deselect the field
-			_this.input.blur();
-		};
+	this.onSearchSubmit = function (evt) {
+		// cancel the submit
+		evt.preventDefault();
+		// search manually instead
+		this.searchFor(this.searchInput.value.trim());
+		// deselect the field
+		this.searchInput.blur();
 	};
 
-	this.onSearchReset = function () {
-		var _this = this;
-		return function (evt) {
-			// if the  right side of the element is clicked
-			if (_this.input.offsetWidth - evt.layerX < 32) {
-				// cancel the click
-				evt.preventDefault();
-				// reset the search
-				_this.input.blur();
-				_this.input.value = '';
-				_this.searchFor('');
-			}
-		};
-	};
-
-	this.onSearchChanged = function () {
-		var _this = this;
-		return function (evt) {
-			// wait for the typing to pause
-			clearTimeout(_this.delay);
-			_this.delay = setTimeout(function () {
-				// perform the search
-				_this.searchFor(_this.input.value.trim());
-			}, 700);
-		};
-	};
-
-	this.onSorterSelected = function () {
-		var _this = this;
-		return function (evt) {
+	this.onSearchReset = function (evt) {
+		// if the  right side of the element is clicked
+		if (this.searchInput.offsetWidth - evt.layerX < 32) {
 			// cancel the click
 			evt.preventDefault();
-			// sort the sortees by the selected sorter
-			_this.sortBy(_this.select.selectedIndex);
-		};
+			// reset the search
+			this.searchInput.blur();
+			this.searchInput.value = '';
+			this.searchFor('');
+		}
+	};
+
+	this.onSearchChanged = function (evt) {
+		var _this = this;
+		// wait for the typing to pause
+		clearTimeout(this.delay);
+		this.delay = setTimeout(function () {
+			// perform the search
+			_this.searchFor(_this.searchInput.value.trim());
+		}, 700);
+	};
+
+	this.onSorterSelected = function (evt) {
+		// cancel the click
+		evt.preventDefault();
+		// sort the sortees by the selected sorter
+		this.sortBy(this.sortSelect.selectedIndex);
+	};
+
+	this.onFilterSelected = function (evt) {
+		// cancel the click
+		evt.preventDefault();
+		// sort the sortees by the selected sorter
+		this.filterBy(this.filterSelect.selectedIndex);
 	};
 
 	this.init(config);

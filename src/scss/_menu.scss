@@ -92,6 +92,11 @@
 				}
 			}
 
+			li.filtered-out,
+			li.no-match {
+				display: none;
+			}
+
 			li.no-results {
 				background-color: #fff;
 				padding: 2em;

@@ -522,7 +522,10 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 	this.sortBy = 'length';
 	this.config = parent.config;
 	this.config.extend({
-		'sorting': document.getElementById('sorting'),
+		'searchForm': document.getElementById('sorting'),
+		'searchInput': document.querySelector('.searching-label input'),
+		'sortSelect': document.querySelector('.sorting-label select'),
+		'filterSelect': document.querySelector('.filtering-label select'),
 		'menu': document.querySelector('.navigation > menu'),
 		'titleTemplate': document.getElementById('title-template'),
 		'menuTemplate': document.getElementById('menu-template'),
@@ -532,56 +535,59 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 	// METHODS
 
 	this.init = function() {
-		var input = this.config.sorting.getElementsByTagName('input')[0],
-			select = this.config.sorting.getElementsByTagName('select')[0];
+		var searchForm = this.config.searchForm;
+		var searchInput = this.config.searchInput;
+		var sortSelect = this.config.sortSelect;
+		var filterSelect = this.config.filterSelect;
 		// build the menu
 		this.update();
 		// add the global click handler to the menu
 		this.config.menu.addEventListener('click', this.onMenuClicked.bind(this));
-		// event handler for sorting options
-		input.addEventListener('focus', this.onSearchFocus.bind(this, input));
-		input.addEventListener('blur', this.onSearchChanged.bind(this, input));
-		input.addEventListener('keyup', this.onSearchChanged.bind(this, input));
-		input.addEventListener('change', this.onSearchChanged.bind(this, input));
-		select.addEventListener('focus', this.onSortingFocus.bind(this, select));
-		select.addEventListener('change', this.onSortingSelected.bind(this, select));
-		// event handler for the form
-		input.parentNode.parentNode.addEventListener('submit', this.onSearchSubmitted.bind(this, input));
+		// event handlers for search option
+		searchInput.addEventListener('focus', this.onFieldFocus.bind(this));
+		searchInput.addEventListener('blur', this.onSearchChanged.bind(this, searchInput));
+		searchInput.addEventListener('keyup', this.onSearchChanged.bind(this, searchInput));
+		searchInput.addEventListener('change', this.onSearchChanged.bind(this, searchInput));
+		// event handlers for the sort option
+		sortSelect.addEventListener('focus', this.onFieldFocus.bind(this));
+		sortSelect.addEventListener('change', this.onSortSelected.bind(this, sortSelect));
+		// event handlers for the filter option
+		filterSelect.addEventListener('focus', this.onFieldFocus.bind(this));
+		filterSelect.addEventListener('change', this.onFilterSelected.bind(this, filterSelect));
+		// event handler for the form submit
+		searchForm.addEventListener('submit', this.onSearchSubmitted.bind(this, searchInput));
 		// add the reset button to browsers that need it
-		if (!/MSIE/i.test(navigator.userAgent)) {
-			input.addEventListener('click', this.onSearchReset.bind(this, input));
-		} else {
-			input.style.backgroundImage = 'none';
-		}
+		if (!/MSIE/i.test(navigator.userAgent)) { searchInput.addEventListener('click', this.onSearchReset.bind(this, searchInput)); }
+		else { searchInput.style.backgroundImage = 'none'; }
 	};
 
 	this.update = function() {
-		var id, markers,
-			menuTemplate = this.config.menuTemplate.innerHTML,
-			titleTemplate = this.config.titleTemplate.innerHTML,
-			menuHtml = '',
-			titleHtml = '';
-		// sort the guides
-		var searched = this.searchGuide(GuideData, this.searchFor);
-		var sorted = this.sortGuide(GuideData, this.sortBy);
+		var id, markers, menuHtml = '', titleHtml = '';
+		var menuTemplate = this.config.menuTemplate.innerHTML;
+		var titleTemplate = this.config.titleTemplate.innerHTML;
+		// search, filter, and sort the guides
+		var guideIds = Object.keys(GuideData);
+		var searchedIds = this.searchGuide(guideIds, this.searchFor);
+		var filteredIds = this.filterGuide(searchedIds, this.filterBy);
+		var sortedIds = this.sortGuide(filteredIds, this.sortBy);
 		// for every available guide
-		for (var a = 0, b = sorted.length; a < b; a += 1) {
-			id = sorted[a];
-			// if the id occurs in the search results
-			if (searched.indexOf(id) > -1 && id !== '_index') {
-				markers = GuideData[id].markers;
-				titleHtml = titleTemplate
-					.replace(/{startTransport}/g, markers[0].type)
-					.replace(/{startLocation}/g, markers[0].location)
-					.replace(/{walkLocation}/g, GuideData[id].location)
-					.replace(/{walkDuration}/g, GuideData[id].duration)
-					.replace(/{walkDistance}/g, GuideData[id].distance)
-					.replace(/{endTransport}/g, markers[markers.length - 1].type)
-					.replace(/{endLocation}/g, markers[markers.length - 1].location);
-				menuHtml += menuTemplate
-					.replace(/{id}/g, id)
-					.replace(/{title}/g, titleHtml);
-			}
+		for (var a = 0, b = sortedIds.length; a < b; a += 1) {
+			// retrieve the markers that go with this id
+			id = sortedIds[a];
+			markers = GuideData[id].markers;
+			// construct a menu item
+			titleHtml = titleTemplate
+				.replace(/{startTransport}/g, markers[0].type)
+				.replace(/{startLocation}/g, markers[0].location)
+				.replace(/{walkLocation}/g, GuideData[id].location)
+				.replace(/{walkDuration}/g, GuideData[id].duration)
+				.replace(/{walkDistance}/g, GuideData[id].distance)
+				.replace(/{endTransport}/g, markers[markers.length - 1].type)
+				.replace(/{endLocation}/g, markers[markers.length - 1].location);
+			// add the menu item
+			menuHtml += menuTemplate
+				.replace(/{id}/g, id)
+				.replace(/{title}/g, titleHtml);
 		}
 		// fill the menu with options
 		this.config.menu.innerHTML = (menuHtml === '')
@@ -589,102 +595,68 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 			: menuHtml;
 	};
 
-	this.searchGuide = function(guide, keyword) {
-		var id,
-			locations,
-			searched = [],
-			search = new RegExp(keyword, 'i');
+	this.searchGuide = function(guideIds, keyword) {
+		var id, locations = '', searched = [], search = new RegExp(keyword, 'i');
 		// create an array of guides
-		for (id in guide) {
-			// fetch the locations to search for
-			locations = guide[id].location;
-			guide[id].markers.map(function(marker) { if (marker.location) locations += ' ' + marker.location; });
-			// add the guide if it includes the keyword
-			if (search.test(locations)) {
-				searched.push(id);
+		guideIds.map(function(id){
+			// retrieve the guide
+			var guide = GuideData[id];
+			// only for valid guide id's
+			if (guide.location && guide.markers) {
+				// fetch the locations to search for
+				locations = guide.location + ' ' + guide.markers[0].location + ' ' + guide.markers[guide.markers.length - 1].location;
+				// add the guide if it includes the keyword
+				if (search.test(locations)) { searched.push(id); }
 			}
-		}
+		});
 		// return the searched guides
 		return searched;
 	};
 
-	this.sortGuide = function(guide, option) {
-		var id,
-			unsorted = [],
-			sorted = [];
-		// create an array of guides
-		for (id in guide) {
-			unsorted.push(id);
-		}
+	this.sortGuide = function(guideIds, option) {
+		var id, unsorted = guideIds, sorted = [];
 		// sort the array by the prefered method
 		switch (option) {
 			case 'start':
 				sorted = unsorted.sort(function(a, b) {
-					a = guide[a].markers[0].location;
-					b = guide[b].markers[0].location;
-					return (a < b)
-						? -1
-						: 1;
+					a = GuideData[a].markers[0].location;
+					b = GuideData[b].markers[0].location;
+					return (a < b) ? -1 : 1;
 				});
 				break;
 			case 'finish':
 				sorted = unsorted.sort(function(a, b) {
-					a = guide[a].markers[markers.length - 1].location;
-					b = guide[b].markers[markers.length - 1].location;
-					return (a < b)
-						? -1
-						: 1;
+					a = GuideData[a].markers[markers.length - 1].location;
+					b = GuideData[b].markers[markers.length - 1].location;
+					return (a < b) ? -1 : 1;
 				});
 				break;
 			case 'region':
 				sorted = unsorted.sort(function(a, b) {
-					a = guide[a].location;
-					b = guide[b].location;
-					return (a < b)
-						? -1
-						: 1;
+					a = GuideData[a].location;
+					b = GuideData[b].location;
+					return (a < b) ? -1 : 1;
 				});
 				break;
 			case 'duration':
 				sorted = unsorted.sort(function(a, b) {
-					a = guide[a].duration;
-					b = guide[b].duration;
+					a = GuideData[a].duration;
+					b = GuideData[b].duration;
 					return a - b;
 				});
 				break;
 			case 'length':
 				sorted = unsorted.sort(function(a, b) {
-					a = guide[a].distance;
-					b = guide[b].distance;
+					a = GuideData[a].distance;
+					b = GuideData[b].distance;
 					return a - b;
 				});
 				break;
 			case 'revised':
 				sorted = unsorted.sort(function(a, b) {
-					a = new Date(guide[a].updated);
-					b = new Date(guide[b].updated);
+					a = new Date(GuideData[a].updated);
+					b = new Date(GuideData[b].updated);
 					return b - a;
-				});
-				break;
-			case 'looped':
-				unsorted = this.sortGuide(guide, 'length');
-				sorted = unsorted.map(function(a) {
-					var markers = guide[a].markers;
-					var first = markers[0];
-					var last = markers[markers.length - 1];
-					return (first.location === last.location) ? a : null;
-				});
-				break;
-			case 'rain':
-				unsorted = this.sortGuide(guide, 'length');
-				sorted = unsorted.map(function(a) {
-					return (guide[a].rain) ? a : null;
-				});
-				break;
-			case 'fireban':
-				unsorted = this.sortGuide(guide, 'length');
-				sorted = unsorted.map(function(a) {
-					return (guide[a].fireban) ? a : null;
 				});
 				break;
 			default:
@@ -694,9 +666,54 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 		return sorted;
 	};
 
+	this.filterGuide = function(guideIds, option) {
+		var id, unfiltered = guideIds, filtered = [];
+		// filter the array by the prefered method
+		switch (option) {
+			case 'public':
+				unfiltered.map(function(a) {
+					var markers = GuideData[a].markers;
+					var first = markers[0];
+					var last = markers[markers.length - 1];
+					if (first.type !== 'car' && last.type !== 'car') filtered.push(a);
+				});
+				break;
+			case 'car':
+				unfiltered.map(function(a) {
+					var markers = GuideData[a].markers;
+					var first = markers[0];
+					var last = markers[markers.length - 1];
+					if (first.type === 'car' || last.type === 'car') filtered.push(a);
+				});
+				break;
+			case 'looped':
+				unfiltered.map(function(a) {
+					var markers = GuideData[a].markers;
+					var first = markers[0];
+					var last = markers[markers.length - 1];
+					if (first.location === last.location) filtered.push(a);
+				});
+				break;
+			case 'rain':
+				unfiltered.map(function(a) {
+					if (GuideData[a].rain) filtered.push(a);
+				});
+				break;
+			case 'fireban':
+				unfiltered.map(function(a) {
+					if (GuideData[a].fireban) filtered.push(a);
+				});
+				break;
+			default:
+				filtered = unfiltered;
+		}
+		// return the ordered guides
+		return filtered;
+	};
+
 	// EVENTS
 
-	this.onSearchFocus = function(input, evt) {
+	this.onFieldFocus = function(evt) {
 		// reset the previous state
 		window.localStorage.setItem('id', null);
 		window.localStorage.setItem('mode', null);
@@ -736,15 +753,15 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 		}, 700);
 	};
 
-	this.onSortingFocus = function(input, evt) {
-		// reset the previous state
-		window.localStorage.setItem('id', null);
-		window.localStorage.setItem('mode', null);
-	};
-
-	this.onSortingSelected = function(select, evt) {
+	this.onSortSelected = function(select, evt) {
 		// perform the sort
 		this.sortBy = select.value;
+		this.update();
+	};
+
+	this.onFilterSelected = function(select, evt) {
+		// perform the sort
+		this.filterBy = select.value;
 		this.update();
 	};
 
@@ -1063,8 +1080,9 @@ var Filters = function (config) {
 
 	this.element = null;
 	this.promise = null;
-	this.input = null;
-	this.select = null;
+	this.searchInput = null;
+	this.sortSelect = null;
+	this.filterSelect = null;
 	this.delay = null;
 
 	// METHODS
@@ -1073,32 +1091,35 @@ var Filters = function (config) {
 		// store the configuration
 		this.element = config.element;
 		this.promise = config.promise || function () {};
+		// get the search element
+		this.searchInput = this.element.getElementsByTagName('input')[0];
+		this.searchInput.addEventListener('blur', this.onSearchChanged.bind(this));
+		this.searchInput.addEventListener('keyup', this.onSearchChanged.bind(this));
+		this.searchInput.addEventListener('change', this.onSearchChanged.bind(this));
 		// get the sorter elements
-		this.input = this.element.getElementsByTagName('input')[0];
-		this.select = this.element.getElementsByTagName('select')[0];
-		this.sorters = this.select.getElementsByTagName('option');
-		// add the event listener for the input
-		this.input.addEventListener('blur', this.onSearchChanged());
-		this.input.addEventListener('keyup', this.onSearchChanged());
-		this.input.addEventListener('change', this.onSearchChanged());
-		// add the event listener for the select
-		this.select.addEventListener('change', this.onSorterSelected());
+		this.sortSelect = this.element.getElementsByTagName('select')[0];
+		this.sorters = this.sortSelect.getElementsByTagName('option');
+		this.sortSelect.addEventListener('change', this.onSorterSelected.bind(this));
+		// get the filter elements
+		this.filterSelect = this.element.getElementsByTagName('select')[1];
+		this.filters = this.filterSelect.getElementsByTagName('option');
+		this.filterSelect.addEventListener('change', this.onFilterSelected.bind(this));
 		// add the event listener for the form
-		this.element.addEventListener('submit', this.onSearchSubmit());
+		this.element.addEventListener('submit', this.onSearchSubmit.bind(this));
 		// add the reset button to browsers that need it
-		if (!/MSIE/i.test(navigator.userAgent)) { this.input.addEventListener('click', this.onSearchReset()); }
-		else { this.input.style.backgroundImage = 'none'; }
+		if (!/MSIE/i.test(navigator.userAgent)) { this.searchInput.addEventListener('click', this.onSearchReset.bind(this)); }
+		else { this.searchInput.style.backgroundImage = 'none'; }
 		// return the object
 		return this;
 	};
 
 	this.redraw = function (index) {
 		// update the drop down
-		this.select.selectedIndex = index;
+		this.sortSelect.selectedIndex = index;
 	};
 
 	this.searchFor = function (keyword) {
-		var a, b, contents,
+		var a, b, contents, className,
 			sortees = document.querySelectorAll( this.element.getAttribute('data-target') ),
 			findTags = new RegExp('<[^>]*>', 'g'),
 			findKeyword = new RegExp(keyword, 'i');
@@ -1107,7 +1128,8 @@ var Filters = function (config) {
 			// clear the contents of the sortee
 			contents = sortees[a].innerHTML.replace(findTags, ' ');
 			// show or hide the elements based on the keyword
-			sortees[a].style.display = (findKeyword.test(contents)) ? 'block' : 'none';
+			className = sortees[a].className.replace(/ no-match/g, '');
+			sortees[a].className = (findKeyword.test(contents)) ? className : className + ' no-match';
 		}
 		// trigger the promise
 		this.promise();
@@ -1118,7 +1140,7 @@ var Filters = function (config) {
 			sorted = [],
 			source = this.sorters[index].getAttribute('data-source'),
 			method = this.sorters[index].getAttribute('data-type'),
-			sortees = document.querySelectorAll( this.element.getAttribute('data-target') ),
+			sortees = document.querySelectorAll(this.element.getAttribute('data-target')),
 			parent = sortees[0].parentNode,
 			fragment = document.createDocumentFragment();
 		// get the sortee elements
@@ -1145,55 +1167,64 @@ var Filters = function (config) {
 		this.promise();
 	};
 
+	this.filterBy = function (index) {
+		var a, b, element, className,
+			source = this.filters[index].getAttribute('data-source'),
+			condition = new RegExp(this.filters[index].getAttribute('data-filter'), 'i'),
+			filtrates = document.querySelectorAll(this.element.getAttribute('data-target'));
+		// test all sortees
+		for (a = 0, b = filtrates.length; a < b; a += 1) {
+			element = filtrates[a].querySelector(source);
+			className = filtrates[a].className.replace(/ filtered-out/g, '');
+			filtrates[a].className = (element && condition.test(element.innerHTML)) ? className : className + ' filtered-out';
+		}
+	};
+
 	// EVENTS
 
-	this.onSearchSubmit = function () {
-		var _this = this;
-		return function (evt) {
-			// cancel the submit
-			evt.preventDefault();
-			// search manually instead
-			_this.searchFor(_this.input.value.trim());
-			// deselect the field
-			_this.input.blur();
-		};
+	this.onSearchSubmit = function (evt) {
+		// cancel the submit
+		evt.preventDefault();
+		// search manually instead
+		this.searchFor(this.searchInput.value.trim());
+		// deselect the field
+		this.searchInput.blur();
 	};
 
-	this.onSearchReset = function () {
-		var _this = this;
-		return function (evt) {
-			// if the  right side of the element is clicked
-			if (_this.input.offsetWidth - evt.layerX < 32) {
-				// cancel the click
-				evt.preventDefault();
-				// reset the search
-				_this.input.blur();
-				_this.input.value = '';
-				_this.searchFor('');
-			}
-		};
-	};
-
-	this.onSearchChanged = function () {
-		var _this = this;
-		return function (evt) {
-			// wait for the typing to pause
-			clearTimeout(_this.delay);
-			_this.delay = setTimeout(function () {
-				// perform the search
-				_this.searchFor(_this.input.value.trim());
-			}, 700);
-		};
-	};
-
-	this.onSorterSelected = function () {
-		var _this = this;
-		return function (evt) {
+	this.onSearchReset = function (evt) {
+		// if the  right side of the element is clicked
+		if (this.searchInput.offsetWidth - evt.layerX < 32) {
 			// cancel the click
 			evt.preventDefault();
-			// sort the sortees by the selected sorter
-			_this.sortBy(_this.select.selectedIndex);
-		};
+			// reset the search
+			this.searchInput.blur();
+			this.searchInput.value = '';
+			this.searchFor('');
+		}
+	};
+
+	this.onSearchChanged = function (evt) {
+		var _this = this;
+		// wait for the typing to pause
+		clearTimeout(this.delay);
+		this.delay = setTimeout(function () {
+			// perform the search
+			_this.searchFor(_this.searchInput.value.trim());
+		}, 700);
+	};
+
+	this.onSorterSelected = function (evt) {
+		// cancel the click
+		evt.preventDefault();
+		// sort the sortees by the selected sorter
+		this.sortBy(this.sortSelect.selectedIndex);
+	};
+
+	this.onFilterSelected = function (evt) {
+		// cancel the click
+		evt.preventDefault();
+		// sort the sortees by the selected sorter
+		this.filterBy(this.filterSelect.selectedIndex);
 	};
 
 	this.init(config);
