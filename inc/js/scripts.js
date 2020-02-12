@@ -570,6 +570,7 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 		var searchedIds = this.searchGuide(guideIds, this.searchFor);
 		var filteredIds = this.filterGuide(searchedIds, this.filterBy);
 		var sortedIds = this.sortGuide(filteredIds, this.sortBy);
+// TODO: show/hide markers based on filter results
 		// for every available guide
 		for (var a = 0, b = sortedIds.length; a < b; a += 1) {
 			// retrieve the markers that go with this id
@@ -811,7 +812,7 @@ SydneyTrainWalks.prototype.Overview = function (parent) {
     var mutationObserver = new MutationObserver(observer);
     mutationObserver.observe(document.body, {
       'attributes': true,
-      'attributeFilter': ['id', 'class', 'style'], 
+      'attributeFilter': ['id', 'class', 'style'],
       'subtree': true
     });
     // try at least once
@@ -833,8 +834,10 @@ SydneyTrainWalks.prototype.Overview = function (parent) {
   };
 
   this.createMap = function() {
+    // we only want one
+    if (this.localmap) return false;
     // generate the map
-    var localmap = new Localmap({
+    this.localmap = new Localmap({
       'key': '_index',
       'container': this.config.overview,
       'legend': null,
@@ -1113,9 +1116,14 @@ var Filters = function (config) {
 		return this;
 	};
 
-	this.redraw = function (index) {
+	this.redrawSort = function (index) {
 		// update the drop down
 		this.sortSelect.selectedIndex = index;
+	};
+
+	this.redrawFilter = function (index) {
+		// update the drop down
+		this.filterSelect.selectedIndex = index;
 	};
 
 	this.searchFor = function (keyword) {
@@ -1132,7 +1140,7 @@ var Filters = function (config) {
 			sortees[a].className = (findKeyword.test(contents)) ? className : className + ' no-match';
 		}
 		// trigger the promise
-		this.promise();
+		this.promise('search complete');
 	};
 
 	this.sortBy = function (index) {
@@ -1162,9 +1170,9 @@ var Filters = function (config) {
 		for (a = 0, b = sorted.length; a < b; a += 1) { fragment.appendChild( parent.removeChild(sorted[a], true) ); }
 		parent.appendChild(fragment);
 		// redraw the interface element
-		this.redraw(index);
+		this.redrawSort(index);
 		// trigger the promise
-		this.promise();
+		this.promise('sort complete');
 	};
 
 	this.filterBy = function (index) {
@@ -1178,6 +1186,10 @@ var Filters = function (config) {
 			className = filtrates[a].className.replace(/ filtered-out/g, '');
 			filtrates[a].className = (element && condition.test(element.innerHTML)) ? className : className + ' filtered-out';
 		}
+		// redraw the interface element
+		this.redrawFilter(index);
+		// trigger the promise
+		this.promise('filter complete');
 	};
 
 	// EVENTS
@@ -2415,6 +2427,7 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
 		var max = this.config.maximum;
 		var element = document.createElement('span');
 		element.setAttribute('class', 'localmap-waypoint');
+		element.setAttribute('id', markerData.id || 'localmap_' + markerData.lon + '_' + markerData.lat);
 		element.addEventListener('click', onClicked.bind(this, markerData));
 		element.style.left = ((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
 		element.style.top = ((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';
@@ -2441,6 +2454,7 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
 		element.setAttribute('src', this.config.markersUrl.replace('{type}', markerData.type));
 		element.setAttribute('title', markerData.description || '');
 		element.setAttribute('class', 'localmap-marker');
+		element.setAttribute('id', markerData.id || 'localmap_' + markerData.lon + '_' + markerData.lat);
 		element.addEventListener('click', onClicked.bind(this, markerData));
 		element.style.left = ((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
 		element.style.top = ((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';

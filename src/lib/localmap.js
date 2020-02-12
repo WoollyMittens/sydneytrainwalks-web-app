@@ -1178,6 +1178,7 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
 		var max = this.config.maximum;
 		var element = document.createElement('span');
 		element.setAttribute('class', 'localmap-waypoint');
+		element.setAttribute('id', markerData.id || 'localmap_' + markerData.lon + '_' + markerData.lat);
 		element.addEventListener('click', onClicked.bind(this, markerData));
 		element.style.left = ((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
 		element.style.top = ((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';
@@ -1204,6 +1205,7 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
 		element.setAttribute('src', this.config.markersUrl.replace('{type}', markerData.type));
 		element.setAttribute('title', markerData.description || '');
 		element.setAttribute('class', 'localmap-marker');
+		element.setAttribute('id', markerData.id || 'localmap_' + markerData.lon + '_' + markerData.lat);
 		element.addEventListener('click', onClicked.bind(this, markerData));
 		element.style.left = ((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
 		element.style.top = ((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';

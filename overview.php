@@ -78,16 +78,12 @@
 				var sydneyTrainWalksOverview = new sydneyTrainWalks.Overview({
 					'config' : {
 						'local': './inc',
-						'remote': '//<?php print $domain ?>/inc',
-						'onlineTiles' : '//4umaps.com/{z}/{x}/{y}.png',
-						'offlineTiles' : './inc/tiles/{z}/{x}/{y}.jpg',
-						'missing' : './inc/img/missing.png'
+						'remote': '//<?php print $domain ?>/inc'
 					},
 					'update' : function (id) {
 						document.location.href = './details.php?id=' + id;
 					}
 				});
-				sydneyTrainWalksOverview.init();
 			});
 		</script>
 		<script>

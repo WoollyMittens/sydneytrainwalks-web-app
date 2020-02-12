@@ -136,7 +136,7 @@
 
 								if ($value->{'key'} !== '_index') {
 
-									echo '<li><a href="details.php?id='. $name . '">';
+									echo '<li data-id="'. $name . '"><a href="details.php?id='. $name . '">';
 
 									$markers = $value->{'markers'};
 									$firstMarker = $markers[0];
@@ -187,10 +187,7 @@
 				var sydneyTrainWalksOverview = new sydneyTrainWalks.Overview({
 					'config' : {
 						'local': './inc',
-						'remote': '//<?php print $domain ?>/inc',
-						'onlineTiles' : '//4umaps.com/{z}/{x}/{y}.png',
-						'offlineTiles' : './inc/tiles/{z}/{x}/{y}.jpg',
-						'missing' : './inc/img/missing.png'
+						'remote': '//<?php print $domain ?>/inc'
 					},
 					'update' : function (id) {
 						document.location.href = './details.php?id=' + id;
@@ -201,12 +198,22 @@
 			// ordering the menu
 			var _filters = new Filters({
 				'element' : document.getElementById('sorting'),
-				'promise' : function () {}
+				'promise' : function (result) {
+					if (/filter|search/.test(result)) {
+						var items = document.querySelectorAll('.navigation > menu > li');
+						for (var a = 0, b = items.length; a < b; a += 1) {
+							var id = items[a].getAttribute('data-id');
+							var marker = document.getElementById(id);
+							if (marker) marker.style.visibility = (items[a].offsetHeight > 0) ? 'visible' : 'hidden';
+						}
+					}
+				}
 			});
 
 			// after the page has rendered
 			setTimeout(function() {
 				// order by length initially
+				document.querySelector('.filtering-label select').selectedIndex = 0;
 				document.querySelector('.sorting-label select').selectedIndex = 4;
 				_filters.sortBy(4);
 			}, 0);

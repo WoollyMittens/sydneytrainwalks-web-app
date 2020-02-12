@@ -47,9 +47,14 @@ var Filters = function (config) {
 		return this;
 	};
 
-	this.redraw = function (index) {
+	this.redrawSort = function (index) {
 		// update the drop down
 		this.sortSelect.selectedIndex = index;
+	};
+
+	this.redrawFilter = function (index) {
+		// update the drop down
+		this.filterSelect.selectedIndex = index;
 	};
 
 	this.searchFor = function (keyword) {
@@ -66,7 +71,7 @@ var Filters = function (config) {
 			sortees[a].className = (findKeyword.test(contents)) ? className : className + ' no-match';
 		}
 		// trigger the promise
-		this.promise();
+		this.promise('search complete');
 	};
 
 	this.sortBy = function (index) {
@@ -96,9 +101,9 @@ var Filters = function (config) {
 		for (a = 0, b = sorted.length; a < b; a += 1) { fragment.appendChild( parent.removeChild(sorted[a], true) ); }
 		parent.appendChild(fragment);
 		// redraw the interface element
-		this.redraw(index);
+		this.redrawSort(index);
 		// trigger the promise
-		this.promise();
+		this.promise('sort complete');
 	};
 
 	this.filterBy = function (index) {
@@ -112,6 +117,10 @@ var Filters = function (config) {
 			className = filtrates[a].className.replace(/ filtered-out/g, '');
 			filtrates[a].className = (element && condition.test(element.innerHTML)) ? className : className + ' filtered-out';
 		}
+		// redraw the interface element
+		this.redrawFilter(index);
+		// trigger the promise
+		this.promise('filter complete');
 	};
 
 	// EVENTS

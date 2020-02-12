@@ -57,6 +57,7 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 		var searchedIds = this.searchGuide(guideIds, this.searchFor);
 		var filteredIds = this.filterGuide(searchedIds, this.filterBy);
 		var sortedIds = this.sortGuide(filteredIds, this.sortBy);
+// TODO: show/hide markers based on filter results
 		// for every available guide
 		for (var a = 0, b = sortedIds.length; a < b; a += 1) {
 			// retrieve the markers that go with this id

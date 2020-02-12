@@ -25,7 +25,7 @@ SydneyTrainWalks.prototype.Overview = function (parent) {
     var mutationObserver = new MutationObserver(observer);
     mutationObserver.observe(document.body, {
       'attributes': true,
-      'attributeFilter': ['id', 'class', 'style'], 
+      'attributeFilter': ['id', 'class', 'style'],
       'subtree': true
     });
     // try at least once
@@ -47,8 +47,10 @@ SydneyTrainWalks.prototype.Overview = function (parent) {
   };
 
   this.createMap = function() {
+    // we only want one
+    if (this.localmap) return false;
     // generate the map
-    var localmap = new Localmap({
+    this.localmap = new Localmap({
       'key': '_index',
       'container': this.config.overview,
       'legend': null,

@@ -165,8 +165,8 @@
 		</script>
 
 		<script id="menu-template" type="text/template">
-			<li class="on-stage">
-				<a href="?key={id}" data-id="{id}">{title}</a>
+			<li data-id="{id}">
+				<a href="?key={id}">{title}</a>
 			</li>
 		</script>
 
