@@ -628,8 +628,8 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 				break;
 			case 'finish':
 				sorted = unsorted.sort(function(a, b) {
-					a = GuideData[a].markers[markers.length - 1].location;
-					b = GuideData[b].markers[markers.length - 1].location;
+					a = GuideData[a].markers[GuideData[a].markers.length - 1].location;
+					b = GuideData[b].markers[GuideData[b].markers.length - 1].location;
 					return (a < b) ? -1 : 1;
 				});
 				break;
