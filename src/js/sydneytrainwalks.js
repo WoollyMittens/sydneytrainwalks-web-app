@@ -25,14 +25,14 @@ var SydneyTrainWalks = function(config) {
 		// recover the previous state
 		var storedId = window.localStorage.getItem('id');
 		var storedMode = window.localStorage.getItem('mode') || 'map';
+		var startScreen = 'menu';
 		// recover the state from the url
 		storedId = this.getQuery('id') || storedId ;
 		storedMode = this.getQuery('mode') || storedMode;
+		startScreen = this.getQuery('screen') || startScreen;
 		// restore the previous state
-		if (storedId && storedMode && GuideData[storedId]) {
-			// update the interface to the stored state
-			this.update(storedId, storedMode);
-		}
+		if (storedId && storedMode && GuideData[storedId]) { this.update(storedId, storedMode); }
+		else if (startScreen) { document.body.className = 'screen-' + startScreen; }
 		// remove busy screen after a redraw
 		setTimeout(this.busy.hide.bind(this), 300);
 		// handle external links
