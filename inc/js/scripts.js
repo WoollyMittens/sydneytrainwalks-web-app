@@ -570,7 +570,8 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 		var searchedIds = this.searchGuide(guideIds, this.searchFor);
 		var filteredIds = this.filterGuide(searchedIds, this.filterBy);
 		var sortedIds = this.sortGuide(filteredIds, this.sortBy);
-// TODO: show/hide markers based on filter results
+		// show or hide incidentally related elements
+		this.mirrorResults(guideIds, sortedIds);
 		// for every available guide
 		for (var a = 0, b = sortedIds.length; a < b; a += 1) {
 			// retrieve the markers that go with this id
@@ -710,6 +711,14 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 		}
 		// return the ordered guides
 		return filtered;
+	};
+
+	this.mirrorResults = function (guideIds, sortedIds) {
+		// show/hide markers based on filter results using Array.indexOf()
+		guideIds.map(function(id) {
+			var referenceElement = document.getElementById(id);
+			if (referenceElement) referenceElement.style.visibility = (sortedIds.indexOf(id) > -1) ? 'visible' : 'hidden';
+		});
 	};
 
 	// EVENTS
