@@ -37,7 +37,6 @@ var generateQueue = function() {
         if (isPhoto.test(images[c])) {
           // create the source path
           srcPath = large + folder + '/' + images[c];
-          // TODO: add .crop(width, height, x, y) to operation if the image is spherical
           // if the destination photo doesn't exist yet
           dstPath = (medium + folder + '/' + images[c]).toLowerCase();
           if (!fs.existsSync(dstPath)) {
