@@ -159,6 +159,8 @@ SydneyTrainWalks.prototype.Trophies = function(parent) {
 		evt.preventDefault();
 		// store the trophy in local storage
 		this.setTrophy(marker.title);
+		// redraw the trophies page
+		this.update();
 		// hide the modal
 		container.className = container.className.replace(/ trophy-active/g, '');
 	};
