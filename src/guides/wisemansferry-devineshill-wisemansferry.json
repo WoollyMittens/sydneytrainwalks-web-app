@@ -1,0 +1,49 @@
+{
+	"location": "Devines Hill",
+	"lon": 151.0358224623,
+	"lat": -33.3489002846,
+	"description": [
+		"Lorem ipsum dolor sit amet."
+	],
+	"duration": 8,
+	"distance": 33,
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "wisemansferry-devineshill-wisemansferry",
+	"updated": "2017-12-27",
+	"bounds": {
+		"west": 150.963134765625,
+		"north": -33.33052824902808,
+		"east": 151.083984375,
+		"south": -33.413102213708285
+	},
+	"markers": [
+		{
+			"location": "Wisemans Ferry",
+			"type": "car",
+			"description": "Plan your drive to <a href=\"https://www.google.com/maps/dir/Sydney,+New+South+Wales/-33.3924548328,150.9975002334\">Wisemans Ferry</a>.",
+			"lon": 150.9975002334,
+			"lat": -33.3924548328
+		},
+		{
+			"type": "toilet",
+			"lat": -33.378767,
+			"lon": 150.990552
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8695.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.99755971000326,
+			"lat": -33.3924975
+		},
+		{
+			"location": "Wisemans Ferry",
+			"type": "car",
+			"description": "Plan your drive from <a href=\"https://www.google.com/maps/dir/-33.3924548328,150.9975002334/Sydney,+New+South+Wales\">Wisemans Ferry</a>.",
+			"lon": 150.9975002334,
+			"lat": -33.3924548328
+		}
+	]
+}

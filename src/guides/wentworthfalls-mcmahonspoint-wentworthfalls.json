@@ -1,0 +1,44 @@
+{
+	"location": "McMahons Point",
+	"lon": 150.3837035224,
+	"lat": -33.8877254818,
+	"description": [
+		"Lorem ipsum dolor sit amet."
+	],
+	"duration": 12,
+	"distance": 56,
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "wentworthfalls-mcmahonspoint-wentworthfalls",
+	"updated": "2018-11-30",
+	"bounds": {
+		"west": 150.35888671875,
+		"north": -33.69692269295768,
+		"east": 150.4248046875,
+		"south": -33.90689555128868
+	},
+	"markers": [
+		{
+			"location": "Wentworth Falls",
+			"type": "train",
+			"description": "Get the train to Wentworth Falls using <a href=\"https://transportnsw.info/trip#/?to=Wentworth Falls\">transportnsw.info</a>.",
+			"lat": -33.710041,
+			"lon": 150.376294
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8172.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.3786915600024,
+			"lat": -33.741583559987916
+		},
+		{
+			"location": "Wentworth Falls",
+			"type": "train",
+			"description": "Plan your return trip from Wentworth Falls at <a href=\"https://transportnsw.info/trip#/?from=Wentworth Falls\">transportnsw.info</a>.",
+			"lat": -33.710041,
+			"lon": 150.376294
+		}
+	]
+}

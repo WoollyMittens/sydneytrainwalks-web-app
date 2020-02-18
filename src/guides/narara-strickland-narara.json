@@ -1,0 +1,49 @@
+{
+	"location": "Strickland",
+	"lon": 151.3269169908,
+	"lat": -33.3876485657,
+	"description": [
+		"Lorem ipsum dolor sit amet."
+	],
+	"duration": 3,
+	"distance": 9,
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "narara-strickland-narara",
+	"updated": "2017-12-26",
+	"bounds": {
+		"west": 151.3037109375,
+		"north": -33.35806161277887,
+		"east": 151.34765625,
+		"south": -33.40393120023469
+	},
+	"markers": [
+		{
+			"location": "Narara",
+			"type": "car",
+			"description": "Plan your drive to <a href=\"https://www.google.com/maps/dir/Sydney,+New+South+Wales/-33.3724233415,151.3217931334\">Strickland State Forest</a>.",
+			"lon": 151.3217931334,
+			"lat": -33.3724233415
+		},
+		{
+			"type": "toilet",
+			"lat": -32.5433304,
+			"lon": 152.3078303
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_8073.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.32181111000023,
+			"lat": -33.3724589100346
+		},
+		{
+			"location": "Narara",
+			"type": "car",
+			"description": "Plan your drive from <a href=\"https://www.google.com/maps/dir/-33.3724233415,151.3217931334/Sydney,+New+South+Wales\">Strickland State Forest</a>.",
+			"lon": 151.3217931334,
+			"lat": -33.3724233415
+		}
+	]
+}

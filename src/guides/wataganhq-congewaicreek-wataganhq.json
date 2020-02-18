@@ -1,0 +1,49 @@
+{
+	"location": "Congewai Valley",
+	"lon": 151.3048441708,
+	"lat": -32.9745873716,
+	"description": [
+		"Lorem ipsum dolor sit amet."
+	],
+	"duration": 8,
+	"distance": 35,
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "wataganhq-congewaicreek-wataganhq",
+	"updated": "2019-03-09",
+	"bounds": {
+		"west": 151.28173828125,
+		"north": -32.95336814579933,
+		"east": 151.424560546875,
+		"south": -33.0178760185549
+	},
+	"markers": [
+		{
+			"location": "Watagan HQ",
+			"type": "car",
+			"description": "Plan your drive to <a href=\"https://www.google.com/maps/dir/Sydney,+New+South+Wales/-32.9757972993,151.4118017815\">Watagan Headquarters</a>.",
+			"lon": 151.4118017815,
+			"lat": -32.9757972993
+		},
+		{
+			"type": "toilet",
+			"lat": -32.975807,
+			"lon": 151.412487
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3829.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.41223067000945,
+			"lat": -32.976253940000746
+		},
+		{
+			"location": "Watagan HQ",
+			"type": "car",
+			"description": "Plan your drive from <a href=\"https://www.google.com/maps/dir/-32.9757972993,151.4118017815/Sydney,+New+South+Wales\">Watagan Headquarters</a>.",
+			"lon": 151.4118017815,
+			"lat": -32.9757972993
+		}
+	]
+}

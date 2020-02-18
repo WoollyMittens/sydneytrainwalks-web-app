@@ -1,0 +1,49 @@
+{
+	"location": "Marramarra",
+	"lon": 151.0928497463,
+	"lat": -33.5231111851,
+	"description": [
+		"Lorem ipsum dolor sit amet."
+	],
+	"duration": 5,
+	"distance": 18,
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "fiddletown-marramarra-fiddletown",
+	"updated": "2017-03-11",
+	"bounds": {
+		"west": 151.0400390625,
+		"north": -33.50475906922608,
+		"east": 151.116943359375,
+		"south": -33.578014746144
+	},
+	"markers": [
+		{
+			"location": "Fiddletown",
+			"type": "car",
+			"description": "Plan your drive to <a href=\"https://www.google.com/maps/dir/Sydney,+New+South+Wales/-33.5645001847,151.0727560613\">Fiddletown</a>.",
+			"lon": 151.0727560613,
+			"lat": -33.5645001847
+		},
+		{
+			"type": "toilet",
+			"lat": -33.522138,
+			"lon": 151.087283
+		},
+		{
+			"type": "waypoint",
+			"photo": "0000_r0011880.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.07252499999998,
+			"lat": -33.56443888888889
+		},
+		{
+			"location": "Fiddletown",
+			"type": "car",
+			"description": "Plan your drive from <a href=\"https://www.google.com/maps/dir/-33.5645001847,151.0727560613/Sydney,+New+South+Wales\">Fiddletown</a>.",
+			"lon": 151.0727560613,
+			"lat": -33.5645001847
+		}
+	]
+}

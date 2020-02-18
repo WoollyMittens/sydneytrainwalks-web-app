@@ -1,0 +1,49 @@
+{
+	"location": "Convict Trail",
+	"lon": 150.990557,
+	"lat": -33.365059,
+	"description": [
+		"Lorem ipsum dolor sit amet."
+	],
+	"duration": 3,
+	"distance": 11,
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "wisemansferry-convicttrail-wisemansferry",
+	"updated": "2016-01-24",
+	"bounds": {
+		"west": 150.963134765625,
+		"north": -33.34888479220171,
+		"east": 151.01806640625,
+		"south": -33.40393120023469
+	},
+	"markers": [
+		{
+			"location": "Wisemans Ferry",
+			"type": "car",
+			"description": "Plan your drive to <a href=\"https://www.google.com/maps/dir/Sydney,+New+South+Wales/-33.392801,150.997977\">Wisemans Ferry</a>.",
+			"lon": 150.997977,
+			"lat": -33.392801
+		},
+		{
+			"type": "toilet",
+			"lat": -33.378767,
+			"lon": 150.990552
+		},
+		{
+			"type": "waypoint",
+			"photo": "p1240153.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.997977,
+			"lat": -33.392801
+		},
+		{
+			"location": "Wisemans Ferry",
+			"type": "car",
+			"description": "Plan your drive from <a href=\"https://www.google.com/maps/dir/-33.392801,150.997977/Sydney,+New+South+Wales\">Wisemans Ferry</a>.",
+			"lon": 150.997977,
+			"lat": -33.392801
+		}
+	]
+}

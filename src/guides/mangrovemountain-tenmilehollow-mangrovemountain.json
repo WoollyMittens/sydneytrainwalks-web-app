@@ -1,0 +1,49 @@
+{
+	"location": "Ten Mile Hollow",
+	"lon": 151.092063,
+	"lat": -33.31566,
+	"description": [
+		"Lorem ipsum dolor sit amet."
+	],
+	"duration": 6,
+	"distance": 25,
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "mangrovemountain-tenmilehollow-mangrovemountain",
+	"updated": "2018-09-30",
+	"bounds": {
+		"west": 151.051025390625,
+		"north": -33.275435412981615,
+		"east": 151.171875,
+		"south": -33.34888479220171
+	},
+	"markers": [
+		{
+			"location": "Mangrove Mountain",
+			"type": "car",
+			"description": "Plan your drive to <a href=\"https://www.google.com/maps/dir/Sydney,+New+South+Wales/-33.292943,151.151199\">Mangrove Mountain</a>.",
+			"lon": 151.151199,
+			"lat": -33.292943
+		},
+		{
+			"type": "toilet",
+			"lat": -33.327566,
+			"lon": 151.089622
+		},
+		{
+			"type": "waypoint",
+			"photo": "0010_dsc_6214.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.15110986000076,
+			"lat": -33.29293819001317
+		},
+		{
+			"location": "Mangrove Mountain",
+			"type": "car",
+			"description": "Plan your drive from <a href=\"https://www.google.com/maps/dir/-33.292943,151.151199/Sydney,+New+South+Wales\">Mangrove Mountain</a>.",
+			"lon": 151.151199,
+			"lat": -33.292943
+		}
+	]
+}

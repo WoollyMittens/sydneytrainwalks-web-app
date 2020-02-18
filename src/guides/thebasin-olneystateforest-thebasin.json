@@ -1,0 +1,49 @@
+{
+	"location": "Olney",
+	"lon": 151.2710638437,
+	"lat": -33.0455689318,
+	"description": [
+		"Lorem ipsum dolor sit amet."
+	],
+	"duration": 9,
+	"distance": 35,
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "thebasin-olneystateforest-thebasin",
+	"updated": "2019-04-20",
+	"bounds": {
+		"west": 151.2158203125,
+		"north": -33.0178760185549,
+		"east": 151.292724609375,
+		"south": -33.11915022676885
+	},
+	"markers": [
+		{
+			"location": "The Basin",
+			"type": "car",
+			"description": "Plan your drive to <a href=\"https://www.google.com/maps/dir/Sydney,+New+South+Wales/-33.1041044556,151.2306997832\">The Basin Campground</a>.",
+			"lon": 151.2306997832,
+			"lat": -33.1041044556
+		},
+		{
+			"type": "toilet",
+			"lat": -33.104151,
+			"lon": 151.231169
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_5208_dsc_5216.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.2306921799517,
+			"lat": -33.1040854899931
+		},
+		{
+			"location": "The Basin",
+			"type": "car",
+			"description": "Plan your drive from <a href=\"https://www.google.com/maps/dir/-33.1041044556,151.2306997832/Sydney,+New+South+Wales\">The Basin Campground</a>.",
+			"lon": 151.2306997832,
+			"lat": -33.1041044556
+		}
+	]
+}

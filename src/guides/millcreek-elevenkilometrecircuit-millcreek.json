@@ -1,0 +1,49 @@
+{
+	"location": "11km Circuit",
+	"lon": 151.0710396152,
+	"lat": -33.3946151845,
+	"description": [
+		"Lorem ipsum dolor sit amet."
+	],
+	"duration": 4,
+	"distance": 11,
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "millcreek-elevenkilometrecircuit-millcreek",
+	"updated": "2016-01-23",
+	"bounds": {
+		"west": 151.029052734375,
+		"north": -33.37641235124678,
+		"east": 151.094970703125,
+		"south": -33.413102213708285
+	},
+	"markers": [
+		{
+			"location": "Mill Creek",
+			"type": "car",
+			"description": "Plan your drive to <a href=\"https://www.google.com/maps/dir/Sydney,+New+South+Wales/-33.4010562580,151.0432335734\">Mill Creek Campground</a>.",
+			"lon": 151.0432335734,
+			"lat": -33.401056258
+		},
+		{
+			"type": "toilet",
+			"lat": -33.4009,
+			"lon": 151.043495
+		},
+		{
+			"type": "waypoint",
+			"photo": "p1240001.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.043229,
+			"lat": -33.401073
+		},
+		{
+			"location": "Mill Creek",
+			"type": "car",
+			"description": "Plan your drive from <a href=\"https://www.google.com/maps/dir/-33.4010562580,151.0432335734/Sydney,+New+South+Wales\">Mill Creek Campground</a>.",
+			"lon": 151.0432335734,
+			"lat": -33.401056258
+		}
+	]
+}

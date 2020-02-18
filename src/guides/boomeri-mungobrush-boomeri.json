@@ -1,0 +1,49 @@
+{
+	"location": "Myall Lakes",
+	"lon": 152.3782,
+	"lat": -32.455845,
+	"description": [
+		"Lorem ipsum dolor sit amet."
+	],
+	"duration": 5,
+	"distance": 25,
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "boomeri-mungobrush-boomeri",
+	"updated": "2019-09-06",
+	"bounds": {
+		"west": 152.303466796875,
+		"north": -32.43561304116276,
+		"east": 152.42431640625,
+		"south": -32.52828936482525
+	},
+	"markers": [
+		{
+			"location": "Boomeri",
+			"type": "car",
+			"description": "Plan your drive to the <a href=\"https://www.google.com/maps/dir/Sydney,+New+South+Wales/Boomeri+campground,+Old+Gibber+Road,+Mungo+Brush+NSW+2423/\">Boomeri Campground</a>.",
+			"lon": 152.3200276773,
+			"lat": -32.5090678688
+		},
+		{
+			"type": "toilet",
+			"lat": -32.509219,
+			"lon": 152.318549
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20190907_083921.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.31963333333334,
+			"lat": -32.50910277777778
+		},
+		{
+			"location": "Boomeri",
+			"type": "car",
+			"description": "Plan your drive from the <a href=\"https://www.google.com/maps/dir/Boomeri+campground,+Old+Gibber+Road,+Mungo+Brush+NSW+2423/Sydney,+New+South+Wales/\">Boomeri Campground</a>.",
+			"lon": 152.3200276773,
+			"lat": -32.5090678688
+		}
+	]
+}

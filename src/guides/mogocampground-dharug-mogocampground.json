@@ -1,0 +1,49 @@
+{
+	"location": "Circuit Flat",
+	"lon": 151.096179,
+	"lat": -33.159032,
+	"description": [
+		"Lorem ipsum dolor sit amet."
+	],
+	"duration": 2,
+	"distance": 7,
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "mogocampground-dharug-mogocampground",
+	"updated": "2017-08-25",
+	"bounds": {
+		"west": 151.072998046875,
+		"north": -33.128351191631566,
+		"east": 151.116943359375,
+		"south": -33.17434155100209
+	},
+	"markers": [
+		{
+			"location": "Mogo Campground",
+			"type": "car",
+			"description": "Plan your drive to the <a href=\"https://www.google.com/maps/dir/Sydney,+New+South+Wales/-33.143875,151.091695\">Mogo Campground</a>.",
+			"lon": 151.091695,
+			"lat": -33.143875
+		},
+		{
+			"type": "toilet",
+			"lat": -33.145144,
+			"lon": 151.091257
+		},
+		{
+			"type": "waypoint",
+			"photo": "0020_dsc_1025.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.09143055555558,
+			"lat": -33.14478611111111
+		},
+		{
+			"location": "Mogo Campground",
+			"type": "car",
+			"description": "Plan your drive from <a href=\"https://www.google.com/maps/dir/-33.143875,151.091695/Sydney,+New+South+Wales\">Mogo Campground</a>.",
+			"lon": 151.091695,
+			"lat": -33.143875
+		}
+	]
+}

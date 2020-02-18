@@ -1,0 +1,44 @@
+{
+	"location": "Yengo",
+	"lon": 150.848124,
+	"lat": -32.979703,
+	"description": [
+		"Lorem ipsum dolor sit amet."
+	],
+	"duration": 6,
+	"distance": 26,
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "bigyango-yengo-bigyango",
+	"updated": "2017-01-06",
+	"bounds": {
+		"west": 150.831298828125,
+		"north": -32.9164853473144,
+		"east": 150.941162109375,
+		"south": -32.98102014898148
+	},
+	"markers": [
+		{
+			"location": "Big Yango",
+			"type": "car",
+			"description": "Plan your drive to <a href=\"https://www.google.com/maps/dir/Sydney,+New+South+Wales/-32.938018,150.920454\">Big Yango</a>.",
+			"lon": 150.920454,
+			"lat": -32.938018
+		},
+		{
+			"type": "waypoint",
+			"photo": "0000_p1070001.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.02130000000002,
+			"lat": -32.977707
+		},
+		{
+			"location": "Big Yango",
+			"type": "car",
+			"description": "Plan your drive from <a href=\"https://www.google.com/maps/dir/-32.938018,150.920454/Sydney,+New+South+Wales\">Big Yango</a>.",
+			"lon": 150.920454,
+			"lat": -32.938018
+		}
+	]
+}

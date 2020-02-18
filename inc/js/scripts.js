@@ -2419,12 +2419,12 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
 		onComplete();
 	};
 
-	this.addMarker = function(markerData) {
+	this.addMarker = function(markerData, markerIndex) {
 		// add a landmark, waypoint, or a hotspot to the map
     switch(markerData.type) {
-      case 'waypoint': markerData.element = this.addWaypoint(markerData); break;
-      case 'hotspot': markerData.element = this.addHotspot(markerData); break;
-      default: markerData.element = this.addLandmark(markerData);
+      case 'waypoint': markerData.element = this.addWaypoint(markerData, markerIndex); break;
+      case 'hotspot': markerData.element = this.addHotspot(markerData, markerIndex); break;
+      default: markerData.element = this.addLandmark(markerData, markerIndex);
     }
     // add valid markers to the map
     if (markerData.element) {
@@ -2433,12 +2433,12 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
     }
 	};
 
-	this.addWaypoint = function(markerData) {
+	this.addWaypoint = function(markerData, markerIndex) {
 		var min = this.config.minimum;
 		var max = this.config.maximum;
 		var element = document.createElement('span');
-		element.setAttribute('class', 'localmap-waypoint');
-		element.setAttribute('id', markerData.id || 'localmap_' + markerData.lon + '_' + markerData.lat);
+		element.setAttribute('class', 'localmap-waypoint localmap-index-' + markerIndex);
+		element.setAttribute('id', markerData.id || 'localmap_' + markerIndex);
 		element.addEventListener('click', onClicked.bind(this, markerData));
 		element.style.left = ((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
 		element.style.top = ((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';
@@ -2446,7 +2446,7 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
 		return element;
 	};
 
-  this.addHotspot = function(markerData) {
+  this.addHotspot = function(markerData, markerIndex) {
     var config = this.config;
     // pre-calculate the hotspot radius
     markerData.maxLon = markerData.lon + markerData.radius;
@@ -2455,17 +2455,17 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
     markerData.minLat = markerData.lat - markerData.radius / 1.5;
     this.config.hotspots.push(markerData);
     // otherwise handle as a normal landmark
-    return (config.checkHotspot(markerData)) ? this.addLandmark(markerData) : null;
+    return (config.checkHotspot(markerData)) ? this.addLandmark(markerData, markerIndex) : null;
   };
 
-	this.addLandmark = function(markerData) {
+	this.addLandmark = function(markerData, markerIndex) {
 		var min = this.config.minimum;
 		var max = this.config.maximum;
 		var element = new Image();
 		element.setAttribute('src', this.config.markersUrl.replace('{type}', markerData.type));
 		element.setAttribute('title', markerData.description || '');
-		element.setAttribute('class', 'localmap-marker');
-		element.setAttribute('id', markerData.id || 'localmap_' + markerData.lon + '_' + markerData.lat);
+		element.setAttribute('class', 'localmap-marker localmap-index-' + markerIndex);
+		element.setAttribute('id', markerData.id || 'localmap_' + markerIndex);
 		element.addEventListener('click', onClicked.bind(this, markerData));
 		element.style.left = ((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
 		element.style.top = ((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';

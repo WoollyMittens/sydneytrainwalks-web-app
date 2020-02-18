@@ -1,0 +1,49 @@
+{
+	"location": "Myall Lakes",
+	"lon": 152.2791550029,
+	"lat": -32.5808934029,
+	"description": [
+		"Lorem ipsum dolor sit amet."
+	],
+	"duration": 5,
+	"distance": 21,
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "mungobrush-mungotrack-mungobrush",
+	"updated": "2019-03-01",
+	"bounds": {
+		"west": 152.24853515625,
+		"north": -32.52828936482525,
+		"east": 152.325439453125,
+		"south": -32.61161640317033
+	},
+	"markers": [
+		{
+			"location": "Mungo Brush",
+			"type": "car",
+			"description": "Plan your drive to the <a href=\"https://www.google.com/maps/dir/Sydney,+New+South+Wales/-32.5090678688,152.3200276773\">Mungo Brush Campground</a>.",
+			"lon": 152.3200276773,
+			"lat": -32.5090678688
+		},
+		{
+			"type": "toilet",
+			"lat": -32.5433304,
+			"lon": 152.3078303
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3551.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.3096573900028,
+			"lat": -32.54280505999957
+		},
+		{
+			"location": "Mungo Brush",
+			"type": "car",
+			"description": "Plan your drive from <a href=\"https://www.google.com/maps/dir/-32.5090678688,152.3200276773/Sydney,+New+South+Wales\">Mungo Brush Campground</a>.",
+			"lon": 152.3200276773,
+			"lat": -32.5090678688
+		}
+	]
+}
