@@ -3,7 +3,10 @@
 	"lon": 151.3048441708,
 	"lat": -32.9745873716,
 	"description": [
-		"Lorem ipsum dolor sit amet."
+		"From the Watagans Headquarters this walk follows a section of the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/great-north-walk-watagans-national-park\">Great North Walk</a>",
+		"through the <a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/watagans-national-park\">Watagans National Park</a> that is harder to get to and far less travelled than the Sydney end.",
+		"<br/><br/>",
+		"After looping around the rural Congewai Valley amongst the cattle, the walk trails a <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/the-narrow-place-lookout\">narrow ridgeline</a> with many incidental lookouts."
 	],
 	"duration": 8,
 	"distance": 35,
@@ -33,10 +36,75 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_3829.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.41223067000945,
-			"lat": -32.976253940000746
+			"photo": "dsc_3830.jpg",
+			"description": "From the campground follow the Great North Walk down Watagan Forest Road towards Hunter Valley and turn left down Georges Road.",
+			"lon": 151.4118697999646,
+			"lat": -32.976251840008125
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3838.jpg",
+			"description": "From the left side of Georges Road follow the rough and steep Congewai Creek Walking Track down into the gully.",
+			"lon": 151.37605288007555,
+			"lat": -32.98272784
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3840.jpg",
+			"description": "At the bottom of the gully cross Congewai Creek and continue down the bushtrail.",
+			"lon": 151.3776725399886,
+			"lat": -32.9848696
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3897.jpg",
+			"description": "After the bushtrail opens up to pastures, follow the dirt road up the valley.",
+			"lon": 151.33635663001456,
+			"lat": -32.99361527997191
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3922.jpg",
+			"description": "At the Great North Walk sign, cross the fence over the ladder and follow the signs up the ridge to a campground.",
+			"lon": 151.3004289200017,
+			"lat": -32.995261669953976
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3953.jpg",
+			"description": "From the campground follow the Great North Walk sign towards Watagan Forest HQ.",
+			"lon": 151.307847740035,
+			"lat": -32.96608678999579
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_4035.jpg",
+			"description": "<i>+ 0.5h / 2km</i> A short side trip down Lookout Track leads to a vantage point over Congewai Valley.",
+			"optional": true,
+			"lon": 151.33524441999373,
+			"lat": -32.984071470004864
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_4042.jpg",
+			"description": "Further down the trail, the ridge narrows until there are steep drops on either side.",
+			"lon": 151.3579894700048,
+			"lat": -32.976558879978064
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_4049.jpg",
+			"description": "From the aptly named Narrow Place Lookout close the loop back to Watagan Headquarters.",
+			"lon": 151.35864041001176,
+			"lat": -32.97653505007153
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_4067_dsc_4076.jpg",
+			"description": "<i>+ 0.1h / 0.5km</i> Along the way another short side trip to the left leads to an unfenced lookout across Hunter Valley.",
+			"optional": true,
+			"lon": 151.3700367799727,
+			"lat": -32.97199164999697
 		},
 		{
 			"location": "Watagan HQ",

@@ -3,7 +3,8 @@
 	"lon": 151.096179,
 	"lat": -33.159032,
 	"description": [
-		"Lorem ipsum dolor sit amet."
+		"This short <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/circuit-flat-walking-track\">Circuit Flat walking track</a> around",
+		"the historical bridge remnants at the northern end of the Great North Road, is a perfect break in the road trip from Wisemans Ferry to Hunter Valley."
 	],
 	"duration": 2,
 	"distance": 7,
@@ -33,10 +34,38 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "0020_dsc_1025.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.09143055555558,
-			"lat": -33.14478611111111
+			"photo": "0080_r0013084.jpg",
+			"description": "Follow the loop track around the campground to the Circuit Flat Track.",
+			"lon": 151.09162734002422,
+			"lat": -33.146093910115646
+		},
+		{
+			"type": "waypoint",
+			"photo": "0150_r0013088.jpg",
+			"description": "From the intersection follow Circuit Flat Track around the valley.",
+			"lon": 151.09375342998732,
+			"lat": -33.15157501000031
+		},
+		{
+			"type": "waypoint",
+			"photo": "0420_dsc_1064.jpg",
+			"description": "The bushtrail joins the Great North Road near historic ruined roadworks. Continue left along the Great North Road past the bridge.",
+			"lon": 151.09879628999963,
+			"lat": -33.1614571099597
+		},
+		{
+			"type": "waypoint",
+			"photo": "0530_r0013106.jpg",
+			"description": "Follow the Great North Road back to Wollombi Road.",
+			"lon": 151.09928830992857,
+			"lat": -33.15644298999515
+		},
+		{
+			"type": "waypoint",
+			"photo": "0630_dsc_1075.jpg",
+			"description": "From the intersection follow Wollombi Road left back to the campground.",
+			"lon": 151.09633885999133,
+			"lat": -33.145372980082676
 		},
 		{
 			"location": "Mogo Campground",
