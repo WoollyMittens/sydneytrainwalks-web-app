@@ -96,6 +96,7 @@
 								<option value="public">Public transport</option>
 								<option value="car">Just by car</option>
 								<option value="looped">Just loops</option>
+								<option value="toilets">Has public toilets</option>
 								<option value="rain">For rainy days</option>
 								<option value="fireban">Bushfire season</option>
 							</select>

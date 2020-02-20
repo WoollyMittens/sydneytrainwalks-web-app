@@ -3,7 +3,8 @@
 	"lon": 151.0928497463,
 	"lat": -33.5231111851,
 	"description": [
-		"Lorem ipsum dolor sit amet."
+		"This walk follows the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/marramarra-ridge-to-smugglers-ridge-walking-track\">Marramarra Ridge to Smugglers Ridge walking track</a>",
+		"around Marramarra national park for a visit to the <a href=\"https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/marramarra-creek-campground\">Marramarra Creek Campground</a>."
 	],
 	"duration": 5,
 	"distance": 18,
@@ -33,15 +34,121 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "0000_r0011880.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.07252499999998,
-			"lat": -33.56443888888889
+			"photo": "0010_p3120004.jpg",
+			"description": "From the carpark, follow the sign to the Marramarra Campgrounds.",
+			"lon": 151.07252599999998,
+			"lat": -33.564439
+		},
+		{
+			"type": "waypoint",
+			"photo": "0040_r0011883.jpg",
+			"description": "At the intersection with Smugglers Ridge Track, follow the Marramarra Ridge Trail to the right.",
+			"lon": 151.06918888888887,
+			"lat": -33.55909722222222
+		},
+		{
+			"type": "waypoint",
+			"photo": "0080_r0011887.jpg",
+			"description": "Follow the trail along the powerlines past the farm property.",
+			"lon": 151.08091944444445,
+			"lat": -33.54561666666667
+		},
+		{
+			"type": "waypoint",
+			"photo": "0140_r0011892.jpg",
+			"description": "Continue past the gate at the second carpark.",
+			"lon": 151.08747100000002,
+			"lat": -33.542344
+		},
+		{
+			"type": "waypoint",
+			"photo": "0180_r0011895.jpg",
+			"description": "Turn left at the intersection with Kulpas Track.",
+			"lon": 151.09228611111112,
+			"lat": -33.53937777777777
+		},
+		{
+			"type": "waypoint",
+			"photo": "0280_r0011900.jpg",
+			"description": "Follow the trail as it zigzags down the ridge towards the creek.",
+			"lon": 151.09102777777778,
+			"lat": -33.53152222222222
+		},
+		{
+			"type": "waypoint",
+			"photo": "0330_r0011904.jpg",
+			"description": "Follow the grassy trail along the creek to the left.",
+			"lon": 151.09590400000002,
+			"lat": -33.524992
+		},
+		{
+			"type": "waypoint",
+			"photo": "0370_p3120092.jpg",
+			"description": "<i>+0.5h / 2km</i>There is another campground to the right.",
+			"lon": 151.101973,
+			"lat": -33.523848,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "0430_r0011911.jpg",
+			"description": "Follow the trail along the creek past the grassy fields.",
+			"lon": 151.09325700000002,
+			"lat": -33.523627
+		},
+		{
+			"type": "waypoint",
+			"photo": "0490_p3120096.jpg",
+			"description": "It may nessecary to wade across the creek.",
+			"lon": 151.089266,
+			"lat": -33.522861
+		},
+		{
+			"type": "waypoint",
+			"photo": "0570_r0011920.jpg",
+			"description": "The trail ends near the toilet block of the Marramarra Creek Campground.",
+			"lon": 151.08724600000002,
+			"lat": -33.522216
+		},
+		{
+			"type": "waypoint",
+			"photo": "0590_r0011921.jpg",
+			"description": "Along the trail to the campground follow the rough bushtrail up Smuglers Ridge.",
+			"lon": 151.08833611111112,
+			"lat": -33.52321111111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "0750_r0011930.jpg",
+			"description": "The trail is rough, but easy to follow.",
+			"lon": 151.084159,
+			"lat": -33.53151100010092
+		},
+		{
+			"type": "waypoint",
+			"photo": "0800_p3120120.jpg",
+			"description": "From the top of the ridge, follow the wider better defined Smugglers Ridge Trail.",
+			"lon": 151.07586799999999,
+			"lat": -33.535318
+		},
+		{
+			"type": "waypoint",
+			"photo": "0940_r0011945.jpg",
+			"description": "Follow Smugglers Ridge Trail back to the intersection with the Marramarra Ridge Trail to close the loop.",
+			"lon": 151.06274099988042,
+			"lat": -33.558341
+		},
+		{
+			"type": "waypoint",
+			"photo": "0980_r0011948.jpg",
+			"description": "From the intersection follow the trail back to the carpark.",
+			"lon": 151.068734,
+			"lat": -33.559284
 		},
 		{
 			"location": "Fiddletown",
 			"type": "car",
-			"description": "Plan your drive from <a href=\"https://www.google.com/maps/dir/-33.5645001847,151.0727560613/Sydney,+New+South+Wales\">Fiddletown</a>.",
+			"description": "Plan your drive back from <a href=\"https://www.google.com/maps/dir/-33.5645001847,151.0727560613/Sydney,+New+South+Wales\">Fiddletown</a>.",
 			"lon": 151.0727560613,
 			"lat": -33.5645001847
 		}

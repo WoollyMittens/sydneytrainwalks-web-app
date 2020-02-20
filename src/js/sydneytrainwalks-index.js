@@ -175,6 +175,16 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 					if (first.type === 'car' || last.type === 'car') filtered.push(a);
 				});
 				break;
+			case 'toilets':
+				unfiltered.map(function(a) {
+					var markers = GuideData[a].markers;
+					var toilets = markers.reduce(function(accumulator, marker) {
+						accumulator.found = (accumulator.found !== 'undefined') ? (marker.type === 'toilet' || accumulator.found) : false;
+						return accumulator;
+					});
+					if (toilets.found) filtered.push(a);
+				});
+				break;
 			case 'looped':
 				unfiltered.map(function(a) {
 					var markers = GuideData[a].markers;

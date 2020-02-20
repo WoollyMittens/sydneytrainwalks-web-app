@@ -3,7 +3,8 @@
 	"lon": 150.990557,
 	"lat": -33.365059,
 	"description": [
-		"Lorem ipsum dolor sit amet."
+		"This walk follows a self guided tour along a restored section of the historic <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/old-great-north-road-world-heritage-walk\">Old Great North Road</a>.",
+		"The numbered signs along the trail correspond with recorded segments in the <a href=\"https://www.google.com/search?q=convict+road+app\">Convict Road app</a> available from your phone's app store."
 	],
 	"duration": 3,
 	"distance": 11,
@@ -22,9 +23,9 @@
 		{
 			"location": "Wisemans Ferry",
 			"type": "car",
-			"description": "Plan your drive to <a href=\"https://www.google.com/maps/dir/Sydney,+New+South+Wales/-33.392801,150.997977\">Wisemans Ferry</a>.",
-			"lon": 150.997977,
-			"lat": -33.392801
+			"description": "Plan your drive to <a href=\"https://www.google.com/maps/dir/Sydney,+New+South+Wales/-33.375349,150.985147\">Wisemans Ferry</a>.",
+			"lon": 150.985147,
+			"lat": -33.375349
 		},
 		{
 			"type": "toilet",
@@ -33,17 +34,66 @@
 		},
 		{
 			"type": "waypoint",
+			"photo": "p1240333.jpg",
+			"description": "From the carpark enter the gate and proceed up the restored section of the road.",
+			"lon": 150.98439,
+			"lat": -33.374227
+		},
+		{
+			"type": "waypoint",
+			"photo": "p1240293_p1240296.jpg",
+			"description": "Follow the self guided tour and use the Convict Road app for accompanying video/audio presentations.",
+			"lon": 150.98720277777775,
+			"lat": -33.368341666666666
+		},
+		{
+			"type": "waypoint",
+			"photo": "p1240243.jpg",
+			"description": "From the intersection, follow the directions down Finches Line.",
+			"lon": 150.99082199999998,
+			"lat": -33.364785000000005
+		},
+		{
+			"type": "waypoint",
+			"photo": "p1240234.jpg",
+			"description": "Continue the self guided tour along the abandoned section of road.",
+			"lon": 150.99736499999997,
+			"lat": -33.382333
+		},
+		{
+			"type": "waypoint",
+			"photo": "p1240227_p1240233.jpg",
+			"description": "Several unfenced lookouts to the right of the trail, offer expansive views across the Hawkesbury River.",
+			"lon": 150.99758888888888,
+			"lat": -33.38641944444444
+		},
+		{
+			"type": "waypoint",
+			"photo": "p1240212_p1240216.jpg",
+			"description": "Near the end of the ridge there are several incidental lookouts into Dharug National Park.",
+			"lon": 151.0025138888889,
+			"lat": -33.389380555555555
+		},
+		{
+			"type": "waypoint",
+			"photo": "p1240175.jpg",
+			"description": "From the end of the ridge the trail zigzags back down to the Wisemans Ferry Road.",
+			"lon": 151.002407,
+			"lat": -33.391792
+		},
+		{
+			"type": "waypoint",
 			"photo": "p1240153.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the gate follow Wisemans Ferry Road to the right back to the carpark.",
 			"lon": 150.997977,
 			"lat": -33.392801
 		},
 		{
 			"location": "Wisemans Ferry",
 			"type": "car",
-			"description": "Plan your drive from <a href=\"https://www.google.com/maps/dir/-33.392801,150.997977/Sydney,+New+South+Wales\">Wisemans Ferry</a>.",
-			"lon": 150.997977,
-			"lat": -33.392801
+			"description": "Plan your drive back from <a href=\"https://www.google.com/maps/dir/-33.375349,150.985147/Sydney,+New+South+Wales\">Wisemans Ferry</a>.",
+			"lon": 150.985147,
+			"lat": -33.375349
 		}
 	]
 }
