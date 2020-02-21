@@ -1,9 +1,12 @@
 {
-	"location": "Mungo Point",
+	"location": "Mungo Rainforest",
 	"lon": 152.3132063169,
 	"lat": -32.538564289,
 	"description": [
-		"Lorem ipsum dolor sit amet."
+		"Just out of reach of public transport, <a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/myall-lakes-national-park\">Myall Lakes National Park</a> is still close enough for a day trip.",
+		"<br/><br/>",
+		"This short <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/mungo-rainforest-walk\">Mungo Rainforest walk</a> loop",
+		"at the <a href=\"https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/mungo-brush-campground\">Mungo Brush campground</a> is worth adding to a longer dayhike."
 	],
 	"duration": 0.5,
 	"distance": 2,
@@ -34,9 +37,16 @@
 		{
 			"type": "waypoint",
 			"photo": "img_20190907_135252.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the picnic area of the campground follow the signs down the Rainforest Track.",
 			"lon": 152.31072500000002,
 			"lat": -32.541758
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20190907_140628.jpg",
+			"description": "Follow the loop around Mungro Brush Hill.",
+			"lon": 152.314178,
+			"lat": -32.538681
 		},
 		{
 			"location": "Mungo Brush",

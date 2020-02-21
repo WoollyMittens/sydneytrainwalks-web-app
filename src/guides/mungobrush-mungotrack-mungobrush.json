@@ -1,9 +1,20 @@
 {
 	"location": "Mungo Track",
-	"lon": 152.2791550029,
-	"lat": -32.5808934029,
+	"lon": 152.277653,
+	"lat": -32.582133,
 	"description": [
-		"Lorem ipsum dolor sit amet."
+		"Just out of reach of public transport, <a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/myall-lakes-national-park\">Myall Lakes National Park</a> is still close enough for a day hike.",
+		"From the <a href=\"https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/mungo-brush-campground\">Mungo Brush campground</a> several walking tracks are strung together into a loop:",
+		"<br/><br/>",
+		"The lakeside <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/tamboi-walking-track\">Tamboi walking track</a> leads to",
+		"the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/picnic-areas/tamboi-picnic-area\">Tamboi picnic area</a> along the Myall River.",
+		"From there the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/mungo-walking-track\">Mungo walking track</a> is followed",
+		"to the <a href=\"https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/brambles-green-campground\">Brambles Green campground</a>.",
+		"<br/><br/>",
+		"The walk loops back following the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/dark-point-walking-track\">Dark Point walking track</a>",
+		"to the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/aboriginal-sites/dark-point-aboriginal-place\">Dark Point Aboriginal Place</a>.",
+		"Before returning to the <a href=\"https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/mungo-brush-campground\">Mungo Brush campground</a> along the beach",
+		"via the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/picnic-areas/hole-in-the-wall-picnic-area\">Hole in the Wall picnic area</a>"
 	],
 	"duration": 5,
 	"distance": 21,
@@ -33,10 +44,96 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_3551.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 152.3096573900028,
-			"lat": -32.54280505999957
+			"photo": "dsc_3574.jpg",
+			"description": "From the carpark follow the road through the campground and down the Tomboy Firetrail past the gate.",
+			"lon": 152.3058238100054,
+			"lat": -32.54444556996218
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3609.jpg",
+			"description": "Turn left at the intersection with the Mungo Track.",
+			"lon": 152.28695076000855,
+			"lat": -32.54886958997722
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3610_dsc_3619.jpg",
+			"description": "<i>+0.25h / 0.5km</i> Continue past the intersection to visit the Tamboi picnic area.",
+			"lon": 152.28551635000645,
+			"lat": -32.55050232,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3622.jpg",
+			"description": "Traverse the wetlands across the boardwalk.",
+			"lon": 152.28811846000275,
+			"lat": -32.54918454000139
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3648.jpg",
+			"description": "Watch for the trail markers along the faint trail on the dry sections.",
+			"lon": 152.2878965299933,
+			"lat": -32.551499700003745
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3675_dsc_3679.jpg",
+			"description": "From the Brambles Green campground follow the access road to Mungo Brush Road.",
+			"lon": 152.28242156997842,
+			"lat": -32.56554857001972
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3707.jpg",
+			"description": "At the intersection follow Mungo Brush Road to the right.",
+			"lon": 152.28670276000688,
+			"lat": -32.57987870000634
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3708.jpg",
+			"description": "Start the Wildflow Walk a short distance up Mungo Brush Road.",
+			"lon": 152.28508276999978,
+			"lat": -32.58079052998011
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3712.jpg",
+			"description": "<i>-1h / 4km</i> To skip directly to the beach, take the Duck Hole Firetrail to the left and follow it across the road to the Sandy Point picnic area.",
+			"lon": 152.27529351004324,
+			"lat": -32.58449050999346,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3713_dsc_3721.jpg",
+			"description": "At the end of the Wildflower Walk, cross the road to the dunes and follow Dark Point walking track to the beach.",
+			"lon": 152.26771272000866,
+			"lat": -32.5945707099982
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3746.jpg",
+			"description": "From the Dark Point aboriginal middens follow the beach to the left.",
+			"lon": 152.2691729299762,
+			"lat": -32.59726396003288
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3765_dsc_3775.jpg",
+			"description": "Continue down the beach past the Hole in the Wall picnic area.",
+			"lon": 152.30102873000328,
+			"lat": -32.561065700021246
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_3777.jpg",
+			"description": "At Mungo Brush, follow one of the trails through the dunes back to the campground carpark.",
+			"lon": 152.31094080996886,
+			"lat": -32.546240520043334
 		},
 		{
 			"location": "Mungo Brush",
