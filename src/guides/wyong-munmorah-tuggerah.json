@@ -439,19 +439,6 @@
 			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
-			"title": "Four Seasons in One Day: Coastal Heath",
-			"badge": "day_rain",
-			"lon": 151.5393556,
-			"lat": -33.3043167,
-			"radius": 0.0004,
-			"explanation": [
-				"The dense olive green heath opens up to the blues of open ocean and sky.",
-				"Once all of Central Coast was painted with the paints on this small pallete."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "waypoint",
 			"photo": "dsc_0778_dsc_2308.jpg",
 			"lon": 151.537644829993,

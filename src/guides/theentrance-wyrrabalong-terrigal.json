@@ -127,13 +127,14 @@
 			"description": "From the trailhead at Crackneck Lookout follow the signs to Wyrrabalong Lookout."
 		},
 		{
-			"title": "Love Lift Me Up...",
-			"badge": "music_1",
-			"lon": 151.4756577864043,
-			"lat": -33.40488481128369,
+			"title": "Four Seasons in One Day: Coastal Heathland",
+			"badge": "day_rain",
+			"lon": 151.4805944,
+			"lat": -33.3983333,
 			"radius": 0.0004,
 			"explanation": [
-				"The high point of Central Coast in several ways."
+				"The dense olive green heath opens up to the blues of open ocean and sky.",
+				"Once all of Central Coast was painted with the paints on this small pallete."
 			],
 			"type": "hotspot",
 			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
