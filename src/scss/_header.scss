@@ -1,98 +1,91 @@
-/*
-	header
-*/
-@media all {
-	header {
-		&.title {
-			background-color: #fff;
-			border-bottom: solid 1px #eee;
-			box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
-			border-radius: 0;
-			text-align: left;
-			position: absolute;
-			height: 4rem;
-			overflow: hidden;
-			left: 0;
-			right: 0;
-			text-align: center;
-			top: 0;
-			z-index: 8;
-
-			h1 {
-				margin: 0;
-			}
-
-			a {
-				display: inline-block;
-				font-size: 23px;
-				font-weight: normal;
-				height: 4rem;
-				line-height: 4rem;
-				margin: 0;
-				vertical-align: middle;
-				color: #0D47A1;
-				text-decoration: none;
-
-				&:before {
-					background-image: url("../img/logo.svg");
-					background-size: auto 36px;
-					content: '';
-					display: inline-block;
-					height: 36px;
-					margin-right: 0.3em;
-					vertical-align: middle;
-					width: 68px;
-				}
-			}
-
-			i {
-				display: none;
-			}
-		}
-
-		&.subtitle {
-			border-bottom: solid 1px #eee;
-			box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
-			position: absolute;
-			height: 4rem;
-			left: 0;
-			right: 0;
-			top: 4rem;
-			z-index: 8;
-			cursor: pointer;
-
-			h1, h2 {
-				display: flex;
-				flex-wrap: nowrap;
-				justify-content: center;
-				align-items: stretch;
-				height: 4rem;
-				position: relative;
-				font-size: 1.166666666666667rem;
-				text-decoration: none;
-				margin: 0;
-				font-weight: normal;
-			}
-		}
-	}
-
-	html.ios-true header.title {}
-
-	body.screen-about header.subtitle,
-	body.screen-menu header.subtitle,
-	body.screen-overview header.subtitle {
-		visibility: hidden;
-	}
-}
-@media (max-width:959px) {
-	header.title a {
+header {
+	&.title {
+		background-color: #fff;
+		border-bottom: solid 1px #eee;
+		box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
+		border-radius: 0;
+		text-align: left;
+		position: absolute;
+		height: 4rem;
+		overflow: hidden;
+		left: 0;
+		right: 0;
 		text-align: center;
+		top: 0;
+		z-index: 8;
+
+		h1 {
+			margin: 0;
+		}
+
+		a {
+			display: inline-block;
+			font-size: 1.438rem;
+			font-weight: normal;
+			height: 4rem;
+			line-height: 4rem;
+			margin: 0;
+			vertical-align: middle;
+			color: #0D47A1;
+			text-decoration: none;
+			@media (max-width:959px) {
+				text-align: center;
+			}
+
+			&:before {
+				background-image: url("../img/logo.svg");
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				content: '';
+				display: inline-block;
+				height: 2.25rem;
+				margin-right: 0.3em;
+				vertical-align: middle;
+				width: 4.25rem;
+			}
+		}
+
+		i {
+			display: none;
+		}
 	}
-}
-@media print {
-	header {
-		&.title,
-		&.subtitle {
+
+	&.subtitle {
+		border-bottom: solid 1px #eee;
+		box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
+		position: absolute;
+		height: 4rem;
+		left: 0;
+		right: 0;
+		top: 4rem;
+		z-index: 8;
+		cursor: pointer;
+
+		h1,
+		h2 {
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: center;
+			align-items: stretch;
+			height: 4rem;
+			position: relative;
+			font-size: 1.167rem;
+			text-decoration: none;
+			margin: 0;
+			font-weight: normal;
+		}
+
+		body.screen-about &,
+		body.screen-menu &,
+		body.screen-overview & {
+			visibility: hidden;
+		}
+	}
+
+	&.subtitle,
+	&.title {
+		@media print {
 			position: static;
 			box-shadow: none;
 			border: none;

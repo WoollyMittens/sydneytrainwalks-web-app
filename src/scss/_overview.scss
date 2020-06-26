@@ -1,58 +1,27 @@
-/*
-	menu
-*/
-@media all {
-
-	.overview {
-		transition-property: transform;
-		transition-duration: 300ms;
-		transform: translate(-100%, 0);
-		background: #fff none;
-		bottom: 4rem;
-		left: 0;
-		position: absolute;
-		right: 0;
-		top: 4rem;
-		z-index: 6;
-	}
-
-	/*
-		on which screen should this be visible
-	*/
-
-	body.screen-overview .overview {
-		transform: translate(0, 0);
-	}
-
-}
-
-@media (min-width:960px) {
-
-	.overview {
+.overview {
+	transition-property: transform;
+	transition-duration: 300ms;
+	transform: translate(-100%, 0);
+	background: #fff none;
+	bottom: 4rem;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 4rem;
+	z-index: 6;
+	@media (min-width:960px) {
 		right: 50%;
 	}
-
-	/*
-		on which screen should this be visible
-	*/
-
-	body.screen-menu .overview {
+	@media print {
 		transform: translate(0, 0);
-	}
-
-}
-@media print {
-
-  .overview {
-		transform: translate(0, 0);
-		position : relative !important;
-		top : auto !important;
-		right : auto !important;
-		bottom : auto !important;
-		left : auto !important;
-		page-break-before : always;
-		height : 20cm !important;
-		width : 20cm !important;
+		position: relative !important;
+		top: auto !important;
+		right: auto !important;
+		bottom: auto !important;
+		left: auto !important;
+		page-break-before: always;
+		height: 20cm !important;
+		width: 20cm !important;
 		margin: 1cm auto !important;
 
 		button {
@@ -60,4 +29,13 @@
 		}
 	}
 
+	body.screen-overview & {
+		transform: translate(0, 0);
+	}
+
+	body.screen-menu & {
+		@media (min-width:960px) {
+			transform: translate(0, 0);
+		}
+	}
 }

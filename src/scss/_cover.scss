@@ -1,48 +1,39 @@
-/*
-	cover page
-*/
-@media all {
-	.ios-margins {
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-	}
-
-	#appView {
-		height: 100%;
-		width: 100%;
-		overflow: hidden;
-		position: relative;
-
-		&.status-busy:after {
-			content: '';
-			display: block;
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100%;
-			z-index: 9999;
-			background-color: #000;
-			background-image: url("../img/busy.gif");
-			background-position: center;
-			background-repeat: no-repeat;
-			opacity: 0.7;
-		}
-	}
-}
-@media print {
-	.ios-margins {
+.ios-margins {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+	@media print {
 		display: inline;
 		position: static;
 	}
+}
 
-	#appView {
+#appView {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	@media print {
 		overflow: visible;
 		height: auto;
 	}
 
+	&.status-busy:after {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+		background-color: #000;
+		background-image: url("../img/busy.gif");
+		background-position: center;
+		background-repeat: no-repeat;
+		opacity: 0.7;
+	}
 }

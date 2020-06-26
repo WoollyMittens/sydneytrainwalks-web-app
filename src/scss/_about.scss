@@ -1,96 +1,20 @@
-/*
-	info
-*/
-@media all {
-	.about {
-		transition-property: transform;
-		transition-duration: 300ms;
-		transform: translate(-100%, 0);
-		background: #fff;
-		bottom: 4rem;
-		padding: 0;
-		position: absolute;
-		right: 0;
-		top: 4rem;
-		width: 100%;
-		z-index: 7;
-
-		&-scroller {
-			height: 100%;
-			overflow-x: hidden;
-			overflow-y: auto;
-			-webkit-overflow-scrolling: touch;
-			padding: 0 20px;
-			font-size: 0.875rem;
-
-			> :first-child {
-				margin-top: 20px;
-			}
-
-			> :last-child {
-				margin-bottom: 20px;
-			}
-		}
-
-		h2,
-		h3 {
-			font-size: 1.125rem;
-			margin-top: 1.4rem;
-		}
-
-		h4 {
-			font-size: 1rem;
-		}
-
-		h5 {
-			font-size: 0.875rem;
-		}
-
-		figure {
-			margin: 1em 0;
-			padding: 0;
-
-			img {
-				border-radius: 12px;
-				height: 64px;
-				width: 64px;
-				margin-right: 0.3em;
-				vertical-align: middle;
-			}
-
-			figcaption {
-				display: inline-block;
-				font-size: 12px;
-				vertical-align: middle;
-
-				strong {
-					display: block;
-					font-size: 16px;
-				}
-			}
-		}
-	}
-	/*
-	on which screen should this be visible
-	*/
-	body.screen-about .about {
-		transform: translate(0, 0);
-	}
-}
-@media (max-width:959px) {
-	.about {
+.about {
+	transition-property: transform;
+	transition-duration: 300ms;
+	transform: translate(-100%, 0);
+	background: #fff;
+	bottom: 4rem;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: 4rem;
+	width: 100%;
+	z-index: 7;
+	@media (max-width:959px) {
 		border-left: none;
 		width: 100%;
 	}
-	/*
-	on which screen should this be visible
-	*/
-	body.screen-about .about {
-		transform: translate(0, 0);
-	}
-}
-@media print {
-	.about {
+	@media print {
 		transform: translate(0, 0);
 		position: relative !important;
 		top: auto !important;
@@ -104,5 +28,64 @@
 		padding: 0.5cm !important;
 		width: 100% !important;
 		height: auto !important;
+	}
+
+	&-scroller {
+		height: 100%;
+		overflow-x: hidden;
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+		padding: 0 20px;
+		font-size: 0.875rem;
+
+		> :first-child {
+			margin-top: 20px;
+		}
+
+		> :last-child {
+			margin-bottom: 20px;
+		}
+	}
+
+	h2,
+	h3 {
+		font-size: 1.125rem;
+		margin-top: 1.4rem;
+	}
+
+	h4 {
+		font-size: 1rem;
+	}
+
+	h5 {
+		font-size: 0.875rem;
+	}
+
+	figure {
+		margin: 1em 0;
+		padding: 0;
+
+		img {
+			border-radius: 12px;
+			height: 64px;
+			width: 64px;
+			margin-right: 0.3em;
+			vertical-align: middle;
+		}
+
+		figcaption {
+			display: inline-block;
+			font-size: 0.75rem;
+			vertical-align: middle;
+
+			strong {
+				display: block;
+				font-size: 1rem;
+			}
+		}
+	}
+
+	body.screen-about & {
+		transform: translate(0, 0);
 	}
 }

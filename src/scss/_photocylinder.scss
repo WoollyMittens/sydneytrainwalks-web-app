@@ -1,69 +1,74 @@
 /*
-	Photo Cylinder
+	3d stage
+
+	The base size of the calculations was arbitrarily picked as 500, but the resulting projection can be arbitrarily large.
+
+	tan A = Y / X
+	tan(22.5) = 300 / X
+	tan(22.5) / 300 = 1 / X
+	300 / tan(22.5) = X
+
+	Z = 1.207106781186548 * X
+
+	scale = aspect * (360 / fov) * 0.3
+
+	translateZ(calc(-1.207106781186548 * 500px + 2px))
+
+	translateZ(-601.553390593274px)
 */
-@media all {
-	/*
-		example container
-	*/
-	#photocylinder {
+#photocylinder {
+	margin: 0;
+	padding: 0;
+	position: relative;
+
+	* {
+		box-sizing: border-box;
+		-ms-interpolation-mode: bicubic;
+	}
+
+	li {
+		display: inline;
 		margin: 0;
 		padding: 0;
-		position: relative;
 
-		* {
-			box-sizing: border-box;
-			-ms-interpolation-mode: bicubic;
-		}
-
-		li {
-			display: inline;
-			margin: 0;
-			padding: 0;
-
-			a {}
-
-			img {
-				@include rems('margin', 0, 0, 0.33, 0);
-				display: inline-block;
-				height: 96px;
-				width: auto;
-				vertical-align: top;
-			}
-		}
-	}
-	/*
-		3d stage
-
-		The base size of the calculations was arbitrarily picked as 500, but the resulting projection can be arbitrarily large.
-
-		tan A = Y / X
-		tan(22.5) = 300 / X
-		tan(22.5) / 300 = 1 / X
-		300 / tan(22.5) = X
-
-		Z = 1.207106781186548 * X
-
-		scale = aspect * (360 / fov) * 0.3
-
-		translateZ(calc(-1.207106781186548 * 500px + 2px))
-
-		translateZ(-601.553390593274px)
-	*/
-	.photo-cylinder {
-		width: 100%;
-		height: 100%;
-		position: relative;
-		overflow: hidden;
-		margin: 0;
-		perspective: 500px;
+		a {}
 
 		img {
-			visibility: hidden;
-			width: 100%;
-			height: auto;
+			margin: 0 0 0.33rem;
+			display: inline-block;
+			height: 96px;
+			width: auto;
+			vertical-align: top;
 		}
+	}
+}
 
-		.pc-obj-row {
+.photocylinder {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	perspective: 500px;
+
+	img {
+		visibility: hidden;
+		width: 100%;
+		height: auto;
+	}
+
+	&-fallback img {
+		visibility: visible;
+		height: 100%;
+		width: auto;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%) scale(1, 1);
+	}
+
+	&-obj {
+		&-row {
 			position: absolute;
 			top: 50%;
 			left: 50%;
@@ -74,7 +79,7 @@
 			position: relative;
 		}
 
-		.pc-obj-col {
+		&-col {
 			background-size: 800% auto;
 			background-position: 0 50%;
 			background-repeat: no-repeat;
@@ -85,76 +90,84 @@
 			backface-visibility: hidden;
 			width: 100%;
 			height: 100%;
-		}
 
-		.pc-obj-col-0 {
-			transform: rotateY(0deg) translateZ(-601.553390593274px);
-			background-position: 0 50%;
-		}
+			&-0 {
+				transform: rotateY(0deg) translateZ(-601.553390593274px);
+				background-position: 0 50%;
+			}
 
-		.pc-obj-col-1 {
-			transform: rotateY(-45deg) translateZ(-601.553390593274px);
-			background-position: -500px 50%;
-		}
+			&-1 {
+				transform: rotateY(-45deg) translateZ(-601.553390593274px);
+				background-position: -500px 50%;
+			}
 
-		.pc-obj-col-2 {
-			transform: rotateY(-90deg) translateZ(-601.553390593274px);
-			background-position: -1000px 50%;
-		}
+			&-2 {
+				transform: rotateY(-90deg) translateZ(-601.553390593274px);
+				background-position: -1000px 50%;
+			}
 
-		.pc-obj-col-3 {
-			transform: rotateY(-135deg) translateZ(-601.553390593274px);
-			background-position: -1500px 50%;
-		}
+			&-3 {
+				transform: rotateY(-135deg) translateZ(-601.553390593274px);
+				background-position: -1500px 50%;
+			}
 
-		.pc-obj-col-4 {
-			transform: rotateY(-180deg) translateZ(-601.553390593274px);
-			background-position: -2000px 50%;
-		}
+			&-4 {
+				transform: rotateY(-180deg) translateZ(-601.553390593274px);
+				background-position: -2000px 50%;
+			}
 
-		.pc-obj-col-5 {
-			transform: rotateY(-225deg) translateZ(-601.553390593274px);
-			background-position: -2500px 50%;
-		}
+			&-5 {
+				transform: rotateY(-225deg) translateZ(-601.553390593274px);
+				background-position: -2500px 50%;
+			}
 
-		.pc-obj-col-6 {
-			transform: rotateY(-270deg) translateZ(-601.553390593274px);
-			background-position: -3000px 50%;
-		}
+			&-6 {
+				transform: rotateY(-270deg) translateZ(-601.553390593274px);
+				background-position: -3000px 50%;
+			}
 
-		.pc-obj-col-7 {
-			transform: rotateY(-315deg) translateZ(-601.553390593274px);
-			background-position: -3500px 50%;
-		}
-
-		&.pc-fallback {
-			img {
-				visibility: visible;
-				height: 100%;
-				width: auto;
-				position: absolute;
-				left: 50%;
-				top: 50%;
-				transform: translate(-50%, -50%) scale(1, 1);
+			&-7 {
+				transform: rotateY(-315deg) translateZ(-601.553390593274px);
+				background-position: -3500px 50%;
 			}
 		}
 	}
 
-	.photo-cylinder.pc-180 {
-		.pc-obj-col {
-			background-size: 400% auto;
+	&-180 .photocylinder-obj-col {
+		background-size: 400% auto;
+	}
+
+	&-360 .photocylinder-obj-col {
+		background-size: 800% auto;
+	}
+
+	&-busy {
+		border-radius: 5px;
+		opacity: 0.8;
+		-webkit-opacity: 0.8;
+		background: #000 url("../img/busy.gif") no-repeat 50% 50%;
+		height: 48px;
+		left: 50%;
+		margin: -24px;
+		position: absolute;
+		top: 50%;
+		width: 48px;
+		z-index: 20001;
+
+		&-fixed {
+			position: fixed;
+		}
+
+		&-passive {
+			visibility: hidden;
+		}
+
+		&-active {
+			visibility: visible;
 		}
 	}
 
-	.photo-cylinder.pc-360 {
-		.pc-obj-col {
-			background-size: 800% auto;
-		}
-	}
-	/*
-		popup styles
-	*/
-	.photocylinder-popup {
+	&-popup {
 		transition: opacity ease 500ms;
 		background: rgba(0, 0, 0, 0.9);
 		background: #000\9;
@@ -169,97 +182,60 @@
 		text-align: center;
 		z-index: 20000;
 
-		&.photocylinder-busy-fixed {
-			position: fixed;
-		}
-
 		* {
 			box-sizing: border-box;
 			-ms-interpolation-mode: bicubic;
 		}
 
-		.photocylinder-closer,
-		.photocylinder-locator {
-			@include iconParent(48);
-			@include rem('width', 3);
-			@include rem('height', 3);
-			@include rem('right', 1);
-			@include rem('top', 1);
-			background: #0D47A1;
-			color: #fff;
-			cursor: pointer;
-			font-weight: bold;
-			position: absolute;
-			text-align: center;
-			text-decoration: none;
-			z-index: 2;
-
-			&:before {
-				@include iconCenter(24);
-				background-image: url("../img/close.svg");
-				background-size: 24px 24px;
-			}
-
-			&:hover {
-				background: $color-hover;
-			}
+		&-passive {
+			opacity: 0;
+			-webkit-opacity: 0;
+			visibility: hidden\9;
 		}
 
-		.photocylinder-locator {
-			@include rem('right', 5);
-			display: none;
-
-			&:before {
-				background-image: url("../img/map_2.svg");
-			}
+		&-active {
+			opacity: 1;
+			-webkit-opacity: 1;
+			visibility: visible\9;
 		}
 	}
 
-	.photocylinder-popup-passive {
-		opacity: 0;
-		-webkit-opacity: 0;
-		visibility: hidden\9;
-	}
-
-	.photocylinder-popup-active {
-		opacity: 1;
-		-webkit-opacity: 1;
-		visibility: visible\9;
-	}
-	/*
-		busy spinner
-	*/
-	.photocylinder-busy {
-		border-radius: 5px;
-		opacity: 0.8;
-		-webkit-opacity: 0.8;
-		background: #000 url("../img/busy.gif") no-repeat 50% 50%;
-		height: 48px;
-		left: 50%;
-		margin: -24px;
+	&-closer,
+	&-locator {
+		@include iconParent(48);
+		width: 3rem;
+		height: 3rem;
+		right: 1rem;
+		top: 1rem;
+		background: #0D47A1;
+		color: #fff;
+		cursor: pointer;
+		font-weight: bold;
 		position: absolute;
-		top: 50%;
-		width: 48px;
-		z-index: 20001;
+		text-align: center;
+		text-decoration: none;
+		z-index: 2;
 
-		&.photocylinder-busy-fixed {
-			position: fixed;
+		&:before {
+			@include iconCenter(24);
+			background-image: url("../img/close.svg");
+			background-size: 24px 24px;
+		}
+
+		&:hover {
+			background: $color-hover;
 		}
 	}
 
-	.photocylinder-busy-passive {
-		visibility: hidden;
-	}
-
-	.photocylinder-busy-active {
-		visibility: visible;
-	}
-}
-@media (max-width:959px) {
-	.photocylinder-popup {
-		.photocylinder-locator {
+	&-locator {
+		right: 5rem;
+		display: none;
+		@media (max-width:959px) {
 			display: block;
 		}
+
+		&:before {
+			background-image: url("../img/map_2.svg");
+		}
 	}
 }
-@media print {}
