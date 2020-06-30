@@ -1316,11 +1316,15 @@ Localmap.prototype.Route = function (parent, onComplete) {
 	// METHODS
 
 	this.start = function() {
-		var key = this.config.key;
+    /*
+      TODO: implement as SVG instead of CANVAS
+      <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+      var svg1 = document.createElementNS("http://www.w3.org/2000/svg", "svg"); svg1.setAttribute("width", "100");
+    */
+    var key = this.config.key;
 		// create a canvas
-// TODO: implement as SVG instead of CANVAS
-		this.element = document.createElement('canvas');
-		this.element.setAttribute('class', 'localmap-route')
+		this.element = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+		this.element.setAttribute('class', 'localmap-route');
 		this.parent.element.appendChild(this.element);
 		// use the JSON immediately
 		if (this.config.routeData && this.config.routeData[key]) {
@@ -1351,40 +1355,47 @@ Localmap.prototype.Route = function (parent, onComplete) {
 	};
 
 	this.redraw = function() {
-// TODO: implement as SVG instead of CANVAS
+    /*
+      TODO: implement as SVG instead of CANVAS
+      <polyline points="100,100 150,25 150,75 200,0" fill="none" stroke="black" />
+      var poly1 = document. createElementNS("http://www.w3.org/2000/svg", "polyline"); poly1.setAttribute("fill", "red");
+    */
 		var min = this.config.minimum;
 		var max = this.config.maximum;
-		// adjust the height of the canvas
-		this.element.width = this.parent.element.offsetWidth;
-		this.element.height = this.parent.element.offsetHeight;
-		// position every trackpoint in the route
-		var ctx = this.element.getContext('2d');
+    var w = this.parent.element.offsetWidth;
+    var h = this.parent.element.offsetHeight;
+		// adjust the height of the svg
+    this.element.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
+    this.element.setAttribute('width', w);
+    this.element.setAttribute('height', h);
 		// (re)draw the route
-		var x0, y0, x1, y1, z = this.config.position.zoom, w = this.element.width, h = this.element.height;
-		ctx.clearRect(0, 0, w, h);
-		ctx.lineWidth = 4 / z;
-		ctx.strokeStyle = 'orange';
+		var x, y, z = this.config.position.zoom;
+    var line, lines = this.element.querySelectorAll('polyline');
+    for (line in lines) { if (line.parentNode) line.parentNode.removeChild(line) }
     // for every segment
-    var track;
+    var points, track;
     for (var a = 0, b = this.tracks.length; a < b; a += 1) {
-  		ctx.beginPath();
+      // create a new line
+      line = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
+      line.setAttribute('fill', 'none');
+      line.setAttribute('stroke', 'orange');
+      line.setAttribute('stroke-width', 4 / z);
+      // draw the line along the track
+      points = '';
       track = this.tracks[a];
-      console.log('track.name', track.name);
   		for (var key in track.coordinates) {
   			if (track.coordinates.hasOwnProperty(key) && key % 1 == 0) {
           // calculate the current step
-          x1 = parseInt(this.config.distortX((track.coordinates[key][0] - min.lon_cover) / (max.lon_cover - min.lon_cover)) * w);
-          y1 = parseInt(this.config.distortY((track.coordinates[key][1] - min.lat_cover) / (max.lat_cover - min.lat_cover)) * h);
-          // if the step seems valid, draw the step
-    			if ((Math.abs(x1 - x0) + Math.abs(y1 - y0)) < 30) { ctx.lineTo(x1, y1); }
-          // or jump unlikely/erroneous steps
-          else { ctx.moveTo(x1, y1); }
-          // store current step as the previous step
-          x0 = x1;
-          y0 = y1;
+          x = parseInt(this.config.distortX((track.coordinates[key][0] - min.lon_cover) / (max.lon_cover - min.lon_cover)) * w);
+          y = parseInt(this.config.distortY((track.coordinates[key][1] - min.lat_cover) / (max.lat_cover - min.lat_cover)) * h);
+          // add the step
+          points += ' ' + x + ',' + y;
   			}
   		}
-  		ctx.stroke();
+      line.setAttribute('points', points);
+      line.addEventListener('click', function() { console.log('track.name', track.name); });
+      // insert the line
+      this.element.appendChild(line);
     }
 	};
 
