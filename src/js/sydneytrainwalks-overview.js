@@ -68,6 +68,9 @@ SydneyTrainWalks.prototype.Overview = function (parent) {
       'guideData': this.processMarkers(),
       'routeData': this.mergeRoutes(),
       'exifData': null,
+      // offsets
+      'distortX': function(x) { return x },
+      'distortY': function(y) { return y - (-2 * y * y + 2 * y) / 150 },
       // attribution
       'creditsTemplate': this.config.creditTemplate.innerHTML
     });

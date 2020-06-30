@@ -62,7 +62,9 @@ var Localmap = function(config) {
     'hotspots': [],
     'checkHotspot': function() { return true; },
     'enterHotspot': function() { return true; },
-    'leaveHotspot': function() { return true; }
+    'leaveHotspot': function() { return true; },
+    'distortX': function(x) { return x },
+    'distortY': function(y) { return y }
   };
 
   for (var key in config)
@@ -838,8 +840,8 @@ Localmap.prototype.Indicator = function (parent, onMarkerClicked, onMapFocus) {
 			// display the marker
 			this.element.style.cursor = (this.config.indicator.description) ? 'pointer' : 'default';
 			this.element.style.display = 'block';
-			this.element.style.left = ((lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
-			this.element.style.top = ((lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';
+			this.element.style.left = (this.config.distortX((lon - min.lon_cover) / (max.lon_cover - min.lon_cover)) * 100) + '%';
+			this.element.style.top = (this.config.distortY((lat - min.lat_cover) / (max.lat_cover - min.lat_cover)) * 100) + '%';
 		// otherwise
 		} else {
 			// hide the marker
@@ -1061,8 +1063,8 @@ Localmap.prototype.Location = function (parent) {
 		if (lon > min.lon_cover && lon < max.lon_cover && lat < min.lat_cover && lat > max.lat_cover) {
 			// display the marker
 			this.element.style.display = 'block';
-			this.element.style.left = ((lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
-			this.element.style.top = ((lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';
+			this.element.style.left = (this.config.distortX((lon - min.lon_cover) / (max.lon_cover - min.lon_cover)) * 100) + '%';
+			this.element.style.top = (this.config.distortY((lat - min.lat_cover) / (max.lat_cover - min.lat_cover)) * 100) + '%';
       // check if the location is within a hotspot
       this.checkHotSpot(lon, lat);
 		// otherwise
@@ -1180,8 +1182,8 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
 		element.setAttribute('class', 'localmap-waypoint localmap-index-' + markerIndex);
 		element.setAttribute('id', markerData.id || 'localmap_' + markerIndex);
 		element.addEventListener('click', onClicked.bind(this, markerData));
-		element.style.left = ((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
-		element.style.top = ((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';
+		element.style.left = (this.config.distortX((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover)) * 100) + '%';
+		element.style.top = (this.config.distortY((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover)) * 100) + '%';
 		element.style.cursor = 'pointer';
 		return element;
 	};
@@ -1207,8 +1209,8 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
 		element.setAttribute('class', 'localmap-marker localmap-index-' + markerIndex);
 		element.setAttribute('id', markerData.id || 'localmap_' + markerIndex);
 		element.addEventListener('click', onClicked.bind(this, markerData));
-		element.style.left = ((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
-		element.style.top = ((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';
+		element.style.left = (this.config.distortX((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover)) * 100) + '%';
+		element.style.top = (this.config.distortY((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover)) * 100) + '%';
 		element.style.cursor = (markerData.description || markerData.callback) ? 'pointer' : null;
 		return element;
 	};
@@ -1307,7 +1309,7 @@ Localmap.prototype.Route = function (parent, onComplete) {
 	this.parent = parent;
 	this.config = parent.config;
 	this.element = null;
-	this.coordinates = [];
+  this.tracks = [];
 	this.zoom = null;
 	this.delay = null;
 
@@ -1316,6 +1318,7 @@ Localmap.prototype.Route = function (parent, onComplete) {
 	this.start = function() {
 		var key = this.config.key;
 		// create a canvas
+// TODO: implement as SVG instead of CANVAS
 		this.element = document.createElement('canvas');
 		this.element.setAttribute('class', 'localmap-route')
 		this.parent.element.appendChild(this.element);
@@ -1348,6 +1351,7 @@ Localmap.prototype.Route = function (parent, onComplete) {
 	};
 
 	this.redraw = function() {
+// TODO: implement as SVG instead of CANVAS
 		var min = this.config.minimum;
 		var max = this.config.maximum;
 		// adjust the height of the canvas
@@ -1360,38 +1364,49 @@ Localmap.prototype.Route = function (parent, onComplete) {
 		ctx.clearRect(0, 0, w, h);
 		ctx.lineWidth = 4 / z;
 		ctx.strokeStyle = 'orange';
-		ctx.beginPath();
-		for (var key in this.coordinates) {
-			if (this.coordinates.hasOwnProperty(key) && key % 1 == 0) {
-        // calculate the current step
-				x1 = parseInt((this.coordinates[key][0] - min.lon_cover) / (max.lon_cover - min.lon_cover) * w);
-				y1 = parseInt((this.coordinates[key][1] - min.lat_cover) / (max.lat_cover - min.lat_cover) * h);
-        // if the step seems valid, draw the step
-  			if ((Math.abs(x1 - x0) + Math.abs(y1 - y0)) < 30) { ctx.lineTo(x1, y1); }
-        // or jump unlikely/erroneous steps
-        else { ctx.moveTo(x1, y1); }
-        // store current step as the previous step
-        x0 = x1;
-        y0 = y1;
-			}
-		}
-		ctx.stroke();
+    // for every segment
+    var track;
+    for (var a = 0, b = this.tracks.length; a < b; a += 1) {
+  		ctx.beginPath();
+      track = this.tracks[a];
+      console.log('track.name', track.name);
+  		for (var key in track.coordinates) {
+  			if (track.coordinates.hasOwnProperty(key) && key % 1 == 0) {
+          // calculate the current step
+          x1 = parseInt(this.config.distortX((track.coordinates[key][0] - min.lon_cover) / (max.lon_cover - min.lon_cover)) * w);
+          y1 = parseInt(this.config.distortY((track.coordinates[key][1] - min.lat_cover) / (max.lat_cover - min.lat_cover)) * h);
+          // if the step seems valid, draw the step
+    			if ((Math.abs(x1 - x0) + Math.abs(y1 - y0)) < 30) { ctx.lineTo(x1, y1); }
+          // or jump unlikely/erroneous steps
+          else { ctx.moveTo(x1, y1); }
+          // store current step as the previous step
+          x0 = x1;
+          y0 = y1;
+  			}
+  		}
+  		ctx.stroke();
+    }
 	};
 
 	// EVENTS
 
 	this.onJsonLoaded = function (geojson) {
 		// convert JSON into an array of coordinates
-		var features = geojson.features, segments = [], coordinates;
+		var features = geojson.features;
+    var name;
+    var coordinates = [];
 		for (var a = 0, b = features.length; a < b; a += 1) {
+      name = features[a].properties.name;
 			if (features[a].geometry.coordinates[0][0] instanceof Array) {
 				coordinates = [].concat.apply([], features[a].geometry.coordinates);
 			} else {
 				coordinates = features[a].geometry.coordinates;
 			}
-			segments.push(coordinates);
+			this.tracks.push({
+        'name': name,
+        'coordinates': coordinates
+      });
 		}
-		this.coordinates = [].concat.apply([], segments);
     // redraw
     this.redraw();
 		// resolve completion
@@ -1401,12 +1416,24 @@ Localmap.prototype.Route = function (parent, onComplete) {
 	this.onGpxLoaded = function(evt) {
 		// convert GPX into an array of coordinates
 		var gpx = evt.target.responseXML;
-		var trackpoints = gpx.querySelectorAll('trkpt,rtept');
-		for (var key in trackpoints) {
-			if (trackpoints.hasOwnProperty(key) && key % 1 == 0) {
-				this.coordinates.push([parseFloat(trackpoints[key].getAttribute('lon')), parseFloat(trackpoints[key].getAttribute('lat')), null]);
-			}
-		}
+    var name;
+    var trackpoints;
+    var coordinates = [];
+    var tracks = gpx.querySelector('trk,rte');
+    for (var track in tracks) {
+      name = track.querySelector('name');
+  		trackpoints = track.querySelectorAll('trkpt,rtept');
+      coordinates = [];
+      for (var key in trackpoints) {
+  			if (trackpoints.hasOwnProperty(key) && key % 1 == 0) {
+  			  coordinates.push([parseFloat(trackpoints[key].getAttribute('lon')), parseFloat(trackpoints[key].getAttribute('lat')), null]);
+  			}
+  		}
+      this.tracks.push({
+        'name': name,
+        'coordinates': coordinates
+      });
+    }
     // redraw
     this.redraw();
 		// resolve completion
