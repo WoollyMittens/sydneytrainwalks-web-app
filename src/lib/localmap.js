@@ -15,6 +15,7 @@ var Localmap = function(config) {
     'key': null,
     'alias': null,
     'container': null,
+    'legend': null,
     'canvasWrapper': null,
     'canvasElement': null,
     'thumbsUrl': null,
@@ -64,7 +65,8 @@ var Localmap = function(config) {
     'enterHotspot': function() { return true; },
     'leaveHotspot': function() { return true; },
     'distortX': function(x) { return x },
-    'distortY': function(y) { return y }
+    'distortY': function(y) { return y },
+    'supportColour': function(id) { return 'darkorange' }
   };
 
   for (var key in config)
@@ -679,9 +681,7 @@ Localmap.prototype.Controls = function (parent) {
 		this.last = new Date();
 	};
 
-	this.cancelInteraction = function(method, evt) {
-		console.log('cancelInteraction');
-	};
+	this.cancelInteraction = function(method, evt) {};
 
 	// EVENTS
 
@@ -1178,10 +1178,13 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
 	this.addWaypoint = function(markerData, markerIndex) {
 		var min = this.config.minimum;
 		var max = this.config.maximum;
+    var id = markerData.id || 'localmap_' + markerIndex;
+    // create a marker element
 		var element = document.createElement('span');
+		element.setAttribute('id', id);
 		element.setAttribute('class', 'localmap-waypoint localmap-index-' + markerIndex);
-		element.setAttribute('id', markerData.id || 'localmap_' + markerIndex);
 		element.addEventListener('click', onClicked.bind(this, markerData));
+    element.style.borderColor = this.config.supportColour(id);
 		element.style.left = (this.config.distortX((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover)) * 100) + '%';
 		element.style.top = (this.config.distortY((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover)) * 100) + '%';
 		element.style.cursor = 'pointer';
@@ -1203,6 +1206,7 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
 	this.addLandmark = function(markerData, markerIndex) {
 		var min = this.config.minimum;
 		var max = this.config.maximum;
+    // create a landmark element
 		var element = new Image();
 		element.setAttribute('src', this.config.markersUrl.replace('{type}', markerData.type));
 		element.setAttribute('title', markerData.description || '');
@@ -1316,11 +1320,6 @@ Localmap.prototype.Route = function (parent, onComplete) {
 	// METHODS
 
 	this.start = function() {
-    /*
-      TODO: implement as SVG instead of CANVAS
-      <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
-      var svg1 = document.createElementNS("http://www.w3.org/2000/svg", "svg"); svg1.setAttribute("width", "100");
-    */
     var key = this.config.key;
 		// create a canvas
 		this.element = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -1354,12 +1353,7 @@ Localmap.prototype.Route = function (parent, onComplete) {
 		this.zoom = this.config.position.zoom;
 	};
 
-	this.redraw = function() {
-    /*
-      TODO: implement as SVG instead of CANVAS
-      <polyline points="100,100 150,25 150,75 200,0" fill="none" stroke="black" />
-      var poly1 = document. createElementNS("http://www.w3.org/2000/svg", "polyline"); poly1.setAttribute("fill", "red");
-    */
+  this.draw = function() {
 		var min = this.config.minimum;
 		var max = this.config.maximum;
     var w = this.parent.element.offsetWidth;
@@ -1369,37 +1363,47 @@ Localmap.prototype.Route = function (parent, onComplete) {
     this.element.setAttribute('width', w);
     this.element.setAttribute('height', h);
 		// (re)draw the route
-		var x, y, z = this.config.position.zoom;
-    var line, lines = this.element.querySelectorAll('polyline');
-    for (line in lines) { if (line.parentNode) line.parentNode.removeChild(line) }
+		var x, y;
     // for every segment
-    var points, track;
+    var line, points, track;
+    var increments = (this.tracks.length > 10) ? 5 : 1;
+    var stroke = 4 / this.config.position.zoom;
     for (var a = 0, b = this.tracks.length; a < b; a += 1) {
       // create a new line
       line = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
       line.setAttribute('fill', 'none');
-      line.setAttribute('stroke', 'orange');
-      line.setAttribute('stroke-width', 4 / z);
+      line.setAttribute('stroke', this.config.supportColour(this.tracks[a].name));
+      line.setAttribute('stroke-width', stroke);
+      if (this.tracks.length > 10) line.setAttribute('stroke-dasharray', stroke + ' ' + stroke);
       // draw the line along the track
       points = '';
       track = this.tracks[a];
-  		for (var key in track.coordinates) {
-  			if (track.coordinates.hasOwnProperty(key) && key % 1 == 0) {
-          // calculate the current step
-          x = parseInt(this.config.distortX((track.coordinates[key][0] - min.lon_cover) / (max.lon_cover - min.lon_cover)) * w);
-          y = parseInt(this.config.distortY((track.coordinates[key][1] - min.lat_cover) / (max.lat_cover - min.lat_cover)) * h);
-          // add the step
-          points += ' ' + x + ',' + y;
-  			}
+      for (var c = 0, d = track.coordinates.length; c < d; c += increments) {
+        // calculate the current step
+        x = parseInt(this.config.distortX((track.coordinates[c][0] - min.lon_cover) / (max.lon_cover - min.lon_cover)) * w);
+        y = parseInt(this.config.distortY((track.coordinates[c][1] - min.lat_cover) / (max.lat_cover - min.lat_cover)) * h);
+        // add the step
+        points += ' ' + x + ',' + y;
   		}
       line.setAttribute('points', points);
-      line.addEventListener('click', function() { console.log('track.name', track.name); });
+      line.addEventListener('click', this.onRouteClicked.bind(this, track.name));
       // insert the line
       this.element.appendChild(line);
+    }
+  };
+
+	this.redraw = function() {
+    var stroke = 4 / this.config.position.zoom;
+    var lines = this.element.querySelectorAll('polyline');
+    for (var a = 0, b = lines.length; a < b; a += 1) {
+      lines[a].setAttribute('stroke-width', stroke);
+      if (lines.length > 10) lines[a].setAttribute('stroke-dasharray', stroke + ' ' + stroke);
     }
 	};
 
 	// EVENTS
+
+  this.onRouteClicked = function (name) {};
 
 	this.onJsonLoaded = function (geojson) {
 		// convert JSON into an array of coordinates
@@ -1419,7 +1423,7 @@ Localmap.prototype.Route = function (parent, onComplete) {
       });
 		}
     // redraw
-    this.redraw();
+    this.draw();
 		// resolve completion
 		onComplete();
 	};
@@ -1446,7 +1450,7 @@ Localmap.prototype.Route = function (parent, onComplete) {
       });
     }
     // redraw
-    this.redraw();
+    this.draw();
 		// resolve completion
 		onComplete();
 	};
