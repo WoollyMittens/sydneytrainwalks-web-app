@@ -1366,7 +1366,7 @@ Localmap.prototype.Route = function (parent, onComplete) {
 		var x, y;
     // for every segment
     var line, points, track;
-    var increments = (this.tracks.length > 10) ? 5 : 1;
+    var increments = (this.tracks.length > 10) ? 25 : 1;
     var stroke = 4 / this.config.position.zoom;
     for (var a = 0, b = this.tracks.length; a < b; a += 1) {
       // create a new line
@@ -1374,6 +1374,8 @@ Localmap.prototype.Route = function (parent, onComplete) {
       line.setAttribute('fill', 'none');
       line.setAttribute('stroke', this.config.supportColour(this.tracks[a].name));
       line.setAttribute('stroke-width', stroke);
+      line.setAttribute('stroke-linejoin', 'miter');
+      line.setAttribute('stroke-miterlimit', 1);
       if (this.tracks.length > 10) line.setAttribute('stroke-dasharray', stroke + ' ' + stroke);
       // draw the line along the track
       points = '';
@@ -1429,26 +1431,30 @@ Localmap.prototype.Route = function (parent, onComplete) {
 	};
 
 	this.onGpxLoaded = function(evt) {
-		// convert GPX into an array of coordinates
-		var gpx = evt.target.responseXML;
-    var name;
-    var trackpoints;
-    var coordinates = [];
-    var tracks = gpx.querySelector('trk,rte');
-    for (var track in tracks) {
-      name = track.querySelector('name');
-  		trackpoints = track.querySelectorAll('trkpt,rtept');
-      coordinates = [];
-      for (var key in trackpoints) {
-  			if (trackpoints.hasOwnProperty(key) && key % 1 == 0) {
-  			  coordinates.push([parseFloat(trackpoints[key].getAttribute('lon')), parseFloat(trackpoints[key].getAttribute('lat')), null]);
-  			}
-  		}
-      this.tracks.push({
-        'name': name,
-        'coordinates': coordinates
-      });
-    }
+		// extracts coordinates from a GPX document
+    function extractCoords(source, destination, parentTag, childTag) {
+      var a, b, c, d, parentNodes, childNodes, name, coords;
+      parentNodes = source.getElementsByTagName(parentTag);
+      for (a = 0, b = parentNodes.length; a < b; a += 1) {
+        name = parentNodes[a].querySelector('name');
+        coords = [];
+        childNodes = parentNodes[a].getElementsByTagName(childTag);
+        for (c = 0, d = childNodes.length; c < d; c += 1) {
+          coords.push([
+            parseFloat(childNodes[c].getAttribute('lon')),
+            parseFloat(childNodes[c].getAttribute('lat')),
+            null
+          ]);
+        }
+        destination.push({
+          'name': name,
+          'coordinates': coords
+        });
+      }
+    };
+    // extract both kinds of tracks from the GPX into an array of coordinates
+    extractCoords(evt.target.responseXML, this.tracks, 'trk', 'trkpt');
+    extractCoords(evt.target.responseXML, this.tracks, 'rte', 'rtept');
     // redraw
     this.draw();
 		// resolve completion

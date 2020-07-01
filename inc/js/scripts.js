@@ -874,8 +874,21 @@ SydneyTrainWalks.prototype.Overview = function (parent) {
       'guideData': this.processMarkers(),
       'routeData': this.mergeRoutes(),
       'exifData': null,
+      // offsets
+      'distortX': function(x) { return x },
+      'distortY': function(y) { return y - (-2 * y * y + 2 * y) / 150 },
       // attribution
-      'creditsTemplate': this.config.creditTemplate.innerHTML
+      'creditsTemplate': this.config.creditTemplate.innerHTML,
+      // legend
+      'supportColour': function(name) {
+        var colours = ['red', 'darkorange', 'green', 'teal', 'blue', 'purple', 'black'];
+        var index = name.split('').reduce(function(a,b){
+          a = (typeof a == 'string') ? a.charCodeAt() : a;
+          b = (typeof b == 'string') ? b.charCodeAt() : b;
+          return a + b;
+        });
+        return colours[index % colours.length];
+      }
     });
   };
 
@@ -883,6 +896,7 @@ SydneyTrainWalks.prototype.Overview = function (parent) {
     // add "onMarkerClicked" event handlers to markers
     var _this = this;
     GuideData['_index'].markers.map(function(marker) {
+      marker.type = 'waypoint';
       marker.description = '';
       marker.callback = _this.onMarkerClicked.bind(_this, marker.id);
     });
@@ -1088,6 +1102,57 @@ SydneyTrainWalks.prototype.Trophies = function(parent) {
 
 };
 
+var Editor = function() {
+
+  // properties
+
+  this.landmarks = document.querySelectorAll('.guide-landmark');
+  this.output = [];
+
+  // methods
+
+  this.init = function() {
+    var image, label, textarea;
+    // for all landmarks
+    for (var a = 0, b = this.landmarks.length; a < b; a += 1) {
+      // get the image
+      image = this.landmarks[a].querySelector('img');
+      // get the label
+      label = this.landmarks[a].querySelector('.guide-text');
+      label.style.flex = '1 1 auto';
+      // replace the label with an input field
+      textarea = document.createElement('textarea');
+      textarea.style.width = '90%';
+      textarea.style.height = '96px';
+      textarea.style.verticalAlign = 'middle';
+      textarea.value = label.innerHTML.split('<button')[0].trim();
+      textarea.addEventListener('change', this.update.bind(this, textarea, image, a));
+      label.replaceChild(textarea, label.firstChild);
+      // store the data
+      this.output[a] = {
+        "type": "waypoint",
+  			"photo": image.src.split("/").pop(),
+  			"description": textarea.value
+      }
+    }
+  };
+
+  this.save = function() {
+    // export the output
+    console.log(JSON.stringify(this.output, null, '\t'));
+  };
+
+  // events
+
+  this.update = function(input, image, index, evt) {
+    // update the field
+    this.output[index].description = input.value;
+  };
+
+  this.init();
+
+};
+
 /*
 	Source:
 	van Creij, Maurice (2018). "filters.js: Sorting and filtering a list of options.", http://www.woollymittens.nl/.
@@ -1285,6 +1350,7 @@ var Localmap = function(config) {
     'key': null,
     'alias': null,
     'container': null,
+    'legend': null,
     'canvasWrapper': null,
     'canvasElement': null,
     'thumbsUrl': null,
@@ -1332,7 +1398,10 @@ var Localmap = function(config) {
     'hotspots': [],
     'checkHotspot': function() { return true; },
     'enterHotspot': function() { return true; },
-    'leaveHotspot': function() { return true; }
+    'leaveHotspot': function() { return true; },
+    'distortX': function(x) { return x },
+    'distortY': function(y) { return y },
+    'supportColour': function(id) { return 'darkorange' }
   };
 
   for (var key in config)
@@ -1947,9 +2016,7 @@ Localmap.prototype.Controls = function (parent) {
 		this.last = new Date();
 	};
 
-	this.cancelInteraction = function(method, evt) {
-		console.log('cancelInteraction');
-	};
+	this.cancelInteraction = function(method, evt) {};
 
 	// EVENTS
 
@@ -2108,8 +2175,8 @@ Localmap.prototype.Indicator = function (parent, onMarkerClicked, onMapFocus) {
 			// display the marker
 			this.element.style.cursor = (this.config.indicator.description) ? 'pointer' : 'default';
 			this.element.style.display = 'block';
-			this.element.style.left = ((lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
-			this.element.style.top = ((lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';
+			this.element.style.left = (this.config.distortX((lon - min.lon_cover) / (max.lon_cover - min.lon_cover)) * 100) + '%';
+			this.element.style.top = (this.config.distortY((lat - min.lat_cover) / (max.lat_cover - min.lat_cover)) * 100) + '%';
 		// otherwise
 		} else {
 			// hide the marker
@@ -2331,8 +2398,8 @@ Localmap.prototype.Location = function (parent) {
 		if (lon > min.lon_cover && lon < max.lon_cover && lat < min.lat_cover && lat > max.lat_cover) {
 			// display the marker
 			this.element.style.display = 'block';
-			this.element.style.left = ((lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
-			this.element.style.top = ((lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';
+			this.element.style.left = (this.config.distortX((lon - min.lon_cover) / (max.lon_cover - min.lon_cover)) * 100) + '%';
+			this.element.style.top = (this.config.distortY((lat - min.lat_cover) / (max.lat_cover - min.lat_cover)) * 100) + '%';
       // check if the location is within a hotspot
       this.checkHotSpot(lon, lat);
 		// otherwise
@@ -2446,12 +2513,15 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
 	this.addWaypoint = function(markerData, markerIndex) {
 		var min = this.config.minimum;
 		var max = this.config.maximum;
+    var id = markerData.id || 'localmap_' + markerIndex;
+    // create a marker element
 		var element = document.createElement('span');
+		element.setAttribute('id', id);
 		element.setAttribute('class', 'localmap-waypoint localmap-index-' + markerIndex);
-		element.setAttribute('id', markerData.id || 'localmap_' + markerIndex);
 		element.addEventListener('click', onClicked.bind(this, markerData));
-		element.style.left = ((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
-		element.style.top = ((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';
+    element.style.borderColor = this.config.supportColour(id);
+		element.style.left = (this.config.distortX((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover)) * 100) + '%';
+		element.style.top = (this.config.distortY((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover)) * 100) + '%';
 		element.style.cursor = 'pointer';
 		return element;
 	};
@@ -2471,14 +2541,15 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
 	this.addLandmark = function(markerData, markerIndex) {
 		var min = this.config.minimum;
 		var max = this.config.maximum;
+    // create a landmark element
 		var element = new Image();
 		element.setAttribute('src', this.config.markersUrl.replace('{type}', markerData.type));
 		element.setAttribute('title', markerData.description || '');
 		element.setAttribute('class', 'localmap-marker localmap-index-' + markerIndex);
 		element.setAttribute('id', markerData.id || 'localmap_' + markerIndex);
 		element.addEventListener('click', onClicked.bind(this, markerData));
-		element.style.left = ((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
-		element.style.top = ((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';
+		element.style.left = (this.config.distortX((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover)) * 100) + '%';
+		element.style.top = (this.config.distortY((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover)) * 100) + '%';
 		element.style.cursor = (markerData.description || markerData.callback) ? 'pointer' : null;
 		return element;
 	};
@@ -2577,17 +2648,17 @@ Localmap.prototype.Route = function (parent, onComplete) {
 	this.parent = parent;
 	this.config = parent.config;
 	this.element = null;
-	this.coordinates = [];
+  this.tracks = [];
 	this.zoom = null;
 	this.delay = null;
 
 	// METHODS
 
 	this.start = function() {
-		var key = this.config.key;
+    var key = this.config.key;
 		// create a canvas
-		this.element = document.createElement('canvas');
-		this.element.setAttribute('class', 'localmap-route')
+		this.element = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+		this.element.setAttribute('class', 'localmap-route');
 		this.parent.element.appendChild(this.element);
 		// use the JSON immediately
 		if (this.config.routeData && this.config.routeData[key]) {
@@ -2617,68 +2688,110 @@ Localmap.prototype.Route = function (parent, onComplete) {
 		this.zoom = this.config.position.zoom;
 	};
 
-	this.redraw = function() {
+  this.draw = function() {
 		var min = this.config.minimum;
 		var max = this.config.maximum;
-		// adjust the height of the canvas
-		this.element.width = this.parent.element.offsetWidth;
-		this.element.height = this.parent.element.offsetHeight;
-		// position every trackpoint in the route
-		var ctx = this.element.getContext('2d');
+    var w = this.parent.element.offsetWidth;
+    var h = this.parent.element.offsetHeight;
+		// adjust the height of the svg
+    this.element.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
+    this.element.setAttribute('width', w);
+    this.element.setAttribute('height', h);
 		// (re)draw the route
-		var x0, y0, x1, y1, z = this.config.position.zoom, w = this.element.width, h = this.element.height;
-		ctx.clearRect(0, 0, w, h);
-		ctx.lineWidth = 4 / z;
-		ctx.strokeStyle = 'orange';
-		ctx.beginPath();
-		for (var key in this.coordinates) {
-			if (this.coordinates.hasOwnProperty(key) && key % 1 == 0) {
+		var x, y;
+    // for every segment
+    var line, points, track;
+    var increments = (this.tracks.length > 10) ? 25 : 1;
+    var stroke = 4 / this.config.position.zoom;
+    for (var a = 0, b = this.tracks.length; a < b; a += 1) {
+      // create a new line
+      line = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
+      line.setAttribute('fill', 'none');
+      line.setAttribute('stroke', this.config.supportColour(this.tracks[a].name));
+      line.setAttribute('stroke-width', stroke);
+      line.setAttribute('stroke-linejoin', 'miter');
+      line.setAttribute('stroke-miterlimit', 1);
+      if (this.tracks.length > 10) line.setAttribute('stroke-dasharray', stroke + ' ' + stroke);
+      // draw the line along the track
+      points = '';
+      track = this.tracks[a];
+      for (var c = 0, d = track.coordinates.length; c < d; c += increments) {
         // calculate the current step
-				x1 = parseInt((this.coordinates[key][0] - min.lon_cover) / (max.lon_cover - min.lon_cover) * w);
-				y1 = parseInt((this.coordinates[key][1] - min.lat_cover) / (max.lat_cover - min.lat_cover) * h);
-        // if the step seems valid, draw the step
-  			if ((Math.abs(x1 - x0) + Math.abs(y1 - y0)) < 30) { ctx.lineTo(x1, y1); }
-        // or jump unlikely/erroneous steps
-        else { ctx.moveTo(x1, y1); }
-        // store current step as the previous step
-        x0 = x1;
-        y0 = y1;
-			}
-		}
-		ctx.stroke();
+        x = parseInt(this.config.distortX((track.coordinates[c][0] - min.lon_cover) / (max.lon_cover - min.lon_cover)) * w);
+        y = parseInt(this.config.distortY((track.coordinates[c][1] - min.lat_cover) / (max.lat_cover - min.lat_cover)) * h);
+        // add the step
+        points += ' ' + x + ',' + y;
+  		}
+      line.setAttribute('points', points);
+      line.addEventListener('click', this.onRouteClicked.bind(this, track.name));
+      // insert the line
+      this.element.appendChild(line);
+    }
+  };
+
+	this.redraw = function() {
+    var stroke = 4 / this.config.position.zoom;
+    var lines = this.element.querySelectorAll('polyline');
+    for (var a = 0, b = lines.length; a < b; a += 1) {
+      lines[a].setAttribute('stroke-width', stroke);
+      if (lines.length > 10) lines[a].setAttribute('stroke-dasharray', stroke + ' ' + stroke);
+    }
 	};
 
 	// EVENTS
 
+  this.onRouteClicked = function (name) {};
+
 	this.onJsonLoaded = function (geojson) {
 		// convert JSON into an array of coordinates
-		var features = geojson.features, segments = [], coordinates;
+		var features = geojson.features;
+    var name;
+    var coordinates = [];
 		for (var a = 0, b = features.length; a < b; a += 1) {
+      name = features[a].properties.name;
 			if (features[a].geometry.coordinates[0][0] instanceof Array) {
 				coordinates = [].concat.apply([], features[a].geometry.coordinates);
 			} else {
 				coordinates = features[a].geometry.coordinates;
 			}
-			segments.push(coordinates);
+			this.tracks.push({
+        'name': name,
+        'coordinates': coordinates
+      });
 		}
-		this.coordinates = [].concat.apply([], segments);
     // redraw
-    this.redraw();
+    this.draw();
 		// resolve completion
 		onComplete();
 	};
 
 	this.onGpxLoaded = function(evt) {
-		// convert GPX into an array of coordinates
-		var gpx = evt.target.responseXML;
-		var trackpoints = gpx.querySelectorAll('trkpt,rtept');
-		for (var key in trackpoints) {
-			if (trackpoints.hasOwnProperty(key) && key % 1 == 0) {
-				this.coordinates.push([parseFloat(trackpoints[key].getAttribute('lon')), parseFloat(trackpoints[key].getAttribute('lat')), null]);
-			}
-		}
+		// extracts coordinates from a GPX document
+    function extractCoords(source, destination, parentTag, childTag) {
+      var a, b, c, d, parentNodes, childNodes, name, coords;
+      parentNodes = source.getElementsByTagName(parentTag);
+      for (a = 0, b = parentNodes.length; a < b; a += 1) {
+        name = parentNodes[a].querySelector('name');
+        coords = [];
+        childNodes = parentNodes[a].getElementsByTagName(childTag);
+        for (c = 0, d = childNodes.length; c < d; c += 1) {
+          coords.push([
+            parseFloat(childNodes[c].getAttribute('lon')),
+            parseFloat(childNodes[c].getAttribute('lat')),
+            null
+          ]);
+        }
+        destination.push({
+          'name': name,
+          'coordinates': coords
+        });
+      }
+    };
+    // extract both kinds of tracks from the GPX into an array of coordinates
+    extractCoords(evt.target.responseXML, this.tracks, 'trk', 'trkpt');
+    extractCoords(evt.target.responseXML, this.tracks, 'rte', 'rtept');
     // redraw
-    this.redraw();
+    this.draw();
 		// resolve completion
 		onComplete();
 	};
@@ -2876,7 +2989,7 @@ Photocylinder.prototype.Fallback = function (parent) {
 	this.build = function() {
 		// add the wrapper
 		this.wrapper = document.createElement('div');
-		this.wrapper.setAttribute('class', 'photo-cylinder pc-fallback');
+		this.wrapper.setAttribute('class', 'photocylinder photocylinder-fallback');
 		// TODO: for 360deg images the image needs to be doubled to allow looping
 		var clonedImage = this.image.cloneNode(true);
 		// add markup here
@@ -3348,15 +3461,15 @@ Photocylinder.prototype.Stage = function (parent) {
 	this.build = function() {
 		// add the wrapper
 		this.wrapper = document.createElement('div');
-		this.wrapper.setAttribute('class', 'photo-cylinder');
+		this.wrapper.setAttribute('class', 'photocylinder');
 		// add the row object
 		this.objRow = document.createElement('div');
-		this.objRow.setAttribute('class', 'pc-obj-row');
+		this.objRow.setAttribute('class', 'photocylinder-obj-row');
 		this.wrapper.appendChild(this.objRow);
 		// add the column oblects
 		for (var a = 0, b = 8; a < b; a += 1) {
 			this.objCols[a] = document.createElement('span');
-			this.objCols[a].setAttribute('class', 'pc-obj-col pc-obj-col-' + a);
+			this.objCols[a].setAttribute('class', 'photocylinder-obj-col photocylinder-obj-col-' + a);
 			this.objRow.appendChild(this.objCols[a]);
 		}
 		// add the image
@@ -3374,7 +3487,7 @@ Photocylinder.prototype.Stage = function (parent) {
 		// get the aspect ratio from the image
 		this.imageAspect = this.image.offsetWidth / this.image.offsetHeight;
 		// get the field of view property or guess one
-		this.wrapper.className += (this.fov < 360) ? ' pc-180' : ' pc-360';
+		this.wrapper.className += (this.fov < 360) ? ' photocylinder-180' : ' photocylinder-360';
 		// calculate the zoom limits - scale = aspect * (360 / fov) * 0.3
 		this.magnification.min = Math.max(this.imageAspect * (360 / this.fov) * 0.3, 1);
 		this.magnification.max = 4;
