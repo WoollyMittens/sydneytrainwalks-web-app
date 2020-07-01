@@ -2771,7 +2771,7 @@ Localmap.prototype.Route = function (parent, onComplete) {
       var a, b, c, d, parentNodes, childNodes, name, coords;
       parentNodes = source.getElementsByTagName(parentTag);
       for (a = 0, b = parentNodes.length; a < b; a += 1) {
-        name = parentNodes[a].querySelector('name');
+        name = parentNodes[a].getElementsByTagName('name')[0].firstChild.nodeValue;
         coords = [];
         childNodes = parentNodes[a].getElementsByTagName(childTag);
         for (c = 0, d = childNodes.length; c < d; c += 1) {
