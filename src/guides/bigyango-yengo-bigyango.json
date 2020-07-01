@@ -3,7 +3,9 @@
 	"lon": 150.848124,
 	"lat": -32.979703,
 	"description": [
-		"Lorem ipsum dolor sit amet."
+		"Getting to this walk in the middle of the vast wilderness area of <a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/yengo-national-park\">Yengo National Park</a> is an adventure in itself.",
+		"The hike follows a gated trail to an abandoned farm turned into the <a href=\"https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/blue-gums-campground\">Blue Gums Campground</a>",
+		"The rough <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/4wd-touring-routes/big-yango-loop-trail\">Big Yango Loop Trail</a> and <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/yango-walking-track\">Yango Walking Track</a> provide a loop around Mount Yengo."
 	],
 	"duration": 6,
 	"distance": 26,
@@ -32,6 +34,223 @@
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.02130000000002,
 			"lat": -32.977707
+		},
+		{
+			"type": "waypoint",
+			"photo": "0010_p1070002.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.02130000000002,
+			"lat": -32.977707
+		},
+		{
+			"type": "waypoint",
+			"photo": "0100_r0011429.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.920291,
+			"lat": -32.937908
+		},
+		{
+			"type": "waypoint",
+			"photo": "0110_p1070042.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.92029599999998,
+			"lat": -32.937915999999994
+		},
+		{
+			"type": "waypoint",
+			"photo": "0120_p1070043.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.92029599999998,
+			"lat": -32.937915999999994
+		},
+		{
+			"type": "waypoint",
+			"photo": "0130_r0011430.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.90936100000002,
+			"lat": -32.941266
+		},
+		{
+			"type": "waypoint",
+			"photo": "0140_r0011431.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.908793,
+			"lat": -32.945229
+		},
+		{
+			"type": "waypoint",
+			"photo": "0160_r0011433.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.90789800000002,
+			"lat": -32.96021900007082
+		},
+		{
+			"type": "waypoint",
+			"photo": "0170_r0011434.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.907969,
+			"lat": -32.961473000000005
+		},
+		{
+			"type": "waypoint",
+			"photo": "0190_r0011436.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.905454,
+			"lat": -32.964814000000004
+		},
+		{
+			"type": "waypoint",
+			"photo": "0200_p1070044.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.90348055555557,
+			"lat": -32.96554722222223
+		},
+		{
+			"type": "waypoint",
+			"photo": "0210_r0011437.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.903258,
+			"lat": -32.965822
+		},
+		{
+			"type": "waypoint",
+			"photo": "0220_p1070045.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.90257,
+			"lat": -32.966082
+		},
+		{
+			"type": "waypoint",
+			"photo": "0230_p1070048.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.902509,
+			"lat": -32.966120000000004
+		},
+		{
+			"type": "waypoint",
+			"photo": "0240_r0011438.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.89878,
+			"lat": -32.964125
+		},
+		{
+			"type": "waypoint",
+			"photo": "0270_r0011441.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.888636,
+			"lat": -32.958311
+		},
+		{
+			"type": "waypoint",
+			"photo": "0280_r0011442.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.887427,
+			"lat": -32.957942
+		},
+		{
+			"type": "waypoint",
+			"photo": "0290_r0011443.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.880595,
+			"lat": -32.96508300012117
+		},
+		{
+			"type": "waypoint",
+			"photo": "0300_r0011444.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.87782100007453,
+			"lat": -32.96520100007875
+		},
+		{
+			"type": "waypoint",
+			"photo": "0310_r0011445.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.874686,
+			"lat": -32.966147
+		},
+		{
+			"type": "waypoint",
+			"photo": "0320_r0011446.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.87216700000002,
+			"lat": -32.966387000000005
+		},
+		{
+			"type": "waypoint",
+			"photo": "0330_r0011447.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86670800000002,
+			"lat": -32.967372000000005
+		},
+		{
+			"type": "waypoint",
+			"photo": "0340_r0011448.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.856875,
+			"lat": -32.970065000000005
+		},
+		{
+			"type": "waypoint",
+			"photo": "0350_r0011449.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.850412,
+			"lat": -32.976712
+		},
+		{
+			"type": "waypoint",
+			"photo": "0360_r0011450.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.848924,
+			"lat": -32.976746
+		},
+		{
+			"type": "waypoint",
+			"photo": "0370_p1070050.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.84889800000002,
+			"lat": -32.976751
+		},
+		{
+			"type": "waypoint",
+			"photo": "0380_r0011451.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.84673,
+			"lat": -32.979992
+		},
+		{
+			"type": "waypoint",
+			"photo": "0390_r0011452.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.84727600000002,
+			"lat": -32.979510000000005
+		},
+		{
+			"type": "waypoint",
+			"photo": "0400_r0011453.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.84904600000002,
+			"lat": -32.979764
+		},
+		{
+			"type": "waypoint",
+			"photo": "0410_r0011454.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.848434,
+			"lat": -32.977018
+		},
+		{
+			"type": "waypoint",
+			"photo": "0420_p1070051.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.84853699988855,
+			"lat": -32.976910000000004
+		},
+		{
+			"type": "waypoint",
+			"photo": "0430_r0011455.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.84856100000002,
+			"lat": -32.9769
 		},
 		{
 			"location": "Big Yango",

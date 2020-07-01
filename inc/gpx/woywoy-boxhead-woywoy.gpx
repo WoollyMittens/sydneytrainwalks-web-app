@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mytracks="http://mytracks.stichling.info/myTracksGPX/1/0" creator="myTracks" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
     <trk>
-        <name>14-SEP-19 03:41:20 PM</name>
+        <name>woywoy-boxhead-woywoy</name>
         <trkseg>
             <trkpt lat="-33.485397" lon="151.323449">
                 <ele>2.06</ele>
@@ -11856,7 +11856,7 @@
         </trkseg>
     </trk>
     <trk>
-        <name>woywoy-bouddi-woywoy</name>
+        <name>woywoy-boxhead-woywoy</name>
         <desc>Log every 0 sec, 50 m</desc>
         <trkseg>
             <trkpt lat="-33.520325" lon="151.382919">
@@ -11887,7 +11887,7 @@
         </trkseg>
     </trk>
     <trk>
-        <name>woywoy-bouddi-woywoy</name>
+        <name>woywoy-boxhead-woywoy</name>
         <desc>Log every 0 sec, 50 m</desc>
         <trkseg>
             <trkpt lat="-33.521095" lon="151.384415">

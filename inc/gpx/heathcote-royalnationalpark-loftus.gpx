@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="Adze - http://kobotsw.com/apps/adze" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd">
     <metadata>
-        <name>Untitled Document</name>
+        <name>heathcote-royalnationalpark-loftus</name>
         <time>2019-04-01T22:37:40.999Z</time>
     </metadata>
     <trk>
-        <name>24-DEC-18 01:45:27 PM</name>
+        <name>heathcote-royalnationalpark-loftus</name>
         <extensions>
             <gpxx:TrackExtension>
                 <gpxx:DisplayColor>DarkMagenta</gpxx:DisplayColor>
@@ -5510,7 +5510,7 @@
         </trkseg>
     </trk>
     <trk>
-        <name>heathcote-royalnationalpark-engadine</name>
+        <name>heathcote-royalnationalpark-loftus</name>
         <desc>Log every 0 sec, 50 m</desc>
         <extensions>
             <gpxx:TrackExtension>
@@ -6016,7 +6016,7 @@
         </trkseg>
     </trk>
     <trk>
-        <name>24-MAY-15 07:11:03 PM</name>
+        <name>heathcote-royalnationalpark-loftus</name>
         <extensions>
             <gpxx:TrackExtension>
                 <gpxx:DisplayColor>Blue</gpxx:DisplayColor>

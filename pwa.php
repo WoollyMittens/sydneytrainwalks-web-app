@@ -264,7 +264,8 @@
 				//'exif': 'imageexif.php?src={src}',
 				'exif': 'https://<?php print $domain ?>/imageexif.php?src={src}',
 				//'slice': 'imageslice.php?src={src}&{size}',
-				'slice' : 'https://<?php print $domain ?>/imageslice.php?src={src}&{size}',
+				//'slice' : 'https://<?php print $domain ?>/imageslice.php?src={src}&{size}',
+				'slice' : 'https://<?php print $domain ?>/{src}',
 				//'gpx': './inc/gpx/{id}.gpx',
 				'gpx': 'https://<?php print $domain ?>/inc/gpx/{id}.gpx'
 			});

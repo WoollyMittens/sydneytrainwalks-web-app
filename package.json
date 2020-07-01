@@ -30,7 +30,11 @@
 				"fs": "0.0.2",
 				"gulp-autoprefixer": "^7.0.1",
 				"gulp-imagemin": "^6.2.0",
+				"gulp-sass": "^4.1.0",
+				"imagemin-pngquant": "^9.0.0",
 				"jsdom": "^15.2.1",
+				"request": "^2.88.2",
+				"shelljs": "^0.8.4",
 				"xmldom": "^0.2.1"
 		}
 }
