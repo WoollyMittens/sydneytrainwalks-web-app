@@ -1182,6 +1182,7 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
     // create a marker element
 		var element = document.createElement('span');
 		element.setAttribute('id', id);
+		element.setAttribute('data-key', id);
 		element.setAttribute('class', 'localmap-waypoint localmap-index-' + markerIndex);
 		element.addEventListener('click', onClicked.bind(this, markerData));
     element.style.borderColor = this.config.supportColour(id);
@@ -1206,12 +1207,14 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
 	this.addLandmark = function(markerData, markerIndex) {
 		var min = this.config.minimum;
 		var max = this.config.maximum;
+    var id = markerData.id || 'localmap_' + markerIndex;
     // create a landmark element
 		var element = new Image();
 		element.setAttribute('src', this.config.markersUrl.replace('{type}', markerData.type));
 		element.setAttribute('title', markerData.description || '');
 		element.setAttribute('class', 'localmap-marker localmap-index-' + markerIndex);
-		element.setAttribute('id', markerData.id || 'localmap_' + markerIndex);
+		element.setAttribute('id', id);
+		element.setAttribute('data-key', id);
 		element.addEventListener('click', onClicked.bind(this, markerData));
 		element.style.left = (this.config.distortX((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover)) * 100) + '%';
 		element.style.top = (this.config.distortY((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover)) * 100) + '%';
@@ -1369,17 +1372,18 @@ Localmap.prototype.Route = function (parent, onComplete) {
     var increments = (this.tracks.length > 10) ? 25 : 1;
     var stroke = 4 / this.config.position.zoom;
     for (var a = 0, b = this.tracks.length; a < b; a += 1) {
+      track = this.tracks[a];
       // create a new line
       line = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
+  		line.setAttribute('data-key', track.name);
       line.setAttribute('fill', 'none');
-      line.setAttribute('stroke', this.config.supportColour(this.tracks[a].name));
+      line.setAttribute('stroke', this.config.supportColour(track.name));
       line.setAttribute('stroke-width', stroke);
       line.setAttribute('stroke-linejoin', 'miter');
       line.setAttribute('stroke-miterlimit', 1);
       if (this.tracks.length > 10) line.setAttribute('stroke-dasharray', stroke + ' ' + stroke);
       // draw the line along the track
       points = '';
-      track = this.tracks[a];
       for (var c = 0, d = track.coordinates.length; c < d; c += increments) {
         // calculate the current step
         x = parseInt(this.config.distortX((track.coordinates[c][0] - min.lon_cover) / (max.lon_cover - min.lon_cover)) * w);
@@ -1433,7 +1437,7 @@ Localmap.prototype.Route = function (parent, onComplete) {
 	this.onGpxLoaded = function(evt) {
 		// extracts coordinates from a GPX document
     function extractCoords(source, destination, parentTag, childTag) {
-      var a, b, c, d, parentNodes, childNodes, name, coords;
+      var a, b, c, d, childNodes, name, coords, parentNodes;
       parentNodes = source.getElementsByTagName(parentTag);
       for (a = 0, b = parentNodes.length; a < b; a += 1) {
         name = parentNodes[a].getElementsByTagName('name')[0].firstChild.nodeValue;

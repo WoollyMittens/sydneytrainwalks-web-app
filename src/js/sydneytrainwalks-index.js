@@ -213,8 +213,11 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 	this.mirrorResults = function (guideIds, sortedIds) {
 		// show/hide markers based on filter results using Array.indexOf()
 		guideIds.map(function(id) {
-			var referenceElement = document.getElementById(id);
-			if (referenceElement) referenceElement.style.visibility = (sortedIds.indexOf(id) > -1) ? 'visible' : 'hidden';
+			var visibility = (sortedIds.indexOf(id) > -1) ? 'visible' : 'hidden';
+			var elements = document.querySelectorAll('[data-key="' + id + '"]');
+			for (var a = 0, b = elements.length; a < b; a += 1) {
+				elements[a].style.visibility = visibility;
+			}
 		});
 	};
 
