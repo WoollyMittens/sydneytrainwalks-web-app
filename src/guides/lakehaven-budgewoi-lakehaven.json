@@ -21,10 +21,10 @@
 	"markers": [
 		{
 			"location": "Lake Haven",
-			"type": "car",
-			"description": "Plan your drive to <a href=\"https://www.google.com/maps/dir/Sydney,+New+South+Wales/-33.242403,151.503826\">Lake Haven</a>.",
-			"lon": 151.503826,
-			"lat": -33.242403
+			"type": "bus",
+			"description": "Get the train to Wyong and the connecting bus to Lake Haven using <a href=\"https://transportnsw.info/trip#/?to=Lake Haven\">transportnsw.info</a>.",
+			"lat": -33.241745,
+			"lon": 151.505208
 		},
 		{
 			"type": "toilet",
@@ -695,10 +695,10 @@
 		},
 		{
 			"location": "Lake Haven",
-			"type": "car",
-			"description": "Plan your drive back from <a href=\"https://www.google.com/maps/dir/Sydney,+New+South+Wales/-32.9336548503,151.503826\">Lake Haven</a>.",
-			"lon": 151.503826,
-			"lat": -33.242403
+			"type": "bus",
+			"description": "Get the bus back from Lake Haven using <a href=\"https://transportnsw.info/trip#/?from=Lake Haven\">transportnsw.info</a>.",
+			"lat": -33.241745,
+			"lon": 151.505208
 		}
 	]
 }
