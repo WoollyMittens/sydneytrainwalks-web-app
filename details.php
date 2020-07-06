@@ -259,7 +259,7 @@
 							'routeData': null,
 							'exifData': ExifData,
 							// attribution
-							'creditsTemplate': 'Maps &copy; <a href="http://www.4umaps.com/mountain-bike-hiking-bicycle-outdoor-topographic-map.htm" target="_blank">4UMaps</a>, Data &copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> and contributors, CC BY-SA',
+							'creditsTemplate': 'Maps &copy; <a href="https://4umaps.com/" target="_blank">4UMaps.com</a> and &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap contributors</a>',
 							// events
 							'checkHotspot': function() { return false; }
 						});
