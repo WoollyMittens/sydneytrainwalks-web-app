@@ -30,9 +30,9 @@ The following commands are available for development:
 
 ## Credits
 
-App, photography and GPS logs &copy; Maurice van Creij, [CC BY-SA](http://creativecommons.org/licenses/by-sa/2.0/).
+App, photography, and GPS logs &copy; Maurice van Creij. Licensed under [The MIT License](https://opensource.org/licenses/MIT).
 
-Maps &copy; [4UMaps](http://www.4umaps.com/). Data &copy; [OpenStreetMap and contributors](http://www.openstreetmap.org/copyright), [CC BY-SA<](http://creativecommons.org/licenses/by-sa/2.0/).
+Maps &copy; [4UMaps.com](https://4umaps.com/) and &copy; [OpenStreetMap contributors](https://www.openstreetmap.org/copyright).
 
 ## Disclaimer
 
