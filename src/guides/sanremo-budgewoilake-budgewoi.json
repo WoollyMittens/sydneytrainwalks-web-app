@@ -57,161 +57,49 @@
 			"photo": "img_20200503_080648_vr.jpg",
 			"lon": 151.50934722222223,
 			"lat": -33.21816388888889,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200503_082116.jpg",
-			"lon": 151.52174722222225,
-			"lat": -33.21884722222222,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "The path along the lake starts at the San Remo boat ramp."
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200503_082552.jpg",
+			"description": "Follow the shared path along the lake.",
 			"lon": 151.52256944444446,
-			"lat": -33.21899444444445,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200503_083012.jpg",
-			"lon": 151.5265277777778,
-			"lat": -33.21986388888889,
-			"description": "Lorem ipsum dolor sit amet."
+			"lat": -33.21899444444445
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200503_083111.jpg",
+			"description": "Cross the bridge over the canal and continue down the shared path.",
 			"lon": 151.527275,
-			"lat": -33.22011944444445,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200503_083835.jpg",
-			"lon": 151.5272388888889,
-			"lat": -33.22560277777778,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200503_083845_vr.jpg",
-			"lon": 151.52723333333336,
-			"lat": -33.22563888888889,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200503_084051.jpg",
-			"lon": 151.52879722222224,
-			"lat": -33.226194444444445,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200503_084608.jpg",
-			"lon": 151.53022777777778,
-			"lat": -33.22975277777778,
-			"description": "Lorem ipsum dolor sit amet."
+			"lat": -33.22011944444445
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200503_084730.jpg",
+			"description": "Don't miss the turn right at Edgewater Park.",
 			"lon": 151.53025833333334,
-			"lat": -33.23013888888889,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200503_085531.jpg",
-			"lon": 151.53137500000003,
-			"lat": -33.23470555555556,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200503_085548.jpg",
-			"lon": 151.53140555555558,
-			"lat": -33.234769444444446,
-			"description": "Lorem ipsum dolor sit amet."
+			"lat": -33.23013888888889
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200503_085857.jpg",
+			"description": "From Edgewater Park follow the shared park along the lake.",
 			"lon": 151.53253333333333,
-			"lat": -33.23703888888889,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200503_090035_vr.jpg",
-			"lon": 151.53266944444445,
-			"lat": -33.23771388888889,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200503_090936.jpg",
-			"lon": 151.537775,
-			"lat": -33.23575833333334,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200503_092110.jpg",
-			"lon": 151.54617222222222,
-			"lat": -33.232997222222224,
-			"description": "Lorem ipsum dolor sit amet."
+			"lat": -33.23703888888889
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200503_094017_mp.jpg",
+			"description": "Take the ramp up to the bridge and cross Budgewoi Creek.",
 			"lon": 151.56206944444446,
-			"lat": -33.23844722222222,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200503_094129.jpg",
-			"lon": 151.56187500000001,
-			"lat": -33.23757222222223,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200503_094225.jpg",
-			"lon": 151.56222222222223,
-			"lat": -33.237408333333335,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200503_094230.jpg",
-			"lon": 151.56223055555557,
-			"lat": -33.237430555555555,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200503_094440.jpg",
-			"lon": 151.56369444444445,
-			"lat": -33.23858333333333,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200503_094830.jpg",
-			"lon": 151.56404722222223,
-			"lat": -33.23935277777778,
-			"description": "Lorem ipsum dolor sit amet."
+			"lat": -33.23844722222222
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200503_094922.jpg",
+			"description": "From Slade park on the other side of the bridge take the bus back to Northlakes Shopping Centre near the boat ramp.",
 			"lon": 151.56459444444445,
-			"lat": -33.23933888888889,
-			"description": "Lorem ipsum dolor sit amet."
+			"lat": -33.23933888888889
 		},
 		{
 			"location": "Budgewoi",
