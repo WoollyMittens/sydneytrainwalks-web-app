@@ -1,7 +1,7 @@
 {
 	"location": "Olney",
-	"lon": 151.2710638437,
-	"lat": -33.0455689318,
+	"lon": 151.271955,
+	"lat": -33.042396,
 	"description": [
 		"Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet."
 	],
@@ -33,213 +33,728 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_5208_dsc_5216.jpg",
+			"photo": "img_20200828_064743_dsc_5208.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.2306921799517,
 			"lat": -33.1040854899931
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_5217.jpg",
+			"photo": "img_20200828_064744.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.23051773996218,
-			"lat": -33.103549579996574
+			"lon": 151.230872,
+			"lat": -33.103789
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_5219.jpg",
+			"photo": "img_20200828_064908.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.23414871999864,
-			"lat": -33.10215888999392
+			"lon": 151.231808,
+			"lat": -33.103694000000004
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_5220.jpg",
+			"photo": "img_20200828_065235.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.23520470999972,
-			"lat": -33.1036857100015
+			"lon": 151.23415,
+			"lat": -33.103833
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_5222.jpg",
+			"photo": "img_20200828_065248.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.24238460000726,
-			"lat": -33.09619408005382
+			"lon": 151.23419399999997,
+			"lat": -33.103947
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_5223.jpg",
+			"photo": "img_20200828_065448.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.24247513008876,
-			"lat": -33.09614805000134
+			"lon": 151.23534199999997,
+			"lat": -33.103828
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_5231.jpg",
+			"photo": "img_20200828_070916.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.2435372000301,
-			"lat": -33.09686583990981
+			"lon": 151.240353,
+			"lat": -33.102772
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_5232.jpg",
+			"photo": "img_20200828_071213.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.2593975,
-			"lat": -33.100500369998045
+			"lon": 151.240617,
+			"lat": -33.101394
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_5233.jpg",
+			"photo": "img_20200828_071440.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.25983363998773,
-			"lat": -33.10035299000055
+			"lon": 151.24118399999998,
+			"lat": -33.100653
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_5234.jpg",
+			"photo": "img_20200828_071603.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.2666221200772,
-			"lat": -33.06120449005268
+			"lon": 151.24136099999998,
+			"lat": -33.100814
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_5235.jpg",
+			"photo": "img_20200828_073121.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.26327512989607,
-			"lat": -33.05682550994552
+			"lon": 151.242413,
+			"lat": -33.096348
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_5236.jpg",
+			"photo": "img_20200828_073247.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.26780203000092,
-			"lat": -33.05808797000958
+			"lon": 151.24329699999998,
+			"lat": -33.095747000091606
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_5237.jpg",
+			"photo": "img_20200828_073500.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.24352399999998,
+			"lat": -33.094969
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_073637.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.24360499999997,
+			"lat": -33.094390000000004
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_073725.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.243361,
+			"lat": -33.094133
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_080058.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.243868,
+			"lat": -33.093954000000004
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_080202.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.243846,
+			"lat": -33.093819
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_080523.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.24431299999998,
+			"lat": -33.093516
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_080651.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.244475,
+			"lat": -33.093137000000006
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_081412.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.24484999999999,
+			"lat": -33.091331000000004
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_081558.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.24467199999998,
+			"lat": -33.090347
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_082754.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.243111,
+			"lat": -33.085056
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_083319.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.244511,
+			"lat": -33.082242
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_083425.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.244511,
+			"lat": -33.081989
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_083706.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.243125,
+			"lat": -33.080772
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_084238.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.24523300010412,
+			"lat": -33.077428000000005
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_084307.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.24541399999998,
+			"lat": -33.07726699989587
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_084555.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.247862,
+			"lat": -33.077404
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_084718.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.248572,
+			"lat": -33.077533
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_085156.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.252733,
+			"lat": -33.076667
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_085655.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.254492,
+			"lat": -33.073672
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_085712.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.25495,
+			"lat": -33.073831000000006
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_090144.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.254611,
+			"lat": -33.073379
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_090450.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.254656,
+			"lat": -33.073116000000006
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_090950.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.25553,
+			"lat": -33.072133
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_091104.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.255325,
+			"lat": -33.071579
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_091353.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.255089,
+			"lat": -33.070303
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_091456.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.254786,
+			"lat": -33.070267
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_091908.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.254786,
+			"lat": -33.069206
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_092600.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.255005,
+			"lat": -33.067640000000004
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_093252.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.257775,
+			"lat": -33.064733
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_093632.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.258533,
+			"lat": -33.062928
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_094556.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.259342,
+			"lat": -33.059521999999994
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_095222.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.259856,
+			"lat": -33.05715
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_095455.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.26071899992235,
+			"lat": -33.056357999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_095539.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.260767,
+			"lat": -33.056293999999994
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_095720.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.261647,
+			"lat": -33.055456
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_100222.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.2636,
+			"lat": -33.052872
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_100353.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.263508,
+			"lat": -33.051871999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_100508.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.2638,
+			"lat": -33.051641999999994
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_100639.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.263956,
+			"lat": -33.051041999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_101303.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.264646,
+			"lat": -33.049893
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_101403.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.264981,
+			"lat": -33.049524999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_101753.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.265628,
+			"lat": -33.047261
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_101802.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.265628,
+			"lat": -33.047261
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_101923.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.267064,
+			"lat": -33.046721999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_102410.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.27073000000001,
+			"lat": -33.046074999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_102441.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.27104400000002,
+			"lat": -33.046025
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_102546.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.27091800000002,
+			"lat": -33.045339
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_102910.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.272578,
+			"lat": -33.043307999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_103050.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.27381100000002,
+			"lat": -33.042930999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_104045.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.276408,
+			"lat": -33.036505999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_104156.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.2767,
+			"lat": -33.035638999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_104443_vr.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.27751700000002,
+			"lat": -33.034406
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_104526.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.27721100000002,
+			"lat": -33.034225
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_104739.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.277092,
+			"lat": -33.034361
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_111316.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.27309200000002,
+			"lat": -33.04318
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_111343.jpg",
+			"description": "<i>+1h / 2km</i> Lorem ipsum dolor sit amet.",
+			"optional": true,
+			"lon": 151.272771,
+			"lat": -33.04329
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_111527.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true,
+			"lon": 151.27195500000002,
+			"lat": -33.042396
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_111733.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true,
+			"lon": 151.271475,
+			"lat": -33.040903
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_111910.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true,
+			"lon": 151.271047,
+			"lat": -33.040414
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_113311.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true,
+			"lon": 151.267986,
+			"lat": -33.041118999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_113530.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true,
+			"lon": 151.26852300000002,
+			"lat": -33.041669999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_113719.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true,
+			"lon": 151.26850000000002,
+			"lat": -33.04235
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_115418_vr.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true,
+			"lon": 151.264436,
+			"lat": -33.044143999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_115450.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true,
+			"lon": 151.264614,
+			"lat": -33.044056
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_115549.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true,
+			"lon": 151.264486,
+			"lat": -33.044360999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_115709.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true,
+			"lon": 151.264256,
+			"lat": -33.04458100009824
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_120705_vr.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true,
+			"lon": 151.264483,
+			"lat": -33.044236
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_120838_vr_fov360.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true,
+			"lon": 151.264511,
+			"lat": -33.044252999908394
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_120931.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true,
+			"lon": 151.264514,
+			"lat": -33.044256
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_121056.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true,
+			"lon": 151.26451700009392,
+			"lat": -33.044202999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_124627.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true,
+			"lon": 151.272543,
+			"lat": -33.043188
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_131804.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.261189,
+			"lat": -33.055980999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_131824.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.261008,
+			"lat": -33.056172
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_131835.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.260956,
+			"lat": -33.056141999999994
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_132008.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.262206,
+			"lat": -33.056214
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_132008_dsc_5237.jpg",
+			"description": "<i>+0.5h / 1km</i> Lorem ipsum dolor sit amet.",
+			"optional": true,
 			"lon": 151.26784465000023,
 			"lat": -33.05801623992413
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_5238.jpg",
+			"photo": "img_20200828_132008_dsc_5238.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true,
 			"lon": 151.26778626999783,
 			"lat": -33.058122009999636
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_5248.jpg",
+			"photo": "img_20200828_132119.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.26778049000995,
-			"lat": -33.05812118995367
+			"lon": 151.262822,
+			"lat": -33.057049
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_5250_dsc_5256.jpg",
+			"photo": "img_20200828_132911.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.26357324000813,
-			"lat": -33.05281991997901
+			"lon": 151.264548,
+			"lat": -33.060182
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_5257.jpg",
+			"photo": "img_20200828_133407.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.26353979988053,
-			"lat": -33.052578529998186
+			"lon": 151.26674200000002,
+			"lat": -33.06056900009115
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_5259.jpg",
+			"photo": "img_20200828_133519.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.26390790999767,
-			"lat": -33.051264020011295
+			"lon": 151.266608,
+			"lat": -33.061443999999995
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_5260.jpg",
+			"photo": "img_20200828_135632.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.26843083000398,
-			"lat": -33.042450719950715
+			"lon": 151.262422,
+			"lat": -33.075625
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_5261.jpg",
+			"photo": "img_20200828_143209_vr.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.26432119996178,
-			"lat": -33.04403191000918
+			"lon": 151.261344,
+			"lat": -33.099094
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_5262_dsc_5270.jpg",
+			"photo": "img_20200828_144048.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.2643607599875,
-			"lat": -33.044052990092
+			"lon": 151.254659,
+			"lat": -33.101152
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_5273.jpg",
+			"photo": "img_20200828_144514.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.26434789001618,
-			"lat": -33.044399689969
+			"lon": 151.251858,
+			"lat": -33.099814
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_5279.jpg",
+			"photo": "img_20200828_145221.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.2673054700045,
-			"lat": -33.04264426000243
+			"lon": 151.246185,
+			"lat": -33.102317
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_5280.jpg",
+			"photo": "img_20200828_151254.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.26805513000554,
-			"lat": -33.04404625
+			"lon": 151.236394,
+			"lat": -33.107589000000004
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_5281_dsc_5286.jpg",
+			"photo": "img_20200828_151311.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.2685140700069,
-			"lat": -33.04257580998501
+			"lon": 151.236381,
+			"lat": -33.107606000000004
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_5287.jpg",
+			"photo": "img_20200828_151757.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.27698160995487,
-			"lat": -33.034002550001816
-		},
-		{
-			"type": "waypoint",
-			"photo": "dsc_5288_dsc_5294.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.27721767001117,
-			"lat": -33.03438440999138
-		},
-		{
-			"type": "waypoint",
-			"photo": "dsc_5303.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.27726533006836,
-			"lat": -33.03436368000415
-		},
-		{
-			"type": "waypoint",
-			"photo": "dsc_5304_dsc_5308.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.27294273005285,
-			"lat": -33.04301255993329
-		},
-		{
-			"type": "waypoint",
-			"photo": "dsc_5312.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.26384521997537,
-			"lat": -33.05004561999981
+			"lon": 151.23388899999998,
+			"lat": -33.106539
 		},
 		{
 			"location": "The Basin",
