@@ -1,7 +1,7 @@
 {
 	"location": "Mungo Rainforest",
-	"lon": 152.3132063169,
-	"lat": -32.538564289,
+	"lon": 152.313034,
+	"lat": -32.53864,
 	"description": [
 		"Just out of reach of public transport, <a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/myall-lakes-national-park\">Myall Lakes National Park</a> is still close enough for a day trip.",
 		"<br/><br/>",
@@ -14,7 +14,7 @@
 	"rain": false,
 	"fireban": false,
 	"key": "mungobrush-mungopoint-mungobrush",
-	"updated": "2019-09-07",
+	"updated": "2020-10-03",
 	"bounds": {
 		"west": 152.29248046875,
 		"north": -32.51902602782749,
@@ -36,17 +36,87 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20190907_135252.jpg",
-			"description": "From the picnic area of the campground follow the signs down the Rainforest Track.",
-			"lon": 152.31072500000002,
-			"lat": -32.541758
+			"photo": "pxl_20201003_022906750.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.31036400000002,
+			"lat": -32.542207999999995
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20190907_140628.jpg",
-			"description": "Follow the loop around Mungro Brush Hill.",
-			"lon": 152.314178,
-			"lat": -32.538681
+			"photo": "pxl_20201003_022931144.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.31071900010394,
+			"lat": -32.541942
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_022953145.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.310875,
+			"lat": -32.541653
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_023053051.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.31101700000002,
+			"lat": -32.541444
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_023224755.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.31111900000002,
+			"lat": -32.540372
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_023902796.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.31190600000002,
+			"lat": -32.537731
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_024147577.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.31303400000002,
+			"lat": -32.53864
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_024457275.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.315242,
+			"lat": -32.538835999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_024907787.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.313261,
+			"lat": -32.540541999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_025053701.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.31226900000001,
+			"lat": -32.541377999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_025208933.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.311532,
+			"lat": -32.541067
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_025347408.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.20109699999998,
+			"lat": -32.519053
 		},
 		{
 			"location": "Mungo Brush",

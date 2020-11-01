@@ -1,7 +1,7 @@
 {
 	"location": "Mungo Track",
-	"lon": 152.277653,
-	"lat": -32.582133,
+	"lon": 152.280048,
+	"lat": -32.579978,
 	"description": [
 		"Just out of reach of public transport, <a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/myall-lakes-national-park\">Myall Lakes National Park</a> is still close enough for a day hike.",
 		"From the <a href=\"https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/mungo-brush-campground\">Mungo Brush campground</a> several walking tracks are strung together into a loop:",
@@ -22,9 +22,9 @@
 	"rain": false,
 	"fireban": false,
 	"key": "mungobrush-mungotrack-mungobrush",
-	"updated": "2019-03-01",
+	"updated": "2020-10-03",
 	"bounds": {
-		"west": 152.24853515625,
+		"west": 152.259521484375,
 		"north": -32.52828936482525,
 		"east": 152.325439453125,
 		"south": -32.61161640317033
@@ -44,96 +44,297 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_3574.jpg",
-			"description": "From the carpark follow the road through the campground and down the Tomboy Firetrail past the gate.",
-			"lon": 152.3058238100054,
-			"lat": -32.54444556996218
+			"photo": "pxl_20201002_215053568.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.309378,
+			"lat": -32.542942
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_3609.jpg",
-			"description": "Turn left at the intersection with the Mungo Track.",
-			"lon": 152.28695076000855,
-			"lat": -32.54886958997722
+			"photo": "pxl_20201002_215206979_pano.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.30900299992408,
+			"lat": -32.542643999999996
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_3610_dsc_3619.jpg",
-			"description": "<i>+0.25h / 0.5km</i> Continue past the intersection to visit the Tamboi picnic area.",
-			"lon": 152.28551635000645,
-			"lat": -32.55050232,
-			"optional": true
+			"photo": "pxl_20201002_221927756.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.293153,
+			"lat": -32.544294
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_3622.jpg",
-			"description": "Traverse the wetlands across the boardwalk.",
-			"lon": 152.28811846000275,
-			"lat": -32.54918454000139
+			"photo": "pxl_20201002_222201016.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.291181,
+			"lat": -32.543931
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_3648.jpg",
-			"description": "Watch for the trail markers along the faint trail on the dry sections.",
-			"lon": 152.2878965299933,
-			"lat": -32.551499700003745
+			"photo": "pxl_20201002_222630668_pano.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.288883,
+			"lat": -32.54543900007668
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_3675_dsc_3679.jpg",
-			"description": "From the Brambles Green campground follow the access road to Mungo Brush Road.",
-			"lon": 152.28242156997842,
-			"lat": -32.56554857001972
+			"photo": "pxl_20201002_223619422.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.287106,
+			"lat": -32.54895
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_3707.jpg",
-			"description": "At the intersection follow Mungo Brush Road to the right.",
-			"lon": 152.28670276000688,
-			"lat": -32.57987870000634
+			"photo": "pxl_20201002_223741815.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.288058,
+			"lat": -32.549196999916894
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_3708.jpg",
-			"description": "Start the Wildflow Walk a short distance up Mungo Brush Road.",
-			"lon": 152.28508276999978,
-			"lat": -32.58079052998011
+			"photo": "pxl_20201002_223853911.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.288519,
+			"lat": -32.54933700008527
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_3712.jpg",
-			"description": "<i>-1h / 4km</i> To skip directly to the beach, take the Duck Hole Firetrail to the left and follow it across the road to the Sandy Point picnic area.",
-			"lon": 152.27529351004324,
-			"lat": -32.58449050999346,
-			"optional": true
+			"photo": "pxl_20201002_223906871.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.2887,
+			"lat": -32.54948100009026
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_3713_dsc_3721.jpg",
-			"description": "At the end of the Wildflower Walk, cross the road to the dunes and follow Dark Point walking track to the beach.",
-			"lon": 152.26771272000866,
-			"lat": -32.5945707099982
+			"photo": "pxl_20201002_225330077.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.28682799999999,
+			"lat": -32.55840299992891
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_3746.jpg",
-			"description": "From the Dark Point aboriginal middens follow the beach to the left.",
-			"lon": 152.2691729299762,
-			"lat": -32.59726396003288
+			"photo": "pxl_20201002_225909218.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.286867,
+			"lat": -32.561906
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_3765_dsc_3775.jpg",
-			"description": "Continue down the beach past the Hole in the Wall picnic area.",
-			"lon": 152.30102873000328,
-			"lat": -32.561065700021246
+			"photo": "pxl_20201002_230235767.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.28637799999998,
+			"lat": -32.56325
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_3777.jpg",
-			"description": "At Mungo Brush, follow one of the trails through the dunes back to the campground carpark.",
-			"lon": 152.31094080996886,
-			"lat": -32.546240520043334
+			"photo": "pxl_20201002_230821875.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.283658,
+			"lat": -32.565363999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201002_231006038.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.28252300000003,
+			"lat": -32.56569
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201002_231018176.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.282303,
+			"lat": -32.56568899991459
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201002_231055051_pano.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.28227500000003,
+			"lat": -32.565686
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201002_232037251.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.285097,
+			"lat": -32.571075
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201002_232949915_pano.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.285456,
+			"lat": -32.576858
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201002_233338986.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.286039,
+			"lat": -32.577967
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201002_233814285.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.286656,
+			"lat": -32.579828000000006
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201002_233840042.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.286633,
+			"lat": -32.580144000000004
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201002_234014856.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.285794,
+			"lat": -32.581133
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201002_234541371.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.281542,
+			"lat": -32.579675
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201002_235106379.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.27785300000002,
+			"lat": -32.581461000000004
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201002_235319630.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.27689400000003,
+			"lat": -32.58283300009521
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201002_235841797.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.273886,
+			"lat": -32.586092
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_000032529.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.27446400000002,
+			"lat": -32.586961
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_000610373.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.276292,
+			"lat": -32.589953
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_000638392.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.276586,
+			"lat": -32.590322
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_002137485.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.28053299990194,
+			"lat": -32.592056
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_002328824_pano.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.28123100000002,
+			"lat": -32.592400000000005
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_003123058.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.284006,
+			"lat": -32.59355
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_003240919_pano.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.284425,
+			"lat": -32.593775
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_003331508_pano.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.284425,
+			"lat": -32.593775
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_004352292.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.287656,
+			"lat": -32.589964
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_013138737.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.299106,
+			"lat": -32.56438099990495
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_013617411.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.30014400000002,
+			"lat": -32.562571999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_021055088.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.31209700000002,
+			"lat": -32.547515999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_021314730.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.31144699992998,
+			"lat": -32.546732999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_021531960.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.310528,
+			"lat": -32.545922
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_021907137.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.310222,
+			"lat": -32.544402999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_022035155.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 152.31034200000002,
+			"lat": -32.544081
 		},
 		{
 			"location": "Mungo Brush",
