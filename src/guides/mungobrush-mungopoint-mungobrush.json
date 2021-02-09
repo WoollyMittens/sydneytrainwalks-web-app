@@ -37,84 +37,35 @@
 		{
 			"type": "waypoint",
 			"photo": "pxl_20201003_022906750.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the north end of the campground follow the sign to the Rainforest Walk",
 			"lon": 152.31036400000002,
 			"lat": -32.542207999999995
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20201003_022931144.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 152.31071900010394,
-			"lat": -32.541942
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20201003_022953145.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 152.310875,
-			"lat": -32.541653
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20201003_023053051.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the information sign, follow the loop clockwise.",
 			"lon": 152.31101700000002,
 			"lat": -32.541444
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20201003_023224755.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 152.31111900000002,
-			"lat": -32.540372
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20201003_023902796.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 152.31190600000002,
-			"lat": -32.537731
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20201003_024147577.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection pick the shortcut back if the conditions are too wet.",
 			"lon": 152.31303400000002,
 			"lat": -32.53864
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20201003_024457275.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 152.315242,
-			"lat": -32.538835999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20201003_024907787.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 152.313261,
-			"lat": -32.540541999999995
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20201003_025053701.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Both options loop back to the information sign.",
 			"lon": 152.31226900000001,
 			"lat": -32.541377999999995
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20201003_025208933.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 152.311532,
-			"lat": -32.541067
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20201003_025347408.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the information sign return back to the campground.",
 			"lon": 152.20109699999998,
 			"lat": -32.519053
 		},

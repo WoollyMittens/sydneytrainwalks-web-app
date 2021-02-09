@@ -3,7 +3,9 @@
 	"lon": 151.2768053636,
 	"lat": -33.0356877577,
 	"description": [
-		"Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet."
+		"The well maintained dirt roads through <a href=\"https://www.forestrycorporation.com.au/visit/forests/olney\">Olney State Forest</a>",
+		"offer a unique chance to access a very remote section of the Great North Walk in relative comfort.",
+		"As well as one of the highest peaks and vantage points in the area."
 	],
 	"duration": 9,
 	"distance": 35,
@@ -34,737 +36,217 @@
 		{
 			"type": "waypoint",
 			"photo": "img_20200828_064744.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the carpark of the Basin Campground follow the sign to the Great North Walk.",
 			"lon": 151.230872,
 			"lat": -33.103789
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200828_064908.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.231808,
-			"lat": -33.103694000000004
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200828_065235.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At intersections follow the Great North Walk signs.",
 			"lon": 151.23415,
 			"lat": -33.103833
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200828_065248.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.23419399999997,
-			"lat": -33.103947
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_065448.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.23534199999997,
-			"lat": -33.103828
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_070916.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.240353,
-			"lat": -33.102772
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_071213.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.240617,
-			"lat": -33.101394
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_071421.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.24118399999998,
-			"lat": -33.100653
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_071440.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.24118399999998,
-			"lat": -33.100653
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_071603.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.24136099999998,
-			"lat": -33.100814
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200828_073121.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection with the Cedar Brush Walk, follow the Great North Walk along the creek.",
 			"lon": 151.242413,
 			"lat": -33.096348
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200828_073247.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.24329699999998,
-			"lat": -33.095747000091606
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_073500.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.243642,
-			"lat": -33.094964000000004
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200828_073637.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "The trail along the creek ends at a rocky creek crossing.",
 			"lon": 151.24360499999997,
 			"lat": -33.094390000000004
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200828_073659.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.24349199999997,
-			"lat": -33.094178
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_073725.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.243361,
-			"lat": -33.094133
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200828_080058.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After crossing the creek, follow the track zigzagging up the ridge.",
 			"lon": 151.243868,
 			"lat": -33.093954000000004
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200828_080202.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.243846,
-			"lat": -33.093819
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_080523.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.24431299999998,
-			"lat": -33.093516
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_080651.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.244475,
-			"lat": -33.093137000000006
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200828_081412.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the top of the climb, follow the firetrail along the ridge.",
 			"lon": 151.24484999999999,
 			"lat": -33.091331000000004
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200828_081558.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.24467199999998,
-			"lat": -33.090347
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_082754.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.243111,
-			"lat": -33.085056
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200828_083319.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersections follow the Great North Walk sign down Wild Boar Road.",
 			"lon": 151.244511,
 			"lat": -33.082242
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200828_083425.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.244511,
-			"lat": -33.081989
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_083706.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.243125,
-			"lat": -33.080772
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_084238.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.24523300010412,
-			"lat": -33.077428000000005
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_084307.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.24541399999998,
-			"lat": -33.07726699989587
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_084555.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.247862,
-			"lat": -33.077404
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_084718.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.248572,
-			"lat": -33.077533
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_085156.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.252733,
-			"lat": -33.076667
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200828_085655.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection with Pig and Sow Ridge, look for the fainter bushtrail across the track continuing the Great North Walk",
 			"lon": 151.254492,
 			"lat": -33.073672
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200828_085712.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "A sign and a walkers log marks the start of the trail.",
 			"lon": 151.25495,
 			"lat": -33.073831000000006
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200828_090144.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.254611,
-			"lat": -33.073379
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_090450.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.254656,
-			"lat": -33.073116000000006
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_090950.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.25553,
-			"lat": -33.072133
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_091104.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.255325,
-			"lat": -33.071579
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200828_091353.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "The trail descends to a creek and ascends the next ridge on the other side.",
 			"lon": 151.255089,
 			"lat": -33.070303
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200828_091456.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.254786,
-			"lat": -33.070267
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_091908.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.254786,
-			"lat": -33.069206
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200828_092600.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the top of the next ridge, follow the Great North Walk signs down the firetrail.",
 			"lon": 151.255005,
 			"lat": -33.067640000000004
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200828_093252.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.257775,
-			"lat": -33.064733
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_093632.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.258533,
-			"lat": -33.062928
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_094556.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.259342,
-			"lat": -33.059521999999994
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200828_095222.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection follow Murray Forest Road to the right for a short distance.",
 			"lon": 151.259856,
 			"lat": -33.05715
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200828_095455.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Enter the first intersection on the left, following the signs for the Great North Walk.",
 			"lon": 151.26071899992235,
 			"lat": -33.056357999999996
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200828_095539.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "A fainter bushtrail continues to the right of the firetrail.",
 			"lon": 151.260767,
 			"lat": -33.056293999999994
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200828_095720.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.261647,
-			"lat": -33.055456
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_100222.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.2636,
-			"lat": -33.052872
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_100353.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.263508,
-			"lat": -33.051871999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_100508.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.2638,
-			"lat": -33.051641999999994
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_100639.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.263956,
-			"lat": -33.051041999999995
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200828_101303.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Where the bushtrail rejoins the firetrail follow the Great North Walk sign to the right.",
 			"lon": 151.264646,
 			"lat": -33.049893
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200828_101403.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.264981,
-			"lat": -33.049524999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_101753.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.265628,
-			"lat": -33.047261
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_101802.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.265628,
-			"lat": -33.047261
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_101923.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.267064,
-			"lat": -33.046721999999995
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200828_102410.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection follow the Great North Walk sign.",
 			"lon": 151.27073000000001,
 			"lat": -33.046074999999995
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200828_102441.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.27104400000002,
-			"lat": -33.046025
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_102546.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.270958,
-			"lat": -33.045443999999996
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200828_102910.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection with Warrawolong Road, follow the Great North Walk to the right.",
 			"lon": 151.272578,
 			"lat": -33.043307999999996
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200828_103050.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Take the next intersection left down Turners Road.",
 			"lon": 151.27381100000002,
 			"lat": -33.042930999999996
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200828_104045.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.276408,
-			"lat": -33.036505999999996
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200828_104156.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the last stretch to the lookouts, watching carefully for vantage points on the right. They are not signposted.",
 			"lon": 151.2767,
 			"lat": -33.035638999999996
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200828_104443.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Several vantage points offer views across the valley and Watagan Creek.",
 			"lon": 151.27751700000002,
 			"lat": -33.034406
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200828_104526.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.27721100000002,
-			"lat": -33.034225
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_104739.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.27698600000002,
-			"lat": -33.034082999999995
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_104837.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.27741400000002,
-			"lat": -33.034372
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200828_111316.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the lookouts return to the intersection to Mount Warrawalong.",
 			"lon": 151.27309200000002,
 			"lat": -33.04318
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200828_111343.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the sign left down Warrawolong Road if time allows. <i>+1.5h / 3km</i>",
 			"lon": 151.272858,
-			"lat": -33.043158
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_111527.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.27195500000002,
-			"lat": -33.042396
+			"lat": -33.043158,
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200828_111733.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "A trail up to the summit will be apparent on the left.",
 			"lon": 151.271475,
-			"lat": -33.040903
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_111910.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.271047,
-			"lat": -33.040414
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_113311.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.267986,
-			"lat": -33.041118999999995
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_113530.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.26852300000002,
-			"lat": -33.041669999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_113719.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.26850000000002,
-			"lat": -33.04235
+			"lat": -33.040903,
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200828_115359.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "The summit contains a grass clearing and watchtower. There are only filtered views between the trees.",
 			"lon": 151.264242,
-			"lat": -33.043928
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_115418.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.264436,
-			"lat": -33.044143999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_115450.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.264614,
-			"lat": -33.044056
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_115549.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.264486,
-			"lat": -33.044360999999995
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_115709.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.264256,
-			"lat": -33.04458100009824
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_120529.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.264528,
-			"lat": -33.04428099989606
+			"lat": -33.043928,
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200828_120533.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Check carefully for signs if climbing the tower is (still) allowed.",
 			"lon": 151.264528,
-			"lat": -33.04428099989606
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_120705.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.264483,
-			"lat": -33.044236
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_120838.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.264511,
-			"lat": -33.044252999908394
+			"lat": -33.04428099989606,
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200828_120931.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "The top of the watchtower offers a wide open view across the wilderness and Central Coast.",
 			"lon": 151.264514,
-			"lat": -33.044256
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_120952.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.264511,
-			"lat": -33.044256
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_121056.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.26451700009392,
-			"lat": -33.044202999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_124627.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.272543,
-			"lat": -33.043188
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_131804.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.261189,
-			"lat": -33.055980999999996
+			"lat": -33.044256,
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200828_131824.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From Mount Warrawolong follow the Great North Walk back to Murrays Forest Road.",
 			"lon": 151.261008,
 			"lat": -33.056172
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200828_131835.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Instead of following the Cedar Brush Walk to the right, follow the alternative route to the left following Murrays Forest Road.",
 			"lon": 151.260956,
 			"lat": -33.056141999999994
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200828_132008.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.262206,
-			"lat": -33.056214
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_132119.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.262822,
-			"lat": -33.057049
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_132911.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.264548,
-			"lat": -33.060182
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200828_133407.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection follow Walkers Ridge Road to the right.",
 			"lon": 151.26674200000002,
 			"lat": -33.06056900009115
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200828_133519.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.266608,
-			"lat": -33.061443999999995
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_135632.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.262422,
-			"lat": -33.075625
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_143209.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.261344,
-			"lat": -33.099094
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_144048.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.254659,
-			"lat": -33.101152
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_144514.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.251858,
-			"lat": -33.099814
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_145221.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.2463,
-			"lat": -33.102314
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200828_151254.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection with the Basin Forest Road, follow the signs to the Basin Campground.",
 			"lon": 151.236394,
 			"lat": -33.107589000000004
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_151311.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.236381,
-			"lat": -33.107606000000004
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200828_151757.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.23388899999998,
-			"lat": -33.106539
 		},
 		{
 			"location": "The Basin",
