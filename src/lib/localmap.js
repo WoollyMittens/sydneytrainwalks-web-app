@@ -238,7 +238,7 @@ Localmap.prototype.Background = function (parent, onComplete) {
 		var max = this.config.maximum;
 		// calculate the limits
 		min.zoom = Math.max(container.offsetWidth / element.offsetWidth, container.offsetHeight / element.offsetHeight);
-		max.zoom = 2;
+		max.zoom = 3;
 	};
 
 	this.loadBitmap = function() {

@@ -3,8 +3,9 @@
 	"lon": 151.538238,
 	"lat": -33.302181,
 	"description": [
-		"This walk makes a loop around the surprisingly diverse landscapes of <a href=\"http://www.nationalparks.nsw.gov.au/wyrrabalong-national-park\">Wyrrabalong National Park</a>,",
-		"with an optional stretch of beach on the other side of the highway."
+		"This walk makes a loop around the surprisingly diverse wetlands, red gum forest, and rain forest",
+		"of <a href=\"http://www.nationalparks.nsw.gov.au/wyrrabalong-national-park\">Wyrrabalong National Park</a>.",
+		"With an optional stretch of beach on the other side of the highway."
 	],
 	"duration": 3,
 	"distance": 10,
@@ -40,37 +41,16 @@
 		{
 			"type": "waypoint",
 			"photo": "img_20200517_070621.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the carpark at the veterans hostel, follow Evens Road to the trailhead.",
 			"lon": 151.551061,
 			"lat": -33.281916999921584
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200517_070742.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Enter the wetlands past the gate on the right side of the bike path.",
 			"lon": 151.55076400000002,
 			"lat": -33.282628
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_070823.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.550586,
-			"lat": -33.282956
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_071054.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.549725,
-			"lat": -33.284317
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_071131.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.549725,
-			"lat": -33.284317
 		},
 		{
 			"title": "Four Seasons in One Day: Wetlands",
@@ -87,73 +67,10 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200517_071141.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.549725,
-			"lat": -33.284317
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_071212.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.54931700011304,
-			"lat": -33.285005999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_071250.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.54931700011304,
-			"lat": -33.285005999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_071515.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.549272,
-			"lat": -33.285903
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_071742.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.549136,
-			"lat": -33.287456
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_071843.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.549136,
-			"lat": -33.287456
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200517_072134.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After the wetlands turn right at the intersection, following the sign to the red gums walk.",
 			"lon": 151.54773299992246,
 			"lat": -33.289558
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_072215.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.54773299992246,
-			"lat": -33.289558
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_072418.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.545428,
-			"lat": -33.289294
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_072527.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.54528300009946,
-			"lat": -33.288427999999996
 		},
 		{
 			"title": "Four Seasons in One Day: Red Gum Forest",
@@ -170,185 +87,17 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200517_072549.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.54528300009946,
-			"lat": -33.288427999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_072915.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.544692,
-			"lat": -33.285714
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_072936.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.544692,
-			"lat": -33.285714
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_072955.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.544692,
-			"lat": -33.285714
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_073845.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.53951899999998,
-			"lat": -33.288627999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_073913.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.53951899999998,
-			"lat": -33.288627999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_073931.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.53951899999998,
-			"lat": -33.288627999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_074007.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.539028,
-			"lat": -33.288796999999995
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_074126.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.539028,
-			"lat": -33.288796999999995
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_074242_vr.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.53862777777778,
-			"lat": -33.28988333333333
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_074427.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.538628,
-			"lat": -33.289882999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_074518.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.537925,
-			"lat": -33.291132999999995
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200517_074612.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection follow the Lilly Pilly loop to the right.",
 			"lon": 151.5379,
 			"lat": -33.291136
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_074621.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.5379,
-			"lat": -33.291136
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_074733.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.537053,
-			"lat": -33.292325
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_074937.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.535697,
-			"lat": -33.292389000074124
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_075212.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.535181,
-			"lat": -33.291613999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_075316.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.534339,
-			"lat": -33.292608
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_075338_vr.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.534339,
-			"lat": -33.292608
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_075839.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.530931,
-			"lat": -33.293475
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_080107.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.530772,
-			"lat": -33.293603
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200517_080142.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the shorefront, follow the Lilly Pilly loop to the left.",
 			"lon": 151.528897,
 			"lat": -33.294819
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_080225.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.528875,
-			"lat": -33.294827999999995
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_080316.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.528875,
-			"lat": -33.294827999999995
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_080341.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.528375,
-			"lat": -33.295575
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_080625.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.5294169999216,
-			"lat": -33.296692
 		},
 		{
 			"title": "Four Seasons in One Day: Rainforest",
@@ -365,432 +114,164 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200517_080635.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.5294169999216,
-			"lat": -33.296692
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_080719.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.529119,
-			"lat": -33.29708099991883
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_081024.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.53095800000003,
-			"lat": -33.298449999999995
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200517_081359.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "On the left the Lilly Pilly Link trail offers a shortcut back that avoids the beach. <i>-0.5h / 2km</i>",
 			"lon": 151.533136,
-			"lat": -33.300017
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_092312.jpg",
-			"description": "Lorem ipsum dolor sit amet. <i>-0.5h / 2km</i>",
-			"optional": "true",
-			"lon": 151.5332109998989,
-			"lat": -33.300222
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_092358.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": "true",
-			"lon": 151.533558,
-			"lat": -33.299661
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_092736.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": "true",
-			"lon": 151.535692,
-			"lat": -33.298542
+			"lat": -33.300017,
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200517_092933.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": "true",
+			"description": "The trail is somewhat overgrown, but still easy to follow.",
 			"lon": 151.537164,
-			"lat": -33.297708
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_093014.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": "true",
-			"lon": 151.537247,
-			"lat": -33.2977
+			"lat": -33.297708,
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200517_093319.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": "true",
+			"description": "At the intersection with the wider trail follow the Lilly Pilly Trail to the left.",
 			"lon": 151.539144,
-			"lat": -33.296907999999995
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_093339.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": "true",
-			"lon": 151.539222,
-			"lat": -33.296858
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_093536.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": "true",
-			"lon": 151.539833,
-			"lat": -33.2957
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_093802.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": "true",
-			"lon": 151.538831,
-			"lat": -33.29441700010259
+			"lat": -33.296907999999995,
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200517_093918.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": "true",
+			"description": "At the next intersection follow the fainter Burrawang walking track to the right.",
 			"lon": 151.538347,
-			"lat": -33.293803
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_093939.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": "true",
-			"lon": 151.538475,
-			"lat": -33.293752999999995
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_094257.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": "true",
-			"lon": 151.540039,
-			"lat": -33.29431699992676
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_094445.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": "true",
-			"lon": 151.541114,
-			"lat": -33.29285
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_094457.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": "true",
-			"lon": 151.541031,
-			"lat": -33.29289700008152
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_094833.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": "true",
-			"lon": 151.543058,
-			"lat": -33.293433
+			"lat": -33.293803,
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200517_095120.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": "true",
+			"description": "The trail ends intersecting with the Red Gum Trail. Follow it to the right to the carpark.",
 			"lon": 151.54539700008152,
-			"lat": -33.293228
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_095133.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": "true",
-			"lon": 151.546067,
-			"lat": -33.293306
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_095146.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": "true",
-			"lon": 151.54617199999998,
-			"lat": -33.2933030000831
+			"lat": -33.293228,
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200517_095157.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": "true",
+			"description": "From the carpark follow the combined bike and footpath to the left back through the wetlands.",
 			"lon": 151.54617199999998,
-			"lat": -33.2933030000831
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_095350.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": "true",
-			"lon": 151.547811,
-			"lat": -33.292432999999996
+			"lat": -33.2933030000831,
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200517_081444.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the Lilly Pilly trail to the Central Coast Highway.",
 			"lon": 151.53303299990193,
 			"lat": -33.300413999999996
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200517_081459.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the bike path along the highway to the left for a few hundred meters.",
 			"lon": 151.53279400000002,
 			"lat": -33.300366999999994
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200517_081716.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": "true",
+			"description": "Or to avoid the traffic, use the service trail that runs parallel to it. <i>+5m / 0km</i>",
 			"lon": 151.53475,
-			"lat": -33.299792
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_081732.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": "true",
-			"lon": 151.534914,
-			"lat": -33.29983899992342
+			"lat": -33.299792,
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200517_081942.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the highway at the carpark for the Pelican Beach Road.",
 			"lon": 151.536544,
 			"lat": -33.298939
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200517_082029.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Pass the gate at the carpark and follow the trail through the coast heath towards the ocean.",
 			"lon": 151.537206,
 			"lat": -33.298891999999995
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200517_082112.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.537386,
-			"lat": -33.299056
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_082134.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.537714,
-			"lat": -33.29951700009392
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_082545.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.538364,
-			"lat": -33.302710999999995
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_082711.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.538769,
-			"lat": -33.303736
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200517_083136.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the dunes across one of the trodden paths.",
 			"lon": 151.538919,
 			"lat": -33.303760999999994
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200517_083211.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.539161,
-			"lat": -33.304027999999995
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_083247_vr.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.539408,
-			"lat": -33.304347
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200517_083540.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the beach to the left towards Pelican Point.",
 			"lon": 151.540928,
 			"lat": -33.304519
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200517_084644.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.549694,
-			"lat": -33.300236
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200517_084848.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Use the boardwalk across the dunes at the Pelican Beach carpark.",
 			"lon": 151.55125800000002,
 			"lat": -33.299403
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200517_085029.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.55038100000002,
-			"lat": -33.298911
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_085205.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.54985,
-			"lat": -33.298227999999995
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200517_085307.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the carpark follow Pelican Beach Road back to the Central Coast Highway.",
 			"lon": 151.549894,
 			"lat": -33.297481
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200517_085424.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.549675,
-			"lat": -33.296738999999995
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_090013.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.548825,
-			"lat": -33.292178
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200517_090033.jpg",
-			"description": "Lorem ipsum dolor sit amet. <i>+15m / 1km</i>",
-			"optional": "true",
+			"description": "To avoid the traffic along the highway follow the service trail to the left. <i>+15m / 1km</i>",
 			"lon": 151.548633,
-			"lat": -33.292139
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_090500.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": "true",
-			"lon": 151.546594,
-			"lat": -33.293869
+			"lat": -33.292139,
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200517_090409.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": "true",
+			"description": "Cross the highway at the carpark for the Red Gum Trail.",
 			"lon": 151.546928,
-			"lat": -33.29348900007942
+			"lat": -33.29348900007942,
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200517_090138.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At intersection with the Central Coast Highway, look for the gap in the vegetation on the other side.",
 			"lon": 151.548364,
 			"lat": -33.292049999999996
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200517_090159.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "And cross the highway over to the wetlands bike path on the other side directly.",
 			"lon": 151.548214,
 			"lat": -33.291993999999995
 		},
 		{
 			"type": "waypoint",
 			"photo": "img_20200517_095434.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the bike path to the right through the wetlands.",
 			"lon": 151.54781900007563,
 			"lat": -33.2923
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200517_095614.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.547958,
-			"lat": -33.292058
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_100207.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.55103100000002,
-			"lat": -33.286806
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_100300.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.55108900000002,
-			"lat": -33.286483
-		},
-		{
-			"type": "waypoint",
-			"photo": "img_20200517_100427.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.55124400000003,
-			"lat": -33.285796999999995
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200517_100738.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After the wetlands follow the bike path left past the veterans hostel.",
 			"lon": 151.55231400000002,
 			"lat": -33.283353
 		},
 		{
 			"type": "waypoint",
-			"photo": "img_20200517_100908.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.55159400000002,
-			"lat": -33.283031
-		},
-		{
-			"type": "waypoint",
 			"photo": "img_20200517_100929.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "The bike path ends back at the trailhead.",
 			"lon": 151.550747,
 			"lat": -33.282944
 		},
