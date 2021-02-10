@@ -1,60 +1,29 @@
-/*
-	Directions
-*/
-
-@media all {
-
-	.directions {
-		transition-property: transform;
-		transition-duration: 300ms;
-		transform: translate(-100%, 0);
-		display : block;
-		bottom : 4rem;
-		height : auto;
-		left : 0;
-		max-height : 100%;
-		position : absolute;
-		top : 8rem;
-		width : 50%;
-		z-index : 3;
+.directions {
+	transition-property: transform;
+	transition-duration: 300ms;
+	transform: translate(-100%, 0);
+	display: block;
+	bottom: 4rem;
+	height: auto;
+	left: 0;
+	max-height: 100%;
+	position: absolute;
+	top: 8rem;
+	width: 50%;
+	z-index: 3;
+	@media (max-width:959px) {
+		width: 100%;
 	}
-
-	/*
-		on which screen should this be visible
-	*/
-
-	body.screen-guide .directions,
-	body.screen-photos .directions,
-	body.screen-map .directions { transform: translate(0, 0); }
-
-}
-@media (max-width:959px) {
-
-	.directions {
-		width : 100%;
-	}
-
-	/*
-    on which screen should this be visible
-	*/
-
-	body.screen-guide .directions { transform: translate(-100%, 0); }
-	body.screen-photos .directions { transform: translate(-100%, 0); }
-	body.screen-map .directions { transform: translate(0, 0); }
-
-}
-@media print {
-
-  .directions {
+	@media print {
 		transform: translate(0, 0);
-		position : relative !important;
-		top : auto !important;
-		right : auto !important;
-		bottom : auto !important;
-		left : auto !important;
-		page-break-before : always;
-		height : 20cm !important;
-		width : 20cm !important;
+		position: relative !important;
+		top: auto !important;
+		right: auto !important;
+		bottom: auto !important;
+		left: auto !important;
+		page-break-before: always;
+		height: 20cm !important;
+		width: 20cm !important;
 		margin: 1cm auto !important;
 
 		button {
@@ -62,4 +31,16 @@
 		}
 	}
 
+	body.screen-guide &,
+	body.screen-map &,
+	body.screen-photos & {
+		transform: translate(0, 0);
+	}
+
+	body.screen-guide &,
+	body.screen-photos & {
+		@media (max-width:959px) {
+			transform: translate(-100%, 0);
+		}
+	}
 }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:mytracks="http://mytracks.stichling.info/myTracksGPX/1/0" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="Adze - http://kobotsw.com/apps/adze" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd">
     <metadata>
-        <name>Untitled Document</name>
+        <name>roseville-garigal-manly</name>
         <time>2019-04-05T03:09:13.397Z</time>
     </metadata>
     <rte>
-        <name>fix</name>
+        <name>roseville-garigal-manly</name>
         <extensions>
             <mytracks:color red="0.000000" green="0.000000" blue="1.000000" alpha="1.000000"></mytracks:color>
             <mytracks:area showArea="no" areaDistance="0.000000"></mytracks:area>
@@ -37,7 +37,7 @@
         </rtept>
     </rte>
     <rte>
-        <name>Untitled Track</name>
+        <name>roseville-garigal-manly</name>
         <extensions>
             <mytracks:color red="0.000000" green="0.000000" blue="1.000000" alpha="1.000000"></mytracks:color>
             <mytracks:area showArea="no" areaDistance="0.000000"></mytracks:area>
@@ -128,7 +128,7 @@
         </rtept>
     </rte>
     <rte>
-        <name>Untitled Track</name>
+        <name>roseville-garigal-manly</name>
         <extensions>
             <mytracks:color red="0.000000" green="0.000000" blue="1.000000" alpha="1.000000"></mytracks:color>
             <mytracks:area showArea="no" areaDistance="0.000000"></mytracks:area>
@@ -1917,7 +1917,7 @@
         </trkseg>
     </trk>
     <trk>
-        <name>detour</name>
+        <name>roseville-garigal-manly</name>
         <extensions>
             <mytracks:color red="0.000000" green="0.000000" blue="1.000000" alpha="1.000000"></mytracks:color>
             <mytracks:area showArea="no" areaDistance="0.000000"></mytracks:area>
@@ -3946,7 +3946,7 @@
         </trkseg>
     </trk>
     <trk>
-        <name>31-DEC-18 07:29:02 PM</name>
+        <name>roseville-garigal-manly</name>
         <extensions>
             <gpxx:TrackExtension>
                 <gpxx:DisplayColor>DarkYellow</gpxx:DisplayColor>

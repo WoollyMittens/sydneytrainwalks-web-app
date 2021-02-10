@@ -58,9 +58,16 @@ var SydneyTrainWalks = function(config) {
 
 	this.remoteLink = function(evt) {
 		var href = evt.target.getAttribute("href");
+		// if this is an external link
 		if(/^http/i.test(href) && !/.jpg$/i.test(href)) {
-			evt.preventDefault();
-			window.open(href, '_system', 'location=yes');
+			// use the in app browser
+			if (typeof cordova !== 'undefined' && cordova.InAppBrowser) {
+				evt.preventDefault();
+				cordova.InAppBrowser.open(href, '_system', 'location=yes');
+			// or open it in a new tab
+			} else {
+				evt.target.setAttribute('target', '_blank');
+			}
 		}
 	};
 

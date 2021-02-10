@@ -1,0 +1,106 @@
+{
+	"location": "Booti Booti",
+	"lon": 152.5169190019,
+	"lat": -32.310636621,
+	"description": [
+		"<a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/booti-booti-national-park\">Booti Booti</a> is a small but varied national park along the road to Forster.",
+		"The <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/booti-hill-and-wallis-lake-walking-track\">Lakeside Walking Track</a> is well worth the two hour stop over along the way."
+	],
+	"duration": 2,
+	"distance": 7,
+	"zoom": 13,
+	"rain": true,
+	"fireban": false,
+	"key": "sunsetpicnic-bootibooti-theruins",
+	"updated": "2020-10-22",
+	"bounds": {
+		"west": 152.490234375,
+		"north": -32.29641979896908,
+		"east": 152.545166015625,
+		"south": -32.34284135639302
+	},
+	"markers": [
+		{
+			"location": "Sunset Picnic Area",
+			"type": "car",
+			"description": "Plan your drive to the <a href=\"https://www.google.com/maps/place/Sunset+Picnic+Area/@-32.326075,152.5262413,17z/data=!4m8!1m2!3m1!2sSunset+Picnic+Area!3m4!1s0x0:0x5ea1baf0c37ed4d6!8m2!3d-32.3263415!4d152.527389\">Sunset Picnic Area</a>.",
+			"lon": 152.527423,
+			"lat": -32.326075
+		},
+		{
+			"type": "toilet",
+			"lat": -32.311005,
+			"lon": 152.520383
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201121_200541524.jpg",
+			"description": "Park at the Sunset picnic area across the road from the firetrail. ",
+			"lon": 152.52767500000002,
+			"lat": -32.325630555555556
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201121_200548059.jpg",
+			"description": "Cross the road and follow the fire trail past the gate.",
+			"lon": 152.52767500000002,
+			"lat": -32.325630555555556
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201121_201517589.jpg",
+			"description": "At the top of the ridge, follow the walking track to the left.",
+			"lon": 152.53224444444444,
+			"lat": -32.32461388888889
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201121_205050869.jpg",
+			"description": "The trail descends to the beach.",
+			"lon": 152.5214916666667,
+			"lat": -32.31214722222222
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201121_205424689.pano.jpg",
+			"description": "From the beach follow the path onto the campground.",
+			"lon": 152.52101666666667,
+			"lat": -32.311211111111106
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201121_205854118.jpg",
+			"description": "Follow the road out of the campground to the visitor centre.",
+			"lon": 152.51892222222224,
+			"lat": -32.31068888888888
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201121_210206761.jpg",
+			"description": "Cross the road and follow the signs to the Lakeside Walking Track.",
+			"lon": 152.51675833333334,
+			"lat": -32.31024166666666
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201121_211450502.jpg",
+			"description": "Follow the trail along the lake to the Booti Point picnic area.",
+			"lon": 152.50983888888888,
+			"lat": -32.31180555555555
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201121_212651854.jpg",
+			"description": "From Booti Point follow the lakeside trail back to the Sunset picnic area.",
+			"lon": 152.51268611111112,
+			"lat": -32.31546944444444
+		},
+		{
+			"location": "Sunset Picnic Area",
+			"type": "car",
+			"description": "Plan your drive from the <a href=\"https://www.google.com/maps/place/Sunset+Picnic+Area/@-32.326075,152.5262413,17z/data=!4m8!1m2!3m1!2sSunset+Picnic+Area!3m4!1s0x0:0x5ea1baf0c37ed4d6!8m2!3d-32.3263415!4d152.527389\">Sunset Picnic Area</a>.",
+			"lon": 152.527423,
+			"lat": -32.326075
+		}
+	]
+}

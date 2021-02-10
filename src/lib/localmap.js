@@ -15,6 +15,7 @@ var Localmap = function(config) {
     'key': null,
     'alias': null,
     'container': null,
+    'legend': null,
     'canvasWrapper': null,
     'canvasElement': null,
     'thumbsUrl': null,
@@ -62,7 +63,10 @@ var Localmap = function(config) {
     'hotspots': [],
     'checkHotspot': function() { return true; },
     'enterHotspot': function() { return true; },
-    'leaveHotspot': function() { return true; }
+    'leaveHotspot': function() { return true; },
+    'distortX': function(x) { return x },
+    'distortY': function(y) { return y },
+    'supportColour': function(id) { return 'darkorange' }
   };
 
   for (var key in config)
@@ -234,7 +238,7 @@ Localmap.prototype.Background = function (parent, onComplete) {
 		var max = this.config.maximum;
 		// calculate the limits
 		min.zoom = Math.max(container.offsetWidth / element.offsetWidth, container.offsetHeight / element.offsetHeight);
-		max.zoom = 2;
+		max.zoom = 3;
 	};
 
 	this.loadBitmap = function() {
@@ -677,9 +681,7 @@ Localmap.prototype.Controls = function (parent) {
 		this.last = new Date();
 	};
 
-	this.cancelInteraction = function(method, evt) {
-		console.log('cancelInteraction');
-	};
+	this.cancelInteraction = function(method, evt) {};
 
 	// EVENTS
 
@@ -838,8 +840,8 @@ Localmap.prototype.Indicator = function (parent, onMarkerClicked, onMapFocus) {
 			// display the marker
 			this.element.style.cursor = (this.config.indicator.description) ? 'pointer' : 'default';
 			this.element.style.display = 'block';
-			this.element.style.left = ((lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
-			this.element.style.top = ((lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';
+			this.element.style.left = (this.config.distortX((lon - min.lon_cover) / (max.lon_cover - min.lon_cover)) * 100) + '%';
+			this.element.style.top = (this.config.distortY((lat - min.lat_cover) / (max.lat_cover - min.lat_cover)) * 100) + '%';
 		// otherwise
 		} else {
 			// hide the marker
@@ -1061,8 +1063,8 @@ Localmap.prototype.Location = function (parent) {
 		if (lon > min.lon_cover && lon < max.lon_cover && lat < min.lat_cover && lat > max.lat_cover) {
 			// display the marker
 			this.element.style.display = 'block';
-			this.element.style.left = ((lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
-			this.element.style.top = ((lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';
+			this.element.style.left = (this.config.distortX((lon - min.lon_cover) / (max.lon_cover - min.lon_cover)) * 100) + '%';
+			this.element.style.top = (this.config.distortY((lat - min.lat_cover) / (max.lat_cover - min.lat_cover)) * 100) + '%';
       // check if the location is within a hotspot
       this.checkHotSpot(lon, lat);
 		// otherwise
@@ -1159,12 +1161,12 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
 		onComplete();
 	};
 
-	this.addMarker = function(markerData) {
+	this.addMarker = function(markerData, markerIndex) {
 		// add a landmark, waypoint, or a hotspot to the map
     switch(markerData.type) {
-      case 'waypoint': markerData.element = this.addWaypoint(markerData); break;
-      case 'hotspot': markerData.element = this.addHotspot(markerData); break;
-      default: markerData.element = this.addLandmark(markerData);
+      case 'waypoint': markerData.element = this.addWaypoint(markerData, markerIndex); break;
+      case 'hotspot': markerData.element = this.addHotspot(markerData, markerIndex); break;
+      default: markerData.element = this.addLandmark(markerData, markerIndex);
     }
     // add valid markers to the map
     if (markerData.element) {
@@ -1173,20 +1175,24 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
     }
 	};
 
-	this.addWaypoint = function(markerData) {
+	this.addWaypoint = function(markerData, markerIndex) {
 		var min = this.config.minimum;
 		var max = this.config.maximum;
+    var id = markerData.id || 'localmap_' + markerIndex;
+    // create a marker element
 		var element = document.createElement('span');
-		element.setAttribute('class', 'localmap-waypoint');
-		element.setAttribute('id', markerData.id || 'localmap_' + markerData.lon + '_' + markerData.lat);
+		element.setAttribute('id', id);
+		element.setAttribute('data-key', id);
+		element.setAttribute('class', 'localmap-waypoint localmap-index-' + markerIndex);
 		element.addEventListener('click', onClicked.bind(this, markerData));
-		element.style.left = ((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
-		element.style.top = ((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';
+    element.style.borderColor = this.config.supportColour(id);
+		element.style.left = (this.config.distortX((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover)) * 100) + '%';
+		element.style.top = (this.config.distortY((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover)) * 100) + '%';
 		element.style.cursor = 'pointer';
 		return element;
 	};
 
-  this.addHotspot = function(markerData) {
+  this.addHotspot = function(markerData, markerIndex) {
     var config = this.config;
     // pre-calculate the hotspot radius
     markerData.maxLon = markerData.lon + markerData.radius;
@@ -1195,20 +1201,23 @@ Localmap.prototype.Markers = function (parent, onClicked, onComplete) {
     markerData.minLat = markerData.lat - markerData.radius / 1.5;
     this.config.hotspots.push(markerData);
     // otherwise handle as a normal landmark
-    return (config.checkHotspot(markerData)) ? this.addLandmark(markerData) : null;
+    return (config.checkHotspot(markerData)) ? this.addLandmark(markerData, markerIndex) : null;
   };
 
-	this.addLandmark = function(markerData) {
+	this.addLandmark = function(markerData, markerIndex) {
 		var min = this.config.minimum;
 		var max = this.config.maximum;
+    var id = markerData.id || 'localmap_' + markerIndex;
+    // create a landmark element
 		var element = new Image();
 		element.setAttribute('src', this.config.markersUrl.replace('{type}', markerData.type));
 		element.setAttribute('title', markerData.description || '');
-		element.setAttribute('class', 'localmap-marker');
-		element.setAttribute('id', markerData.id || 'localmap_' + markerData.lon + '_' + markerData.lat);
+		element.setAttribute('class', 'localmap-marker localmap-index-' + markerIndex);
+		element.setAttribute('id', id);
+		element.setAttribute('data-key', id);
 		element.addEventListener('click', onClicked.bind(this, markerData));
-		element.style.left = ((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover) * 100) + '%';
-		element.style.top = ((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover) * 100) + '%';
+		element.style.left = (this.config.distortX((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover)) * 100) + '%';
+		element.style.top = (this.config.distortY((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover)) * 100) + '%';
 		element.style.cursor = (markerData.description || markerData.callback) ? 'pointer' : null;
 		return element;
 	};
@@ -1307,17 +1316,17 @@ Localmap.prototype.Route = function (parent, onComplete) {
 	this.parent = parent;
 	this.config = parent.config;
 	this.element = null;
-	this.coordinates = [];
+  this.tracks = [];
 	this.zoom = null;
 	this.delay = null;
 
 	// METHODS
 
 	this.start = function() {
-		var key = this.config.key;
+    var key = this.config.key;
 		// create a canvas
-		this.element = document.createElement('canvas');
-		this.element.setAttribute('class', 'localmap-route')
+		this.element = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+		this.element.setAttribute('class', 'localmap-route');
 		this.parent.element.appendChild(this.element);
 		// use the JSON immediately
 		if (this.config.routeData && this.config.routeData[key]) {
@@ -1347,68 +1356,111 @@ Localmap.prototype.Route = function (parent, onComplete) {
 		this.zoom = this.config.position.zoom;
 	};
 
-	this.redraw = function() {
+  this.draw = function() {
 		var min = this.config.minimum;
 		var max = this.config.maximum;
-		// adjust the height of the canvas
-		this.element.width = this.parent.element.offsetWidth;
-		this.element.height = this.parent.element.offsetHeight;
-		// position every trackpoint in the route
-		var ctx = this.element.getContext('2d');
+    var w = this.parent.element.offsetWidth;
+    var h = this.parent.element.offsetHeight;
+		// adjust the height of the svg
+    this.element.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
+    this.element.setAttribute('width', w);
+    this.element.setAttribute('height', h);
 		// (re)draw the route
-		var x0, y0, x1, y1, z = this.config.position.zoom, w = this.element.width, h = this.element.height;
-		ctx.clearRect(0, 0, w, h);
-		ctx.lineWidth = 4 / z;
-		ctx.strokeStyle = 'orange';
-		ctx.beginPath();
-		for (var key in this.coordinates) {
-			if (this.coordinates.hasOwnProperty(key) && key % 1 == 0) {
+		var x, y;
+    // for every segment
+    var line, points, track;
+    var increments = (this.tracks.length > 10) ? 25 : 1;
+    var stroke = 4 / this.config.position.zoom;
+    for (var a = 0, b = this.tracks.length; a < b; a += 1) {
+      track = this.tracks[a];
+      // create a new line
+      line = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
+  		line.setAttribute('data-key', track.name);
+      line.setAttribute('fill', 'none');
+      line.setAttribute('stroke', this.config.supportColour(track.name));
+      line.setAttribute('stroke-width', stroke);
+      line.setAttribute('stroke-linejoin', 'miter');
+      line.setAttribute('stroke-miterlimit', 1);
+      if (this.tracks.length > 10) line.setAttribute('stroke-dasharray', stroke + ' ' + stroke);
+      // draw the line along the track
+      points = '';
+      for (var c = 0, d = track.coordinates.length; c < d; c += increments) {
         // calculate the current step
-				x1 = parseInt((this.coordinates[key][0] - min.lon_cover) / (max.lon_cover - min.lon_cover) * w);
-				y1 = parseInt((this.coordinates[key][1] - min.lat_cover) / (max.lat_cover - min.lat_cover) * h);
-        // if the step seems valid, draw the step
-  			if ((Math.abs(x1 - x0) + Math.abs(y1 - y0)) < 30) { ctx.lineTo(x1, y1); }
-        // or jump unlikely/erroneous steps
-        else { ctx.moveTo(x1, y1); }
-        // store current step as the previous step
-        x0 = x1;
-        y0 = y1;
-			}
-		}
-		ctx.stroke();
+        x = parseInt(this.config.distortX((track.coordinates[c][0] - min.lon_cover) / (max.lon_cover - min.lon_cover)) * w);
+        y = parseInt(this.config.distortY((track.coordinates[c][1] - min.lat_cover) / (max.lat_cover - min.lat_cover)) * h);
+        // add the step
+        points += ' ' + x + ',' + y;
+  		}
+      line.setAttribute('points', points);
+      line.addEventListener('click', this.onRouteClicked.bind(this, track.name));
+      // insert the line
+      this.element.appendChild(line);
+    }
+  };
+
+	this.redraw = function() {
+    var stroke = 4 / this.config.position.zoom;
+    var lines = this.element.querySelectorAll('polyline');
+    for (var a = 0, b = lines.length; a < b; a += 1) {
+      lines[a].setAttribute('stroke-width', stroke);
+      if (lines.length > 10) lines[a].setAttribute('stroke-dasharray', stroke + ' ' + stroke);
+    }
 	};
 
 	// EVENTS
 
+  this.onRouteClicked = function (name) {};
+
 	this.onJsonLoaded = function (geojson) {
 		// convert JSON into an array of coordinates
-		var features = geojson.features, segments = [], coordinates;
+		var features = geojson.features;
+    var name;
+    var coordinates = [];
 		for (var a = 0, b = features.length; a < b; a += 1) {
+      name = features[a].properties.name;
 			if (features[a].geometry.coordinates[0][0] instanceof Array) {
 				coordinates = [].concat.apply([], features[a].geometry.coordinates);
 			} else {
 				coordinates = features[a].geometry.coordinates;
 			}
-			segments.push(coordinates);
+			this.tracks.push({
+        'name': name,
+        'coordinates': coordinates
+      });
 		}
-		this.coordinates = [].concat.apply([], segments);
     // redraw
-    this.redraw();
+    this.draw();
 		// resolve completion
 		onComplete();
 	};
 
 	this.onGpxLoaded = function(evt) {
-		// convert GPX into an array of coordinates
-		var gpx = evt.target.responseXML;
-		var trackpoints = gpx.querySelectorAll('trkpt,rtept');
-		for (var key in trackpoints) {
-			if (trackpoints.hasOwnProperty(key) && key % 1 == 0) {
-				this.coordinates.push([parseFloat(trackpoints[key].getAttribute('lon')), parseFloat(trackpoints[key].getAttribute('lat')), null]);
-			}
-		}
+		// extracts coordinates from a GPX document
+    function extractCoords(source, destination, parentTag, childTag) {
+      var a, b, c, d, childNodes, name, coords, parentNodes;
+      parentNodes = source.getElementsByTagName(parentTag);
+      for (a = 0, b = parentNodes.length; a < b; a += 1) {
+        name = parentNodes[a].getElementsByTagName('name')[0].firstChild.nodeValue;
+        coords = [];
+        childNodes = parentNodes[a].getElementsByTagName(childTag);
+        for (c = 0, d = childNodes.length; c < d; c += 1) {
+          coords.push([
+            parseFloat(childNodes[c].getAttribute('lon')),
+            parseFloat(childNodes[c].getAttribute('lat')),
+            null
+          ]);
+        }
+        destination.push({
+          'name': name,
+          'coordinates': coords
+        });
+      }
+    };
+    // extract both kinds of tracks from the GPX into an array of coordinates
+    extractCoords(evt.target.responseXML, this.tracks, 'trk', 'trkpt');
+    extractCoords(evt.target.responseXML, this.tracks, 'rte', 'rtept');
     // redraw
-    this.redraw();
+    this.draw();
 		// resolve completion
 		onComplete();
 	};

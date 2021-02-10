@@ -1,102 +1,85 @@
-/*
-	Photo Wall
-*/
-@media all {
-	.photowall {
-		transition-property: transform;
-		transition-duration: 300ms;
-		transform: translate(100%, 0);
-		background: #FFF;
-		bottom: 4rem;
-		height: auto;
-		max-height: 100%;
-		position: absolute;
-		right: 0;
-		top: 8rem;
-		width: 50%;
-		z-index: 4;
+.photowall {
+	transition-property: transform;
+	transition-duration: 300ms;
+	transform: translate(100%, 0);
+	background: #FFF;
+	bottom: 4rem;
+	height: auto;
+	max-height: 100%;
+	position: absolute;
+	right: 0;
+	top: 8rem;
+	width: 50%;
+	z-index: 4;
+	margin: 0;
+	padding: 0;
+	@media (max-width:959px) {
+		width: 100%;
+	}
+	@media print {
+		display: none !important;
+	}
+
+	*,
+	*:after,
+	*:before {
+		box-sizing: border-box;
+		-ms-interpolation-mode: bicubic;
+	}
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
 		margin: 0;
 		padding: 0;
+		list-style-type: none;
+		height: 100%;
+		overflow: hidden;
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+		align-content: flex-start;
 
-		*, *:before, *:after {
-			box-sizing: border-box;
-			-ms-interpolation-mode: bicubic;
-		}
-
-		ul {
-			display: flex;
-			flex-wrap: wrap;
+		li {
+			flex: 1 1 auto;
+			max-width: 50%;
 			margin: 0;
 			padding: 0;
-			list-style-type: none;
-			height: 100%;
-			overflow: hidden;
-			overflow-y: auto;
-			-webkit-overflow-scrolling: touch;
-			align-content: flex-start;
+			@media (max-width:959px) {
+				max-width: none;
+			}
 
-			li {
-				flex: 1 1 auto;
-				max-width: 50%;
-				margin: 0;
-				padding: 0;
+			a {
+				display: block;
+				background-size: cover;
+				background-position: center;
+				border: solid 1px #FFF;
 
-				a {
-					display: block;
-					background-size: cover;
-					background-position: center;
-					border: solid 1px #FFF;
-
-					img {
+				img {
+					height: 96px;
+					width: auto;
+					visibility: hidden;
+					vertical-align: top;
+					@media (max-width:959px) {
 						height: 96px;
-						width: auto;
-						visibility: hidden;
-						vertical-align: top;
 					}
 				}
 			}
 		}
-
-		&:after {
-			background: Transparent linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-			content: '';
-			display: block;
-			position: absolute;
-			bottom: -2px;
-			height: 32px;
-			left: 0;
-			right: 0;
-			z-index: 5;
-		}
 	}
-	/*
-		on which screen should this be visible
-	*/
-	body.screen-photos .photowall {
+
+	&:after {
+		background: Transparent linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: -2px;
+		height: 32px;
+		left: 0;
+		right: 0;
+		z-index: 5;
+	}
+
+	body.screen-photos & {
 		transform: translate(0, 0);
-	}
-}
-@media (max-width:959px) {
-	.photowall {
-		width: 100%;
-	}
-
-	.photowall ul li {
-		max-width: none;
-	}
-
-	.photowall ul li a img {
-		height: 96px;
-	}
-	/*
-		on which screen should this be visible
-	*/
-	body.screen-photos .photowall {
-		transform: translate(0, 0);
-	}
-}
-@media print {
-	.photowall {
-		display: none !important;
 	}
 }

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="Adze - http://kobotsw.com/apps/adze" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www8.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd">
     <metadata>
-        <name>Untitled Document</name>
+        <name>mtdruitt-greatwestwalk-penrith</name>
         <link href="http://www.garmin.com"></link>
         <time>2019-11-27T21:22:40.665Z</time>
     </metadata>
     <trk>
-        <name>19-OCT-19 06:15:21 PM</name>
+        <name>mtdruitt-greatwestwalk-penrith</name>
         <extensions>
             <gpxx:TrackExtension>
                 <gpxx:DisplayColor>DarkYellow</gpxx:DisplayColor>
@@ -10411,7 +10411,7 @@
         </trkseg>
     </trk>
     <trk>
-        <name>Untitled Track</name>
+        <name>mtdruitt-greatwestwalk-penrith</name>
         <extensions>
             <gpxx:TrackExtension>
                 <gpxx:DisplayColor>Yellow</gpxx:DisplayColor>

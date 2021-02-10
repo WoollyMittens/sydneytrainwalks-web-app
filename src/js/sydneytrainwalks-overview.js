@@ -68,8 +68,21 @@ SydneyTrainWalks.prototype.Overview = function (parent) {
       'guideData': this.processMarkers(),
       'routeData': this.mergeRoutes(),
       'exifData': null,
+      // offsets
+      'distortX': function(x) { return x },
+      'distortY': function(y) { return y - (-2 * y * y + 2 * y) / 150 },
       // attribution
-      'creditsTemplate': this.config.creditTemplate.innerHTML
+      'creditsTemplate': this.config.creditTemplate.innerHTML,
+      // legend
+      'supportColour': function(name) {
+        var colours = ['red', 'darkorange', 'green', 'teal', 'blue', 'purple', 'black'];
+        var index = name.split('').reduce(function(a,b){
+          a = (typeof a == 'string') ? a.charCodeAt() : a;
+          b = (typeof b == 'string') ? b.charCodeAt() : b;
+          return a + b;
+        });
+        return colours[index % colours.length];
+      }
     });
   };
 
@@ -77,6 +90,7 @@ SydneyTrainWalks.prototype.Overview = function (parent) {
     // add "onMarkerClicked" event handlers to markers
     var _this = this;
     GuideData['_index'].markers.map(function(marker) {
+      marker.type = 'waypoint';
       marker.description = '';
       marker.callback = _this.onMarkerClicked.bind(_this, marker.id);
     });

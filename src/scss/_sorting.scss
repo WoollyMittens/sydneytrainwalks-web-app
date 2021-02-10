@@ -1,64 +1,64 @@
-/*
-	sorting
-*/
-@media all {
-	#sorting {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		margin: 0;
-		padding: 10px;
-		width: 100%;
-		min-height: 4rem;
+#sorting {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 10px;
+	width: 100%;
+	min-height: 4rem;
 
-		.searching-label {
-			flex: 1 1 100%;
+	label {
+		display: inline-block;
+		flex: 1 1 50%;
+		padding: 0 10px;
+
+		span {
+			display: none;
 		}
 
-		.sorting-label,
-		.filtering-label {
-			flex: 0 1 50%;
-		}
+		input,
+		select {
+			border-radius: 0;
+			border: none;
+			border-bottom: solid 1px #CCCCCC;
+			padding: 0;
+			margin: 0;
+			font-size: 0.875rem;
+			background-color: #FFF;
+			background-repeat: no-repeat;
+			background-position: right center;
+			background-size: 1.5rem 1.5rem;
+			width: 100%;
+			height: 2.6rem;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
 
-		label {
-			display: inline-block;
-			flex: 1 1 50%;
-			padding: 0 10px;
-
-			span {
+			&::-ms-expand {
 				display: none;
 			}
 
-			input,
-			select {
-				border-radius: 0;
-				border: none;
-				border-bottom: solid 1px #CCCCCC;
-				padding: 0;
-				margin: 0;
-				font-size: 14px;
-				background-color: #FFF;
-				background-repeat: no-repeat;
-				background-position: right center;
-				background-size: auto 1.5rem;
-				width: 100%;
-				height: 2.6rem;
-				-webkit-appearance: none;
-				-moz-appearance: none;
-				appearance: none;
-
-				&:focus {
-					border-bottom: solid 2px #1976D2;
-				}
-			}
-
-			input {
-				background-image: url("../img/button_delete_2.svg");
-			}
-
-			select {
-				background-image: url("../img/button_backward_2.svg");
+			&:focus {
+				border-bottom: solid 2px #1976D2;
 			}
 		}
+
+		input {
+			background-image: url("../img/button_delete_2.svg");
+		}
+
+		select {
+			background-image: url("../img/button_backward_2.svg");
+		}
+	}
+
+	.searching-label {
+		flex: 1 1 100%;
+	}
+
+	.filtering-label,
+	.sorting-label {
+		flex: 0 1 50%;
+		max-width: 50%;
 	}
 }

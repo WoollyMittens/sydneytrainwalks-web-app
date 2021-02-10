@@ -5,7 +5,7 @@
 //$analytics = 'UA-52552-7';
 
 $title = 'Sydney Hiking Trips';
-$domain = 'www.sydneyhikingtrips.com';
+$domain = 'local.sydneyhikingtrips.com';
 $analytics = 'UA-52552-8';
 
 ?>

@@ -1,0 +1,92 @@
+{
+	"location": "11km Circuit",
+	"lon": 151.0710396152,
+	"lat": -33.3946151845,
+	"description": [
+		"From the <a href=\"https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/mill-creek-campground\">Millcreek Campground</a> along the Hawkesbury on the way to Wisemans ferry,",
+		"this <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/11km-walking-track\">11km walking track</a> offers a look into the remote Dharug National Park."
+	],
+	"duration": 4,
+	"distance": 11,
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "millcreek-elevenkilometrecircuit-millcreek",
+	"updated": "2016-01-23",
+	"bounds": {
+		"west": 151.029052734375,
+		"north": -33.37641235124678,
+		"east": 151.094970703125,
+		"south": -33.413102213708285
+	},
+	"markers": [
+		{
+			"location": "Mill Creek",
+			"type": "car",
+			"description": "Plan your drive to <a href=\"https://www.google.com/maps/dir/Sydney,+New+South+Wales/-33.4010562580,151.0432335734\">Mill Creek Campground</a>.",
+			"lon": 151.0432335734,
+			"lat": -33.401056258
+		},
+		{
+			"type": "toilet",
+			"lat": -33.4009,
+			"lon": 151.043495
+		},
+		{
+			"type": "waypoint",
+			"photo": "p1240014.jpg",
+			"description": "From the carpark follow Mill Creek Road to trailhead at the picnic area.",
+			"lon": 151.04776,
+			"lat": -33.400850999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "p1240020.jpg",
+			"description": "Cross the creek and follow the Grass Tree Circuit, before continuing around the 11km track.",
+			"lon": 151.050274,
+			"lat": -33.400836
+		},
+		{
+			"type": "waypoint",
+			"photo": "p1240027.jpg",
+			"description": "The trail follows the creek up the gully before finally climbing to a ridge top.",
+			"lon": 151.060764,
+			"lat": -33.398285
+		},
+		{
+			"type": "waypoint",
+			"photo": "p1240060_p1240068.jpg",
+			"description": "It skirts the ridge before descending down into the next gully.",
+			"lon": 151.06393055555557,
+			"lat": -33.39512222222222
+		},
+		{
+			"type": "waypoint",
+			"photo": "p1240077_p1240083.jpg",
+			"description": "After crossing the creek at the bottom of the gully, the trail climbs back up the next ridge.",
+			"lon": 151.0620416666667,
+			"lat": -33.39372222222222
+		},
+		{
+			"type": "waypoint",
+			"photo": "p1240140.jpg",
+			"description": "The trail descends the steep slope at the other end of the ridge.",
+			"lon": 151.051389,
+			"lat": -33.394775
+		},
+		{
+			"type": "waypoint",
+			"photo": "p1240147.jpg",
+			"description": "From the bottom of the descent the trail follows the creek left before crossing a bridge back to the picnic area.",
+			"lon": 151.047734,
+			"lat": -33.399826
+		},
+		{
+			"location": "Mill Creek",
+			"type": "car",
+			"description": "Plan your drive back from <a href=\"https://www.google.com/maps/dir/-33.4010562580,151.0432335734/Sydney,+New+South+Wales\">Mill Creek Campground</a>.",
+			"lon": 151.0432335734,
+			"lat": -33.401056258
+		}
+	]
+}

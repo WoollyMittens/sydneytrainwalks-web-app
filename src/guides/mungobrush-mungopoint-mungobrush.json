@@ -1,0 +1,80 @@
+{
+	"location": "Mungo Rainforest",
+	"lon": 152.313034,
+	"lat": -32.53864,
+	"description": [
+		"Just out of reach of public transport, <a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/myall-lakes-national-park\">Myall Lakes National Park</a> is still close enough for a day trip.",
+		"<br/><br/>",
+		"This short <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/mungo-rainforest-walk\">Mungo Rainforest walk</a> loop",
+		"at the <a href=\"https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/mungo-brush-campground\">Mungo Brush campground</a> is worth adding to a longer dayhike."
+	],
+	"duration": 0.5,
+	"distance": 2,
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "mungobrush-mungopoint-mungobrush",
+	"updated": "2020-10-03",
+	"bounds": {
+		"west": 152.29248046875,
+		"north": -32.51902602782749,
+		"east": 152.33642578125,
+		"south": -32.55607364492026
+	},
+	"markers": [
+		{
+			"location": "Mungo Brush",
+			"type": "car",
+			"description": "Plan your drive to the <a href=\"https://www.google.com/maps/dir/Sydney,+New+South+Wales/-32.5427904446,152.3096116539\">Mungo Brush Campground</a>.",
+			"lon": 152.3096116539,
+			"lat": -32.5427904446
+		},
+		{
+			"type": "toilet",
+			"lat": -32.5433304,
+			"lon": 152.3078303
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_022906750.jpg",
+			"description": "From the north end of the campground follow the sign to the Rainforest Walk",
+			"lon": 152.31036400000002,
+			"lat": -32.542207999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_023053051.jpg",
+			"description": "From the information sign, follow the loop clockwise.",
+			"lon": 152.31101700000002,
+			"lat": -32.541444
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_024147577.jpg",
+			"description": "At the intersection pick the shortcut back if the conditions are too wet.",
+			"lon": 152.31303400000002,
+			"lat": -32.53864
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_025053701.jpg",
+			"description": "Both options loop back to the information sign.",
+			"lon": 152.31226900000001,
+			"lat": -32.541377999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_025347408.jpg",
+			"description": "From the information sign return back to the campground.",
+			"lon": 152.20109699999998,
+			"lat": -32.519053
+		},
+		{
+			"location": "Mungo Brush",
+			"type": "car",
+			"description": "Plan your drive back from <a href=\"https://www.google.com/maps/dir/-32.5427904446,152.3096116539/Sydney,+New+South+Wales\">Mungo Brush Campground</a>.",
+			"lon": 152.3096116539,
+			"lat": -32.5427904446
+		}
+	]
+}

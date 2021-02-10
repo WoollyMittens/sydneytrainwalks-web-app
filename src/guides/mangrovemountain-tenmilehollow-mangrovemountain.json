@@ -1,0 +1,180 @@
+{
+	"location": "Ten Mile Hollow",
+	"lon": 151.092063,
+	"lat": -33.31566,
+	"description": [
+		"From the relatively remote rural area of Mangrove Mountain, this walk makes a loop through the historic roads and settlements",
+		"of <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/cycling-trails/dubbo-gully-loop-trail\">Dubbo Gully</a>",
+		"around <a href=\"https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/ten-mile-hollow-campground\">Ten Mile Hollow</a>."
+	],
+	"duration": 6,
+	"distance": 25,
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "mangrovemountain-tenmilehollow-mangrovemountain",
+	"updated": "2018-09-30",
+	"bounds": {
+		"west": 151.051025390625,
+		"north": -33.275435412981615,
+		"east": 151.171875,
+		"south": -33.34888479220171
+	},
+	"markers": [
+		{
+			"location": "Mangrove Mountain",
+			"type": "car",
+			"description": "Plan your drive to <a href=\"https://www.google.com/maps/dir/Sydney,+New+South+Wales/-33.292943,151.151199\">Mangrove Mountain</a>.",
+			"lon": 151.151199,
+			"lat": -33.292943
+		},
+		{
+			"type": "toilet",
+			"lat": -33.327566,
+			"lon": 151.089622
+		},
+		{
+			"type": "waypoint",
+			"photo": "0010_dsc_6214.jpg",
+			"description": "From the carpark near the gate down Dubbo Gully Road, continue on foot.",
+			"lon": 151.15110986000076,
+			"lat": -33.29293819001317
+		},
+		{
+			"type": "waypoint",
+			"photo": "0040_r0014025.jpg",
+			"description": "From the gate follow Dubbo Gully Road into the valley.",
+			"lon": 151.15004390000001,
+			"lat": -33.29388678999479
+		},
+		{
+			"type": "waypoint",
+			"photo": "0140_dsc_6218.jpg",
+			"description": "Cross the bridge across the creek and continue past the fields.",
+			"lon": 151.1316681600956,
+			"lat": -33.30282102000274
+		},
+		{
+			"type": "waypoint",
+			"photo": "0270_dsc_6226_dsc_6238.jpg",
+			"description": "The cemetery along the track is a historical remnant of early settlement.",
+			"lon": 151.12931580996886,
+			"lat": -33.310548300001756
+		},
+		{
+			"type": "waypoint",
+			"photo": "0320_r0014040.jpg",
+			"description": "Continue left at the intersection to follow the loop clockwise.",
+			"lon": 151.12991204993295,
+			"lat": -33.31678491000006
+		},
+		{
+			"type": "waypoint",
+			"photo": "0410_r0014046.jpg",
+			"description": "An abandoned homestead overlooks the overgrown fields.",
+			"lon": 151.1267291099001,
+			"lat": -33.32271612996809
+		},
+		{
+			"type": "waypoint",
+			"photo": "0590_r0014054.jpg",
+			"description": "From the intersection cross the fields to the right to follow Simpsons track up the gully.",
+			"lon": 151.12899698002633,
+			"lat": -33.33806801999993
+		},
+		{
+			"type": "waypoint",
+			"photo": "0820_r0014067.jpg",
+			"description": "Simpsons Track ends at a campground with toilet facilities.",
+			"lon": 151.08946839998296,
+			"lat": -33.32743146004181
+		},
+		{
+			"type": "waypoint",
+			"photo": "0830_r0014068.jpg",
+			"description": "From the campground follow the Old Great North Road to the right, following the signs to Clare's Bridge.",
+			"lon": 151.0891523099755,
+			"lat": -33.32745501991485
+		},
+		{
+			"type": "waypoint",
+			"photo": "0831_img_20180120_110318.jpg",
+			"optional": true,
+			"description": "<i>+1.5h/6km</i> Extend the walk with the loop trail around Wat Buddha Dhamma, by following the Old Great North Road to the left instead.",
+			"lon": 151.082924399901,
+			"lat": -33.33273252000525
+		},
+		{
+			"type": "waypoint",
+			"photo": "0833_img_20180120_105035.jpg",
+			"optional": true,
+			"description": "At the intersection follow the Wat Loop Trail to the right.",
+			"lon": 151.07365514999535,
+			"lat": -33.33403917000014
+		},
+		{
+			"type": "waypoint",
+			"photo": "1040_r0014080.jpg",
+			"optional": true,
+			"description": "The Wat loop trail eventually joins back up with the Old Great North Road at a gate, follow it to the left.",
+			"lon": 151.0878285899935,
+			"lat": -33.31620024001873
+		},
+		{
+			"type": "waypoint",
+			"photo": "0850_r0014069.jpg",
+			"description": "Cross the historical bridge and continue down the Old Great North Road.",
+			"lon": 151.08959715000964,
+			"lat": -33.32635097001764
+		},
+		{
+			"type": "waypoint",
+			"photo": "0970_dsc_6308_dsc_6317.jpg",
+			"description": "Pass the gate and follow the trail down around historical Clare's Bridge.",
+			"lon": 151.08433577999975,
+			"lat": -33.31915254000224
+		},
+		{
+			"type": "waypoint",
+			"photo": "1060_r0014082.jpg",
+			"description": "At the intersection of many trails, follow the fork right down Donny's Trail and not the wider fire trail directly to the right.",
+			"lon": 151.09031627000894,
+			"lat": -33.315726220016536
+		},
+		{
+			"type": "waypoint",
+			"photo": "1320_dsc_6380_dsc_6406.jpg",
+			"description": "Where the trail starts to zig zag down the ridge, several unfenced lookouts offer wide views across the valley.",
+			"lon": 151.12278443006113,
+			"lat": -33.313661809997626
+		},
+		{
+			"type": "waypoint",
+			"photo": "1390_r0014099.jpg",
+			"description": "The remnants of historic roadworks are evident along the track.",
+			"lon": 151.12491236003447,
+			"lat": -33.31487617000313
+		},
+		{
+			"type": "waypoint",
+			"photo": "1400_dsc_6410.jpg",
+			"description": "Pass the gate and finish the descent into the gully.",
+			"lon": 151.12594457999305,
+			"lat": -33.31522253000923
+		},
+		{
+			"type": "waypoint",
+			"photo": "1480_r0014106.jpg",
+			"description": "At the intersection follow Ten Mile Hollow Road to the left and retract your route back to the carpark.",
+			"lon": 151.1296176100629,
+			"lat": -33.31704655000023
+		},
+		{
+			"location": "Mangrove Mountain",
+			"type": "car",
+			"description": "Plan your drive back from <a href=\"https://www.google.com/maps/dir/-33.292943,151.151199/Sydney,+New+South+Wales\">Mangrove Mountain</a>.",
+			"lon": 151.151199,
+			"lat": -33.292943
+		}
+	]
+}

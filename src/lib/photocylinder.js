@@ -109,7 +109,7 @@ Photocylinder.prototype.Fallback = function (parent) {
 	this.build = function() {
 		// add the wrapper
 		this.wrapper = document.createElement('div');
-		this.wrapper.setAttribute('class', 'photo-cylinder pc-fallback');
+		this.wrapper.setAttribute('class', 'photocylinder photocylinder-fallback');
 		// TODO: for 360deg images the image needs to be doubled to allow looping
 		var clonedImage = this.image.cloneNode(true);
 		// add markup here
@@ -581,15 +581,15 @@ Photocylinder.prototype.Stage = function (parent) {
 	this.build = function() {
 		// add the wrapper
 		this.wrapper = document.createElement('div');
-		this.wrapper.setAttribute('class', 'photo-cylinder');
+		this.wrapper.setAttribute('class', 'photocylinder');
 		// add the row object
 		this.objRow = document.createElement('div');
-		this.objRow.setAttribute('class', 'pc-obj-row');
+		this.objRow.setAttribute('class', 'photocylinder-obj-row');
 		this.wrapper.appendChild(this.objRow);
 		// add the column oblects
 		for (var a = 0, b = 8; a < b; a += 1) {
 			this.objCols[a] = document.createElement('span');
-			this.objCols[a].setAttribute('class', 'pc-obj-col pc-obj-col-' + a);
+			this.objCols[a].setAttribute('class', 'photocylinder-obj-col photocylinder-obj-col-' + a);
 			this.objRow.appendChild(this.objCols[a]);
 		}
 		// add the image
@@ -607,7 +607,7 @@ Photocylinder.prototype.Stage = function (parent) {
 		// get the aspect ratio from the image
 		this.imageAspect = this.image.offsetWidth / this.image.offsetHeight;
 		// get the field of view property or guess one
-		this.wrapper.className += (this.fov < 360) ? ' pc-180' : ' pc-360';
+		this.wrapper.className += (this.fov < 360) ? ' photocylinder-180' : ' photocylinder-360';
 		// calculate the zoom limits - scale = aspect * (360 / fov) * 0.3
 		this.magnification.min = Math.max(this.imageAspect * (360 / this.fov) * 0.3, 1);
 		this.magnification.max = 4;

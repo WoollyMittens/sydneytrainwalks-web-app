@@ -69,7 +69,7 @@
 		<script src="./inc/js/guide-data.js"></script>
 		<script src="./inc/js/scripts.js"></script>
 		<script id="credit-template" type="text/template">
-			Maps &copy; <a href="http://www.4umaps.com/">4UMaps</a>. Data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> and contributors, CC BY-SA
+			Maps &copy; <a href="https://4umaps.com/" target="_blank">4UMaps.com</a> and &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap contributors</a>.
 		</script>
 		<script>
 			window.addEventListener('load', function () {

@@ -1,0 +1,259 @@
+{
+	"location": "Olney",
+	"lon": 151.2768053636,
+	"lat": -33.0356877577,
+	"description": [
+		"The well maintained dirt roads through <a href=\"https://www.forestrycorporation.com.au/visit/forests/olney\">Olney State Forest</a>",
+		"offer a unique chance to access a very remote section of the Great North Walk in relative comfort.",
+		"As well as one of the highest peaks and vantage points in the area."
+	],
+	"duration": 9,
+	"distance": 35,
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "thebasin-olneystateforest-thebasin",
+	"updated": "2019-04-20",
+	"bounds": {
+		"west": 151.2158203125,
+		"north": -33.0178760185549,
+		"east": 151.292724609375,
+		"south": -33.11915022676885
+	},
+	"markers": [
+		{
+			"location": "The Basin",
+			"type": "car",
+			"description": "Plan your drive to <a href=\"https://www.google.com/maps/dir/Sydney,+New+South+Wales/-33.1041044556,151.2306997832\">The Basin Campground</a>.",
+			"lon": 151.2306997832,
+			"lat": -33.1041044556
+		},
+		{
+			"type": "toilet",
+			"lat": -33.104151,
+			"lon": 151.231169
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_064744.jpg",
+			"description": "From the carpark of the Basin Campground follow the sign to the Great North Walk.",
+			"lon": 151.230872,
+			"lat": -33.103789
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_065235.jpg",
+			"description": "At intersections follow the Great North Walk signs.",
+			"lon": 151.23415,
+			"lat": -33.103833
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_073121.jpg",
+			"description": "At the intersection with the Cedar Brush Walk, follow the Great North Walk along the creek.",
+			"lon": 151.242413,
+			"lat": -33.096348
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_073637.jpg",
+			"description": "The trail along the creek ends at a rocky creek crossing.",
+			"lon": 151.24360499999997,
+			"lat": -33.094390000000004
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_080058.jpg",
+			"description": "After crossing the creek, follow the track zigzagging up the ridge.",
+			"lon": 151.243868,
+			"lat": -33.093954000000004
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_081412.jpg",
+			"description": "At the top of the climb, follow the firetrail along the ridge.",
+			"lon": 151.24484999999999,
+			"lat": -33.091331000000004
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_083319.jpg",
+			"description": "At the intersections follow the Great North Walk sign down Wild Boar Road.",
+			"lon": 151.244511,
+			"lat": -33.082242
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_085655.jpg",
+			"description": "At the intersection with Pig and Sow Ridge, look for the fainter bushtrail across the track continuing the Great North Walk",
+			"lon": 151.254492,
+			"lat": -33.073672
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_085712.jpg",
+			"description": "A sign and a walkers log marks the start of the trail.",
+			"lon": 151.25495,
+			"lat": -33.073831000000006
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_091353.jpg",
+			"description": "The trail descends to a creek and ascends the next ridge on the other side.",
+			"lon": 151.255089,
+			"lat": -33.070303
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_092600.jpg",
+			"description": "At the top of the next ridge, follow the Great North Walk signs down the firetrail.",
+			"lon": 151.255005,
+			"lat": -33.067640000000004
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_095222.jpg",
+			"description": "At the intersection follow Murray Forest Road to the right for a short distance.",
+			"lon": 151.259856,
+			"lat": -33.05715
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_095455.jpg",
+			"description": "Enter the first intersection on the left, following the signs for the Great North Walk.",
+			"lon": 151.26071899992235,
+			"lat": -33.056357999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_095539.jpg",
+			"description": "A fainter bushtrail continues to the right of the firetrail.",
+			"lon": 151.260767,
+			"lat": -33.056293999999994
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_101303.jpg",
+			"description": "Where the bushtrail rejoins the firetrail follow the Great North Walk sign to the right.",
+			"lon": 151.264646,
+			"lat": -33.049893
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_102410.jpg",
+			"description": "At the intersection follow the Great North Walk sign.",
+			"lon": 151.27073000000001,
+			"lat": -33.046074999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_102910.jpg",
+			"description": "At the intersection with Warrawolong Road, follow the Great North Walk to the right.",
+			"lon": 151.272578,
+			"lat": -33.043307999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_103050.jpg",
+			"description": "Take the next intersection left down Turners Road.",
+			"lon": 151.27381100000002,
+			"lat": -33.042930999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_104156.jpg",
+			"description": "Follow the last stretch to the lookouts, watching carefully for vantage points on the right. They are not signposted.",
+			"lon": 151.2767,
+			"lat": -33.035638999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_104443.jpg",
+			"description": "Several vantage points offer views across the valley and Watagan Creek.",
+			"lon": 151.27751700000002,
+			"lat": -33.034406
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_111316.jpg",
+			"description": "From the lookouts return to the intersection to Mount Warrawalong.",
+			"lon": 151.27309200000002,
+			"lat": -33.04318
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_111343.jpg",
+			"description": "Follow the sign left down Warrawolong Road if time allows. <i>+1.5h / 3km</i>",
+			"lon": 151.272858,
+			"lat": -33.043158,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_111733.jpg",
+			"description": "A trail up to the summit will be apparent on the left.",
+			"lon": 151.271475,
+			"lat": -33.040903,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_115359.jpg",
+			"description": "The summit contains a grass clearing and watchtower. There are only filtered views between the trees.",
+			"lon": 151.264242,
+			"lat": -33.043928,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_120533.jpg",
+			"description": "Check carefully for signs if climbing the tower is (still) allowed.",
+			"lon": 151.264528,
+			"lat": -33.04428099989606,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_120931.jpg",
+			"description": "The top of the watchtower offers a wide open view across the wilderness and Central Coast.",
+			"lon": 151.264514,
+			"lat": -33.044256,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_131824.jpg",
+			"description": "From Mount Warrawolong follow the Great North Walk back to Murrays Forest Road.",
+			"lon": 151.261008,
+			"lat": -33.056172
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_131835.jpg",
+			"description": "Instead of following the Cedar Brush Walk to the right, follow the alternative route to the left following Murrays Forest Road.",
+			"lon": 151.260956,
+			"lat": -33.056141999999994
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_133407.jpg",
+			"description": "At the intersection follow Walkers Ridge Road to the right.",
+			"lon": 151.26674200000002,
+			"lat": -33.06056900009115
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20200828_151254.jpg",
+			"description": "At the intersection with the Basin Forest Road, follow the signs to the Basin Campground.",
+			"lon": 151.236394,
+			"lat": -33.107589000000004
+		},
+		{
+			"location": "The Basin",
+			"type": "car",
+			"description": "Plan your drive back from <a href=\"https://www.google.com/maps/dir/-33.1041044556,151.2306997832/Sydney,+New+South+Wales\">The Basin Campground</a>.",
+			"lon": 151.2306997832,
+			"lat": -33.1041044556
+		}
+	]
+}

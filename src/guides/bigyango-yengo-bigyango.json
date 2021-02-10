@@ -1,0 +1,88 @@
+{
+	"location": "Yengo",
+	"lon": 150.848124,
+	"lat": -32.979703,
+	"description": [
+		"Getting to this walk in the middle of the vast wilderness area of <a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/yengo-national-park\">Yengo National Park</a> is an adventure in itself.",
+		"The hike follows a gated trail to an abandoned farm turned into the <a href=\"https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/blue-gums-campground\">Blue Gums Campground</a>",
+		"The rough <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/4wd-touring-routes/big-yango-loop-trail\">Big Yango Loop Trail</a> and <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/yango-walking-track\">Yango Walking Track</a> provide a loop around Mount Yengo."
+	],
+	"duration": 6,
+	"distance": 26,
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "bigyango-yengo-bigyango",
+	"updated": "2017-01-06",
+	"bounds": {
+		"west": 150.831298828125,
+		"north": -32.9164853473144,
+		"east": 150.941162109375,
+		"south": -32.98102014898148
+	},
+	"markers": [
+		{
+			"location": "Big Yango",
+			"type": "car",
+			"description": "Plan your drive to <a href=\"https://www.google.com/maps/dir/Sydney,+New+South+Wales/-32.938018,150.920454\">Big Yango</a>.",
+			"lon": 150.920454,
+			"lat": -32.938018
+		},
+		{
+			"type": "waypoint",
+			"photo": "0100_r0011429.jpg",
+			"description": "Leave your transportation at the clearing near the junction with the Wollombi Arm Trail.",
+			"lon": 150.920291,
+			"lat": -32.937908
+		},
+		{
+			"type": "waypoint",
+			"photo": "0130_r0011430.jpg",
+			"description": "Follow the Wollombi Arm Trail past the gate into the valley.",
+			"lon": 150.90936100000002,
+			"lat": -32.941266
+		},
+		{
+			"type": "waypoint",
+			"photo": "0200_p1070044.jpg",
+			"description": "From the park maps near the farmhouse follow the trail right through the fields.",
+			"lon": 150.90348055555557,
+			"lat": -32.96554722222223
+		},
+		{
+			"type": "waypoint",
+			"photo": "0280_r0011442.jpg",
+			"description": "Follow the Big Yango loop trail up the ridge.",
+			"lon": 150.887427,
+			"lat": -32.957942
+		},
+		{
+			"type": "waypoint",
+			"photo": "0350_r0011449.jpg",
+			"description": "Follow the sign up the Yengo Walk Trail.",
+			"lon": 150.850412,
+			"lat": -32.976712
+		},
+		{
+			"type": "waypoint",
+			"photo": "0400_r0011453.jpg",
+			"description": "A loop around the summit is possible, but it is requested not to climb the summit itself.",
+			"lon": 150.84904600000002,
+			"lat": -32.979764
+		},
+		{
+			"type": "waypoint",
+			"photo": "0430_r0011455.jpg",
+			"description": "Retrace your route back to the carpark.",
+			"lon": 150.84856100000002,
+			"lat": -32.9769
+		},
+		{
+			"location": "Big Yango",
+			"type": "car",
+			"description": "Plan your drive back from <a href=\"https://www.google.com/maps/dir/-32.938018,150.920454/Sydney,+New+South+Wales\">Big Yango</a>.",
+			"lon": 150.920454,
+			"lat": -32.938018
+		}
+	]
+}

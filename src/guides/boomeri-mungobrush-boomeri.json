@@ -1,0 +1,163 @@
+{
+	"location": "Mungo Brush",
+	"lon": 152.3782,
+	"lat": -32.455845,
+	"description": [
+		"Just out of reach of public transport, <a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/myall-lakes-national-park\">Myall Lakes National Park</a> is still close enough for a day trip.",
+		"While the <a href=\"https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/mungo-brush-campground\">Mungo Brush Campground</a> is the focal point of the rain forest hiking trails,",
+		"the <a href=\"https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/boomeri-campground\">Boomeri campground</a> part of the park offers access to a completely different landscape to explore.",
+		"<br/><br/>",
+		"The <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/cycling-trails/mining-road-to-old-gibber-road-cycling-trail\">Mining Road to Old Gibber Road cycling trail</a> is part a big loop through the extensive wetlands area.",
+		"With option side track to <a href=\"https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/johnsons-beach-campground\">Johnsons Beach campground</a>",
+		"and <a href=\"https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/shelly-beach-campground\">Shelly Beach campground</a>."
+	],
+	"duration": 5,
+	"distance": 25,
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "boomeri-mungobrush-boomeri",
+	"updated": "2019-09-06",
+	"bounds": {
+		"west": 152.303466796875,
+		"north": -32.43561304116276,
+		"east": 152.42431640625,
+		"south": -32.52828936482525
+	},
+	"markers": [
+		{
+			"location": "Boomeri",
+			"type": "car",
+			"description": "Plan your drive to the <a href=\"https://www.google.com/maps/dir/Sydney,+New+South+Wales/Boomeri+campground,+Old+Gibber+Road,+Mungo+Brush+NSW+2423/\">Boomeri Campground</a>.",
+			"lon": 152.3200276773,
+			"lat": -32.5090678688
+		},
+		{
+			"type": "toilet",
+			"lat": -32.509219,
+			"lon": 152.318549
+		},
+		{
+			"type": "toilet",
+			"lon": 152.3787436111111,
+			"lat": -32.45606527777778
+		},
+		{
+			"type": "toilet",
+			"lat": -32.484788,
+			"lon": 152.327913
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20190907_085351.jpg",
+			"description": "From the campground follow Mungo Brush Road to the left to the intersection with the disused Hawks Nest Seal Rocks Road.",
+			"lon": 152.3234388888889,
+			"lat": -32.51614166666667
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20190907_092713.jpg",
+			"description": "The Dunshea Trail on the left is a shortcut back through the wetlands.",
+			"lon": 152.3446388888889,
+			"lat": -32.50071944444444
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20190907_093927.jpg",
+			"description": "On the right the Broken Sands Trail lead through the wetlands to the beach.",
+			"lon": 152.35250833333333,
+			"lat": -32.49635555555555
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20190907_103422.jpg",
+			"description": "Eurunderee Trail also leads out of the wetlands to the beach.",
+			"lon": 152.39657777777776,
+			"lat": -32.478233333333336
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20190907_104335.jpg",
+			"description": "At the next intersection follow Old Gibber Trail to the left.",
+			"lon": 152.40334722222224,
+			"lat": -32.476841666666665
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20190907_110550.jpg",
+			"description": "<i>+ 1h / 4km</i> At the split in the trails optionally follow Shelly Beach Trail to a lakeside campground.",
+			"lon": 152.38605277777776,
+			"lat": -32.471608333333336,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20190907_113336.jpg",
+			"description": "Shelly Beach Trail ends at a campground and a sandy lakeside beach.",
+			"lon": 152.3781277777778,
+			"lat": -32.45619722222222,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20190907_131017.jpg",
+			"description": "From the split with Shelly Beach Trail continue down Old Gibber Road.",
+			"lon": 152.33533611111113,
+			"lat": -32.493519444444445,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20190907_131524.jpg",
+			"description": "The Dunshea Trail on the left is where the first shortcut could come out.",
+			"lon": 152.33435555555556,
+			"lat": -32.49783611111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20190907_131708.jpg",
+			"description": "<i>+1h / 4km</i> Follow the Johnsons Beach Trail to the right for another side trip to a lookout and lakeside beach.",
+			"lon": 152.3334638888889,
+			"lat": -32.49899722222222,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20190907_131709_dsc_3784.jpg",
+			"description": "From the intersection follow the sign either up to the lookout and/or down to the lakeside beach.",
+			"lon": 152.33016844000042,
+			"lat": -32.48719940000344,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20190907_131709_dsc_3785.jpg",
+			"description": "Climb the trail up the hill to the lookout overlooking the lake.",
+			"lon": 152.33221622010947,
+			"lat": -32.481901869939065,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20190907_131709_dsc_3796.jpg",
+			"description": "Follow the trail down to the lakeside campground and sandy beach.",
+			"lon": 152.32814751000444,
+			"lat": -32.48451151000274,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "img_20190907_133749.jpg",
+			"description": "From the intersection with Johnsons Beach Trail follow Old Gibber Road back to the campground carpark.",
+			"lon": 152.3202,
+			"lat": -32.509119444444444
+		},
+		{
+			"location": "Boomeri",
+			"type": "car",
+			"description": "Plan your drive from the <a href=\"https://www.google.com/maps/dir/Boomeri+campground,+Old+Gibber+Road,+Mungo+Brush+NSW+2423/Sydney,+New+South+Wales/\">Boomeri Campground</a>.",
+			"lon": 152.3200276773,
+			"lat": -32.5090678688
+		}
+	]
+}

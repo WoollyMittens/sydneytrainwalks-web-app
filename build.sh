@@ -1,9 +1,9 @@
 cd node_scripts
 node importgpx
+node importphotos
 node importexif
 node importguides
 node importtiles
-node importphotos
 node converttiles
 cd ..
 gulp dev

@@ -1,0 +1,137 @@
+{
+	"location": "Mungo Track",
+	"lon": 152.280048,
+	"lat": -32.579978,
+	"description": [
+		"Just out of reach of public transport, <a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/myall-lakes-national-park\">Myall Lakes National Park</a> is still close enough for a day hike.",
+		"From the <a href=\"https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/mungo-brush-campground\">Mungo Brush campground</a> several walking tracks are strung together into a loop:",
+		"<br/><br/>",
+		"The lakeside <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/tamboi-walking-track\">Tamboi walking track</a> leads to",
+		"the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/picnic-areas/tamboi-picnic-area\">Tamboi picnic area</a> along the Myall River.",
+		"From there the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/mungo-walking-track\">Mungo walking track</a> is followed",
+		"to the <a href=\"https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/brambles-green-campground\">Brambles Green campground</a>.",
+		"<br/><br/>",
+		"The walk loops back following the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/dark-point-walking-track\">Dark Point walking track</a>",
+		"to the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/aboriginal-sites/dark-point-aboriginal-place\">Dark Point Aboriginal Place</a>.",
+		"Before returning to the <a href=\"https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/mungo-brush-campground\">Mungo Brush campground</a> along the beach",
+		"via the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/picnic-areas/hole-in-the-wall-picnic-area\">Hole in the Wall picnic area</a>"
+	],
+	"duration": 5,
+	"distance": 21,
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "mungobrush-mungotrack-mungobrush",
+	"updated": "2020-10-03",
+	"bounds": {
+		"west": 152.259521484375,
+		"north": -32.52828936482525,
+		"east": 152.325439453125,
+		"south": -32.61161640317033
+	},
+	"markers": [
+		{
+			"location": "Mungo Brush",
+			"type": "car",
+			"description": "Plan your drive to the <a href=\"https://www.google.com/maps/dir/Sydney,+New+South+Wales/-32.5090678688,152.3200276773\">Mungo Brush Campground</a>.",
+			"lon": 152.3200276773,
+			"lat": -32.5090678688
+		},
+		{
+			"type": "toilet",
+			"lat": -32.5433304,
+			"lon": 152.3078303
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201002_221927756.jpg",
+			"description": "From the south end of the campground follow the Tomboy Firetrail along the lakeside.",
+			"lon": 152.293153,
+			"lat": -32.544294
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201002_223619422.jpg",
+			"description": "At the intersection follow the sign left and continue down the Mungo Track.",
+			"lon": 152.287106,
+			"lat": -32.54895
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201002_223906871.jpg",
+			"description": "Cross the wetlands across the boardwalk.",
+			"lon": 152.2887,
+			"lat": -32.54948100009026
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201002_231006038.jpg",
+			"description": "At the Brambles Green Campground follow the signs down the Brambles Green Firetrail",
+			"lon": 152.28252300000003,
+			"lat": -32.56569
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201002_233814285.jpg",
+			"description": "At the intersection follow Mungo Brush Road a short distance to the right.",
+			"lon": 152.286656,
+			"lat": -32.579828000000006
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201002_234014856.jpg",
+			"description": "Enter the Wildflow walk to the right.",
+			"lon": 152.285794,
+			"lat": -32.581133
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201002_235841797.jpg",
+			"description": "At the intersection follow the Duckhole Firetrail to the left back to Mungo Brush Road.",
+			"lon": 152.273886,
+			"lat": -32.586092
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_000638392.jpg",
+			"description": "Cross the road and follow the sign to Sandy Point.",
+			"lon": 152.276586,
+			"lat": -32.590322
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_003123058.jpg",
+			"description": "From the Sandy Point carpark follow the trail across the dunes.",
+			"lon": 152.284006,
+			"lat": -32.59355
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_004352292.jpg",
+			"description": "From Sandy Point follow the beach to the left.",
+			"lon": 152.287656,
+			"lat": -32.589964
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_021055088.jpg",
+			"description": "Back at Mungo Brush follow one of the paths through the dunes back to the campground.",
+			"lon": 152.31209700000002,
+			"lat": -32.547515999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20201003_022035155.jpg",
+			"description": "Cross the road and enter Mungo Brush campground.",
+			"lon": 152.31034200000002,
+			"lat": -32.544081
+		},
+		{
+			"location": "Mungo Brush",
+			"type": "car",
+			"description": "Plan your drive back from <a href=\"https://www.google.com/maps/dir/-32.5090678688,152.3200276773/Sydney,+New+South+Wales\">Mungo Brush Campground</a>.",
+			"lon": 152.3200276773,
+			"lat": -32.5090678688
+		}
+	]
+}

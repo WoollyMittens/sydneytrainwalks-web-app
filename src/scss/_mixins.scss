@@ -1,9 +1,4 @@
-/*
-	Definitions
-*/
-/*
-	Constants
-*/
+/* Constants */
 $color-background: #ffffff;
 $color-text: #1e1e1e;
 $color-passive: #ff6a00;
@@ -12,19 +7,15 @@ $color-hover: #ff9800;
 $color-disabled: #7f7f7f;
 $color-highlight: #eeeeee;
 $iconSize: 64px;
-$remSize: 12;
-/*
-	Hides text in the margin
-*/
+$remSize: 16;
+/* Hides text in the margin */
 @mixin obfuscate ($distance:100) {
 	overflow: hidden;
 	text-align: left;
 	text-indent: ($distance + 10) + px;
 	white-space: nowrap;
 }
-/*
-	Turns a button into an icon
-*/
+/* Turns a button into an icon */
 @mixin iconParent ($size:32) {
 	overflow: hidden;
 	position: relative;
@@ -35,9 +26,7 @@ $remSize: 12;
 	overflow: visible;
 	text-indent: -999em;
 }
-/*
-	Centres a graphic inside an icon
-*/
+/* Centres a graphic inside an icon */
 @mixin iconCenter ($size:32) {
 	content: '';
 	display: block;
@@ -52,16 +41,12 @@ $remSize: 12;
 	background-repeat: no-repeat;
 	background-position: center;
 }
-/*
-	Offers both the pixel and rem value of a single property
-*/
+/* Offers both the pixel and rem value of a single property */
 @mixin rem ($name:'', $value:'') {
 	#{$name}: ($remSize * $value) + px;
 	#{$name}: $value + rem;
 }
-/*
-	Offers both the pixel and rem values of a shorthand property
-*/
+/* Offers both the pixel and rem values of a shorthand property */
 @mixin rems ($name:'', $top:'', $right:'', $bottom:'', $left:'') {
 	@if $top != '' {
 		#{$name}-top: ($remSize * $top) + px;
@@ -83,9 +68,7 @@ $remSize: 12;
 		#{$name}-left: $left + rem;
 	}
 }
-/*
-	Offers the text size as both the pixel and rem value
-*/
+/* Offers the text size as both the pixel and rem value */
 @mixin text ($size) {
 	@if $size == s {
 		font-size: ($remSize * 0.875) + px;
@@ -111,9 +94,7 @@ $remSize: 12;
 		font-size: $size + rem;
 	}
 }
-/*
-	Adds vendor prefixed to a property
-*/
+/* Adds vendor prefixed to a property */
 @mixin vendors ($name:'', $value:'') {
 	-o-#{$name}: #{$value};
 	-ms-#{$name}: #{$value};
@@ -121,9 +102,7 @@ $remSize: 12;
 	-webkit-#{$name}: #{$value};
 	#{$name}: #{$value};
 }
-/*
-	Applies the "clearfix" hack to a container with floating content
-*/
+/* Applies the "clearfix" hack to a container with floating content */
 @mixin clearfix () {
 	*zoom: 1;
 

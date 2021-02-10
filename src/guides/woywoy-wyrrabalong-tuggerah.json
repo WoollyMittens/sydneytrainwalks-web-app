@@ -744,23 +744,24 @@
 			"description": "Follow North Scenic Road towards the radio tower at the top. The last section is narrow and steep. Be mindful of descending cars."
 		},
 		{
-			"title": "Love Lift Me Up...",
-			"badge": "music_1",
-			"lon": 151.4756577864043,
-			"lat": -33.40488481128369,
-			"radius": 0.0004,
-			"explanation": [
-				"The high point of Central Coast in several ways."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "waypoint",
 			"photo": "dsc_1573.jpg",
 			"lon": 151.47598856990962,
 			"lat": -33.404885380000444,
 			"description": "Follow the coastal walk to Crackneck Lookout."
+		},
+		{
+			"title": "Four Seasons in One Day: Coastal Heathland",
+			"badge": "day_rain",
+			"lon": 151.4805944,
+			"lat": -33.3983333,
+			"radius": 0.0004,
+			"explanation": [
+				"The dense olive green heath opens up to the blues of open ocean and sky.",
+				"Once all of Central Coast was painted with the paints on this small pallete."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

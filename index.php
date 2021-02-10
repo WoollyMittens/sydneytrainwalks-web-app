@@ -142,7 +142,7 @@
 									$firstMarker = $markers[0];
 									$lastMarker = array_values(array_slice($markers, -1))[0];
 									?>
-										<span class="sign from">From</span>
+										<span class="sign from">A hiking trip from</span>
 										<span class="sign start <?php print $firstMarker->{'type'}?>"><?php print $firstMarker->{'location'}?></span>
 										<span class="sign to">to</span>
 										<span class="sign finish <?php print $lastMarker->{'type'}?>"><?php print $lastMarker->{'location'}?></span>

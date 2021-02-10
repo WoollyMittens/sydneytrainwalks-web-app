@@ -61,9 +61,8 @@
 						<p>This guide was created to give my exploration of Sydney's amazing national parks a useful purpose. I hope it will motivate people to venture out on nature walks by making it easier to get started.</p>
 						<p>Please add your <a href="https://github.com/WoollyMittens/sydneytrainwalks-web-app/issues">suggestions and bug reports on GitHub</a>, or send them to <a href="mailto:maurice@woollymittens.nl">maurice@woollymittens.nl</a>.</p>
 						<h2>Credits</h2>
-						<p>App, photography and GPS logs &copy; Maurice van Creij, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>.</p>
-						<p>Maps &copy; <a href="http://www.4umaps.com/">4UMaps</a>, &copy; <a href="http://www.thunderforest.com/">Thunderforest</a>.</p>
-						<p>Data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> and contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>.</p>
+						<p>App, photography, and GPS logs &copy; Maurice van Creij. Licensed under <a href="https://opensource.org/licenses/MIT" target="_blank">The MIT License</a>.</p>
+						<p>Maps &copy; <a href="https://4umaps.com/" target="_blank">4UMaps.com</a> and &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap contributors</a>.</p>
 						<h2>Disclaimer</h2>
 						<p>Please do not rely solely on this app for your navigation. There is no warranty on the accuracy or reliability of this app. Always carry a real paper map, which are readily available from park offices and tourist information centres.</p>
 						<h2>Privacy Policy</h2>

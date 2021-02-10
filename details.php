@@ -21,7 +21,7 @@
 		if (property_exists($json, 'alias')) { $assets = $json->{'alias'}->{'key'}; }
 
 		// summary
-		$subtitle = "From " . $firstMarker->{'location'} . " to " . $lastMarker->{'location'} . " via " . $json->{'location'};
+		$subtitle = "A hiking trip from " . $firstMarker->{'location'} . " to " . $lastMarker->{'location'} . " via " . $json->{'location'};
 		$description = join(' ', $json->{'description'});
 		$description = strip_tags($description);
 		$displayDate = date("d M Y", strtotime($json->{'updated'}));
@@ -32,11 +32,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta http-equiv="imagetoolbar" content="no"/>
 		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<title><?php print $title ?> - <?php echo $subtitle?></title>
+		<title><?php echo $subtitle?> - <?php print $title ?></title>
 		<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width, user-scalable=yes"/>
 		<meta property="og:url" content="https://<?php print $domain ?>/details.php?id=<?php echo $id ?>" />
 		<meta property="og:image" content="https://<?php print $domain ?>/inc/social/<?php echo $id ?>.png" />
-		<meta property="og:title" content="<?php print $title ?> - <?php echo $subtitle ?>" />
+		<meta property="og:title" content="<?php echo $subtitle ?> - <?php print $title ?>" />
 		<meta property="og:description" content="<?php echo $description ?>" />
 		<meta name="msapplication-TileColor" content="#558b2f" />
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
@@ -207,7 +207,8 @@
 							'container' : document.querySelector('.guide'),
 							'spherical': /fov360|\d{3}_r\d{7}/i,
 					    'cylindrical': /fov180/i,
-							'slicer' : 'imageslice.php?src={src}&{size}',
+							//'slicer' : 'imageslice.php?src={src}&{size}',
+							'slicer' : '{src}',
 					    'idle': 0.1,
 							'opened' : function (referer) { localmap.indicate(referer); return true; },
 							'located' : function () { returnTo = 'guide'; document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map'); },
@@ -219,7 +220,8 @@
 							'container' : document.querySelector('.photowall'),
 							'spherical': /fov360|\d{3}_r\d{7}/i,
 					    'cylindrical': /fov180/i,
-							'slicer' : 'imageslice.php?src={src}&{size}',
+							//'slicer' : 'imageslice.php?src={src}&{size}',
+							'slicer' : '{src}',
 					    'idle': 0.1,
 							'opened' : function (referer) { localmap.indicate(referer); return true; },
 							'located' : function () { returnTo = 'photos'; document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map'); },
@@ -257,7 +259,7 @@
 							'routeData': null,
 							'exifData': ExifData,
 							// attribution
-							'creditsTemplate': 'Maps &copy; <a href="http://www.4umaps.com/mountain-bike-hiking-bicycle-outdoor-topographic-map.htm" target="_blank">4UMaps</a>, Data &copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> and contributors, CC BY-SA',
+							'creditsTemplate': 'Maps &copy; <a href="https://4umaps.com/" target="_blank">4UMaps.com</a> and &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap contributors</a>',
 							// events
 							'checkHotspot': function() { return false; }
 						});
