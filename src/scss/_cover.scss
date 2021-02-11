@@ -1,9 +1,23 @@
-.ios-margins {
+.app-margins {
 	position: absolute;
 	top: 0;
 	left: 0;
 	height: 100vh;
 	width: 100vw;
+	box-sizing: border-box;
+	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+	@media print {
+		display: inline;
+		position: static;
+	}
+}
+
+.web-margins {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
 	box-sizing: border-box;
 	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 	@media print {

@@ -40,7 +40,7 @@
 		<link rel="icon" type="image/png" sizes="96x96" href="./inc/ico/favicon-96x96.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="./inc/ico/favicon-16x16.png" />
 		<link rel="manifest" href="./manifest.json" />
-		<link rel="stylesheet" href="./inc/css/styles.css?t=20200122"/>
+		<link rel="stylesheet" href="./inc/css/styles.css?t=<?php print $revision ?>"/>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=<?php print $analytics ?>"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
@@ -50,7 +50,7 @@
 		</script>
 	</head>
 	<body class="screen-overview">
-		<div class="ios-margins">
+		<div class="web-margins">
 			<section id="appView">
 				<header class="title">
 					<h1><a href="./"><?php print $title ?><i> - <?php print $subtitle ?></i></a></h1>
@@ -65,9 +65,9 @@
 				</footer>
 			</section>
 		</div>
-		<script src="./inc/js/gpx-data.js"></script>
-		<script src="./inc/js/guide-data.js"></script>
-		<script src="./inc/js/scripts.js"></script>
+		<script src="./inc/js/gpx-data.js?t=<?php print $revision ?>"></script>
+		<script src="./inc/js/guide-data.js?t=<?php print $revision ?>"></script>
+		<script src="./inc/js/scripts.js?t=<?php print $revision ?>"></script>
 		<script id="credit-template" type="text/template">
 			Maps &copy; <a href="https://4umaps.com/" target="_blank">4UMaps.com</a> and &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap contributors</a>.
 		</script>
@@ -88,7 +88,7 @@
 		</script>
 		<script>
 			// register the service worker for offline content
-			if('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js');
+			if('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js?t=<?php print $revision ?>');
 		</script>
 	</body>
 </html>

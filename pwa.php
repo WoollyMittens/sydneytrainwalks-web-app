@@ -42,7 +42,7 @@
 		<link rel="icon" type="image/png" sizes="96x96" href="./inc/ico/favicon-96x96.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="./inc/ico/favicon-16x16.png" />
 		<link rel="manifest" href="./manifest.json" />
-		<link rel="stylesheet" href="./inc/css/styles.css?t=20200122"/>
+		<link rel="stylesheet" href="./inc/css/styles.css?t=<?php print $revision ?>"/>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=<?php print $analytics ?>"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
@@ -55,7 +55,7 @@
 	<body class="screen-menu">
 
 		<!-- markup -->
-		<div class="ios-margins">
+		<div class="web-margins">
 
 			<section id="appView" class="status-busy">
 
@@ -253,10 +253,10 @@
 
 		<!-- scripts -->
 
-		<script src="./inc/js/exif-data.js"></script>
-		<script src="./inc/js/guide-data.js"></script>
-		<script src="./inc/js/gpx-data.js"></script>
-		<script src="./inc/js/scripts.js"></script>
+		<script src="./inc/js/exif-data.js?t=<?php print $revision ?>"></script>
+		<script src="./inc/js/guide-data.js?t=<?php print $revision ?>"></script>
+		<script src="./inc/js/gpx-data.js?t=<?php print $revision ?>"></script>
+		<script src="./inc/js/scripts.js?t=<?php print $revision ?>"></script>
 		<script>
 			var sydneyTrainWalks = new SydneyTrainWalks({
 				'local': './inc',
@@ -272,7 +272,7 @@
 		</script>
 		<script>
 			// register the service worker for offline content
-			if('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js');
+			if('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js?t=<?php print $revision ?>');
 		</script>
 
 	</body>
