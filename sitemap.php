@@ -3,8 +3,7 @@
 		header('Content-Type: application/xml; charset=utf-8');
 
 		// constants
-		$title = 'Sydney Hiking Trips';
-		$domain = 'www.sydneyhikingtrips.com';
+		include 'constants.php';
 
 		// load and process the json file
 		$jsonText = file_get_contents("./inc/js/guide-data.js");
@@ -18,12 +17,22 @@
 
 ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc><?php echo 'https://' . $domain . '/'; ?></loc>
+		<lastmod><?php echo date('Y-m-d'); ?></lastmod>
+		<changefreq>Daily</changefreq>
+	</url>
 	<?php
 		// for each entry
 		foreach ($json as $name => $value) {
 			if ($value->{'key'} !== '_index') {
-				echo '<url><loc>https://' . $domain . '/details.php?id='. $value->{'key'} . '</loc><lastmod>' . $value->{'updated'} . '</lastmod></url>';
+				echo '<url><loc>https://' . $domain . '/details.php?id='. $value->{'key'} . '</loc><lastmod>' . $value->{'updated'} . '</lastmod><changefreq>Monthly</changefreq></url>';
 			}
 		}
 	?>
+	<url>
+		<loc><?php echo 'https://' . $domain . '/about.php'; ?></loc>
+		<lastmod><?php echo $revision; ?></lastmod>
+		<changefreq>Yearly</changefreq>
+	</url>
 </urlset>

@@ -62,8 +62,8 @@ SydneyTrainWalks.prototype.Trophies = function(parent) {
 		var template = this.config.trophiesTemplate;
 		// show the full badge
 		link.innerHTML += template.innerHTML
-			.replace('{icon}', marker.badge)
-			.replace('{title}', marker.title);
+			.replace(/{icon}/g, marker.badge)
+			.replace(/{title}/g, marker.title);
 		// make it look active
 		link.setAttribute('class', 'trophies-active');
 		// link it to the details modal
@@ -77,8 +77,8 @@ SydneyTrainWalks.prototype.Trophies = function(parent) {
 		var template = this.config.trophiesTemplate;
 		// show a mystery badge
 		link.innerHTML += template.innerHTML
-			.replace('{icon}', marker.type)
-			.replace('{title}', '???');
+			.replace(/{icon}/g, marker.type)
+			.replace(/{title}/g, '???');
 		// make it looks passive
 		link.setAttribute('class', 'trophies-passive');
 		// deeplink to the guides page
@@ -136,12 +136,12 @@ SydneyTrainWalks.prototype.Trophies = function(parent) {
 		var background = marker.title.replace(/:|\.|\,|\'|\s|\?|\!/g, '_').toLowerCase().trim();
 		// populate the modal
 		container.innerHTML = template.innerHTML
-			.replace('{icon}', marker.badge)
-			.replace('{title}', marker.title)
-			//.replace('{tile}', 'tiles/' + tile.join('/'))
-			.replace('{tile}', 'trophies/' + background)
-			.replace('{background}', 'trophies/' + background)
-			.replace('{description}', '<p>' + marker.explanation.join('</p><p>') + '</p>');
+			.replace(/{icon}/g, marker.badge)
+			.replace(/{title}/g, marker.title)
+			//.replace(/\{tile\}/g, 'tiles/' + tile.join('/'))
+			.replace(/{tile}/g, 'trophies/' + background)
+			.replace(/{background}/g, 'trophies/' + background)
+			.replace(/{description}/g, '<p>' + marker.explanation.join('</p><p>') + '</p>');
 		// add the event handler to close the modal popup
 		var closer = container.querySelector('footer button');
 		closer.addEventListener('click', this.close.bind(this, marker, container));

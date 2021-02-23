@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="ios-false">
+<html class="ios-false" lang="en">
 	<?php
 
 		// constants
@@ -32,12 +32,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta http-equiv="imagetoolbar" content="no"/>
 		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<title><?php print $title ?> - <?php echo $subtitle?></title>
-		<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width, user-scalable=yes"/>
+		<title><?php echo $subtitle?> - <?php print $title ?></title>
+		<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width, user-scalable=yes" />
+		<meta name="description" content="<?php echo $description ?>"/>
 		<meta property="og:url" content="https://<?php print $domain ?>/" />
 		<meta property="og:image" content="https://<?php print $domain ?>/inc/img/favicon.png" />
-		<meta property="og:title" content="<?php print $title ?> - <?php echo $subtitle?>" />
+		<meta property="og:title" content="<?php echo $subtitle?> - <?php print $title ?>" />
 		<meta property="og:description" content="<?php echo $description ?>" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="en_AU" />
 		<meta name="msapplication-TileColor" content="#558b2f" />
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
 		<meta name="theme-color" content="#558b2f" />
@@ -56,6 +59,7 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="./inc/ico/favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="96x96" href="./inc/ico/favicon-96x96.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="./inc/ico/favicon-16x16.png" />
+		<link rel="canonical" href="https://<?php print $domain ?>/">
 		<link rel="manifest" href="./manifest.json" />
 		<link rel="stylesheet" href="./inc/css/styles.css?t=<?php print $revision ?>"/>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=<?php print $analytics ?>"></script>
@@ -70,7 +74,7 @@
 		<div class="web-margins">
 			<section id="appView">
 				<header class="title">
-					<h1><a href="./"><?php print $title ?><i> - <?php print $subtitle ?></i></a></h1>
+					<h1><a href="/"><?php print $title ?><i> - <?php print $subtitle ?></i></a></h1>
 				</header>
 				<nav class="navigation">
 
@@ -163,16 +167,17 @@
 						?>
 					</menu>
 				</nav>
-				<figure class="overview localmap" id="leafletMap2"></figure>
+				<figure class="overview localmap"></figure>
 				<footer class="toolbar">
 					<nav>
-						<a id="footer-to-menu" href="index.php">Menu</a>
+						<a id="footer-to-menu" href="/">Menu</a>
 						<a id="footer-to-overview" href="overview.php">Overview</a>
 						<a id="footer-to-about" href="about.php">About</a>
 					</nav>
 				</footer>
 			</section>
 		</div>
+		<script src="./inc/js/gpx-data.js?t=<?php print $revision ?>"></script>
 		<script src="./inc/js/guide-data.js?t=<?php print $revision ?>"></script>
 		<script src="./inc/js/scripts.js?t=<?php print $revision ?>"></script>
 		<script id="credit-template" type="text/template">

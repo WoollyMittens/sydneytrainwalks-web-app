@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="ios-false">
+<html class="ios-false" lang="en">
 	<?php
 
 		// constants
@@ -33,11 +33,14 @@
 		<meta http-equiv="imagetoolbar" content="no"/>
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<title><?php echo $subtitle?> - <?php print $title ?></title>
-		<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width, user-scalable=yes"/>
+		<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width, user-scalable=yes" />
+		<meta name="description" content="<?php echo $description ?>"/>
+		<meta property="og:title" content="<?php echo $subtitle ?> - <?php print $title ?>" />
 		<meta property="og:url" content="https://<?php print $domain ?>/details.php?id=<?php echo $id ?>" />
 		<meta property="og:image" content="https://<?php print $domain ?>/inc/social/<?php echo $id ?>.png" />
-		<meta property="og:title" content="<?php echo $subtitle ?> - <?php print $title ?>" />
 		<meta property="og:description" content="<?php echo $description ?>" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="en_AU" />
 		<meta name="msapplication-TileColor" content="#558b2f" />
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
 		<meta name="theme-color" content="#558b2f" />
@@ -56,6 +59,7 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="./inc/ico/favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="96x96" href="./inc/ico/favicon-96x96.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="./inc/ico/favicon-16x16.png" />
+		<link rel="canonical" href="https://<?php print $domain ?>/details.php?id=<?php echo $id ?>">
 		<link rel="manifest" href="./manifest.json" />
 		<link rel="stylesheet" href="./inc/css/styles.css?t=<?php print $revision ?>"/>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=<?php print $analytics ?>"></script>
@@ -70,7 +74,7 @@
 		<div class="web-margins">
 			<section id="appView">
 				<header class="title">
-					<a href="./"><?php print $title ?></a>
+					<a href="/"><?php print $title ?></a>
 				</header>
 				<header class="subtitle">
 					<h1 onclick="document.location.replace('./')">
@@ -126,7 +130,7 @@
 											<div class="guide-<?php echo $highlightClass ?>">
 												<p class="guide-landmark">
 													<a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>" class="cylinder-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>);" data-title="<?php echo $marker->{'description'} ?>">
-														<img alt="" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>">
+														<img alt="Photo of the waypoint" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>">
 													</a>
 													<span class="guide-text">
 														<?php echo $marker->{'description'} ?>
@@ -139,7 +143,7 @@
 										?>
 											<p class="guide-landmark">
 												<a href="./inc/medium/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>" class="cylinder-image" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>);" data-title="<?php echo $marker->{'description'} ?>">
-													<img alt="" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>">
+													<img alt="Photo of the waypoint" src="./inc/small/<?php echo $assets ?>/<?php echo strtolower($marker->{'photo'}) ?>">
 												</a>
 												<span class="guide-text">
 													<?php echo $marker->{'description'} ?>
@@ -182,7 +186,7 @@
 
 								// write the thumbnails
 								for ($a = $min; $a < $max; $a++) {
-									?><li><a class="cylinder-image" style="background-image:url('<?php echo $small[$a]?>');" href="<?php echo $medium[$a]?>"><img alt="" src="<?php echo $small[$a]?>"/></a></li><?php
+									?><li><a class="cylinder-image" style="background-image:url('<?php echo $small[$a]?>');" href="<?php echo $medium[$a]?>"><img alt="Impression of the trail" src="<?php echo $small[$a]?>"/></a></li><?php
 								}
 
 							?>
@@ -268,7 +272,7 @@
 				</aside>
 				<footer class="toolbar">
 					<nav>
-						<a id="footer-to-menu" href="index.php">Menu</a>
+						<a id="footer-to-menu" href="/">Menu</a>
 						<a id="footer-to-overview" href="overview.php">Overview</a>
 						<a id="footer-to-map" onclick="document.body.className='screen-map'" href="#">Map</a>
 						<a id="footer-to-guide" onclick="document.body.className='screen-guide'" href="#">Guide</a>

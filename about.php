@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="ios-false">
+<html class="ios-false" lang="en">
 	<?php
 
 		// constants
@@ -7,7 +7,7 @@
 
 		// summary
 		$subtitle = "About this Website";
-		$description = "Don't let organising a bushwalk intimidate you. These 40+ hikes are easy day trips from Sydney using public transport.";
+		$description = "More information about the guide and its referenced material.";
 
 	?>
 	<head>
@@ -15,12 +15,16 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta http-equiv="imagetoolbar" content="no"/>
 		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<title><?php print $title ?> - About this Website</title>
-		<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width, user-scalable=yes"/>
+		<title>$subtitle <?php print $title ?></title>
+		<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width, user-scalable=yes" />
+		<meta name="description" content="<?php echo $description ?>"/>
+		<meta name="twitter:card" content="summary" />
 		<meta property="og:url" content="https://<?php print $domain ?>/about.php" />
 		<meta property="og:image" content="https://<?php print $domain ?>/inc/img/favicon.png" />
 		<meta property="og:title" content="<?php print $title ?> - <?php print $subtitle ?>" />
 		<meta property="og:description" content="<?php echo $description ?>" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="en_AU" />
 		<meta name="msapplication-TileColor" content="#558b2f" />
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
 		<meta name="theme-color" content="#558b2f" />
@@ -39,6 +43,7 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="./inc/ico/favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="96x96" href="./inc/ico/favicon-96x96.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="./inc/ico/favicon-16x16.png" />
+		<link rel="canonical" href="https://<?php print $domain ?>/about.php">
 		<link rel="manifest" href="./manifest.json" />
 		<link rel="stylesheet" href="./inc/css/styles.css?t=<?php print $revision ?>"/>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=<?php print $analytics ?>"></script>
@@ -53,7 +58,7 @@
 		<div class="web-margins">
 			<section id="appView">
 				<header class="title">
-					<h1><a href="./"><?php print $title ?><i> - <?php print $subtitle ?></i></a></h1>
+					<h1><a href="/"><?php print $title ?><i> - <?php print $subtitle ?></i></a></h1>
 				</header>
 				<section class="about">
 					<div class="about-scroller">
@@ -152,7 +157,7 @@
 				</section>
 				<footer class="toolbar">
 					<nav>
-						<a id="footer-to-menu" href="index.php">Menu</a>
+						<a id="footer-to-menu" href="/">Menu</a>
 						<a id="footer-to-overview" href="overview.php">Overview</a>
 						<a id="footer-to-about" href="about.php">About</a>
 					</nav>

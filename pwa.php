@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="ios-true">
+<html class="ios-true" lang="en">
 	<?php
 
 		// constants
@@ -17,12 +17,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta http-equiv="imagetoolbar" content="no" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<title><?php print $title ?> - Easily accessible bushwalks using public transport</title>
-		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, viewport-fit=cover">
-		<meta property="og:url" content="https://<?php print $domain ?>/offline.html" />
+		<title><?php echo $subtitle?> - <?php print $title ?></title>
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, viewport-fit=cover" />
+		<meta name="description" content="<?php echo $description ?>"/>
+		<meta property="og:url" content="https://<?php print $domain ?>/pwa.php" />
 		<meta property="og:image" content="https://<?php print $domain ?>/inc/img/favicon.png" />
 		<meta property="og:title" content="<?php print $title ?> - <?php echo $subtitle ?>" />
 		<meta property="og:description" content="<?php echo $description ?>" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="en_AU" />
 		<meta name="msapplication-TileColor" content="#558b2f" />
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
 		<meta name="theme-color" content="#558b2f" />
@@ -41,6 +44,7 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="./inc/ico/favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="96x96" href="./inc/ico/favicon-96x96.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="./inc/ico/favicon-16x16.png" />
+		<link rel="canonical" href="https://<?php print $domain ?>/pwa.php">
 		<link rel="manifest" href="./manifest.json" />
 		<link rel="stylesheet" href="./inc/css/styles.css?t=<?php print $revision ?>"/>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=<?php print $analytics ?>"></script>
@@ -60,7 +64,7 @@
 			<section id="appView" class="status-busy">
 
 				<header class="title">
-					<h1><a href="./"><?php print $title ?><i><?php print " - " . $subtitle ?></i></a></h1>
+					<h1><a href="/"><?php print $title ?><i><?php print " - " . $subtitle ?></i></a></h1>
 				</header>
 
 				<header class="subtitle">
@@ -200,14 +204,14 @@
 		<script id="thumbnail-template" type="text/template">
 			<p class="guide-landmark">
 				<a class="cylinder-image" href="./inc/medium/{id}/{src}" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/{id}/{src});" data-title="{description}">
-					<img alt="" src="./inc/small/{id}/{src}"/>
+					<img alt="Photo of the waypoint" src="./inc/small/{id}/{src}"/>
 				</a>
 				<span class="guide-text">{description} <button class="guide-locate" data-url="./inc/medium/{id}/{src}" data-title="{description}">Show location</button></span>
 			</p>
 		</script>
 
 		<script id="wall-template" type="text/template">
-			<li><a class="cylinder-image" style="background-image:url('./inc/small/{id}/{src}');" href="./inc/medium/{id}/{src}"><img alt="" src="./inc/small/{id}/{src}"/></a></li>
+			<li><a class="cylinder-image" style="background-image:url('./inc/small/{id}/{src}');" href="./inc/medium/{id}/{src}"><img alt="Impression of the trail" src="./inc/small/{id}/{src}"/></a></li>
 		</script>
 
 		<script id="footer-template" type="text/template">
@@ -228,7 +232,7 @@
 
 		<script id="trophies-template" type="text/template">
 			<figure>
-				<img alt="" src="./inc/img/{icon}.svg" />
+				<img alt="{icon} icon" src="./inc/img/{icon}.svg" />
 				<figcaption>
 					{title}
 					<button class="guide-locate" data-type="{type}" data-lat="{lat}" data-lon="{lon}" data-title="{title}">Show location</button>
@@ -239,7 +243,7 @@
 		<script id="trophy-template" type="text/template">
 			<header>
 				<h2>Trophy awarded:</h2>
-				<img alt="" src="./inc/img/{icon}.svg" />
+				<img alt="{icon} icon" src="./inc/img/{icon}.svg" />
 				<h3>{title}</h3>
 			</header>
 			<figure style="background-image:url('./inc/{tile}.jpg');">
