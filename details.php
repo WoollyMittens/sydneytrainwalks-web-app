@@ -118,12 +118,12 @@
 						<h2>Along the way</h2>
 						<?php
 							foreach ($json->{'markers'} as $marker) {
-								if ($marker->{'photo'}) {
+								if (isset($marker->{'photo'})) {
 
 									$highlightClass = '';
-									if ($marker->{'optional'}) { $highlightClass = 'optional'; }
-									if ($marker->{'detour'}) { $highlightClass = 'detour'; }
-									if ($marker->{'attention'}) { $highlightClass = 'attention'; }
+									if (isset($marker->{'optional'})) { $highlightClass = 'optional'; }
+									if (isset($marker->{'detour'})) { $highlightClass = 'detour'; }
+									if (isset($marker->{'attention'})) { $highlightClass = 'attention'; }
 
 									if ($highlightClass != '') {
 										?>

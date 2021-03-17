@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^sydneyhikingtrips.com [NC]
+RewriteRule ^(.*)$ https://www.sydneyhikingtrips.com/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^sydneytrainwalks.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www.sydneytrainwalks.com$
+RewriteRule (.*)$ https://www.sydneyhikingtrips.com/$1 [R=301,L]

@@ -156,8 +156,8 @@
 									<?php
 
 									if ($firstMarker->{'location'} == $lastMarker->{'location'}) echo '<span class="meta looped">Forms a loop</span>';
-									if ($value->{'rain'}) echo '<span class="meta rain">Suitable for rainy days</span>';
-									if ($value->{'fireban'}) echo '<span class="meta fireban">Suitable during bushfire season</span>';
+									if (isset($value->{'rain'})) echo '<span class="meta rain">Suitable for rainy days</span>';
+									if (isset($value->{'fireban'})) echo '<span class="meta fireban">Suitable during bushfire season</span>';
 
 									echo '</a></li>';
 
