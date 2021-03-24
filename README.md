@@ -16,17 +16,11 @@ This project uses Cordova from https://cordova.apache.org/
 
 The following commands are available for development:
 + `npm install` - Install the prerequisites.
-+ `gulp dev` - Build the project for development purposes.
-+ `gulp prod` - Build the project for deployment purposes.
-+ `gulp php` - Preview the project on http://localhost:8080.
-+ `gulp watch` - Continuously recompile updated files during development sessions.
-+ `cd node_scripts`
-  + `node importexif` - Prepares a cache of GPS data of all the photos.
-  + `node importgpx` - Prepares a cache of GPS data of all routes.
-  + `node importguides` - Prepares a cache of JSON data for all the guides.
-  + `node importphotos` - Process images from "/src/large" into "/inc/small" and "/inc/medium/".
-  + `node importtiles` - Downloads the tiles needed to cover the guides.
-  + `node converttiles` - Compresses the local PNG tile store to JPG.
++ `npm run assets` - Prepare the image and data files.
++ `npm run dev` - Prepare the styles and scripts for development.
++ `npm run prod` - Prepare the styles and scripts for deployment.
++ `npm run build` - Build the entire project for deployment.
++ `npm run watch` - Continuously recompile updated files during development sessions.
 
 ## Credits
 

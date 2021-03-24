@@ -7,36 +7,26 @@
     "exif": "",
     "fs": "",
     "gm": "",
-    "gulp": "",
-    "gulp-autoprefixer": "",
-    "gulp-clean": "",
-    "gulp-concat": "",
-    "gulp-connect": "",
-    "gulp-connect-php": "",
-    "gulp-imagemin": "",
-    "gulp-sass": "",
-    "gulp-sourcemaps": "",
-    "gulp-special-html": "",
-    "gulp-uglify": "",
     "imagemin-pngquant": "",
     "jsdom": "",
     "request": "",
+    "sass": "",
+    "shelljs": "",
+    "uglify-js": "",
     "xmldom": "",
-    "shelljs": ""
+    "npm-watch": ""
   },
-  "dependencies": {
-    "canvas": "^2.6.1",
-    "del": "^5.1.0",
-    "fs": "0.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-imagemin": "^6.2.0",
-    "gulp-sass": "^4.1.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "imagemin-pngquant": "^9.0.1",
-    "jsdom": "^15.2.1",
-    "request": "^2.88.2",
-    "shelljs": "^0.8.4",
-    "xmldom": "^0.2.1"
+  "watch": {
+    "scripts_dev": {
+      "patterns": ["src/lib", "src/js"],
+      "extensions": "js",
+      "quiet": false
+    },
+    "styles_dev": {
+      "patterns": ["src/scss"],
+      "extensions": "scss",
+      "quiet": false
+    }
   },
   "scripts": {
     "importgpx": "cd node_scripts && node importgpx && cd ..",
@@ -45,7 +35,15 @@
     "importguides": "cd node_scripts && node importguides && cd ..",
     "importtiles": "cd node_scripts && node importtiles && cd ..",
     "converttiles": "cd node_scripts && node converttiles && cd ..",
-    "gulpdev": "gulp dev",
-    "build": "npm run importgpx && npm run importphotos && npm run importexif && npm run importguides && npm run importtiles && npm run converttiles && npm run gulpdev"
+    "scripts_dev": "uglifyjs ./src/lib/*.js ./src/js/*.js --output ./inc/js/scripts.js --source-map",
+    "scripts_prod": "uglifyjs ./src/lib/*.js ./src/js/*.js --output ./inc/js/scripts.js --compress --mangle --keep-fnames --source-map",
+    "styles_dev": "sass ./src/scss/styles.scss ./inc/css/styles.css --style expanded --update",
+    "styles_prod": "sass ./src/scss/styles.scss ./inc/css/styles.css --style compressed",
+    "styles_watch": "sass --watch ./src/scss:./inc/css --style expanded",
+    "assets": "npm run importgpx && npm run importphotos && npm run importexif && npm run importguides && npm run importtiles && npm run converttiles",
+    "dev": "scripts_dev && styles_dev",
+    "prod": "scripts_prod && styles_prod",
+    "build": "npm run assets && npm run scripts_prod && npm run styles_prod",
+    "watch": "npm-watch"
   }
 }
