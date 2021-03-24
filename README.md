@@ -10,8 +10,6 @@ Please add your [suggestions and bug reports on GitHub](https://github.com/Wooll
 
 This project uses node.js from http://nodejs.org/
 
-This project uses gulp.js from http://gulpjs.com/
-
 This project uses Cordova from https://cordova.apache.org/
 
 The following commands are available for development:
