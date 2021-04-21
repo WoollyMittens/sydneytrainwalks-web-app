@@ -14,7 +14,7 @@ This project uses Cordova from https://cordova.apache.org/
 
 The following commands are available for development:
 + `npm install` - Install the prerequisites.
-+ `npm run assets` - Prepare the image and data files.
++ `npm run import` - Import the image and data files.
 + `npm run dev` - Prepare the styles and scripts for development.
 + `npm run prod` - Prepare the styles and scripts for deployment.
 + `npm run build` - Build the entire project for deployment.

@@ -20,7 +20,7 @@
 		select {
 			border-radius: 0;
 			border: none;
-			border-bottom: solid 1px #CCCCCC;
+			border-bottom: solid 1px #E0E0E0;
 			padding: 0;
 			margin: 0;
 			font-size: 0.875rem;
@@ -34,26 +34,56 @@
 			-moz-appearance: none;
 			appearance: none;
 
+			@media (prefers-color-scheme: dark) {
+				border-bottom: solid 1px #212121;
+				background-color: #000;
+				color: #fff;
+			}
+
 			&::-ms-expand {
 				display: none;
 			}
 
 			&:focus {
 				border-bottom: solid 2px #1976D2;
+
+				@media (prefers-color-scheme: dark) {
+					border-bottom: solid 2px #90CAF9;
+				}
 			}
 		}
 
 		input {
 			background-image: url("../img/button_delete_2.svg");
+			padding-left: 15px;
+
+			@media (prefers-color-scheme: dark) {
+				background-image: url("../img/button_delete_2_inv.svg");
+				background-position: right 10px center;
+
+				&::placeholder {
+					color: #9E9E9E;
+				}
+			}
 		}
 
 		select {
 			background-image: url("../img/button_backward_2.svg");
+			padding-left: 15px;
+
+			@media (prefers-color-scheme: dark) {
+				background-image: url("../img/button_backward_2_inv.svg");
+				background-position: right 10px center;
+			}
 		}
 	}
 
 	.searching-label {
 		flex: 1 1 100%;
+
+		@media (prefers-color-scheme: dark) {
+			margin-bottom: 10px;
+		}
 	}
 
 	.filtering-label,

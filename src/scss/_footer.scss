@@ -1,7 +1,7 @@
 .toolbar {
 	background-color: #fff;
 	border-top: solid 1px #eee;
-	box-shadow: 0 -0.25rem 0.5rem rgba(0,0,0,0.1);
+	box-shadow: 0 -0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 	border-radius: 0;
 	text-align: center;
 	position: absolute;
@@ -13,6 +13,12 @@
 	display: flex;
 	align-items: center;
 	padding: 0 1rem;
+
+	@media (prefers-color-scheme: dark) {
+		background-color: #424242;
+		border-top: solid 1px #212121;
+	}
+
 	@media print {
 		display: none;
 	}
@@ -35,8 +41,11 @@
 		text-decoration: none;
 		min-width: 3rem;
 		flex: 0 1 auto;
-		color: #0D47A1;
 		filter: grayscale(1);
+
+		@media (prefers-color-scheme: dark) {
+			color: #fff;
+		}
 
 		&:before {
 			background-size: contain;
@@ -51,10 +60,15 @@
 		}
 	}
 }
+
 /* icons per menu */
 #footer-to-menu {
 	&:before {
 		background-image: url("../img/base.svg");
+
+		@media (prefers-color-scheme: dark) {
+			background-image: url("../img/base_inv.svg");
+		}
 	}
 }
 
@@ -65,17 +79,27 @@
 
 	&:before {
 		background-image: url("../img/languages.svg");
+
+		@media (prefers-color-scheme: dark) {
+			background-image: url("../img/languages_inv.svg");
+		}
 	}
 }
 
 #footer-to-guide {
 	&:before {
 		background-image: url("../img/info_2.svg");
+
+		@media (prefers-color-scheme: dark) {
+			background-image: url("../img/info_2_inv.svg");
+		}
 	}
+
 	/* the photos icon is active on the map screen since they are combined */
 	body.screen-map & {
 		opacity: 1;
 		filter: grayscale(0);
+
 		/* the photos icon is passive on the map screen */
 		@media (max-width:959px) {
 			opacity: 0.5;
@@ -87,13 +111,22 @@
 #footer-to-photos {
 	&:before {
 		background-image: url("../img/nature_1.svg");
+
+		@media (prefers-color-scheme: dark) {
+			background-image: url("../img/nature_1_inv.svg");
+		}
 	}
 }
 
 #footer-to-map {
 	&:before {
 		background-image: url("../img/map_1.svg");
+
+		@media (prefers-color-scheme: dark) {
+			background-image: url("../img/map_1_inv.svg");
+		}
 	}
+
 	/* hide the map icon on wider screens */
 	@media (min-width:960px) {
 		display: none;
@@ -103,19 +136,29 @@
 #footer-to-about {
 	&:before {
 		background-image: url("../img/profile_1.svg");
+
+		@media (prefers-color-scheme: dark) {
+			background-image: url("../img/profile_1_inv.svg");
+		}
 	}
 }
 
 #footer-to-trophies {
 	&:before {
 		background-image: url("../img/hotspot.svg");
+
+		@media (prefers-color-scheme: dark) {
+			background-image: url("../img/hotspot_inv.svg");
+		}
 	}
 }
+
 /* what icons to show on the menu screen */
 body.screen-about,
 body.screen-menu,
 body.screen-overview,
 body.screen-trophies {
+
 	#footer-to-about,
 	#footer-to-menu,
 	#footer-to-overview,
@@ -129,15 +172,18 @@ body.screen-trophies {
 		display: none;
 	}
 }
+
 /* what icons to show on the map screen */
 body.screen-guide,
 body.screen-map,
 body.screen-photos {
+
 	#footer-to-about,
 	#footer-to-trophies {
 		display: none;
 	}
 }
+
 /* what icons are active on per screen */
 body.screen-about #footer-to-about,
 body.screen-guide #footer-to-guide,

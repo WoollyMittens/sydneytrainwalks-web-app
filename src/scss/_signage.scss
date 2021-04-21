@@ -12,6 +12,13 @@
 	text-overflow: ellipsis;
 	overflow: hidden;
 	text-align: center;
+
+	@media (prefers-color-scheme: dark) {
+		background-color: #212121;
+		color: #FFB74D;
+		border: solid 1px #000;
+	}
+
 	@media (max-width: 959px) {
 		font-size: 0.875rem;
 	}
@@ -44,6 +51,16 @@
 		&:before {
 			background-image: url("../img/sign_train_3.svg");
 		}
+
+		@media (prefers-color-scheme: dark) {
+			background-color: #F57C0033;
+			color: #FFCC80;
+
+			&:before {
+				background-image: url("../img/sign_train_3_inv.svg");
+			}
+		}
+
 	}
 
 	&.bus {
@@ -51,6 +68,15 @@
 
 		&:before {
 			background-image: url("../img/sign_bus.svg");
+		}
+
+		@media (prefers-color-scheme: dark) {
+			background-color: #03A9F433;
+			color: #81D4FA;
+
+			&:before {
+				background-image: url("../img/sign_bus_inv.svg");
+			}
 		}
 	}
 
@@ -60,6 +86,15 @@
 		&:before {
 			background-image: url("../img/sign_water_transport.svg");
 		}
+
+		@media (prefers-color-scheme: dark) {
+			background-color: #7CB34233;
+			color: #C5E1A5;
+
+			&:before {
+				background-image: url("../img/sign_water_transport_inv.svg");
+			}
+		}
 	}
 
 	&.tram {
@@ -67,6 +102,15 @@
 
 		&:before {
 			background-image: url("../img/sign_tramway.svg");
+		}
+
+		@media (prefers-color-scheme: dark) {
+			background-color: #D32F2F33;
+			color: #EF9A9A;
+
+			&:before {
+				background-image: url("../img/sign_tramway_inv.svg");
+			}
 		}
 	}
 
@@ -76,6 +120,16 @@
 		&:before {
 			background-image: url("../img/sign_car.svg");
 		}
+
+		@media (prefers-color-scheme: dark) {
+			background-color: #0D47A133;
+			color: #90CAF9;
+
+			&:before {
+				background-image: url("../img/sign_car_inv.svg");
+			}
+		}
+
 	}
 
 	&.start {
@@ -93,6 +147,11 @@
 
 		&:before {
 			display: none;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			background-color: #1B5E2033;
+			color: #E6EE9C;
 		}
 
 		em {

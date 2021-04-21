@@ -11,6 +11,9 @@
 	top: 8rem;
 	width: 50%;
 	z-index: 5;
+	@media (prefers-color-scheme: dark) {
+		background: #212121;
+	}
 	@media (max-width:959px) {
 		border-left: none;
 		width: 100%;
@@ -63,6 +66,10 @@
 		padding: 1.5rem 2rem;
 		background-color: #FFFDE7;
 
+		@media (prefers-color-scheme: dark) {
+			background-color: #F57F1733;
+		}
+
 		figure {
 			position: relative;
 			display: flex;
@@ -78,6 +85,12 @@
 			height: auto;
 			width: 64px;
 			vertical-align: middle;
+
+			@media (prefers-color-scheme: dark) {
+				background-color: #fff;
+				border-radius: 50%;
+				padding: 5px;
+			}
 		}
 
 		figcaption {
@@ -117,20 +130,31 @@
 
 	&-detour {
 		background-color: #FFEBEE;
+		@media (prefers-color-scheme: dark) {
+			background-color: #B71C1C66;
+		}
 	}
 
 	&-attention {
 		background-color: #E3F2FD;
+		@media (prefers-color-scheme: dark) {
+			background-color: #0D47A166;
+		}
 	}
 
 	&-optional {
 		background-color: #F1F8E9;
+		@media (prefers-color-scheme: dark) {
+			background-color: #33691E66;
+		}
 	}
 
 	.guide-attention + .guide-attention,
 	.guide-detour + .guide-detour,
 	.guide-optional + .guide-optional {
-		margin-top: -2rem;
+		.guide-landmark {
+			margin-top: 0;
+		}
 	}
 
 	.cylinder-image,
@@ -173,6 +197,9 @@
 		text-indent: 125%;
 		cursor: pointer;
 		vertical-align: middle;
+		@media (prefers-color-scheme: dark) {
+			background-image: url("../img/marker-location-inv.svg");
+		}
 	}
 
 	&-scroller {

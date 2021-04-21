@@ -84,7 +84,7 @@
 						<a href="https://itunes.apple.com/us/app/sydney-train-walks/id917041642?ls=1&mt=8"><img alt="Download on the App Store" src="./inc/img/banner-ios.png"/></a>
 					</p>
 
-					<article style="background-image:linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(inc/social/<?php print $highlighted->{'key'}?>.png)">
+					<article style="background-image: url(inc/social/<?php print $highlighted->{'key'}?>.png)">
 						<h2>
 							Suggested:
 							<small>

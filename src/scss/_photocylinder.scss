@@ -216,6 +216,11 @@
 		text-decoration: none;
 		z-index: 2;
 
+		@media (prefers-color-scheme: dark) {
+			background-color: #90CAF9;
+			color: #000;
+		}
+
 		&:before {
 			@include iconCenter(24);
 			background-image: url("../img/close.svg");
@@ -224,6 +229,11 @@
 
 		&:hover {
 			background: $color-hover;
+	
+			@media (prefers-color-scheme: dark) {
+				background-color: #BBDEFB;
+				color: #000;
+			}
 		}
 	}
 

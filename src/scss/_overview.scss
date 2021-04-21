@@ -9,9 +9,15 @@
 	right: 0;
 	top: 4rem;
 	z-index: 6;
+
+	@media (prefers-color-scheme: dark) {
+		background: #212121 none;
+	}
+
 	@media (min-width:960px) {
 		right: 50%;
 	}
+
 	@media print {
 		transform: translate(0, 0);
 		position: relative !important;

@@ -16,10 +16,16 @@ html {
 
 body {
 	min-height: 100%;
-	color: #333;
+	background-color: #fff;
+	color: #212121;
 	line-height: 1.3;
 	margin: 0;
 	padding: 0;
+
+	@media (prefers-color-scheme: dark) {
+		background-color: #212121;
+		color: #fff;
+	}
 }
 
 h1 {
@@ -61,6 +67,10 @@ ul {
 
 a {
 	color: #0D47A1;
+
+	@media (prefers-color-scheme: dark) {
+		color: #BBDEFB;
+	}
 }
 
 .btn {
@@ -74,8 +84,18 @@ a {
 	transition: background-color 300ms ease;
 	font-size: 0.875rem;
 
+	@media (prefers-color-scheme: dark) {
+		background-color: #90CAF9;
+		color: #000;
+	}
+
 	&:hover {
 		background-color: #1565C0;
+
+		@media (prefers-color-scheme: dark) {
+			background-color: #BBDEFB;
+			color: #000;
+		}
 	}
 }
 

@@ -9,41 +9,46 @@
     "gm": "",
     "imagemin-pngquant": "",
     "jsdom": "",
+    "npm-watch": "",
     "request": "",
     "sass": "",
     "shelljs": "",
     "uglify-js": "",
-    "xmldom": "",
-    "npm-watch": ""
+    "xmldom": ""
   },
   "watch": {
     "scripts_dev": {
-      "patterns": ["src/lib", "src/js"],
+      "patterns": [
+        "src/lib",
+        "src/js"
+      ],
       "extensions": "js",
       "quiet": false
     },
     "styles_dev": {
-      "patterns": ["src/scss"],
+      "patterns": [
+        "src/scss"
+      ],
       "extensions": "scss",
       "quiet": false
     }
   },
   "scripts": {
-    "importgpx": "cd node_scripts && node importgpx && cd ..",
-    "importphotos": "cd node_scripts && node importphotos && cd ..",
-    "importexif": "cd node_scripts && node importexif && cd ..",
-    "importguides": "cd node_scripts && node importguides && cd ..",
-    "importtiles": "cd node_scripts && node importtiles && cd ..",
-    "converttiles": "cd node_scripts && node converttiles && cd ..",
+    "import_gpx": "cd node_scripts && node importgpx && cd ..",
+    "import_photos": "cd node_scripts && node importphotos && cd ..",
+    "import_exif": "cd node_scripts && node importexif && cd ..",
+    "import_guides": "cd node_scripts && node importguides && cd ..",
+    "import_tiles": "cd node_scripts && node importtiles && cd ..",
+    "convert_tiles": "cd node_scripts && node converttiles && cd ..",
     "scripts_dev": "uglifyjs ./src/lib/*.js ./src/js/*.js --output ./inc/js/scripts.js --source-map",
     "scripts_prod": "uglifyjs ./src/lib/*.js ./src/js/*.js --output ./inc/js/scripts.js --compress --mangle --keep-fnames --source-map",
     "styles_dev": "sass ./src/scss/styles.scss ./inc/css/styles.css --style expanded --update",
     "styles_prod": "sass ./src/scss/styles.scss ./inc/css/styles.css --style compressed",
     "styles_watch": "sass --watch ./src/scss:./inc/css --style expanded",
-    "assets": "npm run importgpx && npm run importphotos && npm run importexif && npm run importguides && npm run importtiles && npm run converttiles",
-    "dev": "scripts_dev && styles_dev",
-    "prod": "scripts_prod && styles_prod",
-    "build": "npm run assets && npm run scripts_prod && npm run styles_prod",
+    "import": "npm run import_gpx && npm run import_photos && npm run import_exif && npm run import_guides && npm run import_tiles && npm run convert_tiles",
+    "dev": "npm run scripts_dev && npm run styles_dev",
+    "prod": "npm run scripts_prod && npm run styles_prod",
+    "build": "npm run import && prod",
     "watch": "npm-watch"
   }
 }

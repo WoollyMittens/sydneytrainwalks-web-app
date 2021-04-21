@@ -2,7 +2,7 @@ header {
 	&.title {
 		background-color: #fff;
 		border-bottom: solid 1px #eee;
-		box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
+		box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 		border-radius: 0;
 		text-align: left;
 		position: absolute;
@@ -13,6 +13,11 @@ header {
 		text-align: center;
 		top: 0;
 		z-index: 8;
+
+		@media (prefers-color-scheme: dark) {
+			background-color: #424242;
+			border-bottom: solid 1px #212121;
+		}
 
 		h1 {
 			margin: 0;
@@ -28,8 +33,13 @@ header {
 			vertical-align: middle;
 			color: #0D47A1;
 			text-decoration: none;
+
 			@media (max-width:959px) {
 				text-align: center;
+			}
+
+			@media (prefers-color-scheme: dark) {
+				color: #fff;
 			}
 
 			&:before {
@@ -43,6 +53,10 @@ header {
 				margin-right: 0.3em;
 				vertical-align: middle;
 				width: 4.25rem;
+
+				@media (prefers-color-scheme: dark) {
+					background-image: url("../img/logo-inv.svg");
+				}
 			}
 		}
 
@@ -53,7 +67,7 @@ header {
 
 	&.subtitle {
 		border-bottom: solid 1px #eee;
-		box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
+		box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 		position: absolute;
 		height: 4rem;
 		left: 0;

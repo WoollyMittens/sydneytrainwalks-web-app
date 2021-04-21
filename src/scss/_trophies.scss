@@ -10,10 +10,16 @@
 	top: 4rem;
 	width: 100%;
 	z-index: 8;
+
+	@media (prefers-color-scheme: dark) {
+		background-color: #212121;
+	}
+
 	@media (max-width:959px) {
 		border-left: none;
 		width: 100%;
 	}
+
 	@media print {
 		transform: translate(0, 0);
 		position: relative !important;
@@ -64,6 +70,7 @@
 			margin: 0;
 			padding: 0 0.5rem 2.5rem;
 			text-align: center;
+
 			@media (max-width:959px) {
 				flex: 0 1 33.333%;
 			}
@@ -76,6 +83,12 @@
 		img {
 			width: auto;
 			height: 3rem;
+
+			@media (prefers-color-scheme: dark) {
+				background-color: #fff;
+				border-radius: 50%;
+				padding: 5px;
+			}
 		}
 
 		figcaption {

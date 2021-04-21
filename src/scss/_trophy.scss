@@ -19,6 +19,10 @@
 	align-items: stretch;
 	overflow: hidden;
 
+	@media (prefers-color-scheme: dark) {
+		background-color: #424242;
+	}
+
 	&-active {
 		opacity: 1;
 		transform: translate3d(-50%, -50%, 0);
@@ -36,6 +40,12 @@
 		img {
 			width: auto;
 			height: 4rem;
+
+			@media (prefers-color-scheme: dark) {
+				background-color: #fff;
+				border-radius: 50%;
+				padding: 5px;
+			}
 		}
 
 		h3 {}
@@ -91,6 +101,10 @@
 			font-size: 1rem;
 			font-weight: bold;
 			text-transform: uppercase;
+
+			@media (prefers-color-scheme: dark) {
+				color: #90CAF9;
+			}
 		}
 	}
 }
