@@ -217,7 +217,7 @@
 		z-index: 2;
 
 		@media (prefers-color-scheme: dark) {
-			background-color: #90CAF9;
+			background-color: #FFB74D;
 			color: #000;
 		}
 
@@ -225,6 +225,10 @@
 			@include iconCenter(24);
 			background-image: url("../img/close.svg");
 			background-size: 24px 24px;
+
+			@media (prefers-color-scheme: dark) {
+				background-image: url("../img/close_inv.svg");
+			}
 		}
 
 		&:hover {
@@ -246,6 +250,10 @@
 
 		&:before {
 			background-image: url("../img/map_2.svg");
+
+			@media (prefers-color-scheme: dark) {
+				background-image: url("../img/map_2_drk.svg");
+			}
 		}
 	}
 }

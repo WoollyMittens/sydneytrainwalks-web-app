@@ -101,7 +101,7 @@ a {
 }
 @media (prefers-color-scheme: dark) {
   .btn {
-    background-color: #90CAF9;
+    background-color: #FFB74D;
     color: #000;
   }
 }
@@ -110,7 +110,7 @@ a {
 }
 @media (prefers-color-scheme: dark) {
   .btn:hover {
-    background-color: #BBDEFB;
+    background-color: #FFCC80;
     color: #000;
   }
 }
@@ -695,7 +695,7 @@ body.screen-menu .navigation {
 @media (prefers-color-scheme: dark) {
   #sorting label input:focus,
 #sorting label select:focus {
-    border-bottom: solid 2px #90CAF9;
+    border-bottom: solid 2px #FFB74D;
   }
 }
 #sorting label input {
@@ -1413,7 +1413,7 @@ body.screen-trophies .trophies {
 }
 @media (prefers-color-scheme: dark) {
   .trophy footer button {
-    color: #90CAF9;
+    color: #FFB74D;
   }
 }
 
@@ -1688,8 +1688,20 @@ body.screen-photos .photowall {
   text-indent: 200%;
   transition: background-color 300ms ease;
 }
+@media (prefers-color-scheme: dark) {
+  .localmap button {
+    background-color: #FFB74D;
+    color: #000;
+  }
+}
 .localmap button:hover {
   background-color: #1565C0;
+}
+@media (prefers-color-scheme: dark) {
+  .localmap button:hover {
+    background-color: #FFCC80;
+    color: #000;
+  }
 }
 .localmap button[disabled], .localmap button[disabled]:hover {
   opacity: 0.7;
@@ -1720,6 +1732,11 @@ body.screen-photos .photowall {
   user-select: none;
   position: relative;
 }
+@media (prefers-color-scheme: dark) {
+  .localmap-background {
+    filter: hue-rotate(180deg) contrast(0.8) brightness(1.1) saturate(0.5) invert(1);
+  }
+}
 .localmap-tile {
   position: absolute;
 }
@@ -1733,6 +1750,11 @@ body.screen-photos .photowall {
   transform-origin: 50% 100%;
   transition: transform ease 100ms;
   z-index: 3;
+}
+@media (prefers-color-scheme: dark) {
+  .localmap-indicator, .localmap-location, .localmap-marker {
+    filter: hue-rotate(180deg) contrast(0.8) brightness(1.1) saturate(0.5) invert(1);
+  }
 }
 .localmap-index-0 {
   z-index: 4;
@@ -1755,6 +1777,11 @@ body.screen-photos .photowall {
   background-image: url("../img/icon-location.svg");
   background-size: 70% auto;
 }
+@media (prefers-color-scheme: dark) {
+  .localmap-permissions button {
+    background-image: url("../img/icon-location-inv.svg");
+  }
+}
 .localmap-waypoint {
   position: absolute;
   width: 16px;
@@ -1767,6 +1794,11 @@ body.screen-photos .photowall {
   opacity: 0.7;
   border-radius: 50%;
   z-index: 2;
+}
+@media (prefers-color-scheme: dark) {
+  .localmap-waypoint {
+    filter: hue-rotate(180deg) invert(1);
+  }
 }
 .localmap-waypoint:before {
   content: "";
@@ -1785,6 +1817,11 @@ body.screen-photos .photowall {
   height: 100%;
   z-index: 1;
 }
+@media (prefers-color-scheme: dark) {
+  .localmap-route {
+    filter: hue-rotate(180deg) invert(1);
+  }
+}
 .localmap-controls {
   position: absolute;
   left: 10px;
@@ -1798,8 +1835,18 @@ body.screen-photos .photowall {
 .localmap-controls-zoomin {
   background-image: url("../img/icon-zoomin.svg");
 }
+@media (prefers-color-scheme: dark) {
+  .localmap-controls-zoomin {
+    background-image: url("../img/icon-zoomin-inv.svg");
+  }
+}
 .localmap-controls-zoomout {
   background-image: url("../img/icon-zoomout.svg");
+}
+@media (prefers-color-scheme: dark) {
+  .localmap-controls-zoomout {
+    background-image: url("../img/icon-zoomout-inv.svg");
+  }
 }
 .localmap-controls[disabled], .localmap-controls[disabled]:hover {
   opacity: 0.7;
@@ -1813,6 +1860,11 @@ body.screen-photos .photowall {
   top: 10px;
   z-index: 10;
   background-image: url("../img/icon-east.svg");
+}
+@media (prefers-color-scheme: dark) {
+  .localmap-return {
+    background-image: url("../img/icon-east-inv.svg");
+  }
 }
 @media (max-width: 959px) {
   .localmap-return {
@@ -1833,6 +1885,13 @@ body.screen-photos .photowall {
   z-index: 7;
   text-align: center;
 }
+@media (prefers-color-scheme: dark) {
+  .localmap-scale {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border-color: #fff;
+  }
+}
 .localmap-credits {
   display: block;
   position: absolute;
@@ -1845,6 +1904,12 @@ body.screen-photos .photowall {
   padding: 2px 4px;
   line-height: 1;
 }
+@media (prefers-color-scheme: dark) {
+  .localmap-credits {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+  }
+}
 .localmap-modal {
   position: absolute;
   top: 0;
@@ -1852,6 +1917,7 @@ body.screen-photos .photowall {
   left: 0;
   width: 70%;
   background-color: #fff;
+  color: #212121;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   z-index: 10;
   transform: translate3d(-125%, 0, 0);
@@ -1860,6 +1926,12 @@ body.screen-photos .photowall {
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
+}
+@media (prefers-color-scheme: dark) {
+  .localmap-modal {
+    color: #fff;
+    background-color: #212121;
+  }
 }
 .localmap-modal-icon, .localmap-modal-photo {
   flex: 0;
@@ -1902,6 +1974,11 @@ body.screen-photos .photowall {
   position: absolute;
   right: 0;
   top: 0;
+}
+@media (prefers-color-scheme: dark) {
+  .localmap-modal-closer {
+    background-image: url("../img/icon-close-inv.svg");
+  }
 }
 
 /*
@@ -2101,7 +2178,7 @@ body.screen-photos .photowall {
 }
 @media (prefers-color-scheme: dark) {
   .photocylinder-closer, .photocylinder-locator {
-    background-color: #90CAF9;
+    background-color: #FFB74D;
     color: #000;
   }
 }
@@ -2120,6 +2197,11 @@ body.screen-photos .photowall {
   background-position: center;
   background-image: url("../img/close.svg");
   background-size: 24px 24px;
+}
+@media (prefers-color-scheme: dark) {
+  .photocylinder-closer:before, .photocylinder-locator:before {
+    background-image: url("../img/close_inv.svg");
+  }
 }
 .photocylinder-closer:hover, .photocylinder-locator:hover {
   background: #ff9800;
@@ -2141,6 +2223,11 @@ body.screen-photos .photowall {
 }
 .photocylinder-locator:before {
   background-image: url("../img/map_2.svg");
+}
+@media (prefers-color-scheme: dark) {
+  .photocylinder-locator:before {
+    background-image: url("../img/map_2_drk.svg");
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
