@@ -46,7 +46,7 @@
     "styles_dev": "sass ./src/scss/styles.scss ./inc/css/styles.css --style expanded --update",
     "styles_prod": "sass ./src/scss/styles.scss ./inc/css/styles.css --style compressed",
     "styles_watch": "sass --watch ./src/scss:./inc/css --style expanded",
-    "import": "npm run import_gpx && npm run import_photos && npm run import_exif && npm run import_guides && import_trophies && npm run import_tiles && npm run convert_tiles",
+    "import": "npm run import_gpx && npm run import_photos && npm run import_exif && npm run import_guides && npm run import_trophies && npm run import_tiles && npm run convert_tiles",
     "dev": "npm run scripts_dev && npm run styles_dev",
     "prod": "npm run scripts_prod && npm run styles_prod",
     "build": "npm run import && prod",

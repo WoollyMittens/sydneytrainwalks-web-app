@@ -127,7 +127,7 @@
 						<h2>About This App</h2>
 						<figure>
 							<img src="./inc/img/icon.png" />
-							<figcaption><strong><?php print $title ?></strong> Version 2.5.0</figcaption>
+							<figcaption><strong><?php print $title ?></strong> Version 2.6.0</figcaption>
 						</figure>
 						<p>Thank you for supporting <?php print $title ?>. You make it possible for me to expand this guide and motivate people to enjoy Sydney's varied landscapes.</p>
 						<p>Please add your <a href="https://github.com/WoollyMittens/sydneytrainwalks-web-app/issues">suggestions and bug reports on GitHub</a>, or send them to <a href="mailto:maurice@woollymittens.nl">maurice@woollymittens.nl</a>.</p>

@@ -1127,7 +1127,7 @@ body.screen-guide .guide, body.screen-map .guide {
   transition-property: transform;
   transition-duration: 300ms;
   transform: translate(-100%, 0);
-  background: #212121;
+  background: #fff;
   bottom: 4rem;
   padding: 0;
   position: absolute;
@@ -1135,6 +1135,11 @@ body.screen-guide .guide, body.screen-map .guide {
   top: 4rem;
   width: 100%;
   z-index: 7;
+}
+@media (prefers-color-scheme: dark) {
+  .about {
+    background: #212121 none;
+  }
 }
 @media (max-width: 959px) {
   .about {

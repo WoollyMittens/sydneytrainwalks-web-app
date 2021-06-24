@@ -1,7 +1,7 @@
 {
 	"location": "Kamay Botany Bay",
-	"lon": 151.226821899,
-	"lat": -34.011329651,
+	"lon": 151.223206,
+	"lat": -34.008038,
 	"description": [
 		"A footpath leads all the way from the boulevard of <a href=\"https://www.sydney.com/destinations/sydney/sydney-south/cronulla/attractions/cronulla-beach\">Cronulla Beach</a> through the impressive <a href=\"https://www.weekendnotes.com/cronulla-sand-dunes/\">Wanda sand dunes</a> into <a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/kurnell-area\">Kamay Botany Bay National Park</a>.",
 		"A well maintained trail leads along the spectacular cliffs past the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/historic-buildings-places/cape-baily-lighthouse\">Cape Baily Lighthouse</a> to the whale watching lookout at <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/cape-solander\">Cape Solander</a>.",
@@ -215,24 +215,24 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "p4215766.jpg",
-			"lon": 151.195606,
-			"lat": -34.022659,
-			"description": "After a about two kilometres along the main road, enter the gravel road to Boat Harbour Park on the left."
+			"photo": "p4215766_pxl_20210612_022819462.jpg",
+			"lon": 151.18571666666668,
+			"lat": -34.025508333333335,
+			"description": "From the Skate Park and Boat Harbour Entrance, follow the footpath past the gate."
 		},
 		{
 			"type": "waypoint",
-			"photo": "p4215769.jpg",
-			"lon": 151.20298333333332,
-			"lat": -34.0315,
-			"description": "Follow the dusty road across the dunes back to the Boat Harbour Headland."
+			"photo": "p4215766_pxl_20210612_023440850.jpg",
+			"lon": 151.18445277777778,
+			"lat": -34.03012222222222,
+			"description": "At the intersection turn right and follow the path to the Wanda Sand Dunes."
 		},
 		{
 			"type": "waypoint",
-			"photo": "p4215800_p4215803.jpg",
-			"lon": 151.18592777777778,
-			"lat": -34.034330555555556,
-			"description": "Retrace your walk along the beach or through the dunes back to Cronulla."
+			"photo": "p4215766_pxl_20210612_023608512.jpg",
+			"lon": 151.18305833333332,
+			"lat": -34.030033333333336,
+			"description": "Follow the path through the dunes back to Cronulla."
 		},
 		{
 			"location": "Cronulla",
