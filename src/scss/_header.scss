@@ -14,12 +14,20 @@ header {
 		top: 0;
 		z-index: 8;
 
+		display: flex;
+
+		[data-color-scheme="dark"] & {
+			background-color: #424242;
+			border-bottom: solid 1px #212121;
+		}
+
 		@media (prefers-color-scheme: dark) {
 			background-color: #424242;
 			border-bottom: solid 1px #212121;
 		}
 
 		h1 {
+			flex: 1 1 auto;
 			margin: 0;
 		}
 
@@ -34,12 +42,16 @@ header {
 			color: #0D47A1;
 			text-decoration: none;
 
-			@media (max-width:959px) {
-				text-align: center;
+			[data-color-scheme="dark"] & {
+				color: #fff;
 			}
 
 			@media (prefers-color-scheme: dark) {
 				color: #fff;
+			}
+
+			@media (max-width:959px) {
+				text-align: center;
 			}
 
 			&:before {
@@ -54,9 +66,45 @@ header {
 				vertical-align: middle;
 				width: 4.25rem;
 
+				[data-color-scheme="dark"] & {
+					background-image: url("../img/logo-inv.svg");
+				}
+
 				@media (prefers-color-scheme: dark) {
 					background-image: url("../img/logo-inv.svg");
 				}
+			}
+		}
+
+		&:before {
+			content: "";
+			display: block;
+			width: 4rem;
+		}
+
+		.toggle-color-scheme {
+			cursor: pointer;
+			width: 4rem;
+			overflow: hidden;
+			white-space: nowrap;
+			text-indent: 150%;
+			border: none;
+			background-color: Transparent;
+			background-repeat: no-repeat;
+			background-size: auto 2rem;
+			background-position: center;
+			background-image: url("../img/contrast.svg");
+
+			[data-color-scheme="dark"] & {
+				background-image: url("../img/moon_inv.svg");
+			}
+
+			[data-color-scheme="light"] & {
+				background-image: url("../img/sun.svg");
+			}
+
+			@media (prefers-color-scheme: dark) {
+				background-image: url("../img/contrast_inv.svg");
 			}
 		}
 

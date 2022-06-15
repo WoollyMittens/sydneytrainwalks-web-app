@@ -11,9 +11,11 @@
 	top: 8rem;
 	width: 50%;
 	z-index: 3;
+	
 	@media (max-width:959px) {
 		width: 100%;
 	}
+
 	@media print {
 		transform: translate(0, 0);
 		position: relative !important;

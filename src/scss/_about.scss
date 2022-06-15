@@ -11,6 +11,10 @@
 	width: 100%;
 	z-index: 7;
 
+	[data-color-scheme="dark"] & {
+		background: #212121 none;
+	}
+
 	@media (prefers-color-scheme: dark) {
 		background: #212121 none;
 	}
@@ -28,7 +32,6 @@
 		bottom: auto !important;
 		left: auto !important;
 		opacity: 1 !important;
-		-webkit-opacity: 1 !important;
 		visibility: visible !important;
 		border: none !important;
 		padding: 0.5cm !important;

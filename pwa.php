@@ -56,7 +56,7 @@
 		</script>
 	</head>
 
-	<body class="screen-menu">
+	<body class="screen-menu" data-color-scheme="auto">
 
 		<!-- markup -->
 		<div class="web-margins">
@@ -65,6 +65,7 @@
 
 				<header class="title">
 					<h1><a href="/"><?php print $title ?><i><?php print " - " . $subtitle ?></i></a></h1>
+					<button class="toggle-color-scheme">Toggle dark mode</button>
 				</header>
 
 				<header class="subtitle">

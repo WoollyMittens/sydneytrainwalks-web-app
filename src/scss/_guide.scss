@@ -11,13 +11,20 @@
 	top: 8rem;
 	width: 50%;
 	z-index: 5;
+	
+	[data-color-scheme="dark"] & {
+		background: #212121;
+	}
+
 	@media (prefers-color-scheme: dark) {
 		background: #212121;
 	}
+
 	@media (max-width:959px) {
 		border-left: none;
 		width: 100%;
 	}
+
 	@media print {
 		transform: translate(0, 0) !important;
 		position: relative !important;
@@ -26,7 +33,6 @@
 		bottom: auto !important;
 		left: auto !important;
 		opacity: 1 !important;
-		-webkit-opacity: 1 !important;
 		visibility: visible !important;
 		border: none !important;
 		padding: 0.5cm !important;
@@ -66,6 +72,10 @@
 		padding: 1.5rem 2rem;
 		background-color: #FFFDE7;
 
+		[data-color-scheme="dark"] & {
+			background-color: #F57F1733;
+		}
+
 		@media (prefers-color-scheme: dark) {
 			background-color: #F57F1733;
 		}
@@ -85,6 +95,12 @@
 			height: auto;
 			width: 64px;
 			vertical-align: middle;
+
+			[data-color-scheme="dark"] & {
+				background-color: #fff;
+				border-radius: 50%;
+				padding: 5px;
+			}
 
 			@media (prefers-color-scheme: dark) {
 				background-color: #fff;
@@ -130,6 +146,11 @@
 
 	&-detour {
 		background-color: #FFEBEE;
+
+		[data-color-scheme="dark"] & {
+			background-color: #B71C1C66;
+		}
+
 		@media (prefers-color-scheme: dark) {
 			background-color: #B71C1C66;
 		}
@@ -137,6 +158,11 @@
 
 	&-attention {
 		background-color: #E3F2FD;
+
+		[data-color-scheme="dark"] & {
+			background-color: #0D47A166;
+		}
+
 		@media (prefers-color-scheme: dark) {
 			background-color: #0D47A166;
 		}
@@ -144,6 +170,11 @@
 
 	&-optional {
 		background-color: #F1F8E9;
+
+		[data-color-scheme="dark"] & {
+			background-color: #33691E66;
+		}
+
 		@media (prefers-color-scheme: dark) {
 			background-color: #33691E66;
 		}
@@ -197,6 +228,11 @@
 		text-indent: 125%;
 		cursor: pointer;
 		vertical-align: middle;
+
+		[data-color-scheme="dark"] & {
+			background-image: url("../img/marker-location-inv.svg");
+		}
+
 		@media (prefers-color-scheme: dark) {
 			background-image: url("../img/marker-location-inv.svg");
 		}

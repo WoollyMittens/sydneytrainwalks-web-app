@@ -23,7 +23,6 @@
 
 	* {
 		box-sizing: border-box;
-		-ms-interpolation-mode: bicubic;
 	}
 
 	li {
@@ -144,7 +143,6 @@
 	&-busy {
 		border-radius: 5px;
 		opacity: 0.8;
-		-webkit-opacity: 0.8;
 		background: #000 url("../img/busy.gif") no-repeat 50% 50%;
 		height: 48px;
 		left: 50%;
@@ -170,7 +168,6 @@
 	&-popup {
 		transition: opacity ease 500ms;
 		background: rgba(0, 0, 0, 0.9);
-		background: #000\9;
 		bottom: 0;
 		left: 0;
 		right: 0;
@@ -184,19 +181,14 @@
 
 		* {
 			box-sizing: border-box;
-			-ms-interpolation-mode: bicubic;
 		}
 
 		&-passive {
 			opacity: 0;
-			-webkit-opacity: 0;
-			visibility: hidden\9;
 		}
 
 		&-active {
 			opacity: 1;
-			-webkit-opacity: 1;
-			visibility: visible\9;
 		}
 	}
 
@@ -216,6 +208,11 @@
 		text-decoration: none;
 		z-index: 2;
 
+		[data-color-scheme="dark"] & {
+			background-color: #FFB74D;
+			color: #000;
+		}
+
 		@media (prefers-color-scheme: dark) {
 			background-color: #FFB74D;
 			color: #000;
@@ -226,6 +223,10 @@
 			background-image: url("../img/close.svg");
 			background-size: 24px 24px;
 
+			[data-color-scheme="dark"] & {
+				background-image: url("../img/close_inv.svg");
+			}
+
 			@media (prefers-color-scheme: dark) {
 				background-image: url("../img/close_inv.svg");
 			}
@@ -233,6 +234,11 @@
 
 		&:hover {
 			background: $color-hover;
+
+			[data-color-scheme="dark"] & {
+				background-color: #BBDEFB;
+				color: #000;
+			}
 	
 			@media (prefers-color-scheme: dark) {
 				background-color: #BBDEFB;
@@ -250,6 +256,10 @@
 
 		&:before {
 			background-image: url("../img/map_2.svg");
+
+			[data-color-scheme="dark"] & {
+				background-image: url("../img/map_2_drk.svg");
+			}
 
 			@media (prefers-color-scheme: dark) {
 				background-image: url("../img/map_2_drk.svg");

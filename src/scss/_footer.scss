@@ -14,6 +14,11 @@
 	align-items: center;
 	padding: 0 1rem;
 
+	[data-color-scheme="dark"] & {
+		background-color: #424242;
+		border-top: solid 1px #212121;
+	}
+
 	@media (prefers-color-scheme: dark) {
 		background-color: #424242;
 		border-top: solid 1px #212121;
@@ -43,6 +48,10 @@
 		flex: 0 1 auto;
 		filter: grayscale(1);
 
+		[data-color-scheme="dark"] & {
+			color: #fff;
+		}
+
 		@media (prefers-color-scheme: dark) {
 			color: #fff;
 		}
@@ -66,6 +75,10 @@
 	&:before {
 		background-image: url("../img/base.svg");
 
+		[data-color-scheme="dark"] & {
+			background-image: url("../img/base_inv.svg");
+		}
+
 		@media (prefers-color-scheme: dark) {
 			background-image: url("../img/base_inv.svg");
 		}
@@ -80,6 +93,10 @@
 	&:before {
 		background-image: url("../img/languages.svg");
 
+		[data-color-scheme="dark"] & {
+			background-image: url("../img/languages_inv.svg");
+		}
+
 		@media (prefers-color-scheme: dark) {
 			background-image: url("../img/languages_inv.svg");
 		}
@@ -89,6 +106,10 @@
 #footer-to-guide {
 	&:before {
 		background-image: url("../img/info_2.svg");
+
+		[data-color-scheme="dark"] & {
+			background-image: url("../img/info_2_inv.svg");
+		}
 
 		@media (prefers-color-scheme: dark) {
 			background-image: url("../img/info_2_inv.svg");
@@ -112,6 +133,10 @@
 	&:before {
 		background-image: url("../img/nature_1.svg");
 
+		[data-color-scheme="dark"] & {
+			background-image: url("../img/nature_1_inv.svg");
+		}
+
 		@media (prefers-color-scheme: dark) {
 			background-image: url("../img/nature_1_inv.svg");
 		}
@@ -121,6 +146,10 @@
 #footer-to-map {
 	&:before {
 		background-image: url("../img/map_1.svg");
+
+		[data-color-scheme="dark"] & {
+			background-image: url("../img/map_1_inv.svg");
+		}
 
 		@media (prefers-color-scheme: dark) {
 			background-image: url("../img/map_1_inv.svg");
@@ -137,6 +166,10 @@
 	&:before {
 		background-image: url("../img/profile_1.svg");
 
+		[data-color-scheme="dark"] & {
+			background-image: url("../img/profile_1_inv.svg");
+		}
+
 		@media (prefers-color-scheme: dark) {
 			background-image: url("../img/profile_1_inv.svg");
 		}
@@ -146,6 +179,10 @@
 #footer-to-trophies {
 	&:before {
 		background-image: url("../img/hotspot.svg");
+
+		[data-color-scheme="dark"] & {
+			background-image: url("../img/hotspot_inv.svg");
+		}
 
 		@media (prefers-color-scheme: dark) {
 			background-image: url("../img/hotspot_inv.svg");

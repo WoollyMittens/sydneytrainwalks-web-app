@@ -8,6 +8,7 @@ $color-disabled: #7f7f7f;
 $color-highlight: #eeeeee;
 $iconSize: 64px;
 $remSize: 16;
+
 /* Hides text in the margin */
 @mixin obfuscate ($distance:100) {
 	overflow: hidden;
@@ -15,6 +16,7 @@ $remSize: 16;
 	text-indent: ($distance + 10) + px;
 	white-space: nowrap;
 }
+
 /* Turns a button into an icon */
 @mixin iconParent ($size:32) {
 	overflow: hidden;
@@ -26,6 +28,7 @@ $remSize: 16;
 	overflow: visible;
 	text-indent: -999em;
 }
+
 /* Centres a graphic inside an icon */
 @mixin iconCenter ($size:32) {
 	content: '';
@@ -41,11 +44,13 @@ $remSize: 16;
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
 /* Offers both the pixel and rem value of a single property */
 @mixin rem ($name:'', $value:'') {
 	#{$name}: ($remSize * $value) + px;
 	#{$name}: $value + rem;
 }
+
 /* Offers both the pixel and rem values of a shorthand property */
 @mixin rems ($name:'', $top:'', $right:'', $bottom:'', $left:'') {
 	@if $top != '' {
@@ -68,6 +73,7 @@ $remSize: 16;
 		#{$name}-left: $left + rem;
 	}
 }
+
 /* Offers the text size as both the pixel and rem value */
 @mixin text ($size) {
 	@if $size == s {
@@ -94,6 +100,7 @@ $remSize: 16;
 		font-size: $size + rem;
 	}
 }
+
 /* Adds vendor prefixed to a property */
 @mixin vendors ($name:'', $value:'') {
 	-o-#{$name}: #{$value};
@@ -102,6 +109,7 @@ $remSize: 16;
 	-webkit-#{$name}: #{$value};
 	#{$name}: #{$value};
 }
+
 /* Applies the "clearfix" hack to a container with floating content */
 @mixin clearfix () {
 	*zoom: 1;

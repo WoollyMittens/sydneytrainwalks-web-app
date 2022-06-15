@@ -10,6 +10,10 @@
 	top: 4rem;
 	z-index: 6;
 
+	[data-color-scheme="dark"] & {
+		background: #212121 none;
+	}
+
 	@media (prefers-color-scheme: dark) {
 		background: #212121 none;
 	}

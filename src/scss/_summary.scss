@@ -14,6 +14,10 @@
 	-webkit-overflow-scrolling: touch;
 	display: none;
 
+	[data-color-scheme="dark"] & {
+		background: #212121 none;
+	}
+
 	@media (prefers-color-scheme: dark) {
 		background: #212121 none;
 	}
@@ -46,6 +50,11 @@
 		border-color: #212121;
 		height: 1px;
 		border: none;
+
+		[data-color-scheme="dark"] & {
+			background-color: #616161;
+			border-color: #616161;
+		}
 
 		@media (prefers-color-scheme: dark) {
 			background-color: #616161;
