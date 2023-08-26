@@ -1,0 +1,575 @@
+{
+	"key": "_index",
+	"bounds": {
+		"north": -32.10118973232095,
+		"west": 149.94140625,
+		"south": -35.02999636902566,
+		"east": 152.75390625
+	},
+	"markers": [
+		{
+			"type": "walk",
+			"lon": 151.709437,
+			"lat": -32.99588499999999,
+			"id": "adamstown-fernleightrack-belmont"
+		},
+		{
+			"type": "walk",
+			"lon": 151.908569336,
+			"lat": -32.82862091100001,
+			"id": "annabay-worimi-stockton"
+		},
+		{
+			"type": "walk",
+			"lon": 151.724046,
+			"lat": -32.989356,
+			"id": "belmont-awabakal-newcastle"
+		},
+		{
+			"type": "walk",
+			"lon": 151.121872,
+			"lat": -33.62517200000001,
+			"id": "berowra-berowravalley-mtkuringgai"
+		},
+		{
+			"type": "walk",
+			"lon": 151.1004518811,
+			"lat": -33.646977609,
+			"id": "berowra-crosslands-asquith"
+		},
+		{
+			"type": "walk",
+			"lon": 150.848124,
+			"lat": -32.979703,
+			"id": "bigyango-yengo-bigyango"
+		},
+		{
+			"type": "walk",
+			"lon": 150.298587475,
+			"lat": -33.6188855767,
+			"id": "blackheath-baltzerlookout-blackheath"
+		},
+		{
+			"type": "walk",
+			"lon": 150.327468872,
+			"lat": -33.654994965,
+			"id": "blackheath-grandcanyon-blackheath"
+		},
+		{
+			"type": "walk",
+			"lon": 150.352814,
+			"lat": -33.603989,
+			"id": "blackheath-grosevalley-blackheath"
+		},
+		{
+			"type": "walk",
+			"lon": 150.664047,
+			"lat": -33.65303,
+			"id": "blaxland-yellomundee-richmond"
+		},
+		{
+			"type": "walk",
+			"lon": 152.3782,
+			"lat": -32.455845,
+			"id": "boomeri-mungobrush-boomeri"
+		},
+		{
+			"type": "walk",
+			"lon": 151.694244385,
+			"lat": -32.967464447,
+			"id": "booragul-glenrock-newcastle"
+		},
+		{
+			"type": "walk",
+			"lon": 151.401918,
+			"lat": -33.513824,
+			"id": "bouddi-maitlandbay-bouddi"
+		},
+		{
+			"type": "walk",
+			"lon": 151.124542236,
+			"lat": -33.771183014,
+			"id": "chatswood-lanecovepark-thornleigh"
+		},
+		{
+			"type": "walk",
+			"lon": 151.269287,
+			"lat": -33.90979,
+			"id": "coogeebeach-coastalwalk-bondibeach"
+		},
+		{
+			"type": "walk",
+			"lon": 151.19972229,
+			"lat": -33.586273193,
+			"id": "cowan-taffyslookout-brooklyn"
+		},
+		{
+			"type": "walk",
+			"lon": 151.223206,
+			"lat": -34.008038,
+			"id": "cronulla-kamaybotanybay-cronulla"
+		},
+		{
+			"type": "walk",
+			"lon": 151.084723,
+			"lat": -34.093615,
+			"id": "cronulla-royalnationalpark-loftus"
+		},
+		{
+			"type": "walk",
+			"lon": 151.151459,
+			"lat": -34.055347,
+			"id": "cronulla-royalnationalpark-otford"
+		},
+		{
+			"type": "walk",
+			"lon": 151.0928497463,
+			"lat": -33.5231111851,
+			"id": "fiddletown-marramarra-fiddletown"
+		},
+		{
+			"type": "walk",
+			"lon": 150.849564,
+			"lat": -34.703884,
+			"id": "gerringong-kiamacoastwalk-kiama"
+		},
+		{
+			"type": "walk",
+			"lon": 150.6128664315,
+			"lat": -33.7998189311,
+			"id": "glenbrook-redhandcave-glenbrook"
+		},
+		{
+			"type": "walk",
+			"lon": 151.379211,
+			"lat": -33.41927,
+			"id": "gosford-rumbalara-lisarow"
+		},
+		{
+			"type": "walk",
+			"lon": 152.1990558598,
+			"lat": -32.698018346,
+			"id": "hawkesnest-mountyacaaba-hawkesnest"
+		},
+		{
+			"type": "walk",
+			"lon": 151.052399,
+			"lat": -34.075839,
+			"id": "heathcote-royalnationalpark-loftus"
+		},
+		{
+			"type": "walk",
+			"lon": 151.011638,
+			"lat": -33.758301,
+			"id": "hornsby-cumberlandstateforest-parramatta"
+		},
+		{
+			"type": "walk",
+			"lon": 150.302277,
+			"lat": -33.730408,
+			"id": "katoomba-federalpass-katoomba"
+		},
+		{
+			"type": "walk",
+			"lon": 150.372177,
+			"lat": -33.775097,
+			"id": "katoomba-kedumbapass-wentworthfalls"
+		},
+		{
+			"type": "walk",
+			"lon": 151.5616980381,
+			"lat": -33.239074219,
+			"id": "lakehaven-budgewoi-lakehaven"
+		},
+		{
+			"type": "walk",
+			"lon": 151.600996,
+			"lat": -33.195254,
+			"id": "lakehaven-munmorah-swansea"
+		},
+		{
+			"type": "walk",
+			"lon": 151.252969,
+			"lat": -33.968606,
+			"id": "laperouse-botanybay-bondibeach"
+		},
+		{
+			"type": "walk",
+			"lon": 151.092063,
+			"lat": -33.31566,
+			"id": "mangrovemountain-tenmilehollow-mangrovemountain"
+		},
+		{
+			"type": "walk",
+			"lon": 151.0710396152,
+			"lat": -33.3946151845,
+			"id": "millcreek-elevenkilometrecircuit-millcreek"
+		},
+		{
+			"type": "walk",
+			"lon": 151.252074,
+			"lat": -33.827475,
+			"id": "milsonspoint-sydneyharbour-manly"
+		},
+		{
+			"type": "walk",
+			"lon": 150.85791,
+			"lat": -34.65319100000001,
+			"id": "minnamurra-illawarra-kiama"
+		},
+		{
+			"type": "walk",
+			"lon": 150.4298116174,
+			"lat": -34.4115753192,
+			"id": "mittagong-boxvale-mittagong"
+		},
+		{
+			"type": "walk",
+			"lon": 150.492184,
+			"lat": -34.345013,
+			"id": "mittagong-pictonloop-tahmoor"
+		},
+		{
+			"type": "walk",
+			"lon": 151.096179,
+			"lat": -33.159032,
+			"id": "mogocampground-dharug-mogocampground"
+		},
+		{
+			"type": "walk",
+			"lon": 150.745795,
+			"lat": -33.720748,
+			"id": "mtdruitt-greatwestwalk-penrith"
+		},
+		{
+			"type": "walk",
+			"lon": 151.123443604,
+			"lat": -33.59995651200001,
+			"id": "mtkuringgai-berowravalley-cowan"
+		},
+		{
+			"type": "walk",
+			"lon": 151.182632,
+			"lat": -33.710854,
+			"id": "mtkuringgai-garigal-roseville"
+		},
+		{
+			"type": "walk",
+			"lon": 151.160187,
+			"lat": -33.640587,
+			"id": "mtkuringgai-kuringgaichase-berowra"
+		},
+		{
+			"type": "walk",
+			"lon": 151.1524827965,
+			"lat": -33.6230559926,
+			"id": "mtkuringgai-kuringgaichase-mtkuringgai"
+		},
+		{
+			"type": "walk",
+			"lon": 151.167389,
+			"lat": -33.671909,
+			"id": "mtkuringgai-kuringgaichase-wildflowergarden"
+		},
+		{
+			"type": "walk",
+			"lon": 151.142303,
+			"lat": -33.688545,
+			"id": "mtkuringgai-sphynx-mtcolah"
+		},
+		{
+			"type": "walk",
+			"lon": 150.151232,
+			"lat": -33.512355,
+			"id": "mtvictoria-hassanswalls-lithgow"
+		},
+		{
+			"type": "walk",
+			"lon": 150.2275947119412,
+			"lat": -33.54677200305883,
+			"id": "mtvictoria-mtyork-mtvictoria"
+		},
+		{
+			"type": "walk",
+			"lon": 152.313034,
+			"lat": -32.53864,
+			"id": "mungobrush-mungopoint-mungobrush"
+		},
+		{
+			"type": "walk",
+			"lon": 152.280048,
+			"lat": -32.579978,
+			"id": "mungobrush-mungotrack-mungobrush"
+		},
+		{
+			"type": "walk",
+			"lon": 151.3269169908,
+			"lat": -33.3876485657,
+			"id": "narara-strickland-narara"
+		},
+		{
+			"type": "walk",
+			"lon": 152.179443,
+			"lat": -32.723175,
+			"id": "nelsonbay-fingalbay-nelsonbay"
+		},
+		{
+			"type": "walk",
+			"lon": 152.171461,
+			"lat": -32.754002,
+			"id": "nelsonbay-tomaree-nelsonbay"
+		},
+		{
+			"type": "walk",
+			"lon": 151.606468,
+			"lat": -33.20028499999999,
+			"id": "norahhead-munmorah-swanseaheads"
+		},
+		{
+			"type": "walk",
+			"lon": 151.317324,
+			"lat": -33.671827,
+			"id": "palmbeach-northernbeaches-manly"
+		},
+		{
+			"type": "walk",
+			"lon": 151.329495,
+			"lat": -33.636551,
+			"id": "palmbeach-northernbeaches-narrabeen"
+		},
+		{
+			"type": "walk",
+			"lon": 151.126663208,
+			"lat": -33.83661651599999,
+			"id": "parramatta-darlingharbour-townhall"
+		},
+		{
+			"type": "walk",
+			"lon": 150.8404602483,
+			"lat": -33.7761111371,
+			"id": "parramatta-greatwestwalk-penrith"
+		},
+		{
+			"type": "walk",
+			"lon": 150.865936,
+			"lat": -34.579792,
+			"id": "portkembla-illawarra-kiama"
+		},
+		{
+			"type": "walk",
+			"lon": 151.219163,
+			"lat": -33.781456,
+			"id": "roseville-garigal-manly"
+		},
+		{
+			"type": "walk",
+			"lon": 151.531679,
+			"lat": -33.235431,
+			"id": "sanremo-budgewoilake-budgewoi"
+		},
+		{
+			"type": "walk",
+			"lon": 151.267107,
+			"lat": -33.810701,
+			"id": "spit-sydneyharbour-manly"
+		},
+		{
+			"type": "walk",
+			"lon": 150.571731567,
+			"lat": -33.750701904,
+			"id": "springwood-sassafrasgully-glenbrook"
+		},
+		{
+			"type": "walk",
+			"lon": 150.609223,
+			"lat": -33.626045,
+			"id": "springwood-springwoodridge-richmond"
+		},
+		{
+			"type": "walk",
+			"lon": 150.94722,
+			"lat": -34.26797499999999,
+			"id": "stanwellpark-illawarraescarpment-thiroul"
+		},
+		{
+			"type": "walk",
+			"lon": 152.5169190019,
+			"lat": -32.310636621,
+			"id": "sunsetpicnic-bootibooti-theruins"
+		},
+		{
+			"type": "walk",
+			"lon": 151.252061,
+			"lat": -33.839926,
+			"id": "tarongazoo-sydneyharbour-balmoralbeach"
+		},
+		{
+			"type": "walk",
+			"lon": 151.6784999426,
+			"lat": -33.0296226963,
+			"id": "teralba-belmont-newcastle"
+		},
+		{
+			"type": "walk",
+			"lon": 151.632483,
+			"lat": -32.994152,
+			"id": "teralba-greenpoint-belmont"
+		},
+		{
+			"type": "walk",
+			"lon": 151.391513,
+			"lat": -33.523021,
+			"id": "terrigal-bouddi-woywoy"
+		},
+		{
+			"type": "walk",
+			"lon": 151.2768053636,
+			"lat": -33.0356877577,
+			"id": "thebasin-olneystateforest-thebasin"
+		},
+		{
+			"type": "walk",
+			"lon": 151.438919067,
+			"lat": -33.48014450100001,
+			"id": "theentrance-bouddi-woywoy"
+		},
+		{
+			"type": "walk",
+			"lon": 151.538238,
+			"lat": -33.302181,
+			"id": "toukley-wyrrabalong-toukley"
+		},
+		{
+			"type": "walk",
+			"lon": 151.447586,
+			"lat": -33.353123,
+			"id": "tuggerah-laketuggerah-theentrance"
+		},
+		{
+			"type": "walk",
+			"lon": 151.549835,
+			"lat": -33.275192,
+			"id": "tuggerah-laketuggerah-wyong"
+		},
+		{
+			"type": "walk",
+			"lon": 151.3048441708,
+			"lat": -32.9745873716,
+			"id": "wataganhq-congewaicreek-wataganhq"
+		},
+		{
+			"type": "walk",
+			"lon": 150.973922729,
+			"lat": -34.10741806,
+			"id": "waterfall-heathcotenp-heathcote"
+		},
+		{
+			"type": "walk",
+			"lon": 151.034806,
+			"lat": -34.104466,
+			"id": "waterfall-heathcotenp-loftus"
+		},
+		{
+			"type": "walk",
+			"lon": 151.040833,
+			"lat": -34.126251,
+			"id": "waterfall-ladycarringtondrive-loftus"
+		},
+		{
+			"type": "walk",
+			"lon": 151.079605,
+			"lat": -34.15308399999999,
+			"id": "waterfall-royalnationalpark-helensburgh"
+		},
+		{
+			"type": "walk",
+			"lon": 150.3837035224,
+			"lat": -33.8877254818,
+			"id": "wentworthfalls-mcmahonspoint-wentworthfalls"
+		},
+		{
+			"type": "walk",
+			"lon": 150.357971,
+			"lat": -33.718781,
+			"id": "wentworthfalls-nationalpass-wentworthfalls"
+		},
+		{
+			"type": "walk",
+			"lon": 151.191269,
+			"lat": -33.74744,
+			"id": "wildflowergarden-garigal-roseville"
+		},
+		{
+			"type": "walk",
+			"lon": 150.60991,
+			"lat": -33.649933,
+			"id": "winmalee-bluegumswamp-winmalee"
+		},
+		{
+			"type": "walk",
+			"lon": 151.0629549343,
+			"lat": -33.3422619849,
+			"id": "wisemansferry-devineshill-wisemansferry"
+		},
+		{
+			"type": "walk",
+			"lon": 150.92388916,
+			"lat": -34.34223938,
+			"id": "wollongong-illawarracoast-coalcliff"
+		},
+		{
+			"type": "walk",
+			"lon": 151.274993896,
+			"lat": -33.483669281,
+			"id": "wondabyne-brisbanewater-woywoy"
+		},
+		{
+			"type": "walk",
+			"lon": 151.367111,
+			"lat": -33.529713,
+			"id": "woywoy-bouddi-woywoy"
+		},
+		{
+			"type": "walk",
+			"lon": 151.311188,
+			"lat": -33.463604,
+			"id": "woywoy-koolewong-gosford"
+		},
+		{
+			"type": "walk",
+			"lon": 151.281769,
+			"lat": -33.551674,
+			"id": "woywoy-patonga-woywoy"
+		},
+		{
+			"type": "walk",
+			"lon": 151.379486,
+			"lat": -33.418396,
+			"id": "woywoy-rumbalara-lisarow"
+		},
+		{
+			"type": "walk",
+			"lon": 151.275956,
+			"lat": -33.488868,
+			"id": "woywoy-stapleslookout-woywoy"
+		},
+		{
+			"type": "walk",
+			"lon": 151.435593,
+			"lat": -33.46534399999999,
+			"id": "woywoy-wyrrabalong-tuggerah"
+		},
+		{
+			"type": "walk",
+			"lon": 151.5541560017,
+			"lat": -33.2744629495,
+			"id": "wyong-munmorah-tuggerah"
+		},
+		{
+			"type": "walk",
+			"lon": 152.5092035439,
+			"lat": -32.4512054957,
+			"id": "yagon-myalllakes-sealrocks"
+		}
+	]
+}

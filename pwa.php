@@ -258,6 +258,29 @@
 
 		<!-- scripts -->
 
+		<!-- TODO: modernised
+
+		<script>
+			const stwDomain = '<?php print $domain ?>';
+			const stwConfig = {
+				'local': './inc',
+				'remote': `https://${stwDomain}/inc`,
+				'exifCache': `https://${stwDomain}/inc/json/photos.json`,
+				'guideCache': `https://${stwDomain}/inc/json/guides.json`,
+				'gpxCache': `https://${stwDomain}/inc/json/gpx.json`,
+				'exif': `https://${stwDomain}/imageexif.php?src={src}`,
+				'guide': `https://${stwDomain}/inc/guides/{id}.json`,
+				'gpx': `https://${stwDomain}/inc/gpx/{id}.gpx`,
+				//'slice' : 'https://${stwDomain}/imageslice.php?src={src}&{size}',
+				'slice' : `https://${stwDomain}/{src}`
+			};
+		</script>
+		<script async type="module" src="./src/sydneytrainwalks.js"></script>
+
+		 -->
+
+		<!-- TODO: original -->
+
 		<script src="./inc/js/exif-data.js?t=<?php print $revision ?>"></script>
 		<script src="./inc/js/guide-data.js?t=<?php print $revision ?>"></script>
 		<script src="./inc/js/gpx-data.js?t=<?php print $revision ?>"></script>

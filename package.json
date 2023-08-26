@@ -51,5 +51,8 @@
     "prod": "npm run scripts_prod && npm run styles_prod",
     "build": "npm run import && prod",
     "watch": "npm-watch"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.1"
   }
 }

@@ -1,5 +1,6 @@
 Sitemap: https://www.sydneyhikingtrips.com/sitemap.php
 User-agent: *
+Disallow: /tmp/*
 Disallow: /overview.php
 Disallow: /pwa.php
 Disallow: /imageexif.php
