@@ -26,7 +26,7 @@
 		// for each entry
 		foreach ($json as $name => $value) {
 			if ($value->{'key'} !== '_index') {
-				echo '<url><loc>https://' . $domain . '/details.php?id='. $value->{'key'} . '</loc><lastmod>' . $value->{'updated'} . '</lastmod><changefreq>Monthly</changefreq></url>';
+				echo '<url><loc>https://' . $domain . '/index.php?id='. $value->{'key'} . '</loc><lastmod>' . $value->{'updated'} . '</lastmod><changefreq>Monthly</changefreq></url>';
 			}
 		}
 	?>

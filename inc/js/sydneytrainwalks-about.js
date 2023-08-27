@@ -1,20 +1,12 @@
-// extend the class
-SydneyTrainWalks.prototype.About = function(parent) {
+export class About {
+	constructor(parent) {
+		this.parent = parent;
+		this.config = parent.config;
+		this.config.extend({
+			'about': document.querySelector('.about')
+		});
+		this.init();
+	}
 
-	// PROPERTIES
-
-	this.parent = parent;
-	this.config = parent.config;
-	this.config.extend({
-		'about': document.querySelector('.about')
-	});
-
-	// METHODS
-
-	this.init = function() {};
-
-	// EVENTS
-
-	if(parent) this.init();
-
+	init() {}
 };
