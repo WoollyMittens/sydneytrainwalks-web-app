@@ -1,14 +1,9 @@
 // dependencies
 import fsp from 'fs/promises';
+import { long2tile, lat2tile, tile2long, tile2lat } from "../inc/slippy.js";
 const guides = '../inc/guides/';
 const exifs = '../inc/exifs/';
 const routes = '../inc/routes/';
-
-// slippy map tilenames - https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#ECMAScript_.28JavaScript.2FActionScript.2C_etc..29
-function long2tile(lon,zoom) { return (Math.floor((lon+180)/360*Math.pow(2,zoom))); }
-function lat2tile(lat,zoom)  { return (Math.floor((1-Math.log(Math.tan(lat*Math.PI/180) + 1/Math.cos(lat*Math.PI/180))/Math.PI)/2 *Math.pow(2,zoom))); }
-function tile2long(x,z) { return (x/Math.pow(2,z)*360-180); }
-function tile2lat(y,z) { var n=Math.PI-2*Math.PI*y/Math.pow(2,z); return (180/Math.PI*Math.atan(0.5*(Math.exp(n)-Math.exp(-n)))); }
 
 // flatten geojson segments
 function flattenCoordinates(route) {
@@ -67,6 +62,7 @@ function generateIndex(guides) {
 		south = Math.min(guides[key].bounds.south, south);
 		east = Math.max(guides[key].bounds.east, east);
 		// add a marker from the centre of the guide
+		// TODO: add "start, finish, region, duration, length, revised" to the summary
 		overview.markers.push({
 			'type': 'walk',
 			'lon': guides[key].lon,

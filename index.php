@@ -47,13 +47,6 @@
 		<link rel="canonical" href="https://<?php print $domain ?>/pwa.php">
 		<link rel="manifest" href="./manifest.json" />
 		<link rel="stylesheet" href="./inc/css/styles.css?t=<?php print $revision ?>"/>
-		<script async src="https://www.googletagmanager.com/gtag/js?id=<?php print $analytics ?>"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-		  gtag('config', '<?php print $analytics ?>');
-		</script>
 	</head>
 
 	<body class="screen-menu" data-color-scheme="auto">
@@ -160,24 +153,23 @@
 		</div>
 
 		<!-- templates -->
-		<!-- TODO: make actual template tag -->
 
-		<script id="title-template" type="text/template">
+		<template id="title-template">
 			<span class="sign from">A hiking trip from</span>
 			<span class="sign start sign-short {startTransport}">{startLocation}</span>
 			<span class="sign to">to</span>
 			<span class="sign finish sign-short {endTransport}">{endLocation}</span>
 			<span class="sign via">via</span>
 			<span class="sign park sign-short">{walkLocation} <em>{walkDuration}h / <span>{walkDistance}</span>km</em></span>
-		</script>
+		</template>
 
-		<script id="menu-template" type="text/template">
+		<template id="menu-template">
 			<li data-id="{id}">
 				<a href="?key={id}">{title}</a>
 			</li>
-		</script>
+		</template>
 
-		<script id="guide-template" type="text/template">
+		<template id="guide-template">
 			<div class="guide-scroller">
 				<h2>About this walk</h2>
 				<time datetime="{updated}">Updated: {date}</time>
@@ -201,22 +193,22 @@
 					<li>Also bring a light windbreaker/raincoat in case you get caught out in the rain.</li>
 				</ul>
 			</div>
-		</script>
+		</template>
 
-		<script id="thumbnail-template" type="text/template">
+		<template id="thumbnail-template">
 			<p class="guide-landmark">
 				<a class="cylinder-image" href="./inc/medium/{id}/{src}" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/{id}/{src});" data-title="{description}">
 					<img alt="Photo of the waypoint" src="./inc/small/{id}/{src}"/>
 				</a>
 				<span class="guide-text">{description} <button class="guide-locate" data-url="./inc/medium/{id}/{src}" data-title="{description}">Show location</button></span>
 			</p>
-		</script>
+		</template>
 
-		<script id="wall-template" type="text/template">
+		<template id="wall-template">
 			<li><a class="cylinder-image" style="background-image:url('./inc/small/{id}/{src}');" href="./inc/medium/{id}/{src}"><img alt="Impression of the trail" src="./inc/small/{id}/{src}"/></a></li>
-		</script>
+		</template>
 
-		<script id="footer-template" type="text/template">
+		<template id="footer-template">
 			<nav>
 				<a id="footer-to-menu" href="?screen=menu">Menu</a>
 				<a id="footer-to-overview" href="?screen=overview">Overview</a>
@@ -226,13 +218,13 @@
 				<a id="footer-to-trophies" href="?screen=trophies">Trophies</a>
 				<a id="footer-to-about" href="?screen=about">About</a>
 			</nav>
-		</script>
+		</template>
 
-		<script id="credit-template" type="text/template">
+		<template id="credit-template">
 			Maps &copy; <a href="http://www.4umaps.com/">4UMaps</a>. Data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> and contributors, CC BY-SA
-		</script>
+		</template>
 
-		<script id="trophies-template" type="text/template">
+		<template id="trophies-template">
 			<figure>
 				<img alt="{icon} icon" src="./inc/img/{icon}.svg" />
 				<figcaption>
@@ -240,9 +232,9 @@
 					<button class="guide-locate" data-type="{type}" data-lat="{lat}" data-lon="{lon}" data-title="{title}">Show location</button>
 				</figcaption>
 			</figure>
-		</script>
+		</template>
 
-		<script id="trophy-template" type="text/template">
+		<template id="trophy-template">
 			<header>
 				<h2>Trophy awarded:</h2>
 				<img alt="{icon} icon" src="./inc/img/{icon}.svg" />
@@ -255,7 +247,7 @@
 			<footer>
 				<button>Continue</button>
 			</footer>
-		</script>
+		</template>
 
 		<!-- scripts -->
 		<script>
@@ -274,10 +266,10 @@
 				'slice' : `https://${stwDomain}/inc/medium/{src}`
 			};
 		</script>
-		<script async type="module" src="./src/sydneytrainwalks.js"></script>
+		<script async type="module" src="./inc/js/sydneytrainwalks.js"></script>
 		<script>
 			// register the service worker for offline content
-			if('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js?t=<?php print $revision ?>');
+			//if('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js?t=<?php print $revision ?>');
 		</script>
 
 	</body>

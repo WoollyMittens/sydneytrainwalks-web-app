@@ -6,8 +6,9 @@ import { Header } from "./sydneytrainwalks-header.js";
 import { Index } from "./sydneytrainwalks-index.js";
 import { Overview } from "./sydneytrainwalks-overview.js";
 import { Trophies } from "./sydneytrainwalks-trophies.js";
+import { Editor } from "./editor.js";
 
-class SydneyTrainWalks {
+export class SydneyTrainWalks {
 	constructor(config) {
 		this.config = config || {};
 		this.config.extend = function(properties) {
@@ -24,6 +25,7 @@ class SydneyTrainWalks {
 		this.index = new Index(this);
 		this.overview = new Overview(this);
 		this.trophies = new Trophies(this);
+		this.editor = new Editor();
 		// start the app
 		this.init();
 	}
@@ -86,4 +88,7 @@ class SydneyTrainWalks {
 	}
 }
 
-new SydneyTrainWalks(stwConfig);
+// autostart if preconfigured
+if (typeof stwConfig !== undefined) {
+	const sydneyTrainWalks = new SydneyTrainWalks(stwConfig);
+}

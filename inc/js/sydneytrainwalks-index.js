@@ -1,54 +1,24 @@
-// extend the class
-SydneyTrainWalks.prototype.Index = function(parent) {
+export class Index {
+	constructor(parent) {
+		this.parent = parent;
+		this.searchFor = '';
+		this.searchDelay = null;
+		this.sortBy = 'length';
+		this.config = parent.config;
+		this.config.extend({
+			'searchForm': document.getElementById('sorting'),
+			'searchInput': document.querySelector('.searching-label input'),
+			'sortSelect': document.querySelector('.sorting-label select'),
+			'filterSelect': document.querySelector('.filtering-label select'),
+			'menu': document.querySelector('.navigation > menu'),
+			'titleTemplate': document.getElementById('title-template'),
+			'menuTemplate': document.getElementById('menu-template'),
+			'guideTemplate': document.getElementById('guide-template')
+		});
+		this.init();
+	}
 
-	// PROPERTIES
-
-	this.parent = parent;
-	this.searchFor = '';
-	this.searchDelay = null;
-	this.sortBy = 'length';
-	this.config = parent.config;
-	this.config.extend({
-		'searchForm': document.getElementById('sorting'),
-		'searchInput': document.querySelector('.searching-label input'),
-		'sortSelect': document.querySelector('.sorting-label select'),
-		'filterSelect': document.querySelector('.filtering-label select'),
-		'menu': document.querySelector('.navigation > menu'),
-		'titleTemplate': document.getElementById('title-template'),
-		'menuTemplate': document.getElementById('menu-template'),
-		'guideTemplate': document.getElementById('guide-template')
-	});
-
-	// METHODS
-
-	this.init = function() {
-		var searchForm = this.config.searchForm;
-		var searchInput = this.config.searchInput;
-		var sortSelect = this.config.sortSelect;
-		var filterSelect = this.config.filterSelect;
-		// build the menu
-		this.update();
-		// add the global click handler to the menu
-		this.config.menu.addEventListener('click', this.onMenuClicked.bind(this));
-		// event handlers for search option
-		searchInput.addEventListener('focus', this.onFieldFocus.bind(this));
-		searchInput.addEventListener('blur', this.onSearchChanged.bind(this, searchInput));
-		searchInput.addEventListener('keyup', this.onSearchChanged.bind(this, searchInput));
-		searchInput.addEventListener('change', this.onSearchChanged.bind(this, searchInput));
-		// event handlers for the sort option
-		sortSelect.addEventListener('focus', this.onFieldFocus.bind(this));
-		sortSelect.addEventListener('change', this.onSortSelected.bind(this, sortSelect));
-		// event handlers for the filter option
-		filterSelect.addEventListener('focus', this.onFieldFocus.bind(this));
-		filterSelect.addEventListener('change', this.onFilterSelected.bind(this, filterSelect));
-		// event handler for the form submit
-		searchForm.addEventListener('submit', this.onSearchSubmitted.bind(this, searchInput));
-		// add the reset button to browsers that need it
-		if (!/MSIE/i.test(navigator.userAgent)) { searchInput.addEventListener('click', this.onSearchReset.bind(this, searchInput)); }
-		else { searchInput.style.backgroundImage = 'none'; }
-	};
-
-	this.update = function() {
+	update() {
 		var id, markers, menuHtml = '', titleHtml = '';
 		var menuTemplate = this.config.menuTemplate.innerHTML;
 		var titleTemplate = this.config.titleTemplate.innerHTML;
@@ -82,9 +52,9 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 		this.config.menu.innerHTML = (menuHtml === '')
 			? '<li class="no-results">No results...</li>'
 			: menuHtml;
-	};
+	}
 
-	this.searchGuide = function(guideIds, keyword) {
+	searchGuide(guideIds, keyword) {
 		var id, locations = '', searched = [], search = new RegExp(keyword, 'i');
 		// create an array of guides
 		guideIds.map(function(id){
@@ -100,9 +70,9 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 		});
 		// return the searched guides
 		return searched;
-	};
+	}
 
-	this.sortGuide = function(guideIds, option) {
+	sortGuide(guideIds, option) {
 		var id, unsorted = guideIds, sorted = [];
 		// sort the array by the prefered method
 		switch (option) {
@@ -153,9 +123,9 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 		}
 		// return the ordered guides
 		return sorted;
-	};
+	}
 
-	this.filterGuide = function(guideIds, option) {
+	filterGuide(guideIds, option) {
 		var id, unfiltered = guideIds, filtered = [];
 		// filter the array by the prefered method
 		switch (option) {
@@ -208,9 +178,9 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 		}
 		// return the ordered guides
 		return filtered;
-	};
+	}
 
-	this.mirrorResults = function (guideIds, sortedIds) {
+	mirrorResults(guideIds, sortedIds) {
 		// show/hide markers based on filter results using Array.indexOf()
 		guideIds.map(function(id) {
 			var visibility = (sortedIds.indexOf(id) > -1) ? 'visible' : 'hidden';
@@ -219,17 +189,15 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 				elements[a].style.visibility = visibility;
 			}
 		});
-	};
+	}
 
-	// EVENTS
-
-	this.onFieldFocus = function(evt) {
+	onFieldFocus(evt) {
 		// reset the previous state
 		window.localStorage.setItem('id', null);
 		window.localStorage.setItem('mode', null);
-	};
+	}
 
-	this.onSearchReset = function(input, evt) {
+	onSearchReset(input, evt) {
 		// if the  right side of the element is clicked
 		if (input.offsetWidth - evt.layerX < 32) {
 			// cancel the click
@@ -240,9 +208,9 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 			this.searchFor = '';
 			this.update();
 		}
-	};
+	}
 
-	this.onSearchSubmitted = function(input, evt) {
+	onSearchSubmitted(input, evt) {
 		// cancel the submit
 		evt.preventDefault();
 		// perform the search
@@ -250,9 +218,9 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 		this.update();
 		// deselect the input field
 		input.blur();
-	};
+	}
 
-	this.onSearchChanged = function(input, evt) {
+	onSearchChanged(input, evt) {
 		var _this = this;
 		// wait for the typing to pause
 		clearTimeout(_this.searchDelay);
@@ -261,21 +229,21 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 			_this.searchFor = input.value.trim();
 			_this.update();
 		}, 700);
-	};
+	}
 
-	this.onSortSelected = function(select, evt) {
+	onSortSelected(select, evt) {
 		// perform the sort
 		this.sortBy = select.value;
 		this.update();
-	};
+	}
 
-	this.onFilterSelected = function(select, evt) {
+	onFilterSelected(select, evt) {
 		// perform the sort
 		this.filterBy = select.value;
 		this.update();
-	};
+	}
 
-	this.onMenuClicked = function(evt) {
+	onMenuClicked(evt) {
 		// cancel the click
 		evt.preventDefault();
 		// get the target of the click
@@ -288,8 +256,32 @@ SydneyTrainWalks.prototype.Index = function(parent) {
 		}
 		// update the app for this id
 		this.parent.update(id, 'map');
-	};
+	}
 
-  if(parent) this.init();
-
-};
+	init() {
+		var searchForm = this.config.searchForm;
+		var searchInput = this.config.searchInput;
+		var sortSelect = this.config.sortSelect;
+		var filterSelect = this.config.filterSelect;
+		// build the menu
+		this.update();
+		// add the global click handler to the menu
+		this.config.menu.addEventListener('click', this.onMenuClicked.bind(this));
+		// event handlers for search option
+		searchInput.addEventListener('focus', this.onFieldFocus.bind(this));
+		searchInput.addEventListener('blur', this.onSearchChanged.bind(this, searchInput));
+		searchInput.addEventListener('keyup', this.onSearchChanged.bind(this, searchInput));
+		searchInput.addEventListener('change', this.onSearchChanged.bind(this, searchInput));
+		// event handlers for the sort option
+		sortSelect.addEventListener('focus', this.onFieldFocus.bind(this));
+		sortSelect.addEventListener('change', this.onSortSelected.bind(this, sortSelect));
+		// event handlers for the filter option
+		filterSelect.addEventListener('focus', this.onFieldFocus.bind(this));
+		filterSelect.addEventListener('change', this.onFilterSelected.bind(this, filterSelect));
+		// event handler for the form submit
+		searchForm.addEventListener('submit', this.onSearchSubmitted.bind(this, searchInput));
+		// add the reset button to browsers that need it
+		if (!/MSIE/i.test(navigator.userAgent)) { searchInput.addEventListener('click', this.onSearchReset.bind(this, searchInput)); }
+		else { searchInput.style.backgroundImage = 'none'; }
+	}
+}

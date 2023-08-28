@@ -9,4 +9,4 @@ export class About {
 	}
 
 	init() {}
-};
+}

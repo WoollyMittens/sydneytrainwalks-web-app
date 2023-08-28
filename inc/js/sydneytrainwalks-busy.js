@@ -20,4 +20,4 @@ export class Busy {
 		// remove the cover page
 		this.config.appView.className = this.config.appView.className.replace(/-busy/g, '-ready');
 	};
-};
+}

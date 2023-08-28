@@ -1,25 +1,18 @@
 // extend the class
-SydneyTrainWalks.prototype.Overview = function (parent) {
+export class Overview {
+  constructor(parent) {
+    this.parent = parent;
+    this.config = parent.config;
+    this.overviewMap = null;
+    this.awaitTimeout = null;
+    this.config.extend({
+      'overview': document.querySelector('.localmap.overview'),
+      'creditTemplate': document.getElementById('credit-template')
+    });
+    this.init();
+  }
 
-  // PROPERTIES
-
-  this.parent = parent;
-  this.config = parent.config;
-  this.overviewMap = null;
-  this.awaitTimeout = null;
-  this.config.extend = function(properties) {
-    for (var name in properties) {
-      this[name] = properties[name];
-    }
-  };
-  this.config.extend({
-    'overview': document.querySelector('.localmap.overview'),
-    'creditTemplate': document.getElementById('credit-template')
-  });
-
-  // METHODS
-
-  this.init = function() {
+  init() {
     // wait for the viewport to become visible
     var observer = this.awaitView.bind(this);
     var mutationObserver = new MutationObserver(observer);
@@ -30,9 +23,9 @@ SydneyTrainWalks.prototype.Overview = function (parent) {
     });
     // try at least once
     this.awaitView();
-  };
+  }
 
-  this.awaitView = function(mutations, observer) {
+  awaitView(mutations, observer) {
     var overview = this.config.overview;
     var resolver = this.createMap.bind(this);
     clearTimeout(this.awaitTimeout);
@@ -44,9 +37,9 @@ SydneyTrainWalks.prototype.Overview = function (parent) {
         if(observer) observer.disconnect();
       }
     }, 100);
-  };
+  }
 
-  this.createMap = function() {
+  createMap() {
     // we only want one
     if (this.localmap) return false;
     // generate the map
@@ -84,9 +77,9 @@ SydneyTrainWalks.prototype.Overview = function (parent) {
         return colours[index % colours.length];
       }
     });
-  };
+  }
 
-  this.processMarkers = function() {
+  processMarkers() {
     // add "onMarkerClicked" event handlers to markers
     var _this = this;
     GuideData['_index'].markers.map(function(marker) {
@@ -95,9 +88,9 @@ SydneyTrainWalks.prototype.Overview = function (parent) {
       marker.callback = _this.onMarkerClicked.bind(_this, marker.id);
     });
     return GuideData;
-  };
+  }
 
-  this.mergeRoutes = function() {
+  mergeRoutes() {
     var routes = {'_index':{'features':[]}};
     // if the GPX data is available anyway
     if (typeof GpxData != 'undefined') {
@@ -112,15 +105,10 @@ SydneyTrainWalks.prototype.Overview = function (parent) {
     }
     // return the result
     return routes;
-  };
+  }
 
-  // EVENTS
-
-  this.onMarkerClicked = function(id, evt) {
+  onMarkerClicked(id, evt) {
     // update the app for this id
     this.parent.update(id, 'map');
-  };
-
-  if(parent) this.init();
-
-};
+  }
+}

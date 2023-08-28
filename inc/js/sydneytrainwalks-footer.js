@@ -1,35 +1,21 @@
-// extend the class
-SydneyTrainWalks.prototype.Footer = function(parent) {
+export class Footer {
+	constructor(parent) {
+		this.parent = parent;
+		this.config = parent.config;
+		this.config.extend({
+			'origin': 'menu',
+			'footer': document.querySelector('.toolbar'),
+			'footerTemplate': document.getElementById('footer-template')
+		});
+		this.init();
+	}
 
-	// PROPERTIES
-
-	this.parent = parent;
-	this.config = parent.config;
-	this.config.extend({
-		'origin': 'menu',
-		'footer': document.querySelector('.toolbar'),
-		'footerTemplate': document.getElementById('footer-template')
-	});
-
-	// METHODS
-
-	this.init = function() {
-		// build the footer with a blank id
-		this.update(null);
-		// add a global click handler to the footer
-		this.config.footer.addEventListener('click', this.onFooterClicked.bind(this));
-		// add the event handler for the browser back button
-		document.addEventListener("backbutton", this.onBackButton.bind(this));
-	};
-
-	this.update = function() {
+	update() {
 		// fill the menu with options
 		this.config.footer.innerHTML = this.config.footerTemplate.innerHTML;
 	};
 
-	// EVENTS
-
-	this.onBackButton = function(evt) {
+	onBackButton(evt) {
 		// if this is not an entry page
 		console.log("onBackButton", document.body.className);
 		if (!/menu|overview/.test(document.body.className)) {
@@ -46,7 +32,7 @@ SydneyTrainWalks.prototype.Footer = function(parent) {
 		}
 	}
 
-	this.onFooterClicked = function(evt) {
+	onFooterClicked(evt) {
 		// get the target of the click
 		var target = evt.target || evt.srcElement,
 			id = target.getAttribute('id');
@@ -67,6 +53,12 @@ SydneyTrainWalks.prototype.Footer = function(parent) {
 		}
 	};
 
-  if(parent) this.init();
-
-};
+	init() {
+		// build the footer with a blank id
+		this.update(null);
+		// add a global click handler to the footer
+		this.config.footer.addEventListener('click', this.onFooterClicked.bind(this));
+		// add the event handler for the browser back button
+		document.addEventListener("backbutton", this.onBackButton.bind(this));
+	};
+}

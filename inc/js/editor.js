@@ -1,13 +1,11 @@
-var Editor = function() {
+export class Editor {
+  constructor() {
+    this.landmarks = document.querySelectorAll('.guide-landmark');
+    this.output = [];
+    this.init();
+  }
 
-  // properties
-
-  this.landmarks = document.querySelectorAll('.guide-landmark');
-  this.output = [];
-
-  // methods
-
-  this.init = function() {
+  init() {
     var image, label, textarea;
     // for all landmarks
     for (var a = 0, b = this.landmarks.length; a < b; a += 1) {
@@ -31,20 +29,15 @@ var Editor = function() {
   			"description": textarea.value
       }
     }
-  };
+  }
 
-  this.save = function() {
+  save() {
     // export the output
     console.log(JSON.stringify(this.output, null, '\t'));
-  };
+  }
 
-  // events
-
-  this.update = function(input, image, index, evt) {
+  update(input, image, index, evt) {
     // update the field
     this.output[index].description = input.value;
-  };
-
-  this.init();
-
-};
+  }
+}

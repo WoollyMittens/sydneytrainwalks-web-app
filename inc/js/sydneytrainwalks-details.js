@@ -1,37 +1,41 @@
-// extend the class
-SydneyTrainWalks.prototype.Details = function(parent) {
+import { Photowall } from "./photowall.js";
+import { Localmap } from "./localmap.js";
+import { Photocylinder } from "./photocylinder.js";
 
-	// PROPERTIES
+export class Details {
+	constructor(parent) {
+		this.parent = parent;
+		this.config = parent.config;
+		this.returnTo = 'guide';
+		this.config.extend({
+			'title': document.querySelector('.subtitle > h2'),
+			'guide': document.querySelector('.guide'),
+			'localmap': document.querySelector('.localmap.directions'),
+			'return': document.querySelector('.localmap-return'),
+			'wall': document.querySelector('.photowall'),
+			'titleTemplate': document.getElementById('title-template'),
+			'thumbnailTemplate': document.getElementById('thumbnail-template'),
+			'trophiesTemplate': document.getElementById('trophies-template'),
+			'wallTemplate': document.getElementById('wall-template'),
+			'creditTemplate': document.getElementById('credit-template')
+		});
+		this.init()
+	}
 
-	this.parent = parent;
-	this.config = parent.config;
-	this.returnTo = 'guide';
-	this.config.extend({
-		'title': document.querySelector('.subtitle > h2'),
-		'guide': document.querySelector('.guide'),
-		'localmap': document.querySelector('.localmap.directions'),
-		'return': document.querySelector('.localmap-return'),
-		'wall': document.querySelector('.photowall'),
-		'titleTemplate': document.getElementById('title-template'),
-		'thumbnailTemplate': document.getElementById('thumbnail-template'),
-		'trophiesTemplate': document.getElementById('trophies-template'),
-		'wallTemplate': document.getElementById('wall-template'),
-		'creditTemplate': document.getElementById('credit-template')
-	});
-
-	// METHODS
-
-	this.init = function() {};
-
-	this.update = function(id) {
+	update(id) {
 		// update all the elements with the id
+		this.updateMeta(id);
 		this.updateTitle(id);
 		this.updateGuide(id);
 		this.updateMap(id);
 		this.updateWall(id);
-	};
+	}
 
-	this.updateTitle = function(id) {
+	updateMeta(id) {
+		// TODO: update META tags
+	}
+
+	updateTitle(id) {
 		// fill in the title template
 		var markers = GuideData[id].markers;
 		this.config.title.innerHTML = this.config.titleTemplate.innerHTML
@@ -47,9 +51,9 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			evt.preventDefault();
 			document.body.className = document.body.className.replace(/screen-photos|screen-guide|screen-map/, 'screen-menu');
 		};
-	};
+	}
 
-	this.updateGuide = function(id) {
+	updateGuide(id) {
 		// gather the information
 		var _this = this;
 		var description = '<p>' + GuideData[id].description.join(' ') + '</p>';
@@ -104,9 +108,9 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 				_this.config.guideMap.unindicate();
 			}
 		});
-	};
+	}
 
-	this.updateLandmarks = function(id) {
+	updateLandmarks(id) {
 		// gather the information
 		var _this = this;
 		var prefix = (GuideData[id].alias) ? GuideData[id].alias.key : id;
@@ -133,17 +137,17 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		});
 		// return the landmarks
 		return landmarks;
-	};
+	}
 
-	this.addThumbnail = function(prefix, marker) {
+	addThumbnail(prefix, marker) {
 		var thumbnailTemplate = this.config.thumbnailTemplate.innerHTML;
 		return thumbnailTemplate
 			.replace(/{id}/g, prefix)
 			.replace(/{src}/g, marker.photo.toLowerCase())
 			.replace(/{description}/g, marker.description);
-	};
+	}
 
-	this.addTrophy = function(marker) {
+	addTrophy(marker) {
 		var trophiesTemplate = this.config.trophiesTemplate.innerHTML;
 		var storedTrophies = JSON.parse(window.localStorage.getItem('trophies') || "{}");
 		var hasTrophy = storedTrophies[marker.title];
@@ -153,9 +157,9 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			.replace(/{type}/g, marker.type)
 			.replace(/{lon}/g, marker.lon)
 			.replace(/{lat}/g, marker.lat);
-	};
+	}
 
-	this.updateMap = function(id) {
+	updateMap(id) {
 		// get the properties if this is a segment of another walk
 		var prefix = (GuideData[id].alias && GuideData[id].alias.key)
 			? GuideData[id].alias.key
@@ -179,8 +183,8 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			'guideUrl': this.config.local + '/guides/{key}.json',
 			'routeUrl': this.config.remote + '/gpx/{key}.gpx',
 			'mapUrl': this.config.local + '/maps/{key}.jpg',
-      'tilesUrl': this.config.local + '/tiles/{z}/{x}/{y}.jpg',
-      'tilesZoom': 15,
+      		'tilesUrl': this.config.local + '/tiles/{z}/{x}/{y}.jpg',
+      		'tilesZoom': 15,
 			// cache
 			'guideData': GuideData,
 			'routeData': GpxData,
@@ -192,9 +196,9 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 			'enterHotspot': parent.trophies.enter.bind(parent.trophies),
 			'leaveHotspot': parent.trophies.leave.bind(parent.trophies)
 		});
-	};
+	}
 
-	this.updateWall = function(id) {
+	updateWall(id) {
 		var _this = this,
 			src,
 			srcs = [],
@@ -203,15 +207,9 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		// reset the wall
 		this.config.wall.className = this.config.wall.className.replace(/-active/g, '-passive');
 		// get the properties if this is a segment of another walk
-		var prefix = (GuideData[id].alias && GuideData[id].alias.key)
-			? GuideData[id].alias.key
-			: id;
-		var start = (GuideData[id].alias && GuideData[id].alias.start)
-			? GuideData[id].alias.start
-			: 0;
-		var end = (GuideData[id].alias && GuideData[id].alias.end)
-			? GuideData[id].alias.end + 1
-			: null;
+		var prefix = (GuideData[id].alias && GuideData[id].alias.key) ? GuideData[id].alias.key : id;
+		var start = (GuideData[id].alias && GuideData[id].alias.start) ? GuideData[id].alias.start : 0;
+		var end = (GuideData[id].alias && GuideData[id].alias.end) ? GuideData[id].alias.end + 1 : null;
 		// get the photos
 		for (src in ExifData[prefix]) {
 			srcs.push(src);
@@ -250,11 +248,9 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 				_this.config.guideMap.unindicate();
 			}
 		});
-	};
+	}
 
-	// EVENTS
-
-	this.onLocate = function(button, evt) {
+	onLocate(button, evt) {
 		// cancel the click
 		evt.preventDefault();
 		// remember where to return to
@@ -263,15 +259,14 @@ SydneyTrainWalks.prototype.Details = function(parent) {
 		this.config.guideMap.indicate(button);
 		// show the map screen
 		document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
-	};
+	}
 
-	this.onReturnFromMap = function(evt) {
+	onReturnFromMap(evt) {
 		// cancel the click
 		evt.preventDefault();
 		// return from the map
 		document.body.className = document.body.className.replace(/screen-map/, 'screen-' + this.returnTo);
-	};
+	}
 
-  if(parent) this.init();
-
-};
+	init() {}
+}

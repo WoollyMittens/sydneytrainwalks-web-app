@@ -1,14 +1,6 @@
-/*
-	Source:
-	van Creij, Maurice (2018). "requests.js: A library of useful functions to ease working with AJAX and JSON.", http://www.woollymittens.nl/.
+// TODO: needs to be replaced with async/await + fetch
 
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-*/
-
-
-// establish the class
-var requests = {
+export const requests = {
 
 	// adds a random argument to the AJAX URL to bust the cache
 	randomise : function (url) {
@@ -177,8 +169,4 @@ var requests = {
 		return object;
 	}
 
-};
-
-// return as a require.js module
-if (typeof define != 'undefined') define([], function () { return requests });
-if (typeof module != 'undefined') module.exports = requests;
+}

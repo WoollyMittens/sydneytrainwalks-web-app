@@ -1,27 +1,15 @@
-/*
-	Source:
-	van Creij, Maurice (2018). "filters.js: Sorting and filtering a list of options.", http://www.woollymittens.nl/.
+export class Filters {
+	constructor(config) {
+		this.element = null;
+		this.promise = null;
+		this.searchInput = null;
+		this.sortSelect = null;
+		this.filterSelect = null;
+		this.delay = null;
+		this.init(config);
+	}
 
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-*/
-
-// establish the class
-// extend the global object
-var Filters = function (config) {
-
-	// PROPERTIES
-
-	this.element = null;
-	this.promise = null;
-	this.searchInput = null;
-	this.sortSelect = null;
-	this.filterSelect = null;
-	this.delay = null;
-
-	// METHODS
-
-	this.init = function (config) {
+	init(config) {
 		// store the configuration
 		this.element = config.element;
 		this.promise = config.promise || function () {};
@@ -45,19 +33,19 @@ var Filters = function (config) {
 		else { this.searchInput.style.backgroundImage = 'none'; }
 		// return the object
 		return this;
-	};
+	}
 
-	this.redrawSort = function (index) {
+	redrawSort(index) {
 		// update the drop down
 		this.sortSelect.selectedIndex = index;
-	};
+	}
 
-	this.redrawFilter = function (index) {
+	redrawFilter(index) {
 		// update the drop down
 		this.filterSelect.selectedIndex = index;
-	};
+	}
 
-	this.searchFor = function (keyword) {
+	searchFor(keyword) {
 		var a, b, contents, className,
 			sortees = document.querySelectorAll( this.element.getAttribute('data-target') ),
 			findTags = new RegExp('<[^>]*>', 'g'),
@@ -72,9 +60,9 @@ var Filters = function (config) {
 		}
 		// trigger the promise
 		this.promise('search complete');
-	};
+	}
 
-	this.sortBy = function (index) {
+	sortBy(index) {
 		var a, b, unsorted = [],
 			sorted = [],
 			source = this.sorters[index].getAttribute('data-source'),
@@ -104,9 +92,9 @@ var Filters = function (config) {
 		this.redrawSort(index);
 		// trigger the promise
 		this.promise('sort complete');
-	};
+	}
 
-	this.filterBy = function (index) {
+	filterBy(index) {
 		var a, b, element, className,
 			source = this.filters[index].getAttribute('data-source'),
 			condition = new RegExp(this.filters[index].getAttribute('data-filter'), 'i'),
@@ -121,20 +109,18 @@ var Filters = function (config) {
 		this.redrawFilter(index);
 		// trigger the promise
 		this.promise('filter complete');
-	};
+	}
 
-	// EVENTS
-
-	this.onSearchSubmit = function (evt) {
+	onSearchSubmit(evt) {
 		// cancel the submit
 		evt.preventDefault();
 		// search manually instead
 		this.searchFor(this.searchInput.value.trim());
 		// deselect the field
 		this.searchInput.blur();
-	};
+	}
 
-	this.onSearchReset = function (evt) {
+	onSearchReset(evt) {
 		// if the  right side of the element is clicked
 		if (this.searchInput.offsetWidth - evt.layerX < 32) {
 			// cancel the click
@@ -144,9 +130,9 @@ var Filters = function (config) {
 			this.searchInput.value = '';
 			this.searchFor('');
 		}
-	};
+	}
 
-	this.onSearchChanged = function (evt) {
+	onSearchChanged(evt) {
 		var _this = this;
 		// wait for the typing to pause
 		clearTimeout(this.delay);
@@ -154,26 +140,19 @@ var Filters = function (config) {
 			// perform the search
 			_this.searchFor(_this.searchInput.value.trim());
 		}, 700);
-	};
+	}
 
-	this.onSorterSelected = function (evt) {
+	onSorterSelected(evt) {
 		// cancel the click
 		evt.preventDefault();
 		// sort the sortees by the selected sorter
 		this.sortBy(this.sortSelect.selectedIndex);
-	};
+	}
 
-	this.onFilterSelected = function (evt) {
+	onFilterSelected(evt) {
 		// cancel the click
 		evt.preventDefault();
 		// sort the sortees by the selected sorter
 		this.filterBy(this.filterSelect.selectedIndex);
-	};
-
-	this.init(config);
-
-};
-
-// return as a require.js module
-if (typeof define != 'undefined') define([], function () { return Filters });
-if (typeof module != 'undefined') module.exports = Filters;
+	}
+}

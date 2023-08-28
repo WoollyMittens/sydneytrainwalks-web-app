@@ -1,26 +1,32 @@
-/*
-	Source:
-	van Creij, Maurice (2018). "polyfills.js: A library of useful polyfills to ease working with HTML5 in legacy environments.", http://www.woollymittens.nl/.
+// TODO: hopefully none of these are necessary anymore
 
-	License:
-	This work is licensed under a Creative Commons Attribution 3.0 Unported License.
-*/
-
-// establish the class
-var Polyfills = function () {
+export class Polyfills {
+  constructor() {
+    this.html5();
+    this.arrayIndexOf();
+    this.arrayIsArray();
+    this.arrayMap();
+    this.querySelectorAll();
+    this.addEventListener();
+    this.consoleLog();
+    this.objectCreate();
+    this.stringTrim();
+    this.localStorage();
+    this.functionBind();
+  }
 
   // enabled the use of HTML5 elements in Internet Explorer
-  this.html5 = function() {
+  html5() {
     var a, b, elementsList = ['section', 'nav', 'article', 'aside', 'hgroup', 'header', 'footer', 'dialog', 'mark', 'dfn', 'time', 'progress', 'meter', 'ruby', 'rt', 'rp', 'ins', 'del', 'figure', 'figcaption', 'video', 'audio', 'source', 'canvas', 'datalist', 'keygen', 'output', 'details', 'datagrid', 'command', 'bb', 'menu', 'legend'];
     if (navigator.userAgent.match(/msie/gi)) {
       for (a = 0, b = elementsList.length; a < b; a += 1) {
         document.createElement(elementsList[a]);
       }
     }
-  };
+  }
 
   // allow array.indexOf in older browsers
-  this.arrayIndexOf = function() {
+  arrayIndexOf() {
     if (!Array.prototype.indexOf) {
       Array.prototype.indexOf = function(obj, start) {
         for (var i = (start || 0), j = this.length; i < j; i += 1) {
@@ -31,10 +37,10 @@ var Polyfills = function () {
         return -1;
       };
     }
-  };
+  }
 
   // allow array.isArray in older browsers
-  this.arrayIsArray = function() {
+  arrayIsArray() {
     if (!Array.isArray) {
       Array.isArray = function(arg) {
         return Object.prototype.toString.call(arg) === '[object Array]';
@@ -43,7 +49,7 @@ var Polyfills = function () {
   };
 
   // allow array.map in older browsers (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-  this.arrayMap = function() {
+  arrayMap() {
 
     // Production steps of ECMA-262, Edition 5, 15.4.4.19
     // Reference: http://es5.github.io/#x15.4.4.19
@@ -134,11 +140,10 @@ var Polyfills = function () {
         return A;
       };
     }
-
-  };
+  }
 
   // allow document.querySelectorAll (https://gist.github.com/connrs/2724353)
-  this.querySelectorAll = function() {
+  querySelectorAll() {
     if (!document.querySelectorAll) {
       document.querySelectorAll = function(a) {
         var b = document,
@@ -147,10 +152,10 @@ var Polyfills = function () {
         return c.appendChild(d), b.__qsaels = [], d.styleSheet.cssText = a + "{x:expression(document.__qsaels.push(this))}", window.scrollBy(0, 0), b.__qsaels;
       };
     }
-  };
+  }
 
   // allow addEventListener (https://gist.github.com/jonathantneal/3748027)
-  this.addEventListener = function() {
+  addEventListener() {
     !window.addEventListener && (function(WindowPrototype, DocumentPrototype, ElementPrototype, addEventListener, removeEventListener, dispatchEvent, registry) {
       WindowPrototype[addEventListener] = DocumentPrototype[addEventListener] = ElementPrototype[addEventListener] = function(type, listener) {
         var target = this;
@@ -178,10 +183,10 @@ var Polyfills = function () {
         return this.fireEvent("on" + eventObject.type, eventObject);
       };
     })(Window.prototype, HTMLDocument.prototype, Element.prototype, "addEventListener", "removeEventListener", "dispatchEvent", []);
-  };
+  }
 
   // allow console.log
-  this.consoleLog = function() {
+  consoleLog() {
     var overrideTest = new RegExp('console-log', 'i');
     if (!window.console || overrideTest.test(document.querySelectorAll('html')[0].className)) {
       window.console = {};
@@ -221,10 +226,10 @@ var Polyfills = function () {
         reportPanel.innerHTML = messages + reportString;
       };
     }
-  };
+  }
 
   // allows Object.create (https://gist.github.com/rxgx/1597825)
-  this.objectCreate = function() {
+  objectCreate() {
     if (typeof Object.create !== "function") {
       Object.create = function(original) {
         function Clone() {}
@@ -232,10 +237,10 @@ var Polyfills = function () {
         return new Clone();
       };
     }
-  };
+  }
 
   // allows String.trim (https://gist.github.com/eliperelman/1035982)
-  this.stringTrim = function() {
+  stringTrim() {
     if (!String.prototype.trim) {
       String.prototype.trim = function() {
         return this.replace(/^[\s\uFEFF]+|[\s\uFEFF]+$/g, '');
@@ -256,10 +261,10 @@ var Polyfills = function () {
         return this.replace(/(?:(?:^|\n)\s+|\s+(?:$|\n))/g, '').replace(/\s+/g, ' ');
       };
     }
-  };
+  }
 
   // allows localStorage support
-  this.localStorage = function() {
+  localStorage() {
     if (!window.localStorage) {
       if (/MSIE 8|MSIE 7|MSIE 6/i.test(navigator.userAgent)) {
         window.localStorage = {
@@ -369,10 +374,10 @@ var Polyfills = function () {
         })());
       }
     }
-  };
+  }
 
   // allows bind support
-  this.functionBind = function() {
+  functionBind() {
     // Credit to Douglas Crockford for this bind method
     if (!Function.prototype.bind) {
       Function.prototype.bind = function(oThis) {
@@ -391,23 +396,5 @@ var Polyfills = function () {
         return fBound;
       };
     }
-  };
-
-  // startup
-  this.html5();
-  this.arrayIndexOf();
-  this.arrayIsArray();
-  this.arrayMap();
-  this.querySelectorAll();
-  this.addEventListener();
-  this.consoleLog();
-  this.objectCreate();
-  this.stringTrim();
-  this.localStorage();
-  this.functionBind();
-
-};
-
-// return as a require.js module
-if (typeof define != 'undefined') define([], function () { return polyfills });
-if (typeof module != 'undefined') module.exports = polyfills;
+  }
+}
