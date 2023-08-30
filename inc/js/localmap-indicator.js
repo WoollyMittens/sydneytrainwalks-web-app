@@ -2,6 +2,8 @@ export class Indicator {
 	constructor(parent, onMarkerClicked, onMapFocus) {
 		this.parent = parent;
 		this.config = parent.config;
+		this.onMarkerClicked = onMarkerClicked;
+		this.onMapFocus = onMapFocus;
 		this.element = new Image();
 		this.zoom = null;
 		this.lon = null;

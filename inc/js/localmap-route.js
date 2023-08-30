@@ -2,6 +2,7 @@ export class Route {
 	constructor(parent, onComplete) {
 		this.parent = parent;
 		this.config = parent.config;
+		this.onComplete = onComplete;
 		this.element = null;
 		this.tracks = [];
 		this.zoom = null;
@@ -120,7 +121,7 @@ export class Route {
 			});
 		}
 		// redraw
-		draw();
+		this.draw();
 		// resolve completion
 		this.onComplete();
 	}

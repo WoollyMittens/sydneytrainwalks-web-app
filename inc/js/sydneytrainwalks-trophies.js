@@ -1,30 +1,28 @@
-import { long2tile, lat2tile, tile2long, tile2lat } from "./slippy.js";
+//import { long2tile, lat2tile, tile2long, tile2lat } from "./slippy.js";
 
 export class Trophies {
-	constructor(parent) {
-		this.parent = parent;
-		this.config = parent.config;
-		this.config.extend({
-			'trophies': document.querySelector('.trophies ul'),
-			'trophiesTemplate': document.getElementById('trophies-template'),
-			'trophy': document.querySelector('.trophy'),
-			'trophyTemplate': document.getElementById('trophy-template')
-		});
+	constructor(config, ids, cache, view) {
+		this.config = config;
+		this.trophiesElement = document.querySelector('.trophies ul');
+		this.trophiesTemplate = document.getElementById('trophies-template');
+		this.trophyElement = document.querySelector('.trophy');
+		this.trophyTemplate = document.getElementById('trophy-template');
+		this.guideIds = ids;
+		this.parentCache = cache;
+		this.parentView = view;
 		this.init();
 	}
 
-	update() {
-		var guides = GuideData;
-		var container = this.config.trophies;
+	async update() {
 		// clear the container
-		container.innerHTML = '';
+		this.trophiesElement.innerHTML = '';
 		// filter out the trophies from the markers
-		var a, b, id, marker, duplicates = {}, trophies = [];
-		for (id in guides) {
-			for (a = 0, b = guides[id].markers.length; a < b; a += 1) {
-				marker = guides[id].markers[a];
+		var duplicates = {}, trophies = [];
+		for (let id of this.guideIds) {
+			let guide = await this.parentCache(id);
+			for (let marker of guide.markers) {
 				if (marker.type === 'hotspot' && !duplicates[marker.title]) {
-					// store the title to avoid duplicats
+					// store the title to avoid duplicates
 					duplicates[marker.title] = true;
 					// store the trophy
 					trophies.push({
@@ -35,24 +33,23 @@ export class Trophies {
 			}
 		}
 		// sort the trophies
-		trophies.sort(function(a, b) {
+		trophies.sort((a, b) => {
 			return (a.marker.title > b.marker.title) ? 1 : -1;
 		});
 		// insert the markers
-		var _this = this;
-		trophies.map(function(trophy) {
+		trophies.map((trophy) => {
 			var wrapper, link;
 			// add a trophy badge
 			wrapper = document.createElement('li');
-			link = (_this.getTrophy(trophy.marker.title)) ? _this.addBadge(trophy.id, trophy.marker) : _this.addMystery(trophy.id, trophy.marker);
+			link = (this.getTrophy(trophy.marker.title)) ? this.addBadge(trophy.id, trophy.marker) : this.addMystery(trophy.id, trophy.marker);
 			wrapper.appendChild(link);
-			container.appendChild(wrapper);
+			this.trophiesElement.appendChild(wrapper);
 		});
 	};
 
 	addBadge(id, marker) {
 		var link = document.createElement('a');
-		var template = this.config.trophiesTemplate;
+		var template = this.trophiesTemplate;
 		// show the full badge
 		link.innerHTML += template.innerHTML
 			.replace(/{icon}/g, marker.badge)
@@ -67,7 +64,7 @@ export class Trophies {
 
 	addMystery(id, marker) {
 		var link = document.createElement('a');
-		var template = this.config.trophiesTemplate;
+		var template = this.trophiesTemplate;
 		// show a mystery badge
 		link.innerHTML += template.innerHTML
 			.replace(/{icon}/g, marker.type)
@@ -107,17 +104,16 @@ export class Trophies {
 	};
 
 	leave(data) {
-		var trophy = this.config.trophy;
+		var trophy = this.trophyElement;
 		// hide the modal window again
 		trophy.className = trophy.className.replace(/ trophy-active/g, '');
 	};
 
 	details(marker) {
-		var guides = GuideData;
-		var container = this.config.trophy;
-		var template = this.config.trophyTemplate;
+		var container = this.trophyElement;
+		var template = this.trophyTemplate;
 		// calculate the tile this trophy occurs on
-		var tile = [15, long2tile(marker.lon, 15), lat2tile(marker.lat, 15)];
+		//var tile = [15, long2tile(marker.lon, 15), lat2tile(marker.lat, 15)];
 		var background = marker.title.replace(/:|\.|\,|\'|\s|\?|\!/g, '_').toLowerCase().trim();
 		// populate the modal
 		container.innerHTML = template.innerHTML
@@ -136,7 +132,7 @@ export class Trophies {
 
 	deeplink(id) {
 		// open the guide page for the id
-		this.parent.update(id, 'map');
+		this.parentView(id, 'map');
 	}
 
 	close(marker, container, evt) {
@@ -151,8 +147,14 @@ export class Trophies {
 	}
 
 	init() {
-		var trophy = this.config.trophy;
-		// fill the trophies page
-		this.update();
+		// wait for the viewport to become visible
+		new IntersectionObserver((entries, observer) => {
+			if (entries[0].intersectionRatio > 0.5) {
+				// fill the trophies page
+				this.update();
+				// stop waiting
+				observer.disconnect();
+			}
+		}).observe(this.trophiesElement);
 	}
 }

@@ -26,7 +26,7 @@ const tileTemplate = 'https://tile.thunderforest.com/neighbourhood/{z}/{x}/{y}.p
 import fs from 'fs';
 import fsp from 'fs/promises';
 import fetch from 'node-fetch';
-import { long2tile, lat2tile, tile2long, tile2lat } from "../inc/slippy.js";
+import { long2tile, lat2tile, tile2long, tile2lat } from "./slippy.mjs";
 const tilePath = '../src/tiles/{z}/{x}/';
 const tileCache = '../src/tiles/{z}/{x}/{y}.png';
 const tileTemplate = 'http://4umaps.com/{z}/{x}/{y}.png';

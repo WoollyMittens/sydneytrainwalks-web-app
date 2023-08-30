@@ -3,22 +3,19 @@ import { Localmap } from "./localmap.js";
 import { Photocylinder } from "./photocylinder.js";
 
 export class Details {
-	constructor(parent) {
-		this.parent = parent;
-		this.config = parent.config;
+	constructor(config) {
+		this.config = config;
 		this.returnTo = 'guide';
-		this.config.extend({
-			'title': document.querySelector('.subtitle > h2'),
-			'guide': document.querySelector('.guide'),
-			'localmap': document.querySelector('.localmap.directions'),
-			'return': document.querySelector('.localmap-return'),
-			'wall': document.querySelector('.photowall'),
-			'titleTemplate': document.getElementById('title-template'),
-			'thumbnailTemplate': document.getElementById('thumbnail-template'),
-			'trophiesTemplate': document.getElementById('trophies-template'),
-			'wallTemplate': document.getElementById('wall-template'),
-			'creditTemplate': document.getElementById('credit-template')
-		});
+		this.titleElement = document.querySelector('.subtitle > h2');
+		this.guideElement = document.querySelector('.guide');
+		this.localmapElement = document.querySelector('.localmap.directions');
+		this.returnElement = document.querySelector('.localmap-return');
+		this.wallElement = document.querySelector('.photowall');
+		this.titleTemplate = document.getElementById('title-template');
+		this.thumbnailTemplate = document.getElementById('thumbnail-template');
+		this.trophiesTemplate = document.getElementById('trophies-template');
+		this.wallTemplate = document.getElementById('wall-template');
+		this.creditTemplate = document.getElementById('credit-template');
 		this.init()
 	}
 
@@ -38,7 +35,7 @@ export class Details {
 	updateTitle(id) {
 		// fill in the title template
 		var markers = GuideData[id].markers;
-		this.config.title.innerHTML = this.config.titleTemplate.innerHTML
+		this.titleElement.innerHTML = this.titleTemplate.innerHTML
 			.replace(/{startTransport}/g, markers[0].type)
 			.replace(/{startLocation}/g, markers[0].location)
 			.replace(/{walkLocation}/g, GuideData[id].location)
@@ -47,7 +44,7 @@ export class Details {
 			.replace(/{endTransport}/g, markers[markers.length - 1].type)
 			.replace(/{endLocation}/g, markers[markers.length - 1].location);
 		// add the onclick handler
-		this.config.title.onclick = function(evt) {
+		this.titleElement.onclick = function(evt) {
 			evt.preventDefault();
 			document.body.className = document.body.className.replace(/screen-photos|screen-guide|screen-map/, 'screen-menu');
 		};
@@ -59,7 +56,7 @@ export class Details {
 		var description = '<p>' + GuideData[id].description.join(' ') + '</p>';
 		var duration = GuideData[id].duration;
 		var distance = GuideData[id].distance;
-		var gpx = this.config.gpx.replace(/{id}/g, id);
+		var gpx = this.config.gpxUrl.replace(/{id}/g, id);
 		var markers = GuideData[id].markers;
 		var there = '<p>' + markers[0].description + '</p>';
 		var back = '<p>' + markers[markers.length - 1].description + '</p>';
@@ -71,7 +68,7 @@ export class Details {
 			day: 'numeric'
 		});
 		// fill the guide with information
-		this.config.guide.innerHTML = this.config.guideTemplate.innerHTML
+		this.guideElement.innerHTML = this.config.guideTemplate.innerHTML
 			.replace(/{updated}/g, updated)
 			.replace(/{date}/g, date)
 			.replace(/{description}/g, description)
@@ -89,10 +86,10 @@ export class Details {
 		// start the script for the image viewer
 		this.config.photocylinder = new Photocylinder({
 			'elements': document.querySelectorAll('.guide .cylinder-image'),
-			'container': this.config.guide,
+			'container': this.guideElement,
 			'spherical': /fov360|\d{3}_r\d{6}/i,
 			'cylindrical': /fov180/i,
-			'slicer': this.config.slice,
+			'slicer': this.config.sliceUrl,
 			'idle': 0.1,
 			'opened': function(link) {
 				_this.returnTo = 'guide';
@@ -140,7 +137,7 @@ export class Details {
 	}
 
 	addThumbnail(prefix, marker) {
-		var thumbnailTemplate = this.config.thumbnailTemplate.innerHTML;
+		var thumbnailTemplate = this.thumbnailTemplate.innerHTML;
 		return thumbnailTemplate
 			.replace(/{id}/g, prefix)
 			.replace(/{src}/g, marker.photo.toLowerCase())
@@ -148,7 +145,7 @@ export class Details {
 	}
 
 	addTrophy(marker) {
-		var trophiesTemplate = this.config.trophiesTemplate.innerHTML;
+		var trophiesTemplate = this.trophiesTemplate.innerHTML;
 		var storedTrophies = JSON.parse(window.localStorage.getItem('trophies') || "{}");
 		var hasTrophy = storedTrophies[marker.title];
 		return trophiesTemplate
@@ -165,7 +162,7 @@ export class Details {
 			? GuideData[id].alias.key
 			: id;
 		// add the click event to the map back button
-		this.config.return.addEventListener('click', this.onReturnFromMap.bind(this));
+		this.returnElement.addEventListener('click', this.onReturnFromMap.bind(this));
 		// clear the old map if active
 		if (this.config.guideMap) {
 			this.config.guideMap.stop();
@@ -173,24 +170,24 @@ export class Details {
 		// start the map
 		this.config.guideMap = new Localmap({
 			'key': id,
-			'container': this.config.localmap,
+			'container': this.localmapElement,
 			'legend': null,
 			// assets
-			'thumbsUrl': this.config.local + '/small/{key}/',
-			'photosUrl': this.config.remote + '/medium/{key}/',
-			'markersUrl': this.config.local + '/img/marker-{type}.svg',
-			'exifUrl': this.config.exif,
-			'guideUrl': this.config.local + '/guides/{key}.json',
-			'routeUrl': this.config.remote + '/gpx/{key}.gpx',
-			'mapUrl': this.config.local + '/maps/{key}.jpg',
-      		'tilesUrl': this.config.local + '/tiles/{z}/{x}/{y}.jpg',
+			'thumbsUrl': this.config.localUrl + '/small/{key}/',
+			'photosUrl': this.config.remoteUrl + '/medium/{key}/',
+			'markersUrl': this.config.localUrl + '/img/marker-{type}.svg',
+			'exifUrl': this.config.exifUrl,
+			'guideUrl': this.config.localUrl + '/guides/{key}.json',
+			'routeUrl': this.config.remoteUrl + '/gpx/{key}.gpx',
+			'mapUrl': this.config.localUrl + '/maps/{key}.jpg',
+      		'tilesUrl': this.config.localUrl + '/tiles/{z}/{x}/{y}.jpg',
       		'tilesZoom': 15,
 			// cache
 			'guideData': GuideData,
 			'routeData': GpxData,
 			'exifData': ExifData,
 			// attribution
-			'creditsTemplate': this.config.creditTemplate.innerHTML,
+			'creditsTemplate': this.creditTemplate.innerHTML,
 			// events
 			'checkHotspot': parent.trophies.check.bind(parent.trophies),
 			'enterHotspot': parent.trophies.enter.bind(parent.trophies),
@@ -202,10 +199,10 @@ export class Details {
 		var _this = this,
 			src,
 			srcs = [],
-			wallTemplate = this.config.wallTemplate.innerHTML,
+			wallTemplate = this.wallTemplate.innerHTML,
 			wallHtml = '';
 		// reset the wall
-		this.config.wall.className = this.config.wall.className.replace(/-active/g, '-passive');
+		this.wallElement.className = this.wallElement.className.replace(/-active/g, '-passive');
 		// get the properties if this is a segment of another walk
 		var prefix = (GuideData[id].alias && GuideData[id].alias.key) ? GuideData[id].alias.key : id;
 		var start = (GuideData[id].alias && GuideData[id].alias.start) ? GuideData[id].alias.start : 0;
@@ -221,18 +218,18 @@ export class Details {
 				.replace(/{src}/g, srcs[a]);
 		}
 		// fill the wall with the photos
-		this.config.wall.innerHTML = '<ul>' + wallHtml + '</ul>';
+		this.wallElement.innerHTML = '<ul>' + wallHtml + '</ul>';
 		// start the script for the wall
 		this.config.photowall = new Photowall({
-			'element': this.config.wall
+			'element': this.wallElement
 		});
 		// start the script for the image viewer
 		this.config.photocylinder = new Photocylinder({
 			'elements': document.querySelectorAll('.photowall .cylinder-image'),
-			'container': this.config.wall,
+			'container': this.wallElement,
 			'spherical': /fov360|\d{3}_r\d{6}/i,
 			'cylindrical': /fov180/i,
-			'slicer': this.config.slice,
+			'slicer': this.config.sliceUrl,
 			'idle': 0.1,
 			'opened': function(link) {
 				_this.returnTo = 'photos';

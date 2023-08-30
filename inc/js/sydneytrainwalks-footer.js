@@ -1,18 +1,15 @@
 export class Footer {
-	constructor(parent) {
-		this.parent = parent;
-		this.config = parent.config;
-		this.config.extend({
-			'origin': 'menu',
-			'footer': document.querySelector('.toolbar'),
-			'footerTemplate': document.getElementById('footer-template')
-		});
+	constructor(config) {
+		this.config = config;
+		this.originKey = 'menu';
+		this.footerElement = document.querySelector('.toolbar');
+		this.footerTemplate = document.getElementById('footer-template');
 		this.init();
 	}
 
 	update() {
 		// fill the menu with options
-		this.config.footer.innerHTML = this.config.footerTemplate.innerHTML;
+		this.footerElement.innerHTML = this.footerTemplate.innerHTML;
 	};
 
 	onBackButton(evt) {
@@ -24,7 +21,7 @@ export class Footer {
 			// return to the origin page
 			window.localStorage.removeItem('id');
 			window.localStorage.removeItem('mode');
-			document.body.className = 'screen-' + this.config.origin;
+			document.body.className = 'screen-' + this.originKey;
 		// if this is a cordova app
 		} else if (navigator.app && navigator.app.exitApp) {
 			// close the app
@@ -46,7 +43,7 @@ export class Footer {
 				window.localStorage.removeItem('id');
 				window.localStorage.removeItem('mode');
 				// remember what menu screen was the origin
-				this.config.origin = id.substr(10);
+				this.originKey = id.substr(10);
 			}
 			// apply the mode to the body
 			document.body.className = 'screen-' + id.substr(10);
@@ -57,7 +54,7 @@ export class Footer {
 		// build the footer with a blank id
 		this.update(null);
 		// add a global click handler to the footer
-		this.config.footer.addEventListener('click', this.onFooterClicked.bind(this));
+		this.footerElement.addEventListener('click', this.onFooterClicked.bind(this));
 		// add the event handler for the browser back button
 		document.addEventListener("backbutton", this.onBackButton.bind(this));
 	};

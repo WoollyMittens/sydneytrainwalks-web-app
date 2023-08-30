@@ -94,6 +94,7 @@
 								<option value="public">Public transport</option>
 								<option value="car">Just by car</option>
 								<option value="looped">Just loops</option>
+								<option value="kiosks">Has amenities</option>
 								<option value="toilets">Has public toilets</option>
 								<option value="rain">For rainy days</option>
 								<option value="fireban">Bushfire season</option>
@@ -254,16 +255,13 @@
 			// configure the asset paths
 			const stwDomain = '<?php print $domain ?>';
 			const stwConfig = {
-				'local': './inc',
-				'remote': `https://${stwDomain}/inc`,
-				'exifCache': `https://${stwDomain}/inc/json/photos.json`,
-				'guideCache': `https://${stwDomain}/inc/json/guides.json`,
-				'gpxCache': `https://${stwDomain}/inc/json/gpx.json`,
-				'exif': `https://${stwDomain}/imageexif.php?src={src}`,
-				'guide': `https://${stwDomain}/inc/guides/{id}.json`,
-				'gpx': `https://${stwDomain}/inc/gpx/{id}.gpx`,
-				//'slice' : 'https://${stwDomain}/imageslice.php?src={src}&{size}',
-				'slice' : `https://${stwDomain}/inc/medium/{src}`
+				'localUrl': './inc',
+				'remoteUrl': `https://${stwDomain}/inc`,
+				'exifUrl': `https://${stwDomain}/imageexif.php?src={src}`,
+				'guideUrl': `https://${stwDomain}/inc/guides/{id}.json`,
+				'gpxUrl': `https://${stwDomain}/inc/gpx/{id}.gpx`,
+				//'sliceUrl' : 'https://${stwDomain}/imageslice.php?src={src}&{size}',
+				'sliceUrl' : `https://${stwDomain}/inc/medium/{src}`
 			};
 		</script>
 		<script async type="module" src="./inc/js/sydneytrainwalks.js"></script>

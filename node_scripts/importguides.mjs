@@ -1,9 +1,11 @@
 // dependencies
 import fsp from 'fs/promises';
-import { long2tile, lat2tile, tile2long, tile2lat } from "../inc/slippy.js";
+import { long2tile, lat2tile, tile2long, tile2lat } from "./slippy.mjs";
 const guides = '../inc/guides/';
 const exifs = '../inc/exifs/';
 const routes = '../inc/routes/';
+
+console.log('long2tile', long2tile);
 
 // flatten geojson segments
 function flattenCoordinates(route) {
@@ -54,20 +56,37 @@ function generateIndex(guides) {
 		'markers': []
 	};
 	// for every guide
-	let north = -999, west = 999, south = 999, east = -999;
+	let north = -999, west = 999, south = 999, east = -999, start, end;
 	for (let key in guides) {
+		let guide = guides[key];
 		// expand the bounds based on the guides
-		north = Math.max(guides[key].bounds.north, north);
-		west = Math.min(guides[key].bounds.west, west);
-		south = Math.min(guides[key].bounds.south, south);
-		east = Math.max(guides[key].bounds.east, east);
+		north = Math.max(guide.bounds.north, north);
+		west = Math.min(guide.bounds.west, west);
+		south = Math.min(guide.bounds.south, south);
+		east = Math.max(guide.bounds.east, east);
 		// add a marker from the centre of the guide
-		// TODO: add "start, finish, region, duration, length, revised" to the summary
+		start = guide.markers[0];
+		end = guide.markers.slice(-1)[0];
 		overview.markers.push({
+			'key': key,
 			'type': 'walk',
-			'lon': guides[key].lon,
-			'lat': guides[key].lat,
-			'id': key
+			'lon': guide.lon,
+			'lat': guide.lat,
+			'startLocation': start.location,
+			'endLocation': end.location,
+			'startTransport': start.type,
+			'endTransport': end.type,
+			'region': guide.location,
+			'duration': guide.duration,
+			'distance': guide.distance,
+			'revised': guide.updated,
+			'transit': (start.type !== 'car' && end.type !== 'car'),
+			'car': (start.type === 'car' || end.type === 'car'),
+			'kiosks': guide.markers.filter(marker => marker.type === 'kiosk').length,
+			'toilets': guide.markers.filter(marker => marker.type === 'toilet').length,
+			'looped': (start.location === end.location),
+			'rain': guide.rain,
+			'fireban': guide.fireban
 		});
 	}
 	// expand the bounds by one map tile

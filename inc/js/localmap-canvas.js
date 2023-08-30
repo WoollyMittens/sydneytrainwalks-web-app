@@ -11,6 +11,7 @@ export class Canvas {
 		this.onMarkerClicked = onMarkerClicked;
 		this.onMapFocus = onMapFocus;
 		this.config = parent.config;
+		this.components = {};
 		this.element = document.createElement("div");
 		this.config.canvasWrapper = this.element;
 		this.start();
@@ -22,6 +23,9 @@ export class Canvas {
 		this.element.addEventListener("transitionend", this.onUpdated.bind(this));
 		// add the canvas to the parent container
 		this.config.container.appendChild(this.element);
+		// add the indicator and location components
+		this.components.indicator = new Indicator(this, this.onMarkerClicked, this.onMapFocus);
+		this.components.location = new Location(this);
 		// start adding components in turn
 		this.addMarkers();
 	}
@@ -62,11 +66,6 @@ export class Canvas {
 		element.style.transform =
 			"translate3d(" + offsetX + "px, " + offsetY + "px, 0px) scale3d(" + zoom + ", " + zoom + ",1)";
 	}
-
-	components = {
-		indicator: new Indicator(this, this, onMarkerClicked, this.onMapFocus),
-		location: new Location(this),
-	};
 
 	addMarkers() {
 		// add the markers to the canvas

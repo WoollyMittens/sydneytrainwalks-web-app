@@ -2,6 +2,8 @@ export class Markers {
 	constructor(parent, onClicked, onComplete) {
 		this.parent = parent;
 		this.config = parent.config;
+		this.onClicked = onClicked;
+		this.onComplete = onComplete;
 		this.elements = [];
 		this.zoom = null;
 		this.delay = null;
@@ -14,8 +16,9 @@ export class Markers {
 		if (this.config.guideData && this.config.guideData[key]) {
 			// add the markers from the guide
 			this.addGuide();
-			// otherwise
-		} else {
+		}
+		// otherwise
+		else {
 			// load the guide's JSON first
 			var guideXhr = new XMLHttpRequest();
 			guideXhr.addEventListener("load", this.onGuideLoaded.bind(this));

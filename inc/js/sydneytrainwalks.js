@@ -10,27 +10,30 @@ import { Editor } from "./editor.js";
 
 export class SydneyTrainWalks {
 	constructor(config) {
-		this.config = config || {};
-		this.config.extend = function(properties) {
-			for (var name in properties) {
-				this[name] = properties[name];
-			}
-		};
-		// initialise the components
-		this.about = new About(this);
-		this.busy = new Busy(this);
-		this.details = new Details(this);
-		this.footer = new Footer(this);
-		this.header = new Header(this);
-		this.index = new Index(this);
-		this.overview = new Overview(this);
-		this.trophies = new Trophies(this);
-		this.editor = new Editor();
+		// merge the config with the default options
+		this.config = config;
+		// create a cache of loaded guides
+		this.guideIds = [];
+		this.guideCache = {};
 		// start the app
 		this.init();
 	}
 
-	update(id, mode) {
+	async loadGuide(id) {
+		// if the id is not cached
+		if (!this.guideCache[id]) {
+			// load a fresh copy
+			const url = this.config.guideUrl.replace(/{id}/g, id);
+			const response  = await fetch(url);
+			const guideData = await response.json();
+			// store it in the cache
+			this.guideCache[id] = guideData;
+		}
+		// return the cached item
+		return this.guideCache[id];
+	}
+
+	updateView(id, mode) {
 		// store the current state
 		window.localStorage.setItem('id', id);
 		window.localStorage.setItem('mode', mode);
@@ -62,7 +65,11 @@ export class SydneyTrainWalks {
 		}
 	}
 
-	init() {
+	async init() {
+		// load the index first
+		this.guideCache['_index'] = await this.loadGuide('_index');
+		// store all the available id's
+		this.guideIds = this.guideCache['_index'].markers.map(marker => marker.key);
 		// notice if this is iOS
 		var root = document.getElementsByTagName('html')[0];
 		root.className = (navigator.userAgent.match(/ipad;|iphone|ipod touch;/i))
@@ -76,13 +83,21 @@ export class SydneyTrainWalks {
 		storedId = this.getQuery('id') || storedId ;
 		storedMode = this.getQuery('mode') || storedMode;
 		startScreen = this.getQuery('screen') || startScreen;
+		// initialise the components
+		this.about = new About(this.config);
+		this.busy = new Busy(this.config);
+		this.details = new Details(this.config);
+		this.footer = new Footer(this.config);
+		this.header = new Header(this.config);
+		this.index = new Index(this.config, this.guideCache, this.updateView.bind(this));
+		this.overview = new Overview(this.config, this.guideCache);
+		this.trophies = new Trophies(this.config, this.guideIds, this.loadGuide.bind(this), this.updateView.bind(this));
+		this.editor = new Editor();
 		// restore the previous state
-		// TODO: other then a failed fetch there is no way to check if an ID (still) exists
-		// TODO: maybe we can return a state from the update and implement the startScreen after it fails
-		if (storedId && storedMode && GuideData[storedId]) { this.update(storedId, storedMode); }
+		if (storedMode && storedId && this.guideIds.includes(storedId)) { this.updateView(storedId, storedMode); }
 		else if (startScreen) { document.body.className = 'screen-' + startScreen; }
 		// remove busy screen after a redraw
-		setTimeout(this.busy.hide.bind(this), 300);
+		setTimeout(this.busy.hide, 300);
 		// handle external links
 		document.body.addEventListener("click", this.remoteLink.bind(this));
 	}

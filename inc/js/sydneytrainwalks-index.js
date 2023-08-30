@@ -1,122 +1,104 @@
 export class Index {
-	constructor(parent) {
-		this.parent = parent;
+	constructor(config, cache, view) {
+		this.config = config;
 		this.searchFor = '';
 		this.searchDelay = null;
 		this.sortBy = 'length';
-		this.config = parent.config;
-		this.config.extend({
-			'searchForm': document.getElementById('sorting'),
-			'searchInput': document.querySelector('.searching-label input'),
-			'sortSelect': document.querySelector('.sorting-label select'),
-			'filterSelect': document.querySelector('.filtering-label select'),
-			'menu': document.querySelector('.navigation > menu'),
-			'titleTemplate': document.getElementById('title-template'),
-			'menuTemplate': document.getElementById('menu-template'),
-			'guideTemplate': document.getElementById('guide-template')
-		});
+		this.parentView = view;
+		this.guidesLookup = this.generateLookup(cache['_index']);
+		this.searchForm = document.getElementById('sorting');
+		this.searchInput = document.querySelector('.searching-label input');
+		this.sortSelect = document.querySelector('.sorting-label select');
+		this.filterSelect = document.querySelector('.filtering-label select');
+		this.menuElement = document.querySelector('.navigation > menu');
+		this.titleTemplate = document.getElementById('title-template');
+		this.menuTemplate = document.getElementById('menu-template');
+		this.guideTemplate = document.getElementById('guide-template');
 		this.init();
 	}
 
+	generateLookup(guideData) {
+		let lookupData = {};
+		// add every marker to a lookup index
+		for (let marker of guideData.markers) { lookupData[marker.key] = marker; }
+		// return a lookup index
+		return lookupData;
+	}
+
 	update() {
-		var id, markers, menuHtml = '', titleHtml = '';
-		var menuTemplate = this.config.menuTemplate.innerHTML;
-		var titleTemplate = this.config.titleTemplate.innerHTML;
+		var id, guide, menuHtml = '', titleHtml = '';
+		var menuTemplate = this.menuTemplate.innerHTML;
+		var titleTemplate = this.titleTemplate.innerHTML;
 		// search, filter, and sort the guides
-		var guideIds = Object.keys(GuideData);
+		var guideIds = Object.keys(this.guidesLookup);
 		var searchedIds = this.searchGuide(guideIds, this.searchFor);
 		var filteredIds = this.filterGuide(searchedIds, this.filterBy);
 		var sortedIds = this.sortGuide(filteredIds, this.sortBy);
 		// show or hide incidentally related elements
 		this.mirrorResults(guideIds, sortedIds);
 		// for every available guide
-		for (var a = 0, b = sortedIds.length; a < b; a += 1) {
-			// retrieve the markers that go with this id
-			id = sortedIds[a];
-			markers = GuideData[id].markers;
+		for (let id of sortedIds) {
+			// retrieve the guide that go with this id
+			guide = this.guidesLookup[id];
 			// construct a menu item
 			titleHtml = titleTemplate
-				.replace(/{startTransport}/g, markers[0].type)
-				.replace(/{startLocation}/g, markers[0].location)
-				.replace(/{walkLocation}/g, GuideData[id].location)
-				.replace(/{walkDuration}/g, GuideData[id].duration)
-				.replace(/{walkDistance}/g, GuideData[id].distance)
-				.replace(/{endTransport}/g, markers[markers.length - 1].type)
-				.replace(/{endLocation}/g, markers[markers.length - 1].location);
+				.replace(/{startTransport}/g, guide.startTransport)
+				.replace(/{startLocation}/g, guide.startLocation)
+				.replace(/{walkLocation}/g, guide.region)
+				.replace(/{walkDuration}/g, guide.duration)
+				.replace(/{walkDistance}/g, guide.distance)
+				.replace(/{endTransport}/g, guide.endTransport)
+				.replace(/{endLocation}/g, guide.endLocation);
 			// add the menu item
 			menuHtml += menuTemplate
 				.replace(/{id}/g, id)
 				.replace(/{title}/g, titleHtml);
 		}
 		// fill the menu with options
-		this.config.menu.innerHTML = (menuHtml === '')
+		this.menuElement.innerHTML = (menuHtml === '')
 			? '<li class="no-results">No results...</li>'
 			: menuHtml;
 	}
 
 	searchGuide(guideIds, keyword) {
-		var id, locations = '', searched = [], search = new RegExp(keyword, 'i');
+		var locations = '', searched = [], search = new RegExp(keyword, 'i');
 		// create an array of guides
-		guideIds.map(function(id){
+		for (let id of guideIds) {
 			// retrieve the guide
-			var guide = GuideData[id];
+			var guide = this.guidesLookup[id];
 			// only for valid guide id's
-			if (guide.location && guide.markers) {
+			if (guide.region) {
 				// fetch the locations to search for
-				locations = guide.location + ' ' + guide.markers[0].location + ' ' + guide.markers[guide.markers.length - 1].location;
+				locations = guide.region + ' ' + guide.startLocation + ' ' + guide.endLocation;
 				// add the guide if it includes the keyword
 				if (search.test(locations)) { searched.push(id); }
 			}
-		});
+		}
 		// return the searched guides
 		return searched;
 	}
 
 	sortGuide(guideIds, option) {
-		var id, unsorted = guideIds, sorted = [];
+		var unsorted = guideIds, sorted = [];
 		// sort the array by the prefered method
 		switch (option) {
 			case 'start':
-				sorted = unsorted.sort(function(a, b) {
-					a = GuideData[a].markers[0].location;
-					b = GuideData[b].markers[0].location;
-					return (a < b) ? -1 : 1;
-				});
+				sorted = unsorted.sort((a, b) => (this.guidesLookup[a].startLocation < this.guidesLookup[b].startLocation) ? -1 : 1);
 				break;
 			case 'finish':
-				sorted = unsorted.sort(function(a, b) {
-					a = GuideData[a].markers[GuideData[a].markers.length - 1].location;
-					b = GuideData[b].markers[GuideData[b].markers.length - 1].location;
-					return (a < b) ? -1 : 1;
-				});
+				sorted = unsorted.sort((a, b) => (this.guidesLookup[a].endLocation < this.guidesLookup[b].endLocation) ? -1 : 1);
 				break;
 			case 'region':
-				sorted = unsorted.sort(function(a, b) {
-					a = GuideData[a].location;
-					b = GuideData[b].location;
-					return (a < b) ? -1 : 1;
-				});
+				sorted = unsorted.sort((a, b) => (this.guidesLookup[a].region < this.guidesLookup[b].region) ? -1 : 1);
 				break;
 			case 'duration':
-				sorted = unsorted.sort(function(a, b) {
-					a = GuideData[a].duration;
-					b = GuideData[b].duration;
-					return a - b;
-				});
+				sorted = unsorted.sort((a, b) => (this.guidesLookup[a].duration < this.guidesLookup[b].duration) ? -1 : 1);
 				break;
 			case 'length':
-				sorted = unsorted.sort(function(a, b) {
-					a = GuideData[a].distance;
-					b = GuideData[b].distance;
-					return a - b;
-				});
+				sorted = unsorted.sort((a, b) => (this.guidesLookup[a].distance < this.guidesLookup[b].distance) ? -1 : 1);
 				break;
 			case 'revised':
-				sorted = unsorted.sort(function(a, b) {
-					a = new Date(GuideData[a].updated);
-					b = new Date(GuideData[b].updated);
-					return b - a;
-				});
+				sorted = unsorted.sort((a, b) => (this.guidesLookup[a].revised < this.guidesLookup[b].revised) ? -1 : 1);
 				break;
 			default:
 				sorted = unsorted;
@@ -126,52 +108,29 @@ export class Index {
 	}
 
 	filterGuide(guideIds, option) {
-		var id, unfiltered = guideIds, filtered = [];
+		var unfiltered = guideIds, filtered = [];
 		// filter the array by the prefered method
 		switch (option) {
 			case 'public':
-				unfiltered.map(function(a) {
-					var markers = GuideData[a].markers;
-					var first = markers[0];
-					var last = markers[markers.length - 1];
-					if (first.type !== 'car' && last.type !== 'car') filtered.push(a);
-				});
+				filtered = unfiltered.filter(id => this.guidesLookup[id].transit);
 				break;
 			case 'car':
-				unfiltered.map(function(a) {
-					var markers = GuideData[a].markers;
-					var first = markers[0];
-					var last = markers[markers.length - 1];
-					if (first.type === 'car' || last.type === 'car') filtered.push(a);
-				});
+				filtered = unfiltered.filter(id => this.guidesLookup[id].car);
 				break;
 			case 'toilets':
-				unfiltered.map(function(a) {
-					var markers = GuideData[a].markers;
-					var toilets = markers.reduce(function(accumulator, marker) {
-						accumulator.found = (accumulator.found !== 'undefined') ? (marker.type === 'toilet' || accumulator.found) : false;
-						return accumulator;
-					});
-					if (toilets.found) filtered.push(a);
-				});
+				filtered = unfiltered.filter(id => this.guidesLookup[id].toilets > 0);
+				break;
+			case 'kiosks':
+				filtered = unfiltered.filter(id => this.guidesLookup[id].kiosks > 0);
 				break;
 			case 'looped':
-				unfiltered.map(function(a) {
-					var markers = GuideData[a].markers;
-					var first = markers[0];
-					var last = markers[markers.length - 1];
-					if (first.location === last.location) filtered.push(a);
-				});
+				filtered = unfiltered.filter(id => this.guidesLookup[id].looped);
 				break;
 			case 'rain':
-				unfiltered.map(function(a) {
-					if (GuideData[a].rain) filtered.push(a);
-				});
+				filtered = unfiltered.filter(id => this.guidesLookup[id].rain);
 				break;
 			case 'fireban':
-				unfiltered.map(function(a) {
-					if (GuideData[a].fireban) filtered.push(a);
-				});
+				filtered = unfiltered.filter(id => this.guidesLookup[id].fireban);
 				break;
 			default:
 				filtered = unfiltered;
@@ -255,18 +214,18 @@ export class Index {
 			target = target.parentNode;
 		}
 		// update the app for this id
-		this.parent.update(id, 'map');
+		this.parentView(id, 'map');
 	}
 
 	init() {
-		var searchForm = this.config.searchForm;
-		var searchInput = this.config.searchInput;
-		var sortSelect = this.config.sortSelect;
-		var filterSelect = this.config.filterSelect;
+		var searchForm = this.searchForm;
+		var searchInput = this.searchInput;
+		var sortSelect = this.sortSelect;
+		var filterSelect = this.filterSelect;
 		// build the menu
 		this.update();
 		// add the global click handler to the menu
-		this.config.menu.addEventListener('click', this.onMenuClicked.bind(this));
+		this.menuElement.addEventListener('click', this.onMenuClicked.bind(this));
 		// event handlers for search option
 		searchInput.addEventListener('focus', this.onFieldFocus.bind(this));
 		searchInput.addEventListener('blur', this.onSearchChanged.bind(this, searchInput));

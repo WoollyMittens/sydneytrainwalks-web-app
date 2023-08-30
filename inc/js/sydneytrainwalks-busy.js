@@ -1,10 +1,7 @@
 export class Busy {
-	constructor(parent) {
-		this.parent = parent;
-		this.config = parent.config;
-		this.config.extend({
-			'appView': document.querySelector('#appView')
-		});
+	constructor(config) {
+		this.config = config;
+		this.appView = document.querySelector('#appView');
 		this.init();
 	}
 
@@ -13,11 +10,11 @@ export class Busy {
 	show() {
 		// remove the cover page
 		// TODO: this should be done with data- attributes instead to avoid classname string replacement issues
-		this.config.appView.className = this.config.appView.className.replace(/-ready/g, '-busy');
+		this.appView.className = this.appView.className.replace(/-ready/g, '-busy');
 	}
 
 	hide() {
 		// remove the cover page
-		this.config.appView.className = this.config.appView.className.replace(/-busy/g, '-ready');
+		this.appView.className = this.appView.className.replace(/-busy/g, '-ready');
 	};
 }

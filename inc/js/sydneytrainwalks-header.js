@@ -1,11 +1,8 @@
 export class Header {
-	constructor(parent) {
-		this.parent = parent;
-		this.config = parent.config;
-		this.config.extend({
-			'header': document.querySelector('.title a'),
-			'themeButton': document.querySelector('.toggle-color-scheme')
-		});
+	constructor(config) {
+		this.config = config;
+		this.headerElement = document.querySelector('.title a');
+		this.themeButton = document.querySelector('.toggle-color-scheme');
 		this.init();
 	}
 
@@ -36,9 +33,9 @@ export class Header {
 
 	init() {
 		// add the reset handler
-		this.config.header.addEventListener('click', this.resetView.bind(this));
+		this.headerElement.addEventListener('click', this.resetView.bind(this));
 		// handle the scheme preference
-		this.config.themeButton.addEventListener('click', this.cycleTheme.bind(this));
+		this.themeButton.addEventListener('click', this.cycleTheme.bind(this));
 		// restore the scheme preference
 		document.body.setAttribute('data-color-scheme', window.localStorage.getItem('scheme') || 'auto');
 	}

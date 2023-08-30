@@ -2,6 +2,7 @@ export class Legend {
 	constructor(parent, onLegendClicked) {
 		this.parent = parent;
 		this.config = parent.config;
+		this.onLegendClicked = onLegendClicked;
 		this.elements = [];
 		this.start();
 	}

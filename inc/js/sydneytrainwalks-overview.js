@@ -1,42 +1,16 @@
-// extend the class
+import { Localmap } from "./localmap.js";
+
 export class Overview {
-  constructor(parent) {
+  constructor(config, cache, view) {
     this.parent = parent;
-    this.config = parent.config;
+    this.config = config;
     this.overviewMap = null;
     this.awaitTimeout = null;
-    this.config.extend({
-      'overview': document.querySelector('.localmap.overview'),
-      'creditTemplate': document.getElementById('credit-template')
-    });
+    this.guideCache = cache;
+    this.overviewElement = document.querySelector('.localmap.overview');
+    this.creditTemplate = document.getElementById('credit-template');
+		this.parentView = view;
     this.init();
-  }
-
-  init() {
-    // wait for the viewport to become visible
-    var observer = this.awaitView.bind(this);
-    var mutationObserver = new MutationObserver(observer);
-    mutationObserver.observe(document.body, {
-      'attributes': true,
-      'attributeFilter': ['id', 'class', 'style'],
-      'subtree': true
-    });
-    // try at least once
-    this.awaitView();
-  }
-
-  awaitView(mutations, observer) {
-    var overview = this.config.overview;
-    var resolver = this.createMap.bind(this);
-    clearTimeout(this.awaitTimeout);
-    this.awaitTimeout = setTimeout(function() {
-      if (overview.getBoundingClientRect().right > 0) {
-        // generate the map
-        resolver();
-        // stop waiting
-        if(observer) observer.disconnect();
-      }
-    }, 100);
   }
 
   createMap() {
@@ -45,18 +19,19 @@ export class Overview {
     // generate the map
     this.localmap = new Localmap({
       'key': '_index',
-      'container': this.config.overview,
+      'container': this.overviewElement,
       'legend': null,
       // assets
       'thumbsUrl': null,
       'photosUrl': null,
-      'markersUrl': this.config.local + '/img/marker-{type}.svg',
+      'markersUrl': this.config.localUrl + '/img/marker-{type}.svg',
       'exifUrl': null,
       'guideUrl': null,
       'routeUrl': null,
-      'mapUrl': this.config.local + '/maps/{key}.jpg',
-      'tilesUrl': this.config.local + '/tiles/{z}/{x}/{y}.jpg',
+      'mapUrl': this.config.localUrl + '/maps/{key}.jpg',
+      'tilesUrl': this.config.localUrl + '/tiles/{z}/{x}/{y}.jpg',
       'tilesZoom': 11,
+      // TODO: externalise/centralise the cache. what is needed will be cached.
       // cache
       'guideData': this.processMarkers(),
       'routeData': this.mergeRoutes(),
@@ -65,7 +40,7 @@ export class Overview {
       'distortX': function(x) { return x },
       'distortY': function(y) { return y - (-2 * y * y + 2 * y) / 150 },
       // attribution
-      'creditsTemplate': this.config.creditTemplate.innerHTML,
+      'creditsTemplate': this.creditTemplate.innerHTML,
       // legend
       'supportColour': function(name) {
         var colours = ['red', 'darkorange', 'green', 'teal', 'blue', 'purple', 'black'];
@@ -81,15 +56,15 @@ export class Overview {
 
   processMarkers() {
     // add "onMarkerClicked" event handlers to markers
-    var _this = this;
-    GuideData['_index'].markers.map(function(marker) {
+    this.guideCache['_index'].markers.map((marker) => {
       marker.type = 'waypoint';
       marker.description = '';
-      marker.callback = _this.onMarkerClicked.bind(_this, marker.id);
+      marker.callback = this.onMarkerClicked.bind(this, marker.id);
     });
-    return GuideData;
+    return this.guideCache;
   }
 
+  // TODO: routes would have to be imported from the entire library
   mergeRoutes() {
     var routes = {'_index':{'features':[]}};
     // if the GPX data is available anyway
@@ -109,6 +84,18 @@ export class Overview {
 
   onMarkerClicked(id, evt) {
     // update the app for this id
-    this.parent.update(id, 'map');
+    this.parentView(id, 'map');
+  }
+
+  init() {
+    // wait for the viewport to become visible
+    new IntersectionObserver((entries, observer) => {
+      if (entries[0].intersectionRatio > 0.5) {
+        // start the map
+        this.createMap();
+        // stop waiting
+        observer.disconnect();
+      }
+    }).observe(this.overviewElement);
   }
 }

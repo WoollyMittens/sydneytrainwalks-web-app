@@ -1,10 +1,7 @@
 export class About {
-	constructor(parent) {
-		this.parent = parent;
-		this.config = parent.config;
-		this.config.extend({
-			'about': document.querySelector('.about')
-		});
+	constructor(config) {
+		this.config = config;
+		this.aboutElement = document.querySelector('.about')
 		this.init();
 	}
 
