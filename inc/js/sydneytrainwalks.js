@@ -91,7 +91,7 @@ export class SydneyTrainWalks {
 		this.header = new Header(this.config);
 		this.index = new Index(this.config, this.guideCache, this.updateView.bind(this));
 		this.overview = new Overview(this.config, this.guideCache);
-		this.trophies = new Trophies(this.config, this.guideIds, this.loadGuide.bind(this), this.updateView.bind(this));
+		this.trophies = new Trophies(this.config, this.guideIds, this.loadGuide.bind(this), this.updateView.bind(this), this.busy);
 		this.editor = new Editor();
 		// restore the previous state
 		if (storedMode && storedId && this.guideIds.includes(storedId)) { this.updateView(storedId, storedMode); }

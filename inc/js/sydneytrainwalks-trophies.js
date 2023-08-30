@@ -1,7 +1,7 @@
 //import { long2tile, lat2tile, tile2long, tile2lat } from "./slippy.js";
 
 export class Trophies {
-	constructor(config, ids, cache, view) {
+	constructor(config, ids, cache, view, busy) {
 		this.config = config;
 		this.trophiesElement = document.querySelector('.trophies ul');
 		this.trophiesTemplate = document.getElementById('trophies-template');
@@ -10,10 +10,13 @@ export class Trophies {
 		this.guideIds = ids;
 		this.parentCache = cache;
 		this.parentView = view;
+		this.busyIndicator = busy;
 		this.init();
 	}
 
 	async update() {
+		// show the busy indicator
+		this.busyIndicator.show();
 		// clear the container
 		this.trophiesElement.innerHTML = '';
 		// filter out the trophies from the markers
@@ -45,6 +48,8 @@ export class Trophies {
 			wrapper.appendChild(link);
 			this.trophiesElement.appendChild(wrapper);
 		});
+		// hide the busy indicator
+		this.busyIndicator.hide();
 	};
 
 	addBadge(id, marker) {
