@@ -114,7 +114,7 @@ export class Localmap {
 	store() {
 		// create a save state selected properties
 		var state = {};
-		state[this.config.key] = {
+		state = {
 			lon: this.config.position.lon,
 			lat: this.config.position.lat,
 			zoom: this.config.position.zoom,
@@ -127,9 +127,8 @@ export class Localmap {
 		// load the state from local storage
 		var state = JSON.parse(localStorage.getItem("localmap"));
 		// if the stored state applied to this instance of the map, restore the value
-		var key = this.config.key;
-		if (state && state[key]) {
-			this.focus(state[key].lon, state[key].lat, state[key].zoom, false);
+		if (state) {
+			this.focus(state.lon, state.lat, state.zoom, false);
 		}
 		// otherwise restore the fallback
 		else {
@@ -185,12 +184,12 @@ export class Localmap {
 	init() {
 		this.config.container.className += " localmap-busy";
 		this.components = {
-			canvas: new Canvas(this, this.onComplete.bind(this), this.describe.bind(this), this.focus.bind(this)),
-			controls: new Controls(this),
-			scale: new Scale(this),
-			credits: new Credits(this),
-			modal: new Modal(this),
-			legend: new Legend(this, this.indicate.bind(this)),
+			canvas: new Canvas(this.config, this.onComplete.bind(this), this.describe.bind(this), this.focus.bind(this)),
+			controls: new Controls(this.config, this.focus.bind(this)),
+			scale: new Scale(this.config),
+			credits: new Credits(this.config),
+			modal: new Modal(this.config),
+			legend: new Legend(this.config, this.indicate.bind(this)),
 		};
 	}
 }

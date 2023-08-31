@@ -1,10 +1,10 @@
 import { long2tile, lat2tile, tile2long, tile2lat } from "./slippy.js";
 
 export class Background {
-	constructor(parent, onComplete) {
-		this.parent = parent;
+	constructor(config, container, onComplete) {
+		this.config = config;
+		this.container = container;
 		this.onComplete = onComplete;
-		this.config = parent.config;
 		this.element = null;
 		this.image = new Image();
 		this.tilesQueue = null;
@@ -16,8 +16,7 @@ export class Background {
 		// create the canvas
 		this.element = document.createElement("div");
 		this.element.setAttribute("class", "localmap-background");
-		this.parent.element.appendChild(this.element);
-		this.parent.canvasElement = this.element;
+		this.container.appendChild(this.element);
 		// load the map as tiles
 		if (this.config.tilesUrl) {
 			this.loadTiles();
@@ -32,7 +31,7 @@ export class Background {
 
 	stop() {
 		// remove the element
-		this.parent.element.removeChild(this.element);
+		this.container.removeChild(this.element);
 	}
 
 	update() {}
@@ -48,10 +47,9 @@ export class Background {
 	}
 
 	loadBitmap() {
-		var key = this.config.alias || this.config.key;
 		// load the map as a bitmap
 		this.image.addEventListener("load", this.onBitmapLoaded.bind(this));
-		this.image.setAttribute("src", this.config.mapUrl.replace("{key}", key));
+		this.image.setAttribute("src", this.config.mapUrl);
 	}
 
 	drawBitmap() {
@@ -94,10 +92,9 @@ export class Background {
 		var maxY = lat2tile(max.lat_cover, this.config.tilesZoom);
 		// determine the centre tile
 		var state = JSON.parse(localStorage.getItem("localmap"));
-		var key = this.config.key;
-		if (state && state[key]) {
-			pos.lon = state[key].lon;
-			pos.lat = state[key].lat;
+		if (state) {
+			pos.lon = state.lon;
+			pos.lat = state.lat;
 		}
 		var posX = long2tile(pos.lon, this.config.tilesZoom);
 		var posY = lat2tile(pos.lat, this.config.tilesZoom);
@@ -113,7 +110,7 @@ export class Background {
 	}
 
 	scoreMarkers() {
-		var markers = this.config.guideData[this.config.key].markers;
+		var markers = this.config.guideData.markers;
 		var lookup = {};
 		var x, y, t, r, b, l;
 		for (var idx = 0, max = markers.length; idx < max; idx += 1) {

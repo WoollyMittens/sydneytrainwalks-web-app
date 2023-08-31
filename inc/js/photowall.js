@@ -13,6 +13,7 @@ export class Photowall {
 		const photos = this.element.getElementsByTagName("img");
 		// process all photos
 		for (let photo of photos) {
+			// TODO: this can probably be done using css `object-fit:cover;`
 			// move the image to the tile's background
 			photo.style.visibility = "hidden";
 			photo.parentNode.style.backgroundImage = "url('" + photo.getAttribute("src") + "')";

@@ -1,7 +1,6 @@
 export class Scale {
-	constructor(parent) {
-		this.parent = parent;
-		this.config = parent.config;
+	constructor(config) {
+		this.config = config;
 		this.element = document.createElement("div");
 		this.zoom = null;
 		this.delay = null;
@@ -36,8 +35,7 @@ export class Scale {
 			{ lon: this.config.maximum.lon_cover, lat: this.config.maximum.lat_cover }
 		);
 		// what portion of that is in the container
-		var visible =
-			this.config.container.offsetWidth / this.config.canvasWrapper.offsetWidth / this.config.position.zoom;
+		var visible = this.config.container.offsetWidth / this.config.canvasWrapper.offsetWidth / this.config.position.zoom;
 		// use a fraction of that as the scale
 		var scaleSize = (visible * mapSize) / 6;
 		// round to the nearest increment

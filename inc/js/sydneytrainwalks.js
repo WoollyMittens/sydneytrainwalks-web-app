@@ -15,6 +15,7 @@ export class SydneyTrainWalks {
 		// create a cache of loaded guides
 		this.guideIds = [];
 		this.guideCache = {};
+		this.routeCache = {};
 		// start the app
 		this.init();
 	}
@@ -31,6 +32,20 @@ export class SydneyTrainWalks {
 		}
 		// return the cached item
 		return this.guideCache[id];
+	}
+
+	async loadRoute(id) {
+		// if the id is not cached
+		if (!this.routeCache[id]) {
+			// load a fresh copy
+			const url = this.config.routeUrl.replace(/{id}/g, id);
+			const response  = await fetch(url);
+			const routeData = await response.json();
+			// store it in the cache
+			this.routeCache[id] = routeData;
+		}
+		// return the cached item
+		return this.routeCache[id];
 	}
 
 	updateView(id, mode) {
@@ -90,7 +105,7 @@ export class SydneyTrainWalks {
 		this.footer = new Footer(this.config);
 		this.header = new Header(this.config);
 		this.index = new Index(this.config, this.guideCache, this.updateView.bind(this));
-		this.overview = new Overview(this.config, this.guideCache);
+		this.overview = new Overview(this.config, this.guideIds, this.loadGuide.bind(this), this.loadRoute.bind(this), this.updateView.bind(this));
 		this.trophies = new Trophies(this.config, this.guideIds, this.loadGuide.bind(this), this.updateView.bind(this), this.busy);
 		this.editor = new Editor();
 		// restore the previous state

@@ -1,15 +1,15 @@
 //import { long2tile, lat2tile, tile2long, tile2lat } from "./slippy.js";
 
 export class Trophies {
-	constructor(config, ids, cache, view, busy) {
+	constructor(config, guideIds, loadGuide, updateView, busy) {
 		this.config = config;
 		this.trophiesElement = document.querySelector('.trophies ul');
 		this.trophiesTemplate = document.getElementById('trophies-template');
 		this.trophyElement = document.querySelector('.trophy');
 		this.trophyTemplate = document.getElementById('trophy-template');
-		this.guideIds = ids;
-		this.parentCache = cache;
-		this.parentView = view;
+		this.guideIds = guideIds;
+		this.loadGuide = loadGuide;
+		this.parentView = updateView;
 		this.busyIndicator = busy;
 		this.init();
 	}
@@ -22,8 +22,11 @@ export class Trophies {
 		// filter out the trophies from the markers
 		var duplicates = {}, trophies = [];
 		for (let id of this.guideIds) {
-			let guide = await this.parentCache(id);
+			// load the guide
+			let guide = await this.loadGuide(id);
+			// for every marker in the guide
 			for (let marker of guide.markers) {
+				// if the marker is a (new) trophy
 				if (marker.type === 'hotspot' && !duplicates[marker.title]) {
 					// store the title to avoid duplicates
 					duplicates[marker.title] = true;

@@ -1,7 +1,7 @@
 export class Route {
-	constructor(parent, onComplete) {
-		this.parent = parent;
-		this.config = parent.config;
+	constructor(config, container, onComplete) {
+		this.config = config;
+		this.container = container;
 		this.onComplete = onComplete;
 		this.element = null;
 		this.tracks = [];
@@ -11,27 +11,26 @@ export class Route {
 	}
 
 	start() {
-		var key = this.config.key;
 		// create a canvas
 		this.element = document.createElementNS("http://www.w3.org/2000/svg", "svg");
 		this.element.setAttribute("class", "localmap-route");
-		this.parent.element.appendChild(this.element);
+		this.container.appendChild(this.element);
 		// use the JSON immediately
-		if (this.config.routeData && this.config.routeData[key]) {
-			this.onJsonLoaded(this.config.routeData[key]);
+		if (this.config.routeData) {
+			this.onJsonLoaded(this.config.routeData);
 		}
 		// or load the route's GPX first
 		else {
 			var routeXhr = new XMLHttpRequest();
 			routeXhr.addEventListener("load", this.onGpxLoaded.bind(this));
-			routeXhr.open("GET", this.config.routeUrl.replace("{key}", key), true);
+			routeXhr.open("GET", this.config.routeUrl, true);
 			routeXhr.send();
 		}
 	}
 
 	stop() {
 		// remove the element
-		this.parent.element.removeChild(this.element);
+		this.container.removeChild(this.element);
 	}
 
 	update() {
@@ -47,8 +46,8 @@ export class Route {
 	draw() {
 		var min = this.config.minimum;
 		var max = this.config.maximum;
-		var w = this.parent.element.offsetWidth;
-		var h = this.parent.element.offsetHeight;
+		var w = this.container.offsetWidth;
+		var h = this.container.offsetHeight;
 		// adjust the height of the svg
 		this.element.setAttribute("viewBox", "0 0 " + w + " " + h);
 		this.element.setAttribute("width", w);
@@ -74,14 +73,8 @@ export class Route {
 			points = "";
 			for (var c = 0, d = track.coordinates.length; c < d; c += increments) {
 				// calculate the current step
-				x = parseInt(
-					this.config.distortX((track.coordinates[c][0] - min.lon_cover) / (max.lon_cover - min.lon_cover)) *
-						w
-				);
-				y = parseInt(
-					this.config.distortY((track.coordinates[c][1] - min.lat_cover) / (max.lat_cover - min.lat_cover)) *
-						h
-				);
+				x = parseInt(this.config.distortX((track.coordinates[c][0] - min.lon_cover) / (max.lon_cover - min.lon_cover)) * w);
+				y = parseInt(this.config.distortY((track.coordinates[c][1] - min.lat_cover) / (max.lat_cover - min.lat_cover)) * h);
 				// add the step
 				points += " " + x + "," + y;
 			}

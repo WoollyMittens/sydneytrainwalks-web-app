@@ -1,7 +1,6 @@
 export class Credits {
-	constructor(parent) {
-		this.parent = parent;
-		this.config = parent.config;
+	constructor(config) {
+		this.config = config;
 		this.element = null;
 		this.start();
 	}

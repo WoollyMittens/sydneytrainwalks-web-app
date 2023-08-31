@@ -1,7 +1,7 @@
 export class Indicator {
-	constructor(parent, onMarkerClicked, onMapFocus) {
-		this.parent = parent;
-		this.config = parent.config;
+	constructor(config, container, onMarkerClicked, onMapFocus) {
+		this.config = config;
+		this.container = container;
 		this.onMarkerClicked = onMarkerClicked;
 		this.onMapFocus = onMapFocus;
 		this.element = new Image();
@@ -18,12 +18,12 @@ export class Indicator {
 		this.element.setAttribute("class", "localmap-indicator");
 		// get marker data from API call
 		this.element.addEventListener("click", this.onIndicatorClicked.bind(this));
-		this.parent.element.appendChild(this.element);
+		this.container.appendChild(this.element);
 	}
 
 	stop() {
 		// remove the element
-		this.parent.element.removeChild(this.element);
+		this.container.removeChild(this.element);
 	}
 
 	update() {
@@ -61,9 +61,8 @@ export class Indicator {
 		var lon = input.getAttribute("data-lon") || input.getAttribute("lon");
 		var lat = input.getAttribute("data-lat") || input.getAttribute("lat");
 		// try to get the coordinates from the cached exif data
-		var key = this.config.alias || this.config.key;
 		var filename = source ? source.split("/").pop() : null;
-		var cached = this.config.exifData && this.config.exifData[key] ? this.config.exifData[key][filename] : {};
+		var cached = this.config.exifData ? this.config.exifData[filename] : {};
 		// populate the indicator's model
 		this.config.indicator = {
 			photo: filename,
@@ -128,10 +127,8 @@ export class Indicator {
 			// display the marker
 			this.element.style.cursor = this.config.indicator.description ? "pointer" : "default";
 			this.element.style.display = "block";
-			this.element.style.left =
-				this.config.distortX((lon - min.lon_cover) / (max.lon_cover - min.lon_cover)) * 100 + "%";
-			this.element.style.top =
-				this.config.distortY((lat - min.lat_cover) / (max.lat_cover - min.lat_cover)) * 100 + "%";
+			this.element.style.left = this.config.distortX((lon - min.lon_cover) / (max.lon_cover - min.lon_cover)) * 100 + "%";
+			this.element.style.top = this.config.distortY((lat - min.lat_cover) / (max.lat_cover - min.lat_cover)) * 100 + "%";
 			// otherwise
 		} else {
 			// hide the marker

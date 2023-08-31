@@ -1,24 +1,25 @@
 import { Localmap } from "./localmap.js";
 
 export class Overview {
-  constructor(config, cache, view) {
+  constructor(config, guideIds, loadGuide, loadRoute, updateView) {
     this.parent = parent;
     this.config = config;
     this.overviewMap = null;
     this.awaitTimeout = null;
-    this.guideCache = cache;
+    this.guideIds = guideIds;
+    this.loadGuide = loadGuide;
+		this.loadRoute = loadRoute;
+		this.updateView = updateView;
     this.overviewElement = document.querySelector('.localmap.overview');
     this.creditTemplate = document.getElementById('credit-template');
-		this.parentView = view;
     this.init();
   }
 
-  createMap() {
+  async createMap() {
     // we only want one
     if (this.localmap) return false;
     // generate the map
     this.localmap = new Localmap({
-      'key': '_index',
       'container': this.overviewElement,
       'legend': null,
       // assets
@@ -31,10 +32,9 @@ export class Overview {
       'mapUrl': this.config.localUrl + '/maps/{key}.jpg',
       'tilesUrl': this.config.localUrl + '/tiles/{z}/{x}/{y}.jpg',
       'tilesZoom': 11,
-      // TODO: externalise/centralise the cache. what is needed will be cached.
       // cache
-      'guideData': this.processMarkers(),
-      'routeData': this.mergeRoutes(),
+      'guideData': await this.processMarkers(),
+      'routeData': await this.mergeRoutes(),
       'exifData': null,
       // offsets
       'distortX': function(x) { return x },
@@ -54,37 +54,38 @@ export class Overview {
     });
   }
 
-  processMarkers() {
+  async processMarkers() {
     // add "onMarkerClicked" event handlers to markers
-    this.guideCache['_index'].markers.map((marker) => {
+    let guide = await this.loadGuide('_index');
+    // for every marker
+    for (let marker of guide.markers) {
+      // modify the marker to be a button
       marker.type = 'waypoint';
       marker.description = '';
       marker.callback = this.onMarkerClicked.bind(this, marker.id);
-    });
-    return this.guideCache;
-  }
-
-  // TODO: routes would have to be imported from the entire library
-  mergeRoutes() {
-    var routes = {'_index':{'features':[]}};
-    // if the GPX data is available anyway
-    if (typeof GpxData != 'undefined') {
-      // for every walk
-      for (var key in GpxData) {
-        // only if this isn't an alias
-        if (!GuideData[key].alias) {
-          // add the route
-					routes['_index'].features = routes['_index'].features.concat(GpxData[key].features);
-        }
-      }
     }
     // return the result
+    return guide;
+  }
+
+  async mergeRoutes() {
+    // create a dummy routes cache
+    var routes = {'features':[]};
+    // for every walk
+    for (let id of this.guideIds) {
+      // load the route
+      let route = await this.loadRoute(id);
+      // add the route
+      routes.features = routes.features.concat(route.features);
+    }
+    // return the result
+    console.log('routes', routes);
     return routes;
   }
 
   onMarkerClicked(id, evt) {
     // update the app for this id
-    this.parentView(id, 'map');
+    this.updateView(id, 'map');
   }
 
   init() {

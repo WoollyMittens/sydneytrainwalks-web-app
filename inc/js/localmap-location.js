@@ -1,7 +1,7 @@
 export class Location {
-	constructor(parent) {
-		this.parent = parent;
-		this.config = parent.config;
+	constructor(config, container) {
+		this.config = config;
+		this.container = container;
 		this.element = new Image();
 		this.zoom = null;
 		this.active = false;
@@ -62,7 +62,7 @@ export class Location {
 			this.element.setAttribute("src", this.config.markersUrl.replace("{type}", "location"));
 			this.element.setAttribute("alt", "");
 			this.element.setAttribute("class", "localmap-location");
-			this.parent.element.appendChild(this.element);
+			this.container.appendChild(this.element);
 			// hide the button
 			this.button.style.display = "none";
 		}
@@ -70,7 +70,6 @@ export class Location {
 
 	checkHotSpot(lon, lat) {
 		var config = this.config;
-		var key = this.config.key;
 		// for every marker
 		config.hotspots.map(function (marker) {
 			// if the marker just entered the hotspot
@@ -108,10 +107,8 @@ export class Location {
 		if (lon > min.lon_cover && lon < max.lon_cover && lat < min.lat_cover && lat > max.lat_cover) {
 			// display the marker
 			this.element.style.display = "block";
-			this.element.style.left =
-				this.config.distortX((lon - min.lon_cover) / (max.lon_cover - min.lon_cover)) * 100 + "%";
-			this.element.style.top =
-				this.config.distortY((lat - min.lat_cover) / (max.lat_cover - min.lat_cover)) * 100 + "%";
+			this.element.style.left = this.config.distortX((lon - min.lon_cover) / (max.lon_cover - min.lon_cover)) * 100 + "%";
+			this.element.style.top = this.config.distortY((lat - min.lat_cover) / (max.lat_cover - min.lat_cover)) * 100 + "%";
 			// check if the location is within a hotspot
 			this.checkHotSpot(lon, lat);
 			// otherwise

@@ -53,6 +53,7 @@
     "watch": "npm-watch"
   },
   "dependencies": {
+    "JSDOM": "npm:jsdom@^22.1.0",
     "node-fetch": "^3.3.1"
   }
 }

@@ -259,6 +259,7 @@
 				'remoteUrl': `https://${stwDomain}/inc`,
 				'exifUrl': `https://${stwDomain}/imageexif.php?src={src}`,
 				'guideUrl': `https://${stwDomain}/inc/guides/{id}.json`,
+				'routeUrl': `https://${stwDomain}/inc/routes/{id}.json`,
 				'gpxUrl': `https://${stwDomain}/inc/gpx/{id}.gpx`,
 				//'sliceUrl' : 'https://${stwDomain}/imageslice.php?src={src}&{size}',
 				'sliceUrl' : `https://${stwDomain}/inc/medium/{src}`

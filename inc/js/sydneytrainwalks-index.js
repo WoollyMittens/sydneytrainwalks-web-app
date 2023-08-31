@@ -1,11 +1,11 @@
 export class Index {
-	constructor(config, cache, view) {
+	constructor(config, guideCache, updateView) {
 		this.config = config;
 		this.searchFor = '';
 		this.searchDelay = null;
 		this.sortBy = 'length';
-		this.parentView = view;
-		this.guidesLookup = this.generateLookup(cache['_index']);
+		this.updateView = updateView;
+		this.guidesLookup = this.generateLookup(guideCache['_index']);
 		this.searchForm = document.getElementById('sorting');
 		this.searchInput = document.querySelector('.searching-label input');
 		this.sortSelect = document.querySelector('.sorting-label select');
@@ -144,8 +144,8 @@ export class Index {
 		guideIds.map(function(id) {
 			var visibility = (sortedIds.indexOf(id) > -1) ? 'visible' : 'hidden';
 			var elements = document.querySelectorAll('[data-key="' + id + '"]');
-			for (var a = 0, b = elements.length; a < b; a += 1) {
-				elements[a].style.visibility = visibility;
+			for (let element of elements) {
+				element.style.visibility = visibility;
 			}
 		});
 	}
@@ -214,7 +214,7 @@ export class Index {
 			target = target.parentNode;
 		}
 		// update the app for this id
-		this.parentView(id, 'map');
+		this.updateView(id, 'map');
 	}
 
 	init() {

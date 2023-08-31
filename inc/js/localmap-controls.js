@@ -1,7 +1,7 @@
 export class Controls {
-	constructor(parent) {
-		this.parent = parent;
-		this.config = parent.config;
+	constructor(config, focus) {
+		this.config = config;
+		this.focus = focus;
 		this.touches = null;
 		this.inertia = { x: 0, y: 0, z: 0 };
 		this.elements = {};
@@ -63,7 +63,7 @@ export class Controls {
 		// cancel any pending timeout
 		window.cancelAnimationFrame(this.animationFrame);
 		// move the map according to the inertia
-		this.parent.focus(
+		this.focus(
 			this.config.position.lon + this.range.lon * -this.inertia.x,
 			this.config.position.lat + this.range.lat * -this.inertia.y,
 			this.config.position.zoom + this.range.zoom * this.inertia.z,
@@ -154,7 +154,7 @@ export class Controls {
 		// cancel the double click
 		this.last = new Date() - 500;
 		// perform the zoom
-		this.parent.focus(this.config.position.lon, this.config.position.lat, this.config.position.zoom * factor, true);
+		this.focus(this.config.position.lon, this.config.position.lat, this.config.position.zoom * factor, true);
 	}
 
 	wheelInteraction(method, evt) {
@@ -173,7 +173,7 @@ export class Controls {
 		// if the previous tap was short enough ago
 		if (new Date() - this.last < 250) {
 			// zoom in on the map
-			this.parent.focus(
+			this.focus(
 				this.config.position.lon,
 				this.config.position.lat,
 				this.config.position.zoom * 1.5,

@@ -5,12 +5,11 @@ import { Background } from "./localmap-background.js";
 import { Route } from "./localmap-route.js";
 
 export class Canvas {
-	constructor(parent, onComplete, onMarkerClicked, onMapFocus) {
-		this.parent = parent;
+	constructor(config, onComplete, onMarkerClicked, onMapFocus) {
+		this.config = config;
 		this.onComplete = onComplete;
 		this.onMarkerClicked = onMarkerClicked;
 		this.onMapFocus = onMapFocus;
-		this.config = parent.config;
 		this.components = {};
 		this.element = document.createElement("div");
 		this.config.canvasWrapper = this.element;
@@ -24,8 +23,8 @@ export class Canvas {
 		// add the canvas to the parent container
 		this.config.container.appendChild(this.element);
 		// add the indicator and location components
-		this.components.indicator = new Indicator(this, this.onMarkerClicked, this.onMapFocus);
-		this.components.location = new Location(this);
+		this.components.indicator = new Indicator(this.config, this.element, this.onMarkerClicked, this.onMapFocus);
+		this.components.location = new Location(this.config, this.element);
 		// start adding components in turn
 		this.addMarkers();
 	}
@@ -69,17 +68,17 @@ export class Canvas {
 
 	addMarkers() {
 		// add the markers to the canvas
-		this.components.markers = new Markers(this, this.onMarkerClicked, this.addBackground.bind(this));
+		this.components.markers = new Markers(this.config, this.element, this.onMarkerClicked, this.addBackground.bind(this));
 	}
 
 	addBackground() {
 		// add the background to the canvas
-		this.components.background = new Background(this, this.addRoute.bind(this));
+		this.components.background = new Background(this.config, this.element, this.addRoute.bind(this));
 	}
 
 	addRoute() {
 		// add the route to the canvas
-		this.components.route = new Route(this, this.onComplete);
+		this.components.route = new Route(this.config, this.element, this.onComplete);
 	}
 
 	onUpdated(evt) {

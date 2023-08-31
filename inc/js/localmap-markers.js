@@ -1,7 +1,7 @@
 export class Markers {
-	constructor(parent, onClicked, onComplete) {
-		this.parent = parent;
-		this.config = parent.config;
+	constructor(config, container, onClicked, onComplete) {
+		this.config = config;
+		this.container = container
 		this.onClicked = onClicked;
 		this.onComplete = onComplete;
 		this.elements = [];
@@ -11,9 +11,8 @@ export class Markers {
 	}
 
 	start() {
-		var key = this.config.key;
 		// if cached data is available
-		if (this.config.guideData && this.config.guideData[key]) {
+		if (this.config.guideData) {
 			// add the markers from the guide
 			this.addGuide();
 		}
@@ -22,7 +21,7 @@ export class Markers {
 			// load the guide's JSON first
 			var guideXhr = new XMLHttpRequest();
 			guideXhr.addEventListener("load", this.onGuideLoaded.bind(this));
-			guideXhr.open("GET", this.config.guideUrl.replace("{key}", this.config.key), true);
+			guideXhr.open("GET", this.config.guideUrl, true);
 			guideXhr.send();
 		}
 	}
@@ -51,17 +50,14 @@ export class Markers {
 
 	addGuide() {
 		var config = this.config;
-		var key = this.config.key;
-		var guideData = this.config.guideData[key];
-		// store the key
-		config.alias = guideData.alias ? guideData.alias.key : guideData.key;
+		var guideData = this.config.guideData;
 		// store the interpolation limits
 		var min = config.minimum;
 		var max = config.maximum;
-		min.lon = guideData.alias ? guideData.alias.bounds.west : guideData.bounds.west;
-		min.lat = guideData.alias ? guideData.alias.bounds.north : guideData.bounds.north;
-		max.lon = guideData.alias ? guideData.alias.bounds.east : guideData.bounds.east;
-		max.lat = guideData.alias ? guideData.alias.bounds.south : guideData.bounds.south;
+		min.lon = guideData ? guideData.bounds.west : guideData.bounds.west;
+		min.lat = guideData ? guideData.bounds.north : guideData.bounds.north;
+		max.lon = guideData ? guideData.bounds.east : guideData.bounds.east;
+		max.lat = guideData ? guideData.bounds.south : guideData.bounds.south;
 		// store the coverage limits
 		min.lon_cover = guideData.bounds.west;
 		min.lat_cover = guideData.bounds.north;
@@ -91,7 +87,7 @@ export class Markers {
 		}
 		// add valid markers to the map
 		if (markerData.element) {
-			this.parent.element.appendChild(markerData.element);
+			this.container.appendChild(markerData.element);
 			this.elements.push(markerData.element);
 		}
 	}
@@ -99,7 +95,7 @@ export class Markers {
 	addWaypoint(markerData, markerIndex) {
 		var min = this.config.minimum;
 		var max = this.config.maximum;
-		var id = markerData.id || "localmap_" + markerIndex;
+		var id = markerData.key || "localmap_" + markerIndex;
 		// create a marker element
 		var element = document.createElement("span");
 		element.setAttribute("id", id);
@@ -107,10 +103,8 @@ export class Markers {
 		element.setAttribute("class", "localmap-waypoint localmap-index-" + markerIndex);
 		element.addEventListener("click", this.onClicked.bind(this, markerData));
 		element.style.borderColor = this.config.supportColour(id);
-		element.style.left =
-			this.config.distortX((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover)) * 100 + "%";
-		element.style.top =
-			this.config.distortY((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover)) * 100 + "%";
+		element.style.left = this.config.distortX((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover)) * 100 + "%";
+		element.style.top = this.config.distortY((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover)) * 100 + "%";
 		element.style.cursor = "pointer";
 		return element;
 	}
@@ -139,10 +133,8 @@ export class Markers {
 		element.setAttribute("id", id);
 		element.setAttribute("data-key", id);
 		element.addEventListener("click", this.onClicked.bind(this, markerData));
-		element.style.left =
-			this.config.distortX((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover)) * 100 + "%";
-		element.style.top =
-			this.config.distortY((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover)) * 100 + "%";
+		element.style.left = this.config.distortX((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover)) * 100 + "%";
+		element.style.top = this.config.distortY((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover)) * 100 + "%";
 		element.style.cursor = markerData.description || markerData.callback ? "pointer" : null;
 		return element;
 	}
@@ -150,7 +142,7 @@ export class Markers {
 	onGuideLoaded(evt) {
 		// decode the guide data
 		this.config.guideData = this.config.guideData || {};
-		this.config.guideData[this.config.key] = JSON.parse(evt.target.response);
+		this.config.guideData = JSON.parse(evt.target.response);
 		// add the markers from the guide
 		this.addGuide();
 	}

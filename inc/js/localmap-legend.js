@@ -1,8 +1,7 @@
 export class Legend {
-	constructor(parent, onLegendClicked) {
-		this.parent = parent;
-		this.config = parent.config;
-		this.onLegendClicked = onLegendClicked;
+	constructor(config, indicate) {
+		this.config = config;
+		this.indicate = indicate;
 		this.elements = [];
 		this.start();
 	}
@@ -15,8 +14,7 @@ export class Legend {
 	}
 
 	update() {
-		var key = this.config.key;
-		var guideData = this.config.guideData[key];
+		var guideData = this.config.guideData;
 		// write the legend if needed and available
 		if (this.config.legend && this.elements.length === 0) {
 			this.elements = guideData.markers.map(this.addDefinition.bind(this));
@@ -28,9 +26,8 @@ export class Legend {
 		// if the marker has a description
 		if (markerData.description) {
 			// format the path to the external assets
-			var key = this.config.alias || this.config.key;
 			var image = markerData.photo
-				? this.config.thumbsUrl.replace("{key}", key) + markerData.photo
+				? this.config.thumbsUrl + markerData.photo
 				: this.config.markersUrl.replace("{type}", markerData.type);
 			var text = markerData.description || markerData.type;
 			// create a container for the elements
@@ -43,14 +40,13 @@ export class Legend {
 			fragment.appendChild(definitionData.title);
 			// add the description
 			definitionData.description = document.createElement("dd");
-			definitionData.description.className +=
-				markerData.optional || markerData.detour || markerData.warning ? " localmap-legend-alternate" : "";
+			definitionData.description.className += markerData.optional || markerData.detour || markerData.warning ? " localmap-legend-alternate" : "";
 			definitionData.description.innerHTML = "<p>" + text + "</p>";
 			fragment.appendChild(definitionData.description);
 			// add the event handlers
 			markerData.referrer = definitionData.title;
-			definitionData.title.addEventListener("click", this.onLegendClicked.bind(this, markerData));
-			definitionData.description.addEventListener("click", this.onLegendClicked.bind(this, markerData));
+			definitionData.title.addEventListener("click", this.indicate.bind(this, markerData));
+			definitionData.description.addEventListener("click", this.indicate.bind(this, markerData));
 			// add the container to the legend
 			this.config.legend.appendChild(fragment);
 		}
