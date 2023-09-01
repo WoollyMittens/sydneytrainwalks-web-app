@@ -1,6 +1,6 @@
 {
   "name": "sydneytrainwalks",
-  "version": "0.0.0",
+  "version": "3.0.0",
   "devDependencies": {
     "canvas": "",
     "del": "",
@@ -51,5 +51,9 @@
     "prod": "npm run scripts_prod && npm run styles_prod",
     "build": "npm run import && prod",
     "watch": "npm-watch"
+  },
+  "dependencies": {
+    "JSDOM": "npm:jsdom@^22.1.0",
+    "node-fetch": "^3.3.1"
   }
 }
