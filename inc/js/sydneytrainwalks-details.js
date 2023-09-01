@@ -3,8 +3,12 @@ import { Localmap } from "./localmap.js";
 import { Photocylinder } from "./photocylinder.js";
 
 export class Details {
-	constructor(config) {
+	constructor(config, loadGuide, loadRoute, loadExif, trophies) {
 		this.config = config;
+		this.loadGuide = loadGuide;
+		this.loadRoute = loadRoute;
+		this.loadExif = loadExif;
+		this.trophies = trophies;
 		this.returnTo = 'guide';
 		this.titleElement = document.querySelector('.subtitle > h2');
 		this.guideElement = document.querySelector('.guide');
@@ -12,63 +16,65 @@ export class Details {
 		this.returnElement = document.querySelector('.localmap-return');
 		this.wallElement = document.querySelector('.photowall');
 		this.titleTemplate = document.getElementById('title-template');
+		this.guideTemplate = document.getElementById('guide-template');
 		this.thumbnailTemplate = document.getElementById('thumbnail-template');
 		this.trophiesTemplate = document.getElementById('trophies-template');
 		this.wallTemplate = document.getElementById('wall-template');
 		this.creditTemplate = document.getElementById('credit-template');
+		this.guideMap = null;
 		this.init()
 	}
 
-	update(id) {
+	async update(id) {
+		// load the guide that goes with the id
+		const guide = await this.loadGuide(id);
+		const route = await this.loadRoute(id);
+		const exif = await this.loadExif(guide?.alias?.key || guide.key);
 		// update all the elements with the id
-		this.updateMeta(id);
-		this.updateTitle(id);
-		this.updateGuide(id);
-		this.updateMap(id);
-		this.updateWall(id);
+		this.updateMeta(guide);
+		this.updateTitle(guide);
+		this.updateGuide(guide);
+		this.updateMap(guide, route, exif);
+		this.updateWall(guide, exif);
 	}
 
 	updateMeta(id) {
 		// TODO: update META tags
 	}
 
-	updateTitle(id) {
+	updateTitle(guide) {
 		// fill in the title template
-		var markers = GuideData[id].markers;
+		const markers = guide.markers;
+		const start = markers[0];
+		const end = markers.slice(-1)[0];
 		this.titleElement.innerHTML = this.titleTemplate.innerHTML
-			.replace(/{startTransport}/g, markers[0].type)
-			.replace(/{startLocation}/g, markers[0].location)
-			.replace(/{walkLocation}/g, GuideData[id].location)
-			.replace(/{walkDuration}/g, GuideData[id].duration)
-			.replace(/{walkDistance}/g, GuideData[id].distance)
-			.replace(/{endTransport}/g, markers[markers.length - 1].type)
-			.replace(/{endLocation}/g, markers[markers.length - 1].location);
-		// add the onclick handler
-		this.titleElement.onclick = function(evt) {
-			evt.preventDefault();
-			document.body.className = document.body.className.replace(/screen-photos|screen-guide|screen-map/, 'screen-menu');
-		};
+			.replace(/{startTransport}/g, start.type)
+			.replace(/{startLocation}/g, start.location)
+			.replace(/{walkLocation}/g, guide.location)
+			.replace(/{walkDuration}/g, guide.duration)
+			.replace(/{walkDistance}/g, guide.distance)
+			.replace(/{endTransport}/g, end.type)
+			.replace(/{endLocation}/g, end.location);
 	}
 
-	updateGuide(id) {
+	updateGuide(guide) {
 		// gather the information
-		var _this = this;
-		var description = '<p>' + GuideData[id].description.join(' ') + '</p>';
-		var duration = GuideData[id].duration;
-		var distance = GuideData[id].distance;
-		var gpx = this.config.gpxUrl.replace(/{id}/g, id);
-		var markers = GuideData[id].markers;
+		var description = '<p>' + guide.description.join(' ') + '</p>';
+		var duration = guide.duration;
+		var distance = guide.distance;
+		var gpx = this.config.gpxUrl.replace(/{id}/g, guide.key);
+		var markers = guide.markers;
 		var there = '<p>' + markers[0].description + '</p>';
 		var back = '<p>' + markers[markers.length - 1].description + '</p>';
-		var landmarks = this.updateLandmarks(id);
-		var updated = GuideData[id].updated;
+		var landmarks = this.updateLandmarks(guide);
+		var updated = guide.updated;
 		var date = new Date(updated).toLocaleDateString('en-AU', {
 			year: 'numeric',
 			month: 'short',
 			day: 'numeric'
 		});
 		// fill the guide with information
-		this.guideElement.innerHTML = this.config.guideTemplate.innerHTML
+		this.guideElement.innerHTML = this.guideTemplate.innerHTML
 			.replace(/{updated}/g, updated)
 			.replace(/{date}/g, date)
 			.replace(/{description}/g, description)
@@ -84,40 +90,42 @@ export class Details {
 			buttons[a].addEventListener('click', this.onLocate.bind(this, buttons[a]));
 		}
 		// start the script for the image viewer
-		this.config.photocylinder = new Photocylinder({
-			'elements': document.querySelectorAll('.guide .cylinder-image'),
-			'container': this.guideElement,
-			'spherical': /fov360|\d{3}_r\d{6}/i,
-			'cylindrical': /fov180/i,
-			'slicer': this.config.sliceUrl,
-			'idle': 0.1,
-			'opened': function(link) {
-				_this.returnTo = 'guide';
-				_this.config.guideMap.indicate(link);
-				return true;
-			},
-			'located': function(link) {
-				_this.returnTo = 'guide';
-				_this.config.guideMap.indicate(link);
-				document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
-			},
-			'closed': function() {
-				_this.config.guideMap.unindicate();
-			}
-		});
+		const thumbnails = this.guideElement.querySelectorAll('.cylinder-image');
+		for (let thumbnail of thumbnails) {
+			// TODO: destroy after use
+			new Photocylinder({
+				'element': thumbnail,
+				'container': this.guideElement,
+				'spherical': /fov360|\d{3}_r\d{6}/i,
+				'cylindrical': /fov180/i,
+				'idle': 0.1,
+				'opened': (link) => {
+					this.returnTo = 'guide';
+					this.config.guideMap.indicate(link);
+					return true;
+				},
+				'located': (link) => {
+					this.returnTo = 'guide';
+					this.config.guideMap.indicate(link);
+					document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
+				},
+				'closed': () => {
+					this.config.guideMap.unindicate();
+				}
+			});
+		}
 	}
 
-	updateLandmarks(id) {
+	updateLandmarks(guide) {
 		// gather the information
-		var _this = this;
-		var prefix = (GuideData[id].alias) ? GuideData[id].alias.key : id;
+		var prefix = (guide.alias) ? guide.alias.key : guide.key;
 		var landmark, landmarks = "";
 		// fill the guide with landmarks
-		GuideData[id].markers.map(function (marker) {
+		guide.markers.map((marker) => {
 			// if is a landmark if it has a photo
 			if (marker.photo) {
 				// get the description
-				landmark = _this.addThumbnail(prefix, marker);
+				landmark = this.addThumbnail(prefix, marker);
 				// add extra markup for optional landmarks
 				if (marker.optional) { landmarks += '<div class="guide-optional">' + landmark + '</div>'; }
 				else if (marker.detour) { landmarks += '<div class="guide-detour">' + landmark + '</div>'; }
@@ -127,7 +135,7 @@ export class Details {
 			// if the landmark is a trophy location
 			else if (marker.badge) {
 				// get the description
-				landmark = _this.addTrophy(marker);
+				landmark = this.addTrophy(marker);
 				// add extra markup for optional landmarks
 				landmarks += '<div class="guide-trophy">' + landmark + '</div>';
 			}
@@ -156,11 +164,9 @@ export class Details {
 			.replace(/{lat}/g, marker.lat);
 	}
 
-	updateMap(id) {
+	updateMap(guide, route, exif) {
 		// get the properties if this is a segment of another walk
-		var prefix = (GuideData[id].alias && GuideData[id].alias.key)
-			? GuideData[id].alias.key
-			: id;
+		var prefix = (guide.alias && guide.alias.key) ? guide.alias.key : guide.key;
 		// add the click event to the map back button
 		this.returnElement.addEventListener('click', this.onReturnFromMap.bind(this));
 		// clear the old map if active
@@ -169,46 +175,41 @@ export class Details {
 		}
 		// start the map
 		this.config.guideMap = new Localmap({
-			'key': id,
 			'container': this.localmapElement,
 			'legend': null,
 			// assets
-			'thumbsUrl': this.config.localUrl + '/small/{key}/',
-			'photosUrl': this.config.remoteUrl + '/medium/{key}/',
+			'thumbsUrl': this.config.localUrl + `/small/${prefix}/`,
+			'photosUrl': this.config.remoteUrl + `/medium/${prefix}/`,
 			'markersUrl': this.config.localUrl + '/img/marker-{type}.svg',
-			'exifUrl': this.config.exifUrl,
-			'guideUrl': this.config.localUrl + '/guides/{key}.json',
-			'routeUrl': this.config.remoteUrl + '/gpx/{key}.gpx',
-			'mapUrl': this.config.localUrl + '/maps/{key}.jpg',
+			'exifUrl': this.config.remoteUrl + '/php/imageexif.php?src=../../{src}',
+			'guideUrl': this.config.localUrl + `/guides/${prefix}.json`,
+			'routeUrl': this.config.remoteUrl + `/gpx/${prefix}.gpx`,
+			'mapUrl': this.config.localUrl + `/maps/${prefix}.jpg`,
       		'tilesUrl': this.config.localUrl + '/tiles/{z}/{x}/{y}.jpg',
       		'tilesZoom': 15,
 			// cache
-			'guideData': GuideData,
-			'routeData': GpxData,
-			'exifData': ExifData,
+			'guideData': guide,
+			'routeData': route,
+			'exifData': exif,
 			// attribution
 			'creditsTemplate': this.creditTemplate.innerHTML,
 			// events
-			'checkHotspot': parent.trophies.check.bind(parent.trophies),
-			'enterHotspot': parent.trophies.enter.bind(parent.trophies),
-			'leaveHotspot': parent.trophies.leave.bind(parent.trophies)
+			'checkHotspot': this.trophies.check.bind(this.trophies),
+			'enterHotspot': this.trophies.enter.bind(this.trophies),
+			'leaveHotspot': this.trophies.leave.bind(this.trophies)
 		});
 	}
 
-	updateWall(id) {
-		var _this = this,
-			src,
-			srcs = [],
-			wallTemplate = this.wallTemplate.innerHTML,
-			wallHtml = '';
+	updateWall(guide, exif) {
+		var src, srcs = [], wallTemplate = this.wallTemplate.innerHTML, wallHtml = '';
 		// reset the wall
 		this.wallElement.className = this.wallElement.className.replace(/-active/g, '-passive');
 		// get the properties if this is a segment of another walk
-		var prefix = (GuideData[id].alias && GuideData[id].alias.key) ? GuideData[id].alias.key : id;
-		var start = (GuideData[id].alias && GuideData[id].alias.start) ? GuideData[id].alias.start : 0;
-		var end = (GuideData[id].alias && GuideData[id].alias.end) ? GuideData[id].alias.end + 1 : null;
+		var prefix = (guide.alias && guide.alias.key) ? guide.alias.key : guide.key;
+		var start = (guide.alias && guide.alias.start) ? guide.alias.start : 0;
+		var end = (guide.alias && guide.alias.end) ? guide.alias.end + 1 : null;
 		// get the photos
-		for (src in ExifData[prefix]) {
+		for (src in exif) {
 			srcs.push(src);
 		}
 		// create a list of photos
@@ -224,27 +225,30 @@ export class Details {
 			'element': this.wallElement
 		});
 		// start the script for the image viewer
-		this.config.photocylinder = new Photocylinder({
-			'elements': document.querySelectorAll('.photowall .cylinder-image'),
-			'container': this.wallElement,
-			'spherical': /fov360|\d{3}_r\d{6}/i,
-			'cylindrical': /fov180/i,
-			'slicer': this.config.sliceUrl,
-			'idle': 0.1,
-			'opened': function(link) {
-				_this.returnTo = 'photos';
-				_this.config.guideMap.indicate(link);
-				return true;
-			},
-			'located': function(link) {
-				_this.returnTo = 'photos';
-				_this.config.guideMap.indicate(link);
-				document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
-			},
-			'closed': function() {
-				_this.config.guideMap.unindicate();
-			}
-		});
+		const thumbnails = this.wallElement.querySelectorAll('.cylinder-image');
+		for (let thumbnail of thumbnails) {
+			// TODO: destroy after use
+			new Photocylinder({
+				'element': thumbnail,
+				'container': this.wallElement,
+				'spherical': /fov360|\d{3}_r\d{6}/i,
+				'cylindrical': /fov180/i,
+				'idle': 0.1,
+				'opened': (link) => {
+					this.returnTo = 'photos';
+					this.config.guideMap.indicate(link);
+					return true;
+				},
+				'located': (link) => {
+					this.returnTo = 'photos';
+					this.config.guideMap.indicate(link);
+					document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
+				},
+				'closed': () => {
+					this.config.guideMap.unindicate();
+				}
+			});
+		}
 	}
 
 	onLocate(button, evt) {
@@ -265,5 +269,11 @@ export class Details {
 		document.body.className = document.body.className.replace(/screen-map/, 'screen-' + this.returnTo);
 	}
 
-	init() {}
+	init() {
+		// make the title a return button
+		this.titleElement.onclick = function(evt) {
+			evt.preventDefault();
+			document.body.className = document.body.className.replace(/screen-photos|screen-guide|screen-map/, 'screen-menu');
+		};
+	}
 }

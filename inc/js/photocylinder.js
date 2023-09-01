@@ -10,7 +10,6 @@ export class Photocylinder {
 			'container': document.body,
 			'spherical' : /r(\d+).jpg/i,
 			'standalone': false,
-			'slicer': '{src}',
 			'idle': 0.1
 		}
 		for (var key in config) {
@@ -25,7 +24,6 @@ export class Photocylinder {
 	}
 
 	success(url, fov) {
-		console.log("success", url);
 		var config = this.config;
 		// hide the busy indicator
 		this.busy.hide();
@@ -90,11 +88,12 @@ export class Photocylinder {
 		this.busy = new Busy(this.config.container);
 		this.busy.show();
 		// create the url for the image sizing webservice
-	  var url = this.config.url || this.element.getAttribute('href') || this.element.getAttribute('data-url');
-	  var size = (this.config.spherical.test(url)) ? 'height=1080&top=0.2&bottom=0.8' : 'height=1080';
+		var url = this.config.url || this.element.getAttribute('href') || this.element.getAttribute('data-url');
 		// load the image asset
 		this.config.image = new Image();
-		this.config.image.src = this.config.slicer.replace('{src}', url).replace('{size}', size);
+		this.config.image.alt = '';
+		this.config.image.setAttribute('data-cropped', (this.config.spherical.test(url)));
+		this.config.image.src = url;
 		// load the viewer when done
 		this.config.image.addEventListener('load', this.success.bind(this, url));
 		this.config.image.addEventListener('error', this.failure.bind(this, url));

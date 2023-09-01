@@ -13,7 +13,6 @@ export class Index {
 		this.menuElement = document.querySelector('.navigation > menu');
 		this.titleTemplate = document.getElementById('title-template');
 		this.menuTemplate = document.getElementById('menu-template');
-		this.guideTemplate = document.getElementById('guide-template');
 		this.init();
 	}
 

@@ -35,6 +35,6 @@
 	$image = new imageExif;
 	$image->getExif(@$_REQUEST['src'], @$_REQUEST['callback']);
 
-	// errantventure.local/~woolly/Useful/photowall/php/imageexif.php?src=../img/photo_0a.jpg&callback=alert
+	// imageexif.php?src=../img/photo_0a.jpg&callback=alert
 
 ?>

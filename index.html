@@ -1,29 +1,19 @@
 <!DOCTYPE html>
 <html class="ios-true" lang="en">
-	<?php
-
-		// constants
-		include 'constants.php';
-
-		// summary
-		$subtitle = "Easy bushwalks around Sydney using the train, bus and ferry.";
-		$description = "Don't let organising a bushwalk intimidate you. These 40+ hikes are easy day trips from Sydney using public transport.";
-
-	?>
 	<head>
 		<meta charset="UTF-8" />
-		<title><?php print $title ?></title>
+		<title>Sydney Hiking Trips</title>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta http-equiv="imagetoolbar" content="no" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<title><?php echo $subtitle?> - <?php print $title ?></title>
+		<title>Easy bushwalks around Sydney using the train, bus and ferry. - Sydney Hiking Trips</title>
 		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, viewport-fit=cover" />
-		<meta name="description" content="<?php echo $description ?>"/>
-		<meta property="og:url" content="https://<?php print $domain ?>/pwa.php" />
-		<meta property="og:image" content="https://<?php print $domain ?>/inc/img/favicon.png" />
-		<meta property="og:title" content="<?php print $title ?> - <?php echo $subtitle ?>" />
-		<meta property="og:description" content="<?php echo $description ?>" />
+		<meta name="description" content="Don't let organising a bushwalk intimidate you. These 40+ hikes are easy day trips from Sydney using public transport."/>
+		<meta property="og:url" content="https://local.sydneyhikingtrips.com/pwa.php" />
+		<meta property="og:image" content="https://local.sydneyhikingtrips.com/inc/img/favicon.png" />
+		<meta property="og:title" content="Sydney Hiking Trips - Easy bushwalks around Sydney using the train, bus and ferry." />
+		<meta property="og:description" content="Don't let organising a bushwalk intimidate you. These 40+ hikes are easy day trips from Sydney using public transport." />
 		<meta property="og:type" content="website" />
 		<meta property="og:locale" content="en_AU" />
 		<meta name="msapplication-TileColor" content="#558b2f" />
@@ -44,9 +34,9 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="./inc/ico/favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="96x96" href="./inc/ico/favicon-96x96.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="./inc/ico/favicon-16x16.png" />
-		<link rel="canonical" href="https://<?php print $domain ?>/pwa.php">
+		<link rel="canonical" href="https://local.sydneyhikingtrips.com/pwa.php">
 		<link rel="manifest" href="./manifest.json" />
-		<link rel="stylesheet" href="./inc/css/styles.css?t=<?php print $revision ?>"/>
+		<link rel="stylesheet" href="./inc/css/styles.css?t=2021-02-22"/>
 	</head>
 
 	<body class="screen-menu" data-color-scheme="auto">
@@ -57,7 +47,7 @@
 			<section id="appView" class="status-busy">
 
 				<header class="title">
-					<h1><a href="/"><?php print $title ?><i><?php print " - " . $subtitle ?></i></a></h1>
+					<h1><a href="/">Sydney Hiking Trips<i> - Easy bushwalks around Sydney using the train, bus and ferry.</i></a></h1>
 					<button class="toggle-color-scheme">Toggle dark mode</button>
 				</header>
 
@@ -122,9 +112,9 @@
 						<h2>About This App</h2>
 						<figure>
 							<img src="./inc/img/icon.png" />
-							<figcaption><strong><?php print $title ?></strong> Version 2.6.0</figcaption>
+							<figcaption><strong>Sydney Hiking Trips</strong> Version 2.6.0</figcaption>
 						</figure>
-						<p>Thank you for supporting <?php print $title ?>. You make it possible for me to expand this guide and motivate people to enjoy Sydney's varied landscapes.</p>
+						<p>Thank you for supporting Sydney Hiking Trips. You make it possible for me to expand this guide and motivate people to enjoy Sydney's varied landscapes.</p>
 						<p>Please add your <a href="https://github.com/WoollyMittens/sydneytrainwalks-web-app/issues">suggestions and bug reports on GitHub</a>, or send them to <a href="mailto:maurice@woollymittens.nl">maurice@woollymittens.nl</a>.</p>
 						<h2>Credits</h2>
 						<p>App, photography, and GPS logs &copy; Maurice van Creij. Licensed under <a href="https://opensource.org/licenses/MIT" target="_blank">The MIT License</a>.</p>
@@ -253,22 +243,20 @@
 		<!-- scripts -->
 		<script>
 			// configure the asset paths
-			const stwDomain = '<?php print $domain ?>';
+			const stwDomain = 'local.sydneyhikingtrips.com';
 			const stwConfig = {
 				'localUrl': './inc',
 				'remoteUrl': `https://${stwDomain}/inc`,
-				'exifUrl': `https://${stwDomain}/imageexif.php?src={src}`,
+				'exifUrl': `https://${stwDomain}/inc/exifs/{id}.json`,
 				'guideUrl': `https://${stwDomain}/inc/guides/{id}.json`,
 				'routeUrl': `https://${stwDomain}/inc/routes/{id}.json`,
-				'gpxUrl': `https://${stwDomain}/inc/gpx/{id}.gpx`,
-				//'sliceUrl' : 'https://${stwDomain}/imageslice.php?src={src}&{size}',
-				'sliceUrl' : `https://${stwDomain}/inc/medium/{src}`
+				'gpxUrl': `https://${stwDomain}/inc/gpx/{id}.gpx`
 			};
 		</script>
 		<script async type="module" src="./inc/js/sydneytrainwalks.js"></script>
 		<script>
 			// register the service worker for offline content
-			//if('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js?t=<?php print $revision ?>');
+			//if('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js?t=2021-02-22');
 		</script>
 
 	</body>

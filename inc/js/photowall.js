@@ -3,7 +3,6 @@
 export class Photowall {
 	constructor(config) {
 		this.config = config;
-		this.context = context;
 		this.element = config.element;
 		this.init();
 	}

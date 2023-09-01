@@ -1,6 +1,6 @@
 ## Sydney Hiking Trips
 
-Version 1.9.2
+Version 3.0.0
 
 Thank you for supporting Sydney Train Walks. You make it possible for me to expand this guide and motivate people to enjoy Sydney's varied landscapes.
 

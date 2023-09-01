@@ -79,7 +79,6 @@ export class Overview {
       routes.features = routes.features.concat(route.features);
     }
     // return the result
-    console.log('routes', routes);
     return routes;
   }
 

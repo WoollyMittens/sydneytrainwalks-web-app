@@ -16,6 +16,7 @@ export class SydneyTrainWalks {
 		this.guideIds = [];
 		this.guideCache = {};
 		this.routeCache = {};
+		this.exifCache = {};
 		// start the app
 		this.init();
 	}
@@ -46,6 +47,20 @@ export class SydneyTrainWalks {
 		}
 		// return the cached item
 		return this.routeCache[id];
+	}
+
+	async loadExif(id) {
+		// if the id is not cached
+		if (!this.exifCache[id]) {
+			// load a fresh copy
+			const url = this.config.exifUrl.replace(/{id}/g, id);
+			const response  = await fetch(url);
+			const exifData = await response.json();
+			// store it in the cache
+			this.exifCache[id] = exifData;
+		}
+		// return the cached item
+		return this.exifCache[id];
 	}
 
 	updateView(id, mode) {
@@ -101,12 +116,12 @@ export class SydneyTrainWalks {
 		// initialise the components
 		this.about = new About(this.config);
 		this.busy = new Busy(this.config);
-		this.details = new Details(this.config);
 		this.footer = new Footer(this.config);
 		this.header = new Header(this.config);
 		this.index = new Index(this.config, this.guideCache, this.updateView.bind(this));
 		this.overview = new Overview(this.config, this.guideIds, this.loadGuide.bind(this), this.loadRoute.bind(this), this.updateView.bind(this));
 		this.trophies = new Trophies(this.config, this.guideIds, this.loadGuide.bind(this), this.updateView.bind(this), this.busy);
+		this.details = new Details(this.config, this.loadGuide.bind(this), this.loadRoute.bind(this), this.loadExif.bind(this), this.trophies);
 		this.editor = new Editor();
 		// restore the previous state
 		if (storedMode && storedId && this.guideIds.includes(storedId)) { this.updateView(storedId, storedMode); }
