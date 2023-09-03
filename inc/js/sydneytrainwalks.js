@@ -6,7 +6,7 @@ import { Header } from "./sydneytrainwalks-header.js";
 import { Index } from "./sydneytrainwalks-index.js";
 import { Overview } from "./sydneytrainwalks-overview.js";
 import { Trophies } from "./sydneytrainwalks-trophies.js";
-import { Editor } from "./editor.js";
+import { Editor } from "./sydneytrainwalks-editor.js";
 
 export class SydneyTrainWalks {
 	constructor(config) {

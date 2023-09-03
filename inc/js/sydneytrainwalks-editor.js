@@ -1,18 +1,17 @@
 export class Editor {
   constructor() {
-    this.landmarks = document.querySelectorAll('.guide-landmark');
     this.output = [];
-    this.init();
   }
 
   init() {
     var image, label, textarea;
     // for all landmarks
-    for (var a = 0, b = this.landmarks.length; a < b; a += 1) {
+    const landmarks = document.querySelectorAll('.guide-landmark');
+    for (var a = 0, b = landmarks.length; a < b; a += 1) {
       // get the image
-      image = this.landmarks[a].querySelector('img');
+      image = landmarks[a].querySelector('img');
       // get the label
-      label = this.landmarks[a].querySelector('.guide-text');
+      label = landmarks[a].querySelector('.guide-text');
       label.style.flex = '1 1 auto';
       // replace the label with an input field
       textarea = document.createElement('textarea');
