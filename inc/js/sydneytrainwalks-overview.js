@@ -64,7 +64,7 @@ export class Overview {
       // modify the marker to be a button
       marker.type = 'waypoint';
       marker.description = '';
-      marker.callback = this.onMarkerClicked.bind(this, marker.id);
+      marker.callback = this.onMarkerClicked.bind(this, marker.key);
     }
     // return the result
     return guide;
