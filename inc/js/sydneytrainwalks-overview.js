@@ -92,7 +92,6 @@ export class Overview {
   init() {
     // wait for the viewport to become visible
     new IntersectionObserver((entries, observer) => {
-      console.log('overview', entries[0]);
       if (entries[0].isIntersecting) {
         // start the map
         this.createMap();

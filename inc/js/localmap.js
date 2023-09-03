@@ -8,12 +8,9 @@ import { Legend } from "./localmap-legend.js";
 export class Localmap {
 	constructor(config) {
 		this.config = {
-			key: null,
-			alias: null,
 			container: null,
 			legend: null,
 			canvasWrapper: null,
-			canvasElement: null,
 			thumbsUrl: null,
 			photosUrl: null,
 			markersUrl: null,
@@ -115,6 +112,7 @@ export class Localmap {
 		// create a save state selected properties
 		var state = {};
 		state = {
+			key: this.config.guideData?.key,
 			lon: this.config.position.lon,
 			lat: this.config.position.lat,
 			zoom: this.config.position.zoom,
@@ -127,13 +125,9 @@ export class Localmap {
 		// load the state from local storage
 		var state = JSON.parse(localStorage.getItem("localmap"));
 		// if the stored state applied to this instance of the map, restore the value
-		if (state) {
-			this.focus(state.lon, state.lat, state.zoom, false);
-		}
+		if (state && state.key === this.config.guideData?.key) { this.focus(state.lon, state.lat, state.zoom, false); }
 		// otherwise restore the fallback
-		else {
-			this.focus(lon, lat, zoom, false);
-		}
+		else { this.focus(lon, lat, zoom, false); }
 	}
 
 	describe(markerdata) {

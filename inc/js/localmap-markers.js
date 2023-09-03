@@ -51,13 +51,14 @@ export class Markers {
 	addGuide() {
 		var config = this.config;
 		var guideData = this.config.guideData;
+		console.log('guideData', guideData);
 		// store the interpolation limits
 		var min = config.minimum;
 		var max = config.maximum;
-		min.lon = guideData ? guideData.bounds.west : guideData.bounds.west;
-		min.lat = guideData ? guideData.bounds.north : guideData.bounds.north;
-		max.lon = guideData ? guideData.bounds.east : guideData.bounds.east;
-		max.lat = guideData ? guideData.bounds.south : guideData.bounds.south;
+		min.lon = guideData.bounds.west;
+		min.lat = guideData.bounds.north;
+		max.lon = guideData.bounds.east;
+		max.lat = guideData.bounds.south;
 		// store the coverage limits
 		min.lon_cover = guideData.bounds.west;
 		min.lat_cover = guideData.bounds.north;
