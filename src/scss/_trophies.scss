@@ -1,7 +1,7 @@
 .trophies {
 	transition-property: transform;
 	transition-duration: 300ms;
-	transform: translate(-100%, 0);
+	transform: translate(-110%, 0);
 	background: #fff;
 	bottom: 4rem;
 	padding: 0;
@@ -10,6 +10,10 @@
 	top: 4rem;
 	width: 100%;
 	z-index: 8;
+
+	[data-color-scheme="light"] & {
+		background-color: #fff;
+	}
 
 	[data-color-scheme="dark"] & {
 		background-color: #212121;
@@ -21,7 +25,6 @@
 
 	@media (max-width:959px) {
 		border-left: none;
-		width: 100%;
 	}
 
 	@media print {
@@ -86,6 +89,12 @@
 		img {
 			width: auto;
 			height: 3rem;
+
+			[data-color-scheme="light"] & {
+				background-color: initial;
+				border-radius: initial;
+				padding: initial;
+			}
 
 			[data-color-scheme="dark"] & {
 				background-color: #fff;

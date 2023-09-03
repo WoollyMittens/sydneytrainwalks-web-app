@@ -1,14 +1,19 @@
 .overview {
 	transition-property: transform;
 	transition-duration: 300ms;
-	transform: translate(-100%, 0);
-	background: #fff none;
+	transform: translate(-110%, 0);
+	background: #fff;
 	bottom: 4rem;
-	left: 0;
+	padding: 0;
 	position: absolute;
-	right: 0;
+	left: 0;
 	top: 4rem;
+	width: 100%;
 	z-index: 6;
+
+	[data-color-scheme="light"] & {
+		background: #fff none;
+	}
 
 	[data-color-scheme="dark"] & {
 		background: #212121 none;
@@ -19,7 +24,7 @@
 	}
 
 	@media (min-width:960px) {
-		right: 50%;
+		width: 50%;
 	}
 
 	@media print {

@@ -12,6 +12,10 @@
 	width: 50%;
 	z-index: 5;
 	
+	[data-color-scheme="light"] & {
+		background: #fff;
+	}
+	
 	[data-color-scheme="dark"] & {
 		background: #212121;
 	}
@@ -72,6 +76,10 @@
 		padding: 1.5rem 2rem;
 		background-color: #FFFDE7;
 
+		[data-color-scheme="light"] & {
+			background-color: #FFFDE7;
+		}
+
 		[data-color-scheme="dark"] & {
 			background-color: #F57F1733;
 		}
@@ -95,6 +103,12 @@
 			height: auto;
 			width: 64px;
 			vertical-align: middle;
+
+			[data-color-scheme="light"] & {
+				background-color: transparent;
+				border-radius: initial;
+				padding: initial;
+			}
 
 			[data-color-scheme="dark"] & {
 				background-color: #fff;
@@ -147,6 +161,10 @@
 	&-detour {
 		background-color: #FFEBEE;
 
+		[data-color-scheme="light"] & {
+			background-color: #FFEBEE;
+		}
+
 		[data-color-scheme="dark"] & {
 			background-color: #B71C1C66;
 		}
@@ -159,6 +177,10 @@
 	&-attention {
 		background-color: #E3F2FD;
 
+		[data-color-scheme="light"] & {
+			background-color: #E3F2FD;
+		}
+
 		[data-color-scheme="dark"] & {
 			background-color: #0D47A166;
 		}
@@ -170,6 +192,10 @@
 
 	&-optional {
 		background-color: #F1F8E9;
+
+		[data-color-scheme="light"] & {
+			background-color: #F1F8E9;
+		}
 
 		[data-color-scheme="dark"] & {
 			background-color: #33691E66;
@@ -228,6 +254,10 @@
 		text-indent: 125%;
 		cursor: pointer;
 		vertical-align: middle;
+
+		[data-color-scheme="light"] & {
+			background-image: url("../img/marker-location.svg");
+		}
 
 		[data-color-scheme="dark"] & {
 			background-image: url("../img/marker-location-inv.svg");

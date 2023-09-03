@@ -2,7 +2,7 @@
 	transition-property: transform;
 	transition-duration: 300ms;
 	transform: translate(-100%, 0);
-	background: #fff;
+	background: #fff none;
 	bottom: 4rem;
 	padding: 0;
 	position: absolute;
@@ -10,6 +10,10 @@
 	top: 4rem;
 	width: 100%;
 	z-index: 7;
+
+	[data-color-scheme="light"] & {
+		background: #fff none;
+	}
 
 	[data-color-scheme="dark"] & {
 		background: #212121 none;

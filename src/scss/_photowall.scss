@@ -14,6 +14,10 @@
 	margin: 0;
 	padding: 0;
 
+	[data-color-scheme="light"] & {
+		background: #FFF;
+	}
+
 	[data-color-scheme="dark"] & {
 		background-color: #212121;
 	}
@@ -63,6 +67,10 @@
 				background-size: cover;
 				background-position: center;
 				border: solid 1px #FFF;
+
+				[data-color-scheme="light"] & {
+					border: solid 1px #FFF;
+				}
 
 				[data-color-scheme="dark"] & {
 					border: solid 1px #212121;

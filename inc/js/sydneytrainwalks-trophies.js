@@ -157,7 +157,7 @@ export class Trophies {
 	init() {
 		// wait for the viewport to become visible
 		new IntersectionObserver((entries, observer) => {
-			if (entries[0].intersectionRatio > 0.5) {
+			if (entries[0].isIntersecting) {
 				// fill the trophies page
 				this.update();
 				// stop waiting

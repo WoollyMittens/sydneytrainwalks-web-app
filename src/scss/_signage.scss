@@ -13,9 +13,15 @@
 	overflow: hidden;
 	text-align: center;
 
+	[data-color-scheme="light"] & {
+		background-color: #F57C00;
+		color: #FFB74D;
+		border: solid 1px #fff;
+	}
+
 	[data-color-scheme="dark"] & {
 		background-color: #212121;
-		color: #FFB74D;
+		color: #FFF;
 		border: solid 1px #000;
 	}
 
@@ -57,6 +63,15 @@
 			background-image: url("../img/sign_train_3.svg");
 		}
 
+		[data-color-scheme="light"] & {
+			background-color: #F57C00;
+			color: #fff;
+
+			&:before {
+				background-image: url("../img/sign_train_3.svg");
+			}
+		}
+
 		[data-color-scheme="dark"] & {
 			background-color: #F57C0033;
 			color: #FFCC80;
@@ -82,6 +97,15 @@
 
 		&:before {
 			background-image: url("../img/sign_bus.svg");
+		}
+
+		[data-color-scheme="light"] & {
+			background-color: #03A9F4;
+			color: #fff;
+
+			&:before {
+				background-image: url("../img/sign_bus.svg");
+			}
 		}
 
 		[data-color-scheme="dark"] & {
@@ -110,6 +134,15 @@
 			background-image: url("../img/sign_water_transport.svg");
 		}
 
+		[data-color-scheme="light"] & {
+			background-color: #7CB342;
+			color: #fff;
+
+			&:before {
+				background-image: url("../img/sign_water_transport.svg");
+			}
+		}
+
 		[data-color-scheme="dark"] & {
 			background-color: #7CB34233;
 			color: #C5E1A5;
@@ -136,6 +169,15 @@
 			background-image: url("../img/sign_tramway.svg");
 		}
 
+		[data-color-scheme="light"] & {
+			background-color: #D32F2F;
+			color: #fff;
+
+			&:before {
+				background-image: url("../img/sign_tramway.svg");
+			}
+		}
+
 		[data-color-scheme="dark"] & {
 			background-color: #D32F2F33;
 			color: #EF9A9A;
@@ -160,6 +202,15 @@
 
 		&:before {
 			background-image: url("../img/sign_car.svg");
+		}
+
+		[data-color-scheme="light"] & {
+			background-color: #0D47A1;
+			color: #fff;
+
+			&:before {
+				background-image: url("../img/sign_car.svg");
+			}
 		}
 
 		[data-color-scheme="dark"] & {
@@ -197,6 +248,11 @@
 
 		&:before {
 			display: none;
+		}
+
+		[data-color-scheme="light"] & {
+			background-color: #1B5E20;
+			color: #F0F4C3;
 		}
 
 		[data-color-scheme="dark"] & {

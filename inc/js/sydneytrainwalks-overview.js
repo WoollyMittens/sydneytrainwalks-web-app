@@ -10,7 +10,7 @@ export class Overview {
     this.loadGuide = loadGuide;
 		this.loadRoute = loadRoute;
 		this.updateView = updateView;
-    this.overviewElement = document.querySelector('.localmap.overview');
+    this.overviewElement = document.querySelector('.overview');
     this.creditTemplate = document.getElementById('credit-template');
     this.init();
   }
@@ -18,6 +18,8 @@ export class Overview {
   async createMap() {
     // we only want one
     if (this.localmap) return false;
+    // clear the container
+    this.overviewElement.innerHTML = '';
     // generate the map
     this.localmap = new Localmap({
       'container': this.overviewElement,
@@ -90,7 +92,8 @@ export class Overview {
   init() {
     // wait for the viewport to become visible
     new IntersectionObserver((entries, observer) => {
-      if (entries[0].intersectionRatio > 0.5) {
+      console.log('overview', entries[0]);
+      if (entries[0].isIntersecting) {
         // start the map
         this.createMap();
         // stop waiting

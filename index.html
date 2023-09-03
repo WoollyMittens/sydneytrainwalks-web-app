@@ -112,7 +112,7 @@
 						<h2>About This App</h2>
 						<figure>
 							<img src="./inc/img/icon.png" />
-							<figcaption><strong>Sydney Hiking Trips</strong> Version 2.6.0</figcaption>
+							<figcaption><strong>Sydney Hiking Trips</strong> Version 3.0.0</figcaption>
 						</figure>
 						<p>Thank you for supporting Sydney Hiking Trips. You make it possible for me to expand this guide and motivate people to enjoy Sydney's varied landscapes.</p>
 						<p>Please add your <a href="https://github.com/WoollyMittens/sydneytrainwalks-web-app/issues">suggestions and bug reports on GitHub</a>, or send them to <a href="mailto:maurice@woollymittens.nl">maurice@woollymittens.nl</a>.</p>
@@ -241,22 +241,25 @@
 		</template>
 
 		<!-- scripts -->
+		<script id="stw" async type="module" src="./inc/js/sydneytrainwalks.js"></script>
 		<script>
-			// configure the asset paths
-			const stwDomain = 'local.sydneyhikingtrips.com';
-			const stwConfig = {
-				'localUrl': './inc',
-				'remoteUrl': `https://${stwDomain}/inc`,
-				'exifUrl': `https://${stwDomain}/inc/exifs/{id}.json`,
-				'guideUrl': `https://${stwDomain}/inc/guides/{id}.json`,
-				'routeUrl': `https://${stwDomain}/inc/routes/{id}.json`,
-				'gpxUrl': `https://${stwDomain}/inc/gpx/{id}.gpx`
-			};
+			document.querySelector('#stw').addEventListener('load', function(evt) {
+				const local = '.';
+				const remote = 'https://local.sydneyhikingtrips.com';
+				// configure the asset paths
+				new SydneyTrainWalks({
+					'localUrl': `${local}/inc`,
+					'remoteUrl': `${remote}/inc`,
+					'exifUrl': `${local}/inc/exifs/{id}.json`,
+					'guideUrl': `${local}/inc/guides/{id}.json`,
+					'routeUrl': `${local}/inc/routes/{id}.json`,
+					'gpxUrl': `${local}/inc/gpx/{id}.gpx`
+				});
+			});
 		</script>
-		<script async type="module" src="./inc/js/sydneytrainwalks.js"></script>
 		<script>
 			// register the service worker for offline content
-			//if('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js?t=2021-02-22');
+			//if('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js?t=2023-09-03');
 		</script>
 
 	</body>

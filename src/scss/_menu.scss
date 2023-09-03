@@ -14,6 +14,10 @@
 	top: 4rem;
 	z-index: 5;
 
+	[data-color-scheme="light"] & {
+		background: #fff none;
+	}
+
 	[data-color-scheme="dark"] & {
 		background: #212121 none;
 	}
@@ -43,6 +47,10 @@
 		justify-content: center;
 		margin: 0;
 		text-align: center;
+
+		[data-color-scheme="light"] & {
+			background: #f6f6f6 none;
+		}
 
 		[data-color-scheme="dark"] & {
 			background: #212121 none;
@@ -87,6 +95,11 @@
 		background-position: center;
 		padding: 15px;
 		box-shadow: inset 0 0 100vh 100vh rgba(255,255,255,0.7);
+
+		[data-color-scheme="light"] & {
+			background-color: #F5F5F5;
+			box-shadow: inset 0 0 100vh 100vh rgba(255,255,255,0.7);
+		}
 
 		[data-color-scheme="dark"] & {
 			background-color: #424242;
@@ -156,6 +169,18 @@
 			background-color: #fff;
 			padding: 2em;
 			text-align: center;
+
+			[data-color-scheme="light"] & {
+				background: #fff;
+			}
+
+			[data-color-scheme="dark"] & {
+				background: #212121;
+			}
+		
+			@media (prefers-color-scheme: dark) {
+				background: #212121;
+			}
 		}
 	}
 

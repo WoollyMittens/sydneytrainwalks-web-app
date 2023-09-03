@@ -133,7 +133,4 @@ export class SydneyTrainWalks {
 	}
 }
 
-// autostart if preconfigured
-if (typeof stwConfig !== undefined) {
-	const sydneyTrainWalks = new SydneyTrainWalks(stwConfig);
-}
+window.SydneyTrainWalks = SydneyTrainWalks;

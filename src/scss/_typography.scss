@@ -23,6 +23,11 @@ body {
 	margin: 0;
 	padding: 0;
 
+	&[data-color-scheme="light"] {
+		background-color: #fff;
+		color: #212121;
+	}
+
 	&[data-color-scheme="dark"] {
 		background-color: #212121;
 		color: #fff;
@@ -74,6 +79,10 @@ ul {
 a {
 	color: #0D47A1;
 
+	[data-color-scheme="light"] & {
+		color: #0D47A1;
+	}
+
 	[data-color-scheme="dark"] & {
 		color: #BBDEFB;
 	}
@@ -94,6 +103,11 @@ a {
 	transition: background-color 300ms ease;
 	font-size: 0.875rem;
 
+	[data-color-scheme="light"] & {
+		background-color: #0d47a1;
+		color: #fff;
+	}
+
 	[data-color-scheme="dark"] & {
 		background-color: #FFB74D;
 		color: #000;
@@ -106,6 +120,11 @@ a {
 
 	&:hover {
 		background-color: #1565C0;
+
+		[data-color-scheme="dark"] & {
+			background-color: #1565C0;
+			color: #fff;
+		}
 
 		[data-color-scheme="dark"] & {
 			background-color: #FFCC80;

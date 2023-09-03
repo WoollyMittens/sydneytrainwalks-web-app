@@ -34,6 +34,12 @@
 			-moz-appearance: none;
 			appearance: none;
 
+			[data-color-scheme="light"] & {
+				border-bottom: solid 1px #E0E0E0;
+				background-color: #FFF;
+				color: #212121;
+			}
+
 			[data-color-scheme="dark"] & {
 				border-bottom: solid 1px #212121;
 				background-color: #000;
@@ -49,6 +55,10 @@
 			&:focus {
 				border-bottom: solid 2px #1976D2;
 
+				[data-color-scheme="light"] & {
+					border-bottom: solid 2px #1976D2;
+				}
+
 				[data-color-scheme="dark"] & {
 					border-bottom: solid 2px #FFB74D;
 				}
@@ -62,6 +72,15 @@
 		input {
 			background-image: url("../img/button_delete_2.svg");
 			padding-left: 15px;
+
+			[data-color-scheme="light"] & {
+				background-image: url("../img/button_delete_2.svg");
+				background-position: right center;
+
+				&::placeholder {
+					color: initial;
+				}
+			}
 
 			[data-color-scheme="dark"] & {
 				background-image: url("../img/button_delete_2_inv.svg");
@@ -86,6 +105,11 @@
 			background-image: url("../img/button_backward_2.svg");
 			padding-left: 15px;
 
+			[data-color-scheme="light"] & {
+				background-image: url("../img/button_backward_2.svg");
+				background-position: right center;
+			}
+
 			[data-color-scheme="dark"] & {
 				background-image: url("../img/button_backward_2_inv.svg");
 				background-position: right 10px center;
@@ -100,6 +124,10 @@
 
 	.searching-label {
 		flex: 1 1 100%;
+
+		[data-color-scheme="light"] & {
+			margin-bottom: initial;
+		}
 
 		[data-color-scheme="dark"] & {
 			margin-bottom: 10px;

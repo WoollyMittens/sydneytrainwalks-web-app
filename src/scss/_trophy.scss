@@ -19,6 +19,10 @@
 	align-items: stretch;
 	overflow: hidden;
 
+	[data-color-scheme="light"] & {
+		background-color: #fff;
+	}
+
 	[data-color-scheme="dark"] & {
 		background-color: #424242;
 	}
@@ -44,6 +48,12 @@
 		img {
 			width: auto;
 			height: 4rem;
+
+			[data-color-scheme="light"] & {
+				background-color: initial;
+				border-radius: initial;
+				padding: initial;
+			}
 
 			[data-color-scheme="dark"] & {
 				background-color: #fff;
@@ -111,6 +121,10 @@
 			font-size: 1rem;
 			font-weight: bold;
 			text-transform: uppercase;
+
+			[data-color-scheme="light"] & {
+				color: #0D47A1;
+			}
 
 			[data-color-scheme="dark"] & {
 				color: #FFB74D;

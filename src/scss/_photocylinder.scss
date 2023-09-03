@@ -208,6 +208,11 @@
 		text-decoration: none;
 		z-index: 2;
 
+		[data-color-scheme="light"] & {
+			background: #0D47A1;
+			color: #fff;
+		}
+
 		[data-color-scheme="dark"] & {
 			background-color: #FFB74D;
 			color: #000;
@@ -223,6 +228,10 @@
 			background-image: url("../img/close.svg");
 			background-size: 24px 24px;
 
+			[data-color-scheme="light"] & {
+				background-image: url("../img/close.svg");
+			}
+
 			[data-color-scheme="dark"] & {
 				background-image: url("../img/close_inv.svg");
 			}
@@ -234,6 +243,11 @@
 
 		&:hover {
 			background: $color-hover;
+
+			[data-color-scheme="light"] & {
+				background: $color-hover;
+				color: #fff;
+			}
 
 			[data-color-scheme="dark"] & {
 				background-color: #BBDEFB;
@@ -256,6 +270,10 @@
 
 		&:before {
 			background-image: url("../img/map_2.svg");
+
+			[data-color-scheme="light"] & {
+				background-image: url("../img/map_2.svg");
+			}
 
 			[data-color-scheme="dark"] & {
 				background-image: url("../img/map_2_drk.svg");
