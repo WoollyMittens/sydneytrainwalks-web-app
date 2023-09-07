@@ -2,18 +2,12 @@
   source: https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Offline_Service_workers
 */
 
-const cacheName = 'cache-20210222';
+const cacheName = 'cache-20230907';
 
 const contentToCache = [
-  './index.php',
-  './details.php',
-  './overview.php',
-  './about.php',
+  './index.html',
   './inc/css/styles.css',
   './inc/js/scripts.js',
-  './inc/js/exif-data.js',
-  './inc/js/guide-data.js',
-  './inc/js/gpx-data.js',
   './inc/img/action_redo_1.svg',
   './inc/img/alert.svg',
   './inc/img/amphora.svg',

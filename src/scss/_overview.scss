@@ -2,7 +2,7 @@
 	transition-property: transform;
 	transition-duration: 300ms;
 	transform: translate(-110%, 0);
-	background: #fff;
+	background: #b4d0d1;
 	bottom: 4rem;
 	padding: 0;
 	position: absolute;
@@ -11,16 +11,26 @@
 	width: 100%;
 	z-index: 6;
 
+	&:before {
+		display: block;
+		content: "loading map...";
+		position: relative;
+		z-index: 0;
+		left: 50%;
+		top: 50%;
+		color: #fff;
+	}
+
 	[data-color-scheme="light"] & {
-		background: #fff none;
+		background-color: #b4d0d1;
 	}
 
 	[data-color-scheme="dark"] & {
-		background: #212121 none;
+		background-color: #324242;
 	}
 
 	@media (prefers-color-scheme: dark) {
-		background: #212121 none;
+		background-color: #324242;
 	}
 
 	@media (min-width:960px) {

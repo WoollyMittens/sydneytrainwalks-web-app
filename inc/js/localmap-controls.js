@@ -11,13 +11,13 @@ export class Controls {
 		this.last = null;
 
 		this.config.container.addEventListener("mousedown", this.startInteraction.bind(this, "mouse"));
-		this.config.container.addEventListener("mousemove", this.moveInteraction.bind(this, "mouse"));
+		this.config.container.addEventListener("mousemove", this.moveInteraction.bind(this, "mouse"), {passive: true});
 		this.config.container.addEventListener("mouseup", this.endInteraction.bind(this, "mouse"));
-		this.config.container.addEventListener("wheel", this.wheelInteraction.bind(this, "mouse"));
+		this.config.container.addEventListener("wheel", this.wheelInteraction.bind(this, "mouse"), {passive: true});
 		this.config.container.addEventListener("click", this.dblclickInteraction.bind(this, "mouse"));
 
 		this.config.container.addEventListener("touchstart", this.startInteraction.bind(this, "touch"));
-		this.config.container.addEventListener("touchmove", this.moveInteraction.bind(this, "touch"));
+		this.config.container.addEventListener("touchmove", this.moveInteraction.bind(this, "touch"), {passive: true});
 		this.config.container.addEventListener("touchend", this.endInteraction.bind(this, "touch"));
 		this.config.container.addEventListener("touchcancel", this.cancelInteraction.bind(this, "touch"));
 
