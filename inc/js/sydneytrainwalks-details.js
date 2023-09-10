@@ -180,7 +180,7 @@ export class Details {
 			'showFirst': true,
 			// containers
 			'container': this.localmapElement,
-			'legend': null,
+			'legend': document.querySelector('.legend'),
 			// assets
 			'thumbsUrl': this.config.localUrl + `/small/${prefix}/`,
 			'photosUrl': this.config.remoteUrl + `/medium/${prefix}/`,
