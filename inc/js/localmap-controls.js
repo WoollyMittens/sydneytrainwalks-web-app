@@ -10,16 +10,16 @@ export class Controls {
 		this.zoom = null;
 		this.last = null;
 
-		this.config.container.addEventListener("mousedown", this.startInteraction.bind(this, "mouse"));
+		this.config.container.addEventListener("mousedown", this.startInteraction.bind(this, "mouse"), {passive: true});
 		this.config.container.addEventListener("mousemove", this.moveInteraction.bind(this, "mouse"), {passive: true});
-		this.config.container.addEventListener("mouseup", this.endInteraction.bind(this, "mouse"));
+		this.config.container.addEventListener("mouseup", this.endInteraction.bind(this, "mouse"), {passive: true});
 		this.config.container.addEventListener("wheel", this.wheelInteraction.bind(this, "mouse"), {passive: true});
-		this.config.container.addEventListener("click", this.dblclickInteraction.bind(this, "mouse"));
+		this.config.container.addEventListener("click", this.dblclickInteraction.bind(this, "mouse"), {passive: true});
 
-		this.config.container.addEventListener("touchstart", this.startInteraction.bind(this, "touch"));
+		this.config.container.addEventListener("touchstart", this.startInteraction.bind(this, "touch"), {passive: true});
 		this.config.container.addEventListener("touchmove", this.moveInteraction.bind(this, "touch"), {passive: true});
-		this.config.container.addEventListener("touchend", this.endInteraction.bind(this, "touch"));
-		this.config.container.addEventListener("touchcancel", this.cancelInteraction.bind(this, "touch"));
+		this.config.container.addEventListener("touchend", this.endInteraction.bind(this, "touch"), {passive: true});
+		this.config.container.addEventListener("touchcancel", this.cancelInteraction.bind(this, "touch"), {passive: true});
 
 		this.start();
 	}
@@ -100,7 +100,6 @@ export class Controls {
 	}
 
 	moveInteraction(method, evt) {
-		evt.preventDefault();
 		// retrieve the current and previous touches
 		var touches = evt.touches || [{ clientX: evt.clientX, clientY: evt.clientY }];
 		var previous = this.touches;
@@ -158,7 +157,6 @@ export class Controls {
 	}
 
 	wheelInteraction(method, evt) {
-		evt.preventDefault();
 		// update the range
 		this.range.lon = this.config.maximum.lon_cover - this.config.minimum.lon_cover;
 		this.range.lat = this.config.maximum.lat_cover - this.config.minimum.lat_cover;

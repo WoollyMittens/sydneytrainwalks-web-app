@@ -4,7 +4,7 @@ export class Location {
 		this.container = container;
 		this.element = new Image();
 		this.zoom = null;
-		this.active = false;
+		this.permission = false;
 		this.hotspot = null;
 		this.options = {
 			enableHighAccuracy: true,
@@ -25,8 +25,8 @@ export class Location {
 			this.config.container.appendChild(this.permissions);
 			// activate geolocation upon interaction
 			this.button.addEventListener("click", this.requestPosition.bind(this));
-			this.config.container.addEventListener("mouseup", this.requestPosition.bind(this));
-			this.config.container.addEventListener("touchend", this.requestPosition.bind(this));
+			this.config.canvasWrapper.addEventListener("mouseup", this.requestPosition.bind(this));
+			this.config.canvasWrapper.addEventListener("touchend", this.requestPosition.bind(this));
 			// try activating geolocation automatically
 			this.requestPosition();
 		}
@@ -51,7 +51,7 @@ export class Location {
 	}
 
 	requestPosition() {
-		if (!this.active) {
+		if (!this.permission) {
 			// request location updates
 			this.locator = navigator.geolocation.watchPosition(
 				this.onReposition.bind(this),
@@ -71,25 +71,16 @@ export class Location {
 	checkHotSpot(lon, lat) {
 		var config = this.config;
 		// for every marker
-		config.hotspots.map(function (marker) {
+		config.hotspots.map((marker) => {
 			// if the marker just entered the hotspot
-			if (
-				lon > marker.minLon &&
-				lon < marker.maxLon &&
-				lat > marker.minLat &&
-				lat < marker.maxLat &&
-				this.hotspot !== marker.title
-			) {
+			if (lon > marker.minLon && lon < marker.maxLon && lat > marker.minLat && lat < marker.maxLat && this.hotspot !== marker.title) {
 				// remember its name
 				this.hotspot = marker.title;
 				// trigger the corresponding event
 				if (config.checkHotspot(marker)) config.enterHotspot(marker);
 			}
 			// else if the marker just exited the hotspot
-			else if (
-				(lon < marker.minLon || lon > marker.maxLon || lat < marker.minLat || lat > marker.maxLat) &&
-				this.hotspot === marker.title
-			) {
+			else if ((lon < marker.minLon || lon > marker.maxLon || lat < marker.minLat || lat > marker.maxLat) && this.hotspot === marker.title) {
 				// forget its name
 				this.hotspot = null;
 				// trigger the corresponding event
@@ -99,6 +90,7 @@ export class Location {
 	}
 
 	onReposition(position) {
+		console.log("requestPosition success:", position);
 		var min = this.config.minimum;
 		var max = this.config.maximum;
 		var lon = position.coords.longitude;
@@ -116,9 +108,11 @@ export class Location {
 			// hide the marker
 			this.element.style.display = "none";
 		}
+		// stop asking for permission
+		this.permission = true;
 	}
 
 	onPositionFailed(error) {
-		console.log("requestPosition:", error);
+		console.log("requestPosition error:", error);
 	}
 }
