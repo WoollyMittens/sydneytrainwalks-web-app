@@ -14,9 +14,11 @@
 	&:before {
 		display: block;
 		content: "loading map...";
-		position: relative;
+		position: absolute;
 		z-index: 0;
-		left: 50%;
+		left: 2rem;
+		right: 2rem;
+		text-align: center;
 		top: 50%;
 		color: #fff;
 	}

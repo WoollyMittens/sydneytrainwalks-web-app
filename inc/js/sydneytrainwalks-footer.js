@@ -14,7 +14,6 @@ export class Footer {
 
 	onBackButton(evt) {
 		// if this is not an entry page
-		console.log("onBackButton", document.body.className);
 		if (!/menu|overview/.test(document.body.className)) {
 			// cancel the back button
 			evt.preventDefault();

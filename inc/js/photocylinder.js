@@ -38,8 +38,8 @@ export class Photocylinder {
 			this.popup = new Popup(this);
 			this.popup.show();
 		}
-		// insert the viewer, but MSIE and low FOV should default to fallback
-		this.stage = (!/msie|trident|edge/i.test(navigator.userAgent) && (this.config.spherical.test(url) || isWideEnough))
+		// insert the viewer, but low FOV should default to the fallback
+		this.stage = ((this.config.spherical.test(url) || isWideEnough))
 		  ? new Stage(this)
 		  : new Fallback(this);
 		this.stage.init();

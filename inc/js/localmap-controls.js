@@ -10,16 +10,16 @@ export class Controls {
 		this.zoom = null;
 		this.last = null;
 
-		this.config.container.addEventListener("mousedown", this.startInteraction.bind(this, "mouse"));
-		this.config.container.addEventListener("mousemove", this.moveInteraction.bind(this, "mouse"), {passive: true});
-		this.config.container.addEventListener("mouseup", this.endInteraction.bind(this, "mouse"));
-		this.config.container.addEventListener("wheel", this.wheelInteraction.bind(this, "mouse"), {passive: true});
-		this.config.container.addEventListener("click", this.dblclickInteraction.bind(this, "mouse"));
-
-		this.config.container.addEventListener("touchstart", this.startInteraction.bind(this, "touch"));
-		this.config.container.addEventListener("touchmove", this.moveInteraction.bind(this, "touch"), {passive: true});
-		this.config.container.addEventListener("touchend", this.endInteraction.bind(this, "touch"));
-		this.config.container.addEventListener("touchcancel", this.cancelInteraction.bind(this, "touch"));
+		const wrapper = this.config.canvasWrapper;
+		wrapper.addEventListener("mousedown", this.startInteraction.bind(this, "mouse"), {passive: true});
+		wrapper.addEventListener("mousemove", this.moveInteraction.bind(this, "mouse"), {passive: true});
+		wrapper.addEventListener("mouseup", this.endInteraction.bind(this, "mouse"), {passive: true});
+		wrapper.addEventListener("wheel", this.wheelInteraction.bind(this, "mouse"), {passive: true});
+		wrapper.addEventListener("click", this.dblclickInteraction.bind(this, "mouse"), {passive: true});
+		wrapper.addEventListener("touchstart", this.startInteraction.bind(this, "touch"), {passive: true});
+		wrapper.addEventListener("touchmove", this.moveInteraction.bind(this, "touch"), {passive: true});
+		wrapper.addEventListener("touchend", this.endInteraction.bind(this, "touch"), {passive: true});
+		wrapper.addEventListener("touchcancel", this.cancelInteraction.bind(this, "touch"), {passive: true});
 
 		this.start();
 	}
@@ -93,14 +93,13 @@ export class Controls {
 		this.range.lon = this.config.maximum.lon_cover - this.config.minimum.lon_cover;
 		this.range.lat = this.config.maximum.lat_cover - this.config.minimum.lat_cover;
 		this.range.zoom = this.config.maximum.zoom - this.config.minimum.zoom;
-		this.range.x = this.config.canvasWrapper.offsetWidth * this.config.position.zoom;
-		this.range.y = this.config.canvasWrapper.offsetHeight * this.config.position.zoom;
+		this.range.x = this.config.canvasElement.offsetWidth * this.config.position.zoom;
+		this.range.y = this.config.canvasElement.offsetHeight * this.config.position.zoom;
 		// store the initial touch(es)
 		this.touches = evt.touches || [{ clientX: evt.clientX, clientY: evt.clientY }];
 	}
 
 	moveInteraction(method, evt) {
-		evt.preventDefault();
 		// retrieve the current and previous touches
 		var touches = evt.touches || [{ clientX: evt.clientX, clientY: evt.clientY }];
 		var previous = this.touches;
@@ -158,7 +157,6 @@ export class Controls {
 	}
 
 	wheelInteraction(method, evt) {
-		evt.preventDefault();
 		// update the range
 		this.range.lon = this.config.maximum.lon_cover - this.config.minimum.lon_cover;
 		this.range.lat = this.config.maximum.lat_cover - this.config.minimum.lat_cover;

@@ -17,6 +17,7 @@ export class Modal {
 		this.description = document.createElement("article");
 		this.description.setAttribute("class", "localmap-modal-content");
 		this.element.appendChild(this.description);
+		// TODO: add next and previous buttons (maybe swiper + dots is an option)
 		// add a close button
 		this.closer = document.createElement("button");
 		this.closer.setAttribute("class", "localmap-modal-closer");

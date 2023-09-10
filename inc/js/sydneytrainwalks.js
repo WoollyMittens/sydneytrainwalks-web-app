@@ -67,12 +67,15 @@ export class SydneyTrainWalks {
 		// store the current state
 		window.localStorage.setItem('id', id);
 		window.localStorage.setItem('mode', mode);
-		// update the body class
-		document.body.className = 'screen-' + mode;
 		// update the details
 		this.details.update(id);
-		// update the footer
-		this.footer.update(id);
+		// wait a while to avoid glitches
+		setTimeout(() => {
+			// update the footer
+			this.footer.update(id);
+			// update the body class
+			document.body.className = 'screen-' + mode;
+		}, 100);
 	}
 
 	getQuery(property) {

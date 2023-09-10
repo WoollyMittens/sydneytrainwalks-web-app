@@ -12,16 +12,21 @@ export class Canvas {
 		this.onMapFocus = onMapFocus;
 		this.components = {};
 		this.element = document.createElement("div");
-		this.config.canvasWrapper = this.element;
+		this.wrapper = document.createElement("div");
+		this.config.canvasElement = this.element;
+		this.config.canvasWrapper = this.wrapper;
 		this.start();
 	}
 
 	start() {
+		// create the wrapper
+		this.wrapper.setAttribute("class", "localmap-wrapper");
 		// create a canvas
 		this.element.setAttribute("class", "localmap-canvas");
 		this.element.addEventListener("transitionend", this.onUpdated.bind(this));
 		// add the canvas to the parent container
-		this.config.container.appendChild(this.element);
+		this.wrapper.appendChild(this.element);
+		this.config.container.appendChild(this.wrapper);
 		// add the indicator and location components
 		this.components.indicator = new Indicator(this.config, this.element, this.onMarkerClicked, this.onMapFocus);
 		this.components.location = new Location(this.config, this.element);
@@ -33,7 +38,7 @@ export class Canvas {
 		// remove each sub-component
 		for (var key in this.components) if (this.components[key].stop) this.components[key].stop(this.config);
 		// remove the element
-		this.config.container.removeChild(this.element);
+		this.config.container.removeChild(this.wrapper);
 	}
 
 	update() {
@@ -44,7 +49,7 @@ export class Canvas {
 	}
 
 	redraw() {
-		var container = this.config.container;
+		var wrapper =this.wrapper;
 		var element = this.element;
 		var min = this.config.minimum;
 		var max = this.config.maximum;
@@ -55,15 +60,14 @@ export class Canvas {
 		// limit the zoom
 		var zoom = Math.max(Math.min(pos.zoom, max.zoom), min.zoom);
 		// convert the center into an offset
-		var offsetX = -centerX * zoom + container.offsetWidth / 2;
-		var offsetY = -centerY * zoom + container.offsetHeight / 2;
+		var offsetX = -centerX * zoom + wrapper.offsetWidth / 2;
+		var offsetY = -centerY * zoom + wrapper.offsetHeight / 2;
 		// apply the limits
-		offsetX = Math.max(Math.min(offsetX, 0), container.offsetWidth - element.offsetWidth * zoom);
-		offsetY = Math.max(Math.min(offsetY, 0), container.offsetHeight - element.offsetHeight * zoom);
+		offsetX = Math.max(Math.min(offsetX, 0), wrapper.offsetWidth - element.offsetWidth * zoom);
+		offsetY = Math.max(Math.min(offsetY, 0), wrapper.offsetHeight - element.offsetHeight * zoom);
 		// position the background
 		if (this.config.useTransitions) this.element.className += " localmap-canvas-transition";
-		element.style.transform =
-			"translate3d(" + offsetX + "px, " + offsetY + "px, 0px) scale3d(" + zoom + ", " + zoom + ",1)";
+		element.style.transform = "translate3d(" + offsetX + "px, " + offsetY + "px, 0px) scale3d(" + zoom + ", " + zoom + ",1)";
 	}
 
 	addMarkers() {

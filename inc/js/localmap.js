@@ -11,6 +11,7 @@ export class Localmap {
 			container: null,
 			legend: null,
 			canvasWrapper: null,
+			canvasElement: null,
 			thumbsUrl: null,
 			photosUrl: null,
 			markersUrl: null,
@@ -24,6 +25,7 @@ export class Localmap {
 			routeData: null,
 			exifData: null,
 			creditsTemplate: null,
+			showFirst: null,
 			useTransitions: null,
 			minimum: {
 				lon: null,
@@ -131,6 +133,7 @@ export class Localmap {
 	}
 
 	describe(markerdata) {
+		// TODO: indicate() the marker that goes with this
 		// show a popup describing the markerdata
 		this.components.modal.show(markerdata);
 		// resolve any callback

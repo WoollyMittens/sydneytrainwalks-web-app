@@ -194,11 +194,12 @@
 
 	&-closer,
 	&-locator {
-		@include iconParent(48);
 		width: 3rem;
 		height: 3rem;
 		right: 1rem;
 		top: 1rem;
+		overflow: hidden;
+		text-indent: 150%;
 		background: #0D47A1;
 		color: #fff;
 		cursor: pointer;
@@ -224,9 +225,15 @@
 		}
 
 		&:before {
-			@include iconCenter(24);
 			background-image: url("../img/close.svg");
 			background-size: 24px 24px;
+			width: 24px;
+			height: 24px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -12px;
+			margin-top: -12px;
 
 			[data-color-scheme="light"] & {
 				background-image: url("../img/close.svg");
@@ -242,10 +249,10 @@
 		}
 
 		&:hover {
-			background: $color-hover;
+			background: #ff9800;
 
 			[data-color-scheme="light"] & {
-				background: $color-hover;
+				background: #ff9800;
 				color: #fff;
 			}
 

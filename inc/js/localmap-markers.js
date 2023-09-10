@@ -51,7 +51,6 @@ export class Markers {
 	addGuide() {
 		var config = this.config;
 		var guideData = this.config.guideData;
-		console.log('guideData', guideData);
 		// store the interpolation limits
 		var min = config.minimum;
 		var max = config.maximum;

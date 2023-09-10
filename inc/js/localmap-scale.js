@@ -35,7 +35,7 @@ export class Scale {
 			{ lon: this.config.maximum.lon_cover, lat: this.config.maximum.lat_cover }
 		);
 		// what portion of that is in the container
-		var visible = this.config.container.offsetWidth / this.config.canvasWrapper.offsetWidth / this.config.position.zoom;
+		var visible = this.config.container.offsetWidth / this.config.canvasElement.offsetWidth / this.config.position.zoom;
 		// use a fraction of that as the scale
 		var scaleSize = (visible * mapSize) / 6;
 		// round to the nearest increment

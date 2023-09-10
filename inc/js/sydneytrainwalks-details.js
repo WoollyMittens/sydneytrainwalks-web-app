@@ -95,6 +95,7 @@ export class Details {
 			// TODO: destroy after use
 			new Photocylinder({
 				'element': thumbnail,
+				'sequence': thumbnails,
 				'container': this.guideElement,
 				'spherical': /fov360|\d{3}_r\d{6}/i,
 				'cylindrical': /fov180/i,
@@ -175,6 +176,9 @@ export class Details {
 		}
 		// start the map
 		this.config.guideMap = new Localmap({
+			// options
+			'showFirst': true,
+			// containers
 			'container': this.localmapElement,
 			'legend': null,
 			// assets
@@ -230,6 +234,7 @@ export class Details {
 			// TODO: destroy after use
 			new Photocylinder({
 				'element': thumbnail,
+				'sequence': thumbnails,
 				'container': this.wallElement,
 				'spherical': /fov360|\d{3}_r\d{6}/i,
 				'cylindrical': /fov180/i,
