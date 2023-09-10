@@ -1464,6 +1464,9 @@ body.screen-guide .guide, body.screen-map .guide {
 .about-scroller > :last-child {
   margin-bottom: 20px;
 }
+.about article {
+  max-width: 30rem;
+}
 .about h2,
 .about h3 {
   font-size: 1.125rem;
