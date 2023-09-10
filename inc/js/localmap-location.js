@@ -90,6 +90,7 @@ export class Location {
 	}
 
 	onReposition(position) {
+		console.log("requestPosition success:", position);
 		var min = this.config.minimum;
 		var max = this.config.maximum;
 		var lon = position.coords.longitude;

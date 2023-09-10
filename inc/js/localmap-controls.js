@@ -9,7 +9,7 @@ export class Controls {
 		this.steps = { x: 0.03, y: 0.03, z: 0.03 };
 		this.zoom = null;
 		this.last = null;
-
+		// add touch and mouse controls
 		const wrapper = this.config.canvasWrapper;
 		wrapper.addEventListener("mousedown", this.startInteraction.bind(this, "mouse"), {passive: true});
 		wrapper.addEventListener("mousemove", this.moveInteraction.bind(this, "mouse"), {passive: true});
@@ -20,7 +20,7 @@ export class Controls {
 		wrapper.addEventListener("touchmove", this.moveInteraction.bind(this, "touch"), {passive: true});
 		wrapper.addEventListener("touchend", this.endInteraction.bind(this, "touch"), {passive: true});
 		wrapper.addEventListener("touchcancel", this.cancelInteraction.bind(this, "touch"), {passive: true});
-
+		// start the component
 		this.start();
 	}
 

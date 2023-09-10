@@ -20,6 +20,7 @@
 
 			<header class="title">
 				<h1><a href="/">Sydney Hiking Trips<i> - Easy bushwalks around Sydney using the train, bus and ferry.</i></a></h1>
+				<button class="toggle-color-scheme">Toggle dark mode</button>
 			</header>
 
 			<section class="about">
@@ -283,5 +284,34 @@
 			</footer>
 		</section>
 	</div>
-
+	<script>
+		class Header {
+			constructor() {
+				this.themeButton = document.querySelector('.toggle-color-scheme');
+				// handle the scheme preference
+				this.themeButton.addEventListener('click', this.cycleTheme.bind(this));
+				// restore the scheme preference
+				document.body.setAttribute('data-color-scheme', window.localStorage.getItem('scheme') || 'auto');
+			}
+			cycleTheme(evt) {
+				if (evt) evt.preventDefault();
+				// cycle throught the dark scheme options
+				var theme = document.body.getAttribute('data-color-scheme');
+				switch(theme) {
+					case 'dark': 
+						document.body.setAttribute('data-color-scheme', 'light');
+						window.localStorage.setItem('scheme', 'light');
+						break;
+					case 'light': 
+						document.body.setAttribute('data-color-scheme', 'auto');
+						window.localStorage.setItem('scheme', 'auto');
+						break;
+					default: 
+						document.body.setAttribute('data-color-scheme', 'dark');
+						window.localStorage.setItem('scheme', 'dark');
+				}
+			}
+		}
+		new Header();
+	</script>
 </html>
