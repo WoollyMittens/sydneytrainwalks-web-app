@@ -1011,9 +1011,7 @@ body.screen-guide .directions, body.screen-map .directions, body.screen-photos .
   content: "loading map...";
   position: relative;
   z-index: 0;
-  left: 1rem;
-  right: 1rem;
-  text-align: center;
+  left: 50%;
   top: 50%;
   color: #fff;
 }
@@ -1473,6 +1471,10 @@ body.screen-guide .guide, body.screen-map .guide {
 .about-scroller > :last-child {
   margin-bottom: 20px;
 }
+.about article {
+  max-width: 36rem;
+  margin: 0 auto;
+}
 .about h2,
 .about h3 {
   font-size: 1.125rem;
@@ -1566,6 +1568,10 @@ body.screen-about .about {
 }
 .trophies-scroller > :last-child {
   margin-bottom: 20px;
+}
+.trophies article {
+  max-width: 36rem;
+  margin: 0 auto;
 }
 .trophies h2,
 .trophies h3 {
