@@ -21,7 +21,6 @@ export class Overview {
     // clear the container
     this.overviewElement.innerHTML = '';
     // generate the map
-    return null;
     this.localmap = new Localmap({
       'container': this.overviewElement,
       'legend': null,
