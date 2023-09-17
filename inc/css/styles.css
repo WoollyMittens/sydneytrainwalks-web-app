@@ -2692,7 +2692,8 @@ body.screen-photos .photowall {
   cursor: pointer;
   font-weight: bold;
   position: absolute;
-  text-align: center;
+  text-align: left;
+  white-space: nowrap;
   text-decoration: none;
   z-index: 2;
 }
@@ -2711,6 +2712,8 @@ body.screen-photos .photowall {
   }
 }
 .photocylinder-closer:before, .photocylinder-locator:before {
+  content: "";
+  display: block;
   background-image: url("../img/close.svg");
   background-size: 24px 24px;
   width: 24px;

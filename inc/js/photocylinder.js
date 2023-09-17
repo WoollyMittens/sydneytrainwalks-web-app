@@ -5,22 +5,26 @@ import { Fallback } from "./photocylinder-fallback.js";
 
 export class Photocylinder {
 	constructor(config) {
-		this.element = config.element;
 		this.config = {
 			'container': document.body,
-			'spherical' : /r(\d+).jpg/i,
+			'fov' : 180,
 			'standalone': false,
 			'idle': 0.1
 		}
 		for (var key in config) {
 			this.config[key] = config[key];
 		}
-		if (this.config.element) {
-			this.config.element.addEventListener('click', this.onElementClicked.bind(this));
-		}
-		if (this.config.url) {
-			this.onElementClicked();
-		}
+		this.busy = new Busy(this.config.container);
+		this.busy.show();
+		// create the url for the image sizing webservice
+		const url = this.config.url;
+		// load the image asset
+		this.config.image = new Image();
+		this.config.image.alt = '';
+		this.config.image.src = url;
+		// load the viewer when done
+		this.config.image.addEventListener('load', this.success.bind(this, url));
+		this.config.image.addEventListener('error', this.failure.bind(this, url));
 	}
 
 	success(url, fov) {
@@ -29,7 +33,7 @@ export class Photocylinder {
 		this.busy.hide();
 		// check if the aspect ratio of the image can be determined
 		var image = config.image;
-		var isWideEnough = (image.naturalWidth && image.naturalHeight && image.naturalWidth / image.naturalHeight > 3);
+		var isWideEnough = (fov >=180 && image.naturalWidth / image.naturalHeight > 3);
 		// show the popup, or use the container directly
 		if (config.standalone) {
 			config.popup = config.container;
@@ -39,9 +43,7 @@ export class Photocylinder {
 			this.popup.show();
 		}
 		// insert the viewer, but low FOV should default to the fallback
-		this.stage = ((this.config.spherical.test(url) || isWideEnough))
-		  ? new Stage(this)
-		  : new Fallback(this);
+		this.stage = (isWideEnough) ? new Stage(this) : new Fallback(this);
 		this.stage.init();
 		// trigger the success handler
 		if (config.success) {
@@ -79,23 +81,5 @@ export class Photocylinder {
 	destroy() {
 		// shut down sub components
 		this.stage.destroy();
-	}
-
-	onElementClicked(evt) {
-		// prevent the click
-		if (evt) evt.preventDefault();
-		// show the busy indicator
-		this.busy = new Busy(this.config.container);
-		this.busy.show();
-		// create the url for the image sizing webservice
-		var url = this.config.url || this.element.getAttribute('href') || this.element.getAttribute('data-url');
-		// load the image asset
-		this.config.image = new Image();
-		this.config.image.alt = '';
-		this.config.image.setAttribute('data-cropped', (this.config.spherical.test(url)));
-		this.config.image.src = url;
-		// load the viewer when done
-		this.config.image.addEventListener('load', this.success.bind(this, url));
-		this.config.image.addEventListener('error', this.failure.bind(this, url));
 	}
 }

@@ -1,6 +1,6 @@
 import { Photowall } from "./photowall.js";
 import { Localmap } from "./localmap.js";
-import { Photocylinder } from "./photocylinder.js";
+import { Photocylinder } from "./photocylinder-lite.js";
 
 export class Details {
 	constructor(config, loadGuide, loadRoute, loadExif, trophies) {
@@ -230,14 +230,15 @@ export class Details {
 		});
 		// start the script for the image viewer
 		const thumbnails = this.wallElement.querySelectorAll('.cylinder-image');
+		const sequence = thumbnails.map(thumbnail => thumbnail.getAttribute('href'));
 		for (let thumbnail of thumbnails) {
-			// TODO: destroy after use
+			let url = thumbnail.getAttribute('href');
+			let fov = (/d{3}_r\d{6}/i.test(url)) ? 360 : 180;
 			new Photocylinder({
-				'element': thumbnail,
-				'sequence': thumbnails,
+				'url': thumbnail.getAttribute('href'),
+				'sequence': sequence,
 				'container': this.wallElement,
-				'spherical': /fov360|\d{3}_r\d{6}/i,
-				'cylindrical': /fov180/i,
+				'fov': fov,
 				'idle': 0.1,
 				'opened': (link) => {
 					this.returnTo = 'photos';
