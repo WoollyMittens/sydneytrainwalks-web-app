@@ -1,7 +1,6 @@
 export class Stage {
-	constructor(parent) {
-		this.parent = parent;
-		this.config = parent.config;
+	constructor(config) {
+		this.config = config;
 		this.popup = this.config.popup;
 		this.image = this.config.image;
 		this.imageAspect = null;
@@ -12,7 +11,6 @@ export class Stage {
 		this.obj = null;
 		this.objRow = null;
 		this.objCols = [];
-		this.fov = null;
 		this.magnification = {};
 		this.rotation = {};
 		this.offset = {};
@@ -62,21 +60,19 @@ export class Stage {
 	}
 
 	render() {
-		// retrieve the field of view from the image source
-		var url = this.image.getAttribute('src');
-		this.fov = this.config.spherical.test(url) ? 360 : 180;
 		// get the aspect ratio from the image
 		this.imageAspect = this.image.offsetWidth / this.image.offsetHeight;
 		// get the field of view property or guess one
-		this.wrapper.className += (this.fov < 360) ? ' photocylinder-180' : ' photocylinder-360';
+		this.wrapper.className += (this.config.fov < 360) ? ' photocylinder-180' : ' photocylinder-360';
 		// calculate the zoom limits - scale = aspect * (360 / fov) * 0.3
-		this.magnification.min = Math.max(this.imageAspect * (360 / this.fov) * 0.3, 1);
+		this.magnification.min = Math.max(this.imageAspect * (360 / this.config.fov) * 0.3, 1);
 		this.magnification.max = 4;
 		this.magnification.current = this.magnification.min * 1.25;
 		// the offset limits are 0 at zoom level 1 be definition, because there is no overscan
 		this.offset.min = 0;
 		this.offset.max = 0;
 		// set the image source as the background image for the polygons
+		var url = this.image.getAttribute('src');
 		for (var a = 0, b = this.objCols.length; a < b; a += 1) {
 			this.objCols[a].style.backgroundImage = "url('" + url + "')";
 		}
@@ -114,7 +110,7 @@ export class Stage {
 
 	recentre() {
 		// reset the initial rotation
-		this.rotate(this.fov/2);
+		this.rotate(this.config.fov/2);
 	}
 
 	magnify(factor, offset) {
@@ -128,15 +124,15 @@ export class Stage {
 		this.offset.current = Math.max(Math.min(offset, this.offset.max), this.offset.min);
 		// calculate the rotation limits
 		var overscanAngle = (this.baseAngle - 360 / this.objCols.length) / 2;
-		this.rotation.min = (this.fov < 360) ? overscanAngle : 0;
-		this.rotation.max = (this.fov < 360) ? this.fov - this.baseAngle + overscanAngle : this.fov;
+		this.rotation.min = (this.config.fov < 360) ? overscanAngle : 0;
+		this.rotation.max = (this.config.fov < 360) ? this.config.fov - this.baseAngle + overscanAngle : this.config.fov;
 		// redraw the object
 		this.redraw();
 	}
 
 	rotate(angle) {
 		// limit or loop the rotation
-		this.rotation.current = (this.fov < 360) ? Math.max(Math.min(angle, this.rotation.max), this.rotation.min) : angle%360 ;
+		this.rotation.current = (this.config.fov < 360) ? Math.max(Math.min(angle, this.rotation.max), this.rotation.min) : angle%360 ;
 		// redraw the object
 		this.redraw();
 	}
@@ -173,7 +169,7 @@ export class Stage {
 			// in 180 degree pictures adjust increment and reverse, otherwise loop forever
 			if (this.rotation.current + this.increment * 2 > this.rotation.max) this.increment = -this.config.idle;
 			if (this.rotation.current + this.increment * 2 < this.rotation.min) this.increment = this.config.idle;
-			var step = (this.fov < 360) ? this.rotation.current + this.increment : (this.rotation.current + this.increment) % 360;
+			var step = (this.config.fov < 360) ? this.rotation.current + this.increment : (this.rotation.current + this.increment) % 360;
 			// advance rotation incrementally, until interrupted
 			this.rotate(step);
 			window.requestAnimationFrame(this.animate.bind(this));
@@ -256,7 +252,7 @@ export class Stage {
 		// restore current values
 		var factor = this.magnification.current || 1;
 		var offset = this.offset.current || 0;
-		var angle = this.rotation.current || this.fov/2;
+		var angle = this.rotation.current || this.config.fov/2;
 		// reset to zoom
 		this.magnify(factor, offset);
 		// reset the rotation

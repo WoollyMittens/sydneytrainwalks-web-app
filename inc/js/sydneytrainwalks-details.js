@@ -1,6 +1,6 @@
 import { Photowall } from "./photowall.js";
 import { Localmap } from "./localmap.js";
-import { Photocylinder } from "./photocylinder-lite.js";
+import { PhotoCylinder } from "./photocylinder.js";
 
 export class Details {
 	constructor(config, loadGuide, loadRoute, loadExif, trophies) {
@@ -22,6 +22,7 @@ export class Details {
 		this.wallTemplate = document.getElementById('wall-template');
 		this.creditTemplate = document.getElementById('credit-template');
 		this.guideMap = null;
+		this.photoCylinder = null;
 		this.init()
 	}
 
@@ -90,29 +91,37 @@ export class Details {
 			buttons[a].addEventListener('click', this.onLocate.bind(this, buttons[a]));
 		}
 		// start the script for the image viewer
-		const thumbnails = this.guideElement.querySelectorAll('.cylinder-image');
+		const thumbnails = [...this.guideElement.querySelectorAll('.cylinder-image')];
+		const sequence = thumbnails.map(thumbnail => thumbnail.getAttribute('href'));
 		for (let thumbnail of thumbnails) {
-			// TODO: destroy after use
-			new Photocylinder({
-				'element': thumbnail,
-				'sequence': thumbnails,
-				'container': this.guideElement,
-				'spherical': /fov360|\d{3}_r\d{6}/i,
-				'cylindrical': /fov180/i,
-				'idle': 0.1,
-				'opened': (link) => {
-					this.returnTo = 'guide';
-					this.config.guideMap.indicate(link);
-					return true;
-				},
-				'located': (link) => {
-					this.returnTo = 'guide';
-					this.config.guideMap.indicate(link);
-					document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
-				},
-				'closed': () => {
-					this.config.guideMap.unindicate();
-				}
+			let url = thumbnail.getAttribute('href');
+			let fov = (/d{3}_r\d{6}/i.test(url)) ? 360 : 180;
+			thumbnail.addEventListener('click', (evt) => {
+				// don't navigate to the url
+				evt.preventDefault();
+				// kill the old popup if present
+				if (this.photoCylinder) this.photoCylinder.destroy();
+				// open a new popup
+				this.photoCylinder = new PhotoCylinder({
+					'url': url,
+					'sequence': sequence,
+					'container': this.guideElement,
+					'fov': fov,
+					'idle': 0.1,
+					'opened': (link) => {
+						this.returnTo = 'guide';
+						this.config.guideMap.indicate(link);
+						return true;
+					},
+					'located': (link) => {
+						this.returnTo = 'guide';
+						this.config.guideMap.indicate(link);
+						document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
+					},
+					'closed': () => {
+						this.config.guideMap.unindicate();
+					}
+				});
 			});
 		}
 	}
@@ -229,30 +238,37 @@ export class Details {
 			'element': this.wallElement
 		});
 		// start the script for the image viewer
-		const thumbnails = this.wallElement.querySelectorAll('.cylinder-image');
+		const thumbnails = [...this.wallElement.querySelectorAll('.cylinder-image')];
 		const sequence = thumbnails.map(thumbnail => thumbnail.getAttribute('href'));
 		for (let thumbnail of thumbnails) {
 			let url = thumbnail.getAttribute('href');
 			let fov = (/d{3}_r\d{6}/i.test(url)) ? 360 : 180;
-			new Photocylinder({
-				'url': thumbnail.getAttribute('href'),
-				'sequence': sequence,
-				'container': this.wallElement,
-				'fov': fov,
-				'idle': 0.1,
-				'opened': (link) => {
-					this.returnTo = 'photos';
-					this.config.guideMap.indicate(link);
-					return true;
-				},
-				'located': (link) => {
-					this.returnTo = 'photos';
-					this.config.guideMap.indicate(link);
-					document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
-				},
-				'closed': () => {
-					this.config.guideMap.unindicate();
-				}
+			this.photoCylinder = thumbnail.addEventListener('click', (evt) => {
+				// don't navigate to the url
+				evt.preventDefault();
+				// kill the old popup if present
+				if (this.photoCylinder) this.photoCylinder.destroy();
+				// open a new popup
+				this.photoCylinder = new PhotoCylinder({
+					'url': url,
+					'sequence': sequence,
+					'container': this.wallElement,
+					'fov': fov,
+					'idle': 0.1,
+					'opened': (link) => {
+						this.returnTo = 'photos';
+						this.config.guideMap.indicate(link);
+						return true;
+					},
+					'located': (link) => {
+						this.returnTo = 'photos';
+						this.config.guideMap.indicate(link);
+						document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
+					},
+					'closed': () => {
+						this.config.guideMap.unindicate();
+					}
+				});
 			});
 		}
 	}

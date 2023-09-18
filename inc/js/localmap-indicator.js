@@ -36,6 +36,8 @@ export class Indicator {
 	}
 
 	show(input) {
+		// give up if no location data was provided
+		if (!input) return;
 		// handle the event if this was used as one
 		if (input.target) input = input.target;
 		// gather the parameters from diverse input

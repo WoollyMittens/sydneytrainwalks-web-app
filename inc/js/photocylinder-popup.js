@@ -1,7 +1,7 @@
 export class Popup {
-	constructor(parent) {
-		this.parent = parent;
-		this.config = parent.config;
+	constructor(config, destroy) {
+		this.config = config;
+		this.destroy = destroy;
 	}
 
 	show() {
@@ -31,14 +31,13 @@ export class Popup {
 			// unreveal the popup
 			config.popup.className = config.popup.className.replace(/-active/gi, '-passive');
 			// and after a while
-			var _this = this;
-			setTimeout(function() {
+			setTimeout(() => {
 				// remove it
 				config.container.removeChild(config.popup);
 				// remove its reference
 				config.popup = null;
 				// ask the parent to self destruct
-				_this.parent.destroy();
+				this.destroy();
 			}, 500);
 		}
 	}

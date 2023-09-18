@@ -1,13 +1,11 @@
 export class Fallback {
-	constructor(parent) {
-		this.parent = parent;
-		this.config = parent.config;
+	constructor(config) {
+		this.config = config;
 		this.popup = this.config.popup;
 		this.image = this.config.image;
 		this.imageAspect = null;
 		this.wrapper = null;
 		this.wrapperAspect = null;
-		this.fov = null;
 		this.magnification = {};
 		this.horizontal = {};
 		this.vertical = {};
@@ -38,8 +36,6 @@ export class Fallback {
 		// add the wrapper
 		this.wrapper = document.createElement('div');
 		this.wrapper.setAttribute('class', 'photocylinder photocylinder-fallback');
-		// TODO: for 360deg images the image needs to be doubled to allow looping
-		var clonedImage = this.image.cloneNode(true);
 		// add markup here
 		this.wrapper.appendChild(this.image);
 		// insert the object

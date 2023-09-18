@@ -3,7 +3,7 @@ import { Stage } from "./photocylinder-stage.js";
 import { Busy } from "./photocylinder-busy.js";
 import { Fallback } from "./photocylinder-fallback.js";
 
-export class Photocylinder {
+export class PhotoCylinder {
 	constructor(config) {
 		this.config = {
 			'container': document.body,
@@ -18,13 +18,14 @@ export class Photocylinder {
 		this.busy.show();
 		// create the url for the image sizing webservice
 		const url = this.config.url;
+		const fov = this.config.fov;
 		// load the image asset
 		this.config.image = new Image();
 		this.config.image.alt = '';
 		this.config.image.src = url;
 		// load the viewer when done
-		this.config.image.addEventListener('load', this.success.bind(this, url));
-		this.config.image.addEventListener('error', this.failure.bind(this, url));
+		this.config.image.addEventListener('load', this.success.bind(this, url, fov));
+		this.config.image.addEventListener('error', this.failure.bind(this, url, fov));
 	}
 
 	success(url, fov) {
@@ -39,11 +40,11 @@ export class Photocylinder {
 			config.popup = config.container;
 			config.popup.innerHTML = '';
 		} else {
-			this.popup = new Popup(this);
+			this.popup = new Popup(this.config, this.destroy.bind(this));
 			this.popup.show();
 		}
 		// insert the viewer, but low FOV should default to the fallback
-		this.stage = (isWideEnough) ? new Stage(this) : new Fallback(this);
+		this.stage = (isWideEnough) ? new Stage(this.config) : new Fallback(this.config);
 		this.stage.init();
 		// trigger the success handler
 		if (config.success) {
