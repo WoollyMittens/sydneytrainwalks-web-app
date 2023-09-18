@@ -15,10 +15,20 @@ export class Legend {
 
 	update() {
 		var guideData = this.config.guideData;
+		// TODO: add intro slide
+		this.addIntro(guideData);
 		// write the legend if needed and available
 		if (this.config.legend && this.elements.length === 0) {
 			this.elements = guideData.markers.map(this.addDefinition.bind(this));
 		}
+		// TODO: add outro slide
+		this.addOutro(guideData);
+	}
+	
+	addIntro(guideData) {
+		var fragment = document.createDocumentFragment();
+		// TODO: fill the intro
+		this.config.legend.appendChild(fragment);
 	}
 
 	addDefinition(markerData) {
@@ -45,12 +55,20 @@ export class Legend {
 			fragment.appendChild(definitionData.description);
 			// add the event handlers
 			markerData.referrer = definitionData.title;
+			// TODO: this one opens the photo viewer
 			definitionData.title.addEventListener("click", this.indicate.bind(this, markerData));
+			// TODO: this one zooms in on the marker
 			definitionData.description.addEventListener("click", this.indicate.bind(this, markerData));
 			// add the container to the legend
 			this.config.legend.appendChild(fragment);
 		}
 		// return the objects
 		return definitionData;
+	}
+	
+	addOutro(guideData) {
+		var fragment = document.createDocumentFragment();
+		// TODO: fill the outro
+		this.config.legend.appendChild(fragment);
 	}
 }
