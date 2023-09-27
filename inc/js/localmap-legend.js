@@ -73,7 +73,11 @@ export class Legend {
 			fragment.appendChild(definitionData.title);
 			// add the description
 			definitionData.description = document.createElement("dd");
-			definitionData.description.className += markerData.optional || markerData.detour || markerData.warning ? " localmap-legend-alternate" : "";
+			console.log("markerData", markerData);
+			if (markerData.optional) { definitionData.description.className += " localmap-legend-optional"; }
+			else if (markerData.type === "detour") { definitionData.description.className += " localmap-legend-detour"; }
+			else if (markerData.type === "warning") { definitionData.description.className += " localmap-legend-warning"; }
+			else { definitionData.description.className += " localmap-legend-description"; }
 			definitionData.description.innerHTML = "<p>" + text + "</p>";
 			fragment.appendChild(definitionData.description);
 			// add the event handlers

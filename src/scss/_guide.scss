@@ -11,6 +11,8 @@
 	top: 8rem;
 	width: 50%;
 	z-index: 5;
+
+	display: none;
 	
 	[data-color-scheme="light"] & {
 		background: #fff;
