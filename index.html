@@ -95,7 +95,7 @@
 
 				<figure class="overview localmap"></figure>
 
-				<div class="legend" style="position:absolute; right:5%; top:0; width:320px; height:480px; overflow:auto; border:solid 1px red; background-color:#fff; padding:2rem;z-index:100;"></div>
+				<dl class="legend" style="position:absolute; right:5%; top:0; width:320px; height:480px; overflow:auto; border:solid 1px red; background-color:#fff; padding:2rem;z-index:100;"></dl>
 
 				<article class="guide"></article>
 
@@ -192,6 +192,30 @@
 					<li>Also bring a light windbreaker/raincoat in case you get caught out in the rain.</li>
 				</ul>
 			</div>
+		</template>
+
+		<template id="intro-template">
+			<h2>About this walk</h2>
+			<time datetime="{updated}">Updated: {date}</time>
+			{description}
+			<p>
+				It takes about {duration} hours to complete the full {distance} kilometre walk,
+				but plan extra for plenty of breaks and photography stops.
+				Consider that there's a lot to see along the way.
+			</p>
+		</template>
+
+		<template id="outro-template">
+			<h3>What to bring</h3>
+			<ul>
+				<li>Check the <a href="http://www.nationalparks.nsw.gov.au/alert/state-alerts">national parks website</a> for possible closures and restriction.</li>
+				<li>Install an OpenStreetMap app for <a href="http://wiki.openstreetmap.org/wiki/Android">Android</a> or <a href="http://wiki.openstreetmap.org/wiki/Apple_iOS">iOS</a> and preload the area.</li>
+				<li>Download the <a href="{gpx}">GPS data</a> if your device can import it.</li>
+				<li>Print out this map and get a better one from a visitor information centre if possible.</li>
+				<li>Be sure to leave enough charge in your phone's battery for emergency calls.</li>
+				<li>Bring plenty of water, comfortable shoes, a hat and SPF 50 sunscreen.</li>
+				<li>Also bring a light windbreaker/raincoat in case you get caught out in the rain.</li>
+			</ul>
 		</template>
 
 		<template id="thumbnail-template">

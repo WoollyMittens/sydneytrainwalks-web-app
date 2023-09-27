@@ -24,6 +24,8 @@ export class Localmap {
 			guideData: null,
 			routeData: null,
 			exifData: null,
+			introTemplate: null,
+			outroTemplate: null,
 			creditsTemplate: null,
 			showFirst: null,
 			useTransitions: null,

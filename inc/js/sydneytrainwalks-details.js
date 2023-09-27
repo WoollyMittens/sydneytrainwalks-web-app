@@ -20,6 +20,8 @@ export class Details {
 		this.thumbnailTemplate = document.getElementById('thumbnail-template');
 		this.trophiesTemplate = document.getElementById('trophies-template');
 		this.wallTemplate = document.getElementById('wall-template');
+		this.introTemplate = document.getElementById('intro-template');
+		this.outroTemplate = document.getElementById('outro-template');
 		this.creditTemplate = document.getElementById('credit-template');
 		this.guideMap = null;
 		this.photoCylinder = null;
@@ -204,7 +206,9 @@ export class Details {
 			'guideData': guide,
 			'routeData': route,
 			'exifData': exif,
-			// attribution
+			// templates
+			'introTemplate': this.introTemplate.innerHTML,
+			'outroTemplate': this.outroTemplate.innerHTML,
 			'creditsTemplate': this.creditTemplate.innerHTML,
 			// events
 			'checkHotspot': this.trophies.check.bind(this.trophies),

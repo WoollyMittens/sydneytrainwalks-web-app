@@ -2,11 +2,24 @@ export class Legend {
 	constructor(config, indicate) {
 		this.config = config;
 		this.indicate = indicate;
-		this.elements = [];
+		this.updated
 		this.start();
 	}
 
-	start() {}
+	start() {
+		// if a legend exists
+		if (this.config.legend) {
+			const guideData = this.config.guideData;
+			// clear the legend
+			this.config.legend.innerHTML = '';
+			// add the intro
+			this.addIntro(guideData);
+			// add the markers
+			this.elements = guideData.markers.map(this.addDefinition.bind(this));
+			// add the outro
+			this.addOutro(guideData);
+		}
+	}
 
 	stop() {
 		// remove the element
@@ -14,21 +27,31 @@ export class Legend {
 	}
 
 	update() {
-		var guideData = this.config.guideData;
-		// TODO: add intro slide
-		this.addIntro(guideData);
-		// write the legend if needed and available
-		if (this.config.legend && this.elements.length === 0) {
-			this.elements = guideData.markers.map(this.addDefinition.bind(this));
-		}
-		// TODO: add outro slide
-		this.addOutro(guideData);
+		// currently does not need updates
 	}
 	
 	addIntro(guideData) {
-		var fragment = document.createDocumentFragment();
-		// TODO: fill the intro
-		this.config.legend.appendChild(fragment);
+		const introTemplate = this.config.introTemplate;
+		// only generate an intro if available
+		if (introTemplate) {
+			// fill the intro
+			const fragment = document.createDocumentFragment();
+			const definitionTitle = document.createElement('dt');
+			definitionTitle.className = "localmap-legend-empty";
+			definitionTitle.innerHTML = "Introduction";
+			fragment.appendChild(definitionTitle);
+			const definitionDescription = document.createElement('dd');
+			definitionDescription.className = "localmap-legend-full";
+			definitionDescription.innerHTML = introTemplate
+				.replace("{updated}", guideData.updated)
+				.replace("{date}", new Date(guideData.updated).toLocaleDateString('en-AU', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }))
+				.replace("{description}", '<p>' + guideData.description.join('</p><p>') + '</p>')
+				.replace("{duration}", guideData.duration + 'hr')
+				.replace("{distance}", guideData.distance + 'km');
+			fragment.appendChild(definitionDescription);
+			// add the intro to the legend
+			this.config.legend.appendChild(fragment);
+		}
 	}
 
 	addDefinition(markerData) {
@@ -67,8 +90,22 @@ export class Legend {
 	}
 	
 	addOutro(guideData) {
-		var fragment = document.createDocumentFragment();
-		// TODO: fill the outro
-		this.config.legend.appendChild(fragment);
+		const outroTemplate = this.config.outroTemplate;
+		// only generate an outro if available
+		console.log('adding outro', outroTemplate);
+		if (outroTemplate) {
+			// fill the outro
+			const fragment = document.createDocumentFragment();
+			const definitionTitle = document.createElement('dt');
+			definitionTitle.className = "localmap-legend-empty";
+			definitionTitle.innerHTML = "Footnotes";
+			fragment.appendChild(definitionTitle);
+			const definitionDescription = document.createElement('dd');
+			definitionDescription.className = "localmap-legend-full";
+			definitionDescription.innerHTML = outroTemplate;
+			fragment.appendChild(definitionDescription);
+			// add the intro to the legend
+			this.config.legend.appendChild(fragment);
+		}
 	}
 }
