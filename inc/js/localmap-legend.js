@@ -2,7 +2,7 @@ export class Legend {
 	constructor(config, indicate) {
 		this.config = config;
 		this.indicate = indicate;
-		this.updated
+		this.elements = [];
 		this.start();
 	}
 
@@ -10,12 +10,12 @@ export class Legend {
 		// if a legend exists
 		if (this.config.legend) {
 			const guideData = this.config.guideData;
-			// clear the legend
-			this.config.legend.innerHTML = '';
 			// add the intro
 			this.addIntro(guideData);
 			// add the markers
-			this.elements = guideData.markers.map(this.addDefinition.bind(this));
+			for (let markerData of guideData.markers) {
+				this.addDefinition(markerData);
+			}
 			// add the outro
 			this.addOutro(guideData);
 		}
@@ -28,6 +28,19 @@ export class Legend {
 
 	update() {
 		// currently does not need updates
+	}
+
+	highlight(markerData) {
+		// if the marker is present in the legend
+		if (markerData.referrer) {
+			// reset the all markers
+			for (let element of this.elements) {
+				element.removeAttribute('data-active');
+			}
+			// highlight the active markers
+			markerData.referrer.setAttribute('data-active', '');
+			markerData.referrer.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
+		}
 	}
 	
 	addIntro(guideData) {
@@ -55,7 +68,6 @@ export class Legend {
 	}
 
 	addDefinition(markerData) {
-		var definitionData = {};
 		// if the marker has a description
 		if (markerData.description) {
 			// format the path to the external assets
@@ -66,37 +78,35 @@ export class Legend {
 			// create a container for the elements
 			var fragment = document.createDocumentFragment();
 			// add the title
-			definitionData.title = document.createElement("dt");
-			definitionData.title.className += markerData.photo ? " localmap-legend-photo" : " localmap-legend-icon";
-			definitionData.title.innerHTML = '<img alt="' + markerData.type + '" src="' + image + '"/>';
-			definitionData.title.style.backgroundImage = 'url("' + image + '")';
-			fragment.appendChild(definitionData.title);
+			var definitionTitle = document.createElement("dt");
+			definitionTitle.className += markerData.photo ? " localmap-legend-photo" : " localmap-legend-icon";
+			definitionTitle.innerHTML = '<img alt="' + markerData.type + '" src="' + image + '"/>';
+			definitionTitle.style.backgroundImage = 'url("' + image + '")';
+			fragment.appendChild(definitionTitle);
 			// add the description
-			definitionData.description = document.createElement("dd");
-			console.log("markerData", markerData);
-			if (markerData.optional) { definitionData.description.className += " localmap-legend-optional"; }
-			else if (markerData.type === "detour") { definitionData.description.className += " localmap-legend-detour"; }
-			else if (markerData.type === "warning") { definitionData.description.className += " localmap-legend-warning"; }
-			else { definitionData.description.className += " localmap-legend-description"; }
-			definitionData.description.innerHTML = "<p>" + text + "</p>";
-			fragment.appendChild(definitionData.description);
+			var definitionDescription = document.createElement("dd");
+			if (markerData.optional) { definitionDescription.className += " localmap-legend-optional"; }
+			else if (markerData.type === "detour") { definitionDescription.className += " localmap-legend-detour"; }
+			else if (markerData.type === "warning") { definitionDescription.className += " localmap-legend-warning"; }
+			else { definitionDescription.className += " localmap-legend-description"; }
+			definitionDescription.innerHTML = "<p>" + text + "</p>";
+			fragment.appendChild(definitionDescription);
 			// add the event handlers
-			markerData.referrer = definitionData.title;
+			markerData.referrer = definitionTitle;
 			// TODO: this one opens the photo viewer
-			definitionData.title.addEventListener("click", this.indicate.bind(this, markerData));
+			definitionTitle.addEventListener("click", this.indicate.bind(this, markerData));
 			// TODO: this one zooms in on the marker
-			definitionData.description.addEventListener("click", this.indicate.bind(this, markerData));
+			definitionDescription.addEventListener("click", this.indicate.bind(this, markerData));
 			// add the container to the legend
 			this.config.legend.appendChild(fragment);
+			// store the element for reference
+			this.elements.push(definitionTitle);
 		}
-		// return the objects
-		return definitionData;
 	}
 	
 	addOutro(guideData) {
 		const outroTemplate = this.config.outroTemplate;
 		// only generate an outro if available
-		console.log('adding outro', outroTemplate);
 		if (outroTemplate) {
 			// fill the outro
 			const fragment = document.createDocumentFragment();

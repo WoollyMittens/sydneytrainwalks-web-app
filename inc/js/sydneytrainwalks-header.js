@@ -9,7 +9,7 @@ export class Header {
 	resetView(evt) {
 		if (evt) evt.preventDefault();
 		// restore the view to default
-		document.body.className = document.body.className.replace(/screen-photos|screen-guide|screen-map/, 'screen-menu');
+		document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-menu');
 	}
 
 	cycleTheme(evt) {

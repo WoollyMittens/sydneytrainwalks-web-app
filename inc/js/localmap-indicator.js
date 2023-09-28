@@ -36,6 +36,7 @@ export class Indicator {
 	}
 
 	show(input) {
+// TODO: simplify this to always expect markerdata object
 		// give up if no location data was provided
 		if (!input) return;
 		// handle the event if this was used as one
@@ -90,7 +91,9 @@ export class Indicator {
 
 	reset() {
 		// de-activate the originating element
-		if (this.config.indicator.referrer) this.config.indicator.referrer.setAttribute("data-localmap", "passive");
+		if (this.config.indicator.referrer) {
+			this.config.indicator.referrer.removeAttribute("data-active");
+		}
 		// clear the indicator
 		this.config.indicator = {
 			icon: null,
@@ -99,7 +102,7 @@ export class Indicator {
 			lon: null,
 			lat: null,
 			zoom: null,
-			origin: null,
+			referrer: null,
 		};
 	}
 
@@ -167,8 +170,11 @@ export class Indicator {
 	}
 
 	onIndicateSuccess() {
-		// activate the originating element
-		this.config.indicator.referrer.setAttribute("data-localmap", "active");
+		// activate the originating element if available
+		if (this.config.indicator.referrer) {
+			this.config.indicator.referrer.setAttribute("data-active", "");
+			this.config.indicator.referrer.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
+		}
 		// highlight a location with an optional description on the map
 		this.onMapFocus(this.config.indicator.lon, this.config.indicator.lat, this.config.indicator.zoom, true);
 	}

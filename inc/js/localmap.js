@@ -2,7 +2,6 @@ import { Canvas } from "./localmap-canvas.js";
 import { Controls } from "./localmap-controls.js";
 import { Scale } from "./localmap-scale.js";
 import { Credits } from "./localmap-credits.js";
-import { Modal } from "./localmap-modal.js";
 import { Legend } from "./localmap-legend.js";
 
 export class Localmap {
@@ -134,14 +133,6 @@ export class Localmap {
 		else { this.focus(lon, lat, zoom, false); }
 	}
 
-	describe(markerdata) {
-		// TODO: indicate() the marker that goes with this
-		// show a popup describing the markerdata
-		this.components.modal.show(markerdata);
-		// resolve any callback
-		if (markerdata.callback) markerdata.callback(markerdata);
-	}
-
 	stop() {
 		// remove each component
 		for (var key in this.components) if (this.components[key].stop) this.components[key].stop(this.config);
@@ -183,11 +174,10 @@ export class Localmap {
 	init() {
 		this.config.container.className += " localmap-busy";
 		this.components = {
-			canvas: new Canvas(this.config, this.onComplete.bind(this), this.describe.bind(this), this.focus.bind(this)),
+			canvas: new Canvas(this.config, this.onComplete.bind(this), this.indicate.bind(this), this.focus.bind(this)),
 			controls: new Controls(this.config, this.focus.bind(this)),
 			scale: new Scale(this.config),
 			credits: new Credits(this.config),
-			modal: new Modal(this.config),
 			legend: new Legend(this.config, this.indicate.bind(this)),
 		};
 	}

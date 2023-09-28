@@ -86,7 +86,7 @@ export class Overview {
 
   onMarkerClicked(id, evt) {
     // update the app for this id
-    this.updateView(id, 'map');
+    this.updateView(id, 'guide');
   }
 
   init() {

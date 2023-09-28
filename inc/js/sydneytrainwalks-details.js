@@ -16,7 +16,6 @@ export class Details {
 		this.returnElement = document.querySelector('.localmap-return');
 		this.wallElement = document.querySelector('.photowall');
 		this.titleTemplate = document.getElementById('title-template');
-		this.guideTemplate = document.getElementById('guide-template');
 		this.thumbnailTemplate = document.getElementById('thumbnail-template');
 		this.trophiesTemplate = document.getElementById('trophies-template');
 		this.wallTemplate = document.getElementById('wall-template');
@@ -36,7 +35,6 @@ export class Details {
 		// update all the elements with the id
 		this.updateMeta(guide);
 		this.updateTitle(guide);
-		this.updateGuide(guide);
 		this.updateMap(guide, route, exif);
 		this.updateWall(guide, exif);
 	}
@@ -58,74 +56,6 @@ export class Details {
 			.replace(/{walkDistance}/g, guide.distance)
 			.replace(/{endTransport}/g, end.type)
 			.replace(/{endLocation}/g, end.location);
-	}
-
-	updateGuide(guide) {
-		// gather the information
-		var description = '<p>' + guide.description.join(' ') + '</p>';
-		var duration = guide.duration;
-		var distance = guide.distance;
-		var gpx = this.config.gpxUrl.replace(/{id}/g, guide.key);
-		var markers = guide.markers;
-		var there = '<p>' + markers[0].description + '</p>';
-		var back = '<p>' + markers[markers.length - 1].description + '</p>';
-		var landmarks = this.updateLandmarks(guide);
-		var updated = guide.updated;
-		var date = new Date(updated).toLocaleDateString('en-AU', {
-			year: 'numeric',
-			month: 'short',
-			day: 'numeric'
-		});
-		// fill the guide with information
-		this.guideElement.innerHTML = this.guideTemplate.innerHTML
-			.replace(/{updated}/g, updated)
-			.replace(/{date}/g, date)
-			.replace(/{description}/g, description)
-			.replace(/{duration}/g, duration)
-			.replace(/{distance}/g, distance)
-			.replace(/{gpx}/g, gpx)
-			.replace(/{there}/g, there)
-			.replace(/{back}/g, back)
-			.replace(/{landmarks}/g, landmarks);
-		// add event handlers for the locator icons
-		var buttons = document.querySelectorAll('.guide .guide-locate');
-		for (var a = 0, b = buttons.length; a < b; a += 1) {
-			buttons[a].addEventListener('click', this.onLocate.bind(this, buttons[a]));
-		}
-		// start the script for the image viewer
-		const thumbnails = [...this.guideElement.querySelectorAll('.cylinder-image')];
-		const sequence = thumbnails.map(thumbnail => thumbnail.getAttribute('href'));
-		for (let thumbnail of thumbnails) {
-			let url = thumbnail.getAttribute('href');
-			let fov = (/d{3}_r\d{6}/i.test(url)) ? 360 : 180;
-			thumbnail.addEventListener('click', (evt) => {
-				// don't navigate to the url
-				evt.preventDefault();
-				// kill the old popup if present
-				if (this.photoCylinder) this.photoCylinder.destroy();
-				// open a new popup
-				this.photoCylinder = new PhotoCylinder({
-					'url': url,
-					'sequence': sequence,
-					'container': this.guideElement,
-					'fov': fov,
-					'idle': 0.1,
-					'opened': (link) => {
-						this.returnTo = 'guide';
-						this.config.guideMap.indicate(link);
-						return true;
-					},
-					'located': (link) => {
-						this.returnTo = 'guide';
-						this.config.guideMap.indicate(link);
-						document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
-					},
-					'closed': () => {
-						this.config.guideMap.unindicate();
-					}
-				});
-			});
-		}
 	}
 
 	updateLandmarks(guide) {
@@ -181,6 +111,7 @@ export class Details {
 		var prefix = (guide.alias && guide.alias.key) ? guide.alias.key : guide.key;
 		// add the click event to the map back button
 		this.returnElement.addEventListener('click', this.onReturnFromMap.bind(this));
+		this.returnElement.style.display = 'none';
 		// clear the old map if active
 		if (this.config.guideMap) {
 			this.config.guideMap.stop();
@@ -261,13 +192,16 @@ export class Details {
 					'idle': 0.1,
 					'opened': (link) => {
 						this.returnTo = 'photos';
+						this.returnElement.style.display = 'block';
+						console.log('wall indicate', link);
 						this.config.guideMap.indicate(link);
 						return true;
 					},
 					'located': (link) => {
 						this.returnTo = 'photos';
+						this.returnElement.style.display = 'block';
 						this.config.guideMap.indicate(link);
-						document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
+						document.body.className = document.body.className.replace(/screen-photos/, 'screen-guide');
 					},
 					'closed': () => {
 						this.config.guideMap.unindicate();
@@ -277,29 +211,20 @@ export class Details {
 		}
 	}
 
-	onLocate(button, evt) {
-		// cancel the click
-		evt.preventDefault();
-		// remember where to return to
-		this.returnTo = 'guide';
-		// as the map to show the location
-		this.config.guideMap.indicate(button);
-		// show the map screen
-		document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-map');
-	}
-
 	onReturnFromMap(evt) {
 		// cancel the click
 		evt.preventDefault();
+		// hide trhe return button again
+		this.returnElement.style.display = 'none';
 		// return from the map
-		document.body.className = document.body.className.replace(/screen-map/, 'screen-' + this.returnTo);
+		document.body.className = document.body.className.replace(/screen-guide/, 'screen-' + this.returnTo);
 	}
 
 	init() {
 		// make the title a return button
 		this.titleElement.onclick = function(evt) {
 			evt.preventDefault();
-			document.body.className = document.body.className.replace(/screen-photos|screen-guide|screen-map/, 'screen-menu');
+			document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-menu');
 		};
 	}
 }

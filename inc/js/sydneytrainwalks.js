@@ -110,7 +110,7 @@ export class SydneyTrainWalks {
 			: root.className.replace('ios-true', 'ios-false');
 		// recover the previous state
 		var storedId = window.localStorage.getItem('id');
-		var storedMode = window.localStorage.getItem('mode') || 'map';
+		var storedMode = window.localStorage.getItem('mode') || 'guide';
 		var startScreen = 'menu';
 		// recover the state from the url
 		storedId = this.getQuery('id') || storedId ;
@@ -126,6 +126,8 @@ export class SydneyTrainWalks {
 		this.trophies = new Trophies(this.config, this.guideIds, this.loadGuide.bind(this), this.updateView.bind(this), this.busy);
 		this.details = new Details(this.config, this.loadGuide.bind(this), this.loadRoute.bind(this), this.loadExif.bind(this), this.trophies);
 		this.editor = new Editor();
+		// substitute legacy map mode for guide
+		if (storedMode === 'map') storedMode = 'guide';
 		// restore the previous state
 		if (storedMode && storedId && this.guideIds.includes(storedId)) { this.updateView(storedId, storedMode); }
 		else if (startScreen) { document.body.className = 'screen-' + startScreen; }

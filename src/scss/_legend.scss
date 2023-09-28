@@ -13,9 +13,6 @@
 	top: 8rem;
 	width: 50%;
 	z-index: 5;
-	overflow-x: hidden;
-	overflow-y: auto;
-	-webkit-overflow-scrolling: touch;
 
 	[data-color-scheme="light"] & {
 		background: #fff;
@@ -30,8 +27,12 @@
 	}
 
 	@media (max-width:959px) {
+		padding: 0;
 		border-left: none;
+		border-top: solid 1px #ccc;
 		width: 100%;
+		top: 66.667%;
+		box-shadow: 0 -0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 	}
 
 	dt {}
@@ -66,14 +67,7 @@
 		overflow: visible !important;
 	}
 
-	body.screen-guide &,
-	body.screen-map & {
+	body.screen-guide & {
 		transform: translate(0, 0);
-	}
-
-	body.screen-map & {
-		@media (max-width:959px) {
-			transform: translate(100%, 0);
-		}
 	}
 }

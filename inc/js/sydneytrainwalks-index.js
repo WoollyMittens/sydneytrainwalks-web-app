@@ -213,7 +213,7 @@ export class Index {
 			target = target.parentNode;
 		}
 		// update the app for this id
-		this.updateView(id, 'map');
+		this.updateView(id, 'guide');
 	}
 
 	init() {

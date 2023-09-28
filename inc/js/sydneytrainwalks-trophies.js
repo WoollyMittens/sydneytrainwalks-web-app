@@ -140,7 +140,8 @@ export class Trophies {
 
 	deeplink(id) {
 		// open the guide page for the id
-		this.parentView(id, 'map');
+		this.parentView(id, 'guide');
+		// TODO: focus the specific trophy
 	}
 
 	close(marker, container, evt) {

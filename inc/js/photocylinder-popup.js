@@ -77,7 +77,9 @@ export class Popup {
 		var config = this.config;
 		// show the popup
 		config.popup.className = config.popup.className.replace(/-passive/gi, '-active');
-		// trigger the closed event if available
+		// trigger the opened event if available
+		console.log('onShow', this.config);
+// TODO: there is no more "element" to get the location from, just a url
 		if (config.opened) {
 			config.opened(config.element);
 		}
