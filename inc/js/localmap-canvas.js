@@ -34,13 +34,6 @@ export class Canvas {
 		this.addMarkers();
 	}
 
-	stop() {
-		// remove each sub-component
-		for (var key in this.components) if (this.components[key].stop) this.components[key].stop(this.config);
-		// remove the element
-		this.config.container.removeChild(this.wrapper);
-	}
-
 	update() {
 		// redraw this component
 		this.redraw();

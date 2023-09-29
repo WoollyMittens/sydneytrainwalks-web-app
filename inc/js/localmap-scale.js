@@ -13,11 +13,6 @@ export class Scale {
 		this.config.container.appendChild(this.element);
 	}
 
-	stop() {
-		// remove the element
-		this.config.container.removeChild(this.element);
-	}
-
 	update() {
 		// defer redraw until idle
 		if (this.config.position.zoom !== this.zoom) {

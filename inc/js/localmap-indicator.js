@@ -21,11 +21,6 @@ export class Indicator {
 		this.container.appendChild(this.element);
 	}
 
-	stop() {
-		// remove the element
-		this.container.removeChild(this.element);
-	}
-
 	update() {
 		// only resize if the zoom has changed
 		if (this.zoom !== this.config.position.zoom) this.resize();
@@ -35,56 +30,29 @@ export class Indicator {
 		this.zoom = this.config.position.zoom;
 	}
 
-	show(input) {
-// TODO: simplify this to always expect markerdata object
-		// give up if no location data was provided
-		if (!input) return;
-		// handle the event if this was used as one
-		if (input.target) input = input.target;
-		// gather the parameters from diverse input
-		if (!input.getAttribute)
-			input.getAttribute = function (attr) {
-				return input[attr];
-			};
-		if (!input.setAttribute)
-			input.setAttribute = function (attr, value) {
-				input[attr] = value;
-			};
-		var source =
-			input.getAttribute("data-url") ||
-			input.getAttribute("src") ||
-			input.getAttribute("href") ||
-			input.getAttribute("photo");
-		var type = input.getAttribute("data-type");
-		var description =
-			input.getAttribute("data-title") ||
-			input.getAttribute("title") ||
-			input.getAttribute("description") ||
-			input.innerHTML;
-		var lon = input.getAttribute("data-lon") || input.getAttribute("lon");
-		var lat = input.getAttribute("data-lat") || input.getAttribute("lat");
-		// try to get the coordinates from the cached exif data
-		var filename = source ? source.split("/").pop() : null;
-		var cached = this.config.exifData ? this.config.exifData[filename] : {};
+	show(markerData) {
+		// don't continue without marker data
+		if (!markerData) return;
 		// populate the indicator's model
-		this.config.indicator = {
-			photo: filename,
-			type: type,
-			description: description,
-			lon: lon || cached.lon,
-			lat: lat || cached.lat,
-			zoom: this.config.maximum.zoom,
-			referrer: input.referrer || input,
-		};
+		this.config.indicator = markerData;
 		// if the coordinates are known
 		if (this.config.indicator.lon && this.config.indicator.lat) {
 			// display the indicator immediately
 			this.onIndicateSuccess();
-		} else {
-			// try to retrieve them from the photo
+		}
+		// else try the cached EXIF data
+		else if (this.config?.exifData[markerData.photo]) {
+			// display the indicator after getting the coordinates from the cache
+			const cached = this.config.exifData[markerData.photo];
+			this.config.indicator.lon = cached.lon;
+			this.config.indicator.lat = cached.lat;
+			this.onIndicateSuccess();
+		}
+		// or try to retrieve them from the photo
+		else {
 			var guideXhr = new XMLHttpRequest();
 			guideXhr.addEventListener("load", this.onExifLoaded.bind(this));
-			guideXhr.open("GET", this.config.exifUrl.replace("{src}", source), true);
+			guideXhr.open("GET", this.config.exifUrl.replace("{src}", markerData.photo), true);
 			guideXhr.send();
 		}
 	}
@@ -110,7 +78,7 @@ export class Indicator {
 		// reset the indicator object
 		this.reset();
 		// zoom out a little
-		this.onMapFocus(this.config.position.lon, this.config.position.lat, this.config.position.zoom * 0.25, true);
+		this.onMapFocus(this.config.position.lon, this.config.position.lat, this.config.position.zoom, true);
 	}
 
 	resize() {
@@ -176,7 +144,7 @@ export class Indicator {
 			this.config.indicator.referrer.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
 		}
 		// highlight a location with an optional description on the map
-		this.onMapFocus(this.config.indicator.lon, this.config.indicator.lat, this.config.indicator.zoom, true);
+		this.onMapFocus(this.config.indicator.lon, this.config.indicator.lat, this.config.position.zoom, true);
 	}
 
 	onIndicatorClicked(evt) {

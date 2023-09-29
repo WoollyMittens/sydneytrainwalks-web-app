@@ -379,30 +379,100 @@
 	}
 
 	&-legend {
-		display: grid;
-		grid-template-columns: 20% auto;
-		grid-template-rows: auto;
-		gap: 1.25rem;
-		overflow-x: hidden;
-		overflow-y: auto;
-		-webkit-overflow-scrolling: touch;
-
-		@media (max-width:959px) {
+		nav {
 			display: flex;
+			align-items: center;
+			justify-content: center;
 			flex-wrap: nowrap;
+			overflow: hidden;
 			gap: 0;
-			overflow-y: hidden;
-			overflow-x: auto;
-			scroll-snap-type: x mandatory;
+			height: 1.5rem;
+			margin: -1.5rem 1rem 0;
+
+			@media (min-width:960px) {
+				display: none;
+			}
+		}
+
+		button {
+			border: none;
+			padding: 0;
+			width: 0.5rem;
+			height: 0.5rem;
+			min-width: 0.5rem;
+			opacity: 0.5;
+			margin: 0 0.3rem;
+			overflow: hidden;
+			text-indent: 2rem;
+			background-color: #0d47a1;
+			border-radius: 50%;
+			transition-property: width, height, min-width, opacity, margin;
+			transition-duration: 100ms;
+
+			&[data-distance="9"] {
+				width: 0;
+				height: 0;
+				min-width: 0;
+				opacity: 0;
+				margin: 0;
+			}
+
+			&[data-active] {
+				width: 0.75rem;
+				height: 0.75rem;
+				min-width: 0.75rem;
+				opacity: 1;
+			}
+		}
+
+		dl {
+			display: grid;
+			grid-template-columns: 20% auto;
+			grid-template-rows: auto;
+			gap: 1.25rem;
+			overflow-x: hidden;
+			overflow-y: auto;
+			-webkit-overflow-scrolling: touch;
+			width: 100%;
+			height: 100%;
+			margin: 0;
+
+			@media (max-width:959px) {
+				display: flex;
+				flex-wrap: nowrap;
+				gap: 0;
+				overflow-y: hidden;
+				overflow-x: auto;
+				scroll-snap-type: x mandatory;
+				padding: 0 0 1.5rem;
+			}
 		}
 
 		dt {
 			aspect-ratio: 4/3;
+			cursor: pointer;
 		}
 
 		dd {
 			margin: 0;
 			padding: 0 1.25rem;
+			cursor: pointer;
+			position: relative;
+
+			&:hover {
+				outline: dashed 2px #0D47A166;
+			}
+
+			center {
+				text-align: left;
+			}
+
+			i {
+				position: absolute;
+				right: 0.5rem;
+				top: 0.25rem;
+				font-size: 0.75rem;
+			}
 		}
 
 		dt[data-active] + dd {
@@ -414,15 +484,21 @@
 		}
 
 		&-empty {
-			display: none;
+			overflow: hidden;
+			width: 0;
 		}
 
 		&-full {
 			grid-column: auto / span 2;
 			scroll-snap-align: start;
+			cursor: initial !important;
 
 			@media (max-width:959px) {
 				min-width: 100vw;
+			}
+
+			&:hover {
+				outline: none !important;
 			}
 		}
 
@@ -478,13 +554,13 @@
 		}
 
 		&-optional {
-			background-color: #F1F8E9;
+			background-color: #00C85333;
 			padding: 0 1.25rem;
 		}
 
 		&-detour,
 		&-warning {
-			background-color: #FFFDE7;
+			background-color: #FFD60033;
 			padding: 0 1.25rem;
 		}
 

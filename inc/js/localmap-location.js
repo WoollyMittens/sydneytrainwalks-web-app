@@ -32,11 +32,6 @@ export class Location {
 		}
 	}
 
-	stop() {
-		// remove the element
-		this.config.container.removeChild(this.permissions);
-	}
-
 	update() {
 		// only resize if the zoom has changed
 		if (this.zoom !== this.config.position.zoom) this.resize();

@@ -29,11 +29,6 @@ export class Background {
 		window.addEventListener("resize", this.redraw.bind(this));
 	}
 
-	stop() {
-		// remove the element
-		this.container.removeChild(this.element);
-	}
-
 	update() {}
 
 	redraw() {

@@ -26,10 +26,6 @@ export class Markers {
 		}
 	}
 
-	stop() {
-		// TODO: remove the elements
-	}
-
 	update() {
 		// defer redraw until idle
 		if (this.config.position.zoom !== this.zoom) {

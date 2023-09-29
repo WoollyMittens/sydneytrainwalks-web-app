@@ -15,6 +15,8 @@
 	@media (max-width:959px) {
 		width: 100%;
 		bottom: 33.333%;
+
+		bottom: calc(50vw + 4rem);
 	}
 
 	@media print {
@@ -31,6 +33,12 @@
 
 		button {
 			visibility: hidden !important;
+		}
+	}
+
+	.localmap-return {
+		@media (min-width:960px) {
+			display: none !important;
 		}
 	}
 

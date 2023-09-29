@@ -4,6 +4,8 @@ export class Popup {
 		this.destroy = destroy;
 	}
 
+// TODO: add next and previous buttons based on the sequence
+
 	show() {
 		var config = this.config;
 		// if the popup doesn't exist
@@ -78,10 +80,8 @@ export class Popup {
 		// show the popup
 		config.popup.className = config.popup.className.replace(/-passive/gi, '-active');
 		// trigger the opened event if available
-		console.log('onShow', this.config);
-// TODO: there is no more "element" to get the location from, just a url
 		if (config.opened) {
-			config.opened(config.element);
+			config.opened(config.url, config.sequence);
 		}
 	}
 
@@ -93,7 +93,7 @@ export class Popup {
 		this.hide();
 		// trigger the closed event if available
 		if (config.closed) {
-			config.closed(config.element);
+			config.closed(config.url, config.sequence);
 		}
 	}
 
@@ -103,7 +103,7 @@ export class Popup {
 		evt.preventDefault();
 		// trigger the located event if available
 		if (config.located) {
-			config.located(config.element);
+			config.located(config.url, config.sequence);
 		}
 	}
 }

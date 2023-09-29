@@ -79,7 +79,7 @@ export class Localmap {
 		// extend the default options
 		for (var key in config) this.config[key] = config[key];
 		// start the functionality
-		this.init();
+		this.start();
 	}
 
 	update() {
@@ -133,11 +133,6 @@ export class Localmap {
 		else { this.focus(lon, lat, zoom, false); }
 	}
 
-	stop() {
-		// remove each component
-		for (var key in this.components) if (this.components[key].stop) this.components[key].stop(this.config);
-	}
-
 	indicate(input) {
 		var canvas = this.components.canvas;
 		var indicator = canvas.components.indicator;
@@ -171,7 +166,12 @@ export class Localmap {
 		);
 	}
 
-	init() {
+	stop() {
+		if (this.config.container) this.config.container.innerHTML = "";
+		if (this.config.legend) this.config.legend.innerHTML = "";
+	}
+
+	start() {
 		this.config.container.className += " localmap-busy";
 		this.components = {
 			canvas: new Canvas(this.config, this.onComplete.bind(this), this.indicate.bind(this), this.focus.bind(this)),

@@ -11,15 +11,15 @@ export class Controls {
 		this.last = null;
 		// add touch and mouse controls
 		const wrapper = this.config.canvasWrapper;
-		wrapper.addEventListener("mousedown", this.startInteraction.bind(this, "mouse"), {passive: true});
-		wrapper.addEventListener("mousemove", this.moveInteraction.bind(this, "mouse"), {passive: true});
-		wrapper.addEventListener("mouseup", this.endInteraction.bind(this, "mouse"), {passive: true});
-		wrapper.addEventListener("wheel", this.wheelInteraction.bind(this, "mouse"), {passive: true});
-		wrapper.addEventListener("click", this.dblclickInteraction.bind(this, "mouse"), {passive: true});
-		wrapper.addEventListener("touchstart", this.startInteraction.bind(this, "touch"), {passive: true});
-		wrapper.addEventListener("touchmove", this.moveInteraction.bind(this, "touch"), {passive: true});
-		wrapper.addEventListener("touchend", this.endInteraction.bind(this, "touch"), {passive: true});
-		wrapper.addEventListener("touchcancel", this.cancelInteraction.bind(this, "touch"), {passive: true});
+		wrapper.addEventListener("mousedown", this.startInteraction.bind(this, "mouse"), { passive: true });
+		wrapper.addEventListener("mousemove", this.moveInteraction.bind(this, "mouse"), { passive: true });
+		wrapper.addEventListener("mouseup", this.endInteraction.bind(this, "mouse"), { passive: true });
+		wrapper.addEventListener("wheel", this.wheelInteraction.bind(this, "mouse"), { passive: true });
+		wrapper.addEventListener("click", this.dblclickInteraction.bind(this, "mouse"), { passive: true });
+		wrapper.addEventListener("touchstart", this.startInteraction.bind(this, "touch"), { passive: true });
+		wrapper.addEventListener("touchmove", this.moveInteraction.bind(this, "touch"), { passive: true });
+		wrapper.addEventListener("touchend", this.endInteraction.bind(this, "touch"), { passive: true });
+		wrapper.addEventListener("touchcancel", this.cancelInteraction.bind(this, "touch"), { passive: true });
 		// start the component
 		this.start();
 	}
@@ -41,11 +41,6 @@ export class Controls {
 		this.elements.zoomout.setAttribute("class", "localmap-controls-zoomout");
 		this.elements.zoomout.addEventListener("click", this.buttonInteraction.bind(this, 0.667));
 		this.element.appendChild(this.elements.zoomout);
-	}
-
-	stop() {
-		// remove the element
-		this.config.container.removeChild(this.element);
 	}
 
 	update() {
@@ -109,22 +104,10 @@ export class Controls {
 			this.last = new Date() - 500;
 			// for multi touch
 			if (touches.length > 1 && previous.length > 1) {
-				var dX =
-					(Math.abs(touches[0].clientX - touches[1].clientX) -
-						Math.abs(previous[0].clientX - previous[1].clientX)) /
-					this.config.container.offsetWidth;
-				var dY =
-					(Math.abs(touches[0].clientY - touches[1].clientY) -
-						Math.abs(previous[0].clientY - previous[1].clientY)) /
-					this.config.container.offsetHeight;
-				this.inertia.x =
-					(touches[0].clientX - previous[0].clientX + (touches[1].clientX - previous[1].clientX)) /
-					2 /
-					this.range.x;
-				this.inertia.y =
-					(touches[0].clientY - previous[0].clientY + (touches[1].clientY - previous[1].clientY)) /
-					2 /
-					this.range.y;
+				var dX = (Math.abs(touches[0].clientX - touches[1].clientX) - Math.abs(previous[0].clientX - previous[1].clientX)) / this.config.container.offsetWidth;
+				var dY = (Math.abs(touches[0].clientY - touches[1].clientY) - Math.abs(previous[0].clientY - previous[1].clientY)) / this.config.container.offsetHeight;
+				this.inertia.x = (touches[0].clientX - previous[0].clientX + (touches[1].clientX - previous[1].clientX)) / 2 / this.range.x;
+				this.inertia.y = (touches[0].clientY - previous[0].clientY + (touches[1].clientY - previous[1].clientY)) / 2 / this.range.y;
 				this.inertia.z = (dX + dY) / 2;
 			} else {
 				this.inertia.x = (touches[0].clientX - previous[0].clientX) / this.range.x;
@@ -171,12 +154,7 @@ export class Controls {
 		// if the previous tap was short enough ago
 		if (new Date() - this.last < 250) {
 			// zoom in on the map
-			this.focus(
-				this.config.position.lon,
-				this.config.position.lat,
-				this.config.position.zoom * 1.5,
-				true
-			);
+			this.focus(this.config.position.lon, this.config.position.lat, this.config.position.zoom * 1.5, true);
 		}
 		// update the time since the last click
 		this.last = new Date();

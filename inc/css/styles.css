@@ -180,7 +180,7 @@ img {
 #appView {
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  overflow: clip;
   position: relative;
 }
 @media print {
@@ -913,6 +913,7 @@ body.screen-menu .navigation {
   .directions {
     width: 100%;
     bottom: 33.333%;
+    bottom: calc(50vw + 4rem);
   }
 }
 @media print {
@@ -930,6 +931,11 @@ body.screen-menu .navigation {
   }
   .directions button {
     visibility: hidden !important;
+  }
+}
+@media (min-width: 960px) {
+  .directions .localmap-return {
+    display: none !important;
   }
 }
 body.screen-guide .directions, body.screen-photos .directions {
@@ -1095,7 +1101,7 @@ body.screen-overview .summary {
   background: #fff;
   border-left: solid 1px #000;
   bottom: 4rem;
-  padding: 20px;
+  padding: 0;
   margin: 0;
   position: absolute;
   right: 0;
@@ -1116,12 +1122,19 @@ body.screen-overview .summary {
 }
 @media (max-width: 959px) {
   .legend {
-    padding: 0;
     border-left: none;
     border-top: solid 1px #ccc;
     width: 100%;
-    top: 66.667%;
+    top: calc(100% - 50vw - 4rem);
     box-shadow: 0 -0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  }
+}
+.legend dl {
+  padding: 20px;
+}
+@media (max-width: 959px) {
+  .legend dl {
+    padding: 0;
   }
 }
 .legend time {
@@ -2176,7 +2189,50 @@ body.screen-photos .photowall {
     color: #fff;
   }
 }
-.localmap-legend {
+.localmap-legend nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  gap: 0;
+  height: 1.5rem;
+  margin: -1.5rem 1rem 0;
+}
+@media (min-width: 960px) {
+  .localmap-legend nav {
+    display: none;
+  }
+}
+.localmap-legend button {
+  border: none;
+  padding: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  min-width: 0.5rem;
+  opacity: 0.5;
+  margin: 0 0.3rem;
+  overflow: hidden;
+  text-indent: 2rem;
+  background-color: #0d47a1;
+  border-radius: 50%;
+  transition-property: width, height, min-width, opacity, margin;
+  transition-duration: 100ms;
+}
+.localmap-legend button[data-distance="9"] {
+  width: 0;
+  height: 0;
+  min-width: 0;
+  opacity: 0;
+  margin: 0;
+}
+.localmap-legend button[data-active] {
+  width: 0.75rem;
+  height: 0.75rem;
+  min-width: 0.75rem;
+  opacity: 1;
+}
+.localmap-legend dl {
   display: grid;
   grid-template-columns: 20% auto;
   grid-template-rows: auto;
@@ -2184,23 +2240,42 @@ body.screen-photos .photowall {
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 @media (max-width: 959px) {
-  .localmap-legend {
+  .localmap-legend dl {
     display: flex;
     flex-wrap: nowrap;
     gap: 0;
     overflow-y: hidden;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    padding: 0 0 1.5rem;
   }
 }
 .localmap-legend dt {
   aspect-ratio: 4/3;
+  cursor: pointer;
 }
 .localmap-legend dd {
   margin: 0;
   padding: 0 1.25rem;
+  cursor: pointer;
+  position: relative;
+}
+.localmap-legend dd:hover {
+  outline: dashed 2px rgba(13, 71, 161, 0.4);
+}
+.localmap-legend dd center {
+  text-align: left;
+}
+.localmap-legend dd i {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.25rem;
+  font-size: 0.75rem;
 }
 .localmap-legend dt[data-active] + dd {
   outline: dashed 2px #0D47A1;
@@ -2211,16 +2286,21 @@ body.screen-photos .photowall {
   }
 }
 .localmap-legend-empty {
-  display: none;
+  overflow: hidden;
+  width: 0;
 }
 .localmap-legend-full {
   grid-column: auto/span 2;
   scroll-snap-align: start;
+  cursor: initial !important;
 }
 @media (max-width: 959px) {
   .localmap-legend-full {
     min-width: 100vw;
   }
+}
+.localmap-legend-full:hover {
+  outline: none !important;
 }
 .localmap-legend-icon {
   display: flex;
@@ -2266,11 +2346,11 @@ body.screen-photos .photowall {
   align-items: center;
 }
 .localmap-legend-optional {
-  background-color: #F1F8E9;
+  background-color: rgba(0, 200, 83, 0.2);
   padding: 0 1.25rem;
 }
 .localmap-legend-detour, .localmap-legend-warning {
-  background-color: #FFFDE7;
+  background-color: rgba(255, 214, 0, 0.2);
   padding: 0 1.25rem;
 }
 /*

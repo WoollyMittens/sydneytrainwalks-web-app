@@ -28,11 +28,6 @@ export class Route {
 		}
 	}
 
-	stop() {
-		// remove the element
-		this.container.removeChild(this.element);
-	}
-
 	update() {
 		// defer redraw until idle
 		if (this.config.position.zoom !== this.zoom) {

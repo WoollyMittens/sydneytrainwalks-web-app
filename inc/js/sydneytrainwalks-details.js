@@ -170,45 +170,38 @@ export class Details {
 		this.wallElement.innerHTML = '<ul>' + wallHtml + '</ul>';
 		// start the script for the wall
 		this.config.photowall = new Photowall({
-			'element': this.wallElement
-		});
-		// start the script for the image viewer
-		const thumbnails = [...this.wallElement.querySelectorAll('.cylinder-image')];
-		const sequence = thumbnails.map(thumbnail => thumbnail.getAttribute('href'));
-		for (let thumbnail of thumbnails) {
-			let url = thumbnail.getAttribute('href');
-			let fov = (/d{3}_r\d{6}/i.test(url)) ? 360 : 180;
-			this.photoCylinder = thumbnail.addEventListener('click', (evt) => {
+			'element': this.wallElement,
+			'clicked' : (url, urls, evt) => {
 				// don't navigate to the url
 				evt.preventDefault();
 				// kill the old popup if present
 				if (this.photoCylinder) this.photoCylinder.destroy();
 				// open a new popup
+				const markerData = { 'photo': url.split('/').pop() }
 				this.photoCylinder = new PhotoCylinder({
 					'url': url,
-					'sequence': sequence,
+					'sequence': urls,
 					'container': this.wallElement,
-					'fov': fov,
+					'fov': (/d{3}_r\d{6}/i.test(url)) ? 360 : 180,
 					'idle': 0.1,
 					'opened': (link) => {
 						this.returnTo = 'photos';
 						this.returnElement.style.display = 'block';
-						console.log('wall indicate', link);
-						this.config.guideMap.indicate(link);
+						this.config.guideMap.indicate(markerData);
 						return true;
 					},
 					'located': (link) => {
 						this.returnTo = 'photos';
 						this.returnElement.style.display = 'block';
-						this.config.guideMap.indicate(link);
+						this.config.guideMap.indicate(markerData);
 						document.body.className = document.body.className.replace(/screen-photos/, 'screen-guide');
 					},
 					'closed': () => {
 						this.config.guideMap.unindicate();
 					}
 				});
-			});
-		}
+			}
+		});
 	}
 
 	onReturnFromMap(evt) {

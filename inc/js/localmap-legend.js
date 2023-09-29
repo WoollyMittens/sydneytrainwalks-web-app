@@ -1,8 +1,16 @@
 export class Legend {
 	constructor(config, indicate) {
+		if (!config.legend) return null;
 		this.config = config;
 		this.indicate = indicate;
-		this.elements = [];
+		this.redrawTimeout = null;
+		this.definitions = [];
+		this.pages = [];
+		this.definitionList = document.createElement('dl');
+		this.pageNav = document.createElement('nav');
+		this.element = this.config.legend;
+		this.element.appendChild(this.definitionList);
+		this.element.appendChild(this.pageNav);
 		this.start();
 	}
 
@@ -10,36 +18,31 @@ export class Legend {
 		// if a legend exists
 		if (this.config.legend) {
 			const guideData = this.config.guideData;
-			// add the intro
+			// add the intro to the definitions
 			this.addIntro(guideData);
-			// add the markers
+			// add the markers to the definitions
 			for (let markerData of guideData.markers) {
 				this.addDefinition(markerData);
 			}
-			// add the outro
+			// add the outro to the definitions
 			this.addOutro(guideData);
+			// add the pages to the navigation
+			this.addPageCount();
 		}
 	}
 
-	stop() {
-		// remove the element
-		if (this.config.legend) this.config.legend.innerHTML = "";
-	}
-
-	update() {
-		// currently does not need updates
-	}
+	update() {}
 
 	highlight(markerData) {
 		// if the marker is present in the legend
 		if (markerData.referrer) {
 			// reset the all markers
-			for (let element of this.elements) {
-				element.removeAttribute('data-active');
+			for (let definition of this.definitions) {
+				definition.removeAttribute('data-active');
 			}
 			// highlight the active markers
 			markerData.referrer.setAttribute('data-active', '');
-			markerData.referrer.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
+			markerData.referrer.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
 		}
 	}
 	
@@ -63,7 +66,13 @@ export class Legend {
 				.replace("{distance}", guideData.distance + 'km');
 			fragment.appendChild(definitionDescription);
 			// add the intro to the legend
-			this.config.legend.appendChild(fragment);
+			this.definitionList.appendChild(fragment);
+			// store the definition for reference
+			this.definitions.push({
+				'title': definitionTitle,
+				'description': definitionDescription,
+				'data': null
+			});
 		}
 	}
 
@@ -75,7 +84,7 @@ export class Legend {
 				? this.config.thumbsUrl + markerData.photo
 				: this.config.markersUrl.replace("{type}", markerData.type);
 			var text = markerData.description || markerData.type;
-			// create a container for the elements
+			// create a container for the markers
 			var fragment = document.createDocumentFragment();
 			// add the title
 			var definitionTitle = document.createElement("dt");
@@ -93,14 +102,18 @@ export class Legend {
 			fragment.appendChild(definitionDescription);
 			// add the event handlers
 			markerData.referrer = definitionTitle;
-			// TODO: this one opens the photo viewer
+			// TODO: clicking on the photo opens the photo viewer
 			definitionTitle.addEventListener("click", this.indicate.bind(this, markerData));
-			// TODO: this one zooms in on the marker
+			// clicking on the description zooms in on the marker
 			definitionDescription.addEventListener("click", this.indicate.bind(this, markerData));
 			// add the container to the legend
-			this.config.legend.appendChild(fragment);
-			// store the element for reference
-			this.elements.push(definitionTitle);
+			this.definitionList.appendChild(fragment);
+			// store the marker for reference
+			this.definitions.push({
+				'title': definitionTitle,
+				'description': definitionDescription,
+				'data': markerData
+			});
 		}
 	}
 	
@@ -119,7 +132,72 @@ export class Legend {
 			definitionDescription.innerHTML = outroTemplate;
 			fragment.appendChild(definitionDescription);
 			// add the intro to the legend
-			this.config.legend.appendChild(fragment);
+			this.definitionList.appendChild(fragment);
+			// store the definition for reference
+			this.definitions.push({
+				'title': definitionTitle,
+				'description': definitionDescription,
+				'data': null
+			});
 		}
+	}
+
+
+	redrawPageCount(activeDefinition) {
+		// hide the excess of pages
+		const width = this.definitionList.offsetWidth;
+		for (let index in this.definitions) {
+			let page = this.pages[index];
+			let definition = this.definitions[index];
+			let rect = definition.title.getBoundingClientRect();
+			let distance = Math.min(Math.abs(Math.round(rect.left / width)), 9);
+			page.setAttribute('data-distance', distance);
+		}
+		// highlight the active page on the map
+		this.indicate(activeDefinition.data);
+	}
+
+	updatePageCount() {
+		// mark whichever page is visible in the viewport as active
+		const width = this.definitionList.offsetWidth;
+		for (let index in this.definitions) {
+			let page = this.pages[index];
+			let definition = this.definitions[index];
+			let rect = definition.title.getBoundingClientRect();
+			// if the page is in the viewport
+			if (rect.left >= 0 && rect.left < width) {
+				// immediately activate the page indicator
+				page.setAttribute('data-active', '');
+				// wait for a pause to update the indicator
+				clearTimeout(this.redrawTimeout);
+				this.redrawTimeout = setTimeout(this.redrawPageCount.bind(this, definition), 100);
+			}
+			// otherwise reset it
+			else {
+				page.removeAttribute('data-active'); 
+			}
+		}
+	}
+
+	addPageCount() {
+		// for every definition entry
+		for (let index in this.definitions) {
+			let definition = this.definitions[index];
+			// create a page counter
+			let button = document.createElement('button');
+			button.innerHTML = index;
+			// add the click handler for the counter
+			button.addEventListener('click', evt => {
+				evt.preventDefault();
+				definition.title.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
+			});
+			// add the counter and store for reference
+			this.pageNav.appendChild(button);
+			this.pages.push(button);
+		}
+		// handle the scroller
+		this.definitionList.addEventListener('scroll', this.updatePageCount.bind(this), { passive: true });
+		// activate the first page
+		this.updatePageCount();
 	}
 }
