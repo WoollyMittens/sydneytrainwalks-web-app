@@ -211,7 +211,6 @@ export class Stage {
 		var coords, scale = this.magnification.current / this.magnification.min;
 		switch(phase) {
 			case 'start':
-				evt.preventDefault();
 				// stop animating
 				this.auto = false;
 				// reset the deltas

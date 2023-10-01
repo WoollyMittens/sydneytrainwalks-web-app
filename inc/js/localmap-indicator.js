@@ -138,13 +138,33 @@ export class Indicator {
 	}
 
 	onIndicateSuccess() {
+		const indicator = this.config.indicator;
+		const position = this.config.position;
+		const markers = this.config.guideData.markers;
+		const exifs = this.config.exifData;
+		// try to find the referer in the existing markers
+		if (!indicator.referrer) {
+			for (let marker of markers) {
+				if (marker.photo === indicator.photo) {
+					indicator.referrer = marker.referrer;
+					indicator.lat = marker.lat;
+					indicator.lon = marker.lon;
+				}
+			}
+		}
+		// try to find the location data in the exif data
+		if (!indicator.lat || !indicator.lon) {
+			let photo = exifs[indicator.photo];
+			this.config.indicator.lat = photo.lat;
+			this.config.indicator.lon = photo.lon;
+		}
 		// activate the originating element if available
-		if (this.config.indicator.referrer) {
-			this.config.indicator.referrer.setAttribute("data-active", "");
-			this.config.indicator.referrer.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
+		if (indicator.referrer) {
+			indicator.referrer.setAttribute("data-active", "");
+			indicator.referrer.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
 		}
 		// highlight a location with an optional description on the map
-		this.onMapFocus(this.config.indicator.lon, this.config.indicator.lat, this.config.position.zoom, true);
+		this.onMapFocus(indicator.lon, indicator.lat, position.zoom, true);
 	}
 
 	onIndicatorClicked(evt) {

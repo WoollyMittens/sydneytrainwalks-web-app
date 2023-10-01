@@ -292,31 +292,6 @@
 		}
 	}
 
-	&-return {
-		display: none;
-		position: absolute;
-		right: 10px;
-		top: 10px;
-		z-index: 10;
-		background-image: url("../img/icon-east.svg");
-
-		[data-color-scheme="light"] & {
-			background-image: url("../img/icon-east.svg");
-		}
-
-		[data-color-scheme="dark"] & {
-			background-image: url("../img/icon-east-inv.svg");
-		}
-
-		@media (prefers-color-scheme: dark) {
-			background-image: url("../img/icon-east-inv.svg");
-		}
-
-		@media (max-width:959px) {
-			display: block;
-		}
-	}
-
 	&-scale {
 		position: absolute;
 		left: 5px;

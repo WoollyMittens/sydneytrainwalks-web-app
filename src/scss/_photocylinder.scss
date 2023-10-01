@@ -195,11 +195,10 @@
 	}
 
 	&-closer,
-	&-locator {
+	&-next,
+	&-previous {
 		width: 3rem;
 		height: 3rem;
-		right: 1rem;
-		top: 1rem;
 		overflow: hidden;
 		text-indent: 150%;
 		background: #0D47A1;
@@ -227,10 +226,14 @@
 			color: #000;
 		}
 
+		&[disabled] {
+			cursor: default;
+			opacity: 0.5;
+		}
+
 		&:before {
 			content: "";
 			display: block;
-			background-image: url("../img/close.svg");
 			background-size: 24px 24px;
 			width: 24px;
 			height: 24px;
@@ -239,21 +242,9 @@
 			top: 50%;
 			margin-left: -12px;
 			margin-top: -12px;
-
-			[data-color-scheme="light"] & {
-				background-image: url("../img/close.svg");
-			}
-
-			[data-color-scheme="dark"] & {
-				background-image: url("../img/close_inv.svg");
-			}
-
-			@media (prefers-color-scheme: dark) {
-				background-image: url("../img/close_inv.svg");
-			}
 		}
 
-		&:hover {
+		&:not([disabled]):hover {
 			background: #ff9800;
 
 			[data-color-scheme="light"] & {
@@ -273,26 +264,65 @@
 		}
 	}
 
-	&-locator {
-		right: 5rem;
-		display: none;
-		@media (max-width:959px) {
-			display: block;
-		}
+	&-closer {
+		right: 1rem;
+		top: 1rem;
 
 		&:before {
-			background-image: url("../img/map_2.svg");
+			background-image: url("../img/close.svg");
 
 			[data-color-scheme="light"] & {
-				background-image: url("../img/map_2.svg");
+				background-image: url("../img/close.svg");
 			}
 
 			[data-color-scheme="dark"] & {
-				background-image: url("../img/map_2_drk.svg");
+				background-image: url("../img/close_inv.svg");
 			}
 
 			@media (prefers-color-scheme: dark) {
-				background-image: url("../img/map_2_drk.svg");
+				background-image: url("../img/close_inv.svg");
+			}
+		}
+	}
+
+	&-next {
+		right: 1rem;
+		top: 50%;
+
+		&:before {
+			background-image: url("../img/icon-east.svg");
+
+			[data-color-scheme="light"] & {
+				background-image: url("../img/icon-east.svg");
+			}
+
+			[data-color-scheme="dark"] & {
+				background-image: url("../img/icon-east-inv.svg");
+			}
+
+			@media (prefers-color-scheme: dark) {
+				background-image: url("../img/icon-east-inv.svg");
+			}
+		}
+	}
+
+	&-previous {
+		left: 1rem;
+		top: 50%;
+
+		&:before {
+			background-image: url("../img/icon-west.svg");
+
+			[data-color-scheme="light"] & {
+				background-image: url("../img/icon-west.svg");
+			}
+
+			[data-color-scheme="dark"] & {
+				background-image: url("../img/icon-west-inv.svg");
+			}
+
+			@media (prefers-color-scheme: dark) {
+				background-image: url("../img/icon-west-inv.svg");
 			}
 		}
 	}

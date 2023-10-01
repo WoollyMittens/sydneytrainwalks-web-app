@@ -103,7 +103,7 @@ export class Legend {
 			// add the event handlers
 			markerData.referrer = definitionTitle;
 			// TODO: clicking on the photo opens the photo viewer
-			definitionTitle.addEventListener("click", this.indicate.bind(this, markerData));
+			definitionTitle.addEventListener("click", this.onViewPhoto.bind(this, markerData));
 			// clicking on the description zooms in on the marker
 			definitionDescription.addEventListener("click", this.indicate.bind(this, markerData));
 			// add the container to the legend
@@ -199,5 +199,26 @@ export class Legend {
 		this.definitionList.addEventListener('scroll', this.updatePageCount.bind(this), { passive: true });
 		// activate the first page
 		this.updatePageCount();
+	}
+
+	onViewPhoto(markerData, evt) {
+		// cancel the click
+		evt.preventDefault();
+		// use the photo viewer if configured
+		if (this.config.showPhoto) {
+			// write the url
+			const url = this.config.photosUrl + markerData.photo;
+			// write the sequence
+			const urls = [];
+			for (let marker of this.config.guideData.markers) {
+				if (marker.photo) urls.push(this.config.photosUrl + marker.photo);
+			}
+			// open the viewer
+			this.config.showPhoto(url, urls, evt);
+		}
+		// otherwise use the normal indicator
+		else {
+			this.indicate(markerData, evt);
+		}
 	}
 }

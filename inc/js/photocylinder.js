@@ -30,6 +30,8 @@ export class PhotoCylinder {
 		this.config.image = new Image();
 		this.config.image.alt = '';
 		this.config.image.src = url;
+		// update the active url
+		this.config.url = url;
 		// load the viewer when done
 		this.config.image.addEventListener('load', this.onSuccess.bind(this));
 		this.config.image.addEventListener('error', this.onFailure.bind(this));
@@ -61,9 +63,13 @@ export class PhotoCylinder {
 			config.popup = config.container;
 			config.popup.innerHTML = '';
 		} else {
-			this.popup = new Popup(this.config, this.onClosed.bind(this));
+			this.popup = new Popup(this.config, this.onOpened.bind(this), this.onNavigated.bind(this), this.onClosed.bind(this));
 			this.popup.show();
 		}
+	}
+
+	updatePopup() {
+		this.popup.update();
 	}
 
 	removePopup() {
@@ -76,14 +82,12 @@ export class PhotoCylinder {
 	onSuccess() {
 		// hide the busy indicator
 		this.busy.hide();
-		// add the popup if needed
-		if (!this.config.popup) this.addPopup();
+		// add or update the popup if needed
+		if (this.config.popup) { this.updatePopup() } else { this.addPopup() }
 		// add the viewer
 		this.addStage();
 		// trigger the success handler
-		if (this.config.success) {
-			this.config.success(this.config.popup);
-		}
+		if (this.config.success) this.config.success(this.config.popup);
 	}
 
 	onFailure() {
@@ -93,15 +97,31 @@ export class PhotoCylinder {
 		this.removePopup();
 		// give up on the stage
 		this.removeStage();
-		// trigger the failure handler
-		if (this.config.failure) {
-			this.config.failure(this.config.popup);
-		}
 		// hide the busy indicator
 		this.busy.hide();
+		// trigger the failure handler
+		if (this.config.failure) this.config.failure(this.config.popup);
 	}
 
-	onClosed() {
+	onNavigated(url, evt) {
+		// cancel the event if needed
+		if (evt) evt.preventDefault();
+		// update the url
+		this.reload(url);
+		// triger the external event handler
+		if (this.config.navigated) this.config.navigated(this.config.url, this.config.sequence);
+	}
+
+	onOpened() {
+		// triger the external event handler
+		if (this.config.opened) this.config.opened(this.config.url, this.config.sequence)
+	}
+
+	onClosed(evt) {
+		// cancel the event if needed
+		if (evt) evt.preventDefault();
+		// trigger the external event handler
+		this.config.closed(this.config.url, this.config.sequence);
 		// shut down sub components
 		this.removeStage();
 		this.removePopup();

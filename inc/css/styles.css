@@ -2108,30 +2108,6 @@ body.screen-photos .photowall {
   cursor: default;
   background-color: #999;
 }
-.localmap-return {
-  display: none;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  z-index: 10;
-  background-image: url("../img/icon-east.svg");
-}
-[data-color-scheme=light] .localmap-return {
-  background-image: url("../img/icon-east.svg");
-}
-[data-color-scheme=dark] .localmap-return {
-  background-image: url("../img/icon-east-inv.svg");
-}
-@media (prefers-color-scheme: dark) {
-  .localmap-return {
-    background-image: url("../img/icon-east-inv.svg");
-  }
-}
-@media (max-width: 959px) {
-  .localmap-return {
-    display: block;
-  }
-}
 .localmap-scale {
   position: absolute;
   left: 5px;
@@ -2521,11 +2497,9 @@ body.screen-photos .photowall {
 .photocylinder-popup[data-fixed=true] {
   position: fixed;
 }
-.photocylinder-closer, .photocylinder-locator {
+.photocylinder-closer, .photocylinder-next, .photocylinder-previous {
   width: 3rem;
   height: 3rem;
-  right: 1rem;
-  top: 1rem;
   overflow: hidden;
   text-indent: 150%;
   background: #0D47A1;
@@ -2538,24 +2512,27 @@ body.screen-photos .photowall {
   text-decoration: none;
   z-index: 2;
 }
-[data-color-scheme=light] .photocylinder-closer, [data-color-scheme=light] .photocylinder-locator {
+[data-color-scheme=light] .photocylinder-closer, [data-color-scheme=light] .photocylinder-next, [data-color-scheme=light] .photocylinder-previous {
   background: #0D47A1;
   color: #fff;
 }
-[data-color-scheme=dark] .photocylinder-closer, [data-color-scheme=dark] .photocylinder-locator {
+[data-color-scheme=dark] .photocylinder-closer, [data-color-scheme=dark] .photocylinder-next, [data-color-scheme=dark] .photocylinder-previous {
   background-color: #FFB74D;
   color: #000;
 }
 @media (prefers-color-scheme: dark) {
-  .photocylinder-closer, .photocylinder-locator {
+  .photocylinder-closer, .photocylinder-next, .photocylinder-previous {
     background-color: #FFB74D;
     color: #000;
   }
 }
-.photocylinder-closer:before, .photocylinder-locator:before {
+.photocylinder-closer[disabled], .photocylinder-next[disabled], .photocylinder-previous[disabled] {
+  cursor: default;
+  opacity: 0.5;
+}
+.photocylinder-closer:before, .photocylinder-next:before, .photocylinder-previous:before {
   content: "";
   display: block;
-  background-image: url("../img/close.svg");
   background-size: 24px 24px;
   width: 24px;
   height: 24px;
@@ -2565,55 +2542,75 @@ body.screen-photos .photowall {
   margin-left: -12px;
   margin-top: -12px;
 }
-[data-color-scheme=light] .photocylinder-closer:before, [data-color-scheme=light] .photocylinder-locator:before {
-  background-image: url("../img/close.svg");
-}
-[data-color-scheme=dark] .photocylinder-closer:before, [data-color-scheme=dark] .photocylinder-locator:before {
-  background-image: url("../img/close_inv.svg");
-}
-@media (prefers-color-scheme: dark) {
-  .photocylinder-closer:before, .photocylinder-locator:before {
-    background-image: url("../img/close_inv.svg");
-  }
-}
-.photocylinder-closer:hover, .photocylinder-locator:hover {
+.photocylinder-closer:not([disabled]):hover, .photocylinder-next:not([disabled]):hover, .photocylinder-previous:not([disabled]):hover {
   background: #ff9800;
 }
-[data-color-scheme=light] .photocylinder-closer:hover, [data-color-scheme=light] .photocylinder-locator:hover {
+[data-color-scheme=light] .photocylinder-closer:not([disabled]):hover, [data-color-scheme=light] .photocylinder-next:not([disabled]):hover, [data-color-scheme=light] .photocylinder-previous:not([disabled]):hover {
   background: #ff9800;
   color: #fff;
 }
-[data-color-scheme=dark] .photocylinder-closer:hover, [data-color-scheme=dark] .photocylinder-locator:hover {
+[data-color-scheme=dark] .photocylinder-closer:not([disabled]):hover, [data-color-scheme=dark] .photocylinder-next:not([disabled]):hover, [data-color-scheme=dark] .photocylinder-previous:not([disabled]):hover {
   background-color: #BBDEFB;
   color: #000;
 }
 @media (prefers-color-scheme: dark) {
-  .photocylinder-closer:hover, .photocylinder-locator:hover {
+  .photocylinder-closer:not([disabled]):hover, .photocylinder-next:not([disabled]):hover, .photocylinder-previous:not([disabled]):hover {
     background-color: #BBDEFB;
     color: #000;
   }
 }
-.photocylinder-locator {
-  right: 5rem;
-  display: none;
+.photocylinder-closer {
+  right: 1rem;
+  top: 1rem;
 }
-@media (max-width: 959px) {
-  .photocylinder-locator {
-    display: block;
-  }
+.photocylinder-closer:before {
+  background-image: url("../img/close.svg");
 }
-.photocylinder-locator:before {
-  background-image: url("../img/map_2.svg");
+[data-color-scheme=light] .photocylinder-closer:before {
+  background-image: url("../img/close.svg");
 }
-[data-color-scheme=light] .photocylinder-locator:before {
-  background-image: url("../img/map_2.svg");
-}
-[data-color-scheme=dark] .photocylinder-locator:before {
-  background-image: url("../img/map_2_drk.svg");
+[data-color-scheme=dark] .photocylinder-closer:before {
+  background-image: url("../img/close_inv.svg");
 }
 @media (prefers-color-scheme: dark) {
-  .photocylinder-locator:before {
-    background-image: url("../img/map_2_drk.svg");
+  .photocylinder-closer:before {
+    background-image: url("../img/close_inv.svg");
+  }
+}
+.photocylinder-next {
+  right: 1rem;
+  top: 50%;
+}
+.photocylinder-next:before {
+  background-image: url("../img/icon-east.svg");
+}
+[data-color-scheme=light] .photocylinder-next:before {
+  background-image: url("../img/icon-east.svg");
+}
+[data-color-scheme=dark] .photocylinder-next:before {
+  background-image: url("../img/icon-east-inv.svg");
+}
+@media (prefers-color-scheme: dark) {
+  .photocylinder-next:before {
+    background-image: url("../img/icon-east-inv.svg");
+  }
+}
+.photocylinder-previous {
+  left: 1rem;
+  top: 50%;
+}
+.photocylinder-previous:before {
+  background-image: url("../img/icon-west.svg");
+}
+[data-color-scheme=light] .photocylinder-previous:before {
+  background-image: url("../img/icon-west.svg");
+}
+[data-color-scheme=dark] .photocylinder-previous:before {
+  background-image: url("../img/icon-west-inv.svg");
+}
+@media (prefers-color-scheme: dark) {
+  .photocylinder-previous:before {
+    background-image: url("../img/icon-west-inv.svg");
   }
 }
 

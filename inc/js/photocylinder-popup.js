@@ -1,10 +1,12 @@
 export class Popup {
-	constructor(config, onClosed) {
+	constructor(config, onOpened, onNavigated, onClosed) {
 		this.config = config;
+		this.onOpened = onOpened;
+		this.onNavigated = onNavigated;
 		this.onClosed = onClosed;
+		this.closerButton = null;
+		this.locatorButton = null;
 	}
-
-// TODO: add next and previous buttons based on the sequence
 
 	show() {
 		var config = this.config;
@@ -16,12 +18,18 @@ export class Popup {
 			config.popup.setAttribute('data-fixed', (config.container === document.body));
 			// add a close gadget
 			this.addCloser();
-			// add a locator gadget
-			this.addLocator();
+			// add navigation buttons
+			this.addNext();
+			this.addPrevious();
 			// add the popup to the document
 			config.container.appendChild(config.popup);
 			// reveal the popup when ready
-			setTimeout(this.onShow.bind(this), 0);
+			setTimeout(() => {
+				// reveal the popup
+				this.config.popup.setAttribute('data-active', '');
+				// and trigger the handler
+				this.onOpened();
+			}, 0);
 		}
 	}
 
@@ -36,6 +44,16 @@ export class Popup {
 		}
 	}
 
+	update() {
+		const index = this.config.sequence.indexOf(this.config.url);
+		// disable the previous button on the first slide
+		if (index === 0) { this.previousButton.setAttribute('disabled', '') } 
+		else { this.previousButton.removeAttribute('disabled') }
+		// disable the next button on the last slide
+		if (index >= this.config.sequence.length - 1) { this.nextButton.setAttribute('disabled', '') }
+		else { this.nextButton.removeAttribute('disabled') }
+	}
+
 	destroy() {
 		// remove the popup
 		this.config.container.removeChild(this.config.popup);
@@ -46,59 +64,68 @@ export class Popup {
 	addCloser() {
 		var config = this.config;
 		// build a close gadget
-		var closer = document.createElement('a');
-		closer.className = 'photocylinder-closer';
-		closer.innerHTML = 'x';
-		closer.href = '#close';
+		this.closerButton = document.createElement('a');
+		this.closerButton.className = 'photocylinder-closer';
+		this.closerButton.innerHTML = 'x';
+		this.closerButton.href = '#close';
 		// add the close event handler
-		closer.addEventListener('click', this.onHide.bind(this), { passive: true });
-		closer.addEventListener('touchstart', this.onHide.bind(this), { passive: true });
+		this.closerButton.addEventListener('click', this.onHide.bind(this), { capture: true });
 		// add the close gadget to the image
-		config.popup.appendChild(closer);
+		config.popup.appendChild(this.closerButton);
 	}
 
-	addLocator(url) {
-		var config = this.config;
-		// only add if a handler was specified
-		if (config.located) {
-			// build the geo marker icon
-			var locator = document.createElement('a');
-			locator.className = 'photocylinder-locator';
-			locator.innerHTML = 'Show on a map';
-			locator.href = '#map';
-			// add the event handler
-			locator.addEventListener('click', this.onLocate.bind(this), { passive: true });
-			locator.addEventListener('touchstart', this.onLocate.bind(this), { passive: true });
-			// add the location marker to the image
-			config.popup.appendChild(locator);
+	addNext() {
+		// only add if there's a sequence of images
+		if (this.config.sequence) {
+			// build the next button
+			this.nextButton = document.createElement('a');
+			this.nextButton.setAttribute('class', 'photocylinder-next');
+			this.nextButton.setAttribute('innerHTML', 'Next photo');
+			this.nextButton.setAttribute('href', '#next');
+			this.nextButton.addEventListener('click', this.onNext.bind(this));
+			// add the button to the popup
+			this.config.popup.appendChild(this.nextButton);
 		}
 	}
 
-	onShow() {
-		var config = this.config;
-		// show the popup
-		config.popup.setAttribute('data-active', '');
-		// trigger the opened event if available
-		if (config.opened) {
-			config.opened(config.url, config.sequence);
+	addPrevious() {
+		// only add if there's a sequence of images
+		if (this.config.sequence) {
+			// build the next button
+			this.previousButton = document.createElement('a');
+			this.previousButton.setAttribute('class', 'photocylinder-previous');
+			this.previousButton.setAttribute('innerHTML', 'Previous photo');
+			this.previousButton.setAttribute('href', '#prev');
+			this.previousButton.addEventListener('click', this.onPrevious.bind(this));
+			// add the button to the popup
+			this.config.popup.appendChild(this.previousButton);
 		}
+	}
+
+	onPrevious(evt) {
+		// cancel the click
+		evt.preventDefault();
+		// find the next url
+		const index = this.config.sequence.indexOf(this.config.url);
+		const url = this.config.sequence[index - 1];
+		// navigate to it
+		if (url) this.onNavigated(url);
+	}
+
+	onNext(evt) {
+		// cancel the click
+		evt.preventDefault();
+		// find the next url
+		const index = this.config.sequence.indexOf(this.config.url);
+		const url = this.config.sequence[index + 1];
+		// navigate to it
+		if (url) this.onNavigated(url);
 	}
 
 	onHide(evt) {
-		var config = this.config;
-		// close the popup
+		// cancel the click
+		evt.preventDefault();
+		// hide the popup
 		this.hide();
-		// trigger the closed event if available
-		if (config.closed) {
-			config.closed(config.url, config.sequence);
-		}
-	}
-
-	onLocate(evt) {
-		var config = this.config;
-		// trigger the located event if available
-		if (config.located) {
-			config.located(config.url, config.sequence);
-		}
 	}
 }

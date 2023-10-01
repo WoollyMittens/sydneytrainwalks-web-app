@@ -9,11 +9,10 @@ export class Details {
 		this.loadRoute = loadRoute;
 		this.loadExif = loadExif;
 		this.trophies = trophies;
-		this.returnTo = 'guide';
+		this.appView = document.querySelector('#appView');
 		this.titleElement = document.querySelector('.subtitle > h2');
-		this.guideElement = document.querySelector('.guide');
 		this.localmapElement = document.querySelector('.localmap.directions');
-		this.returnElement = document.querySelector('.localmap-return');
+		this.legendElement = document.querySelector('.legend');
 		this.wallElement = document.querySelector('.photowall');
 		this.titleTemplate = document.getElementById('title-template');
 		this.thumbnailTemplate = document.getElementById('thumbnail-template');
@@ -109,9 +108,6 @@ export class Details {
 	updateMap(guide, route, exif) {
 		// get the properties if this is a segment of another walk
 		var prefix = (guide.alias && guide.alias.key) ? guide.alias.key : guide.key;
-		// add the click event to the map back button
-		this.returnElement.addEventListener('click', this.onReturnFromMap.bind(this));
-		this.returnElement.style.display = 'none';
 		// clear the old map if active
 		if (this.config.guideMap) {
 			this.config.guideMap.stop();
@@ -122,7 +118,7 @@ export class Details {
 			'showFirst': true,
 			// containers
 			'container': this.localmapElement,
-			'legend': document.querySelector('.legend'),
+			'legend': this.legendElement,
 			// assets
 			'thumbsUrl': this.config.localUrl + `/small/${prefix}/`,
 			'photosUrl': this.config.remoteUrl + `/medium/${prefix}/`,
@@ -144,7 +140,30 @@ export class Details {
 			// events
 			'checkHotspot': this.trophies.check.bind(this.trophies),
 			'enterHotspot': this.trophies.enter.bind(this.trophies),
-			'leaveHotspot': this.trophies.leave.bind(this.trophies)
+			'leaveHotspot': this.trophies.leave.bind(this.trophies),
+			'showPhoto': (url, urls, evt) => {
+				// don't navigate to the url
+				evt.preventDefault();
+				// kill the old popup if present
+				if (this.photoCylinder) this.photoCylinder.destroy();
+				// open a new popup
+				this.photoCylinder = new PhotoCylinder({
+					'url': url,
+					'sequence': urls,
+					'container': this.appView,
+					'fov': (/d{3}_r\d{6}/i.test(url)) ? 360 : 180,
+					'idle': 0.1,
+					'navigated': (url) => {
+						this.config.guideMap.indicate({'photo': url.split('/').pop()});
+					},
+					'opened': (url) => {
+						this.config.guideMap.indicate({'photo': url.split('/').pop()});
+					},
+					'closed': () => {
+						//this.config.guideMap.unindicate();
+					}
+				});
+			}
 		});
 	}
 
@@ -177,40 +196,24 @@ export class Details {
 				// kill the old popup if present
 				if (this.photoCylinder) this.photoCylinder.destroy();
 				// open a new popup
-				const markerData = { 'photo': url.split('/').pop() }
 				this.photoCylinder = new PhotoCylinder({
 					'url': url,
 					'sequence': urls,
-					'container': this.wallElement,
+					'container': this.appView,
 					'fov': (/d{3}_r\d{6}/i.test(url)) ? 360 : 180,
 					'idle': 0.1,
-					'opened': (link) => {
-						this.returnTo = 'photos';
-						this.returnElement.style.display = 'block';
-						this.config.guideMap.indicate(markerData);
-						return true;
+					'navigated': (url) => {
+						this.config.guideMap.indicate({'photo': url.split('/').pop()});
 					},
-					'located': (link) => {
-						this.returnTo = 'photos';
-						this.returnElement.style.display = 'block';
-						this.config.guideMap.indicate(markerData);
-						document.body.className = document.body.className.replace(/screen-photos/, 'screen-guide');
+					'opened': (url) => {
+						this.config.guideMap.indicate({'photo': url.split('/').pop()});
 					},
 					'closed': () => {
-						this.config.guideMap.unindicate();
+						//this.config.guideMap.unindicate();
 					}
 				});
 			}
 		});
-	}
-
-	onReturnFromMap(evt) {
-		// cancel the click
-		evt.preventDefault();
-		// hide trhe return button again
-		this.returnElement.style.display = 'none';
-		// return from the map
-		document.body.className = document.body.className.replace(/screen-guide/, 'screen-' + this.returnTo);
 	}
 
 	init() {
