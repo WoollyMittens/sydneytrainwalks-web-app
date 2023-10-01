@@ -5,6 +5,7 @@ import { Fallback } from "./photocylinder-fallback.js";
 
 export class PhotoCylinder {
 	constructor(config) {
+		// merge the config with the default options
 		this.config = {
 			'container': document.body,
 			'fov' : 180,
@@ -14,73 +15,95 @@ export class PhotoCylinder {
 		for (var key in config) {
 			this.config[key] = config[key];
 		}
+		// add the busy indicator
 		this.busy = new Busy(this.config.container);
+		// load the default asset
+		this.reload(config.url);
+	}
+
+	reload(url) {
+		// show the busy indicator
 		this.busy.show();
-		// create the url for the image sizing webservice
-		const url = this.config.url;
-		const fov = this.config.fov;
+		// remove any existing components
+		this.removeStage();
 		// load the image asset
 		this.config.image = new Image();
 		this.config.image.alt = '';
 		this.config.image.src = url;
 		// load the viewer when done
-		this.config.image.addEventListener('load', this.success.bind(this, url, fov));
-		this.config.image.addEventListener('error', this.failure.bind(this, url, fov));
-	}
-
-	success(url, fov) {
-		var config = this.config;
-		// hide the busy indicator
-		this.busy.hide();
-		// check if the aspect ratio of the image can be determined
-		var image = config.image;
-		var isWideEnough = (fov >=180 && image.naturalWidth / image.naturalHeight > 3);
-		// show the popup, or use the container directly
-		if (config.standalone) {
-			config.popup = config.container;
-			config.popup.innerHTML = '';
-		} else {
-			this.popup = new Popup(this.config, this.destroy.bind(this));
-			this.popup.show();
-		}
-		// insert the viewer, but low FOV should default to the fallback
-		this.stage = (isWideEnough) ? new Stage(this.config) : new Fallback(this.config);
-		this.stage.init();
-		// trigger the success handler
-		if (config.success) {
-			config.success(config.popup);
-		}
-	}
-
-	failure(url, fov) {
-		var config = this.config;
-		// get rid of the image
-		this.config.image = null;
-		// give up on the popup
-		if (this.popup) {
-			// remove the popup
-			config.popup.parentNode.removeChild(config.popup);
-			// remove its reference
-			this.popup = null;
-		}
-		// give up on the stage
-		if (this.stage) {
-			// remove the stage
-			this.stage.destroy();
-			config.stage.parentNode.removeChild(config.stage);
-			// remove the reference
-			this.stage = null;
-		}
-		// trigger the failure handler
-		if (config.failure) {
-			config.failure(config.popup);
-		}
-		// hide the busy indicator
-		this.busy.hide();
+		this.config.image.addEventListener('load', this.onSuccess.bind(this));
+		this.config.image.addEventListener('error', this.onFailure.bind(this));
 	}
 
 	destroy() {
+		this.onClosed();
+	}
+
+	addStage() {
+		// check if the aspect ratio of the image can be determined
+		var image = this.config.image;
+		var isWideEnough = (this.config.fov >= 180 && image.naturalWidth / image.naturalHeight > 3);
+		// insert the viewer, but low FOV should default to the fallback
+		this.stage = (isWideEnough) ? new Stage(this.config) : new Fallback(this.config);
+		this.stage.init();
+	}
+
+	removeStage() {
+		// remove the stage
+		this?.stage?.destroy();
+		// remove the reference
+		this.stage = null;
+	}
+
+	addPopup() {
+		// show the popup, or use the container directly
+		if (this.config.standalone) {
+			config.popup = config.container;
+			config.popup.innerHTML = '';
+		} else {
+			this.popup = new Popup(this.config, this.onClosed.bind(this));
+			this.popup.show();
+		}
+	}
+
+	removePopup() {
+		// remove the popup
+		this?.popup?.destroy();
+		// remove its reference
+		this.popup = null;
+	}
+
+	onSuccess() {
+		// hide the busy indicator
+		this.busy.hide();
+		// add the popup if needed
+		if (!this.config.popup) this.addPopup();
+		// add the viewer
+		this.addStage();
+		// trigger the success handler
+		if (this.config.success) {
+			this.config.success(this.config.popup);
+		}
+	}
+
+	onFailure() {
+		// get rid of the image
+		this.config.image = null;
+		// give up on the popup
+		this.removePopup();
+		// give up on the stage
+		this.removeStage();
+		// trigger the failure handler
+		if (this.config.failure) {
+			this.config.failure(this.config.popup);
+		}
+		// hide the busy indicator
+		this.busy.hide();
+	}
+
+	onClosed() {
 		// shut down sub components
-		this.stage.destroy();
+		this.removeStage();
+		this.removePopup();
 	}
 }

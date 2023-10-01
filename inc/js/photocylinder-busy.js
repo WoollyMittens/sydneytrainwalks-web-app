@@ -6,9 +6,8 @@ export class Busy {
 	show () {
 		// construct the spinner
 		this.spinner = document.createElement('div');
-		this.spinner.className = (this.container === document.body) ?
-			'photocylinder-busy photocylinder-busy-fixed photocylinder-busy-active':
-			'photocylinder-busy photocylinder-busy-active';
+		this.spinner.className = 'photocylinder-busy';
+		this.spinner.setAttribute('data-fixed', (this.container === document.body));
 		this.container.appendChild(this.spinner);
 	}
 

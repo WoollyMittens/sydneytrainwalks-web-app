@@ -28,19 +28,25 @@ export class Stage {
 		this.controls();
 		// rescale after resize
 		this.resizeListener = this.resize.bind(this);
-		window.addEventListener('resize', this.resizeListener, true);
+		window.addEventListener('resize', this.resizeListener, { capture: true, passive: true });
 	}
 
 	destroy() {
 		// cancel all global event listeners
-		window.removeEventListener('resize', this.resizeListener, true);
-		window.removeEventListener('deviceorientation', this.tiltListener, true);
+		window.removeEventListener('resize', this.resizeListener, { capture: true, passive: true });
+		window.removeEventListener('deviceorientation', this.tiltListener, { capture: true, passive: true });
+		// remove the container
+		this.popup.removeChild(this.wrapper);
 	}
 
 	build() {
 		// add the wrapper
 		this.wrapper = document.createElement('div');
 		this.wrapper.setAttribute('class', 'photocylinder');
+		// add the overlay
+		this.overlay = document.createElement('div');
+		this.overlay.setAttribute('class', 'photocylinder-overlay');
+		this.wrapper.appendChild(this.overlay);
 		// add the row object
 		this.objRow = document.createElement('div');
 		this.objRow.setAttribute('class', 'photocylinder-obj-row');
@@ -55,8 +61,6 @@ export class Stage {
 		this.wrapper.appendChild(this.image);
 		// insert the object
 		this.popup.appendChild(this.wrapper);
-		// remember the object
-		this.config.stage = this.wrapper;
 	}
 
 	render() {
@@ -74,7 +78,7 @@ export class Stage {
 		// set the image source as the background image for the polygons
 		var url = this.image.getAttribute('src');
 		for (var a = 0, b = this.objCols.length; a < b; a += 1) {
-			this.objCols[a].style.backgroundImage = "url('" + url + "')";
+			this.objCols[a].style.backgroundImage = `url("${url}")`;
 		}
 		// set the initial zoom
 		this.resize();
@@ -86,18 +90,18 @@ export class Stage {
 
 	controls() {
 		// add touch controls
-		this.wrapper.addEventListener('touchstart', this.touch.bind(this, 'start'));
-		this.wrapper.addEventListener('touchmove', this.touch.bind(this, 'move'));
-		this.wrapper.addEventListener('touchend', this.touch.bind(this, 'end'));
+		this.overlay.addEventListener('touchstart', this.touch.bind(this, 'start'), { capture: true, passive: true });
+		this.overlay.addEventListener('touchmove', this.touch.bind(this, 'move'), { capture: true, passive: true });
+		this.overlay.addEventListener('touchend', this.touch.bind(this, 'end'), { capture: true, passive: true });
 		// add mouse controls
-		this.wrapper.addEventListener('mousedown', this.touch.bind(this, 'start'));
-		this.wrapper.addEventListener('mousemove', this.touch.bind(this, 'move'));
-		this.wrapper.addEventListener('mouseup', this.touch.bind(this, 'end'));
-		this.wrapper.addEventListener('mousewheel', this.wheel.bind(this));
-		this.wrapper.addEventListener('DOMMouseScroll', this.wheel.bind(this));
+		this.overlay.addEventListener('mousedown', this.touch.bind(this, 'start'), { capture: true, passive: true });
+		this.overlay.addEventListener('mousemove', this.touch.bind(this, 'move'), { capture: true, passive: true });
+		this.overlay.addEventListener('mouseup', this.touch.bind(this, 'end'), { capture: true, passive: true });
+		this.overlay.addEventListener('mousewheel', this.wheel.bind(this), { capture: true, passive: true });
+		this.overlay.addEventListener('DOMMouseScroll', this.wheel.bind(this), { capture: true, passive: true });
 		// add tilt contols
 		this.tiltListener = this.tilt.bind(this);
-		window.addEventListener("deviceorientation", this.tiltListener, true);
+		window.addEventListener("deviceorientation", this.tiltListener, { capture: true, passive: true });
 	}
 
 	coords(evt) {
@@ -189,8 +193,6 @@ export class Stage {
 	}
 
 	wheel(evt) {
-		// cancel the scrolling
-		evt.preventDefault();
 		// stop animating
 		this.auto = false;
 		// reset the deltas
@@ -205,12 +207,11 @@ export class Stage {
 	}
 
 	touch(phase, evt) {
-		// cancel the click
-		evt.preventDefault();
 		// pick the phase of interaction
 		var coords, scale = this.magnification.current / this.magnification.min;
 		switch(phase) {
 			case 'start':
+				evt.preventDefault();
 				// stop animating
 				this.auto = false;
 				// reset the deltas

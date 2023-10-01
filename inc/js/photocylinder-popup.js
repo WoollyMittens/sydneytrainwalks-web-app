@@ -1,7 +1,7 @@
 export class Popup {
-	constructor(config, destroy) {
+	constructor(config, onClosed) {
 		this.config = config;
-		this.destroy = destroy;
+		this.onClosed = onClosed;
 	}
 
 // TODO: add next and previous buttons based on the sequence
@@ -12,9 +12,8 @@ export class Popup {
 		if (!config.popup) {
 			// create a container for the popup
 			config.popup = document.createElement('figure');
-			config.popup.className = (config.container === document.body)
-				? 'photocylinder-popup photocylinder-popup-fixed photocylinder-popup-passive'
-				: 'photocylinder-popup photocylinder-popup-passive';
+			config.popup.className = 'photocylinder-popup';
+			config.popup.setAttribute('data-fixed', (config.container === document.body));
 			// add a close gadget
 			this.addCloser();
 			// add a locator gadget
@@ -31,17 +30,17 @@ export class Popup {
 		// if there is a popup
 		if (config.popup) {
 			// unreveal the popup
-			config.popup.className = config.popup.className.replace(/-active/gi, '-passive');
-			// and after a while
-			setTimeout(() => {
-				// remove it
-				config.container.removeChild(config.popup);
-				// remove its reference
-				config.popup = null;
-				// ask the parent to self destruct
-				this.destroy();
-			}, 500);
+			config.popup.removeAttribute('data-active');
+			// and trigger the handler after a while
+			setTimeout(this.onClosed.bind(this), 500);
 		}
+	}
+
+	destroy() {
+		// remove the popup
+		this.config.container.removeChild(this.config.popup);
+		// remove its reference
+		this.config.popup = null;
 	}
 
 	addCloser() {
@@ -52,8 +51,8 @@ export class Popup {
 		closer.innerHTML = 'x';
 		closer.href = '#close';
 		// add the close event handler
-		closer.addEventListener('click', this.onHide.bind(this));
-		closer.addEventListener('touchstart', this.onHide.bind(this));
+		closer.addEventListener('click', this.onHide.bind(this), { passive: true });
+		closer.addEventListener('touchstart', this.onHide.bind(this), { passive: true });
 		// add the close gadget to the image
 		config.popup.appendChild(closer);
 	}
@@ -68,8 +67,8 @@ export class Popup {
 			locator.innerHTML = 'Show on a map';
 			locator.href = '#map';
 			// add the event handler
-			locator.addEventListener('click', this.onLocate.bind(this));
-			locator.addEventListener('touchstart', this.onLocate.bind(this));
+			locator.addEventListener('click', this.onLocate.bind(this), { passive: true });
+			locator.addEventListener('touchstart', this.onLocate.bind(this), { passive: true });
 			// add the location marker to the image
 			config.popup.appendChild(locator);
 		}
@@ -78,7 +77,7 @@ export class Popup {
 	onShow() {
 		var config = this.config;
 		// show the popup
-		config.popup.className = config.popup.className.replace(/-passive/gi, '-active');
+		config.popup.setAttribute('data-active', '');
 		// trigger the opened event if available
 		if (config.opened) {
 			config.opened(config.url, config.sequence);
@@ -87,8 +86,6 @@ export class Popup {
 
 	onHide(evt) {
 		var config = this.config;
-		// cancel the click
-		evt.preventDefault();
 		// close the popup
 		this.hide();
 		// trigger the closed event if available
@@ -99,8 +96,6 @@ export class Popup {
 
 	onLocate(evt) {
 		var config = this.config;
-		// cancel the click
-		evt.preventDefault();
 		// trigger the located event if available
 		if (config.located) {
 			config.located(config.url, config.sequence);
