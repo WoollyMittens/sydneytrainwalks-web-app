@@ -83,10 +83,10 @@ export class Localmap {
 	}
 
 	update() {
-		// retard the save state
+		// delay the save state
 		clearTimeout(this.saveTimeout);
 		this.saveTimeout = window.setTimeout(this.store.bind(this), 1000);
-		// retard the update
+		// delay the update
 		window.cancelAnimationFrame(this.animationFrame);
 		this.animationFrame = window.requestAnimationFrame(this.redraw.bind(this));
 	}
@@ -119,7 +119,9 @@ export class Localmap {
 			lon: this.config.position.lon,
 			lat: this.config.position.lat,
 			zoom: this.config.position.zoom,
+			photo: this.config.indicator?.photo
 		};
+		console.log('storing the state', state);
 		// save the state to local storage
 		localStorage.setItem("localmap", JSON.stringify(state));
 	}
@@ -127,19 +129,27 @@ export class Localmap {
 	restore(lon, lat, zoom) {
 		// load the state from local storage
 		var state = JSON.parse(localStorage.getItem("localmap"));
-		// if the stored state applied to this instance of the map, restore the value
-		if (state && state.key === this.config.guideData?.key) { this.focus(state.lon, state.lat, state.zoom, false); }
+		// if the stored state applied to this instance of the map
+		if (state && state.key === this.config.guideData?.key) {
+			// restore the map focus
+			this.focus(state.lon, state.lat, state.zoom, false);
+			// restore the incator if avalable
+			console.log('restoring the indicator', state);
+			if (state.photo) setTimeout(this.indicate.bind(this, { 'photo': state.photo }, true), 500);
+		}
 		// otherwise restore the fallback
-		else { this.focus(lon, lat, zoom, false); }
+		else { 
+			this.focus(lon, lat, zoom, false); 
+		}
 	}
 
-	indicate(input) {
+	indicate(input, instant) {
 		var canvas = this.components.canvas;
 		var indicator = canvas.components.indicator;
 		// reset the previous
 		indicator.reset();
 		// ask the indicator to indicate
-		indicator.show(input);
+		indicator.show(input, instant);
 		// cancel any associated events
 		return false;
 	}
@@ -178,7 +188,7 @@ export class Localmap {
 			controls: new Controls(this.config, this.focus.bind(this)),
 			scale: new Scale(this.config),
 			credits: new Credits(this.config),
-			legend: new Legend(this.config, this.indicate.bind(this)),
+			legend: new Legend(this.config, this.indicate.bind(this), this.unindicate.bind(this)),
 		};
 	}
 }

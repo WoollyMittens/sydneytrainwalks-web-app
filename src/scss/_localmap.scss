@@ -426,6 +426,8 @@
 		dt {
 			aspect-ratio: 4/3;
 			cursor: pointer;
+			scroll-snap-align: start;
+			margin-left: 1px;
 		}
 
 		dd {
@@ -465,7 +467,6 @@
 
 		&-full {
 			grid-column: auto / span 2;
-			scroll-snap-align: start;
 			cursor: initial !important;
 
 			@media (max-width:959px) {
@@ -482,7 +483,6 @@
 			align-items: center;
 			justify-content: center;
 			background-image: none !important;
-			scroll-snap-align: start;
 
 			@media (max-width:959px) {
 				min-width: 20vw;
@@ -500,7 +500,6 @@
 
 		&-photo {
 			background-size: cover;
-			scroll-snap-align: start;
 
 			@media (max-width:959px) {
 				min-width: 50vw;

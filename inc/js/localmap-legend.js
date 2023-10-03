@@ -1,8 +1,9 @@
 export class Legend {
-	constructor(config, indicate) {
+	constructor(config, indicate, unindicate) {
 		if (!config.legend) return null;
 		this.config = config;
 		this.indicate = indicate;
+		this.unindicate = unindicate;
 		this.redrawTimeout = null;
 		this.definitions = [];
 		this.pages = [];
@@ -154,7 +155,8 @@ export class Legend {
 			page.setAttribute('data-distance', distance);
 		}
 		// highlight the active page on the map
-		this.indicate(activeDefinition.data);
+		if (activeDefinition.data) { this.indicate(activeDefinition.data) }
+		else { this.unindicate() }
 	}
 
 	updatePageCount() {

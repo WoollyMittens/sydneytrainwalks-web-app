@@ -30,7 +30,7 @@ export class Indicator {
 		this.zoom = this.config.position.zoom;
 	}
 
-	show(markerData) {
+	show(markerData, instant) {
 		// don't continue without marker data
 		if (!markerData) return;
 		// populate the indicator's model
@@ -38,7 +38,7 @@ export class Indicator {
 		// if the coordinates are known
 		if (this.config.indicator.lon && this.config.indicator.lat) {
 			// display the indicator immediately
-			this.onIndicateSuccess();
+			this.onIndicateSuccess(instant);
 		}
 		// else try the cached EXIF data
 		else if (this.config?.exifData[markerData.photo]) {
@@ -46,7 +46,7 @@ export class Indicator {
 			const cached = this.config.exifData[markerData.photo];
 			this.config.indicator.lon = cached.lon;
 			this.config.indicator.lat = cached.lat;
-			this.onIndicateSuccess();
+			this.onIndicateSuccess(instant);
 		}
 		// or try to retrieve them from the photo
 		else {
@@ -112,36 +112,41 @@ export class Indicator {
 	}
 
 	onExifLoaded(result) {
-		var exif = JSON.parse(result.target.response);
-		var deg,
-			min,
-			sec,
-			ref,
-			coords = {};
-		// if the exif data contains GPS information
-		if (exif && exif.GPS) {
-			// convert the lon into a usable format
-			deg = parseInt(exif.GPS.GPSLongitude[0]);
-			min = parseInt(exif.GPS.GPSLongitude[1]);
-			sec = parseInt(exif.GPS.GPSLongitude[2]) / 100;
-			ref = exif.GPS.GPSLongitudeRef;
-			this.config.indicator.lon = (deg + min / 60 + sec / 3600) * (ref === "W" ? -1 : 1);
-			// convert the lat into a usable format
-			deg = parseInt(exif.GPS.GPSLatitude[0]);
-			min = parseInt(exif.GPS.GPSLatitude[1]);
-			sec = parseInt(exif.GPS.GPSLatitude[2]) / 100;
-			ref = exif.GPS.GPSLatitudeRef;
-			this.config.indicator.lat = (deg + min / 60 + sec / 3600) * (ref === "N" ? 1 : -1);
-			// return the result
-			this.onIndicateSuccess();
+		try {
+			var exif = JSON.parse(result.target.response);
+			var deg,
+				min,
+				sec,
+				ref,
+				coords = {};
+			// if the exif data contains GPS information
+			if (exif && exif.GPS) {
+				// convert the lon into a usable format
+				deg = parseInt(exif.GPS.GPSLongitude[0]);
+				min = parseInt(exif.GPS.GPSLongitude[1]);
+				sec = parseInt(exif.GPS.GPSLongitude[2]) / 100;
+				ref = exif.GPS.GPSLongitudeRef;
+				this.config.indicator.lon = (deg + min / 60 + sec / 3600) * (ref === "W" ? -1 : 1);
+				// convert the lat into a usable format
+				deg = parseInt(exif.GPS.GPSLatitude[0]);
+				min = parseInt(exif.GPS.GPSLatitude[1]);
+				sec = parseInt(exif.GPS.GPSLatitude[2]) / 100;
+				ref = exif.GPS.GPSLatitudeRef;
+				this.config.indicator.lat = (deg + min / 60 + sec / 3600) * (ref === "N" ? 1 : -1);
+				// return the result
+				this.onIndicateSuccess();
+			}
+		} catch (e) {
+			console.log(e);
 		}
 	}
 
-	onIndicateSuccess() {
+	onIndicateSuccess(instant) {
 		const indicator = this.config.indicator;
 		const position = this.config.position;
 		const markers = this.config.guideData.markers;
 		const exifs = this.config.exifData;
+		const animation = (instant) ? 'instant' : 'smooth';
 		// try to find the referer in the existing markers
 		if (!indicator.referrer) {
 			for (let marker of markers) {
@@ -161,7 +166,7 @@ export class Indicator {
 		// activate the originating element if available
 		if (indicator.referrer) {
 			indicator.referrer.setAttribute("data-active", "");
-			indicator.referrer.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
+			indicator.referrer.scrollIntoView({ behavior: animation, block: "start", inline: "nearest" });
 		}
 		// highlight a location with an optional description on the map
 		this.onMapFocus(indicator.lon, indicator.lat, position.zoom, true);
