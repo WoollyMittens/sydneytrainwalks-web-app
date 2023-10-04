@@ -134,7 +134,7 @@ export class Indicator {
 				ref = exif.GPS.GPSLatitudeRef;
 				this.config.indicator.lat = (deg + min / 60 + sec / 3600) * (ref === "N" ? 1 : -1);
 				// return the result
-				this.onIndicateSuccess();
+				this.onIndicateSuccess(false);
 			}
 		} catch (e) {
 			console.log(e);
@@ -146,7 +146,6 @@ export class Indicator {
 		const position = this.config.position;
 		const markers = this.config.guideData.markers;
 		const exifs = this.config.exifData;
-		const animation = (instant) ? 'instant' : 'smooth';
 		// try to find the referer in the existing markers
 		if (!indicator.referrer) {
 			for (let marker of markers) {
@@ -165,8 +164,13 @@ export class Indicator {
 		}
 		// activate the originating element if available
 		if (indicator.referrer) {
+			console.log('instant', instant);
 			indicator.referrer.setAttribute("data-active", "");
-			indicator.referrer.scrollIntoView({ behavior: animation, block: "start", inline: "nearest" });
+			indicator.referrer.scrollIntoView({
+				behavior: (instant) ? 'instant' : 'smooth', 
+				block: "center", 
+				inline: "start"
+			});
 		}
 		// highlight a location with an optional description on the map
 		this.onMapFocus(indicator.lon, indicator.lat, position.zoom, true);

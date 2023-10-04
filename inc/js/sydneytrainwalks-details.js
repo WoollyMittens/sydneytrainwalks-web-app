@@ -116,6 +116,7 @@ export class Details {
 		this.config.guideMap = new Localmap({
 			// options
 			'showFirst': true,
+			'mobileSize': "(max-width: 959px)",
 			// containers
 			'container': this.localmapElement,
 			'legend': this.legendElement,

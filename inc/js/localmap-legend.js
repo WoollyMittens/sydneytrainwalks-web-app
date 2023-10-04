@@ -62,7 +62,7 @@ export class Legend {
 			definitionDescription.innerHTML = introTemplate
 				.replace("{updated}", guideData.updated)
 				.replace("{date}", new Date(guideData.updated).toLocaleDateString('en-AU', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }))
-				.replace("{description}", '<p>' + guideData.description.join('</p><p>') + '</p>')
+				.replace("{description}", '<p>' + guideData.description.join(' ') + '</p>')
 				.replace("{duration}", guideData.duration + 'hr')
 				.replace("{distance}", guideData.distance + 'km');
 			fragment.appendChild(definitionDescription);
@@ -106,7 +106,7 @@ export class Legend {
 			// TODO: clicking on the photo opens the photo viewer
 			definitionTitle.addEventListener("click", this.onViewPhoto.bind(this, markerData));
 			// clicking on the description zooms in on the marker
-			definitionDescription.addEventListener("click", this.indicate.bind(this, markerData));
+			definitionDescription.addEventListener("click", this.indicate.bind(this, markerData, false));
 			// add the container to the legend
 			this.definitionList.appendChild(fragment);
 			// store the marker for reference
@@ -130,7 +130,8 @@ export class Legend {
 			fragment.appendChild(definitionTitle);
 			const definitionDescription = document.createElement('dd');
 			definitionDescription.className = "localmap-legend-full";
-			definitionDescription.innerHTML = outroTemplate;
+			definitionDescription.innerHTML = outroTemplate
+				.replace("{gpx}", this.config.routeUrl);
 			fragment.appendChild(definitionDescription);
 			// add the intro to the legend
 			this.definitionList.appendChild(fragment);
@@ -220,7 +221,7 @@ export class Legend {
 		}
 		// otherwise use the normal indicator
 		else {
-			this.indicate(markerData, evt);
+			this.indicate(markerData, false, evt);
 		}
 	}
 }

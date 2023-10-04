@@ -97,7 +97,7 @@ export class Markers {
 		element.setAttribute("id", id);
 		element.setAttribute("data-key", id);
 		element.setAttribute("class", "localmap-waypoint localmap-index-" + markerIndex);
-		element.addEventListener("click", this.onClicked.bind(this, markerData));
+		element.addEventListener("click", this.onClicked.bind(this, markerData, false));
 		element.style.borderColor = this.config.supportColour(id);
 		element.style.left = this.config.distortX((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover)) * 100 + "%";
 		element.style.top = this.config.distortY((markerData.lat - min.lat_cover) / (max.lat_cover - min.lat_cover)) * 100 + "%";
