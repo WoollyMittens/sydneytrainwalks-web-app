@@ -146,6 +146,8 @@ export class Localmap {
 	indicate(input, instant) {
 		var canvas = this.components.canvas;
 		var indicator = canvas.components.indicator;
+		// if there is a callback, trigger it instead
+		if (input.callback) { input.callback(); return false; }
 		// reset the previous
 		indicator.reset();
 		// ask the indicator to indicate

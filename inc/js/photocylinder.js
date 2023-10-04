@@ -9,7 +9,6 @@ export class PhotoCylinder {
 		this.config = {
 			'container': document.body,
 			'fov' : 180,
-			'standalone': false,
 			'idle': 0.1
 		}
 		for (var key in config) {
@@ -58,14 +57,8 @@ export class PhotoCylinder {
 	}
 
 	addPopup() {
-		// show the popup, or use the container directly
-		if (this.config.standalone) {
-			config.popup = config.container;
-			config.popup.innerHTML = '';
-		} else {
-			this.popup = new Popup(this.config, this.onOpened.bind(this), this.onNavigated.bind(this), this.onClosed.bind(this));
-			this.popup.show();
-		}
+		this.popup = new Popup(this.config, this.onOpened.bind(this), this.onNavigated.bind(this), this.onClosed.bind(this));
+		this.popup.show();
 	}
 
 	updatePopup() {
@@ -83,9 +76,11 @@ export class PhotoCylinder {
 		// hide the busy indicator
 		this.busy.hide();
 		// add or update the popup if needed
-		if (this.config.popup) { this.updatePopup() } else { this.addPopup() }
+		if (this.popup) { this.updatePopup() } else { this.addPopup() }
 		// add the viewer
 		this.addStage();
+		// enable navigation
+		this.popup.active = true;
 		// trigger the success handler
 		if (this.config.success) this.config.success(this.config.popup);
 	}
@@ -106,6 +101,8 @@ export class PhotoCylinder {
 	onNavigated(url, evt) {
 		// cancel the event if needed
 		if (evt) evt.preventDefault();
+		// disable navigation
+		this.popup.active = false;
 		// update the url
 		this.reload(url);
 		// triger the external event handler

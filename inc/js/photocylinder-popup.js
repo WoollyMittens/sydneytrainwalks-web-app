@@ -6,6 +6,7 @@ export class Popup {
 		this.onClosed = onClosed;
 		this.closerButton = null;
 		this.locatorButton = null;
+		this.active = true;
 	}
 
 	show() {
@@ -21,6 +22,7 @@ export class Popup {
 			// add navigation buttons
 			this.addNext();
 			this.addPrevious();
+			this.update();
 			// add the popup to the document
 			config.container.appendChild(config.popup);
 			// reveal the popup when ready
@@ -109,7 +111,7 @@ export class Popup {
 		const index = this.config.sequence.indexOf(this.config.url);
 		const url = this.config.sequence[index - 1];
 		// navigate to it
-		if (url) this.onNavigated(url);
+		if (url && this.active) this.onNavigated(url);
 	}
 
 	onNext(evt) {
@@ -119,7 +121,7 @@ export class Popup {
 		const index = this.config.sequence.indexOf(this.config.url);
 		const url = this.config.sequence[index + 1];
 		// navigate to it
-		if (url) this.onNavigated(url);
+		if (url && this.active) this.onNavigated(url);
 	}
 
 	onHide(evt) {
