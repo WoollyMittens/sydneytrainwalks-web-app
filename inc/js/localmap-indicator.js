@@ -164,7 +164,6 @@ export class Indicator {
 		}
 		// activate the originating element if available
 		if (indicator.referrer) {
-			console.log('instant', instant);
 			indicator.referrer.setAttribute("data-active", "");
 			indicator.referrer.scrollIntoView({
 				behavior: (instant) ? 'instant' : 'smooth', 

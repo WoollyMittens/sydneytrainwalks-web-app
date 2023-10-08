@@ -98,7 +98,7 @@ export class Trophies {
 
 	check(data) {
 		// reply if a reaction to the hotspot is nessecary
-		return !this.getTrophy(data.title);
+		return (data.type === 'hotspot' && !this.getTrophy(data.title));
 	};
 
 	enter(data) {

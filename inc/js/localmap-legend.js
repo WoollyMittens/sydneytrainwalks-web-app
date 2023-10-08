@@ -85,6 +85,8 @@ export class Legend {
 				? this.config.thumbsUrl + markerData.photo
 				: this.config.markersUrl.replace("{type}", markerData.type);
 			var text = markerData.description || markerData.type;
+			// update the marker if this is an achieved trophy
+			if (markerData.type === "hotspot" && !this.config.checkHotspot(markerData)) { text = markerData.explanation; }
 			// create a container for the markers
 			var fragment = document.createDocumentFragment();
 			// add the title
@@ -103,7 +105,7 @@ export class Legend {
 			fragment.appendChild(definitionDescription);
 			// add the event handlers
 			markerData.referrer = definitionTitle;
-			// TODO: clicking on the photo opens the photo viewer
+			// clicking on the photo opens the photo viewer
 			definitionTitle.addEventListener("click", this.onViewPhoto.bind(this, markerData));
 			// clicking on the description zooms in on the marker
 			definitionDescription.addEventListener("click", this.indicate.bind(this, markerData, false));
@@ -167,13 +169,14 @@ export class Legend {
 			let page = this.pages[index];
 			let definition = this.definitions[index];
 			let rect = definition.title.getBoundingClientRect();
+			let middle = rect.left + rect.width / 2 + 10;
 			// if the page is in the viewport
-			if (rect.left >= 0 && rect.left < width) {
+			if (middle >= 0 && middle < width) {
 				// immediately activate the page indicator
 				page.setAttribute('data-active', '');
 				// wait for a pause to update the indicator
 				clearTimeout(this.redrawTimeout);
-				this.redrawTimeout = setTimeout(this.redrawPageCount.bind(this, definition), 100);
+				this.redrawTimeout = setTimeout(this.redrawPageCount.bind(this, definition), 500);
 			}
 			// otherwise reset it
 			else {

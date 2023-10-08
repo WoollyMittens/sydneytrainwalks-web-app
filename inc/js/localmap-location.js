@@ -66,12 +66,14 @@ export class Location {
 	checkHotSpot(lon, lat) {
 		var config = this.config;
 		// for every marker
+		console.log('checking for hotspots');
 		config.hotspots.map((marker) => {
 			// if the marker just entered the hotspot
 			if (lon > marker.minLon && lon < marker.maxLon && lat > marker.minLat && lat < marker.maxLat && this.hotspot !== marker.title) {
 				// remember its name
 				this.hotspot = marker.title;
 				// trigger the corresponding event
+				console.log('hotspot', marker);
 				if (config.checkHotspot(marker)) config.enterHotspot(marker);
 			}
 			// else if the marker just exited the hotspot
