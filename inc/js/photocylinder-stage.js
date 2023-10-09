@@ -186,7 +186,7 @@ export class Stage {
 		// if there was tilt before and the jump is not extreme
 		if (this.rotation.tilted && Math.abs(evt.alpha - this.rotation.tilted) < 45) {
 			// update the rotation
-			this.rotate(this.rotation.current + evt.alpha - this.rotation.tilted);
+			this.rotate(this.rotation.current - evt.alpha + this.rotation.tilted);
 		}
 		// store the tilt
 		this.rotation.tilted = evt.alpha;
