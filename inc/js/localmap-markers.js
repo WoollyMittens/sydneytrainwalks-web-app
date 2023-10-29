@@ -94,7 +94,6 @@ export class Markers {
 		var id = markerData.key || "localmap_" + markerIndex;
 		// create a marker element
 		var element = document.createElement("span");
-		element.setAttribute("id", id);
 		element.setAttribute("data-key", id);
 		element.setAttribute("class", "localmap-waypoint localmap-index-" + markerIndex);
 		element.addEventListener("click", this.onClicked.bind(this, markerData, false));
@@ -120,13 +119,12 @@ export class Markers {
 	addLandmark(markerData, markerIndex) {
 		var min = this.config.minimum;
 		var max = this.config.maximum;
-		var id = markerData.id || "localmap_" + markerIndex;
+		var id = markerData.key || "localmap_" + markerIndex;
 		// create a landmark element
 		var element = new Image();
 		element.setAttribute("src", this.config.markersUrl.replace("{type}", markerData.type));
 		element.setAttribute("title", markerData.description || "");
 		element.setAttribute("class", "localmap-marker localmap-index-" + markerIndex);
-		element.setAttribute("id", id);
 		element.setAttribute("data-key", id);
 		element.addEventListener("click", this.onClicked.bind(this, markerData));
 		element.style.left = this.config.distortX((markerData.lon - min.lon_cover) / (max.lon_cover - min.lon_cover)) * 100 + "%";

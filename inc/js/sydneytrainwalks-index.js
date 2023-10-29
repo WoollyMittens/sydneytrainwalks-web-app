@@ -142,7 +142,7 @@ export class Index {
 		// show/hide markers based on filter results using Array.indexOf()
 		guideIds.map(function(id) {
 			var visibility = (sortedIds.indexOf(id) > -1) ? 'visible' : 'hidden';
-			var elements = document.querySelectorAll('[data-key="' + id + '"]');
+			var elements = document.querySelectorAll('[data-key^="' + id + '"]');
 			for (let element of elements) {
 				element.style.visibility = visibility;
 			}
@@ -170,7 +170,7 @@ export class Index {
 
 	onSearchSubmitted(input, evt) {
 		// cancel the submit
-		evt.preventDefault();
+		if(evt) evt.preventDefault();
 		// perform the search
 		this.searchFor = input.value.trim();
 		this.update();

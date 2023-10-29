@@ -1,7 +1,7 @@
 import { Localmap } from "./localmap.js";
 
 export class Overview {
-  constructor(config, guideIds, loadGuide, loadRoute, updateView) {
+  constructor(config, guideIds, loadGuide, loadRoute, updateView, updateSearch) {
     this.parent = parent;
     this.config = config;
     this.overviewMap = null;
@@ -10,6 +10,7 @@ export class Overview {
     this.loadGuide = loadGuide;
 		this.loadRoute = loadRoute;
 		this.updateView = updateView;
+    this.updateSearch = updateSearch;
     this.overviewElement = document.querySelector('.overview');
     this.creditTemplate = document.getElementById('credit-template');
     this.init();
@@ -58,7 +59,7 @@ export class Overview {
 
   async processMarkers() {
     // add "onMarkerClicked" event handlers to markers
-    let guide = await this.loadGuide('_index');
+    const guide = await this.loadGuide('_index');
     // for every marker
     for (let marker of guide.markers) {
       // modify the marker to be a button
@@ -66,6 +67,37 @@ export class Overview {
       marker.description = '';
       marker.callback = this.onMarkerClicked.bind(this, marker.key);
     }
+    // add markers for the start stations
+    const stationLookup = {};
+    const startStations = [];
+    for (let marker of guide.markers) {
+      if (!stationLookup[marker.startLocation]) {
+        startStations.push({
+          key: marker.startLocation,
+          type: marker.startTransport,
+          lon: marker.startLon,
+          lat: marker.startLat,
+          callback: this.onStationClicked.bind(this, marker.startLocation)
+        });
+        stationLookup[marker.startLocation] = true;
+      }
+    }
+    // add markers for the end stations
+    const endStations = [];
+    for (let marker of guide.markers) {
+      if (!stationLookup[marker.endLocation]) {
+        endStations.push({
+          key: marker.endLocation,
+          type: marker.endTransport,
+          lon: marker.endLon,
+          lat: marker.endLat,
+          callback: this.onStationClicked.bind(this, marker.endLocation)
+        });
+        stationLookup[marker.endLocation] = true;
+      }
+    }
+    // add the stations to the markers
+    guide.markers = [...guide.markers, ...startStations, ...endStations];
     // return the result
     return guide;
   }
@@ -87,6 +119,11 @@ export class Overview {
   onMarkerClicked(id, evt) {
     // update the app for this id
     this.updateView(id, 'guide');
+  }
+
+  onStationClicked(name, evt) {
+    // populate the filter with the station name
+    this.updateSearch(name);
   }
 
   init() {

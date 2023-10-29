@@ -63,6 +63,17 @@ export class SydneyTrainWalks {
 		return this.exifCache[id];
 	}
 
+	updateSearch(query) {
+		console.log('updating the search to:', query);
+		// show the index
+		window.localStorage.setItem('mode', 'menu');
+		document.body.className = 'screen-' + 'menu';
+		// update the filter
+		let event = new Event('change');
+		this.index.searchInput.value = query;
+		this.index.searchInput.dispatchEvent(event);
+	}
+
 	updateView(id, mode) {
 		// store the current state
 		window.localStorage.setItem('id', id);
@@ -122,7 +133,7 @@ export class SydneyTrainWalks {
 		this.footer = new Footer(this.config);
 		this.header = new Header(this.config);
 		this.index = new Index(this.config, this.guideCache, this.updateView.bind(this));
-		this.overview = new Overview(this.config, this.guideIds, this.loadGuide.bind(this), this.loadRoute.bind(this), this.updateView.bind(this));
+		this.overview = new Overview(this.config, this.guideIds, this.loadGuide.bind(this), this.loadRoute.bind(this), this.updateView.bind(this), this.updateSearch.bind(this));
 		this.trophies = new Trophies(this.config, this.guideIds, this.loadGuide.bind(this), this.updateView.bind(this), this.busy);
 		this.details = new Details(this.config, this.loadGuide.bind(this), this.loadRoute.bind(this), this.loadExif.bind(this), this.trophies);
 		this.editor = new Editor();

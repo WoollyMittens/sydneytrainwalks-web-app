@@ -51,7 +51,7 @@ export class Route {
 		var x, y;
 		// for every segment
 		var line, points, track;
-		var increments = this.tracks.length > 10 ? 25 : 1;
+		var increments = this.tracks.length > 10 ? 10 : 1;
 		var stroke = 4 / this.config.position.zoom;
 		for (var a = 0, b = this.tracks.length; a < b; a += 1) {
 			track = this.tracks[a];

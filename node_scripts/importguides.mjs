@@ -49,7 +49,7 @@ async function loadCache(path) {
 }
 
 // compile a summary of the guide in the output file
-function generateIndex(guides) {
+function generateIndex(guides, routesCache) {
 	const overview = {
 		'key': '_index',
 		'bounds': {},
@@ -58,6 +58,7 @@ function generateIndex(guides) {
 	// for every guide
 	let north = -999, west = 999, south = 999, east = -999, start, end;
 	for (let key in guides) {
+		let route = flattenCoordinates(routesCache[key]);
 		let guide = guides[key];
 		// expand the bounds based on the guides
 		north = Math.max(guide.bounds.north, north);
@@ -73,7 +74,11 @@ function generateIndex(guides) {
 			'lon': guide.lon,
 			'lat': guide.lat,
 			'startLocation': start.location,
+			'startLon': route[0][0],
+			'startLat': route[0][1],
 			'endLocation': end.location,
+			'endLon': route[route.length - 1][0],
+			'endLat': route[route.length - 1][1],
 			'startTransport': start.type,
 			'endTransport': end.type,
 			'region': guide.location,
@@ -172,14 +177,14 @@ async function parseGuides() {
 	// get the list of guide files
 	const files = await filterDirectory(guides, /.json$/i, /^_index/);
 	for (let file of files) {
-		// update the guid with the exif and route data
+		// update the guide with the exif and route data
 		let guide = populateGuide(file, guideCache, exifCache, routesCache);
 		// save the updated guide
 		let savedGuide = await fsp.writeFile(guides + file, JSON.stringify(guide, null, '\t'));
 		console.log('saved guide:', guides + file, savedGuide);
 	}
 	// construct an index of the updated guides
-	const index = generateIndex(guideCache);
+	const index = generateIndex(guideCache, routesCache);
 	// convert to string
 	let savedIndex = await fsp.writeFile(guides + '_index.json', JSON.stringify(index, null, '\t'));
 	console.log('saved index:', guides + '_index.json', savedIndex);
