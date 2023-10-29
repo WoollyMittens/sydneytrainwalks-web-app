@@ -109,6 +109,7 @@ export class Overview {
     for (let id of this.guideIds) {
       // load the route
       let route = await this.loadRoute(id);
+      // TODO: update a progress bar
       // add the route
       routes.features = routes.features.concat(route.features);
     }
