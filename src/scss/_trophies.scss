@@ -76,6 +76,14 @@
 		flex-wrap: wrap;
 		margin: 2.5rem -0.5rem;
 
+		&:empty:before {
+			display: block;
+			align-self: center;
+			justify-self: center;
+			margin: 0 auto;
+			content: "loading: " attr(data-progress);
+		}
+
 		li {
 			flex: 0 1 20%;
 			margin: 0;

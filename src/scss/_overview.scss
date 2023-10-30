@@ -13,7 +13,7 @@
 
 	&:before {
 		display: block;
-		content: "loading map...";
+		content: "loading map: " attr(data-progress);
 		position: absolute;
 		z-index: 0;
 		left: 2rem;

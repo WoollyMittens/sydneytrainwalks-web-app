@@ -122,7 +122,7 @@ function generateQueue(guideCache) {
     }
   }
 	// truncate the guidesQueue for testing
-	queue.length = 3;
+	//queue.length = 3;
 	// return the queue
   return queue.reverse();
 }
@@ -144,6 +144,9 @@ async function importTiles() {
       // or substitute the placeholder
       console.log('downloaded:', result);
       if (!result) await fsp.copyFile(tileMissing, tile.local);
+    } else {
+      // report a cache hit
+      console.log('reused:', tile.local);
     }
   }
 }

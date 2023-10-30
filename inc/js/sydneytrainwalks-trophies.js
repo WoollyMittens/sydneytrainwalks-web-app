@@ -20,10 +20,14 @@ export class Trophies {
 		// clear the container
 		this.trophiesElement.innerHTML = '';
 		// filter out the trophies from the markers
-		var duplicates = {}, trophies = [];
-		for (let id of this.guideIds) {
+		var duplicates = {}, trophies = [], total = this.guideIds.length;
+		for (let index in this.guideIds) {
+			// get the guide key
+			let key = this.guideIds[index];
 			// load the guide
-			let guide = await this.loadGuide(id);
+			let guide = await this.loadGuide(key);
+			// update the progress indicator
+			this.trophiesElement.setAttribute('data-progress', Math.round(index / total * 100) + '%');
 			// for every marker in the guide
 			for (let marker of guide.markers) {
 				// if the marker is a (new) trophy
@@ -32,7 +36,7 @@ export class Trophies {
 					duplicates[marker.title] = true;
 					// store the trophy
 					trophies.push({
-						'id': id,
+						'id': key,
 						'marker': marker
 					});
 				}

@@ -4,8 +4,6 @@ export class Overview {
   constructor(config, guideIds, loadGuide, loadRoute, updateView, updateSearch) {
     this.parent = parent;
     this.config = config;
-    this.overviewMap = null;
-    this.awaitTimeout = null;
     this.guideIds = guideIds;
     this.loadGuide = loadGuide;
 		this.loadRoute = loadRoute;
@@ -104,12 +102,16 @@ export class Overview {
 
   async mergeRoutes() {
     // create a dummy routes cache
-    var routes = {'features':[]};
+    const routes = {'features':[]};
     // for every walk
-    for (let id of this.guideIds) {
+    const total = this.guideIds.length;
+    for (let index in this.guideIds) {
+      // get the guide key
+      let key = this.guideIds[index];
       // load the route
-      let route = await this.loadRoute(id);
-      // TODO: update a progress bar
+      let route = await this.loadRoute(key);
+      // update a progress bar
+      this.overviewElement.setAttribute('data-progress', Math.round(index / total * 100) + '%');
       // add the route
       routes.features = routes.features.concat(route.features);
     }
