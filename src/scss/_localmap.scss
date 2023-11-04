@@ -89,18 +89,6 @@
 		transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
 		transform-origin: 0 0;
 
-		&-transition,
-		&-transition img,
-		&-transition span {
-			transition: transform ease 300ms;
-		}
-	}
-
-	&-background {
-		display: block;
-		user-select: none;
-		position: relative;
-
 		[data-color-scheme="light"] & {
 			filter: initial;
 		}
@@ -112,6 +100,18 @@
 		@media (prefers-color-scheme: dark) {
 			filter: hue-rotate(180deg) contrast(0.8) brightness(1.1) saturate(0.5) invert(1);
 		}
+
+		&-transition,
+		&-transition img,
+		&-transition span {
+			transition: transform ease 300ms;
+		}
+	}
+
+	&-background {
+		display: block;
+		user-select: none;
+		position: relative;
 	}
 
 	&-tile {
@@ -130,18 +130,6 @@
 		transform-origin: 50% 100%;
 		transition: transform ease 100ms;
 		z-index: 3;
-
-		[data-color-scheme="light"] & {
-			filter: initial;
-		}
-
-		[data-color-scheme="dark"] & {
-			filter: hue-rotate(180deg) contrast(0.8) brightness(1.1) saturate(0.5) invert(1);
-		}
-
-		@media (prefers-color-scheme: dark) {
-			filter: hue-rotate(180deg) contrast(0.8) brightness(1.1) saturate(0.5) invert(1);
-		}
 	}
 
 	&-index {
@@ -197,18 +185,6 @@
 		border-radius: 50%;
 		z-index: 2;
 
-		[data-color-scheme="light"] & {
-			filter: initial;
-		}
-
-		[data-color-scheme="dark"] & {
-			filter: hue-rotate(180deg) invert(1);
-		}
-
-		@media (prefers-color-scheme: dark) {
-			filter: hue-rotate(180deg) invert(1);
-		}
-
 		&:before {
 			content: '';
 			display: block;
@@ -227,18 +203,6 @@
 		width: 100%;
 		height: 100%;
 		z-index: 1;
-
-		[data-color-scheme="light"] & {
-			filter: initial;
-		}
-
-		[data-color-scheme="dark"] & {
-			filter: hue-rotate(180deg) invert(1);
-		}
-
-		@media (prefers-color-scheme: dark) {
-			filter: hue-rotate(180deg) invert(1);
-		}
 	}
 
 	&-controls {
