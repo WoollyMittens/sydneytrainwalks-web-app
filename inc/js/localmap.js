@@ -151,6 +151,7 @@ export class Localmap {
 		// reset the previous
 		indicator.reset();
 		// ask the indicator to indicate
+		console.log('indicate', input);
 		indicator.show(input, instant);
 		// cancel any associated events
 		return false;

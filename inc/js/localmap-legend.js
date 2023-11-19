@@ -204,7 +204,7 @@ export class Legend {
 		// handle the scroller
 		this.definitionList.addEventListener('scroll', this.updatePageCount.bind(this), { passive: true });
 		// activate the first page
-		setTimeout(this.updatePageCount.bind(this), 100);
+		setTimeout(this.updatePageCount.bind(this), 500);
 	}
 
 	onViewPhoto(markerData, evt) {

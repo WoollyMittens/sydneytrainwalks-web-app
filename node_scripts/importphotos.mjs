@@ -44,7 +44,7 @@ function generateSmall(album, image) {
     gm(rawPath)
     //.crop('66%', '66%', '17%', '17%')
     .resize(600, 150)
-    //.autoOrient()
+    .autoOrient()
     .quality(60)
     .strip()
     .write(smallPath, function(err) {

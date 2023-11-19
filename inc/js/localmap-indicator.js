@@ -149,7 +149,7 @@ export class Indicator {
 		// try to find the referer in the existing markers
 		if (!indicator.referrer) {
 			for (let marker of markers) {
-				if (marker.photo === indicator.photo) {
+				if (marker.photo && marker.photo === indicator.photo) {
 					indicator.referrer = marker.referrer;
 					indicator.lat = marker.lat;
 					indicator.lon = marker.lon;
