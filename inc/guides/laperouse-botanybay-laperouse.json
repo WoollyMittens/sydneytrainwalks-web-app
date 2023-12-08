@@ -1,0 +1,168 @@
+{
+	"location": "Botany Bay",
+	"lon": 151.2569911312,
+	"lat": -33.9470508322,
+	"description": [
+		"This walk forms a loop to Cape Banks through <a href=\"http://www.nationalparks.nsw.gov.au/kamay-botany-bay-national-park\">Kamay Botany Bay National Park</a>."
+	],
+	"duration": 3,
+	"distance": 7,
+	"zoom": 13,
+	"rain": true,
+	"fireban": true,
+	"key": "laperouse-botanybay-laperouse",
+	"updated": "2023-11-18",
+	"bounds": {
+		"west": 151.2158203125,
+		"north": -33.87041555094183,
+		"east": 151.292724609375,
+		"south": -34.016241889667015
+	},
+	"markers": [
+		{
+			"location": "La Perouse",
+			"type": "bus",
+			"description": "Get the bus to La Perouse using <a href=\"https://transportnsw.info/trip#/?to=La Perouse\">transportnsw.info</a>.",
+			"lon": 151.233826,
+			"lat": -33.988052
+		},
+		{
+			"type": "toilet",
+			"lat": -33.98892,
+			"lon": 151.233446
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231117_202220672.jpg",
+			"lon": 151.23359299999998,
+			"lat": -33.988599,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231117_202628521.jpg",
+			"lon": 151.23570199999997,
+			"lat": -33.989089,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231117_202940972.jpg",
+			"lon": 151.23615999999998,
+			"lat": -33.987661,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231117_203336599.jpg",
+			"lon": 151.238239,
+			"lat": -33.988096,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231117_203634144.jpg",
+			"lon": 151.23924599999998,
+			"lat": -33.989281,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231117_204306171.jpg",
+			"lon": 151.23952999999997,
+			"lat": -33.992659,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231117_204632340.jpg",
+			"lon": 151.239814,
+			"lat": -33.994209,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231117_205107003.jpg",
+			"lon": 151.23946999999998,
+			"lat": -33.996602,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231117_205605013.jpg",
+			"lon": 151.23864099999997,
+			"lat": -33.997993,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231117_211007277.jpg",
+			"lon": 151.24651999999998,
+			"lat": -33.997536000000004,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231117_211340808.jpg",
+			"lon": 151.248934,
+			"lat": -33.998039,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231117_211459007.jpg",
+			"lon": 151.24907399999998,
+			"lat": -33.99772300012965,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231117_212150287.jpg",
+			"lon": 151.250862,
+			"lat": -33.993906,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231117_212335188.jpg",
+			"lon": 151.24973799999998,
+			"lat": -33.99351,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231117_213939866.jpg",
+			"lon": 151.240547,
+			"lat": -33.989087,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231117_214030264.jpg",
+			"lon": 151.240006,
+			"lat": -33.989097,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231117_214131871.jpg",
+			"lon": 151.239387,
+			"lat": -33.989308,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231117_214357241.jpg",
+			"lon": 151.23842699999997,
+			"lat": -33.988219,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"location": "La Perouse",
+			"type": "bus",
+			"description": "Plan your return trip from Bondi Beach at <a href=\"https://transportnsw.info/trip#/?from=La Perouse\">transportnsw.info</a>.",
+			"lon": 151.233826,
+			"lat": -33.988052
+		}
+	]
+}

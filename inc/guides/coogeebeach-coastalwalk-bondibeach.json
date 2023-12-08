@@ -1,7 +1,7 @@
 {
 	"location": "Coastal Walk",
-	"lon": 151.269287,
-	"lat": -33.90979,
+	"lon": 151.2569911312,
+	"lat": -33.9470508322,
 	"description": [
 		"This walk follows the famous <a href=\"http://bonditocoogeewalk.com.au/\">Bondi to Coogee walk</a> along the eastern suburbs' many beaches."
 	],
@@ -11,12 +11,12 @@
 	"rain": true,
 	"fireban": true,
 	"key": "coogeebeach-coastalwalk-bondibeach",
-	"updated": "2013-04-07",
+	"updated": "2023-11-18",
 	"bounds": {
-		"west": 151.23779296875,
-		"north": -33.87953701355924,
+		"west": 151.2158203125,
+		"north": -33.87041555094183,
 		"east": 151.292724609375,
-		"south": -33.93424531117312
+		"south": -34.016241889667015
 	},
 	"markers": [
 		{
@@ -78,52 +78,297 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "p4074247.jpg",
-			"lon": 151.25726670000606,
-			"lat": -33.92188702997788,
-			"description": "From the busstop follow the beach to the left to its end."
+			"photo": "pxl_20231118_010405900.jpg",
+			"lon": 151.256992,
+			"lat": -33.92044,
+			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
 			"type": "waypoint",
-			"photo": "p4074259p.jpg",
-			"lon": 151.26098333333334,
-			"lat": -33.91512222222222,
-			"description": "From the north end of Coogee beach follow the coastal track to Gordons Bay."
+			"photo": "pxl_20231118_013148515.jpg",
+			"lon": 151.257262,
+			"lat": -33.92055,
+			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
 			"type": "waypoint",
-			"photo": "p4074274p.jpg",
-			"lon": 151.26712222222224,
-			"lat": -33.91464722222222,
-			"description": "The track then goes around Clovelly Bay and continues on the far side."
+			"photo": "pxl_20231118_013229820.jpg",
+			"lon": 151.257643,
+			"lat": -33.920417,
+			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
 			"type": "waypoint",
-			"photo": "p4074290p.jpg",
-			"lon": 151.2699638888889,
-			"lat": -33.910447222222224,
-			"description": "The next landmark along the coast is the Clovelly cemetery."
+			"photo": "pxl_20231118_013304687.jpg",
+			"lon": 151.257817,
+			"lat": -33.92026,
+			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
 			"type": "waypoint",
-			"photo": "p4074303p.jpg",
-			"lon": 151.26970555555556,
-			"lat": -33.90048055555555,
-			"description": "Cross Bronte and Tamarama beach, the coast track continues at the far end of each."
+			"photo": "pxl_20231118_013519013.jpg",
+			"lon": 151.258559,
+			"lat": -33.918903,
+			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
 			"type": "waypoint",
-			"photo": "p4074317p.jpg",
-			"lon": 151.27196944444447,
-			"lat": -33.899525,
-			"description": "The final stretch of the walk follow the rocky cliffs to Bondi."
+			"photo": "pxl_20231118_013646463.jpg",
+			"lon": 151.259457,
+			"lat": -33.918617999999995,
+			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
 			"type": "waypoint",
-			"photo": "p4074353p.jpg",
-			"lon": 151.27383333333336,
-			"lat": -33.89435833333333,
-			"description": "The coastal track finally ends at the Bondi Icebergs. Buses to Bondi Junction stop on the road along the beach."
+			"photo": "pxl_20231118_013755520.jpg",
+			"lon": 151.260096,
+			"lat": -33.919253999999995,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_013852909.jpg",
+			"lon": 151.260712,
+			"lat": -33.919109,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_014104200.jpg",
+			"lon": 151.261287,
+			"lat": -33.917925,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_014235873.jpg",
+			"lon": 151.261305,
+			"lat": -33.916833,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_014401005.jpg",
+			"lon": 151.261328,
+			"lat": -33.915942,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_014521395.jpg",
+			"lon": 151.261037,
+			"lat": -33.915166,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_014620010.jpg",
+			"lon": 151.261009,
+			"lat": -33.914781999999995,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_015539673.jpg",
+			"lon": 151.26740900000001,
+			"lat": -33.9157569998733,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_015805758.jpg",
+			"lon": 151.26753200000002,
+			"lat": -33.914684,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_015941745.jpg",
+			"lon": 151.266795,
+			"lat": -33.914176999999995,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_020141537.jpg",
+			"lon": 151.265802,
+			"lat": -33.913178,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_020352692.jpg",
+			"lon": 151.26731800000002,
+			"lat": -33.913683,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_020637065.jpg",
+			"lon": 151.269235,
+			"lat": -33.913346,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_021044647.jpg",
+			"lon": 151.27005400000002,
+			"lat": -33.910824,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_021223138.jpg",
+			"lon": 151.27008700000002,
+			"lat": -33.910164,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_021523360.jpg",
+			"lon": 151.26973800000002,
+			"lat": -33.908705999999995,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_021822473.jpg",
+			"lon": 151.26965600000003,
+			"lat": -33.907145,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_022043027.jpg",
+			"lon": 151.269481,
+			"lat": -33.905679,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_022127034.jpg",
+			"lon": 151.269058,
+			"lat": -33.905471999999996,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_022202074.jpg",
+			"lon": 151.268683,
+			"lat": -33.905269,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_022330544.jpg",
+			"lon": 151.26827500000002,
+			"lat": -33.904632,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_022505871.jpg",
+			"lon": 151.267907,
+			"lat": -33.903455,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_022620719.jpg",
+			"lon": 151.268141,
+			"lat": -33.902943,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_022943445.jpg",
+			"lon": 151.27009700000002,
+			"lat": -33.901579999999996,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_023209370.jpg",
+			"lon": 151.269238,
+			"lat": -33.899954,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_023334530.jpg",
+			"lon": 151.269517,
+			"lat": -33.89979,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_023710642.jpg",
+			"lon": 151.271837,
+			"lat": -33.899898,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_024339253.jpg",
+			"lon": 151.276078,
+			"lat": -33.89886,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_024504582.jpg",
+			"lon": 151.27592,
+			"lat": -33.898361,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_024700773.jpg",
+			"lon": 151.27487000000002,
+			"lat": -33.897539,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_024913707.jpg",
+			"lon": 151.27420700000002,
+			"lat": -33.896633,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_025321069.jpg",
+			"lon": 151.27400400000002,
+			"lat": -33.894554,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_025358725.jpg",
+			"lon": 151.273782,
+			"lat": -33.894338,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_025442095.jpg",
+			"lon": 151.273658,
+			"lat": -33.894051,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_025501683.jpg",
+			"lon": 151.273669,
+			"lat": -33.893949,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231118_025908535.jpg",
+			"lon": 151.274326,
+			"lat": -33.891242,
+			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
 			"location": "Bondi Beach",
@@ -132,17 +377,5 @@
 			"lat": -33.892822,
 			"lon": 151.273468
 		}
-	],
-	"alias": {
-		"key": "laperouse-botanybay-bondibeach",
-		"start": 72,
-		"end": 91,
-		"updated": "2020-01-10",
-		"bounds": {
-			"west": 151.2158203125,
-			"north": -33.87953701355924,
-			"east": 151.292724609375,
-			"south": -34.016241889667015
-		}
-	}
+	]
 }
