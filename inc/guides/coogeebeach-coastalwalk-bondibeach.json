@@ -1,7 +1,7 @@
 {
 	"location": "Coastal Walk",
-	"lon": 151.2569911312,
-	"lat": -33.9470508322,
+	"lon": 151.269738,
+	"lat": -33.908706,
 	"description": [
 		"This walk follows the famous <a href=\"http://bonditocoogeewalk.com.au/\">Bondi to Coogee walk</a> along the eastern suburbs' many beaches."
 	],
@@ -13,10 +13,10 @@
 	"key": "coogeebeach-coastalwalk-bondibeach",
 	"updated": "2023-11-18",
 	"bounds": {
-		"west": 151.2158203125,
-		"north": -33.87041555094183,
+		"west": 151.23779296875,
+		"north": -33.87953701355924,
 		"east": 151.292724609375,
-		"south": -34.016241889667015
+		"south": -33.93424531117312
 	},
 	"markers": [
 		{

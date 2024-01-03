@@ -1,7 +1,7 @@
 {
 	"location": "Botany Bay",
-	"lon": 151.2569911312,
-	"lat": -33.9470508322,
+	"lon": 151.238641,
+	"lat": -33.997993,
 	"description": [
 		"This walk forms a loop to Cape Banks through <a href=\"http://www.nationalparks.nsw.gov.au/kamay-botany-bay-national-park\">Kamay Botany Bay National Park</a>."
 	],
@@ -14,8 +14,8 @@
 	"updated": "2023-11-18",
 	"bounds": {
 		"west": 151.2158203125,
-		"north": -33.87041555094183,
-		"east": 151.292724609375,
+		"north": -33.970697997361626,
+		"east": 151.270751953125,
 		"south": -34.016241889667015
 	},
 	"markers": [
