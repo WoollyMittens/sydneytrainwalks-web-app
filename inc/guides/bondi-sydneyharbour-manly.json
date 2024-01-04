@@ -1,0 +1,161 @@
+{
+	"location": "Sydney Harbour",
+	"lon": 151.252074,
+	"lat": -33.827475,
+	"description": [
+		"While nessecarily a very urban walk, the scenery from <a href=\"http://www.northsydney.nsw.gov.au/Recreation_Facilities/Parks_Reserves/Search_Parks/Cremorne_Reserve\">Cremorne Point</a> onwards becomes ever most lush as the metropolis slowly transforms into a subtropical resort along the way.",
+		"<br/><br/>",
+		"The popularity of the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/manly-scenic-walkway\">Spit Bridge to Manly Walk</a> means most of the way is very well signposted and maintained.",
+		"The <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/harbour-bridge-to-the-spit-bridge-walking-track\">Harbour Bridge to The Spit Bridge walking track</a> has been added to complete a great walk all the way from Milsons Point to Manly.",
+		"<br/><br/>",
+		"A surprisingly lush stretch of the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/bradleys-head-to-chowder-bay-walk\">Bradleys Head to Chowder Bay walk</a> bridges the urban sections nicely."
+	],
+	"duration": 8,
+	"distance": 31,
+	"zoom": 13,
+	"rain": true,
+	"fireban": false,
+	"key": "milsonspoint-sydneyharbour-manly",
+	"updated": "2023-09-30",
+	"bounds": {
+		"west": 151.19384765625,
+		"north": -33.779147331286474,
+		"east": 151.3037109375,
+		"south": -33.87041555094183
+	},
+	"markers": [
+		{
+			"location": "Bondi Beach",
+			"type": "train",
+			"description": "Get the train to Milsons Point using <a href=\"https://transportnsw.info/trip#/?to=G202652\">transportnsw.info</a>.",
+			"lon": 151.211454,
+			"lat": -33.846288
+		},
+		{
+			"type": "kiosk",
+			"lat": -33.846209,
+			"lon": 151.212776
+		},
+		{
+			"type": "kiosk",
+			"lat": -33.838381,
+			"lon": 151.232746
+		},
+		{
+			"type": "kiosk",
+			"lat": -33.847691,
+			"lon": 151.23106
+		},
+		{
+			"type": "kiosk",
+			"lat": -33.83887,
+			"lon": 151.254731
+		},
+		{
+			"type": "kiosk",
+			"lat": -33.827322,
+			"lon": 151.252231
+		},
+		{
+			"type": "kiosk",
+			"lat": -33.804023,
+			"lon": 151.246259
+		},
+		{
+			"type": "kiosk",
+			"lat": -33.806342,
+			"lon": 151.252304
+		},
+		{
+			"type": "kiosk",
+			"lat": -33.799453,
+			"lon": 151.284148
+		},
+		{
+			"type": "toilet",
+			"lat": -33.839241,
+			"lon": 151.214786
+		},
+		{
+			"type": "toilet",
+			"lat": -33.847503,
+			"lon": 151.23141
+		},
+		{
+			"type": "toilet",
+			"lat": -33.838456,
+			"lon": 151.232651
+		},
+		{
+			"type": "toilet",
+			"lat": -33.852988,
+			"lon": 151.246311
+		},
+		{
+			"type": "toilet",
+			"lat": -33.838256,
+			"lon": 151.252851
+		},
+		{
+			"type": "toilet",
+			"lat": -33.82919,
+			"lon": 151.25339
+		},
+		{
+			"type": "toilet",
+			"lat": -33.822261,
+			"lon": 151.250798
+		},
+		{
+			"type": "toilet",
+			"lat": -33.805507,
+			"lon": 151.246086
+		},
+		{
+			"type": "toilet",
+			"lat": -33.806933,
+			"lon": 151.252112
+		},
+		{
+			"type": "toilet",
+			"lat": -33.809316,
+			"lon": 151.265898
+		},
+		{
+			"type": "toilet",
+			"lat": -33.807122,
+			"lon": 151.273478
+		},
+		{
+			"type": "toilet",
+			"lat": -33.799009,
+			"lon": 151.264619
+		},
+		{
+			"type": "toilet",
+			"lat": -33.799834,
+			"lon": 151.275478
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20230929_210931821.jpg",
+			"description": ""
+		},
+
+
+
+
+
+
+
+
+
+		{
+			"location": "Manly",
+			"type": "ferry",
+			"description": "Plan your return trip from Manly at <a href=\"https://transportnsw.info/trip#/?from=Manly\">transportnsw.info</a>.",
+			"lon": 151.283542,
+			"lat": -33.800407
+		}
+	]
+}

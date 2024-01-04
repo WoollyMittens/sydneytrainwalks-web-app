@@ -1,0 +1,245 @@
+{
+	"location": "Botany Bay",
+	"lon": 151.223206,
+	"lat": -34.008038,
+	"description": [
+		"A footpath leads all the way from the boulevard of <a href=\"https://www.sydney.com/destinations/sydney/sydney-south/cronulla/attractions/cronulla-beach\">Cronulla Beach</a> through the impressive <a href=\"https://www.weekendnotes.com/cronulla-sand-dunes/\">Wanda sand dunes</a> into <a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/kurnell-area\">Kamay Botany Bay National Park</a>.",
+		"A well maintained trail leads along the spectacular cliffs past the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/historic-buildings-places/cape-baily-lighthouse\">Cape Baily Lighthouse</a> to the whale watching lookout at <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/cape-solander\">Cape Solander</a>.",
+		"<br/><br/>",
+		"From the cape the lush <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/muru-and-yena-tracks\">Yena bushtrail</a> leads to the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/visitor-centres/kurnell-visitor-centre\">Kurnell Visitor Centre</a>, pinic area, and memorials.",
+		"At the park entrance the walk continues along <a href=\"http://www.sutherlandshire.nsw.gov.au/Outdoors/Beaches/Beach-Locations/Silver-Beach-Kurnell\">Silver Beach</a>, before using the bike paths to loop back around the Refinery to Cronulla Beach."
+	],
+	"duration": 7,
+	"distance": 26,
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "wollicreek-botanybay-cronulla",
+	"updated": "2014-04-20",
+	"bounds": {
+		"west": 151.138916015625,
+		"north": -33.97980872872457,
+		"east": 151.248779296875,
+		"south": -34.07086232376632
+	},
+	"markers": [
+		{
+			"location": "Cronulla",
+			"type": "train",
+			"description": "Get the train to Cronulla using <a href=\"https://transportnsw.info/trip#/?to=Cronulla\">transportnsw.info</a>.",
+			"lon": 151.151565552,
+			"lat": -34.055652618
+		},
+		{
+			"type": "info",
+			"lat": -34.00504166666666,
+			"lon": 151.22191111111113,
+			"description": "Botany Bay Visitor Centre."
+		},
+		{
+			"type": "kiosk",
+			"lat": -34.055423,
+			"lon": 151.151867
+		},
+		{
+			"type": "kiosk",
+			"lat": -34.006834,
+			"lon": 151.215851
+		},
+		{
+			"type": "kiosk",
+			"lat": -34.011527,
+			"lon": 151.209677
+		},
+		{
+			"type": "toilet",
+			"lat": -34.055744,
+			"lon": 151.154582
+		},
+		{
+			"type": "toilet",
+			"lat": -34.004823,
+			"lon": 151.221888
+		},
+		{
+			"type": "waypoint",
+			"photo": "p4215368.jpg",
+			"lon": 151.15355,
+			"lat": -34.055625,
+			"description": "From the station cross the road and keep going straight through to the beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p4215379_p4215385.jpg",
+			"lon": 151.15503055555556,
+			"lat": -34.054252777777776,
+			"description": "Follow the footpath along the beach, or the beach itself, to Wanda Reserve."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p4215426_p4215429.jpg",
+			"lon": 151.16400833333333,
+			"lat": -34.0389,
+			"description": "From the reserve a road leads into the dunes and soon turns into a gravel path."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p4215448_p4215454.jpg",
+			"lon": 151.17032777777777,
+			"lat": -34.03379722222222,
+			"description": "On the left side of the path the Wanda sand dunes will become apparent."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p4215482.jpg",
+			"lon": 151.17588333333333,
+			"lat": -34.03196388888889,
+			"description": "Follow the path through the dunes to its end, or take one of the sandy tracks along the way back to the beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p4215494_p4215496.jpg",
+			"lon": 151.18193333333332,
+			"lat": -34.03505277777778,
+			"description": "Walk along the beach to the headland. Take care as the beach there is accessible to offroad vehicles."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p4215520_p4215527.jpg",
+			"lon": 151.20001666666664,
+			"lat": -34.038941666666666,
+			"description": "Past the headleand is small lined with beach shacks. The national park starts at the far end of it."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p4215543.jpg",
+			"lon": 151.201672,
+			"lat": -34.037741,
+			"description": "Follow the sign to the Coastal Walk which starts after a short climb up onto the next headland."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p4215568.jpg",
+			"lon": 151.2047972222222,
+			"lat": -34.0396,
+			"description": "There are no markers on the trail, but it is a well worn path through the coastal heath."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p4215598.jpg",
+			"lon": 151.2191,
+			"lat": -34.038191,
+			"description": "Along the way the track meanders through coastal heath and across rocky platforms."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p4215609_p4215613.jpg",
+			"lon": 151.22264722222224,
+			"lat": -34.036144444444446,
+			"description": "The next major landmark along the way is the Cape Baily Lighthouse."
+		},
+		{
+			"title": "The Guiding Light",
+			"badge": "lamp_on",
+			"lon": 151.2222179698302,
+			"lat": -34.03508340894466,
+			"radius": 0.0004,
+			"explanation": [
+				"The light is a warning not to sail a ship into the steep cliffs of the coast. Let it be a reminder not to fall off the same."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to earn the mystery trophy</center>"
+		},
+		{
+			"type": "waypoint",
+			"photo": "p4215691.jpg",
+			"lon": 151.2307869999109,
+			"lat": -34.016942,
+			"description": "Eventually the coastal path ends at Cape Colander Lookout."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p4215697.jpg",
+			"lon": 151.228415,
+			"lat": -34.01264700009983,
+			"description": "Follow the road from the lookout to the entrance of the Yena Fire Trail on the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p4215701.jpg",
+			"lon": 151.22533333333334,
+			"lat": -34.010577777777776,
+			"description": "Halfway down the the trail there is a short self-guided walk through the dense bushland."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p4215714.jpg",
+			"lon": 151.221774,
+			"lat": -34.005215,
+			"description": "The trail eventually ends a tthe visitor centre, where refreshments and park information are available."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p4215716_p4215727.jpg",
+			"lon": 151.22120555555557,
+			"lat": -34.00481111111111,
+			"description": "Behind the visitor centre a path leads to several memorials in the park."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p4215730.jpg",
+			"lon": 151.21997222222222,
+			"lat": -34.00447222222222,
+			"description": "From the memorials there is a self-guided walk with an auditory experience that will leads to Captain Cook monument."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p4215731_p4215735.jpg",
+			"lon": 151.21783333333335,
+			"lat": -34.004755555555555,
+			"description": "From the monument, follow the footpath out of the park and to Kurnell's Silver Beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p4215763.jpg",
+			"lon": 151.211344,
+			"lat": -34.008794,
+			"description": "Follow Silver Beach Road away from the beach to the main road back to Cronulla."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p4215765.jpg",
+			"lon": 151.20649699999998,
+			"lat": -34.015953,
+			"description": "Take care to stay on the shoulder and footpaths along Captain Cook Drive."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p4215766_pxl_20210612_022819462.jpg",
+			"lon": 151.18571666666668,
+			"lat": -34.025508333333335,
+			"description": "From the Skate Park and Boat Harbour Entrance, follow the footpath past the gate."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p4215766_pxl_20210612_023440850.jpg",
+			"lon": 151.18445277777778,
+			"lat": -34.03012222222222,
+			"description": "At the intersection turn right and follow the path to the Wanda Sand Dunes."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p4215766_pxl_20210612_023608512.jpg",
+			"lon": 151.18305833333332,
+			"lat": -34.030033333333336,
+			"description": "Follow the path through the dunes back to Cronulla."
+		},
+		{
+			"location": "Cronulla",
+			"type": "train",
+			"description": "Plan your return trip from Cronulla at <a href=\"https://transportnsw.info/trip#/?from=Cronulla\">transportnsw.info</a>.",
+			"lon": 151.151687622,
+			"lat": -34.055538177
+		}
+	]
+}

@@ -16,7 +16,7 @@
 	"rain": true,
 	"fireban": false,
 	"key": "milsonspoint-sydneyharbour-manly",
-	"updated": "2017-09-22",
+	"updated": "2023-10-02",
 	"bounds": {
 		"west": 151.19384765625,
 		"north": -33.779147331286474,
@@ -690,5 +690,16 @@
 			"lon": 151.283542,
 			"lat": -33.800407
 		}
-	]
+	],
+	"alias": {
+		"key": "bondi-sydneyharbour-manly",
+		"start": 72,
+		"end": 164,
+		"bounds": {
+			"west": null,
+			"north": null,
+			"east": null,
+			"south": null
+		}
+	}
 }
