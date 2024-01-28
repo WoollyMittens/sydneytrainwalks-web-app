@@ -1,0 +1,555 @@
+{
+	"location": "Illawarra Escarpment",
+	"lon": 150.96344,
+	"lat": -34.25711,
+	"description": "Lorem ipsum dolor sit amet.",
+	"keywords": {
+		"ipsum": "https://external.link/"
+	},
+	"distance": [
+		0
+	],
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "stanwellpark-sublimepoint-thiroul",
+	"updated": "2012-12-08",
+	"bounds": {
+		"west": 150.897216796875,
+		"north": -34.21634468843464,
+		"east": 151.007080078125,
+		"south": -34.3343644870263
+	},
+	"markers": [
+		{
+			"location": "Stanwell Park",
+			"type": "train",
+			"description": "Get the train to Stanwell Park using <a href=\"https://transportnsw.info/trip#/?to=Stanwell Park\">transportnsw.info</a>.",
+			"lon": 150.980408,
+			"lat": -34.227482
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20220513_213549172.jpg",
+			"lon": 151.00876666666667,
+			"lat": -34.19455277777777
+		},
+		{
+			"type": "waypoint",
+			"photo": "002_pxl_20220513_213708740.jpg",
+			"lon": 150.9815888888889,
+			"lat": -34.22634444444444
+		},
+		{
+			"type": "waypoint",
+			"photo": "003_pxl_20220513_214126386.jpg",
+			"lon": 150.98254166666666,
+			"lat": -34.22810555555556
+		},
+		{
+			"type": "waypoint",
+			"photo": "004_pxl_20220513_214157071.jpg",
+			"lon": 150.9828222222222,
+			"lat": -34.22798888888889
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20220513_214238124.jpg",
+			"lon": 150.9828222222222,
+			"lat": -34.22798888888889
+		},
+		{
+			"type": "waypoint",
+			"photo": "006_pxl_20230901_223636579.jpg",
+			"lon": 150.9838333333333,
+			"lat": -34.22827222222222
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20230901_223742674.jpg",
+			"lon": 150.9829388888889,
+			"lat": -34.228725000000004
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20230901_223949896.jpg",
+			"lon": 150.98204444444445,
+			"lat": -34.22999444444444
+		},
+		{
+			"type": "waypoint",
+			"photo": "011_pxl_20230901_224326554.jpg",
+			"lon": 150.98255277777778,
+			"lat": -34.23184166666667
+		},
+		{
+			"type": "waypoint",
+			"photo": "012_pxl_20230901_224829190.jpg",
+			"lon": 150.98556388888886,
+			"lat": -34.23379722222222
+		},
+		{
+			"type": "waypoint",
+			"photo": "013_pxl_20230901_225216150.jpg",
+			"lon": 150.98647777777776,
+			"lat": -34.23509722222222
+		},
+		{
+			"type": "waypoint",
+			"photo": "014_pxl_20230901_225634078.jpg",
+			"lon": 150.98380555555553,
+			"lat": -34.23789444444444
+		},
+		{
+			"type": "waypoint",
+			"photo": "015_pxl_20220513_220226142.jpg",
+			"lon": 150.9840361111111,
+			"lat": -34.23768333333334
+		},
+		{
+			"type": "waypoint",
+			"photo": "016_pxl_20220513_220310966.jpg",
+			"lon": 150.9835861111111,
+			"lat": -34.23761666666667
+		},
+		{
+			"type": "waypoint",
+			"photo": "017_pxl_20220513_220409996.jpg",
+			"lon": 150.9835861111111,
+			"lat": -34.23761666666667
+		},
+		{
+			"type": "waypoint",
+			"photo": "019_pxl_20220513_220653127.jpg",
+			"lon": 150.9836611111111,
+			"lat": -34.235625
+		},
+		{
+			"type": "waypoint",
+			"photo": "021_pxl_20220513_221724126.jpg",
+			"lon": 150.9787777777778,
+			"lat": -34.23439444444445
+		},
+		{
+			"type": "waypoint",
+			"photo": "022_pxl_20220513_221952511.jpg",
+			"lon": 150.9787777777778,
+			"lat": -34.23439444444445
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211022_220328603.jpg",
+			"lon": 150.980612,
+			"lat": -34.226822
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211022_220333344.jpg",
+			"lon": 150.980931,
+			"lat": -34.22648
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211022_220955797.jpg",
+			"lon": 150.978831,
+			"lat": -34.227196
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211022_223602108.jpg",
+			"lon": 150.971113,
+			"lat": -34.228948
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211022_223918908.jpg",
+			"lon": 150.971382,
+			"lat": -34.22927
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211022_224027455.jpg",
+			"lon": 150.971479,
+			"lat": -34.229308
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211022_224138650.jpg",
+			"lon": 150.971641,
+			"lat": -34.229269
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211022_225734788.jpg",
+			"lon": 150.973589,
+			"lat": -34.232466
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211022_230116553.jpg",
+			"lon": 150.974099,
+			"lat": -34.232795
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211022_230138547.jpg",
+			"lon": 150.974139,
+			"lat": -34.232805
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211022_230852666.jpg",
+			"lon": 150.97679,
+			"lat": -34.234209
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211022_231543974.jpg",
+			"lon": 150.97562,
+			"lat": -34.234648
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211022_233115863.jpg",
+			"lon": 150.976856999913,
+			"lat": -34.236172
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211022_233143627_pano.jpg",
+			"lon": 150.977065,
+			"lat": -34.236107000000004
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211022_233311271.jpg",
+			"lon": 150.977044,
+			"lat": -34.236446
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211022_233708686.jpg",
+			"lon": 150.976726,
+			"lat": -34.238538
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211022_234716731.jpg",
+			"lon": 150.969594,
+			"lat": -34.240251
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_000407538.jpg",
+			"lon": 150.96485199999998,
+			"lat": -34.24216
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_000426354.jpg",
+			"lon": 150.965046,
+			"lat": -34.242244
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_001142825.jpg",
+			"lon": 150.96216699990478,
+			"lat": -34.24457
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_001455850.jpg",
+			"lon": 150.96047300010036,
+			"lat": -34.24545
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_002024951.jpg",
+			"lon": 150.961424,
+			"lat": -34.24821899992236
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_002148985.jpg",
+			"lon": 150.961805,
+			"lat": -34.248818
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_003154296.jpg",
+			"lon": 150.964195,
+			"lat": -34.252323
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_004110641.jpg",
+			"lon": 150.965666,
+			"lat": -34.255252
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_005643648.jpg",
+			"lon": 150.9603869999031,
+			"lat": -34.26215899988557
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_005709939.jpg",
+			"lon": 150.960385,
+			"lat": -34.262242
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_010216705.jpg",
+			"lon": 150.958205,
+			"lat": -34.263235
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_011037410.jpg",
+			"lon": 150.95407699999998,
+			"lat": -34.26447
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_011059975.jpg",
+			"lon": 150.95386499999998,
+			"lat": -34.26454299986499
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_011341658.jpg",
+			"lon": 150.952714,
+			"lat": -34.265615
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_011717953.jpg",
+			"lon": 150.950325,
+			"lat": -34.266198
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_012130843.jpg",
+			"lon": 150.94768,
+			"lat": -34.267307
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_012521471.jpg",
+			"lon": 150.94631,
+			"lat": -34.26976
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_012621634.jpg",
+			"lon": 150.94604900000002,
+			"lat": -34.270272
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_012636362.jpg",
+			"lon": 150.946005,
+			"lat": -34.270365
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_012838297.jpg",
+			"lon": 150.945969,
+			"lat": -34.270522
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_013147344.jpg",
+			"lon": 150.944933,
+			"lat": -34.271508
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_014324345.jpg",
+			"lon": 150.939393,
+			"lat": -34.276966
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_014857178.jpg",
+			"lon": 150.938718,
+			"lat": -34.279903
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_014913125.jpg",
+			"lon": 150.938623,
+			"lat": -34.279956
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_015031806.jpg",
+			"lon": 150.937868,
+			"lat": -34.279966999871846
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_020506170.jpg",
+			"lon": 150.932292,
+			"lat": -34.287554
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_021913089.jpg",
+			"lon": 150.92729,
+			"lat": -34.294072
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_021946890.jpg",
+			"lon": 150.927225,
+			"lat": -34.294395
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_022431748.jpg",
+			"lon": 150.925268,
+			"lat": -34.296034999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_022924684.jpg",
+			"lon": 150.92517899999999,
+			"lat": -34.296616
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_023010759_pano.jpg",
+			"lon": 150.925346,
+			"lat": -34.296830999900706
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_023255031.jpg",
+			"lon": 150.925063,
+			"lat": -34.296825999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_023351547.jpg",
+			"lon": 150.924457,
+			"lat": -34.297035
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_023717525.jpg",
+			"lon": 150.92438199999998,
+			"lat": -34.297475999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_024023640.jpg",
+			"lon": 150.92358199999998,
+			"lat": -34.298263999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_024611401.jpg",
+			"lon": 150.92404499999998,
+			"lat": -34.29879
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_025549541.jpg",
+			"lon": 150.92469,
+			"lat": -34.300816
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_025659133.jpg",
+			"lon": 150.924914,
+			"lat": -34.301449
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_025929653.jpg",
+			"lon": 150.924097,
+			"lat": -34.301617
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_031044949.jpg",
+			"lon": 150.9177,
+			"lat": -34.304632
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_031300648.jpg",
+			"lon": 150.916466,
+			"lat": -34.3052
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_031620666.jpg",
+			"lon": 150.91785199999998,
+			"lat": -34.305882
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_031652941.jpg",
+			"lon": 150.917913,
+			"lat": -34.306005
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_031658249.jpg",
+			"lon": 150.917963,
+			"lat": -34.306072
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_031812908.jpg",
+			"lon": 150.917837,
+			"lat": -34.306681
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_032316162.jpg",
+			"lon": 150.918446,
+			"lat": -34.309396
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_033849735.jpg",
+			"lon": 150.917033,
+			"lat": -34.317275
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_033940871.jpg",
+			"lon": 150.91741399999998,
+			"lat": -34.317438
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_034013480.jpg",
+			"lon": 150.91791999999998,
+			"lat": -34.317316000000005
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_034242618.jpg",
+			"lon": 150.918312,
+			"lat": -34.317629000000004
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20211023_034425698.jpg",
+			"lon": 150.918969,
+			"lat": -34.317785
+		},
+		{
+			"location": "Thirroul",
+			"type": "train",
+			"description": "Plan your return trip from Thiroul at <a href=\"https://transportnsw.info/trip#/?from=Thiroul\">transportnsw.info</a>.",
+			"lon": 150.918686,
+			"lat": -34.31794799999999
+		}
+	]
+}

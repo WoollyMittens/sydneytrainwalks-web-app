@@ -2,13 +2,13 @@
 	"location": "Grand Canyon",
 	"lon": 150.327468872,
 	"lat": -33.654994965,
-	"description": [
-		"This walk follows the <a href=\"https://www.tripadvisor.com.au/Attraction_Review-g504238-d10769782-Reviews-Braeside_Trail-Blackheath_Blue_Mountains_New_South_Wales.html\">Braeside Trail</a> to the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/grand-canyon-track\">Grand Canyon walk</a>",
-		"and the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/cliff-top-walking-track\">Cliff Top Walking Track</a> from <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/evans-lookout\">Evans Lookout</a> to <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/govetts-leap-lookout\">Govetts Leap</a>.",
-		"The return to the station is possible via the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/visitor-centres/blue-mountains-heritage-centre\">Blue Mountains Heritage Centre</a> or <a href=\"https://www.weekendnotes.com/popes-glen-walk/\">Popes Glenn</a>."
+	"description": "Lorem ipsum dolor sit amet.",
+	"keywords": {
+		"ipsum": "https://external.link/"
+	},
+	"distance": [
+		0
 	],
-	"duration": 7,
-	"distance": 18,
 	"zoom": 13,
 	"rain": false,
 	"fireban": false,
@@ -27,26 +27,6 @@
 			"description": "Get the train to Blackheath using <a href=\"https://transportnsw.info/trip#/?to=Blackheath\">transportnsw.info</a>.",
 			"lon": 150.284362793,
 			"lat": -33.633621216
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.6357,
-			"lon": 150.285457
-		},
-		{
-			"type": "toilet",
-			"lat": -33.646621,
-			"lon": 150.324658
-		},
-		{
-			"type": "toilet",
-			"lat": -33.628026,
-			"lon": 150.31116
-		},
-		{
-			"type": "toilet",
-			"lat": -33.63406,
-			"lon": 150.288373
 		},
 		{
 			"type": "waypoint",

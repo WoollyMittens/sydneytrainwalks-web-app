@@ -2,17 +2,13 @@
 	"location": "Great West Walk",
 	"lon": 150.8404602483,
 	"lat": -33.7761111371,
-	"description": [
-		"This walk follows the <a href=\"https://greatwestwalk.com.au/\">Great West Walk</a> through <a href=\"https://www.parrapark.com.au/\">Parramatta Park</a>,",
-		"the reserves along Toongabbie Creek, the <a href=\"https://www.westernsydneyparklands.com.au/\">Western Sydney Parklands</a>,",
-		"and ending this green stretch in the pleasant <a href=\"https://www.blacktown.nsw.gov.au/Sport-and-recreation/Parks-and-recreation-directory/Nurragingy-Reserve\">Nurragingy Reserve</a>.",
-		"<br/><br/>",
-		"After looping around Mount Druitt the walk continues through <a href=\"https://www.blacktown.nsw.gov.au/Sport-and-recreation/Parks-and-recreation-directory/Whalan-Reserve\">Whalan Reserve</a>,",
-		"and the newly created <a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/wianamatta-nature-reserve\">Wianamatta Nature Reserve</a>.",
-		"Before bridging the remaining distance to Penritch with the <a href=\"https://www.penrithcity.nsw.gov.au/facilities-recreation/outdoor-recreation/great-river-walk\">Great River Walk</a>."
+	"description": "Lorem ipsum dolor sit amet.",
+	"keywords": {
+		"ipsum": "https://external.link/"
+	},
+	"distance": [
+		0
 	],
-	"duration": 14,
-	"distance": 64,
 	"zoom": 13,
 	"rain": true,
 	"fireban": false,
@@ -31,91 +27,6 @@
 			"lon": 151.004827,
 			"type": "train",
 			"description": "Get the train to Parramatta using <a href=\"https://transportnsw.info/trip#/?to=Parramatta Station\">transportnsw.info</a>."
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.766106,
-			"lon": 150.902629
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.762676,
-			"lon": 150.860337
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.78099,
-			"lon": 150.819348
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.769194,
-			"lon": 150.812747
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.732252,
-			"lon": 150.780735
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.751237,
-			"lon": 150.694352
-		},
-		{
-			"type": "toilet",
-			"lat": -33.808202,
-			"lon": 150.993427
-		},
-		{
-			"type": "toilet",
-			"lat": -33.774496,
-			"lon": 150.936176
-		},
-		{
-			"type": "toilet",
-			"lat": -33.768699,
-			"lon": 150.90718
-		},
-		{
-			"type": "toilet",
-			"lat": -33.765982,
-			"lon": 150.902408
-		},
-		{
-			"type": "toilet",
-			"lat": -33.762477,
-			"lon": 150.856474
-		},
-		{
-			"type": "toilet",
-			"lat": -33.762409,
-			"lon": 150.85991
-		},
-		{
-			"type": "toilet",
-			"lat": -33.765232,
-			"lon": 150.860451
-		},
-		{
-			"type": "toilet",
-			"lat": -33.781311,
-			"lon": 150.819381
-		},
-		{
-			"type": "toilet",
-			"lat": -33.732358,
-			"lon": 150.781666
-		},
-		{
-			"type": "toilet",
-			"lat": -33.727248,
-			"lon": 150.772404
-		},
-		{
-			"type": "toilet",
-			"lat": -33.751739,
-			"lon": 150.691777
 		},
 		{
 			"type": "waypoint",
@@ -338,11 +249,11 @@
 			"lat": -33.769622
 		},
 		{
-			"type": "waypoint",
-			"photo": "1030_img_20191019_092941.jpg",
-			"description": "Cross the train tracks at Blacktown Station.",
-			"lon": 150.908344,
-			"lat": -33.767786
+			"location": "Blacktown",
+			"lat": -33.816935,
+			"lon": 151.004827,
+			"type": "train",
+			"description": "Get the train from/to Blacktown using <a href=\"https://transportnsw.info/trip#/?to=Blacktown Station\">transportnsw.info</a>."
 		},
 		{
 			"type": "waypoint",

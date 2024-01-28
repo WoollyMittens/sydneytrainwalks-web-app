@@ -41,7 +41,7 @@ async function parseFiles() {
 			// convert the data into xml dom
 			let xml = new JSDOM(data).window.document;
 			// trim down the route
-			xml = truncateRoute(xml);
+			//xml = truncateRoute(xml);
 			// convert the GPX into geoJson
 			let geojson = toGeoJSON.gpx(xml);
 			let geodata = JSON.stringify(geojson, null,'\t' );

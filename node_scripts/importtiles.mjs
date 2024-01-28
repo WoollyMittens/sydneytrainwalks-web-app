@@ -1,9 +1,9 @@
 /* TILE SERVERS
-// 4UMaps.eu
-const tileTemplate = 'http://4umaps.com/{z}/{x}/{y}.png';
 // OpenStreetMap
-const tileTemplate = 'https://b.tile.openstreetmap.org/{z}/{x}/{y}.png';
-// OpenCycleMap
+const tileTemplate = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
+// Cycle OSM
+const tileTemplate = 'https://c.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png';
+// Cycle Map
 const tileTemplate = 'https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=b3f44588368a4290a39e55433a281e99';
 // Transport
 const tileTemplate = 'https://tile.thunderforest.com/transport/{z}/{x}/{y}.png?apikey=b3f44588368a4290a39e55433a281e99';
@@ -21,6 +21,8 @@ const tileTemplate = 'https://tile.thunderforest.com/pioneer/{z}/{x}/{y}.png?api
 const tileTemplate = 'https://tile.thunderforest.com/mobile-atlas/{z}/{x}/{y}.png?apikey=b3f44588368a4290a39e55433a281e99';
 // Neighbourhood
 const tileTemplate = 'https://tile.thunderforest.com/neighbourhood/{z}/{x}/{y}.png?apikey=b3f44588368a4290a39e55433a281e99';
+// Tracestrack
+const tilesTemplate = 'https://tile.tracestrack.com/topo__/{z}/{x}/{y}.png?key=624f74899b3c279ead8626a61ba7e0d7';
 */
 
 import fs from 'fs';
@@ -28,8 +30,8 @@ import fsp from 'fs/promises';
 import fetch from 'node-fetch';
 import { long2tile, lat2tile, tile2long, tile2lat } from "./slippy.mjs";
 const tilePath = '../src/tiles/{z}/{x}/';
-const tileCache = '../src/tiles/{z}/{x}/{y}.png';
-const tileTemplate = 'http://4umaps.com/{z}/{x}/{y}.png';
+const tileLocal = '../src/tiles/{z}/{x}/{y}.png';
+const tileRemote = 'https://tile.thunderforest.com/landscape/{z}/{x}/{y}.png?apikey=b3f44588368a4290a39e55433a281e99';
 const tileMissing = '../inc/img/missing.png';
 const guidesPath = '../inc/guides/';
 const overviewZoom = 11;
@@ -81,7 +83,7 @@ async function loadCache(path) {
 	for (let file of files) {
 		// import the content
 		let contents = await fsp.readFile(path + file);
-		console.log('cached:', path + file);
+		console.log('imported:', path + file);
 		// add the content to the cache object
 		let key = file.split('.')[0];
 		let data = JSON.parse(contents);
@@ -98,26 +100,23 @@ function generateQueue(guideCache) {
   for (let key of keys) {
     // get the guide from the cache
     let guideData = guideCache[key];
-    // if this map isn't a subset of a larger walk
-    if (!guideData.alias) {
-      // use the appropriate zoom level
-      let zoom = (guideData.key === '_index') ? overviewZoom : mapZoom;
-      // convert the bounds to tiles
-      let minX = long2tile(guideData.bounds.west, zoom);
-      let minY = lat2tile(guideData.bounds.north, zoom);
-      let maxX = long2tile(guideData.bounds.east, zoom);
-      let maxY = lat2tile(guideData.bounds.south, zoom);
-      // create a list of tiles within the map bounds
-      for (let x = minX; x <= maxX; x += 1) {
-        for (let y = minY; y <= maxY; y += 1) {
-          queue.push({
-            path: tilePath.replace('{x}', x).replace('{y}', y).replace('{z}', zoom),
-            local: tileCache.replace('{x}', x).replace('{y}', y).replace('{z}', zoom),
-            remote: tileTemplate.replace('{x}', x).replace('{y}', y).replace('{z}', zoom),
-            x: x - minX,
-            y: y - minY
-          });
-        }
+    // use the appropriate zoom level
+    let zoom = (guideData.key === '_index') ? overviewZoom : mapZoom;
+    // convert the bounds to tiles
+    let minX = long2tile(guideData.bounds.west, zoom);
+    let minY = lat2tile(guideData.bounds.north, zoom);
+    let maxX = long2tile(guideData.bounds.east, zoom);
+    let maxY = lat2tile(guideData.bounds.south, zoom);
+    // create a list of tiles within the map bounds
+    for (let x = minX; x <= maxX; x += 1) {
+      for (let y = minY; y <= maxY; y += 1) {
+        queue.push({
+          path: tilePath.replace('{x}', x).replace('{y}', y).replace('{z}', zoom),
+          local: tileLocal.replace('{x}', x).replace('{y}', y).replace('{z}', zoom),
+          remote: tileRemote.replace('{x}', x).replace('{y}', y).replace('{z}', zoom),
+          x: x - minX,
+          y: y - minY
+        });
       }
     }
   }
@@ -141,12 +140,11 @@ async function importTiles() {
       await fsp.mkdir(tile.path, {recursive: true});
       // download the tile
       let result = await downloadFile(tile.remote, tile.local);
+      console.log('downloaded:', tile.remote, result);
       // or substitute the placeholder
-      console.log('downloaded:', result);
       if (!result) await fsp.copyFile(tileMissing, tile.local);
     } else {
-      // report a cache hit
-      console.log('reused:', tile.local);
+      console.log('cached:', tile.local);
     }
   }
 }

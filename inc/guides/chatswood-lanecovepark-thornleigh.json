@@ -2,13 +2,13 @@
 	"location": "Lane Cove Park",
 	"lon": 151.124542236,
 	"lat": -33.771183014,
-	"description": [
-		"From the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/picnic-areas/koonjeree-picnic-area\">Koonjeree Picnic Area</a> this walk through <a href=\"http://www.nationalparks.nsw.gov.au/lane-cove-national-park\">Lane Cove National Park</a>",
-		"follows the scenic <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/riverside-walking-track\">Riverside Walking Track</a> to the viaduct",
-		"and continues along the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/great-north-walk-lane-cove-national-park\">Great North Walk</a> to the scout camp at Thornleigh."
+	"description": "Lorem ipsum dolor sit amet.",
+	"keywords": {
+		"ipsum": "https://external.link/"
+	},
+	"distance": [
+		0
 	],
-	"duration": 6,
-	"distance": 19,
 	"zoom": 13,
 	"rain": false,
 	"fireban": false,
@@ -27,36 +27,6 @@
 			"description": "Get the train to Chatswood using <a href=\"https://transportnsw.info/trip#/?to=Chatswood\">transportnsw.info</a>.",
 			"lon": 151.177871704,
 			"lat": -33.797264099
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.792096,
-			"lon": 151.152099
-		},
-		{
-			"type": "toilet",
-			"lat": -33.791002,
-			"lon": 151.154874
-		},
-		{
-			"type": "toilet",
-			"lat": -33.735526,
-			"lon": 151.086533
-		},
-		{
-			"type": "toilet",
-			"lat": -33.789734,
-			"lon": 151.146831
-		},
-		{
-			"type": "toilet",
-			"lat": -33.793244,
-			"lon": 151.150729
-		},
-		{
-			"type": "toilet",
-			"lat": -33.792087,
-			"lon": 151.155906
 		},
 		{
 			"type": "waypoint",

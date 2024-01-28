@@ -3,7 +3,7 @@ export class Index {
 		this.config = config;
 		this.searchFor = '';
 		this.searchDelay = null;
-		this.sortBy = 'length';
+		this.sortBy = 'shortest';
 		this.updateView = updateView;
 		this.guidesLookup = this.generateLookup(guideCache['_index']);
 		this.searchForm = document.getElementById('sorting');
@@ -44,8 +44,7 @@ export class Index {
 				.replace(/{startTransport}/g, guide.startTransport)
 				.replace(/{startLocation}/g, guide.startLocation)
 				.replace(/{walkLocation}/g, guide.region)
-				.replace(/{walkDuration}/g, guide.duration)
-				.replace(/{walkDistance}/g, guide.distance)
+				.replace(/{walkDistance}/g, guide.distance.join(' / '))
 				.replace(/{endTransport}/g, guide.endTransport)
 				.replace(/{endLocation}/g, guide.endLocation);
 			// add the menu item
@@ -90,11 +89,12 @@ export class Index {
 			case 'region':
 				sorted = unsorted.sort((a, b) => (this.guidesLookup[a].region < this.guidesLookup[b].region) ? -1 : 1);
 				break;
-			case 'duration':
-				sorted = unsorted.sort((a, b) => (this.guidesLookup[a].duration < this.guidesLookup[b].duration) ? -1 : 1);
+			case 'shortest':
+				console.log('sorting by shortest');
+				sorted = unsorted.sort((a, b) => (Math.min(...this.guidesLookup[a].distance) < Math.min(...this.guidesLookup[b].distance)) ? -1 : 1);
 				break;
-			case 'length':
-				sorted = unsorted.sort((a, b) => (this.guidesLookup[a].distance < this.guidesLookup[b].distance) ? -1 : 1);
+			case 'longest':
+				sorted = unsorted.sort((a, b) => (Math.max(...this.guidesLookup[a].distance) > Math.max(...this.guidesLookup[b].distance)) ? -1 : 1);
 				break;
 			case 'revised':
 				sorted = unsorted.sort((a, b) => (this.guidesLookup[a].revised < this.guidesLookup[b].revised) ? -1 : 1);
@@ -139,14 +139,11 @@ export class Index {
 	}
 
 	mirrorResults(guideIds, sortedIds) {
-		// show/hide markers based on filter results using Array.indexOf()
-		guideIds.map(function(id) {
-			var visibility = (sortedIds.indexOf(id) > -1) ? 'visible' : 'hidden';
-			var elements = document.querySelectorAll('[data-key^="' + id + '"]');
-			for (let element of elements) {
-				element.style.visibility = visibility;
-			}
-		});
+		// show or hide page elements associated with a key, according to the filtered keys
+		const elements = document.querySelectorAll('.localmap [data-key]');
+		for (let element of elements) {
+			element.style.visibility = sortedIds.includes(element.getAttribute('data-key')) ? 'visible' : 'hidden';
+		}
 	}
 
 	onFieldFocus(evt) {

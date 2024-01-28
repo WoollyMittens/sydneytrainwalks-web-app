@@ -1,0 +1,810 @@
+{
+	"key": "_index",
+	"bounds": {
+		"north": -32.54681317351516,
+		"west": 149.94140625,
+		"south": -34.885930940753155,
+		"east": 152.40234375
+	},
+	"markers": [
+		{
+			"key": "annabay-worimi-stockton",
+			"type": "trophy",
+			"lon": 151.908569336,
+			"lat": -32.82862091100001,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Are We There Yet?",
+			"badge": "count_new",
+			"explanation": ["Tin City is a break in the endless monotony of 27 kilometres of beach, but also not."]
+		},
+		{
+			"key": "berowra-crosslands-asquith",
+			"type": "trophy",
+			"lon": 151.1004518811,
+			"lat": -33.646977609,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "It Belongs in a Museum",
+			"badge": "bridge_1",
+			"explanation": ["A historic military bridge, out here as a surprise outdoor museum piece."]
+		},
+		{
+			"key": "blackheath-bluegumforest-blackheath",
+			"type": "trophy",
+			"lon": 150.352814,
+			"lat": -33.603989,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "You've Come a Long Way Baby",
+			"badge": "compas_2",
+			"explanation": [
+				"This is legitimately the middle of nowhere, with only solitude surrounding you. May it comfort you during the long long climb ahead."
+			]
+		},
+		{
+			"key": "blacktown-greatwestwalk-penrith",
+			"type": "trophy",
+			"lon": 150.8404602483,
+			"lat": -33.7761111371,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Go West: Wisteria Gardens",
+			"badge": "compas_1",
+			"explanation": ["A thought for those inside the hospital, along the lush green riverside."]
+		},
+		{
+			"key": "blacktown-greatwestwalk-penrith",
+			"type": "trophy",
+			"lon": 150.8404602483,
+			"lat": -33.7761111371,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Go West: Tempting Shortcut",
+			"badge": "compas_1",
+			"explanation": ["You will be back here on the other side... eventually."]
+		},
+		{
+			"key": "blacktown-greatwestwalk-penrith",
+			"type": "trophy",
+			"lon": 150.8404602483,
+			"lat": -33.7761111371,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Go West: Strolling in the Park",
+			"badge": "compas_1",
+			"explanation": ["A band of green on the way out of the city that feels like breathing a sigh of relief."]
+		},
+		{
+			"key": "blacktown-greatwestwalk-penrith",
+			"type": "trophy",
+			"lon": 150.8404602483,
+			"lat": -33.7761111371,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Go West: Didn't Know It Existed",
+			"badge": "compas_1",
+			"explanation": ["A Chinese Garden surrounded by bushland and seemingly no one the wiser it even exists."]
+		},
+		{
+			"key": "blacktown-greatwestwalk-penrith",
+			"type": "trophy",
+			"lon": 150.8404602483,
+			"lat": -33.7761111371,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Go West: Survived Mount Druitt",
+			"badge": "compas_1",
+			"explanation": [
+				"You climb through a fence to continue the trail, perfectly in keeping with the reputation."
+			]
+		},
+		{
+			"key": "blacktown-greatwestwalk-penrith",
+			"type": "trophy",
+			"lon": 150.8404602483,
+			"lat": -33.7761111371,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Go West: Emus and Bombs",
+			"badge": "compas_1",
+			"explanation": ["There's emus here and there used to be bombs. It's probably best to avoid either."]
+		},
+		{
+			"key": "blacktown-greatwestwalk-penrith",
+			"type": "trophy",
+			"lon": 150.8404602483,
+			"lat": -33.7761111371,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Go West: Weir Almost There",
+			"badge": "compas_1",
+			"explanation": ["This stretch along the river is to celebrate putting most of Sydney behind you in a day."]
+		},
+		{
+			"key": "bundeena-royalnationalpark-loftus",
+			"type": "trophy",
+			"lon": 151.084723,
+			"lat": -34.093615,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Ah! Nice Falls",
+			"badge": "water",
+			"explanation": [
+				"It's rarely more than a trickle, but it's here exclusively for ones as adventurous as you."
+			]
+		},
+		{
+			"key": "bundeena-royalnationalpark-loftus",
+			"type": "trophy",
+			"lon": 151.084723,
+			"lat": -34.093615,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Ding Ding Ding!",
+			"badge": "tramway",
+			"explanation": [
+				"You may be here on the lucky few days there is a historic tram ride to the Sydney Tramway Museum outside the park."
+			]
+		},
+		{
+			"key": "bundeena-royalnationalpark-otford",
+			"type": "trophy",
+			"lon": 151.151459,
+			"lat": -34.055347,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Tadaa!",
+			"badge": "wizard_1",
+			"explanation": ["Even after many kilometres of coast, this place still manages to astonish."]
+		},
+		{
+			"key": "cowan-jerusalembay-brooklyn",
+			"type": "trophy",
+			"lon": 151.19972229,
+			"lat": -33.586273193,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "The Top of the World",
+			"badge": "geography_globe",
+			"explanation": ["Every point is the top, depending on how you rotate it."]
+		},
+		{
+			"key": "cowan-jerusalembay-brooklyn",
+			"type": "trophy",
+			"lon": 151.19972229,
+			"lat": -33.586273193,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Taffy Was Here",
+			"badge": "obelisk",
+			"explanation": ["Not many come here, but Taffy did."]
+		},
+		{
+			"key": "cowan-jerusalembay-brooklyn",
+			"type": "trophy",
+			"lon": 151.19972229,
+			"lat": -33.586273193,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Blink and You'll Miss It ",
+			"badge": "glasses",
+			"explanation": [
+				"You'll be around the hairpin bend downhill, before you realise this hidden view is worth turnning back for."
+			]
+		},
+		{
+			"key": "glenbrook-redhandcave-glenbrook",
+			"type": "trophy",
+			"lon": 150.6128664315,
+			"lat": -33.7998189311,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "I was Promised Kangaroos",
+			"badge": "hovel_1",
+			"explanation": ["Neither campers nor eastern greys can resist these grassy fields."]
+		},
+		{
+			"key": "glenbrook-redhandcave-glenbrook",
+			"type": "trophy",
+			"lon": 150.6128664315,
+			"lat": -33.7998189311,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "So where is it?",
+			"badge": "search",
+			"explanation": ["If you stand around long enough, there will probably be a train."]
+		},
+		{
+			"key": "hornsby-cumberland-parramatta",
+			"type": "trophy",
+			"lon": 151.011638,
+			"lat": -33.758301,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Dammed by Faint Praise",
+			"badge": "bridge_2",
+			"explanation": ["The sudden towering walls make for an unexpected surprise walking along the gully."]
+		},
+		{
+			"key": "katoomba-grandclifftoptrack-wentworthfalls",
+			"type": "trophy",
+			"lon": 150.302277,
+			"lat": -33.730408,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "The Easy Way Out",
+			"badge": "lift_2",
+			"explanation": [
+				"It is a valid excuse to want to experience the scenic ski lift, instead of climbing hundreds of meters out of the valley."
+			]
+		},
+		{
+			"key": "katoomba-kedumbapass-wentworthfalls",
+			"type": "trophy",
+			"lon": 150.372177,
+			"lat": -33.775097,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "None Shall Pass",
+			"badge": "bulldozer",
+			"explanation": [
+				"If you've just walked up the pass, this monument built out of bulldozer fragments will paint a vivid picture of the tragic accident that is memorialised."
+			]
+		},
+		{
+			"key": "lakehaven-munmorah-swansea",
+			"type": "trophy",
+			"lon": 151.600996,
+			"lat": -33.195254,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "The Other Hole",
+			"badge": "sink_bathroom",
+			"explanation": ["Less famous than Kiama's, but they can only wish they had these beaches."]
+		},
+		{
+			"key": "milsonspoint-sydneyharbour-manly",
+			"type": "trophy",
+			"lon": 151.252074,
+			"lat": -33.827475,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "You Belong in the Zoo",
+			"badge": "monkey",
+			"explanation": ["Rarely there is a zoo that is as enjoyable from the outside."]
+		},
+		{
+			"key": "mittagong-boxvale-mittagong",
+			"type": "trophy",
+			"lon": 150.4298116174,
+			"lat": -34.4115753192,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Never Again",
+			"badge": "escalator",
+			"explanation": [
+				"At least they were helpful enough to throw a coil of steel wire down. Heaven forbid it rusts."
+			]
+		},
+		{
+			"key": "mittagong-pictonloop-tahmoor",
+			"type": "trophy",
+			"lon": 150.492184,
+			"lat": -34.345013,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Slow Train to Nowhere: Colo Vale",
+			"badge": "tank_2",
+			"explanation": ["All aboard for a journey down railway history."]
+		},
+		{
+			"key": "mittagong-pictonloop-tahmoor",
+			"type": "trophy",
+			"lon": 150.492184,
+			"lat": -34.345013,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Slow Train to Nowhere: Hilltop",
+			"badge": "tank_2",
+			"explanation": [
+				"Load up on supplies at this stop. The journey is about to get remote, but definitely not off the beaten track."
+			]
+		},
+		{
+			"key": "mittagong-pictonloop-tahmoor",
+			"type": "trophy",
+			"lon": 150.492184,
+			"lat": -34.345013,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Slow Train to Nowhere: Balmoral",
+			"badge": "tank_2",
+			"explanation": ["If the fire station keeps goats, it should count as rural New South Wales."]
+		},
+		{
+			"key": "mittagong-pictonloop-tahmoor",
+			"type": "trophy",
+			"lon": 150.492184,
+			"lat": -34.345013,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Slow Train to Nowhere: Buxton",
+			"badge": "tank_2",
+			"explanation": ["The icecream and snacks from the general store are well deserved by now."]
+		},
+		{
+			"key": "mittagong-pictonloop-tahmoor",
+			"type": "trophy",
+			"lon": 150.492184,
+			"lat": -34.345013,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Slow Train to Nowhere: Couridjah",
+			"badge": "tank_2",
+			"explanation": [
+				"From this remnant historic station, thoughts turn to making our connection at the functional one just over an hour from here on foot."
+			]
+		},
+		{
+			"key": "mtkuringgai-berowra-mtkuringgai",
+			"type": "trophy",
+			"lon": 151.1524827965,
+			"lat": -33.6230559926,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Fireman's Rest",
+			"badge": "flower_3",
+			"explanation": [
+				"A sobering look across this peaceful valley reminds us how treacherous this landscape becomes during bushfires."
+			]
+		},
+		{
+			"key": "mtkuringgai-berowra-mtkuringgai",
+			"type": "trophy",
+			"lon": 151.1524827965,
+			"lat": -33.6230559926,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "The General's Last Stand",
+			"badge": "army_training",
+			"explanation": [
+				"The paddle steamer General Gordon ferried goods and passengers around Broken Bay before the railway joined Brooklyn to Woy Woy.",
+				"Upon retirement she was split up into several house boats, what is left of one you see here."
+			]
+		},
+		{
+			"key": "mtkuringgai-bobbinhead-mtcolah",
+			"type": "trophy",
+			"lon": 151.142303,
+			"lat": -33.688545,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "You Wouldn't Expect this Here",
+			"badge": "pillar",
+			"explanation": ["The story is as remarkable as finding an egyptian monument in the north shore bushland."]
+		},
+		{
+			"key": "mtkuringgai-garigal-roseville",
+			"type": "trophy",
+			"lon": 151.182632,
+			"lat": -33.710854,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "You've Seen More Flowers on the Way Here",
+			"badge": "flowers",
+			"explanation": [
+				"The irony of walking through a national park full of wildflowers to get to a wildflower garden does not diminish it."
+			]
+		},
+		{
+			"key": "mtvictoria-hassanswalls-lithgow",
+			"type": "trophy",
+			"lon": 150.151232,
+			"lat": -33.512355,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "He Wrote Rivulet",
+			"badge": "pen",
+			"explanation": [
+				"For the surveyor it must have been frustrating to see a misunderstading paint the landscape forever."
+			]
+		},
+		{
+			"key": "nelsonbay-tomaree-annabay",
+			"type": "trophy",
+			"lon": 152.179443,
+			"lat": -32.723175,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Tempting, but don't Risk It",
+			"badge": "skull_and_bones",
+			"explanation": ["The impressive view from exactly this dune, make the Fingal Spit look irresistible."]
+		},
+		{
+			"key": "portkembla-grandpacificdrive-kiama",
+			"type": "trophy",
+			"lon": 150.865936,
+			"lat": -34.579792,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "The Train Does Not Stop Here Anymore",
+			"badge": "tank_1",
+			"explanation": [
+				"As tempting as it is to extend the Kiama Coastal Walk through the wetlands here, the next functioning train station is all the way back there somewhere."
+			]
+		},
+		{
+			"key": "portkembla-grandpacificdrive-kiama",
+			"type": "trophy",
+			"lon": 150.865936,
+			"lat": -34.579792,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Too Big for the Photo",
+			"badge": "crop",
+			"explanation": ["It'll never fit in a single view, too wide for your vision to contain."]
+		},
+		{
+			"key": "springwood-bluegumswamp-richmond",
+			"type": "trophy",
+			"lon": 150.609223,
+			"lat": -33.626045,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Shhh, it's a Secret",
+			"badge": "map_2_inv",
+			"explanation": [
+				"Leave a friendly note in the geocache logbook. That it can lie here undisturbed means you're in a special place."
+			]
+		},
+		{
+			"key": "springwood-lostworldlookout-glenbrook",
+			"type": "trophy",
+			"lon": 150.571731567,
+			"lat": -33.750701904,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "X marks the spot",
+			"badge": "church",
+			"explanation": ["It's hard not to look upon this view without reverence."]
+		},
+		{
+			"key": "springwood-lostworldlookout-glenbrook",
+			"type": "trophy",
+			"lon": 150.571731567,
+			"lat": -33.750701904,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Mandatory Foot Bath",
+			"badge": "duck_rubberduck",
+			"explanation": ["Maybe you can jump it, but who would want to finish their walk in wet shoes."]
+		},
+		{
+			"key": "teralba-fernleightrack-broadmeadow",
+			"type": "trophy",
+			"lon": 151.6784999426,
+			"lat": -33.0296226963,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "I'm a Choo Choo Train: Belmont",
+			"badge": "railroad",
+			"explanation": ["The end of the Fernleigh railway line, but also the start of an historic trek."]
+		},
+		{
+			"key": "teralba-fernleightrack-broadmeadow",
+			"type": "trophy",
+			"lon": 151.6784999426,
+			"lat": -33.0296226963,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "I'm a Choo Choo Train: Jewells",
+			"badge": "railroad",
+			"explanation": ["The wetlands make a lush green tunnel from here to Belmont."]
+		},
+		{
+			"key": "teralba-fernleightrack-broadmeadow",
+			"type": "trophy",
+			"lon": 151.6784999426,
+			"lat": -33.0296226963,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "The Rear Entrance",
+			"badge": "enter",
+			"explanation": ["The narrow tunnel of dense vegetation opens up to expansive coastal heath."]
+		},
+		{
+			"key": "tuggerah-wyrrabalong-wyong",
+			"type": "trophy",
+			"lon": 151.549835,
+			"lat": -33.275192,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "All Jetties Short and Long: Berkeley Vale",
+			"badge": "elevation_5",
+			"explanation": ["You might have to fight the pelicans for this one."]
+		},
+		{
+			"key": "tuggerah-wyrrabalong-wyong",
+			"type": "trophy",
+			"lon": 151.549835,
+			"lat": -33.275192,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "All Jetties Short and Long: Parry's Jetty",
+			"badge": "elevation_5",
+			"explanation": ["The third and last chance for a long jetty."]
+		},
+		{
+			"key": "tuggerah-wyrrabalong-wyong",
+			"type": "trophy",
+			"lon": 151.549835,
+			"lat": -33.275192,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "All Jetties Short and Long: Watkin's Jetty",
+			"badge": "elevation_5",
+			"explanation": ["It's not as long, but also not as busy."]
+		},
+		{
+			"key": "tuggerah-wyrrabalong-wyong",
+			"type": "trophy",
+			"lon": 151.549835,
+			"lat": -33.275192,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "All Jetties Short and Long: Long Jetty",
+			"badge": "elevation_5",
+			"explanation": ["Walking down this endless jetty feels like being wrapped in a blank sheet of paper."]
+		},
+		{
+			"key": "tuggerah-wyrrabalong-wyong",
+			"type": "trophy",
+			"lon": 151.549835,
+			"lat": -33.275192,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "All Jetties Short and Long: The Entrance",
+			"badge": "elevation_5",
+			"explanation": ["A nice quiet waterway to prepare for the tourist bustle of the Entrance."]
+		},
+		{
+			"key": "tuggerah-wyrrabalong-wyong",
+			"type": "trophy",
+			"lon": 151.549835,
+			"lat": -33.275192,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Four Seasons in One Day: Rainforest",
+			"badge": "day_rain",
+			"explanation": [
+				"A green sky overhead as the rainforest covers the entire sky.",
+				"Once all of Central Coast was painted with the paints on this small pallete."
+			]
+		},
+		{
+			"key": "tuggerah-wyrrabalong-wyong",
+			"type": "trophy",
+			"lon": 151.549835,
+			"lat": -33.275192,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Four Seasons in One Day: Red Gum Forest",
+			"badge": "day_rain",
+			"explanation": [
+				"A streak of vivid red and orange across the sandy ridge.",
+				"Once all of Central Coast was painted with the paints on this small pallete."
+			]
+		},
+		{
+			"key": "tuggerah-wyrrabalong-wyong",
+			"type": "trophy",
+			"lon": 151.549835,
+			"lat": -33.275192,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Four Seasons in One Day: Wetlands",
+			"badge": "day_rain",
+			"explanation": [
+				"A short stretch of wetland makes a lush green welcome mat.",
+				"Once all of Central Coast was painted with the paints on this small pallete."
+			]
+		},
+		{
+			"key": "tuggerah-wyrrabalong-wyong",
+			"type": "trophy",
+			"lon": 151.549835,
+			"lat": -33.275192,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "All Jetties Short and Long: Gorokan",
+			"badge": "elevation_5",
+			"explanation": ["That bridge will cut 20 kilometres off your loop around the lake. Tempting?"]
+		},
+		{
+			"key": "tuggerah-wyrrabalong-wyong",
+			"type": "trophy",
+			"lon": 151.549835,
+			"lat": -33.275192,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "All Jetties Short and Long: Tacoma",
+			"badge": "elevation_5",
+			"explanation": ["It takes a day to walk around the lake to the side of the Wyong River across from here."]
+		},
+		{
+			"key": "waterfall-heathcote-sutherland",
+			"type": "trophy",
+			"lon": 151.034806,
+			"lat": -34.104466,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "You Turn Me Right Round",
+			"badge": "rotate_cw_1",
+			"explanation": ["Clockwise or counter, both ways lead to icecream below."]
+		},
+		{
+			"key": "waterfall-ladycarringtondrive-loftus",
+			"type": "trophy",
+			"lon": 151.040833,
+			"lat": -34.126251,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Fill Her Up",
+			"badge": "station_petrol",
+			"explanation": ["A spring to rest your horses, or just your legs."]
+		},
+		{
+			"key": "waterfall-royalnationalpark-bundeena",
+			"type": "trophy",
+			"lon": 151.079605,
+			"lat": -34.15308399999999,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "It Looked Like a Shortcut",
+			"badge": "play_ping_pong",
+			"explanation": ["It's the road less travelled. Maybe for good reason."]
+		},
+		{
+			"key": "wollicreek-kamaybotanybay-cronulla",
+			"type": "trophy",
+			"lon": 151.223206,
+			"lat": -34.008038,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "The Guiding Light",
+			"badge": "lamp_on",
+			"explanation": [
+				"The light is a warning not to sail a ship into the steep cliffs of the coast. Let it be a reminder not to fall off the same."
+			]
+		},
+		{
+			"key": "woywoy-5landswalk-tuggerah",
+			"type": "trophy",
+			"lon": 151.435593,
+			"lat": -33.46534399999999,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Take Five: Macmaster",
+			"badge": "map_3",
+			"explanation": ["Secluded enough to wonder where everyone else is instead."]
+		},
+		{
+			"key": "woywoy-5landswalk-tuggerah",
+			"type": "trophy",
+			"lon": 151.435593,
+			"lat": -33.46534399999999,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Take Five: Copacabana",
+			"badge": "map_3",
+			"explanation": ["The climb up the headland will make you appreciate the shady beach below."]
+		},
+		{
+			"key": "woywoy-5landswalk-tuggerah",
+			"type": "trophy",
+			"lon": 151.435593,
+			"lat": -33.46534399999999,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Take Five: Avoca",
+			"badge": "map_3",
+			"explanation": ["Too tempting to hang around for a while."]
+		},
+		{
+			"key": "woywoy-5landswalk-tuggerah",
+			"type": "trophy",
+			"lon": 151.435593,
+			"lat": -33.46534399999999,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Take Five: North Avoca",
+			"badge": "map_3",
+			"explanation": ["On a hot day, the next climb might end it all."]
+		},
+		{
+			"key": "woywoy-5landswalk-tuggerah",
+			"type": "trophy",
+			"lon": 151.435593,
+			"lat": -33.46534399999999,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Take Five: Terrigal",
+			"badge": "map_3",
+			"explanation": [
+				"A boulevard so full of icecream and treats, but the hilltop lookout on the horizon beckons."
+			]
+		},
+		{
+			"key": "woywoy-5landswalk-tuggerah",
+			"type": "trophy",
+			"lon": 151.435593,
+			"lat": -33.46534399999999,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Four Seasons in One Day: Coastal Heathland",
+			"badge": "day_rain",
+			"explanation": [
+				"The dense olive green heath opens up to the blues of open ocean and sky.",
+				"Once all of Central Coast was painted with the paints on this small pallete."
+			]
+		},
+		{
+			"key": "woywoy-mountelliot-lisarow",
+			"type": "trophy",
+			"lon": 151.379486,
+			"lat": -33.418396,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "A Whale of a Time",
+			"badge": "fish",
+			"explanation": ["One of the few remaining Krillz not pillz graffiti dotted around Central Coast."]
+		},
+		{
+			"key": "woywoy-mountelliot-lisarow",
+			"type": "trophy",
+			"lon": 151.379486,
+			"lat": -33.418396,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "Pretty but still Gosford",
+			"badge": "factory_2",
+			"explanation": ["The prettiest side of Gosford, makes you suffer the climb to get here."]
+		},
+		{
+			"key": "woywoy-mountelliot-lisarow",
+			"type": "trophy",
+			"lon": 151.379486,
+			"lat": -33.418396,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "The Last Man Standing",
+			"badge": "registered_user",
+			"explanation": [
+				"There used to be 4 explorers dotted around this park. Only this one was hidden well enough from vandals."
+			]
+		},
+		{
+			"key": "woywoy-mtwondabyne-gosford",
+			"type": "trophy",
+			"lon": 151.281769,
+			"lat": -33.551674,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "I Can See My House from Here",
+			"badge": "house_3",
+			"explanation": ["Let the tourists enjoy the fenced lookout. Welcome to the club of locals who know better."]
+		},
+		{
+			"key": "woywoy-mtwondabyne-gosford",
+			"type": "trophy",
+			"lon": 151.281769,
+			"lat": -33.551674,
+			"radius": 0.0004,
+			"description": "<center>Visit this location to earn the mystery trophy</center>",
+			"title": "The View is Garbage",
+			"badge": "bag_bagful",
+			"explanation": ["With luck the wind is blowing away from it."]
+		}
+	]
+}

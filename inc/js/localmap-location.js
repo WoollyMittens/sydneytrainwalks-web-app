@@ -66,7 +66,6 @@ export class Location {
 	checkHotSpot(lon, lat) {
 		var config = this.config;
 		// for every marker
-		console.log('checking for hotspots');
 		config.hotspots.map((marker) => {
 			// if the marker just entered the hotspot
 			if (lon > marker.minLon && lon < marker.maxLon && lat > marker.minLat && lat < marker.maxLat && this.hotspot !== marker.title) {

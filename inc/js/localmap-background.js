@@ -6,6 +6,7 @@ export class Background {
 		this.container = container;
 		this.onComplete = onComplete;
 		this.element = null;
+		this.tile = null;
 		this.image = new Image();
 		this.tilesQueue = null;
 		this.tilesSize = 256;
@@ -17,14 +18,10 @@ export class Background {
 		this.element = document.createElement("div");
 		this.element.setAttribute("class", "localmap-background");
 		this.container.appendChild(this.element);
-		// load the map as tiles
-		if (this.config.tilesUrl) {
-			this.loadTiles();
-		}
-		// or load the map as a bitmap
-		else {
-			this.loadBitmap();
-		}
+		// load the tiles if available
+		if (this.config.tilesUrl) this.loadTiles();
+		// load the map image if available
+		if (this.config.mapUrl) this.loadBitmap();
 		// catch window resizes
 		window.addEventListener("resize", this.redraw.bind(this));
 	}
@@ -45,6 +42,7 @@ export class Background {
 		// load the map as a bitmap
 		this.image.addEventListener("load", this.onBitmapLoaded.bind(this));
 		this.image.setAttribute("src", this.config.mapUrl);
+		this.image.setAttribute("class", "localmap-bitmap");
 	}
 
 	drawBitmap() {
@@ -171,10 +169,10 @@ export class Background {
 			return b.d + b.r - (a.d + a.r);
 		});
 		// load the first tile
-		this.image = new Image();
-		this.image.addEventListener("load", this.onTileLoaded.bind(this));
-		this.image.addEventListener("error", this.onTileError.bind(this));
-		this.image.setAttribute("src", this.tilesQueue[this.tilesQueue.length - 1].url);
+		this.tile = new Image();
+		this.tile.addEventListener("load", this.onTileLoaded.bind(this));
+		this.tile.addEventListener("error", this.onTileError.bind(this));
+		this.tile.setAttribute("src", this.tilesQueue[this.tilesQueue.length - 1].url);
 		// redraw the component
 		this.redraw();
 		// resolve the promise
@@ -198,7 +196,7 @@ export class Background {
 		// if there's more tiles in the queue
 		if (this.tilesQueue.length > 0) {
 			// load the next tile
-			this.image.setAttribute("src", this.tilesQueue[this.tilesQueue.length - 1].url);
+			this.tile.setAttribute("src", this.tilesQueue[this.tilesQueue.length - 1].url);
 		}
 	}
 

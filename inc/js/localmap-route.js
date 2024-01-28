@@ -51,19 +51,20 @@ export class Route {
 		var x, y;
 		// for every segment
 		var line, points, track;
-		var increments = this.tracks.length > 10 ? 10 : 1;
+		var increments = this.tracks.length > 20 ? 10 : 1;
 		var stroke = 4 / this.config.position.zoom;
 		for (var a = 0, b = this.tracks.length; a < b; a += 1) {
 			track = this.tracks[a];
 			// create a new line
 			line = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
 			line.setAttribute("data-key", track.name);
+			line.setAttribute("data-track", track.name);
 			line.setAttribute("fill", "none");
 			line.setAttribute("stroke", this.config.supportColour(track.name));
 			line.setAttribute("stroke-width", stroke);
 			line.setAttribute("stroke-linejoin", "miter");
 			line.setAttribute("stroke-miterlimit", 1);
-			if (this.tracks.length > 10) line.setAttribute("stroke-dasharray", stroke + " " + stroke);
+			if (this.tracks.length > 20) line.setAttribute("stroke-dasharray", stroke + " " + stroke);
 			// draw the line along the track
 			points = "";
 			for (var c = 0, d = track.coordinates.length; c < d; c += increments) {
@@ -85,7 +86,7 @@ export class Route {
 		var lines = this.element.querySelectorAll("polyline");
 		for (var a = 0, b = lines.length; a < b; a += 1) {
 			lines[a].setAttribute("stroke-width", stroke);
-			if (lines.length > 10) lines[a].setAttribute("stroke-dasharray", stroke + " " + stroke);
+			if (lines.length > 20) lines[a].setAttribute("stroke-dasharray", stroke + " " + stroke);
 		}
 	}
 
@@ -98,11 +99,11 @@ export class Route {
 		var coordinates = [];
 		for (var a = 0, b = features.length; a < b; a += 1) {
 			name = features[a].properties.name;
-			if (features[a].geometry.coordinates[0][0] instanceof Array) {
-				coordinates = [].concat.apply([], features[a].geometry.coordinates);
-			} else {
-				coordinates = features[a].geometry.coordinates;
-			}
+			// untangle the coordinates if they are wrapped in an extra array
+			if (features[a].geometry.coordinates[0][0] instanceof Array) { coordinates = [].concat.apply([], features[a].geometry.coordinates); }
+			// otherwise just use the coordinated
+			else { coordinates = features[a].geometry.coordinates; }
+			// add the track
 			this.tracks.push({
 				name: name,
 				coordinates: coordinates,

@@ -1,0 +1,835 @@
+{
+	"location": "Wyrrabalong",
+	"lon": 151.435593,
+	"lat": -33.46534399999999,
+	"description": "Lorem ipsum dolor sit amet.",
+	"keywords": {
+		"ipsum": "https://external.link/"
+	},
+	"distance": [
+		0
+	],
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "woywoy-5landswalk-tuggerah",
+	"updated": "2018-05-04",
+	"bounds": {
+		"west": 151.3037109375,
+		"north": -33.293803558346596,
+		"east": 151.50146484375,
+		"south": -33.54139466898275
+	},
+	"markers": [
+		{
+			"location": "Woy Woy",
+			"type": "train",
+			"description": "Get the train to Woy Woy using <a href=\"https://transportnsw.info/trip#/?to=Woy Woy\">transportnsw.info</a>.",
+			"lon": 151.323418,
+			"lat": -33.48543
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1242.jpg",
+			"lon": 151.323614649999,
+			"lat": -33.48564475,
+			"description": "Exit the station across the pedestrian ramp."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1243.jpg",
+			"lon": 151.32367785993017,
+			"lat": -33.48551828998585,
+			"description": "Cross Brisbane Water drive and follow it left to the ferry dock."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1251.jpg",
+			"lon": 151.3314414600551,
+			"lat": -33.4852009699846,
+			"description": "From the ferry dock follow the bike path right along the shore front."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1273_dsc_1284.jpg",
+			"lon": 151.3363810800005,
+			"lat": -33.48514015998916,
+			"description": "Cross Lions Park and continue along the waterfront."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1327.jpg",
+			"lon": 151.33110377001043,
+			"lat": -33.49998078991855,
+			"description": "At the end of the bike path, continue along the grass along the water."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1334.jpg",
+			"lon": 151.33496523999517,
+			"lat": -33.502391939994915,
+			"description": "Follow the road from boat ramp car park to Orange Grove Road."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1335.jpg",
+			"lon": 151.33465903999675,
+			"lat": -33.502790480010695,
+			"description": "Turn left onto Orange Grove Road and follow it along Blackwall Mountain."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1340.jpg",
+			"lon": 151.34233337994036,
+			"lat": -33.50753365003959,
+			"description": "Turn left to remain on Orange Grove Road before the underpass."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1341.jpg",
+			"lon": 151.34401787994892,
+			"lat": -33.50812427998252,
+			"description": "Take the rough path on the right up to Empire Bay Drive."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1343.jpg",
+			"lon": 151.34450636999185,
+			"lat": -33.508252669991826,
+			"description": "Cross Empire Bay Drive and follow it left to the bridge."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1344.jpg",
+			"lon": 151.345056849986,
+			"lat": -33.50821116998502,
+			"description": "Cross the bridge across Brisbane Water."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1358.jpg",
+			"lon": 151.34826359993838,
+			"lat": -33.50572091998927,
+			"description": "On the other side of the bridge, take the ramp down to Daley Ave."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1363.jpg",
+			"lon": 151.35224367000555,
+			"lat": -33.505372179997586,
+			"description": "Follow Daley Ave past the house along the hillside."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1364.jpg",
+			"lon": 151.35279999001696,
+			"lat": -33.50880150003394,
+			"description": "Turn left onto Fisherman's Trail and follow it uphill."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1365.jpg",
+			"lon": 151.35349950002941,
+			"lat": -33.50903343000593,
+			"description": "At the junction, follow the trail left as it zigzags up the ridge."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1366.jpg",
+			"lon": 151.35592535995653,
+			"lat": -33.50611265004617,
+			"description": "At the intersection at the top of the ridge, follow the firetrail to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1368.jpg",
+			"lon": 151.35721646997698,
+			"lat": -33.50563985000315,
+			"description": "At the next intersection, follow Daley's Point Trail to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1372.jpg",
+			"lon": 151.3690812600132,
+			"lat": -33.5135928999539,
+			"description": "Exit the trail through the gate at the Wards Hill  carpark."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1373.jpg",
+			"lon": 151.3693633499948,
+			"lat": -33.513837050078244,
+			"description": "Cross Wards Hill Road and continue down Maitland Bay Drive."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1374.jpg",
+			"lon": 151.38209259999113,
+			"lat": -33.519621299977906,
+			"description": "Maitland Bay Drive ends at the Boudi National Park visitor centre."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1376.jpg",
+			"lon": 151.38271766993725,
+			"lat": -33.52003918999678,
+			"description": "From the car park follow the steps down to Maitland Bay."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1398.jpg",
+			"lon": 151.38394753000063,
+			"lat": -33.52080700999672,
+			"description": "Continue on past the intersection to the Bullimah Spur."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1401.jpg",
+			"lon": 151.38943126001757,
+			"lat": -33.52264436998428,
+			"description": "At the intersection with the coastal walk, continue left down to Maitland Bay."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1404_dsc_1407.jpg",
+			"lon": 151.39093839999998,
+			"lat": -33.52266649995832,
+			"description": "At Maitland Bay, follow the beach to the other side."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1416.jpg",
+			"lon": 151.39629761003908,
+			"lat": -33.52518633007041,
+			"description": "Ascend the sandstone staircase up the headland."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1424.jpg",
+			"lon": 151.39879884004884,
+			"lat": -33.52597365000591,
+			"description": "At the intersection follow the coastal walk right to Little Beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1435.jpg",
+			"lon": 151.41079015002092,
+			"lat": -33.518498350000336,
+			"description": "At intersections with side trails, follow the signs to Little Beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1437.jpg",
+			"lon": 151.41532556001337,
+			"lat": -33.51458862000392,
+			"description": "At the last intersection continue left down the smaller Old Quarry bush trail."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1433.jpg",
+			"lon": 151.40792498004788,
+			"lat": -33.52324211003456,
+			"description": "From the end of the coastal walk folow the Bombi Moor Firetrail."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1438.jpg",
+			"lon": 151.4150605500821,
+			"lat": -33.51116822002924,
+			"description": "At the intersection follow Little Beach Trail to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1439.jpg",
+			"lon": 151.41777304999835,
+			"lat": -33.510394919972164,
+			"description": "At the Little Beach campground, cross the stepstones across the creek."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1450.jpg",
+			"lon": 151.41832055998364,
+			"lat": -33.5104933400142,
+			"description": "Follow the coastal walk sign up the next headland."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1451.jpg",
+			"lon": 151.41990776000677,
+			"lat": -33.5088872900145,
+			"description": "Head left down the firetrail at the top of the headland."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1454.jpg",
+			"lon": 151.42114011999772,
+			"lat": -33.50645854001323,
+			"description": "Take the left track at the intersection with the 72 Trail."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1456.jpg",
+			"lon": 151.42258220996732,
+			"lat": -33.50551786002258,
+			"description": "Continue left past the second point trail."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1457.jpg",
+			"lon": 151.42298632999461,
+			"lat": -33.50506294999027,
+			"description": "Pass the gate at the end of the firetrail and continue along Beachview Esplanade."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1458.jpg",
+			"lon": 151.4215221200175,
+			"lat": -33.5033331299821,
+			"description": "At the intersection with Ocean Drive take the footpath between the houses on the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1459.jpg",
+			"lon": 151.4214471300071,
+			"lat": -33.502933009981724,
+			"description": "Continue down the bush trail behind the houses."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1460.jpg",
+			"lon": 151.42341713999332,
+			"lat": -33.501534269987125,
+			"description": "Pass the gate at the end of the trail and continue down Macmasters Parade."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1461.jpg",
+			"lon": 151.42367586997872,
+			"lat": -33.50051025999767,
+			"description": "At the corner take the steps down to Marine Parade on the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1462.jpg",
+			"lon": 151.4241854800024,
+			"lat": -33.50009166000009,
+			"description": "From Marine Parade use the beach access."
+		},
+		{
+			"title": "Take Five: Macmaster",
+			"badge": "map_3",
+			"lon": 151.4250983993459,
+			"lat": -33.49977581191715,
+			"radius": 0.0004,
+			"explanation": [
+				"Secluded enough to wonder where everyone else is instead."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to earn the mystery trophy</center>"
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1463_dsc_1466.jpg",
+			"lon": 151.42453431002366,
+			"lat": -33.50012397999963,
+			"description": "Follow the beach towards Copacabana on the other side."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1468.jpg",
+			"lon": 151.42820496999613,
+			"lat": -33.49411835999723,
+			"description": "After long periods of rain, the lagoon may be flooded and it'll be nessecary to wade across."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1469.jpg",
+			"lon": 151.43202228009258,
+			"lat": -33.49141468005019,
+			"description": "Leave the beach at the Copacabana Surf Club."
+		},
+		{
+			"title": "Take Five: Copacabana",
+			"badge": "map_3",
+			"lon": 151.4322736016543,
+			"lat": -33.49130593248137,
+			"radius": 0.0004,
+			"explanation": [
+				"The climb up the headland will make you appreciate the shady beach below."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to earn the mystery trophy</center>"
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1471.jpg",
+			"lon": 151.4327679599958,
+			"lat": -33.49019069999865,
+			"description": "Continue right down Del Monte Place along the beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1477.jpg",
+			"lon": 151.44172322995905,
+			"lat": -33.49048952002494,
+			"description": "Continue straight past the two roundabouts and follow the road uphill."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1478.jpg",
+			"lon": 151.4427364300167,
+			"lat": -33.48803576000293,
+			"description": "<i>+ 0.25h / 0km</i> Turn right at the top to visit Captain Cook Lookout.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1479_dsc_1481.jpg",
+			"lon": 151.44382263998006,
+			"lat": -33.487620220004786,
+			"description": "A bushtrail continues from the far end of the plaform between the fence and the warning sign in the photo.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1480_dsc_9107.jpg",
+			"lon": 151.44622910998834,
+			"lat": -33.48584130000768,
+			"description": "The trail leads to a staircase down into Winnie Bay.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1480_dsc_9113.jpg",
+			"lon": 151.44504095004095,
+			"lat": -33.48474177999656,
+			"description": "Follow the scaircase down and follow the path through the gully.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1489.jpg",
+			"lon": 151.4403898400156,
+			"lat": -33.48451677999815,
+			"description": "Continue down Del Monte Place and take the footpath into Captain Cook Park on the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1490.jpg",
+			"lon": 151.44013663999007,
+			"lat": -33.484133409992786,
+			"description": "Follow the steps down to Winnie Bay."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1491.jpg",
+			"lon": 151.44206648994918,
+			"lat": -33.482965249962916,
+			"description": "At the end of the steps cross Winnie Bay along the firetrail."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1501.jpg",
+			"lon": 151.439109349984,
+			"lat": -33.480562920003685,
+			"description": "Past the waste water outlet, take the firetrail zigzag up the ridge."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1502.jpg",
+			"lon": 151.43730738999994,
+			"lat": -33.47838506001031,
+			"description": "Continue past the water tank at the top of the ridge."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1503.jpg",
+			"lon": 151.43694990997943,
+			"lat": -33.47778213996386,
+			"description": "Cross Endeavour Drive and find the steps down to Avoca between the houses."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1506.jpg",
+			"lon": 151.43726355999712,
+			"lat": -33.47584841008772,
+			"description": "Follow the steps all the way down, crossing the intersecting streets several times along the way."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1509.jpg",
+			"lon": 151.43772508001828,
+			"lat": -33.47331503996398,
+			"description": "At the bottom of the steps, entry the grassy reserve behind the surf club."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1510.jpg",
+			"lon": 151.43740574001126,
+			"lat": -33.47205579999457,
+			"description": "From the park, cross the surf club car park."
+		},
+		{
+			"title": "Take Five: Avoca",
+			"badge": "map_3",
+			"lon": 151.4362250820089,
+			"lat": -33.47007483535211,
+			"radius": 0.0004,
+			"explanation": [
+				"Too tempting to hang around for a while."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to earn the mystery trophy</center>"
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1511_dsc_1519.jpg",
+			"lon": 151.43741,
+			"lat": -33.47067969000271,
+			"description": "Continue up Avoca beach from the surf club."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1521.jpg",
+			"lon": 151.43524496000225,
+			"lat": -33.467339340000166,
+			"description": "After wet weather Avoca lagoon may require wading as well."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1522.jpg",
+			"lon": 151.43984867997426,
+			"lat": -33.45898912003826,
+			"description": "Leave the beach at North Avoca's surf club."
+		},
+		{
+			"title": "Take Five: North Avoca",
+			"badge": "map_3",
+			"lon": 151.4399891431909,
+			"lat": -33.45869036154423,
+			"radius": 0.0004,
+			"explanation": [
+				"On a hot day, the next climb might end it all."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to earn the mystery trophy</center>"
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1524.jpg",
+			"lon": 151.43952953997405,
+			"lat": -33.45774164002132,
+			"description": "Continue right up North Avoca Parade."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1525.jpg",
+			"lon": 151.44099237005247,
+			"lat": -33.45613010999925,
+			"description": "Turn right at The Arena and start the zigzag road up the ridge."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1530.jpg",
+			"lon": 151.44318801004394,
+			"lat": -33.453685399996424,
+			"description": "At the top cross the Scenic Highway and head down Kurawyba Ave."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1536.jpg",
+			"lon": 151.44088411000004,
+			"lat": -33.45079700999903,
+			"description": "At the end of Kurawyba Ave follow the narrow footpath down between the houses."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1537.jpg",
+			"lon": 151.44094226997527,
+			"lat": -33.44976487001497,
+			"description": "At the intersection follow Kurawyba Ave to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1538.jpg",
+			"lon": 151.4425228800229,
+			"lat": -33.44925454998753,
+			"description": "Follow Kurawyba Ave all the way to Terrigal Beach."
+		},
+		{
+			"title": "Take Five: Terrigal",
+			"badge": "map_3",
+			"lon": 151.4443530972331,
+			"lat": -33.44606426360688,
+			"radius": 0.0004,
+			"explanation": [
+				"A boulevard so full of icecream and treats, but the hilltop lookout on the horizon beckons."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to earn the mystery trophy</center>"
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1543.jpg",
+			"lon": 151.44405585996955,
+			"lat": -33.4456093199995,
+			"description": "Follow the esplanade left and continue along the beach towards Wamberal Lagoon."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1549.jpg",
+			"lon": 151.44873338987844,
+			"lat": -33.429662309999095,
+			"description": "After wet weather it may be nessecary to wade through Wamberal Lagoon."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1550.jpg",
+			"lon": 151.4526482699805,
+			"lat": -33.426464020002435,
+			"description": "Continue past Wamberal Lagoon to Forester Beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1552.jpg",
+			"lon": 151.45830377005032,
+			"lat": -33.42039215999659,
+			"description": "Find the steps up from the beach at the next headland."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1554.jpg",
+			"lon": 151.45849619000288,
+			"lat": -33.41875113001315,
+			"description": "From the beach access follow Spoon Bay Road."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1555.jpg",
+			"lon": 151.4585120599739,
+			"lat": -33.41722370000179,
+			"description": "Turn right up Kalakau Ave."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1558.jpg",
+			"lon": 151.46626278003308,
+			"lat": -33.41016018003707,
+			"description": "Follow Kalakau Road past Forester Beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1559.jpg",
+			"lon": 151.46714571000302,
+			"lat": -33.40908293006927,
+			"description": "After the bend turn right down North Scenic Road."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1561.jpg",
+			"lon": 151.47413102992542,
+			"lat": -33.40548588001479,
+			"description": "Pass the gate and continue past the radio tower into Wyrrabalong National Park."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1560.jpg",
+			"lon": 151.4689876600024,
+			"lat": -33.408168489990324,
+			"description": "Follow North Scenic Road towards the radio tower at the top. The last section is narrow and steep. Be mindful of descending cars."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1573.jpg",
+			"lon": 151.47598856990962,
+			"lat": -33.404885380000444,
+			"description": "Follow the coastal walk to Crackneck Lookout."
+		},
+		{
+			"title": "Four Seasons in One Day: Coastal Heathland",
+			"badge": "day_rain",
+			"lon": 151.4805944,
+			"lat": -33.3983333,
+			"radius": 0.0004,
+			"explanation": [
+				"The dense olive green heath opens up to the blues of open ocean and sky.",
+				"Once all of Central Coast was painted with the paints on this small pallete."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to earn the mystery trophy</center>"
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1589.jpg",
+			"lon": 151.48055209994683,
+			"lat": -33.3984269300284,
+			"description": "At side trails, continue following the signs for the Coastal Walk."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1591.jpg",
+			"lon": 151.48257159994003,
+			"lat": -33.394758900013905,
+			"description": "Cross the car park at Crackneck Lookout."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1593.jpg",
+			"lon": 151.48284404013177,
+			"lat": -33.393960700101594,
+			"description": "Across the lookout carpark follow the steps down to Bateau Bay."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1594.jpg",
+			"lon": 151.4816302299806,
+			"lat": -33.39171350004297,
+			"description": "Follow the trail markers to Bateau Bay Beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1598.jpg",
+			"lon": 151.4818817199998,
+			"lat": -33.38460978999807,
+			"description": "Follow the footpath along Bateau Bay Beach and the picnic areas."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1607.jpg",
+			"lon": 151.48407674000012,
+			"lat": -33.38195364001147,
+			"description": "From the other side of the picnic areas, continue down the trail to the holiday park."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1611.jpg",
+			"lon": 151.48430737000035,
+			"lat": -33.37899262997677,
+			"description": "From the end of the trail, follow Bateau Bay Road past the holiday park."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1613.jpg",
+			"lon": 151.48462491999956,
+			"lat": -33.37696973004439,
+			"description": "At the intersection with Shelly Beach Road, follow Bateau Bay Road left past the caravans."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1615.jpg",
+			"lon": 151.48268381004766,
+			"lat": -33.37426085992908,
+			"description": "At the roundabout follow Yakalla Road Left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1616.jpg",
+			"lon": 151.47573892999765,
+			"lat": -33.3729707700035,
+			"description": "Cross The Entrance Road at the traffic lights and follow it right along the footpath towards the Entrance."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1617.jpg",
+			"lon": 151.4753128,
+			"lat": -33.369567209987146,
+			"description": "At the next roundabout, follow Wyong Road to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1618.jpg",
+			"lon": 151.47415675001113,
+			"lat": -33.36898654999862,
+			"description": "Cross Wyong Road at the traffic lights and turn right down McLean Street."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1620.jpg",
+			"lon": 151.4733576700172,
+			"lat": -33.365961479960454,
+			"description": "Turn left at the end of McLean Street and start following the bike path along the lake."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1621.jpg",
+			"lon": 151.4725932099976,
+			"lat": -33.365764569983874,
+			"description": "Follow the combined bike and footpath all the way  along lake Tuggerah"
+		},
+		{
+			"title": "All Jetty's Short and Long: Berkeley Vale",
+			"badge": "elevation_5",
+			"lon": 151.4385593687707,
+			"lat": -33.3407906027926,
+			"radius": 0.0004,
+			"explanation": [
+				"You might have to fight the pelicans for this one."
+			],
+			"type": "hotspot",
+			"description": "<center>Visit this location to earn the mystery trophy</center>"
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1633.jpg",
+			"lon": 151.44129684004474,
+			"lat": -33.329691099962844,
+			"description": "The bike path leaves the lake at Chittaway Lions Park. Cross the road follow the footpath right for a short distance."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1634.jpg",
+			"lon": 151.44126817005179,
+			"lat": -33.329196130022474,
+			"description": "Turn left at the artificial wetlands and follow the footpath along the creek."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1635.jpg",
+			"lon": 151.43357997999766,
+			"lat": -33.32730229993699,
+			"description": "At the far end of the artificial wetlands turn right down James Watt Drive."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1636.jpg",
+			"lon": 151.4309029100529,
+			"lat": -33.327065260010784,
+			"description": "Turn left at the roundabout and follow Chittaway Road past the shopping centre."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1637.jpg",
+			"lon": 151.42846605000335,
+			"lat": -33.32617503000025,
+			"description": "Cross Wyong Road and follow it to the right in the direction of Tugerah."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1639.jpg",
+			"lon": 151.42762876996917,
+			"lat": -33.321218640005995,
+			"description": "Follow the footpath past the industrial estate."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1640.jpg",
+			"lon": 151.4222375200014,
+			"lat": -33.31390507011866,
+			"description": "At the roundabout near the Pacific Highway, cross Wyong Road and follow Bryant Drive to the right past the furniture stores."
+		},
+		{
+			"type": "waypoint",
+			"photo": "dsc_1642.jpg",
+			"lon": 151.4210815500289,
+			"lat": -33.30760102993803,
+			"description": "Turn left after the furniture stores and continue across the carpark and bus stops to Tuggerah Station."
+		},
+		{
+			"location": "Tuggerah",
+			"type": "train",
+			"description": "Plan your return trip from Tuggerah at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>.",
+			"lat": -33.307802,
+			"lon": 151.420358
+		}
+	]
+}

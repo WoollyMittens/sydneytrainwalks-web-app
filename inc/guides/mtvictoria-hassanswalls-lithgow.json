@@ -2,12 +2,13 @@
 	"location": "Hassans Walls",
 	"lon": 150.151232,
 	"lat": -33.512355,
-	"description": [
-		"This walk follows the historic mountain passes down <a href=\"http://en.wikipedia.org/wiki/Mount_York\">Mount York</a> at Mount Victoria in the Blue Mountains into the rural <a href=\"http://www.hartley-nsw.com/\">Hartley Vale</a>.",
-		"After crossing the valley's wide open landscape, the walk climbs the trails across <a href=\"http://www.lithgow-tourism.com/hassans.htm\">Hassans Walls</a> to Lithgow."
+	"description": "Lorem ipsum dolor sit amet.",
+	"keywords": {
+		"ipsum": "https://external.link/"
+	},
+	"distance": [
+		0
 	],
-	"duration": 6,
-	"distance": 26,
 	"zoom": 13,
 	"rain": false,
 	"fireban": false,
@@ -26,16 +27,6 @@
 			"description": "Get the train to Mount Victoria using <a href=\"https://transportnsw.info/trip#/?to=Mount Victoria\">transportnsw.info</a>.",
 			"lat": -33.58802982001727,
 			"lon": 150.2564418
-		},
-		{
-			"type": "toilet",
-			"lat": -33.535802,
-			"lon": 150.233274
-		},
-		{
-			"type": "toilet",
-			"lat": -33.482969,
-			"lon": 150.151766
 		},
 		{
 			"type": "waypoint",

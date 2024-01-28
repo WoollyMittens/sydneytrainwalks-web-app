@@ -46,7 +46,6 @@ async function makeImage(trophy) {
         resolve(destination + trophy);
       }
     });
-
   });
 }
 

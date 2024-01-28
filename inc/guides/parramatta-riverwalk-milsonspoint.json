@@ -1,0 +1,256 @@
+{
+	"location": "Parramatta River",
+	"lon": 151.1270847078,
+	"lat": -33.8391971122,
+	"description": "Lorem ipsum dolor sit amet.",
+	"keywords": {
+		"ipsum": "https://external.link/"
+	},
+	"distance": [
+		0
+	],
+	"zoom": 13,
+	"rain": true,
+	"fireban": true,
+	"key": "parramatta-riverwalk-milsonspoint",
+	"updated": "2013-12-30",
+	"bounds": {
+		"west": 150.985107421875,
+		"north": -33.79740876757248,
+		"east": 151.226806640625,
+		"south": -33.861293113515515
+	},
+	"markers": [
+		{
+			"location": "Parramatta",
+			"type": "train",
+			"description": "Get the train to Parramatta using <a href=\"https://transportnsw.info/trip#/?to=Parramatta\">transportnsw.info</a>.",
+			"lon": 151.004501343,
+			"lat": -33.81648635900001
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231230_221321577..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231230_222539110..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231230_223110241..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231230_223814691..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231230_223818543..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231230_224941445..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231230_225018900..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231230_225224384..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231230_225828778..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231230_231730108..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231231_000256149..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231231_014342924..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231231_015233520..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231231_020920681..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231231_023051318..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231231_023058945..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231231_023125132..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231231_023149410..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231231_023347295..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231231_023415874..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231231_023546399..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231231_023702292..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231231_023833279..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231231_024117145..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231231_025935245..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231231_030517324..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231231_033557048..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231231_040452485..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231231_040533978..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231231_041136185..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20231231_060259247..jpg",
+			"lon": null,
+			"lat": null,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"location": "Milsons Point",
+			"type": "train",
+			"description": "Plan your return trip from Milsons Point at <a href=\"https://transportnsw.info/trip#/?from=Milsons Point\">transportnsw.info</a>.",
+			"lon": 151.211454,
+			"lat": -33.846288
+		}
+	]
+}

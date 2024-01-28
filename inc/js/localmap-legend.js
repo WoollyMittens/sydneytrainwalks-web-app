@@ -51,6 +51,11 @@ export class Legend {
 		const introTemplate = this.config.introTemplate;
 		// only generate an intro if available
 		if (introTemplate) {
+			// make the keywords in the description clickable
+			let description = guideData.description;
+			for (let keyword in guideData.keywords) { 
+				description.replace(new RegExp(keyword, "gi"), `<a href="${guideData.keywords[keyword]}">${keyword}</a>`)
+			}
 			// fill the intro
 			const fragment = document.createDocumentFragment();
 			const definitionTitle = document.createElement('dt');
@@ -62,9 +67,9 @@ export class Legend {
 			definitionDescription.innerHTML = introTemplate
 				.replace("{updated}", guideData.updated)
 				.replace("{date}", new Date(guideData.updated).toLocaleDateString('en-AU', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }))
-				.replace("{description}", '<p>' + guideData.description.join(' ') + '</p>')
-				.replace("{duration}", guideData.duration + 'hr')
-				.replace("{distance}", guideData.distance + 'km');
+				.replace("{description}", '<p>' + description + '</p>')
+				.replace("{duration}", Math.round(guideData.distance.slice(-1) / 4.5) + 'hr')
+				.replace("{distance}", guideData.distance.slice(-1) + 'km');
 			fragment.appendChild(definitionDescription);
 			// add the intro to the legend
 			this.definitionList.appendChild(fragment);
@@ -81,27 +86,26 @@ export class Legend {
 		// if the marker has a description
 		if (markerData.description) {
 			// format the path to the external assets
-			var image = markerData.photo
-				? this.config.thumbsUrl + markerData.photo
-				: this.config.markersUrl.replace("{type}", markerData.type);
-			var text = markerData.description || markerData.type;
+			var photo = (markerData.photo) ? this.config.thumbsUrl + markerData.photo : null;
+			var text = (markerData.description) ? markerData.description : null;
+			var icon = (markerData.type !== 'waypoint') ? this.config.markersUrl.replace("{type}", markerData.type) : null;
 			// update the marker if this is an achieved trophy
 			if (markerData.type === "hotspot" && !this.config.checkHotspot(markerData)) { text = markerData.explanation; }
 			// create a container for the markers
 			var fragment = document.createDocumentFragment();
 			// add the title
 			var definitionTitle = document.createElement("dt");
-			definitionTitle.className += markerData.photo ? " localmap-legend-photo" : " localmap-legend-icon";
-			definitionTitle.innerHTML = '<img alt="' + markerData.type + '" src="' + image + '"/>';
-			definitionTitle.style.backgroundImage = 'url("' + image + '")';
+			definitionTitle.className = 'localmap-legend-image';
+			definitionTitle.innerHTML = "";
+			if (photo) { definitionTitle.innerHTML += `<img class="localmap-legend-photo" alt="" src="${photo}"/>`; definitionTitle.style.backgroundImage = `url("${photo}")`; }
+			if (icon) { definitionTitle.innerHTML += `<img class="localmap-legend-icon" alt="${markerData.type}" src="${icon}"/>`; }
 			fragment.appendChild(definitionTitle);
 			// add the description
 			var definitionDescription = document.createElement("dd");
+			definitionDescription.className = "localmap-legend-description";
+			definitionDescription.innerHTML = `<p>${text}</p>`;
 			if (markerData.optional) { definitionDescription.className += " localmap-legend-optional"; }
-			else if (markerData.type === "detour") { definitionDescription.className += " localmap-legend-detour"; }
-			else if (markerData.type === "warning") { definitionDescription.className += " localmap-legend-warning"; }
-			else { definitionDescription.className += " localmap-legend-description"; }
-			definitionDescription.innerHTML = "<p>" + text + "</p>";
+			if (markerData.type) { definitionDescription.className += ` localmap-legend-${markerData.type}`; }
 			fragment.appendChild(definitionDescription);
 			// add the event handlers
 			markerData.referrer = definitionTitle;

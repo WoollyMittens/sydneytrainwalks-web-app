@@ -4,8 +4,7 @@ import { long2tile, lat2tile, tile2long, tile2lat } from "./slippy.mjs";
 const guides = '../inc/guides/';
 const exifs = '../inc/exifs/';
 const routes = '../inc/routes/';
-
-console.log('long2tile', long2tile);
+const trophies = '../inc/trophies/';
 
 // flatten geojson segments
 function flattenCoordinates(route) {
@@ -49,7 +48,7 @@ async function loadCache(path) {
 }
 
 // compile a summary of the guide in the output file
-function generateIndex(guides) {
+function generateGuideIndex(guides) {
 	const overview = {
 		'key': '_index',
 		'bounds': {},
@@ -64,7 +63,7 @@ function generateIndex(guides) {
 		west = Math.min(guide.bounds.west, west);
 		south = Math.min(guide.bounds.south, south);
 		east = Math.max(guide.bounds.east, east);
-		// add a marker from the centre of the guide
+		// add a marker from the end points of the guide
 		start = guide.markers[0];
 		end = guide.markers.slice(-1)[0];
 		overview.markers.push({
@@ -81,7 +80,6 @@ function generateIndex(guides) {
 			'startTransport': start.type,
 			'endTransport': end.type,
 			'region': guide.location,
-			'duration': guide.duration,
 			'distance': guide.distance,
 			'revised': guide.updated,
 			'transit': (start.type !== 'car' && end.type !== 'car'),
@@ -107,6 +105,63 @@ function generateIndex(guides) {
 	return overview;
 }
 
+// compile a summary of the trophies in the output file
+function generateTrophyIndex(guides) {
+	const overview = {
+		'key': '_index',
+		'bounds': {},
+		'markers': []
+	};
+	// for every guide
+	const duplicates = [];
+	let north = -999, west = 999, south = 999, east = -999, start, end;
+	for (let key in guides) {
+		let guide = guides[key];
+		// for every marker
+		for (let marker of guide.markers) {
+			// report duplicates
+			if (marker.radius && duplicates.includes(marker.title)) {
+				console.log('duplicate trophy:', marker.title, 'in', key);
+			}
+			// if this marker is a trophy
+			if (marker.radius && !duplicates.includes(marker.title)) {
+				// store reference for duplicates
+				duplicates.push(marker.title);
+				// expand the bounds to fit the trophy
+				north = Math.max(marker.lat, north);
+				west = Math.min(marker.lon, west);
+				south = Math.min(marker.lat, south);
+				east = Math.max(marker.lon, east);
+				// add a marker for the trophy
+				overview.markers.push({
+					'key': key,
+					'type': 'trophy',
+					'photo': guide.photo,
+					'lon': guide.lon,
+					'lat': guide.lat,
+					'radius': guide.radius,
+					'description': Array.isArray(marker.description) ? marker.description.join('') : marker.description,
+					'title': marker.title,
+					'badge': marker.badge,
+					'explanation': Array.isArray(marker.explanation) ? marker.explanation.join('') : marker.explanation
+				});
+			}
+		}
+	}
+	// expand the bounds by one map tile
+	north = tile2lat(lat2tile(north, 11) - 1, 11);
+	west = tile2long(long2tile(west, 11) - 1, 11);
+	south = tile2lat(lat2tile(south, 11) + 2, 11);
+	east = tile2long(long2tile(east, 11) + 2, 11);
+	// align the bounds to the tile grid
+	overview.bounds.north = tile2lat(lat2tile(north, 11), 11);
+	overview.bounds.west = tile2long(long2tile(west, 11), 11);
+	overview.bounds.south = tile2lat(lat2tile(south, 11), 11);
+	overview.bounds.east = tile2long(long2tile(east, 11), 11);
+	// insert the index into the guides
+	return overview;
+}
+
 // populate the guide using the exif and route date
 function populateGuide(file, guideCache, exifCache, routesCache) {
 	// get the key from the filename
@@ -116,22 +171,17 @@ function populateGuide(file, guideCache, exifCache, routesCache) {
 	// provide lat and lon for the end points
 	let routeData = flattenCoordinates(routesCache[key]);
 	let startMarker = guide.markers[0];
-	if (!startMarker.lon) {
-		startMarker.lon = routeData[0][0];
-		startMarker.lat = routeData[0][1];
-	}
+	startMarker.lon = startMarker.lon || routeData[0][0];
+	startMarker.lat = startMarker.lat || routeData[0][1];
 	let endMarker = guide.markers[guide.markers.length - 1];
-	if (!endMarker.lon) {
-		endMarker.lon = routeData[routeData.length - 1][0];
-		endMarker.lat = routeData[routeData.length - 1][1];
-	}
+	endMarker.lon = endMarker.lon ||routeData[routeData.length - 1][0];
+	endMarker.lat = endMarker.lat || routeData[routeData.length - 1][1];
 	// add the photo exif data to markers with a photo
-	let alias = (guide.alias) ? guide.alias.key : key;
 	for (let marker in guide.markers) {
 		let markerData = guide.markers[marker];
-		if (markerData.photo) {
-			markerData.lon = exifCache[alias][markerData.photo].lon,
-			markerData.lat = exifCache[alias][markerData.photo].lat
+		if (markerData.photo && exifCache[key][markerData.photo]) {
+			markerData.lon = markerData.lon || exifCache[key][markerData.photo].lon,
+			markerData.lat = markerData.lat || exifCache[key][markerData.photo].lat
 		}
 	}
 	// determine the centrepoint
@@ -157,10 +207,6 @@ function populateGuide(file, guideCache, exifCache, routesCache) {
 	guide.bounds.west = tile2long(long2tile(west, 15), 15);
 	guide.bounds.south = tile2lat(lat2tile(south, 15), 15);
 	guide.bounds.east = tile2long(long2tile(east, 15), 15);
-	// prefill the "bounds" from guides that are a subset of another guide
-	if (guide.alias && guideCache[alias] && guideCache[alias].bounds) {
-		guide.alias.bounds = guideCache[alias].bounds;
-	}
 	// return the updated guide
 	return guide;
 }
@@ -182,11 +228,14 @@ async function parseGuides() {
 		let savedGuide = await fsp.writeFile(guides + file, JSON.stringify(guide, null, '\t'));
 		console.log('saved guide:', guides + file, savedGuide);
 	}
+	// construct an index of all trophies in the guides
+	const trophiesIndex = generateTrophyIndex(guideCache);
+	const savedTrophies = await fsp.writeFile(trophies + '_index.json', JSON.stringify(trophiesIndex, null, '\t'));
+	console.log('saved index:', trophies + '_index.json', savedTrophies);
 	// construct an index of the updated guides
-	const index = generateIndex(guideCache);
-	// convert to string
-	let savedIndex = await fsp.writeFile(guides + '_index.json', JSON.stringify(index, null, '\t'));
-	console.log('saved index:', guides + '_index.json', savedIndex);
+	const guidesIndex = generateGuideIndex(guideCache);
+	const savedGuides = await fsp.writeFile(guides + '_index.json', JSON.stringify(guidesIndex, null, '\t'));
+	console.log('saved index:', guides + '_index.json', savedGuides);
 }
 
 // start processing the queue

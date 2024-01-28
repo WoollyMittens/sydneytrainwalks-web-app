@@ -2,20 +2,13 @@
 	"location": "Lower Blue Mountains",
 	"lon": 150.6128664315,
 	"lat": -33.7998189311,
-	"description": [
-		"This walk covers many attractions of the Lower Blue Mountains in one managable loop.",
-		"From the park entrance at Glenbrook and a short detour to the famous <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/jellybean-track\">Jellybean Pools</a>",
-		"the walk follows a lush gully up to the aboriginal cave art at <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/red-hands-cave-walking-track-blue-mountains-national-park\">Red Hand Caves</a>.",
-		"<br/><br/>",
-		"At the nearby Aboriginal Sandstone Workshop a rough trail leads up to the Ironbarks Picnic Area along the famous <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/cycling-trails/woodford-oaks-trail\">Oaks trail</a>.",
-		"From there a tour across the <a href=\"https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/euroka-campground\">Euroka Campground</a>",
-		"for a possible kangaroo encounter and then up to the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/tunnel-view-lookout\">Tunnel View Lookout</a>.",
-		"<br/><br/>",
-		"A further detour to the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/mount-portal-lookout\">Mount Portal Lookout</a> is possible from there,",
-		"before returning to the weir across Glenbrook Creek and the park entrance."
+	"description": "Lorem ipsum dolor sit amet.",
+	"keywords": {
+		"ipsum": "https://external.link/"
+	},
+	"distance": [
+		0
 	],
-	"duration": 6,
-	"distance": 22,
 	"zoom": 13,
 	"rain": false,
 	"fireban": false,
@@ -34,22 +27,6 @@
 			"description": "Get the train to Glenbrook using <a href=\"https://transportnsw.info/trip#/?to=Glenbrook\">transportnsw.info</a>.",
 			"lon": 150.620507542,
 			"lat": -33.7689544167
-		},
-		{
-			"type": "warning",
-			"lat": -33.78941388888889,
-			"lon": 150.60356944444445,
-			"description": "The trail up to the ridge can be hard to find,<br/>but is near the Aboriginal sandstone workshop sign."
-		},
-		{
-			"type": "toilet",
-			"lat": -33.778427,
-			"lon": 150.620693
-		},
-		{
-			"type": "toilet",
-			"lat": -33.797949,
-			"lon": 150.618014
 		},
 		{
 			"type": "waypoint",
@@ -208,9 +185,9 @@
 		{
 			"type": "waypoint",
 			"photo": "p7250185.jpg",
+			"description": "Follow the road across the campground to the left to find the information signs.",
 			"lon": 150.615994,
-			"lat": -33.799265999999996,
-			"description": "Follow the road across the campground to the left to find the information signs."
+			"lat": -33.799265999999996
 		},
 		{
 			"title": "I was Promised Kangaroos",
@@ -218,10 +195,9 @@
 			"lon": 150.6169320721852,
 			"lat": -33.79894155167245,
 			"radius": 0.0004,
-			"explanation": [
-				"Neither campers nor eastern greys can resist these grassy fields."
-			],
+			"explanation": "Neither campers nor eastern greys can resist these grassy fields.",
 			"type": "hotspot",
+			"photo": "p7250181_p7250183.jpg",
 			"description": "<center>Visit this location to earn the mystery trophy</center>"
 		},
 		{
@@ -325,6 +301,7 @@
 				"If you stand around long enough, there will probably be a train."
 			],
 			"type": "hotspot",
+			"photo": "p7250230_p7250235.jpg",
 			"description": "<center>Visit this location to earn the mystery trophy</center>"
 		},
 		{

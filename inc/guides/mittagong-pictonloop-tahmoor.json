@@ -2,23 +2,13 @@
 	"location": "Picton-Mittagong Loop",
 	"lon": 150.492184,
 	"lat": -34.345013,
-	"description": [
-		"From the centre of Mittagong this walk follows the footpath along the Old Hume Highway to the golf course, where a bushtrail continues along the railway line.",
-		"After bypassing the inaccessible part of the track around the railway sleeper factory,",
-		"the walk rejoins the <a href=\"http://www.railtrailsnsw.com.au/wp-content/uploads/2016/05/MittagongPictonRT_brochure.pdf\">proposed</a> <a href=\"https://en.wikipedia.org/wiki/Picton%E2%80%93Mittagong_loop_railway_line\">Picton-Mittagong rail trail</a> properly in Colo Vale.",
-		"<br/><br/>",
-		"The first major stop along the line is the town of Hilltop, where several food options are available.",
-		"Balmoral is next along line, where several historic railway remnants have been left in tact.",
-		"<br/><br/>",
-		"From Buxton on the railways is still used occasionally by the <a href=\"https://www.nswrailmuseum.com.au/\">NSW Rail Museum</a>, so don't stray onto the tracks.",
-		"There's also a supermarket and a restaurant close to the old train station for supplies.",
-		"<br/><br/>",
-		"After the iconic station of Couridjah, the final stretch of the walk follows the rural roads to Tahmoor Station.",
-		"<br/><br/>",
-		"Thanks to Kynan Batt for his local knowledge."
+	"description": "Lorem ipsum dolor sit amet.",
+	"keywords": {
+		"ipsum": "https://external.link/"
+	},
+	"distance": [
+		0
 	],
-	"duration": 8,
-	"distance": 38,
 	"zoom": 13,
 	"rain": true,
 	"fireban": true,
@@ -37,26 +27,6 @@
 			"description": "Get the train to Mittagong using <a href=\"https://transportnsw.info/trip#/?to=Mittagong\">transportnsw.info</a>.",
 			"lon": 150.448298,
 			"lat": -34.45254
-		},
-		{
-			"type": "kiosk",
-			"lat": -34.35313598998312,
-			"lon": 150.4939696999867
-		},
-		{
-			"type": "kiosk",
-			"lat": -34.254959,
-			"lon": 150.534824
-		},
-		{
-			"type": "toilet",
-			"lat": -34.451200350001145,
-			"lon": 150.4489249500143
-		},
-		{
-			"type": "toilet",
-			"lat": -34.257502979991486,
-			"lon": 150.53247977989923
 		},
 		{
 			"type": "waypoint",

@@ -2,14 +2,13 @@
 	"location": "Kedumba Pass",
 	"lon": 150.372177,
 	"lat": -33.775097,
-	"description": [
-		"This walk descends into Jamison Valley at the <a href=\"http://www.nationalparks.nsw.gov.au/blue-mountains-national-park/leura-cascades-fern-bower-circuit/walking\">Leura Fern Bower</a>",
-		"and follows the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/mount-solitary-walking-track\">Mount Solitary Walking Track</a> across the valley to the Kedumba Pass.",
-		"At the top of the pass the road leads past various incidental lookouts along <a href=\"https://www.bestsydneywalks.com/kings-tableland-lincolns-rock-lookout/\">Kings TableLand</a>",
-		"to join up with <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/charles-darwin-walk\">Darwins Walk</a> back to the town."
+	"description": "Lorem ipsum dolor sit amet.",
+	"keywords": {
+		"ipsum": "https://external.link/"
+	},
+	"distance": [
+		0
 	],
-	"duration": 8,
-	"distance": 25,
 	"zoom": 13,
 	"rain": false,
 	"fireban": false,

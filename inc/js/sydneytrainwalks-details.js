@@ -30,7 +30,8 @@ export class Details {
 		// load the guide that goes with the id
 		const guide = await this.loadGuide(id);
 		const route = await this.loadRoute(id);
-		const exif = await this.loadExif(guide?.alias?.key || guide.key);
+		console.log(guide, guide.key);
+		const exif = await this.loadExif(guide.key);
 		// update all the elements with the id
 		this.updateMeta(guide);
 		this.updateTitle(guide);
@@ -51,15 +52,14 @@ export class Details {
 			.replace(/{startTransport}/g, start.type)
 			.replace(/{startLocation}/g, start.location)
 			.replace(/{walkLocation}/g, guide.location)
-			.replace(/{walkDuration}/g, guide.duration)
-			.replace(/{walkDistance}/g, guide.distance)
+			.replace(/{walkDistance}/g, guide.distance.join(' / '))
 			.replace(/{endTransport}/g, end.type)
 			.replace(/{endLocation}/g, end.location);
 	}
 
 	updateLandmarks(guide) {
 		// gather the information
-		var prefix = (guide.alias) ? guide.alias.key : guide.key;
+		var prefix = guide.key;
 		var landmark, landmarks = "";
 		// fill the guide with landmarks
 		guide.markers.map((marker) => {
@@ -107,7 +107,7 @@ export class Details {
 
 	updateMap(guide, route, exif) {
 		// get the properties if this is a segment of another walk
-		var prefix = (guide.alias && guide.alias.key) ? guide.alias.key : guide.key;
+		var prefix = guide.key;
 		// clear the old map if active
 		if (this.config.guideMap) {
 			this.config.guideMap.stop();
@@ -173,15 +173,13 @@ export class Details {
 		// reset the wall
 		this.wallElement.className = this.wallElement.className.replace(/-active/g, '-passive');
 		// get the properties if this is a segment of another walk
-		var prefix = (guide.alias && guide.alias.key) ? guide.alias.key : guide.key;
-		var start = (guide.alias && guide.alias.start) ? guide.alias.start : 0;
-		var end = (guide.alias && guide.alias.end) ? guide.alias.end + 1 : null;
+		var prefix = guide.key;
 		// get the photos
 		for (src in exif) {
 			srcs.push(src);
 		}
 		// create a list of photos
-		for (var a = start, b = end || srcs.length; a < b; a += 1) {
+		for (var a = 0, b = srcs.length; a < b; a += 1) {
 			wallHtml += wallTemplate
 				.replace(/{id}/g, prefix)
 				.replace(/{src}/g, srcs[a]);

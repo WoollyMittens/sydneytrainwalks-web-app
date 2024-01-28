@@ -2,19 +2,13 @@
 	"location": "Garigal",
 	"lon": 151.182632,
 	"lat": -33.710854,
-	"description": [
-		"This walk follows a ridge top trail down from Mount Kuring-gai to <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/picnic-areas/apple-tree-picnic-area\">Apple Tree Bay</a>",
-		"and <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/picnic-areas/bobbin-head\">Bobbin Head</a>.",
-		"After cutting through the marina, the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/sphinx-memorial-to-bobbin-head-loop-track\">Warrimoo Track</a> is followed to the carpark and trailhead at Warrimoo.",
-		"From a nearby sidestreet a firetrail leads into the <a href=\"http://www.kmc.nsw.gov.au/Services_facilities/Facilities_and_venues/Ku-ring-gai_Wildflower_Garden\">Ku-ring-gai Wildflower Garden</a>.",
-		"<br/><br/>",
-		"After crossing Mona Vale Road, the walk continues into <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/cycling-trails/heath-and-bare-creek-trails\">Garigal National Park</a>.",
-		"From <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/stepping-stone-crossing-to-cascades-trail\">the Cascades</a> at Belrose,",
-		"the trail continues along <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/davidson-park-to-stepping-stone-crossing-walk\">Middle Harbour</a>",
-		"to the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/picnic-areas/davidson-park-picnic-area-and-boat-ramp\">Roseville Bridge</a>."
+	"description": "Lorem ipsum dolor sit amet.",
+	"keywords": {
+		"ipsum": "https://external.link/"
+	},
+	"distance": [
+		0
 	],
-	"duration": 8,
-	"distance": 31,
 	"zoom": 13,
 	"rain": false,
 	"fireban": false,
@@ -33,46 +27,6 @@
 			"description": "Get the train to Mount Kuring-gai using <a href=\"https://transportnsw.info/trip#/?to=Mount Kuring-gai\">transportnsw.info</a>.",
 			"lon": 151.139877,
 			"lat": -33.654518
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.65976666666666,
-			"lon": 151.15893333333335
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.65260277777778,
-			"lon": 151.1558361111111
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.71695,
-			"lon": 151.17379
-		},
-		{
-			"type": "toilet",
-			"lat": -33.652713,
-			"lon": 151.155004
-		},
-		{
-			"type": "toilet",
-			"lat": -33.658888,
-			"lon": 151.159
-		},
-		{
-			"type": "toilet",
-			"lat": -33.662128,
-			"lon": 151.162006
-		},
-		{
-			"type": "toilet",
-			"lat": -33.707571,
-			"lon": 151.174509
-		},
-		{
-			"type": "toilet",
-			"lat": -33.768988,
-			"lon": 151.204023
 		},
 		{
 			"type": "waypoint",

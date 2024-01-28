@@ -2,13 +2,13 @@
 	"location": "Berowra Valley",
 	"lon": 151.1004518811,
 	"lat": -33.646977609,
-	"description": [
-		"After short detour to the <a href=\"https://www.kateausburn.com/sydney-day-trips/naa-badu-lookout\">Naa Badu Lookout</a>,",
-		"this walk follows a stretch of the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/great-north-walk-berowra-valley-national-park\">Great North Walk</a> through Berowra Valley National Park.",
-		"The picnic area at <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/place-of-winds-interpretive-trail\">Crosslands</a> offers some rest before the climb up Galson Gorge."
+	"description": "Lorem ipsum dolor sit amet.",
+	"keywords": {
+		"ipsum": "https://external.link/"
+	},
+	"distance": [
+		0
 	],
-	"duration": 8,
-	"distance": 22,
 	"zoom": 13,
 	"rain": false,
 	"fireban": false,
@@ -27,27 +27,6 @@
 			"description": "Get the train to Berowra using <a href=\"https://transportnsw.info/trip#/?to=Berowra\">transportnsw.info</a>.",
 			"lon": 151.1528503429,
 			"lat": -33.6234793626
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.623568,
-			"lon": 151.151757
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.688607,
-			"lon": 151.107549
-		},
-		{
-			"type": "warning",
-			"description": "Read the signs near the Steele bridge to find out if the detour past the rifle range is still in effect.",
-			"lat": -33.68011,
-			"lon": 151.085275
-		},
-		{
-			"type": "toilet",
-			"lat": -33.631144,
-			"lon": 151.109019
 		},
 		{
 			"type": "waypoint",
@@ -173,8 +152,6 @@
 		{
 			"type": "waypoint",
 			"photo": "pb260068.jpg",
-			"lon": 151.11979,
-			"lat": -33.627548,
 			"description": "From the bridge onwards to the camping, educational signs can be found at regular intervals."
 		},
 		{
@@ -208,8 +185,6 @@
 		{
 			"type": "waypoint",
 			"photo": "pb260104.jpg",
-			"lon": 151.108911,
-			"lat": -33.631237,
 			"description": "Refill your water bottles at the taps if needed, before continuing."
 		},
 		{
@@ -388,8 +363,6 @@
 		{
 			"type": "waypoint",
 			"photo": "pb260185.jpg",
-			"lon": 151.107688,
-			"lat": -33.688669999999995,
 			"description": "Cross the Pacific Highway at the traffic lights near the shops to enter Asquith Station."
 		},
 		{

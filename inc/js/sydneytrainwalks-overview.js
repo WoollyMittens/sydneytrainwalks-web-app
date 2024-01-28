@@ -112,6 +112,11 @@ export class Overview {
       let route = await this.loadRoute(key);
       // update a progress bar
       this.overviewElement.setAttribute('data-progress', Math.round(index / total * 100) + '%');
+      // set the keys of the tracks
+      console.log('route', route);
+      for (let feature of route.features) {
+        feature.properties.name = key;
+      }
       // add the route
       routes.features = routes.features.concat(route.features);
     }
