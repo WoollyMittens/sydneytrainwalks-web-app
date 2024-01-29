@@ -1,7 +1,7 @@
 {
 	"location": "Berowra Valley",
-	"lon": 151.1004518811,
-	"lat": -33.646977609,
+	"lon": 151.1003703251,
+	"lat": -33.6470330972,
 	"description": "Lorem ipsum dolor sit amet.",
 	"keywords": {
 		"ipsum": "https://external.link/"
@@ -25,22 +25,16 @@
 			"location": "Berowra",
 			"type": "train",
 			"description": "Get the train to Berowra using <a href=\"https://transportnsw.info/trip#/?to=Berowra\">transportnsw.info</a>.",
+			"photo": "pb260001.jpg",
 			"lon": 151.1528503429,
 			"lat": -33.6234793626
-		},
-		{
-			"type": "waypoint",
-			"photo": "pb260001.jpg",
-			"lon": 151.153308,
-			"lat": -33.623452,
-			"description": "Exit the station and cross the Pacific Highway at the trafic lights."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pb260002.jpg",
 			"lon": 151.151795,
 			"lat": -33.623543,
-			"description": "Follow the footpath to the left and turn right at the Great North Walk marker, down Berowra Waters Road."
+			"description": "Follow the footpath across the highway to the left and turn right at the Great North Walk marker."
 		},
 		{
 			"type": "waypoint",
@@ -151,11 +145,6 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pb260068.jpg",
-			"description": "From the bridge onwards to the camping, educational signs can be found at regular intervals."
-		},
-		{
-			"type": "waypoint",
 			"photo": "pb260092.jpg",
 			"lon": 151.113081,
 			"lat": -33.62698100009026,
@@ -181,11 +170,6 @@
 			"lon": 151.109196,
 			"lat": -33.628613,
 			"description": "From the car park, follow the path across the second camping area to the toilet blocks."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pb260104.jpg",
-			"description": "Refill your water bottles at the taps if needed, before continuing."
 		},
 		{
 			"type": "waypoint",
@@ -258,13 +242,6 @@
 			"description": "The trail winds its way down the ridge with several gradual descends."
 		},
 		{
-			"type": "waypoint",
-			"photo": "pb260161.jpg",
-			"lon": 151.085105,
-			"lat": -33.679168999999995,
-			"description": "Cross the historic Steele Military Bridge to the left."
-		},
-		{
 			"title": "It Belongs in a Museum",
 			"badge": "bridge_1",
 			"lon": 151.0852692848733,
@@ -274,6 +251,7 @@
 				"A historic military bridge, out here as a surprise outdoor museum piece."
 			],
 			"type": "hotspot",
+			"photo": "pb260161.jpg",
 			"description": "<center>Visit this location to earn the mystery trophy</center>"
 		},
 		{
@@ -361,14 +339,10 @@
 			"description": "Peats Ferry Road eventually leads to another intersection, continue to the shops along the Pacific Highway."
 		},
 		{
-			"type": "waypoint",
-			"photo": "pb260185.jpg",
-			"description": "Cross the Pacific Highway at the traffic lights near the shops to enter Asquith Station."
-		},
-		{
 			"location": "Asquith",
 			"type": "train",
 			"description": "Plan your return trip from Asquith at <a href=\"https://transportnsw.info/trip#/?from=Asquith\">transportnsw.info</a>.",
+			"photo": "pb260184.jpg",
 			"lon": 151.1078680214,
 			"lat": -33.6887906492
 		}
