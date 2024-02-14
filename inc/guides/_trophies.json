@@ -1,0 +1,22 @@
+{
+	"key": "_index",
+	"bounds": {
+		"north": -33.43144133557529,
+		"west": 150.1171875,
+		"south": -33.87041555094183,
+		"east": 150.64453125
+	},
+	"markers": [
+		{
+			"key": "blackheath-bluegumforest-blackheath",
+			"type": "trophy",
+			"photo": "002_p9215089.jpg",
+			"lon": 150.3467138888889,
+			"lat": -33.621966666666665,
+			"radius": 0.0004,
+			"description": "This is legitimately the middle of nowhere, with only solitude surrounding you. May it comfort you during the long long climb ahead.",
+			"title": "You've Come a Long Way Baby",
+			"badge": "compas_2"
+		}
+	]
+}

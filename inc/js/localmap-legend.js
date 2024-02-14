@@ -90,7 +90,7 @@ export class Legend {
 			var text = (markerData.description) ? markerData.description : null;
 			var icon = (markerData.type !== 'waypoint') ? this.config.markersUrl.replace("{type}", markerData.type) : null;
 			// update the marker if this is an achieved trophy
-			if (markerData.type === "hotspot" && !this.config.checkHotspot(markerData)) { text = markerData.explanation; }
+			if (markerData.type === "hotspot" && this.config.checkHotspot(markerData)) { text = markerData.instruction; }
 			// create a container for the markers
 			var fragment = document.createDocumentFragment();
 			// add the title

@@ -307,18 +307,6 @@
 			"description": "The trail eventually leads to a high cliff overlooking Garie Beach. Carefully descend down to the beach."
 		},
 		{
-			"title": "Tadaa!",
-			"badge": "wizard_1",
-			"lon": 151.0766564,
-			"lat": -34.1665323,
-			"radius": 0.0004,
-			"explanation": [
-				"Even after many kilometres of coast, this place still manages to astonish."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to earn the mystery trophy</center>"
-		},
-		{
 			"type": "waypoint",
 			"photo": "p9285802.jpg",
 			"lon": 151.0661388888889,

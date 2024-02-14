@@ -4,7 +4,6 @@ import { long2tile, lat2tile, tile2long, tile2lat } from "./slippy.mjs";
 const guides = '../inc/guides/';
 const exifs = '../inc/exifs/';
 const routes = '../inc/routes/';
-const trophies = '../inc/trophies/';
 
 // flatten geojson segments
 function flattenCoordinates(route) {
@@ -32,7 +31,7 @@ async function loadCache(path) {
 	// create a cache object
 	const cache = {};
 	// get the files in the folder
-	const files = await filterDirectory(path, /.json$/i, /^_index/);
+	const files = await filterDirectory(path, /.json$/i, /^_/);
 	// for every file
 	for (let file of files) {
 		// import the content
@@ -125,6 +124,7 @@ function generateTrophyIndex(guides) {
 			}
 			// if this marker is a trophy
 			if (marker.radius && !duplicates.includes(marker.title)) {
+				console.log('found a trophy:', marker);
 				// store reference for duplicates
 				duplicates.push(marker.title);
 				// expand the bounds to fit the trophy
@@ -136,14 +136,14 @@ function generateTrophyIndex(guides) {
 				overview.markers.push({
 					'key': key,
 					'type': 'trophy',
-					'photo': guide.photo,
-					'lon': guide.lon,
-					'lat': guide.lat,
-					'radius': guide.radius,
-					'description': Array.isArray(marker.description) ? marker.description.join('') : marker.description,
+					'photo': marker.photo,
+					'lon': marker.lon,
+					'lat': marker.lat,
+					'radius': marker.radius,
+					'description': marker.description,
 					'title': marker.title,
 					'badge': marker.badge,
-					'explanation': Array.isArray(marker.explanation) ? marker.explanation.join('') : marker.explanation
+					'explanation': marker.explanation
 				});
 			}
 		}
@@ -220,7 +220,7 @@ async function parseGuides() {
 	// load the GPX cache
 	const routesCache = await loadCache(routes);
 	// get the list of guide files
-	const files = await filterDirectory(guides, /.json$/i, /^_index/);
+	const files = await filterDirectory(guides, /.json$/i, /^_/);
 	for (let file of files) {
 		// update the guide with the exif and route data
 		let guide = populateGuide(file, guideCache, exifCache, routesCache);
@@ -230,8 +230,8 @@ async function parseGuides() {
 	}
 	// construct an index of all trophies in the guides
 	const trophiesIndex = generateTrophyIndex(guideCache);
-	const savedTrophies = await fsp.writeFile(trophies + '_index.json', JSON.stringify(trophiesIndex, null, '\t'));
-	console.log('saved index:', trophies + '_index.json', savedTrophies);
+	const savedTrophies = await fsp.writeFile(guides + '_trophies.json', JSON.stringify(trophiesIndex, null, '\t'));
+	console.log('saved index:', guides + '_trophies.json', savedTrophies);
 	// construct an index of the updated guides
 	const guidesIndex = generateGuideIndex(guideCache);
 	const savedGuides = await fsp.writeFile(guides + '_index.json', JSON.stringify(guidesIndex, null, '\t'));

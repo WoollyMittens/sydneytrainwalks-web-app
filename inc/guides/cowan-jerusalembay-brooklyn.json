@@ -111,18 +111,6 @@
 			"optional": true
 		},
 		{
-			"title": "The Top of the World",
-			"badge": "geography_globe",
-			"lon": 151.2138850276913,
-			"lat": -33.58264408577045,
-			"radius": 0.0004,
-			"explanation": [
-				"Every point is the top, depending on how you rotate it."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to earn the mystery trophy</center>"
-		},
-		{
 			"type": "waypoint",
 			"photo": "p7059037.jpg",
 			"lon": 151.21433399999998,
@@ -153,18 +141,6 @@
 			"lat": -33.585512,
 			"description": "After a final large hill the track ends on a wide rocky platform with an impressive view across Broken Bay.",
 			"optional": true
-		},
-		{
-			"title": "Taffy Was Here",
-			"badge": "obelisk",
-			"lon": 151.2285972,
-			"lat": -33.5851722,
-			"radius": 0.0004,
-			"explanation": [
-				"Not many come here, but Taffy did."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",
@@ -208,18 +184,6 @@
 			"lon": 151.20022777777777,
 			"lat": -33.55478055555555,
 			"description": "Just before the fire trail turns sharply to the right right down to Brooklyn Dam, there is a hidden lookout with a spectacular view across the Hawkesbury."
-		},
-		{
-			"title": "Blink and You'll Miss It ",
-			"badge": "glasses",
-			"lon": 151.1997894958327,
-			"lat": -33.55472321296468,
-			"radius": 0.0004,
-			"explanation": [
-				"You'll be around the hairpin bend downhill, before you realise this hidden view is worth turnning back for."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

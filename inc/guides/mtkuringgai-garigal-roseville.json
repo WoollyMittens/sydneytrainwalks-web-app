@@ -50,18 +50,6 @@
 			"description": "An easy to miss side trail on the left, just before a rocky staircase, leads to the Firefighter's Rest memorial."
 		},
 		{
-			"title": "Fireman's Rest",
-			"badge": "flower_3",
-			"lon": 151.147943,
-			"lat": -33.649026,
-			"radius": 0.0004,
-			"explanation": [
-				"A sobering look across this peaceful valley reminds us how treacherous this landscape becomes during bushfires."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to earn the mystery trophy</center>"
-		},
-		{
 			"type": "waypoint",
 			"photo": "p8182220.jpg",
 			"lon": 151.16070282001982,
@@ -179,18 +167,6 @@
 			"lon": 151.17298920999195,
 			"lat": -33.70762591001313,
 			"description": "At the top of the ridge, follow the directions to Cunningman's Rest picnic area."
-		},
-		{
-			"title": "You've Seen More Flowers on the Way Here",
-			"badge": "flowers",
-			"lon": 151.1748750020137,
-			"lat": -33.70750425945467,
-			"radius": 0.0004,
-			"explanation": [
-				"The irony of walking through a national park full of wildflowers to get to a wildflower garden does not diminish it."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

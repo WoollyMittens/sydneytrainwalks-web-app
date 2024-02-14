@@ -50,7 +50,7 @@ const contentToCache = [
   './inc/img/fountain_1.svg',
   './inc/img/geography_globe.svg',
   './inc/img/glasses.svg',
-  './inc/img/hotspot.svg',
+  './inc/img/trophy.svg',
   './inc/img/house_3.svg',
   './inc/img/hovel_1.svg',
   './inc/img/icon-close.svg',

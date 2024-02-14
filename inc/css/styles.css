@@ -515,17 +515,17 @@ body.screen-about header.subtitle, body.screen-menu header.subtitle, body.screen
 }
 
 #footer-to-trophies:before {
-  background-image: url("../img/hotspot.svg");
+  background-image: url("../img/trophy.svg");
 }
 [data-color-scheme=light] #footer-to-trophies:before {
-  background-image: url("../img/hotspot.svg");
+  background-image: url("../img/trophy.svg");
 }
 [data-color-scheme=dark] #footer-to-trophies:before {
-  background-image: url("../img/hotspot_inv.svg");
+  background-image: url("../img/trophy_inv.svg");
 }
 @media (prefers-color-scheme: dark) {
   #footer-to-trophies:before {
-    background-image: url("../img/hotspot_inv.svg");
+    background-image: url("../img/trophy_inv.svg");
   }
 }
 
@@ -1353,21 +1353,16 @@ body.screen-about .about {
 }
 .trophies ul {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 2.5rem -0.5rem;
-}
-.trophies ul:empty:before {
-  display: block;
-  align-self: center;
-  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 1rem;
+  max-width: 36rem;
   margin: 0 auto;
-  content: "loading: " attr(data-progress);
 }
 .trophies ul li {
-  flex: 0 1 20%;
   margin: 0;
-  padding: 0 0.5rem 2.5rem;
+  padding: 0;
   text-align: center;
 }
 @media (max-width: 959px) {
@@ -1376,30 +1371,24 @@ body.screen-about .about {
   }
 }
 .trophies figure {
+  cursor: pointer;
   margin: 0;
+  aspect-ratio: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
 .trophies figure img {
-  width: auto;
-  height: 3rem;
-}
-[data-color-scheme=light] .trophies figure img {
-  background-color: initial;
-  border-radius: initial;
-  padding: initial;
-}
-[data-color-scheme=dark] .trophies figure img {
-  background-color: #fff;
-  border-radius: 50%;
-  padding: 5px;
-}
-@media (prefers-color-scheme: dark) {
-  .trophies figure img {
-    background-color: #fff;
-    border-radius: 50%;
-    padding: 5px;
-  }
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .trophies figure figcaption {
+  display: none;
   font-size: 0.875rem;
 }
 .trophies figure figcaption button {
@@ -1408,8 +1397,18 @@ body.screen-about .about {
 .trophies a {
   display: block;
 }
-.trophies-passive {
-  opacity: 0.5;
+.trophies-passive figure img {
+  transform: translate(-50%, -100%);
+}
+.trophies-active figure img {
+  width: 33.333%;
+  height: 33.333%;
+  background-color: #fff;
+  border-radius: 100%;
+  padding: 5px;
+  left: 0.5rem;
+  top: 0.5rem;
+  transform: initial;
 }
 body.screen-trophies .trophies {
   transform: translate(0, 0);
@@ -1488,7 +1487,7 @@ body.screen-trophies .trophies {
   position: relative;
   z-index: 1;
 }
-.trophy figure div {
+.trophy figure img {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.667);
   left: 0;
@@ -1496,9 +1495,7 @@ body.screen-trophies .trophies {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  object-fit: contain;
 }
 .trophy figure figcaption {
   position: absolute;

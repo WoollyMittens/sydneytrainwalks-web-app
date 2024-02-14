@@ -50,18 +50,6 @@
 			"description": "Right before the stone staircase a partially obscured side track on the left leads to Fireman's Rest."
 		},
 		{
-			"title": "Fireman's Rest",
-			"badge": "flower_3",
-			"lon": 151.147943,
-			"lat": -33.649026,
-			"radius": 0.0004,
-			"explanation": [
-				"A sobering look across this peaceful valley reminds us how treacherous this landscape becomes during bushfires."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to earn the mystery trophy</center>"
-		},
-		{
 			"type": "waypoint",
 			"photo": "p2021304.jpg",
 			"lon": 151.16063300000002,
@@ -130,18 +118,6 @@
 			"lon": 151.155941,
 			"lat": -33.688495999999994,
 			"description": "At the junction at the top of the climb, continue to the right towards to the Sphynx War Memorial."
-		},
-		{
-			"title": "You Wouldn't Expect this Here",
-			"badge": "pillar",
-			"lon": 151.1558535775832,
-			"lat": -33.68863913229957,
-			"radius": 0.0004,
-			"explanation": [
-				"The story is as remarkable as finding an egyptian monument in the north shore bushland."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

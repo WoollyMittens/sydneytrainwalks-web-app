@@ -282,18 +282,6 @@
 			"description": "Use the tunnel underneath  the dam."
 		},
 		{
-			"title": "Dammed by Faint Praise",
-			"badge": "bridge_2",
-			"lon": 151.0055353,
-			"lat": -33.77542,
-			"radius": 0.0004,
-			"explanation": [
-				"The sudden towering walls make for an unexpected surprise walking along the gully."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to earn the mystery trophy</center>"
-		},
-		{
 			"type": "waypoint",
 			"photo": "1620_dcs_7311.jpg",
 			"lon": 151.00511044000933,

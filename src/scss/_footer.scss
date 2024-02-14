@@ -176,18 +176,18 @@
 
 #footer-to-trophies {
 	&:before {
-		background-image: url("../img/hotspot.svg");
+		background-image: url("../img/trophy.svg");
 
 		[data-color-scheme="light"] & {
-			background-image: url("../img/hotspot.svg");
+			background-image: url("../img/trophy.svg");
 		}
 
 		[data-color-scheme="dark"] & {
-			background-image: url("../img/hotspot_inv.svg");
+			background-image: url("../img/trophy_inv.svg");
 		}
 
 		@media (prefers-color-scheme: dark) {
-			background-image: url("../img/hotspot_inv.svg");
+			background-image: url("../img/trophy_inv.svg");
 		}
 	}
 }

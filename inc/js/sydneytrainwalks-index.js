@@ -140,7 +140,7 @@ export class Index {
 
 	mirrorResults(guideIds, sortedIds) {
 		// show or hide page elements associated with a key, according to the filtered keys
-		const elements = document.querySelectorAll('.localmap [data-key]');
+		const elements = document.querySelectorAll('.overview.localmap [data-key]');
 		for (let element of elements) {
 			element.style.visibility = sortedIds.includes(element.getAttribute('data-key')) ? 'visible' : 'hidden';
 		}

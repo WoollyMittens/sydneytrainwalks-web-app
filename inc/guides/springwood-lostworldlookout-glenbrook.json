@@ -169,18 +169,6 @@
 			"description": "The side trail ends at a memorial overlooking the valley, across to Martins Lookout."
 		},
 		{
-			"title": "X marks the spot",
-			"badge": "church",
-			"lon": 150.5731112426449,
-			"lat": -33.74012684182669,
-			"radius": 0.0004,
-			"explanation": [
-				"It's hard not to look upon this view without reverence."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to earn the mystery trophy</center>"
-		},
-		{
 			"type": "waypoint",
 			"photo": "132_p5270172.jpg",
 			"lon": 150.572553,
@@ -242,18 +230,6 @@
 			"lon": 150.60342699999998,
 			"lat": -33.766579000100194,
 			"description": "Find the crossing at the shallow part of the river."
-		},
-		{
-			"title": "Mandatory Foot Bath",
-			"badge": "duck_rubberduck",
-			"lon": 150.60347501085,
-			"lat": -33.76656438789008,
-			"radius": 0.0004,
-			"explanation": [
-				"Maybe you can jump it, but who would want to finish their walk in wet shoes."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

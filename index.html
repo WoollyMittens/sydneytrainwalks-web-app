@@ -210,7 +210,7 @@
 		</template>
 
 		<template id="trophies-template">
-			<figure>
+			<figure style="background-image: url({background});">
 				<img alt="{icon} icon" src="./inc/img/{icon}.svg" />
 				<figcaption>
 					{title}
@@ -225,8 +225,8 @@
 				<img alt="{icon} icon" src="./inc/img/{icon}.svg" />
 				<h3>{title}</h3>
 			</header>
-			<figure style="background-image:url('./inc/{tile}.jpg');">
-				<div style="background-image:url('./inc/{background}.jpg');"></div>
+			<figure style="background-image: url({background});">
+				<img alt="" src="{photo}">
 				<figcaption>{description}</figcaption>
 			</figure>
 			<footer>

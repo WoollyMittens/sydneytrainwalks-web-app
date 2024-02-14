@@ -1,4 +1,4 @@
-//import { long2tile, lat2tile, tile2long, tile2lat } from "./slippy.js";
+import { long2tile, lat2tile, tile2long, tile2lat } from "./slippy.js";
 
 export class Trophies {
 	constructor(config, guideIds, loadGuide, updateView, busy) {
@@ -19,39 +19,18 @@ export class Trophies {
 		this.busyIndicator.show();
 		// clear the container
 		this.trophiesElement.innerHTML = '';
-		// filter out the trophies from the markers
-		var duplicates = {}, trophies = [], total = this.guideIds.length;
-		for (let index in this.guideIds) {
-			// get the guide key
-			let key = this.guideIds[index];
-			// load the guide
-			let guide = await this.loadGuide(key);
-			// update the progress indicator
-			this.trophiesElement.setAttribute('data-progress', Math.round(index / total * 100) + '%');
-			// for every marker in the guide
-			for (let marker of guide.markers) {
-				// if the marker is a (new) trophy
-				if (marker.type === 'hotspot' && !duplicates[marker.title]) {
-					// store the title to avoid duplicates
-					duplicates[marker.title] = true;
-					// store the trophy
-					trophies.push({
-						'id': key,
-						'marker': marker
-					});
-				}
-			}
-		}
+		// import the trophies
+		let trophies = await this.loadGuide('_trophies');
 		// sort the trophies
-		trophies.sort((a, b) => {
+		trophies.markers.sort((a, b) => {
 			return (a.marker.title > b.marker.title) ? 1 : -1;
 		});
 		// insert the markers
-		trophies.map((trophy) => {
+		trophies.markers.map((marker) => {
 			var wrapper, link;
 			// add a trophy badge
 			wrapper = document.createElement('li');
-			link = (this.getTrophy(trophy.marker.title)) ? this.addBadge(trophy.id, trophy.marker) : this.addMystery(trophy.id, trophy.marker);
+			link = (this.getTrophy(marker.title)) ? this.addBadge(marker) : this.addMystery(marker);
 			wrapper.appendChild(link);
 			this.trophiesElement.appendChild(wrapper);
 		});
@@ -59,11 +38,12 @@ export class Trophies {
 		this.busyIndicator.hide();
 	};
 
-	addBadge(id, marker) {
+	addBadge(marker) {
 		var link = document.createElement('a');
 		var template = this.trophiesTemplate;
 		// show the full badge
 		link.innerHTML += template.innerHTML
+			.replace(/{background}/g, this.config.localUrl + `/medium/${marker.key}/${marker.photo}`)
 			.replace(/{icon}/g, marker.badge)
 			.replace(/{title}/g, marker.title);
 		// make it look active
@@ -74,17 +54,20 @@ export class Trophies {
 		return link;
 	};
 
-	addMystery(id, marker) {
+	addMystery(marker) {
 		var link = document.createElement('a');
 		var template = this.trophiesTemplate;
+		// calculate the tile this trophy occurs on
+		var tile = [15, long2tile(marker.lon, 15), lat2tile(marker.lat, 15)];
 		// show a mystery badge
 		link.innerHTML += template.innerHTML
-			.replace(/{icon}/g, marker.type)
+			.replace(/{background}/g, this.config.localUrl + `/tiles/${tile[0]}/${tile[1]}/${tile[2]}.jpg`)
+			.replace(/{icon}/g, 'marker-hotspot')
 			.replace(/{title}/g, '???');
 		// make it looks passive
 		link.setAttribute('class', 'trophies-passive');
 		// deeplink to the guides page
-		link.addEventListener('click', this.deeplink.bind(this, id));
+		link.addEventListener('click', this.deeplink.bind(this, marker.key));
 		// return the link
 		return link;
 	};
@@ -124,17 +107,13 @@ export class Trophies {
 	details(marker) {
 		var container = this.trophyElement;
 		var template = this.trophyTemplate;
-		// calculate the tile this trophy occurs on
-		//var tile = [15, long2tile(marker.lon, 15), lat2tile(marker.lat, 15)];
-		var background = marker.title.replace(/:|\.|\,|\'|\s|\?|\!/g, '_').toLowerCase().trim();
 		// populate the modal
 		container.innerHTML = template.innerHTML
 			.replace(/{icon}/g, marker.badge)
 			.replace(/{title}/g, marker.title)
-			//.replace(/\{tile\}/g, 'tiles/' + tile.join('/'))
-			.replace(/{tile}/g, 'trophies/' + background)
-			.replace(/{background}/g, 'trophies/' + background)
-			.replace(/{description}/g, '<p>' + marker.explanation.join('</p><p>') + '</p>');
+			.replace(/{background}/g, this.config.localUrl + `/medium/${marker.key}/${marker.photo}`)
+			.replace(/{photo}/g, this.config.localUrl + `/medium/${marker.key}/${marker.photo}`)
+			.replace(/{description}/g, `<p>${marker.description}</p>`);
 		// add the event handler to close the modal popup
 		var closer = container.querySelector('footer button');
 		closer.addEventListener('click', this.close.bind(this, marker, container));

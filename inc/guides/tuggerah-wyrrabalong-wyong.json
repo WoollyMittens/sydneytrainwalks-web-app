@@ -29,67 +29,6 @@
 			"lat": -33.308128
 		},
 		{
-			"title": "All Jetty's Short and Long: Parry's Jetty",
-			"badge": "elevation_5",
-			"lon": 151.4789173198756,
-			"lat": -33.36094015282082,
-			"radius": 0.0004,
-			"explanation": [
-				"The third and last chance for a long jetty."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to earn the mystery trophy</center>"
-		},
-		{
-			"title": "All Jetty's Short and Long: Watkin's Jetty",
-			"badge": "elevation_5",
-			"lon": 151.4825805048008,
-			"lat": -33.35771585379955,
-			"radius": 0.0004,
-			"explanation": [
-				"It's not as long, but also not as busy."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to earn the mystery trophy</center>"
-		},
-		{
-			"title": "All Jetty's Short and Long: Long Jetty",
-			"badge": "elevation_5",
-			"lon": 151.4862488865436,
-			"lat": -33.35284070246215,
-			"radius": 0.0004,
-			"explanation": [
-				"Walking down this endless jetty feels like being wrapped in a blank sheet of paper."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to earn the mystery trophy</center>"
-		},
-		{
-			"title": "All Jetty's Short and Long: The Entrance",
-			"badge": "elevation_5",
-			"lon": 151.5042121845818,
-			"lat": -33.326519083619,
-			"radius": 0.0004,
-			"explanation": [
-				"A nice quiet waterway to prepare for the tourist bustle of the Entrance."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to earn the mystery trophy</center>"
-		},
-		{
-			"title": "Four Seasons in One Day: Rainforest",
-			"badge": "day_rain",
-			"lon": 151.5290361,
-			"lat": -33.2969139,
-			"radius": 0.0004,
-			"explanation": [
-				"A green sky overhead as the rainforest covers the entire sky.",
-				"Once all of Central Coast was painted with the paints on this small pallete."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to earn the mystery trophy</center>"
-		},
-		{
 			"type": "waypoint",
 			"photo": "p8313711_p8313713.jpg",
 			"lon": 151.53778888888888,
@@ -97,61 +36,11 @@
 			"description": "At the end of the track continue right down the Redgum Trail."
 		},
 		{
-			"title": "Four Seasons in One Day: Red Gum Forest",
-			"badge": "day_rain",
-			"lon": 151.5451583,
-			"lat": -33.2883583,
-			"radius": 0.0004,
-			"explanation": [
-				"A streak of vivid red and orange across the sandy ridge.",
-				"Once all of Central Coast was painted with the paints on this small pallete."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to earn the mystery trophy</center>"
-		},
-		{
 			"type": "waypoint",
 			"photo": "p8313758.jpg",
 			"lon": 151.5509027777778,
 			"lat": -33.28182777777778,
 			"description": "Follow the bushtrails all the way to the wetlands trailhead."
-		},
-		{
-			"title": "Four Seasons in One Day: Wetlands",
-			"badge": "day_rain",
-			"lon": 151.5492889,
-			"lat": -33.284775,
-			"radius": 0.0004,
-			"explanation": [
-				"A short stretch of wetland makes a lush green welcome mat.",
-				"Once all of Central Coast was painted with the paints on this small pallete."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to earn the mystery trophy</center>"
-		},
-		{
-			"title": "All Jetty's Short and Long: Gorokan",
-			"badge": "elevation_5",
-			"lon": 151.5181339,
-			"lat": -33.2596797,
-			"radius": 0.0004,
-			"explanation": [
-				"That bridge will cut 20 kilometres off your loop around the lake. Tempting?"
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to earn the mystery trophy</center>"
-		},
-		{
-			"title": "All Jetty's Short and Long: Tacoma",
-			"badge": "elevation_5",
-			"lon": 151.4601737,
-			"lat": -33.2918382,
-			"radius": 0.0004,
-			"explanation": [
-				"It takes a day to walk around the lake to the side of the Wyong River across from here."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",
