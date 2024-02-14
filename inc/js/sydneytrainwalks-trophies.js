@@ -43,7 +43,8 @@ export class Trophies {
 		var template = this.trophiesTemplate;
 		// show the full badge
 		link.innerHTML += template.innerHTML
-			.replace(/{background}/g, this.config.localUrl + `/medium/${marker.key}/${marker.photo}`)
+			.replace(/{foreground}/g, this.config.remoteUrl + `/medium/${marker.key}/${marker.photo}`)
+			.replace(/{background}/g, this.config.localUrl + `/small/${marker.key}/${marker.photo}`)
 			.replace(/{icon}/g, marker.badge)
 			.replace(/{title}/g, marker.title);
 		// make it look active
@@ -61,6 +62,7 @@ export class Trophies {
 		var tile = [15, long2tile(marker.lon, 15), lat2tile(marker.lat, 15)];
 		// show a mystery badge
 		link.innerHTML += template.innerHTML
+			.replace(/{foreground}/g, this.config.localUrl + `/tiles/${tile[0]}/${tile[1]}/${tile[2]}.jpg`)
 			.replace(/{background}/g, this.config.localUrl + `/tiles/${tile[0]}/${tile[1]}/${tile[2]}.jpg`)
 			.replace(/{icon}/g, 'marker-hotspot')
 			.replace(/{title}/g, '???');

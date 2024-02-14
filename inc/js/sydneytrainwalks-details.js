@@ -39,8 +39,21 @@ export class Details {
 		this.updateWall(guide, exif);
 	}
 
-	updateMeta(id) {
-		// TODO: update META tags
+	updateMeta(guide) {
+		// format the guide data
+		const start = guide.markers[0].location;
+		const end = guide.markers[guide.markers.length - 1].location;
+		const title = `A bushwalk from ${start} to ${end} via ${guide.location} - Sydney Hiking Trips`;
+		const url = `/?key=${guide.key}`;
+		// update the route without refreshing
+		window.history.pushState(guide, title, url);
+		// update the meta elements
+		document.querySelector('title').innerHTML = title;
+		document.querySelector('meta[name="description"]').setAttribute('content', guide.description);
+		document.querySelector('meta[property="og:url"]').setAttribute('content', this.config.remoteUrl + url);
+		document.querySelector('meta[property="og:image"]').setAttribute('content', this.config.remoteUrl + `/medium/${guide.key}/${guide.hero}`);
+		document.querySelector('meta[property="og:title"]').setAttribute('content', title);
+		document.querySelector('meta[property="og:description"]').setAttribute('content', guide.description);
 	}
 
 	updateTitle(guide) {

@@ -166,7 +166,7 @@
 			<time datetime="{updated}">Updated: {date}</time>
 			{description}
 			<p class="duration">
-				It takes about {duration} hours to complete the full {distance} kilometre walk, but you can also do smaller parts of it.
+				It takes about {duration} hours to complete the <b>full</b> {distance} kilometre walk, but you can also <b>do shorter parts</b> of it.
 				Consider that there's a lot to see along the way, so plan for plenty of breaks and photography stops.
 			</p>
 		</template>
@@ -210,7 +210,7 @@
 		</template>
 
 		<template id="trophies-template">
-			<figure style="background-image: url({background});">
+			<figure style="background-image: url({foreground}), url({background});">
 				<img alt="{icon} icon" src="./inc/img/{icon}.svg" />
 				<figcaption>
 					{title}
