@@ -25,16 +25,10 @@
 		{
 			"location": "Cowan",
 			"type": "train",
+			"photo": "p7058830.jpg",
 			"description": "Get the train to Cowan using <a href=\"https://transportnsw.info/trip#/?to=Cowan\">transportnsw.info</a>.",
 			"lon": 151.171966553,
 			"lat": -33.593074799
-		},
-		{
-			"type": "waypoint",
-			"photo": "p7058830.jpg",
-			"lon": 151.171967,
-			"lat": -33.593075,
-			"description": "When traveling to Cowan by train, mind that only the rear few doors open at the platform. Exit the station on the side away from the highway."
 		},
 		{
 			"type": "waypoint",
@@ -76,7 +70,7 @@
 			"photo": "p7058922.jpg",
 			"lon": 151.195953,
 			"lat": -33.584307,
-			"description": "<i>+ 3h / 8km</i> The start of this track is obscured by heavy growth, but quickly opens up to a trail along a ridge with views down on both sides.",
+			"description": "<i>+8km</i> The start of this track is obscured by heavy growth, but quickly opens up to a trail along a ridge with views down on both sides.",
 			"optional": true
 		},
 		{
@@ -226,12 +220,13 @@
 			"photo": "p7059360_p7059368.jpg",
 			"lon": 151.23281111111112,
 			"lat": -33.54736944444444,
-			"description": "<i>+ 0.5h / 2km</i> If there's a long wait before the train, consider adding this loop around the harbour.",
+			"description": "<i>+2km</i> If there's a long wait before the train, consider adding this loop around the harbour.",
 			"optional": true
 		},
 		{
 			"location": "Hawkesbury River",
 			"type": "train",
+			"photo": "p7059343.jpg",
 			"description": "Plan your return trip from Hawkesbury River at <a href=\"https://transportnsw.info/trip#/?from=Hawkesbury River\">transportnsw.info</a>.",
 			"lon": 151.22668457,
 			"lat": -33.54686355600001

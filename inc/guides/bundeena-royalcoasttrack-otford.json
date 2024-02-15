@@ -23,31 +23,12 @@
 	},
 	"markers": [
 		{
-			"location": "Bundeena",
-			"type": "train",
-			"description": "Get the train to Cronulla and ferry to Bundeena using <a href=\"https://transportnsw.info/trip#/?to=Bundeena\">transportnsw.info</a>.",
-			"lon": 151.15145874,
-			"lat": -34.055347443
-		},
-		{
-			"type": "waypoint",
-			"photo": "p9285439.jpg",
-			"lon": 151.15030000000002,
-			"lat": -34.055841666666666,
-			"description": "Exit the station and follow the road left to the tunnel underneath the tracks."
-		},
-		{
-			"type": "waypoint",
-			"photo": "p9285440.jpg",
-			"lon": 151.15025833333334,
-			"lat": -34.05585555555555,
-			"description": "Continue towards the bay through the reserve to find the ferry dock. Take the ferry to Bundeena from there."
-		},
-		{
+			"location": "Cronulla",
 			"type": "ferry",
 			"lat": -34.05625833333333,
 			"lon": 151.1499861111111,
-			"description": "Transport from this location: <a href=\"https://transportnsw.info/trip#/?from=Cronulla&to=Bundeena\">transportnsw.info</a>"
+			"photo": "p9285441.jpg",
+			"description": "Get the ferry from Cronulla to Bundeena <a href=\"https://transportnsw.info/trip#/?to=Bundeena\">transportnsw.info</a>."
 		},
 		{
 			"type": "waypoint",
@@ -68,7 +49,7 @@
 			"photo": "p9285489_p3080081.jpg",
 			"lon": 151.159669,
 			"lat": -34.08127300007897,
-			"description": "<i>+ 1.5h / 6km</i> If there is an extra hour to spare be sure to take the more adventurous detour around Jibbon Head.",
+			"description": "<i>+6km</i> If there is an extra hour to spare be sure to take the more adventurous detour around Jibbon Head.",
 			"optional": true
 		},
 		{
@@ -386,7 +367,7 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "p9285974.jpg",
+			"photo": "p9285971.jpg",
 			"lon": 151.00588888888888,
 			"lat": -34.21071944444445,
 			"description": "Follow the signs down this gravel road down to Otford Station. Mind that trains are not frequent there and the fastest connection anywhere may be from either platform."
@@ -396,6 +377,7 @@
 			"type": "train",
 			"lat": -34.21071944444445,
 			"lon": 151.00588888888888,
+			"photo": "p9285974.jpg",
 			"description": "Plan your return trip from Otford at <a href=\"https://transportnsw.info/trip#/?from=Otford\">transportnsw.info</a>."
 		}
 	]

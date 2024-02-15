@@ -25,6 +25,7 @@
 		{
 			"location": "Glenbrook",
 			"type": "train",
+			"photo": "p7250001.jpg",
 			"description": "Get the train to Glenbrook using <a href=\"https://transportnsw.info/trip#/?to=Glenbrook\">transportnsw.info</a>.",
 			"lon": 150.620507542,
 			"lat": -33.7689544167
@@ -147,13 +148,6 @@
 			"lon": 150.602677,
 			"lat": -33.788866,
 			"description": "Directly across from the Sandstone Workshop on the right side of the track a rough trail leads up the ridge."
-		},
-		{
-			"type": "waypoint",
-			"photo": "p7250146.jpg",
-			"lon": 150.60269599999998,
-			"lat": -33.788858999999995,
-			"description": "The rough parts of this climb have been marked with red ribbons and stacks of rocks (cairns)."
 		},
 		{
 			"type": "waypoint",
@@ -283,7 +277,7 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "p7250300.jpg",
+			"photo": "p7250283_p7250286.jpg",
 			"lon": 150.63792999999998,
 			"lat": -33.781137,
 			"description": "From the car park make your way past the rock climbing area to the fenced lookout."
@@ -340,9 +334,10 @@
 		{
 			"location": "Glenbrook",
 			"type": "train",
+			"photo": "p7250328.jpg",
 			"description": "Plan your return trip from Glenbrook at <a href=\"https://transportnsw.info/trip#/?from=Glenbrook\">transportnsw.info</a>.",
-			"lon": 150.6218093354,
-			"lat": -33.769141417
+			"lon": 150.620507542,
+			"lat": -33.7689544167
 		}
 	]
 }

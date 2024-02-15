@@ -25,6 +25,7 @@
 		{
 			"location": "Palm Beach",
 			"type": "bus",
+			"photo": "0020_dsc_4814_dsc_4823.jpg",
 			"description": "Get the bus or ferry to Palm Beach using <a href=\"https://transportnsw.info/trip#/?to=Palm Beach\">transportnsw.info</a>.",
 			"lon": 151.319931,
 			"lat": -33.596193
@@ -429,6 +430,14 @@
 			"description": "Follow the footpath along the lagoon to the bridge."
 		},
 		{
+			"location": "Narrabeen",
+			"type": "bus",
+			"photo": "2078_p3092168p.jpg",
+			"description": "Get the bus to/from Narrabeen Lagoon using <a href=\"https://transportnsw.info/trip#/?from=Pittwater Rd opp Gondola Rd\">transportnsw.info</a>.",
+			"lon": 151.296573,
+			"lat": -33.708237
+		},
+		{
 			"type": "waypoint",
 			"photo": "2080_dsc_5302.jpg",
 			"lon": 151.3048097500428,
@@ -573,25 +582,19 @@
 			"photo": "2750_dsc_5452.jpg",
 			"lon": 151.2879271899886,
 			"lat": -33.784711700001765,
-			"description": "Cross the bridge across Manly Lagoon."
+			"description": "Cross the bridge and follow the esplanade along the beach."
 		},
 		{
 			"type": "waypoint",
 			"photo": "2770_dsc_5455.jpg",
 			"lon": 151.28820694002124,
 			"lat": -33.796620009887526,
-			"description": "Follow the footpath along the beach to Manly's shopping arcade."
-		},
-		{
-			"type": "waypoint",
-			"photo": "2780_dsc_5456.jpg",
-			"lon": 151.2846410800113,
-			"lat": -33.799169680035064,
-			"description": "The ferry dock is at the far end of the shopping arcade."
+			"description": "Follow the shopping arcade to the Manly Ferry Dock."
 		},
 		{
 			"location": "Manly",
 			"type": "ferry",
+			"photo": "2780_dsc_5456.jpg",
 			"description": "Plan your return trip from Narrabeen at <a href=\"https://transportnsw.info/trip#/?from=Manly\">transportnsw.info</a>.",
 			"lat": -33.80003333333333,
 			"lon": 151.2852861111111

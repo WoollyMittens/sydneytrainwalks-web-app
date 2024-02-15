@@ -1,5 +1,5 @@
 {
-	"location": "Sassafras Gully",
+	"location": "Lost World Lookout",
 	"lon": 150.572067261,
 	"lat": -33.75033950800001,
 	"description": "Lorem ipsum dolor sit amet.",
@@ -25,30 +25,24 @@
 		{
 			"location": "Springwood",
 			"type": "train",
+			"photo": "001_p5270001.jpg",
 			"description": "Get the train to Springwood using <a href=\"https://transportnsw.info/trip#/?to=Springwood\">transportnsw.info</a>.",
 			"lon": 150.561798096,
 			"lat": -33.69906234699999
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_p5270001.jpg",
-			"lon": 150.56418000000002,
-			"lat": -33.698775,
-			"description": "Exit the train station on the left hand side and follow the shops to the left."
-		},
-		{
-			"type": "waypoint",
 			"photo": "004_p5270004.jpg",
 			"lon": 150.56545299989034,
 			"lat": -33.699011999999996,
-			"description": "Find the little plaza on the right side of the shopping street and cross the carpark."
+			"description": "Going left from the station find the little plaza on the right side of the shopping street."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_p5270006.jpg",
 			"lon": 150.56527300000002,
 			"lat": -33.699647999999996,
-			"description": "On the far side of the carpark, a sign shows the way into Sassafras Gully."
+			"description": "Across the carpark from the shops, a sign shows the way into Sassafras Gully."
 		},
 		{
 			"type": "waypoint",
@@ -286,18 +280,12 @@
 			"photo": "230_p5270262.jpg",
 			"lon": 150.61820600000001,
 			"lat": -33.768283,
-			"description": "Turn right after cross the railway line and follow the street along the tracks."
-		},
-		{
-			"type": "waypoint",
-			"photo": "232_p5270264.jpg",
-			"lon": 150.62115300000002,
-			"lat": -33.769023,
-			"description": "The entrance to the train station should be apparent on the right."
+			"description": "Turn right after cross the railway line and follow the street along the tracks to the station."
 		},
 		{
 			"location": "Glenbrook",
 			"type": "train",
+			"photo": "232_p5270264.jpg",
 			"description": "Plan your return trip from Glenbrook at <a href=\"https://transportnsw.info/trip#/?from=Glenbrook\">transportnsw.info</a>.",
 			"lon": 150.621612549,
 			"lat": -33.768642426

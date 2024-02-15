@@ -1,7 +1,7 @@
 {
 	"location": "Royal National Park",
-	"lon": 151.081886,
-	"lat": -34.091571,
+	"lon": 151.085218,
+	"lat": -34.093973,
 	"description": "Lorem ipsum dolor sit amet.",
 	"keywords": {
 		"ipsum": "https://external.link/"
@@ -17,44 +17,25 @@
 	"updated": "2015-05-23",
 	"bounds": {
 		"west": 151.0400390625,
-		"north": -34.016241889667015,
+		"north": -34.03445260967645,
 		"east": 151.171875,
 		"south": -34.10725639663118
 	},
 	"markers": [
 		{
-			"location": "Bundeena",
-			"type": "train",
-			"description": "Get the train to Cronulla and ferry to Bundeena using <a href=\"https://transportnsw.info/trip#/?to=Bundeena\">transportnsw.info</a>.",
-			"lon": 151.151371,
-			"lat": -34.055287
-		},
-		{
-			"type": "waypoint",
-			"photo": "p5240003.jpg",
-			"lon": 151.151512,
-			"lat": -34.055443999999994,
-			"description": "Exit the station and follow the road left and use the tunnel underneath the tracks."
-		},
-		{
-			"type": "waypoint",
-			"photo": "p5240007.jpg",
-			"lon": 151.150381,
-			"lat": -34.055702,
-			"description": "Across the street from the tunnel a footpath leads to the ferry dock."
-		},
-		{
-			"type": "waypoint",
-			"photo": "p5240025.jpg",
-			"lon": 151.14969,
-			"lat": -34.056343,
-			"description": "Take the ferry to Bundeena from the ferry dock. It's an hourly service and requires cash."
-		},
-		{
+			"location": "Cronulla",
 			"type": "ferry",
-			"lat": -34.05625833333333,
-			"lon": 151.1499861111111,
-			"description": "Transport from this location: <a href=\"https://transportnsw.info/trip#/?from=Cronulla&to=Bundeena\">transportnsw.info</a>"
+			"photo": "p5240025.jpg",
+			"description": "Get the ferry from Cronulla to Bundeena using <a href=\"https://transportnsw.info/trip#/?to=Bundeena\">transportnsw.info</a>.",
+			"lon": 151.14969,
+			"lat": -34.056343
+		},
+		{
+			"type": "waypoint",
+			"photo": "p5240040.jpg",
+			"description": "Transport from this location: <a href=\"https://transportnsw.info/trip#/?from=Cronulla&to=Bundeena\">transportnsw.info</a>",
+			"lon": 151.15072700000002,
+			"lat": -34.082694000000004
 		},
 		{
 			"type": "waypoint",
@@ -82,17 +63,7 @@
 			"photo": "p5240162.jpg",
 			"lon": 151.14602,
 			"lat": -34.080618,
-			"description": "The path continues across the slippery rocks to the foot of the overhang. If the sea is too rough, please us the main road from the beach instead."
-		},
-		{
-			"type": "waypoint",
-			"photo": "p5240163.jpg",
-			"description": "The ridges of the cliff make for a staircase up to the underside of the overhang."
-		},
-		{
-			"type": "waypoint",
-			"photo": "p5240170.jpg",
-			"description": "The path up to the lookout is on the right side of the overhang."
+			"description": "The path continues across the slippery rocks to the bottom of a lookout. If the sea is too rough, please us the main road from the beach instead."
 		},
 		{
 			"type": "waypoint",
@@ -292,11 +263,6 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "p5240375.jpg",
-			"description": "At the rocky outcrops along the trail, nice views can be had across Port Hacking."
-		},
-		{
-			"type": "waypoint",
 			"photo": "p5240426.jpg",
 			"lon": 151.100637,
 			"lat": -34.09562900010492,
@@ -349,12 +315,7 @@
 			"photo": "p5240477_p5240484.jpg",
 			"lon": 151.07822777777778,
 			"lat": -34.092955555555555,
-			"description": "After a steep descent across loose rocks, the trail finally ends at rapids in a wide creek."
-		},
-		{
-			"type": "waypoint",
-			"photo": "p5240497.jpg",
-			"description": "Cross the creek at a shallow point and take great care not to slip on the rocks."
+			"description": "After a steep descent, cross the creek at a shallow point and take great care not to slip on the rocks."
 		},
 		{
 			"type": "waypoint",
@@ -393,8 +354,10 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "p5240569.jpg",
-			"description": "The trail winds it way through the bush, before making a steep meandering descent down to Audley."
+			"photo": "p5240572_p5240580.jpg",
+			"description": "The trail winds it way through the bush, before making a steep meandering descent down to Audley.",
+			"lon": 151.06130555555558,
+			"lat": -34.07792222222223
 		},
 		{
 			"type": "waypoint",
@@ -447,9 +410,11 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "p5240735_p5240740.jpg",
-			"description": "<i>+ 1h / 3km</i> If time allows follow the road to Reids Flat campground.",
-			"optional": true
+			"photo": "p5240688.jpg",
+			"description": "<i>+3km</i> If time allows follow the road to Reids Flat campground.",
+			"optional": true,
+			"lon": 151.05688500000002,
+			"lat": -34.072583
 		},
 		{
 			"type": "waypoint",
@@ -585,18 +550,12 @@
 			"photo": "p5240870.jpg",
 			"lon": 151.052872,
 			"lat": -34.045052,
-			"description": "Use the traffic light to cross the busy highway to the Museum's car park."
-		},
-		{
-			"type": "waypoint",
-			"photo": "p5240872.jpg",
-			"lon": 151.051625,
-			"lat": -34.044698,
-			"description": "At the far end of the car park, you will find Loftus Station."
+			"description": "Use the traffic light to cross the busy highway to the station's car park."
 		},
 		{
 			"location": "Loftus",
 			"type": "train",
+			"photo": "p5240872.jpg",
 			"description": "Plan your return trip from Loftus at <a href=\"https://transportnsw.info/trip#/?from=Loftus\">transportnsw.info</a>.",
 			"lat": -34.045131,
 			"lon": 151.051388

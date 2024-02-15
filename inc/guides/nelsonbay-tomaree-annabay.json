@@ -341,7 +341,7 @@
 		{
 			"type": "waypoint",
 			"photo": "002_dsc_1762.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "<i>+?km</i> Lorem ipsum dolor sit amet.",
 			"lon": 152.17576043997016,
 			"lat": -32.73582794000238,
 			"optional": true
@@ -427,7 +427,7 @@
 		{
 			"type": "waypoint",
 			"photo": "005_dsc_1776_p3303381.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "<i>+?km</i> Lorem ipsum dolor sit amet.",
 			"lon": 152.1729227700369,
 			"lat": -32.7381312100177,
 			"optional": true
@@ -755,7 +755,7 @@
 		{
 			"type": "waypoint",
 			"photo": "008_dsc_1875.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "<i>+?km</i> Lorem ipsum dolor sit amet.",
 			"lon": 152.138369719981,
 			"lat": -32.75894605999833,
 			"optional": true

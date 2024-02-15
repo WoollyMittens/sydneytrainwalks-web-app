@@ -25,16 +25,10 @@
 		{
 			"location": "Roseville",
 			"type": "train",
+			"photo": "p7200321.jpg",
 			"description": "Get the train to Roseville using <a href=\"https://transportnsw.info/trip#/?to=Roseville\">transportnsw.info</a>.",
 			"lon": 151.177582,
 			"lat": -33.784401
-		},
-		{
-			"type": "waypoint",
-			"photo": "p7200321.jpg",
-			"lon": 151.1779519600164,
-			"lat": -33.78437343000045,
-			"description": "Exit the station to the left and cross the street to the shops."
 		},
 		{
 			"type": "waypoint",
@@ -90,7 +84,7 @@
 			"photo": "p7200355_img_20180630_070622.jpg",
 			"lon": 151.20905833333333,
 			"lat": -33.77464722222222,
-			"description": "<i>+ 0.25h / 0km</i> Currently Flat Rock Beach Track is closed. Follow the firetrail up to Downpatrick Road.",
+			"description": "<i>+0.25h</i> Currently Flat Rock Beach Track is closed. Follow the firetrail up to Downpatrick Road.",
 			"detour": true
 		},
 		{
@@ -121,7 +115,7 @@
 			"photo": "p7200400_p7200415.jpg",
 			"lon": 151.22525,
 			"lat": -33.78278611111111,
-			"description": "<i>+ 0.25h / 0km</i> Take the side trail onto Flatrock Beach. Return to the intersection after.",
+			"description": "<i>+0.25h</i> Take the side trail onto Flatrock Beach. Return to the intersection after.",
 			"optional": true
 		},
 		{
@@ -185,7 +179,7 @@
 			"photo": "p7200585.jpg",
 			"lon": 151.22795394001892,
 			"lat": -33.765534379990875,
-			"description": "<i>- 1h / 2km</i> For a shortcut, follow the Bluf Track up to the sports fields and follow the Engravings Trail right.",
+			"description": "<i>-2km</i> For a shortcut, follow the Bluf Track up to the sports fields and follow the Engravings Trail right.",
 			"optional": true
 		},
 		{
@@ -305,7 +299,7 @@
 			"photo": "p7200842_p7200844.jpg",
 			"lon": 151.29250277777777,
 			"lat": -33.79978055555555,
-			"description": "<i>+ 2h / 8km</i> If time allows continue following the promenade to Shelly Beach.",
+			"description": "<i>+8km</i> If time allows continue following the promenade to Shelly Beach.",
 			"optional": true
 		},
 		{
@@ -382,7 +376,7 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "p7200939_p7200940.jpg",
+			"photo": "p7200933_p7200938.jpg",
 			"lon": 151.2852861111111,
 			"lat": -33.80003333333333,
 			"description": "Follow the esplanade along the bay to the Manly Ferry and the bus stops.",
@@ -391,6 +385,7 @@
 		{
 			"location": "Manly",
 			"type": "ferry",
+			"photo": "p7200939_p7200940.jpg",
 			"description": "Plan your return trip from Manly at <a href=\"https://transportnsw.info/trip#/?from=Manly\">transportnsw.info</a>.",
 			"lat": -33.80003333333333,
 			"lon": 151.2852861111111

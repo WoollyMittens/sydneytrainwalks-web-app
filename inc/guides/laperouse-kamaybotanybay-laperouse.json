@@ -25,30 +25,26 @@
 		{
 			"location": "La Perouse",
 			"type": "bus",
+			"photo": "pxl_20231117_200915506.jpg",
 			"description": "Get the bus to La Perouse using <a href=\"https://transportnsw.info/trip#/?to=La Perouse\">transportnsw.info</a>.",
 			"lon": 151.233826,
 			"lat": -33.988052
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231117_200915506.jpg",
-			"lon": 151.23376599999997,
-			"lat": -33.988265,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20231117_201427217.jpg",
 			"lon": 151.23333499999998,
 			"lat": -33.989133,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "<i>+0.5km</i> Lorem ipsum dolor sit amet.",
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20231117_201638220.jpg",
 			"lon": 151.232126,
 			"lat": -33.99033,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true
 		},
 		{
 			"type": "waypoint",
@@ -233,22 +229,9 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
-			"photo": "pxl_20231117_214258440.jpg",
-			"lon": 151.23905399999998,
-			"lat": -33.988639,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231117_214357241.jpg",
-			"lon": 151.23842699999997,
-			"lat": -33.988219,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
 			"location": "La Perouse",
 			"type": "bus",
+			"photo": "pxl_20231117_200915506.jpg",
 			"description": "Plan your return trip from Bondi Beach at <a href=\"https://transportnsw.info/trip#/?from=La Perouse\">transportnsw.info</a>.",
 			"lon": 151.233826,
 			"lat": -33.988052

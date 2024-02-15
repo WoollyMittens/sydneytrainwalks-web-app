@@ -26,8 +26,8 @@
 			"location": "Mount Kuring-gai",
 			"type": "train",
 			"description": "Get the train to Mount Kuring-gai using <a href=\"https://transportnsw.info/trip#/?to=Mount Kuring-gai\">transportnsw.info</a>.",
-			"lon": 151.139877,
-			"lat": -33.654518
+			"lon": 151.136915,
+			"lat": -33.652868
 		},
 		{
 			"type": "waypoint",
@@ -181,7 +181,7 @@
 			"photo": "p8182673.jpg",
 			"lon": 151.17475539000014,
 			"lat": -33.71133804000673,
-			"description": "<i>- 4h / 16km</i> The bus stops near the Wildflower Garden allow for an early end to the walk.",
+			"description": "<i>-16km</i> The bus stops near the Wildflower Garden allow for an early end to the walk.",
 			"optional": true
 		},
 		{
@@ -294,32 +294,19 @@
 			"photo": "p8182930.jpg",
 			"lon": 151.2046582000049,
 			"lat": -33.77169000999313,
-			"description": "Follow the picnic area to the Roseville Bridge."
-		},
-		{
-			"type": "waypoint",
-			"photo": "p8182933_p8182938.jpg",
-			"lon": 151.20324166666666,
-			"lat": -33.773225,
-			"description": "Take the road from the park up to the bridge and cross it."
+			"description": "Follow the road out of the park across the Roseville Bridge."
 		},
 		{
 			"type": "waypoint",
 			"photo": "p8182942.jpg",
 			"lon": 151.20210604999852,
 			"lat": -33.774200689983346,
-			"description": "On the other side of the bridge, take the underpass to end up on Babbage Road."
-		},
-		{
-			"type": "waypoint",
-			"photo": "p8182943.jpg",
-			"lon": 151.17784118997173,
-			"lat": -33.78395844,
-			"description": "From the bridge, follow the suburban streets to Roseville Station."
+			"description": "From the other side of the bridge, follow the Warringah Road to Roseville Station."
 		},
 		{
 			"location": "Roseville",
 			"type": "train",
+			"photo": "p8182943.jpg",
 			"description": "Plan your return trip from Roseville at <a href=\"https://transportnsw.info/trip#/?from=Roseville\">transportnsw.info</a>.",
 			"lon": 151.177841,
 			"lat": -33.783958

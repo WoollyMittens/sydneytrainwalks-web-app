@@ -26,8 +26,8 @@
 			"location": "Mount Kuring-gai",
 			"type": "train",
 			"description": "Get the train to Mount Kuring-gai using <a href=\"https://transportnsw.info/trip#/?to=Mount Kuring-gai\">transportnsw.info</a>.",
-			"lon": 151.135559082,
-			"lat": -33.655017853
+			"lon": 151.136915,
+			"lat": -33.652868
 		},
 		{
 			"type": "waypoint",
@@ -118,7 +118,7 @@
 			"photo": "pc218774.jpg",
 			"lon": 151.12485,
 			"lat": -33.60045277777778,
-			"description": "<i>+ 0.5h / 0km</i> Take the free ferry to find a restaurant and picnic area across the creek.",
+			"description": "<i>+0.5h</i> Take the free ferry to find a restaurant and picnic area across the creek.",
 			"optional": true
 		},
 		{
@@ -202,8 +202,8 @@
 			"location": "Cowan",
 			"type": "train",
 			"description": "Plan your return trip from Cowan at <a href=\"https://transportnsw.info/trip#/?from=Cowan\">transportnsw.info</a>.",
-			"lon": 151.170883179,
-			"lat": -33.593727112
+			"lon": 151.171966553,
+			"lat": -33.593074799
 		}
 	]
 }

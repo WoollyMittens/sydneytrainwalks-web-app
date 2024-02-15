@@ -25,23 +25,24 @@
 		{
 			"location": "Springwood",
 			"type": "train",
+			"photo": "001_p4080001.jpg",
 			"description": "Get the train to Springwood using <a href=\"https://transportnsw.info/trip#/?to=Springwood\">transportnsw.info</a>.",
 			"lat": -33.699158999999995,
 			"lon": 150.563733
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_p4080001.jpg",
-			"lon": 150.563733,
-			"lat": -33.699158999999995,
-			"description": "Exit the station to the left and follow the road down the shopping street."
+			"photo": "003_p4080003.jpg",
+			"description": "Exit the station and follow Macquarie Rd left past the bowling club.",
+			"lon": 150.569443,
+			"lat": -33.69909699988141
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_p4080004.jpg",
 			"lon": 150.57075,
 			"lat": -33.6992,
-			"description": "Continue past the bowling club and turn left at the roundabout towards Winmalee."
+			"description": "At the roundabout turn left towards Winmalee."
 		},
 		{
 			"type": "waypoint",
@@ -66,6 +67,7 @@
 		},
 		{
 			"type": "bus",
+			"photo": "015_p4080015.jpg",
 			"description": "Take the bus to Winmalee using <a href=\"https://transportnsw.info/trip#/?to=Winmalee\">transportnsw.info</a>.",
 			"lat": -33.672309999999996,
 			"lon": 150.60895399999998
@@ -222,18 +224,12 @@
 			"photo": "198_p4080232.jpg",
 			"lon": 150.75193423999423,
 			"lat": -33.5975036900369,
-			"description": "Follow the path past the sportsfield on the right."
-		},
-		{
-			"type": "waypoint",
-			"photo": "199_p4080233.jpg",
-			"lon": 150.75223465000673,
-			"lat": -33.59847776999144,
-			"description": "The train station is across the street from the park."
+			"description": "Follow the path around the oval to Richmond Station."
 		},
 		{
 			"location": "Richmond",
 			"type": "train",
+			"photo": "199_p4080233.jpg",
 			"description": "Plan your return trip from Richmond at <a href=\"https://transportnsw.info/trip#/?from=Richmond\">transportnsw.info</a>.",
 			"lat": -33.59847776999144,
 			"lon": 150.75223465000673

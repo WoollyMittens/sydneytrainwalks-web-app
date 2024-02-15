@@ -2290,6 +2290,9 @@ body.screen-photos .photowall {
 .localmap-legend-full:hover {
   outline: none !important;
 }
+.localmap-legend-image {
+  background-color: rgba(127, 127, 127, 0.5);
+}
 .localmap-legend-photo {
   display: block;
   background-color: rgba(0, 0, 0, 0.667);
@@ -2300,8 +2303,8 @@ body.screen-photos .photowall {
 }
 .localmap-legend-icon {
   position: absolute;
-  width: 4rem;
-  height: 4rem;
+  width: 33.333%;
+  height: auto;
   left: 0.5rem;
   top: 0.5rem;
 }

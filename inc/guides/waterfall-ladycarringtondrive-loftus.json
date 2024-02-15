@@ -1,7 +1,7 @@
 {
 	"location": "Lady Carrington Drive",
-	"lon": 151.046112,
-	"lat": -34.120911,
+	"lon": 151.031128,
+	"lat": -34.137924,
 	"description": "Lorem ipsum dolor sit amet.",
 	"keywords": {
 		"ipsum": "https://external.link/"
@@ -17,7 +17,7 @@
 	"updated": "2013-02-16",
 	"bounds": {
 		"west": 150.97412109375,
-		"north": -34.016241889667015,
+		"north": -34.03445260967645,
 		"east": 151.072998046875,
 		"south": -34.161818161230386
 	},
@@ -751,22 +751,9 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
-			"photo": "004_pa056324.jpg",
-			"lon": 151.0514831499976,
-			"lat": -34.04535293999113,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_pa056325.jpg",
-			"lon": 151.0514831499976,
-			"lat": -34.04535293999113,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
 			"location": "Loftus",
 			"type": "train",
+			"photo": "004_pa056324.jpg",
 			"description": "Plan your return trip from Loftus at <a href=\"https://transportnsw.info/trip#/?from=Loftus\">transportnsw.info</a>.",
 			"lat": -34.04475,
 			"lon": 151.051377

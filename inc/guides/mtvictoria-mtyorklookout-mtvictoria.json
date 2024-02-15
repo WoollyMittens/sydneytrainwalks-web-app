@@ -25,6 +25,7 @@
 		{
 			"location": "Mount Victoria",
 			"type": "train",
+			"photo": "pb020002.jpg",
 			"description": "Get the train to Mount Victoria using <a href=\"https://transportnsw.info/trip#/?to=Mount Victoria\">transportnsw.info</a>.",
 			"lon": 150.256546021,
 			"lat": -33.588516235
@@ -207,6 +208,7 @@
 		{
 			"location": "Mount Victoria",
 			"type": "train",
+			"photo": "pb020409_pb020410.jpg",
 			"description": "Plan your return trip from Mount Victoria at <a href=\"https://transportnsw.info/trip#/?from=Mount Victoria\">transportnsw.info</a>.",
 			"lon": 150.256729126,
 			"lat": -33.588088989

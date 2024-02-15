@@ -25,70 +25,14 @@
 		{
 			"location": "Lake Haven",
 			"type": "bus",
-			"description": "Get the train to Wyong and the connecting bus to <a href=\"https://transportnsw.info/trip#/?to=Lake Haven\">transportnsw.info</a>.",
+			"photo": "dsc_8423.jpg",
+			"description": "Get the bus to Lake Haven using <a href=\"https://transportnsw.info/trip#/?to=Lake Haven\">transportnsw.info</a>.",
 			"lat": -33.241745,
 			"lon": 151.505208
 		},
 		{
-			"type": "kiosk",
-			"lat": -33.157889,
-			"lon": 151.629089
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.206129,
-			"lon": 151.586565
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.237165,
-			"lon": 151.563105
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.21808,
-			"lon": 151.522581
-		},
-		{
-			"type": "toilet",
-			"lat": -33.157655,
-			"lon": 151.628964
-		},
-		{
-			"type": "toilet",
-			"lat": -33.186904,
-			"lon": 151.621928
-		},
-		{
-			"type": "toilet",
-			"lat": -33.207205,
-			"lon": 151.586544
-		},
-		{
-			"type": "toilet",
-			"lat": -33.239487,
-			"lon": 151.564125
-		},
-		{
-			"type": "toilet",
-			"lat": -33.2298,
-			"lon": 151.530249
-		},
-		{
-			"type": "toilet",
-			"lat": -33.219919,
-			"lon": 151.526651
-		},
-		{
 			"type": "waypoint",
-			"photo": "dsc_8423.jpg",
-			"lon": 151.50523225998808,
-			"lat": -33.24235203999355,
-			"description": "Leave the bus from Wyong station at the Lake Haven shopping centre."
-		},
-		{
-			"type": "waypoint",
-			"photo": "dsc_8425.jpg",
+			"photo": "dsc_8424.jpg",
 			"lon": 151.50556986004793,
 			"lat": -33.24150291005291,
 			"description": "Follow the footpath around the cinema to the car park of the recreation centre."
@@ -123,7 +67,7 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_8442.jpg",
+			"photo": "dsc_8441.jpg",
 			"lon": 151.5045049600056,
 			"lat": -33.22274563000303,
 			"description": "At the intersection follow the footpath along the Pacific Highway to the right."
@@ -252,7 +196,7 @@
 			"photo": "dsc_8664.jpg",
 			"lon": 151.61691184,
 			"lat": -33.19400824000728,
-			"description": "<i>+ 0h / 0km</i> Follow the dirt road left a short distance to find a lookout point",
+			"description": "<i>+0km</i> Follow the dirt road left a short distance to find a lookout point",
 			"optional": true
 		},
 		{
@@ -428,7 +372,7 @@
 			"photo": "dsc_8814.jpg",
 			"lon": 151.6429570999571,
 			"lat": -33.12813466003317,
-			"description": "<i>+ 0.5h / 1km</i> A (degraded) section of a guided walk starts at the right side of the trail.",
+			"description": "<i>+1km</i> A (degraded) section of a guided walk starts at the right side of the trail.",
 			"optional": true
 		},
 		{
@@ -450,34 +394,21 @@
 			"photo": "dsc_8821.jpg",
 			"lon": 151.64517617992055,
 			"lat": -33.112173130057236,
-			"description": "Continue past the first bus stop at Caves Beach, since it is only for school busses."
-		},
-		{
-			"type": "waypoint",
-			"photo": "dsc_8822.jpg",
-			"lon": 151.64540713999196,
-			"lat": -33.11040790001002,
-			"description": "Take the bus to Newcastle from the bus stop at the Caves Beach car park."
+			"description": "Follow the busroute along Cave Beach road as far as time allows. There are more transport options from the Swansea Library."
 		},
 		{
 			"location": "Cave Beach",
 			"type": "bus",
-			"description": "Plan your return trip from Cave Beach in Swansea using <a href=\"https://transportnsw.info/trip#/?from=Cave Beach\">transportnsw.info</a>.",
+			"photo": "dsc_8822.jpg",
+			"description": "Plan your return trip from Cave Beach using <a href=\"https://transportnsw.info/trip#/?from=Cave Beach\">transportnsw.info</a>.",
 			"lat": -33.109987,
 			"lon": 151.645422
 		},
 		{
-			"type": "waypoint",
-			"photo": "pxl_20230916_074442218.jpg",
-			"lon": 151.63786,
-			"lat": -33.091205,
-			"description": "<i>+0.5h/3km</i>If time allows consider following the bus route on foot up to the library, where services are more frequent.",
-			"optional": true
-		},
-		{
 			"location": "Swansea",
 			"type": "bus",
-			"description": "Plan your return trip from the library in Swansea using <a href=\"https://transportnsw.info/trip#/?from=Swansea Library\">transportnsw.info</a>.",
+			"photo": "pxl_20230916_074442218.jpg",
+			"description": "Plan your return trip from Swansea using <a href=\"https://transportnsw.info/trip#/?from=Swansea Library\">transportnsw.info</a>.",
 			"lat": -33.091205,
 			"lon": 151.63786
 		}

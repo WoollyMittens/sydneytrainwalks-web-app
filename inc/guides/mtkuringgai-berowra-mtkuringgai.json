@@ -25,9 +25,10 @@
 		{
 			"location": "Mount Kuring-gai",
 			"type": "train",
+			"photo": "p5045976.jpg",
 			"description": "Get the train to Mount Kuring-gai using <a href=\"https://transportnsw.info/trip#/?to=Mount Kuring-gai\">transportnsw.info</a>.",
-			"lon": 151.1395614222,
-			"lat": -33.6544384249
+			"lon": 151.136915,
+			"lat": -33.652868
 		},
 		{
 			"type": "waypoint",
@@ -62,7 +63,7 @@
 			"photo": "p5045985_p5045989.jpg",
 			"lon": 151.14714999999998,
 			"lat": -33.65107222222222,
-			"description": "<i>+ 0.25h / 0.1km</i> Follow the split in the road to the right to a lookout.",
+			"description": "<i>+0.1km</i> Follow the split in the road to the right to a lookout.",
 			"optional": true
 		},
 		{
@@ -92,13 +93,6 @@
 			"lon": 151.16092777777777,
 			"lat": -33.64727777777778,
 			"description": "From the lookout take the track to the right, which descends down to the water."
-		},
-		{
-			"type": "waypoint",
-			"photo": "p5046058.jpg",
-			"lon": 151.162392,
-			"lat": -33.646978,
-			"description": "At the bottom of the descent start following the track along the water to the left."
 		},
 		{
 			"type": "waypoint",
@@ -150,6 +144,14 @@
 			"description": "The train station can be found to the left, directly after the viaduct."
 		},
 		{
+			"location": "Berowra",
+			"type": "train",
+			"photo": "p5046279.jpg",
+			"description": "Get the train from/to Berowra using <a href=\"https://transportnsw.info/trip#/?from=Berowra\">transportnsw.info</a>.",
+			"lon": 151.153758,
+			"lat": -33.622898
+		},
+		{
 			"type": "waypoint",
 			"photo": "p5046280.jpg",
 			"lon": 151.149825,
@@ -175,7 +177,7 @@
 			"photo": "p5046297_p5046310.jpg",
 			"lon": 151.12815833333335,
 			"lat": -33.618002777777775,
-			"description": "<i>+0.5km|0.5h</i> Naa Badu Lookout is slightly further up the fire trail.",
+			"description": "<i>+0.5km</i> Naa Badu Lookout is slightly further up the fire trail.",
 			"optional": true
 		},
 		{
@@ -246,14 +248,15 @@
 			"photo": "p5046430.jpg",
 			"lon": 151.13576899999998,
 			"lat": -33.654966,
-			"description": "The train station is to the left across the highway. Use the footbridge to the right to cross."
+			"description": "The train station is to the left across the highway. You can use the footbridge to the right to cross."
 		},
 		{
 			"location": "Mount Kuring-gai",
 			"type": "train",
+			"photo": "p5045976.jpg",
 			"description": "Plan your return trip from Mount Kuring-gai at <a href=\"https://transportnsw.info/trip#/?from=Mount Kuring-gai\">transportnsw.info</a>.",
-			"lon": 151.1396445706,
-			"lat": -33.6545268539
+			"lon": 151.136915,
+			"lat": -33.652868
 		}
 	]
 }

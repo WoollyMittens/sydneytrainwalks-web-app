@@ -24,8 +24,8 @@
 	"markers": [
 		{
 			"location": "Mount Kuring-gai",
-			"lat": -33.653977777777776,
-			"lon": 151.13766388888888,
+			"lon": 151.136915,
+			"lat": -33.652868,
 			"type": "train",
 			"description": "Get the train to Mount Kuring-gai using <a href=\"https://transportnsw.info/trip#/?to=Mount Kuring-gai\">transportnsw.info</a>."
 		},
@@ -199,10 +199,10 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "p2021623.jpg",
-			"lon": 151.13453611111112,
-			"lat": -33.67532222222222,
-			"description": "Continue past the visitor centre, where the trail will eventually lead to the park entrance and the main road to Mount Colah Station."
+			"photo": "p2021624.jpg",
+			"description": "From the park entrance gate, follow Ku-Ring-Gai Chase Road to Mount Colah Station.",
+			"lon": 151.12964722222222,
+			"lat": -33.67723611111111
 		},
 		{
 			"location": "Mount Colah",

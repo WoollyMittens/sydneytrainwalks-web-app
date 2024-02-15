@@ -25,6 +25,7 @@
 		{
 			"location": "Blackheath",
 			"type": "train",
+			"photo": "p7200001.jpg",
 			"description": "Get the train to Blackheath using <a href=\"https://transportnsw.info/trip#/?to=Blackheath\">transportnsw.info</a>.",
 			"lon": 150.284362793,
 			"lat": -33.633621216
@@ -83,28 +84,31 @@
 			"photo": "p7200067.jpg",
 			"lon": 150.3263722222222,
 			"lat": -33.65462222222222,
-			"description": "At the end of the Canyon a junction to Rodriguez Pass leads to closeby Beauchamp Falls."
+			"description": "<i>+3km</i> At the end of the Canyon a junction to Rodriguez Pass leads to closeby Beauchamp Falls.",
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "p7200075.jpg",
 			"lon": 150.32676944444444,
 			"lat": -33.65641111111111,
-			"description": "After a short stretch of canyon the view opens up to Grose Valley."
+			"description": "After a short stretch of canyon the view opens up to Grose Valley.",
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "p7200082.jpg",
 			"lon": 150.32763333333332,
 			"lat": -33.655963888888884,
-			"description": "At the edge of a valley a steep trail windows down to the falls."
+			"description": "At the edge of a valley a steep trail winds down to the falls.",
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "p7200086.jpg",
 			"lon": 150.3256361111111,
 			"lat": -33.65382222222222,
-			"description": "From the falls retrace your steps back to the junction to Rodriguez Pass and follow the steps up out of the canyon."
+			"description": "From the junction to Rodriguez Pass, follow the steps up out of the canyon."
 		},
 		{
 			"type": "waypoint",
@@ -157,13 +161,6 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "p7200201.jpg",
-			"lon": 150.31107222222224,
-			"lat": -33.62413055555555,
-			"description": "A small side track along the way, leads to Boyd Beach and a small cascade."
-		},
-		{
-			"type": "waypoint",
 			"photo": "p7200205.jpg",
 			"lon": 150.2909861111111,
 			"lat": -33.63381666666667,
@@ -172,6 +169,7 @@
 		{
 			"location": "Blackheath",
 			"type": "train",
+			"photo": "p7200207.jpg",
 			"description": "Plan your return trip from Blackheath at <a href=\"https://transportnsw.info/trip#/?from=Blackheath\">transportnsw.info</a>.",
 			"lon": 150.284317017,
 			"lat": -33.633811951

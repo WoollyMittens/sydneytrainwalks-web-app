@@ -1,7 +1,7 @@
 {
 	"location": "Heathcote National Park",
-	"lon": 151.01776,
-	"lat": -34.093166,
+	"lon": 151.012529,
+	"lat": -34.089557,
 	"description": "Lorem ipsum dolor sit amet.",
 	"keywords": {
 		"ipsum": "https://external.link/"
@@ -17,7 +17,7 @@
 	"updated": "2018-12-23",
 	"bounds": {
 		"west": 150.9521484375,
-		"north": -34.016241889667015,
+		"north": -34.03445260967645,
 		"east": 151.072998046875,
 		"south": -34.15272698011818
 	},
@@ -25,22 +25,10 @@
 		{
 			"location": "Waterfall",
 			"type": "train",
+			"photo": "001_dsc_9544.jpg",
 			"description": "Get the train to Waterfall using <a href=\"https://transportnsw.info/trip#/?to=Waterfall\">transportnsw.info</a>.",
 			"lat": -34.1350492,
 			"lon": 150.99596526007738
-		},
-		{
-			"location": "Royal National Park Station",
-			"type": "tram",
-			"description": "Check <a href=\"https://www.sydneytramwaymuseum.com.au/\">www.sydneytramwaymuseum.com.au</a> if the historical tramway operates today.",
-			"lat": -34.062643,
-			"lon": 151.056729
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_dsc_9544.jpg",
-			"lon": 150.99465379008745,
-			"lat": -34.13519128000292
 		},
 		{
 			"type": "waypoint",
@@ -361,10 +349,12 @@
 			"lat": -34.08643425999941
 		},
 		{
-			"type": "waypoint",
+			"location": "Royal National Park Station",
+			"type": "tram",
 			"photo": "003_dsc_9668.jpg",
-			"lon": 151.0016723300084,
-			"lat": -34.08618136999392
+			"description": "Check <a href=\"https://www.sydneytramwaymuseum.com.au/\">www.sydneytramwaymuseum.com.au</a> if the historical tramway operates today.",
+			"lat": -34.062643,
+			"lon": 151.056729
 		},
 		{
 			"type": "waypoint",
@@ -781,14 +771,9 @@
 			"lat": -34.044767290034535
 		},
 		{
-			"type": "waypoint",
-			"photo": "003_dsc_9894.jpg",
-			"lon": 151.05190233000937,
-			"lat": -34.04473854993386
-		},
-		{
 			"location": "Loftus",
 			"type": "train",
+			"photo": "003_dsc_9894.jpg",
 			"description": "Plan your return trip from Loftus at <a href=\"https://transportnsw.info/trip#/?from=Loftus\">transportnsw.info</a>.",
 			"lat": -34.045131,
 			"lon": 151.051388

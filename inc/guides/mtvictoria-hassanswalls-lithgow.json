@@ -25,16 +25,10 @@
 		{
 			"location": "Mount Victoria",
 			"type": "train",
+			"photo": "0010_dsc_1905.jpg",
 			"description": "Get the train to Mount Victoria using <a href=\"https://transportnsw.info/trip#/?to=Mount Victoria\">transportnsw.info</a>.",
 			"lat": -33.58802982001727,
 			"lon": 150.2564418
-		},
-		{
-			"type": "waypoint",
-			"photo": "0010_dsc_1905.jpg",
-			"lon": 150.2564418,
-			"lat": -33.58802982001727,
-			"description": "Exit the station and follow the signs to the walking tracks from the carpark."
 		},
 		{
 			"type": "waypoint",
@@ -76,7 +70,7 @@
 			"photo": "0081_p4010002.jpg",
 			"lon": 150.240197,
 			"lat": -33.575315,
-			"description": "<i>+ 0h / 0km</i> Optionally, follow the signs down Lawson Long Alley instead of Lockyers Road.",
+			"description": "<i>+0km</i> Optionally, follow the signs down Lawson Long Alley instead of Lockyers Road.",
 			"optional": true
 		},
 		{
@@ -256,7 +250,7 @@
 			"photo": "0611_p6170122.jpg",
 			"lon": 150.1511473699896,
 			"lat": -33.512126950101226,
-			"description": "<i>+ 0.5h / 2km</i> Alternatively follow the sign right back to Bracey Lookout.",
+			"description": "<i>+2km</i> Alternatively follow the sign right back to Bracey Lookout.",
 			"optional": true
 		},
 		{
@@ -288,7 +282,7 @@
 			"photo": "0640_dsc_2122.jpg",
 			"lon": 150.14843603010348,
 			"lat": -33.510971,
-			"description": "At the gated trail, pass the gate and follow the trail left."
+			"description": "At the gated trail, follow the trail to the left."
 		},
 		{
 			"type": "waypoint",
@@ -370,6 +364,7 @@
 		{
 			"location": "Lithgow",
 			"type": "train",
+			"photo": "0860_dsc_2155.jpg",
 			"description": "Plan your return trip from Lithgow at <a href=\"https://transportnsw.info/trip#/?from=Lithgow\">transportnsw.info</a>.",
 			"lat": -33.48087887989204,
 			"lon": 150.15715679000132

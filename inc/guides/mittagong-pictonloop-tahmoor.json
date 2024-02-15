@@ -25,16 +25,10 @@
 		{
 			"location": "Mittagong",
 			"type": "train",
+			"photo": "dsc_2892.jpg",
 			"description": "Get the train to Mittagong using <a href=\"https://transportnsw.info/trip#/?to=Mittagong\">transportnsw.info</a>.",
 			"lon": 150.448298,
 			"lat": -34.45254
-		},
-		{
-			"type": "waypoint",
-			"photo": "dsc_2892.jpg",
-			"lon": 150.44848018997627,
-			"lat": -34.45254088001651,
-			"description": "Exit the station across the pedestrian bridge."
 		},
 		{
 			"type": "waypoint",
@@ -345,15 +339,9 @@
 			"description": "Follow Pitt Street along the railway line to Tahmoor Station."
 		},
 		{
-			"type": "waypoint",
-			"photo": "dsc_3127.jpg",
-			"lon": 150.5897304000429,
-			"lat": -34.22352360001544,
-			"description": "The wait may be up to two hours, but there are shops on the other side of the tracks."
-		},
-		{
 			"location": "Tahmoor",
 			"type": "train",
+			"photo": "dsc_3127.jpg",
 			"description": "Plan your return trip from Tahmoor at <a href=\"https://transportnsw.info/trip#/?from=Tahmoor\">transportnsw.info</a>.",
 			"lon": 150.589988,
 			"lat": -34.223419

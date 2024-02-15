@@ -27,6 +27,7 @@
 			"lat": -33.816935,
 			"lon": 151.004827,
 			"type": "train",
+			"photo": "0000_img_20191019_055918.jpg",
 			"description": "Get the train to Parramatta using <a href=\"https://transportnsw.info/trip#/?to=Parramatta Station\">transportnsw.info</a>."
 		},
 		{
@@ -227,10 +228,11 @@
 		},
 		{
 			"location": "Blacktown",
-			"lat": -33.816935,
-			"lon": 151.004827,
 			"type": "train",
-			"description": "Get the train from/to Blacktown using <a href=\"https://transportnsw.info/trip#/?to=Blacktown Station\">transportnsw.info</a>."
+			"photo": "1050_img_20191019_093420.jpg",
+			"description": "Get the train from/to Blacktown using <a href=\"https://transportnsw.info/trip#/?to=Blacktown Station\">transportnsw.info</a>.",
+			"lon": 150.90706400000002,
+			"lat": -33.768921999999996
 		},
 		{
 			"type": "waypoint",
@@ -667,17 +669,11 @@
 			"lat": -33.751775
 		},
 		{
-			"type": "waypoint",
-			"photo": "3780_img_20191019_191416.jpg",
-			"description": "Cross the Great Western Highway into the station.",
-			"lon": 150.695825,
-			"lat": -33.750742
-		},
-		{
 			"location": "Penrith",
 			"lat": -33.750329,
 			"lon": 150.695488,
 			"type": "train",
+			"photo": "3780_img_20191019_191416.jpg",
 			"description": "Plan your return trip from Penrith Station at <a href=\"https://transportnsw.info/trip#/?from=Penrith Station\">transportnsw.info</a>."
 		}
 	]

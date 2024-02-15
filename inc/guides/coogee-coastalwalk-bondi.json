@@ -25,16 +25,10 @@
 		{
 			"location": "Coogee Beach",
 			"type": "bus",
+			"photo": "pxl_20231118_010405900.jpg",
 			"description": "Get the bus to Coogee Beach using <a href=\"https://transportnsw.info/trip#/?to=Coogee Beach\">transportnsw.info</a>.",
 			"lon": 151.25705,
 			"lat": -33.920502
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231118_010405900.jpg",
-			"lon": 151.256992,
-			"lat": -33.92044,
-			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
 			"type": "waypoint",
@@ -317,15 +311,9 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
-			"photo": "pxl_20231118_025908535.jpg",
-			"lon": 151.274326,
-			"lat": -33.891242,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
 			"location": "Bondi Beach",
 			"type": "bus",
+			"photo": "pxl_20231118_025908535.jpg",
 			"description": "Plan your return trip from Bondi Beach at <a href=\"https://transportnsw.info/trip#/?from=Bondi Beach\">transportnsw.info</a>.",
 			"lat": -33.892822,
 			"lon": 151.273468

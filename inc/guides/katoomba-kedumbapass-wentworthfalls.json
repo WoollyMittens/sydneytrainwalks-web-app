@@ -25,14 +25,10 @@
 		{
 			"location": "Katoomba",
 			"type": "train",
+			"photo": "p6077782.jpg",
 			"description": "Get the train to Katoomba using <a href=\"https://transportnsw.info/trip#/?to=Katoomba\">transportnsw.info</a>.",
 			"lon": 150.312286377,
 			"lat": -33.71245956399999
-		},
-		{
-			"type": "toilet",
-			"lat": -33.711032,
-			"lon": 150.373517
 		},
 		{
 			"type": "waypoint",
@@ -228,18 +224,12 @@
 			"photo": "p6078082.jpg",
 			"lon": 150.37534200000002,
 			"lat": -33.710329,
-			"description": "Follow the highway a short distance to the right and cross at the trafic lights."
-		},
-		{
-			"type": "waypoint",
-			"photo": "p6078083.jpg",
-			"lon": 150.37591600000002,
-			"lat": -33.709793000000005,
-			"description": "Walk a short way down Station Street to find Wentworth Falls train station on the right."
+			"description": "Follow the highway a short distance to the right and cross at the traffic lights and continue down Station Street."
 		},
 		{
 			"location": "Wentworth Falls",
 			"type": "train",
+			"photo": "p6078083.jpg",
 			"description": "Plan your return trip from Wentworth Falls at <a href=\"https://transportnsw.info/trip#/?from=Wentworth Falls\">transportnsw.info</a>.",
 			"lon": 150.375915527,
 			"lat": -33.709793091

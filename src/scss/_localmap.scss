@@ -460,6 +460,10 @@
 			}
 		}
 
+		&-image {
+			background-color: rgba(127,127,127,0.5);
+		}
+
 		&-photo {
 			display: block;
 			background-color: rgba(0,0,0,0.667);
@@ -471,8 +475,8 @@
 
 		&-icon {
 			position: absolute;
-			width: 4rem;
-			height: 4rem;
+			width: 33.333%;
+			height: auto;
 			left: 0.5rem;
 			top: 0.5rem;
 		}
