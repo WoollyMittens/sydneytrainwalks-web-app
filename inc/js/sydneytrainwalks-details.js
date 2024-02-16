@@ -49,11 +49,11 @@ export class Details {
 		window.history.pushState(guide, title, url);
 		// update the meta elements
 		document.querySelector('title').innerHTML = title;
-		document.querySelector('meta[name="description"]').setAttribute('content', guide.description);
-		document.querySelector('meta[property="og:url"]').setAttribute('content', this.config.remoteUrl + url);
-		document.querySelector('meta[property="og:image"]').setAttribute('content', this.config.remoteUrl + `/medium/${guide.key}/${guide.hero}`);
-		document.querySelector('meta[property="og:title"]').setAttribute('content', title);
-		document.querySelector('meta[property="og:description"]').setAttribute('content', guide.description);
+		document.querySelector('meta[name="description"]')?.setAttribute('content', guide.description);
+		document.querySelector('meta[property="og:url"]')?.setAttribute('content', this.config.remoteUrl + url);
+		document.querySelector('meta[property="og:image"]')?.setAttribute('content', this.config.remoteUrl + `/medium/${guide.key}/${guide.hero}`);
+		document.querySelector('meta[property="og:title"]')?.setAttribute('content', title);
+		document.querySelector('meta[property="og:description"]')?.setAttribute('content', guide.description);
 	}
 
 	updateTitle(guide) {

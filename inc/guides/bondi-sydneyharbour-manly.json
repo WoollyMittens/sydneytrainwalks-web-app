@@ -287,7 +287,8 @@
 			"photo": "001_pxl_20230929_231143446.jpg",
 			"lon": 151.284378,
 			"lat": -33.843307,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "<i>-3km</i> Lorem ipsum dolor sit amet.",
+			"optional": true
 		},
 		{
 			"type": "waypoint",
@@ -854,7 +855,8 @@
 			"photo": "001_pxl_20230930_020906873.jpg",
 			"lon": 151.253085,
 			"lat": -33.869517,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "<i>-2km</i> Lorem ipsum dolor sit amet.",
+			"optional": true
 		},
 		{
 			"type": "waypoint",
@@ -1036,7 +1038,8 @@
 			"photo": "003_pxl_20230930_032026526.jpg",
 			"lon": 151.23653099999999,
 			"lat": -33.8739,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "<i>-1.5km</i> Lorem ipsum dolor sit amet.",
+			"optional": true
 		},
 		{
 			"type": "waypoint",
@@ -1346,6 +1349,14 @@
 			"description": "Get the train from/to Milsons Point using <a href=\"https://transportnsw.info/trip#/?to=Milsons Point\">transportnsw.info</a>.",
 			"lon": 151.21252099999998,
 			"lat": -33.845934
+		},
+		{
+			"type": "waypoint",
+			"photo": "005a_p1310064.jpg",
+			"description": "<i>-3km</i> Lorem ipsum dolor sit amet.",
+			"optional": true,
+			"lon": 151.212699,
+			"lat": -33.846324
 		},
 		{
 			"type": "waypoint",
@@ -1730,7 +1741,8 @@
 			"photo": "006_pxl_20231001_212028734.jpg",
 			"lon": 151.233186,
 			"lat": -33.840189,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "<i>-1km</i> Lorem ipsum dolor sit amet.",
+			"optional": true
 		},
 		{
 			"type": "waypoint",
@@ -2003,7 +2015,8 @@
 			"photo": "006_pxl_20231001_232128866.jpg",
 			"lon": 151.258476,
 			"lat": -33.83129099988651,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "<i>-2.5km</i> Lorem ipsum dolor sit amet.",
+			"optional": true
 		},
 		{
 			"type": "waypoint",

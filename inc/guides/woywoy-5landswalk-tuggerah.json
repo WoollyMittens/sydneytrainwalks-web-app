@@ -25,16 +25,10 @@
 		{
 			"location": "Woy Woy",
 			"type": "train",
+			"photo": "dsc_1242.jpg",
 			"description": "Get the train to Woy Woy using <a href=\"https://transportnsw.info/trip#/?to=Woy Woy\">transportnsw.info</a>.",
 			"lon": 151.323418,
 			"lat": -33.48543
-		},
-		{
-			"type": "waypoint",
-			"photo": "dsc_1242.jpg",
-			"lon": 151.323614649999,
-			"lat": -33.48564475,
-			"description": "Exit the station across the pedestrian ramp."
 		},
 		{
 			"type": "waypoint",
@@ -735,14 +729,15 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_1642.jpg",
-			"lon": 151.4210815500289,
-			"lat": -33.30760102993803,
-			"description": "Turn left after the furniture stores and continue across the carpark and bus stops to Tuggerah Station."
+			"photo": "dsc_1641.jpg",
+			"description": "Turn left after the furniture stores and continue across the carpark and bus stops to Tuggerah Station.",
+			"lon": 151.42238192998687,
+			"lat": -33.31200253999135
 		},
 		{
 			"location": "Tuggerah",
 			"type": "train",
+			"photo": "dsc_1642.jpg",
 			"description": "Plan your return trip from Tuggerah at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>.",
 			"lat": -33.307802,
 			"lon": 151.420358

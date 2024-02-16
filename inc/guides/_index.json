@@ -30,14 +30,6 @@
 					"lat": -32.92564010599999
 				}
 			],
-			"startLocation": "Anna Bay",
-			"startLon": 152.082946777,
-			"startLat": -32.777629852,
-			"endLocation": "Stockton",
-			"endLon": 151.78175354,
-			"endLat": -32.92564010599999,
-			"startTransport": "bus",
-			"endTransport": "ferry",
 			"region": "Worimi",
 			"distance": [
 				0
@@ -74,14 +66,6 @@
 					"lat": -33.6887906492
 				}
 			],
-			"startLocation": "Berowra",
-			"startLon": 151.1528503429,
-			"startLat": -33.6234793626,
-			"endLocation": "Asquith",
-			"endLon": 151.1078680214,
-			"endLat": -33.6887906492,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Berowra Valley",
 			"distance": [
 				0
@@ -118,14 +102,6 @@
 					"lat": -33.633484
 				}
 			],
-			"startLocation": "Blackheath",
-			"startLon": 150.284271,
-			"startLat": -33.633377,
-			"endLocation": "Blackheath",
-			"endLon": 150.284332,
-			"endLat": -33.633484,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Grose Valley",
 			"distance": [
 				0
@@ -162,14 +138,6 @@
 					"lat": -33.633811951
 				}
 			],
-			"startLocation": "Blackheath",
-			"startLon": 150.284362793,
-			"startLat": -33.633621216,
-			"endLocation": "Blackheath",
-			"endLon": 150.284317017,
-			"endLat": -33.633811951,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Grand Canyon",
 			"distance": [
 				0
@@ -214,14 +182,6 @@
 					"lat": -33.799005
 				}
 			],
-			"startLocation": "Bondi Beach",
-			"startLon": 151.272466,
-			"startLat": -33.895572,
-			"endLocation": "Manly",
-			"endLon": 151.283656,
-			"endLat": -33.799005,
-			"startTransport": "bus",
-			"endTransport": "ferry",
 			"region": "Sydney Harbour",
 			"distance": [
 				35,
@@ -259,14 +219,6 @@
 					"description": "Plan your return trip from Otford at <a href=\"https://transportnsw.info/trip#/?from=Otford\">transportnsw.info</a>."
 				}
 			],
-			"startLocation": "Cronulla",
-			"startLon": 151.1499861111111,
-			"startLat": -34.05625833333333,
-			"endLocation": "Otford",
-			"endLon": 151.00588888888888,
-			"endLat": -34.21071944444445,
-			"startTransport": "ferry",
-			"endTransport": "train",
 			"region": "Royal National Park",
 			"distance": [
 				0
@@ -303,14 +255,6 @@
 					"lon": 151.051388
 				}
 			],
-			"startLocation": "Cronulla",
-			"startLon": 151.14969,
-			"startLat": -34.056343,
-			"endLocation": "Loftus",
-			"endLon": 151.051388,
-			"endLat": -34.045131,
-			"startTransport": "ferry",
-			"endTransport": "train",
 			"region": "Royal National Park",
 			"distance": [
 				0
@@ -345,14 +289,6 @@
 					"lat": -33.731884003
 				}
 			],
-			"startLocation": "Chatswood",
-			"startLon": 151.181376,
-			"startLat": -33.797771999999995,
-			"endLocation": "Thornleigh",
-			"endLon": 151.078567505,
-			"endLat": -33.731884003,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Lane Cove Park",
 			"distance": [
 				0
@@ -389,14 +325,6 @@
 					"lon": 151.273468
 				}
 			],
-			"startLocation": "Coogee Beach",
-			"startLon": 151.25705,
-			"startLat": -33.920502,
-			"endLocation": "Bondi Beach",
-			"endLon": 151.273468,
-			"endLat": -33.892822,
-			"startTransport": "bus",
-			"endTransport": "bus",
 			"region": "Coastal Walk",
 			"distance": [
 				0
@@ -433,14 +361,6 @@
 					"lat": -33.54686355600001
 				}
 			],
-			"startLocation": "Cowan",
-			"startLon": 151.171966553,
-			"startLat": -33.593074799,
-			"endLocation": "Hawkesbury River",
-			"endLon": 151.22668457,
-			"endLat": -33.54686355600001,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Ku-ring-gai Chase",
 			"distance": [
 				0
@@ -477,14 +397,6 @@
 					"lat": -33.7689544167
 				}
 			],
-			"startLocation": "Glenbrook",
-			"startLon": 150.620507542,
-			"startLat": -33.7689544167,
-			"endLocation": "Glenbrook",
-			"endLon": 150.620507542,
-			"endLat": -33.7689544167,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Lower Blue Mountains",
 			"distance": [
 				0
@@ -527,14 +439,6 @@
 					"description": "Plan your return trip from Parramatta Station at <a href=\"https://transportnsw.info/trip#/?from=Parramatta Station\">transportnsw.info</a>."
 				}
 			],
-			"startLocation": "Hornsby",
-			"startLon": 151.098243,
-			"startLat": -33.703463,
-			"endLocation": "Parramatta",
-			"endLon": 151.005077,
-			"endLat": -33.817044,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Cumberland State Forest",
 			"distance": [
 				0
@@ -571,14 +475,6 @@
 					"lat": -33.709734762087464
 				}
 			],
-			"startLocation": "Katoomba",
-			"startLon": 150.3114549536258,
-			"startLat": -33.71183895505965,
-			"endLocation": "Wentworth Falls",
-			"endLon": 150.37645703181624,
-			"endLat": -33.709734762087464,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Grand Cliff Top Walk",
 			"distance": [
 				0
@@ -615,14 +511,6 @@
 					"lat": -33.709793091
 				}
 			],
-			"startLocation": "Katoomba",
-			"startLon": 150.312286377,
-			"startLat": -33.71245956399999,
-			"endLocation": "Wentworth Falls",
-			"endLon": 150.375915527,
-			"endLat": -33.709793091,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Kedumba Pass",
 			"distance": [
 				0
@@ -667,14 +555,6 @@
 					"lon": 151.63786
 				}
 			],
-			"startLocation": "Lake Haven",
-			"startLon": 151.505208,
-			"startLat": -33.241745,
-			"endLocation": "Swansea",
-			"endLon": 151.63786,
-			"endLat": -33.091205,
-			"startTransport": "bus",
-			"endTransport": "bus",
 			"region": "Munmorah",
 			"distance": [
 				0
@@ -711,14 +591,6 @@
 					"lat": -33.988052
 				}
 			],
-			"startLocation": "La Perouse",
-			"startLon": 151.233826,
-			"startLat": -33.988052,
-			"endLocation": "La Perouse",
-			"endLon": 151.233826,
-			"endLat": -33.988052,
-			"startTransport": "bus",
-			"endTransport": "bus",
 			"region": "Botany Bay",
 			"distance": [
 				0
@@ -755,14 +627,6 @@
 					"lat": -34.4524848741
 				}
 			],
-			"startLocation": "Mittagong",
-			"startLon": 150.4483316839,
-			"startLat": -34.4526190683,
-			"endLocation": "Mittagong",
-			"endLon": 150.4483590927,
-			"endLat": -34.4524848741,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Box Vale",
 			"distance": [
 				0
@@ -799,14 +663,6 @@
 					"lat": -34.223419
 				}
 			],
-			"startLocation": "Mittagong",
-			"startLon": 150.448298,
-			"startLat": -34.45254,
-			"endLocation": "Tahmoor",
-			"endLon": 150.589988,
-			"endLat": -34.223419,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Picton-Mittagong Loop",
 			"distance": [
 				0
@@ -851,14 +707,6 @@
 					"lat": -33.652868
 				}
 			],
-			"startLocation": "Mount Kuring-gai",
-			"startLon": 151.136915,
-			"startLat": -33.652868,
-			"endLocation": "Mount Kuring-gai",
-			"endLon": 151.136915,
-			"endLat": -33.652868,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Ku-ring-gai Chase",
 			"distance": [
 				0
@@ -893,14 +741,6 @@
 					"lat": -33.593074799
 				}
 			],
-			"startLocation": "Mount Kuring-gai",
-			"startLon": 151.136915,
-			"startLat": -33.652868,
-			"endLocation": "Cowan",
-			"endLon": 151.171966553,
-			"endLat": -33.593074799,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Berowra Valley",
 			"distance": [
 				0
@@ -935,14 +775,6 @@
 					"lat": -33.671218
 				}
 			],
-			"startLocation": "Mount Kuring-gai",
-			"startLon": 151.136915,
-			"startLat": -33.652868,
-			"endLocation": "Mount Colah",
-			"endLon": 151.115156,
-			"endLat": -33.671218,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Sphynx Memorial",
 			"distance": [
 				0
@@ -978,14 +810,6 @@
 					"lat": -33.783958
 				}
 			],
-			"startLocation": "Mount Kuring-gai",
-			"startLon": 151.136915,
-			"startLat": -33.652868,
-			"endLocation": "Roseville",
-			"endLon": 151.177841,
-			"endLat": -33.783958,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Garigal",
 			"distance": [
 				0
@@ -1022,14 +846,6 @@
 					"lon": 150.15715679000132
 				}
 			],
-			"startLocation": "Mount Victoria",
-			"startLon": 150.2564418,
-			"startLat": -33.58802982001727,
-			"endLocation": "Lithgow",
-			"endLon": 150.15715679000132,
-			"endLat": -33.48087887989204,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Hassans Walls",
 			"distance": [
 				0
@@ -1066,14 +882,6 @@
 					"lat": -33.588088989
 				}
 			],
-			"startLocation": "Mount Victoria",
-			"startLon": 150.256546021,
-			"startLat": -33.588516235,
-			"endLocation": "Mount Victoria",
-			"endLon": 150.256729126,
-			"endLat": -33.588088989,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Mount York",
 			"distance": [
 				0
@@ -1110,14 +918,6 @@
 					"lat": -32.7777046803385
 				}
 			],
-			"startLocation": "Nelson Bay",
-			"startLon": 152.14266769587994,
-			"startLat": -32.721755392849445,
-			"endLocation": "Anna Bay",
-			"endLon": 152.08241832442582,
-			"endLat": -32.7777046803385,
-			"startTransport": "bus",
-			"endTransport": "bus",
 			"region": "Port Stephens",
 			"distance": [
 				0
@@ -1154,14 +954,6 @@
 					"lat": -34.4267116114
 				}
 			],
-			"startLocation": "Otford",
-			"startLon": 151.0062912572,
-			"startLat": -34.2103067134,
-			"endLocation": "Wollongong",
-			"endLon": 150.8881997969,
-			"endLat": -34.4267116114,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Illawarra",
 			"distance": [
 				0
@@ -1206,14 +998,6 @@
 					"lon": 151.2852861111111
 				}
 			],
-			"startLocation": "Palm Beach",
-			"startLon": 151.319931,
-			"startLat": -33.596193,
-			"endLocation": "Manly",
-			"endLon": 151.2852861111111,
-			"endLat": -33.80003333333333,
-			"startTransport": "bus",
-			"endTransport": "ferry",
 			"region": "Northern Beaches",
 			"distance": [
 				0
@@ -1258,14 +1042,6 @@
 					"description": "Plan your return trip from Penrith Station at <a href=\"https://transportnsw.info/trip#/?from=Penrith Station\">transportnsw.info</a>."
 				}
 			],
-			"startLocation": "Parramatta",
-			"startLon": 151.004827,
-			"startLat": -33.816935,
-			"endLocation": "Penrith",
-			"endLon": 150.695488,
-			"endLat": -33.750329,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Great West Walk",
 			"distance": [
 				0
@@ -1300,14 +1076,6 @@
 					"lat": -33.7977724895
 				}
 			],
-			"startLocation": "Parramatta",
-			"startLon": 151.0058008321,
-			"startLat": -33.8170743361,
-			"endLocation": "Chatswood",
-			"endLon": 151.1813760549,
-			"endLat": -33.7977724895,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Parramatta River",
 			"distance": [
 				0
@@ -1342,14 +1110,6 @@
 					"lat": -34.672249
 				}
 			],
-			"startLocation": "Port Kembla",
-			"startLon": 150.902664185,
-			"startLat": -34.477161407,
-			"endLocation": "Kiama",
-			"endLon": 150.854614,
-			"endLat": -34.672249,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Illawarra",
 			"distance": [
 				0
@@ -1378,7 +1138,7 @@
 					"lat": -33.8307654206
 				},
 				{
-					"location": "End Station",
+					"location": "Rhodes",
 					"type": "train",
 					"photo": "pxl_20240114_004910677.jpg",
 					"description": "Plan your return trip from Rhodes at <a href=\"https://transportnsw.info/trip#/?from=Rhodes Station\">transportnsw.info</a>.",
@@ -1386,14 +1146,6 @@
 					"lat": -33.8307654206
 				}
 			],
-			"startLocation": "Rhodes",
-			"startLon": 151.0867532529,
-			"startLat": -33.8307654206,
-			"endLocation": "End Station",
-			"endLon": 151.0867532529,
-			"endLat": -33.8307654206,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Olympic Park",
 			"distance": [
 				0
@@ -1403,7 +1155,7 @@
 			"car": false,
 			"kiosks": 0,
 			"toilets": 0,
-			"looped": false,
+			"looped": true,
 			"rain": false,
 			"fireban": false
 		},
@@ -1430,14 +1182,6 @@
 					"lon": 151.2852861111111
 				}
 			],
-			"startLocation": "Roseville",
-			"startLon": 151.177582,
-			"startLat": -33.784401,
-			"endLocation": "Manly",
-			"endLon": 151.2852861111111,
-			"endLat": -33.80003333333333,
-			"startTransport": "train",
-			"endTransport": "ferry",
 			"region": "Manly Dam",
 			"distance": [
 				0
@@ -1474,14 +1218,6 @@
 					"lon": 150.75223465000673
 				}
 			],
-			"startLocation": "Springwood",
-			"startLon": 150.563733,
-			"startLat": -33.699158999999995,
-			"endLocation": "Richmond",
-			"endLon": 150.75223465000673,
-			"endLat": -33.59847776999144,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Springwood Ridge",
 			"distance": [
 				0
@@ -1518,14 +1254,6 @@
 					"lat": -33.768642426
 				}
 			],
-			"startLocation": "Springwood",
-			"startLon": 150.561798096,
-			"startLat": -33.69906234699999,
-			"endLocation": "Glenbrook",
-			"endLon": 150.621612549,
-			"endLat": -33.768642426,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Lost World Lookout",
 			"distance": [
 				0
@@ -1556,19 +1284,12 @@
 				{
 					"location": "Thirroul",
 					"type": "train",
+					"photo": "005_pxl_20211023_034425698.jpg",
 					"description": "Plan your return trip from Thiroul at <a href=\"https://transportnsw.info/trip#/?from=Thiroul\">transportnsw.info</a>.",
 					"lon": 150.918686,
 					"lat": -34.31794799999999
 				}
 			],
-			"startLocation": "Stanwell Park",
-			"startLon": 150.980408,
-			"startLat": -34.227482,
-			"endLocation": "Thirroul",
-			"endLon": 150.918686,
-			"endLat": -34.31794799999999,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Illawarra Escarpment",
 			"distance": [
 				0
@@ -1613,14 +1334,6 @@
 					"lat": -32.923002
 				}
 			],
-			"startLocation": "Teralba",
-			"startLon": 151.6034559254,
-			"startLat": -32.9623152595,
-			"endLocation": "Broadmeadow",
-			"endLon": 151.734882,
-			"endLat": -32.923002,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Lake Macquarie",
 			"distance": [
 				0
@@ -1657,14 +1370,6 @@
 					"lon": 151.42558333333332
 				}
 			],
-			"startLocation": "Tuggerah",
-			"startLon": 151.420197,
-			"startLat": -33.308128,
-			"endLocation": "Wyong",
-			"endLon": 151.42558333333332,
-			"endLat": -33.28545277777778,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Lake Tuggerah",
 			"distance": [
 				0
@@ -1689,16 +1394,24 @@
 					"type": "train",
 					"photo": "001_dsc_9544.jpg",
 					"description": "Get the train to Waterfall using <a href=\"https://transportnsw.info/trip#/?to=Waterfall\">transportnsw.info</a>.",
-					"lat": -34.1350492,
-					"lon": 150.99596526007738
+					"lon": 150.994326,
+					"lat": -34.134794
+				},
+				{
+					"location": "Heathcote",
+					"type": "train",
+					"photo": "003_dsc_9673.jpg",
+					"description": "Get the train to/from Heathcote using <a href=\"https://transportnsw.info/trip#/?to=Heathcote\">transportnsw.info</a>.",
+					"lon": 151.00781326997537,
+					"lat": -34.08758797002033
 				},
 				{
 					"location": "Royal National Park Station",
 					"type": "tram",
-					"photo": "003_dsc_9668.jpg",
+					"photo": "003_dsc_9868.jpg",
 					"description": "Check <a href=\"https://www.sydneytramwaymuseum.com.au/\">www.sydneytramwaymuseum.com.au</a> if the historical tramway operates today.",
-					"lat": -34.062643,
-					"lon": 151.056729
+					"lon": 151.05709304999772,
+					"lat": -34.06312310994049
 				},
 				{
 					"location": "Loftus",
@@ -1709,14 +1422,6 @@
 					"lon": 151.051388
 				}
 			],
-			"startLocation": "Waterfall",
-			"startLon": 150.99596526007738,
-			"startLat": -34.1350492,
-			"endLocation": "Loftus",
-			"endLon": 151.051388,
-			"endLat": -34.045131,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Heathcote National Park",
 			"distance": [
 				0
@@ -1733,12 +1438,13 @@
 		{
 			"key": "waterfall-ladycarringtondrive-loftus",
 			"type": "walk",
-			"lon": 151.031128,
-			"lat": -34.137924,
+			"lon": 151.051636,
+			"lat": -34.097977,
 			"locations": [
 				{
 					"location": "Waterfall",
 					"type": "train",
+					"photo": "001_pa055975.jpg",
 					"description": "Get the train to Waterfall using <a href=\"https://transportnsw.info/trip#/?to=Waterfall\">transportnsw.info</a>.",
 					"lat": -34.1350492,
 					"lon": 150.99596526007738
@@ -1746,27 +1452,20 @@
 				{
 					"location": "Royal National Park Station",
 					"type": "tram",
+					"photo": "004_dsc_9868.jpg",
 					"description": "Check <a href=\"https://www.sydneytramwaymuseum.com.au/\">www.sydneytramwaymuseum.com.au</a> if the historical tramway operates today.",
-					"lat": -34.062643,
-					"lon": 151.056729
+					"lon": 151.05709304999772,
+					"lat": -34.06312310994049
 				},
 				{
 					"location": "Loftus",
 					"type": "train",
-					"photo": "004_pa056324.jpg",
+					"photo": "004_dsc_9894.jpg",
 					"description": "Plan your return trip from Loftus at <a href=\"https://transportnsw.info/trip#/?from=Loftus\">transportnsw.info</a>.",
-					"lat": -34.04475,
-					"lon": 151.051377
+					"lat": -34.045131,
+					"lon": 151.051388
 				}
 			],
-			"startLocation": "Waterfall",
-			"startLon": 150.99596526007738,
-			"startLat": -34.1350492,
-			"endLocation": "Loftus",
-			"endLon": 151.051377,
-			"endLat": -34.04475,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Lady Carrington Drive",
 			"distance": [
 				0
@@ -1789,26 +1488,28 @@
 				{
 					"location": "Waterfall",
 					"type": "train",
+					"photo": "000_pa055975.jpg",
 					"description": "Get the train to Waterfall using <a href=\"https://transportnsw.info/trip#/?to=Waterfall\">transportnsw.info</a>.",
-					"lat": -34.1350492,
-					"lon": 150.99596526007738
+					"lon": 150.9947934654,
+					"lat": -34.134762045
+				},
+				{
+					"location": "Bundeena",
+					"type": "ferry",
+					"photo": "003_pxl_20220129_055842077.jpg",
+					"description": "Transport from this location: <a href=\"https://transportnsw.info/trip#/?from=Bundeena&to=Cronulla\">transportnsw.info</a>",
+					"lon": 151.150713,
+					"lat": -34.082705000000004
 				},
 				{
 					"location": "Cronulla",
 					"type": "train",
+					"photo": "003_pxl_20220129_062547024.jpg",
 					"description": "Get the train to Cronulla and ferry to Bundeena using <a href=\"https://transportnsw.info/trip#/?from=Cronulla\">transportnsw.info</a>.",
 					"lon": 151.151371,
 					"lat": -34.055287
 				}
 			],
-			"startLocation": "Waterfall",
-			"startLon": 150.99596526007738,
-			"startLat": -34.1350492,
-			"endLocation": "Cronulla",
-			"endLon": 151.151371,
-			"endLat": -34.055287,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Royal National Park",
 			"distance": [
 				0
@@ -1831,6 +1532,7 @@
 				{
 					"location": "Wolli Creek",
 					"type": "train",
+					"photo": "pxl_20221104_201709580.jpg",
 					"description": "Get the train to Wolli Creek using <a href=\"https://transportnsw.info/trip#/?to=Wolli Creek\">transportnsw.info</a>.",
 					"lon": 151.1536876112,
 					"lat": -33.9286433347
@@ -1838,19 +1540,12 @@
 				{
 					"location": "Cronulla",
 					"type": "train",
+					"photo": "pxl_20221105_064550934.jpg",
 					"description": "Plan your return trip from Cronulla at <a href=\"https://transportnsw.info/trip#/?from=Cronulla\">transportnsw.info</a>.",
 					"lon": 151.151687622,
 					"lat": -34.055538177
 				}
 			],
-			"startLocation": "Wolli Creek",
-			"startLon": 151.1536876112,
-			"startLat": -33.9286433347,
-			"endLocation": "Cronulla",
-			"endLon": 151.151687622,
-			"endLat": -34.055538177,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Botany Bay",
 			"distance": [
 				0
@@ -1873,6 +1568,7 @@
 				{
 					"location": "Woy Woy",
 					"type": "train",
+					"photo": "dsc_1242.jpg",
 					"description": "Get the train to Woy Woy using <a href=\"https://transportnsw.info/trip#/?to=Woy Woy\">transportnsw.info</a>.",
 					"lon": 151.323418,
 					"lat": -33.48543
@@ -1880,19 +1576,12 @@
 				{
 					"location": "Tuggerah",
 					"type": "train",
+					"photo": "dsc_1642.jpg",
 					"description": "Plan your return trip from Tuggerah at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>.",
 					"lat": -33.307802,
 					"lon": 151.420358
 				}
 			],
-			"startLocation": "Woy Woy",
-			"startLon": 151.323418,
-			"startLat": -33.48543,
-			"endLocation": "Tuggerah",
-			"endLon": 151.420358,
-			"endLat": -33.307802,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Wyrrabalong",
 			"distance": [
 				0
@@ -1937,14 +1626,6 @@
 					"description": "Plan your return trip from Woy Woy at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>."
 				}
 			],
-			"startLocation": "Woy Woy",
-			"startLon": 151.32368291728199,
-			"startLat": -33.48528089001775,
-			"endLocation": "Woy Woy",
-			"endLon": 151.323776245,
-			"endLat": -33.485313416,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Bouddi",
 			"distance": [
 				0
@@ -1979,14 +1660,6 @@
 					"lon": 151.370041
 				}
 			],
-			"startLocation": "Woy Woy",
-			"startLon": 151.32345,
-			"startLat": -33.485393,
-			"endLocation": "Lisarow",
-			"endLon": 151.370041,
-			"endLat": -33.382299,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Rumbalara",
 			"distance": [
 				0
@@ -2009,6 +1682,7 @@
 				{
 					"location": "Woy Woy",
 					"type": "train",
+					"photo": "pxl_20240112_191053417.jpg",
 					"description": "Get the train to Woy Woy using <a href=\"https://transportnsw.info/trip#/?to=Woy Woy\">transportnsw.info</a>.",
 					"lat": -33.485393,
 					"lon": 151.32345
@@ -2016,6 +1690,7 @@
 				{
 					"location": "Woy Woy",
 					"type": "train",
+					"photo": "pxl_20240113_044228247.jpg",
 					"description": "Plan your return trip to/from Woy Woy at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>.",
 					"lat": -33.485393,
 					"lon": 151.32345
@@ -2023,19 +1698,12 @@
 				{
 					"location": "Gosford",
 					"type": "train",
+					"photo": "pxl_20240119_030251518.jpg",
 					"description": "Plan your return trip from Gosford at <a href=\"https://transportnsw.info/trip#/?from=Gosford\">transportnsw.info</a>.",
 					"lat": -33.485393,
 					"lon": 151.32345
 				}
 			],
-			"startLocation": "Woy Woy",
-			"startLon": 151.32345,
-			"startLat": -33.485393,
-			"endLocation": "Gosford",
-			"endLon": 151.32345,
-			"endLat": -33.485393,
-			"startTransport": "train",
-			"endTransport": "train",
 			"region": "Brisbane Water",
 			"distance": [
 				0

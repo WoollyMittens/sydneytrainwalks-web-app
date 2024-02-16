@@ -25,16 +25,10 @@
 		{
 			"location": "Wolli Creek",
 			"type": "train",
+			"photo": "pxl_20221104_201709580.jpg",
 			"description": "Get the train to Wolli Creek using <a href=\"https://transportnsw.info/trip#/?to=Wolli Creek\">transportnsw.info</a>.",
 			"lon": 151.1536876112,
 			"lat": -33.9286433347
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20221104_201709580.jpg",
-			"lon": 151.153874,
-			"lat": -33.928385999999996,
-			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
 			"type": "waypoint",
@@ -608,28 +602,32 @@
 			"photo": "pxl_20221105_011440709.jpg",
 			"lon": 151.160923,
 			"lat": -34.036637,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "<i>-20km</i> Lorem ipsum dolor sit amet.",
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_011749040.jpg",
 			"lon": 151.163541,
 			"lat": -34.037465999999995,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_011830515.jpg",
 			"lon": 151.163568,
 			"lat": -34.037757,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_011912302.jpg",
 			"lon": 151.16400300010716,
 			"lat": -34.038117,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true
 		},
 		{
 			"type": "waypoint",
@@ -1458,15 +1456,9 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
-			"photo": "pxl_20221105_064550934.jpg",
-			"lon": 151.152042,
-			"lat": -34.055763999999996,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
 			"location": "Cronulla",
 			"type": "train",
+			"photo": "pxl_20221105_064550934.jpg",
 			"description": "Plan your return trip from Cronulla at <a href=\"https://transportnsw.info/trip#/?from=Cronulla\">transportnsw.info</a>.",
 			"lon": 151.151687622,
 			"lat": -34.055538177

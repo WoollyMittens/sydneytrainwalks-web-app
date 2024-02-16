@@ -273,21 +273,24 @@
 			"photo": "002_img_20190914_075233.jpg",
 			"lon": 151.356122,
 			"lat": -33.503711,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "<i>+1km</i> Lorem ipsum dolor sit amet.",
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "002_img_20190914_075313.jpg",
 			"lon": 151.356258,
 			"lat": -33.503625,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "002_pano_20190914_075255.jpg",
 			"lon": 151.356122,
 			"lat": -33.503711,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true
 		},
 		{
 			"type": "waypoint",
@@ -378,7 +381,8 @@
 			"photo": "003_pxl_20240127_212526391.jpg",
 			"lon": 151.38278200000002,
 			"lat": -33.520233,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "<i>-5km</i> Lorem ipsum dolor sit amet.",
+			"optional": true
 		},
 		{
 			"type": "waypoint",
@@ -777,7 +781,8 @@
 			"photo": "004_p5177231.jpg",
 			"lon": 151.361643,
 			"lat": -33.524944,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "<i>-5km</i> Lorem ipsum dolor sit amet.",
+			"optional": true
 		},
 		{
 			"type": "waypoint",
@@ -1011,19 +1016,19 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240128_005343607.jpg",
+			"lon": 151.343841,
+			"lat": -33.526582,
+			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
 			"location": "Wagstaff",
 			"type": "ferry",
 			"photo": "008_pxl_20230128_004831018.jpg",
 			"description": "Plan your return trip from Wagstaffe at <a href=\"https://transportnsw.info/trip#/?from=Wagstaffe Wharf\">transportnsw.info</a>.",
 			"lon": 151.34279722222223,
 			"lat": -33.52336388888889
-		},
-		{
-			"type": "waypoint",
-			"photo": "009_pxl_20240128_005343607.jpg",
-			"lon": 151.343841,
-			"lat": -33.526582,
-			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
 			"type": "waypoint",
@@ -1198,21 +1203,24 @@
 			"photo": "009_pxl_20240128_020809619.jpg",
 			"lon": 151.36149699999999,
 			"lat": -33.516092999912715,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "<i>+0.5km</i> Lorem ipsum dolor sit amet.",
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "009_pxl_20240128_020928480.jpg",
 			"lon": 151.360976,
 			"lat": -33.516394,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "009_pxl_20240128_020947608_pano.jpg",
 			"lon": 151.36094599999998,
 			"lat": -33.516412,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true
 		},
 		{
 			"type": "waypoint",

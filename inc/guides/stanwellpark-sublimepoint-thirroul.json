@@ -629,15 +629,9 @@
 			"lat": -34.317629000000004
 		},
 		{
-			"type": "waypoint",
-			"photo": "005_pxl_20211023_034425698.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.918969,
-			"lat": -34.317785
-		},
-		{
 			"location": "Thirroul",
 			"type": "train",
+			"photo": "005_pxl_20211023_034425698.jpg",
 			"description": "Plan your return trip from Thiroul at <a href=\"https://transportnsw.info/trip#/?from=Thiroul\">transportnsw.info</a>.",
 			"lon": 150.918686,
 			"lat": -34.31794799999999
