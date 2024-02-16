@@ -46,7 +46,7 @@ export class Details {
 		const title = `A bushwalk from ${start} to ${end} via ${guide.location} - Sydney Hiking Trips`;
 		const url = `/?key=${guide.key}`;
 		// update the route without refreshing
-		window.history.pushState(guide, title, url);
+		window.history.pushState({'key': guide.key}, title, url);
 		// update the meta elements
 		document.querySelector('title').innerHTML = title;
 		document.querySelector('meta[name="description"]')?.setAttribute('content', guide.description);
@@ -140,7 +140,7 @@ export class Details {
 			'exifUrl': this.config.remoteUrl + '/php/imageexif.php?src=../../{src}',
 			'guideUrl': this.config.localUrl + `/guides/${prefix}.json`,
 			'routeUrl': this.config.remoteUrl + `/gpx/${prefix}.gpx`,
-			'mapUrl': this.config.localUrl + `/maps/${prefix}.jpg`,
+			'mapUrl': null, // this.config.localUrl + `/maps/${prefix}.jpg`,
       		'tilesUrl': this.config.localUrl + '/tiles/{z}/{x}/{y}.jpg',
       		'tilesZoom': 15,
 			// cache
@@ -229,10 +229,16 @@ export class Details {
 	}
 
 	init() {
+		// handle browser back
+		window.addEventListener("popstate", evt => {
+			evt.preventDefault();
+			console.log('back', evt.state.key);
+			if (evt?.state?.key) this.update(evt.state.key);
+		});
 		// make the title a return button
-		this.titleElement.onclick = function(evt) {
+		this.titleElement.addEventListener('click', evt => {
 			evt.preventDefault();
 			document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-menu');
-		};
+		});
 	}
 }

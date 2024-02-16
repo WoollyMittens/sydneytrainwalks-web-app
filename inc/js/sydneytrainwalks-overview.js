@@ -30,7 +30,7 @@ export class Overview {
       'exifUrl': null,
       'guideUrl': null,
       'routeUrl': null,
-      'mapUrl': this.config.localUrl + '/maps/{key}.jpg',
+      'mapUrl': null, // this.config.localUrl + '/maps/{key}.jpg',
       'tilesUrl': this.config.localUrl + '/tiles/{z}/{x}/{y}.jpg',
       'tilesZoom': 11,
       // cache
