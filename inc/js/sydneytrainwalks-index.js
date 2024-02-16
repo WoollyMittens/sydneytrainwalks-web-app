@@ -41,12 +41,12 @@ export class Index {
 			guide = this.guidesLookup[id];
 			// construct a menu item
 			titleHtml = titleTemplate
-				.replace(/{startTransport}/g, guide.startTransport)
-				.replace(/{startLocation}/g, guide.startLocation)
+				.replace(/{startTransport}/g, guide.locations[0].type)
+				.replace(/{startLocation}/g, guide.locations[0].location)
 				.replace(/{walkLocation}/g, guide.region)
 				.replace(/{walkDistance}/g, guide.distance.join(' / '))
-				.replace(/{endTransport}/g, guide.endTransport)
-				.replace(/{endLocation}/g, guide.endLocation);
+				.replace(/{endTransport}/g,guide.locations.slice(-1)[0].type)
+				.replace(/{endLocation}/g, guide.locations.slice(-1)[0].location);
 			// add the menu item
 			menuHtml += menuTemplate
 				.replace(/{id}/g, id)
@@ -67,7 +67,7 @@ export class Index {
 			// only for valid guide id's
 			if (guide.region) {
 				// fetch the locations to search for
-				locations = guide.region + ' ' + guide.startLocation + ' ' + guide.endLocation;
+				locations = guide.region + ' ' + guide.locations.map(entry => entry.location).join(' ');
 				// add the guide if it includes the keyword
 				if (search.test(locations)) { searched.push(id); }
 			}
@@ -81,10 +81,10 @@ export class Index {
 		// sort the array by the prefered method
 		switch (option) {
 			case 'start':
-				sorted = unsorted.sort((a, b) => (this.guidesLookup[a].startLocation < this.guidesLookup[b].startLocation) ? -1 : 1);
+				sorted = unsorted.sort((a, b) => (this.guidesLookup[a].locations[0].location < this.guidesLookup[b].locations[0].location) ? -1 : 1);
 				break;
 			case 'finish':
-				sorted = unsorted.sort((a, b) => (this.guidesLookup[a].endLocation < this.guidesLookup[b].endLocation) ? -1 : 1);
+				sorted = unsorted.sort((a, b) => (this.guidesLookup[a].locations.slice(-1)[0].location < this.guidesLookup[b].locations.slice(-1)[0].location) ? -1 : 1);
 				break;
 			case 'region':
 				sorted = unsorted.sort((a, b) => (this.guidesLookup[a].region < this.guidesLookup[b].region) ? -1 : 1);
@@ -141,8 +141,14 @@ export class Index {
 	mirrorResults(guideIds, sortedIds) {
 		// show or hide page elements associated with a key, according to the filtered keys
 		const elements = document.querySelectorAll('.overview.localmap [data-key]');
+		let keywords = [];
+		for (let id of sortedIds) {
+			let guide = this.guidesLookup[id];
+			keywords.push(guide.key);
+			guide.locations.map(entry => { keywords.push(entry.location) });
+		}
 		for (let element of elements) {
-			element.style.visibility = sortedIds.includes(element.getAttribute('data-key')) ? 'visible' : 'hidden';
+			element.style.visibility = keywords.includes(element.getAttribute('data-key')) ? 'visible' : 'hidden';
 		}
 	}
 

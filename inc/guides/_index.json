@@ -12,6 +12,24 @@
 			"type": "walk",
 			"lon": 151.910095215,
 			"lat": -32.828197479,
+			"locations": [
+				{
+					"location": "Anna Bay",
+					"type": "bus",
+					"description": "Get the bus to Anna Bay using <a href=\"https://transportnsw.info/trip#/?to=Anna Bay\">transportnsw.info</a>.",
+					"photo": "001_p3224241_p3224242.jpg",
+					"lon": 152.082946777,
+					"lat": -32.777629852
+				},
+				{
+					"location": "Stockton",
+					"type": "ferry",
+					"description": "Plan your return trip from Stockton Warf at <a href=\"https://transportnsw.info/trip#/?from=Stockton Wharf\">transportnsw.info</a>.",
+					"photo": "003_p3224505.jpg",
+					"lon": 151.78175354,
+					"lat": -32.92564010599999
+				}
+			],
 			"startLocation": "Anna Bay",
 			"startLon": 152.082946777,
 			"startLat": -32.777629852,
@@ -38,6 +56,24 @@
 			"type": "walk",
 			"lon": 151.1003703251,
 			"lat": -33.6470330972,
+			"locations": [
+				{
+					"location": "Berowra",
+					"type": "train",
+					"description": "Get the train to Berowra using <a href=\"https://transportnsw.info/trip#/?to=Berowra\">transportnsw.info</a>.",
+					"photo": "pb260001.jpg",
+					"lon": 151.1528503429,
+					"lat": -33.6234793626
+				},
+				{
+					"location": "Asquith",
+					"type": "train",
+					"description": "Plan your return trip from Asquith at <a href=\"https://transportnsw.info/trip#/?from=Asquith\">transportnsw.info</a>.",
+					"photo": "pb260184.jpg",
+					"lon": 151.1078680214,
+					"lat": -33.6887906492
+				}
+			],
 			"startLocation": "Berowra",
 			"startLon": 151.1528503429,
 			"startLat": -33.6234793626,
@@ -64,6 +100,24 @@
 			"type": "walk",
 			"lon": 150.3570952546,
 			"lat": -33.6135320552,
+			"locations": [
+				{
+					"location": "Blackheath",
+					"type": "train",
+					"photo": "001_p7200001.jpg",
+					"description": "Get the train to Blackheath using <a href=\"https://transportnsw.info/trip#/?to=Blackheath\">transportnsw.info</a>.",
+					"lon": 150.284271,
+					"lat": -33.633377
+				},
+				{
+					"location": "Blackheath",
+					"type": "train",
+					"photo": "005_p7200207.jpg",
+					"description": "Plan your return trip from Blackheath at <a href=\"https://transportnsw.info/trip#/?from=Blackheath\">transportnsw.info</a>.",
+					"lon": 150.284332,
+					"lat": -33.633484
+				}
+			],
 			"startLocation": "Blackheath",
 			"startLon": 150.284271,
 			"startLat": -33.633377,
@@ -90,6 +144,24 @@
 			"type": "walk",
 			"lon": 150.326919556,
 			"lat": -33.655021667,
+			"locations": [
+				{
+					"location": "Blackheath",
+					"type": "train",
+					"photo": "p7200001.jpg",
+					"description": "Get the train to Blackheath using <a href=\"https://transportnsw.info/trip#/?to=Blackheath\">transportnsw.info</a>.",
+					"lon": 150.284362793,
+					"lat": -33.633621216
+				},
+				{
+					"location": "Blackheath",
+					"type": "train",
+					"photo": "p7200207.jpg",
+					"description": "Plan your return trip from Blackheath at <a href=\"https://transportnsw.info/trip#/?from=Blackheath\">transportnsw.info</a>.",
+					"lon": 150.284317017,
+					"lat": -33.633811951
+				}
+			],
 			"startLocation": "Blackheath",
 			"startLon": 150.284362793,
 			"startLat": -33.633621216,
@@ -116,6 +188,32 @@
 			"type": "walk",
 			"lon": 151.2158261798,
 			"lat": -33.8503465522,
+			"locations": [
+				{
+					"location": "Bondi Beach",
+					"type": "bus",
+					"photo": "001_pxl_20230929_210931821.jpg",
+					"lon": 151.272466,
+					"lat": -33.895572,
+					"description": "Take the bus to Bondi Beach using <a href=\"https://transportnsw.info/trip#/?to=G202652\">transportnsw.info</a>."
+				},
+				{
+					"location": "Milsons Point",
+					"photo": "005_pxl_20240126_024826577.jpg",
+					"type": "train",
+					"description": "Get the train from/to Milsons Point using <a href=\"https://transportnsw.info/trip#/?to=Milsons Point\">transportnsw.info</a>.",
+					"lon": 151.21252099999998,
+					"lat": -33.845934
+				},
+				{
+					"location": "Manly",
+					"type": "ferry",
+					"photo": "006_pxl_20231002_041502879.jpg",
+					"description": "Plan your return trip from Manly at <a href=\"https://transportnsw.info/trip#/?from=Manly\">transportnsw.info</a>.",
+					"lon": 151.283656,
+					"lat": -33.799005
+				}
+			],
 			"startLocation": "Bondi Beach",
 			"startLon": 151.272466,
 			"startLat": -33.895572,
@@ -143,6 +241,24 @@
 			"type": "walk",
 			"lon": 151.151382,
 			"lat": -34.054932,
+			"locations": [
+				{
+					"location": "Cronulla",
+					"type": "ferry",
+					"lat": -34.05625833333333,
+					"lon": 151.1499861111111,
+					"photo": "p9285441.jpg",
+					"description": "Get the ferry from Cronulla to Bundeena <a href=\"https://transportnsw.info/trip#/?to=Bundeena\">transportnsw.info</a>."
+				},
+				{
+					"location": "Otford",
+					"type": "train",
+					"lat": -34.21071944444445,
+					"lon": 151.00588888888888,
+					"photo": "p9285974.jpg",
+					"description": "Plan your return trip from Otford at <a href=\"https://transportnsw.info/trip#/?from=Otford\">transportnsw.info</a>."
+				}
+			],
 			"startLocation": "Cronulla",
 			"startLon": 151.1499861111111,
 			"startLat": -34.05625833333333,
@@ -169,6 +285,24 @@
 			"type": "walk",
 			"lon": 151.085218,
 			"lat": -34.093973,
+			"locations": [
+				{
+					"location": "Cronulla",
+					"type": "ferry",
+					"photo": "p5240025.jpg",
+					"description": "Get the ferry from Cronulla to Bundeena using <a href=\"https://transportnsw.info/trip#/?to=Bundeena\">transportnsw.info</a>.",
+					"lon": 151.14969,
+					"lat": -34.056343
+				},
+				{
+					"location": "Loftus",
+					"type": "train",
+					"photo": "p5240872.jpg",
+					"description": "Plan your return trip from Loftus at <a href=\"https://transportnsw.info/trip#/?from=Loftus\">transportnsw.info</a>.",
+					"lat": -34.045131,
+					"lon": 151.051388
+				}
+			],
 			"startLocation": "Cronulla",
 			"startLon": 151.14969,
 			"startLat": -34.056343,
@@ -195,6 +329,22 @@
 			"type": "walk",
 			"lon": 151.120513916,
 			"lat": -33.76725769,
+			"locations": [
+				{
+					"location": "Chatswood",
+					"type": "train",
+					"description": "Get the train to Chatswood using <a href=\"https://transportnsw.info/trip#/?to=Chatswood\">transportnsw.info</a>.",
+					"lon": 151.181376,
+					"lat": -33.797771999999995
+				},
+				{
+					"location": "Thornleigh",
+					"type": "train",
+					"description": "Plan your return trip from Thornleigh at <a href=\"https://transportnsw.info/trip#/?from=Thornleigh\">transportnsw.info</a>.",
+					"lon": 151.078567505,
+					"lat": -33.731884003
+				}
+			],
 			"startLocation": "Chatswood",
 			"startLon": 151.181376,
 			"startLat": -33.797771999999995,
@@ -221,6 +371,24 @@
 			"type": "walk",
 			"lon": 151.269677,
 			"lat": -33.908432,
+			"locations": [
+				{
+					"location": "Coogee Beach",
+					"type": "bus",
+					"photo": "pxl_20231118_010405900.jpg",
+					"description": "Get the bus to Coogee Beach using <a href=\"https://transportnsw.info/trip#/?to=Coogee Beach\">transportnsw.info</a>.",
+					"lon": 151.25705,
+					"lat": -33.920502
+				},
+				{
+					"location": "Bondi Beach",
+					"type": "bus",
+					"photo": "pxl_20231118_025908535.jpg",
+					"description": "Plan your return trip from Bondi Beach at <a href=\"https://transportnsw.info/trip#/?from=Bondi Beach\">transportnsw.info</a>.",
+					"lat": -33.892822,
+					"lon": 151.273468
+				}
+			],
 			"startLocation": "Coogee Beach",
 			"startLon": 151.25705,
 			"startLat": -33.920502,
@@ -247,6 +415,24 @@
 			"type": "walk",
 			"lon": 151.19921875,
 			"lat": -33.58609771699999,
+			"locations": [
+				{
+					"location": "Cowan",
+					"type": "train",
+					"photo": "p7058830.jpg",
+					"description": "Get the train to Cowan using <a href=\"https://transportnsw.info/trip#/?to=Cowan\">transportnsw.info</a>.",
+					"lon": 151.171966553,
+					"lat": -33.593074799
+				},
+				{
+					"location": "Hawkesbury River",
+					"type": "train",
+					"photo": "p7059343.jpg",
+					"description": "Plan your return trip from Hawkesbury River at <a href=\"https://transportnsw.info/trip#/?from=Hawkesbury River\">transportnsw.info</a>.",
+					"lon": 151.22668457,
+					"lat": -33.54686355600001
+				}
+			],
 			"startLocation": "Cowan",
 			"startLon": 151.171966553,
 			"startLat": -33.593074799,
@@ -273,6 +459,24 @@
 			"type": "walk",
 			"lon": 150.6128664315,
 			"lat": -33.7998189311,
+			"locations": [
+				{
+					"location": "Glenbrook",
+					"type": "train",
+					"photo": "p7250001.jpg",
+					"description": "Get the train to Glenbrook using <a href=\"https://transportnsw.info/trip#/?to=Glenbrook\">transportnsw.info</a>.",
+					"lon": 150.620507542,
+					"lat": -33.7689544167
+				},
+				{
+					"location": "Glenbrook",
+					"type": "train",
+					"photo": "p7250328.jpg",
+					"description": "Plan your return trip from Glenbrook at <a href=\"https://transportnsw.info/trip#/?from=Glenbrook\">transportnsw.info</a>.",
+					"lon": 150.620507542,
+					"lat": -33.7689544167
+				}
+			],
 			"startLocation": "Glenbrook",
 			"startLon": 150.620507542,
 			"startLat": -33.7689544167,
@@ -299,6 +503,30 @@
 			"type": "walk",
 			"lon": 151.011609,
 			"lat": -33.758323,
+			"locations": [
+				{
+					"location": "Hornsby",
+					"lat": -33.703463,
+					"lon": 151.098243,
+					"type": "train",
+					"photo": "0000_dcs_7156.jpg",
+					"description": "Get the train to Hornsby using <a href=\"https://transportnsw.info/trip#/?to=Hornsby Station\">transportnsw.info</a>."
+				},
+				{
+					"location": "Parramatta",
+					"lat": -33.813842,
+					"lon": 151.01035,
+					"type": "ferry",
+					"description": "Plan your return trip from Parramatta Wharf at <a href=\"https://transportnsw.info/trip#/?from=Parramatta Wharf\">transportnsw.info</a>."
+				},
+				{
+					"location": "Parramatta",
+					"lat": -33.817044,
+					"lon": 151.005077,
+					"type": "train",
+					"description": "Plan your return trip from Parramatta Station at <a href=\"https://transportnsw.info/trip#/?from=Parramatta Station\">transportnsw.info</a>."
+				}
+			],
 			"startLocation": "Hornsby",
 			"startLon": 151.098243,
 			"startLat": -33.703463,
@@ -325,6 +553,24 @@
 			"type": "walk",
 			"lon": 150.32783436588943,
 			"lat": -33.72529769316316,
+			"locations": [
+				{
+					"location": "Katoomba",
+					"type": "train",
+					"photo": "001_pxl_20240209_203109347.jpg",
+					"description": "Get the train to Katoomba using <a href=\"https://transportnsw.info/trip#/?to=Katoomba\">transportnsw.info</a>.",
+					"lon": 150.3114549536258,
+					"lat": -33.71183895505965
+				},
+				{
+					"location": "Wentworth Falls",
+					"type": "train",
+					"photo": "005_pxl_20240210_022027695.jpg",
+					"description": "Plan your return trip from Wentworth Falls at <a href=\"https://transportnsw.info/trip#/?from=Wentworth Falls\">transportnsw.info</a>.",
+					"lon": 150.37645703181624,
+					"lat": -33.709734762087464
+				}
+			],
 			"startLocation": "Katoomba",
 			"startLon": 150.3114549536258,
 			"startLat": -33.71183895505965,
@@ -351,6 +597,24 @@
 			"type": "walk",
 			"lon": 150.372086,
 			"lat": -33.775543,
+			"locations": [
+				{
+					"location": "Katoomba",
+					"type": "train",
+					"photo": "p6077782.jpg",
+					"description": "Get the train to Katoomba using <a href=\"https://transportnsw.info/trip#/?to=Katoomba\">transportnsw.info</a>.",
+					"lon": 150.312286377,
+					"lat": -33.71245956399999
+				},
+				{
+					"location": "Wentworth Falls",
+					"type": "train",
+					"photo": "p6078083.jpg",
+					"description": "Plan your return trip from Wentworth Falls at <a href=\"https://transportnsw.info/trip#/?from=Wentworth Falls\">transportnsw.info</a>.",
+					"lon": 150.375915527,
+					"lat": -33.709793091
+				}
+			],
 			"startLocation": "Katoomba",
 			"startLon": 150.312286377,
 			"startLat": -33.71245956399999,
@@ -377,6 +641,32 @@
 			"type": "walk",
 			"lon": 151.617559,
 			"lat": -33.194284,
+			"locations": [
+				{
+					"location": "Lake Haven",
+					"type": "bus",
+					"photo": "dsc_8423.jpg",
+					"description": "Get the bus to Lake Haven using <a href=\"https://transportnsw.info/trip#/?to=Lake Haven\">transportnsw.info</a>.",
+					"lat": -33.241745,
+					"lon": 151.505208
+				},
+				{
+					"location": "Cave Beach",
+					"type": "bus",
+					"photo": "dsc_8822.jpg",
+					"description": "Plan your return trip from Cave Beach using <a href=\"https://transportnsw.info/trip#/?from=Cave Beach\">transportnsw.info</a>.",
+					"lat": -33.109987,
+					"lon": 151.645422
+				},
+				{
+					"location": "Swansea",
+					"type": "bus",
+					"photo": "pxl_20230916_074442218.jpg",
+					"description": "Plan your return trip from Swansea using <a href=\"https://transportnsw.info/trip#/?from=Swansea Library\">transportnsw.info</a>.",
+					"lat": -33.091205,
+					"lon": 151.63786
+				}
+			],
 			"startLocation": "Lake Haven",
 			"startLon": 151.505208,
 			"startLat": -33.241745,
@@ -403,6 +693,24 @@
 			"type": "walk",
 			"lon": 151.23869,
 			"lat": -33.99797,
+			"locations": [
+				{
+					"location": "La Perouse",
+					"type": "bus",
+					"photo": "pxl_20231117_200915506.jpg",
+					"description": "Get the bus to La Perouse using <a href=\"https://transportnsw.info/trip#/?to=La Perouse\">transportnsw.info</a>.",
+					"lon": 151.233826,
+					"lat": -33.988052
+				},
+				{
+					"location": "La Perouse",
+					"type": "bus",
+					"photo": "pxl_20231117_200915506.jpg",
+					"description": "Plan your return trip from Bondi Beach at <a href=\"https://transportnsw.info/trip#/?from=La Perouse\">transportnsw.info</a>.",
+					"lon": 151.233826,
+					"lat": -33.988052
+				}
+			],
 			"startLocation": "La Perouse",
 			"startLon": 151.233826,
 			"startLat": -33.988052,
@@ -429,6 +737,24 @@
 			"type": "walk",
 			"lon": 150.4298210889,
 			"lat": -34.4115729723,
+			"locations": [
+				{
+					"location": "Mittagong",
+					"type": "train",
+					"photo": "p5070253.jpg",
+					"description": "Get the train to Mittagong using <a href=\"https://transportnsw.info/trip#/?to=Mittagong\">transportnsw.info</a>.",
+					"lon": 150.4483316839,
+					"lat": -34.4526190683
+				},
+				{
+					"location": "Mittagong",
+					"type": "train",
+					"photo": "p5070561.jpg",
+					"description": "Plan your return trip from Mittagong at <a href=\"https://transportnsw.info/trip#/?from=Mittagong\">transportnsw.info</a>.",
+					"lon": 150.4483590927,
+					"lat": -34.4524848741
+				}
+			],
 			"startLocation": "Mittagong",
 			"startLon": 150.4483316839,
 			"startLat": -34.4526190683,
@@ -455,6 +781,24 @@
 			"type": "walk",
 			"lon": 150.492184,
 			"lat": -34.345013,
+			"locations": [
+				{
+					"location": "Mittagong",
+					"type": "train",
+					"photo": "dsc_2892.jpg",
+					"description": "Get the train to Mittagong using <a href=\"https://transportnsw.info/trip#/?to=Mittagong\">transportnsw.info</a>.",
+					"lon": 150.448298,
+					"lat": -34.45254
+				},
+				{
+					"location": "Tahmoor",
+					"type": "train",
+					"photo": "dsc_3127.jpg",
+					"description": "Plan your return trip from Tahmoor at <a href=\"https://transportnsw.info/trip#/?from=Tahmoor\">transportnsw.info</a>.",
+					"lon": 150.589988,
+					"lat": -34.223419
+				}
+			],
 			"startLocation": "Mittagong",
 			"startLon": 150.448298,
 			"startLat": -34.45254,
@@ -481,6 +825,32 @@
 			"type": "walk",
 			"lon": 151.1524827965,
 			"lat": -33.6230559926,
+			"locations": [
+				{
+					"location": "Mount Kuring-gai",
+					"type": "train",
+					"photo": "p5045976.jpg",
+					"description": "Get the train to Mount Kuring-gai using <a href=\"https://transportnsw.info/trip#/?to=Mount Kuring-gai\">transportnsw.info</a>.",
+					"lon": 151.136915,
+					"lat": -33.652868
+				},
+				{
+					"location": "Berowra",
+					"type": "train",
+					"photo": "p5046279.jpg",
+					"description": "Get the train from/to Berowra using <a href=\"https://transportnsw.info/trip#/?from=Berowra\">transportnsw.info</a>.",
+					"lon": 151.153758,
+					"lat": -33.622898
+				},
+				{
+					"location": "Mount Kuring-gai",
+					"type": "train",
+					"photo": "p5045976.jpg",
+					"description": "Plan your return trip from Mount Kuring-gai at <a href=\"https://transportnsw.info/trip#/?from=Mount Kuring-gai\">transportnsw.info</a>.",
+					"lon": 151.136915,
+					"lat": -33.652868
+				}
+			],
 			"startLocation": "Mount Kuring-gai",
 			"startLon": 151.136915,
 			"startLat": -33.652868,
@@ -507,6 +877,22 @@
 			"type": "walk",
 			"lon": 151.123931885,
 			"lat": -33.600128174,
+			"locations": [
+				{
+					"location": "Mount Kuring-gai",
+					"type": "train",
+					"description": "Get the train to Mount Kuring-gai using <a href=\"https://transportnsw.info/trip#/?to=Mount Kuring-gai\">transportnsw.info</a>.",
+					"lon": 151.136915,
+					"lat": -33.652868
+				},
+				{
+					"location": "Cowan",
+					"type": "train",
+					"description": "Plan your return trip from Cowan at <a href=\"https://transportnsw.info/trip#/?from=Cowan\">transportnsw.info</a>.",
+					"lon": 151.171966553,
+					"lat": -33.593074799
+				}
+			],
 			"startLocation": "Mount Kuring-gai",
 			"startLon": 151.136915,
 			"startLat": -33.652868,
@@ -533,6 +919,22 @@
 			"type": "walk",
 			"lon": 151.144379,
 			"lat": -33.691296,
+			"locations": [
+				{
+					"location": "Mount Kuring-gai",
+					"lon": 151.136915,
+					"lat": -33.652868,
+					"type": "train",
+					"description": "Get the train to Mount Kuring-gai using <a href=\"https://transportnsw.info/trip#/?to=Mount Kuring-gai\">transportnsw.info</a>."
+				},
+				{
+					"location": "Mount Colah",
+					"type": "train",
+					"description": "Plan your return trip from Mount Colah at <a href=\"https://transportnsw.info/trip#/?from=Mount Colah\">transportnsw.info</a>.",
+					"lon": 151.115156,
+					"lat": -33.671218
+				}
+			],
 			"startLocation": "Mount Kuring-gai",
 			"startLon": 151.136915,
 			"startLat": -33.652868,
@@ -559,6 +961,23 @@
 			"type": "walk",
 			"lon": 151.183167,
 			"lat": -33.710743,
+			"locations": [
+				{
+					"location": "Mount Kuring-gai",
+					"type": "train",
+					"description": "Get the train to Mount Kuring-gai using <a href=\"https://transportnsw.info/trip#/?to=Mount Kuring-gai\">transportnsw.info</a>.",
+					"lon": 151.136915,
+					"lat": -33.652868
+				},
+				{
+					"location": "Roseville",
+					"type": "train",
+					"photo": "p8182943.jpg",
+					"description": "Plan your return trip from Roseville at <a href=\"https://transportnsw.info/trip#/?from=Roseville\">transportnsw.info</a>.",
+					"lon": 151.177841,
+					"lat": -33.783958
+				}
+			],
 			"startLocation": "Mount Kuring-gai",
 			"startLon": 151.136915,
 			"startLat": -33.652868,
@@ -585,6 +1004,24 @@
 			"type": "walk",
 			"lon": 150.151232,
 			"lat": -33.512355,
+			"locations": [
+				{
+					"location": "Mount Victoria",
+					"type": "train",
+					"photo": "0010_dsc_1905.jpg",
+					"description": "Get the train to Mount Victoria using <a href=\"https://transportnsw.info/trip#/?to=Mount Victoria\">transportnsw.info</a>.",
+					"lat": -33.58802982001727,
+					"lon": 150.2564418
+				},
+				{
+					"location": "Lithgow",
+					"type": "train",
+					"photo": "0860_dsc_2155.jpg",
+					"description": "Plan your return trip from Lithgow at <a href=\"https://transportnsw.info/trip#/?from=Lithgow\">transportnsw.info</a>.",
+					"lat": -33.48087887989204,
+					"lon": 150.15715679000132
+				}
+			],
 			"startLocation": "Mount Victoria",
 			"startLon": 150.2564418,
 			"startLat": -33.58802982001727,
@@ -611,6 +1048,24 @@
 			"type": "walk",
 			"lon": 150.2275947119412,
 			"lat": -33.54677200305883,
+			"locations": [
+				{
+					"location": "Mount Victoria",
+					"type": "train",
+					"photo": "pb020002.jpg",
+					"description": "Get the train to Mount Victoria using <a href=\"https://transportnsw.info/trip#/?to=Mount Victoria\">transportnsw.info</a>.",
+					"lon": 150.256546021,
+					"lat": -33.588516235
+				},
+				{
+					"location": "Mount Victoria",
+					"type": "train",
+					"photo": "pb020409_pb020410.jpg",
+					"description": "Plan your return trip from Mount Victoria at <a href=\"https://transportnsw.info/trip#/?from=Mount Victoria\">transportnsw.info</a>.",
+					"lon": 150.256729126,
+					"lat": -33.588088989
+				}
+			],
 			"startLocation": "Mount Victoria",
 			"startLon": 150.256546021,
 			"startLat": -33.588516235,
@@ -637,6 +1092,24 @@
 			"type": "walk",
 			"lon": 152.14010182768106,
 			"lat": -32.76185969822109,
+			"locations": [
+				{
+					"location": "Nelson Bay",
+					"type": "bus",
+					"photo": "001_pxl_20240202_224500504.jpg",
+					"description": "Get the train and bus to Nelson Bay using <a href=\"https://transportnsw.info/trip#/?to=Nelson Bay\">transportnsw.info</a>.",
+					"lon": 152.14266769587994,
+					"lat": -32.721755392849445
+				},
+				{
+					"location": "Anna Bay",
+					"type": "bus",
+					"photo": "009_pxl_20240203_061610158.jpg",
+					"description": "Plan your return trip from Anna Bay at <a href=\"https://transportnsw.info/trip#/?from=Anna Bay\">transportnsw.info</a>.",
+					"lon": 152.08241832442582,
+					"lat": -32.7777046803385
+				}
+			],
 			"startLocation": "Nelson Bay",
 			"startLon": 152.14266769587994,
 			"startLat": -32.721755392849445,
@@ -663,6 +1136,24 @@
 			"type": "walk",
 			"lon": 150.9278057981,
 			"lat": -34.3145446479,
+			"locations": [
+				{
+					"location": "Otford",
+					"type": "train",
+					"photo": "pxl_20230901_213404134.jpg",
+					"description": "Get the train to Otford using <a href=\"https://transportnsw.info/trip#/?to=Otford\">transportnsw.info</a>.",
+					"lon": 151.0062912572,
+					"lat": -34.2103067134
+				},
+				{
+					"location": "Wollongong",
+					"type": "train",
+					"photo": "pxl_20230902_055254922.jpg",
+					"description": "Get the train to Wollongong using <a href=\"https://transportnsw.info/trip#/?to=Wollongong\">transportnsw.info</a>.",
+					"lon": 150.8881997969,
+					"lat": -34.4267116114
+				}
+			],
 			"startLocation": "Otford",
 			"startLon": 151.0062912572,
 			"startLat": -34.2103067134,
@@ -689,6 +1180,32 @@
 			"type": "walk",
 			"lon": 151.317406,
 			"lat": -33.672071,
+			"locations": [
+				{
+					"location": "Palm Beach",
+					"type": "bus",
+					"photo": "0020_dsc_4814_dsc_4823.jpg",
+					"description": "Get the bus or ferry to Palm Beach using <a href=\"https://transportnsw.info/trip#/?to=Palm Beach\">transportnsw.info</a>.",
+					"lon": 151.319931,
+					"lat": -33.596193
+				},
+				{
+					"location": "Narrabeen",
+					"type": "bus",
+					"photo": "2078_p3092168p.jpg",
+					"description": "Get the bus to/from Narrabeen Lagoon using <a href=\"https://transportnsw.info/trip#/?from=Pittwater Rd opp Gondola Rd\">transportnsw.info</a>.",
+					"lon": 151.296573,
+					"lat": -33.708237
+				},
+				{
+					"location": "Manly",
+					"type": "ferry",
+					"photo": "2780_dsc_5456.jpg",
+					"description": "Plan your return trip from Narrabeen at <a href=\"https://transportnsw.info/trip#/?from=Manly\">transportnsw.info</a>.",
+					"lat": -33.80003333333333,
+					"lon": 151.2852861111111
+				}
+			],
 			"startLocation": "Palm Beach",
 			"startLon": 151.319931,
 			"startLat": -33.596193,
@@ -715,6 +1232,32 @@
 			"type": "walk",
 			"lon": 150.8404602483,
 			"lat": -33.7761111371,
+			"locations": [
+				{
+					"location": "Parramatta",
+					"lat": -33.816935,
+					"lon": 151.004827,
+					"type": "train",
+					"photo": "0000_img_20191019_055918.jpg",
+					"description": "Get the train to Parramatta using <a href=\"https://transportnsw.info/trip#/?to=Parramatta Station\">transportnsw.info</a>."
+				},
+				{
+					"location": "Blacktown",
+					"type": "train",
+					"photo": "1050_img_20191019_093420.jpg",
+					"description": "Get the train from/to Blacktown using <a href=\"https://transportnsw.info/trip#/?to=Blacktown Station\">transportnsw.info</a>.",
+					"lon": 150.90706400000002,
+					"lat": -33.768921999999996
+				},
+				{
+					"location": "Penrith",
+					"lat": -33.750329,
+					"lon": 150.695488,
+					"type": "train",
+					"photo": "3780_img_20191019_191416.jpg",
+					"description": "Plan your return trip from Penrith Station at <a href=\"https://transportnsw.info/trip#/?from=Penrith Station\">transportnsw.info</a>."
+				}
+			],
 			"startLocation": "Parramatta",
 			"startLon": 151.004827,
 			"startLat": -33.816935,
@@ -737,16 +1280,32 @@
 			"fireban": false
 		},
 		{
-			"key": "parramatta-riverwalk-milsonspoint",
+			"key": "parramatta-riverwalk-chatswood",
 			"type": "walk",
-			"lon": 151.1270847078,
-			"lat": -33.8391971122,
+			"lon": 151.136147473,
+			"lat": -33.8406119775,
+			"locations": [
+				{
+					"location": "Parramatta",
+					"type": "train",
+					"description": "Get the train to Parramatta using <a href=\"https://transportnsw.info/trip#/?to=Parramatta\">transportnsw.info</a>.",
+					"lon": 151.0058008321,
+					"lat": -33.8170743361
+				},
+				{
+					"location": "Chatswood",
+					"type": "train",
+					"description": "Plan your return trip from Chatswood at <a href=\"https://transportnsw.info/trip#/?from=Chatswood\">transportnsw.info</a>.",
+					"lon": 151.1813760549,
+					"lat": -33.7977724895
+				}
+			],
 			"startLocation": "Parramatta",
 			"startLon": 151.0058008321,
 			"startLat": -33.8170743361,
-			"endLocation": "Milsons Point",
-			"endLon": 151.211454,
-			"endLat": -33.846288,
+			"endLocation": "Chatswood",
+			"endLon": 151.1813760549,
+			"endLat": -33.7977724895,
 			"startTransport": "train",
 			"endTransport": "train",
 			"region": "Parramatta River",
@@ -767,6 +1326,22 @@
 			"type": "walk",
 			"lon": 150.865936,
 			"lat": -34.579792,
+			"locations": [
+				{
+					"location": "Port Kembla",
+					"type": "train",
+					"lat": -34.477161407,
+					"lon": 150.902664185,
+					"description": "Plan your return trip from Port Kembla at <a href=\"https://transportnsw.info/trip#/?from=Port Kembla\">transportnsw.info</a>."
+				},
+				{
+					"location": "Kiama",
+					"type": "train",
+					"description": "Get the train to Kiama using <a href=\"https://transportnsw.info/trip#/?to=Kiama\">transportnsw.info</a>.",
+					"lon": 150.854614,
+					"lat": -34.672249
+				}
+			],
 			"startLocation": "Port Kembla",
 			"startLon": 150.902664185,
 			"startLat": -34.477161407,
@@ -793,6 +1368,24 @@
 			"type": "walk",
 			"lon": 151.0655953176,
 			"lat": -33.8249550853,
+			"locations": [
+				{
+					"location": "Rhodes",
+					"type": "train",
+					"photo": "pxl_20240113_203618626.jpg",
+					"description": "Get the train to Rhodes using <a href=\"https://transportnsw.info/trip#/?to=Rhodes Station\">transportnsw.info</a>.",
+					"lon": 151.0867532529,
+					"lat": -33.8307654206
+				},
+				{
+					"location": "End Station",
+					"type": "train",
+					"photo": "pxl_20240114_004910677.jpg",
+					"description": "Plan your return trip from Rhodes at <a href=\"https://transportnsw.info/trip#/?from=Rhodes Station\">transportnsw.info</a>.",
+					"lon": 151.0867532529,
+					"lat": -33.8307654206
+				}
+			],
 			"startLocation": "Rhodes",
 			"startLon": 151.0867532529,
 			"startLat": -33.8307654206,
@@ -819,6 +1412,24 @@
 			"type": "walk",
 			"lon": 151.216402,
 			"lat": -33.780159,
+			"locations": [
+				{
+					"location": "Roseville",
+					"type": "train",
+					"photo": "p7200321.jpg",
+					"description": "Get the train to Roseville using <a href=\"https://transportnsw.info/trip#/?to=Roseville\">transportnsw.info</a>.",
+					"lon": 151.177582,
+					"lat": -33.784401
+				},
+				{
+					"location": "Manly",
+					"type": "ferry",
+					"photo": "p7200939_p7200940.jpg",
+					"description": "Plan your return trip from Manly at <a href=\"https://transportnsw.info/trip#/?from=Manly\">transportnsw.info</a>.",
+					"lat": -33.80003333333333,
+					"lon": 151.2852861111111
+				}
+			],
 			"startLocation": "Roseville",
 			"startLon": 151.177582,
 			"startLat": -33.784401,
@@ -845,6 +1456,24 @@
 			"type": "walk",
 			"lon": 150.60414,
 			"lat": -33.632252,
+			"locations": [
+				{
+					"location": "Springwood",
+					"type": "train",
+					"photo": "001_p4080001.jpg",
+					"description": "Get the train to Springwood using <a href=\"https://transportnsw.info/trip#/?to=Springwood\">transportnsw.info</a>.",
+					"lat": -33.699158999999995,
+					"lon": 150.563733
+				},
+				{
+					"location": "Richmond",
+					"type": "train",
+					"photo": "199_p4080233.jpg",
+					"description": "Plan your return trip from Richmond at <a href=\"https://transportnsw.info/trip#/?from=Richmond\">transportnsw.info</a>.",
+					"lat": -33.59847776999144,
+					"lon": 150.75223465000673
+				}
+			],
 			"startLocation": "Springwood",
 			"startLon": 150.563733,
 			"startLat": -33.699158999999995,
@@ -871,6 +1500,24 @@
 			"type": "walk",
 			"lon": 150.572067261,
 			"lat": -33.75033950800001,
+			"locations": [
+				{
+					"location": "Springwood",
+					"type": "train",
+					"photo": "001_p5270001.jpg",
+					"description": "Get the train to Springwood using <a href=\"https://transportnsw.info/trip#/?to=Springwood\">transportnsw.info</a>.",
+					"lon": 150.561798096,
+					"lat": -33.69906234699999
+				},
+				{
+					"location": "Glenbrook",
+					"type": "train",
+					"photo": "232_p5270264.jpg",
+					"description": "Plan your return trip from Glenbrook at <a href=\"https://transportnsw.info/trip#/?from=Glenbrook\">transportnsw.info</a>.",
+					"lon": 150.621612549,
+					"lat": -33.768642426
+				}
+			],
 			"startLocation": "Springwood",
 			"startLon": 150.561798096,
 			"startLat": -33.69906234699999,
@@ -897,6 +1544,23 @@
 			"type": "walk",
 			"lon": 150.963567,
 			"lat": -34.256982,
+			"locations": [
+				{
+					"location": "Stanwell Park",
+					"type": "train",
+					"photo": "001_pxl_20211022_220328603.jpg",
+					"description": "Get the train to Stanwell Park using <a href=\"https://transportnsw.info/trip#/?to=Stanwell Park\">transportnsw.info</a>.",
+					"lon": 150.980408,
+					"lat": -34.227482
+				},
+				{
+					"location": "Thirroul",
+					"type": "train",
+					"description": "Plan your return trip from Thiroul at <a href=\"https://transportnsw.info/trip#/?from=Thiroul\">transportnsw.info</a>.",
+					"lon": 150.918686,
+					"lat": -34.31794799999999
+				}
+			],
 			"startLocation": "Stanwell Park",
 			"startLon": 150.980408,
 			"startLat": -34.227482,
@@ -923,6 +1587,32 @@
 			"type": "walk",
 			"lon": 151.7080771644,
 			"lat": -33.0149332434,
+			"locations": [
+				{
+					"location": "Teralba",
+					"type": "train",
+					"photo": "001_pxl_20240119_202904664.jpg",
+					"description": "Get the train to Teralba using <a href=\"https://transportnsw.info/trip#/?to=Teralba\">transportnsw.info</a>.",
+					"lon": 151.6034559254,
+					"lat": -32.9623152595
+				},
+				{
+					"location": "Adamstown",
+					"type": "train",
+					"photo": "006_pxl_20240120_065700912.jpg",
+					"description": "Plan your return trip from Adamstown at <a href=\"https://transportnsw.info/trip#/?from=Adamstown\">transportnsw.info</a>.",
+					"lon": 151.719705,
+					"lat": -32.934188
+				},
+				{
+					"location": "Broadmeadow",
+					"type": "train",
+					"photo": "007_pxl_20230204_063706159.jpg",
+					"description": "Plan your return trip from Broadmeadow at <a href=\"https://transportnsw.info/trip#/?from=Broadmeadow\">transportnsw.info</a>.",
+					"lon": 151.734882,
+					"lat": -32.923002
+				}
+			],
 			"startLocation": "Teralba",
 			"startLon": 151.6034559254,
 			"startLat": -32.9623152595,
@@ -949,6 +1639,24 @@
 			"type": "walk",
 			"lon": 151.5382833593,
 			"lat": -33.2906253543,
+			"locations": [
+				{
+					"location": "Tuggerah",
+					"type": "train",
+					"photo": "pxl_20231226_194002371.jpg",
+					"description": "Get the train to Tuggerah using <a href=\"https://transportnsw.info/trip#/?to=Tuggerah\">transportnsw.info</a>.",
+					"lon": 151.420197,
+					"lat": -33.308128
+				},
+				{
+					"location": "Wyong",
+					"type": "train",
+					"photo": "pxl_20231227_062056567.jpg",
+					"description": "Plan your return trip from Wyong at <a href=\"https://transportnsw.info/trip#/?from=Wyong\">transportnsw.info</a>.",
+					"lat": -33.28545277777778,
+					"lon": 151.42558333333332
+				}
+			],
 			"startLocation": "Tuggerah",
 			"startLon": 151.420197,
 			"startLat": -33.308128,
@@ -975,6 +1683,32 @@
 			"type": "walk",
 			"lon": 151.012529,
 			"lat": -34.089557,
+			"locations": [
+				{
+					"location": "Waterfall",
+					"type": "train",
+					"photo": "001_dsc_9544.jpg",
+					"description": "Get the train to Waterfall using <a href=\"https://transportnsw.info/trip#/?to=Waterfall\">transportnsw.info</a>.",
+					"lat": -34.1350492,
+					"lon": 150.99596526007738
+				},
+				{
+					"location": "Royal National Park Station",
+					"type": "tram",
+					"photo": "003_dsc_9668.jpg",
+					"description": "Check <a href=\"https://www.sydneytramwaymuseum.com.au/\">www.sydneytramwaymuseum.com.au</a> if the historical tramway operates today.",
+					"lat": -34.062643,
+					"lon": 151.056729
+				},
+				{
+					"location": "Loftus",
+					"type": "train",
+					"photo": "003_dsc_9894.jpg",
+					"description": "Plan your return trip from Loftus at <a href=\"https://transportnsw.info/trip#/?from=Loftus\">transportnsw.info</a>.",
+					"lat": -34.045131,
+					"lon": 151.051388
+				}
+			],
 			"startLocation": "Waterfall",
 			"startLon": 150.99596526007738,
 			"startLat": -34.1350492,
@@ -1001,6 +1735,30 @@
 			"type": "walk",
 			"lon": 151.031128,
 			"lat": -34.137924,
+			"locations": [
+				{
+					"location": "Waterfall",
+					"type": "train",
+					"description": "Get the train to Waterfall using <a href=\"https://transportnsw.info/trip#/?to=Waterfall\">transportnsw.info</a>.",
+					"lat": -34.1350492,
+					"lon": 150.99596526007738
+				},
+				{
+					"location": "Royal National Park Station",
+					"type": "tram",
+					"description": "Check <a href=\"https://www.sydneytramwaymuseum.com.au/\">www.sydneytramwaymuseum.com.au</a> if the historical tramway operates today.",
+					"lat": -34.062643,
+					"lon": 151.056729
+				},
+				{
+					"location": "Loftus",
+					"type": "train",
+					"photo": "004_pa056324.jpg",
+					"description": "Plan your return trip from Loftus at <a href=\"https://transportnsw.info/trip#/?from=Loftus\">transportnsw.info</a>.",
+					"lat": -34.04475,
+					"lon": 151.051377
+				}
+			],
 			"startLocation": "Waterfall",
 			"startLon": 150.99596526007738,
 			"startLat": -34.1350492,
@@ -1027,6 +1785,22 @@
 			"type": "walk",
 			"lon": 151.077309195,
 			"lat": -34.1664964333,
+			"locations": [
+				{
+					"location": "Waterfall",
+					"type": "train",
+					"description": "Get the train to Waterfall using <a href=\"https://transportnsw.info/trip#/?to=Waterfall\">transportnsw.info</a>.",
+					"lat": -34.1350492,
+					"lon": 150.99596526007738
+				},
+				{
+					"location": "Cronulla",
+					"type": "train",
+					"description": "Get the train to Cronulla and ferry to Bundeena using <a href=\"https://transportnsw.info/trip#/?from=Cronulla\">transportnsw.info</a>.",
+					"lon": 151.151371,
+					"lat": -34.055287
+				}
+			],
 			"startLocation": "Waterfall",
 			"startLon": 150.99596526007738,
 			"startLat": -34.1350492,
@@ -1053,6 +1827,22 @@
 			"type": "walk",
 			"lon": 151.1762166582,
 			"lat": -34.0255036857,
+			"locations": [
+				{
+					"location": "Wolli Creek",
+					"type": "train",
+					"description": "Get the train to Wolli Creek using <a href=\"https://transportnsw.info/trip#/?to=Wolli Creek\">transportnsw.info</a>.",
+					"lon": 151.1536876112,
+					"lat": -33.9286433347
+				},
+				{
+					"location": "Cronulla",
+					"type": "train",
+					"description": "Plan your return trip from Cronulla at <a href=\"https://transportnsw.info/trip#/?from=Cronulla\">transportnsw.info</a>.",
+					"lon": 151.151687622,
+					"lat": -34.055538177
+				}
+			],
 			"startLocation": "Wolli Creek",
 			"startLon": 151.1536876112,
 			"startLat": -33.9286433347,
@@ -1079,6 +1869,22 @@
 			"type": "walk",
 			"lon": 151.435593,
 			"lat": -33.46534399999999,
+			"locations": [
+				{
+					"location": "Woy Woy",
+					"type": "train",
+					"description": "Get the train to Woy Woy using <a href=\"https://transportnsw.info/trip#/?to=Woy Woy\">transportnsw.info</a>.",
+					"lon": 151.323418,
+					"lat": -33.48543
+				},
+				{
+					"location": "Tuggerah",
+					"type": "train",
+					"description": "Plan your return trip from Tuggerah at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>.",
+					"lat": -33.307802,
+					"lon": 151.420358
+				}
+			],
 			"startLocation": "Woy Woy",
 			"startLon": 151.323418,
 			"startLat": -33.48543,
@@ -1105,6 +1911,32 @@
 			"type": "walk",
 			"lon": 151.35829011909664,
 			"lat": -33.5281060449779,
+			"locations": [
+				{
+					"location": "Woy Woy",
+					"type": "train",
+					"photo": "001_pxl_20240127_190937709.jpg",
+					"description": "Get the train to Woy Woy using <a href=\"https://transportnsw.info/trip#/?to=Woy Woy\">transportnsw.info</a>.",
+					"lon": 151.32368291728199,
+					"lat": -33.48528089001775
+				},
+				{
+					"location": "Wagstaff",
+					"type": "ferry",
+					"photo": "008_pxl_20230128_004831018.jpg",
+					"description": "Plan your return trip from Wagstaffe at <a href=\"https://transportnsw.info/trip#/?from=Wagstaffe Wharf\">transportnsw.info</a>.",
+					"lon": 151.34279722222223,
+					"lat": -33.52336388888889
+				},
+				{
+					"location": "Woy Woy",
+					"type": "train",
+					"lat": -33.485313416,
+					"lon": 151.323776245,
+					"photo": "009_pxl_20240128_043541678.jpg",
+					"description": "Plan your return trip from Woy Woy at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>."
+				}
+			],
 			"startLocation": "Woy Woy",
 			"startLon": 151.32368291728199,
 			"startLat": -33.48528089001775,
@@ -1131,6 +1963,22 @@
 			"type": "walk",
 			"lon": 151.313507,
 			"lat": -33.443806,
+			"locations": [
+				{
+					"location": "Woy Woy",
+					"type": "train",
+					"description": "Get the train to Woy Woy using <a href=\"https://transportnsw.info/trip#/?to=Woy Woy\">transportnsw.info</a>.",
+					"lat": -33.485393,
+					"lon": 151.32345
+				},
+				{
+					"location": "Lisarow",
+					"type": "train",
+					"description": "Plan your return trip from Lisarow at <a href=\"https://transportnsw.info/trip#/?from=Lisarow\">transportnsw.info</a>.",
+					"lat": -33.382299,
+					"lon": 151.370041
+				}
+			],
 			"startLocation": "Woy Woy",
 			"startLon": 151.32345,
 			"startLat": -33.485393,
@@ -1157,6 +2005,29 @@
 			"type": "walk",
 			"lon": 151.3011497632,
 			"lat": -33.4977069777,
+			"locations": [
+				{
+					"location": "Woy Woy",
+					"type": "train",
+					"description": "Get the train to Woy Woy using <a href=\"https://transportnsw.info/trip#/?to=Woy Woy\">transportnsw.info</a>.",
+					"lat": -33.485393,
+					"lon": 151.32345
+				},
+				{
+					"location": "Woy Woy",
+					"type": "train",
+					"description": "Plan your return trip to/from Woy Woy at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>.",
+					"lat": -33.485393,
+					"lon": 151.32345
+				},
+				{
+					"location": "Gosford",
+					"type": "train",
+					"description": "Plan your return trip from Gosford at <a href=\"https://transportnsw.info/trip#/?from=Gosford\">transportnsw.info</a>.",
+					"lat": -33.485393,
+					"lon": 151.32345
+				}
+			],
 			"startLocation": "Woy Woy",
 			"startLon": 151.32345,
 			"startLat": -33.485393,

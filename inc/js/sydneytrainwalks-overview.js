@@ -59,43 +59,37 @@ export class Overview {
     // add "onMarkerClicked" event handlers to markers
     const guide = await this.loadGuide('_index');
     // for every marker
+    const markers = [];
     for (let marker of guide.markers) {
       // modify the marker to be a button
-      marker.type = 'waypoint';
-      marker.description = '';
-      marker.callback = this.onMarkerClicked.bind(this, marker.key);
+      markers.push({
+        key: marker.key,
+        type: 'waypoint',
+        lon: marker.lon,
+        lat: marker.lat,
+        photo: '',
+        callback: this.onMarkerClicked.bind(this, marker.key)
+      });
     }
     // add markers for the start stations
     const stationLookup = {};
-    const startStations = [];
+    const stations = [];
     for (let marker of guide.markers) {
-      if (!stationLookup[marker.startLocation]) {
-        startStations.push({
-          key: marker.startLocation,
-          type: marker.startTransport,
-          lon: marker.startLon,
-          lat: marker.startLat,
-          callback: this.onStationClicked.bind(this, marker.startLocation)
-        });
-        stationLookup[marker.startLocation] = true;
-      }
-    }
-    // add markers for the end stations
-    const endStations = [];
-    for (let marker of guide.markers) {
-      if (!stationLookup[marker.endLocation]) {
-        endStations.push({
-          key: marker.endLocation,
-          type: marker.endTransport,
-          lon: marker.endLon,
-          lat: marker.endLat,
-          callback: this.onStationClicked.bind(this, marker.endLocation)
-        });
-        stationLookup[marker.endLocation] = true;
+      for (let station of marker.locations) {
+        if (!stationLookup[station.location]) {
+          stations.push({
+            key: station.location,
+            type: station.type,
+            lon: station.lon,
+            lat: station.lat,
+            callback: this.onStationClicked.bind(this, station.location)
+          });
+          stationLookup[station.location] = true;
+        }
       }
     }
     // add the stations to the markers
-    guide.markers = [...guide.markers, ...startStations, ...endStations];
+    guide.markers = [...markers, ...stations];
     // return the result
     return guide;
   }
@@ -113,7 +107,6 @@ export class Overview {
       // update a progress bar
       this.overviewElement.setAttribute('data-progress', Math.round(index / total * 100) + '%');
       // set the keys of the tracks
-      console.log('route', route);
       for (let feature of route.features) {
         feature.properties.name = key;
       }

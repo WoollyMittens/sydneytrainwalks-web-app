@@ -65,19 +65,15 @@ function generateGuideIndex(guides) {
 		// add a marker from the end points of the guide
 		start = guide.markers[0];
 		end = guide.markers.slice(-1)[0];
+		// gather the transport nodes
+		let locations = guide.markers.filter(marker => marker.location);
+		// populate the index entry
 		overview.markers.push({
 			'key': key,
 			'type': 'walk',
 			'lon': guide.lon,
 			'lat': guide.lat,
-			'startLocation': start.location,
-			'startLon': start.lon,
-			'startLat': start.lat,
-			'endLocation': end.location,
-			'endLon': end.lon,
-			'endLat': end.lat,
-			'startTransport': start.type,
-			'endTransport': end.type,
+			'locations': locations,
 			'region': guide.location,
 			'distance': guide.distance,
 			'revised': guide.updated,
