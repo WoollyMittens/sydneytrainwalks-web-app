@@ -180,6 +180,17 @@
 			"description": "One of the remaining statues of explorer is left along the trail."
 		},
 		{
+			"type": "hotspot",
+			"photo": "p9154701.jpg",
+			"lon": 151.3618444,
+			"lat": -33.4228556,
+			"radius": 0.0004,
+			"description": "The fourth statue of famous explorers requires some exploration to find.",
+			"badge": "registered_user",
+			"title": "Somewhere Out There",
+			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "p9154713.jpg",
 			"lon": 151.39010555555555,

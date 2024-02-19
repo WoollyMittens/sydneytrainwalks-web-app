@@ -282,8 +282,19 @@
 			"description": "Be sure to follow the trail ahead through the dense vegetation instead of the directions to Curra Moors car park down the fire trail."
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "p9285789_p9285791.jpg",
+			"lon": 151.0766564,
+			"lat": -34.1665323,
+			"radius": 0.0004,
+			"description": "Even after many kilometres of coast, this place still manages to astonish.",
+			"badge": "wizard_1",
+			"title": "Tadaa!",
+			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
+			"type": "waypoint",
+			"photo": "p9285792_p9285795.jpg",
 			"lon": 151.07518888888887,
 			"lat": -34.16723611111111,
 			"description": "The trail eventually leads to a high cliff overlooking Garie Beach. Carefully descend down to the beach."

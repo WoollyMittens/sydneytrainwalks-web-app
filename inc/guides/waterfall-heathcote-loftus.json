@@ -804,13 +804,6 @@
 			"lat": -34.063644169993346
 		},
 		{
-			"type": "waypoint",
-			"photo": "003_dsc_9868.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.05709304999772,
-			"lat": -34.06312310994049
-		},
-		{
 			"location": "Royal National Park Station",
 			"type": "tram",
 			"photo": "003_dsc_9868.jpg",
@@ -819,11 +812,15 @@
 			"lat": -34.06312310994049
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "003_dsc_9869.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.0566171099999,
-			"lat": -34.06268653010552
+			"lon": 151.0567214560022,
+			"lat": -34.0625896528283,
+			"radius": 0.0004,
+			"description": "You may be here on the lucky few days there is a historic tram ride to the Sydney Tramway Museum outside the park.",
+			"badge": "tramway",
+			"title": "Ding Ding Ding!",
+			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

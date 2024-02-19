@@ -1099,11 +1099,15 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "pxl_20221105_042106719.jpg",
-			"lon": 151.222899,
-			"lat": -34.035501,
-			"description": "Lorem ipsum dolor sit amet."
+			"lon": 151.2222179698302,
+			"lat": -34.03508340894466,
+			"radius": 0.0004,
+			"description": "The light is a warning not to sail a ship into the steep cliffs of the coast. Let it also be a reminder not to fall off the same.",
+			"badge": "lamp_on",
+			"title": "The Guiding Light",
+			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

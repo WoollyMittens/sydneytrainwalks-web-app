@@ -647,11 +647,15 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "001_pxl_20240120_010413100.jpg",
-			"lon": 151.66145500000002,
-			"lat": -33.039015,
-			"description": "Lorem ipsum dolor sit amet."
+			"lon": 151.6613161295524,
+			"lat": -33.03900889600782,
+			"radius": 0.0004,
+			"description": "The start of the Fernleigh railway line, but also the start of an historic trek.",
+			"badge": "railroad",
+			"title": "I'm a Choo Choo Train: Belmont",
+			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",
@@ -738,11 +742,15 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "001_pxl_20240120_014853204.jpg",
-			"lon": 151.685852,
-			"lat": -33.021178,
-			"description": "Lorem ipsum dolor sit amet."
+			"lon": 151.6860486138035,
+			"lat": -33.02089528519164,
+			"radius": 0.0004,
+			"description": "End of the wetlands and start of suburbia.",
+			"badge": "railroad",
+			"title": "I'm a Choo Choo Train: Jewells",
+			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",
@@ -787,11 +795,15 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "002_pxl_20230429_025920268.jpg",
-			"lon": 151.709252,
-			"lat": -33.005981,
-			"description": "<i>-5km</i> Lorem ipsum dolor sit amet.",
+			"lon": 151.7095684711388,
+			"lat": -33.00581939444007,
+			"radius": 0.0004,
+			"description": "Alight here for Awabakal Nature Reserve and Redhead Beach.",
+			"badge": "railroad",
+			"title": "I'm a Choo Choo Train: Redhead",
+			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>",
 			"optional": true
 		},
 		{
@@ -821,9 +833,21 @@
 		{
 			"type": "toilet",
 			"photo": "002_pxl_20230429_035442825.jpg",
-			"lon": 151.71086699999998,
-			"lat": -32.977826,
+			"lon": 151.711004,
+			"lat": -32.978208,
 			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true
+		},
+		{
+			"type": "hotspot",
+			"photo": "003_IMG_20200118_084426.jpg",
+			"lon": 151.7109742419769,
+			"lat": -32.97788842791798,
+			"radius": 0.0004,
+			"description": "No longer a stop for trains, but now one for coffee and cakes up there.",
+			"badge": "railroad",
+			"title": "I'm a Choo Choo Train: Whitebridge",
+			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>",
 			"optional": true
 		},
 		{
@@ -843,11 +867,15 @@
 			"optional": true
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "003_pxl_20230429_042601570.jpg",
-			"lon": 151.7181611111111,
-			"lat": -32.962205555555556,
-			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.7182798705948,
+			"lat": -32.96232362379441,
+			"radius": 0.0004,
+			"description": "Glenrock's a good reason to leave the train here.",
+			"badge": "railroad",
+			"title": "I'm a Choo Choo Train: Kahibah",
+			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>",
 			"optional": true
 		},
 		{
@@ -1012,11 +1040,15 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "004_pxl_20240120_032436105.jpg",
-			"lon": 151.725248,
-			"lat": -33.010199,
-			"description": "Lorem ipsum dolor sit amet."
+			"lon": 151.725187539504,
+			"lat": -33.01065409517184,
+			"radius": 0.0004,
+			"description": "The narrow tunnel of dense vegetation opens up to expansive coastal heath.",
+			"badge": "enter",
+			"title": "The Rear Entrance",
+			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",
@@ -1460,20 +1492,31 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
+			"type": "hotspot",
+			"photo": "006_pxl_20240120_065700912.jpg",
+			"lon": 151.7196822166376,
+			"lat": -32.9342364320964,
+			"radius": 0.0004,
+			"description": "End of the line for the Fernleigh Track. From here you get to ride a real train.",
+			"badge": "railroad",
+			"title": "I'm a Choo Choo Train: Adamstown",
+			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"location": "Adamstown",
 			"type": "train",
 			"photo": "006_pxl_20240120_065700912.jpg",
 			"description": "Plan your return trip from Adamstown at <a href=\"https://transportnsw.info/trip#/?from=Adamstown\">transportnsw.info</a>.",
-			"lon": 151.719705,
-			"lat": -32.934188
+			"lon": 151.720408,
+			"lat": -32.933554
 		},
 		{
 			"type": "waypoint",
 			"photo": "007_pxl_20211106_055152820.jpg",
 			"description": "<i>+4km</i> If time allows, consider continuing on to Broadmeadow for a more frequent train service.",
 			"optional": true,
-			"lon": 151.73480555555554,
-			"lat": -32.92270833333333
+			"lon": 151.72728,
+			"lat": -32.930391
 		},
 		{
 			"location": "Broadmeadow",

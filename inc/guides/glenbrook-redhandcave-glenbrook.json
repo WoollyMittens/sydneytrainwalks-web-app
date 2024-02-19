@@ -178,6 +178,17 @@
 			"description": "Cross the gate and follow the trail. It zig zags down a hill and ends at the campground."
 		},
 		{
+			"type": "hotspot",
+			"photo": "p7250181_p7250183.jpg",
+			"lon": 150.6169320721852,
+			"lat": -33.79894155167245,
+			"radius": 0.0004,
+			"description": "Neither campers nor eastern greys can resist these grassy fields.",
+			"badge": "hovel_1",
+			"title": "I was Promised Kangaroos",
+			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+		},
+		{
 			"type": "waypoint",
 			"photo": "p7250185.jpg",
 			"description": "Follow the road across the campground to the left to find the information signs.",
@@ -262,11 +273,15 @@
 			"description": "The first lookout on the left side is the Tunnel View lookout."
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "p7250266_p7250270.jpg",
-			"lon": 150.62768888888888,
-			"lat": -33.78381944444444,
-			"description": "There are no safety fences at the Tunnel View lookout. Don't go too close to the edge."
+			"lon": 150.6276634120437,
+			"lat": -33.78381702230462,
+			"radius": 0.0004,
+			"description": "If you stand around long enough, there will probably be a train across the valley.",
+			"badge": "search",
+			"title": "So where is it?",
+			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",

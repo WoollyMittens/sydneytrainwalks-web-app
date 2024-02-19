@@ -23,7 +23,7 @@ export class Trophies {
 		let trophies = await this.loadGuide('_trophies');
 		// sort the trophies
 		trophies.markers.sort((a, b) => {
-			return (a.marker.title > b.marker.title) ? 1 : -1;
+			return (a.title > b.title) ? 1 : -1;
 		});
 		// insert the markers
 		trophies.markers.map((marker) => {
@@ -97,6 +97,8 @@ export class Trophies {
 			this.details(data);
 			// redraw the trophy page
 			this.update();
+			// redraw the details page
+			this.updateView();
 		}
 	};
 

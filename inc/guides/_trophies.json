@@ -1,12 +1,34 @@
 {
 	"key": "_index",
 	"bounds": {
-		"north": -33.43144133557529,
+		"north": -32.54681317351516,
 		"west": 150.1171875,
-		"south": -33.87041555094183,
-		"east": 150.64453125
+		"south": -34.45221847282654,
+		"east": 152.2265625
 	},
 	"markers": [
+		{
+			"key": "annabay-worimi-stockton",
+			"type": "trophy",
+			"photo": "001_p3224343_p3224344.jpg",
+			"lon": 151.9610443972656,
+			"lat": -32.80925637778527,
+			"radius": 0.0004,
+			"description": "The Tin City beach huts are one of the very few breaks in the endless monotony of 27 kilometres of beach, but also not.",
+			"title": "Are We There Yet?",
+			"badge": "count_new"
+		},
+		{
+			"key": "berowra-crosslands-asquith",
+			"type": "trophy",
+			"photo": "pb260161.jpg",
+			"lon": 151.0852692848733,
+			"lat": -33.67955093920438,
+			"radius": 0.0004,
+			"description": "A historic military bridge, out here as a surprise outdoor museum piece.",
+			"title": "It Belongs in a Museum",
+			"badge": "bridge_1"
+		},
 		{
 			"key": "blackheath-bluegumforest-blackheath",
 			"type": "trophy",
@@ -17,6 +39,193 @@
 			"description": "This is legitimately the middle of nowhere, with only solitude surrounding you. May it comfort you during the long long climb ahead.",
 			"title": "You've Come a Long Way Baby",
 			"badge": "compas_2"
+		},
+		{
+			"key": "bundeena-royalcoasttrack-otford",
+			"type": "trophy",
+			"photo": "p9285789_p9285791.jpg",
+			"lon": 151.0766564,
+			"lat": -34.1665323,
+			"radius": 0.0004,
+			"description": "Even after many kilometres of coast, this place still manages to astonish.",
+			"title": "Tadaa!",
+			"badge": "wizard_1"
+		},
+		{
+			"key": "bundeena-winifredfalls-loftus",
+			"type": "trophy",
+			"photo": "p5240456.jpg",
+			"lon": 151.083762,
+			"lat": -34.093424,
+			"radius": 0.0004,
+			"description": "It's rarely more than a trickle, but it's here exclusively for ones as adventurous as you.",
+			"title": "Ah! Nice Falls",
+			"badge": "water"
+		},
+		{
+			"key": "cowan-jerusalembay-brooklyn",
+			"type": "trophy",
+			"photo": "001_p7058998_001_p7059002.jpg",
+			"lon": 151.2138850276913,
+			"lat": -33.58264408577045,
+			"radius": 0.0004,
+			"description": "Every point is the top, depending on how you rotate it.",
+			"title": "The Top of the World",
+			"badge": "geography_globe"
+		},
+		{
+			"key": "cowan-jerusalembay-brooklyn",
+			"type": "trophy",
+			"photo": "002_img_20190901_085901.jpg",
+			"lon": 151.2285972,
+			"lat": -33.5851722,
+			"radius": 0.0004,
+			"description": "Not many come here, but Taffy did.",
+			"title": "Taffy Was Here",
+			"badge": "obelisk"
+		},
+		{
+			"key": "cowan-jerusalembay-brooklyn",
+			"type": "trophy",
+			"photo": "003_p7059278_003_p7059287.jpg",
+			"lon": 151.1997894958327,
+			"lat": -33.55472321296468,
+			"radius": 0.0004,
+			"description": "You'll be around the hairpin bend downhill, before you realise this hidden view is worth turnning back for.",
+			"title": "Blink and You'll Miss It ",
+			"badge": "glasses"
+		},
+		{
+			"key": "glenbrook-redhandcave-glenbrook",
+			"type": "trophy",
+			"photo": "p7250181_p7250183.jpg",
+			"lon": 150.6169320721852,
+			"lat": -33.79894155167245,
+			"radius": 0.0004,
+			"description": "Neither campers nor eastern greys can resist these grassy fields.",
+			"title": "I was Promised Kangaroos",
+			"badge": "hovel_1"
+		},
+		{
+			"key": "glenbrook-redhandcave-glenbrook",
+			"type": "trophy",
+			"photo": "p7250266_p7250270.jpg",
+			"lon": 150.6276634120437,
+			"lat": -33.78381702230462,
+			"radius": 0.0004,
+			"description": "If you stand around long enough, there will probably be a train across the valley.",
+			"title": "So where is it?",
+			"badge": "search"
+		},
+		{
+			"key": "teralba-fernleightrack-adamstown",
+			"type": "trophy",
+			"photo": "001_pxl_20240120_010413100.jpg",
+			"lon": 151.6613161295524,
+			"lat": -33.03900889600782,
+			"radius": 0.0004,
+			"description": "The start of the Fernleigh railway line, but also the start of an historic trek.",
+			"title": "I'm a Choo Choo Train: Belmont",
+			"badge": "railroad"
+		},
+		{
+			"key": "teralba-fernleightrack-adamstown",
+			"type": "trophy",
+			"photo": "001_pxl_20240120_014853204.jpg",
+			"lon": 151.6860486138035,
+			"lat": -33.02089528519164,
+			"radius": 0.0004,
+			"description": "End of the wetlands and start of suburbia.",
+			"title": "I'm a Choo Choo Train: Jewells",
+			"badge": "railroad"
+		},
+		{
+			"key": "teralba-fernleightrack-adamstown",
+			"type": "trophy",
+			"photo": "002_pxl_20230429_025920268.jpg",
+			"lon": 151.7095684711388,
+			"lat": -33.00581939444007,
+			"radius": 0.0004,
+			"description": "Alight here for Awabakal Nature Reserve and Redhead Beach.",
+			"title": "I'm a Choo Choo Train: Redhead",
+			"badge": "railroad"
+		},
+		{
+			"key": "teralba-fernleightrack-adamstown",
+			"type": "trophy",
+			"photo": "003_IMG_20200118_084426.jpg",
+			"lon": 151.7109742419769,
+			"lat": -32.97788842791798,
+			"radius": 0.0004,
+			"description": "No longer a stop for trains, but now one for coffee and cakes up there.",
+			"title": "I'm a Choo Choo Train: Whitebridge",
+			"badge": "railroad"
+		},
+		{
+			"key": "teralba-fernleightrack-adamstown",
+			"type": "trophy",
+			"photo": "003_pxl_20230429_042601570.jpg",
+			"lon": 151.7182798705948,
+			"lat": -32.96232362379441,
+			"radius": 0.0004,
+			"description": "Glenrock's a good reason to leave the train here.",
+			"title": "I'm a Choo Choo Train: Kahibah",
+			"badge": "railroad"
+		},
+		{
+			"key": "teralba-fernleightrack-adamstown",
+			"type": "trophy",
+			"photo": "004_pxl_20240120_032436105.jpg",
+			"lon": 151.725187539504,
+			"lat": -33.01065409517184,
+			"radius": 0.0004,
+			"description": "The narrow tunnel of dense vegetation opens up to expansive coastal heath.",
+			"title": "The Rear Entrance",
+			"badge": "enter"
+		},
+		{
+			"key": "teralba-fernleightrack-adamstown",
+			"type": "trophy",
+			"photo": "006_pxl_20240120_065700912.jpg",
+			"lon": 151.7196822166376,
+			"lat": -32.9342364320964,
+			"radius": 0.0004,
+			"description": "End of the line for the Fernleigh Track. From here you get to ride a real train.",
+			"title": "I'm a Choo Choo Train: Adamstown",
+			"badge": "railroad"
+		},
+		{
+			"key": "waterfall-heathcote-loftus",
+			"type": "trophy",
+			"photo": "003_dsc_9869.jpg",
+			"lon": 151.0567214560022,
+			"lat": -34.0625896528283,
+			"radius": 0.0004,
+			"description": "You may be here on the lucky few days there is a historic tram ride to the Sydney Tramway Museum outside the park.",
+			"title": "Ding Ding Ding!",
+			"badge": "tramway"
+		},
+		{
+			"key": "wollicreek-kamaybotanybay-cronulla",
+			"type": "trophy",
+			"photo": "pxl_20221105_042106719.jpg",
+			"lon": 151.2222179698302,
+			"lat": -34.03508340894466,
+			"radius": 0.0004,
+			"description": "The light is a warning not to sail a ship into the steep cliffs of the coast. Let it also be a reminder not to fall off the same.",
+			"title": "The Guiding Light",
+			"badge": "lamp_on"
+		},
+		{
+			"key": "woywoy-mountelliot-lisarow",
+			"type": "trophy",
+			"photo": "p9154701.jpg",
+			"lon": 151.3618444,
+			"lat": -33.4228556,
+			"radius": 0.0004,
+			"description": "The fourth statue of famous explorers requires some exploration to find.",
+			"title": "Somewhere Out There",
+			"badge": "registered_user"
 		}
 	]
 }

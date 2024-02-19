@@ -247,6 +247,14 @@
 					"lat": -34.056343
 				},
 				{
+					"location": "Royal National Park Station",
+					"type": "tram",
+					"photo": "p5240845.jpg",
+					"description": "Check <a href=\"https://www.sydneytramwaymuseum.com.au/\">www.sydneytramwaymuseum.com.au</a> if the historical tramway operates today.",
+					"lon": 151.05709304999772,
+					"lat": -34.06312310994049
+				},
+				{
 					"location": "Loftus",
 					"type": "train",
 					"photo": "p5240872.jpg",
@@ -347,7 +355,7 @@
 				{
 					"location": "Cowan",
 					"type": "train",
-					"photo": "p7058830.jpg",
+					"photo": "001_p7058830.jpg",
 					"description": "Get the train to Cowan using <a href=\"https://transportnsw.info/trip#/?to=Cowan\">transportnsw.info</a>.",
 					"lon": 151.171966553,
 					"lat": -33.593074799
@@ -355,7 +363,7 @@
 				{
 					"location": "Hawkesbury River",
 					"type": "train",
-					"photo": "p7059343.jpg",
+					"photo": "003_p7059343.jpg",
 					"description": "Plan your return trip from Hawkesbury River at <a href=\"https://transportnsw.info/trip#/?from=Hawkesbury River\">transportnsw.info</a>.",
 					"lon": 151.22668457,
 					"lat": -33.54686355600001
@@ -1058,19 +1066,21 @@
 		{
 			"key": "parramatta-riverwalk-chatswood",
 			"type": "walk",
-			"lon": 151.136147473,
-			"lat": -33.8406119775,
+			"lon": 151.1297199781984,
+			"lat": -33.841190999373794,
 			"locations": [
 				{
 					"location": "Parramatta",
 					"type": "train",
+					"photo": "pxl_20240216_185141866.jpg",
 					"description": "Get the train to Parramatta using <a href=\"https://transportnsw.info/trip#/?to=Parramatta\">transportnsw.info</a>.",
-					"lon": 151.0058008321,
-					"lat": -33.8170743361
+					"lon": 151.004967,
+					"lat": -33.817284
 				},
 				{
 					"location": "Chatswood",
 					"type": "train",
+					"photo": "pxl_20240217_033746270.jpg",
 					"description": "Plan your return trip from Chatswood at <a href=\"https://transportnsw.info/trip#/?from=Chatswood\">transportnsw.info</a>.",
 					"lon": 151.1813760549,
 					"lat": -33.7977724895
@@ -1322,8 +1332,8 @@
 					"type": "train",
 					"photo": "006_pxl_20240120_065700912.jpg",
 					"description": "Plan your return trip from Adamstown at <a href=\"https://transportnsw.info/trip#/?from=Adamstown\">transportnsw.info</a>.",
-					"lon": 151.719705,
-					"lat": -32.934188
+					"lon": 151.720408,
+					"lat": -32.933554
 				},
 				{
 					"location": "Broadmeadow",
@@ -1700,8 +1710,8 @@
 					"type": "train",
 					"photo": "pxl_20240119_030251518.jpg",
 					"description": "Plan your return trip from Gosford at <a href=\"https://transportnsw.info/trip#/?from=Gosford\">transportnsw.info</a>.",
-					"lat": -33.485393,
-					"lon": 151.32345
+					"lon": 151.3415736705,
+					"lat": -33.4236546233
 				}
 			],
 			"region": "Brisbane Water",

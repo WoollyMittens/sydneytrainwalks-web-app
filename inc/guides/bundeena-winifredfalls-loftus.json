@@ -276,18 +276,22 @@
 			"description": "There are several signs along the way indicating the path to Anice and Winifred Falls."
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "p5240456.jpg",
-			"lon": 151.08374700000002,
-			"lat": -34.093643,
-			"description": "The trail ends right a the top of Anice Falls. Be careful near the edge."
+			"lon": 151.083762,
+			"lat": -34.093424,
+			"radius": 0.0004,
+			"description": "It's rarely more than a trickle, but it's here exclusively for ones as adventurous as you.",
+			"badge": "water",
+			"title": "Ah! Nice Falls",
+			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",
 			"photo": "p5240460.jpg",
 			"lon": 151.08371,
 			"lat": -34.093407,
-			"description": "Cross across the rocks a few dozen meters up the creek."
+			"description": "Cross the creek a few dozen meters away from Anice Falls."
 		},
 		{
 			"type": "waypoint",
@@ -504,11 +508,12 @@
 			"description": "At the other end of the car park a sign points the way to Loftus and the park's tram platform."
 		},
 		{
-			"type": "waypoint",
+			"location": "Royal National Park Station",
+			"type": "tram",
 			"photo": "p5240845.jpg",
-			"lon": 151.057063,
-			"lat": -34.063008999999994,
-			"description": "On Sundays the tram museum at Loftus runs a historic tram service."
+			"description": "Check <a href=\"https://www.sydneytramwaymuseum.com.au/\">www.sydneytramwaymuseum.com.au</a> if the historical tramway operates today.",
+			"lon": 151.05709304999772,
+			"lat": -34.06312310994049
 		},
 		{
 			"type": "waypoint",
