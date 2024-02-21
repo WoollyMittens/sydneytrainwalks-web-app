@@ -1366,18 +1366,18 @@
 				{
 					"location": "Tuggerah",
 					"type": "train",
-					"photo": "pxl_20231226_194002371.jpg",
+					"photo": "pxl_20231226_194102963.jpg",
 					"description": "Get the train to Tuggerah using <a href=\"https://transportnsw.info/trip#/?to=Tuggerah\">transportnsw.info</a>.",
-					"lon": 151.420197,
-					"lat": -33.308128
+					"lon": 151.420023,
+					"lat": -33.3079
 				},
 				{
 					"location": "Wyong",
 					"type": "train",
-					"photo": "pxl_20231227_062056567.jpg",
+					"photo": "pxl_20231227_061501589.jpg",
 					"description": "Plan your return trip from Wyong at <a href=\"https://transportnsw.info/trip#/?from=Wyong\">transportnsw.info</a>.",
-					"lat": -33.28545277777778,
-					"lon": 151.42558333333332
+					"lon": 151.425499,
+					"lat": -33.285622
 				}
 			],
 			"region": "Lake Tuggerah",

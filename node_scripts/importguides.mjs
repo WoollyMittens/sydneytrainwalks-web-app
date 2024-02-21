@@ -120,7 +120,6 @@ function generateTrophyIndex(guides) {
 			}
 			// if this marker is a trophy
 			if (marker.radius && !duplicates.includes(marker.title)) {
-				console.log('found a trophy:', marker);
 				// store reference for duplicates
 				duplicates.push(marker.title);
 				// expand the bounds to fit the trophy
@@ -178,6 +177,9 @@ function populateGuide(file, guideCache, exifCache, routesCache) {
 		if (markerData.photo && exifCache[key][markerData.photo]) {
 			markerData.lon = markerData.lon || exifCache[key][markerData.photo].lon,
 			markerData.lat = markerData.lat || exifCache[key][markerData.photo].lat
+		}
+		if (markerData.photo && !exifCache[key][markerData.photo]) {
+			markerData.missing = true;
 		}
 	}
 	// determine the centrepoint

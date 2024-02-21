@@ -37,6 +37,17 @@
 			"description": "From the station follow Brisbane Water Drive along along the railway."
 		},
 		{
+			"type": "hotspot",
+			"photo": "p9154457_pxl_20231124_192048418.jpg",
+			"lon": 151.3242306,
+			"lat": -33.4781389,
+			"radius": 0.0004,
+			"description": "One of the few remaining Krillz not pillz graffiti dotted around Central Coast.",
+			"badge": "fish",
+			"title": "A Whale of a Time",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
 			"type": "waypoint",
 			"photo": "p9154479_p9154484.jpg",
 			"lon": 151.32365555555555,
@@ -70,7 +81,18 @@
 			"photo": "p9154504.jpg",
 			"lon": 151.31510277777778,
 			"lat": -33.47109722222223,
-			"description": "After th steep climb follow the firetail along the ridge past several lookouts."
+			"description": "After the steep climb follow the firetail along the ridge past several lookouts."
+		},
+		{
+			"type": "hotspot",
+			"photo": "p9154541_p9154549.jpg",
+			"lon": 151.3120139874374,
+			"lat": -33.46414070997027,
+			"radius": 0.0004,
+			"description": "The prettiest side of Gosford, makes you suffer the climb to get here.",
+			"badge": "factory_2",
+			"title": "Pretty but still Gosford",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -98,7 +120,35 @@
 			"photo": "p9154605_p9154606.jpg",
 			"lon": 151.32933055555554,
 			"lat": -33.44045277777777,
-			"description": "Descend the steps down to Penang Street and follow Bribane Water Drive to the left."
+			"description": "Descend the steps down to Penang Street and continue downhill."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p9154606_pxl_20240119_013015309.jpg",
+			"lon": 151.32925699999998,
+			"lat": -33.440633,
+			"description": "At the end of Penang Street follow Bribane Water Drive to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p9154606_pxl_20240119_013228136.jpg",
+			"lon": 151.328642,
+			"lat": -33.439662,
+			"description": "Cross Bribane Water Drive at the bus stop and turn right down Collard Road."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p9154606_pxl_20240119_013453429.jpg",
+			"lon": 151.328351,
+			"lat": -33.438765,
+			"description": "Turn right down Welwyn Grove towards the underpass."
+		},
+		{
+			"type": "waypoint",
+			"photo": "p9154606_pxl_20240119_013709647.jpg",
+			"lon": 151.3301330001149,
+			"lat": -33.438778,
+			"description": "At the underpass,follow the bike path to the left."
 		},
 		{
 			"type": "waypoint",

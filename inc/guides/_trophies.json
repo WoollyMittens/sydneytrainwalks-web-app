@@ -153,6 +153,17 @@
 		{
 			"key": "lakehaven-munmorah-swansea",
 			"type": "trophy",
+			"photo": "dsc_8492_pxl_20230915_232946606_pano.jpg",
+			"lon": 151.5330840578785,
+			"lat": -33.23742278283818,
+			"radius": 0.0004,
+			"description": "A welcome break with a view halfway to Budgewoi.",
+			"title": "All Jetties Short and Long: Matumba",
+			"badge": "elevation_5"
+		},
+		{
+			"key": "lakehaven-munmorah-swansea",
+			"type": "trophy",
 			"photo": "dsc_8721-dsc_8726.jpg",
 			"lon": 151.628035752481,
 			"lat": -33.18588747665788,
@@ -294,6 +305,28 @@
 			"badge": "drill_perforator"
 		},
 		{
+			"key": "otford-grandpacificwalk-wollongong",
+			"type": "trophy",
+			"photo": "pxl_20230901_233455513.jpg",
+			"lon": 150.972964,
+			"lat": -34.255878,
+			"radius": 0.0004,
+			"description": "The temporary answer to the Illwarra crumbling into the ocean.",
+			"title": "Between a Rock and a Hard Place",
+			"badge": "skyway"
+		},
+		{
+			"key": "otford-grandpacificwalk-wollongong",
+			"type": "trophy",
+			"photo": "pxl_20230902_002912013.jpg",
+			"lon": 150.95069999999998,
+			"lat": -34.285055,
+			"radius": 0.0004,
+			"description": "The most wholesome pun along the Grand Pacific Drive.",
+			"title": "Oh, I get it: Friend-Ship",
+			"badge": "smile_wink"
+		},
+		{
 			"key": "parramatta-greatwestwalk-penrith",
 			"type": "trophy",
 			"photo": "0110_img_20191019_062530.jpg",
@@ -373,7 +406,7 @@
 		{
 			"key": "portkembla-grandpacificdrive-kiama",
 			"type": "trophy",
-			"photo": "PC289600.jpg",
+			"photo": "pc289600.jpg",
 			"lon": 150.8400771350448,
 			"lat": -34.6066732670053,
 			"radius": 0.0004,
@@ -461,7 +494,7 @@
 		{
 			"key": "teralba-fernleightrack-adamstown",
 			"type": "trophy",
-			"photo": "003_IMG_20200118_084426.jpg",
+			"photo": "003_img_20200118_084426.jpg",
 			"lon": 151.7109742419769,
 			"lat": -32.97788842791798,
 			"radius": 0.0004,
@@ -503,6 +536,72 @@
 			"badge": "railroad"
 		},
 		{
+			"key": "tuggerah-wyrrabalong-wyong",
+			"type": "trophy",
+			"photo": "pxl_20231226_220504118.jpg",
+			"lon": 151.4789173198756,
+			"lat": -33.36094015282082,
+			"radius": 0.0004,
+			"description": "The first chance at a long jetty.",
+			"title": "All Jetties Short and Long: Parry's Jetty",
+			"badge": "elevation_5"
+		},
+		{
+			"key": "tuggerah-wyrrabalong-wyong",
+			"type": "trophy",
+			"photo": "pxl_20231226_221257870.jpg",
+			"lon": 151.4825805048008,
+			"lat": -33.35771585379955,
+			"radius": 0.0004,
+			"description": "It's not as long, but also not as busy.",
+			"title": "All Jetties Short and Long: Watkin's Jetty",
+			"badge": "elevation_5"
+		},
+		{
+			"key": "tuggerah-wyrrabalong-wyong",
+			"type": "trophy",
+			"photo": "pxl_20231226_222335154.jpg",
+			"lon": 151.4862488865436,
+			"lat": -33.35284070246215,
+			"radius": 0.0004,
+			"description": "Walking down this endless jetty feels like being envelloped by the void.",
+			"title": "All Jetties Short and Long: Long Jetty",
+			"badge": "elevation_5"
+		},
+		{
+			"key": "tuggerah-wyrrabalong-wyong",
+			"type": "trophy",
+			"photo": "pxl_20231227_003938122.jpg",
+			"lon": 151.52941900000002,
+			"lat": -33.297058,
+			"radius": 0.0004,
+			"description": "The first of four biomes of Wyrrabalong. It is a rare treat to find a remnant stretch of rainforest.",
+			"title": "Four Seasons in One Day: Rainforest",
+			"badge": "day_rain"
+		},
+		{
+			"key": "tuggerah-wyrrabalong-wyong",
+			"type": "trophy",
+			"photo": "pxl_20231227_013111730.jpg",
+			"lon": 151.545152,
+			"lat": -33.288157,
+			"radius": 0.0004,
+			"description": "The second of four biomes of Wyrrabalong. Most striking when the sun is low enough to make the red gums light up bright.",
+			"title": "Four Seasons in One Day: Red Gum Forest",
+			"badge": "day_rain"
+		},
+		{
+			"key": "tuggerah-wyrrabalong-wyong",
+			"type": "trophy",
+			"photo": "pxl_20231227_014732246.jpg",
+			"lon": 151.549455,
+			"lat": -33.285092999999996,
+			"radius": 0.0004,
+			"description": "The third of four biomes of Wyrranalong. The fourth you'll have to find somewhere else entirely.",
+			"title": "Four Seasons in One Day: Wetlands",
+			"badge": "day_rain"
+		},
+		{
 			"key": "waterfall-heathcote-loftus",
 			"type": "trophy",
 			"photo": "003_dsc_9803.jpg",
@@ -523,6 +622,17 @@
 			"description": "You may be here on the lucky few days there is a historic tram ride to the Sydney Tramway Museum outside the park.",
 			"title": "Ding Ding Ding!",
 			"badge": "tramway"
+		},
+		{
+			"key": "waterfall-ladycarringtondrive-loftus",
+			"type": "trophy",
+			"photo": "003_pa056134.jpg",
+			"lon": 151.050803958266,
+			"lat": -34.09854391937932,
+			"radius": 0.0004,
+			"description": "A spring to rest your horses, or just your legs.",
+			"title": "Fill Her Up",
+			"badge": "station_petrol"
 		},
 		{
 			"key": "wollicreek-kamaybotanybay-cronulla",
@@ -593,7 +703,7 @@
 		{
 			"key": "woywoy-5landswalk-tuggerah",
 			"type": "trophy",
-			"photo": "DSC_1561.jpg",
+			"photo": "dsc_1561.jpg",
 			"lon": 151.4756577864043,
 			"lat": -33.40488481128369,
 			"radius": 0.0004,
@@ -608,9 +718,31 @@
 			"lon": 151.4805944,
 			"lat": -33.3983333,
 			"radius": 0.0004,
-			"description": "The dense olive green heath opens up to the blues of open ocean and sky. Once all of Central Coast was painted with the paints on this small pallete.",
+			"description": "The fourth elusive biome of Wyrrabalong to collect. You would not expect it here.",
 			"title": "Four Seasons in One Day: Coastal Heathland",
 			"badge": "day_rain"
+		},
+		{
+			"key": "woywoy-mountelliot-lisarow",
+			"type": "trophy",
+			"photo": "p9154457_pxl_20231124_192048418.jpg",
+			"lon": 151.3242306,
+			"lat": -33.4781389,
+			"radius": 0.0004,
+			"description": "One of the few remaining Krillz not pillz graffiti dotted around Central Coast.",
+			"title": "A Whale of a Time",
+			"badge": "fish"
+		},
+		{
+			"key": "woywoy-mountelliot-lisarow",
+			"type": "trophy",
+			"photo": "p9154541_p9154549.jpg",
+			"lon": 151.3120139874374,
+			"lat": -33.46414070997027,
+			"radius": 0.0004,
+			"description": "The prettiest side of Gosford, makes you suffer the climb to get here.",
+			"title": "Pretty but still Gosford",
+			"badge": "factory_2"
 		},
 		{
 			"key": "woywoy-mountelliot-lisarow",
@@ -622,6 +754,50 @@
 			"description": "The fourth statue of famous explorers requires some exploration to find.",
 			"title": "Somewhere Out There",
 			"badge": "registered_user"
+		},
+		{
+			"key": "woywoy-mtwondabyne-gosford",
+			"type": "trophy",
+			"photo": "pxl_20240112_223314582_pano.jpg",
+			"lon": 151.2881417,
+			"lat": -33.552325,
+			"radius": 0.0004,
+			"description": "Let the tourists enjoy the fenced lookout. Welcome to the club of locals who know better.",
+			"title": "I Can See My House from Here",
+			"badge": "house_3"
+		},
+		{
+			"key": "woywoy-mtwondabyne-gosford",
+			"type": "trophy",
+			"photo": "pxl_20240113_001307280.jpg",
+			"lon": 151.2889917,
+			"lat": -33.5096139,
+			"radius": 0.0004,
+			"description": "With luck the wind is blowing away from it.",
+			"title": "The View is Garbage",
+			"badge": "bag_bagful"
+		},
+		{
+			"key": "woywoy-mtwondabyne-gosford",
+			"type": "trophy",
+			"photo": "pxl_20240113_012859254.jpg",
+			"lon": 151.2750087,
+			"lat": -33.4940091,
+			"radius": 0.0004,
+			"description": "The end is just the start of a new journey.",
+			"title": "This is the End",
+			"badge": "cancel_2"
+		},
+		{
+			"key": "woywoy-mtwondabyne-gosford",
+			"type": "trophy",
+			"photo": "pxl_20240119_001839868_img_20191110_073448.jpg",
+			"lon": 151.3026888811524,
+			"lat": -33.45139494829859,
+			"radius": 0.0004,
+			"description": "Whomever made these ensured a lasting urban legend only the locals know.",
+			"title": "But Why Though?",
+			"badge": "amphora"
 		}
 	]
 }

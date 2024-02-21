@@ -565,11 +565,15 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "003_pa056134.jpg",
-			"lon": 151.05186944444446,
-			"lat": -34.09728611111111,
-			"description": "Lorem ipsum dolor sit amet."
+			"lon": 151.050803958266,
+			"lat": -34.09854391937932,
+			"radius": 0.0004,
+			"description": "A spring to rest your horses, or just your legs.",
+			"badge": "station_petrol",
+			"title": "Fill Her Up",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -668,13 +672,6 @@
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.05663468999526,
 			"lat": -34.07432292000086
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_dsc_9850_003_dsc_9859.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.05736377002003,
-			"lat": -34.07370277999468
 		},
 		{
 			"type": "waypoint",

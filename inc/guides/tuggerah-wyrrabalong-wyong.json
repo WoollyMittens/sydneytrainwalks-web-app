@@ -25,17 +25,10 @@
 		{
 			"location": "Tuggerah",
 			"type": "train",
-			"photo": "pxl_20231226_194002371.jpg",
-			"description": "Get the train to Tuggerah using <a href=\"https://transportnsw.info/trip#/?to=Tuggerah\">transportnsw.info</a>.",
-			"lon": 151.420197,
-			"lat": -33.308128
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20231226_194102963.jpg",
+			"description": "Get the train to Tuggerah using <a href=\"https://transportnsw.info/trip#/?to=Tuggerah\">transportnsw.info</a>.",
 			"lon": 151.420023,
-			"lat": -33.3079,
-			"description": "Lorem ipsum dolor sit amet."
+			"lat": -33.3079
 		},
 		{
 			"type": "waypoint",
@@ -137,20 +130,6 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_204738187.jpg",
-			"lon": 151.43926100000002,
-			"lat": -33.333723,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231226_205103910.jpg",
-			"lon": 151.438931,
-			"lat": -33.336283,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20231226_205457205.jpg",
 			"lon": 151.438729,
 			"lat": -33.339084,
@@ -186,13 +165,6 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_214349718.jpg",
-			"lon": 151.46365799999998,
-			"lat": -33.363509,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20231226_214813195.jpg",
 			"lon": 151.466835,
 			"lat": -33.364759000119605,
@@ -207,23 +179,9 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_215739408.jpg",
-			"lon": 151.474775,
-			"lat": -33.365112,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20231226_215833740.jpg",
 			"lon": 151.475548,
 			"lat": -33.36479,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231226_220204153.jpg",
-			"lon": 151.477432,
-			"lat": -33.362798,
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
@@ -234,31 +192,21 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "pxl_20231226_220504118.jpg",
-			"lon": 151.478955,
-			"lat": -33.361011000000005,
-			"description": "Lorem ipsum dolor sit amet."
+			"lon": 151.4789173198756,
+			"lat": -33.36094015282082,
+			"radius": 0.0004,
+			"description": "The first chance at a long jetty.",
+			"badge": "elevation_5",
+			"title": "All Jetties Short and Long: Parry's Jetty",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20231226_220514598.jpg",
 			"lon": 151.478952,
 			"lat": -33.361018,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231226_220608036.jpg",
-			"lon": 151.479204,
-			"lat": -33.360678,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231226_221102364.jpg",
-			"lon": 151.482128,
-			"lat": -33.358228000000004,
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
@@ -276,32 +224,15 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "pxl_20231226_221257870.jpg",
-			"lon": 151.48273699986058,
-			"lat": -33.357855,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231226_221411681.jpg",
-			"lon": 151.48278700014757,
-			"lat": -33.357238,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231226_221423148.jpg",
-			"lon": 151.482796,
-			"lat": -33.357255,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231226_222129774.jpg",
-			"lon": 151.485513,
-			"lat": -33.353704,
-			"description": "Lorem ipsum dolor sit amet."
+			"lon": 151.4825805048008,
+			"lat": -33.35771585379955,
+			"radius": 0.0004,
+			"description": "It's not as long, but also not as busy.",
+			"badge": "elevation_5",
+			"title": "All Jetties Short and Long: Watkin's Jetty",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -311,18 +242,15 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
-			"photo": "pxl_20231226_222257029.jpg",
-			"lon": 151.486188,
-			"lat": -33.352972,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "pxl_20231226_222335154.jpg",
-			"lon": 151.48624999999998,
-			"lat": -33.352799000000005,
-			"description": "Lorem ipsum dolor sit amet."
+			"lon": 151.4862488865436,
+			"lat": -33.35284070246215,
+			"radius": 0.0004,
+			"description": "Walking down this endless jetty feels like being envelloped by the void.",
+			"badge": "elevation_5",
+			"title": "All Jetties Short and Long: Long Jetty",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -347,30 +275,9 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_223418117.jpg",
-			"lon": 151.489475,
-			"lat": -33.346414,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231226_223521410.jpg",
-			"lon": 151.48987699999998,
-			"lat": -33.34570100012197,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20231226_223733417.jpg",
 			"lon": 151.490774,
 			"lat": -33.344358,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231226_224436786.jpg",
-			"lon": 151.49160799999999,
-			"lat": -33.339236,
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
@@ -417,13 +324,6 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_230139741.jpg",
-			"lon": 151.498562,
-			"lat": -33.341043,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20231226_231007452.jpg",
 			"lon": 151.49916399999998,
 			"lat": -33.3401,
@@ -445,23 +345,9 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_231500337.jpg",
-			"lon": 151.50001,
-			"lat": -33.337895,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20231226_231836074.jpg",
 			"lon": 151.502499,
 			"lat": -33.336008,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231226_231937642.jpg",
-			"lon": 151.502399,
-			"lat": -33.335738,
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
@@ -476,13 +362,6 @@
 			"photo": "pxl_20231226_232101320.jpg",
 			"lon": 151.502221,
 			"lat": -33.335061,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231226_232824244.jpg",
-			"lon": 151.502107,
-			"lat": -33.32956,
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
@@ -508,20 +387,6 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_233547057_pano.jpg",
-			"lon": 151.50516666666667,
-			"lat": -33.32673055555556,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231226_233629405.jpg",
-			"lon": 151.505528,
-			"lat": -33.32683699990718,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20231226_233831943.jpg",
 			"lon": 151.50663,
 			"lat": -33.327078,
@@ -543,20 +408,6 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_235037557.jpg",
-			"lon": 151.512904,
-			"lat": -33.321769,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231226_235209845.jpg",
-			"lon": 151.5140229998682,
-			"lat": -33.321299,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20231226_235613064.jpg",
 			"lon": 151.515845,
 			"lat": -33.318969,
@@ -564,23 +415,9 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_235803610.jpg",
-			"lon": 151.516907,
-			"lat": -33.317969000000005,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20231227_001336995.jpg",
 			"lon": 151.52122400000002,
 			"lat": -33.307438999999995,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231227_001813927.jpg",
-			"lon": 151.523875,
-			"lat": -33.305068,
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
@@ -613,44 +450,27 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_003146071.jpg",
-			"lon": 151.53282699986232,
-			"lat": -33.299774,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231227_003536028.jpg",
-			"lon": 151.53073700000002,
-			"lat": -33.298456,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20231227_003856842.jpg",
 			"lon": 151.52957500000002,
 			"lat": -33.297284999999995,
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "pxl_20231227_003938122.jpg",
 			"lon": 151.52941900000002,
 			"lat": -33.297058,
-			"description": "Lorem ipsum dolor sit amet."
+			"radius": 0.0004,
+			"description": "The first of four biomes of Wyrrabalong. It is a rare treat to find a remnant stretch of rainforest.",
+			"badge": "day_rain",
+			"title": "Four Seasons in One Day: Rainforest",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20231227_004243910.jpg",
 			"lon": 151.529368,
 			"lat": -33.29640299989547,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231227_004344585.jpg",
-			"lon": 151.528995,
-			"lat": -33.296034,
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
@@ -662,37 +482,9 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_004459502.jpg",
-			"lon": 151.5284,
-			"lat": -33.295370999999996,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20231227_005440986.jpg",
 			"lon": 151.53314400000002,
 			"lat": -33.293113999999996,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231227_005703120.jpg",
-			"lon": 151.533262,
-			"lat": -33.293088999999995,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231227_005837867.jpg",
-			"lon": 151.534244,
-			"lat": -33.292822,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231227_010301556.jpg",
-			"lon": 151.535785,
-			"lat": -33.292268,
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
@@ -711,44 +503,9 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_010736836.jpg",
-			"lon": 151.537442,
-			"lat": -33.292094,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20231227_011107021.jpg",
 			"lon": 151.538504,
 			"lat": -33.290354,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231227_011144232.jpg",
-			"lon": 151.538653,
-			"lat": -33.290161,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231227_011305486.jpg",
-			"lon": 151.539024,
-			"lat": -33.289505999999996,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231227_012401285.jpg",
-			"lon": 151.54448099991245,
-			"lat": -33.285581,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231227_012539049.jpg",
-			"lon": 151.54459599999998,
-			"lat": -33.285623,
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
@@ -759,25 +516,15 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
-			"photo": "pxl_20231227_013036227.jpg",
-			"lon": 151.544976,
-			"lat": -33.287814,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "pxl_20231227_013111730.jpg",
 			"lon": 151.545152,
 			"lat": -33.288157,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231227_013208306.jpg",
-			"lon": 151.545259,
-			"lat": -33.288539,
-			"description": "Lorem ipsum dolor sit amet."
+			"radius": 0.0004,
+			"description": "The second of four biomes of Wyrrabalong. Most striking when the sun is low enough to make the red gums light up bright.",
+			"badge": "day_rain",
+			"title": "Four Seasons in One Day: Red Gum Forest",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -787,25 +534,15 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
-			"photo": "pxl_20231227_014722119.jpg",
-			"lon": 151.549418,
-			"lat": -33.285143999999995,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "pxl_20231227_014732246.jpg",
 			"lon": 151.549455,
 			"lat": -33.285092999999996,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231227_014833208.jpg",
-			"lon": 151.54973,
-			"lat": -33.284506,
-			"description": "Lorem ipsum dolor sit amet."
+			"radius": 0.0004,
+			"description": "The third of four biomes of Wyrranalong. The fourth you'll have to find somewhere else entirely.",
+			"badge": "day_rain",
+			"title": "Four Seasons in One Day: Wetlands",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -900,23 +637,9 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_024108826.jpg",
-			"lon": 151.53918099999999,
-			"lat": -33.264149,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20231227_024122738.jpg",
 			"lon": 151.539017,
 			"lat": -33.264136,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231227_024227980.jpg",
-			"lon": 151.538759,
-			"lat": -33.26362,
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
@@ -928,23 +651,9 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_030137092.jpg",
-			"lon": 151.523166,
-			"lat": -33.262646,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20231227_030321148.jpg",
 			"lon": 151.52185200000002,
 			"lat": -33.26287700008939,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231227_030413466.jpg",
-			"lon": 151.521149,
-			"lat": -33.262928,
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
@@ -998,13 +707,6 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_034121000.jpg",
-			"lon": 151.501053,
-			"lat": -33.26188,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20231227_035205311.jpg",
 			"lon": 151.494814,
 			"lat": -33.262938,
@@ -1050,27 +752,6 @@
 			"photo": "pxl_20231227_041950957.jpg",
 			"lon": 151.489073,
 			"lat": -33.276431,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231227_042646056.jpg",
-			"lon": 151.48711699999998,
-			"lat": -33.280527,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231227_043235545.jpg",
-			"lon": 151.483329,
-			"lat": -33.28177699991812,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231227_044119108.jpg",
-			"lon": 151.47716700008337,
-			"lat": -33.28133700013837,
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
@@ -1124,20 +805,6 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_051548521.jpg",
-			"lon": 151.462785,
-			"lat": -33.294446,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231227_053847176.jpg",
-			"lon": 151.449195,
-			"lat": -33.286260999999996,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20231227_054555998.jpg",
 			"lon": 151.446012,
 			"lat": -33.290116999999995,
@@ -1179,19 +846,12 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
-			"photo": "pxl_20231227_061501589.jpg",
-			"lon": 151.425499,
-			"lat": -33.285622,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
 			"location": "Wyong",
 			"type": "train",
-			"photo": "pxl_20231227_062056567.jpg",
+			"photo": "pxl_20231227_061501589.jpg",
 			"description": "Plan your return trip from Wyong at <a href=\"https://transportnsw.info/trip#/?from=Wyong\">transportnsw.info</a>.",
-			"lat": -33.28545277777778,
-			"lon": 151.42558333333332
+			"lon": 151.425499,
+			"lat": -33.285622
 		}
 	]
 }

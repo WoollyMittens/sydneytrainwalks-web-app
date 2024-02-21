@@ -101,6 +101,17 @@
 			"description": "Don't miss the right turn at Edgewater Park."
 		},
 		{
+			"type": "hotspot",
+			"photo": "dsc_8492_pxl_20230915_232946606_pano.jpg",
+			"lon": 151.5330840578785,
+			"lat": -33.23742278283818,
+			"radius": 0.0004,
+			"description": "A welcome break with a view halfway to Budgewoi.",
+			"badge": "elevation_5",
+			"title": "All Jetties Short and Long: Matumba",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
 			"type": "waypoint",
 			"photo": "dsc_8497.jpg",
 			"lon": 151.56191012002182,
