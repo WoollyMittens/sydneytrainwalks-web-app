@@ -114,6 +114,17 @@
 			"description": "Follow Dunmore Road down to the now obsolete Dunmore Station and cross the train tracks there."
 		},
 		{
+			"type": "hotspot",
+			"photo": "PC289600.jpg",
+			"lon": 150.8400771350448,
+			"lat": -34.6066732670053,
+			"radius": 0.0004,
+			"description": "As tempting as it is to throw in the towel right here, the next functioning train station is all the way through the wetlands ahead.",
+			"badge": "tank_1",
+			"title": "The Train Does Not Stop Here Anymore",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
 			"type": "waypoint",
 			"photo": "pc289602.jpg",
 			"lon": 150.838513,
@@ -133,6 +144,17 @@
 			"lon": 150.8595222222222,
 			"lat": -34.62983333333333,
 			"description": "Follow Charles Ave past several reserves on the left. The last one, called James Oates Reserve, connects to the headland."
+		},
+		{
+			"type": "hotspot",
+			"photo": "pc289656_pc289671.jpg",
+			"lon": 150.8608821863694,
+			"lat": -34.63073175185122,
+			"radius": 0.0004,
+			"description": "It'll never fit in a single view, too wide for your vision to contain.",
+			"badge": "crop",
+			"title": "Too Big for the Photo",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",

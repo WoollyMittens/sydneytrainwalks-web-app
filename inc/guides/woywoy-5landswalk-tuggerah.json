@@ -301,21 +301,25 @@
 			"photo": "dsc_1461.jpg",
 			"lon": 151.42367586997872,
 			"lat": -33.50051025999767,
-			"description": "At the corner take the steps down to Marine Parade on the right."
+			"description": "At the corner take the steps down to the beach on the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "dsc_1462.jpg",
+			"description": "Follow the beach towards Copacabana on the other side.",
 			"lon": 151.4241854800024,
-			"lat": -33.50009166000009,
-			"description": "From Marine Parade use the beach access."
+			"lat": -33.50009166000009
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "dsc_1463_dsc_1466.jpg",
 			"lon": 151.42453431002366,
 			"lat": -33.50012397999963,
-			"description": "Follow the beach towards Copacabana on the other side."
+			"radius": 0.0004,
+			"description": "Secluded enough to wonder where everyone else is instead.",
+			"badge": "map_3",
+			"title": "Take Five: Macmaster",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -325,18 +329,22 @@
 			"description": "After long periods of rain, the lagoon may be flooded and it'll be nessecary to wade across."
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "dsc_1469.jpg",
-			"lon": 151.43202228009258,
-			"lat": -33.49141468005019,
-			"description": "Leave the beach at the Copacabana Surf Club."
+			"lon": 151.4322736016543,
+			"lat": -33.49130593248137,
+			"radius": 0.0004,
+			"description": "The climb up the headland will make you appreciate the relaxing beach down here.",
+			"badge": "map_3",
+			"title": "Take Five: Copacabana",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
 			"photo": "dsc_1471.jpg",
 			"lon": 151.4327679599958,
 			"lat": -33.49019069999865,
-			"description": "Continue right down Del Monte Place along the beach."
+			"description": "Leave the beach at the Copacabana Surf Club and continue right down Del Monte Place."
 		},
 		{
 			"type": "waypoint",
@@ -441,32 +449,40 @@
 			"description": "From the park, cross the surf club car park."
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "dsc_1511_dsc_1519.jpg",
 			"lon": 151.43741,
 			"lat": -33.47067969000271,
-			"description": "Continue up Avoca beach from the surf club."
+			"radius": 0.0004,
+			"description": "Too tempting to hang around for a while.",
+			"badge": "map_3",
+			"title": "Take Five: Avoca",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
 			"photo": "dsc_1521.jpg",
 			"lon": 151.43524496000225,
 			"lat": -33.467339340000166,
-			"description": "After wet weather Avoca lagoon may require wading as well."
+			"description": "Continue up the beach from the surf club."
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "dsc_1522.jpg",
 			"lon": 151.43984867997426,
 			"lat": -33.45898912003826,
-			"description": "Leave the beach at North Avoca's surf club."
+			"radius": 0.0004,
+			"description": "On a hot day, the next climb might end it all.",
+			"badge": "map_3",
+			"title": "Take Five: North Avoca",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
 			"photo": "dsc_1524.jpg",
 			"lon": 151.43952953997405,
 			"lat": -33.45774164002132,
-			"description": "Continue right up North Avoca Parade."
+			"description": "Leave the beach at North Avoca's surf club and continue right up North Avoca Parade."
 		},
 		{
 			"type": "waypoint",
@@ -502,6 +518,17 @@
 			"lon": 151.4425228800229,
 			"lat": -33.44925454998753,
 			"description": "Follow Kurawyba Ave all the way to Terrigal Beach."
+		},
+		{
+			"type": "hotspot",
+			"photo": "dsc_1539_dsc_1542.jpg",
+			"lon": 151.4443530972331,
+			"lat": -33.44606426360688,
+			"radius": 0.0004,
+			"description": "A boulevard so full of icecream and treats, but the hilltop lookout on the horizon beckons.",
+			"badge": "map_3",
+			"title": "Take Five: Terrigal",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -574,6 +601,17 @@
 			"description": "Follow North Scenic Road towards the radio tower at the top. The last section is narrow and steep. Be mindful of descending cars."
 		},
 		{
+			"type": "hotspot",
+			"photo": "DSC_1561.jpg",
+			"lon": 151.4756577864043,
+			"lat": -33.40488481128369,
+			"radius": 0.0004,
+			"description": "The high point of Central Coast in several ways.",
+			"badge": "music_1",
+			"title": "Love Lift Me Up...",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
 			"type": "waypoint",
 			"photo": "dsc_1573.jpg",
 			"lon": 151.47598856990962,
@@ -586,6 +624,17 @@
 			"lon": 151.48055209994683,
 			"lat": -33.3984269300284,
 			"description": "At side trails, continue following the signs for the Coastal Walk."
+		},
+		{
+			"type": "hotspot",
+			"photo": "dsc_1589_pxl_20210417_053210132.jpg",
+			"lon": 151.4805944,
+			"lat": -33.3983333,
+			"radius": 0.0004,
+			"description": "The dense olive green heath opens up to the blues of open ocean and sky. Once all of Central Coast was painted with the paints on this small pallete.",
+			"badge": "day_rain",
+			"title": "Four Seasons in One Day: Coastal Heathland",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",

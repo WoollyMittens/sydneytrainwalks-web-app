@@ -164,6 +164,17 @@
 			"description": "Follow Railway Avenue past the disused train station."
 		},
 		{
+			"type": "hotspot",
+			"photo": "dsc_2953_dsc_2963.jpg",
+			"lon": 150.4875578509916,
+			"lat": -34.40035068976342,
+			"radius": 0.0004,
+			"description": "All aboard for a journey down railway history.",
+			"badge": "tank_2",
+			"title": "Slow Train to Nowhere: Colo Vale",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
 			"type": "waypoint",
 			"photo": "dsc_2967.jpg",
 			"lon": 150.48459079999998,
@@ -220,6 +231,17 @@
 			"description": "After the viaduct turn right and follow West Parade past the shops and the old train station."
 		},
 		{
+			"type": "hotspot",
+			"photo": "dsc_3012_dsc_3022.jpg",
+			"lon": 150.49442641706,
+			"lat": -34.35359189874801,
+			"radius": 0.0004,
+			"description": "Load up on supplies at this stop. The journey is about to get remote, but definitely not off the beaten track.",
+			"badge": "tank_2",
+			"title": "Slow Train to Nowhere: Hilltop",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
 			"type": "waypoint",
 			"photo": "dsc_3030.jpg",
 			"lon": 150.49398329999391,
@@ -255,6 +277,17 @@
 			"description": "At the railway crossing, follow Railway Parade right parrallel to the rails."
 		},
 		{
+			"type": "hotspot",
+			"photo": "dsc_3074.jpg",
+			"lon": 150.5225556,
+			"lat": -34.3054639,
+			"radius": 0.0004,
+			"description": "If the fire station keeps goats, it should count as rural New South Wales.",
+			"badge": "tank_2",
+			"title": "Slow Train to Nowhere: Balmoral",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
 			"type": "waypoint",
 			"photo": "dsc_3075.jpg",
 			"lon": 150.52391094996932,
@@ -283,6 +316,17 @@
 			"description": "Follow East Parade to the preserved Buxton Station and shops."
 		},
 		{
+			"type": "hotspot",
+			"photo": "dsc_3091_dsc_3101.jpg",
+			"lon": 150.5334083,
+			"lat": -34.2555167,
+			"radius": 0.0004,
+			"description": "The icecream and snacks from the general store are well deserved by now.",
+			"badge": "tank_2",
+			"title": "Slow Train to Nowhere: Buxton",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
 			"type": "waypoint",
 			"photo": "dsc_3102.jpg",
 			"lon": 150.53448479000093,
@@ -297,11 +341,22 @@
 			"description": "The next railway crossing is at Couridjah Station. Continue along the railway line."
 		},
 		{
+			"type": "hotspot",
+			"photo": "dsc_3109_dsc_3119.jpg",
+			"lon": 150.5496444,
+			"lat": -34.2328889,
+			"radius": 0.0004,
+			"description": "From this remnant historic station, thoughts turn to making our connection at the functional one just over an hour from here on foot.",
+			"badge": "tank_2",
+			"title": "Slow Train to Nowhere: Couridjah",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
 			"type": "waypoint",
 			"photo": "dsc_3120.jpg",
 			"lon": 150.55043283000012,
 			"lat": -34.23184103002661,
-			"description": "On occasion historical trains from the museum will still use the tracks. If so, walk along Station Street instead."
+			"description": "On occasion historical trains from the museum still use this section of tracks, so walk along Station Street instead."
 		},
 		{
 			"type": "waypoint",

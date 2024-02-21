@@ -347,12 +347,15 @@
 			"optional": true
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "002_dsc_1764.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 152.17796238009592,
-			"lat": -32.736871560027524,
-			"optional": true
+			"lon": 152.1786321851128,
+			"lat": -32.73720313825261,
+			"radius": 0.0004,
+			"description": "The impressive view from exactly this dune, make the Fingal Spit look irresistible.",
+			"badge": "skull_and_bones",
+			"title": "Tempting, but don't Risk It",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -775,6 +778,17 @@
 			"lon": 152.13298745999853,
 			"lat": -32.749831610001166,
 			"optional": true
+		},
+		{
+			"type": "hotspot",
+			"photo": "008_dsc_1883.jpg",
+			"lon": 152.1421952149484,
+			"lat": -32.74694053020608,
+			"radius": 0.0004,
+			"description": "In case you were wondering where Nelson Bay gets its water from.",
+			"badge": "drill_perforator",
+			"title": "The Boring Part",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",

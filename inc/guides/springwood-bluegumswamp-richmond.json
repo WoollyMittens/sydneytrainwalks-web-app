@@ -136,11 +136,15 @@
 			"description": "Eventually the trail turns into a very rough climb up to the other side of Grose Head."
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "105_p4080127.jpg",
-			"lon": 150.61570799999998,
-			"lat": -33.623382,
-			"description": "Find the overgrown trig at the top."
+			"lon": 150.6157016978932,
+			"lat": -33.6233346960489,
+			"radius": 0.0004,
+			"description": "Leave a friendly note in the geocache logbook. That it can lie here undisturbed means you're in a special place.",
+			"badge": "map_2_inv",
+			"title": "Shhh, it's a Secret",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",

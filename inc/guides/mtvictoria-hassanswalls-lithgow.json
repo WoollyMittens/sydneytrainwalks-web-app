@@ -169,8 +169,19 @@
 			"description": "Follow Hartley Vale Road across the valley towards the hills on the other side."
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "0350_dsc_2003.jpg",
+			"lon": 150.2005471825524,
+			"lat": -33.52769530536342,
+			"radius": 0.0004,
+			"description": "For the surveyor it must have been frustrating to see a misunderstading paint the landscape forever.",
+			"badge": "pen",
+			"title": "He Wrote Rivulet",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
+			"type": "waypoint",
+			"photo": "0360_dsc_2004_dsc_2011.jpg",
 			"lon": 150.20043455999655,
 			"lat": -33.52748405004557,
 			"description": "Cross the River Lett along the road and continue down Browns Gap Road."

@@ -188,7 +188,7 @@
 			"description": "The fourth statue of famous explorers requires some exploration to find.",
 			"badge": "registered_user",
 			"title": "Somewhere Out There",
-			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",

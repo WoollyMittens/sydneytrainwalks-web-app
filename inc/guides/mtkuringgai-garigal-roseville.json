@@ -170,6 +170,17 @@
 			"description": "At the top of the ridge, follow the directions to Cunningman's Rest picnic area."
 		},
 		{
+			"type": "hotspot",
+			"photo": "p8182671.jpg",
+			"lon": 151.1750112399964,
+			"lat": -33.70779160997733,
+			"radius": 0.0004,
+			"description": "The irony of walking kilometres through wildflowers to get to a wildflower garden does not diminish it.",
+			"badge": "flowers",
+			"title": "You've Seen More Flowers on the Way Here",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
 			"type": "waypoint",
 			"photo": "p8182672.jpg",
 			"lon": 151.17449951000978,

@@ -157,6 +157,17 @@
 			"description": "Halfway up the pass an arch overhang the road. Nearby are several unfenced lookouts across the valley."
 		},
 		{
+			"type": "hotspot",
+			"photo": "p6077982_dsc_3099.jpg",
+			"lon": 150.378324,
+			"lat": -33.783254,
+			"radius": 0.0004,
+			"description": "If you've just walked up the pass, this monument built out of bulldozer fragments will paint a vivid picture of the tragic accident that is memorialised.",
+			"badge": "bulldozer",
+			"title": "None Shall Pass",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
 			"type": "waypoint",
 			"photo": "p6077987.jpg",
 			"lon": 150.37557900000002,

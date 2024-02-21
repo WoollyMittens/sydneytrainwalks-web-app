@@ -251,7 +251,7 @@
 			"description": "A historic military bridge, out here as a surprise outdoor museum piece.",
 			"badge": "bridge_1",
 			"title": "It Belongs in a Museum",
-			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",

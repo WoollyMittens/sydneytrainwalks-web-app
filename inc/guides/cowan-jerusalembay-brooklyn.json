@@ -114,7 +114,7 @@
 			"description": "Every point is the top, depending on how you rotate it.",
 			"badge": "geography_globe",
 			"title": "The Top of the World",
-			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -157,7 +157,7 @@
 			"description": "Not many come here, but Taffy did.",
 			"badge": "obelisk",
 			"title": "Taffy Was Here",
-			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -204,7 +204,7 @@
 			"description": "You'll be around the hairpin bend downhill, before you realise this hidden view is worth turnning back for.",
 			"badge": "glasses",
 			"title": "Blink and You'll Miss It ",
-			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",

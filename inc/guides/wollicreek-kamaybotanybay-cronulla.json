@@ -1107,7 +1107,7 @@
 			"description": "The light is a warning not to sail a ship into the steep cliffs of the coast. Let it also be a reminder not to fall off the same.",
 			"badge": "lamp_on",
 			"title": "The Guiding Light",
-			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",

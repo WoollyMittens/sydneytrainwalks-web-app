@@ -74,11 +74,15 @@
 			"description": "Continue along the path to a rough stone staircase."
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "p5045995.jpg",
-			"lon": 151.14811388888887,
-			"lat": -33.64920277777778,
-			"description": "Just before the stone staircase an overgrown path to the left leads to another lookout."
+			"lon": 151.147943,
+			"lat": -33.649026,
+			"radius": 0.0004,
+			"description": "This memorial reminds us how treacherous this landscape becomes during bushfires.",
+			"badge": "flower_3",
+			"title": "Fireman's Rest",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -109,11 +113,15 @@
 			"description": "Eventually the track turns left into a wide shallow bay with buoys."
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "p5046258.jpg",
-			"lon": 151.164466,
-			"lat": -33.62684,
-			"description": "Halfway up the bay the remains of a houseboat are stuck in the mud."
+			"lon": 151.164749,
+			"lat": -33.627075,
+			"radius": 0.0004,
+			"description": "The paddle steamer General Gordon ferried goods and passengers around Broken Bay before the railway joined Brooklyn to Woy Woy. Upon retirement she was split up into several house boats, what is left of one you see here.",
+			"badge": "army_training",
+			"title": "The General's Last Stand",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",

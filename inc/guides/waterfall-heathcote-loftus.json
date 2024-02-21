@@ -657,11 +657,15 @@
 			"lat": -34.082402479922344
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "003_dsc_9803.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.04995321013976,
-			"lat": -34.07990376999842
+			"lat": -34.07990376999842,
+			"radius": 0.0004,
+			"description": "Clockwise or counter, both ways lead to icecream below.",
+			"badge": "rotate_cw_1",
+			"title": "You Turn Me Right Round",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -820,7 +824,7 @@
 			"description": "You may be here on the lucky few days there is a historic tram ride to the Sydney Tramway Museum outside the park.",
 			"badge": "tramway",
 			"title": "Ding Ding Ding!",
-			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",

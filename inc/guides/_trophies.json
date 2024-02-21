@@ -2,9 +2,9 @@
 	"key": "_index",
 	"bounds": {
 		"north": -32.54681317351516,
-		"west": 150.1171875,
-		"south": -34.45221847282654,
-		"east": 152.2265625
+		"west": 149.94140625,
+		"south": -34.885930940753155,
+		"east": 152.40234375
 	},
 	"markers": [
 		{
@@ -39,6 +39,17 @@
 			"description": "This is legitimately the middle of nowhere, with only solitude surrounding you. May it comfort you during the long long climb ahead.",
 			"title": "You've Come a Long Way Baby",
 			"badge": "compas_2"
+		},
+		{
+			"key": "bondi-sydneyharbour-manly",
+			"type": "trophy",
+			"photo": "006_pxl_20231001_215735630.jpg",
+			"lon": 151.24102499999998,
+			"lat": -33.845534,
+			"radius": 0.0004,
+			"description": "Rarely there is a zoo that is as enjoyable from the outside.",
+			"title": "You Belong in the Zoo",
+			"badge": "monkey"
 		},
 		{
 			"key": "bundeena-royalcoasttrack-otford",
@@ -116,6 +127,303 @@
 			"description": "If you stand around long enough, there will probably be a train across the valley.",
 			"title": "So where is it?",
 			"badge": "search"
+		},
+		{
+			"key": "hornsby-cumberland-parramatta",
+			"type": "trophy",
+			"photo": "1630_dcs_7312_dcs_7317.jpg",
+			"lon": 151.00509722222222,
+			"lat": -33.775844444444445,
+			"radius": 0.0004,
+			"description": "The sudden towering walls make for an unexpected surprise walking along the gully.",
+			"title": "Dammed by Faint Praise",
+			"badge": "bridge_2"
+		},
+		{
+			"key": "katoomba-kedumbapass-wentworthfalls",
+			"type": "trophy",
+			"photo": "p6077982_dsc_3099.jpg",
+			"lon": 150.378324,
+			"lat": -33.783254,
+			"radius": 0.0004,
+			"description": "If you've just walked up the pass, this monument built out of bulldozer fragments will paint a vivid picture of the tragic accident that is memorialised.",
+			"title": "None Shall Pass",
+			"badge": "bulldozer"
+		},
+		{
+			"key": "lakehaven-munmorah-swansea",
+			"type": "trophy",
+			"photo": "dsc_8721-dsc_8726.jpg",
+			"lon": 151.628035752481,
+			"lat": -33.18588747665788,
+			"radius": 0.0004,
+			"description": "Less famous than Kiama's, but they can only wish they had these beaches.",
+			"title": "The Other Hole",
+			"badge": "sink_bathroom"
+		},
+		{
+			"key": "mittagong-boxvaletrack-mittagong",
+			"type": "trophy",
+			"photo": "p5070429.jpg",
+			"lon": 150.4307910362136,
+			"lat": -34.41540836695404,
+			"radius": 0.0004,
+			"description": "At least they were helpful enough to throw a coil of steel wire down. Heaven forbid it rusts.",
+			"title": "Never Again",
+			"badge": "escalator"
+		},
+		{
+			"key": "mittagong-pictonloop-tahmoor",
+			"type": "trophy",
+			"photo": "dsc_2953_dsc_2963.jpg",
+			"lon": 150.4875578509916,
+			"lat": -34.40035068976342,
+			"radius": 0.0004,
+			"description": "All aboard for a journey down railway history.",
+			"title": "Slow Train to Nowhere: Colo Vale",
+			"badge": "tank_2"
+		},
+		{
+			"key": "mittagong-pictonloop-tahmoor",
+			"type": "trophy",
+			"photo": "dsc_3012_dsc_3022.jpg",
+			"lon": 150.49442641706,
+			"lat": -34.35359189874801,
+			"radius": 0.0004,
+			"description": "Load up on supplies at this stop. The journey is about to get remote, but definitely not off the beaten track.",
+			"title": "Slow Train to Nowhere: Hilltop",
+			"badge": "tank_2"
+		},
+		{
+			"key": "mittagong-pictonloop-tahmoor",
+			"type": "trophy",
+			"photo": "dsc_3074.jpg",
+			"lon": 150.5225556,
+			"lat": -34.3054639,
+			"radius": 0.0004,
+			"description": "If the fire station keeps goats, it should count as rural New South Wales.",
+			"title": "Slow Train to Nowhere: Balmoral",
+			"badge": "tank_2"
+		},
+		{
+			"key": "mittagong-pictonloop-tahmoor",
+			"type": "trophy",
+			"photo": "dsc_3091_dsc_3101.jpg",
+			"lon": 150.5334083,
+			"lat": -34.2555167,
+			"radius": 0.0004,
+			"description": "The icecream and snacks from the general store are well deserved by now.",
+			"title": "Slow Train to Nowhere: Buxton",
+			"badge": "tank_2"
+		},
+		{
+			"key": "mittagong-pictonloop-tahmoor",
+			"type": "trophy",
+			"photo": "dsc_3109_dsc_3119.jpg",
+			"lon": 150.5496444,
+			"lat": -34.2328889,
+			"radius": 0.0004,
+			"description": "From this remnant historic station, thoughts turn to making our connection at the functional one just over an hour from here on foot.",
+			"title": "Slow Train to Nowhere: Couridjah",
+			"badge": "tank_2"
+		},
+		{
+			"key": "mtkuringgai-berowra-mtkuringgai",
+			"type": "trophy",
+			"photo": "p5045995.jpg",
+			"lon": 151.147943,
+			"lat": -33.649026,
+			"radius": 0.0004,
+			"description": "This memorial reminds us how treacherous this landscape becomes during bushfires.",
+			"title": "Fireman's Rest",
+			"badge": "flower_3"
+		},
+		{
+			"key": "mtkuringgai-berowra-mtkuringgai",
+			"type": "trophy",
+			"photo": "p5046258.jpg",
+			"lon": 151.164749,
+			"lat": -33.627075,
+			"radius": 0.0004,
+			"description": "The paddle steamer General Gordon ferried goods and passengers around Broken Bay before the railway joined Brooklyn to Woy Woy. Upon retirement she was split up into several house boats, what is left of one you see here.",
+			"title": "The General's Last Stand",
+			"badge": "army_training"
+		},
+		{
+			"key": "mtkuringgai-garigal-roseville",
+			"type": "trophy",
+			"photo": "p8182671.jpg",
+			"lon": 151.1750112399964,
+			"lat": -33.70779160997733,
+			"radius": 0.0004,
+			"description": "The irony of walking kilometres through wildflowers to get to a wildflower garden does not diminish it.",
+			"title": "You've Seen More Flowers on the Way Here",
+			"badge": "flowers"
+		},
+		{
+			"key": "mtvictoria-hassanswalls-lithgow",
+			"type": "trophy",
+			"photo": "0350_dsc_2003.jpg",
+			"lon": 150.2005471825524,
+			"lat": -33.52769530536342,
+			"radius": 0.0004,
+			"description": "For the surveyor it must have been frustrating to see a misunderstading paint the landscape forever.",
+			"title": "He Wrote Rivulet",
+			"badge": "pen"
+		},
+		{
+			"key": "nelsonbay-tomaree-annabay",
+			"type": "trophy",
+			"photo": "002_dsc_1764.jpg",
+			"lon": 152.1786321851128,
+			"lat": -32.73720313825261,
+			"radius": 0.0004,
+			"description": "The impressive view from exactly this dune, make the Fingal Spit look irresistible.",
+			"title": "Tempting, but don't Risk It",
+			"badge": "skull_and_bones"
+		},
+		{
+			"key": "nelsonbay-tomaree-annabay",
+			"type": "trophy",
+			"photo": "008_dsc_1883.jpg",
+			"lon": 152.1421952149484,
+			"lat": -32.74694053020608,
+			"radius": 0.0004,
+			"description": "In case you were wondering where Nelson Bay gets its water from.",
+			"title": "The Boring Part",
+			"badge": "drill_perforator"
+		},
+		{
+			"key": "parramatta-greatwestwalk-penrith",
+			"type": "trophy",
+			"photo": "0110_img_20191019_062530.jpg",
+			"lon": 150.99744199999998,
+			"lat": -33.803808,
+			"radius": 0.0004,
+			"description": "A thought for those inside the nearby hospital, while we are lucky to enjoy our health along the lush green riverside.",
+			"title": "Go West: Wisteria Gardens",
+			"badge": "compas_1"
+		},
+		{
+			"key": "parramatta-greatwestwalk-penrith",
+			"type": "trophy",
+			"photo": "0690_img_20191019_081819.jpg",
+			"lon": 150.95563099999998,
+			"lat": -33.78109700010452,
+			"radius": 0.0004,
+			"description": "You will be back here on the other side... eventually.",
+			"title": "Go West: Tempting Shortcut",
+			"badge": "compas_1"
+		},
+		{
+			"key": "parramatta-greatwestwalk-penrith",
+			"type": "trophy",
+			"photo": "1400_img_20191019_105002.jpg",
+			"lon": 150.87104200000002,
+			"lat": -33.736303,
+			"radius": 0.0004,
+			"description": "A band of green on the way out of the city that feels like breathing a sigh of relief.",
+			"title": "Go West: Strolling in the Park",
+			"badge": "compas_1"
+		},
+		{
+			"key": "parramatta-greatwestwalk-penrith",
+			"type": "trophy",
+			"photo": "1670_pano_20191019_120014.jpg",
+			"lon": 150.860028,
+			"lat": -33.763458,
+			"radius": 0.0004,
+			"description": "A Chinese Garden surrounded by bushland and seemingly no one the wiser it even exists.",
+			"title": "Go West: Didn't Know It Existed",
+			"badge": "compas_1"
+		},
+		{
+			"key": "parramatta-greatwestwalk-penrith",
+			"type": "trophy",
+			"photo": "2210_img_20191019_143246.jpg",
+			"lon": 150.8015974320838,
+			"lat": -33.76326655370499,
+			"radius": 0.0004,
+			"description": "You climb through a fence to continue the trail, perfectly in keeping with the reputation.",
+			"title": "Go West: Survived Mount Druitt",
+			"badge": "compas_1"
+		},
+		{
+			"key": "parramatta-greatwestwalk-penrith",
+			"type": "trophy",
+			"photo": "2600_img_20191019_154703.jpg",
+			"lon": 150.77684200000002,
+			"lat": -33.725481,
+			"radius": 0.0004,
+			"description": "There's now emus where the bombs used to be made. It is clear who was the winner of the Emu wars.",
+			"title": "Go West: Emus and Bombs",
+			"badge": "compas_1"
+		},
+		{
+			"key": "parramatta-greatwestwalk-penrith",
+			"type": "trophy",
+			"photo": "3580_pano_20191019_184124.jpg",
+			"lon": 150.6852837769118,
+			"lat": -33.7415830753694,
+			"radius": 0.0004,
+			"description": "This stretch along the river is to celebrate putting most of Sydney behind you in a day.",
+			"title": "Go West: Weir Almost There",
+			"badge": "compas_1"
+		},
+		{
+			"key": "portkembla-grandpacificdrive-kiama",
+			"type": "trophy",
+			"photo": "PC289600.jpg",
+			"lon": 150.8400771350448,
+			"lat": -34.6066732670053,
+			"radius": 0.0004,
+			"description": "As tempting as it is to throw in the towel right here, the next functioning train station is all the way through the wetlands ahead.",
+			"title": "The Train Does Not Stop Here Anymore",
+			"badge": "tank_1"
+		},
+		{
+			"key": "portkembla-grandpacificdrive-kiama",
+			"type": "trophy",
+			"photo": "pc289656_pc289671.jpg",
+			"lon": 150.8608821863694,
+			"lat": -34.63073175185122,
+			"radius": 0.0004,
+			"description": "It'll never fit in a single view, too wide for your vision to contain.",
+			"title": "Too Big for the Photo",
+			"badge": "crop"
+		},
+		{
+			"key": "springwood-bluegumswamp-richmond",
+			"type": "trophy",
+			"photo": "105_p4080127.jpg",
+			"lon": 150.6157016978932,
+			"lat": -33.6233346960489,
+			"radius": 0.0004,
+			"description": "Leave a friendly note in the geocache logbook. That it can lie here undisturbed means you're in a special place.",
+			"title": "Shhh, it's a Secret",
+			"badge": "map_2_inv"
+		},
+		{
+			"key": "springwood-lostworldlookout-glenbrook",
+			"type": "trophy",
+			"photo": "131_p5270168_p5270171_hdr.jpg",
+			"lon": 150.5731112426449,
+			"lat": -33.74012684182669,
+			"radius": 0.0004,
+			"description": "It's hard not to look upon this view without reverence.",
+			"title": "X marks the spot",
+			"badge": "church"
+		},
+		{
+			"key": "springwood-lostworldlookout-glenbrook",
+			"type": "trophy",
+			"photo": "198_r0012574.jpg",
+			"lon": 150.60349722222222,
+			"lat": -33.76660277777778,
+			"radius": 0.0004,
+			"description": "Maybe you can jump it, but who would want to finish their walk in wet shoes.",
+			"title": "Mandatory Foot Bath",
+			"badge": "duck_rubberduck"
 		},
 		{
 			"key": "teralba-fernleightrack-adamstown",
@@ -197,6 +505,17 @@
 		{
 			"key": "waterfall-heathcote-loftus",
 			"type": "trophy",
+			"photo": "003_dsc_9803.jpg",
+			"lon": 151.04995321013976,
+			"lat": -34.07990376999842,
+			"radius": 0.0004,
+			"description": "Clockwise or counter, both ways lead to icecream below.",
+			"title": "You Turn Me Right Round",
+			"badge": "rotate_cw_1"
+		},
+		{
+			"key": "waterfall-heathcote-loftus",
+			"type": "trophy",
 			"photo": "003_dsc_9869.jpg",
 			"lon": 151.0567214560022,
 			"lat": -34.0625896528283,
@@ -215,6 +534,83 @@
 			"description": "The light is a warning not to sail a ship into the steep cliffs of the coast. Let it also be a reminder not to fall off the same.",
 			"title": "The Guiding Light",
 			"badge": "lamp_on"
+		},
+		{
+			"key": "woywoy-5landswalk-tuggerah",
+			"type": "trophy",
+			"photo": "dsc_1463_dsc_1466.jpg",
+			"lon": 151.42453431002366,
+			"lat": -33.50012397999963,
+			"radius": 0.0004,
+			"description": "Secluded enough to wonder where everyone else is instead.",
+			"title": "Take Five: Macmaster",
+			"badge": "map_3"
+		},
+		{
+			"key": "woywoy-5landswalk-tuggerah",
+			"type": "trophy",
+			"photo": "dsc_1469.jpg",
+			"lon": 151.4322736016543,
+			"lat": -33.49130593248137,
+			"radius": 0.0004,
+			"description": "The climb up the headland will make you appreciate the relaxing beach down here.",
+			"title": "Take Five: Copacabana",
+			"badge": "map_3"
+		},
+		{
+			"key": "woywoy-5landswalk-tuggerah",
+			"type": "trophy",
+			"photo": "dsc_1511_dsc_1519.jpg",
+			"lon": 151.43741,
+			"lat": -33.47067969000271,
+			"radius": 0.0004,
+			"description": "Too tempting to hang around for a while.",
+			"title": "Take Five: Avoca",
+			"badge": "map_3"
+		},
+		{
+			"key": "woywoy-5landswalk-tuggerah",
+			"type": "trophy",
+			"photo": "dsc_1522.jpg",
+			"lon": 151.43984867997426,
+			"lat": -33.45898912003826,
+			"radius": 0.0004,
+			"description": "On a hot day, the next climb might end it all.",
+			"title": "Take Five: North Avoca",
+			"badge": "map_3"
+		},
+		{
+			"key": "woywoy-5landswalk-tuggerah",
+			"type": "trophy",
+			"photo": "dsc_1539_dsc_1542.jpg",
+			"lon": 151.4443530972331,
+			"lat": -33.44606426360688,
+			"radius": 0.0004,
+			"description": "A boulevard so full of icecream and treats, but the hilltop lookout on the horizon beckons.",
+			"title": "Take Five: Terrigal",
+			"badge": "map_3"
+		},
+		{
+			"key": "woywoy-5landswalk-tuggerah",
+			"type": "trophy",
+			"photo": "DSC_1561.jpg",
+			"lon": 151.4756577864043,
+			"lat": -33.40488481128369,
+			"radius": 0.0004,
+			"description": "The high point of Central Coast in several ways.",
+			"title": "Love Lift Me Up...",
+			"badge": "music_1"
+		},
+		{
+			"key": "woywoy-5landswalk-tuggerah",
+			"type": "trophy",
+			"photo": "dsc_1589_pxl_20210417_053210132.jpg",
+			"lon": 151.4805944,
+			"lat": -33.3983333,
+			"radius": 0.0004,
+			"description": "The dense olive green heath opens up to the blues of open ocean and sky. Once all of Central Coast was painted with the paints on this small pallete.",
+			"title": "Four Seasons in One Day: Coastal Heathland",
+			"badge": "day_rain"
 		},
 		{
 			"key": "woywoy-mountelliot-lisarow",

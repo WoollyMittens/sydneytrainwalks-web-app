@@ -157,11 +157,15 @@
 			"description": "Several hundred meters down the trail a side track to the right leads to another nearby lookout."
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "131_p5270168_p5270171_hdr.jpg",
-			"lon": 150.57335277777779,
-			"lat": -33.74013055555556,
-			"description": "The side trail ends at a memorial overlooking the valley, across to Martins Lookout."
+			"lon": 150.5731112426449,
+			"lat": -33.74012684182669,
+			"radius": 0.0004,
+			"description": "It's hard not to look upon this view without reverence.",
+			"badge": "church",
+			"title": "X marks the spot",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -222,9 +226,20 @@
 		{
 			"type": "waypoint",
 			"photo": "196_p5270234.jpg",
-			"lon": 150.60342699999998,
-			"lat": -33.766579000100194,
-			"description": "Find the crossing at the shallow part of the river."
+			"description": "Find the crossing at the shallow part of the river.",
+			"lon": 150.60347501085,
+			"lat": -33.76656438789008
+		},
+		{
+			"type": "hotspot",
+			"photo": "198_r0012574.jpg",
+			"lon": 150.60349722222222,
+			"lat": -33.76660277777778,
+			"radius": 0.0004,
+			"description": "Maybe you can jump it, but who would want to finish their walk in wet shoes.",
+			"badge": "duck_rubberduck",
+			"title": "Mandatory Foot Bath",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",

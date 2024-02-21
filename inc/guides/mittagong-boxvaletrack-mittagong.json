@@ -178,6 +178,17 @@
 			"description": "The incline is a steep climb up to the top of the ridge. Use the steel cable for balance."
 		},
 		{
+			"type": "hotspot",
+			"photo": "p5070429.jpg",
+			"lon": 150.4307910362136,
+			"lat": -34.41540836695404,
+			"radius": 0.0004,
+			"description": "At least they were helpful enough to throw a coil of steel wire down. Heaven forbid it rusts.",
+			"badge": "escalator",
+			"title": "Never Again",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
 			"type": "waypoint",
 			"photo": "p5070436.jpg",
 			"lon": 150.43094599999998,

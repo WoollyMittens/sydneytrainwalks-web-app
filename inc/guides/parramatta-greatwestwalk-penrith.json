@@ -52,6 +52,17 @@
 			"lat": -33.811643999999994
 		},
 		{
+			"type": "hotspot",
+			"photo": "0110_img_20191019_062530.jpg",
+			"lon": 150.99744199999998,
+			"lat": -33.803808,
+			"radius": 0.0004,
+			"description": "A thought for those inside the nearby hospital, while we are lucky to enjoy our health along the lush green riverside.",
+			"badge": "compas_1",
+			"title": "Go West: Wisteria Gardens",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
 			"type": "waypoint",
 			"photo": "0120_img_20191019_062555.jpg",
 			"description": "Cross the dam in the Wistaria Gardens and turn right down the dirt trail to follow Governor Phillip Walk along the river.",
@@ -143,11 +154,15 @@
 			"lat": -33.781286
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "0690_img_20191019_081819.jpg",
-			"description": "At the split in the canal decide to cross here or follow the bike path to Station Road.",
 			"lon": 150.95563099999998,
-			"lat": -33.78109700010452
+			"lat": -33.78109700010452,
+			"radius": 0.0004,
+			"description": "You will be back here on the other side... eventually.",
+			"badge": "compas_1",
+			"title": "Go West: Tempting Shortcut",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -312,6 +327,17 @@
 			"lat": -33.736689
 		},
 		{
+			"type": "hotspot",
+			"photo": "1400_img_20191019_105002.jpg",
+			"lon": 150.87104200000002,
+			"lat": -33.736303,
+			"radius": 0.0004,
+			"description": "A band of green on the way out of the city that feels like breathing a sigh of relief.",
+			"badge": "compas_1",
+			"title": "Go West: Strolling in the Park",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
 			"type": "waypoint",
 			"photo": "1440_img_20191019_110613.jpg",
 			"description": "Cross Richmond Road and enter the next section of the Western Sydney Parklands.",
@@ -338,6 +364,17 @@
 			"description": "Follow the path past the toilets to the bushland boardwalk.",
 			"lon": 150.857872,
 			"lat": -33.761364
+		},
+		{
+			"type": "hotspot",
+			"photo": "1670_pano_20191019_120014.jpg",
+			"lon": 150.860028,
+			"lat": -33.763458,
+			"radius": 0.0004,
+			"description": "A Chinese Garden surrounded by bushland and seemingly no one the wiser it even exists.",
+			"badge": "compas_1",
+			"title": "Go West: Didn't Know It Existed",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -467,10 +504,21 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "2210_img_20191019_143246.jpg",
+			"photo": "2200_img_20191019_143150.jpg",
 			"description": "At the end of Kurrajong Avenue follow the nature strip to the right past the industrial buildings.",
 			"lon": 150.801578,
 			"lat": -33.763167
+		},
+		{
+			"type": "hotspot",
+			"photo": "2210_img_20191019_143246.jpg",
+			"lon": 150.8015974320838,
+			"lat": -33.76326655370499,
+			"radius": 0.0004,
+			"description": "You climb through a fence to continue the trail, perfectly in keeping with the reputation.",
+			"badge": "compas_1",
+			"title": "Go West: Survived Mount Druitt",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -527,6 +575,17 @@
 			"description": "Enter Wianamatte Regional Park at the corner of Mainwarring Street.",
 			"lon": 150.777828,
 			"lat": -33.725622
+		},
+		{
+			"type": "hotspot",
+			"photo": "2600_img_20191019_154703.jpg",
+			"lon": 150.77684200000002,
+			"lat": -33.725481,
+			"radius": 0.0004,
+			"description": "There's now emus where the bombs used to be made. It is clear who was the winner of the Emu wars.",
+			"badge": "compas_1",
+			"title": "Go West: Emus and Bombs",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -625,6 +684,17 @@
 			"description": "Follow the Great River Walk left along the Nepean River past the weir.",
 			"lon": 150.686069,
 			"lat": -33.738536
+		},
+		{
+			"type": "hotspot",
+			"photo": "3580_pano_20191019_184124.jpg",
+			"lon": 150.6852837769118,
+			"lat": -33.7415830753694,
+			"radius": 0.0004,
+			"description": "This stretch along the river is to celebrate putting most of Sydney behind you in a day.",
+			"badge": "compas_1",
+			"title": "Go West: Weir Almost There",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",

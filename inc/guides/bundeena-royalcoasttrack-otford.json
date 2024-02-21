@@ -290,7 +290,7 @@
 			"description": "Even after many kilometres of coast, this place still manages to astonish.",
 			"badge": "wizard_1",
 			"title": "Tadaa!",
-			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",

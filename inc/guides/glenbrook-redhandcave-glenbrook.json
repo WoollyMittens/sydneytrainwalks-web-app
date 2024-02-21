@@ -186,7 +186,7 @@
 			"description": "Neither campers nor eastern greys can resist these grassy fields.",
 			"badge": "hovel_1",
 			"title": "I was Promised Kangaroos",
-			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -281,7 +281,7 @@
 			"description": "If you stand around long enough, there will probably be a train across the valley.",
 			"badge": "search",
 			"title": "So where is it?",
-			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",

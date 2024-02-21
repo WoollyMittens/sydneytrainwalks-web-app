@@ -655,7 +655,7 @@
 			"description": "The start of the Fernleigh railway line, but also the start of an historic trek.",
 			"badge": "railroad",
 			"title": "I'm a Choo Choo Train: Belmont",
-			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -750,7 +750,7 @@
 			"description": "End of the wetlands and start of suburbia.",
 			"badge": "railroad",
 			"title": "I'm a Choo Choo Train: Jewells",
-			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -803,7 +803,7 @@
 			"description": "Alight here for Awabakal Nature Reserve and Redhead Beach.",
 			"badge": "railroad",
 			"title": "I'm a Choo Choo Train: Redhead",
-			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>",
+			"instruction": "Visit this location to earn the mystery trophy",
 			"optional": true
 		},
 		{
@@ -847,7 +847,7 @@
 			"description": "No longer a stop for trains, but now one for coffee and cakes up there.",
 			"badge": "railroad",
 			"title": "I'm a Choo Choo Train: Whitebridge",
-			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>",
+			"instruction": "Visit this location to earn the mystery trophy",
 			"optional": true
 		},
 		{
@@ -875,7 +875,7 @@
 			"description": "Glenrock's a good reason to leave the train here.",
 			"badge": "railroad",
 			"title": "I'm a Choo Choo Train: Kahibah",
-			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>",
+			"instruction": "Visit this location to earn the mystery trophy",
 			"optional": true
 		},
 		{
@@ -1048,7 +1048,7 @@
 			"description": "The narrow tunnel of dense vegetation opens up to expansive coastal heath.",
 			"badge": "enter",
 			"title": "The Rear Entrance",
-			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -1500,7 +1500,7 @@
 			"description": "End of the line for the Fernleigh Track. From here you get to ride a real train.",
 			"badge": "railroad",
 			"title": "I'm a Choo Choo Train: Adamstown",
-			"instruction": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"location": "Adamstown",

@@ -228,6 +228,17 @@
 			"description": "From Bongon Beach climb the trail up to the Snapper Point carpark."
 		},
 		{
+			"type": "hotspot",
+			"photo": "dsc_8721-dsc_8726.jpg",
+			"lon": 151.628035752481,
+			"lat": -33.18588747665788,
+			"radius": 0.0004,
+			"description": "Less famous than Kiama's, but they can only wish they had these beaches.",
+			"badge": "sink_bathroom",
+			"title": "The Other Hole",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
 			"type": "waypoint",
 			"photo": "dsc_8733.jpg",
 			"lon": 151.6232769599957,
