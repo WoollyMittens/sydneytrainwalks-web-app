@@ -46,7 +46,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "001_pxl_20230929_211251706.jpg",
 			"lon": 151.273674,
 			"lat": -33.894096,
@@ -81,7 +81,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "001_pxl_20230929_213356963.jpg",
 			"lon": 151.28219800000002,
 			"lat": -33.890424,
@@ -284,7 +284,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "001_pxl_20230929_231143446.jpg",
 			"lon": 151.284378,
 			"lat": -33.843307,
@@ -376,7 +376,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "001_pxl_20230929_233012095.jpg",
 			"lon": 151.27962200000002,
 			"lat": -33.839052,
@@ -523,11 +523,12 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"location": "Watsons Bay",
+			"type": "ferry",
 			"photo": "001_pxl_20230930_001006750.jpg",
 			"lon": 151.281869,
 			"lat": -33.84357,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Take the ferry to Watsons Bay using <a href=\"https://transportnsw.info/trip#/?to=Watsons Bay\">transportnsw.info</a>."
 		},
 		{
 			"type": "waypoint",
@@ -944,7 +945,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "001_pxl_20230930_025055753.jpg",
 			"lon": 151.24729899992124,
 			"lat": -33.872,
@@ -1246,7 +1247,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "003_pxl_20230930_050035272.jpg",
 			"lon": 151.211603,
 			"lat": -33.861208000000005,
@@ -1549,7 +1550,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "006_pxl_20231001_201013213.jpg",
 			"lon": 151.21595599999998,
 			"lat": -33.840374000000004,
@@ -1654,7 +1655,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "006_pxl_20231001_204447003.jpg",
 			"lon": 151.230849,
 			"lat": -33.847229000000006,
@@ -1703,7 +1704,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "006_pxl_20231001_210706775.jpg",
 			"lon": 151.232955,
 			"lat": -33.837905,
@@ -1890,7 +1891,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "006_pxl_20231001_221507031.jpg",
 			"lon": 151.245874,
 			"lat": -33.852889000000005,
@@ -1953,7 +1954,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "006_pxl_20231001_225918088.jpg",
 			"lon": 151.254376,
 			"lat": -33.838496,
@@ -2234,7 +2235,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "006_pxl_20231002_011100530.jpg",
 			"lon": 151.246245,
 			"lat": -33.805702,
@@ -2276,7 +2277,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "006_pxl_20231002_014619575.jpg",
 			"lon": 151.253205,
 			"lat": -33.805577,

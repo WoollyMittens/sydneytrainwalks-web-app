@@ -207,7 +207,7 @@
 			"description": "Enter Cumberland State Forest on the left."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "1080_dcs_7264.jpg",
 			"lon": 151.0376869000009,
 			"lat": -33.74403144000252,
@@ -365,7 +365,7 @@
 			"description": "Follow the path up to the other side of the dam and continue along the lakeside."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "2310_dcs_7448.jpg",
 			"lon": 151.00689307997732,
 			"lat": -33.79190575997516,

@@ -93,10 +93,16 @@
 			"photo": "dsc_8465.jpg",
 			"lon": 151.51095600991326,
 			"lat": -33.218802420003215,
-			"description": "The path continues unbroken all the way to Budgewoi"
+			"description": "The path continues unbroken all the way to Budgewoi."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
+			"lon": 151.526792,
+			"lat": -33.219910,
+			"description": "At the boatramp cross the dam across the creek."
+		},
+		{
+			"type": "toilet",
 			"photo": "dsc_8491.jpg",
 			"lon": 151.53017010998047,
 			"lat": -33.229783950000005,
@@ -114,11 +120,23 @@
 			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
+			"type": "kiosk",
+			"lon": 151.554573,
+			"lat": -33.234240,
+			"description": "The shops along Scenic Drive are within each reach of the path."
+		},
+		{
 			"type": "waypoint",
 			"photo": "dsc_8497.jpg",
 			"lon": 151.56191012002182,
 			"lat": -33.237599169976576,
 			"description": "Cross the bridge across Budgewoi Creek along the footpath."
+		},
+		{
+			"type": "toilet",
+			"lon": 151.563197,
+			"lat": -33.234927,
+			"description": "From the centre of Budgewoi follow the road along the caravan park."
 		},
 		{
 			"location": "Budgewoi",
@@ -128,7 +146,7 @@
 			"lon": 151.563496
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "dsc_8508.jpg",
 			"lon": 151.56478274999188,
 			"lat": -33.239598,
@@ -156,14 +174,14 @@
 			"description": "Follow the powerline trail to Munmorah."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "dsc_8523-dsc_8530.jpg",
 			"lon": 151.58616211000844,
 			"lat": -33.20790493000024,
 			"description": "From the end of the trail, cross the reserve at the boat ramp."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "dsc_8532.jpg",
 			"lon": 151.5864943099887,
 			"lat": -33.206022970000035,
@@ -232,6 +250,12 @@
 			"lon": 151.6192370200055,
 			"lat": -33.191296319995445,
 			"description": "The trail leads down to Frazer Beach."
+		},
+		{
+			"type": "toilet",
+			"lon": 151.621970,
+			"lat": -33.187007,
+			"description": "The campround at Frazer Beach has amenities."
 		},
 		{
 			"type": "waypoint",
@@ -322,7 +346,7 @@
 			"description": "Enter the surf club carpark on the right."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "dsc_8769.jpg",
 			"lon": 151.62832105004563,
 			"lat": -33.15756028998372,
@@ -434,6 +458,13 @@
 			"description": "Plan your return trip from Cave Beach using <a href=\"https://transportnsw.info/trip#/?from=Cave Beach\">transportnsw.info</a>.",
 			"lat": -33.109987,
 			"lon": 151.645422
+		},
+		{
+			"type": "toilet",
+			"photo": "dsc_8769.jpg",
+			"lon": 151.646434,
+			"lat": -33.109900,
+			"description": "There are amenities at the Cave Beach Surf Club."
 		},
 		{
 			"location": "Swansea",

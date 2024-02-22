@@ -118,6 +118,12 @@
 			"lat": -33.726155
 		},
 		{
+			"type": "toilet",
+			"description": "Across the road from the kiosk are amenities.",
+			"lon": 150.305080,
+			"lat": -33.725621
+		},
+		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240209_210204723.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
@@ -315,7 +321,7 @@
 			"lat": -33.731957
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "001_pxl_20240209_214010969.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 150.31251299992354,
@@ -581,7 +587,7 @@
 			"lat": -33.72528299991966
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "001_pxl_20240209_230753841.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 150.332855,
@@ -1051,7 +1057,7 @@
 			"lat": -33.7113
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "005_pxl_20240210_020842672.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 150.373343,

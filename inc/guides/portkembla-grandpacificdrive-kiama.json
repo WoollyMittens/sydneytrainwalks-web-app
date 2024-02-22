@@ -39,7 +39,7 @@
 			"description": "From the station cross the roundabout and follow Foreshore Road to the Breakwater Battery Museum."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "pc289383.jpg",
 			"lon": 150.913451,
 			"lat": -34.4758,
@@ -53,7 +53,7 @@
 			"description": "From there follow Gloucester Blvd to the end along the ocean. Then Olympic Blvd down to the surf club."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "pc289401_pc289403.jpg",
 			"lon": 150.90945277777777,
 			"lat": -34.49216944444444,
@@ -74,7 +74,7 @@
 			"description": "Cross the bridge across the lagoon and use staircase down into the reserve on the other side."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "pc289489_pc289495.jpg",
 			"lon": 150.86901111111112,
 			"lat": -34.543641666666666,
@@ -95,7 +95,7 @@
 			"description": "Follow the street around Barrack Point and follow the beach to the Shell Harbour Surf club."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pc289555_pc289559.jpg",
 			"lon": 150.87021388888888,
 			"lat": -34.576888888888895,
@@ -199,6 +199,12 @@
 			"lon": 150.858862,
 			"lat": -34.64927,
 			"description": "At the end fo the drive the road turns into a narrow footpath to Bombo Beach."
+		},
+		{
+			"type": "toilet",
+			"lon": 150.857648,
+			"lat": -34.653083,
+			"description": "From the car park follow the stairs to the beach."
 		},
 		{
 			"type": "waypoint",

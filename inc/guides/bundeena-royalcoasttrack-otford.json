@@ -39,7 +39,7 @@
 			"description": "After a short ride across Port Hacking, the ferry will arrive at the Bundeena ferry dock."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "p9285489_p3080052.jpg",
 			"lon": 151.15179700000002,
 			"lat": -34.083696,
@@ -241,7 +241,7 @@
 			"description": "The bush trail end at the top of a dam over Wattamolla Lagoon and continues across the picnic area on the other side."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "p9285664_p9285673.jpg",
 			"lon": 151.11463055555555,
 			"lat": -34.137930555555556,
@@ -301,7 +301,7 @@
 			"description": "The trail eventually leads to a high cliff overlooking Garie Beach. Carefully descend down to the beach."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "p9285802.jpg",
 			"lon": 151.0661388888889,
 			"lat": -34.171475,

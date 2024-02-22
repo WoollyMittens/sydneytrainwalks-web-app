@@ -73,7 +73,7 @@
 			"description": "Follow the trail along the water to the right."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "p2021384_p2021392.jpg",
 			"lon": 151.156425,
 			"lat": -33.65248333333333,
@@ -87,7 +87,7 @@
 			"description": "Follow the paved road on the other side of Apple Tree Bay to Bobbin Head."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "p2021402_p2021405.jpg",
 			"lon": 151.15910277777778,
 			"lat": -33.659727777777775,
@@ -192,6 +192,12 @@
 			"description": "Follow the left side of the picnic area and find the stone staircase going up, right before the Bobbin Head Inn."
 		},
 		{
+			"type": "info",
+			"lon": 151.148994,
+			"lat": -33.665544,
+			"description": "The Kalkari Visitor Centre has amenities."
+		},
+		{
 			"type": "waypoint",
 			"photo": "p2021600.jpg",
 			"lon": 151.15385,
@@ -204,6 +210,12 @@
 			"description": "From the park entrance gate, follow Ku-Ring-Gai Chase Road to Mount Colah Station.",
 			"lon": 151.12964722222222,
 			"lat": -33.67723611111111
+		},
+		{
+			"type": "toilet",
+			"description": "The sportfields down Myall Road have amenities.",
+			"lon": 151.118347,
+			"lat": -33.677453
 		},
 		{
 			"location": "Mount Colah",

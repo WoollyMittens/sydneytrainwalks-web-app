@@ -243,6 +243,13 @@
 			"optional": true
 		},
 		{
+			"type": "toilet",
+			"lon": 151.231345,
+			"lat": -33.546543,
+			"description": "The harbourside park has amenities.",
+			"optional": true
+		},
+		{
 			"location": "Hawkesbury River",
 			"type": "train",
 			"photo": "003_p7059343.jpg",

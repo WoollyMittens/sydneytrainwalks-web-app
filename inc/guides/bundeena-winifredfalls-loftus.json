@@ -39,7 +39,7 @@
 			"lat": -34.082694000000004
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "p5240086_p5240094.jpg",
 			"lon": 151.15131666666667,
 			"lat": -34.08326111111111,
@@ -116,7 +116,7 @@
 			"description": "Follow the road to the toilets at the far end of the campground."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "p5240218.jpg",
 			"lon": 151.13612799999999,
 			"lat": -34.083888,
@@ -144,7 +144,7 @@
 			"description": "The climb up to the ridge ends at a cul-de-sac of Pacific Crescent."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "p5240329.jpg",
 			"lon": 151.13027400000001,
 			"lat": -34.077858000000006,
@@ -386,7 +386,7 @@
 			"description": "A little bit beyond a staircase ends right in front the Visitor Centre."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "p5240622.jpg",
 			"lon": 151.05630100000002,
 			"lat": -34.074934000000006,
@@ -414,7 +414,7 @@
 			"description": "To the left a sign shows the steep descent up the Honeymoon Track. This is the shorter route up to the park office and car park."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "p5240688.jpg",
 			"description": "<i>+3km</i> If time allows follow the road to Reids Flat campground.",
 			"optional": true,
@@ -502,7 +502,7 @@
 			"optional": true
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "p5240843.jpg",
 			"lon": 151.05761900000002,
 			"lat": -34.062996,

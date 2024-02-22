@@ -46,7 +46,7 @@
 			"description": "Eventually the road crosses the railway tracks across a bridge into the National Park."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "p7250014.jpg",
 			"lon": 150.620925,
 			"lat": -33.778339,
@@ -123,7 +123,7 @@
 			"description": "Continue past the caves until you get to the carpark of Red Hand Caves."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "p7250116.jpg",
 			"lon": 150.590475,
 			"lat": -33.78369,
@@ -197,7 +197,7 @@
 			"lat": -33.799265999999996
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "p7250186.jpg",
 			"lon": 150.61650299992405,
 			"lat": -33.799276,

@@ -38,7 +38,7 @@
 			"description": "Follow Station Street to the shops."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "dsc_2895.jpg",
 			"lon": 150.44877375000002,
 			"lat": -34.451059029998156,
@@ -242,7 +242,7 @@
 			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "dsc_3030.jpg",
 			"lon": 150.49398329999391,
 			"lat": -34.3526957199961,
@@ -316,7 +316,13 @@
 			"description": "Follow East Parade to the preserved Buxton Station and shops."
 		},
 		{
-			"type": "hotspot",
+			"type": "toilet",
+			"lon": 150.533155,
+			"lat": -34.256889,
+			"description": "The playground has amenities."
+		},
+		{
+			"type": "kiosk",
 			"photo": "dsc_3091_dsc_3101.jpg",
 			"lon": 150.5334083,
 			"lat": -34.2555167,
@@ -392,6 +398,12 @@
 			"lon": 150.58905365004273,
 			"lat": -34.22426395999242,
 			"description": "Follow Pitt Street along the railway line to Tahmoor Station."
+		},
+		{
+			"type": "toilet",
+			"lon": 150.590916,
+			"lat": -34.224188,
+			"description": "The Lion's park across from the station has amenities."
 		},
 		{
 			"location": "Tahmoor",
