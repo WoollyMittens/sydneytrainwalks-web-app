@@ -7,7 +7,9 @@
 		"ipsum": "https://external.link/"
 	},
 	"distance": [
-		0
+		10,
+		19,
+		34
 	],
 	"hero": "",
 	"zoom": 13,
@@ -107,6 +109,13 @@
 			"description": "Follow the main road out of town to the roundabout near the motorway. Turn left to follow Dunmore Road."
 		},
 		{
+			"location": "Shell Harbour Junction",
+			"type": "train",
+			"description": "Get the train to/from Shell Harbour Junction using <a href=\"https://transportnsw.info/trip#/?to=Shell Harbour Junction\">transportnsw.info</a>.",
+			"lon": 150.845069,
+			"lat": -34.591388
+		},
+		{
 			"type": "waypoint",
 			"photo": "pc289589_pc289591.jpg",
 			"lon": 150.84574722222223,
@@ -137,6 +146,13 @@
 			"lon": 150.84615277777777,
 			"lat": -34.62180277777778,
 			"description": "Cross the lagoon across the bridge. Turn left into the first side street to find an underpass underneath the train tracks."
+		},
+		{
+			"location": "Minnamurra",
+			"type": "train",
+			"description": "Get the train to/from Minnamurra using <a href=\"https://transportnsw.info/trip#/?to=Minnamurra\">transportnsw.info</a>.",
+			"lon": 150.852322,
+			"lat": -34.625776
 		},
 		{
 			"type": "waypoint",

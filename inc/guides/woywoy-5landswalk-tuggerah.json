@@ -7,7 +7,9 @@
 		"ipsum": "https://external.link/"
 	},
 	"distance": [
-		0
+		28,
+		39,
+		51
 	],
 	"hero": "",
 	"zoom": 13,
@@ -531,6 +533,13 @@
 			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
+			"location": "Terrigal SLSC",
+			"type": "bus",
+			"description": "Get the train to/from the Terrigal SLSC using <a href=\"https://transportnsw.info/trip#/?to=Terrigal Surf Life Saving Club\">transportnsw.info</a>.",
+			"lon": 151.4443,
+			"lat": -33.446522
+		},
+		{
 			"type": "waypoint",
 			"photo": "dsc_1543.jpg",
 			"lon": 151.44405585996955,
@@ -698,6 +707,13 @@
 			"lon": 151.47573892999765,
 			"lat": -33.3729707700035,
 			"description": "Cross The Entrance Road at the traffic lights and follow it right along the footpath towards the Entrance."
+		},
+		{
+			"location": "Bateau Bay Square",
+			"type": "bus",
+			"description": "Get the train to/from Bateau Bay Square using <a href=\"https://transportnsw.info/trip#/?to=Bateau Bay Square\">transportnsw.info</a>.",
+			"lon": 151.473164,
+			"lat": -33.373268
 		},
 		{
 			"type": "waypoint",

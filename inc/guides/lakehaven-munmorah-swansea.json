@@ -7,7 +7,9 @@
 		"ipsum": "https://external.link/"
 	},
 	"distance": [
-		0
+		12,
+		25,
+		37
 	],
 	"hero": "",
 	"zoom": 13,
@@ -117,6 +119,13 @@
 			"lon": 151.56191012002182,
 			"lat": -33.237599169976576,
 			"description": "Cross the bridge across Budgewoi Creek along the footpath."
+		},
+		{
+			"location": "Budgewoi",
+			"type": "bus",
+			"description": "Get the bus from/to Budgewoi using <a href=\"https://transportnsw.info/trip#/?to=Budgewoi\">transportnsw.info</a>.",
+			"lat": -33.237796,
+			"lon": 151.563496
 		},
 		{
 			"type": "waypoint",

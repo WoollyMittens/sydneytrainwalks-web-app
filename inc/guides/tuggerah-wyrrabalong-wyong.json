@@ -7,7 +7,9 @@
 		"ipsum": "https://external.link/"
 	},
 	"distance": [
-		0
+		15,
+		39,
+		45
 	],
 	"hero": "",
 	"zoom": 13,
@@ -321,6 +323,13 @@
 			"lon": 151.498743,
 			"lat": -33.339893000000004,
 			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"location": "The Entrance",
+			"type": "bus",
+			"description": "Get the bus to/from The Entrance using <a href=\"https://transportnsw.info/trip#/?to=Torrens Ave after Coral St\">transportnsw.info</a>.",
+			"lon": 151.496733,
+			"lat": -33.341106
 		},
 		{
 			"type": "waypoint",
@@ -790,11 +799,12 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"location": "Rocky Point",
+			"type": "bus",
+			"description": "Get the bus from Rocky Point using <a href=\"https://transportnsw.info/trip#/?to=Wolseley Ave at Colblack Cl\">transportnsw.info</a>.",
 			"photo": "pxl_20231227_050308943.jpg",
 			"lon": 151.469398,
-			"lat": -33.291748999999996,
-			"description": "Lorem ipsum dolor sit amet."
+			"lat": -33.291748999999996
 		},
 		{
 			"type": "waypoint",

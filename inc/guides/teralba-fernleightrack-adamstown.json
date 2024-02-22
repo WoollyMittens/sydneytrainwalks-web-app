@@ -7,7 +7,9 @@
 		"ipsum": "https://external.link/"
 	},
 	"distance": [
-		0
+		18,
+		36,
+		40
 	],
 	"hero": "",
 	"zoom": 13,
@@ -521,11 +523,12 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"location": "Belmont",
+			"type": "bus",
 			"photo": "001_pxl_20240120_005703745.jpg",
+			"description": "Get the bus to Belmont using <a href=\"https://transportnsw.info/trip#/?to=Belmont\">transportnsw.info</a>.",
 			"lon": 151.659472,
-			"lat": -33.038138,
-			"description": "Lorem ipsum dolor sit amet."
+			"lat": -33.038138
 		},
 		{
 			"type": "waypoint",

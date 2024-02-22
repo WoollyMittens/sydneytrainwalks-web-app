@@ -7,7 +7,8 @@
 		"ipsum": "https://external.link/"
 	},
 	"distance": [
-		0
+		12,
+		25
 	],
 	"hero": "",
 	"zoom": 13,
@@ -171,6 +172,13 @@
 			"lon": 151.3387027777778,
 			"lat": -33.42977777777777,
 			"description": "Continue along the highway past the bridge over the railway tracks and continue along the lakefront."
+		},
+		{
+			"location": "Gosford",
+			"type": "train",
+			"description": "Get the train to Woy Woy using <a href=\"https://transportnsw.info/trip#/?to=Woy Woy\">transportnsw.info</a>.",
+			"lat": -33.423614,
+			"lon": 151.341524
 		},
 		{
 			"type": "waypoint",

@@ -7,7 +7,8 @@
 		"ipsum": "https://external.link/"
 	},
 	"distance": [
-		0
+		13,
+		34
 	],
 	"hero": "",
 	"zoom": 13,
@@ -374,9 +375,10 @@
 			"lat": -33.820640000000004
 		},
 		{
-			"type": "waypoint",
+			"location": "Meadowbank",
+			"type": "ferry",
 			"photo": "pxl_20240216_211834071.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Get the ferry (or train) to/from Meadowbank using <a href=\"https://transportnsw.info/trip#/?to=Meadowbank\">transportnsw.info</a>.",
 			"lon": 151.089619,
 			"lat": -33.820893000000005
 		},

@@ -32,7 +32,7 @@
 			],
 			"region": "Worimi",
 			"distance": [
-				0
+				35
 			],
 			"revised": "2014-03-21",
 			"transit": true,
@@ -68,7 +68,7 @@
 			],
 			"region": "Berowra Valley",
 			"distance": [
-				0
+				21
 			],
 			"revised": "2016-11-25",
 			"transit": true,
@@ -104,7 +104,7 @@
 			],
 			"region": "Grose Valley",
 			"distance": [
-				0
+				24
 			],
 			"revised": "2013-09-20",
 			"transit": true,
@@ -140,7 +140,7 @@
 			],
 			"region": "Grand Canyon",
 			"distance": [
-				0
+				18
 			],
 			"revised": "2013-02-02",
 			"transit": true,
@@ -184,8 +184,9 @@
 			],
 			"region": "Sydney Harbour",
 			"distance": [
-				35,
-				70
+				10,
+				33,
+				66
 			],
 			"revised": "2023-09-30",
 			"transit": true,
@@ -221,7 +222,8 @@
 			],
 			"region": "Royal National Park",
 			"distance": [
-				0
+				28,
+				34
 			],
 			"revised": "2013-09-27",
 			"transit": true,
@@ -265,7 +267,8 @@
 			],
 			"region": "Royal National Park",
 			"distance": [
-				0
+				20,
+				22
 			],
 			"revised": "2015-05-23",
 			"transit": true,
@@ -299,7 +302,7 @@
 			],
 			"region": "Lane Cove Park",
 			"distance": [
-				0
+				18
 			],
 			"revised": "2013-05-31",
 			"transit": true,
@@ -335,7 +338,7 @@
 			],
 			"region": "Coastal Walk",
 			"distance": [
-				0
+				6
 			],
 			"revised": "2023-11-18",
 			"transit": true,
@@ -371,7 +374,8 @@
 			],
 			"region": "Ku-ring-gai Chase",
 			"distance": [
-				0
+				15,
+				20
 			],
 			"revised": "2014-07-04",
 			"transit": true,
@@ -407,7 +411,8 @@
 			],
 			"region": "Lower Blue Mountains",
 			"distance": [
-				0
+				17,
+				21
 			],
 			"revised": "2015-07-24",
 			"transit": true,
@@ -449,7 +454,7 @@
 			],
 			"region": "Cumberland State Forest",
 			"distance": [
-				0
+				30
 			],
 			"revised": "2017-12-15",
 			"transit": true,
@@ -475,6 +480,29 @@
 					"lat": -33.71183895505965
 				},
 				{
+					"location": "Katoomba Falls",
+					"type": "bus",
+					"photo": "001_pxl_20240209_210053766.jpg",
+					"description": "Get the train to/from Katoomba Falls using <a href=\"https://transportnsw.info/trip#/?to=Katoomba Falls Kiosk\">transportnsw.info</a>.",
+					"lon": 150.303895,
+					"lat": -33.726155
+				},
+				{
+					"location": "Echo Point",
+					"type": "bus",
+					"photo": "001_pxl_20240209_213602289.jpg",
+					"description": "Get the train to/from Echo Point using <a href=\"https://transportnsw.info/trip#/?from=The Lookout Echo Point\">transportnsw.info</a>.",
+					"lon": 150.312352,
+					"lat": -33.731957
+				},
+				{
+					"location": "Conservation Hut",
+					"type": "bus",
+					"description": "Get the train to/from Katoomba Falls using <a href=\"https://transportnsw.info/trip#/?from=Conservation Hut Picnic Area\">transportnsw.info</a>.",
+					"lon": 150.365435,
+					"lat": -33.720162
+				},
+				{
 					"location": "Wentworth Falls",
 					"type": "train",
 					"photo": "005_pxl_20240210_022027695.jpg",
@@ -485,7 +513,9 @@
 			],
 			"region": "Grand Cliff Top Walk",
 			"distance": [
-				0
+				3,
+				12,
+				19
 			],
 			"revised": "2013-05-26",
 			"transit": true,
@@ -521,7 +551,7 @@
 			],
 			"region": "Kedumba Pass",
 			"distance": [
-				0
+				25
 			],
 			"revised": "2014-06-06",
 			"transit": true,
@@ -547,6 +577,13 @@
 					"lon": 151.505208
 				},
 				{
+					"location": "Budgewoi",
+					"type": "bus",
+					"description": "Get the bus from/to Budgewoi using <a href=\"https://transportnsw.info/trip#/?to=Budgewoi\">transportnsw.info</a>.",
+					"lat": -33.237796,
+					"lon": 151.563496
+				},
+				{
 					"location": "Cave Beach",
 					"type": "bus",
 					"photo": "dsc_8822.jpg",
@@ -565,7 +602,9 @@
 			],
 			"region": "Munmorah",
 			"distance": [
-				0
+				12,
+				25,
+				37
 			],
 			"revised": "2018-12-07",
 			"transit": true,
@@ -601,7 +640,7 @@
 			],
 			"region": "Botany Bay",
 			"distance": [
-				0
+				6
 			],
 			"revised": "2023-11-18",
 			"transit": true,
@@ -637,7 +676,7 @@
 			],
 			"region": "Box Vale",
 			"distance": [
-				0
+				17
 			],
 			"revised": "2016-05-06",
 			"transit": true,
@@ -673,7 +712,7 @@
 			],
 			"region": "Picton-Mittagong Loop",
 			"distance": [
-				0
+				38
 			],
 			"revised": "2019-02-15",
 			"transit": true,
@@ -717,7 +756,8 @@
 			],
 			"region": "Ku-ring-gai Chase",
 			"distance": [
-				0
+				10,
+				20
 			],
 			"revised": "2016-05-14",
 			"transit": true,
@@ -751,7 +791,7 @@
 			],
 			"region": "Berowra Valley",
 			"distance": [
-				0
+				18
 			],
 			"revised": "2013-12-20",
 			"transit": true,
@@ -785,7 +825,8 @@
 			],
 			"region": "Sphynx Memorial",
 			"distance": [
-				0
+				13,
+				25
 			],
 			"revised": "2014-02-01",
 			"transit": true,
@@ -810,6 +851,14 @@
 					"lat": -33.652868
 				},
 				{
+					"location": "Ku-Ring-Gai Wildflower Gardens",
+					"type": "bus",
+					"photo": "p8182673.jpg",
+					"lon": 151.17475539000014,
+					"lat": -33.71133804000673,
+					"description": "Get the bus to/from Ku-Ring-Gai Wildflower Gardens using <a href=\"https://transportnsw.info/trip#/?to=Ku-Ring-Gai Wildflower Gardens\">transportnsw.info</a>."
+				},
+				{
 					"location": "Roseville",
 					"type": "train",
 					"photo": "p8182943.jpg",
@@ -820,7 +869,8 @@
 			],
 			"region": "Garigal",
 			"distance": [
-				0
+				14,
+				31
 			],
 			"revised": "2013-08-17",
 			"transit": true,
@@ -856,7 +906,7 @@
 			],
 			"region": "Hassans Walls",
 			"distance": [
-				0
+				26
 			],
 			"revised": "2018-05-25",
 			"transit": true,
@@ -892,7 +942,7 @@
 			],
 			"region": "Mount York",
 			"distance": [
-				0
+				18
 			],
 			"revised": "2014-11-01",
 			"transit": true,
@@ -928,7 +978,9 @@
 			],
 			"region": "Port Stephens",
 			"distance": [
-				0
+				14,
+				25,
+				31
 			],
 			"revised": "2013-03-29",
 			"transit": true,
@@ -942,21 +994,30 @@
 		{
 			"key": "otford-grandpacificwalk-wollongong",
 			"type": "walk",
-			"lon": 150.9278057981,
-			"lat": -34.3145446479,
+			"lon": 150.9250482358,
+			"lat": -34.3181960564,
 			"locations": [
 				{
 					"location": "Otford",
 					"type": "train",
-					"photo": "pxl_20230901_213404134.jpg",
+					"photo": "001_pxl_20230901_213404134.jpg",
 					"description": "Get the train to Otford using <a href=\"https://transportnsw.info/trip#/?to=Otford\">transportnsw.info</a>.",
 					"lon": 151.0062912572,
 					"lat": -34.2103067134
 				},
 				{
+					"location": "Thirroul",
+					"type": "train",
+					"photo": "002_pxl_20211023_034425698.jpg",
+					"description": "Get the train from/to Thirroul using <a href=\"https://transportnsw.info/trip#/?to=Thirroul\">transportnsw.info</a>.",
+					"optional": true,
+					"lon": 150.918962,
+					"lat": -34.318175
+				},
+				{
 					"location": "Wollongong",
 					"type": "train",
-					"photo": "pxl_20230902_055254922.jpg",
+					"photo": "003_pxl_20230902_055254922.jpg",
 					"description": "Get the train to Wollongong using <a href=\"https://transportnsw.info/trip#/?to=Wollongong\">transportnsw.info</a>.",
 					"lon": 150.8881997969,
 					"lat": -34.4267116114
@@ -964,7 +1025,8 @@
 			],
 			"region": "Illawarra",
 			"distance": [
-				0
+				18,
+				36
 			],
 			"revised": "2023-09-02",
 			"transit": true,
@@ -1008,7 +1070,8 @@
 			],
 			"region": "Northern Beaches",
 			"distance": [
-				0
+				25,
+				40
 			],
 			"revised": "2017-10-20",
 			"transit": true,
@@ -1052,7 +1115,9 @@
 			],
 			"region": "Great West Walk",
 			"distance": [
-				0
+				18,
+				46,
+				64
 			],
 			"revised": "2019-10-18",
 			"transit": true,
@@ -1078,6 +1143,14 @@
 					"lat": -33.817284
 				},
 				{
+					"location": "Meadowbank",
+					"type": "ferry",
+					"photo": "pxl_20240216_211834071.jpg",
+					"description": "Get the ferry (or train) to/from Meadowbank using <a href=\"https://transportnsw.info/trip#/?to=Meadowbank\">transportnsw.info</a>.",
+					"lon": 151.089619,
+					"lat": -33.820893000000005
+				},
+				{
 					"location": "Chatswood",
 					"type": "train",
 					"photo": "pxl_20240217_033746270.jpg",
@@ -1088,7 +1161,8 @@
 			],
 			"region": "Parramatta River",
 			"distance": [
-				0
+				13,
+				34
 			],
 			"revised": "2013-12-30",
 			"transit": true,
@@ -1113,6 +1187,20 @@
 					"description": "Plan your return trip from Port Kembla at <a href=\"https://transportnsw.info/trip#/?from=Port Kembla\">transportnsw.info</a>."
 				},
 				{
+					"location": "Shell Harbour Junction",
+					"type": "train",
+					"description": "Get the train to/from Shell Harbour Junction using <a href=\"https://transportnsw.info/trip#/?to=Shell Harbour Junction\">transportnsw.info</a>.",
+					"lon": 150.845069,
+					"lat": -34.591388
+				},
+				{
+					"location": "Minnamurra",
+					"type": "train",
+					"description": "Get the train to/from Minnamurra using <a href=\"https://transportnsw.info/trip#/?to=Minnamurra\">transportnsw.info</a>.",
+					"lon": 150.852322,
+					"lat": -34.625776
+				},
+				{
 					"location": "Kiama",
 					"type": "train",
 					"description": "Get the train to Kiama using <a href=\"https://transportnsw.info/trip#/?to=Kiama\">transportnsw.info</a>.",
@@ -1122,7 +1210,9 @@
 			],
 			"region": "Illawarra",
 			"distance": [
-				0
+				10,
+				19,
+				34
 			],
 			"revised": "2013-12-27",
 			"transit": true,
@@ -1158,7 +1248,7 @@
 			],
 			"region": "Olympic Park",
 			"distance": [
-				0
+				18
 			],
 			"revised": "2024-01-15",
 			"transit": true,
@@ -1194,7 +1284,8 @@
 			],
 			"region": "Manly Dam",
 			"distance": [
-				0
+				24,
+				28
 			],
 			"revised": "2018-07-04",
 			"transit": true,
@@ -1230,7 +1321,8 @@
 			],
 			"region": "Springwood Ridge",
 			"distance": [
-				0
+				25,
+				30
 			],
 			"revised": "2017-06-02",
 			"transit": true,
@@ -1266,7 +1358,7 @@
 			],
 			"region": "Lost World Lookout",
 			"distance": [
-				0
+				19
 			],
 			"revised": "2014-03-29",
 			"transit": true,
@@ -1302,7 +1394,7 @@
 			],
 			"region": "Illawarra Escarpment",
 			"distance": [
-				0
+				18
 			],
 			"revised": "2012-12-08",
 			"transit": true,
@@ -1328,6 +1420,14 @@
 					"lat": -32.9623152595
 				},
 				{
+					"location": "Belmont",
+					"type": "bus",
+					"photo": "001_pxl_20240120_005703745.jpg",
+					"description": "Get the bus to Belmont using <a href=\"https://transportnsw.info/trip#/?to=Belmont\">transportnsw.info</a>.",
+					"lon": 151.659472,
+					"lat": -33.038138
+				},
+				{
 					"location": "Adamstown",
 					"type": "train",
 					"photo": "006_pxl_20240120_065700912.jpg",
@@ -1346,7 +1446,9 @@
 			],
 			"region": "Lake Macquarie",
 			"distance": [
-				0
+				18,
+				36,
+				40
 			],
 			"revised": "2019-02-22",
 			"transit": true,
@@ -1372,6 +1474,21 @@
 					"lat": -33.3079
 				},
 				{
+					"location": "The Entrance",
+					"type": "bus",
+					"description": "Get the bus to/from The Entrance using <a href=\"https://transportnsw.info/trip#/?to=Torrens Ave after Coral St\">transportnsw.info</a>.",
+					"lon": 151.496733,
+					"lat": -33.341106
+				},
+				{
+					"location": "Rocky Point",
+					"type": "bus",
+					"description": "Get the bus from Rocky Point using <a href=\"https://transportnsw.info/trip#/?to=Wolseley Ave at Colblack Cl\">transportnsw.info</a>.",
+					"photo": "pxl_20231227_050308943.jpg",
+					"lon": 151.469398,
+					"lat": -33.291748999999996
+				},
+				{
 					"location": "Wyong",
 					"type": "train",
 					"photo": "pxl_20231227_061501589.jpg",
@@ -1382,7 +1499,9 @@
 			],
 			"region": "Lake Tuggerah",
 			"distance": [
-				0
+				15,
+				39,
+				45
 			],
 			"revised": "2013-08-30",
 			"transit": true,
@@ -1434,7 +1553,8 @@
 			],
 			"region": "Heathcote National Park",
 			"distance": [
-				0
+				13,
+				26
 			],
 			"revised": "2018-12-23",
 			"transit": true,
@@ -1478,7 +1598,7 @@
 			],
 			"region": "Lady Carrington Drive",
 			"distance": [
-				0
+				22
 			],
 			"revised": "2013-02-16",
 			"transit": true,
@@ -1522,7 +1642,7 @@
 			],
 			"region": "Royal National Park",
 			"distance": [
-				0
+				38
 			],
 			"revised": "2013-02-16",
 			"transit": true,
@@ -1558,7 +1678,8 @@
 			],
 			"region": "Botany Bay",
 			"distance": [
-				0
+				22,
+				45
 			],
 			"revised": "2014-04-20",
 			"transit": true,
@@ -1584,6 +1705,20 @@
 					"lat": -33.48543
 				},
 				{
+					"location": "Terrigal SLSC",
+					"type": "bus",
+					"description": "Get the train to/from the Terrigal SLSC using <a href=\"https://transportnsw.info/trip#/?to=Terrigal Surf Life Saving Club\">transportnsw.info</a>.",
+					"lon": 151.4443,
+					"lat": -33.446522
+				},
+				{
+					"location": "Bateau Bay Square",
+					"type": "bus",
+					"description": "Get the train to/from Bateau Bay Square using <a href=\"https://transportnsw.info/trip#/?to=Bateau Bay Square\">transportnsw.info</a>.",
+					"lon": 151.473164,
+					"lat": -33.373268
+				},
+				{
 					"location": "Tuggerah",
 					"type": "train",
 					"photo": "dsc_1642.jpg",
@@ -1594,7 +1729,9 @@
 			],
 			"region": "Wyrrabalong",
 			"distance": [
-				0
+				28,
+				39,
+				51
 			],
 			"revised": "2018-05-04",
 			"transit": true,
@@ -1638,7 +1775,8 @@
 			],
 			"region": "Bouddi",
 			"distance": [
-				0
+				27,
+				37
 			],
 			"revised": "2019-09-13",
 			"transit": true,
@@ -1663,6 +1801,13 @@
 					"lon": 151.32345
 				},
 				{
+					"location": "Gosford",
+					"type": "train",
+					"description": "Get the train to Woy Woy using <a href=\"https://transportnsw.info/trip#/?to=Woy Woy\">transportnsw.info</a>.",
+					"lat": -33.423614,
+					"lon": 151.341524
+				},
+				{
 					"location": "Lisarow",
 					"type": "train",
 					"description": "Plan your return trip from Lisarow at <a href=\"https://transportnsw.info/trip#/?from=Lisarow\">transportnsw.info</a>.",
@@ -1672,7 +1817,8 @@
 			],
 			"region": "Rumbalara",
 			"distance": [
-				0
+				12,
+				25
 			],
 			"revised": "2013-09-14",
 			"transit": true,
@@ -1716,7 +1862,8 @@
 			],
 			"region": "Brisbane Water",
 			"distance": [
-				0
+				28,
+				45
 			],
 			"revised": "2024-01-12",
 			"transit": true,

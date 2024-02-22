@@ -7,7 +7,8 @@
 		"ipsum": "https://external.link/"
 	},
 	"distance": [
-		0
+		14,
+		31
 	],
 	"hero": "",
 	"zoom": 13,
@@ -188,12 +189,12 @@
 			"description": "From the picnic area follow the road out of the Wildflower Garden."
 		},
 		{
-			"type": "waypoint",
+			"location": "Ku-Ring-Gai Wildflower Gardens",
+			"type": "bus",
 			"photo": "p8182673.jpg",
 			"lon": 151.17475539000014,
 			"lat": -33.71133804000673,
-			"description": "<i>-16km</i> The bus stops near the Wildflower Garden allow for an early end to the walk.",
-			"optional": true
+			"description": "Get the bus to/from Ku-Ring-Gai Wildflower Gardens using <a href=\"https://transportnsw.info/trip#/?to=Ku-Ring-Gai Wildflower Gardens\">transportnsw.info</a>."
 		},
 		{
 			"type": "waypoint",
