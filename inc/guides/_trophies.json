@@ -406,9 +406,9 @@
 		{
 			"key": "portkembla-grandpacificdrive-kiama",
 			"type": "trophy",
-			"photo": "pc289600.jpg",
-			"lon": 150.8400771350448,
-			"lat": -34.6066732670053,
+			"photo": "pxl_20240223_024906147.jpg",
+			"lon": 150.8406277777778,
+			"lat": -34.60644444444445,
 			"radius": 0.0004,
 			"description": "As tempting as it is to throw in the towel right here, the next functioning train station is all the way through the wetlands ahead.",
 			"title": "The Train Does Not Stop Here Anymore",
@@ -417,13 +417,24 @@
 		{
 			"key": "portkembla-grandpacificdrive-kiama",
 			"type": "trophy",
-			"photo": "pc289656_pc289671.jpg",
+			"photo": "pxl_20240223_034600631.jpg",
 			"lon": 150.8608821863694,
 			"lat": -34.63073175185122,
 			"radius": 0.0004,
 			"description": "It'll never fit in a single view, too wide for your vision to contain.",
 			"title": "Too Big for the Photo",
 			"badge": "crop"
+		},
+		{
+			"key": "portkembla-grandpacificdrive-kiama",
+			"type": "trophy",
+			"photo": "pxl_20240223_054102545.jpg",
+			"lon": 150.86294166666667,
+			"lat": -34.67163333333333,
+			"radius": 0.0004,
+			"description": "More famous than Munmorah's, but they have the nicer beaches.",
+			"title": "The Big Hole",
+			"badge": "sink_bathroom"
 		},
 		{
 			"key": "springwood-bluegumswamp-richmond",
@@ -721,6 +732,17 @@
 			"description": "The fourth elusive biome of Wyrrabalong to collect. You would not expect it here.",
 			"title": "Four Seasons in One Day: Coastal Heathland",
 			"badge": "day_rain"
+		},
+		{
+			"key": "woywoy-mountelliot-lisarow",
+			"type": "trophy",
+			"photo": "002_img_20200530_142614.jpg",
+			"lon": 151.3242306,
+			"lat": -33.4781389,
+			"radius": 0.0004,
+			"description": "One of the few remaining Krillz not pillz graffiti dotted around Central Coast.",
+			"title": "A Whale of a Time",
+			"badge": "fish"
 		},
 		{
 			"key": "woywoy-mtwondabyne-gosford",

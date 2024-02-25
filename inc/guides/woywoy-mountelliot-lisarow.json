@@ -74,15 +74,15 @@
 			"lat": -33.481557
 		},
 		{
-				"type": "hotspot",
-				"photo": "002_img_20200530_142614.jpg",
-				"lon": 151.3242306,
-				"lat": -33.4781389,
-				"radius": 0.0004,
-				"description": "One of the few remaining Krillz not pillz graffiti dotted around Central Coast.",
-				"badge": "fish",
-				"title": "A Whale of a Time",
-				"instruction": "Visit this location to earn the mystery trophy"
+			"type": "hotspot",
+			"photo": "002_img_20200530_142614.jpg",
+			"lon": 151.3242306,
+			"lat": -33.4781389,
+			"radius": 0.0004,
+			"description": "One of the few remaining Krillz not pillz graffiti dotted around Central Coast.",
+			"badge": "fish",
+			"title": "A Whale of a Time",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",

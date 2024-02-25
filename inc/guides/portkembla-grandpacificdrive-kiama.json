@@ -27,252 +27,1544 @@
 		{
 			"location": "Port Kembla",
 			"type": "train",
-			"lat": -34.477161407,
-			"lon": 150.902664185,
-			"description": "Plan your return trip from Port Kembla at <a href=\"https://transportnsw.info/trip#/?from=Port Kembla\">transportnsw.info</a>."
+			"photo": "pxl_20240222_213459687.jpg",
+			"description": "Plan your return trip from Port Kembla at <a href=\"https://transportnsw.info/trip#/?from=Port Kembla\">transportnsw.info</a>.",
+			"lon": 150.90277215465903,
+			"lat": -34.477247865870595
 		},
 		{
 			"type": "waypoint",
-			"photo": "pc289380_pc289382.jpg",
-			"lon": 150.91294444444446,
-			"lat": -34.475905555555556,
-			"description": "From the station cross the roundabout and follow Foreshore Road to the Breakwater Battery Museum.",
-			"missing": true
-		},
-		{
-			"type": "kiosk",
-			"photo": "pc289383.jpg",
-			"lon": 150.913451,
-			"lat": -34.4758,
-			"description": "Walk past field of white pyramids out of the museum on the other side.",
-			"missing": true
+			"photo": "pxl_20240222_213506875.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.90262777777778,
+			"lat": -34.477294444444446
 		},
 		{
 			"type": "waypoint",
-			"photo": "pc289396_pc289398.jpg",
-			"lon": 150.91289444444445,
-			"lat": -34.48009166666667,
-			"description": "From there follow Gloucester Blvd to the end along the ocean. Then Olympic Blvd down to the surf club.",
-			"missing": true
-		},
-		{
-			"type": "kiosk",
-			"photo": "pc289401_pc289403.jpg",
-			"lon": 150.90945277777777,
-			"lat": -34.49216944444444,
-			"description": "From Port Kembla's surf club, follow the beach all the way to the far end.",
-			"missing": true
+			"photo": "pxl_20240222_213618471.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.9036111111111,
+			"lat": -34.47722777777778
 		},
 		{
 			"type": "waypoint",
-			"photo": "pc289465.jpg",
-			"lon": 150.87223600000002,
-			"lat": -34.535278999999996,
-			"description": "At the end of the beach follow one of the trail to the dunes past the holiday park.",
-			"missing": true
+			"photo": "pxl_20240222_213719350.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.9036111111111,
+			"lat": -34.47722777777778
 		},
 		{
 			"type": "waypoint",
-			"photo": "pc289472_pc289475.jpg",
-			"lon": 150.86788611111112,
-			"lat": -34.53473333333333,
-			"description": "Cross the bridge across the lagoon and use staircase down into the reserve on the other side.",
-			"missing": true
-		},
-		{
-			"type": "kiosk",
-			"photo": "pc289489_pc289495.jpg",
-			"lon": 150.86901111111112,
-			"lat": -34.543641666666666,
-			"description": "Follow the reserve along the lagoon back to the beach.",
-			"missing": true
+			"photo": "pxl_20240222_214136488.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.90815,
+			"lat": -34.47653888888889
 		},
 		{
 			"type": "waypoint",
-			"photo": "pc289504.jpg",
-			"lon": 150.86891300000002,
-			"lat": -34.560368,
-			"description": "Follow the bike path along the beach and cross the next lagoon across the pedestrian bridge at Barrack Point.",
-			"missing": true
+			"photo": "pxl_20240222_214553362.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.91165833333335,
+			"lat": -34.47552777777778
 		},
 		{
 			"type": "waypoint",
-			"photo": "pc289546_pc289549.jpg",
-			"lon": 150.87107222222224,
-			"lat": -34.56373055555555,
-			"description": "Follow the street around Barrack Point and follow the beach to the Shell Harbour Surf club.",
-			"missing": true
-		},
-		{
-			"type": "toilet",
-			"photo": "pc289555_pc289559.jpg",
-			"lon": 150.87021388888888,
-			"lat": -34.576888888888895,
-			"description": "From the surf club follow Wollongong St across the headland to Shell Harbour on the other side.",
-			"missing": true
+			"photo": "pxl_20240222_214632811.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.91165833333335,
+			"lat": -34.47552777777778
 		},
 		{
 			"type": "waypoint",
-			"photo": "pc289578.jpg",
-			"lon": 150.8484,
-			"lat": -34.590399000000005,
-			"description": "Follow the main road out of town to the roundabout near the motorway. Turn left to follow Dunmore Road.",
-			"missing": true
+			"photo": "pxl_20240222_214731833.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.91243333333333,
+			"lat": -34.47607777777778
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_214747603.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.91243333333333,
+			"lat": -34.47607777777778
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_214857358.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.91323888888888,
+			"lat": -34.475722222222224
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_214938530.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.91323888888888,
+			"lat": -34.475722222222224
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_214954544.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.913525,
+			"lat": -34.475636111111115
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_215208843.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.91359444444444,
+			"lat": -34.47712777777778
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_215516019.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.91293333333334,
+			"lat": -34.47944722222223
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_220624474.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.91525833333333,
+			"lat": -34.48708888888889
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_220633979.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.91525833333333,
+			"lat": -34.48708888888889
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_221309811.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.91228333333333,
+			"lat": -34.489175
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_221536238.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.91130833333335,
+			"lat": -34.490186111111115
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_221840549.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.90957777777777,
+			"lat": -34.49225833333333
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_221843870.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.90957777777777,
+			"lat": -34.49225833333333
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_222807531.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.90793055555557,
+			"lat": -34.49366111111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_223935836.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.90065,
+			"lat": -34.498336111111115
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_224237216.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8991638888889,
+			"lat": -34.49955555555556
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_234752346.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8744638888889,
+			"lat": -34.53734722222222
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_234911689.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.87439166666667,
+			"lat": -34.538269444444445
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_235305359.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.87451944444445,
+			"lat": -34.53986111111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_235522853.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.87447222222224,
+			"lat": -34.54218888888889
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_235710543.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.87320833333334,
+			"lat": -34.541736111111106
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_235830590.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8725638888889,
+			"lat": -34.54176111111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_000000679.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.87238611111113,
+			"lat": -34.54143611111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_000201209.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.87133055555557,
+			"lat": -34.53981666666667
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_000418775.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.87133055555557,
+			"lat": -34.53981666666667
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_000426108.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.87133055555557,
+			"lat": -34.53981666666667
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_000930869.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8702888888889,
+			"lat": -34.53626666666666
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_001036702.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8702888888889,
+			"lat": -34.53626666666666
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_001316957.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8700888888889,
+			"lat": -34.535577777777775
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_001534461.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8676,
+			"lat": -34.53536111111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_001743060.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86693055555557,
+			"lat": -34.53672777777778
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_001910955.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86650833333331,
+			"lat": -34.53760555555555
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_002041782.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86639166666666,
+			"lat": -34.53859444444444
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_002138301.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86647777777776,
+			"lat": -34.539294444444444
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_002334533.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86713055555558,
+			"lat": -34.54030833333333
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_002508164.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86780000000002,
+			"lat": -34.54128611111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_002527478.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86780000000002,
+			"lat": -34.54128611111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_002818055.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86852777777779,
+			"lat": -34.542944444444444
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_002824521.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86852777777779,
+			"lat": -34.542944444444444
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_003204796.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86852777777779,
+			"lat": -34.542944444444444
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_003305541.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8705111111111,
+			"lat": -34.545005555555555
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_003330977.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8698888888889,
+			"lat": -34.54581944444444
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_004306391.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8698888888889,
+			"lat": -34.54581944444444
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_004344222.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8701861111111,
+			"lat": -34.54605
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_004740197.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86894166666667,
+			"lat": -34.54885
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_005325781.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86894166666667,
+			"lat": -34.54885
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_005812234.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8679888888889,
+			"lat": -34.55596388888888
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_010354359.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8689888888889,
+			"lat": -34.55987222222222
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_010415114.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8689888888889,
+			"lat": -34.55987222222222
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_010506630.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.868875,
+			"lat": -34.56064444444444
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_010549357.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.868875,
+			"lat": -34.56064444444444
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_010612899.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86894444444445,
+			"lat": -34.56101666666667
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_010729042.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86991666666668,
+			"lat": -34.56117777777777
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_010957839.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8718861111111,
+			"lat": -34.56060833333333
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_011156414.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.87351111111113,
+			"lat": -34.561188888888886
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_011448533.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.87404166666667,
+			"lat": -34.56256111111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_011737929.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.87208611111112,
+			"lat": -34.563125
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_012039757.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.87208611111112,
+			"lat": -34.563125
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_012307828.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8695277777778,
+			"lat": -34.56501944444444
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_013207973.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86823055555556,
+			"lat": -34.5709
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_013541719.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86852222222223,
+			"lat": -34.572188888888896
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_013619232.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86911111111112,
+			"lat": -34.573397222222226
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_013649433.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86911111111112,
+			"lat": -34.573397222222226
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_013850248.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86911111111112,
+			"lat": -34.573397222222226
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_014049782.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8703111111111,
+			"lat": -34.574488888888894
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_014134508.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.87074444444445,
+			"lat": -34.575300000000006
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_014221738.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.87118333333333,
+			"lat": -34.57607777777778
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_014303816.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.87118333333333,
+			"lat": -34.57607777777778
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_014426676.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.87022777777779,
+			"lat": -34.57707222222223
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_014600068.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.87022777777779,
+			"lat": -34.57707222222223
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_014604356.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.87074722222223,
+			"lat": -34.57806666666667
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_014938662.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86885,
+			"lat": -34.578813888888895
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_015408123.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86805,
+			"lat": -34.578950000000006
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_015448668.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86660277777779,
+			"lat": -34.579636111111114
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_015914961.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86253055555554,
+			"lat": -34.58124444444445
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_020008326.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86253055555554,
+			"lat": -34.58124444444445
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_020152969.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86253055555554,
+			"lat": -34.58124444444445
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_020252182.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86145555555555,
+			"lat": -34.581297222222226
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_020512308.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85944722222223,
+			"lat": -34.58294166666667
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_021411464.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85944722222223,
+			"lat": -34.58294166666667
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_021628724.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85278888888888,
+			"lat": -34.588880555555555
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_021955638.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85011666666665,
+			"lat": -34.58997222222222
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_022100540.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85011666666665,
+			"lat": -34.58997222222222
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_022434281.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85011666666665,
+			"lat": -34.58997222222222
 		},
 		{
 			"location": "Shell Harbour Junction",
 			"type": "train",
+			"photo": "pxl_20240223_022724655.jpg",
 			"description": "Get the train to/from Shell Harbour Junction using <a href=\"https://transportnsw.info/trip#/?to=Shell Harbour Junction\">transportnsw.info</a>.",
 			"lon": 150.845069,
 			"lat": -34.591388
 		},
 		{
 			"type": "waypoint",
-			"photo": "pc289589_pc289591.jpg",
-			"lon": 150.84574722222223,
-			"lat": -34.59940277777778,
-			"description": "Follow Dunmore Road down to the now obsolete Dunmore Station and cross the train tracks there.",
-			"missing": true
+			"photo": "pxl_20240223_022929778.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.84849722222222,
+			"lat": -34.592850000000006
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_023140709.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.84808055555555,
+			"lat": -34.59621666666667
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_023145465.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.84808055555555,
+			"lat": -34.59621666666667
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_023317581.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.847925,
+			"lat": -34.597005555555555
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_023736311.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.84608611111113,
+			"lat": -34.59918888888889
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_024708412.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.84164722222224,
+			"lat": -34.60547777777778
 		},
 		{
 			"type": "hotspot",
-			"photo": "pc289600.jpg",
-			"lon": 150.8400771350448,
-			"lat": -34.6066732670053,
+			"photo": "pxl_20240223_024906147.jpg",
 			"radius": 0.0004,
 			"description": "As tempting as it is to throw in the towel right here, the next functioning train station is all the way through the wetlands ahead.",
 			"badge": "tank_1",
 			"title": "The Train Does Not Stop Here Anymore",
 			"instruction": "Visit this location to earn the mystery trophy",
-			"missing": true
+			"lon": 150.8406277777778,
+			"lat": -34.60644444444445
 		},
 		{
 			"type": "waypoint",
-			"photo": "pc289602.jpg",
-			"lon": 150.838513,
-			"lat": -34.610138999911186,
-			"description": "Across the tracks, follow the bike path along the motorway to the left.",
-			"missing": true
+			"photo": "pxl_20240223_024953443.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8406277777778,
+			"lat": -34.60644444444445
 		},
 		{
 			"type": "waypoint",
-			"photo": "pc289613_pc289616.jpg",
-			"lon": 150.84615277777777,
-			"lat": -34.62180277777778,
-			"description": "Cross the lagoon across the bridge. Turn left into the first side street to find an underpass underneath the train tracks.",
-			"missing": true
+			"photo": "pxl_20240223_025025862.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8399638888889,
+			"lat": -34.606700000000004
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_025058785.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8399638888889,
+			"lat": -34.606700000000004
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_025227657.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8399638888889,
+			"lat": -34.606700000000004
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_025305700.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.83909722222222,
+			"lat": -34.607925
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_025517899.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.83851944444444,
+			"lat": -34.609772222222226
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_025612797.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.83851944444444,
+			"lat": -34.609772222222226
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_025652044.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.83851944444444,
+			"lat": -34.609772222222226
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_025844319.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8385027777778,
+			"lat": -34.61171388888889
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_030026264.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.83868333333334,
+			"lat": -34.612825
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_030347545.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.83868333333334,
+			"lat": -34.612825
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_030406384.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.83979444444446,
+			"lat": -34.61526111111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_030825910.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.83979444444446,
+			"lat": -34.61526111111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_030957036.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.84255833333333,
+			"lat": -34.61863611111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_031047666.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.84255833333333,
+			"lat": -34.61863611111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_031212338.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.84255833333333,
+			"lat": -34.61863611111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_031422671.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8449888888889,
+			"lat": -34.62096944444445
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_031521979.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.84571111111111,
+			"lat": -34.621516666666665
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_031526784.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.84571111111111,
+			"lat": -34.621516666666665
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_031623986.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.84636111111112,
+			"lat": -34.62207222222222
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_031754158.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.84749166666668,
+			"lat": -34.62263611111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_031827679.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.84749166666668,
+			"lat": -34.62263611111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_032031473.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.84749166666668,
+			"lat": -34.62263611111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_032154622.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8490638888889,
+			"lat": -34.62189166666667
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_032240962.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8492,
+			"lat": -34.621916666666664
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_032538777.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85084444444445,
+			"lat": -34.62383888888889
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_032631179.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8512472222222,
+			"lat": -34.624291666666664
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_032917557.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8512472222222,
+			"lat": -34.624291666666664
 		},
 		{
 			"location": "Minnamurra",
 			"type": "train",
-			"description": "Get the train to/from Minnamurra using <a href=\"https://transportnsw.info/trip#/?to=Minnamurra\">transportnsw.info</a>.",
-			"lon": 150.852322,
-			"lat": -34.625776
+			"photo": "pxl_20240223_032931946.jpg",
+			"description": "Get the train to Minnamurra using <a href=\"https://transportnsw.info/trip#/?to=Minnamurra\">transportnsw.info</a>.",
+			"lon": 150.8529361111111,
+			"lat": -34.62613611111111
 		},
 		{
 			"type": "waypoint",
-			"photo": "pc289643_pc289646.jpg",
-			"lon": 150.8595222222222,
-			"lat": -34.62983333333333,
-			"description": "Follow Charles Ave past several reserves on the left. The last one, called James Oates Reserve, connects to the headland.",
-			"missing": true
+			"photo": "pxl_20240223_033017432.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85315555555556,
+			"lat": -34.626219444444445
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_033154706.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8537722222222,
+			"lat": -34.62577777777778
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_033249726.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85458888888888,
+			"lat": -34.62596111111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_033335942.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85458888888888,
+			"lat": -34.62596111111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_033528725.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.855775,
+			"lat": -34.626891666666666
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_033541227.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.855775,
+			"lat": -34.626891666666666
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_033758015.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8562388888889,
+			"lat": -34.62884722222222
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_033956204.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85776666666666,
+			"lat": -34.62875833333334
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_034052752.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85776666666666,
+			"lat": -34.62875833333334
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_034144314.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8587222222222,
+			"lat": -34.62931666666667
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_034553070.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86073888888887,
+			"lat": -34.630605555555555
 		},
 		{
 			"type": "hotspot",
-			"photo": "pc289656_pc289671.jpg",
+			"photo": "pxl_20240223_034600631.jpg",
 			"lon": 150.8608821863694,
 			"lat": -34.63073175185122,
 			"radius": 0.0004,
 			"description": "It'll never fit in a single view, too wide for your vision to contain.",
 			"badge": "crop",
 			"title": "Too Big for the Photo",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_034607242.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86073888888887,
+			"lat": -34.630605555555555
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_034659073.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86108888888887,
+			"lat": -34.63119722222222
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_034739678.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86108888888887,
+			"lat": -34.63119722222222
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_035213071.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.860075,
+			"lat": -34.63301666666667
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_035314953.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85927222222222,
+			"lat": -34.633075
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_035404266.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8590888888889,
+			"lat": -34.633325
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_035532885.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85775555555554,
+			"lat": -34.633291666666665
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_035646614.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85814444444443,
+			"lat": -34.634227777777774
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_035936694.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85735277777778,
+			"lat": -34.634819444444446
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_035959746.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85646944444443,
+			"lat": -34.635244444444446
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_040148798.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85670277777777,
+			"lat": -34.63621944444444
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_040753649.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85576944444443,
+			"lat": -34.6394
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_040920883.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85451944444443,
+			"lat": -34.639783333333334
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_041016789.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85451944444443,
+			"lat": -34.639783333333334
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_041224923.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85326666666666,
+			"lat": -34.641352777777776
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_041513942.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8534611111111,
+			"lat": -34.643411111111114
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_041753543.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85475833333334,
+			"lat": -34.644758333333336
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_041929637.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8554722222222,
+			"lat": -34.64561944444444
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_042147172.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8554722222222,
+			"lat": -34.64561944444444
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_042152431.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85635,
+			"lat": -34.646994444444445
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_042201164.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85635,
+			"lat": -34.646994444444445
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_042212925.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85635,
+			"lat": -34.646994444444445
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_042453719.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8582111111111,
+			"lat": -34.6483
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_042738956.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8582111111111,
+			"lat": -34.6483
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_043020387.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85868055555554,
+			"lat": -34.64896111111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_043202916.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85899166666667,
+			"lat": -34.650838888888885
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_043355417.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85889444444445,
+			"lat": -34.65333333333333
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_043433375.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85889444444445,
+			"lat": -34.65333333333333
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_043536775.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85889444444445,
+			"lat": -34.65333333333333
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_043824982.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85768333333334,
+			"lat": -34.65312222222222
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_044010942.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85758611111112,
+			"lat": -34.65408611111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_044201096.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85670555555555,
+			"lat": -34.655205555555554
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_044742214.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85516666666666,
+			"lat": -34.65831111111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_044805693.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85516666666666,
+			"lat": -34.65831111111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_045437846.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85442777777777,
+			"lat": -34.66316111111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_045913717.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85442777777777,
+			"lat": -34.66316111111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_045916349.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85463055555556,
+			"lat": -34.66368333333333
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_050212175.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85463055555556,
+			"lat": -34.66368333333333
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_050340942.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85369444444444,
+			"lat": -34.663516666666666
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_050524868.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85301388888888,
+			"lat": -34.66299444444444
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_051302029.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.852,
+			"lat": -34.663152777777775
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_051507214.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8525388888889,
+			"lat": -34.664144444444446
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_051550849.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85253055555555,
+			"lat": -34.66413611111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_052012207.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8547888888889,
+			"lat": -34.66720833333333
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_052135222.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85471944444444,
+			"lat": -34.66696111111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_052253902.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85438333333332,
+			"lat": -34.667516666666664
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_052514606.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85550555555554,
+			"lat": -34.668375
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_052546510.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85550555555554,
+			"lat": -34.668375
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_052635473.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85589444444443,
+			"lat": -34.66931388888889
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_052719247.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85342777777777,
+			"lat": -34.66978611111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_053015438.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8557111111111,
+			"lat": -34.669711111111106
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_053101117.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85732222222222,
+			"lat": -34.671619444444445
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_053257969.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85871388888887,
+			"lat": -34.671166666666664
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_053555430.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85871666666665,
+			"lat": -34.671163888888884
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_053707116.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86121666666665,
+			"lat": -34.67033611111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_053810626.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86121666666665,
+			"lat": -34.67033611111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_053857989.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86224444444443,
+			"lat": -34.67066111111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_053947171.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86224444444443,
+			"lat": -34.67066111111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_054024879.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86320277777776,
+			"lat": -34.671327777777776
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_054102545.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86294166666667,
+			"lat": -34.67163333333333
+		},
+		{
+			"type": "hotspot",
+			"photo": "pxl_20240223_054102545.jpg",
+			"radius": 0.0004,
+			"description": "More famous than Munmorah's, but they have the nicer beaches.",
+			"badge": "sink_bathroom",
+			"title": "The Big Hole",
 			"instruction": "Visit this location to earn the mystery trophy",
-			"missing": true
+			"lon": 150.86294166666667,
+			"lat": -34.67163333333333
 		},
 		{
 			"type": "waypoint",
-			"photo": "pc289673.jpg",
-			"lon": 150.861201,
-			"lat": -34.631595,
-			"description": "Along the headland follow the signs for the Kiama Coastal walk.",
-			"missing": true
+			"photo": "pxl_20240223_054236819.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86294166666667,
+			"lat": -34.67163333333333
 		},
 		{
 			"type": "waypoint",
-			"photo": "pc289674.jpg",
-			"lon": 150.861128,
-			"lat": -34.631818,
-			"description": "Follow the path along the headland and down to the beach on the other side.",
-			"missing": true
+			"photo": "pxl_20240223_054241273.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86276944444444,
+			"lat": -34.67174166666666
 		},
 		{
 			"type": "waypoint",
-			"photo": "pc289681.jpg",
-			"lon": 150.855042,
-			"lat": -34.645075999999996,
-			"description": "At the end of the beach follow Cliff Drive past the Cathedral Rocks.",
-			"missing": true
+			"photo": "pxl_20240223_054311385.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86276944444444,
+			"lat": -34.67174166666666
 		},
 		{
 			"type": "waypoint",
-			"photo": "pc289687.jpg",
-			"lon": 150.858862,
-			"lat": -34.64927,
-			"description": "At the end fo the drive the road turns into a narrow footpath to Bombo Beach.",
-			"missing": true
-		},
-		{
-			"type": "toilet",
-			"lon": 150.857648,
-			"lat": -34.653083,
-			"description": "From the car park follow the stairs to the beach."
+			"photo": "pxl_20240223_054421471.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86235833333333,
+			"lat": -34.672180555555556
 		},
 		{
 			"type": "waypoint",
-			"photo": "pc289705_pc289709.jpg",
-			"lon": 150.8535388888889,
-			"lat": -34.66341944444444,
-			"description": "Follow the beach, cross the lagoon, and find the path up under the rail bridge.",
-			"missing": true
+			"photo": "pxl_20240223_054542697.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86235833333333,
+			"lat": -34.672180555555556
 		},
 		{
 			"type": "waypoint",
-			"photo": "pc289710.jpg",
-			"lon": 150.852845,
-			"lat": -34.664105,
-			"description": "Follow the roads closest to the ocean along the headland.",
-			"missing": true
+			"photo": "pxl_20240223_055354466.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86075555555556,
+			"lat": -34.67245277777778
 		},
 		{
 			"type": "waypoint",
-			"photo": "pc289720_pc289721.jpg",
-			"lon": 150.85700277777778,
-			"lat": -34.66826111111111,
-			"description": "On the other side of the headland, Blowhole Point and the lighthouse will be visible across the bay.",
-			"missing": true
+			"photo": "pxl_20240223_055700989.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.86075555555556,
+			"lat": -34.67245277777778
 		},
 		{
 			"type": "waypoint",
-			"photo": "pc289752.jpg",
-			"lon": 150.862729,
-			"lat": -34.671644,
-			"description": "Follow the path around the harbour to visit the lighhouse and blowhole.",
-			"missing": true
+			"photo": "pxl_20240223_055831172.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85689444444444,
+			"lat": -34.671680555555554
 		},
 		{
 			"type": "waypoint",
-			"photo": "pc289758_pc289767.jpg",
-			"lon": 150.86095833333331,
-			"lat": -34.67050277777778,
-			"description": "Along the road from the lighthouse back to the shops, follow Railway Pde on the left to the station.",
-			"missing": true
+			"photo": "pxl_20240223_055904777.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85689444444444,
+			"lat": -34.671680555555554
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_060004583.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85689444444444,
+			"lat": -34.671680555555554
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_060010434.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85576666666665,
+			"lat": -34.67092222222222
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_060632236.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8535861111111,
+			"lat": -34.66914444444444
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_061938524.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.8535861111111,
+			"lat": -34.66914444444444
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_062102104.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85525277777776,
+			"lat": -34.670744444444445
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_062149703.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85455277777777,
+			"lat": -34.67220277777778
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_062235263.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 150.85455277777777,
+			"lat": -34.67220277777778
 		},
 		{
 			"location": "Kiama",
 			"type": "train",
+			"photo": "pxl_20240223_062250878.jpg",
 			"description": "Get the train to Kiama using <a href=\"https://transportnsw.info/trip#/?to=Kiama\">transportnsw.info</a>.",
-			"lon": 150.854614,
-			"lat": -34.672249
+			"lon": 150.85472121834755,
+			"lat": -34.67259692028165
 		}
 	]
 }

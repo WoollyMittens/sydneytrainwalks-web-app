@@ -1190,13 +1190,15 @@
 				{
 					"location": "Port Kembla",
 					"type": "train",
-					"lat": -34.477161407,
-					"lon": 150.902664185,
-					"description": "Plan your return trip from Port Kembla at <a href=\"https://transportnsw.info/trip#/?from=Port Kembla\">transportnsw.info</a>."
+					"photo": "pxl_20240222_213459687.jpg",
+					"description": "Plan your return trip from Port Kembla at <a href=\"https://transportnsw.info/trip#/?from=Port Kembla\">transportnsw.info</a>.",
+					"lon": 150.90277215465903,
+					"lat": -34.477247865870595
 				},
 				{
 					"location": "Shell Harbour Junction",
 					"type": "train",
+					"photo": "pxl_20240223_022724655.jpg",
 					"description": "Get the train to/from Shell Harbour Junction using <a href=\"https://transportnsw.info/trip#/?to=Shell Harbour Junction\">transportnsw.info</a>.",
 					"lon": 150.845069,
 					"lat": -34.591388
@@ -1204,16 +1206,18 @@
 				{
 					"location": "Minnamurra",
 					"type": "train",
-					"description": "Get the train to/from Minnamurra using <a href=\"https://transportnsw.info/trip#/?to=Minnamurra\">transportnsw.info</a>.",
-					"lon": 150.852322,
-					"lat": -34.625776
+					"photo": "pxl_20240223_032931946.jpg",
+					"description": "Get the train to Minnamurra using <a href=\"https://transportnsw.info/trip#/?to=Minnamurra\">transportnsw.info</a>.",
+					"lon": 150.8529361111111,
+					"lat": -34.62613611111111
 				},
 				{
 					"location": "Kiama",
 					"type": "train",
+					"photo": "pxl_20240223_062250878.jpg",
 					"description": "Get the train to Kiama using <a href=\"https://transportnsw.info/trip#/?to=Kiama\">transportnsw.info</a>.",
-					"lon": 150.854614,
-					"lat": -34.672249
+					"lon": 150.85472121834755,
+					"lat": -34.67259692028165
 				}
 			],
 			"region": "Illawarra",
@@ -1225,8 +1229,8 @@
 			"revised": "2013-12-27",
 			"transit": true,
 			"car": false,
-			"kiosks": 3,
-			"toilets": 2,
+			"kiosks": 0,
+			"toilets": 0,
 			"looped": false,
 			"rain": true,
 			"fireban": true
