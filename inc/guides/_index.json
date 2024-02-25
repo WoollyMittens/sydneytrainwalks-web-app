@@ -74,7 +74,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
-			"toilets": 0,
+			"toilets": 1,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -146,7 +146,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
-			"toilets": 0,
+			"toilets": 1,
 			"looped": true,
 			"rain": false,
 			"fireban": false
@@ -164,6 +164,14 @@
 					"lon": 151.272466,
 					"lat": -33.895572,
 					"description": "Take the bus to Bondi Beach using <a href=\"https://transportnsw.info/trip#/?to=G202652\">transportnsw.info</a>."
+				},
+				{
+					"location": "Watsons Bay",
+					"type": "ferry",
+					"photo": "001_pxl_20230930_001006750.jpg",
+					"lon": 151.281869,
+					"lat": -33.84357,
+					"description": "Take the ferry to Watsons Bay using <a href=\"https://transportnsw.info/trip#/?to=Watsons Bay\">transportnsw.info</a>."
 				},
 				{
 					"location": "Milsons Point",
@@ -191,8 +199,8 @@
 			"revised": "2023-09-30",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 4,
+			"toilets": 9,
 			"looped": false,
 			"rain": true,
 			"fireban": false
@@ -228,8 +236,8 @@
 			"revised": "2013-09-27",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 1,
+			"toilets": 2,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -273,8 +281,8 @@
 			"revised": "2015-05-23",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 2,
+			"toilets": 4,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -343,8 +351,8 @@
 			"revised": "2023-11-18",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 3,
+			"toilets": 2,
 			"looped": false,
 			"rain": true,
 			"fireban": true
@@ -381,7 +389,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
-			"toilets": 0,
+			"toilets": 1,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -418,7 +426,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
-			"toilets": 0,
+			"toilets": 3,
 			"looped": true,
 			"rain": false,
 			"fireban": false
@@ -459,7 +467,7 @@
 			"revised": "2017-12-15",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
+			"kiosks": 2,
 			"toilets": 0,
 			"looped": false,
 			"rain": false,
@@ -521,7 +529,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 1,
-			"toilets": 0,
+			"toilets": 4,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -557,7 +565,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
-			"toilets": 0,
+			"toilets": 1,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -609,8 +617,8 @@
 			"revised": "2018-12-07",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 2,
+			"toilets": 8,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -646,7 +654,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
-			"toilets": 0,
+			"toilets": 1,
 			"looped": true,
 			"rain": true,
 			"fireban": true
@@ -682,7 +690,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
-			"toilets": 0,
+			"toilets": 1,
 			"looped": true,
 			"rain": false,
 			"fireban": false
@@ -717,8 +725,8 @@
 			"revised": "2019-02-15",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 2,
+			"toilets": 3,
 			"looped": false,
 			"rain": true,
 			"fireban": true
@@ -796,7 +804,7 @@
 			"revised": "2013-12-20",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
+			"kiosks": 1,
 			"toilets": 0,
 			"looped": false,
 			"rain": false,
@@ -831,8 +839,8 @@
 			"revised": "2014-02-01",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 1,
+			"toilets": 2,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -1176,8 +1184,8 @@
 		{
 			"key": "portkembla-grandpacificdrive-kiama",
 			"type": "walk",
-			"lon": 150.865936,
-			"lat": -34.579792,
+			"lon": 150.8705369476229,
+			"lat": -34.57827343605459,
 			"locations": [
 				{
 					"location": "Port Kembla",
@@ -1217,8 +1225,8 @@
 			"revised": "2013-12-27",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 3,
+			"toilets": 2,
 			"looped": false,
 			"rain": true,
 			"fireban": true
@@ -1656,8 +1664,8 @@
 		{
 			"key": "wollicreek-kamaybotanybay-cronulla",
 			"type": "walk",
-			"lon": 151.1762166582,
-			"lat": -34.0255036857,
+			"lon": 151.1777510494,
+			"lat": -34.0260492638,
 			"locations": [
 				{
 					"location": "Wolli Creek",
@@ -1790,29 +1798,32 @@
 		{
 			"key": "woywoy-mountelliot-lisarow",
 			"type": "walk",
-			"lon": 151.313507,
-			"lat": -33.443806,
+			"lon": 151.325714,
+			"lat": -33.427258,
 			"locations": [
 				{
 					"location": "Woy Woy",
 					"type": "train",
+					"photo": "001_pxl_20240224_190726614.jpg",
 					"description": "Get the train to Woy Woy using <a href=\"https://transportnsw.info/trip#/?to=Woy Woy\">transportnsw.info</a>.",
-					"lat": -33.485393,
-					"lon": 151.32345
+					"lon": 151.323684,
+					"lat": -33.48597
 				},
 				{
 					"location": "Gosford",
 					"type": "train",
-					"description": "Get the train to Woy Woy using <a href=\"https://transportnsw.info/trip#/?to=Woy Woy\">transportnsw.info</a>.",
-					"lat": -33.423614,
-					"lon": 151.341524
+					"photo": "004_pxl_20240224_225001513.jpg",
+					"description": "Get the train to/from Gosford using <a href=\"https://transportnsw.info/trip#/?to=Gosford\">transportnsw.info</a>.",
+					"lon": 151.341275,
+					"lat": -33.423562
 				},
 				{
 					"location": "Lisarow",
 					"type": "train",
+					"photo": "004_pxl_20240225_014641733.jpg",
 					"description": "Plan your return trip from Lisarow at <a href=\"https://transportnsw.info/trip#/?from=Lisarow\">transportnsw.info</a>.",
-					"lat": -33.382299,
-					"lon": 151.370041
+					"lon": 151.370173,
+					"lat": -33.382328
 				}
 			],
 			"region": "Rumbalara",
