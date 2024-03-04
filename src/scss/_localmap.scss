@@ -399,6 +399,9 @@
 			scroll-snap-align: start;
 			margin-left: 1px;
 			position: relative;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
 
 			@media (max-width:959px) {
 				min-width: 50vw;
@@ -488,13 +491,11 @@
 
 		&-optional {
 			background-color: #00C85333;
-			padding: 0 1.25rem;
 		}
 
 		&-detour,
 		&-warning {
 			background-color: #FFD60033;
-			padding: 0 1.25rem;
 		}
 
 		&-hotspot {
@@ -503,27 +504,34 @@
 
 		&-train {
 			background-color: #F57C0033;
-			padding: 0 1.25rem;
+
+			&.localmap-legend-image {
+				background-image: linear-gradient(0deg, #FFFFFF66, #FFFFFF66), linear-gradient(0deg, #F57C0066, #F57C0066), url(../img/placeholder-train.jpg);
+			}
 		}
 
 		&-tram {
 			background-color: #D32F2F33;
-			padding: 0 1.25rem;
+
+			&.localmap-legend-image {
+				background-image: linear-gradient(0deg, #FFFFFF66, #FFFFFF66), linear-gradient(0deg, #D32F2F66, #D32F2F66), url(../img/placeholder-tram.jpg);
+			}
 		}
 
 		&-bus {
 			background-color: #03A9F433;
-			padding: 0 1.25rem;
+
+			&.localmap-legend-image {
+				background-image: linear-gradient(0deg, #FFFFFF66, #FFFFFF66), linear-gradient(0deg, #03A9F466, #03A9F466), url(../img/placeholder-bus.jpg);
+			}
 		}
 
 		&-ferry {
 			background-color: #7CB34233;
-			padding: 0 1.25rem;
-		}
 
-		&-car {
-			background-color: #0D47A133;
-			padding: 0 1.25rem;
+			&.localmap-legend-image {
+				background-image: linear-gradient(0deg, #FFFFFF66, #FFFFFF66), linear-gradient(0deg, #7CB34266, #7CB34266), url(../img/placeholder-ferry.jpg);
+			}
 		}
 	}
 }

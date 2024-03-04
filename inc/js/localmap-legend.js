@@ -99,6 +99,8 @@ export class Legend {
 			definitionTitle.innerHTML = "";
 			if (photo) { definitionTitle.innerHTML += `<img class="localmap-legend-photo" alt="" src="${photo}"/>`; definitionTitle.style.backgroundImage = `url("${photo}")`; }
 			if (icon) { definitionTitle.innerHTML += `<img class="localmap-legend-icon" alt="${markerData.type}" src="${icon}"/>`; }
+			if (markerData.optional) { definitionTitle.className += " localmap-legend-optional"; }
+			if (markerData.type) { definitionTitle.className += ` localmap-legend-${markerData.type}`; }
 			fragment.appendChild(definitionTitle);
 			// add the description
 			var definitionDescription = document.createElement("dd");

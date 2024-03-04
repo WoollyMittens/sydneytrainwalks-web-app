@@ -79,8 +79,8 @@ function generateGuideIndex(guides) {
 			'revised': guide.updated,
 			'transit': (start.type !== 'car' && end.type !== 'car'),
 			'car': (start.type === 'car' || end.type === 'car'),
-			'kiosks': guide.markers.filter(marker => marker.type === 'kiosk').length,
-			'toilets': guide.markers.filter(marker => marker.type === 'toilet').length,
+			'kiosks': guide.markers.filter(marker => /kiosk/i.test(marker.type)).length,
+			'toilets': guide.markers.filter(marker => /kiosk|toilet/i.test(marker.type)).length,
 			'looped': (start.location === end.location),
 			'rain': guide.rain,
 			'fireban': guide.fireban

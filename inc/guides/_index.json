@@ -200,7 +200,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 4,
-			"toilets": 9,
+			"toilets": 13,
 			"looped": false,
 			"rain": true,
 			"fireban": false
@@ -237,7 +237,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 1,
-			"toilets": 2,
+			"toilets": 3,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -282,7 +282,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 2,
-			"toilets": 4,
+			"toilets": 6,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -290,22 +290,24 @@
 		{
 			"key": "chatswood-lanecovepark-thornleigh",
 			"type": "walk",
-			"lon": 151.120513916,
-			"lat": -33.76725769,
+			"lon": 151.1306127347052,
+			"lat": -33.772125290706754,
 			"locations": [
 				{
 					"location": "Chatswood",
 					"type": "train",
+					"photo": "pxl_20240301_192259897.jpg",
 					"description": "Get the train to Chatswood using <a href=\"https://transportnsw.info/trip#/?to=Chatswood\">transportnsw.info</a>.",
-					"lon": 151.181376,
-					"lat": -33.797771999999995
+					"lon": 151.1811667587608,
+					"lat": -33.798219161108136
 				},
 				{
 					"location": "Thornleigh",
 					"type": "train",
+					"photo": "pxl_20240302_003212593.jpg",
 					"description": "Plan your return trip from Thornleigh at <a href=\"https://transportnsw.info/trip#/?from=Thornleigh\">transportnsw.info</a>.",
-					"lon": 151.078567505,
-					"lat": -33.731884003
+					"lon": 151.07832105830312,
+					"lat": -33.731659557670355
 				}
 			],
 			"region": "Lane Cove Park",
@@ -352,7 +354,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 3,
-			"toilets": 2,
+			"toilets": 5,
 			"looped": false,
 			"rain": true,
 			"fireban": true
@@ -468,7 +470,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 2,
-			"toilets": 0,
+			"toilets": 2,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -529,7 +531,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 1,
-			"toilets": 4,
+			"toilets": 5,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -618,7 +620,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 2,
-			"toilets": 8,
+			"toilets": 10,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -726,7 +728,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 2,
-			"toilets": 3,
+			"toilets": 5,
 			"looped": false,
 			"rain": true,
 			"fireban": true
@@ -805,7 +807,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 1,
-			"toilets": 0,
+			"toilets": 1,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -840,7 +842,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 1,
-			"toilets": 2,
+			"toilets": 3,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -1465,7 +1467,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 1,
-			"toilets": 1,
+			"toilets": 2,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -1718,14 +1720,14 @@
 				{
 					"location": "Terrigal SLSC",
 					"type": "bus",
-					"description": "Get the train to/from the Terrigal SLSC using <a href=\"https://transportnsw.info/trip#/?to=Terrigal Surf Life Saving Club\">transportnsw.info</a>.",
+					"description": "Get the bus to/from the Terrigal SLSC using <a href=\"https://transportnsw.info/trip#/?to=Terrigal Surf Life Saving Club\">transportnsw.info</a>.",
 					"lon": 151.4443,
 					"lat": -33.446522
 				},
 				{
 					"location": "Bateau Bay Square",
 					"type": "bus",
-					"description": "Get the train to/from Bateau Bay Square using <a href=\"https://transportnsw.info/trip#/?to=Bateau Bay Square\">transportnsw.info</a>.",
+					"description": "Get the bus to/from Bateau Bay Square using <a href=\"https://transportnsw.info/trip#/?to=Bateau Bay Square\">transportnsw.info</a>.",
 					"lon": 151.473164,
 					"lat": -33.373268
 				},

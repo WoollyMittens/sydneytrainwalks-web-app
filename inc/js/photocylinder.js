@@ -43,7 +43,9 @@ export class PhotoCylinder {
 	addStage() {
 		// check if the aspect ratio of the image can be determined
 		var image = this.config.image;
-		var isWideEnough = (this.config.fov >= 180 && image.naturalWidth / image.naturalHeight > 3);
+		var isWideEnough = (
+			(this.config.fov >= 360 && image.naturalWidth / image.naturalHeight >= 2) || 
+			(this.config.fov >= 180 && image.naturalWidth / image.naturalHeight >= 3));
 		// insert the viewer, but low FOV should default to the fallback
 		this.stage = (isWideEnough) ? new Stage(this.config) : new Fallback(this.config);
 		this.stage.init();

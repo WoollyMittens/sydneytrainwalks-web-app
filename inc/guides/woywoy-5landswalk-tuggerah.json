@@ -535,7 +535,7 @@
 		{
 			"location": "Terrigal SLSC",
 			"type": "bus",
-			"description": "Get the train to/from the Terrigal SLSC using <a href=\"https://transportnsw.info/trip#/?to=Terrigal Surf Life Saving Club\">transportnsw.info</a>.",
+			"description": "Get the bus to/from the Terrigal SLSC using <a href=\"https://transportnsw.info/trip#/?to=Terrigal Surf Life Saving Club\">transportnsw.info</a>.",
 			"lon": 151.4443,
 			"lat": -33.446522
 		},
@@ -711,7 +711,7 @@
 		{
 			"location": "Bateau Bay Square",
 			"type": "bus",
-			"description": "Get the train to/from Bateau Bay Square using <a href=\"https://transportnsw.info/trip#/?to=Bateau Bay Square\">transportnsw.info</a>.",
+			"description": "Get the bus to/from Bateau Bay Square using <a href=\"https://transportnsw.info/trip#/?to=Bateau Bay Square\">transportnsw.info</a>.",
 			"lon": 151.473164,
 			"lat": -33.373268
 		},

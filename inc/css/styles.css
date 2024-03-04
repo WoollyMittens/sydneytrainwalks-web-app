@@ -2234,6 +2234,9 @@ body.screen-photos .photowall {
   scroll-snap-align: start;
   margin-left: 1px;
   position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 @media (max-width: 959px) {
   .localmap-legend dt {
@@ -2314,34 +2317,36 @@ body.screen-photos .photowall {
 }
 .localmap-legend-optional {
   background-color: rgba(0, 200, 83, 0.2);
-  padding: 0 1.25rem;
 }
 .localmap-legend-detour, .localmap-legend-warning {
   background-color: rgba(255, 214, 0, 0.2);
-  padding: 0 1.25rem;
 }
 .localmap-legend-hotspot {
   background-color: rgba(46, 125, 50, 0.2);
 }
 .localmap-legend-train {
   background-color: rgba(245, 124, 0, 0.2);
-  padding: 0 1.25rem;
+}
+.localmap-legend-train.localmap-legend-image {
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), linear-gradient(0deg, rgba(245, 124, 0, 0.4), rgba(245, 124, 0, 0.4)), url(../img/placeholder-train.jpg);
 }
 .localmap-legend-tram {
   background-color: rgba(211, 47, 47, 0.2);
-  padding: 0 1.25rem;
+}
+.localmap-legend-tram.localmap-legend-image {
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), linear-gradient(0deg, rgba(211, 47, 47, 0.4), rgba(211, 47, 47, 0.4)), url(../img/placeholder-tram.jpg);
 }
 .localmap-legend-bus {
   background-color: rgba(3, 169, 244, 0.2);
-  padding: 0 1.25rem;
+}
+.localmap-legend-bus.localmap-legend-image {
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), linear-gradient(0deg, rgba(3, 169, 244, 0.4), rgba(3, 169, 244, 0.4)), url(../img/placeholder-bus.jpg);
 }
 .localmap-legend-ferry {
   background-color: rgba(124, 179, 66, 0.2);
-  padding: 0 1.25rem;
 }
-.localmap-legend-car {
-  background-color: rgba(13, 71, 161, 0.2);
-  padding: 0 1.25rem;
+.localmap-legend-ferry.localmap-legend-image {
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), linear-gradient(0deg, rgba(124, 179, 66, 0.4), rgba(124, 179, 66, 0.4)), url(../img/placeholder-ferry.jpg);
 }
 
 /*

@@ -5,11 +5,20 @@ export class Editor {
     this.save = this.save.bind(this);
   }
 
+  htmlEncode(value) {
+    return value
+      .replace(/&/g, '&amp;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
+  }
+
   init() {
     var image, label, textarea;
     // for all landmarks
-    const photos = [...document.querySelectorAll('.localmap-legend .localmap-legend-photo img')];
-    const descriptions = [...document.querySelectorAll('.localmap-legend .localmap-legend-photo + .localmap-legend-description p')];
+    const photos = [...document.querySelectorAll('dt.localmap-legend-waypoint img')];
+    const descriptions = [...document.querySelectorAll('dd.localmap-legend-waypoint p')];
     for (let index in photos) {
       // get the image
       image = photos[index];
@@ -21,9 +30,10 @@ export class Editor {
       textarea.style.width = '90%';
       textarea.style.height = '96px';
       textarea.style.verticalAlign = 'middle';
-      textarea.value = label.innerHTML;
+      textarea.value = label.innerHTML; //this.htmlEncode(label.innerHTML);
       textarea.addEventListener('change', this.update.bind(this, textarea, index));
-      label.replaceChild(textarea, label.firstChild);
+      label.innerHTML = "";
+      label.appendChild(textarea);
       // store the data
       this.output[index] = {
         "type": "waypoint",
