@@ -533,5 +533,11 @@
 				background-image: linear-gradient(0deg, #FFFFFF66, #FFFFFF66), linear-gradient(0deg, #7CB34266, #7CB34266), url(../img/placeholder-ferry.jpg);
 			}
 		}
+
+		&-toilet {
+			&.localmap-legend-image {
+				background-image: linear-gradient(0deg, #FFFFFF66, #FFFFFF66), linear-gradient(0deg, #0a579b66, #0a579b66), url(../img/placeholder-toilet.jpg);
+			}
+		}
 	}
 }

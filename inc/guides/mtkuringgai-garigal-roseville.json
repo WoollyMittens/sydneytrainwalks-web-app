@@ -73,7 +73,7 @@
 			"description": "At the bottom of the descent, follow the trail along the water to the right."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "p8182332.jpg",
 			"lon": 151.1554251299722,
 			"lat": -33.652397160005854,
@@ -87,7 +87,7 @@
 			"description": "Continue up the road to Bobbin Head straight across the bay."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "p8182391.jpg",
 			"lon": 151.15971506997604,
 			"lat": -33.65989204000548,
@@ -101,7 +101,7 @@
 			"description": "Enter the marina and follow the footpath along the water to the cafe."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "p8182426.jpg",
 			"lon": 151.1628806999832,
 			"lat": -33.66215594999855,
@@ -169,6 +169,12 @@
 			"lon": 151.17298920999195,
 			"lat": -33.70762591001313,
 			"description": "At the top of the ridge, follow the directions to Cunningman's Rest picnic area."
+		},
+		{
+			"type": "toilet",
+			"lon": 151.174712,
+			"lat": -33.707516,
+			"description": "There is a (beautifully decorated) toilet block opposite the visitor centre."
 		},
 		{
 			"type": "hotspot",
@@ -300,6 +306,12 @@
 			"lon": 151.20099003999383,
 			"lat": -33.767260869996626,
 			"description": "Eventually the trail ends at a gate to Davidson Park picnic area."
+		},
+		{
+			"type": "toilet",
+			"lon": 151.203927,
+			"lat": -33.769005,
+			"description": "There is a toilet block along the picnic areas."
 		},
 		{
 			"type": "waypoint",

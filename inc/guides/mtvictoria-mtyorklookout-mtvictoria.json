@@ -108,7 +108,7 @@
 			"description": "After reaching the bottom, follow the directions to Cox Road to the left or take the detour to the picnic area at the track head."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pb020141.jpg",
 			"lon": 150.23274900009756,
 			"lat": -33.536249999999995,
@@ -176,6 +176,12 @@
 			"lon": 150.219322,
 			"lat": -33.552282999999996,
 			"description": "From the car park follow the walking trail along the main road away from Mount York."
+		},
+		{
+			"type": "toilet",
+			"lon": 150.219597,
+			"lat": -33.553544,
+			"description": "There's a toilet block at the carpark."
 		},
 		{
 			"type": "waypoint",

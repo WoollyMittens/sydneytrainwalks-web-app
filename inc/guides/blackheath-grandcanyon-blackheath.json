@@ -119,7 +119,6 @@
 		},
 		{
 			"type": "toilet",
-			"photo": "p7200123.jpg",
 			"lon": 150.32474444444443,
 			"lat": -33.64644722222222,
 			"description": "From Evans Lookout the well marked Cliff Top Track leads to Govetts Leap Lookout."
@@ -146,6 +145,12 @@
 			"description": "The Cliff Top Track ends at the popular Govetts Leap."
 		},
 		{
+			"type": "toilet",
+			"lon": 150.311066,
+			"lat": -33.628021,
+			"description": "There is a block of public toilets at the nearby picnic area."
+		},
+		{
 			"type": "waypoint",
 			"photo": "p7200198.jpg",
 			"lon": 150.31105000000002,
@@ -158,6 +163,12 @@
 			"lon": 150.3079638888889,
 			"lat": -33.623175,
 			"description": "Follow Popes Glen all the way up to Memorial Park."
+		},
+		{
+			"type": "toilet",
+			"description": "The picnic area has public toilets.",
+			"lon": 150.288860,
+			"lat": -33.634280
 		},
 		{
 			"type": "waypoint",

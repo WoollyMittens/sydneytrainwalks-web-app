@@ -2348,6 +2348,9 @@ body.screen-photos .photowall {
 .localmap-legend-ferry.localmap-legend-image {
   background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), linear-gradient(0deg, rgba(124, 179, 66, 0.4), rgba(124, 179, 66, 0.4)), url(../img/placeholder-ferry.jpg);
 }
+.localmap-legend-toilet.localmap-legend-image {
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), linear-gradient(0deg, rgba(10, 87, 155, 0.4), rgba(10, 87, 155, 0.4)), url(../img/placeholder-toilet.jpg);
+}
 
 /*
 	3d stage

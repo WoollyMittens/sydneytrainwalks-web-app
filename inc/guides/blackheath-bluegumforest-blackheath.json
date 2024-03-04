@@ -38,6 +38,12 @@
 			"description": "From the station, follow the main road all the way down to Govetts Leap Lookout."
 		},
 		{
+			"type": "toilet",
+			"lon": 150.311066,
+			"lat": -33.628021,
+			"description": "There is a block of public toilets at the picnic area."
+		},
+		{
 			"type": "waypoint",
 			"photo": "002_p9214817_p9214831.jpg",
 			"lon": 150.3119388888889,
@@ -89,6 +95,12 @@
 			"badge": "compas_2",
 			"title": "You've Come a Long Way Baby",
 			"instruction": "<center>Visit this location to earn the mystery trophy</center>"
+		},
+		{
+			"type": "toilet",
+			"lon": 150.353587,
+			"lat": -33.615401,
+			"description": "The campground has a toilet cabin."
 		},
 		{
 			"type": "waypoint",
@@ -149,16 +161,22 @@
 		{
 			"type": "waypoint",
 			"photo": "003_dsc_8654_dsc_8659.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After crossing the creek. follow Popes Glen Track to the right.",
 			"lon": 150.31116200000002,
 			"lat": -33.62437
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_p7200205.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross Memorial Park and follow Govetts Leap Road back to the station.",
 			"lon": 150.2909861111111,
 			"lat": -33.63381666666667
+		},
+		{
+			"type": "toilet",
+			"description": "The picnic area has public toilets.",
+			"lon": 150.288860,
+			"lat": -33.634280
 		},
 		{
 			"location": "Blackheath",
