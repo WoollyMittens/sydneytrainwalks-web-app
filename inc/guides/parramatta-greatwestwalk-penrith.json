@@ -266,7 +266,7 @@
 			"lat": -33.767189
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "1110_img_20191019_094448.jpg",
 			"description": "Follow the path through the showground to the pavillion.",
 			"lon": 150.902892,
@@ -368,7 +368,7 @@
 			"lat": -33.761364
 		},
 		{
-			"type": "hotspot",
+			"type": "kiosk",
 			"photo": "1670_pano_20191019_120014.jpg",
 			"lon": 150.860028,
 			"lat": -33.763458,
@@ -590,7 +590,7 @@
 			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "2660_img_20191019_155319.jpg",
 			"description": "Follow the road past the ruined munitions factory to the picnic area.",
 			"lon": 150.77226100000001,

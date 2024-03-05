@@ -32,7 +32,7 @@
 			"lat": -33.9286433347
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "pxl_20221104_202143305.jpg",
 			"lon": 151.153814,
 			"lat": -33.928916,
@@ -53,7 +53,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20221104_202457903.jpg",
 			"lon": 151.155194,
 			"lat": -33.930909,
@@ -242,7 +242,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20221104_212632293.jpg",
 			"lon": 151.161538,
 			"lat": -33.94611999999999,
@@ -291,6 +291,12 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
+			"type": "toilet",
+			"lon": 151.163341,
+			"lat": -33.950520,
+			"description": "There's toilet blocks along the foreshore."
+		},
+		{
 			"type": "waypoint",
 			"photo": "pxl_20221104_214334705.jpg",
 			"lon": 151.162927,
@@ -303,6 +309,12 @@
 			"lon": 151.162857,
 			"lat": -33.951784,
 			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "toilet",
+			"lon": 151.158029,
+			"lat": -33.957844,
+			"description": "There's toilet blocks along the foreshore."
 		},
 		{
 			"type": "waypoint",
@@ -326,11 +338,23 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
+			"type": "toilet",
+			"lon": 151.152806,
+			"lat": -33.969564,
+			"description": "There's toilet blocks along the foreshore."
+		},
+		{
 			"type": "waypoint",
 			"photo": "pxl_20221104_222823121.jpg",
 			"lon": 151.149496,
 			"lat": -33.980487000000004,
 			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "toilet",
+			"lon": 151.149581,
+			"lat": -33.979864,
+			"description": "There's toilet blocks along the foreshore."
 		},
 		{
 			"type": "waypoint",
@@ -359,6 +383,12 @@
 			"lon": 151.141243,
 			"lat": -33.997375,
 			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "toilet",
+			"lon": 151.139687,
+			"lat": -34.001396,
+			"description": "There's toilet blocks along the foreshore."
 		},
 		{
 			"type": "waypoint",
@@ -445,7 +475,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20221104_235031894.jpg",
 			"lon": 151.125167,
 			"lat": -34.017043,
@@ -743,7 +773,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "pxl_20221105_024007383.jpg",
 			"lon": 151.209477,
 			"lat": -34.011959,
@@ -834,7 +864,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20221105_031100433.jpg",
 			"lon": 151.221691,
 			"lat": -34.004649,
@@ -1384,7 +1414,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20221105_061834789.jpg",
 			"lon": 151.161633,
 			"lat": -34.042957,
@@ -1412,7 +1442,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "pxl_20221105_063649635.jpg",
 			"lon": 151.155513,
 			"lat": -34.051542,

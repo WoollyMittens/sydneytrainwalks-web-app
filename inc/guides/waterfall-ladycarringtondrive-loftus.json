@@ -653,7 +653,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "003_pa056168.jpg",
 			"lon": 151.05607669999569,
 			"lat": -34.075184670066456,
@@ -681,7 +681,7 @@
 			"lat": -34.07329082000289
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "004_dsc_9862.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.05674586999655,

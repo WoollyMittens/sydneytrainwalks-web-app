@@ -457,6 +457,14 @@
 			"optional": true
 		},
 		{
+			"location": "Parramatta",
+			"lat": -33.817044,
+			"lon": 151.005077,
+			"type": "train",
+			"description": "Plan your return trip from Parramatta Station at <a href=\"https://transportnsw.info/trip#/?from=Parramatta Station\">transportnsw.info</a>.",
+			"optional": true
+		},
+		{
 			"type": "waypoint",
 			"photo": "2770_dcs_7491.jpg",
 			"lon": 151.00454775,
@@ -476,13 +484,6 @@
 			"lon": 151.01035,
 			"type": "ferry",
 			"description": "Plan your return trip from Parramatta Wharf at <a href=\"https://transportnsw.info/trip#/?from=Parramatta Wharf\">transportnsw.info</a>."
-		},
-		{
-			"location": "Parramatta",
-			"lat": -33.817044,
-			"lon": 151.005077,
-			"type": "train",
-			"description": "Plan your return trip from Parramatta Station at <a href=\"https://transportnsw.info/trip#/?from=Parramatta Station\">transportnsw.info</a>."
 		}
 	]
 }

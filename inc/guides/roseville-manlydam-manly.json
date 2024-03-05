@@ -7,8 +7,8 @@
 		"ipsum": "https://external.link/"
 	},
 	"distance": [
-		24,
-		28
+		22,
+		30
 	],
 	"hero": "",
 	"zoom": 13,
@@ -72,6 +72,12 @@
 			"lon": 151.20491028002075,
 			"lat": -33.77258300999412,
 			"description": "On the far side of the bridge, follow the offramp into the reserve on the left hand side."
+		},
+		{
+			"type": "toilet",
+			"lon": 151.208142,
+			"lat": -33.774813,
+			"description": "There is a toilet block at the boat ramp."
 		},
 		{
 			"type": "waypoint",
@@ -240,7 +246,7 @@
 			"description": "Follow the trail along the creek until you reach the lake."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "p7200791_p7200794.jpg",
 			"lon": 151.25510833333334,
 			"lat": -33.78308611111111,
@@ -289,6 +295,12 @@
 			"description": "Continue along the beachfront to the far side of Manly Beach."
 		},
 		{
+			"type": "toilet",
+			"lon": 151.287333,
+			"lat": -33.790639,
+			"description": "There are public toilets at the surf school."
+		},
+		{
 			"type": "waypoint",
 			"photo": "p7200834_p7200836.jpg",
 			"lon": 151.29111111111112,
@@ -304,7 +316,7 @@
 			"optional": true
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "p7200859_p7200861.jpg",
 			"lon": 151.29858611111112,
 			"lat": -33.80081388888889,

@@ -110,7 +110,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
-			"toilets": 0,
+			"toilets": 3,
 			"looped": true,
 			"rain": false,
 			"fireban": false
@@ -146,7 +146,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
-			"toilets": 1,
+			"toilets": 3,
 			"looped": true,
 			"rain": false,
 			"fireban": false
@@ -318,7 +318,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
-			"toilets": 0,
+			"toilets": 6,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -449,17 +449,18 @@
 				},
 				{
 					"location": "Parramatta",
+					"lat": -33.817044,
+					"lon": 151.005077,
+					"type": "train",
+					"description": "Plan your return trip from Parramatta Station at <a href=\"https://transportnsw.info/trip#/?from=Parramatta Station\">transportnsw.info</a>.",
+					"optional": true
+				},
+				{
+					"location": "Parramatta",
 					"lat": -33.813842,
 					"lon": 151.01035,
 					"type": "ferry",
 					"description": "Plan your return trip from Parramatta Wharf at <a href=\"https://transportnsw.info/trip#/?from=Parramatta Wharf\">transportnsw.info</a>."
-				},
-				{
-					"location": "Parramatta",
-					"lat": -33.817044,
-					"lon": 151.005077,
-					"type": "train",
-					"description": "Plan your return trip from Parramatta Station at <a href=\"https://transportnsw.info/trip#/?from=Parramatta Station\">transportnsw.info</a>."
 				}
 			],
 			"region": "Cumberland State Forest",
@@ -886,7 +887,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
-			"toilets": 0,
+			"toilets": 5,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -922,7 +923,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
-			"toilets": 0,
+			"toilets": 2,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -958,7 +959,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
-			"toilets": 0,
+			"toilets": 2,
 			"looped": true,
 			"rain": false,
 			"fireban": false
@@ -995,8 +996,8 @@
 			"revised": "2013-03-29",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 5,
+			"toilets": 14,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -1041,8 +1042,8 @@
 			"revised": "2023-09-02",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 9,
+			"toilets": 17,
 			"looped": false,
 			"rain": true,
 			"fireban": true
@@ -1086,8 +1087,8 @@
 			"revised": "2017-10-20",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 2,
+			"toilets": 14,
 			"looped": false,
 			"rain": true,
 			"fireban": true
@@ -1132,8 +1133,8 @@
 			"revised": "2019-10-18",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 1,
+			"toilets": 3,
 			"looped": false,
 			"rain": true,
 			"fireban": false
@@ -1153,12 +1154,44 @@
 					"lat": -33.817284
 				},
 				{
-					"location": "Meadowbank",
+					"location": "Parramatta Wharf",
+					"type": "ferry",
+					"photo": "pxl_20240216_191134125.jpg",
+					"description": "Get the ferry to/from Parramatta Wharf using <a href=\"https://transportnsw.info/trip#/?to=Parramatta Wharf\">transportnsw.info</a>.",
+					"lon": 151.009969,
+					"lat": -33.813379999999995
+				},
+				{
+					"location": "Rydalmere Wharf",
+					"type": "waypoint",
+					"photo": "pxl_20240216_200815556.jpg",
+					"description": "Get the ferry to/from Rydalmere Wharf using <a href=\"https://transportnsw.info/trip#/?to=Rydalmere Wharf\">transportnsw.info</a>.",
+					"lon": 151.04387,
+					"lat": -33.817486
+				},
+				{
+					"location": "Meadowbank Wharf",
 					"type": "ferry",
 					"photo": "pxl_20240216_211834071.jpg",
-					"description": "Get the ferry (or train) to/from Meadowbank using <a href=\"https://transportnsw.info/trip#/?to=Meadowbank\">transportnsw.info</a>.",
+					"description": "Get the ferry (or train) to/from Meadowbank Wharf using <a href=\"https://transportnsw.info/trip#/?to=Meadowbank Wharf\">transportnsw.info</a>.",
 					"lon": 151.089619,
 					"lat": -33.820893000000005
+				},
+				{
+					"location": "Kissing Point",
+					"type": "ferry",
+					"photo": "pxl_20240216_220054821.jpg",
+					"description": "Get the ferry to/from Kissing Point using <a href=\"https://transportnsw.info/trip#/?to=Kissing Point\">transportnsw.info</a>.",
+					"lon": 151.101927,
+					"lat": -33.830594000000005
+				},
+				{
+					"location": "Huntleys Point",
+					"type": "ferry",
+					"photo": "pxl_20240216_233849703.jpg",
+					"description": "Get the ferry to/from Huntleys Point using <a href=\"https://transportnsw.info/trip#/?to=Huntleys Point\">transportnsw.info</a>.",
+					"lon": 151.141816,
+					"lat": -33.841626000000005
 				},
 				{
 					"location": "Chatswood",
@@ -1177,8 +1210,8 @@
 			"revised": "2013-12-30",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 2,
+			"toilets": 10,
 			"looped": false,
 			"rain": true,
 			"fireban": true
@@ -1230,8 +1263,8 @@
 			"revised": "2013-12-27",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 7,
+			"toilets": 16,
 			"looped": false,
 			"rain": true,
 			"fireban": true
@@ -1266,8 +1299,8 @@
 			"revised": "2024-01-15",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 5,
+			"toilets": 10,
 			"looped": true,
 			"rain": false,
 			"fireban": false
@@ -1297,14 +1330,14 @@
 			],
 			"region": "Manly Dam",
 			"distance": [
-				24,
-				28
+				22,
+				30
 			],
 			"revised": "2018-07-04",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 1,
+			"toilets": 4,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -1324,6 +1357,14 @@
 					"lon": 150.563733
 				},
 				{
+					"location": "Winmalee Village",
+					"type": "bus",
+					"photo": "015_p4080015.jpg",
+					"description": "Take the bus to Winmalee Village using <a href=\"https://transportnsw.info/trip#/?to=Winmalee Village\">transportnsw.info</a>.",
+					"lat": -33.672309999999996,
+					"lon": 150.60895399999998
+				},
+				{
 					"location": "Richmond",
 					"type": "train",
 					"photo": "199_p4080233.jpg",
@@ -1340,8 +1381,8 @@
 			"revised": "2017-06-02",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 2,
+			"toilets": 4,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -1412,8 +1453,8 @@
 			"revised": "2012-12-08",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 1,
+			"toilets": 2,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -1466,8 +1507,8 @@
 			"revised": "2019-02-22",
 			"transit": true,
 			"car": false,
-			"kiosks": 1,
-			"toilets": 2,
+			"kiosks": 3,
+			"toilets": 13,
 			"looped": false,
 			"rain": false,
 			"fireban": false

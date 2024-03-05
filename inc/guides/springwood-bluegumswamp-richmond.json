@@ -67,11 +67,19 @@
 			"description": "Follow Hawkesbury Road all the way to the Winmalee Shopping Centre on the left."
 		},
 		{
+			"location": "Winmalee Village",
 			"type": "bus",
 			"photo": "015_p4080015.jpg",
-			"description": "Take the bus to Winmalee using <a href=\"https://transportnsw.info/trip#/?to=Winmalee\">transportnsw.info</a>.",
+			"description": "Take the bus to Winmalee Village using <a href=\"https://transportnsw.info/trip#/?to=Winmalee Village\">transportnsw.info</a>.",
 			"lat": -33.672309999999996,
 			"lon": 150.60895399999998
+		},
+		{
+			"type": "toilet",
+			"photo": "015_p4080015.jpg",
+			"description": "There are public toilets in the shopping centre.",
+			"lat": -33.67091,
+			"lon": 150.608947
 		},
 		{
 			"type": "waypoint",
@@ -176,7 +184,7 @@
 			"description": "Continue along Mountain Ave to the intersection with Springwood Road and follow it to the left."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "165_p4080197.jpg",
 			"lon": 150.691719,
 			"lat": -33.613625,
@@ -188,6 +196,12 @@
 			"lon": 150.696414,
 			"lat": -33.611992,
 			"description": "A little further up the road enter Yaramundi Reserve for a short detour or a rest along the river."
+		},
+		{
+			"type": "toilet",
+			"lon": 150.696561,
+			"lat": -33.61112,
+			"description": "There is a toilet block at the carpark."
 		},
 		{
 			"type": "waypoint",
@@ -211,7 +225,7 @@
 			"description": "Follow the directions all the way to the centre of Richmond."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "195_p4080229.jpg",
 			"lon": 150.74742299992297,
 			"lat": -33.596333,

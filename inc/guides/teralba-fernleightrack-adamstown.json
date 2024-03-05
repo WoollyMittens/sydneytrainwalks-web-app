@@ -117,14 +117,14 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "001_pxl_20240119_205642007.jpg",
 			"lon": 151.61543900007666,
 			"lat": -32.960662000000006,
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "001_pxl_20240119_210103379.jpg",
 			"lon": 151.61564099986597,
 			"lat": -32.961611000000005,
@@ -178,6 +178,13 @@
 			"lon": 151.64127499999998,
 			"lat": -32.972241000000004,
 			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "toilet",
+			"photo": "001_pxl_20240119_215409002.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.6435361111111,
+			"lat": -32.97378055555556
 		},
 		{
 			"type": "waypoint",
@@ -313,14 +320,14 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "001_pxl_20240119_224709248.jpg",
 			"lon": 151.63886399999998,
 			"lat": -32.997989000000004,
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "001_pxl_20240119_225028282.jpg",
 			"lon": 151.64090099999999,
 			"lat": -32.99977699987035,
@@ -369,14 +376,14 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "001_pxl_20240119_231314695.jpg",
 			"lon": 151.63555,
 			"lat": -33.008343,
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "001_pxl_20240119_232125712.jpg",
 			"lon": 151.634661,
 			"lat": -33.009364,
@@ -502,7 +509,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "001_pxl_20240120_003504941.jpg",
 			"lon": 151.656225,
 			"lat": -33.033752,
@@ -570,7 +577,7 @@
 			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "001_pxl_20240120_010525273.jpg",
 			"lon": 151.662304,
 			"lat": -33.03913,
@@ -875,6 +882,12 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
+			"type": "toilet",
+			"lon": 151.715465,
+			"lat": -33.012976,
+			"description": "There's a toilet block at the playground."
+		},
+		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240120_030640632.jpg",
 			"lon": 151.716424,
@@ -1005,7 +1018,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "006_pxl_20240120_041127558.jpg",
 			"lon": 151.725252,
 			"lat": -32.992094,
@@ -1286,7 +1299,7 @@
 		},
 		{
 			"type": "hotspot",
-			"photo": "006_pxl_20240120_065700912.jpg",
+			"photo": "dsc_3825.jpg",
 			"lon": 151.7196822166376,
 			"lat": -32.9342364320964,
 			"radius": 0.0004,

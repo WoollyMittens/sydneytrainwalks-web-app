@@ -165,7 +165,7 @@ export class Details {
 					'url': url,
 					'sequence': urls,
 					'container': this.appView,
-					'fov': (/d{3}_r\d{6}/i.test(url)) ? 360 : 180,
+					'fov': (/r0\d{6}/i.test(url)) ? 360 : 180,
 					'idle': 0.1,
 					'navigated': (url) => {
 						this.config.guideMap.indicate({'photo': url.split('/').pop()});

@@ -54,6 +54,12 @@
 			"description": "Cross Lions Park and continue along the waterfront."
 		},
 		{
+			"type": "toilet",
+			"lon": 151.336211,
+			"lat": -33.484952,
+			"description": "There is a toilet block at the Lions Park."
+		},
+		{
 			"type": "waypoint",
 			"photo": "dsc_1327.jpg",
 			"lon": 151.33110377001043,
@@ -236,7 +242,7 @@
 			"description": "At the intersection follow Little Beach Trail to the right."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "dsc_1439.jpg",
 			"lon": 151.41777304999835,
 			"lat": -33.510394919972164,
@@ -340,6 +346,12 @@
 			"badge": "map_3",
 			"title": "Take Five: Copacabana",
 			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
+			"type": "toilet",
+			"lon": 151.431736,
+			"lat": -33.490588,
+			"description": "There are public toilet at the surf club."
 		},
 		{
 			"type": "waypoint",
@@ -451,6 +463,12 @@
 			"description": "From the park, cross the surf club car park."
 		},
 		{
+			"type": "toilet",
+			"lon": 151.437609,
+			"lat": -33.470858,
+			"description": "There's a toilet block at the surf club carpark."
+		},
+		{
 			"type": "hotspot",
 			"photo": "dsc_1511_dsc_1519.jpg",
 			"lon": 151.43741,
@@ -533,6 +551,12 @@
 			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
+			"type": "toilet",
+			"lon": 151.444750,
+			"lat": -33.446578,
+			"description": "There's public toilets at the surf club."
+		},
+		{
 			"location": "Terrigal SLSC",
 			"type": "bus",
 			"description": "Get the bus to/from the Terrigal SLSC using <a href=\"https://transportnsw.info/trip#/?to=Terrigal Surf Life Saving Club\">transportnsw.info</a>.",
@@ -580,6 +604,12 @@
 			"lon": 151.4585120599739,
 			"lat": -33.41722370000179,
 			"description": "Turn right up Kalakau Ave."
+		},
+		{
+			"type": "toilet",
+			"lon": 151.463957,
+			"lat": -33.412746,
+			"description": "There's a toilet block at Forrester Beach."
 		},
 		{
 			"type": "waypoint",
@@ -674,6 +704,12 @@
 			"description": "Follow the footpath along Bateau Bay Beach and the picnic areas."
 		},
 		{
+			"type": "toilet",
+			"lon": 151.482367,
+			"lat": -33.383240,
+			"description": "There's a toilet block at the picnic area."
+		},
+		{
 			"type": "waypoint",
 			"photo": "dsc_1607.jpg",
 			"lon": 151.48407674000012,
@@ -744,6 +780,18 @@
 			"description": "Follow the combined bike and footpath all the way  along lake Tuggerah"
 		},
 		{
+			"type": "toilet",
+			"lon": 151.459528,
+			"lat": -33.361466,
+			"description": "There's a toilet block along the foreshore"
+		},
+		{
+			"type": "toilet",
+			"lon": 151.438500,
+			"lat": -33.339109,
+			"description": "There's a toilet block at Bluebell Park"
+		},
+		{
 			"type": "waypoint",
 			"photo": "dsc_1633.jpg",
 			"lon": 151.44129684004474,
@@ -770,6 +818,13 @@
 			"lon": 151.4309029100529,
 			"lat": -33.327065260010784,
 			"description": "Turn left at the roundabout and follow Chittaway Road past the shopping centre."
+		},
+		{
+			"type": "toilet",
+			"photo": "dsc_1636.jpg",
+			"lon": 151.429020,
+			"lat": -33.327113,
+			"description": "There's public toilets in the shopping centre."
 		},
 		{
 			"type": "waypoint",

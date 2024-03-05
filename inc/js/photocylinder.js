@@ -46,6 +46,7 @@ export class PhotoCylinder {
 		var isWideEnough = (
 			(this.config.fov >= 360 && image.naturalWidth / image.naturalHeight >= 2) || 
 			(this.config.fov >= 180 && image.naturalWidth / image.naturalHeight >= 3));
+		console.log(this.config.fov, image.naturalWidth, image.naturalHeight, isWideEnough);
 		// insert the viewer, but low FOV should default to the fallback
 		this.stage = (isWideEnough) ? new Stage(this.config) : new Fallback(this.config);
 		this.stage.init();

@@ -88,9 +88,10 @@
 			"lat": -33.81293900007668
 		},
 		{
-			"type": "waypoint",
+			"location": "Parramatta Wharf",
+			"type": "ferry",
 			"photo": "pxl_20240216_191134125.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Get the ferry to/from Parramatta Wharf using <a href=\"https://transportnsw.info/trip#/?to=Parramatta Wharf\">transportnsw.info</a>.",
 			"lon": 151.009969,
 			"lat": -33.813379999999995
 		},
@@ -214,14 +215,15 @@
 			"lat": -33.817243000000005
 		},
 		{
+			"location": "Rydalmere Wharf",
 			"type": "waypoint",
 			"photo": "pxl_20240216_200815556.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Get the ferry to/from Rydalmere Wharf using <a href=\"https://transportnsw.info/trip#/?to=Rydalmere Wharf\">transportnsw.info</a>.",
 			"lon": 151.04387,
 			"lat": -33.817486
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240216_200848495.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.04426,
@@ -256,7 +258,7 @@
 			"lat": -33.823202
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "pxl_20240216_202351492.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.054945,
@@ -319,7 +321,7 @@
 			"lat": -33.81709600000001
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240216_205353827.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.07324599999998,
@@ -375,15 +377,15 @@
 			"lat": -33.820640000000004
 		},
 		{
-			"location": "Meadowbank",
+			"location": "Meadowbank Wharf",
 			"type": "ferry",
 			"photo": "pxl_20240216_211834071.jpg",
-			"description": "Get the ferry (or train) to/from Meadowbank using <a href=\"https://transportnsw.info/trip#/?to=Meadowbank\">transportnsw.info</a>.",
+			"description": "Get the ferry (or train) to/from Meadowbank Wharf using <a href=\"https://transportnsw.info/trip#/?to=Meadowbank Wharf\">transportnsw.info</a>.",
 			"lon": 151.089619,
 			"lat": -33.820893000000005
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "pxl_20240216_211925485.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.09004000000002,
@@ -453,16 +455,17 @@
 			"lat": -33.828354000000004
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240216_215901789.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.102162,
 			"lat": -33.829662000000006
 		},
 		{
-			"type": "waypoint",
+			"location": "Kissing Point",
+			"type": "ferry",
 			"photo": "pxl_20240216_220054821.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Get the ferry to/from Kissing Point using <a href=\"https://transportnsw.info/trip#/?to=Kissing Point\">transportnsw.info</a>.",
 			"lon": 151.101927,
 			"lat": -33.830594000000005
 		},
@@ -677,7 +680,7 @@
 			"lat": -33.837339
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240216_225717303.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.126978,
@@ -831,7 +834,7 @@
 			"lat": -33.840647000000004
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240216_232523542.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.13626,
@@ -845,9 +848,10 @@
 			"lat": -33.841017
 		},
 		{
-			"type": "waypoint",
+			"location": "Huntleys Point",
+			"type": "ferry",
 			"photo": "pxl_20240216_233849703.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Get the ferry to/from Huntleys Point using <a href=\"https://transportnsw.info/trip#/?to=Huntleys Point\">transportnsw.info</a>.",
 			"lon": 151.141816,
 			"lat": -33.841626000000005
 		},
@@ -1104,7 +1108,7 @@
 			"lat": -33.817355000000006
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240217_011843617.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.138037,
@@ -1216,7 +1220,7 @@
 			"lat": -33.805881
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240217_015433603.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.142329,
@@ -1482,7 +1486,7 @@
 			"lat": -33.796306
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240217_031514920.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.168004,

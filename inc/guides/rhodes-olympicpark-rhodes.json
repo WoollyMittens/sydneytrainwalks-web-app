@@ -31,7 +31,7 @@
 			"lat": -33.8307654206
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "pxl_20240113_203914244.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.086904,
@@ -206,7 +206,7 @@
 			"lat": -33.84700299988462
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240113_213430883.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.06932,
@@ -220,7 +220,7 @@
 			"lat": -33.847407000000004
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "pxl_20240113_214037476.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.069728,
@@ -276,7 +276,7 @@
 			"lat": -33.838169
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240113_215718070.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.067008,
@@ -409,14 +409,14 @@
 			"lat": -33.824936
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "pxl_20240113_224833391.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.064257,
 			"lat": -33.825043
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240113_225333700.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.06225,
@@ -430,7 +430,7 @@
 			"lat": -33.824583000000004
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240113_230340008.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.053596,
@@ -493,7 +493,7 @@
 			"lat": -33.823323
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "pxl_20240113_232047055.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.05383500000002,
@@ -540,6 +540,12 @@
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.07256,
 			"lat": -33.817052000000004
+		},
+		{
+			"type": "toilet",
+			"description": "There's a toilet block at the boat ramp.",
+			"lon": 151.073342,
+			"lat": -33.818415
 		},
 		{
 			"type": "waypoint",
@@ -619,7 +625,7 @@
 			"lat": -33.820586000000006
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "pxl_20240114_001654967.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.089719,

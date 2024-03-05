@@ -60,7 +60,7 @@
 			"description": "Follow the beach towards the lighthouse."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "0140_dsc_4876.jpg",
 			"lon": 151.32385876001393,
 			"lat": -33.58780575001496,
@@ -123,6 +123,12 @@
 			"description": "Follow Palm Beach to rock pools at the far end."
 		},
 		{
+			"type": "toilet",
+			"lon": 151.324685,
+			"lat": -33.597817,
+			"description": "There's a toilet block along the beach."
+		},
+		{
 			"type": "waypoint",
 			"photo": "0760_dsc_5093.jpg",
 			"lon": 151.3280743000718,
@@ -149,6 +155,12 @@
 			"lon": 151.3314029599935,
 			"lat": -33.612345990005736,
 			"description": "Follow Whale Beach to the end."
+		},
+		{
+			"type": "toilet",
+			"lon": 151.331237,
+			"lat": -33.613193,
+			"description": "There's a toilet block at rock pool."
 		},
 		{
 			"type": "waypoint",
@@ -193,14 +205,14 @@
 			"description": "Follow Marine Parade to the left to the carpark for Avalon Beach."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "1120_dsc_5142_dsc_5143.jpg",
 			"lon": 151.3351777777778,
 			"lat": -33.632777777777775,
 			"description": "Take the path down to the beach and follow it to the surf club."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "1150_dsc_5145.jpg",
 			"lon": 151.33151744000463,
 			"lat": -33.63641297000422,
@@ -235,7 +247,7 @@
 			"description": "Follow the beach to the surf club at the far end."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "1270_dsc_5157.jpg",
 			"lon": 151.32703140001746,
 			"lat": -33.64600594991006,
@@ -256,7 +268,7 @@
 			"description": "The path eventually descends down to Newport Beach and continues along it."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "1390_dsc_5169.jpg",
 			"lon": 151.32318670997967,
 			"lat": -33.65637568001252,
@@ -296,6 +308,12 @@
 			"lon": 151.32160792000087,
 			"lat": -33.66326081007115,
 			"description": "Watch on the left for a concrete path leading down to Bungan Beach."
+		},
+		{
+			"type": "toilet",
+			"lon": 151.320868,
+			"lat": -33.665014,
+			"description": "There are public toilets at the surf club."
 		},
 		{
 			"type": "waypoint",
@@ -361,7 +379,7 @@
 			"description": "At high tide you may have to use the stairs up the headland instead of walking around below."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "1760_dsc_5222.jpg",
 			"lon": 151.30892338000154,
 			"lat": -33.691843739993594,
@@ -424,6 +442,13 @@
 			"description": "From the lookout across Narrabeen Lagoon, take the staircase down to the carpark."
 		},
 		{
+			"type": "toilet",
+			"photo": "2040_dsc_5292.jpg",
+			"lon": 151.30846,
+			"lat": -33.702892,
+			"description": "There are amenities at the rock pool."
+		},
+		{
 			"type": "waypoint",
 			"photo": "2060_dsc_5299.jpg",
 			"lon": 151.3067671100028,
@@ -453,7 +478,7 @@
 			"description": "Follow Collaroy Beach to the rock pools at the end."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "2130_dsc_5312.jpg",
 			"lon": 151.30332878999198,
 			"lat": -33.733593770000184,
@@ -488,7 +513,7 @@
 			"description": "On the far side of the headland, continue along the path until it ends on Long Reef Beach."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "2290_dsc_5345.jpg",
 			"lon": 151.2972748099552,
 			"lat": -33.752788200005085,
@@ -523,7 +548,7 @@
 			"description": "Take the stairs down to Curl Curl Lagoon."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "2510_dsc_5411.jpg",
 			"lon": 151.29977840005532,
 			"lat": -33.76635917001339,
@@ -584,6 +609,12 @@
 			"lon": 151.2879271899886,
 			"lat": -33.784711700001765,
 			"description": "Cross the bridge and follow the esplanade along the beach."
+		},
+		{
+			"type": "toilet",
+			"lon": 151.287333,
+			"lat": -33.790639,
+			"description": "There are public toilets at the surf school."
 		},
 		{
 			"type": "waypoint",

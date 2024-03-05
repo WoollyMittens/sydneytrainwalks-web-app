@@ -96,7 +96,7 @@
 			"lat": -34.475748
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "pxl_20240222_214938530.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 150.91362,
@@ -159,7 +159,7 @@
 			"lat": -34.492333
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "pxl_20240222_221843870.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 150.90955300000002,
@@ -236,7 +236,7 @@
 			"lat": -34.539919
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240223_000418775.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 150.871585,
@@ -257,7 +257,7 @@
 			"lat": -34.536508
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240223_001036702.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 150.870023,
@@ -299,7 +299,7 @@
 			"lat": -34.53863
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "pxl_20240223_002138301.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 150.866466,
@@ -327,14 +327,14 @@
 			"lat": -34.545038
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240223_003305541.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 150.870112,
 			"lat": -34.545652
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "pxl_20240223_003330977.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 150.86983600000002,
@@ -390,7 +390,7 @@
 			"lat": -34.560075999999995
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240223_010506630.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 150.86885700000002,
@@ -516,7 +516,7 @@
 			"lat": -34.576376
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240223_014426676.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 150.87018700000002,
@@ -537,7 +537,7 @@
 			"lat": -34.578089000000006
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "pxl_20240223_014938662.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 150.868263,
@@ -900,7 +900,7 @@
 			"lat": -34.627212
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "pxl_20240223_033541227.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 150.855985,
@@ -1135,7 +1135,7 @@
 			"lat": -34.653287999999996
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240223_043536775.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 150.85785099999998,
@@ -1240,7 +1240,7 @@
 			"lat": -34.668609
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240223_052546510.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 150.855912,
@@ -1289,7 +1289,7 @@
 			"lat": -34.670389
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240223_053707116.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 150.861451,
@@ -1370,7 +1370,7 @@
 			"lat": -34.67229
 		},
 		{
-			"type": "waypoint",
+			"type": "info",
 			"photo": "pxl_20240223_054542697.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 150.861232,
@@ -1405,7 +1405,7 @@
 			"lat": -34.671564
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240223_060004583.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 150.85590399999998,
@@ -1419,7 +1419,7 @@
 			"lat": -34.671009
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "pxl_20240223_061938524.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 150.855101,
