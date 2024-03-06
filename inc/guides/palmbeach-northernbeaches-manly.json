@@ -102,6 +102,17 @@
 			"description": "Follow the Smugglers trail back down to the fork with the access trail."
 		},
 		{
+			"type": "hotspot",
+			"photo": "0460_dsc_5028.jpg",
+			"radius": 0.0004,
+			"description": "This lighthouse can be glimpsed in Skippy the Bush Kangaroo.",
+			"badge": "grass",
+			"title": "As Seen On Skippy",
+			"instruction": "Visit this location to earn the mystery trophy",
+			"lon": 151.32990681998413,
+			"lat": -33.58004975998127
+		},
+		{
 			"type": "waypoint",
 			"photo": "0600_dsc_5057.jpg",
 			"lon": 151.32654895991882,

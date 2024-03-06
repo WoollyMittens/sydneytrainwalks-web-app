@@ -13,8 +13,8 @@
 	],
 	"hero": "",
 	"zoom": 13,
-	"rain": false,
-	"fireban": false,
+	"rain": true,
+	"fireban": true,
 	"key": "teralba-fernleightrack-adamstown",
 	"updated": "2019-02-22",
 	"bounds": {

@@ -108,6 +108,17 @@
 			"description": "After reaching the bottom, follow the directions to Cox Road to the left or take the detour to the picnic area at the track head."
 		},
 		{
+			"type": "hotspot",
+			"photo": "pb020132_pb020135.jpg",
+			"radius": 0.0004,
+			"description": "This short excursion into country NSW may leave you wanting more.",
+			"badge": "wheat",
+			"title": "Shortest Country Tour",
+			"instruction": "Visit this location to earn the mystery trophy",
+			"lon": 150.231913,
+			"lat": -33.537329
+		},
+		{
 			"type": "toilet",
 			"photo": "pb020141.jpg",
 			"lon": 150.23274900009756,

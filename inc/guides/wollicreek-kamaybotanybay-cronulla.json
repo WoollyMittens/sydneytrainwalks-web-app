@@ -12,8 +12,8 @@
 	],
 	"hero": "",
 	"zoom": 13,
-	"rain": false,
-	"fireban": false,
+	"rain": true,
+	"fireban": true,
 	"key": "wollicreek-kamaybotanybay-cronulla",
 	"updated": "2014-04-20",
 	"bounds": {
@@ -293,7 +293,7 @@
 		{
 			"type": "toilet",
 			"lon": 151.163341,
-			"lat": -33.950520,
+			"lat": -33.95052,
 			"description": "There's toilet blocks along the foreshore."
 		},
 		{

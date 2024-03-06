@@ -265,9 +265,13 @@
 			"lat": -34.236446
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "005_pxl_20211022_233708686.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"radius": 0.0004,
+			"description": "See Cliff? See Bridge? Sea Cliff Bridge!",
+			"badge": "bridge_2",
+			"title": "See Sea?",
+			"instruction": "Visit this location to earn the mystery trophy",
 			"lon": 150.976726,
 			"lat": -34.238538
 		},

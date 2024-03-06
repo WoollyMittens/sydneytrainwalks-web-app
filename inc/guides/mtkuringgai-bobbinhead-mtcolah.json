@@ -205,6 +205,17 @@
 			"description": "Follow the signs up the ridge to the Kalkari Visitor Centre, which is well worth paying a visit to."
 		},
 		{
+			"type": "hotspot",
+			"photo": "p2021604.jpg",
+			"radius": 0.0004,
+			"description": "When all else fails: Power line service trails.",
+			"badge": "thunder",
+			"title": "Electrifying View",
+			"instruction": "Visit this location to earn the mystery trophy",
+			"lon": 151.144209,
+			"lat": -33.670694
+		},
+		{
 			"type": "waypoint",
 			"photo": "p2021624.jpg",
 			"description": "From the park entrance gate, follow Ku-Ring-Gai Chase Road to Mount Colah Station.",

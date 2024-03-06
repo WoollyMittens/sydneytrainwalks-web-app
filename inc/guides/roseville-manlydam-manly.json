@@ -254,10 +254,21 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "p7200802.jpg",
+			"photo": "p7200800.jpg",
 			"lon": 151.25563125998676,
 			"lat": -33.781486699988506,
 			"description": "Cross the dam across the footpath."
+		},
+		{
+			"type": "hotspot",
+			"photo": "p7200802.jpg",
+			"radius": 0.0004,
+			"description": "You can tell from the huge erected walls.",
+			"badge": "eggplant",
+			"title": "The Manliest Dam",
+			"instruction": "Visit this location to earn the mystery trophy",
+			"lon": 151.25563125998676,
+			"lat": -33.781486699988506
 		},
 		{
 			"type": "waypoint",

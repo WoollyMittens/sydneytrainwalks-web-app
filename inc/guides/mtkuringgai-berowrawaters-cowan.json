@@ -122,6 +122,17 @@
 			"optional": true
 		},
 		{
+			"type": "hotspot",
+			"photo": "pc218787_pc218790.jpg",
+			"radius": 0.0004,
+			"description": "At least you got a boat ride out of this trophy.",
+			"badge": "ship_1",
+			"title": "Shortest Hawkesbury Cruise",
+			"instruction": "Visit this location to earn the mystery trophy",
+			"lon": 151.12014722222224,
+			"lat": -33.599222222222224
+		},
+		{
 			"type": "waypoint",
 			"photo": "pc218795_pc218799.jpg",
 			"lon": 151.12450555555557,

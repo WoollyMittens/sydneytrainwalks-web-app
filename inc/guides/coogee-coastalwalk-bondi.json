@@ -164,11 +164,15 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "pxl_20231118_021223138.jpg",
 			"lon": 151.27008700000002,
 			"lat": -33.910164,
-			"description": "Lorem ipsum dolor sit amet."
+			"radius": 0.0004,
+			"description": "Sure it's prime realestate, but you cannot be alive.",
+			"badge": "skull",
+			"title": "Prime Realestate",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",

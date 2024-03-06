@@ -255,11 +255,15 @@
 			"lat": -33.791455
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "pxl_20240301_200619955.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.155911,
-			"lat": -33.791471
+			"lat": -33.791471,
+			"radius": 0.0004,
+			"description": "During dry weather the fish get a detour.",
+			"badge": "fish",
+			"title": "Don't Make It Weir",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",

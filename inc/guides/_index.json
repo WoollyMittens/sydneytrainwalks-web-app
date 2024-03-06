@@ -124,7 +124,7 @@
 				{
 					"location": "Blackheath",
 					"type": "train",
-					"photo": "p7200001.jpg",
+					"photo": "001_p7200001.jpg",
 					"description": "Get the train to Blackheath using <a href=\"https://transportnsw.info/trip#/?to=Blackheath\">transportnsw.info</a>.",
 					"lon": 150.284362793,
 					"lat": -33.633621216
@@ -132,7 +132,7 @@
 				{
 					"location": "Blackheath",
 					"type": "train",
-					"photo": "p7200207.jpg",
+					"photo": "003_p7200207.jpg",
 					"description": "Plan your return trip from Blackheath at <a href=\"https://transportnsw.info/trip#/?from=Blackheath\">transportnsw.info</a>.",
 					"lon": 150.284317017,
 					"lat": -33.633811951
@@ -203,7 +203,7 @@
 			"toilets": 13,
 			"looped": false,
 			"rain": true,
-			"fireban": false
+			"fireban": true
 		},
 		{
 			"key": "bundeena-royalcoasttrack-otford",
@@ -660,7 +660,7 @@
 			"toilets": 1,
 			"looped": true,
 			"rain": true,
-			"fireban": true
+			"fireban": false
 		},
 		{
 			"key": "mittagong-boxvaletrack-mittagong",
@@ -1137,7 +1137,7 @@
 			"toilets": 3,
 			"looped": false,
 			"rain": true,
-			"fireban": false
+			"fireban": true
 		},
 		{
 			"key": "parramatta-riverwalk-chatswood",
@@ -1302,8 +1302,8 @@
 			"kiosks": 5,
 			"toilets": 10,
 			"looped": true,
-			"rain": false,
-			"fireban": false
+			"rain": true,
+			"fireban": true
 		},
 		{
 			"key": "roseville-manlydam-manly",
@@ -1510,8 +1510,8 @@
 			"kiosks": 3,
 			"toilets": 13,
 			"looped": false,
-			"rain": false,
-			"fireban": false
+			"rain": true,
+			"fireban": true
 		},
 		{
 			"key": "tuggerah-wyrrabalong-wyong",
@@ -1560,8 +1560,8 @@
 			"revised": "2013-08-30",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 5,
+			"toilets": 16,
 			"looped": false,
 			"rain": true,
 			"fireban": true
@@ -1613,8 +1613,8 @@
 			"revised": "2018-12-23",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 2,
+			"toilets": 4,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -1657,8 +1657,8 @@
 			"revised": "2013-02-16",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 1,
+			"toilets": 2,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -1702,7 +1702,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
-			"toilets": 0,
+			"toilets": 4,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -1738,11 +1738,11 @@
 			"revised": "2014-04-20",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 3,
+			"toilets": 13,
 			"looped": false,
-			"rain": false,
-			"fireban": false
+			"rain": true,
+			"fireban": true
 		},
 		{
 			"key": "woywoy-5landswalk-tuggerah",
@@ -1791,7 +1791,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
-			"toilets": 0,
+			"toilets": 10,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -1835,8 +1835,8 @@
 			"revised": "2019-09-13",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 1,
+			"toilets": 6,
 			"looped": true,
 			"rain": false,
 			"fireban": false
@@ -1881,7 +1881,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
-			"toilets": 0,
+			"toilets": 5,
 			"looped": false,
 			"rain": true,
 			"fireban": false
@@ -1925,8 +1925,8 @@
 			"revised": "2024-01-12",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 2,
+			"toilets": 9,
 			"looped": false,
 			"rain": false,
 			"fireban": false

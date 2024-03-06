@@ -41,6 +41,17 @@
 			"badge": "compas_2"
 		},
 		{
+			"key": "blackheath-grandcanyon-blackheath",
+			"type": "trophy",
+			"photo": "002_pano_20190511_122607.jpg",
+			"lon": 150.3103277777778,
+			"lat": -33.621725,
+			"radius": 0.0004,
+			"description": "Someone thought so highly of this tiny swimming spot, that it deserved the signage.",
+			"title": "Technically this is a beach.",
+			"badge": "duck_rubberduck"
+		},
+		{
 			"key": "bondi-sydneyharbour-manly",
 			"type": "trophy",
 			"photo": "006_pxl_20231001_215735630.jpg",
@@ -72,6 +83,28 @@
 			"description": "It's rarely more than a trickle, but it's here exclusively for ones as adventurous as you.",
 			"title": "Ah! Nice Falls",
 			"badge": "water"
+		},
+		{
+			"key": "chatswood-lanecovepark-thornleigh",
+			"type": "trophy",
+			"photo": "pxl_20240301_200619955.jpg",
+			"lon": 151.155911,
+			"lat": -33.791471,
+			"radius": 0.0004,
+			"description": "During dry weather the fish get a detour.",
+			"title": "Don't Make It Weir",
+			"badge": "fish"
+		},
+		{
+			"key": "coogee-coastalwalk-bondi",
+			"type": "trophy",
+			"photo": "pxl_20231118_021223138.jpg",
+			"lon": 151.27008700000002,
+			"lat": -33.910164,
+			"radius": 0.0004,
+			"description": "Sure it's prime realestate, but you cannot be alive.",
+			"title": "Prime Realestate",
+			"badge": "skull"
 		},
 		{
 			"key": "cowan-jerusalembay-brooklyn",
@@ -140,6 +173,17 @@
 			"badge": "bridge_2"
 		},
 		{
+			"key": "katoomba-grandclifftopwalk-wentworthfalls",
+			"type": "trophy",
+			"photo": "003_pxl_20240210_011025719.jpg",
+			"lon": 150.36885900000001,
+			"lat": -33.726870000000005,
+			"radius": 0.0004,
+			"description": "This should be called Concussion Rock.",
+			"title": "Mind Your Head",
+			"badge": "brain"
+		},
+		{
 			"key": "katoomba-kedumbapass-wentworthfalls",
 			"type": "trophy",
 			"photo": "p6077982_dsc_3099.jpg",
@@ -171,6 +215,17 @@
 			"description": "Less famous than Kiama's, but they can only wish they had these beaches.",
 			"title": "The Other Hole",
 			"badge": "sink_bathroom"
+		},
+		{
+			"key": "laperouse-kamaybotanybay-laperouse",
+			"type": "trophy",
+			"photo": "pxl_20231117_211340808.jpg",
+			"lon": 151.248934,
+			"lat": -33.998039,
+			"radius": 0.0004,
+			"description": "Bonus points if you catch a golf ball.",
+			"title": "Below Par",
+			"badge": "video_favorite"
 		},
 		{
 			"key": "mittagong-boxvaletrack-mittagong",
@@ -261,6 +316,28 @@
 			"badge": "army_training"
 		},
 		{
+			"key": "mtkuringgai-berowrawaters-cowan",
+			"type": "trophy",
+			"photo": "pc218787_pc218790.jpg",
+			"lon": 151.12014722222224,
+			"lat": -33.599222222222224,
+			"radius": 0.0004,
+			"description": "At least you got a boat ride out of this trophy.",
+			"title": "Shortest Hawkesbury Cruise",
+			"badge": "ship_1"
+		},
+		{
+			"key": "mtkuringgai-bobbinhead-mtcolah",
+			"type": "trophy",
+			"photo": "p2021604.jpg",
+			"lon": 151.144209,
+			"lat": -33.670694,
+			"radius": 0.0004,
+			"description": "When all else fails: Power line service trails.",
+			"title": "Electrifying View",
+			"badge": "thunder"
+		},
+		{
 			"key": "mtkuringgai-garigal-roseville",
 			"type": "trophy",
 			"photo": "p8182671.jpg",
@@ -281,6 +358,17 @@
 			"description": "For the surveyor it must have been frustrating to see a misunderstading paint the landscape forever.",
 			"title": "He Wrote Rivulet",
 			"badge": "pen"
+		},
+		{
+			"key": "mtvictoria-mtyorklookout-mtvictoria",
+			"type": "trophy",
+			"photo": "pb020132_pb020135.jpg",
+			"lon": 150.231913,
+			"lat": -33.537329,
+			"radius": 0.0004,
+			"description": "This short excursion into country NSW may leave you wanting more.",
+			"title": "Shortest Country Tour",
+			"badge": "wheat"
 		},
 		{
 			"key": "nelsonbay-tomaree-annabay",
@@ -325,6 +413,17 @@
 			"description": "The most wholesome pun along the Grand Pacific Drive.",
 			"title": "Oh, I get it: Friend-Ship",
 			"badge": "smile_wink"
+		},
+		{
+			"key": "palmbeach-northernbeaches-manly",
+			"type": "trophy",
+			"photo": "0460_dsc_5028.jpg",
+			"lon": 151.32990681998413,
+			"lat": -33.58004975998127,
+			"radius": 0.0004,
+			"description": "This lighthouse can be glimpsed in Skippy the Bush Kangaroo.",
+			"title": "As Seen On Skippy",
+			"badge": "grass"
 		},
 		{
 			"key": "parramatta-greatwestwalk-penrith",
@@ -404,6 +503,17 @@
 			"badge": "compas_1"
 		},
 		{
+			"key": "parramatta-riverwalk-chatswood",
+			"type": "trophy",
+			"photo": "pxl_20240217_022426543.jpg",
+			"lon": 151.14881699999998,
+			"lat": -33.798454,
+			"radius": 0.0004,
+			"description": "Nature reclaimed Fairyland, but the magic remains.",
+			"title": "Fairyland Was Here",
+			"badge": "crown_1"
+		},
+		{
 			"key": "portkembla-grandpacificdrive-kiama",
 			"type": "trophy",
 			"photo": "pxl_20240223_024906147.jpg",
@@ -437,6 +547,39 @@
 			"badge": "sink_bathroom"
 		},
 		{
+			"key": "rhodes-olympicpark-rhodes",
+			"type": "trophy",
+			"photo": "pxl_20240113_215409511.jpg",
+			"lon": 151.067968,
+			"lat": -33.838709,
+			"radius": 0.0004,
+			"description": "Mist from those three poles created a rainbow gate to the Olympics.",
+			"title": "Former Glory",
+			"badge": "pillar"
+		},
+		{
+			"key": "rhodes-olympicpark-rhodes",
+			"type": "trophy",
+			"photo": "pxl_20240113_221001261.jpg",
+			"lon": 151.067312,
+			"lat": -33.83238600000001,
+			"radius": 0.0004,
+			"description": "This tiny train line leads all the way to icecream.",
+			"title": "Choo Choo Time",
+			"badge": "railroad"
+		},
+		{
+			"key": "roseville-manlydam-manly",
+			"type": "trophy",
+			"photo": "p7200802.jpg",
+			"lon": 151.25563125998676,
+			"lat": -33.781486699988506,
+			"radius": 0.0004,
+			"description": "You can tell from the huge erected walls.",
+			"title": "The Manliest Dam",
+			"badge": "eggplant"
+		},
+		{
 			"key": "springwood-bluegumswamp-richmond",
 			"type": "trophy",
 			"photo": "105_p4080127.jpg",
@@ -468,6 +611,17 @@
 			"description": "Maybe you can jump it, but who would want to finish their walk in wet shoes.",
 			"title": "Mandatory Foot Bath",
 			"badge": "duck_rubberduck"
+		},
+		{
+			"key": "stanwellpark-sublimepoint-thirroul",
+			"type": "trophy",
+			"photo": "005_pxl_20211022_233708686.jpg",
+			"lon": 150.976726,
+			"lat": -34.238538,
+			"radius": 0.0004,
+			"description": "See Cliff? See Bridge? Sea Cliff Bridge!",
+			"title": "See Sea?",
+			"badge": "bridge_2"
 		},
 		{
 			"key": "teralba-fernleightrack-adamstown",

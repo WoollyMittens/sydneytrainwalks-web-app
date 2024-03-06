@@ -181,11 +181,11 @@ function populateGuide(file, guideCache, exifCache, routesCache) {
 		if (markerData.photo && !exifCache[key][markerData.photo]) {
 			markerData.missing = true;
 		}
-		if (key === 'portkembla-grandpacificdrive-kiama' && markerData.type === 'waypoint' && markerData.photo && exifCache[key][markerData.photo]) {
-			console.log('overriding photo:', markerData.photo);
-			markerData.lon = exifCache[key][markerData.photo].lon,
-			markerData.lat = exifCache[key][markerData.photo].lat
-		}
+//		if (key === 'portkembla-grandpacificdrive-kiama' && markerData.type === 'waypoint' && markerData.photo && exifCache[key][markerData.photo]) {
+//			console.log('overriding photo:', markerData.photo);
+//			markerData.lon = exifCache[key][markerData.photo].lon,
+//			markerData.lat = exifCache[key][markerData.photo].lat
+//		}
 	}
 	// determine the centrepoint
 	let halfWay = parseInt(routeData.length/2);

@@ -889,11 +889,15 @@
 			"lat": -33.726598
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "003_pxl_20240210_011025719.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 150.36885900000001,
-			"lat": -33.726870000000005
+			"lat": -33.726870000000005,
+			"radius": 0.0004,
+			"description": "This should be called Concussion Rock.",
+			"badge": "brain",
+			"title": "Mind Your Head",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
