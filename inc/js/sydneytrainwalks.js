@@ -80,6 +80,7 @@ export class SydneyTrainWalks {
 		window.localStorage.setItem('mode', mode);
 		// update the details
 		this.details.update(id);
+		this.editor.update(id);
 		// wait a while to avoid glitches
 		setTimeout(() => {
 			// update the footer
@@ -136,7 +137,7 @@ export class SydneyTrainWalks {
 		this.overview = new Overview(this.config, this.guideIds, this.loadGuide.bind(this), this.loadRoute.bind(this), this.updateView.bind(this), this.updateSearch.bind(this));
 		this.trophies = new Trophies(this.config, this.guideIds, this.loadGuide.bind(this), this.updateView.bind(this), this.busy);
 		this.details = new Details(this.config, this.loadGuide.bind(this), this.loadRoute.bind(this), this.loadExif.bind(this), this.trophies);
-		this.editor = new Editor();
+		this.editor = new Editor(this.config, this.loadGuide.bind(this));
 		// substitute legacy map mode for guide
 		if (storedMode === 'map') storedMode = 'guide';
 		// restore the previous state
