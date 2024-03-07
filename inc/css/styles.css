@@ -730,8 +730,19 @@ body.screen-trophies #footer-to-trophies {
   position: relative;
   font-size: 1.167rem;
   text-decoration: none;
-  border-left: solid 1px #000;
-  border-right: solid 1px #000;
+  border-left: solid 1px #fff;
+  border-right: solid 1px #fff;
+}
+[data-color-scheme=light] .navigation menu li a {
+  border-color: #fff;
+}
+[data-color-scheme=dark] .navigation menu li a {
+  border-color: #212121;
+}
+@media (prefers-color-scheme: dark) {
+  .navigation menu li a {
+    border-color: #212121;
+  }
 }
 .navigation menu li.filtered-out,
 .navigation menu li.no-match {
