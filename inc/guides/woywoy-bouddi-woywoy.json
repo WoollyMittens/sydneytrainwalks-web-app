@@ -1026,8 +1026,20 @@
 		{
 			"location": "Wagstaff",
 			"type": "ferry",
-			"photo": "008_pxl_20230128_004831018.jpg",
+			"photo": "008_pano_20190914_124017.jpg",
 			"description": "Plan your return trip from Wagstaffe at <a href=\"https://transportnsw.info/trip#/?from=Wagstaffe Wharf\">transportnsw.info</a>.",
+			"lon": 151.34351,
+			"lat": -33.522901,
+			"missing": true
+		},
+		{
+			"type": "hotspot",
+			"photo": "008_pxl_20230128_004831018.jpg",
+			"radius": 0.0004,
+			"description": "Even if you're not catching the bus here, it is worth a visit.",
+			"badge": "wizard_2",
+			"title": "The Prettiest Bus Stop",
+			"instruction": "Visit this location to earn the mystery trophy",
 			"lon": 151.34279722222223,
 			"lat": -33.52336388888889
 		},

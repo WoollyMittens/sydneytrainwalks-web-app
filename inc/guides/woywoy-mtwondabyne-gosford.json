@@ -326,11 +326,15 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "pxl_20240112_220306760.jpg",
+			"radius": 0.0004,
+			"description": "But why though?",
+			"badge": "music_1",
+			"title": "Wild Piano",
+			"instruction": "Visit this location to earn the mystery trophy",
 			"lon": 151.302639,
-			"lat": -33.548452,
-			"description": "Lorem ipsum dolor sit amet."
+			"lat": -33.548452
 		},
 		{
 			"type": "waypoint",

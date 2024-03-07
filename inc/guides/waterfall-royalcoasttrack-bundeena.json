@@ -272,17 +272,28 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "002_pxl_20220916_220116230.jpg",
+			"photo": "002_pxl_20220916_215645134.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.02227222222223,
-			"lat": -34.14698611111111
+			"lon": 151.02181800000002,
+			"lat": -34.146749
+		},
+		{
+			"type": "hotspot",
+			"photo": "002_pxl_20220916_220113276.jpg",
+			"radius": 0.0004,
+			"description": "In case you were still deciding whether to take the detour.",
+			"badge": "fish",
+			"title": "Yes There Are Leeches",
+			"instruction": "Visit this location to earn the mystery trophy",
+			"lon": 151.021971,
+			"lat": -34.146968
 		},
 		{
 			"type": "waypoint",
 			"photo": "002_pxl_20220916_220253061.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.02222500000002,
-			"lat": -34.146769444444445
+			"lon": 151.02202200000002,
+			"lat": -34.14698
 		},
 		{
 			"type": "waypoint",
@@ -302,15 +313,15 @@
 			"type": "waypoint",
 			"photo": "002_pxl_20220916_221218347.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.0235888888889,
-			"lat": -34.14783055555556
+			"lon": 151.02305,
+			"lat": -34.147829
 		},
 		{
 			"type": "waypoint",
 			"photo": "002_pxl_20220916_221252069.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.0235888888889,
-			"lat": -34.14783055555556
+			"lon": 151.023277,
+			"lat": -34.147875
 		},
 		{
 			"type": "waypoint",
@@ -474,9 +485,13 @@
 			"lat": -34.150425
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "003_pxl_20220129_000337460.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"radius": 0.0004,
+			"description": "The only major landmark for kilometres or coastal heath is this little pole.",
+			"badge": "map_2",
+			"title": "I See You've Met Garie",
+			"instruction": "Visit this location to earn the mystery trophy",
 			"lon": 151.058512,
 			"lat": -34.15058
 		},

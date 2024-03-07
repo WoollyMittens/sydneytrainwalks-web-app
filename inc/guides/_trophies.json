@@ -800,6 +800,28 @@
 			"badge": "station_petrol"
 		},
 		{
+			"key": "waterfall-royalcoasttrack-bundeena",
+			"type": "trophy",
+			"photo": "002_pxl_20220916_220113276.jpg",
+			"lon": 151.021971,
+			"lat": -34.146968,
+			"radius": 0.0004,
+			"description": "In case you were still deciding whether to take the detour.",
+			"title": "Yes There Are Leeches",
+			"badge": "fish"
+		},
+		{
+			"key": "waterfall-royalcoasttrack-bundeena",
+			"type": "trophy",
+			"photo": "003_pxl_20220129_000337460.jpg",
+			"lon": 151.058512,
+			"lat": -34.15058,
+			"radius": 0.0004,
+			"description": "The only major landmark for kilometres or coastal heath is this little pole.",
+			"title": "I See You've Met Garie",
+			"badge": "map_2"
+		},
+		{
 			"key": "wollicreek-kamaybotanybay-cronulla",
 			"type": "trophy",
 			"photo": "pxl_20221105_042106719.jpg",
@@ -888,6 +910,17 @@
 			"badge": "day_rain"
 		},
 		{
+			"key": "woywoy-bouddi-woywoy",
+			"type": "trophy",
+			"photo": "008_pxl_20230128_004831018.jpg",
+			"lon": 151.34279722222223,
+			"lat": -33.52336388888889,
+			"radius": 0.0004,
+			"description": "Even if you're not catching the bus here, it is worth a visit.",
+			"title": "The Prettiest Bus Stop",
+			"badge": "wizard_2"
+		},
+		{
 			"key": "woywoy-mountelliot-lisarow",
 			"type": "trophy",
 			"photo": "002_img_20200530_142614.jpg",
@@ -897,6 +930,28 @@
 			"description": "One of the few remaining Krillz not pillz graffiti dotted around Central Coast.",
 			"title": "A Whale of a Time",
 			"badge": "fish"
+		},
+		{
+			"key": "woywoy-mountelliot-lisarow",
+			"type": "trophy",
+			"photo": "004_pxl_20240224_235821850.jpg",
+			"lon": 151.361662,
+			"lat": -33.42306,
+			"radius": 0.0004,
+			"description": "The fourth explorer statue requires some exploring.",
+			"title": "The Solitary Explorer",
+			"badge": "compas_2"
+		},
+		{
+			"key": "woywoy-mtwondabyne-gosford",
+			"type": "trophy",
+			"photo": "pxl_20240112_220306760.jpg",
+			"lon": 151.302639,
+			"lat": -33.548452,
+			"radius": 0.0004,
+			"description": "But why though?",
+			"title": "Wild Piano",
+			"badge": "music_1"
 		},
 		{
 			"key": "woywoy-mtwondabyne-gosford",
