@@ -112,7 +112,7 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_p7200119_p7200122.jpg",
+			"photo": "001_p7200119_001_p7200122.jpg",
 			"lon": 150.32545555555555,
 			"lat": -33.64621944444444,
 			"description": "The climb up out of the canyon ends at Evans Lookout.",
@@ -140,11 +140,10 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_p7200160_p7200164.jpg",
+			"photo": "001_p7200160_001_p7200164.jpg",
 			"lon": 150.3114888888889,
 			"lat": -33.62851388888889,
-			"description": "The Cliff Top Track ends at the popular Govetts Leap.",
-			"missing": true
+			"description": "The Cliff Top Track ends at the popular Govetts Leap."
 		},
 		{
 			"type": "toilet",
@@ -164,8 +163,7 @@
 			"photo": "001_p7200204.jpg",
 			"lon": 150.3079638888889,
 			"lat": -33.623175,
-			"description": "Follow Popes Glen all the way up to Memorial Park.",
-			"missing": true
+			"description": "Follow Popes Glen all the way up to Memorial Park."
 		},
 		{
 			"type": "hotspot",
