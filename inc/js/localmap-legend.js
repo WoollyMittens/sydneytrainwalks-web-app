@@ -100,6 +100,8 @@ export class Legend {
 			if (photo) { definitionTitle.innerHTML += `<img class="localmap-legend-photo" alt="" src="${photo}"/>`; definitionTitle.style.backgroundImage = `url("${photo}")`; }
 			if (icon) { definitionTitle.innerHTML += `<img class="localmap-legend-icon" alt="${markerData.type}" src="${icon}"/>`; }
 			if (markerData.optional) { definitionTitle.className += " localmap-legend-optional"; }
+			if (markerData.detour) { definitionTitle.className += " localmap-legend-detour"; }
+			if (markerData.warning) { definitionTitle.className += " localmap-legend-warning"; }
 			if (markerData.type) { definitionTitle.className += ` localmap-legend-${markerData.type}`; }
 			fragment.appendChild(definitionTitle);
 			// add the description
@@ -107,6 +109,8 @@ export class Legend {
 			definitionDescription.className = "localmap-legend-description";
 			definitionDescription.innerHTML = `<p>${text}</p>`;
 			if (markerData.optional) { definitionDescription.className += " localmap-legend-optional"; }
+			if (markerData.detour) { definitionDescription.className += " localmap-legend-detour"; }
+			if (markerData.warning) { definitionDescription.className += " localmap-legend-warning"; }
 			if (markerData.type) { definitionDescription.className += ` localmap-legend-${markerData.type}`; }
 			fragment.appendChild(definitionDescription);
 			// add the event handlers

@@ -118,24 +118,24 @@
 		{
 			"key": "blackheath-grandcanyon-blackheath",
 			"type": "walk",
-			"lon": 150.326919556,
-			"lat": -33.655021667,
+			"lon": 150.32632562331855,
+			"lat": -33.650162145495415,
 			"locations": [
 				{
 					"location": "Blackheath",
 					"type": "train",
-					"photo": "001_p7200001.jpg",
+					"photo": "pxl_20240307_214621052.jpg",
 					"description": "Get the train to Blackheath using <a href=\"https://transportnsw.info/trip#/?to=Blackheath\">transportnsw.info</a>.",
-					"lon": 150.284362793,
-					"lat": -33.633621216
+					"lon": 150.28453906998038,
+					"lat": -33.63314193673432
 				},
 				{
 					"location": "Blackheath",
 					"type": "train",
-					"photo": "003_p7200207.jpg",
+					"photo": "pxl_20240308_031659433.jpg",
 					"description": "Plan your return trip from Blackheath at <a href=\"https://transportnsw.info/trip#/?from=Blackheath\">transportnsw.info</a>.",
-					"lon": 150.284317017,
-					"lat": -33.633811951
+					"lon": 150.2846654690802,
+					"lat": -33.63396579399705
 				}
 			],
 			"region": "Grand Canyon",
@@ -816,25 +816,27 @@
 		{
 			"key": "mtkuringgai-bobbinhead-mtcolah",
 			"type": "walk",
-			"lon": 151.144379,
-			"lat": -33.691296,
+			"lon": 151.15724908187985,
+			"lat": -33.660484459251165,
 			"locations": [
 				{
 					"location": "Mount Kuring-gai",
-					"lon": 151.136915,
-					"lat": -33.652868,
+					"photo": "001_pxl_20240309_194305479.jpg",
 					"type": "train",
-					"description": "Get the train to Mount Kuring-gai using <a href=\"https://transportnsw.info/trip#/?to=Mount Kuring-gai\">transportnsw.info</a>."
+					"description": "Get the train to Mount Kuring-gai using <a href=\"https://transportnsw.info/trip#/?to=Mount Kuring-gai\">transportnsw.info</a>.",
+					"lon": 151.13717157393694,
+					"lat": -33.6539083532989
 				},
 				{
 					"location": "Mount Colah",
+					"photo": "009_pxl_20240309_230225509.jpg",
 					"type": "train",
 					"description": "Plan your return trip from Mount Colah at <a href=\"https://transportnsw.info/trip#/?from=Mount Colah\">transportnsw.info</a>.",
-					"lon": 151.115156,
-					"lat": -33.671218
+					"lon": 151.1151202954352,
+					"lat": -33.67108102887869
 				}
 			],
-			"region": "Sphynx Memorial",
+			"region": "Bobbin Head",
 			"distance": [
 				13,
 				25
@@ -842,8 +844,8 @@
 			"revised": "2014-02-01",
 			"transit": true,
 			"car": false,
-			"kiosks": 1,
-			"toilets": 3,
+			"kiosks": 0,
+			"toilets": 0,
 			"looped": false,
 			"rain": false,
 			"fireban": false
