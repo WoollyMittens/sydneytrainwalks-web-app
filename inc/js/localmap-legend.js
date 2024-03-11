@@ -54,7 +54,7 @@ export class Legend {
 			// make the keywords in the description clickable
 			let description = guideData.description;
 			for (let keyword in guideData.keywords) { 
-				description.replace(new RegExp(keyword, "gi"), `<a href="${guideData.keywords[keyword]}">${keyword}</a>`)
+				description = description.replace(new RegExp(keyword, "gi"), `<a href="${guideData.keywords[keyword]}">${keyword}</a>`);
 			}
 			// fill the intro
 			const fragment = document.createDocumentFragment();
@@ -87,8 +87,9 @@ export class Legend {
 		if (markerData.description) {
 			// format the path to the external assets
 			var photo = (markerData.photo) ? this.config.thumbsUrl + markerData.photo : null;
-			var text = (markerData.description) ? markerData.description : null;
 			var icon = (markerData.type !== 'waypoint') ? this.config.markersUrl.replace("{type}", markerData.type) : null;
+			// format the description
+			var text = markerData.description;
 			// update the marker if this is an achieved trophy
 			if (markerData.type === "hotspot" && this.config.checkHotspot(markerData)) { text = markerData.instruction; }
 			// create a container for the markers

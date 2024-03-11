@@ -69,55 +69,7 @@ export class Details {
 			.replace(/{endTransport}/g, end.type)
 			.replace(/{endLocation}/g, end.location);
 	}
-
-	updateLandmarks(guide) {
-		// gather the information
-		var prefix = guide.key;
-		var landmark, landmarks = "";
-		// fill the guide with landmarks
-		guide.markers.map((marker) => {
-			// if is a landmark if it has a photo
-			if (marker.photo) {
-				// get the description
-				landmark = this.addThumbnail(prefix, marker);
-				// add extra markup for optional landmarks
-				if (marker.optional) { landmarks += '<div class="guide-optional">' + landmark + '</div>'; }
-				else if (marker.detour) { landmarks += '<div class="guide-detour">' + landmark + '</div>'; }
-				else if (marker.attention) { landmarks += '<div class="guide-attention">' + landmark + '</div>'; }
-				else { landmarks += landmark; }
-			}
-			// if the landmark is a trophy location
-			else if (marker.badge) {
-				// get the description
-				landmark = this.addTrophy(marker);
-				// add extra markup for optional landmarks
-				landmarks += '<div class="guide-trophy">' + landmark + '</div>';
-			}
-		});
-		// return the landmarks
-		return landmarks;
-	}
-
-	addThumbnail(prefix, marker) {
-		var thumbnailTemplate = this.thumbnailTemplate.innerHTML;
-		return thumbnailTemplate
-			.replace(/{id}/g, prefix)
-			.replace(/{src}/g, marker.photo.toLowerCase())
-			.replace(/{description}/g, marker.description);
-	}
-
-	addTrophy(marker) {
-		var trophiesTemplate = this.trophiesTemplate.innerHTML;
-		var storedTrophies = JSON.parse(window.localStorage.getItem('trophies') || "{}");
-		var hasTrophy = storedTrophies[marker.title];
-		return trophiesTemplate
-			.replace(/{icon}/g, (hasTrophy) ? marker.badge : marker.type)
-			.replace(/{title}/g, (hasTrophy) ? marker.explanation.join(' ') : marker.description)
-			.replace(/{type}/g, marker.type)
-			.replace(/{lon}/g, marker.lon)
-			.replace(/{lat}/g, marker.lat);
-	}
-
+	
 	updateMap(guide, route, exif) {
 		// get the properties if this is a segment of another walk
 		var prefix = guide.key;
