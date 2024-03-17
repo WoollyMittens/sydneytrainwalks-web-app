@@ -2,9 +2,11 @@
 	"location": "Munmorah",
 	"lon": 151.617559,
 	"lat": -33.194284,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "A pleasant shorefront path to Budgewoi followed by a more adventurous trek through Munmorah State Conservation Area, including the well known Frazer Beach.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"shorefront path": "https://www.lovecentralcoast.com/news/waterside-walks-shared-pathways",
+		"Munmorah State Conservation Area": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/munmorah-state-conservation-area",
+		"Frazer Beach": "https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/frazer-campground"
 	},
 	"distance": [
 		12,

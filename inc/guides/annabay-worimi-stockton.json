@@ -2,9 +2,11 @@
 	"location": "Worimi",
 	"lon": 151.910095215,
 	"lat": -32.828197479,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This extremely long beach walk traverses the length of Worimi National Park. Tin City and the MV Sygna wreck are welcome landmarks along the featureless expanse.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Worimi National Park": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/worimi-national-park",
+		"Tin City": "https://www.visitnsw.com/things-to-do/tours/sand-dune-safaris/tin-city-safari",
+		"MV Sygna": "https://en.wikipedia.org/wiki/MV_Sygna"
 	},
 	"distance": [
 		35
@@ -14,7 +16,7 @@
 	"rain": false,
 	"fireban": true,
 	"key": "annabay-worimi-stockton",
-	"updated": "2014-03-21",
+	"updated": "2017-04-16",
 	"bounds": {
 		"west": 151.76513671875,
 		"north": -32.75956202565013,
@@ -67,15 +69,14 @@
 		},
 		{
 			"type": "hotspot",
-			"photo": "001_P3224343_P3224344.jpg",
+			"photo": "001_p3224343_p3224344.jpg",
 			"lon": 151.9610443972656,
 			"lat": -32.80925637778527,
 			"radius": 0.0004,
 			"description": "The Tin City beach huts are one of the very few breaks in the endless monotony of 27 kilometres of beach, but also not.",
 			"badge": "count_new",
 			"title": "Are We There Yet?",
-			"instruction": "Visit this location to earn the mystery trophy",
-			"missing": true
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",

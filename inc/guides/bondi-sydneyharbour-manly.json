@@ -2,9 +2,10 @@
 	"location": "Sydney Harbour",
 	"lon": 151.2158261798,
 	"lat": -33.8503465522,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This walk largely covers the Bondi to Manly Walk aound Sydney Harbour. It is recommended to pick managable sections between public transport hubs across mutiple days.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Bondi to Manly Walk": "https://www.bonditomanly.com/",
+		"Sydney Harbour": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/sydney-harbour-national-park"
 	},
 	"distance": [
 		10,
@@ -144,11 +145,15 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "001_pxl_20230929_220943698_pano.jpg",
 			"lon": 151.280326,
 			"lat": -33.87037,
-			"description": "Lorem ipsum dolor sit amet."
+			"radius": 0.0004,
+			"description": "The barkbench with the best view in Sydney.",
+			"badge": "bench_1",
+			"title": "A Bench with a View",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -521,7 +526,7 @@
 			"photo": "001_pxl_20230930_001006750.jpg",
 			"lon": 151.281869,
 			"lat": -33.84357,
-			"description": "Take the ferry to Watsons Bay using <a href=\"https://transportnsw.info/trip#/?to=Watsons Bay\">transportnsw.info</a>."
+			"description": "Take the ferry from/to Watsons Bay using <a href=\"https://transportnsw.info/trip#/?to=Watsons Bay Wharf\">transportnsw.info</a>."
 		},
 		{
 			"type": "waypoint",
@@ -818,6 +823,13 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
+			"location": "Rose Bay",
+			"type": "ferry",
+			"lon": 151.262392,
+			"lat": -33.870828,
+			"description": "Take the ferry from/to Rose Bay using <a href=\"https://transportnsw.info/trip#/?to=Rose Bay Wharf\">transportnsw.info</a>."
+		},
+		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230930_015654440.jpg",
 			"lon": 151.261899,
@@ -992,6 +1004,13 @@
 			"lon": 151.24394999999998,
 			"lat": -33.874332,
 			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"location": "Double Bay",
+			"type": "ferry",
+			"lon": 151.242416,
+			"lat": -33.873528,
+			"description": "Take the ferry from/to Double Bay using <a href=\"https://transportnsw.info/trip#/?to=Double Bay Wharf\">transportnsw.info</a>."
 		},
 		{
 			"type": "waypoint",
@@ -1240,11 +1259,12 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "toilet",
+			"location": "Circular Quay",
+			"type": "train",
 			"photo": "003_pxl_20230930_050035272.jpg",
 			"lon": 151.211603,
 			"lat": -33.861208000000005,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Take the ferry or train from/to Circular Quay using <a href=\"https://transportnsw.info/trip#/?to=Circular Quay\">transportnsw.info</a>."
 		},
 		{
 			"type": "waypoint",
@@ -1648,6 +1668,13 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
+			"location": "Cremorne Point",
+			"type": "ferry",
+			"lon": 151.231046,
+			"lat": -33.847638,
+			"description": "Take the ferry from/to Cremorne Point using <a href=\"https://transportnsw.info/trip#/?to=Cremorne Point Wharf\">transportnsw.info</a>."
+		},
+		{
 			"type": "toilet",
 			"photo": "006_pxl_20231001_204447003.jpg",
 			"lon": 151.230849,
@@ -1660,6 +1687,13 @@
 			"lon": 151.230856,
 			"lat": -33.84567100006771,
 			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"location": "Old Cremorne",
+			"type": "ferry",
+			"lon": 151.230326,
+			"lat": -33.840928,
+			"description": "Take the ferry from/to Old Cremorne using <a href=\"https://transportnsw.info/trip#/?to=Old Cremorne Wharf\">transportnsw.info</a>."
 		},
 		{
 			"type": "waypoint",
@@ -1702,6 +1736,13 @@
 			"lon": 151.232955,
 			"lat": -33.837905,
 			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"location": "Mosman Bay",
+			"type": "ferry",
+			"lon": 151.232518,
+			"lat": -33.838436,
+			"description": "Take the ferry from/to Mosman Bay using <a href=\"https://transportnsw.info/trip#/?to=Mosman Bay Wharf\">transportnsw.info</a>."
 		},
 		{
 			"type": "waypoint",
@@ -1831,6 +1872,13 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
+			"location": "Taronga Zoo",
+			"type": "ferry",
+			"lon": 151.239712,
+			"lat": -33.845758,
+			"description": "Take the ferry from/to Taronga Zoo using <a href=\"https://transportnsw.info/trip#/?to=Taronga Zoo Wharf\">transportnsw.info</a>."
+		},
+		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_215625281.jpg",
 			"lon": 151.24020199999998,
@@ -1843,7 +1891,7 @@
 			"lon": 151.24102499999998,
 			"lat": -33.845534,
 			"radius": 0.0004,
-			"description": "Rarely there is a zoo that is as enjoyable from the outside.",
+			"description": "Rarely a zoo is as enjoyable from the outside.",
 			"badge": "monkey",
 			"title": "You Belong in the Zoo",
 			"instruction": "Visit this location to earn the mystery trophy"
@@ -2123,6 +2171,13 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
+			"location": "Balmoral Beach",
+			"type": "bus",
+			"lon": 151.250907,
+			"lat": -33.824374,
+			"description": "Take the bus from/to Balmoral Beach using <a href=\"https://transportnsw.info/trip#/?to=Hunter Park, The Esplanade\">transportnsw.info</a>."
+		},
+		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231002_002819483.jpg",
 			"lon": 151.251293,
@@ -2233,6 +2288,13 @@
 			"lon": 151.246245,
 			"lat": -33.805702,
 			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"location": "The Spit",
+			"type": "bus",
+			"lon": 151.246444,
+			"lat": -33.806196,
+			"description": "Take the bus from/to the Spit using <a href=\"https://transportnsw.info/trip#/?to=Spit West Reserve, Spit Rd\">transportnsw.info</a>."
 		},
 		{
 			"type": "waypoint",

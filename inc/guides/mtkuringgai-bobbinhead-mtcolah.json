@@ -2,9 +2,12 @@
 	"location": "Bobbin Head",
 	"lon": 151.15724908187985,
 	"lat": -33.660484459251165,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "An expandable walk through Kuring-gai Chase to Bobbin Head with an optional extention to the Sphynx Memorial. The overgrown pipeline shortcut track to Apple Tree Bay is strongly discouraged.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Kuring-gai Chase": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/kuringgai-chase-national-park",
+		"Bobbin Head": "https://www.nationalparks.nsw.gov.au/things-to-do/picnic-areas/bobbin-head",
+		"Sphynx Memorial": "https://www.nationalparks.nsw.gov.au/things-to-do/historic-buildings-places/sphinx-memorial",
+		"Apple Tree Bay": "https://www.nationalparks.nsw.gov.au/things-to-do/picnic-areas/apple-tree-picnic-area"
 	},
 	"distance": [
 		13,

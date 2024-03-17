@@ -2,9 +2,11 @@
 	"location": "Botany Bay",
 	"lon": 151.23869,
 	"lat": -33.99797,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "A short but diverse walk through the less accessible corner of Kamay Botany Bay, with opportunities to visit Cape Banks and Bare Island as well.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Kamay Botany Bay": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/la-perouse-area",
+		"Cape Banks": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/cape-banks-walking-track",
+		"Bare Island": "https://www.nationalparks.nsw.gov.au/things-to-do/guided-tours/bare-island-fort-guided-tour"
 	},
 	"distance": [
 		6

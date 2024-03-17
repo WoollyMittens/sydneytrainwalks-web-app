@@ -2,9 +2,11 @@
 	"location": "Berowra Valley",
 	"lon": 151.1003703251,
 	"lat": -33.6470330972,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This walk follows part of the Great North Walk through Berowra Valley, with Crosslands Reserve and Galston Gorge as notable landmarks along the way.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Great North Walk": "https://www.thegreatnorthwalk.com/",
+		"Crosslands Reserve": "https://discoverhornsby.com/parks/crosslands-reserve/",
+		"Galston Gorge": "https://en.wikipedia.org/wiki/Galston_Gorge"
 	},
 	"distance": [
 		21

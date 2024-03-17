@@ -2,9 +2,12 @@
 	"location": "Grand Cliff Top Walk",
 	"lon": 150.32783436588943,
 	"lat": -33.72529769316316,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This walk ties together Katoomba Falls, Leura Cascades, and Wentworth Falls with the many lookouts across Jamison Valley in between, before ending with the famous Darwins Walk.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Katoomba Falls": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/round-walking-track",
+		"Leura Cascades": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/leura-cascades-fern-bower",
+		"Wentworth Falls": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/wentworth-falls-track",
+		"Darwins Walk": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/darwins-walk"
 	},
 	"distance": [
 		3,

@@ -10,7 +10,7 @@
 		{
 			"key": "annabay-worimi-stockton",
 			"type": "trophy",
-			"photo": "001_P3224343_P3224344.jpg",
+			"photo": "001_p3224343_p3224344.jpg",
 			"lon": 151.9610443972656,
 			"lat": -32.80925637778527,
 			"radius": 0.0004,
@@ -54,11 +54,22 @@
 		{
 			"key": "bondi-sydneyharbour-manly",
 			"type": "trophy",
+			"photo": "001_pxl_20230929_220943698_pano.jpg",
+			"lon": 151.280326,
+			"lat": -33.87037,
+			"radius": 0.0004,
+			"description": "The barkbench with the best view in Sydney.",
+			"title": "A Bench with a View",
+			"badge": "bench_1"
+		},
+		{
+			"key": "bondi-sydneyharbour-manly",
+			"type": "trophy",
 			"photo": "006_pxl_20231001_215735630.jpg",
 			"lon": 151.24102499999998,
 			"lat": -33.845534,
 			"radius": 0.0004,
-			"description": "Rarely there is a zoo that is as enjoyable from the outside.",
+			"description": "Rarely a zoo is as enjoyable from the outside.",
 			"title": "You Belong in the Zoo",
 			"badge": "monkey"
 		},
@@ -226,6 +237,17 @@
 			"description": "Bonus points if you catch a golf ball.",
 			"title": "Below Par",
 			"badge": "video_favorite"
+		},
+		{
+			"key": "manly-northhead-manly",
+			"type": "trophy",
+			"photo": "007_pxl_20240316_021501378.jpg",
+			"lon": 151.297582,
+			"lat": -33.818088,
+			"radius": 0.0004,
+			"description": "The whole distance is paved with the names of the fallen.",
+			"title": "A solumn trail",
+			"badge": "obelisk"
 		},
 		{
 			"key": "mittagong-boxvaletrack-mittagong",
@@ -571,9 +593,9 @@
 		{
 			"key": "roseville-manlydam-manly",
 			"type": "trophy",
-			"photo": "p7200802.jpg",
-			"lon": 151.25563125998676,
-			"lat": -33.781486699988506,
+			"photo": "pxl_20240315_235444557.jpg",
+			"lon": 151.255704,
+			"lat": -33.782135,
 			"radius": 0.0004,
 			"description": "You can tell from the huge erected walls.",
 			"title": "The Manliest Dam",

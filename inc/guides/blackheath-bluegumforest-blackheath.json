@@ -2,9 +2,11 @@
 	"location": "Grose Valley",
 	"lon": 150.3570952546,
 	"lat": -33.6135320552,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This walk traverses Grose Valley to the Blue Gum Forest. Perrys Lookdown, Hat Hill and Pulpit Rock are worth visiting on the way back.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Blue Gum Forest": "https://www.nationalparks.nsw.gov.au/things-to-do/historic-buildings-places/blue-gum-forest",
+		"Perrys Lookdown": "https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/perrys-lookdown",
+		"Pulpit Rock": "https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/pulpit-rock-lookout"
 	},
 	"distance": [
 		24

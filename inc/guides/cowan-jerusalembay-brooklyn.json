@@ -2,9 +2,10 @@
 	"location": "Ku-ring-gai Chase",
 	"lon": 151.19921875,
 	"lat": -33.58609771699999,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This walk follows part of the Great North Walk down to scenic Brooklyn. It can be made extra adventurous with a visit to Taffy's Rock.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Great North Walk": "https://www.thegreatnorthwalk.com/",
+		"Brooklyn": "https://www.aussietowns.com.au/town/brooklyn-nsw"
 	},
 	"distance": [
 		15,
@@ -71,7 +72,7 @@
 			"photo": "001_p7058922.jpg",
 			"lon": 151.195953,
 			"lat": -33.584307,
-			"description": "<i>+8km</i> The start of this track is obscured by heavy growth, but quickly opens up to a trail along a ridge with views down on both sides.",
+			"description": "<i>+5km</i> The start of this track is obscured by heavy growth, but quickly opens up to a trail along a ridge with views down on both sides.",
 			"optional": true
 		},
 		{

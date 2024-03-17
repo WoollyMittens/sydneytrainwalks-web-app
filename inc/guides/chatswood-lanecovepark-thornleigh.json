@@ -2,9 +2,10 @@
 	"location": "Lane Cove Park",
 	"lon": 151.1306127347052,
 	"lat": -33.772125290706754,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This walk follows part of the Great North Walk trough Lane Cove National Park.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Great North Walk": "https://www.thegreatnorthwalk.com/",
+		"Lane Cove National Park": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/lane-cove-national-park"
 	},
 	"distance": [
 		18

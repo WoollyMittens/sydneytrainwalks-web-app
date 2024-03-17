@@ -2,9 +2,10 @@
 	"location": "Coastal Walk",
 	"lon": 151.269677,
 	"lat": -33.908432,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "The short but impressive Bondi to Coogee Walk comes especially recommended during the Scultures by the Sea festival.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Bondi to Coogee Walk": "https://www.bonditocoogeewalk.com/",
+		"Scultures by the Sea": "https://sculpturebythesea.com/"
 	},
 	"distance": [
 		6

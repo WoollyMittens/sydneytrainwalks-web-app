@@ -2,9 +2,12 @@
 	"location": "Garigal",
 	"lon": 151.183167,
 	"lat": -33.710743,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This walk ties together Kuring-gai Chase and Garigal national parks all the way to Middle Harbour, split in two by the Ku-ring-gai Wildflower Garden",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Kuring-gai Chase": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/kuringgai-chase-national-park",
+		"Garigal": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/garigal-national-park",
+		"Middle Harbour": "https://www.nationalparks.nsw.gov.au/things-to-do/picnic-areas/davidson-park-picnic-area-and-boat-ramp",
+		"Ku-ring-gai Wildflower Garden": "https://www.krg.nsw.gov.au/Things-to-do/Ku-ring-gai-Wildflower-Garden"
 	},
 	"distance": [
 		14,

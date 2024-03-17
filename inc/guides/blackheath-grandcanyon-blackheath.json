@@ -2,9 +2,12 @@
 	"location": "Grand Canyon",
 	"lon": 150.32632562331855,
 	"lat": -33.650162145495415,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This walk ties together the Braeside, Grand Canyon, Evans Lookout, Cliff Top Track, Govetts Leap, and Popes Glen in a loop around Blackheath's attractions.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Grand Canyon": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/grand-canyon-track",
+		"Evans Lookout": "https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/evans-lookout",
+		"Cliff Top Track": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/cliff-top-walking-track",
+		"Govetts Leap": "https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/govetts-leap-lookout"
 	},
 	"distance": [
 		18

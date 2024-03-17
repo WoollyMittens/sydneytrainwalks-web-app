@@ -2,9 +2,11 @@
 	"location": "Berowra Valley",
 	"lon": 151.123931885,
 	"lat": -33.600128174,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This walk follows a section of the Great North Walk through Berowra Valley National Park, with an optional ride on the cable drawn ferry at Berowra Waters.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Great North Walk": "https://www.thegreatnorthwalk.com/",
+		"Berowra Valley National Park": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/great-north-walk-berowra-valley-national-park",
+		"Berowra Waters": "https://discoverhornsby.com/waterways/berowra-waters/"
 	},
 	"distance": [
 		18

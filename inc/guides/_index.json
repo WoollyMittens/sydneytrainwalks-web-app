@@ -34,7 +34,7 @@
 			"distance": [
 				35
 			],
-			"revised": "2014-03-21",
+			"revised": "2017-04-16",
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
@@ -110,7 +110,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
-			"toilets": 3,
+			"toilets": 2,
 			"looped": true,
 			"rain": false,
 			"fireban": false
@@ -171,7 +171,29 @@
 					"photo": "001_pxl_20230930_001006750.jpg",
 					"lon": 151.281869,
 					"lat": -33.84357,
-					"description": "Take the ferry to Watsons Bay using <a href=\"https://transportnsw.info/trip#/?to=Watsons Bay\">transportnsw.info</a>."
+					"description": "Take the ferry from/to Watsons Bay using <a href=\"https://transportnsw.info/trip#/?to=Watsons Bay Wharf\">transportnsw.info</a>."
+				},
+				{
+					"location": "Rose Bay",
+					"type": "ferry",
+					"lon": 151.262392,
+					"lat": -33.870828,
+					"description": "Take the ferry from/to Rose Bay using <a href=\"https://transportnsw.info/trip#/?to=Rose Bay Wharf\">transportnsw.info</a>."
+				},
+				{
+					"location": "Double Bay",
+					"type": "ferry",
+					"lon": 151.242416,
+					"lat": -33.873528,
+					"description": "Take the ferry from/to Double Bay using <a href=\"https://transportnsw.info/trip#/?to=Double Bay Wharf\">transportnsw.info</a>."
+				},
+				{
+					"location": "Circular Quay",
+					"type": "train",
+					"photo": "003_pxl_20230930_050035272.jpg",
+					"lon": 151.211603,
+					"lat": -33.861208000000005,
+					"description": "Take the ferry or train from/to Circular Quay using <a href=\"https://transportnsw.info/trip#/?to=Circular Quay\">transportnsw.info</a>."
 				},
 				{
 					"location": "Milsons Point",
@@ -180,6 +202,48 @@
 					"description": "Get the train from/to Milsons Point using <a href=\"https://transportnsw.info/trip#/?to=Milsons Point\">transportnsw.info</a>.",
 					"lon": 151.21252099999998,
 					"lat": -33.845934
+				},
+				{
+					"location": "Cremorne Point",
+					"type": "ferry",
+					"lon": 151.231046,
+					"lat": -33.847638,
+					"description": "Take the ferry from/to Cremorne Point using <a href=\"https://transportnsw.info/trip#/?to=Cremorne Point Wharf\">transportnsw.info</a>."
+				},
+				{
+					"location": "Old Cremorne",
+					"type": "ferry",
+					"lon": 151.230326,
+					"lat": -33.840928,
+					"description": "Take the ferry from/to Old Cremorne using <a href=\"https://transportnsw.info/trip#/?to=Old Cremorne Wharf\">transportnsw.info</a>."
+				},
+				{
+					"location": "Mosman Bay",
+					"type": "ferry",
+					"lon": 151.232518,
+					"lat": -33.838436,
+					"description": "Take the ferry from/to Mosman Bay using <a href=\"https://transportnsw.info/trip#/?to=Mosman Bay Wharf\">transportnsw.info</a>."
+				},
+				{
+					"location": "Taronga Zoo",
+					"type": "ferry",
+					"lon": 151.239712,
+					"lat": -33.845758,
+					"description": "Take the ferry from/to Taronga Zoo using <a href=\"https://transportnsw.info/trip#/?to=Taronga Zoo Wharf\">transportnsw.info</a>."
+				},
+				{
+					"location": "Balmoral Beach",
+					"type": "bus",
+					"lon": 151.250907,
+					"lat": -33.824374,
+					"description": "Take the bus from/to Balmoral Beach using <a href=\"https://transportnsw.info/trip#/?to=Hunter Park, The Esplanade\">transportnsw.info</a>."
+				},
+				{
+					"location": "The Spit",
+					"type": "bus",
+					"lon": 151.246444,
+					"lat": -33.806196,
+					"description": "Take the bus from/to the Spit using <a href=\"https://transportnsw.info/trip#/?to=Spit West Reserve, Spit Rd\">transportnsw.info</a>."
 				},
 				{
 					"location": "Manly",
@@ -200,7 +264,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 4,
-			"toilets": 13,
+			"toilets": 12,
 			"looped": false,
 			"rain": true,
 			"fireban": true
@@ -213,11 +277,19 @@
 			"locations": [
 				{
 					"location": "Cronulla",
+					"type": "train",
+					"photo": "p9285438.jpg",
+					"description": "Get the train to Cronulla using <a href=\"https://transportnsw.info/trip#/?to=Bundeena\">transportnsw.info</a>.",
+					"lon": 151.151371,
+					"lat": -34.055287
+				},
+				{
+					"location": "Bundeena",
 					"type": "ferry",
-					"lat": -34.05625833333333,
-					"lon": 151.1499861111111,
 					"photo": "p9285441.jpg",
-					"description": "Get the ferry from Cronulla to Bundeena <a href=\"https://transportnsw.info/trip#/?to=Bundeena\">transportnsw.info</a>."
+					"description": "Get the ferry to Bundeena <a href=\"https://transportnsw.info/trip#/?to=Cronulla Wharf\">transportnsw.info</a>.",
+					"lon": 151.15072700000002,
+					"lat": -34.082694000000004
 				},
 				{
 					"location": "Otford",
@@ -250,11 +322,19 @@
 			"locations": [
 				{
 					"location": "Cronulla",
+					"type": "train",
+					"photo": "p5240001.jpg",
+					"description": "Get the train to Cronulla using <a href=\"https://transportnsw.info/trip#/?to=Bundeena\">transportnsw.info</a>.",
+					"lon": 151.151371,
+					"lat": -34.055287
+				},
+				{
+					"location": "Bundeena",
 					"type": "ferry",
-					"photo": "p5240025.jpg",
-					"description": "Get the ferry from Cronulla to Bundeena using <a href=\"https://transportnsw.info/trip#/?to=Bundeena\">transportnsw.info</a>.",
-					"lon": 151.14969,
-					"lat": -34.056343
+					"photo": "p5240040.jpg",
+					"description": "Get the ferry to Bundeena using: <a href=\"https://transportnsw.info/trip#/?from=Cronulla&to=Bundeena\">transportnsw.info</a>",
+					"lon": 151.15072700000002,
+					"lat": -34.082694000000004
 				},
 				{
 					"location": "Royal National Park Station",
@@ -660,6 +740,42 @@
 			"toilets": 1,
 			"looped": true,
 			"rain": true,
+			"fireban": false
+		},
+		{
+			"key": "manly-northhead-manly",
+			"type": "walk",
+			"lon": 151.29982005804777,
+			"lat": -33.820774275809526,
+			"locations": [
+				{
+					"location": "Manly",
+					"type": "ferry",
+					"photo": "001_pxl_20240316_033630834.jpg",
+					"description": "Get the ferry to Manly at <a href=\"https://transportnsw.info/trip#/?from=Manly\">transportnsw.info</a>.",
+					"lon": 151.284502,
+					"lat": -33.799268
+				},
+				{
+					"location": "Manly",
+					"type": "ferry",
+					"photo": "007_pxl_20240316_033630834.jpg",
+					"description": "Plan your return trip from Manly at <a href=\"https://transportnsw.info/trip#/?from=Manly\">transportnsw.info</a>.",
+					"lon": 151.284502,
+					"lat": -33.799268
+				}
+			],
+			"region": "North Head",
+			"distance": [
+				9
+			],
+			"revised": "2018-07-04",
+			"transit": true,
+			"car": false,
+			"kiosks": 0,
+			"toilets": 0,
+			"looped": true,
+			"rain": false,
 			"fireban": false
 		},
 		{
@@ -1310,13 +1426,13 @@
 		{
 			"key": "roseville-manlydam-manly",
 			"type": "walk",
-			"lon": 151.216402,
-			"lat": -33.780159,
+			"lon": 151.2268235720694,
+			"lat": -33.76493252813816,
 			"locations": [
 				{
 					"location": "Roseville",
 					"type": "train",
-					"photo": "p7200321.jpg",
+					"photo": "pxl_20240315_192206568.jpg",
 					"description": "Get the train to Roseville using <a href=\"https://transportnsw.info/trip#/?to=Roseville\">transportnsw.info</a>.",
 					"lon": 151.177582,
 					"lat": -33.784401
@@ -1324,7 +1440,7 @@
 				{
 					"location": "Manly",
 					"type": "ferry",
-					"photo": "p7200939_p7200940.jpg",
+					"photo": "pxl_20240316_033630834.jpg",
 					"description": "Plan your return trip from Manly at <a href=\"https://transportnsw.info/trip#/?from=Manly\">transportnsw.info</a>.",
 					"lat": -33.80003333333333,
 					"lon": 151.2852861111111
@@ -1332,14 +1448,13 @@
 			],
 			"region": "Manly Dam",
 			"distance": [
-				22,
-				30
+				23
 			],
 			"revised": "2018-07-04",
 			"transit": true,
 			"car": false,
-			"kiosks": 1,
-			"toilets": 4,
+			"kiosks": 0,
+			"toilets": 0,
 			"looped": false,
 			"rain": false,
 			"fireban": false

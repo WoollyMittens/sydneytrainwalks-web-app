@@ -2,9 +2,12 @@
 	"location": "Cumberland State Forest",
 	"lon": 151.011609,
 	"lat": -33.758323,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This surprisingly green walk through otherwise dense suburbs ties together an unexpected part of the Great North Walk between the Blue Gum Walk and Cumberland State Forest, before continuing to Parramatta Lake.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Blue Gum Walk": "https://discoverhornsby.com/walking/blue-gum-walk/",
+		"Cumberland State Forest": "https://www.forestrycorporation.com.au/visit/forests/cumberland-state-forest",
+		"Great North Walk": "https://www.thegreatnorthwalk.com/",
+		"Parramatta Lake": "https://www.sydney.com/destinations/sydney/sydney-west/parramatta/attractions/lake-parramatta-reserve-and-recreation-area"
 	},
 	"distance": [
 		30

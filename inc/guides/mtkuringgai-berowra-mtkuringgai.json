@@ -2,9 +2,11 @@
 	"location": "Ku-ring-gai Chase",
 	"lon": 151.1524827965,
 	"lat": -33.6230559926,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This loop combines Kuring-gai Chase and Berowra Valley national parks, as well as a section of the Great North Walk.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Great North Walk": "https://www.thegreatnorthwalk.com/",
+		"Kuring-gai Chase": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/mount-kuringgai-track-to-berowra-station",
+		"Berowra Valley": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/great-north-walk-berowra-valley-national-park"
 	},
 	"distance": [
 		10,

@@ -2,9 +2,12 @@
 	"location": "Royal National Park",
 	"lon": 151.085218,
 	"lat": -34.093973,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This unusual route through the Royal National Park visits popular swimming spots at Maianbar and Winifred Falls, with a break at Audley, and possibly ending with a historic tram ride.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Maianbar": "https://www.sydney.com/destinations/sydney/sydney-south/bundeena/destination-information/maianbar",
+		"Winifred Falls": "https://australianwaterfalls.com/waterfalls-by-state/258-australian-waterfalls/new-south-wales/greater-sydney/royal-national-park/434-winifred-falls",
+		"Audley": "https://www.nationalparks.nsw.gov.au/things-to-do/cafes-and-kiosks/audley-dance-hall-cafe",
+		"historic tram ride": "https://www.sydneytramwaymuseum.com.au/"
 	},
 	"distance": [
 		20,
@@ -25,16 +28,31 @@
 	"markers": [
 		{
 			"location": "Cronulla",
-			"type": "ferry",
-			"photo": "p5240025.jpg",
-			"description": "Get the ferry from Cronulla to Bundeena using <a href=\"https://transportnsw.info/trip#/?to=Bundeena\">transportnsw.info</a>.",
-			"lon": 151.14969,
-			"lat": -34.056343
+			"type": "train",
+			"photo": "p5240001.jpg",
+			"description": "Get the train to Cronulla using <a href=\"https://transportnsw.info/trip#/?to=Bundeena\">transportnsw.info</a>.",
+			"lon": 151.151371,
+			"lat": -34.055287
 		},
 		{
 			"type": "waypoint",
+			"photo": "p5240003.jpg",
+			"description": "Exit the station to the left and use the underpass.",
+			"lon": 151.151512,
+			"lat": -34.055443999999994
+		},
+		{
+			"type": "waypoint",
+			"photo": "p5240007.jpg",
+			"description": "From the underpass follow the path through the reserve to the ferry dock.",
+			"lon": 151.150381,
+			"lat": -34.055702
+		},
+		{
+			"location": "Bundeena",
+			"type": "ferry",
 			"photo": "p5240040.jpg",
-			"description": "Transport from this location: <a href=\"https://transportnsw.info/trip#/?from=Cronulla&to=Bundeena\">transportnsw.info</a>",
+			"description": "Get the ferry to Bundeena using: <a href=\"https://transportnsw.info/trip#/?from=Cronulla&to=Bundeena\">transportnsw.info</a>",
 			"lon": 151.15072700000002,
 			"lat": -34.082694000000004
 		},

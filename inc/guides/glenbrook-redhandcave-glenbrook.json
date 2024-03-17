@@ -2,9 +2,11 @@
 	"location": "Lower Blue Mountains",
 	"lon": 150.6128664315,
 	"lat": -33.7998189311,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This walk explores the Lower Blue Mountains in a loop around the Red Hands Cave, Euroka Campground, and Portal Lookout.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Red Hands Cave": "https://www.nationalparks.nsw.gov.au/things-to-do/aboriginal-sites/red-hands-cave",
+		"Euroka Campground": "https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/euroka-campground",
+		"Portal Lookout": "https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/portal-lookout"
 	},
 	"distance": [
 		17,

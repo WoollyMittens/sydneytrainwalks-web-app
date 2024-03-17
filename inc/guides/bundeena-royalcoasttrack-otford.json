@@ -2,9 +2,13 @@
 	"location": "Royal National Park",
 	"lon": 151.151382,
 	"lat": -34.054932,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This walk follows the Royal Coast Track along Wedding Cake Rock, Wattamolla, Curracurron Falls, and Garie Beach.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Royal Coast Track": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/the-coast-track",
+		"Wedding Cake Rock": "https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/wedding-cake-rock",
+		"Wattamolla": "https://www.nationalparks.nsw.gov.au/things-to-do/picnic-areas/wattamolla-picnic-area",
+		"Curracurron Falls": "https://waterfallsnsw.com.au/royal-national-park/curracurrong-falls/",
+		"Garie Beach": "https://www.nationalparks.nsw.gov.au/things-to-do/picnic-areas/garie-beach-picnic-area"
 	},
 	"distance": [
 		28,
@@ -25,11 +29,33 @@
 	"markers": [
 		{
 			"location": "Cronulla",
+			"type": "train",
+			"photo": "p9285438.jpg",
+			"description": "Get the train to Cronulla using <a href=\"https://transportnsw.info/trip#/?to=Bundeena\">transportnsw.info</a>.",
+			"lon": 151.151371,
+			"lat": -34.055287
+		},
+		{
+			"type": "waypoint",
+			"photo": "p9285439.jpg",
+			"description": "Exit the station to the left and use the underpass.",
+			"lon": 151.15030000000002,
+			"lat": -34.055841666666666
+		},
+		{
+			"type": "waypoint",
+			"photo": "p9285440.jpg",
+			"description": "From the underpass follow the path through the reserve to the ferry dock.",
+			"lon": 151.15025833333334,
+			"lat": -34.05585555555555
+		},
+		{
+			"location": "Bundeena",
 			"type": "ferry",
-			"lat": -34.05625833333333,
-			"lon": 151.1499861111111,
 			"photo": "p9285441.jpg",
-			"description": "Get the ferry from Cronulla to Bundeena <a href=\"https://transportnsw.info/trip#/?to=Bundeena\">transportnsw.info</a>."
+			"description": "Get the ferry to Bundeena <a href=\"https://transportnsw.info/trip#/?to=Cronulla Wharf\">transportnsw.info</a>.",
+			"lon": 151.15072700000002,
+			"lat": -34.082694000000004
 		},
 		{
 			"type": "waypoint",
@@ -50,7 +76,7 @@
 			"photo": "p9285489_p3080081.jpg",
 			"lon": 151.159669,
 			"lat": -34.08127300007897,
-			"description": "<i>+6km</i> If there is an extra hour to spare be sure to take the more adventurous detour around Jibbon Head.",
+			"description": "<i>+5km</i> If there is an extra hour to spare be sure to take the more adventurous detour around Jibbon Head.",
 			"optional": true
 		},
 		{
