@@ -2,9 +2,14 @@
 	"location": "Brisbane Water",
 	"lon": 151.3011497632,
 	"lat": -33.4977069777,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This grand loop around Woy Woy follows the Woy Woy Foreshore and much of Brisbane Waters National Park, including Warrah Lookout, Mount Wondabyne, Staples Lookout and Bulgandry.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Woy Woy Foreshore": "https://www.lovecentralcoast.com/news/waterside-walks-shared-pathways",
+		"Brisbane Waters National Park": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/brisbane-water-national-park",
+		"Warrah Lookout": "https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/warrah-lookout",
+		"Mount Wondabyne": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/wondabyne-to-patonga-walking-track",
+		"Staples Lookout": "https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/staples-lookout",
+		"Bulgandry": "https://www.nationalparks.nsw.gov.au/things-to-do/aboriginal-sites/bulgandry-art-site-aboriginal-place"
 	},
 	"distance": [
 		28,
@@ -15,7 +20,7 @@
 	"rain": false,
 	"fireban": false,
 	"key": "woywoy-mtwondabyne-gosford",
-	"updated": "2024-01-12",
+	"updated": "2024-01-19",
 	"bounds": {
 		"west": 151.248779296875,
 		"north": -33.413102213708285,

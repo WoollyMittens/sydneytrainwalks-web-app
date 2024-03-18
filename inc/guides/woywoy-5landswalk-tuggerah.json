@@ -2,9 +2,14 @@
 	"location": "Wyrrabalong",
 	"lon": 151.435593,
 	"lat": -33.46534399999999,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This walk joins the Woy Woy Wharf to Blackwall foreshore walk, Daleys Point walking track, Bouddi Coastal Walk, The Coast Walking Track and the Tuggerah Lakes Cycleway to the 5 Lands Walk.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Woy Woy Wharf to Blackwall foreshore walk": "https://www.lovecentralcoast.com/news/waterside-walks-shared-pathways",
+		"Daleys Point walking track": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/daleys-point-walking-track",
+		"Bouddi Coastal Walk": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/bouddi-coastal-walk",
+		"The Coast Walking Track": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/the-coast-walking-track",
+		"Tuggerah Lakes Cycleway": "https://www.nsw.gov.au/visiting-and-exploring-nsw/locations-and-attractions/tuggerah-lakes-cycleway",
+		"5 Lands Walk": "https://www.5landswalk.com.au/"
 	},
 	"distance": [
 		28,
@@ -16,7 +21,7 @@
 	"rain": false,
 	"fireban": false,
 	"key": "woywoy-5landswalk-tuggerah",
-	"updated": "2018-05-04",
+	"updated": "2023-08-12",
 	"bounds": {
 		"west": 151.3037109375,
 		"north": -33.293803558346596,

@@ -2,9 +2,12 @@
 	"location": "Royal National Park",
 	"lon": 151.077309195,
 	"lat": -34.1664964333,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This unconventional but varied route through the Royal National Park adds the Forest Path and part of Lady Carrington Drive to the Royal Coast Track.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Royal National Park": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/royal-national-park",
+		"Forest Path": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/forest-path",
+		"Lady Carrington Drive": "https://www.nationalparks.nsw.gov.au/things-to-do/cycling-trails/lady-carrington-drive",
+		"Royal Coast Track": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/the-coast-track"
 	},
 	"distance": [
 		38
@@ -14,7 +17,7 @@
 	"rain": false,
 	"fireban": false,
 	"key": "waterfall-royalcoasttrack-bundeena",
-	"updated": "2013-02-16",
+	"updated": "2023-07-22",
 	"bounds": {
 		"west": 150.97412109375,
 		"north": -34.03445260967645,

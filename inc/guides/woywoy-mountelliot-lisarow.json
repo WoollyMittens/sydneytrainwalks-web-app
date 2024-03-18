@@ -2,9 +2,11 @@
 	"location": "Rumbalara",
 	"lon": 151.325714,
 	"lat": -33.427258,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This walk combines trails through Brisbane Water National Park and Rumbalara and Katandra Reserves with an optional detour along the Brisbane Water Cycleway.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Brisbane Water National Park": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/brisbane-water-national-park",
+		"Rumbalara and Katandra Reserves": "https://cdn.centralcoast.nsw.gov.au/sites/default/files/rumbalara-katandra-reserves-brochure-map.pdf",
+		"Brisbane Water Cycleway": "https://www.walkcyclesydney.com.au/ettalong-to-gosford"
 	},
 	"distance": [
 		12,
@@ -15,7 +17,7 @@
 	"rain": true,
 	"fireban": false,
 	"key": "woywoy-mountelliot-lisarow",
-	"updated": "2013-09-14",
+	"updated": "2024-02-25",
 	"bounds": {
 		"west": 151.292724609375,
 		"north": -33.367237465838315,

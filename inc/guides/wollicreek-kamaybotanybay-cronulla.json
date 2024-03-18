@@ -2,9 +2,10 @@
 	"location": "Botany Bay",
 	"lon": 151.1777510494,
 	"lat": -34.0260492638,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "A walk around the Botany Bay Foreshore's shared bike paths with an optional extention through Kamay Botany Bay National Park.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Botany Bay Foreshore": "https://www.sydneycyclepaths.com.au/project/botany-bay-cyclepath/",
+		"Kamay Botany Bay National Park": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/kamay-botany-bay-national-park"
 	},
 	"distance": [
 		22,
@@ -15,7 +16,7 @@
 	"rain": true,
 	"fireban": true,
 	"key": "wollicreek-kamaybotanybay-cronulla",
-	"updated": "2014-04-20",
+	"updated": "2024-01-06",
 	"bounds": {
 		"west": 151.10595703125,
 		"north": -33.916013113401696,

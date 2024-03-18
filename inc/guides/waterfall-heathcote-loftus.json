@@ -2,9 +2,13 @@
 	"location": "Heathcote National Park",
 	"lon": 151.012529,
 	"lat": -34.089557,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This walk traverses Heathcote National Park and the Royal National Park, with swimming opportunities at Lake Eckerley and the Karloo Pools, and even a historic tram ride at the Loftus Tramway Museum on select days.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Heathcote National Park": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/heathcote-national-park",
+		"Royal National Park": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/royal-national-park",
+		"Lake Eckerley": "https://www.nationalparks.nsw.gov.au/things-to-do/picnic-areas/lake-eckersley-picnic-area",
+		"Karloo Pools": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/karloo-walking-track",
+		"Loftus Tramway Museum": "https://www.sydneytramwaymuseum.com.au/"
 	},
 	"distance": [
 		13,
@@ -15,7 +19,7 @@
 	"rain": false,
 	"fireban": false,
 	"key": "waterfall-heathcote-loftus",
-	"updated": "2018-12-23",
+	"updated": "2023-03-11",
 	"bounds": {
 		"west": 150.9521484375,
 		"north": -34.03445260967645,

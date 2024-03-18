@@ -2,9 +2,10 @@
 	"location": "Lady Carrington Drive",
 	"lon": 151.051636,
 	"lat": -34.097977,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This walk traverses the full length of the Royal National Park along the Lady Carrington Drive, while the walk to the start of the historic road is an adventure of its own.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Royal National Park": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/royal-national-park",
+		"Lady Carrington Drive": "https://www.nationalparks.nsw.gov.au/things-to-do/cycling-trails/lady-carrington-drive"
 	},
 	"distance": [
 		22
@@ -14,7 +15,7 @@
 	"rain": false,
 	"fireban": false,
 	"key": "waterfall-ladycarringtondrive-loftus",
-	"updated": "2013-02-16",
+	"updated": "2023-10-15",
 	"bounds": {
 		"west": 150.97412109375,
 		"north": -34.03445260967645,

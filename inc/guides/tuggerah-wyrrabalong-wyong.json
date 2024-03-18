@@ -2,9 +2,10 @@
 	"location": "Lake Tuggerah",
 	"lon": 151.5382833593,
 	"lat": -33.2906253543,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "Almost a full loop around the lake is possible on shared bike paths including the Tuggerah Lakes Cycleway, and several kilometers of bush trails through Wyrrabalong National Park.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Tuggerah Lakes Cycleway": "https://www.nsw.gov.au/visiting-and-exploring-nsw/locations-and-attractions/tuggerah-lakes-cycleway",
+		"Wyrrabalong National Park": "https://www.visitnsw.com/destinations/central-coast/wyong-area/norah-head/attractions/wyrrabalong-national-park"
 	},
 	"distance": [
 		15,
@@ -16,7 +17,7 @@
 	"rain": true,
 	"fireban": true,
 	"key": "tuggerah-wyrrabalong-wyong",
-	"updated": "2013-08-30",
+	"updated": "2023-12-23",
 	"bounds": {
 		"west": 151.402587890625,
 		"north": -33.24787594792438,
