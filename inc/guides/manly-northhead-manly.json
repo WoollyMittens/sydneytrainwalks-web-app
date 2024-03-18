@@ -2,9 +2,11 @@
 	"location": "North Head",
 	"lon": 151.29982005804777,
 	"lat": -33.820774275809526,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "A short localised walk exploring the Shelly Beach, the Fairfax Track, and the memorials around North Head.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Shelly Beach": "https://www.northernbeaches.nsw.gov.au/things-to-do/recreation-area/shelly-beach",
+		"Fairfax Track": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/fairfax-walk",
+		"North Head": "https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/north-head"
 	},
 	"distance": [
 		9
@@ -54,7 +56,7 @@
 		{
 			"type": "waypoint",
 			"photo": "007_pxl_20240316_011223804.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Lorem ipsum dxolor sit amet.",
 			"lon": 151.288724,
 			"lat": -33.797661999999995
 		},
@@ -87,7 +89,7 @@
 			"lat": -33.799127999999996
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "007_pxl_20240316_012203827.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.29468,
@@ -101,7 +103,7 @@
 			"lat": -33.800788999999995
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "007_pxl_20240316_012537025.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.297796,
@@ -430,7 +432,7 @@
 			"lat": -33.817515
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "007_pxl_20240316_021150381.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.296242,
@@ -595,7 +597,7 @@
 			"lat": -33.819563
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "007_pxl_20240316_023923112.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.29613799999998,

@@ -2,9 +2,11 @@
 	"location": "Lost World Lookout",
 	"lon": 150.572067261,
 	"lat": -33.75033950800001,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "An adventurous walk into the Blue Labyrinth, climbing up to the Lost World Lookout and ending with a wade at the Duck Hole.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Blue Labyrinth": "https://en.wikipedia.org/wiki/Blue_Labyrinth_(New_South_Wales)",
+		"Lost World Lookout": "https://www.weekendnotes.com/lost-world-lookout-trail-springwood/",
+		"Duck Hole": "https://bluemountainsmums.com/listing/duck-hole-track-glenbrook/"
 	},
 	"distance": [
 		19
@@ -154,7 +156,7 @@
 			"photo": "125_p5270131.jpg",
 			"lon": 150.572698,
 			"lat": -33.744588999907485,
-			"description": "Several hundred meters down the trail a side track to the right leads to another nearby lookout."
+			"description": "Several hundred meters down the trail a side track to the right leads to the Lost World Lookout."
 		},
 		{
 			"type": "hotspot",

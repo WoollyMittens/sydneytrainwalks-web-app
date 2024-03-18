@@ -2,9 +2,11 @@
 	"location": "Illawarra Escarpment",
 	"lon": 150.963567,
 	"lat": -34.256982,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This walk follows the Illawarra Escarpment Walking Track to Sublime Point, with many lookouts across the Sea Cliff Bridge and the coastline along the way.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Illawarra Escarpment Walking Track": "https://npansw.org.au/wp-content/uploads/2016/10/illawarra-escarpment-walking-track.pdf",
+		"Sublime Point": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/sublime-point-walking-track",
+		"Sea Cliff Bridge": "https://www.visitnsw.com/destinations/south-coast/wollongong-and-surrounds/stanwell-park/attractions/sea-cliff-bridge"
 	},
 	"distance": [
 		18

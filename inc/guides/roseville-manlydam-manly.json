@@ -2,9 +2,11 @@
 	"location": "Manly Dam",
 	"lon": 151.2268235720694,
 	"lat": -33.76493252813816,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This walk covers part of the Harbour to Hawkesbury Track through Middle Harbour, before crossing over to Manly Dam to finish in Manly.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Harbour to Hawkesbury Track": "https://www.nationalparks.nsw.gov.au/things-to-do/guided-tours/hawkesbury-to-harbour-walk-stage-4",
+		"Middle Harbour": "https://en.wikipedia.org/wiki/Middle_Harbour",
+		"Manly Dam": "https://www.northernbeaches.nsw.gov.au/things-to-do/parks-and-trails/parks/manly-dam"
 	},
 	"distance": [
 		23
@@ -178,6 +180,13 @@
 			"lat": -33.772937999999996
 		},
 		{
+			"type": "toilet",
+			"photo": "pxl_20240315_201607704.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"lon": 151.207873,
+			"lat": -33.774910
+		},
+		{
 			"type": "waypoint",
 			"photo": "pxl_20240315_201112396.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
@@ -190,13 +199,6 @@
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.207498,
 			"lat": -33.773996
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20240315_201607704.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.20818,
-			"lat": -33.774434
 		},
 		{
 			"type": "waypoint",
@@ -857,7 +859,7 @@
 			"lat": -33.776897
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240315_233125969.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.247108,
@@ -913,7 +915,7 @@
 			"lat": -33.782309
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240315_234729348.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.253507,
@@ -1050,7 +1052,7 @@
 			"lat": -33.78274700015584
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "pxl_20240316_001935341.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.26755500000002,
@@ -1155,7 +1157,7 @@
 			"lat": -33.785354999999996
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240316_005357835.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.287036,
@@ -1183,7 +1185,7 @@
 			"lat": -33.787171
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240316_010207195.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.287277,
@@ -1197,7 +1199,7 @@
 			"lat": -33.791123999999996
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240316_011015325.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.288109,
@@ -1211,7 +1213,7 @@
 			"lat": -33.796963999999996
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "pxl_20240316_033013083.jpg",
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.287798,
@@ -1243,8 +1245,8 @@
 			"type": "ferry",
 			"photo": "pxl_20240316_033630834.jpg",
 			"description": "Plan your return trip from Manly at <a href=\"https://transportnsw.info/trip#/?from=Manly\">transportnsw.info</a>.",
-			"lat": -33.80003333333333,
-			"lon": 151.2852861111111
+			"lat": -33.799503,
+			"lon": 151.284304
 		}
 	]
 }

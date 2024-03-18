@@ -2,9 +2,14 @@
 	"location": "Lake Macquarie",
 	"lon": 151.7080771644,
 	"lat": -33.0149332434,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This walk combines the Watagan Cycle Track with the Fernleigh Rail Trail to visit Green Point, the Belmont Wetlands, and optionally Awabakal and Glenrock.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Watagan Cycle Track": "https://www.visitnsw.com/destinations/north-coast/lake-macquarie-area/journey/watagans-cycle-track",
+		"Fernleigh Rail Trail": "https://www.railtrails.org.au/trails/fernleigh-track/",
+		"Green Point": "https://www.lakemac.com.au/Venues/Green-Point-Foreshore-Reserve",
+		"Belmont Wetlands": "https://www.belmontwetlands.com.au/",
+		"Awabakal": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/awabakal-nature-reserve",
+		"Glenrock": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/glenrock-state-conservation-area"
 	},
 	"distance": [
 		18,

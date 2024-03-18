@@ -2,9 +2,10 @@
 	"location": "Springwood Ridge",
 	"lon": 150.60414,
 	"lat": -33.632252,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This walk follows Springwood Ridge to Winmalee and ultimately to Richmond, passing through the Blue Gum Swamp and Yarramundi Reserve along the way.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Blue Gum Swamp": "https://www.bluemts.com.au/info/thingstodo/mountain-bike-trails/blue-gum-swamp-winmalee/",
+		"Yarramundi Reserve": "https://www.hawkesbury.nsw.gov.au/__data/assets/pdf_file/0020/34157/YarramundiReserve.pdf"
 	},
 	"distance": [
 		25,
