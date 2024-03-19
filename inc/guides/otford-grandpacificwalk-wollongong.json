@@ -2,9 +2,12 @@
 	"location": "Illawarra",
 	"lon": 150.9250482358,
 	"lat": -34.3181960564,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This walk follows the shared bike paths and beaches along the Grand Pacific Walk, with notable stops at Bald Hill Lookout, the Sea Cliff Bridge and Puckey's Estate.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Grand Pacific Walk": "https://wollongong.nsw.gov.au/council-projects/ongoing-projects/grand-pacific-walk",
+		"Bald Hill Lookout": "https://www.visitnsw.com/destinations/south-coast/wollongong-and-surrounds/stanwell-park/attractions/bald-hill-lookout-otford",
+		"Sea Cliff Bridge": "https://www.visitnsw.com/destinations/south-coast/wollongong-and-surrounds/stanwell-park/attractions/sea-cliff-bridge",
+		"Puckey's Estate": "https://wollongongbotanicgarden.com.au/conservation/puckeys-estate"
 	},
 	"distance": [
 		18,

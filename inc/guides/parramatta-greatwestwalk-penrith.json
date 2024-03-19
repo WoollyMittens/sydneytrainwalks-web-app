@@ -2,9 +2,13 @@
 	"location": "Great West Walk",
 	"lon": 150.8404602483,
 	"lat": -33.7761111371,
-	"description": "Lorem ipsum dolor sit amet. It is recommended to pick managable sections between public transport hubs across mutiple days.",
+	"description": "This walk strings together the Western Parklands, Nurragingy Reserve, Wianamatta Regional Park and the Great River Walk along the Great West Walk.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Western Parklands": "https://www.westernsydneyparklands.com.au/",
+		"Nurragingy Reserve": "https://www.blacktown.nsw.gov.au/Sport-recreation/Parks-and-recreation-directory/Nurragingy-Reserve",
+		"Wianamatta Regional Park": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/wianamatta-regional-park",
+		"Great River Walk": "https://www.penrithcity.nsw.gov.au/facilities-recreation/nepean-river/great-river-walk",
+		"Great West Walk": "https://greatwestwalk.com.au/"
 	},
 	"distance": [
 		18,

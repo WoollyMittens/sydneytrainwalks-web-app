@@ -2,9 +2,12 @@
 	"location": "Northern Beaches",
 	"lon": 151.317406,
 	"lat": -33.672071,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This walk crosses the length of the Northern Beaches after a visit to the Barrenjoey Lighthouse, with notable stops at Narrabeen Lagoon and the Long Reef Headland",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Northern Beaches": "https://www.sydney.com/destinations/sydney/sydney-north/northern-beaches",
+		"Barrenjoey Lighthouse": "https://www.nationalparks.nsw.gov.au/things-to-do/historic-buildings-places/barrenjoey-lighthouse",
+		"Narrabeen Lagoon": "https://www.sydney.com/destinations/sydney/sydney-north/northern-beaches/attractions/narrabeen-lagoon",
+		"Long Reef Headland": "https://www.sydney.com/destinations/sydney/sydney-north/northern-beaches/journey/long-reef-headland-walk"
 	},
 	"distance": [
 		25,

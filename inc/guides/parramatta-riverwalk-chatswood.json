@@ -2,9 +2,12 @@
 	"location": "Parramatta River",
 	"lon": 151.1297199781984,
 	"lat": -33.841190999373794,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This walk joins the Parramatta River Walk and the Great North Walk together at Bedlam Bay, with a historic stop at the Fairyland site along the way.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Parramatta River Walk": "https://www.sydney.com/destinations/sydney/sydney-west/parramatta/attractions/parramatta-river-walk",
+		"Great North Walk": "https://www.thegreatnorthwalk.com/",
+		"Bedlam Bay": "https://www.huntershill.nsw.gov.au/Recreation/Hunters-Hill-Walks/Bedlam-Bay-Bushwalk",
+		"Fairyland": "https://en.wikipedia.org/wiki/Fairyland,_Lane_Cove_River"
 	},
 	"distance": [
 		13,

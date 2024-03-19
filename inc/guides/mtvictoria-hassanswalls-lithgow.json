@@ -2,9 +2,12 @@
 	"location": "Hassans Walls",
 	"lon": 150.151232,
 	"lat": -33.512355,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This walk follows either attempts at passes off Mount York for a brief taste of Country NSW and crosses Hartley Vale to Hassans Walls on the other side.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Mount york": "https://www.visitnsw.com/destinations/blue-mountains/katoomba-area/attractions/mount-york",
+		"Country NSW": "https://www.nationalparks.nsw.gov.au/visit-a-park/regions/country-nsw",
+		"Hartley Vale": "https://www.bluemts.com.au/info/towns/hartley/",
+		"Hassans Walls": "https://lithgow-tourism.com/hassans.htm"
 	},
 	"distance": [
 		26

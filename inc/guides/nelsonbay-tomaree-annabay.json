@@ -2,9 +2,10 @@
 	"location": "Port Stephens",
 	"lon": 152.14010182768106,
 	"lat": -32.76185969822109,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This walk follows the newly opened Tomaree Coastal Walk, with options to climb Mount Tomaree and several shortcuts back in case of time constraints.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Tomaree Coastal Walk": "https://www.nationalparks.nsw.gov.au/things-to-do/experiences/tomaree-coastal-walk",
+		"Mount Tomaree": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/tomaree-head-summit-walk"
 	},
 	"distance": [
 		14,

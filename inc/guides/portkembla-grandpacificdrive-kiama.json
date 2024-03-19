@@ -2,9 +2,14 @@
 	"location": "Illawarra",
 	"lon": 150.8705369476229,
 	"lat": -34.57827343605459,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This walk extends the Grand Pacific Walk with part of the Grand Pacific Drive and visits Windang Beach completing part of the Kiama Coastal Walk from the Minnamurra Headland to the Kiama Blowhole.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Grand Pacific Walk": "https://wollongong.nsw.gov.au/council-projects/ongoing-projects/grand-pacific-walk",
+		"Grand Pacific Drive": "https://www.grandpacificdrive.com.au/",
+		"Windang Beach": "https://www.visitnsw.com/destinations/south-coast/wollongong-and-surrounds/wollongong/attractions/windang-beach",
+		"Kiama Coastal Walk": "https://www.visitnsw.com/destinations/south-coast/kiama-area/kiama-coast-walk",
+		"Minnamurra Headland": "https://www.visitnsw.com/destinations/south-coast/kiama-area/kiama/attractions/minnamurra-headland",
+		"Kiama Blowhole": "https://www.visitnsw.com/destinations/south-coast/kiama-area/kiama/attractions/kiama-blowhole"
 	},
 	"distance": [
 		10,

@@ -2,9 +2,13 @@
 	"location": "Olympic Park",
 	"lon": 151.0655953176,
 	"lat": -33.8249550853,
-	"description": "Lorem ipsum dolor sit amet.",
+	"description": "This eventful loop follows the Homebush Bay foreshore through the Badu Mangroves to the Oympic Park and Newington Nature Reserve, before crossing the river and following the Parramatta River Walk back.",
 	"keywords": {
-		"ipsum": "https://external.link/"
+		"Homebush Bay": "https://en.wikipedia.org/wiki/Homebush_Bay",
+		"Badu Mangroves": "https://www.sydneyolympicpark.com.au/parks-and-playgrounds/badu-mangrove-boardwalk",
+		"Oympic Park": "https://www.sydneyolympicpark.nsw.gov.au/",
+		"Newington Nature Reserve": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/newington-nature-reserve",
+		"Parramatta River Walk": "https://www.sydney.com/destinations/sydney/sydney-west/parramatta/attractions/parramatta-river-walk"
 	},
 	"distance": [
 		18
