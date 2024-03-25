@@ -71,8 +71,8 @@ export class Location {
 			if (lon > marker.minLon && lon < marker.maxLon && lat > marker.minLat && lat < marker.maxLat && this.hotspot !== marker.title) {
 				// remember its name
 				this.hotspot = marker.title;
+				marker.key = config.guideData.key;
 				// trigger the corresponding event
-				console.log('hotspot', marker);
 				if (config.checkHotspot(marker)) config.enterHotspot(marker);
 			}
 			// else if the marker just exited the hotspot

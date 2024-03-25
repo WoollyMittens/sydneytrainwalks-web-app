@@ -180,6 +180,7 @@ export class Localmap {
 	}
 
 	stop() {
+		console.log('rewriting the legend');
 		if (this.config.container) this.config.container.innerHTML = "";
 		if (this.config.legend) this.config.legend.innerHTML = "";
 	}

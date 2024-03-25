@@ -30,7 +30,7 @@ export class Details {
 		// load the guide that goes with the id
 		const guide = await this.loadGuide(id);
 		const route = await this.loadRoute(id);
-		console.log(guide, guide.key);
+		console.log('loaded guide', guide, guide.key);
 		const exif = await this.loadExif(guide.key);
 		// update all the elements with the id
 		this.updateMeta(guide);

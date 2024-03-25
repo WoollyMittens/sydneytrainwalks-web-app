@@ -9,7 +9,7 @@ export class Trophies {
 		this.trophyTemplate = document.getElementById('trophy-template');
 		this.guideIds = guideIds;
 		this.loadGuide = loadGuide;
-		this.parentView = updateView;
+		this.updateView = updateView;
 		this.busyIndicator = busy;
 		this.init();
 	}
@@ -97,8 +97,6 @@ export class Trophies {
 			this.details(data);
 			// redraw the trophy page
 			this.update();
-			// redraw the details page
-			this.updateView();
 		}
 	};
 
@@ -112,6 +110,7 @@ export class Trophies {
 		var container = this.trophyElement;
 		var template = this.trophyTemplate;
 		// populate the modal
+		console.log('showing trophy', marker);
 		container.innerHTML = template.innerHTML
 			.replace(/{icon}/g, marker.badge)
 			.replace(/{title}/g, marker.title)
@@ -127,7 +126,7 @@ export class Trophies {
 
 	deeplink(id) {
 		// open the guide page for the id
-		this.parentView(id, 'guide');
+		this.updateView(id, 'guide');
 		// TODO: focus the specific trophy
 	}
 
