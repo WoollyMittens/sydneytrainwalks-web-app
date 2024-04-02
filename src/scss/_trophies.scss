@@ -152,7 +152,7 @@
 		}
 	}
 
-	body.screen-trophies & {
+	body[data-screen="trophies"] & {
 		transform: translate(0, 0);
 	}
 }

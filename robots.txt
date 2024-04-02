@@ -2,6 +2,9 @@ Sitemap: https://www.sydneyhikingtrips.com/sitemap.xml
 User-agent: *
 Disallow: /tmp/*
 Disallow: /privacy-policy.html
+Disallow: /index.php
+Disallow: /details.php
+Disallow: /about.php
 Disallow: /imageexif.php
 Disallow: /imagesize.php
 Disallow: /imageslice.php

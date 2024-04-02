@@ -42,12 +42,12 @@
 		}
 	}
 
-	body.screen-guide &,
-	body.screen-photos & {
+	body[data-screen="guide"] &,
+	body[data-screen="photos"] & {
 		transform: translate(0, 0);
 	}
 
-	body.screen-photos & {
+	body[data-screen="photos"] & {
 		@media (max-width:959px) {
 			transform: translate(100%, 0);
 		}

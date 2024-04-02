@@ -21,18 +21,20 @@ export class Details {
 		this.introTemplate = document.getElementById('intro-template');
 		this.outroTemplate = document.getElementById('outro-template');
 		this.creditTemplate = document.getElementById('credit-template');
+		this.currentId = null;
 		this.guideMap = null;
 		this.photoCylinder = null;
 		this.init()
 	}
 
 	async update(id) {
+		this.currentId = id;
 		// load the guide that goes with the id
 		const guide = await this.loadGuide(id);
 		const route = await this.loadRoute(id);
 		console.log('loaded guide', guide, guide.key);
 		const exif = await this.loadExif(guide.key);
-		// update all the elements with the id
+		// update all the elements with the guide data
 		this.updateMeta(guide);
 		this.updateTitle(guide);
 		this.updateMap(guide, route, exif);
@@ -54,6 +56,7 @@ export class Details {
 		document.querySelector('meta[property="og:image"]')?.setAttribute('content', this.config.remoteUrl + `/medium/${guide.key}/${guide.hero}`);
 		document.querySelector('meta[property="og:title"]')?.setAttribute('content', title);
 		document.querySelector('meta[property="og:description"]')?.setAttribute('content', guide.description);
+		document.querySelector('link[rel="canonical"]')?.setAttribute('href', this.config.remoteUrl + url);
 	}
 
 	updateTitle(guide) {
@@ -186,11 +189,13 @@ export class Details {
 			evt.preventDefault();
 			console.log('back', evt.state.key);
 			if (evt?.state?.key) this.update(evt.state.key);
+			// TODO: update the route
 		});
 		// make the title a return button
 		this.titleElement.addEventListener('click', evt => {
 			evt.preventDefault();
-			document.body.className = document.body.className.replace(/screen-photos|screen-guide/, 'screen-menu');
+			document.body.setAttribute('data-screen', 'menu');
+			// TODO: update the route
 		});
 	}
 }

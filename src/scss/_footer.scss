@@ -193,10 +193,10 @@
 }
 
 /* what icons to show on the menu screen */
-body.screen-about,
-body.screen-menu,
-body.screen-overview,
-body.screen-trophies {
+body[data-screen="about"],
+body[data-screen="menu"],
+body[data-screen="overview"],
+body[data-screen="trophies"] {
 
 	#footer-to-about,
 	#footer-to-menu,
@@ -212,8 +212,8 @@ body.screen-trophies {
 }
 
 /* what icons to show on the map screen */
-body.screen-guide,
-body.screen-photos {
+body[data-screen="guide"],
+body[data-screen="photos"] {
 
 	#footer-to-about,
 	#footer-to-trophies {
@@ -222,12 +222,12 @@ body.screen-photos {
 }
 
 /* what icons are active on per screen */
-body.screen-about #footer-to-about,
-body.screen-guide #footer-to-guide,
-body.screen-menu #footer-to-menu,
-body.screen-overview #footer-to-overview,
-body.screen-photos #footer-to-photos,
-body.screen-trophies #footer-to-trophies {
+body[data-screen="about"] #footer-to-about,
+body[data-screen="guide"] #footer-to-guide,
+body[data-screen="menu"] #footer-to-menu,
+body[data-screen="overview"] #footer-to-overview,
+body[data-screen="photos"] #footer-to-photos,
+body[data-screen="trophies"] #footer-to-trophies {
 	opacity: 1;
 	filter: grayscale(0);
 }

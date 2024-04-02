@@ -36,9 +36,10 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="./inc/ico/favicon-16x16.png" />
 		<link rel="manifest" href="./manifest.json" />
 		<link rel="stylesheet" href="./inc/css/styles.css?t=2023-11-01"/>
+		<link rel="canonical" href="https://www.sydneyhikingtrips.com/" />
 	</head>
 
-	<body class="screen-menu" data-color-scheme="auto">
+	<body data-screen="menu" data-color-scheme="auto">
 
 		<!-- markup -->
 		<div class="web-margins">
@@ -168,6 +169,10 @@
 				It takes about {duration} hours to complete the <b>full</b> {distance} kilometre walk, but you can also <b>do shorter parts</b> of it.
 				Consider that there's a lot to see along the way, so plan for plenty of breaks and photography stops.
 			</p>
+			<p>
+				<a style="text-decoration: underline; cursor: pointer;" onclick="sydneyTrainWalks.editor.start()">Edit</a> - 
+				<a style="text-decoration: underline; cursor: pointer;" onclick="sydneyTrainWalks.editor.save()">Save</a>
+			</p>
 		</template>
 
 		<template id="outro-template">
@@ -195,12 +200,12 @@
 
 		<template id="footer-template">
 			<nav>
-				<a id="footer-to-menu" href="?screen=menu">Menu</a>
-				<a id="footer-to-overview" href="?screen=overview">Overview</a>
-				<a id="footer-to-guide" href="?id={id}&amp;screen=guide">Guide</a>
-				<a id="footer-to-photos" href="?id={id}&amp;screen=photos">Photos</a>
-				<a id="footer-to-trophies" href="?screen=trophies">Trophies</a>
-				<a id="footer-to-about" href="?screen=about">About</a>
+				<a id="footer-to-menu" href="./">Menu</a>
+				<a id="footer-to-overview" href="./?screen=overview">Overview</a>
+				<a id="footer-to-guide" href="./?key={id}&amp;screen=guide">Guide</a>
+				<a id="footer-to-photos" href="./?key={id}&amp;screen=photos">Photos</a>
+				<a id="footer-to-trophies" href="./?screen=trophies">Trophies</a>
+				<a id="footer-to-about" href="./?screen=about">About</a>
 			</nav>
 		</template>
 

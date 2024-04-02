@@ -50,7 +50,9 @@ export class Editor {
 
   save() {
     // export the output
-    console.log(JSON.stringify(this.guide, null, '\t'));
+    const guideJson = JSON.stringify(this.guide, null, '\t');
+    console.log(guideJson);
+    localStorage.setItem(this.guide.key, guideJson);
   }
 
   edit(waypoint, textarea) {

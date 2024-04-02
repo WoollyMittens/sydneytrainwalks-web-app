@@ -282,12 +282,20 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "toilet",
-			"photo": "001_pxl_20230929_231143446.jpg",
-			"lon": 151.284378,
-			"lat": -33.843307,
+			"type": "waypoint",
+			"photo": "pxl_20240328_220400097.jpg",
 			"description": "<i>-3km</i> Lorem ipsum dolor sit amet.",
-			"optional": true
+			"optional": true,
+			"lon": 151.284439,
+			"lat": -33.843297
+		},
+		{
+			"type": "toilet",
+			"photo": "pxl_20240328_220504716.jpg",
+			"description": "There's a toilet block near the playground.",
+			"optional": true,
+			"lon": 151.283743,
+			"lat": -33.843491
 		},
 		{
 			"type": "waypoint",
@@ -795,7 +803,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "001_pxl_20230930_013609971.jpg",
 			"lon": 151.27043700000002,
 			"lat": -33.868988,
@@ -1020,6 +1028,13 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
+			"type": "toilet",
+			"photo": "pxl_20240329_002331118.jpg",
+			"description": "There is a toilet on the far side of the park.",
+			"lon": 151.24094,
+			"lat": -33.874043
+		},
+		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_031100679.jpg",
 			"lon": 151.24137,
@@ -1182,7 +1197,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "003_pxl_20230930_041118099.jpg",
 			"lon": 151.221509,
 			"lat": -33.869202,
@@ -1267,7 +1282,7 @@
 			"description": "Take the ferry or train from/to Circular Quay using <a href=\"https://transportnsw.info/trip#/?to=Circular Quay\">transportnsw.info</a>."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "003_pxl_20230930_050310735.jpg",
 			"lon": 151.20952599999998,
 			"lat": -33.861084,
@@ -1479,7 +1494,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "006_pxl_20231001_194858677.jpg",
 			"lon": 151.215061,
 			"lat": -33.844442,
@@ -1514,7 +1529,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "006_pxl_20231001_195905627.jpg",
 			"lon": 151.218309,
 			"lat": -33.84422,
@@ -1830,11 +1845,17 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "006_pxl_20231001_214204884.jpg",
 			"lon": 151.237115,
 			"lat": -33.839385,
 			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "toilet",
+			"lon": 151.238423,
+			"lat": -33.839568,
+			"description": "There's a toilet block at the far side of the park."
 		},
 		{
 			"type": "waypoint",
@@ -1995,6 +2016,12 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
+			"type": "toilet",
+			"lon": 151.252709,
+			"lat": -33.838288,
+			"description": "There's a toilet block at the picnic area."
+		},
+		{
 			"type": "kiosk",
 			"photo": "006_pxl_20231001_225918088.jpg",
 			"lon": 151.254376,
@@ -2016,7 +2043,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "006_pxl_20231001_230339244.jpg",
 			"lon": 151.256082,
 			"lat": -33.83836,
@@ -2157,7 +2184,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "006_pxl_20231002_001011707.jpg",
 			"lon": 151.253173,
 			"lat": -33.828308,
@@ -2269,7 +2296,7 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "006_pxl_20231002_010713527.jpg",
 			"lon": 151.246894,
 			"lat": -33.806633,
@@ -2465,6 +2492,12 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
+			"type": "toilet",
+			"lon": 151.273841,
+			"lat": -33.80774,
+			"description": "There is a toilet block along the trail to the beach."
+		},
+		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231002_031856519.jpg",
 			"lon": 151.272296,
@@ -2484,6 +2517,13 @@
 			"lon": 151.269958,
 			"lat": -33.803568,
 			"description": "Lorem ipsum dolor sit amet."
+		},
+		{
+			"type": "toilet",
+			"photo": "pxl_20240330_021553225.jpg",
+			"description": "There is a toilet block along the trail to the beach.",
+			"lon": 151.26974,
+			"lat": -33.802465
 		},
 		{
 			"type": "waypoint",
@@ -2570,6 +2610,12 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
+			"type": "toilet",
+			"lon": 151.275452,
+			"lat": -33.799774,
+			"description": "There's a toilet block near the rock pool."
+		},
+		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231002_040846022.jpg",
 			"lon": 151.280482,
@@ -2588,8 +2634,8 @@
 			"type": "ferry",
 			"photo": "006_pxl_20231002_041502879.jpg",
 			"description": "Plan your return trip from Manly at <a href=\"https://transportnsw.info/trip#/?from=Manly\">transportnsw.info</a>.",
-			"lon": 151.283656,
-			"lat": -33.799005
+			"lon": 151.284297,
+			"lat": -33.799524
 		}
 	]
 }

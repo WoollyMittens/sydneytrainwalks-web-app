@@ -1,6 +1,7 @@
 export class Footer {
-	constructor(config) {
+	constructor(config, updateView) {
 		this.config = config;
+		this.updateView = updateView;
 		this.originKey = 'menu';
 		this.footerElement = document.querySelector('.toolbar');
 		this.footerTemplate = document.getElementById('footer-template');
@@ -14,13 +15,14 @@ export class Footer {
 
 	onBackButton(evt) {
 		// if this is not an entry page
-		if (!/menu|overview/.test(document.body.className)) {
+		if (!/menu|overview/.test(document.body.getAttribute('data-screen'))) {
 			// cancel the back button
 			evt.preventDefault();
 			// return to the origin page
 			window.localStorage.removeItem('id');
 			window.localStorage.removeItem('mode');
-			document.body.className = 'screen-' + this.originKey;
+			document.body.setAttribute('data-screen', this.originKey);
+			// TODO: update the route
 		// if this is a cordova app
 		} else if (navigator.app && navigator.app.exitApp) {
 			// close the app
@@ -30,8 +32,7 @@ export class Footer {
 
 	onFooterClicked(evt) {
 		// get the target of the click
-		var target = evt.target || evt.srcElement,
-			id = target.getAttribute('id');
+		var target = evt.target || evt.srcElement, id = target.getAttribute('id');
 		// if a button was clicked
 		if (id && id.match(/footer-to-/)) {
 			// cancel any clicks
@@ -45,13 +46,15 @@ export class Footer {
 				this.originKey = id.substr(10);
 			}
 			// apply the mode to the body
-			document.body.className = 'screen-' + id.substr(10);
+			document.body.setAttribute('data-screen', id.substr(10));
+			// update the route
+			this.updateView(null, id.substr(10));
 		}
 	};
 
 	init() {
 		// build the footer with a blank id
-		this.update(null);
+		this.update();
 		// add a global click handler to the footer
 		this.footerElement.addEventListener('click', this.onFooterClicked.bind(this));
 		// add the event handler for the browser back button

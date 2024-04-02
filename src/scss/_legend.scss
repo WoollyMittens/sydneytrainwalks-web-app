@@ -99,7 +99,7 @@
 		overflow: visible !important;
 	}
 
-	body.screen-guide & {
+	body[data-screen="guide"] & {
 		transform: translate(0, 0);
 	}
 }

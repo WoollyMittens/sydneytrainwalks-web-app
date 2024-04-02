@@ -67,7 +67,7 @@ export class SydneyTrainWalks {
 		console.log('updating the search to:', query);
 		// show the index
 		window.localStorage.setItem('mode', 'menu');
-		document.body.className = 'screen-' + 'menu';
+		document.body.setAttribute('data-screen', menu);
 		// update the filter
 		let event = new Event('change');
 		this.index.searchInput.value = query;
@@ -75,18 +75,33 @@ export class SydneyTrainWalks {
 	}
 
 	updateView(id, mode) {
+		// this needs to update the screen as well as the view
+		console.log('updateView', id, mode);
 		// store the current state
 		window.localStorage.setItem('id', id);
 		window.localStorage.setItem('mode', mode);
-		// update the details
-		this.details.update(id);
-		this.editor.update(id);
-		// wait a while to avoid glitches
+		// update the required views
+		switch(mode) {
+			case 'guide':
+			case 'photos':
+				this.details.update(id);
+				this.editor.update(id);
+				break;
+			case 'about':
+				this.about.updateMeta();
+				break;
+			case 'trophies':
+				this.trophies.updateMeta();
+				break;
+			case 'overview':
+				this.overview.updateMeta();
+				break;
+			default:
+				this.index.updateMeta();
+		}
+		// update the body class after a pause
 		setTimeout(() => {
-			// update the footer
-			this.footer.update(id);
-			// update the body class
-			document.body.className = 'screen-' + mode;
+			document.body.setAttribute('data-screen', mode || 'menu');
 		}, 100);
 	}
 
@@ -123,7 +138,7 @@ export class SydneyTrainWalks {
 		// recover the previous state
 		var storedId = window.localStorage.getItem('id');
 		var storedMode = window.localStorage.getItem('mode') || 'guide';
-		var startScreen = 'menu';
+		var startScreen = (this.getQuery('id')) ? 'guide' : 'menu';
 		// recover the state from the url
 		storedId = this.getQuery('id') || storedId ;
 		storedMode = this.getQuery('mode') || storedMode;
@@ -131,18 +146,18 @@ export class SydneyTrainWalks {
 		// initialise the components
 		this.about = new About(this.config);
 		this.busy = new Busy(this.config);
-		this.footer = new Footer(this.config);
-		this.header = new Header(this.config);
+		this.footer = new Footer(this.config, this.updateView.bind(this));
+		this.header = new Header(this.config, this.updateView.bind(this));
 		this.index = new Index(this.config, this.guideCache, this.updateView.bind(this));
 		this.overview = new Overview(this.config, this.guideIds, this.loadGuide.bind(this), this.loadRoute.bind(this), this.updateView.bind(this), this.updateSearch.bind(this));
 		this.trophies = new Trophies(this.config, this.guideIds, this.loadGuide.bind(this), this.updateView.bind(this), this.busy);
 		this.details = new Details(this.config, this.loadGuide.bind(this), this.loadRoute.bind(this), this.loadExif.bind(this), this.trophies);
 		this.editor = new Editor(this.config, this.loadGuide.bind(this));
 		// substitute legacy map mode for guide
-		if (storedMode === 'map') storedMode = 'guide';
+		if (storedMode === 'map') { storedMode = 'guide' }
 		// restore the previous state
-		if (storedMode && storedId && this.guideIds.includes(storedId)) { this.updateView(storedId, storedMode); }
-		else if (startScreen) { document.body.className = 'screen-' + startScreen; }
+		if (storedMode && storedId && this.guideIds.includes(storedId)) { this.updateView(storedId, storedMode) }
+		else if (startScreen) { document.body.setAttribute('data-screen', startScreen) }
 		// remove busy screen after a redraw
 		setTimeout(this.busy.hide, 300);
 		// handle external links

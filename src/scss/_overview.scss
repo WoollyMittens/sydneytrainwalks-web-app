@@ -56,11 +56,11 @@
 		}
 	}
 
-	body.screen-overview & {
+	body[data-screen="overview"] & {
 		transform: translate(0, 0);
 	}
 
-	body.screen-menu & {
+	body[data-screen="menu"] & {
 		@media (min-width:960px) {
 			transform: translate(0, 0);
 		}

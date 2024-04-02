@@ -106,7 +106,7 @@
 		z-index: 5;
 	}
 
-	body.screen-photos & {
+	body[data-screen="photos"] & {
 		transform: translate(0, 0);
 	}
 }

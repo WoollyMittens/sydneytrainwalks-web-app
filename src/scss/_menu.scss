@@ -196,7 +196,7 @@
 		}
 	}
 
-	body.screen-menu & {
+	body[data-screen="menu"] & {
 		transform: translate(0, 0);
 	}
 }

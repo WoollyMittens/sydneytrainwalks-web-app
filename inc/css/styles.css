@@ -345,7 +345,7 @@ header.subtitle h2 {
   margin: 0;
   font-weight: normal;
 }
-body.screen-about header.subtitle, body.screen-menu header.subtitle, body.screen-overview header.subtitle {
+body[data-screen="about"] header.subtitle, body[data-screen="menu"] header.subtitle, body[data-screen="overview"] header.subtitle {
   visibility: hidden;
 }
 @media print {
@@ -530,50 +530,50 @@ body.screen-about header.subtitle, body.screen-menu header.subtitle, body.screen
 }
 
 /* what icons to show on the menu screen */
-body.screen-about #footer-to-about,
-body.screen-about #footer-to-menu,
-body.screen-about #footer-to-overview,
-body.screen-about #footer-to-trophies,
-body.screen-menu #footer-to-about,
-body.screen-menu #footer-to-menu,
-body.screen-menu #footer-to-overview,
-body.screen-menu #footer-to-trophies,
-body.screen-overview #footer-to-about,
-body.screen-overview #footer-to-menu,
-body.screen-overview #footer-to-overview,
-body.screen-overview #footer-to-trophies,
-body.screen-trophies #footer-to-about,
-body.screen-trophies #footer-to-menu,
-body.screen-trophies #footer-to-overview,
-body.screen-trophies #footer-to-trophies {
+body[data-screen="about"] #footer-to-about,
+body[data-screen="about"] #footer-to-menu,
+body[data-screen="about"] #footer-to-overview,
+body[data-screen="about"] #footer-to-trophies,
+body[data-screen="menu"] #footer-to-about,
+body[data-screen="menu"] #footer-to-menu,
+body[data-screen="menu"] #footer-to-overview,
+body[data-screen="menu"] #footer-to-trophies,
+body[data-screen="overview"] #footer-to-about,
+body[data-screen="overview"] #footer-to-menu,
+body[data-screen="overview"] #footer-to-overview,
+body[data-screen="overview"] #footer-to-trophies,
+body[data-screen="trophies"] #footer-to-about,
+body[data-screen="trophies"] #footer-to-menu,
+body[data-screen="trophies"] #footer-to-overview,
+body[data-screen="trophies"] #footer-to-trophies {
   display: inline-block;
 }
-body.screen-about #footer-to-guide,
-body.screen-about #footer-to-photos,
-body.screen-menu #footer-to-guide,
-body.screen-menu #footer-to-photos,
-body.screen-overview #footer-to-guide,
-body.screen-overview #footer-to-photos,
-body.screen-trophies #footer-to-guide,
-body.screen-trophies #footer-to-photos {
+body[data-screen="about"] #footer-to-guide,
+body[data-screen="about"] #footer-to-photos,
+body[data-screen="menu"] #footer-to-guide,
+body[data-screen="menu"] #footer-to-photos,
+body[data-screen="overview"] #footer-to-guide,
+body[data-screen="overview"] #footer-to-photos,
+body[data-screen="trophies"] #footer-to-guide,
+body[data-screen="trophies"] #footer-to-photos {
   display: none;
 }
 
 /* what icons to show on the map screen */
-body.screen-guide #footer-to-about,
-body.screen-guide #footer-to-trophies,
-body.screen-photos #footer-to-about,
-body.screen-photos #footer-to-trophies {
+body[data-screen="guide"] #footer-to-about,
+body[data-screen="guide"] #footer-to-trophies,
+body[data-screen="photos"] #footer-to-about,
+body[data-screen="photos"] #footer-to-trophies {
   display: none;
 }
 
 /* what icons are active on per screen */
-body.screen-about #footer-to-about,
-body.screen-guide #footer-to-guide,
-body.screen-menu #footer-to-menu,
-body.screen-overview #footer-to-overview,
-body.screen-photos #footer-to-photos,
-body.screen-trophies #footer-to-trophies {
+body[data-screen="about"] #footer-to-about,
+body[data-screen="guide"] #footer-to-guide,
+body[data-screen="menu"] #footer-to-menu,
+body[data-screen="overview"] #footer-to-overview,
+body[data-screen="photos"] #footer-to-photos,
+body[data-screen="trophies"] #footer-to-trophies {
   opacity: 1;
   filter: grayscale(0);
 }
@@ -764,7 +764,7 @@ body.screen-trophies #footer-to-trophies {
     background: #212121;
   }
 }
-body.screen-menu .navigation {
+body[data-screen="menu"] .navigation {
   transform: translate(0, 0);
 }
 
@@ -949,11 +949,11 @@ body.screen-menu .navigation {
     display: none !important;
   }
 }
-body.screen-guide .directions, body.screen-photos .directions {
+body[data-screen="guide"] .directions, body[data-screen="photos"] .directions {
   transform: translate(0, 0);
 }
 @media (max-width: 959px) {
-  body.screen-photos .directions {
+  body[data-screen="photos"] .directions {
     transform: translate(100%, 0);
   }
 }
@@ -1015,11 +1015,11 @@ body.screen-guide .directions, body.screen-photos .directions {
     visibility: hidden !important;
   }
 }
-body.screen-overview .overview {
+body[data-screen="overview"] .overview {
   transform: translate(0, 0);
 }
 @media (min-width: 960px) {
-  body.screen-menu .overview {
+  body[data-screen="menu"] .overview {
     transform: translate(0, 0);
   }
 }
@@ -1095,11 +1095,11 @@ body.screen-overview .overview {
     border-color: #616161;
   }
 }
-body.screen-overview .summary {
+body[data-screen="overview"] .summary {
   transform: translate(0, 0);
 }
 @media (min-width: 960px) {
-  body.screen-menu .summary {
+  body[data-screen="menu"] .summary {
     transform: translate(0, 0);
   }
 }
@@ -1191,7 +1191,7 @@ body.screen-overview .summary {
     overflow: visible !important;
   }
 }
-body.screen-guide .legend {
+body[data-screen="guide"] .legend {
   transform: translate(0, 0);
 }
 
@@ -1290,7 +1290,7 @@ body.screen-guide .legend {
   display: block;
   font-size: 1rem;
 }
-body.screen-about .about {
+body[data-screen="about"] .about {
   transform: translate(0, 0);
 }
 
@@ -1421,7 +1421,7 @@ body.screen-about .about {
   top: 0.5rem;
   transform: initial;
 }
-body.screen-trophies .trophies {
+body[data-screen="trophies"] .trophies {
   transform: translate(0, 0);
 }
 
@@ -1886,7 +1886,7 @@ header.subtitle .sign {
   right: 0;
   z-index: 5;
 }
-body.screen-photos .photowall {
+body[data-screen="photos"] .photowall {
   transform: translate(0, 0);
 }
 

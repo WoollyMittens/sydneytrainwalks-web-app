@@ -38,6 +38,23 @@ export class Trophies {
 		this.busyIndicator.hide();
 	};
 
+	updateMeta() {
+		// format the guide data
+		const title = `Earn these trophies on bushwalks around greater sydney using public transport - Sydney Hiking Trips`;
+		const description = `These trophies can be earned by reaching notable landmarks on the bushwalks in this guide.`;
+		const url = `/?screen=trophies`;
+		// update the route without refreshing
+		window.history.pushState({'key': 'trophies'}, title, url);
+		// update the meta elements
+		document.querySelector('title').innerHTML = title;
+		document.querySelector('meta[name="description"]')?.setAttribute('content', description);
+		document.querySelector('meta[property="og:url"]')?.setAttribute('content', this.config.remoteUrl + '/?screen=trophies');
+		document.querySelector('meta[property="og:image"]')?.setAttribute('content', this.config.remoteUrl + `/inc/img/favicon.png`);
+		document.querySelector('meta[property="og:title"]')?.setAttribute('content', title);
+		document.querySelector('meta[property="og:description"]')?.setAttribute('content', description);
+		document.querySelector('link[rel="canonical"]')?.setAttribute('href', this.config.remoteUrl + '/?screen=trophies');
+	}
+
 	addBadge(marker) {
 		var link = document.createElement('a');
 		var template = this.trophiesTemplate;

@@ -70,7 +70,7 @@
 			"distance": [
 				21
 			],
-			"revised": "2016-11-25",
+			"revised": "2023-06-12",
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
@@ -106,7 +106,7 @@
 			"distance": [
 				24
 			],
-			"revised": "2013-09-20",
+			"revised": "2017-12-27",
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
@@ -142,11 +142,11 @@
 			"distance": [
 				18
 			],
-			"revised": "2013-02-02",
+			"revised": "2024-03-08",
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
-			"toilets": 3,
+			"toilets": 0,
 			"looped": true,
 			"rain": false,
 			"fireban": false
@@ -260,11 +260,11 @@
 				33,
 				66
 			],
-			"revised": "2023-09-30",
+			"revised": "2023-10-02",
 			"transit": true,
 			"car": false,
-			"kiosks": 4,
-			"toilets": 12,
+			"kiosks": 5,
+			"toilets": 20,
 			"looped": false,
 			"rain": true,
 			"fireban": true
@@ -305,7 +305,7 @@
 				28,
 				34
 			],
-			"revised": "2013-09-27",
+			"revised": "2017-04-23",
 			"transit": true,
 			"car": false,
 			"kiosks": 1,
@@ -358,7 +358,7 @@
 				20,
 				22
 			],
-			"revised": "2015-05-23",
+			"revised": "2015-11-22",
 			"transit": true,
 			"car": false,
 			"kiosks": 2,
@@ -394,7 +394,7 @@
 			"distance": [
 				18
 			],
-			"revised": "2013-05-31",
+			"revised": "2024-03-02",
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
@@ -467,7 +467,7 @@
 				15,
 				20
 			],
-			"revised": "2014-07-04",
+			"revised": "2019-11-09",
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
@@ -547,7 +547,7 @@
 			"distance": [
 				30
 			],
-			"revised": "2017-12-15",
+			"revised": "2018-10-06",
 			"transit": true,
 			"car": false,
 			"kiosks": 2,
@@ -608,7 +608,7 @@
 				12,
 				19
 			],
-			"revised": "2013-05-26",
+			"revised": "2024-02-10",
 			"transit": true,
 			"car": false,
 			"kiosks": 1,
@@ -644,7 +644,7 @@
 			"distance": [
 				25
 			],
-			"revised": "2014-06-06",
+			"revised": "2019-04-06",
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
@@ -697,7 +697,7 @@
 				25,
 				37
 			],
-			"revised": "2018-12-07",
+			"revised": "2023-09-16",
 			"transit": true,
 			"car": false,
 			"kiosks": 2,
@@ -769,11 +769,11 @@
 			"distance": [
 				9
 			],
-			"revised": "2018-07-04",
+			"revised": "2024-03-16",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 2,
+			"toilets": 4,
 			"looped": true,
 			"rain": false,
 			"fireban": false
@@ -841,7 +841,7 @@
 			"distance": [
 				38
 			],
-			"revised": "2019-02-15",
+			"revised": "2023-01-11",
 			"transit": true,
 			"car": false,
 			"kiosks": 2,
@@ -886,7 +886,7 @@
 				10,
 				20
 			],
-			"revised": "2016-05-14",
+			"revised": "2016-09-04",
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
@@ -920,7 +920,7 @@
 			"distance": [
 				18
 			],
-			"revised": "2013-12-20",
+			"revised": "2019-04-31",
 			"transit": true,
 			"car": false,
 			"kiosks": 1,
@@ -957,7 +957,7 @@
 				13,
 				25
 			],
-			"revised": "2014-02-01",
+			"revised": "2024-03-10",
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
@@ -1001,7 +1001,7 @@
 				14,
 				31
 			],
-			"revised": "2013-08-17",
+			"revised": "2023-06-23",
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
@@ -1073,7 +1073,7 @@
 			"distance": [
 				18
 			],
-			"revised": "2014-11-01",
+			"revised": "2016-03-01",
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
@@ -1111,7 +1111,7 @@
 				25,
 				31
 			],
-			"revised": "2013-03-29",
+			"revised": "2024-02-03",
 			"transit": true,
 			"car": false,
 			"kiosks": 5,
@@ -1157,7 +1157,7 @@
 				18,
 				36
 			],
-			"revised": "2023-09-02",
+			"revised": "2023-07-15",
 			"transit": true,
 			"car": false,
 			"kiosks": 9,
@@ -1202,7 +1202,7 @@
 				25,
 				40
 			],
-			"revised": "2017-10-20",
+			"revised": "2019-12-24",
 			"transit": true,
 			"car": false,
 			"kiosks": 2,
@@ -1325,7 +1325,7 @@
 				13,
 				34
 			],
-			"revised": "2013-12-30",
+			"revised": "2024-02-17",
 			"transit": true,
 			"car": false,
 			"kiosks": 2,
@@ -1378,7 +1378,7 @@
 				19,
 				34
 			],
-			"revised": "2013-12-27",
+			"revised": "2024-02-23",
 			"transit": true,
 			"car": false,
 			"kiosks": 7,
@@ -1414,7 +1414,7 @@
 			"distance": [
 				18
 			],
-			"revised": "2024-01-15",
+			"revised": "2024-01-14",
 			"transit": true,
 			"car": false,
 			"kiosks": 5,
@@ -1442,19 +1442,19 @@
 					"type": "ferry",
 					"photo": "pxl_20240316_033630834.jpg",
 					"description": "Plan your return trip from Manly at <a href=\"https://transportnsw.info/trip#/?from=Manly\">transportnsw.info</a>.",
-					"lat": -33.80003333333333,
-					"lon": 151.2852861111111
+					"lat": -33.799503,
+					"lon": 151.284304
 				}
 			],
 			"region": "Manly Dam",
 			"distance": [
 				23
 			],
-			"revised": "2018-07-04",
+			"revised": "2024-03-16",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 2,
+			"toilets": 8,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -1495,7 +1495,7 @@
 				25,
 				30
 			],
-			"revised": "2017-06-02",
+			"revised": "2023-01-13",
 			"transit": true,
 			"car": false,
 			"kiosks": 2,
@@ -1531,7 +1531,7 @@
 			"distance": [
 				19
 			],
-			"revised": "2014-03-29",
+			"revised": "2017-05-27",
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
@@ -1567,7 +1567,7 @@
 			"distance": [
 				18
 			],
-			"revised": "2012-12-08",
+			"revised": "2021-10-23",
 			"transit": true,
 			"car": false,
 			"kiosks": 1,
@@ -1621,7 +1621,7 @@
 				36,
 				40
 			],
-			"revised": "2019-02-22",
+			"revised": "2024-01-20",
 			"transit": true,
 			"car": false,
 			"kiosks": 3,
@@ -1674,7 +1674,7 @@
 				39,
 				45
 			],
-			"revised": "2013-08-30",
+			"revised": "2023-12-23",
 			"transit": true,
 			"car": false,
 			"kiosks": 5,
@@ -1727,7 +1727,7 @@
 				13,
 				26
 			],
-			"revised": "2018-12-23",
+			"revised": "2023-03-11",
 			"transit": true,
 			"car": false,
 			"kiosks": 2,
@@ -1771,7 +1771,7 @@
 			"distance": [
 				22
 			],
-			"revised": "2013-02-16",
+			"revised": "2023-10-15",
 			"transit": true,
 			"car": false,
 			"kiosks": 1,
@@ -1815,7 +1815,7 @@
 			"distance": [
 				38
 			],
-			"revised": "2013-02-16",
+			"revised": "2023-07-22",
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
@@ -1852,7 +1852,7 @@
 				22,
 				45
 			],
-			"revised": "2014-04-20",
+			"revised": "2024-01-06",
 			"transit": true,
 			"car": false,
 			"kiosks": 3,
@@ -1904,7 +1904,7 @@
 				39,
 				51
 			],
-			"revised": "2018-05-04",
+			"revised": "2023-08-12",
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
@@ -1949,7 +1949,7 @@
 				27,
 				37
 			],
-			"revised": "2019-09-13",
+			"revised": "2024-01-28",
 			"transit": true,
 			"car": false,
 			"kiosks": 1,
@@ -1994,7 +1994,7 @@
 				12,
 				25
 			],
-			"revised": "2013-09-14",
+			"revised": "2024-02-25",
 			"transit": true,
 			"car": false,
 			"kiosks": 0,
@@ -2039,7 +2039,7 @@
 				28,
 				45
 			],
-			"revised": "2024-01-12",
+			"revised": "2024-01-19",
 			"transit": true,
 			"car": false,
 			"kiosks": 2,
