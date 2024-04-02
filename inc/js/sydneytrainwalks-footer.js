@@ -19,8 +19,8 @@ export class Footer {
 			// cancel the back button
 			evt.preventDefault();
 			// return to the origin page
-			window.localStorage.removeItem('id');
-			window.localStorage.removeItem('mode');
+			window.localStorage.removeItem('key');
+			window.localStorage.removeItem('screen');
 			document.body.setAttribute('data-screen', this.originKey);
 			// TODO: update the route
 		// if this is a cordova app
@@ -40,8 +40,8 @@ export class Footer {
 			// if this is a menu page
 			if (id.match(/-menu|-overview|-about|-trophies/)) {
 				// reset the local storage when returning to the menu
-				window.localStorage.removeItem('id');
-				window.localStorage.removeItem('mode');
+				window.localStorage.removeItem('key');
+				window.localStorage.removeItem('screen');
 				// remember what menu screen was the origin
 				this.originKey = id.substr(10);
 			}

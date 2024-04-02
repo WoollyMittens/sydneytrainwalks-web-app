@@ -66,7 +66,7 @@ export class SydneyTrainWalks {
 	updateSearch(query) {
 		console.log('updating the search to:', query);
 		// show the index
-		window.localStorage.setItem('mode', 'menu');
+		window.localStorage.setItem('screen', 'menu');
 		document.body.setAttribute('data-screen', menu);
 		// update the filter
 		let event = new Event('change');
@@ -78,8 +78,8 @@ export class SydneyTrainWalks {
 		// this needs to update the screen as well as the view
 		console.log('updateView', id, mode);
 		// store the current state
-		window.localStorage.setItem('id', id);
-		window.localStorage.setItem('mode', mode);
+		window.localStorage.setItem('key', id);
+		window.localStorage.setItem('screen', mode);
 		// update the required views
 		switch(mode) {
 			case 'guide':
@@ -136,12 +136,12 @@ export class SydneyTrainWalks {
 			? root.className.replace('ios-false', 'ios-true')
 			: root.className.replace('ios-true', 'ios-false');
 		// recover the previous state
-		var storedId = window.localStorage.getItem('id');
-		var storedMode = window.localStorage.getItem('mode') || 'guide';
-		var startScreen = (this.getQuery('id')) ? 'guide' : 'menu';
+		var storedId = window.localStorage.getItem('key');
+		var storedMode = window.localStorage.getItem('screen') || 'guide';
+		var startScreen = (this.getQuery('key')) ? 'guide' : 'menu';
 		// recover the state from the url
-		storedId = this.getQuery('id') || storedId ;
-		storedMode = this.getQuery('mode') || storedMode;
+		storedId = this.getQuery('key') || storedId ;
+		storedMode = this.getQuery('screen') || storedMode;
 		startScreen = this.getQuery('screen') || startScreen;
 		// initialise the components
 		this.about = new About(this.config);
@@ -156,7 +156,7 @@ export class SydneyTrainWalks {
 		// substitute legacy map mode for guide
 		if (storedMode === 'map') { storedMode = 'guide' }
 		// restore the previous state
-		if (storedMode && storedId && this.guideIds.includes(storedId)) { this.updateView(storedId, storedMode) }
+		if (storedMode && storedId && this.guideIds.includes(storedId)) {  this.updateView(storedId, storedMode) }
 		else if (startScreen) { document.body.setAttribute('data-screen', startScreen) }
 		// remove busy screen after a redraw
 		setTimeout(this.busy.hide, 300);

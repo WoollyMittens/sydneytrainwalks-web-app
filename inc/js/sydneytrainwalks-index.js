@@ -171,8 +171,8 @@ export class Index {
 
 	onFieldFocus(evt) {
 		// reset the previous state
-		window.localStorage.setItem('id', null);
-		window.localStorage.setItem('mode', null);
+		window.localStorage.setItem('key', null);
+		window.localStorage.setItem('screen', null);
 	}
 
 	onSearchReset(input, evt) {

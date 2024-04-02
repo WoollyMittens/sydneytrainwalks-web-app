@@ -10,8 +10,8 @@ export class Header {
 	resetView(evt) {
 		if (evt) evt.preventDefault();
 		// restore the view to default
-		window.localStorage.removeItem('id');
-		window.localStorage.removeItem('mode');
+		window.localStorage.removeItem('key');
+		window.localStorage.removeItem('screen');
 		document.body.setAttribute('data-screen', 'menu');
 		// update the route
 		this.updateView(null, 'menu');
