@@ -1304,7 +1304,7 @@
 		},
 		{
 			"type": "hotspot",
-			"photo": "dsc_3825.jpg",
+			"photo": "006_pxl_20240120_065700912.jpg",
 			"lon": 151.7196822166376,
 			"lat": -32.9342364320964,
 			"radius": 0.0004,
@@ -1316,23 +1316,47 @@
 		{
 			"location": "Adamstown",
 			"type": "train",
-			"photo": "006_pxl_20240120_065700912.jpg",
+			"photo": "007_pxl_20240413_064602780.jpg",
 			"description": "Plan your return trip from Adamstown at <a href=\"https://transportnsw.info/trip#/?from=Adamstown\">transportnsw.info</a>.",
 			"lon": 151.720408,
 			"lat": -32.933554
 		},
 		{
 			"type": "waypoint",
-			"photo": "007_pxl_20211106_055152820.jpg",
-			"description": "<i>+4km</i> If time allows, consider continuing on to Broadmeadow for a more frequent train service.",
+			"photo": "007_pxl_20240413_064716705.jpg",
+			"description": "<i>+3km</i> If time allows, consider following Teralba Road to Broadmeadow for a more frequent train service.",
 			"optional": true,
-			"lon": 151.72728,
-			"lat": -32.930391
+			"lon": 151.720831,
+			"lat": -32.933622
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240413_065237485.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true,
+			"lon": 151.723334,
+			"lat": -32.933781999999994
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240413_070509375.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true,
+			"lon": 151.73063699987614,
+			"lat": -32.927875
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240413_071131260.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true,
+			"lon": 151.733252,
+			"lat": -32.924865999999994
 		},
 		{
 			"location": "Broadmeadow",
 			"type": "train",
-			"photo": "007_pxl_20230204_063706159.jpg",
+			"photo": "007_pxl_20240413_071510838.jpg",
 			"description": "Plan your return trip from Broadmeadow at <a href=\"https://transportnsw.info/trip#/?from=Broadmeadow\">transportnsw.info</a>.",
 			"lon": 151.734882,
 			"lat": -32.923002

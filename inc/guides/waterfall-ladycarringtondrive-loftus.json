@@ -1,7 +1,7 @@
 {
 	"location": "Lady Carrington Drive",
-	"lon": 151.051636,
-	"lat": -34.097977,
+	"lon": 151.0228345357,
+	"lat": -34.1507744975,
 	"description": "This walk traverses the full length of the Royal National Park along the Lady Carrington Drive, while the walk to the start of the historic road is an adventure of its own.",
 	"keywords": {
 		"Royal National Park": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/royal-national-park",
@@ -18,7 +18,7 @@
 	"updated": "2023-10-15",
 	"bounds": {
 		"west": 150.97412109375,
-		"north": -34.03445260967645,
+		"north": -34.016241889667015,
 		"east": 151.072998046875,
 		"south": -34.161818161230386
 	},
@@ -717,13 +717,6 @@
 			"lat": -34.063644169993346
 		},
 		{
-			"type": "waypoint",
-			"photo": "004_dsc_9868.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.05709304999772,
-			"lat": -34.06312310994049
-		},
-		{
 			"location": "Royal National Park Station",
 			"type": "tram",
 			"photo": "004_dsc_9868.jpg",
@@ -829,6 +822,46 @@
 			"description": "Plan your return trip from Loftus at <a href=\"https://transportnsw.info/trip#/?from=Loftus\">transportnsw.info</a>.",
 			"lat": -34.045131,
 			"lon": 151.051388
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20240425_022400242.jpg",
+			"description": "<i>+2km</i>If time allows, consider following Old Princes Highway to Sutherland for a more frequent train service.",
+			"optional": true,
+			"lon": 151.05283200000002,
+			"lat": -34.045386
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20240425_022721959.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true,
+			"lon": 151.05337300000002,
+			"lat": -34.043186
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20240425_023753879.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true,
+			"lon": 151.05518500000002,
+			"lat": -34.035461999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20240425_024243210.jpg",
+			"description": "Lorem ipsum dolor sit amet.",
+			"optional": true,
+			"lon": 151.057296,
+			"lat": -34.03241699987883
+		},
+		{
+			"location": "Sutherland",
+			"type": "train",
+			"photo": "005_pxl_20240425_024418062.jpg",
+			"description": "Plan your return trip from Loftus at <a href=\"https://transportnsw.info/trip#/?from=Loftus\">transportnsw.info</a>.",
+			"lon": 151.05720788240433,
+			"lat": -34.03200334869325
 		}
 	]
 }

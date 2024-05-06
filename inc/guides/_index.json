@@ -80,6 +80,54 @@
 			"fireban": false
 		},
 		{
+			"key": "bexleynorth-cooksriver-flemington",
+			"type": "walk",
+			"lon": 151.12854793667793,
+			"lat": -33.914976892992854,
+			"locations": [
+				{
+					"location": "Bexley North",
+					"type": "train",
+					"photo": "001_pxl_20240420_204942249.jpg",
+					"description": "Get the train to Bexley North using <a href=\"https://transportnsw.info/trip#/?to=Bexley North\">transportnsw.info</a>.",
+					"lon": 151.11357199028134,
+					"lat": -33.93764189444482,
+					"missing": true
+				},
+				{
+					"location": "Canterbury",
+					"type": "train",
+					"photo": "002_pxl_20240425_033558307.jpg",
+					"description": "Get the train to/from Canterbury using <a href=\"https://transportnsw.info/trip#/?to=Canterbury Station\">transportnsw.info</a>.",
+					"missing": true,
+					"lon": 151.117997,
+					"lat": -33.911749
+				},
+				{
+					"location": "Flemington",
+					"type": "train",
+					"photo": "004_pxl_20240425_054915853.jpg",
+					"description": "Plan your return trip from Cronulla at <a href=\"https://transportnsw.info/trip#/?from=Cronulla\">transportnsw.info</a>.",
+					"missing": true,
+					"lon": 151.0697962436825,
+					"lat": -33.864821176975965
+				}
+			],
+			"region": "Cooks River",
+			"distance": [
+				10,
+				20
+			],
+			"revised": "2024-04-21",
+			"transit": true,
+			"car": false,
+			"kiosks": 1,
+			"toilets": 1,
+			"looped": false,
+			"rain": true,
+			"fireban": true
+		},
+		{
 			"key": "blackheath-bluegumforest-blackheath",
 			"type": "walk",
 			"lon": 150.3570952546,
@@ -250,8 +298,8 @@
 					"type": "ferry",
 					"photo": "006_pxl_20231002_041502879.jpg",
 					"description": "Plan your return trip from Manly at <a href=\"https://transportnsw.info/trip#/?from=Manly\">transportnsw.info</a>.",
-					"lon": 151.283656,
-					"lat": -33.799005
+					"lon": 151.284297,
+					"lat": -33.799524
 				}
 			],
 			"region": "Sydney Harbour",
@@ -263,8 +311,8 @@
 			"revised": "2023-10-02",
 			"transit": true,
 			"car": false,
-			"kiosks": 5,
-			"toilets": 20,
+			"kiosks": 10,
+			"toilets": 27,
 			"looped": false,
 			"rain": true,
 			"fireban": true
@@ -317,13 +365,13 @@
 		{
 			"key": "bundeena-winifredfalls-loftus",
 			"type": "walk",
-			"lon": 151.085218,
-			"lat": -34.093973,
+			"lon": 151.078869,
+			"lat": -34.094017,
 			"locations": [
 				{
 					"location": "Cronulla",
 					"type": "train",
-					"photo": "p5240001.jpg",
+					"photo": "001_p5240001.jpg",
 					"description": "Get the train to Cronulla using <a href=\"https://transportnsw.info/trip#/?to=Bundeena\">transportnsw.info</a>.",
 					"lon": 151.151371,
 					"lat": -34.055287
@@ -331,7 +379,7 @@
 				{
 					"location": "Bundeena",
 					"type": "ferry",
-					"photo": "p5240040.jpg",
+					"photo": "001_p5240040.jpg",
 					"description": "Get the ferry to Bundeena using: <a href=\"https://transportnsw.info/trip#/?from=Cronulla&to=Bundeena\">transportnsw.info</a>",
 					"lon": 151.15072700000002,
 					"lat": -34.082694000000004
@@ -339,7 +387,7 @@
 				{
 					"location": "Royal National Park Station",
 					"type": "tram",
-					"photo": "p5240845.jpg",
+					"photo": "001_p5240845.jpg",
 					"description": "Check <a href=\"https://www.sydneytramwaymuseum.com.au/\">www.sydneytramwaymuseum.com.au</a> if the historical tramway operates today.",
 					"lon": 151.05709304999772,
 					"lat": -34.06312310994049
@@ -347,10 +395,18 @@
 				{
 					"location": "Loftus",
 					"type": "train",
-					"photo": "p5240872.jpg",
+					"photo": "001_p5240872.jpg",
 					"description": "Plan your return trip from Loftus at <a href=\"https://transportnsw.info/trip#/?from=Loftus\">transportnsw.info</a>.",
 					"lat": -34.045131,
 					"lon": 151.051388
+				},
+				{
+					"location": "Sutherland",
+					"type": "train",
+					"photo": "005_pxl_20240425_024418062.jpg",
+					"description": "Plan your return trip from Loftus at <a href=\"https://transportnsw.info/trip#/?from=Loftus\">transportnsw.info</a>.",
+					"lon": 151.05720788240433,
+					"lat": -34.03200334869325
 				}
 			],
 			"region": "Royal National Park",
@@ -1601,7 +1657,7 @@
 				{
 					"location": "Adamstown",
 					"type": "train",
-					"photo": "006_pxl_20240120_065700912.jpg",
+					"photo": "007_pxl_20240413_064602780.jpg",
 					"description": "Plan your return trip from Adamstown at <a href=\"https://transportnsw.info/trip#/?from=Adamstown\">transportnsw.info</a>.",
 					"lon": 151.720408,
 					"lat": -32.933554
@@ -1609,7 +1665,7 @@
 				{
 					"location": "Broadmeadow",
 					"type": "train",
-					"photo": "007_pxl_20230204_063706159.jpg",
+					"photo": "007_pxl_20240413_071510838.jpg",
 					"description": "Plan your return trip from Broadmeadow at <a href=\"https://transportnsw.info/trip#/?from=Broadmeadow\">transportnsw.info</a>.",
 					"lon": 151.734882,
 					"lat": -32.923002
@@ -1686,8 +1742,8 @@
 		{
 			"key": "waterfall-heathcote-loftus",
 			"type": "walk",
-			"lon": 151.012529,
-			"lat": -34.089557,
+			"lon": 151.024013,
+			"lat": -34.09328,
 			"locations": [
 				{
 					"location": "Waterfall",
@@ -1720,6 +1776,14 @@
 					"description": "Plan your return trip from Loftus at <a href=\"https://transportnsw.info/trip#/?from=Loftus\">transportnsw.info</a>.",
 					"lat": -34.045131,
 					"lon": 151.051388
+				},
+				{
+					"location": "Sutherland",
+					"type": "train",
+					"photo": "005_pxl_20240425_024418062.jpg",
+					"description": "Plan your return trip from Loftus at <a href=\"https://transportnsw.info/trip#/?from=Loftus\">transportnsw.info</a>.",
+					"lon": 151.05720788240433,
+					"lat": -34.03200334869325
 				}
 			],
 			"region": "Heathcote National Park",
@@ -1739,8 +1803,8 @@
 		{
 			"key": "waterfall-ladycarringtondrive-loftus",
 			"type": "walk",
-			"lon": 151.051636,
-			"lat": -34.097977,
+			"lon": 151.0228345357,
+			"lat": -34.1507744975,
 			"locations": [
 				{
 					"location": "Waterfall",
@@ -1765,6 +1829,14 @@
 					"description": "Plan your return trip from Loftus at <a href=\"https://transportnsw.info/trip#/?from=Loftus\">transportnsw.info</a>.",
 					"lat": -34.045131,
 					"lon": 151.051388
+				},
+				{
+					"location": "Sutherland",
+					"type": "train",
+					"photo": "005_pxl_20240425_024418062.jpg",
+					"description": "Plan your return trip from Loftus at <a href=\"https://transportnsw.info/trip#/?from=Loftus\">transportnsw.info</a>.",
+					"lon": 151.05720788240433,
+					"lat": -34.03200334869325
 				}
 			],
 			"region": "Lady Carrington Drive",
