@@ -67,7 +67,7 @@ export class SydneyTrainWalks {
 		console.log('updating the search to:', query);
 		// show the index
 		window.localStorage.setItem('screen', 'menu');
-		document.body.setAttribute('data-screen', menu);
+		document.body.setAttribute('data-screen', 'menu');
 		// update the filter
 		let event = new Event('change');
 		this.index.searchInput.value = query;
