@@ -8,6 +8,7 @@
 		"Cooks River Cycleway": "https://www.cbcity.nsw.gov.au/resident/getting-around/walking-and-cycling"
 	},
 	"distance": [
+		5,
 		10,
 		20
 	],
@@ -393,6 +394,14 @@
 			"description": "Lorem ipsum dolor sit amet.",
 			"lon": 151.15440800000002,
 			"lat": -33.924506
+		},
+		{
+			"location": "Tempe",
+			"type": "train",
+			"description": "Get the train to/from Tempe using <a href=\"https://transportnsw.info/trip#/?to=Tempe Station\">transportnsw.info</a>.",
+			"missing": true,
+			"lon": 151.156317,
+			"lat": -33.924517
 		},
 		{
 			"type": "waypoint",
