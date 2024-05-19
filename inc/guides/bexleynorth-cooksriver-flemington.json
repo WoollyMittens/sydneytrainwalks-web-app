@@ -244,11 +244,15 @@
 			"lat": -33.930303000132746
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "001_pxl_20240420_213411921.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "The trees above are bustling with activity from the colony of fruit bats up there.",
 			"lon": 151.133441,
-			"lat": -33.930150999999995
+			"lat": -33.930150999999995,
+			"radius": 0.0004,
+			"badge": "bird_1",
+			"title": "Enough to drive you batty",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
