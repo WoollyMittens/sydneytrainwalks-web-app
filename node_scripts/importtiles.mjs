@@ -103,10 +103,10 @@ function generateQueue(guideCache) {
     // use the appropriate zoom level
     let zoom = (guideData.key === '_index') ? overviewZoom : mapZoom;
     // convert the bounds to tiles
-    let minX = long2tile(guideData.bounds.west, zoom);
-    let minY = lat2tile(guideData.bounds.north, zoom);
-    let maxX = long2tile(guideData.bounds.east, zoom);
-    let maxY = lat2tile(guideData.bounds.south, zoom);
+    let minY = lat2tile(guideData.bounds.north, zoom) - 1;
+    let maxX = long2tile(guideData.bounds.east, zoom) + 1;
+    let maxY = lat2tile(guideData.bounds.south, zoom) + 1;
+    let minX = long2tile(guideData.bounds.west, zoom) - 1;
     // create a list of tiles within the map bounds
     for (let x = minX; x <= maxX; x += 1) {
       for (let y = minY; y <= maxY; y += 1) {
@@ -144,7 +144,7 @@ async function importTiles() {
       // or substitute the placeholder
       if (!result) await fsp.copyFile(tileMissing, tile.local);
     } else {
-      console.log('cached:', tile.local);
+      //console.log('cached:', tile.local);
     }
   }
 }

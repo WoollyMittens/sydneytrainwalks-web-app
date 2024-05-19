@@ -1,4 +1,4 @@
-import { long2tile, lat2tile, tile2long, tile2lat } from "./slippy.js";
+import { long2tile, lat2tile, tile2long, tile2lat } from "../lib/slippy.js";
 
 export class Trophies {
 	constructor(config, guideIds, loadGuide, updateView, busy) {

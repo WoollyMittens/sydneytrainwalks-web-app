@@ -16,10 +16,10 @@
 	"key": "mittagong-boxvaletrack-mittagong",
 	"updated": "2016-05-06",
 	"bounds": {
-		"west": 150.40283203125,
 		"north": -34.39784494644985,
-		"east": 150.46875,
-		"south": -34.470335121217495
+		"west": 150.40283203125,
+		"south": -34.470335121217495,
+		"east": 150.46875
 	},
 	"markers": [
 		{

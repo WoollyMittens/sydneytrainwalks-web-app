@@ -1,6 +1,6 @@
-import { Photowall } from "./photowall.js";
-import { Localmap } from "./localmap.js";
-import { PhotoCylinder } from "./photocylinder.js";
+import { PhotoMosaic } from "./photo-mosaic.js";
+import { LocalAreaMap } from "./local-area-map.js";
+import { PhotoCylinder } from "./photo-cylinder.js";
 
 export class Details {
 	constructor(config, loadGuide, loadRoute, loadExif, trophies) {
@@ -11,16 +11,15 @@ export class Details {
 		this.trophies = trophies;
 		this.appView = document.querySelector('#appView');
 		this.titleElement = document.querySelector('.subtitle > h2');
-		this.localmapElement = document.querySelector('.localmap.directions');
+		this.localAreaMapElement = document.querySelector('.local-area-map.directions');
 		this.legendElement = document.querySelector('.legend');
-		this.wallElement = document.querySelector('.photowall');
+		this.mosaicElement = document.querySelector('.photo-mosaic');
 		this.titleTemplate = document.getElementById('title-template');
-		this.thumbnailTemplate = document.getElementById('thumbnail-template');
 		this.trophiesTemplate = document.getElementById('trophies-template');
-		this.wallTemplate = document.getElementById('wall-template');
+		this.mosaicTemplate = document.getElementById('mosaic-template');
 		this.introTemplate = document.getElementById('intro-template');
 		this.outroTemplate = document.getElementById('outro-template');
-		this.creditTemplate = document.getElementById('credit-template');
+		this.creditsTemplate = document.getElementById('credits-template');
 		this.currentId = null;
 		this.guideMap = null;
 		this.photoCylinder = null;
@@ -38,7 +37,7 @@ export class Details {
 		this.updateMeta(guide);
 		this.updateTitle(guide);
 		this.updateMap(guide, route, exif);
-		this.updateWall(guide, exif);
+		this.updateMosaic(guide, exif);
 	}
 
 	updateMeta(guide) {
@@ -81,31 +80,26 @@ export class Details {
 			this.config.guideMap.stop();
 		}
 		// start the map
-		this.config.guideMap = new Localmap({
+		this.config.guideMap = new LocalAreaMap({
 			// options
-			'showFirst': true,
 			'mobileSize': "(max-width: 959px)",
 			// containers
-			'container': this.localmapElement,
+			'container': this.localAreaMapElement,
 			'legend': this.legendElement,
 			// assets
 			'thumbsUrl': this.config.localUrl + `/small/${prefix}/`,
 			'photosUrl': this.config.remoteUrl + `/medium/${prefix}/`,
 			'markersUrl': this.config.localUrl + '/img/marker-{type}.svg',
-			'exifUrl': this.config.remoteUrl + '/php/imageexif.php?src=../../{src}',
-			'guideUrl': this.config.localUrl + `/guides/${prefix}.json`,
-			'routeUrl': this.config.remoteUrl + `/gpx/${prefix}.gpx`,
+			'exifUrl': exif,
+			'guideUrl': guide,
+			'routeUrl': route,
 			'mapUrl': null, // this.config.localUrl + `/maps/${prefix}.jpg`,
       		'tilesUrl': this.config.localUrl + '/tiles/{z}/{x}/{y}.jpg',
       		'tilesZoom': 15,
-			// cache
-			'guideData': guide,
-			'routeData': route,
-			'exifData': exif,
 			// templates
 			'introTemplate': this.introTemplate.innerHTML,
 			'outroTemplate': this.outroTemplate.innerHTML,
-			'creditsTemplate': this.creditTemplate.innerHTML,
+			'creditsTemplate': this.creditsTemplate.innerHTML,
 			// events
 			'checkHotspot': this.trophies.check.bind(this.trophies),
 			'enterHotspot': this.trophies.enter.bind(this.trophies),
@@ -136,10 +130,10 @@ export class Details {
 		});
 	}
 
-	updateWall(guide, exif) {
-		var src, srcs = [], wallTemplate = this.wallTemplate.innerHTML, wallHtml = '';
+	updateMosaic(guide, exif) {
+		var src, srcs = [], mosaicTemplate = this.mosaicTemplate.innerHTML, mosaicHtml = '';
 		// reset the wall
-		this.wallElement.className = this.wallElement.className.replace(/-active/g, '-passive');
+		this.mosaicElement.className = this.mosaicElement.className.replace(/-active/g, '-passive');
 		// get the properties if this is a segment of another walk
 		var prefix = guide.key;
 		// get the photos
@@ -148,15 +142,15 @@ export class Details {
 		}
 		// create a list of photos
 		for (var a = 0, b = srcs.length; a < b; a += 1) {
-			wallHtml += wallTemplate
+			mosaicHtml += mosaicTemplate
 				.replace(/{id}/g, prefix)
 				.replace(/{src}/g, srcs[a]);
 		}
 		// fill the wall with the photos
-		this.wallElement.innerHTML = '<ul>' + wallHtml + '</ul>';
+		this.mosaicElement.innerHTML = '<ul>' + mosaicHtml + '</ul>';
 		// start the script for the wall
-		this.config.photowall = new Photowall({
-			'element': this.wallElement,
+		this.config.photoMosaic = new PhotoMosaic({
+			'element': this.mosaicElement,
 			'clicked' : (url, urls, evt) => {
 				// don't navigate to the url
 				evt.preventDefault();

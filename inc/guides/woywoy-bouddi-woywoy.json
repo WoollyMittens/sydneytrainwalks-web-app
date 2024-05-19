@@ -1,7 +1,7 @@
 {
 	"location": "Bouddi",
-	"lon": 151.35829011909664,
-	"lat": -33.5281060449779,
+	"lon": 151.3632760104,
+	"lat": -33.5214755405,
 	"description": "This walk combines Woy Woy Wharf to Blackwall foreshore walk, Daleys Point walking track, Bouddi Coastal Walk, and the Flannel Flower walking track into a varied loop.",
 	"keywords": {
 		"Woy Woy Wharf to Blackwall foreshore walk": "https://www.lovecentralcoast.com/news/waterside-walks-shared-pathways",
@@ -20,10 +20,10 @@
 	"key": "woywoy-bouddi-woywoy",
 	"updated": "2024-01-28",
 	"bounds": {
-		"west": 151.3037109375,
-		"north": -33.46810795527896,
-		"east": 151.424560546875,
-		"south": -33.550551143844054
+		"west": 151.327391,
+		"north": -33.484266,
+		"east": 151.444158,
+		"south": -33.554566
 	},
 	"markers": [
 		{

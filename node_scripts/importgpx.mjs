@@ -1,6 +1,6 @@
 // dependencies
 import fsp from 'fs/promises';
-import toGeoJSON from '../inc/js/togeojson.js';
+import toGeoJSON from './togeojson.js';
 import { JSDOM } from 'jsdom';
 const source = '../inc/gpx/';
 const destination = '../inc/routes/';

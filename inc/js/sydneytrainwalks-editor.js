@@ -28,7 +28,7 @@ export class Editor {
     for (let marker of this.guide.markers) {
       if (marker.photo) {
         // find the corresponding legend
-        let image = document.querySelector(`.localmap-legend-photo[src*="${marker.photo}"]`);
+        let image = document.querySelector(`.local-area-map-legend-photo[src*="${marker.photo}"]`);
         let legend = image.parentNode.nextSibling;
         let label = legend.querySelector('p');
         // add the input field

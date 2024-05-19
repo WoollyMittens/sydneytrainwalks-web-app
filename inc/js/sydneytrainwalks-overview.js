@@ -1,4 +1,4 @@
-import { Localmap } from "./localmap.js";
+import { LocalAreaMap } from "./local-area-map.js";
 
 export class Overview {
   constructor(config, guideIds, loadGuide, loadRoute, updateView, updateSearch) {
@@ -10,17 +10,17 @@ export class Overview {
 		this.updateView = updateView;
     this.updateSearch = updateSearch;
     this.overviewElement = document.querySelector('.overview');
-    this.creditTemplate = document.getElementById('credit-template');
+    this.creditsTemplate = document.getElementById('credits-template');
     this.init();
   }
 
   async createMap() {
     // we only want one
-    if (this.localmap) return false;
+    if (this.localAreaMap) return false;
     // clear the container
     this.overviewElement.innerHTML = '';
     // generate the map
-    this.localmap = new Localmap({
+    this.localAreaMap = new LocalAreaMap({
       'container': this.overviewElement,
       'legend': null,
       // assets
@@ -28,20 +28,16 @@ export class Overview {
       'photosUrl': null,
       'markersUrl': this.config.localUrl + '/img/marker-{type}.svg',
       'exifUrl': null,
-      'guideUrl': null,
-      'routeUrl': null,
+      'guideUrl': await this.processMarkers(),
+      'routeUrl': await this.mergeRoutes(),
       'mapUrl': null,
       'tilesUrl': this.config.localUrl + '/tiles/{z}/{x}/{y}.jpg',
       'tilesZoom': 11,
-      // cache
-      'guideData': await this.processMarkers(),
-      'routeData': await this.mergeRoutes(),
-      'exifData': null,
       // offsets
       'distortX': function(x) { return x },
       'distortY': function(y) { return y - (-2 * y * y + 2 * y) / 150 },
       // attribution
-      'creditsTemplate': this.creditTemplate.innerHTML,
+      'creditsTemplate': this.creditsTemplate.innerHTML,
       // legend
       'supportColour': function(name) {
         var colours = ['red', 'darkorange', 'green', 'teal', 'blue', 'purple', 'black'];

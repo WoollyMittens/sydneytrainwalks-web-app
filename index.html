@@ -90,13 +90,13 @@
 					<menu></menu>
 				</nav>
 
-				<figure class="overview localmap"></figure>
+				<figure class="overview local-area-map"></figure>
 
-				<article class="legend localmap-legend"></article>
+				<article class="legend local-area-map-legend"></article>
 
 				<aside>
-					<figure class="directions localmap"></figure>
-					<figure class="photowall">
+					<figure class="directions local-area-map"></figure>
+					<figure class="photo-mosaic">
 						<ul></ul>
 					</figure>
 				</aside>
@@ -185,17 +185,8 @@
 			</ul>
 		</template>
 
-		<template id="thumbnail-template">
-			<p class="guide-landmark">
-				<a class="cylinder-image" href="./inc/medium/{id}/{src}" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/{id}/{src});" data-title="{description}">
-					<img alt="Photo of the waypoint" src="./inc/small/{id}/{src}"/>
-				</a>
-				<span class="guide-text">{description} <button class="guide-locate" data-url="./inc/medium/{id}/{src}" data-title="{description}">Show location</button></span>
-			</p>
-		</template>
-
-		<template id="wall-template">
-			<li><a class="cylinder-image" style="background-image:url('./inc/small/{id}/{src}');" href="./inc/medium/{id}/{src}"><img alt="Impression of the trail" src="./inc/small/{id}/{src}"/></a></li>
+		<template id="mosaic-template">
+			<li><a href="./inc/medium/{id}/{src}"><img alt="Impression of the trail" src="./inc/small/{id}/{src}"/></a></li>
 		</template>
 
 		<template id="footer-template">
@@ -209,7 +200,7 @@
 			</nav>
 		</template>
 
-		<template id="credit-template">
+		<template id="credits-template">
 			Maps &copy; <a href="http://thunderforest.com/">Thunderforest.com</a>. Data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> and contributors, CC BY-SA
 		</template>
 

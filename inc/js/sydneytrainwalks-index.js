@@ -157,7 +157,7 @@ export class Index {
 
 	mirrorResults(guideIds, sortedIds) {
 		// show or hide page elements associated with a key, according to the filtered keys
-		const elements = document.querySelectorAll('.overview.localmap [data-key]');
+		const elements = document.querySelectorAll('.overview.local-area-map [data-key]');
 		let keywords = [];
 		for (let id of sortedIds) {
 			let guide = this.guidesLookup[id];
