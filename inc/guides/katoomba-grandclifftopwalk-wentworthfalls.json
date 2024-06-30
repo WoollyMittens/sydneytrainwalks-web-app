@@ -38,85 +38,43 @@
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240209_203219434.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the road from the station and follow Katoomba Street.",
 			"lon": 150.31168099988534,
 			"lat": -33.711985000000006
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240209_203427627.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.311768,
-			"lat": -33.713892
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_203954574.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.311013,
-			"lat": -33.717106
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240209_204129926.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Past the hostel turn right down Edwards Street.",
 			"lon": 150.310706,
 			"lat": -33.718228
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240209_204412723.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the 5 way intersection onto Neale Street",
 			"lon": 150.308488,
 			"lat": -33.718078
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240209_204801250.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.306251,
-			"lat": -33.719797
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240209_205417138.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the end of Neale Street, follow Peckmans Road to the left.",
 			"lon": 150.30272000000002,
 			"lat": -33.723583000000005
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240209_205721748.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.30195600000002,
-			"lat": -33.725614
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240209_205821007.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the end of Peckmans Road follow Cliff Drive to the left to the Katoomba Falls kiosk.",
 			"lon": 150.301827,
 			"lat": -33.726252
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_205948687.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.302792,
-			"lat": -33.726046000000004
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_210017480.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.30324900000002,
-			"lat": -33.726033
 		},
 		{
 			"location": "Katoomba Falls",
 			"type": "bus",
 			"photo": "001_pxl_20240209_210053766.jpg",
-			"description": "Get the train to/from Katoomba Falls using <a href=\"https://transportnsw.info/trip#/?to=Katoomba Falls Kiosk\">transportnsw.info</a>.",
+			"description": "Get the bus to/from Katoomba Falls Kiosk using <a href=\"https://transportnsw.info/trip#/?to=Katoomba Falls Kiosk\">transportnsw.info</a>.",
 			"lon": 150.303895,
 			"lat": -33.726155
 		},
@@ -129,708 +87,253 @@
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240209_210204723.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the kiosk carpark follow the path into the reserve.",
 			"lon": 150.30400500000002,
 			"lat": -33.726342
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240209_210244621.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.30365,
-			"lat": -33.726445000000005
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240209_210349508.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection follow the signs for the Price Henry Cliff walk to the cascades.",
 			"lon": 150.303333,
 			"lat": -33.726679000000004
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240209_210501848.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.303303,
-			"lat": -33.727323
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_210513909.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.30330600000002,
-			"lat": -33.727338
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_210804269.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.30436400000002,
-			"lat": -33.727269
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_211020898.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.305024,
-			"lat": -33.726556
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_211106693.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.305406,
-			"lat": -33.726254000000004
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240209_211118651.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the creek at the cascades and follow the signs to the Prince Henry Cliff walk.",
 			"lon": 150.30536500000002,
 			"lat": -33.726262
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240209_211131565.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.30545,
-			"lat": -33.726220000000005
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_211215028.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.305597,
-			"lat": -33.726092999912716
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240209_211300589.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Climb the stairs up from the cascades and follow the Price Henry Cliff Walk to the Three Sisters.",
 			"lon": 150.30578400000002,
 			"lat": -33.725967000000004
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240209_211311360.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.305869,
-			"lat": -33.725962
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_211345937.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.306106,
-			"lat": -33.726171
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_211426506.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.30586100000002,
-			"lat": -33.72647700008274
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240209_211601372.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the paved trail along the cliff edges and lookouts.",
 			"lon": 150.305449,
 			"lat": -33.727492000000005
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240209_211733331.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.305374,
-			"lat": -33.728476999932944
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_211757534.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.305382,
-			"lat": -33.728486000000004
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_212040701.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.306545,
-			"lat": -33.72927099992385
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_212106125.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.306465,
-			"lat": -33.72939
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_212214842.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.307002,
-			"lat": -33.729866
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_212520221.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.308039,
-			"lat": -33.72995300011257
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240209_212727726.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection follow the signs to the Three Sisters / Echo Point.",
 			"lon": 150.30886600000002,
 			"lat": -33.730247
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240209_212925187.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.309765,
-			"lat": -33.730595
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240209_213254899.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Take the ramp up to the Three Sisters lookout and information centre.",
 			"lon": 150.31173,
 			"lat": -33.73192900008826
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_213354874.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.311966,
-			"lat": -33.732626
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_213409453.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.31198500000002,
-			"lat": -33.732648000000005
 		},
 		{
 			"location": "Echo Point",
 			"type": "bus",
 			"photo": "001_pxl_20240209_213602289.jpg",
-			"description": "Get the train to/from Echo Point using <a href=\"https://transportnsw.info/trip#/?from=The Lookout Echo Point\">transportnsw.info</a>.",
+			"description": "Get the bus to/from Echo Point using <a href=\"https://transportnsw.info/trip#/?from=The Lookout Echo Point\">transportnsw.info</a>.",
 			"lon": 150.312352,
 			"lat": -33.731957
 		},
 		{
 			"type": "toilet",
 			"photo": "001_pxl_20240209_214010969.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There's public toilets near the visitor centre.",
 			"lon": 150.31251299992354,
 			"lat": -33.731875
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240209_214016382.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the Three Sisters Walking Track starting to the left of the information centre.",
 			"lon": 150.31253800000002,
 			"lat": -33.731887
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240209_214249028.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.31424900000002,
-			"lat": -33.732469
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240209_214402285.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the intersection near the Three Sisters follow the Grand Cliff Top Walk sign to Wentworth Falls up the stairway.",
 			"lon": 150.314457,
 			"lat": -33.733224
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240209_214449479.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the top of the stairway, follow the Prince Henry Cliff  Walk to the Solitary Kiosk.",
 			"lon": 150.314684,
 			"lat": -33.7337
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240209_214926403.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.315602,
-			"lat": -33.731883
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_215124729.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.31568000000001,
-			"lat": -33.731393000000004
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_221051544.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.317592,
-			"lat": -33.724049
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_221348159.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.31706,
-			"lat": -33.722568
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_221543311.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.31765099999998,
-			"lat": -33.722066000000005
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_221745334.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.318358,
-			"lat": -33.721867
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_221911864.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.31897999999998,
-			"lat": -33.721517
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240209_221944879.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the Solitary Kiosk follow Cliff Drive a short distance in the direction of the cascades.",
 			"lon": 150.319141,
 			"lat": -33.721439000000004
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240209_222019212.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the corner of Cliff Drive follow the trailhead to Leura Cascades.",
 			"lon": 150.319558,
 			"lat": -33.721689000000005
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240209_222117456.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.319904,
-			"lat": -33.721991
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_222213819.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.320519,
-			"lat": -33.722029
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_222331445.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.32064,
-			"lat": -33.721583
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_222501565.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.320617,
-			"lat": -33.721313
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240209_222849597.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the intersection with the Amphitheatre Track follow the Grand Cliff Top Walk signs to the cascades.",
 			"lon": 150.321724,
 			"lat": -33.721926
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240209_222946930.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.322166,
-			"lat": -33.722033
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_223001317.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.322175,
-			"lat": -33.722025
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_223044238.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.322381,
-			"lat": -33.722106000000004
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_223110098.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.322375,
-			"lat": -33.722155
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_223150674.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.322353,
-			"lat": -33.722072000000004
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240209_223329932.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the creek at the cascades and follow Prince Henry Cliff walk back out of the gully.",
 			"lon": 150.32232,
 			"lat": -33.721522
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240209_223612594.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the Leura Cascades Picnic Area, follow the Grand Cliff Top Walk sign to Wentworth Falls.",
 			"lon": 150.32288499999999,
 			"lat": -33.720425
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240209_223946580.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.323213,
-			"lat": -33.721824000000005
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_224137656.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.323938,
-			"lat": -33.722446000000005
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_224339419.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.324487,
-			"lat": -33.72347
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_224541412.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.325195,
-			"lat": -33.723573
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_224643321.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.325375,
-			"lat": -33.723918000000005
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_224722685.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.325638,
-			"lat": -33.723918000000005
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240209_224852594.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the paved path along the cliffs past the lookouts.",
 			"lon": 150.32586899999998,
 			"lat": -33.724602000000004
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240209_225530435.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.327998,
-			"lat": -33.725356000000005
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_225704716.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.328259,
-			"lat": -33.725797
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_225714190.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.328262,
-			"lat": -33.7258
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_230024596.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.32908100006813,
-			"lat": -33.724872000000005
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240209_230330877.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the Grand Cliff Top Walk to the Gordon falls picnic area.",
 			"lon": 150.33160999999998,
 			"lat": -33.72528299991966
 		},
 		{
 			"type": "toilet",
 			"photo": "001_pxl_20240209_230753841.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the picnic area follow the signs to the Pool of Siloam.",
 			"lon": 150.332855,
 			"lat": -33.724566
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240209_231420477.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.33517700000002,
-			"lat": -33.724249
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240209_231507177.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the stairway all the way down to the pool and up the other side.",
 			"lon": 150.33520800000002,
 			"lat": -33.724244
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240209_231546647.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.335279,
-			"lat": -33.724193
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_231739164.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.335384,
-			"lat": -33.724588000000004
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240209_232519538.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the top follow the Grand Cliff Top Walk sign to Wentworth Falls.",
 			"lon": 150.335642,
 			"lat": -33.727291
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240209_232602824.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.335914,
-			"lat": -33.727344
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_232718978.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.336444,
-			"lat": -33.72745299992656
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_232946822.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.336387,
-			"lat": -33.727826
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240209_233735809.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.33884500000002,
-			"lat": -33.728717
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240209_233859486.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "The trail ends at suburban cul-de-sac, follow the Willoughby Road to the right to Sublime Point Road.",
 			"lon": 150.339478,
 			"lat": -33.728645
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240209_234034401.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.34011,
-			"lat": -33.729282000000005
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240209_234328317.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Turn left down Sublime Point Road and follow it to the Leura Golf Club.",
 			"lon": 150.34253700000002,
 			"lat": -33.729596
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240209_235319489.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.345602,
-			"lat": -33.72392099993095
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240209_235426498.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection with Watkins Road, turn right towards the Leura Golf Club.",
 			"lon": 150.346158,
 			"lat": -33.723286
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240209_235541555.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow Fairmont Place right towards the Fairmont Resort.",
 			"lon": 150.346586,
 			"lat": -33.722590000000004
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240209_235733734.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the Fairmont Resort turn right into the carpark.",
 			"lon": 150.347836,
 			"lat": -33.721935
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240209_235807136.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "",
 			"lon": 150.348182,
 			"lat": -33.722072000000004
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240209_235928685.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Behind the resort continue on Lillians Bridge Track.",
 			"lon": 150.34919200000002,
 			"lat": -33.722263000000005
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240210_000025043.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.34965100000002,
-			"lat": -33.72274
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240210_000248013.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.351249,
-			"lat": -33.723293000000005
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240210_000409720.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.352246,
-			"lat": -33.723068000000005
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240210_000452355.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the signs to Wentworth Falls along the golf course.",
 			"lon": 150.352596,
 			"lat": -33.723039
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240210_000459345.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.352614,
-			"lat": -33.723048
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240210_000827142.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.354257,
-			"lat": -33.723999
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240210_001005342.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.355124,
-			"lat": -33.723907000000004
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240210_001207870.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After the boardwalk follow Valley of the Waters Track around the golf course.",
 			"lon": 150.355975,
 			"lat": -33.72408
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240210_001428662.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.357452,
-			"lat": -33.724442
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240210_002927904.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross Valley of the Waters Creek across the bridge.",
 			"lon": 150.358296,
 			"lat": -33.720456
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240210_002943384.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "On the other side of Valley of the Waters Creek follow the Grand Cliff Top Walk sign right to Wentworth Falls.",
 			"lon": 150.358415,
 			"lat": -33.720444
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240210_003448561.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.3593390000717,
-			"lat": -33.720225
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240210_003547782.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection to Empress Falls, take the staircase up.",
 			"lon": 150.35926899999998,
 			"lat": -33.720176
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240210_003846217.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.359262,
-			"lat": -33.720710000000004
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240210_004039774.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the intersection from the Overcliff Walk to the right.",
 			"lon": 150.360094,
 			"lat": -33.720981
 		},
 		{
 			"type": "kiosk",
 			"photo": "002_pxl_20231223_015345621.jpg",
-			"description": "<i>+?km</i> Lorem ipsum dolor sit amet.",
+			"description": "<i>+500m</i> Optionally follow the Valley of the Waters track all the way up to Conservation Hut Cafe",
 			"lon": 150.36273599999998,
 			"lat": -33.720437000000004,
 			"optional": true
@@ -838,58 +341,37 @@
 		{
 			"location": "Conservation Hut",
 			"type": "bus",
-			"description": "Get the train to/from Katoomba Falls using <a href=\"https://transportnsw.info/trip#/?from=Conservation Hut Picnic Area\">transportnsw.info</a>.",
+			"description": "Get the bus to/from Conservation Hut using <a href=\"https://transportnsw.info/trip#/?from=Conservation Hut Picnic Area\">transportnsw.info</a>.",
 			"lon": 150.365435,
 			"lat": -33.720162
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pxl_20240210_004213326.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.360795,
-			"lat": -33.721105
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pxl_20240210_004432706.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection follow the sign to Wentworth Falls.",
 			"lon": 150.361686,
 			"lat": -33.721311
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20240210_004615452.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the next intersection follow the sign to Wentworth Falls car park.",
 			"lon": 150.36162199999998,
 			"lat": -33.721837
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pxl_20240210_005224387.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.363192,
-			"lat": -33.723976
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pxl_20240210_005736221.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection wiht the shortcut Track follow the sign to Wentworth Falls.",
 			"lon": 150.36469699986725,
 			"lat": -33.725938
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20240210_010316388.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After crossing Den Fenella Creek, follow the Grand Cliff Top Walk sign right to Wentworth Falls.",
 			"lon": 150.366314,
 			"lat": -33.725784000000004
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pxl_20240210_010830613.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.368192,
-			"lat": -33.726598
 		},
 		{
 			"type": "hotspot",
@@ -904,199 +386,87 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pxl_20240210_011332203.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.37031100000002,
-			"lat": -33.726858
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pxl_20240210_011706400.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.37116400000002,
-			"lat": -33.727523000000005
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pxl_20240210_011905653.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.371776,
-			"lat": -33.727016999915634
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pxl_20240210_011922294.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.371775,
-			"lat": -33.726989
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pxl_20240210_012318656.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.373435,
-			"lat": -33.727035
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pxl_20240210_012520986.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At Fletchers Lookout follow the sign to Wentworth Falls Track.",
 			"lon": 150.37421500000002,
 			"lat": -33.727316
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pxl_20240210_012609976.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.374269,
-			"lat": -33.727538
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pxl_20240210_012712781.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection with the Weeping Rock Walking Track, follow the Grand Cliff Top Walk to the left.",
 			"lon": 150.374615,
 			"lat": -33.727555
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20240210_012839334.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "<i>+100m</i> Optionally follow the track right to the falls.",
 			"lon": 150.374716,
 			"lat": -33.727926000000004
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pxl_20240210_012858677.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.374732,
-			"lat": -33.727979000000005
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pxl_20240210_012911659.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.374743,
-			"lat": -33.727976000000005
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pxl_20240210_013155028.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the intersection with Weeping Rock Walking Track follow the sign right to Charles Darwin Walk ",
 			"lon": 150.37480000000002,
 			"lat": -33.72778300009947
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pxl_20240210_013234634.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.37498,
-			"lat": -33.727474
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pxl_20240210_013255755.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the trail down to Weeping Rock",
 			"lon": 150.375025,
 			"lat": -33.727416000000005
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20240210_013331475.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Climb the staircase up Weeping Rock.",
 			"lon": 150.375043,
 			"lat": -33.727396
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pxl_20240210_013359057.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.37510500000002,
-			"lat": -33.727330999931375
-		},
-		{
-			"type": "waypoint",
 			"photo": "004_p6078053.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the intersection follow Darwins Walk to the right to Wentworth Falls Village.",
 			"lon": 150.37574444444445,
 			"lat": -33.726758333333336
 		},
 		{
 			"type": "waypoint",
-			"photo": "004_p6078055.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.376391,
-			"lat": -33.724995
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_p6078057.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.3781277777778,
-			"lat": -33.72224722222222
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_p6078060.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.377472,
-			"lat": -33.720694
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_p6078062.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.377171,
-			"lat": -33.720255
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_p6078072.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.374961,
-			"lat": -33.715261000000005
-		},
-		{
-			"type": "waypoint",
 			"photo": "004_p6078077.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the end of Darwins Walk cross Wilson Park to the right.",
 			"lon": 150.3736861111111,
 			"lat": -33.7113
 		},
 		{
 			"type": "toilet",
 			"photo": "005_pxl_20240210_020842672.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There are public toilets near the playground.",
 			"lon": 150.373343,
 			"lat": -33.710995000000004
 		},
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20240210_021029222.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the far end of Wilsons Park, follow the Great Western Highway to the right to the traffic lights.",
 			"lon": 150.374004,
 			"lat": -33.710027000000004
 		},
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20240210_021158686.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross at the traffic light and follow Station Road.",
 			"lon": 150.375224,
 			"lat": -33.71043900007668
 		},
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20240210_021443387.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the street at Coronation Park and cross the station overpass.",
 			"lon": 150.376044,
 			"lat": -33.710184000000005
-		},
-		{
-			"type": "waypoint",
-			"photo": "005_pxl_20240210_022002937.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.376014,
-			"lat": -33.709603
 		},
 		{
 			"location": "Wentworth Falls",
