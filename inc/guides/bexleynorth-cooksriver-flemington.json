@@ -37,21 +37,21 @@
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240420_205029680.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Exit the station and follow Bexley Road to the left.",
 			"lon": 151.113522,
 			"lat": -33.93707
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240420_205222071.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After the overpass enter the footpath into the park on the right.",
 			"lon": 151.112935,
 			"lat": -33.936764
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240420_205301327.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "A short way up the path a gap in the fence indicates the start of a bush trail.",
 			"lon": 151.11309,
 			"lat": -33.936487
 		},
@@ -72,14 +72,14 @@
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240420_205937959.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the TVT (twin valleys trail) signs along the trail.",
 			"lon": 151.116115,
 			"lat": -33.935539
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240420_210028374.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the open field to the trailhead on the other side.",
 			"lon": 151.11647900015672,
 			"lat": -33.93534399999999
 		},
@@ -100,7 +100,7 @@
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240420_210626005.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the TVT signs along the trail, which runs parallel to the train line.",
 			"lon": 151.119715,
 			"lat": -33.932784999999996
 		},
@@ -128,14 +128,14 @@
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240420_211300928.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "The trail ends at a grassy open field.",
 			"lon": 151.122523,
 			"lat": -33.931782
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240420_211414139.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the open field to the trailhead on the other side.",
 			"lon": 151.123018,
 			"lat": -33.931284
 		},
@@ -156,35 +156,35 @@
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240420_211754535.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the tail underneath the overpass.",
 			"lon": 151.124489,
 			"lat": -33.930499999999995
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240420_211851754.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "The trail ends at a grassy open field.",
 			"lon": 151.12510600000002,
 			"lat": -33.930434999999996
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240420_211957169.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the open field to the trailhead on the other side.",
 			"lon": 151.125776,
 			"lat": -33.929977
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240420_212029457.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "The trail ends at an open picnic spot.",
 			"lon": 151.126055,
 			"lat": -33.929984
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240420_212115708.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the picnic spot and enter the TVT trailhead to the right.",
 			"lon": 151.12653500000002,
 			"lat": -33.929832
 		},
@@ -226,7 +226,7 @@
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240420_213202561.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the trail along the cliffs past the stone basin.",
 			"lon": 151.13291899990176,
 			"lat": -33.930536
 		},
@@ -240,7 +240,7 @@
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240420_213255378.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "A short distance pas the basin the treetops house a bat colony.",
 			"lon": 151.133194,
 			"lat": -33.930303000132746
 		},
@@ -258,7 +258,7 @@
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240420_214024923.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "The trail end at an open field.",
 			"lon": 151.136551,
 			"lat": -33.92879
 		},
@@ -293,7 +293,7 @@
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240420_214718292.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the open field to the trailhead on the other side.",
 			"lon": 151.139287,
 			"lat": -33.926915
 		},
@@ -314,7 +314,7 @@
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240420_215229937.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow Jackson Place to the right to the next TVT trailhead at the end.",
 			"lon": 151.14286199999998,
 			"lat": -33.926809
 		},
@@ -335,7 +335,7 @@
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240420_215737471.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the TVT signs to the trailhead at Unwin Street",
 			"lon": 151.14587799999998,
 			"lat": -33.92657
 		},
@@ -356,14 +356,14 @@
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240420_220624253.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow Inwin Street to the right, towards the sports fields.",
 			"lon": 151.148888,
 			"lat": -33.926531999999995
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240420_220742024.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the footpath around the sports fields on the right.",
 			"lon": 151.150004,
 			"lat": -33.92655
 		},
@@ -391,7 +391,7 @@
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240420_221551930.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross Bayview Ave and continue along the footpath through the park.",
 			"lon": 151.15440800000002,
 			"lat": -33.924506
 		},
