@@ -57,20 +57,6 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240420_205335844.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.11341199999998,
-			"lat": -33.93648099999999
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_205925545.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.116084,
-			"lat": -33.935503999999995
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240420_205937959.jpg",
 			"description": "Follow the TVT (twin valleys trail) signs along the trail.",
 			"lon": 151.116115,
@@ -85,45 +71,10 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240420_210237780.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.117938,
-			"lat": -33.934059
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_210327923.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.11814700000002,
-			"lat": -33.933771
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240420_210626005.jpg",
 			"description": "Follow the TVT signs along the trail, which runs parallel to the train line.",
 			"lon": 151.119715,
 			"lat": -33.932784999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_210732832.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.119717,
-			"lat": -33.932449999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_211048308.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.12114200000002,
-			"lat": -33.931933
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_211229332.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.122045,
-			"lat": -33.931773
 		},
 		{
 			"type": "waypoint",
@@ -138,20 +89,6 @@
 			"description": "Cross the open field to the trailhead on the other side.",
 			"lon": 151.123018,
 			"lat": -33.931284
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_211620060.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.123835,
-			"lat": -33.930464
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_211630402.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.123887,
-			"lat": -33.930398
 		},
 		{
 			"type": "waypoint",
@@ -190,52 +127,10 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240420_212251977.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.12779500000002,
-			"lat": -33.930122
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_212338849.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.128062,
-			"lat": -33.930017
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_212839188.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.13136,
-			"lat": -33.93098
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_212944517.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.13171200000002,
-			"lat": -33.930997999999995
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_213048839.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.13231000000002,
-			"lat": -33.930872
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240420_213202561.jpg",
 			"description": "Follow the trail along the cliffs past the stone basin.",
 			"lon": 151.13291899990176,
 			"lat": -33.930536
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_213214376.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.133026,
-			"lat": -33.930409999999995
 		},
 		{
 			"type": "waypoint",
@@ -264,52 +159,10 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240420_214040215.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.136604,
-			"lat": -33.92874
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_214352764.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.137067,
-			"lat": -33.927839999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_214434472.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.137566,
-			"lat": -33.92755
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_214529868.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.138091,
-			"lat": -33.927853999999996
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240420_214718292.jpg",
 			"description": "Cross the open field to the trailhead on the other side.",
 			"lon": 151.139287,
 			"lat": -33.926915
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_214930519.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.140682,
-			"lat": -33.92655
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_215056379.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.14153399999998,
-			"lat": -33.926389
 		},
 		{
 			"type": "waypoint",
@@ -320,38 +173,10 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240420_215449017.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.143666,
-			"lat": -33.92663100007027
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_215657438.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.145366,
-			"lat": -33.926545
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240420_215737471.jpg",
 			"description": "Follow the TVT signs to the trailhead at Unwin Street",
 			"lon": 151.14587799999998,
 			"lat": -33.92657
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_215958261.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.14759100009098,
-			"lat": -33.926731999999994
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_220533548.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.148103,
-			"lat": -33.926603
 		},
 		{
 			"type": "waypoint",
@@ -369,27 +194,6 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240420_220857736.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.150735,
-			"lat": -33.927192999999995
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_221216663.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.15348500000002,
-			"lat": -33.926552
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_221328357.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.15440800000002,
-			"lat": -33.926268
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240420_221551930.jpg",
 			"description": "Cross Bayview Ave and continue along the footpath through the park.",
 			"lon": 151.15440800000002,
@@ -404,149 +208,65 @@
 			"lat": -33.924517
 		},
 		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_221705714.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.154057,
-			"lat": -33.923648
-		},
-		{
 			"type": "toilet",
 			"photo": "001_pxl_20240420_221958744.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There are public toilets near the sports field.",
 			"lon": 151.15213,
 			"lat": -33.923173999999996
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240420_222334349.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.149421,
-			"lat": -33.922852999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_222515873.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.148359,
-			"lat": -33.921882
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_222544371.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.147986,
-			"lat": -33.921718
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240420_222915112.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the path along the river around the sports fields.",
 			"lon": 151.145245,
 			"lat": -33.922526999999995
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240420_223146375.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross Illawarra Road and continue on the path along the river on the other side.",
 			"lon": 151.142978,
 			"lat": -33.922871
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240420_223229079.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.142416,
-			"lat": -33.923038999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_223938110.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.136763,
-			"lat": -33.921157
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_224807562.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.139006,
-			"lat": -33.915811
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240420_225356891.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross Wardell Road and continue to the left for a short distance.",
 			"lon": 151.135198,
 			"lat": -33.915093999999996
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240420_225526919.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Turn right down LangRoad and cross the pedestrian bridge at the end.",
 			"lon": 151.134264,
 			"lat": -33.914384
 		},
 		{
 			"type": "toilet",
 			"photo": "001_pxl_20240420_225638776.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There are public toilets at the shelters to the right after the bridge.",
 			"lon": 151.133722,
 			"lat": -33.913748
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240420_230136785.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the bridge follow the Cooks River Trail to the left.",
 			"lon": 151.13057600000002,
 			"lat": -33.915756
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240420_230447091.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.128762,
-			"lat": -33.915139000088956
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_230658440.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.128227,
-			"lat": -33.91488700013026
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_231101033.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.12462200000002,
-			"lat": -33.914184
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_231343528.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.122627,
-			"lat": -33.913976
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240420_231420238.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.122105,
-			"lat": -33.914194
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240420_231642268.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At Leslie Muir Reserve follow the path to the left along the river.",
 			"lon": 151.119921,
 			"lat": -33.914147
 		},
 		{
 			"type": "kiosk",
 			"photo": "002_pxl_20240420_231919402.jpg",
-			"description": "<i>+200m</i>Lorem ipsum dolor sit amet.",
+			"description": "<i>+200m</i>Optionally follow Close Street to the shops at Canterbury Station.",
 			"lon": 151.118449,
 			"lat": -33.91297300010037,
 			"optional": true
@@ -563,7 +283,7 @@
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20240425_034647513.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After crossing Canterbury Road follow Charles Street past the shops.",
 			"lon": 151.117375,
 			"lat": -33.912110999888775,
 			"optional": true
@@ -571,358 +291,197 @@
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20240425_034715301.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Turn left down Roberts Street and descend the steps. The Cooks River Trail continues to the right.",
 			"lon": 151.117285,
 			"lat": -33.912227,
 			"optional": true
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pxl_20240425_034750103.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.116789,
-			"lat": -33.912333
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_pxl_20240420_233217157.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.11670700000002,
-			"lat": -33.91231
-		},
-		{
-			"type": "waypoint",
 			"photo": "004_pxl_20240420_233457332.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the intersection with Charles Street, follow Broughton Street to the left under the bridge.",
 			"lon": 151.1155129998834,
 			"lat": -33.910717
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240420_233548704.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "On the other side of the bridge follow the Cooks River Trail along the river.",
 			"lon": 151.115673,
 			"lat": -33.910212
 		},
 		{
 			"type": "waypoint",
-			"photo": "004_pxl_20240420_234505367.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.111413,
-			"lat": -33.904419
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_pxl_20240420_234751526.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.110151,
-			"lat": -33.902691
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_pxl_20240420_235032888.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.108187,
-			"lat": -33.901621999999996
-		},
-		{
-			"type": "waypoint",
 			"photo": "004_pxl_20240420_235144420.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross Brighton Avenue and follow it a short distance to the right.",
 			"lon": 151.107999,
 			"lat": -33.901156
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240420_235305124.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the footpath to the left around the sports fields.",
 			"lon": 151.107823,
 			"lat": -33.90081
 		},
 		{
-			"type": "waypoint",
-			"photo": "004_pxl_20240420_235407288.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.10741099999998,
-			"lat": -33.900138999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_pxl_20240420_235839832.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.104354,
-			"lat": -33.901692
-		},
-		{
 			"type": "toilet",
 			"photo": "004_pxl_20240420_235954387.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There are public toilets at the far end of Rosedale Reserve.",
 			"lon": 151.10328099999998,
 			"lat": -33.902172
 		},
 		{
 			"type": "waypoint",
-			"photo": "004_pxl_20240421_000331216.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.100806,
-			"lat": -33.902376
-		},
-		{
-			"type": "waypoint",
 			"photo": "004_pxl_20240421_000518307.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross Burwood Road and continue along the Cooks River Trail on the other side.",
 			"lon": 151.09973700009238,
 			"lat": -33.902221
 		},
 		{
 			"type": "waypoint",
-			"photo": "004_pxl_20240421_000909150.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.096666,
-			"lat": -33.903221
-		},
-		{
-			"type": "waypoint",
 			"photo": "004_pxl_20240421_001156448.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross Lees Avenue and continue along the Cooks River Trail on the other side.",
 			"lon": 151.09451,
 			"lat": -33.901986
 		},
 		{
 			"type": "waypoint",
-			"photo": "004_pxl_20240421_001250090.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.093918,
-			"lat": -33.901759999999996
-		},
-		{
-			"type": "waypoint",
 			"photo": "004_pxl_20240421_001434383.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection follow Walsh Avenue to the left.",
 			"lon": 151.09233500000002,
 			"lat": -33.901706
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240421_001651231.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the right turn in Walsh Street, follow the Cooks River Trail to the left.",
 			"lon": 151.090485,
 			"lat": -33.900787
 		},
 		{
 			"type": "waypoint",
-			"photo": "004_pxl_20240421_001700219.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.090424,
-			"lat": -33.900752
-		},
-		{
-			"type": "waypoint",
 			"photo": "004_pxl_20240421_001826231.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the underpass underneath Punchbowl Road.",
 			"lon": 151.089292,
 			"lat": -33.900193
 		},
 		{
 			"type": "waypoint",
-			"photo": "004_pxl_20240421_001933578.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.088999,
-			"lat": -33.899404
-		},
-		{
-			"type": "waypoint",
 			"photo": "004_pxl_20240421_002307527.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross Maria Street and continue along the Cooks River Trail.",
 			"lon": 151.08646900000002,
 			"lat": -33.897775
 		},
 		{
 			"type": "waypoint",
-			"photo": "004_pxl_20240421_002356267.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.08606400000002,
-			"lat": -33.897335
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_pxl_20240421_002736725.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.082925,
-			"lat": -33.897388
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_pxl_20240421_003219124.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.079069,
-			"lat": -33.8960529998783
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_pxl_20240421_003808474.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.076513,
-			"lat": -33.892216
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_pxl_20240421_004150933.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.076925,
-			"lat": -33.88943
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_pxl_20240421_004452465.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.07756899999998,
-			"lat": -33.887062
-		},
-		{
-			"type": "waypoint",
 			"photo": "004_pxl_20240421_004839149.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross Hedges Avenue and follow Augusta Street for a short distance.",
 			"lon": 151.075503,
 			"lat": -33.884818
 		},
 		{
 			"type": "waypoint",
-			"photo": "004_pxl_20240421_005130959.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.07442,
-			"lat": -33.88300699990141
-		},
-		{
-			"type": "waypoint",
 			"photo": "004_pxl_20240421_005311018.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At Myrna Road follow the footpath along the golf course.",
 			"lon": 151.073447,
 			"lat": -33.882088
 		},
 		{
 			"type": "waypoint",
-			"photo": "004_pxl_20240421_005547135.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.071876,
-			"lat": -33.880505
-		},
-		{
-			"type": "waypoint",
 			"photo": "004_pxl_20240421_005823190.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Near the end of the golf course, follow Melville Avenue to the right.",
 			"lon": 151.069708,
 			"lat": -33.88015899992447
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240421_010207639.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection follow Newton Road to the left.",
 			"lon": 151.070111,
 			"lat": -33.877514
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240421_010316575.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Continue straight across the roundabout.",
 			"lon": 151.069221,
 			"lat": -33.877207
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240421_010610211.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection follow Barker Road to the left.",
 			"lon": 151.06774099999998,
 			"lat": -33.875706
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240421_010623014.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the end of Barker Road, use the passage through the noise barrier wall.",
 			"lon": 151.067607,
 			"lat": -33.875551
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240421_010657354.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the footpath right along Centenary Drive and use the other passageway through the barrier wall.",
 			"lon": 151.067304,
 			"lat": -33.875214
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240421_010726965.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "On the other side of the barrier follow the footpath left through Frank Zions Reserve.",
 			"lon": 151.067352,
 			"lat": -33.874896
 		},
 		{
-			"type": "waypoint",
-			"photo": "004_pxl_20240421_010818911.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.06721199999998,
-			"lat": -33.874237
-		},
-		{
 			"type": "toilet",
 			"photo": "004_pxl_20240421_011329251.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There is a toilet block near the ponds.",
 			"lon": 151.066154,
 			"lat": -33.87129
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240421_011910358.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After the ponds follow the footpath left to the carpark of the Rugby Club.",
 			"lon": 151.06734699999998,
 			"lat": -33.871055
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240421_012046403.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the carpark to Arthur Street on the other side.",
 			"lon": 151.067963,
 			"lat": -33.870141000000004
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240425_054204321.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross Arthur Street at the traffic lights and follow Henley Road.",
 			"lon": 151.067986,
 			"lat": -33.869466
 		},
 		{
 			"type": "waypoint",
-			"photo": "004_pxl_20240425_054316552.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.068334,
-			"lat": -33.868775
-		},
-		{
-			"type": "waypoint",
 			"photo": "004_pxl_20240425_054410922.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the roundabouts keep following Henley Road straight ahead.",
 			"lon": 151.068638,
 			"lat": -33.868165
 		},
 		{
 			"type": "waypoint",
-			"photo": "004_pxl_20240425_054555143.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.069368,
-			"lat": -33.866996
-		},
-		{
-			"type": "waypoint",
 			"photo": "004_pxl_20240425_054629762.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the footpath along the shops to Flemington Station",
 			"lon": 151.069521,
 			"lat": -33.866596999881416
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240425_054834565.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross The Crescent and enter Flemington Station.",
 			"lon": 151.07008,
 			"lat": -33.865503000000004
 		},
