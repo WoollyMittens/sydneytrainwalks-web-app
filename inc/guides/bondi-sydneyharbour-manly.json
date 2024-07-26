@@ -393,7 +393,7 @@
 			"photo": "001_pxl_20230929_233039286.jpg",
 			"lon": 151.279526,
 			"lat": -33.83892,
-			"description": "<i>+1km</i>Lorem ipsum dolor sit amet.",
+			"description": "<i>+1km</i>Optionally follow the sign to the Hornby lighthouse to the right of the beach.",
 			"optional": true
 		},
 		{
@@ -441,7 +441,7 @@
 			"photo": "001_pxl_20230929_233921164.jpg",
 			"lon": 151.280097,
 			"lat": -33.834740000000004,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the path that loops around the lighthouse and return back to the beach.",
 			"optional": true
 		},
 		{
@@ -489,7 +489,7 @@
 			"photo": "001_pxl_20230929_235641691.jpg",
 			"lon": 151.278318,
 			"lat": -33.840301000000004,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the beach to the left climb the staircase onto the next headland."
 		},
 		{
 			"type": "waypoint",
@@ -503,7 +503,7 @@
 			"photo": "001_pxl_20230929_235827765.jpg",
 			"lon": 151.277794,
 			"lat": -33.840472000000005,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the steps up to Pacific St."
 		},
 		{
 			"type": "waypoint",
@@ -517,28 +517,28 @@
 			"photo": "001_pxl_20230930_000102269.jpg",
 			"lon": 151.27793000000003,
 			"lat": -33.840756,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the footpath along Pacific St."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230930_000445995.jpg",
 			"lon": 151.280414,
 			"lat": -33.841056,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Turn right at the intersection with Cove St."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230930_000521842.jpg",
 			"lon": 151.28077000000002,
 			"lat": -33.841307,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the corner of Cove St. follow the footpath to the right to Watson Bay Beach."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230930_000604420.jpg",
 			"lon": 151.280907,
 			"lat": -33.841644,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the path along the beach to the ferry dock."
 		},
 		{
 			"location": "Watsons Bay",
@@ -553,14 +553,14 @@
 			"photo": "001_pxl_20230930_001115164.jpg",
 			"lon": 151.28173100007504,
 			"lat": -33.844322000000005,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Continue along Marine Pde from the ferry dock."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230930_001152552.jpg",
 			"lon": 151.281673,
 			"lat": -33.844851000000006,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the footpath along the Yacht Club car park."
 		},
 		{
 			"type": "waypoint",
@@ -574,28 +574,28 @@
 			"photo": "001_pxl_20230930_001422203.jpg",
 			"lon": 151.281135,
 			"lat": -33.846502999924056,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the steps up to Palmerson St. from Gibsons Beach."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230930_001616005.jpg",
 			"lon": 151.28171500000002,
 			"lat": -33.847395000000006,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the intersection follow Hopetoun Av to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230930_001734028.jpg",
 			"lon": 151.28109400000002,
 			"lat": -33.847658,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the 5 way intersection, follow The Crescent."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230930_002306838.jpg",
 			"lon": 151.27786300000002,
 			"lat": -33.849597,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Enter the park to the right and follow the path down to the Parsley Bay Bridge."
 		},
 		{
 			"type": "waypoint",
@@ -616,7 +616,7 @@
 			"photo": "001_pxl_20230930_002617069.jpg",
 			"lon": 151.277488,
 			"lat": -33.850588,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Cross Parsley Bay Bridge and follow the footpath to Fitzwilliam Rd."
 		},
 		{
 			"type": "waypoint",
@@ -637,14 +637,14 @@
 			"photo": "001_pxl_20230930_002834637.jpg",
 			"lon": 151.27657200000002,
 			"lat": -33.85145,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "After the steps follow Fitzwilliam Rd to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230930_003208771.jpg",
 			"lon": 151.274888,
 			"lat": -33.85026,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the corner follow Wentworth Rd to the left."
 		},
 		{
 			"type": "waypoint",
@@ -658,7 +658,7 @@
 			"photo": "001_pxl_20230930_003700449.jpg",
 			"lon": 151.274142,
 			"lat": -33.852349000000004,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the path through Vaucluse Park on the right."
 		},
 		{
 			"type": "waypoint",
@@ -672,21 +672,21 @@
 			"photo": "001_pxl_20230930_004114866.jpg",
 			"lon": 151.27224,
 			"lat": -33.853634,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the other side of Vaucluse Park follow Coolong Rd to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230930_004632907.jpg",
 			"lon": 151.26946600000002,
 			"lat": -33.85071,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the roundabout follow Greycliffe Ave to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230930_004737940.jpg",
 			"lon": 151.26875600000002,
 			"lat": -33.850701,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the corner follow Fig Tree Rd to the Shark Beach Surf Club. "
 		},
 		{
 			"type": "waypoint",
@@ -700,14 +700,14 @@
 			"photo": "001_pxl_20230930_005017707.jpg",
 			"lon": 151.267166,
 			"lat": -33.851199,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the path from the Surf Club to Steel Point Road."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230930_005348433.jpg",
 			"lon": 151.265142,
 			"lat": -33.851524000000005,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the corner in Steele Point Rd follow the signs to the Hermitage Foreshore Walk on the right"
 		},
 		{
 			"type": "waypoint",
@@ -749,7 +749,7 @@
 			"photo": "001_pxl_20230930_010609932.jpg",
 			"lon": 151.26726100000002,
 			"lat": -33.856528000000004,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Cross Milk Beach and use the steps and continue the Hermitage Foreshore Walk to the right."
 		},
 		{
 			"type": "waypoint",
@@ -770,7 +770,7 @@
 			"photo": "001_pxl_20230930_011316279_pano.jpg",
 			"lon": 151.26933400000001,
 			"lat": -33.858637,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Cross Hermit Beach and continue the Hermitage Foreshore Walk to the right."
 		},
 		{
 			"type": "waypoint",
@@ -798,21 +798,21 @@
 			"photo": "001_pxl_20230930_012540271.jpg",
 			"lon": 151.269427,
 			"lat": -33.863396,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the end of the Hermitage Foreshore Walk follow Bayview Hill Rd."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230930_012720146.jpg",
 			"lon": 151.27037,
 			"lat": -33.863919,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the intersection follow Tivoli Ave to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230930_013104783.jpg",
 			"lon": 151.271901,
 			"lat": -33.866040999847584,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the next intersection follow New South Head Rd to the right to the Rose Bay shops."
 		},
 		{
 			"type": "kiosk",
@@ -826,7 +826,7 @@
 			"photo": "001_pxl_20230930_014728114.jpg",
 			"lon": 151.267053,
 			"lat": -33.871236,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the Rose Bay shops follow the path around Lyne Park on the right."
 		},
 		{
 			"type": "waypoint",
@@ -840,7 +840,7 @@
 			"photo": "001_pxl_20230930_015120059.jpg",
 			"lon": 151.264479,
 			"lat": -33.87003,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the footpath around Lyne Park past the Ferry Wharf."
 		},
 		{
 			"location": "Rose Bay",
@@ -854,21 +854,22 @@
 			"photo": "001_pxl_20230930_015654440.jpg",
 			"lon": 151.261899,
 			"lat": -33.872379,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "After the boat ramp follow the esplanade along New South Head Rd to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230930_020607255.jpg",
 			"lon": 151.254387,
 			"lat": -33.870813,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "<i>-2km</i> Alternatively keep following South Head Rd. to cut off a lengthy detour around Point Piper.",
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230930_020658905.jpg",
 			"lon": 151.254063,
 			"lat": -33.870588,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the end of the esplanade follow the footpath right through Rose Bay Park."
 		},
 		{
 			"type": "waypoint",
@@ -882,50 +883,49 @@
 			"photo": "001_pxl_20230930_020906873.jpg",
 			"lon": 151.253085,
 			"lat": -33.869517,
-			"description": "<i>-2km</i> Lorem ipsum dolor sit amet.",
-			"optional": true
+			"description": " From Rose Bay Park follow the steps up to Wunulla Rd."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230930_021254164.jpg",
 			"lon": 151.252841,
 			"lat": -33.86912,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the top of the steps follow Wunilla Rd to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230930_022425167.jpg",
 			"lon": 151.253662,
 			"lat": -33.866789,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Take the steps from Wunulla Rd up to Wyuna Rd."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230930_022532019.jpg",
 			"lon": 151.253258,
 			"lat": -33.86677,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow Wyuna Rd to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230930_022629131.jpg",
 			"lon": 151.252715,
 			"lat": -33.866379,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the footpath to Lady Martins Beach to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230930_022822295.jpg",
 			"lon": 151.252933,
 			"lat": -33.865696,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the intersection follow Wolseley Rd to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230930_023058085.jpg",
 			"lon": 151.251699,
 			"lat": -33.864864000000004,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow Wolseley Rd back to New South Head rd."
 		},
 		{
 			"type": "waypoint",
@@ -939,14 +939,14 @@
 			"photo": "001_pxl_20230930_024158877.jpg",
 			"lon": 151.251211,
 			"lat": -33.87073,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the intersection follow New South Head Rd to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230930_024339327.jpg",
 			"lon": 151.250632,
 			"lat": -33.87174,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow St Mervyns Ave down to Seven Shillings Beach."
 		},
 		{
 			"type": "waypoint",
@@ -960,7 +960,7 @@
 			"photo": "001_pxl_20230930_024745649.jpg",
 			"lon": 151.249125,
 			"lat": -33.870874,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow seven Shillings Beach to the surf club."
 		},
 		{
 			"type": "waypoint",
@@ -974,56 +974,56 @@
 			"photo": "001_pxl_20230930_025055753.jpg",
 			"lon": 151.24729899992124,
 			"lat": -33.872,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "There are public toilets at the surf club."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230930_025806584.jpg",
 			"lon": 151.247368,
 			"lat": -33.872507,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the surf club follow the car park back to New South Head Rd."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230930_030008250.jpg",
 			"lon": 151.24712399999999,
 			"lat": -33.873654,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the intersection follow New South Head Rd to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "002_pxl_20211113_010509590.jpg",
 			"lon": 151.2469722222222,
 			"lat": -33.874716666666664,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the intersection follow William St to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_030351857.jpg",
 			"lon": 151.24571900010392,
 			"lat": -33.875227,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the roundabout turn right down Pearce St."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_030424725.jpg",
 			"lon": 151.245565,
 			"lat": -33.875088,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow Stafford Rt to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_030614241.jpg",
 			"lon": 151.244219,
 			"lat": -33.874642,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the end of Stafford St, follow Beach St to the right to Double Bay Beach."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_030708197.jpg",
 			"lon": 151.24394999999998,
 			"lat": -33.874332,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the Double Bay Beach to the ferry wharf."
 		},
 		{
 			"location": "Double Bay",
@@ -1037,12 +1037,12 @@
 			"photo": "003_pxl_20230930_031010306.jpg",
 			"lon": 151.24193899999997,
 			"lat": -33.873604,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the ferry wharf follow the footpath through Steyne Park"
 		},
 		{
 			"type": "toilet",
 			"photo": "pxl_20240329_002331118.jpg",
-			"description": "There is a toilet on the far side of the park.",
+			"description": "There is a public toilet at the far end of Steyne Park.",
 			"lon": 151.24094,
 			"lat": -33.874043
 		},
@@ -1051,35 +1051,35 @@
 			"photo": "003_pxl_20230930_031100679.jpg",
 			"lon": 151.24137,
 			"lat": -33.873301,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At end of the park follow Ocean Ave to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_031251623.jpg",
 			"lon": 151.24063999999998,
 			"lat": -33.874033,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the intersection follow Marathon Mews to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_031336371.jpg",
 			"lon": 151.240087,
 			"lat": -33.874059,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Ascend the steps at the corner of Marathon Mews."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_031841146.jpg",
 			"lon": 151.23747799999998,
 			"lat": -33.873617,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the top of the steps follow Marathon Rd straight ahead."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_032026526.jpg",
 			"lon": 151.23653099999999,
 			"lat": -33.8739,
-			"description": "<i>-1.5km</i> Lorem ipsum dolor sit amet.",
+			"description": "<i>-1.5km</i> Optionally, at the end of Marathon Rd follow Darling Point to the left to skip a length detour around Darling Point.",
 			"optional": true
 		},
 		{
@@ -1087,63 +1087,63 @@
 			"photo": "003_pxl_20230930_032328635.jpg",
 			"lon": 151.237403,
 			"lat": -33.873496,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the end of Marathon Rd follow Darling Point Rd to the right to the Darling Point ferry wharf."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_033033595.jpg",
 			"lon": 151.23901899999998,
 			"lat": -33.869183,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the intersection follow Thornton St to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_033344372.jpg",
 			"lon": 151.237122,
 			"lat": -33.869031,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the corner in Thornton Rd to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_033431562.jpg",
 			"lon": 151.236597,
 			"lat": -33.869381,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the intersection turn right and follow New Beach Rd downhill."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_033617659.jpg",
 			"lon": 151.23629699999998,
 			"lat": -33.870383000000004,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the bottom of the hill follow the footpath through Yarranabbe Park."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_034425179.jpg",
 			"lon": 151.232992,
 			"lat": -33.874819,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the footpath around Rushcutters Bay. "
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_035008995.jpg",
 			"lon": 151.22907800000002,
 			"lat": -33.873363,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From Rushcutters Bay Park follow the steps up to Holdsworth Rd."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_035310293.jpg",
 			"lon": 151.228989,
 			"lat": -33.872727,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the intersection follow Elizabeth Bay Rd to the left, then Ithaca Rd to the Marina."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_035554942.jpg",
 			"lon": 151.228281,
 			"lat": -33.871329,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the Elizabeth Bay Marina, follow Billyard Ave to the left."
 		},
 		{
 			"type": "waypoint",
@@ -1157,7 +1157,7 @@
 			"photo": "003_pxl_20230930_035929274.jpg",
 			"lon": 151.226921,
 			"lat": -33.869601,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the steps up from Billyard Eva to Macleay St."
 		},
 		{
 			"type": "waypoint",
@@ -1178,21 +1178,21 @@
 			"photo": "003_pxl_20230930_040218722.jpg",
 			"lon": 151.22578000000001,
 			"lat": -33.869224,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the top of the steps cross at the traffic light and follow Challis Ave."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_040611825.jpg",
 			"lon": 151.22368,
 			"lat": -33.86881,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the end of Challis Ave, follow Victoria St a short distance to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_040705149.jpg",
 			"lon": 151.223332,
 			"lat": -33.868959000000004,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the steps down to Cowper Wharf Roadway."
 		},
 		{
 			"type": "waypoint",
@@ -1206,14 +1206,14 @@
 			"photo": "003_pxl_20230930_040916833.jpg",
 			"lon": 151.222702,
 			"lat": -33.868995,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the bottom of the steps cross at the traffic lights and make your way left along Cowper Wharf Roadway."
 		},
 		{
 			"type": "kiosk",
 			"photo": "003_pxl_20230930_041118099.jpg",
 			"lon": 151.221509,
 			"lat": -33.869202,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the start of the wharf the famous Harry's Cafe De Wheels can be found."
 		},
 		{
 			"type": "waypoint",
@@ -1227,7 +1227,7 @@
 			"photo": "003_pxl_20230930_041507529.jpg",
 			"lon": 151.21945,
 			"lat": -33.868146,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the path along the bay along the water."
 		},
 		{
 			"type": "waypoint",
@@ -1241,35 +1241,35 @@
 			"photo": "003_pxl_20230930_041912908.jpg",
 			"lon": 151.220218,
 			"lat": -33.8656289999229,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Take the steps up and follow Mrs Macquaries Rd to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_042707286.jpg",
 			"lon": 151.222912,
 			"lat": -33.861834,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "After the Pool follow the footpath along the water."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_043226196.jpg",
 			"lon": 151.221589,
 			"lat": -33.859424000000004,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the footpath around Mrs Macquarie's Chair."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_043412018_pano.jpg",
 			"lon": 151.221265,
 			"lat": -33.860152,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Continue all the way around the waterfront of the Botanical Gardens."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_044955554.jpg",
 			"lon": 151.21563799999998,
 			"lat": -33.858514,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Exit the Botanical Gardens at the Sydney Opera House and follow Circular Quay to the left."
 		},
 		{
 			"type": "waypoint",
@@ -1283,7 +1283,7 @@
 			"photo": "003_pxl_20230930_045528145.jpg",
 			"lon": 151.21299299999998,
 			"lat": -33.858885,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow Circular Quay to the ferry wharves and train station."
 		},
 		{
 			"location": "Circular Quay",
@@ -1298,77 +1298,77 @@
 			"photo": "003_pxl_20230930_050310735.jpg",
 			"lon": 151.20952599999998,
 			"lat": -33.861084,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "There are public toilets at the far end of the station."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_050601453.jpg",
 			"lon": 151.210005,
 			"lat": -33.859044000000004,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From First Fleet Park follow the footpath past the museum."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_050841148.jpg",
 			"lon": 151.21026900007314,
 			"lat": -33.857531,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Continue along the shorefront past the Overseas Passengers Terminal."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_051126055.jpg",
 			"lon": 151.20919899999998,
 			"lat": -33.856114,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the footpath around the Hyatt Hotel."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_051322943.jpg",
 			"lon": 151.210274,
 			"lat": -33.855633000000005,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the path through Hickson Road Reserve."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_051439285.jpg",
 			"lon": 151.21022299999998,
 			"lat": -33.855072,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the other end of the reserve cross the road and follow the steps up to the bridge."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_051726988.jpg",
 			"lon": 151.209364,
 			"lat": -33.855283,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the path along Dawes Point Reserve under the Sydney Harbour Bridge."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_052755689.jpg",
 			"lon": 151.208293,
 			"lat": -33.856463,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Take the steps up to Cumberland St."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_052857634.jpg",
 			"lon": 151.20830999999998,
 			"lat": -33.856802,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow Cumberland St to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_053232556.jpg",
 			"lon": 151.207123,
 			"lat": -33.858999000000004,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Use the steps up to the Sydney Harbour Bridge."
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230930_053828986.jpg",
 			"lon": 151.2082090000751,
 			"lat": -33.856553,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the footpath across the Sydney Harbour Bridge."
 		},
 		{
 			"type": "waypoint",
@@ -1382,7 +1382,7 @@
 			"photo": "005_pxl_20240126_024652317.jpg",
 			"lon": 151.21207222222222,
 			"lat": -33.85106388888889,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the far end of the bridge follow the stairs down into Kirribilli."
 		},
 		{
 			"location": "Milsons Point",
@@ -1395,7 +1395,7 @@
 		{
 			"type": "waypoint",
 			"photo": "005a_p1310064.jpg",
-			"description": "<i>-3km</i> Lorem ipsum dolor sit amet.",
+			"description": "<i>-3km</i> To skip a long detour around Kirribilli follow Broughton St left from the station.",
 			"optional": true,
 			"lon": 151.212699,
 			"lat": -33.846324
@@ -1405,21 +1405,21 @@
 			"photo": "006_pxl_20231001_191449266.jpg",
 			"lon": 151.213227,
 			"lat": -33.848808000000005,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the station follow Boughton St to the right to Bradfield Park."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_191812754.jpg",
 			"lon": 151.21174299999998,
 			"lat": -33.849748000000005,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the path through the park to the shorefront."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_192053382.jpg",
 			"lon": 151.21281499999998,
 			"lat": -33.850215,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the footpath to the left along the water."
 		},
 		{
 			"type": "waypoint",
@@ -1440,28 +1440,28 @@
 			"photo": "006_pxl_20231001_192427594.jpg",
 			"lon": 151.21504099999999,
 			"lat": -33.850023,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Take the steps up to Waruda St."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_192623218.jpg",
 			"lon": 151.21579,
 			"lat": -33.850357,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the top of the steps follow Waruda St to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_192929184.jpg",
 			"lon": 151.217638,
 			"lat": -33.851412,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the end of Waruda St take the steps up to Kirribilli Ave."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_193037813.jpg",
 			"lon": 151.218103,
 			"lat": -33.851039,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the top of the stops follow Carabella St straight ahead."
 		},
 		{
 			"type": "waypoint",
@@ -1475,196 +1475,196 @@
 			"photo": "006_pxl_20231001_193530973.jpg",
 			"lon": 151.218703,
 			"lat": -33.849615,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the corner in Carabella St to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_193643521.jpg",
 			"lon": 151.218314,
 			"lat": -33.848994000000005,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the intersection follow Peel St to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_193757982.jpg",
 			"lon": 151.218676,
 			"lat": -33.84821900010394,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the intersection follow Elamang Ave to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_194247218.jpg",
 			"lon": 151.21568499999998,
 			"lat": -33.846024,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the intersection with Willoughby St follow Mc Dougall St straight ahead."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_194432027.jpg",
 			"lon": 151.214927,
 			"lat": -33.845060000000004,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the footpath into Milson Park to the right."
 		},
 		{
 			"type": "toilet",
 			"photo": "006_pxl_20231001_194858677.jpg",
 			"lon": 151.215061,
 			"lat": -33.844442,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "There is a public toilet in the park."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_194951838.jpg",
 			"lon": 151.21562,
 			"lat": -33.84429,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the steps up from the end of Bradley Ave and take the path to the right halfway up the steps."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_195201066.jpg",
 			"lon": 151.216241,
 			"lat": -33.844394,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the end of the footpath, follow Stannards Pl to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_195235141.jpg",
 			"lon": 151.21647299999998,
 			"lat": -33.844167000000006,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the intersection follow High St to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_195517012.jpg",
 			"lon": 151.218315,
 			"lat": -33.845005,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the end of High St follow the footpath left along the shore through Kesterton Park."
 		},
 		{
 			"type": "toilet",
 			"photo": "006_pxl_20231001_195905627.jpg",
 			"lon": 151.218309,
 			"lat": -33.84422,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "There are public toilets at the far end of Kesterton Park."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_200141161.jpg",
 			"lon": 151.217145,
 			"lat": -33.84262900007127,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the shorefront along HMAS Platypus."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_200319289.jpg",
 			"lon": 151.21625,
 			"lat": -33.842396,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the end of the path follow the steps up to Kiara Cl."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_200429260.jpg",
 			"lon": 151.216126,
 			"lat": -33.842463,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the gate at the top of the steps follow Kiara Cl."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_200557312.jpg",
 			"lon": 151.21504099999999,
 			"lat": -33.842689,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the intersection follow Hipwood St to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_200717840.jpg",
 			"lon": 151.21499900007998,
 			"lat": -33.841856,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the end of Hipwood St follow Clark Rd to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_200847936.jpg",
 			"lon": 151.21509799999998,
 			"lat": -33.840969,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the footpath right through Anderson Park."
 		},
 		{
 			"type": "toilet",
 			"photo": "006_pxl_20231001_201013213.jpg",
 			"lon": 151.21595599999998,
 			"lat": -33.840374000000004,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "There are public toilets at the sports field."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_201155454.jpg",
 			"lon": 151.216791,
 			"lat": -33.840545000000006,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the steps up to Kurraba Rd and follow it to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_201306178.jpg",
 			"lon": 151.217645,
 			"lat": -33.840359,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Use the steps on the right down to Wycombe Rd."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_201426576.jpg",
 			"lon": 151.21864,
 			"lat": -33.840810000000005,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Cross Hayes St and continue following Wycombe Rd."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_201701364.jpg",
 			"lon": 151.220805,
 			"lat": -33.841146,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the corner follow Wallaringa Av to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_201939197.jpg",
 			"lon": 151.222327,
 			"lat": -33.842054000000005,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the intersectioon follow Kurraba Rd to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_202059627.jpg",
 			"lon": 151.222409,
 			"lat": -33.841158,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the next intersection follow Billong St to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_202218856.jpg",
 			"lon": 151.223195,
 			"lat": -33.840605000000004,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the end of Billong St turn left down Sellcove Rd."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_202514944.jpg",
 			"lon": 151.223567,
 			"lat": -33.838845,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the intersection follow Honda Rd to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_202628505.jpg",
 			"lon": 151.224146,
 			"lat": -33.838166,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the next intersection follow Bogota Ave to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_202751749.jpg",
 			"lon": 151.224807,
 			"lat": -33.838902000000004,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the corner of Bogota Ave follow the footpath into Cremorne Reserve."
 		},
 		{
 			"type": "waypoint",
@@ -1685,14 +1685,14 @@
 			"photo": "006_pxl_20231001_204025066.jpg",
 			"lon": 151.228547,
 			"lat": -33.845462000000005,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the footpath along the waterfront."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_204305592.jpg",
 			"lon": 151.22993400000001,
 			"lat": -33.846652,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the end of the reserve follow Milsons Rd to the right to the ferry wharf."
 		},
 		{
 			"location": "Cremorne Point",
