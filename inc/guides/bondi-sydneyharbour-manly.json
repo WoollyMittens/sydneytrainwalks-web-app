@@ -1706,14 +1706,14 @@
 			"photo": "006_pxl_20231001_204447003.jpg",
 			"lon": 151.230849,
 			"lat": -33.847229000000006,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "There is a public toilet up the steps from the ferry wharf."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_204700962.jpg",
 			"lon": 151.230856,
 			"lat": -33.84567100006771,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the path left around the buildings from toilet block."
 		},
 		{
 			"location": "Old Cremorne",
@@ -1741,7 +1741,7 @@
 			"photo": "006_pxl_20231001_205905390.jpg",
 			"lon": 151.228736,
 			"lat": -33.837849000000006,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Cross the foot bridge across the gully."
 		},
 		{
 			"type": "waypoint",
@@ -1755,14 +1755,14 @@
 			"photo": "006_pxl_20231001_210330798.jpg",
 			"lon": 151.232189,
 			"lat": -33.837070000000004,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the rowing club follow the path along Mosman Bay"
 		},
 		{
 			"type": "kiosk",
 			"photo": "006_pxl_20231001_210706775.jpg",
 			"lon": 151.232955,
 			"lat": -33.837905,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "There is a cafe and toilets at the Mosman Bay ferry wharf."
 		},
 		{
 			"location": "Mosman Bay",
@@ -1776,35 +1776,35 @@
 			"photo": "006_pxl_20231001_211402601.jpg",
 			"lon": 151.2327569999193,
 			"lat": -33.838417,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the steps up from the ferry wharf."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_211557767.jpg",
 			"lon": 151.232868,
 			"lat": -33.838712,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the top of the steps follow Mosman St to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_211857328.jpg",
 			"lon": 151.2326889998613,
 			"lat": -33.83986,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the intersection follow McLead St uphill to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_211946580.jpg",
 			"lon": 151.232936,
 			"lat": -33.840122,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the top of the steps follow Musgrave St to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_212028734.jpg",
 			"lon": 151.233186,
 			"lat": -33.840189,
-			"description": "<i>-1km</i> Lorem ipsum dolor sit amet.",
+			"description": "<i>-1km</i> Alternatively take the shortcut between the two apartment buildings straight ahead.",
 			"optional": true
 		},
 		{
@@ -1819,28 +1819,28 @@
 			"photo": "006_pxl_20231001_212649771.jpg",
 			"lon": 151.232977,
 			"lat": -33.843281000000005,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the ferry wharf follow the steps up to Herron Walk."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_212835298.jpg",
 			"lon": 151.23351799999998,
 			"lat": -33.843346000000004,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At intersection follow Raglan St to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_213518098.jpg",
 			"lon": 151.23446399999997,
 			"lat": -33.840509000000004,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Enter McLeod St on the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20231001_213548708.jpg",
 			"lon": 151.234626,
 			"lat": -33.840256000000004,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the steps down from the end of McLeod St."
 		},
 		{
 			"type": "waypoint",
@@ -1854,14 +1854,14 @@
 			"photo": "006_pxl_20231001_214051552.jpg",
 			"lon": 151.23677999999998,
 			"lat": -33.839134,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow Curley Camp Rd to Sirius Cove Reserve on the right."
 		},
 		{
-			"type": "toilet",
+			"type": "waypoint",
 			"photo": "006_pxl_20231001_214204884.jpg",
 			"lon": 151.237115,
 			"lat": -33.839385,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Cross Sirus Cove Park along the beach to the start of the Foreshore Trak."
 		},
 		{
 			"type": "toilet",
@@ -1874,7 +1874,7 @@
 			"photo": "006_pxl_20231001_214326300.jpg",
 			"lon": 151.23756999999998,
 			"lat": -33.839852,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the Foreshore Trak right to Curlew Camp."
 		},
 		{
 			"type": "waypoint",
@@ -1902,7 +1902,7 @@
 			"photo": "006_pxl_20231001_215505036.jpg",
 			"lon": 151.23933499999998,
 			"lat": -33.84566100011684,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the end of the track continue along the footpath to the ferry wharf."
 		},
 		{
 			"location": "Taronga Zoo",
