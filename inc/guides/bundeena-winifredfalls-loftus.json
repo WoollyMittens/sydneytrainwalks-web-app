@@ -595,7 +595,7 @@
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20240425_022721959.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the intersection follow the footpath along the right side of Old Princess Hwy.",
 			"optional": true,
 			"lon": 151.05337300000002,
 			"lat": -34.043186
@@ -603,7 +603,7 @@
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20240425_023753879.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After the sportsfields follow the footpath underneath the overpass to the shops.",
 			"optional": true,
 			"lon": 151.05518500000002,
 			"lat": -34.035461999999995
@@ -611,7 +611,7 @@
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20240425_024243210.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After the underpass follow the footpath along the shops to the station.",
 			"optional": true,
 			"lon": 151.057296,
 			"lat": -34.03241699987883
