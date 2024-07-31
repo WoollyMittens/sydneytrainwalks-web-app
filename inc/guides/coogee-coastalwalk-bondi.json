@@ -36,133 +36,77 @@
 			"photo": "pxl_20231118_013148515.jpg",
 			"lon": 151.257262,
 			"lat": -33.92055,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "There are public toilets near the fish and chips shop."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20231118_013229820.jpg",
 			"lon": 151.257643,
 			"lat": -33.920417,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231118_013304687.jpg",
-			"lon": 151.257817,
-			"lat": -33.92026,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the bus stops follow the esplanade to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20231118_013519013.jpg",
 			"lon": 151.258559,
 			"lat": -33.918903,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231118_013646463.jpg",
-			"lon": 151.259457,
-			"lat": -33.918617999999995,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the end of the beach follow the gate on the right into the Dunningham Park."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20231118_013755520.jpg",
 			"lon": 151.260096,
 			"lat": -33.919253999999995,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231118_013852909.jpg",
-			"lon": 151.260712,
-			"lat": -33.919109,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231118_014104200.jpg",
-			"lon": 151.261287,
-			"lat": -33.917925,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the trail through the parkland along the headland."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20231118_014235873.jpg",
 			"lon": 151.261305,
 			"lat": -33.916833,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the end of the path follow Major St to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20231118_014401005.jpg",
 			"lon": 151.261328,
 			"lat": -33.915942,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231118_014521395.jpg",
-			"lon": 151.261037,
-			"lat": -33.915166,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231118_014620010.jpg",
-			"lon": 151.261009,
-			"lat": -33.914781999999995,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the corner of Major St follow the footpath around Gordon's Bay."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20231118_015539673.jpg",
 			"lon": 151.26740900000001,
 			"lat": -33.9157569998733,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "On the other side of Gordon's Bay follow the footpath around the headland to Clovelly Bay."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20231118_015805758.jpg",
 			"lon": 151.26753200000002,
 			"lat": -33.914684,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the footpath around Clovelly Bay."
 		},
 		{
 			"type": "kiosk",
 			"photo": "pxl_20231118_015941745.jpg",
 			"lon": 151.266795,
 			"lat": -33.914176999999995,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231118_020141537.jpg",
-			"lon": 151.265802,
-			"lat": -33.913178,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231118_020352692.jpg",
-			"lon": 151.26731800000002,
-			"lat": -33.913683,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "There are public toilets near the restaurant."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20231118_020637065.jpg",
 			"lon": 151.269235,
 			"lat": -33.913346,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "On the other side of Clovelly Bay follow the footpath along Ocean St."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20231118_021044647.jpg",
 			"lon": 151.27005400000002,
 			"lat": -33.910824,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the corner of Ocean St follow the cliffside footpath along the cemetery."
 		},
 		{
 			"type": "hotspot",
@@ -177,143 +121,94 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231118_021523360.jpg",
-			"lon": 151.26973800000002,
-			"lat": -33.908705999999995,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20231118_021822473.jpg",
 			"lon": 151.26965600000003,
 			"lat": -33.907145,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231118_022043027.jpg",
-			"lon": 151.269481,
-			"lat": -33.905679,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the other end of the cemetery follow Calga Pl to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20231118_022127034.jpg",
 			"lon": 151.269058,
 			"lat": -33.905471999999996,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231118_022202074.jpg",
-			"lon": 151.268683,
-			"lat": -33.905269,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the steps on the right down to Bronte Beach."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20231118_022330544.jpg",
 			"lon": 151.26827500000002,
 			"lat": -33.904632,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the esplanade along the beach."
 		},
 		{
 			"type": "kiosk",
 			"photo": "pxl_20231118_022505871.jpg",
 			"lon": 151.267907,
 			"lat": -33.903455,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "There's public toilets and a cafe at the surf club."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20231118_022620719.jpg",
 			"lon": 151.268141,
 			"lat": -33.902943,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231118_022943445.jpg",
-			"lon": 151.27009700000002,
-			"lat": -33.901579999999996,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the steps up from Bronte Beach and continue along Bronte Marine Dr."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20231118_023209370.jpg",
 			"lon": 151.269238,
 			"lat": -33.899954,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the steps down to Tamarama Beach."
 		},
 		{
 			"type": "toilet",
 			"photo": "pxl_20231118_023334530.jpg",
 			"lon": 151.269517,
 			"lat": -33.89979,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "There are public toilets at the picnic area."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20231118_023710642.jpg",
 			"lon": 151.271837,
 			"lat": -33.899898,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231118_024339253.jpg",
-			"lon": 151.276078,
-			"lat": -33.89886,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231118_024504582.jpg",
-			"lon": 151.27592,
-			"lat": -33.898361,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20231118_024700773.jpg",
-			"lon": 151.27487000000002,
-			"lat": -33.897539,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the surf club follow the coastal walk along the cliffs. "
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20231118_024913707.jpg",
 			"lon": 151.27420700000002,
 			"lat": -33.896633,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the coastal walk to the Icebergs Pool."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20231118_025321069.jpg",
 			"lon": 151.27400400000002,
 			"lat": -33.894554,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the pool follow the foothpath along Notts Ave."
 		},
 		{
 			"type": "toilet",
 			"photo": "pxl_20231118_025358725.jpg",
 			"lon": 151.273782,
 			"lat": -33.894338,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "There are public toilets at the steps down to Bondi Beach. "
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20231118_025442095.jpg",
 			"lon": 151.273658,
 			"lat": -33.894051,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the steps down to Bondi Beach Park"
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20231118_025501683.jpg",
 			"lon": 151.273669,
 			"lat": -33.893949,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the park follow the footpath along Campbell Pde to the bus stops."
 		},
 		{
 			"location": "Bondi Beach",
