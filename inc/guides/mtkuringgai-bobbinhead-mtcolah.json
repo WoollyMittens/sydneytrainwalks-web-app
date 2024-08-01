@@ -37,273 +37,83 @@
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240309_194314836.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Exit the station to the left and cross the overpass over the M1.",
 			"lon": 151.137273,
 			"lat": -33.653852
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240309_194347455.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the cul-de-sac follow Harwood Ave straight on.",
 			"lon": 151.13766999999999,
 			"lat": -33.653938
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240309_194506109.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.13894,
-			"lat": -33.654168999999996
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240309_194712425.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the corner of Harwood Ave follow the Mount Kuring-gai track.",
 			"lon": 151.141029,
 			"lat": -33.654424
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20240309_194843901.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.141923,
-			"lat": -33.654039
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20240309_195454516.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the split follow the trail to the left.",
 			"lon": 151.14610399999998,
 			"lat": -33.651023
 		},
 		{
 			"type": "waypoint",
 			"photo": "002_pxl_20240309_195515148.jpg",
-			"description": "<i>+0.2km</i>Lorem ipsum dolor sit amet.",
-			"optional": true,
+			"description": "<i>+0.2km</i> Optionally follow the split to the right to a lookout.",
 			"lon": 151.1464369998987,
-			"lat": -33.650940999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "002_pxl_20240309_195638879.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": true,
-			"lon": 151.147403,
-			"lat": -33.651099
-		},
-		{
-			"type": "waypoint",
-			"photo": "002_pxl_20240309_195643624.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": true,
-			"lon": 151.147403,
-			"lat": -33.651098
+			"lat": -33.650940999999996,
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20240309_195659531.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "<i>-1km</i> From the lookout an overgrown trail leads further down the ridge and ultimately to Apple Tree Bay.",
 			"detour": true,
 			"lon": 151.147391,
 			"lat": -33.651122
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pxl_20240309_195719473.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"detour": true,
-			"lon": 151.147461,
-			"lat": -33.651075999999996
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pxl_20240309_195916557.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "It is not advised to follow this dangerous pipeline service trail.",
 			"detour": true,
 			"lon": 151.147617,
 			"lat": -33.65101
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pxl_20240309_200217604.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"detour": true,
-			"lon": 151.148056,
-			"lat": -33.651057
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pxl_20240309_200254823.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "The trail ends at the abandoned structure of a water tank.",
 			"detour": true,
 			"lon": 151.148166,
 			"lat": -33.651036
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pxl_20240309_200316660.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"detour": true,
-			"lon": 151.148312,
-			"lat": -33.650999
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pxl_20240309_200541466.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"detour": true,
-			"lon": 151.149246,
-			"lat": -33.650906
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pxl_20240309_200622972.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"detour": true,
-			"lon": 151.14936300012386,
-			"lat": -33.650931
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pxl_20240309_200628148.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"detour": true,
-			"lon": 151.149365,
-			"lat": -33.650931
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pxl_20240309_200711937.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the water tank a disused pipeline leads to Apple Tree Bay.",
 			"detour": true,
 			"lon": 151.14949199999998,
 			"lat": -33.65096
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pxl_20240309_200916257.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"detour": true,
-			"lon": 151.14998,
-			"lat": -33.651057
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pxl_20240309_201050753.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"detour": true,
-			"lon": 151.15016400000002,
-			"lat": -33.650988999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pxl_20240309_201154068.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"detour": true,
-			"lon": 151.15028900000001,
-			"lat": -33.65099
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pxl_20240309_201422787.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"detour": true,
-			"lon": 151.15063,
-			"lat": -33.650987
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pxl_20240309_201508845.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"detour": true,
-			"lon": 151.150786,
-			"lat": -33.651016
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pxl_20240309_202049247.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"detour": true,
-			"lon": 151.151573,
-			"lat": -33.651210999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pxl_20240309_202328021.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"detour": true,
-			"lon": 151.152046,
-			"lat": -33.651249
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pxl_20240309_202603720.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"detour": true,
-			"lon": 151.152372,
-			"lat": -33.651271
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pxl_20240309_202812197.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the creek instead of following it to the waterfall. The pipe line continues on the other side.",
 			"detour": true,
 			"lon": 151.152593,
 			"lat": -33.651409
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pxl_20240309_202855156.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"detour": true,
-			"lon": 151.152617,
-			"lat": -33.651461999999995
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pxl_20240309_203057027.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"detour": true,
-			"lon": 151.152778,
-			"lat": -33.651562
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pxl_20240309_203225239.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"detour": true,
-			"lon": 151.153112,
-			"lat": -33.651849999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pxl_20240309_203609100.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"detour": true,
-			"lon": 151.154196,
-			"lat": -33.651775
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pxl_20240309_203717247.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"detour": true,
-			"lon": 151.154244,
-			"lat": -33.651736
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pxl_20240309_204204784.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"detour": true,
-			"lon": 151.155116,
-			"lat": -33.651693
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pxl_20240309_204304707.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "The pipeline service trail ends with a scramble down to the Apple Tree Bay picnic area.",
 			"detour": true,
 			"lon": 151.155274,
 			"lat": -33.651723
@@ -311,126 +121,85 @@
 		{
 			"type": "waypoint",
 			"photo": "004_p2021278.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "The leads to a set of steps down a drop.",
 			"lon": 151.14722777777777,
 			"lat": -33.64993055555556
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_p2021279_p2021294.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "<i>+50m</i>Before the steps down, an overgrown side trail to the left leads to a lookout and memorial.",
 			"lon": 151.14850555555554,
-			"lat": -33.649027777777775
+			"lat": -33.649027777777775,
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_p2021295.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the bottom of the steps, continue along the Mt Kuring-gai Track",
 			"lon": 151.14921666666666,
 			"lat": -33.64857222222222
 		},
 		{
 			"type": "waypoint",
-			"photo": "004_p2021297.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.153456,
-			"lat": -33.647801
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_p2021298.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.15400400000001,
-			"lat": -33.647894
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_p2021300.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.15852777777778,
-			"lat": -33.64734722222222
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_p2021302.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.1606889999146,
-			"lat": -33.64643
-		},
-		{
-			"type": "waypoint",
 			"photo": "004_p2021304.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the end of the trail a lookout overlooks Cowan Creek.",
 			"lon": 151.16063300000002,
 			"lat": -33.646895
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_p2021305.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the lookout follow the hairpin turns down to Cowan Creek.",
 			"lon": 151.161125,
 			"lat": -33.647422222222225
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_p2021361_p2021364.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the Berowra Track to the right along the waterfront.",
 			"lon": 151.1571111111111,
 			"lat": -33.65049722222222
 		},
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20240309_204343139.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "The trail ends at a small picnic area along the Apple Tree Creek.",
 			"lon": 151.155323,
 			"lat": -33.651717999999995
 		},
 		{
 			"type": "waypoint",
-			"photo": "005_pxl_20240309_204518904.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.155577,
-			"lat": -33.651799
-		},
-		{
-			"type": "waypoint",
 			"photo": "005_pxl_20240309_204525449.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the small picnic area at the end of the track, cross the bridge to Apple Tree Bay.",
 			"lon": 151.155586,
 			"lat": -33.651809
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "005_pxl_20240309_204723756_pano.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There is a public toilet at the carpark.",
 			"lon": 151.155617,
 			"lat": -33.652512
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_p2021394.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the cafe follow the road to Bobbin Head.",
 			"lon": 151.1593388888889,
 			"lat": -33.65519444444444
 		},
 		{
-			"type": "waypoint",
-			"photo": "007_pxl_20240309_210325425.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.159983,
-			"lat": -33.658746
-		},
-		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "007_pxl_20240309_210505089.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There are public toilets at the carpark near Bobbin Head Inn.",
 			"lon": 151.15915,
 			"lat": -33.659006999999995
 		},
 		{
 			"type": "waypoint",
 			"photo": "007_pxl_20240309_210913348.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There is a restaurant and visitor information at Bobbin Head Inn.",
 			"lon": 151.159222,
 			"lat": -33.65948
 		},
@@ -541,140 +310,63 @@
 		{
 			"type": "waypoint",
 			"photo": "009_pxl_20240309_211026932.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "To the left of the steps lead up the Birrawanna Track.",
 			"lon": 151.15877,
 			"lat": -33.659982
 		},
 		{
 			"type": "waypoint",
 			"photo": "009_pxl_20240309_211311716.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "The trail passes between a narrow gap between the rocks.",
 			"lon": 151.158155,
 			"lat": -33.660061
 		},
 		{
 			"type": "waypoint",
-			"photo": "009_pxl_20240309_211424865.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.158138,
-			"lat": -33.659830999931366
-		},
-		{
-			"type": "waypoint",
-			"photo": "009_pxl_20240309_212905087.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.15351900000002,
-			"lat": -33.661339999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "009_pxl_20240309_213323106.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.15454400000002,
-			"lat": -33.659594
-		},
-		{
-			"type": "waypoint",
 			"photo": "009_pxl_20240309_213750585.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection cross the firetrail and continue straight on to the Kalkari Dicrovery Centre.",
 			"lon": 151.152318,
 			"lat": -33.659351
 		},
 		{
 			"type": "waypoint",
-			"photo": "009_pxl_20240309_213847842.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.151637,
-			"lat": -33.65958700007155
-		},
-		{
-			"type": "waypoint",
-			"photo": "009_pxl_20240309_214000085.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.15105300000002,
-			"lat": -33.660091000091
-		},
-		{
-			"type": "waypoint",
-			"photo": "009_pxl_20240309_214320982.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.149015,
-			"lat": -33.66102300009603
-		},
-		{
-			"type": "waypoint",
 			"photo": "009_pxl_20240309_214456354.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the trail on the right side of the fence line.",
 			"lon": 151.14862,
 			"lat": -33.661822
 		},
 		{
 			"type": "waypoint",
 			"photo": "009_pxl_20240309_215004145.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "The trial end at the carpark of the Kalkari Discovery Centre.",
 			"lon": 151.148506,
 			"lat": -33.664648
 		},
 		{
 			"type": "waypoint",
-			"photo": "009_pxl_20240309_215108390.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.14897700008274,
-			"lat": -33.66521899988065
-		},
-		{
-			"type": "waypoint",
 			"photo": "009_pxl_20240309_215130930.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There are public toilets at the Kalkari Visitor Centre.",
 			"lon": 151.149046,
 			"lat": -33.665374
 		},
 		{
 			"type": "waypoint",
 			"photo": "009_pxl_20240309_215202260.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the exit of the carpark, follow the Kalkari Walking Track on the left side of Kuring-gai Chase Rd.",
 			"lon": 151.148924,
 			"lat": -33.665659999999995
 		},
 		{
 			"type": "waypoint",
-			"photo": "009_pxl_20240309_215309697.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.148447,
-			"lat": -33.666346
-		},
-		{
-			"type": "waypoint",
-			"photo": "009_pxl_20240309_215349149.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.14826899992497,
-			"lat": -33.666709999999995
-		},
-		{
-			"type": "waypoint",
 			"photo": "009_pxl_20240309_220138218.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the powerline service trail and continue along the Kalkari Track on the other side.",
 			"lon": 151.144019,
 			"lat": -33.66938
 		},
 		{
 			"type": "waypoint",
-			"photo": "009_pxl_20240309_220219561.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.1436530000936,
-			"lat": -33.669725
-		},
-		{
-			"type": "waypoint",
-			"photo": "009_pxl_20240309_220316978.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.14405,
-			"lat": -33.670204999999996
-		},
-		{
-			"type": "waypoint",
 			"photo": "009_pxl_20240309_220331012.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the lookout near the powerlines, follow the Kalkari Track to the right.",
 			"lon": 151.144106,
 			"lat": -33.670291999999996
 		},
@@ -691,169 +383,78 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "009_pxl_20240309_220500191.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.144174,
-			"lat": -33.670705999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "009_pxl_20240309_220625535.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.144299,
-			"lat": -33.671499
-		},
-		{
-			"type": "waypoint",
 			"photo": "009_pxl_20240309_221212505.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the Kalkari Track along the power lines.",
 			"lon": 151.141638,
 			"lat": -33.672202
 		},
 		{
 			"type": "waypoint",
-			"photo": "009_pxl_20240309_221911343.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.13813199999998,
-			"lat": -33.67523
-		},
-		{
-			"type": "waypoint",
-			"photo": "009_pxl_20240309_222112416.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.136469,
-			"lat": -33.675481
-		},
-		{
-			"type": "waypoint",
-			"photo": "009_pxl_20240309_222359777.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.134436,
-			"lat": -33.675261
-		},
-		{
-			"type": "waypoint",
-			"photo": "009_pxl_20240309_223449925.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.127442,
-			"lat": -33.67842699990794
-		},
-		{
-			"type": "waypoint",
-			"photo": "009_pxl_20240309_223905959.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.124887,
-			"lat": -33.678765999999996
-		},
-		{
-			"type": "waypoint",
 			"photo": "009_pxl_20240309_223916990.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "The trail continues a short distance past the park entrance booth.",
 			"lon": 151.124804,
 			"lat": -33.678781
 		},
 		{
 			"type": "waypoint",
-			"photo": "009_pxl_20240309_223953924.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.12429600000002,
-			"lat": -33.678885
-		},
-		{
-			"type": "waypoint",
 			"photo": "009_pxl_20240309_224232101.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After the park entrance booths exit the trail onto Kuring-gai Chase Rd.",
 			"lon": 151.122217,
 			"lat": -33.679041999999995
 		},
 		{
 			"type": "waypoint",
 			"photo": "009_pxl_20240309_224246498.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross Kuring-gai Chase Rd and follow the bike and footpath to the left.",
 			"lon": 151.12217900000002,
 			"lat": -33.678988999999994
 		},
 		{
 			"type": "waypoint",
-			"photo": "009_pxl_20240309_224315838.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.121833,
-			"lat": -33.678843000075226
-		},
-		{
-			"type": "waypoint",
-			"photo": "009_pxl_20240309_224431217.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.120776,
-			"lat": -33.67877099988414
-		},
-		{
-			"type": "waypoint",
 			"photo": "009_pxl_20240309_224448898.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the overpass across the M1 along the footpath.",
 			"lon": 151.120594,
 			"lat": -33.67876
 		},
 		{
 			"type": "waypoint",
 			"photo": "009_pxl_20240309_224701169.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After the overpass follow Myall Rd to the right.",
 			"lon": 151.11862000000002,
 			"lat": -33.67861
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "009_pxl_20240309_224830428.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There are public toilets when the sports fields are being used.",
 			"lon": 151.118389,
 			"lat": -33.67759099991312
 		},
 		{
 			"type": "waypoint",
 			"photo": "009_pxl_20240309_225112047.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Continue on Myall Rd past the sports fields.",
 			"lon": 151.11870000000002,
 			"lat": -33.67598900007942
 		},
 		{
 			"type": "waypoint",
 			"photo": "009_pxl_20240309_225233128.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow Cowan Rd to the left.",
 			"lon": 151.118887,
 			"lat": -33.674983999999995
 		},
 		{
 			"type": "waypoint",
-			"photo": "009_pxl_20240309_225303796.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.11877800000002,
-			"lat": -33.674661
-		},
-		{
-			"type": "waypoint",
-			"photo": "009_pxl_20240309_225613302.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.116014,
-			"lat": -33.674094999999994
-		},
-		{
-			"type": "waypoint",
 			"photo": "009_pxl_20240309_225808864.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the end of Cowan Rd follow Belmont Pde to the right.",
 			"lon": 151.114288,
 			"lat": -33.673874
 		},
 		{
 			"type": "waypoint",
-			"photo": "009_pxl_20240309_225914635.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.114283,
-			"lat": -33.673244
-		},
-		{
-			"type": "waypoint",
 			"photo": "009_pxl_20240309_230140062.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Enter the station entrance across the cul-de-sac.",
 			"lon": 151.115282,
 			"lat": -33.671724999999995
 		},
