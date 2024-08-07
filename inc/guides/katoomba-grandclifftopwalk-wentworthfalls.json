@@ -341,7 +341,7 @@
 		{
 			"location": "Conservation Hut",
 			"type": "bus",
-			"description": "Get the bus to/from Conservation Hut using <a href=\"https://transportnsw.info/trip#/?from=Conservation Hut Picnic Area\">transportnsw.info</a>.",
+			"description": "Get the bus to/from Conservation Hut using <a href=\"https://transportnsw.info/trip#/?from=Conservation Hut Picnic Area\">transportnsw.info</a>.<br/><strong>This bus service is very infrequent.</strong>",
 			"lon": 150.365435,
 			"lat": -33.720162
 		},

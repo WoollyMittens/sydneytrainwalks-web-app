@@ -10,6 +10,7 @@
 		"Puckey's Estate": "https://wollongongbotanicgarden.com.au/conservation/puckeys-estate"
 	},
 	"distance": [
+		9,
 		18,
 		36
 	],
@@ -37,259 +38,175 @@
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230901_213607408.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the carpark of Otford station follow Lady Carrington Rd.",
 			"lon": 151.004997,
 			"lat": -34.210441
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20230901_213656787.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.004177,
-			"lat": -34.21039700008152
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20230901_214147978.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection follow Otford Rd to the left.",
 			"lon": 150.99978,
 			"lat": -34.211244
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230901_214301555.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the overpass across the railway tracks.",
 			"lon": 150.99946999999997,
 			"lat": -34.21211099988878
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230901_214449325.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After the overpass follow Otford Rd to the right all the way uphill.",
 			"lon": 150.99901,
 			"lat": -34.213049000000005
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230901_215947965.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection at the top of the hill continue right to Bald Hill Lookout. ",
 			"lon": 150.998517,
 			"lat": -34.222036
 		},
 		{
 			"type": "kiosk",
 			"photo": "001_pxl_20230901_220120939.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There are amenities at the lookout.",
 			"lon": 150.99793900007666,
 			"lat": -34.223127000000005
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20230901_220657554.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.99688899999998,
-			"lat": -34.224081000000005
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20230901_220708799.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the far end of the carpark follow the path along the lookout platforms.",
 			"lon": 150.996864,
 			"lat": -34.224075
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20230901_220936412.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.99533899999997,
-			"lat": -34.223722
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20230901_221005954.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the last lookout platform follow the steps downhill.",
 			"lon": 150.99517299990686,
 			"lat": -34.223690000000005
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20230901_221022957.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.99513699992045,
-			"lat": -34.223681
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20230901_221502410.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.99346999999997,
-			"lat": -34.22365
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20230901_221947084.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection cross the firetail and follow the signs to Stanwell Park.",
 			"lon": 150.99345499999998,
 			"lat": -34.22550700008093
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20230901_222011496.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.993484,
-			"lat": -34.225598000000005
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20230901_222209537.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the end of the trail follow Maxwell Cres straight ahead.",
 			"lon": 150.99304199999997,
 			"lat": -34.226726
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20230901_222242043.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.992853,
-			"lat": -34.227003000072294
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20230901_222500431.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the carpark follow the footpath through the Beach Reserve.",
 			"lon": 150.99120399999998,
 			"lat": -34.227745
 		},
 		{
 			"type": "toilet",
 			"photo": "001_pxl_20230901_222735350.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There are toilets at the far end of the picnic area.",
 			"lon": 150.989986,
 			"lat": -34.22789300010819
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230901_222952270.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the other side of the beach reserve follow Station St to the right.",
 			"lon": 150.988442,
 			"lat": -34.228311000000005
 		},
 		{
 			"type": "kiosk",
 			"photo": "001_pxl_20230901_223636579.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the street from the cafe at the end of Station St and follow the footpath past the map sign.",
 			"lon": 150.983647,
 			"lat": -34.228161
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230901_223742674.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the footpath along Lawrence Hargrave Ave to the left.",
 			"lon": 150.983095,
 			"lat": -34.228546
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20230901_223949896.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.98210700007544,
-			"lat": -34.22983
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20230901_224326554.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At Murrawal Rd follow the Grand Pacific Walk sign to the left.",
 			"lon": 150.982424,
 			"lat": -34.23187099989508
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230901_224829190.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the intersection follow Lower Coast Rd straight ahead.",
 			"lon": 150.98552199999997,
 			"lat": -34.233726000000004
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230901_225216150.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the end of Lower Coast Rd continue along the shared foot and bike path.",
 			"lon": 150.98598099999998,
 			"lat": -34.235484
 		},
 		{
-			"type": "waypoint",
-			"photo": "001_pxl_20230901_225634078.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.983847,
-			"lat": -34.237746
-		},
-		{
-			"type": "waypoint",
+			"type": "train",
 			"photo": "001_pxl_20230901_230557461.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Get the train to/from Coalcliff using <a href=\"https://transportnsw.info/trip#/?to=Coalcliff\">transportnsw.info</a>.",
 			"lon": 150.97796400000001,
 			"lat": -34.24224300008069
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230901_231204727.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the sign to the Sea Cliff Bridge to the right.",
 			"lon": 150.973903,
 			"lat": -34.244847
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20230901_231325828.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.974715,
-			"lat": -34.244526
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20230901_231422312.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the carpark follow the footbridge across the gully.",
 			"lon": 150.975126,
 			"lat": -34.24479699991018
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20230901_231505490.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.97518299992507,
-			"lat": -34.245073
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20230901_231606981.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Across the bridge follow Paterson Rd to the left.",
 			"lon": 150.97530900008059,
 			"lat": -34.245625000000004
 		},
 		{
 			"type": "toilet",
 			"photo": "001_pxl_20230901_231741823.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There is a toilet block in the reserve.",
 			"lon": 150.976244,
 			"lat": -34.246126000000004
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230901_231958565.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the end of Paterson Rd follow the shared path to the left.",
 			"lon": 150.97630900000001,
 			"lat": -34.247805
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20230901_232057651.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.976598,
-			"lat": -34.248376
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20230901_232720727.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the footpath across the Sea Cliff Bridge.",
 			"lon": 150.975807,
 			"lat": -34.251371
 		},
@@ -307,21 +224,21 @@
 		{
 			"type": "toilet",
 			"photo": "001_pxl_20230901_234243572.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After the bridge there is a toilet block at the carpark to the right.",
 			"lon": 150.969798,
 			"lat": -34.259602
 		},
 		{
-			"type": "waypoint",
+			"type": "train",
 			"photo": "001_pxl_20230901_234843041.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.966582,
-			"lat": -34.262925
+			"description": "Get the train to/from Scarborough using <a href=\"https://transportnsw.info/trip#/?to=Scarborough\">transportnsw.info</a>.",
+			"lon": 150.966207,
+			"lat": -34.264812
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230902_002720570.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the Sea Cliff Bridge continue following the shared path along Lawrence Hargrave Drive.",
 			"lon": 150.95173699999998,
 			"lat": -34.284303
 		},
@@ -339,119 +256,98 @@
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230902_003100331.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the shared path along Coledale Beach.",
 			"lon": 150.94983100012612,
 			"lat": -34.285709
 		},
 		{
 			"type": "toilet",
 			"photo": "001_pxl_20230902_003357175.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There is a toilet block at the campground in the beach reserve.",
 			"lon": 150.948215,
 			"lat": -34.28706
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20230902_005030502.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.942824,
-			"lat": -34.294951
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20230902_005642944.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.940737,
-			"lat": -34.298694999999995
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20230902_010328382.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Turn left down Headland Ave.",
 			"lon": 150.938966,
 			"lat": -34.300656
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20230902_010440021.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.939795,
-			"lat": -34.300864999999995
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20230902_010703781.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the footpath around the headland reserve.",
 			"lon": 150.941374,
 			"lat": -34.301235999999996
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230902_010909624.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the other end of the headland take the steps down  to Austinmer Beach.",
 			"lon": 150.940158,
 			"lat": -34.301963
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230902_011215737.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the footpath along Little Austinmer Beach.",
 			"lon": 150.938201,
 			"lat": -34.30289
 		},
 		{
 			"type": "toilet",
 			"photo": "001_pxl_20230902_011602928.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After the headland take the steps down to Austinmer Beach. There is a toilet block at the start of the beach.",
 			"lon": 150.936714,
 			"lat": -34.305187
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230902_012203426.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the steps follow the esplanade along the beach.",
 			"lon": 150.935795,
 			"lat": -34.305699999999995
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230902_012509134.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the surf club follow the footpath along Lawrence Hargrave Dr.",
 			"lon": 150.934151,
 			"lat": -34.307278
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230902_013829873.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After crossing Flanagans Creek turn left down The Esplanade.",
 			"lon": 150.92685,
 			"lat": -34.31371100012332
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230902_014141995.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the footpath through the beach reserve to the surf club.",
 			"lon": 150.927811,
 			"lat": -34.315421
 		},
 		{
 			"type": "kiosk",
 			"photo": "001_pxl_20230902_014232676.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There are amenities at the Thirroul Beach Surf Club.",
 			"lon": 150.927858,
 			"lat": -34.3159
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20230902_014606165.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the surf club follow the footpath along Cliff Pde.",
 			"lon": 150.926258,
 			"lat": -34.318304000000005
 		},
 		{
 			"type": "waypoint",
 			"photo": "002_pxl_20221225_045119524.jpg",
-			"description": "<i>-18km</i> Lorem ipsum dolor sit amet.",
+			"description": "<i>-18km</i> From Cliff Pde follow Harbord St, then Station St to get to Thirroul Station.",
 			"optional": true,
 			"lon": 150.92335277777778,
 			"lat": -34.31816666666667
@@ -467,400 +363,295 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pxl_20230902_014853025.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.92562899992288,
-			"lat": -34.320041
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pxl_20230902_014922579.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection follow Craig St to the left.",
 			"lon": 150.925363,
 			"lat": -34.320229000000005
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230902_015648046.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection follow Hamilton Rd to the left.",
 			"lon": 150.924142,
 			"lat": -34.322206
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230902_015835617.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Continue on the shared path at the end of Hamilton Rd.",
 			"lon": 150.923912,
 			"lat": -34.323333000000005
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230902_015936306.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the shared path through McCauleys Beach Reserve. ",
 			"lon": 150.92395399999998,
 			"lat": -34.324087000000006
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230902_020929067_pano.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the end the reserve follow the shared path to Sandon Point.",
 			"lon": 150.92503399999998,
 			"lat": -34.328884
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pxl_20230902_020939898.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.925095,
-			"lat": -34.328955
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pxl_20230902_021226269.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From Sandon Point follow the Grand Pacific Drive sign to Bulli Beach.",
 			"lon": 150.926202,
 			"lat": -34.330674
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230902_022008155.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the shared path along Sandon Point Beach to the Bulli Beach Surf club.",
 			"lon": 150.924333,
 			"lat": -34.336179
 		},
 		{
-			"type": "waypoint",
-			"photo": "003_pxl_20230902_022250031.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.92503499999998,
-			"lat": -34.337922
-		},
-		{
 			"type": "kiosk",
 			"photo": "003_pxl_20230902_022717090.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There are amenities at the surf club and the nearby holiday park.",
 			"lon": 150.923869,
 			"lat": -34.34057
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230902_023521486.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the surf club follow the shared path along the holiday park.",
 			"lon": 150.92378599999998,
 			"lat": -34.34133
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230902_024559396.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross Kurraba Rd and continue right on the shared path along Wooonona Beach.",
 			"lon": 150.92084699999998,
 			"lat": -34.347593
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pxl_20230902_024635401.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.920873,
-			"lat": -34.347862
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pxl_20230902_025736398.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.91858399999998,
-			"lat": -34.354817000000004
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pxl_20230902_030006814.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the shared path along Ballambi Beach.",
 			"lon": 150.91824,
 			"lat": -34.356578
 		},
 		{
 			"type": "kiosk",
 			"photo": "003_pxl_20230902_030956647.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There are amenities at the surf club.",
 			"lon": 150.920142,
 			"lat": -34.363667
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230902_031317241_pano.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the shared path to the left at the surf club.",
 			"lon": 150.92145399999998,
 			"lat": -34.365278
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230902_031658526.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the shared path to the Ballambi Rock Pool.",
 			"lon": 150.924053,
 			"lat": -34.366327
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230902_032027003.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the picnic area follow the Robert Cram Dr to the left to the boat ramp.",
 			"lon": 150.925772,
 			"lat": -34.368161
 		},
 		{
 			"type": "toilet",
 			"photo": "003_pxl_20230902_032753679.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There is a toilet block a the Bellambi Boat Ramp.",
 			"lon": 150.92951599999998,
 			"lat": -34.368265
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230902_034054014.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the end of the carpark follow the beach around Bellambi Point.",
 			"lon": 150.925692,
 			"lat": -34.37488
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230902_040116489.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the Towradgi Rock Pool follow the steps up the headland.",
 			"lon": 150.91549700011538,
 			"lat": -34.385402
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230902_040259806.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the Towradgi Rock Pool follow the shared path along Towradgi Beach.",
 			"lon": 150.914627,
 			"lat": -34.385813
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230902_040647939.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the Lifeguard Tower follow the shared path around the holiday park.",
 			"lon": 150.91189400000002,
 			"lat": -34.387098
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pxl_20230902_040757530.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.91117300000002,
-			"lat": -34.386804
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pxl_20230902_040929220.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.910098,
-			"lat": -34.38725
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pxl_20230902_041454679.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the shared path around the holiday park under the overpass.",
 			"lon": 150.90700800000002,
 			"lat": -34.390155
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230902_042158391.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After the overpass follow the shared path to the Fairy Meadow Surf Club.",
 			"lon": 150.904767,
 			"lat": -34.394968
 		},
 		{
 			"type": "toilet",
 			"photo": "003_pxl_20230902_042453606.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There are amenities at the Fairy Meadow Surf Club.",
 			"lon": 150.904162,
 			"lat": -34.396452
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230902_042542019.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Fromthe end of the carpark follow the footpath through Puckey's Estate",
 			"lon": 150.904332,
 			"lat": -34.39676100013057
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pxl_20230902_043327168.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.902411,
-			"lat": -34.401447
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pxl_20230902_044238682.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection follow the trail right across the bridge.",
 			"lon": 150.90033400000002,
 			"lat": -34.407227999999996
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230902_044257188.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the lagoon over the bridge and follow the boardwalk to the left.",
 			"lon": 150.900219,
 			"lat": -34.407303999999996
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pxl_20230902_044436011.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.89928999999998,
-			"lat": -34.40715
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pxl_20230902_044551340.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the end of the board walk follow the footpath along Squires Way to the left.",
 			"lon": 150.898572,
 			"lat": -34.407593999999996
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pxl_20230902_044607659.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.898353,
-			"lat": -34.407654
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pxl_20230902_044733686.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the footpath to the left through Stuart Park.",
 			"lon": 150.89774,
 			"lat": -34.408422
 		},
 		{
-			"type": "waypoint",
-			"photo": "003_pxl_20230902_045111584.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.900001,
-			"lat": -34.409735
-		},
-		{
 			"type": "kiosk",
 			"photo": "003_pxl_20230902_045730743.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There are amenities at the North Wollongong Surf Club.",
 			"lon": 150.901161,
 			"lat": -34.413703999999996
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230902_050003501.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the surf club follow the esplanade.",
 			"lon": 150.901422,
 			"lat": -34.415324
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pxl_20230902_050647733_pano.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.903409,
-			"lat": -34.419165
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pxl_20230902_050750097.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the breakwater follow the esplanade around Wollongong Harbour.",
 			"lon": 150.903433,
 			"lat": -34.419782999999995
 		},
 		{
 			"type": "kiosk",
 			"photo": "003_pxl_20230902_051137440.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There are amenities at the foreshore park.",
 			"lon": 150.90502,
 			"lat": -34.422002
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230902_051353323.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the foreshore park follow the footpath left to Flagstaff Hill. ",
 			"lon": 150.906956,
 			"lat": -34.421751
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230902_051806144.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow Endeavour Dr to the Flagstaff Point Lighthouse.",
 			"lon": 150.909536,
 			"lat": -34.421586
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pxl_20230902_051821222_pano.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.909593,
-			"lat": -34.421609
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pxl_20230902_051942540.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the lighthouse follow the footpath to the Wollongong City Surf Club.",
 			"lon": 150.908964,
 			"lat": -34.421932999999996
 		},
 		{
-			"type": "waypoint",
-			"photo": "003_pxl_20230902_052234223.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.90716600000002,
-			"lat": -34.422315
-		},
-		{
 			"type": "kiosk",
 			"photo": "003_pxl_20230902_052323010.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There are amenities at the Wollongong City Surf Club.",
 			"lon": 150.90662,
 			"lat": -34.422551
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230902_052810564.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the surf club follow the footpath along City Beach.",
 			"lon": 150.905584,
 			"lat": -34.423753999999995
 		},
 		{
 			"type": "toilet",
 			"photo": "003_pxl_20230902_053124082.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross Marine Dr at the bus stops. There are public toilets in Lang Park.",
 			"lon": 150.904235,
 			"lat": -34.425477
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230902_053256748.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the end of Lang Park follow Crown St to the right. ",
 			"lon": 150.90338,
 			"lat": -34.426249
 		},
 		{
 			"type": "kiosk",
 			"photo": "003_pxl_20230902_054119904.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There are amenities in the Crown St Mall.",
 			"lon": 150.897863,
 			"lat": -34.42538700008212
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230902_054609288.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the end of the mall, cross Princess Hwy and continue straight Crown St.",
 			"lon": 150.893622,
 			"lat": -34.424889000074124
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pxl_20230902_054858250.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.891569,
-			"lat": -34.425053
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pxl_20230902_055032379.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection follow Station St to the train station.",
 			"lon": 150.89025999999998,
 			"lat": -34.425427
 		},
