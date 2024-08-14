@@ -37,231 +37,182 @@
 		{
 			"type": "kiosk",
 			"photo": "pxl_20240113_203914244.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the station follow Walker St to the left. There are amenities across from the station.",
 			"lon": 151.086904,
 			"lat": -33.830659000000004
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_204113059.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the corner of Walker St, follow Mary St to the right down to the shorefront.",
 			"lon": 151.086329,
 			"lat": -33.831224000000006
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_204941957.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross Shoreline Dr into the foreshore park.",
 			"lon": 151.084427,
 			"lat": -33.831396000000005
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_205042709.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the waterfront footpath to the left.",
 			"lon": 151.08354500000002,
 			"lat": -33.831245
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20240113_205106361_pano.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.083379,
-			"lat": -33.831
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20240113_205942409.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the path right into Lewis Berger Park.",
 			"lon": 151.083933,
 			"lat": -33.834316
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20240113_210013780.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.084033,
-			"lat": -33.834786
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20240113_210219125.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the path right through the carpark.",
 			"lon": 151.083515,
 			"lat": -33.836316000000004
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_210430129.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the shared path through the park land along the mangroves.",
 			"lon": 151.082884,
 			"lat": -33.837773000000006
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_211224146.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection follow the path to the right into the mangroves.",
 			"lon": 151.082474,
 			"lat": -33.843603
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_211322650.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the first bridge into the mangroves.",
 			"lon": 151.08193699999998,
 			"lat": -33.844149
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20240113_211409101.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.0813469999064,
-			"lat": -33.84446700009807
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20240113_211456789.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Before the second bridge follow the footpath to the left.",
 			"lon": 151.080772,
 			"lat": -33.844830999931375
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20240113_211521633.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.080693,
-			"lat": -33.845089
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20240113_211819682.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After the playground cross the bridge to the right.",
 			"lon": 151.081117,
 			"lat": -33.847306
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_211929813.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the bridge follow the steps straight on.",
 			"lon": 151.080288,
 			"lat": -33.847648
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_212050065.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the top of the steps follow the path around the Treillage Tower.",
 			"lon": 151.079343,
 			"lat": -33.847928
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_212132286.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the length of the water feature.",
 			"lon": 151.078765,
 			"lat": -33.848131
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_212351773.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross Bicentennial Dr and continue straight on the footpath.",
 			"lon": 151.076585,
 			"lat": -33.848703
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_212529029.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the bridge across the Bennelong Pkwy to the right.",
 			"lon": 151.075248,
 			"lat": -33.849122
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_212655804.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the square on the other side of the overpass to the railway underpass.",
 			"lon": 151.074075,
 			"lat": -33.848834000000004
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_212758327.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After the railway underpass cross Australia Ave at the bus stop.",
 			"lon": 151.073382,
 			"lat": -33.848580000000005
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_212913359.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After crossing follow Australia Ave to the right.",
 			"lon": 151.072803,
 			"lat": -33.84805300010222
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_213030038.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the playground follow Herb Elliott Ave to the left.",
 			"lon": 151.07246899999998,
 			"lat": -33.847447
 		},
 		{
-			"type": "waypoint",
-			"photo": "pxl_20240113_213153019.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.071342,
-			"lat": -33.84700299988462
-		},
-		{
 			"type": "toilet",
 			"photo": "pxl_20240113_213430883.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There are public toilets on the right side of Elliott Ave at the Abattoir Precinct. ",
 			"lon": 151.06932,
 			"lat": -33.847974
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_213802110.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the steps on the right through the Abattoir Precinct to Olympic Park Station.",
 			"lon": 151.069112,
 			"lat": -33.847407000000004
 		},
 		{
 			"type": "kiosk",
 			"photo": "pxl_20240113_214037476.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the steps follow Dawn Fraser Ave to the right, past the amenities.",
 			"lon": 151.069728,
 			"lat": -33.846496
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_214314973.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection follow Australia Ave to the left.",
 			"lon": 151.07107299999998,
 			"lat": -33.84561
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20240113_214436647.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.071348,
-			"lat": -33.844886
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20240113_214548985.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.071682,
-			"lat": -33.844134000000004
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20240113_215005096.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the footpath along Australia Ave past Brickpit Park. ",
 			"lon": 151.069541,
 			"lat": -33.841506
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_215205986.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross Marjorie Jackson Pkwy and continue straight on Holker Busway across the bridge.",
 			"lon": 151.06876,
 			"lat": -33.840118000000004
 		},
@@ -277,60 +228,46 @@
 			"lat": -33.838709
 		},
 		{
-			"type": "waypoint",
-			"photo": "pxl_20240113_215457788.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.067686,
-			"lat": -33.838169
-		},
-		{
 			"type": "toilet",
 			"photo": "pxl_20240113_215718070.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There are public toilets at the carpark across the bridge.",
 			"lon": 151.067008,
 			"lat": -33.836931
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_220054457.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Past the surf pool cross Hill Rd at the traffic light.",
 			"lon": 151.065751,
 			"lat": -33.835478
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_220209273.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After crossing follow Hill Rd to the right. ",
 			"lon": 151.06574699991367,
 			"lat": -33.835185
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_220436047.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Enter the gate into the wetlands on the left.",
 			"lon": 151.067432,
 			"lat": -33.833980000000004
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_220506602.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the trail through the wetlands.",
 			"lon": 151.067309,
 			"lat": -33.833850000000005
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_220725339.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "On the other side of the wetlands follow Louise Sauvage Pathway to the right.",
 			"lon": 151.065652,
 			"lat": -33.833117
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20240113_220836547.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.06646700000002,
-			"lat": -33.83264700009983
 		},
 		{
 			"type": "hotspot",
@@ -345,211 +282,141 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20240113_221431536.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.068669,
-			"lat": -33.832123000088394
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20240113_221514674.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.069102,
-			"lat": -33.831798000000006
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20240113_221552025.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.069485,
-			"lat": -33.8314370000792
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20240113_221642481.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection follow the sign to the River Walk.",
 			"lon": 151.070096,
 			"lat": -33.831151000115625
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20240113_221853428.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.070326,
-			"lat": -33.829675
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20240113_222200785.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.070121,
-			"lat": -33.827511
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20240113_222633250.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection before Balloderry Hill follow the path to the left to the River Walk.",
 			"lon": 151.073001,
 			"lat": -33.82539700008152
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_222906859.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection after Balloderry Hill follow the path to the left to the River Walk.",
 			"lon": 151.073633,
 			"lat": -33.824021
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_223325387.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the riverside follow the River Walk to the left.",
 			"lon": 151.073829,
 			"lat": -33.820871000000004
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20240113_223600649.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.072451,
-			"lat": -33.82077
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20240113_224625511.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the River Walk past the Newington Armory.",
 			"lon": 151.06549100008414,
 			"lat": -33.824936
 		},
 		{
 			"type": "kiosk",
 			"photo": "pxl_20240113_224833391.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There is a restaurant at the Newington Armory.",
 			"lon": 151.064257,
 			"lat": -33.825043
 		},
 		{
 			"type": "toilet",
 			"photo": "pxl_20240113_225333700.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There are public toilets a short distance past the Newington Armory.",
 			"lon": 151.06225,
 			"lat": -33.825069000000006
 		},
 		{
-			"type": "waypoint",
-			"photo": "pxl_20240113_225816280.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.05833600000003,
-			"lat": -33.824583000000004
-		},
-		{
 			"type": "toilet",
 			"photo": "pxl_20240113_230340008.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There are public toilets at the bike hire.",
 			"lon": 151.053596,
 			"lat": -33.824871
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_230623221.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the end of the Riverwalk follow the shared path under the Silverwater Bridge.",
 			"lon": 151.05194200000003,
 			"lat": -33.824701000000005
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20240113_230732320.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.050993,
-			"lat": -33.824752000000004
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20240113_230947908.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "On the other side follow the footpath left around the park to the bridge ramp.",
 			"lon": 151.050576,
 			"lat": -33.825687
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_231041288.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the footpath to the left across the Silverwater Bridge.",
 			"lon": 151.050939,
 			"lat": -33.825810000000004
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20240113_231211798.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.05109000000002,
-			"lat": -33.824776
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20240113_231503388.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After crossing the bridge follow the footpath left into the Eric Primrose Reserve.",
 			"lon": 151.051307,
 			"lat": -33.822739000000006
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20240113_231655757.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.05104200000002,
-			"lat": -33.823011
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20240113_231736783.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the footpath left underneath the Silverwater Bridge.",
 			"lon": 151.051082,
 			"lat": -33.823323
 		},
 		{
 			"type": "kiosk",
 			"photo": "pxl_20240113_232047055.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There is a cafe at Halvorsen Park along the riverside. ",
 			"lon": 151.05383500000002,
 			"lat": -33.823469
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_233017222.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the riveride path up the elevation to George Kendall Riverside Park.",
 			"lon": 151.05946200000002,
 			"lat": -33.822895
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_233114038.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the shared path around the right ride of George Kendall Riverside Park.",
 			"lon": 151.060168,
 			"lat": -33.823013
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_234157016.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After the park follow the sign to Meadowbank to the right.",
 			"lon": 151.067308,
 			"lat": -33.820124
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_234242654.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the boardwalk through the mangroves.",
 			"lon": 151.067214,
 			"lat": -33.819735
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_235021615.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection follow the shared path to the right.",
 			"lon": 151.071428,
 			"lat": -33.81662
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_235146959.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the end of the path continue on Waratah St to the Ermington Boat Ramp. ",
 			"lon": 151.07256,
 			"lat": -33.817052000000004
 		},
@@ -561,176 +428,127 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20240113_235334964.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.07386,
-			"lat": -33.817709
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20240113_235425211.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.073819,
-			"lat": -33.818219000000006
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20240113_235457047.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the boat ramp follow the footpath to Melrose Park. ",
 			"lon": 151.07414599999998,
 			"lat": -33.818249
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_235642676.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After the playground follow Lancaster Ave to the right.",
 			"lon": 151.07544,
 			"lat": -33.818167
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20240113_235805274.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.076461,
-			"lat": -33.818674
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20240114_000151072.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the corner of Lancaster Ave follow the footpath to the right.",
 			"lon": 151.07959,
 			"lat": -33.818471
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240114_000256114.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the intersection follow the shared path right along the sportsfields.",
 			"lon": 151.080385,
 			"lat": -33.818249
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20240114_000413835.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.081376,
-			"lat": -33.818603
-		},
-		{
-			"type": "waypoint",
-			"photo": "pxl_20240114_000857843.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.085565,
-			"lat": -33.818876
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20240114_001147661.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the sportsfields follow the shared path under the John Whitton Bridge to the ferry wharf.",
 			"lon": 151.08724800000002,
 			"lat": -33.820273
 		},
 		{
-			"type": "waypoint",
-			"photo": "pxl_20240114_001315565.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.08836200000002,
-			"lat": -33.820586000000006
-		},
-		{
 			"type": "kiosk",
 			"photo": "pxl_20240114_001654967.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the cafe at the ferry wharf follow the steps up along the left side of the appartments.",
 			"lon": 151.089719,
 			"lat": -33.820789000000005
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240114_001831666.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the steps follow Bay Dr left.",
 			"lon": 151.089558,
 			"lat": -33.819996
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240114_001948184.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the ramp up to the bridge to the left side of Bay Dr.",
 			"lon": 151.089693,
 			"lat": -33.819743
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240114_002313769.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the intersection at the top of the ramp, follow the shared path left across the bridge. ",
 			"lon": 151.089637,
 			"lat": -33.819856
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240114_002405225.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the John Whitton Bridge along the shared path.",
 			"lon": 151.08929500000002,
 			"lat": -33.820315
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20240114_002513939.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.089076,
-			"lat": -33.820934
-		},
-		{
-			"type": "waypoint",
 			"photo": "pxl_20240114_002843046.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After crossing the bridge follow the ramp down to Blaxland Rd to the left.",
 			"lon": 151.08855400000002,
 			"lat": -33.823359
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240114_002927425.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the ramp follow Blaxland Rd to the left to the boat ramp.",
 			"lon": 151.088705,
 			"lat": -33.823555000000006
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240114_003023011.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the boat ramp follow the footpath underneath the beidge.",
 			"lon": 151.088928,
 			"lat": -33.823207000000004
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240114_003255072.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "On the other side of the bridge follow the shared path along the waterfront.",
 			"lon": 151.08719000000002,
 			"lat": -33.823346
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240114_004041037.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the shared path underneath the Bennelong Bridge and past the cafe.",
 			"lon": 151.08337300000002,
 			"lat": -33.827753
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240114_004450381.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After the park follow the path left to Shoreline Dr.",
 			"lon": 151.08327599999998,
 			"lat": -33.830695000000006
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240114_004537551.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross Shoreline Dr and follow Mary St straight ahead towards the train line.",
 			"lon": 151.083874,
 			"lat": -33.830842000000004
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240114_004836723.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the corner of Mary St follow Walker St to the left to the train station.",
 			"lon": 151.08617,
 			"lat": -33.831151000115625
 		},
