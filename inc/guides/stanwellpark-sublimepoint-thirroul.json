@@ -49,16 +49,8 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20211022_220955797.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.978831,
-			"lat": -34.227196,
-			"optional": true
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20211022_223602108.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "The trail is overgrown. Watch for markers on the trees that indicate the way.",
 			"lon": 150.971113,
 			"lat": -34.228948,
 			"optional": true
@@ -66,23 +58,15 @@
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20211022_223918908.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the creek and find the scramble out of the gully on the other side.",
 			"lon": 150.971382,
 			"lat": -34.22927,
 			"optional": true
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20211022_224027455.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.971479,
-			"lat": -34.229308,
-			"optional": true
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20211022_224138650.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Colourful ribbons indicate the route.",
 			"lon": 150.971641,
 			"lat": -34.229269,
 			"optional": true
@@ -90,23 +74,15 @@
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20211022_225734788.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Small directional arrows are fastened to trees to indicate the way.",
 			"lon": 150.973589,
 			"lat": -34.232466,
 			"optional": true
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pxl_20211022_230116553.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.974099,
-			"lat": -34.232795,
-			"optional": true
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pxl_20211022_230138547.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Small directional arrows are fastened to trees to indicate the way.",
 			"lon": 150.974139,
 			"lat": -34.232805,
 			"optional": true
@@ -114,7 +90,7 @@
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20211022_230852666.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the park sign, follow the directions up to Maddens Plain.",
 			"lon": 150.97679,
 			"lat": -34.234209,
 			"optional": true
@@ -122,147 +98,98 @@
 		{
 			"type": "waypoint",
 			"photo": "002_pxl_20220513_213708740.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the station follow Railway Cres downhill.",
 			"lon": 150.9815888888889,
 			"lat": -34.22634444444444
 		},
 		{
 			"type": "waypoint",
-			"photo": "002_pxl_20220513_214126386.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.98254166666666,
-			"lat": -34.22810555555556
-		},
-		{
-			"type": "waypoint",
 			"photo": "002_pxl_20220513_214157071.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.9828222222222,
-			"lat": -34.22798888888889
-		},
-		{
-			"type": "waypoint",
-			"photo": "002_pxl_20220513_214238124.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the right side of Railway Cres use the pedestrian bridge.",
 			"lon": 150.9828222222222,
 			"lat": -34.22798888888889
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230901_223636579.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After crossing the pedestrian bridge follow the footpath to the right.",
 			"lon": 150.9838333333333,
 			"lat": -34.22827222222222
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pxl_20230901_223742674.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.9829388888889,
-			"lat": -34.228725000000004
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pxl_20230901_223949896.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the Grand Pacific Walk signs along Lawrence Hargrave Dr.",
 			"lon": 150.98204444444445,
 			"lat": -34.22999444444444
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230901_224326554.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the Grand Pacific Walk sign to the left down Murrawal Rd.",
 			"lon": 150.98255277777778,
 			"lat": -34.23184166666667
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230901_224829190.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection continue straight on Lower Coast Rd.",
 			"lon": 150.98556388888886,
 			"lat": -34.23379722222222
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230901_225216150.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the end of Lower Coast Rd continue straight on the shared bike path.",
 			"lon": 150.98647777777776,
 			"lat": -34.23509722222222
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230901_225634078.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the sign to the Wodi Wodi track to the right across the road.",
 			"lon": 150.98380555555553,
 			"lat": -34.23789444444444
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20220513_220226142.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the park sign to the Wodi Wodi Track up the railway embankment.",
 			"lon": 150.9840361111111,
 			"lat": -34.23768333333334
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20220513_220310966.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Use the underpass underneath the railway line.",
 			"lon": 150.9835861111111,
 			"lat": -34.23761666666667
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20220513_220409996.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After the underpass follow the national park trail markers along the Wodi Wodi Track.",
 			"lon": 150.9835861111111,
 			"lat": -34.23761666666667
 		},
 		{
 			"type": "waypoint",
-			"photo": "004_pxl_20220513_220653127.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.9836611111111,
-			"lat": -34.235625
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_pxl_20220513_221724126.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.9787777777778,
-			"lat": -34.23439444444445
-		},
-		{
-			"type": "waypoint",
 			"photo": "004_pxl_20220513_221952511.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the split in the trail follow the national park sign up to Maddens Plain.",
 			"lon": 150.9787777777778,
 			"lat": -34.23439444444445
 		},
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20211022_231543974.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Climb the steps up the escarpment.",
 			"lon": 150.97562,
 			"lat": -34.234648
 		},
 		{
 			"type": "waypoint",
-			"photo": "005_pxl_20211022_233115863.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.976856999913,
-			"lat": -34.236172
-		},
-		{
-			"type": "waypoint",
-			"photo": "005_pxl_20211022_233143627_pano.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.977065,
-			"lat": -34.236107000000004
-		},
-		{
-			"type": "waypoint",
 			"photo": "005_pxl_20211022_233311271.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the top of the steps follow the Forest Walking Track left along the lookouts.",
 			"lon": 150.977044,
 			"lat": -34.236446
 		},
@@ -280,357 +207,210 @@
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20211022_234716731.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Continue straight at the intersection with Coal Cliff Dam Fire Trail.",
 			"lon": 150.969594,
 			"lat": -34.240251
 		},
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20211023_000407538.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow Coke Works Fire Trail a short distance to the left.",
 			"lon": 150.96485199999998,
 			"lat": -34.24216
 		},
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20211023_000426354.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the trail markers right down the Forest Walking Track.",
 			"lon": 150.965046,
 			"lat": -34.242244
 		},
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20211023_001142825.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the firetrail and continue following the trail markers.",
 			"lon": 150.96216699990478,
 			"lat": -34.24457
 		},
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20211023_001455850.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the water feature and continue down the trail on the other side.",
 			"lon": 150.96047300010036,
 			"lat": -34.24545
 		},
 		{
 			"type": "waypoint",
-			"photo": "005_pxl_20211023_002024951.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.961424,
-			"lat": -34.24821899992236
-		},
-		{
-			"type": "waypoint",
 			"photo": "005_pxl_20211023_002148985.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Use the footbridge across the creek and continue along the trail on the other side.",
 			"lon": 150.961805,
 			"lat": -34.248818
 		},
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20211023_003154296.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the creek and continue along the trail on the other side.",
 			"lon": 150.964195,
 			"lat": -34.252323
 		},
 		{
 			"type": "waypoint",
-			"photo": "005_pxl_20211023_004110641.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.965666,
-			"lat": -34.255252
-		},
-		{
-			"type": "waypoint",
 			"photo": "005_pxl_20211023_005643648.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Several side trails on the left lead to unguarded lookouts.",
 			"lon": 150.9603869999031,
 			"lat": -34.26215899988557
 		},
 		{
 			"type": "waypoint",
-			"photo": "005_pxl_20211023_005709939.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.960385,
-			"lat": -34.262242
-		},
-		{
-			"type": "waypoint",
-			"photo": "005_pxl_20211023_010216705.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.958205,
-			"lat": -34.263235
-		},
-		{
-			"type": "waypoint",
-			"photo": "005_pxl_20211023_011037410.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.95407699999998,
-			"lat": -34.26447
-		},
-		{
-			"type": "waypoint",
 			"photo": "005_pxl_20211023_011059975.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection with the fire trail follow the national park sign to Sublime Point.",
 			"lon": 150.95386499999998,
 			"lat": -34.26454299986499
 		},
 		{
 			"type": "waypoint",
-			"photo": "005_pxl_20211023_011341658.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.952714,
-			"lat": -34.265615
-		},
-		{
-			"type": "waypoint",
 			"photo": "005_pxl_20211023_011717953.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the boardwalk across the wetlands.",
 			"lon": 150.950325,
 			"lat": -34.266198
 		},
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20211023_012130843.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection follow the trail marker to the left along the power line service trail.",
 			"lon": 150.94768,
 			"lat": -34.267307
 		},
 		{
 			"type": "waypoint",
-			"photo": "005_pxl_20211023_012521471.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.94631,
-			"lat": -34.26976
-		},
-		{
-			"type": "waypoint",
-			"photo": "005_pxl_20211023_012621634.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.94604900000002,
-			"lat": -34.270272
-		},
-		{
-			"type": "waypoint",
 			"photo": "005_pxl_20211023_012636362.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "The service trail ends at three powerline pylons on the edge of the cliff.",
 			"lon": 150.946005,
 			"lat": -34.270365
 		},
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20211023_012838297.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the trail marker to the right of the pylons.",
 			"lon": 150.945969,
 			"lat": -34.270522
 		},
 		{
 			"type": "waypoint",
-			"photo": "005_pxl_20211023_013147344.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.944933,
-			"lat": -34.271508
-		},
-		{
-			"type": "waypoint",
-			"photo": "005_pxl_20211023_014324345.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.939393,
-			"lat": -34.276966
-		},
-		{
-			"type": "waypoint",
-			"photo": "005_pxl_20211023_014857178.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.938718,
-			"lat": -34.279903
-		},
-		{
-			"type": "waypoint",
 			"photo": "005_pxl_20211023_014913125.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the second set of pylons follow the service trail to the right.",
 			"lon": 150.938623,
 			"lat": -34.279956
 		},
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20211023_015031806.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "A short distance up the service trail follow the trail markers to the left.",
 			"lon": 150.937868,
 			"lat": -34.279966999871846
 		},
 		{
 			"type": "waypoint",
-			"photo": "005_pxl_20211023_020506170.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.932292,
-			"lat": -34.287554
-		},
-		{
-			"type": "waypoint",
 			"photo": "005_pxl_20211023_021913089.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Take the left split of the track in the direction of Sublime Point.",
 			"lon": 150.92729,
 			"lat": -34.294072
 		},
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20211023_021946890.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "The trail ends at Sublime Point's picnic area.",
 			"lon": 150.927225,
 			"lat": -34.294395
 		},
 		{
 			"type": "toilet",
 			"photo": "005_pxl_20211023_022431748.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There is a toilet block at the picnic area.",
 			"lon": 150.925268,
 			"lat": -34.296034999999996
 		},
 		{
 			"type": "kiosk",
 			"photo": "005_pxl_20211023_022924684.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There are amenities at the lookout.",
 			"lon": 150.92517899999999,
 			"lat": -34.296616
 		},
 		{
 			"type": "waypoint",
-			"photo": "005_pxl_20211023_023010759_pano.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.925346,
-			"lat": -34.296830999900706
-		},
-		{
-			"type": "waypoint",
 			"photo": "005_pxl_20211023_023255031.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the path along the lookout.",
 			"lon": 150.925063,
 			"lat": -34.296825999999996
 		},
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20211023_023351547.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the park sign follow the Sublime Point Track down to Austinmer.",
 			"lon": 150.924457,
 			"lat": -34.297035
 		},
 		{
 			"type": "waypoint",
-			"photo": "005_pxl_20211023_023717525.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.92438199999998,
-			"lat": -34.297475999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "005_pxl_20211023_024023640.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.92358199999998,
-			"lat": -34.298263999999996
-		},
-		{
-			"type": "waypoint",
 			"photo": "005_pxl_20211023_024611401.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the many steps down the escarpment.",
 			"lon": 150.92404499999998,
 			"lat": -34.29879
 		},
 		{
 			"type": "waypoint",
-			"photo": "005_pxl_20211023_025549541.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.92469,
-			"lat": -34.300816
-		},
-		{
-			"type": "waypoint",
 			"photo": "005_pxl_20211023_025659133.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the park sign follow the Gibsons Walking Track right to Austinmer Camp.",
 			"lon": 150.924914,
 			"lat": -34.301449
 		},
 		{
 			"type": "waypoint",
-			"photo": "005_pxl_20211023_025929653.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.924097,
-			"lat": -34.301617
-		},
-		{
-			"type": "waypoint",
-			"photo": "005_pxl_20211023_031044949.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.9177,
-			"lat": -34.304632
-		},
-		{
-			"type": "waypoint",
 			"photo": "005_pxl_20211023_031300648.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection follow the fire trail to the left.",
 			"lon": 150.916466,
 			"lat": -34.3052
 		},
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20211023_031620666.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Pass the gate and follow the trail to the left.",
 			"lon": 150.91785199999998,
 			"lat": -34.305882
 		},
 		{
 			"type": "waypoint",
-			"photo": "005_pxl_20211023_031652941.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.917913,
-			"lat": -34.306005
-		},
-		{
-			"type": "waypoint",
-			"photo": "005_pxl_20211023_031658249.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.917963,
-			"lat": -34.306072
-		},
-		{
-			"type": "waypoint",
-			"photo": "005_pxl_20211023_031812908.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.917837,
-			"lat": -34.306681
-		},
-		{
-			"type": "waypoint",
 			"photo": "005_pxl_20211023_032316162.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the end of the trail pass the gate and continue straight on Phillip St.",
 			"lon": 150.918446,
 			"lat": -34.309396
 		},
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20211023_033849735.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection follow George St to the left.",
 			"lon": 150.917033,
 			"lat": -34.317275
 		},
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20211023_033940871.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection follow Lawrence Hargrave Dr to the left.",
 			"lon": 150.91741399999998,
 			"lat": -34.317438
 		},
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20211023_034013480.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross at the traffic lights and follow the sign to Railway Pde.",
 			"lon": 150.91791999999998,
 			"lat": -34.317316000000005
 		},
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20211023_034242618.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow Railway Pde to the station.",
 			"lon": 150.918312,
 			"lat": -34.317629000000004
 		},
