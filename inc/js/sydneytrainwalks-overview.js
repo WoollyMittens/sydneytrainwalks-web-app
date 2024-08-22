@@ -53,7 +53,7 @@ export class Overview {
 
   async processMarkers() {
     // add "onMarkerClicked" event handlers to markers
-    const guide = await this.loadGuide('_index');
+    const guide = await this.loadGuide('index');
     // for every marker
     const markers = [];
     for (let marker of guide.markers) {

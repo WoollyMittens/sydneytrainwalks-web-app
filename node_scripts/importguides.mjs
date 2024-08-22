@@ -49,7 +49,7 @@ async function loadCache(path) {
 // compile a summary of the guide in the output file
 function generateGuideIndex(guides) {
 	const overview = {
-		'key': '_index',
+		'key': 'index',
 		'bounds': {},
 		'markers': []
 	};
@@ -103,7 +103,7 @@ function generateGuideIndex(guides) {
 // compile a summary of the trophies in the output file
 function generateTrophyIndex(guides) {
 	const overview = {
-		'key': '_index',
+		'key': 'index',
 		'bounds': {},
 		'markers': []
 	};
@@ -228,12 +228,12 @@ async function parseGuides() {
 	}
 	// construct an index of all trophies in the guides
 	const trophiesIndex = generateTrophyIndex(guideCache);
-	const savedTrophies = await fsp.writeFile(guides + '_trophies.json', JSON.stringify(trophiesIndex, null, '\t'));
-	console.log('saved index:', guides + '_trophies.json', savedTrophies);
+	const savedTrophies = await fsp.writeFile(guides + 'trophies.json', JSON.stringify(trophiesIndex, null, '\t'));
+	console.log('saved index:', guides + 'trophies.json', savedTrophies);
 	// construct an index of the updated guides
 	const guidesIndex = generateGuideIndex(guideCache);
-	const savedGuides = await fsp.writeFile(guides + '_index.json', JSON.stringify(guidesIndex, null, '\t'));
-	console.log('saved index:', guides + '_index.json', savedGuides);
+	const savedGuides = await fsp.writeFile(guides + 'index.json', JSON.stringify(guidesIndex, null, '\t'));
+	console.log('saved index:', guides + 'index.json', savedGuides);
 }
 
 // start processing the queue

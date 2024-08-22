@@ -5,7 +5,7 @@ export class Index {
 		this.searchDelay = null;
 		this.sortBy = 'shortest';
 		this.updateView = updateView;
-		this.guidesLookup = this.generateLookup(guideCache['_index']);
+		this.guidesLookup = this.generateLookup(guideCache['index']);
 		this.searchForm = document.getElementById('sorting');
 		this.searchInput = document.querySelector('.searching-label input');
 		this.sortSelect = document.querySelector('.sorting-label select');

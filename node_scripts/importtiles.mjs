@@ -101,7 +101,7 @@ function generateQueue(guideCache) {
     // get the guide from the cache
     let guideData = guideCache[key];
     // use the appropriate zoom level
-    let zoom = (guideData.key === '_index') ? overviewZoom : mapZoom;
+    let zoom = (guideData.key === 'index') ? overviewZoom : mapZoom;
     // convert the bounds to tiles
     let minY = lat2tile(guideData.bounds.north, zoom) - 1;
     let maxX = long2tile(guideData.bounds.east, zoom) + 1;

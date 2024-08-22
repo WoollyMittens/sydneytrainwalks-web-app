@@ -127,9 +127,9 @@ export class SydneyTrainWalks {
 
 	async init() {
 		// load the index first
-		this.guideCache['_index'] = await this.loadGuide('_index');
+		this.guideCache['index'] = await this.loadGuide('index');
 		// store all the available id's
-		this.guideIds = this.guideCache['_index'].markers.map(marker => marker.key);
+		this.guideIds = this.guideCache['index'].markers.map(marker => marker.key);
 		// notice if this is iOS
 		var root = document.getElementsByTagName('html')[0];
 		root.className = (navigator.userAgent.match(/ipad;|iphone|ipod touch;/i))

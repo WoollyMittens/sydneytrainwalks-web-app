@@ -20,7 +20,7 @@ export class Trophies {
 		// clear the container
 		this.trophiesElement.innerHTML = '';
 		// import the trophies
-		let trophies = await this.loadGuide('_trophies');
+		let trophies = await this.loadGuide('trophies');
 		// sort the trophies
 		trophies.markers.sort((a, b) => {
 			return (a.title > b.title) ? 1 : -1;
