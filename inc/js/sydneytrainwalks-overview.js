@@ -127,7 +127,7 @@ export class Overview {
 		// format the guide data
 		const title = `Overview map of bushwalks accessible using public transport - Sydney Hiking Trips`;
 		const description = `This map shows the bushwalks that are accessible using public transport which are documented in this guide.`;
-		const url = `/?screen=overview`;
+		const url = `./?screen=overview`;
 		// update the route without refreshing
 		window.history.pushState({'key': 'overview'}, title, url);
 		// update the meta elements

@@ -9,7 +9,7 @@ export class About {
 		// format the guide data
 		const title = `About this website - Sydney Hiking Trips`;
 		const description = `Information about this website and the associated mobile apps.`;
-		const url = `/?screen=about`;
+		const url = `./?screen=about`;
 		// update the route without refreshing
 		window.history.pushState({'key': 'about'}, title, url);
 		// update the meta elements

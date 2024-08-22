@@ -42,7 +42,7 @@ export class Trophies {
 		// format the guide data
 		const title = `Earn these trophies on bushwalks around greater sydney using public transport - Sydney Hiking Trips`;
 		const description = `These trophies can be earned by reaching notable landmarks on the bushwalks in this guide.`;
-		const url = `/?screen=trophies`;
+		const url = `./?screen=trophies`;
 		// update the route without refreshing
 		window.history.pushState({'key': 'trophies'}, title, url);
 		// update the meta elements

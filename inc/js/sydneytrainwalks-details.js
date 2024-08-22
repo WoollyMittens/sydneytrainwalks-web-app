@@ -45,7 +45,7 @@ export class Details {
 		const start = guide.markers[0].location;
 		const end = guide.markers[guide.markers.length - 1].location;
 		const title = `A bushwalk from ${start} to ${end} via ${guide.location} - Sydney Hiking Trips`;
-		const url = `/?key=${guide.key}`;
+		const url = `./?key=${guide.key}`;
 		// update the route without refreshing
 		window.history.pushState({'key': guide.key}, title, url);
 		// update the meta elements
