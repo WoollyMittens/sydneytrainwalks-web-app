@@ -6,6 +6,8 @@ Thank you for supporting Sydney Train Walks. You make it possible for me to expa
 
 Please add your [suggestions and bug reports on GitHub](https://github.com/WoollyMittens/sydneytrainwalks-web-app/issues), or send them to [maurice@woollymittens.nl](mailto:maurice@woollymittens.nl).
 
+Preview: https://woollymittens.github.io/sydneytrainwalks-web-app/
+
 ## Instructions
 
 This project uses node.js from http://nodejs.org/
