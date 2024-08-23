@@ -35,648 +35,343 @@
 			"photo": "001_pxl_20240119_202904664.jpg",
 			"description": "Get the train to Teralba using <a href=\"https://transportnsw.info/trip#/?to=Teralba\">transportnsw.info</a>.",
 			"lon": 151.6034559254,
-			"lat": -32.9623152595,
-			"element": {},
-			"referrer": {}
+			"lat": -32.9623152595
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_202923342.jpg",
 			"lon": 151.604014,
 			"lat": -32.962621000000006,
-			"description": "Exit the station on the side of the pub.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240119_202926685.jpg",
-			"lon": 151.604032,
-			"lat": -32.96263900008896,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Exit the station on the side of the pub."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_203222481.jpg",
 			"lon": 151.605024,
 			"lat": -32.96356300010129,
-			"description": "From the station follow Anzac Pde straight on.",
-			"element": {},
-			"referrer": {}
+			"description": "From the station follow Anzac Pde straight on."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_203643295.jpg",
 			"lon": 151.607314,
 			"lat": -32.965912,
-			"description": "Just before Five Islands Rd follow the Great North Walk marker to the left down Lake Cres.",
-			"element": {},
-			"referrer": {}
+			"description": "Just before Five Islands Rd follow the Great North Walk marker to the left down Lake Cres."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_203831827.jpg",
 			"lon": 151.607928,
 			"lat": -32.96499899989999,
-			"description": "From the end of Lake Cres continue along the shared path.",
-			"element": {},
-			"referrer": {}
+			"description": "From the end of Lake Cres continue along the shared path."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_204158563.jpg",
 			"lon": 151.609149,
 			"lat": -32.962835000000005,
-			"description": "At the intersection follow the shared path to the right to the overpass.",
-			"element": {},
-			"referrer": {}
+			"description": "At the intersection follow the shared path to the right to the overpass."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_204218107.jpg",
 			"lon": 151.60929199999998,
 			"lat": -32.962854,
-			"description": "From the intersection follow the bike path under the overpass.",
-			"element": {},
-			"referrer": {}
+			"description": "From the intersection follow the bike path under the overpass."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_204329329.jpg",
 			"lon": 151.60948099991245,
 			"lat": -32.96351,
-			"description": "Follow the shared path along Five Islands Rd to the right.",
-			"element": {},
-			"referrer": {}
+			"description": "Follow the shared path along Five Islands Rd to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_204416958.jpg",
 			"lon": 151.60961899999998,
 			"lat": -32.963103000000004,
-			"description": "Follow the shared path across the Cockle Creek.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240119_205152689.jpg",
-			"lon": 151.614584,
-			"lat": -32.95938,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Follow the shared path across the Cockle Creek."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_205328736.jpg",
 			"lon": 151.615623,
 			"lat": -32.958681000000006,
-			"description": "On the other side of Cocke Creek follow the shared path down the off ramp to the right.",
-			"element": {},
-			"referrer": {}
+			"description": "On the other side of Cocke Creek follow the shared path down the off ramp to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_205501384.jpg",
 			"lon": 151.615238,
 			"lat": -32.959651,
-			"description": "From the off ramp follow Creek Reserve Rd to the left past the sportsfields.",
-			"element": {},
-			"referrer": {}
+			"description": "From the off ramp follow Creek Reserve Rd to the left past the sportsfields."
 		},
 		{
 			"type": "toilet",
 			"photo": "001_pxl_20240119_205642007.jpg",
 			"lon": 151.61543900007666,
 			"lat": -32.960662000000006,
-			"description": "Follow the Watagan Cycle Path into Speers Point Park. There is a toilet block at the carpark.",
-			"element": {},
-			"referrer": {}
+			"description": "Follow the Watagan Cycle Track into Speers Point Park. There is a toilet block at the carpark."
 		},
 		{
 			"type": "kiosk",
 			"photo": "001_pxl_20240119_210103379.jpg",
 			"lon": 151.61564099986597,
 			"lat": -32.961611000000005,
-			"description": "There is cafe at the pavilion.",
-			"element": {},
-			"referrer": {}
+			"description": "There is cafe at the pavilion."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_210326351.jpg",
 			"lon": 151.617039,
 			"lat": -32.962552,
-			"description": "From the pavilion follow the Watagan Cycle Path to the left along the waterfront.",
-			"element": {},
-			"referrer": {}
+			"description": "From the pavilion follow the Watagan Cycle Track to the left along the waterfront."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_210616195.jpg",
 			"lon": 151.619289,
 			"lat": -32.963517,
-			"description": "At the other side of Speers Point Park, follow the Watagan Cycle Path around the carpark.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240119_211001863.jpg",
-			"lon": 151.62212100000002,
-			"lat": -32.96493100014227,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "At the other side of Speers Point Park, follow the Watagan Cycle Track around the carpark."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_211034326.jpg",
 			"lon": 151.622548,
 			"lat": -32.965120000000006,
-			"description": "From the carpark follow the Watagan Cycle Path along the Esplanade.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240119_212602223.jpg",
-			"lon": 151.630676,
-			"lat": -32.973594,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240119_213009590.jpg",
-			"lon": 151.633836,
-			"lat": -32.972607,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240119_213931207.jpg",
-			"lon": 151.64127499999998,
-			"lat": -32.972241000000004,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the carpark follow the Watagan Cycle Track along the Esplanade."
 		},
 		{
 			"type": "toilet",
 			"photo": "001_pxl_20240119_215409002.jpg",
-			"description": "Follow the Watagan Cycle Path to the Warner Bay Foreshore Reserve. There is a toilet block at the picnic area.",
+			"description": "Follow the Watagan Cycle Track to the Warner Bay Foreshore Reserve. There is a toilet block at the picnic area.",
 			"lon": 151.6435361111111,
-			"lat": -32.97378055555556,
-			"element": {},
-			"referrer": {}
+			"lat": -32.97378055555556
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_215654008.jpg",
 			"lon": 151.644454,
 			"lat": -32.977022000000005,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240119_220258089.jpg",
-			"lon": 151.644982,
-			"lat": -32.98129099988651,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the Warner Bay Foreshore continue following the  Watagan Cycle Track along the lakefront."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_220639580.jpg",
 			"lon": 151.64336,
 			"lat": -32.983696,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240119_221004242.jpg",
-			"lon": 151.64155599999998,
-			"lat": -32.985647,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "At the split follow the path left across the bridge."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_221044104.jpg",
 			"lon": 151.641129,
 			"lat": -32.985834000000004,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Follow the Watagan Cycle Track along the Red Bluff Boardwalk."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_221654187.jpg",
 			"lon": 151.637102,
 			"lat": -32.988239,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the end of the boardwalk cross at the nearby traffic lights and continue right along Macquarie Dr."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_222201936.jpg",
 			"lon": 151.635721,
 			"lat": -32.990428,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "At the intersection follow Harkins St a short distance to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_222238493.jpg",
 			"lon": 151.635812,
 			"lat": -32.99066,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "At the intersection follow Croft Rd to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_222655183.jpg",
 			"lon": 151.635671,
 			"lat": -32.992897,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240119_222846556.jpg",
-			"lon": 151.63486699999999,
-			"lat": -32.99397700008274,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240119_223038497.jpg",
-			"lon": 151.634142,
-			"lat": -32.99469100009912,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240119_223232406.jpg",
-			"lon": 151.633576,
-			"lat": -32.993788,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "At the intersection follow Pannamena Cr to the end."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_223405701.jpg",
 			"lon": 151.632698,
 			"lat": -32.994024,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "At the end of Pannamena Cr cross Bareki Rd to the bus stop."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_223517019.jpg",
 			"lon": 151.633125,
 			"lat": -32.99462299991061,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "The safest place to cross is from the nearby driveway."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_223612835.jpg",
 			"lon": 151.63276100000002,
 			"lat": -32.9943,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240119_223639537.jpg",
-			"lon": 151.63253600000002,
-			"lat": -32.994187000000004,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Follow Toonibal Ave to the left behind the bus stop."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_223814446.jpg",
 			"lon": 151.63249100000002,
 			"lat": -32.995378999906706,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240119_224121765.jpg",
-			"lon": 151.634534,
-			"lat": -32.996545,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the end of Toonibal Ave, continue on the shared path."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_224540989.jpg",
 			"lon": 151.63771599999998,
 			"lat": -32.997724,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Follow the shared path into Croudace Park past the boat ramp. "
 		},
 		{
 			"type": "toilet",
 			"photo": "001_pxl_20240119_224709248.jpg",
 			"lon": 151.63886399999998,
 			"lat": -32.997989000000004,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "There is a toilet block near the board ramp carpark."
 		},
 		{
 			"type": "toilet",
 			"photo": "001_pxl_20240119_225028282.jpg",
 			"lon": 151.64090099999999,
 			"lat": -32.99977699987035,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240119_225147328.jpg",
-			"lon": 151.641597,
-			"lat": -33.000271,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "There is another toilet block near the playground."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_225816001.jpg",
 			"lon": 151.643194,
 			"lat": -33.004371,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Follow any path through the park to the other side."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_230132072.jpg",
 			"lon": 151.643027,
 			"lat": -33.006784,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the end of the park follow Macquarie Dr to the right across the bridge."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_230311689.jpg",
 			"lon": 151.642856,
 			"lat": -33.00799,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "At the servo follow Tallawalla Rd to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_230445138.jpg",
 			"lon": 151.64161199999998,
 			"lat": -33.008115,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240119_230918903.jpg",
-			"lon": 151.638152,
-			"lat": -33.006641,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "At the intersection follow Dilkera Ave to the right."
 		},
 		{
 			"type": "kiosk",
 			"photo": "001_pxl_20240119_231314695.jpg",
 			"lon": 151.63555,
 			"lat": -33.008343,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Follow Dilkera Ave to the amenities at Allambee Park."
 		},
 		{
 			"type": "toilet",
 			"photo": "001_pxl_20240119_232125712.jpg",
 			"lon": 151.634661,
 			"lat": -33.009364,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "There is a toilet block in Allembee Park."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_232627978.jpg",
 			"lon": 151.63086900012092,
 			"lat": -33.0108,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the shops follow Dilkera Ave to Bennett Park."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_233331763.jpg",
 			"lon": 151.628683,
 			"lat": -33.013524,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "At the end of Dilkera Ave continue on the bike path to the right for a short distance."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_233421304.jpg",
 			"lon": 151.628747,
 			"lat": -33.013871,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240119_233650812.jpg",
-			"lon": 151.62849400000002,
-			"lat": -33.015,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240119_234523432.jpg",
-			"lon": 151.630371,
-			"lat": -33.018817999999996,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240119_234657847.jpg",
-			"lon": 151.63036200000002,
-			"lat": -33.01968,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the bike path follow the bush trail to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240119_235100282.jpg",
 			"lon": 151.631092,
 			"lat": -33.02194,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240119_235234267_pano.jpg",
-			"lon": 151.631918,
-			"lat": -33.0224,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240119_235504121.jpg",
-			"lon": 151.63232200000002,
-			"lat": -33.023704,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Follow the trails and boardwalks along the shorefront."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240120_000002359.jpg",
 			"lon": 151.63319899991527,
 			"lat": -33.026122,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240120_000203018.jpg",
-			"lon": 151.633848,
-			"lat": -33.026779,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the intersection follow the bike path to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240120_000348118.jpg",
 			"lon": 151.63391199999998,
 			"lat": -33.02763900008896,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Continue following the bike path along the picnic area."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240120_000645593.jpg",
 			"lon": 151.635281,
 			"lat": -33.028723,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Continue following the bike path along the waterfront."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240120_001603476.jpg",
 			"lon": 151.64277899993016,
 			"lat": -33.030096,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240120_002516401.jpg",
-			"lon": 151.650174,
-			"lat": -33.029385,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240120_002604397.jpg",
-			"lon": 151.65073800000002,
-			"lat": -33.029422,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the end of the bike path continue following Ross St."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240120_002702564.jpg",
 			"lon": 151.65144,
 			"lat": -33.029646,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "At the intersection follow Ross St to the right."
 		},
 		{
 			"type": "toilet",
 			"photo": "001_pxl_20240120_003504941.jpg",
 			"lon": 151.656225,
 			"lat": -33.033752,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Follow the Ross St to the Belmont Wharf. There is a toilet block at the picnic area."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240120_004331177.jpg",
 			"lon": 151.657963,
 			"lat": -33.035903,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the Belmont Wharf follow Macquarie St to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240120_004625469.jpg",
 			"lon": 151.660278,
 			"lat": -33.036111,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "At the intersection follow the Pacific Hwy to the right along the shops."
 		},
 		{
 			"location": "Belmont",
@@ -684,45 +379,28 @@
 			"photo": "001_pxl_20240120_005703745.jpg",
 			"description": "Get the bus to Belmont using <a href=\"https://transportnsw.info/trip#/?to=Belmont\">transportnsw.info</a>.",
 			"lon": 151.659472,
-			"lat": -33.038138,
-			"element": {},
-			"referrer": {}
+			"lat": -33.038138
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240120_005956101.jpg",
 			"lon": 151.659425,
 			"lat": -33.038416,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Cross the Pacific Hwy at the traffic lights and follow Gen St to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240120_010158763.jpg",
 			"lon": 151.660846,
 			"lat": -33.038824999999996,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the corner of Gen St enter the former Belmont Railway Station on the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240120_010324731.jpg",
 			"lon": 151.66108300000002,
 			"lat": -33.038941,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240120_010359636.jpg",
-			"lon": 151.661373,
-			"lat": -33.039007999999995,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the former station follow the Fernleigh Track."
 		},
 		{
 			"type": "hotspot",
@@ -737,99 +415,49 @@
 			"maxLon": 151.66171612955242,
 			"minLon": 151.6609161295524,
 			"maxLat": -33.03874222934115,
-			"minLat": -33.03927556267449,
-			"element": {},
-			"referrer": {}
+			"minLat": -33.03927556267449
 		},
 		{
 			"type": "toilet",
 			"photo": "001_pxl_20240120_010525273.jpg",
 			"lon": 151.662304,
 			"lat": -33.03913,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240120_010545370.jpg",
-			"lon": 151.66240000000002,
-			"lat": -33.039148999999995,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240120_010807385.jpg",
-			"lon": 151.664312,
-			"lat": -33.039122,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "There is a toilet block at the end of the former Belmont Railway Station."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240120_011008650.jpg",
 			"lon": 151.665831,
 			"lat": -33.038906999999995,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240120_011616727.jpg",
-			"lon": 151.670806,
-			"lat": -33.037585,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Continue following the Fernleigh Track through the Belmont Wetlands."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240120_012144982.jpg",
 			"lon": 151.673958,
 			"lat": -33.034915,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Follow the sign to the Wildflower Walk to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240120_012228206.jpg",
 			"lon": 151.673789,
 			"lat": -33.034652,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the trail marker for the Wildflower Walk to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240120_013434844.jpg",
 			"lon": 151.679085,
 			"lat": -33.028801,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240120_013711566.jpg",
-			"lon": 151.680098,
-			"lat": -33.027623999999996,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Follow the trail markers along the Wildflower Walk."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240120_014336620.jpg",
 			"lon": 151.683258,
 			"lat": -33.024341,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "At the end of the Wildflower Walk follow the Fernleigh Track to the left."
 		},
 		{
 			"type": "hotspot",
@@ -844,63 +472,28 @@
 			"maxLon": 151.68644861380352,
 			"minLon": 151.6856486138035,
 			"maxLat": -33.020628618524974,
-			"minLat": -33.02116195185831,
-			"element": {},
-			"referrer": {}
+			"minLat": -33.02116195185831
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240120_015042859.jpg",
 			"lon": 151.686861,
 			"lat": -33.020229,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "At the former Jewels Station cross Kalaroo Rd and continue on the Fernleigh Track. "
 		},
 		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240120_015956222.jpg",
-			"lon": 151.690887,
-			"lat": -33.017414,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240120_020435060.jpg",
-			"lon": 151.69458900008553,
-			"lat": -33.016726999999996,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "001_pxl_20240120_022145625.jpg",
 			"lon": 151.70151399999997,
 			"lat": -33.012592,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pxl_20240120_022349128.jpg",
-			"lon": 151.702453,
-			"lat": -33.011418,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "A sign on the right side of the Fernleigh Track advertising 'butt cream' indicates a trailhead at a cafe."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240120_023034630.jpg",
 			"lon": 151.705922,
 			"lat": -33.008633,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Follow the sign to Redhead Beach from the right side of the Fernleigh Track."
 		},
 		{
 			"type": "hotspot",
@@ -916,49 +509,31 @@
 			"maxLon": 151.7099684711388,
 			"minLon": 151.70916847113878,
 			"maxLat": -33.0055527277734,
-			"minLat": -33.006086061106735,
-			"element": {},
-			"referrer": {}
+			"minLat": -33.006086061106735
 		},
 		{
 			"type": "waypoint",
 			"photo": "002_pxl_20230429_030207248.jpg",
 			"lon": 151.710712,
 			"lat": -33.004961,
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": true,
-			"element": {},
-			"referrer": {}
+			"description": "<i>-5km</i> Alternatively from the former Redhead Railway Station keep following the Fernleigh Track.",
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "002_pxl_20230429_031657566.jpg",
 			"lon": 151.70977700006762,
 			"lat": -32.996121,
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": true,
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "002_pxl_20230429_033101059.jpg",
-			"lon": 151.70833,
-			"lat": -32.987629,
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": true,
-			"element": {},
-			"referrer": {}
+			"description": "This section of the Fernleigh Track bypasses the coastal walk.",
+			"optional": true
 		},
 		{
 			"type": "toilet",
 			"photo": "002_pxl_20230429_035442825.jpg",
 			"lon": 151.711004,
 			"lat": -32.978208,
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": true,
-			"element": {},
-			"referrer": {}
+			"description": "There is a toilet block at the former Whitebridge Railway Station.",
+			"optional": true
 		},
 		{
 			"type": "hotspot",
@@ -974,29 +549,23 @@
 			"maxLon": 151.71137424197693,
 			"minLon": 151.7105742419769,
 			"maxLat": -32.977621761251314,
-			"minLat": -32.97815509458465,
-			"element": {},
-			"referrer": {}
+			"minLat": -32.97815509458465
 		},
 		{
 			"type": "kiosk",
 			"photo": "003_p2180023.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There are amenities nearby the former Whitebridge Railway Station.",
 			"optional": true,
 			"lon": 151.708235,
-			"lat": -32.978238000000005,
-			"element": {},
-			"referrer": {}
+			"lat": -32.978238000000005
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20230429_042101087.jpg",
 			"lon": 151.717954,
 			"lat": -32.965794,
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": true,
-			"element": {},
-			"referrer": {}
+			"description": "From the former Whitebridge Railway Station follow the Fernleigh Track to the former Kahiba Railway station.",
+			"optional": true
 		},
 		{
 			"type": "hotspot",
@@ -1012,197 +581,111 @@
 			"maxLon": 151.71867987059483,
 			"minLon": 151.7178798705948,
 			"maxLat": -32.96205695712774,
-			"minLat": -32.96259029046108,
-			"element": {},
-			"referrer": {}
+			"minLat": -32.96259029046108
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240120_023336773.jpg",
 			"lon": 151.70785899999998,
 			"lat": -33.009307,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "At the intersection follow Elsdon St to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240120_024037900.jpg",
 			"lon": 151.70573399999998,
 			"lat": -33.01284,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_pxl_20240120_024128996.jpg",
-			"lon": 151.705871,
-			"lat": -33.013073,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "At the bus stop cross Kalaroo Rd and cross O'Connor Park."
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240120_024335314.jpg",
 			"lon": 151.70699399999998,
 			"lat": -33.014147,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "At the other side of O'Connor Park follow Elsdon St to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240120_024447067.jpg",
 			"lon": 151.70752199999998,
 			"lat": -33.014628,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_pxl_20240120_024500838.jpg",
-			"lon": 151.707586,
-			"lat": -33.014648,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "After the corner in Elsdon St enter the trailhead of Owens Walkway on the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240120_024514421.jpg",
 			"lon": 151.70762599999998,
 			"lat": -33.014688,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_pxl_20240120_024713404.jpg",
-			"lon": 151.70903299999998,
-			"lat": -33.015336,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_pxl_20240120_024957829.jpg",
-			"lon": 151.71099099999998,
-			"lat": -33.016003,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_pxl_20240120_025237570.jpg",
-			"lon": 151.71229599999998,
-			"lat": -33.015835,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the trailhead follow Owens Walkway to the left to the beach."
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240120_025406634.jpg",
 			"lon": 151.713347,
 			"lat": -33.015987,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Follow the boardwalk through the dunes."
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240120_025833270.jpg",
 			"lon": 151.71635799999999,
 			"lat": -33.014438,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_pxl_20240120_025914255.jpg",
-			"lon": 151.71632,
-			"lat": -33.01413,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Follow the boardwalk to the left to the picnic area."
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240120_030017233.jpg",
 			"lon": 151.71610299999998,
 			"lat": -33.013467,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the end of Owens Walkway cross Webb Park."
 		},
 		{
 			"type": "toilet",
 			"lon": 151.715465,
 			"lat": -33.012976,
-			"description": "There's a toilet block at the playground.",
-			"element": {},
-			"referrer": {}
+			"description": "There's a toilet block at the playground."
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240120_030640632.jpg",
 			"lon": 151.716424,
 			"lat": -33.012664,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the carpark of Webb Park follow Beach Rd to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240120_030732599.jpg",
 			"lon": 151.716918,
 			"lat": -33.012504,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Cross Freshwater Creek along the footpath."
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240120_030837234.jpg",
 			"lon": 151.717626,
 			"lat": -33.01265,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "After crossing Freshwater Creek follow Alison St to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240120_031444264.jpg",
 			"lon": 151.719586,
 			"lat": -33.010066,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the corner of Alison St follow Collier St to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240120_032305610.jpg",
 			"lon": 151.724803,
 			"lat": -33.01072899989327,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Follow the trailhead into Awabakal Nature Reserve on the left side of Collier St."
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240120_032337511.jpg",
 			"lon": 151.725067,
 			"lat": -33.010686,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Follow the trail markers from the trailhead into Awabakal Nature Reserve."
 		},
 		{
 			"type": "hotspot",
@@ -1217,468 +700,217 @@
 			"maxLon": 151.725587539504,
 			"minLon": 151.72478753950398,
 			"maxLat": -33.01038742850517,
-			"minLat": -33.010920761838506,
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_pxl_20240120_032804051.jpg",
-			"lon": 151.726723,
-			"lat": -33.008842,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"minLat": -33.010920761838506
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240120_033203804.jpg",
 			"lon": 151.727382,
 			"lat": -33.006583,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_pxl_20240120_034453167.jpg",
-			"lon": 151.728225,
-			"lat": -33.000168,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Follow the Redhead Trail through the coastal heath of Awabakal Nature Reserve."
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_pxl_20240120_035037196.jpg",
 			"lon": 151.728228,
 			"lat": -32.997717,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "005_pxl_20231111_030908205.jpg",
-			"lon": 151.72946944444445,
-			"lat": -32.99832777777778,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "005_pxl_20231111_031043898.jpg",
-			"lon": 151.7297388888889,
-			"lat": -32.99803055555556,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "006_pxl_20240120_035201333.jpg",
-			"lon": 151.727884,
-			"lat": -32.996918,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the intersection follow the Ocean St Trail to the left. There is a lookout a short distance to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_035300026.jpg",
 			"lon": 151.72770099989796,
 			"lat": -32.996467,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "006_pxl_20240120_035352650.jpg",
-			"lon": 151.727932,
-			"lat": -32.996017,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the picnic area follow Ocean St Trail straight ahead."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_035609813.jpg",
 			"lon": 151.726816,
 			"lat": -32.994915,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Exit the park through the gate and continue following Ocean St."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_035849133.jpg",
 			"lon": 151.725736,
 			"lat": -32.993686000000004,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the cul-de-sac follow Ocean St."
 		},
 		{
 			"type": "toilet",
 			"photo": "006_pxl_20240120_041127558.jpg",
 			"lon": 151.725252,
 			"lat": -32.992094,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "There is a toilet block in Reay Park at the bus stop."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_041557259.jpg",
 			"lon": 151.723679,
 			"lat": -32.989798,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "006_pxl_20240120_041727498.jpg",
-			"lon": 151.724381,
-			"lat": -32.989192,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "At the intersection follow Bombala St to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_041852959.jpg",
 			"lon": 151.7252190000708,
 			"lat": -32.988569,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "At the split continue follow Bombala St to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_042326987.jpg",
 			"lon": 151.725771,
 			"lat": -32.985971,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "006_pxl_20240120_042412936.jpg",
-			"lon": 151.72577,
-			"lat": -32.98584,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the carpark at the end of Bombala St continue following the Bombala St Track."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_042516955.jpg",
 			"lon": 151.726009,
 			"lat": -32.985292,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "At the split in the track follow the sign to Dudley Beach to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_042929130.jpg",
 			"lon": 151.727168,
 			"lat": -32.983371,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the lookout follow the steps down to Dudley Beach."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_043221729.jpg",
 			"lon": 151.727038,
 			"lat": -32.982539,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "006_pxl_20240120_043348420.jpg",
-			"lon": 151.727212,
-			"lat": -32.982038,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "006_pxl_20240120_045319560.jpg",
-			"lon": 151.731708,
-			"lat": -32.972263000000005,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the end of the track continue follow Dudley Beach."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_045506082.jpg",
 			"lon": 151.731494,
 			"lat": -32.971548,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "006_pxl_20240120_045553998.jpg",
-			"lon": 151.731508,
-			"lat": -32.971315000000004,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "After the lagoon find the end of the firetrail in the dunes."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_045725783.jpg",
 			"lon": 151.730731,
 			"lat": -32.971045000000004,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "006_pxl_20240120_045933109.jpg",
-			"lon": 151.729898,
-			"lat": -32.970329,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Follow the firetrail through the dunes."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_050155123.jpg",
 			"lon": 151.7290209999081,
 			"lat": -32.969524,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "006_pxl_20240120_050921264.jpg",
-			"lon": 151.73041300011732,
-			"lat": -32.968129000000005,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Follow the mountain bike trail to the right up the headland."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_051708086.jpg",
 			"lon": 151.731333,
 			"lat": -32.967461,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "At the top of the mountain bike run follow The Goat Trail to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_052452284.jpg",
 			"lon": 151.73465599999997,
 			"lat": -32.966147,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "At the lookout follow The Goat Trail to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_052621584.jpg",
 			"lon": 151.73473099999998,
 			"lat": -32.96573299988091,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "006_pxl_20240120_052714987_pano.jpg",
-			"lon": 151.734458,
-			"lat": -32.96558,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "006_pxl_20240120_052908644.jpg",
-			"lon": 151.734166,
-			"lat": -32.965502,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Follow The Goat Trail past the lookouts across Glenrock Lagoon."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_053047900.jpg",
 			"lon": 151.73376299999998,
 			"lat": -32.965238,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "After the lookouts follow the steps to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_053624506.jpg",
 			"lon": 151.732008,
 			"lat": -32.963726999921036,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "At the gated trailhead follow Scout Camp Rd to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_053807983.jpg",
 			"lon": 151.73147,
 			"lat": -32.962991000084116,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "006_pxl_20240120_054152863.jpg",
-			"lon": 151.72966,
-			"lat": -32.962324,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the left side of Scout Camp Rd follow the sign to the Burwood Track."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_055140250.jpg",
 			"lon": 151.72479899992126,
 			"lat": -32.960459,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Follow the track past the creek crossing."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_055433012.jpg",
 			"lon": 151.72342700000002,
 			"lat": -32.960024000000004,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the intersection follow the Yuelarbah Track to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_055603947.jpg",
 			"lon": 151.722851,
 			"lat": -32.959274,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "006_pxl_20240120_060303909.jpg",
-			"lon": 151.719913,
-			"lat": -32.961336,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Follow the Yuelarbah Track past the bridge."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_060433702.jpg",
 			"lon": 151.719869,
 			"lat": -32.962005000000005,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the end of the Yuelarbah Track continue across the carpark."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_061003468.jpg",
 			"lon": 151.719591,
 			"lat": -32.962316999890746,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the end of the carpark follow Burwood Rd to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_061140103.jpg",
 			"lon": 151.718497,
 			"lat": -32.962038,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "006_pxl_20240120_061801546.jpg",
-			"lon": 151.717744,
-			"lat": -32.958447,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "006_pxl_20240120_061913676.jpg",
-			"lon": 151.717603,
-			"lat": -32.957660000000004,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "006_pxl_20240120_062225071.jpg",
-			"lon": 151.718211,
-			"lat": -32.955606,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "At the pedestrian crossing follow the Fernleigh Track to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_062754703.jpg",
 			"lon": 151.716014,
 			"lat": -32.952605000000005,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Follow the Fernleigh Track through the former railway tunnel."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_064700225.jpg",
 			"lon": 151.714869,
 			"lat": -32.940082,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
-		},
-		{
-			"type": "waypoint",
-			"photo": "006_pxl_20240120_065258293.jpg",
-			"lon": 151.717308,
-			"lat": -32.936102,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "Use the pedestrian crossing and continue following the Fernleigh Track."
 		},
 		{
 			"type": "waypoint",
 			"photo": "006_pxl_20240120_065328776.jpg",
 			"lon": 151.717587,
 			"lat": -32.935877999999995,
-			"description": "Lorem ipsum dolor sit amet.",
-			"element": {},
-			"referrer": {}
+			"description": "From the roundabout at end of the Fernleigh Track follow Park Ave straight ahead to the station."
 		},
 		{
 			"type": "hotspot",
@@ -1693,9 +925,7 @@
 			"maxLon": 151.72008221663762,
 			"minLon": 151.7192822166376,
 			"maxLat": -32.93396976542973,
-			"minLat": -32.93450309876307,
-			"element": {},
-			"referrer": {}
+			"minLat": -32.93450309876307
 		},
 		{
 			"location": "Adamstown",
@@ -1703,49 +933,39 @@
 			"photo": "007_pxl_20240413_064602780.jpg",
 			"description": "Plan your return trip from Adamstown at <a href=\"https://transportnsw.info/trip#/?from=Adamstown\">transportnsw.info</a>.",
 			"lon": 151.720408,
-			"lat": -32.933554,
-			"element": {},
-			"referrer": {}
+			"lat": -32.933554
 		},
 		{
 			"type": "waypoint",
 			"photo": "007_pxl_20240413_064716705.jpg",
-			"description": "<i>+3km</i> If time allows, consider following Teralba Road to Broadmeadow for a more frequent train service.",
+			"description": "<i>+3km</i> For a more frequent train service follow Glebe Rd ro the right from the station.",
 			"optional": true,
 			"lon": 151.720831,
-			"lat": -32.933622,
-			"element": {},
-			"referrer": {}
+			"lat": -32.933622
 		},
 		{
 			"type": "waypoint",
 			"photo": "007_pxl_20240413_065237485.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross Glebe Rd at the bus stop and follow Terlaba Rd to the left.",
 			"optional": true,
 			"lon": 151.723334,
-			"lat": -32.933781999999994,
-			"element": {},
-			"referrer": {}
+			"lat": -32.933781999999994
 		},
 		{
 			"type": "waypoint",
 			"photo": "007_pxl_20240413_070509375.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the intersection follow Melville Rd to the left.",
 			"optional": true,
 			"lon": 151.73063699987614,
-			"lat": -32.927875,
-			"element": {},
-			"referrer": {}
+			"lat": -32.927875
 		},
 		{
 			"type": "waypoint",
 			"photo": "007_pxl_20240413_071131260.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the end of Melville Rd follow Coorumbing Rd to the right, underneath the overpass, and to the station.",
 			"optional": true,
 			"lon": 151.733252,
-			"lat": -32.924865999999994,
-			"element": {},
-			"referrer": {}
+			"lat": -32.924865999999994
 		},
 		{
 			"location": "Broadmeadow",
@@ -1753,9 +973,7 @@
 			"photo": "007_pxl_20240413_071510838.jpg",
 			"description": "Plan your return trip from Broadmeadow at <a href=\"https://transportnsw.info/trip#/?from=Broadmeadow\">transportnsw.info</a>.",
 			"lon": 151.734882,
-			"lat": -32.923002,
-			"element": {},
-			"referrer": {}
+			"lat": -32.923002
 		}
 	]
 }
