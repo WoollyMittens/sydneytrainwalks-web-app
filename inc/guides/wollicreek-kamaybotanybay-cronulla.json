@@ -37,28 +37,28 @@
 			"photo": "pxl_20221104_202143305.jpg",
 			"lon": 151.153814,
 			"lat": -33.928916,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the station follow the footpath through the mall straight ahead. There are amenities along the mall."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221104_202235586.jpg",
 			"lon": 151.15383400000002,
 			"lat": -33.92930100008475,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "On the other side of the mall follow the roundabout ahead to the Princes Hwy."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221104_202414675.jpg",
 			"lon": 151.154884,
 			"lat": -33.930537000110775,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Cross the Princess Hwy at the traffic lights and continue into Cahill Park."
 		},
 		{
 			"type": "toilet",
 			"photo": "pxl_20221104_202457903.jpg",
 			"lon": 151.155194,
 			"lat": -33.930909,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "There is a toilet block at the entrance to the park."
 		},
 		{
 			"type": "waypoint",
@@ -72,49 +72,49 @@
 			"photo": "pxl_20221104_202810060.jpg",
 			"lon": 151.156305,
 			"lat": -33.932004,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the footpath through Cahill Park along the riverside."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221104_203156921.jpg",
 			"lon": 151.157787,
 			"lat": -33.933378999999995,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the other side of the park follow Rockwell Ave ahead around the dog park."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221104_203326260.jpg",
 			"lon": 151.158197,
 			"lat": -33.934194,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "After the dog park follow the footpath along Marsh St to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221104_203658818.jpg",
 			"lon": 151.155423,
 			"lat": -33.935914999999994,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At Flora Street use the traffic lights to cross Marsh St."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221104_204134530.jpg",
 			"lon": 151.15526400000002,
 			"lat": -33.936316,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the crossing follow the shared path along Marsh St to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221104_204309105.jpg",
 			"lon": 151.154188,
 			"lat": -33.936997,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the bike path to the left before the M5."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221104_204433047.jpg",
 			"lon": 151.15401400000002,
 			"lat": -33.937807,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the shared path along the power lines."
 		},
 		{
 			"type": "waypoint",
@@ -128,28 +128,28 @@
 			"photo": "pxl_20221104_204748537.jpg",
 			"lon": 151.155559,
 			"lat": -33.939696999999995,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the underpass to the right underneath the M5."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221104_204943473.jpg",
 			"lon": 151.154201,
 			"lat": -33.939493,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the gate follow Eve St to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221104_205056642.jpg",
 			"lon": 151.153748,
 			"lat": -33.940138999999995,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the end of Eve St follow the shared path through Riverine Park."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221104_205741361.jpg",
 			"lon": 151.152143,
 			"lat": -33.94448,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the end of the park follow the shared path to the left along the canal."
 		},
 		{
 			"type": "waypoint",
@@ -170,7 +170,7 @@
 			"photo": "pxl_20221104_210510929.jpg",
 			"lon": 151.15814,
 			"lat": -33.945332999916644,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the shared path to the right across the bridge."
 		},
 		{
 			"type": "waypoint",
@@ -184,7 +184,13 @@
 			"photo": "pxl_20221104_210656557.jpg",
 			"lon": 151.157507,
 			"lat": -33.94646300011144,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the shared path and boardwalk along the sports fields."
+		},
+		{
+			"type": "toilet",
+			"lon": 151.153055,
+			"lat": -33.949568,
+			"description": "There are toilet blocks along the sports fields."
 		},
 		{
 			"type": "waypoint",
@@ -198,7 +204,7 @@
 			"photo": "pxl_20221104_211403686.jpg",
 			"lon": 151.152914,
 			"lat": -33.950119,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": ""
 		},
 		{
 			"type": "waypoint",
