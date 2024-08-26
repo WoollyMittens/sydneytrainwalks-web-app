@@ -28,6 +28,7 @@ export class Editor {
     for (let marker of this.guide.markers) {
       if (marker.photo) {
         // find the corresponding legend
+	console.log('editor:', marker.photo, `.local-area-map-legend-photo[src*="${marker.photo}"]`);
         let image = document.querySelector(`.local-area-map-legend-photo[src*="${marker.photo}"]`);
         let legend = image.parentNode.nextSibling;
         let label = legend.querySelector('p');
