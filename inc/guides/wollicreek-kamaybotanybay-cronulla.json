@@ -451,14 +451,14 @@
 			"photo": "pxl_20221104_234037193.jpg",
 			"lon": 151.126607,
 			"lat": -34.011249,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the path off the bridge to the left and follow Woodlands Rd."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221104_234546784.jpg",
 			"lon": 151.124781,
 			"lat": -34.01428,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Enter the Tarent Point Foreshore Reserve on the left."
 		},
 		{
 			"type": "waypoint",
@@ -472,7 +472,7 @@
 			"photo": "pxl_20221104_234716081.jpg",
 			"lon": 151.12521700000002,
 			"lat": -34.014914,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the shared path along the shorefront."
 		},
 		{
 			"type": "waypoint",
@@ -486,7 +486,7 @@
 			"photo": "pxl_20221104_235031894.jpg",
 			"lon": 151.125167,
 			"lat": -34.017043,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the toilet block at the intersection follow the sign to Cronulla to the left."
 		},
 		{
 			"type": "waypoint",
@@ -500,7 +500,7 @@
 			"photo": "pxl_20221104_235416299.jpg",
 			"lon": 151.126684,
 			"lat": -34.019418,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Continue following the the shared path past the Anglers Club."
 		},
 		{
 			"type": "waypoint",
@@ -514,7 +514,7 @@
 			"photo": "pxl_20221104_235636839.jpg",
 			"lon": 151.128226,
 			"lat": -34.020288,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the boardwalk across the mangroves."
 		},
 		{
 			"type": "waypoint",
@@ -528,14 +528,14 @@
 			"photo": "pxl_20221104_235913956.jpg",
 			"lon": 151.129535,
 			"lat": -34.021639,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the end of the boardwalk follow the shared path along the fenceline of the marina."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_000035779.jpg",
 			"lon": 151.12947200000002,
 			"lat": -34.022585,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the intersection follow the sign to Kurnell left."
 		},
 		{
 			"type": "waypoint",
@@ -549,7 +549,7 @@
 			"photo": "pxl_20221105_000517001.jpg",
 			"lon": 151.132698999863,
 			"lat": -34.024155,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the shared path past the industrial estate."
 		},
 		{
 			"type": "waypoint",
@@ -563,28 +563,28 @@
 			"photo": "pxl_20221105_003838865.jpg",
 			"lon": 151.13549999999998,
 			"lat": -34.035019,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the shared path across another boardwalk."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_004238501.jpg",
 			"lon": 151.137847,
 			"lat": -34.037227,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the shared path around the apartment building. There is a cafe between the two buildings."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_004453847.jpg",
 			"lon": 151.13976599999998,
 			"lat": -34.037608999999996,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "After the buildings follow the shared path right under the overpass."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_004643864.jpg",
 			"lon": 151.139488,
 			"lat": -34.038973999999996,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the end of the shared path follow Captain Cook Dr to the left."
 		},
 		{
 			"type": "waypoint",
@@ -598,28 +598,28 @@
 			"photo": "pxl_20221105_004921267.jpg",
 			"lon": 151.14118,
 			"lat": -34.039698,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Cross Captain Cook Dr using the traffic lights at the stadium and continue to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_005119512.jpg",
 			"lon": 151.14280399999998,
 			"lat": -34.039454,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Cross Woolaware Rd and continue straight on Captain Cook Dr."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_005632707.jpg",
 			"lon": 151.146582,
 			"lat": -34.038823,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the shared path past the Cronulla Golf Course."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_010646724.jpg",
 			"lon": 151.156021,
 			"lat": -34.039499,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the roundabout cross Elouera Rd and continue straight on Captain Cook Dr."
 		},
 		{
 			"type": "waypoint",
@@ -633,14 +633,14 @@
 			"photo": "pxl_20221105_011314651.jpg",
 			"lon": 151.15984600000002,
 			"lat": -34.036605,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the roundabout cross Trinity St and continue straight along Caption Cook Dr."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_011440709.jpg",
 			"lon": 151.160923,
 			"lat": -34.036637,
-			"description": "<i>-20km</i> Lorem ipsum dolor sit amet.",
+			"description": "<i>-20km</i> At the roundabout follow Trinity St to the right for a shortcut to Cronulla.",
 			"optional": true
 		},
 		{
