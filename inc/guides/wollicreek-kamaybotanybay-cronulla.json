@@ -767,7 +767,8 @@
 			"photo": "pxl_20221105_045145763.jpg",
 			"lon": 151.20725199999998,
 			"lat": -34.040468,
-			"description": "If the access to the dunes cannot easily be found, climb up at the old pipeline instead."
+			"description": "If the access to the dunes cannot easily be found, climb up at the old pipeline instead.",
+			"optional": "true"
 		},
 		{
 			"type": "waypoint",
