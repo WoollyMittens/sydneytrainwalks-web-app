@@ -648,7 +648,7 @@
 			"photo": "pxl_20221105_011749040.jpg",
 			"lon": 151.163541,
 			"lat": -34.037465999999995,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the roundabout follow Brolga Ave to the right.",
 			"optional": true
 		},
 		{
@@ -656,7 +656,7 @@
 			"photo": "pxl_20221105_011830515.jpg",
 			"lon": 151.163568,
 			"lat": -34.037757,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the corner of Brolga Ave follow the access path between the houses to the dunes.",
 			"optional": true
 		},
 		{
@@ -664,7 +664,7 @@
 			"photo": "pxl_20221105_011912302.jpg",
 			"lon": 151.16400300010716,
 			"lat": -34.038117,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the shared path to the right to the carpark.",
 			"optional": true
 		},
 		{
@@ -672,7 +672,7 @@
 			"photo": "pxl_20221105_012457555.jpg",
 			"lon": 151.160506,
 			"lat": -34.035948,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the end of the footpath, continue on the shared bike path along Captain Cook Dr."
 		},
 		{
 			"type": "waypoint",
@@ -700,7 +700,7 @@
 			"photo": "pxl_20221105_015616180.jpg",
 			"lon": 151.17843,
 			"lat": -34.026236,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the sports fields continue straight along Captain Cook Dr."
 		},
 		{
 			"type": "waypoint",
@@ -714,7 +714,7 @@
 			"photo": "pxl_20221105_020156518.jpg",
 			"lon": 151.182672,
 			"lat": -34.024989,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "There is a viewing platform across the wetlands on the left side of Captain Cook Dr."
 		},
 		{
 			"type": "waypoint",
@@ -728,7 +728,7 @@
 			"photo": "pxl_20221105_020634882.jpg",
 			"lon": 151.18546,
 			"lat": -34.024321,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the roundabout continue straight on Captain Cook Dr."
 		},
 		{
 			"type": "waypoint",
@@ -756,14 +756,14 @@
 			"photo": "pxl_20221105_022304797.jpg",
 			"lon": 151.198517,
 			"lat": -34.021297,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the bus stop continue straight on Captain Cook Dr."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_022953297.jpg",
 			"lon": 151.20402099999998,
 			"lat": -34.018603,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the Desalination Plant continue straight along Captain Cook Dr."
 		},
 		{
 			"type": "waypoint",
@@ -777,28 +777,28 @@
 			"photo": "pxl_20221105_023705471.jpg",
 			"lon": 151.207977,
 			"lat": -34.013993,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At Kurnell start following the footpath along Captain Cook Dr."
 		},
 		{
 			"type": "kiosk",
 			"photo": "pxl_20221105_024007383.jpg",
 			"lon": 151.209477,
 			"lat": -34.011959,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "There are amenities a short distance in Kurnell on the left side of Captain Cook Dr."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_024919693.jpg",
 			"lon": 151.21137099999999,
 			"lat": -34.010657,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the intersection follow Silver Beach Rd to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_025239443.jpg",
 			"lon": 151.21115299991536,
 			"lat": -34.008498,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the intersection follow Prince Charles Pde to the right along the beach."
 		},
 		{
 			"type": "waypoint",
@@ -819,14 +819,14 @@
 			"photo": "pxl_20221105_025932363.jpg",
 			"lon": 151.215576,
 			"lat": -34.006753,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the corner of Prince Charles Pde, follow the footpath along the shore into Kamay Botany Bay National Park."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_030232860.jpg",
 			"lon": 151.217283,
 			"lat": -34.005441,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the right side of the path follow the steps up the embankment."
 		},
 		{
 			"type": "waypoint",
@@ -847,14 +847,14 @@
 			"photo": "pxl_20221105_030416941.jpg",
 			"lon": 151.217743,
 			"lat": -34.005134,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the trail markers to the Visitor Information Centre."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_030505192.jpg",
 			"lon": 151.218,
 			"lat": -34.004821,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "The obelisk monument is to the left of the path."
 		},
 		{
 			"type": "waypoint",
@@ -868,28 +868,28 @@
 			"photo": "pxl_20221105_030837884.jpg",
 			"lon": 151.219939,
 			"lat": -34.004465,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the path through the presentation space behind the Visitor Information Centre."
 		},
 		{
 			"type": "toilet",
 			"photo": "pxl_20221105_031100433.jpg",
 			"lon": 151.221691,
 			"lat": -34.004649,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "There are toilets outside the Visitor Information Centre."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_031413401.jpg",
 			"lon": 151.221758,
 			"lat": -34.004941,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the front entrance of the Visitor Information Centre, cross the car park."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_031518952.jpg",
 			"lon": 151.221688,
 			"lat": -34.0054,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the far end of the carpark follow the sign to the Banks-Solander Track."
 		},
 		{
 			"type": "waypoint",
@@ -903,7 +903,7 @@
 			"photo": "pxl_20221105_031634903.jpg",
 			"lon": 151.221255,
 			"lat": -34.005843,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Cross the road and follow the signs to Cape Solander past the gate."
 		},
 		{
 			"type": "waypoint",
@@ -917,7 +917,7 @@
 			"photo": "pxl_20221105_031801957.jpg",
 			"lon": 151.221565,
 			"lat": -34.006795,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "There is a self guided tour on the left side of the Yena Trail."
 		},
 		{
 			"type": "waypoint",
@@ -931,7 +931,7 @@
 			"photo": "pxl_20221105_032309051.jpg",
 			"lon": 151.223659,
 			"lat": -34.009699,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the sign on the right to Cape Solander."
 		},
 		{
 			"type": "waypoint",
@@ -945,7 +945,7 @@
 			"photo": "pxl_20221105_032926542.jpg",
 			"lon": 151.22538,
 			"lat": -34.013254,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the intersection with the firetrail follow the sign left to Cape Solander."
 		},
 		{
 			"type": "waypoint",
@@ -966,7 +966,7 @@
 			"photo": "pxl_20221105_033448547.jpg",
 			"lon": 151.227753,
 			"lat": -34.015294,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the intersection with the Pipeline Link follow the trail marker right to Cape Solander."
 		},
 		{
 			"type": "waypoint",
@@ -987,21 +987,21 @@
 			"photo": "pxl_20221105_033818288.jpg",
 			"lon": 151.228483,
 			"lat": -34.016958,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the trail markers to Cape Solander across the rocky sections."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_034034855.jpg",
 			"lon": 151.229127,
 			"lat": -34.017753,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the trail to the car park at Cape Solander."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_034205049.jpg",
 			"lon": 151.229515,
 			"lat": -34.018074,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the carpark follow the boarwalk right along the coastal cliffs."
 		},
 		{
 			"type": "waypoint",
@@ -1015,14 +1015,14 @@
 			"photo": "pxl_20221105_034501187.jpg",
 			"lon": 151.229195,
 			"lat": -34.019847,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the trail markers to the Cape Baily lighthouse."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_035009463.jpg",
 			"lon": 151.229098,
 			"lat": -34.023253,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the trail markers along the rocky sections."
 		},
 		{
 			"type": "waypoint",
@@ -1036,7 +1036,7 @@
 			"photo": "pxl_20221105_035325017.jpg",
 			"lon": 151.227012,
 			"lat": -34.02426,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the trail markers around the Tabbigai Gap to the Cape Baily Lighthhouse. "
 		},
 		{
 			"type": "waypoint",
@@ -1064,7 +1064,7 @@
 			"photo": "pxl_20221105_035833970.jpg",
 			"lon": 151.229477,
 			"lat": -34.02645,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the other side of the Tabbigai Gap follow the Cape Baily Track to the lighthouse."
 		},
 		{
 			"type": "waypoint",
@@ -1099,7 +1099,7 @@
 			"photo": "pxl_20221105_040459943.jpg",
 			"lon": 151.226233,
 			"lat": -34.028945,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the boardwalk through the sandy dune section."
 		},
 		{
 			"type": "waypoint",
@@ -1120,7 +1120,7 @@
 			"photo": "pxl_20221105_041652580.jpg",
 			"lon": 151.224638,
 			"lat": -34.033494,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the last section of the boardwalk to the foot of Cape Baily Lighthouse."
 		},
 		{
 			"type": "waypoint",
@@ -1152,21 +1152,21 @@
 			"photo": "pxl_20221105_042309226.jpg",
 			"lon": 151.222162,
 			"lat": -34.036840999999995,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the lighouse follow the dirt track through the coastal heath."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_042615523.jpg",
 			"lon": 151.22048900000001,
 			"lat": -34.038331,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Traverse the rocky section to Potter Point."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_043013862.jpg",
 			"lon": 151.21755,
 			"lat": -34.038319,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the end of the rocky platform follow the gravel the rest of the way to Potter Point."
 		},
 		{
 			"type": "waypoint",
@@ -1187,7 +1187,7 @@
 			"photo": "pxl_20221105_043718790.jpg",
 			"lon": 151.213618,
 			"lat": -34.040513,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From Poter Point follow the gravel path to the carpark."
 		},
 		{
 			"type": "waypoint",
@@ -1201,21 +1201,21 @@
 			"photo": "pxl_20221105_044005588.jpg",
 			"lon": 151.21165499999998,
 			"lat": -34.039939,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the carpark follow the sign to Cronulla Railway Station."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_044045434.jpg",
 			"lon": 151.21137399999998,
 			"lat": -34.040334,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the sign follow the gravel path to the beach."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_044113894.jpg",
 			"lon": 151.21122899999997,
 			"lat": -34.0406,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the a short distance."
 		},
 		{
 			"type": "waypoint",
@@ -1229,7 +1229,7 @@
 			"photo": "pxl_20221105_044947727.jpg",
 			"lon": 151.207978,
 			"lat": -34.040768,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Climb the trodden path over the dunes on the right side of the beach."
 		},
 		{
 			"type": "waypoint",
@@ -1250,21 +1250,21 @@
 			"photo": "pxl_20221105_045022075.jpg",
 			"lon": 151.20787199999998,
 			"lat": -34.040678,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the sandy trail through the dunes to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_045145763.jpg",
 			"lon": 151.20725199999998,
 			"lat": -34.040468,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "If the access to the dunes cannot easily be found, climb up at the old pipeline instead."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_045319991.jpg",
 			"lon": 151.206492,
 			"lat": -34.039912,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the pipeline follow the sandy trail along the coast."
 		},
 		{
 			"type": "waypoint",
@@ -1278,7 +1278,7 @@
 			"photo": "pxl_20221105_045731576.jpg",
 			"lon": 151.203768,
 			"lat": -34.039394,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At Boat Harbour follow the sandy trail right to the start of the beach."
 		},
 		{
 			"type": "waypoint",
@@ -1306,14 +1306,14 @@
 			"photo": "pxl_20221105_050233855.jpg",
 			"lon": 151.201911,
 			"lat": -34.037791999999996,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the trail off the headland onto the beach."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_050328883.jpg",
 			"lon": 151.201811,
 			"lat": -34.037713,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the beach around Boat Harbour."
 		},
 		{
 			"type": "waypoint",
@@ -1327,14 +1327,14 @@
 			"photo": "pxl_20221105_050957032.jpg",
 			"lon": 151.198111,
 			"lat": -34.039215,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the ocean along the car beach. Watch out for traffic."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_052846614.jpg",
 			"lon": 151.184537,
 			"lat": -34.034411999999996,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the fences at the end of the car beach follow the trail into the dunes on the right."
 		},
 		{
 			"type": "waypoint",
@@ -1348,7 +1348,7 @@
 			"photo": "pxl_20221105_053020405.jpg",
 			"lon": 151.184257,
 			"lat": -34.034113,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the access trail through the dunes along the fenceline."
 		},
 		{
 			"type": "waypoint",
@@ -1362,21 +1362,21 @@
 			"photo": "pxl_20221105_053304254.jpg",
 			"lon": 151.18421800000002,
 			"lat": -34.032464,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the open grassy spot follow the gravel road away from the  beach."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_053612625.jpg",
 			"lon": 151.184315,
 			"lat": -34.03025100012905,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the intersection follow the trail to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_053739489.jpg",
 			"lon": 151.183224,
 			"lat": -34.029946,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the trail up the Cronulla Sand Dunes."
 		},
 		{
 			"type": "waypoint",
@@ -1397,7 +1397,7 @@
 			"photo": "pxl_20221105_055229910.jpg",
 			"lon": 151.172787,
 			"lat": -34.03269300008373,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the viewing platforms across the Cronulla Sand Dunes continue following the trail."
 		},
 		{
 			"type": "waypoint",
@@ -1411,28 +1411,28 @@
 			"photo": "pxl_20221105_060821968.jpg",
 			"lon": 151.164264,
 			"lat": -34.038008999999995,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the trail past the gate to the carpark."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_061155919.jpg",
 			"lon": 151.16423100007503,
 			"lat": -34.039659,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the shared path along the left side of the carpark."
 		},
 		{
 			"type": "toilet",
 			"photo": "pxl_20221105_061834789.jpg",
 			"lon": 151.161633,
 			"lat": -34.042957,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "There are toilets at the Wanda Beach Surf Club."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_062448042.jpg",
 			"lon": 151.16003,
 			"lat": -34.043901,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the surf club follow the shared path along Mitchell Rd."
 		},
 		{
 			"type": "waypoint",
@@ -1446,14 +1446,14 @@
 			"photo": "pxl_20221105_063105763.jpg",
 			"lon": 151.157863,
 			"lat": -34.04792299988217,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow Prince St along the beach."
 		},
 		{
 			"type": "kiosk",
 			"photo": "pxl_20221105_063649635.jpg",
 			"lon": 151.155513,
 			"lat": -34.051542,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the restaurants at the end of the beach follow the esplanade along the shore."
 		},
 		{
 			"type": "waypoint",
@@ -1474,7 +1474,7 @@
 			"photo": "pxl_20221105_064057906.jpg",
 			"lon": 151.155092,
 			"lat": -34.054306,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the esplanade to Cronulla Beach."
 		},
 		{
 			"type": "waypoint",
@@ -1488,14 +1488,14 @@
 			"photo": "pxl_20221105_064205287.jpg",
 			"lon": 151.1548,
 			"lat": -34.054947999999996,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the footpath through the beach reserve to the carpark."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20221105_064352258.jpg",
 			"lon": 151.153685,
 			"lat": -34.055633,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the carpark cross Gerrale St and follow Beach Park Ave to the station."
 		},
 		{
 			"location": "Cronulla",
