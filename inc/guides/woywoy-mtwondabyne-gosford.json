@@ -484,7 +484,7 @@
 			"photo": "pxl_20240112_232512824.jpg",
 			"lon": 151.28218800000002,
 			"lat": -33.529978,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the Great North Walk martkers along Van Dahl's Firetrail."
 		},
 		{
 			"type": "waypoint",
@@ -505,14 +505,14 @@
 			"photo": "pxl_20240113_000110119.jpg",
 			"lon": 151.289657,
 			"lat": -33.51291899990176,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Before the landfill, follow the Great North Walk sign left along the Hawkesbury Track"
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_000301663.jpg",
 			"lon": 151.289209,
 			"lat": -33.512408,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Cross the creek and follow the Hawkesbury Track up the ridge on the other side."
 		},
 		{
 			"type": "waypoint",
@@ -526,7 +526,7 @@
 			"photo": "pxl_20240113_001034324.jpg",
 			"lon": 151.28894499999998,
 			"lat": -33.510496,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the Hawkesbury Track around the fenceline of the landfill."
 		},
 		{
 			"type": "hotspot",
@@ -544,7 +544,7 @@
 			"photo": "pxl_20240113_002113969.jpg",
 			"lon": 151.286,
 			"lat": -33.508415,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the Great North Walk markers across the rocky sections."
 		},
 		{
 			"type": "waypoint",
@@ -614,14 +614,14 @@
 			"photo": "pxl_20240113_004939463.jpg",
 			"lon": 151.27685100000002,
 			"lat": -33.501998,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the end of the Hawkesbury Track, cross Dillons Firetrail and continue straight on to the Tunnel Firetrail."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_030252909.jpg",
 			"lon": 151.27891300000002,
 			"lat": -33.501363,
-			"description": "<i>+5km</i> Lorem ipsum dolor sit amet.",
+			"description": "<i>+5km</i> Follow Dillons Firetrail to the the right  for a shortcut back to Woy Woy Station and end the walk there.",
 			"optional": true
 		},
 		{
@@ -637,7 +637,7 @@
 			"photo": "pxl_20240113_031830887.jpg",
 			"lon": 151.290387,
 			"lat": -33.504815,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow Dillons Firetrail to fenceline of the landfill.",
 			"optional": true
 		},
 		{
@@ -645,7 +645,7 @@
 			"photo": "pxl_20240113_032256053.jpg",
 			"lon": 151.291238,
 			"lat": -33.503708,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Use the pedestrian gate at the end of the trail for access to the landfill access road.",
 			"optional": true
 		},
 		{
@@ -661,7 +661,7 @@
 			"photo": "pxl_20240113_032703471.jpg",
 			"lon": 151.29368,
 			"lat": -33.502943,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow Nagari Rd away from the landfill.",
 			"optional": true
 		},
 		{
@@ -669,7 +669,7 @@
 			"photo": "pxl_20240113_033829284.jpg",
 			"lon": 151.297209,
 			"lat": -33.497662,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "If the entrance gates are closed, use the pedestrian gate on the right.",
 			"optional": true
 		},
 		{
@@ -677,7 +677,7 @@
 			"photo": "pxl_20240113_034508152.jpg",
 			"lon": 151.302679,
 			"lat": -33.4979,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow Nagari Rd to the underpass under the railway.",
 			"optional": true
 		},
 		{
@@ -685,7 +685,7 @@
 			"photo": "pxl_20240113_034544430.jpg",
 			"lon": 151.30291300000002,
 			"lat": -33.497687,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Use the pedestrian tunnel on the right side of the underpass.",
 			"optional": true
 		},
 		{
@@ -693,7 +693,7 @@
 			"photo": "pxl_20240113_034621423.jpg",
 			"lon": 151.302976,
 			"lat": -33.497348,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the underpass cross Woy Woy Rd to Correa Bay Boat Ramp.",
 			"optional": true
 		},
 		{
@@ -701,7 +701,7 @@
 			"photo": "pxl_20240113_041319296.jpg",
 			"lon": 151.304457,
 			"lat": -33.497042,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the boat ramp follow the footpath along Woy Woy Rd.",
 			"optional": true
 		},
 		{
@@ -717,7 +717,7 @@
 			"photo": "pxl_20240113_042525359.jpg",
 			"lon": 151.31258300012118,
 			"lat": -33.492643,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection with Rawson Rd, follow Woy Woy Rd to the right.",
 			"optional": true
 		},
 		{
@@ -725,7 +725,7 @@
 			"photo": "pxl_20240113_042651921.jpg",
 			"lon": 151.31365700010863,
 			"lat": -33.492444,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Before the railway crossing, use the pedestrian tunnel on the left side of Woy woy Rd. There is a toilet block near the bus stop.",
 			"optional": true
 		},
 		{
@@ -741,7 +741,7 @@
 			"photo": "pxl_20240113_043025084.jpg",
 			"lon": 151.31606100000002,
 			"lat": -33.491941000000004,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the other side of the pedestrian tunnel follow Railway St to the left.",
 			"optional": true
 		},
 		{
@@ -749,7 +749,7 @@
 			"photo": "pxl_20240113_043733982.jpg",
 			"lon": 151.320197,
 			"lat": -33.488747000000004,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the footpath along the station carpark.",
 			"optional": true
 		},
 		{
@@ -757,7 +757,7 @@
 			"photo": "pxl_20240113_044010858.jpg",
 			"lon": 151.32175,
 			"lat": -33.487273,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the roundabout follow the footpath straight to the station.",
 			"optional": true
 		},
 		{
@@ -773,7 +773,7 @@
 			"photo": "pxl_20240118_190747894.jpg",
 			"lon": 151.323243,
 			"lat": -33.486001,
-			"description": "<i>+5km</i> Lorem ipsum dolor sit amet.",
+			"description": "<i>+5km</i> To resume/start at Mount Wondabyne and skip Palm Beach, follow Railway St to the right from Woy Woy Station.",
 			"optional": true
 		},
 		{
@@ -781,7 +781,7 @@
 			"photo": "pxl_20240118_190929620.jpg",
 			"lon": 151.322169,
 			"lat": -33.486962,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the footpath along the right side of Railway St.",
 			"optional": true
 		},
 		{
@@ -789,7 +789,7 @@
 			"photo": "pxl_20240118_191905793.jpg",
 			"lon": 151.31597200000002,
 			"lat": -33.491991,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Near the railway crossing, follow the ramp into the pedestrian tunnel on the right.",
 			"optional": true
 		},
 		{
@@ -797,7 +797,7 @@
 			"photo": "pxl_20240118_192234209.jpg",
 			"lon": 151.31323500000002,
 			"lat": -33.492428000000004,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the other side of the pedestrian tunnel follow Woy Woy Rd left around the corner.",
 			"optional": true
 		},
 		{
@@ -805,7 +805,7 @@
 			"photo": "pxl_20240118_193225484.jpg",
 			"lon": 151.30612000000002,
 			"lat": -33.496735,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the footpath along Woy Woy Rd.",
 			"optional": true
 		},
 		{
@@ -813,7 +813,7 @@
 			"photo": "pxl_20240118_193450207.jpg",
 			"lon": 151.30397100000002,
 			"lat": -33.497068,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Enter Correa Bay Reserve on the right.",
 			"optional": true
 		},
 		{
@@ -821,7 +821,7 @@
 			"photo": "pxl_20240118_193542450_pano.jpg",
 			"lon": 151.303706,
 			"lat": -33.496852000000004,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There is a toilet block at the picnic area.",
 			"optional": true
 		},
 		{
@@ -829,7 +829,7 @@
 			"photo": "pxl_20240118_193934668.jpg",
 			"lon": 151.30322600000002,
 			"lat": -33.49706,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the reserve cross Woy Woy Rd to the railway underpass.",
 			"optional": true
 		},
 		{
@@ -837,7 +837,7 @@
 			"photo": "pxl_20240118_194007144.jpg",
 			"lon": 151.30300200000002,
 			"lat": -33.497293,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the footpath on the left side of the underpass.",
 			"optional": true
 		},
 		{
@@ -845,7 +845,7 @@
 			"photo": "pxl_20240118_194046392.jpg",
 			"lon": 151.303007,
 			"lat": -33.497605,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After the underpass follow Nagari Rd to the Woy Woy Tip.",
 			"optional": true
 		},
 		{
@@ -861,7 +861,7 @@
 			"photo": "pxl_20240118_194804875.jpg",
 			"lon": 151.29770099989796,
 			"lat": -33.49763899991118,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the split in the road follow Nagari Rd to the left. If the gate is closed, use the pedestrian gate to the left.",
 			"optional": true
 		},
 		{
@@ -877,7 +877,7 @@
 			"photo": "pxl_20240118_200123041.jpg",
 			"lon": 151.292078,
 			"lat": -33.503398,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the entrance to the tip, follow Dillons Firetrail to the right.",
 			"optional": true
 		},
 		{
@@ -885,7 +885,7 @@
 			"photo": "pxl_20240118_200221447.jpg",
 			"lon": 151.291404,
 			"lat": -33.503638,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Use the pedestrian gate on the right and continue down Dillons Firetrail.",
 			"optional": true
 		},
 		{
@@ -909,7 +909,7 @@
 			"photo": "pxl_20240118_203631715.jpg",
 			"lon": 151.276856,
 			"lat": -33.501804,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow Dillons Firetrail to the intersection with the Great North Walk.",
 			"optional": true
 		},
 		{
@@ -917,7 +917,7 @@
 			"photo": "pxl_20240113_005013805.jpg",
 			"lon": 151.27656900000002,
 			"lat": -33.501904,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the Great North Walk marker to the right down the Tunnel Firetrail."
 		},
 		{
 			"type": "waypoint",
@@ -931,7 +931,7 @@
 			"photo": "pxl_20240113_005243675.jpg",
 			"lon": 151.276803,
 			"lat": -33.500601,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Continue straight on at the intersection with Rocky Ponds Firetrail."
 		},
 		{
 			"type": "waypoint",
@@ -945,7 +945,7 @@
 			"photo": "pxl_20240113_005938483.jpg",
 			"lon": 151.280763,
 			"lat": -33.498488,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the signs to Mount Wondabyne to the left."
 		},
 		{
 			"type": "waypoint",
@@ -955,32 +955,32 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pxl_20240113_011320049.jpg",
 			"lon": 151.274709,
 			"lat": -33.496027,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow Mount Wondabyne Trig Firetrail to the campground. There is a toilet block at the campground."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_011345854.jpg",
 			"lon": 151.274561,
 			"lat": -33.496035,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the campground follow the Great North Walk sign to Mooney Mooney."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_011556228.jpg",
 			"lon": 151.273975,
 			"lat": -33.49552,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the Great North Walk markers across Mount Wondabyne."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240113_011639917.jpg",
 			"lon": 151.274154,
 			"lat": -33.495348,
-			"description": "<i>1km</i> Lorem ipsum dolor sit amet.",
+			"description": "<i>1km</i> Optionally climb the summit of Mount Wondabyne by following the trail to the right.",
 			"optional": true
 		},
 		{
@@ -988,7 +988,7 @@
 			"photo": "pxl_20240113_012052184.jpg",
 			"lon": 151.27443000000002,
 			"lat": -33.495089,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Scramble up the rough steps to the top.",
 			"optional": true
 		},
 		{
@@ -1004,7 +1004,7 @@
 			"photo": "pxl_20240113_012409317.jpg",
 			"lon": 151.274709,
 			"lat": -33.494719,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the trail across the summit to the peak.",
 			"optional": true
 		},
 		{
@@ -1020,7 +1020,7 @@
 			"photo": "pxl_20240113_012843057.jpg",
 			"lon": 151.27501700000002,
 			"lat": -33.493953,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There is a trig point at the peak.",
 			"optional": true
 		},
 		{
@@ -1055,18 +1055,7 @@
 			"photo": "pxl_20240113_015224868.jpg",
 			"lon": 151.273989,
 			"lat": -33.494422,
-			"description": "Lorem ipsum dolor sit amet."
-		},
-		{
-			"type": "hotspot",
-			"photo": "pxl_20240119_001839868_img_20191110_073448.jpg",
-			"lon": 151.3026888811524,
-			"lat": -33.45139494829859,
-			"radius": 0.0004,
-			"description": "Whomever made these ensured a lasting urban legend only the locals know.",
-			"badge": "amphora",
-			"title": "But Why Though?",
-			"instruction": "Visit this location to earn the mystery trophy"
+			"description": "From the top of Mount Wondabyne follow the trail down the other side."
 		},
 		{
 			"type": "waypoint",
@@ -1101,7 +1090,7 @@
 			"photo": "pxl_20240113_021105837.jpg",
 			"lon": 151.27588,
 			"lat": -33.489062000000004,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "After descending from Mount Wondabyne follow the Great North Walk Sign right to Girakool."
 		},
 		{
 			"type": "waypoint",
@@ -1115,7 +1104,7 @@
 			"photo": "pxl_20240113_021511711.jpg",
 			"lon": 151.2778690000783,
 			"lat": -33.488921,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the side of Mullet Creek Friretrail follow the Great North Walk sign left to Girakool."
 		},
 		{
 			"type": "waypoint",
@@ -1143,7 +1132,7 @@
 			"photo": "pxl_20240118_211423264.jpg",
 			"lon": 151.27895700000002,
 			"lat": -33.487689,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the markers and trodden paths across the rocky sections of the Hawkesbury Track."
 		},
 		{
 			"type": "waypoint",
@@ -1171,7 +1160,7 @@
 			"photo": "pxl_20240118_212547462.jpg",
 			"lon": 151.27679600000002,
 			"lat": -33.484523,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the intersection follow Tommo's Loop Firetrail to the left."
 		},
 		{
 			"type": "waypoint",
@@ -1192,7 +1181,7 @@
 			"photo": "pxl_20240118_214602923.jpg",
 			"lon": 151.27162700000002,
 			"lat": -33.476774,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Where the Great North Walk splits off to the left, continue following Tommo's Loop Firetrail to the right."
 		},
 		{
 			"type": "waypoint",
@@ -1227,35 +1216,35 @@
 			"photo": "pxl_20240118_220538274.jpg",
 			"lon": 151.283608,
 			"lat": -33.476371,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow Tommo's Loop Firetrail past the moon pool aboriginal engraving."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240118_221024497.jpg",
 			"lon": 151.286141,
 			"lat": -33.474684,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the intersection follow MI9 Loop Firetrail to the left along the powerline poles."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240118_221355465.jpg",
 			"lon": 151.284848,
 			"lat": -33.472984000000004,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the intersection follow the firetrail right to the rock quarry."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240118_221708017.jpg",
 			"lon": 151.28454,
 			"lat": -33.471421,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the firetrail to the top of the rock quarry."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240118_221918225.jpg",
 			"lon": 151.28515,
 			"lat": -33.471749,
-			"description": "<i>1km</i> Lorem ipsum dolor sit amet.",
+			"description": "<i>1km</i> To visit Staples Lookout follow the trail right from the top of the quarry.",
 			"optional": true
 		},
 		{
@@ -1271,7 +1260,7 @@
 			"photo": "pxl_20240118_222312521.jpg",
 			"lon": 151.287399,
 			"lat": -33.471314,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the trail to the gate and carefully cross Woy Woy Rd into the lookout carpark.",
 			"optional": true
 		},
 		{
@@ -1287,7 +1276,7 @@
 			"photo": "pxl_20240118_222512156.jpg",
 			"lon": 151.288369,
 			"lat": -33.471754000000004,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There is a monument and a picnic area at the lookout.",
 			"optional": true
 		},
 		{
@@ -1319,7 +1308,7 @@
 			"photo": "pxl_20240118_223640007.jpg",
 			"lon": 151.287822,
 			"lat": -33.471316,
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the lookout retrace your steps back to the quarry.",
 			"optional": true
 		},
 		{
@@ -1342,7 +1331,7 @@
 			"photo": "pxl_20240118_224344158.jpg",
 			"lon": 151.283773,
 			"lat": -33.471473,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the top of the quarry follow the trail to the left along Woy Woy Rd Firetrail and the powerline poles."
 		},
 		{
 			"type": "waypoint",
@@ -1377,28 +1366,28 @@
 			"photo": "pxl_20240118_231258911.jpg",
 			"lon": 151.280963,
 			"lat": -33.461427,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Pass the gates and continue along Woy Woy Rd."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240118_231827286.jpg",
 			"lon": 151.282252,
 			"lat": -33.459716,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Pass the second gate and cross the intersection with Kariong Scout Camp Trail."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240118_232355080.jpg",
 			"lon": 151.284924,
 			"lat": -33.457039,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the intersection continue straight on, then follow the sign left to Bulgandry."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240118_233136590.jpg",
 			"lon": 151.28432899999999,
 			"lat": -33.45604,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the carpark follow the footpath to the Bulgandry Rock Engravings Site."
 		},
 		{
 			"type": "waypoint",
@@ -1412,7 +1401,7 @@
 			"photo": "pxl_20240118_233718257.jpg",
 			"lon": 151.286111,
 			"lat": -33.453871,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "The trail ends at a boardwalk around the rock engravings."
 		},
 		{
 			"type": "waypoint",
@@ -1440,14 +1429,14 @@
 			"photo": "pxl_20240118_233915225.jpg",
 			"lon": 151.286073,
 			"lat": -33.453784000000006,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the rock engravings follow the trail to the left (not back to the carpark)."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240118_234013291.jpg",
 			"lon": 151.286497,
 			"lat": -33.45414,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Cross the gate at intersection and follow Woy Woy Rd firetrail to the left."
 		},
 		{
 			"type": "waypoint",
@@ -1468,14 +1457,14 @@
 			"photo": "pxl_20240118_234835724.jpg",
 			"lon": 151.288271,
 			"lat": -33.451607,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow Woy Woy Rd Firetrail along the powerline poles."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240118_235205217.jpg",
 			"lon": 151.289582,
 			"lat": -33.449619,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the intersection follow Woy Woy Rd Firetrail to the right."
 		},
 		{
 			"type": "waypoint",
@@ -1489,28 +1478,28 @@
 			"photo": "pxl_20240118_235438897.jpg",
 			"lon": 151.29072,
 			"lat": -33.44983899992342,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the intersection follow Woy Woy Rd Firetrail to the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240118_235632100.jpg",
 			"lon": 151.291414,
 			"lat": -33.450777,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Pass the gate and continue to the roadside."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240118_235804412.jpg",
 			"lon": 151.291277,
 			"lat": -33.451640000000005,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Cross Woy Woy Rd into the carpark on the other side."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240118_235831402.jpg",
 			"lon": 151.29131999999998,
 			"lat": -33.45192,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the carpark pass the gate and follow Bambara Rd."
 		},
 		{
 			"type": "waypoint",
@@ -1531,7 +1520,7 @@
 			"photo": "pxl_20240119_001148326.jpg",
 			"lon": 151.30075300000001,
 			"lat": -33.454364000000005,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "At the park sign follow the Hieroglyphic Trail to the left."
 		},
 		{
 			"type": "waypoint",
@@ -1552,15 +1541,26 @@
 			"photo": "pxl_20240119_001649321.jpg",
 			"lon": 151.303198,
 			"lat": -33.45228,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the Hieroglyphic Trail past the campground on the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pxl_20240119_001839868.jpg",
 			"lon": 151.302917,
 			"lat": -33.451759,
-			"description": "<i>0.1km</i> Lorem ipsum dolor sit amet.",
+			"description": "<i>0.1km</i> Alternative climb the caves at the campground to visit the Gosford Glyphs.",
 			"optional": true
+		},
+		{
+			"type": "hotspot",
+			"photo": "pxl_20240119_001839868_img_20191110_073448.jpg",
+			"lon": 151.3026888811524,
+			"lat": -33.45139494829859,
+			"radius": 0.0004,
+			"description": "Visit this location to earn the mystery trophy",
+			"badge": "amphora",
+			"title": "But Why Though?",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -1574,7 +1574,7 @@
 			"photo": "pxl_20240119_002538357.jpg",
 			"lon": 151.30675300000001,
 			"lat": -33.452551,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the end of the Hieroglyphic Trail follow Corrumbine Creek Firetrail to the left."
 		},
 		{
 			"type": "waypoint",
