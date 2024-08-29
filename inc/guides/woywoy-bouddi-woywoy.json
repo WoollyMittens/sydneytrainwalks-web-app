@@ -39,28 +39,28 @@
 			"photo": "001_pxl_20240127_191118377.jpg",
 			"lon": 151.323623,
 			"lat": -33.485179,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the station cross Brisbane Water Dr at the traffic lights and continue left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240127_191301804.jpg",
 			"lon": 151.32442799999998,
 			"lat": -33.483752,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Past the pub follow The Boulevarde to the the right."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240127_191424971.jpg",
 			"lon": 151.32549,
 			"lat": -33.483558,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "From the intersection follow Brick Wharf Rd to the left."
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240127_191536075.jpg",
 			"lon": 151.326381,
 			"lat": -33.483992,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow Brick Wharf Rd along the waterfront."
 		},
 		{
 			"type": "waypoint",
@@ -74,7 +74,7 @@
 			"photo": "001_pxl_20240127_192200835.jpg",
 			"lon": 151.33187,
 			"lat": -33.485243000000004,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Follow the shared path to the left along the waterfront."
 		},
 		{
 			"type": "waypoint",
@@ -91,11 +91,18 @@
 			"description": "Lorem ipsum dolor sit amet."
 		},
 		{
-			"type": "toilet",
+			"type": "waypoint",
 			"photo": "001_pxl_20240127_192740023.jpg",
 			"lon": 151.336398,
 			"lat": -33.484986,
-			"description": "Lorem ipsum dolor sit amet."
+			"description": "Cross the carpark at the boat ramp and continue into Lions Park."
+		},
+		{
+			"type": "toilet",
+			"photo": "001_pxl_20240127_193349871.jpg",
+			"lon": 151.336130,
+			"lat": -33.484878,
+			"description": "There is a toilet block in Lions Park."
 		},
 		{
 			"type": "waypoint",
