@@ -320,8 +320,8 @@
 			"revised": "2023-10-02",
 			"transit": true,
 			"car": false,
-			"kiosks": 10,
-			"toilets": 27,
+			"kiosks": 8,
+			"toilets": 24,
 			"looped": false,
 			"rain": true,
 			"fireban": true
@@ -639,7 +639,7 @@
 					"location": "Katoomba Falls",
 					"type": "bus",
 					"photo": "001_pxl_20240209_210053766.jpg",
-					"description": "Get the train to/from Katoomba Falls using <a href=\"https://transportnsw.info/trip#/?to=Katoomba Falls Kiosk\">transportnsw.info</a>.",
+					"description": "Get the bus to/from Katoomba Falls Kiosk using <a href=\"https://transportnsw.info/trip#/?to=Katoomba Falls Kiosk\">transportnsw.info</a>.",
 					"lon": 150.303895,
 					"lat": -33.726155
 				},
@@ -647,14 +647,14 @@
 					"location": "Echo Point",
 					"type": "bus",
 					"photo": "001_pxl_20240209_213602289.jpg",
-					"description": "Get the train to/from Echo Point using <a href=\"https://transportnsw.info/trip#/?from=The Lookout Echo Point\">transportnsw.info</a>.",
+					"description": "Get the bus to/from Echo Point using <a href=\"https://transportnsw.info/trip#/?from=The Lookout Echo Point\">transportnsw.info</a>.",
 					"lon": 150.312352,
 					"lat": -33.731957
 				},
 				{
 					"location": "Conservation Hut",
 					"type": "bus",
-					"description": "Get the train to/from Katoomba Falls using <a href=\"https://transportnsw.info/trip#/?from=Conservation Hut Picnic Area\">transportnsw.info</a>.",
+					"description": "Get the bus to/from Conservation Hut using <a href=\"https://transportnsw.info/trip#/?from=Conservation Hut Picnic Area\">transportnsw.info</a>.<br/><strong>This bus service is very infrequent.</strong>",
 					"lon": 150.365435,
 					"lat": -33.720162
 				},
@@ -1025,8 +1025,8 @@
 			"revised": "2024-03-10",
 			"transit": true,
 			"car": false,
-			"kiosks": 0,
-			"toilets": 0,
+			"kiosks": 1,
+			"toilets": 3,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -1180,7 +1180,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 5,
-			"toilets": 14,
+			"toilets": 15,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -1219,6 +1219,7 @@
 			],
 			"region": "Illawarra",
 			"distance": [
+				9,
 				18,
 				36
 			],
@@ -1226,7 +1227,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 9,
-			"toilets": 17,
+			"toilets": 18,
 			"looped": false,
 			"rain": true,
 			"fireban": true
@@ -1346,7 +1347,7 @@
 				},
 				{
 					"location": "Rydalmere Wharf",
-					"type": "waypoint",
+					"type": "ferry",
 					"photo": "pxl_20240216_200815556.jpg",
 					"description": "Get the ferry to/from Rydalmere Wharf using <a href=\"https://transportnsw.info/trip#/?to=Rydalmere Wharf\">transportnsw.info</a>.",
 					"lon": 151.04387,
@@ -1356,9 +1357,16 @@
 					"location": "Meadowbank Wharf",
 					"type": "ferry",
 					"photo": "pxl_20240216_211834071.jpg",
-					"description": "Get the ferry (or train) to/from Meadowbank Wharf using <a href=\"https://transportnsw.info/trip#/?to=Meadowbank Wharf\">transportnsw.info</a>.",
+					"description": "Get the ferry to/from Meadowbank Wharf using <a href=\"https://transportnsw.info/trip#/?to=Meadowbank Wharf\">transportnsw.info</a>.",
 					"lon": 151.089619,
 					"lat": -33.820893000000005
+				},
+				{
+					"location": "Meadowbank Station",
+					"type": "train",
+					"description": "Get the train to/from Meadowbank Station using <a href=\"https://transportnsw.info/trip#/?to=Meadowbank Station\">transportnsw.info</a>.",
+					"lon": 151.090307,
+					"lat": -33.815756
 				},
 				{
 					"location": "Kissing Point",
@@ -1424,9 +1432,17 @@
 					"location": "Minnamurra",
 					"type": "train",
 					"photo": "pxl_20240223_032931946.jpg",
-					"description": "Get the train to Minnamurra using <a href=\"https://transportnsw.info/trip#/?to=Minnamurra\">transportnsw.info</a>.",
+					"description": "Get the train to/from Minnamurra using <a href=\"https://transportnsw.info/trip#/?to=Minnamurra\">transportnsw.info</a>.",
 					"lon": 150.8529361111111,
 					"lat": -34.62613611111111
+				},
+				{
+					"location": "Bombo Station",
+					"type": "train",
+					"photo": "pxl_20240223_044742214.jpg",
+					"description": "Get the train to/from Bombo Station using <a href=\"https://transportnsw.info/trip#/?to=Bombo Station\">transportnsw.info</a>.",
+					"lon": 150.854539,
+					"lat": -34.655508
 				},
 				{
 					"location": "Kiama",
@@ -1689,8 +1705,8 @@
 			"revised": "2024-01-20",
 			"transit": true,
 			"car": false,
-			"kiosks": 3,
-			"toilets": 13,
+			"kiosks": 4,
+			"toilets": 14,
 			"looped": false,
 			"rain": true,
 			"fireban": true
@@ -1742,8 +1758,8 @@
 			"revised": "2023-12-23",
 			"transit": true,
 			"car": false,
-			"kiosks": 5,
-			"toilets": 16,
+			"kiosks": 6,
+			"toilets": 18,
 			"looped": false,
 			"rain": true,
 			"fireban": true
@@ -1936,8 +1952,8 @@
 			"revised": "2024-01-06",
 			"transit": true,
 			"car": false,
-			"kiosks": 3,
-			"toilets": 13,
+			"kiosks": 4,
+			"toilets": 15,
 			"looped": false,
 			"rain": true,
 			"fireban": true
@@ -2087,8 +2103,44 @@
 		{
 			"key": "woywoy-mtwondabyne-gosford",
 			"type": "walk",
-			"lon": 151.3011497632,
-			"lat": -33.4977069777,
+			"lon": 151.2871101592,
+			"lat": -33.4713161364,
+			"locations": [
+				{
+					"location": "Woy Woy",
+					"type": "train",
+					"photo": "100_pxl_20240118_190539792.jpg",
+					"description": "Plan your trip to Woy Woy at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>.",
+					"lat": -33.485393,
+					"lon": 151.32345
+				},
+				{
+					"location": "Gosford",
+					"type": "train",
+					"photo": "200_pxl_20240119_030251518.jpg",
+					"description": "Plan your return trip from Gosford at <a href=\"https://transportnsw.info/trip#/?from=Gosford\">transportnsw.info</a>.",
+					"lon": 151.3415736705,
+					"lat": -33.4236546233
+				}
+			],
+			"region": "Mount Wondabyne",
+			"distance": [
+				29
+			],
+			"revised": "2024-01-19",
+			"transit": true,
+			"car": false,
+			"kiosks": 0,
+			"toilets": 4,
+			"looped": false,
+			"rain": false,
+			"fireban": false
+		},
+		{
+			"key": "woywoy-warrahlookout-woywoy",
+			"type": "walk",
+			"lon": 151.2818391155,
+			"lat": -33.5417993926,
 			"locations": [
 				{
 					"location": "Woy Woy",
@@ -2102,30 +2154,21 @@
 					"location": "Woy Woy",
 					"type": "train",
 					"photo": "pxl_20240113_044228247.jpg",
-					"description": "Plan your return trip to/from Woy Woy at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>.",
+					"description": "Plan your return trip from Woy Woy at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>.",
 					"lat": -33.485393,
 					"lon": 151.32345
-				},
-				{
-					"location": "Gosford",
-					"type": "train",
-					"photo": "pxl_20240119_030251518.jpg",
-					"description": "Plan your return trip from Gosford at <a href=\"https://transportnsw.info/trip#/?from=Gosford\">transportnsw.info</a>.",
-					"lon": 151.3415736705,
-					"lat": -33.4236546233
 				}
 			],
-			"region": "Brisbane Water",
+			"region": "Warrah Lookout",
 			"distance": [
-				28,
-				45
+				28
 			],
 			"revised": "2024-01-19",
 			"transit": true,
 			"car": false,
-			"kiosks": 2,
+			"kiosks": 3,
 			"toilets": 9,
-			"looped": false,
+			"looped": true,
 			"rain": false,
 			"fireban": false
 		}

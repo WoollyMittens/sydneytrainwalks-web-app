@@ -978,40 +978,7 @@
 		{
 			"key": "woywoy-mtwondabyne-gosford",
 			"type": "trophy",
-			"photo": "pxl_20240112_220306760.jpg",
-			"lon": 151.302639,
-			"lat": -33.548452,
-			"radius": 0.0004,
-			"description": "But why though?",
-			"title": "Wild Piano",
-			"badge": "music_1"
-		},
-		{
-			"key": "woywoy-mtwondabyne-gosford",
-			"type": "trophy",
-			"photo": "pxl_20240112_223314582_pano.jpg",
-			"lon": 151.2881417,
-			"lat": -33.552325,
-			"radius": 0.0004,
-			"description": "Let the tourists enjoy the fenced lookout. Welcome to the club of locals who know better.",
-			"title": "I Can See My House from Here",
-			"badge": "house_3"
-		},
-		{
-			"key": "woywoy-mtwondabyne-gosford",
-			"type": "trophy",
-			"photo": "pxl_20240113_001307280.jpg",
-			"lon": 151.2889917,
-			"lat": -33.5096139,
-			"radius": 0.0004,
-			"description": "With luck the wind is blowing away from it.",
-			"title": "The View is Garbage",
-			"badge": "bag_bagful"
-		},
-		{
-			"key": "woywoy-mtwondabyne-gosford",
-			"type": "trophy",
-			"photo": "pxl_20240113_012859254.jpg",
+			"photo": "200_pxl_20240113_012859254.jpg",
 			"lon": 151.2750087,
 			"lat": -33.4940091,
 			"radius": 0.0004,
@@ -1022,13 +989,46 @@
 		{
 			"key": "woywoy-mtwondabyne-gosford",
 			"type": "trophy",
-			"photo": "pxl_20240119_001839868_img_20191110_073448.jpg",
+			"photo": "200_pxl_20240119_001839868_img_20191110_073448.jpg",
 			"lon": 151.3026888811524,
 			"lat": -33.45139494829859,
 			"radius": 0.0004,
-			"description": "Whomever made these ensured a lasting urban legend only the locals know.",
+			"description": "Visit this location to earn the mystery trophy",
 			"title": "But Why Though?",
 			"badge": "amphora"
+		},
+		{
+			"key": "woywoy-warrahlookout-woywoy",
+			"type": "trophy",
+			"photo": "pxl_20240112_220306760.jpg",
+			"lon": 151.302639,
+			"lat": -33.548452,
+			"radius": 0.0004,
+			"description": "But why though?",
+			"title": "Wild Piano",
+			"badge": "music_1"
+		},
+		{
+			"key": "woywoy-warrahlookout-woywoy",
+			"type": "trophy",
+			"photo": "pxl_20240112_223314582_pano.jpg",
+			"lon": 151.2881417,
+			"lat": -33.552325,
+			"radius": 0.0004,
+			"description": "Let the tourists enjoy the fenced lookout. Welcome to the club of locals who know better.",
+			"title": "I Can See My House from Here",
+			"badge": "house_3"
+		},
+		{
+			"key": "woywoy-warrahlookout-woywoy",
+			"type": "trophy",
+			"photo": "pxl_20240113_001307280.jpg",
+			"lon": 151.2889917,
+			"lat": -33.5096139,
+			"radius": 0.0004,
+			"description": "With luck the wind is blowing away from it.",
+			"title": "The View is Garbage",
+			"badge": "bag_bagful"
 		}
 	]
 }

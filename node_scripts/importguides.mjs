@@ -31,7 +31,7 @@ async function loadCache(path) {
 	// create a cache object
 	const cache = {};
 	// get the files in the folder
-	const files = await filterDirectory(path, /.json$/i, /^_/);
+	const files = await filterDirectory(path, /.json$/i, /^index|^trophies/);
 	// for every file
 	for (let file of files) {
 		// import the content
@@ -218,7 +218,7 @@ async function parseGuides() {
 	// load the GPX cache
 	const routesCache = await loadCache(routes);
 	// get the list of guide files
-	const files = await filterDirectory(guides, /.json$/i, /^_/);
+	const files = await filterDirectory(guides, /.json$/i, /^index|^trophies/);
 	for (let file of files) {
 		// update the guide with the exif and route data
 		let guide = populateGuide(file, guideCache, exifCache, routesCache);
