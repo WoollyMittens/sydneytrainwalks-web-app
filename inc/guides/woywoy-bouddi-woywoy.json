@@ -1009,7 +1009,8 @@
 			"photo": "006_pano_20190914_121756.jpg",
 			"lon": 151.341519,
 			"lat": -33.529786,
-			"description": "TODO: Optionally follow the sign to Lobster Beach to the left."
+			"description": "<i>+0.5h</i> Optionally follow the sign to Lobster Beach to the left.",
+			"optional": true
 		},
 		{
 			"type": "waypoint",
