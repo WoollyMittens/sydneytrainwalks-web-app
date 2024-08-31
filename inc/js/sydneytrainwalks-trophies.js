@@ -1,4 +1,4 @@
-//import { long2tile, lat2tile, tile2long, tile2lat } from "./slippy.js";
+import { long2tile, lat2tile, tile2long, tile2lat } from "../lib/slippy.js";
 
 export class Trophies {
 	constructor(config, guideIds, loadGuide, updateView, busy) {
@@ -9,7 +9,7 @@ export class Trophies {
 		this.trophyTemplate = document.getElementById('trophy-template');
 		this.guideIds = guideIds;
 		this.loadGuide = loadGuide;
-		this.parentView = updateView;
+		this.updateView = updateView;
 		this.busyIndicator = busy;
 		this.init();
 	}
@@ -19,35 +19,18 @@ export class Trophies {
 		this.busyIndicator.show();
 		// clear the container
 		this.trophiesElement.innerHTML = '';
-		// filter out the trophies from the markers
-		var duplicates = {}, trophies = [];
-		for (let id of this.guideIds) {
-			// load the guide
-			let guide = await this.loadGuide(id);
-			// for every marker in the guide
-			for (let marker of guide.markers) {
-				// if the marker is a (new) trophy
-				if (marker.type === 'hotspot' && !duplicates[marker.title]) {
-					// store the title to avoid duplicates
-					duplicates[marker.title] = true;
-					// store the trophy
-					trophies.push({
-						'id': id,
-						'marker': marker
-					});
-				}
-			}
-		}
+		// import the trophies
+		let trophies = await this.loadGuide('trophies');
 		// sort the trophies
-		trophies.sort((a, b) => {
-			return (a.marker.title > b.marker.title) ? 1 : -1;
+		trophies.markers.sort((a, b) => {
+			return (a.title > b.title) ? 1 : -1;
 		});
 		// insert the markers
-		trophies.map((trophy) => {
+		trophies.markers.map((marker) => {
 			var wrapper, link;
 			// add a trophy badge
 			wrapper = document.createElement('li');
-			link = (this.getTrophy(trophy.marker.title)) ? this.addBadge(trophy.id, trophy.marker) : this.addMystery(trophy.id, trophy.marker);
+			link = (this.getTrophy(marker.title)) ? this.addBadge(marker) : this.addMystery(marker);
 			wrapper.appendChild(link);
 			this.trophiesElement.appendChild(wrapper);
 		});
@@ -55,11 +38,30 @@ export class Trophies {
 		this.busyIndicator.hide();
 	};
 
-	addBadge(id, marker) {
+	updateMeta() {
+		// format the guide data
+		const title = `Earn these trophies on bushwalks around greater sydney using public transport - Sydney Hiking Trips`;
+		const description = `These trophies can be earned by reaching notable landmarks on the bushwalks in this guide.`;
+		const url = `./?screen=trophies`;
+		// update the route without refreshing
+		window.history.pushState({'key': 'trophies'}, title, url);
+		// update the meta elements
+		document.querySelector('title').innerHTML = title;
+		document.querySelector('meta[name="description"]')?.setAttribute('content', description);
+		document.querySelector('meta[property="og:url"]')?.setAttribute('content', this.config.remoteUrl + '/?screen=trophies');
+		document.querySelector('meta[property="og:image"]')?.setAttribute('content', this.config.remoteUrl + `/inc/img/favicon.png`);
+		document.querySelector('meta[property="og:title"]')?.setAttribute('content', title);
+		document.querySelector('meta[property="og:description"]')?.setAttribute('content', description);
+		document.querySelector('link[rel="canonical"]')?.setAttribute('href', this.config.remoteUrl + '/?screen=trophies');
+	}
+
+	addBadge(marker) {
 		var link = document.createElement('a');
 		var template = this.trophiesTemplate;
 		// show the full badge
 		link.innerHTML += template.innerHTML
+			.replace(/{foreground}/g, this.config.remoteUrl + `/medium/${marker.key}/${marker.photo}`)
+			.replace(/{background}/g, this.config.localUrl + `/small/${marker.key}/${marker.photo}`)
 			.replace(/{icon}/g, marker.badge)
 			.replace(/{title}/g, marker.title);
 		// make it look active
@@ -70,17 +72,21 @@ export class Trophies {
 		return link;
 	};
 
-	addMystery(id, marker) {
+	addMystery(marker) {
 		var link = document.createElement('a');
 		var template = this.trophiesTemplate;
+		// calculate the tile this trophy occurs on
+		var tile = [15, long2tile(marker.lon, 15), lat2tile(marker.lat, 15)];
 		// show a mystery badge
 		link.innerHTML += template.innerHTML
-			.replace(/{icon}/g, marker.type)
+			.replace(/{foreground}/g, this.config.localUrl + `/tiles/${tile[0]}/${tile[1]}/${tile[2]}.jpg`)
+			.replace(/{background}/g, this.config.localUrl + `/tiles/${tile[0]}/${tile[1]}/${tile[2]}.jpg`)
+			.replace(/{icon}/g, 'marker-hotspot')
 			.replace(/{title}/g, '???');
 		// make it looks passive
 		link.setAttribute('class', 'trophies-passive');
 		// deeplink to the guides page
-		link.addEventListener('click', this.deeplink.bind(this, id));
+		link.addEventListener('click', this.deeplink.bind(this, marker.key));
 		// return the link
 		return link;
 	};
@@ -98,7 +104,7 @@ export class Trophies {
 
 	check(data) {
 		// reply if a reaction to the hotspot is nessecary
-		return !this.getTrophy(data.title);
+		return (data.type === 'hotspot' && !this.getTrophy(data.title));
 	};
 
 	enter(data) {
@@ -120,17 +126,14 @@ export class Trophies {
 	details(marker) {
 		var container = this.trophyElement;
 		var template = this.trophyTemplate;
-		// calculate the tile this trophy occurs on
-		//var tile = [15, long2tile(marker.lon, 15), lat2tile(marker.lat, 15)];
-		var background = marker.title.replace(/:|\.|\,|\'|\s|\?|\!/g, '_').toLowerCase().trim();
 		// populate the modal
+		console.log('showing trophy', marker);
 		container.innerHTML = template.innerHTML
 			.replace(/{icon}/g, marker.badge)
 			.replace(/{title}/g, marker.title)
-			//.replace(/\{tile\}/g, 'tiles/' + tile.join('/'))
-			.replace(/{tile}/g, 'trophies/' + background)
-			.replace(/{background}/g, 'trophies/' + background)
-			.replace(/{description}/g, '<p>' + marker.explanation.join('</p><p>') + '</p>');
+			.replace(/{background}/g, this.config.localUrl + `/small/${marker.key}/${marker.photo}`)
+			.replace(/{photo}/g, this.config.remoteUrl + `/medium/${marker.key}/${marker.photo}`)
+			.replace(/{description}/g, `<p>${marker.description}</p>`);
 		// add the event handler to close the modal popup
 		var closer = container.querySelector('footer button');
 		closer.addEventListener('click', this.close.bind(this, marker, container));
@@ -140,7 +143,8 @@ export class Trophies {
 
 	deeplink(id) {
 		// open the guide page for the id
-		this.parentView(id, 'map');
+		this.updateView(id, 'guide');
+		// TODO: focus the specific trophy
 	}
 
 	close(marker, container, evt) {

@@ -1,0 +1,426 @@
+{
+	"location": "Illawarra Escarpment",
+	"lon": 150.963567,
+	"lat": -34.256982,
+	"description": "This walk follows the Illawarra Escarpment Walking Track to Sublime Point, with many lookouts across the Sea Cliff Bridge and the coastline along the way.",
+	"keywords": {
+		"Illawarra Escarpment Walking Track": "https://npansw.org.au/wp-content/uploads/2016/10/illawarra-escarpment-walking-track.pdf",
+		"Sublime Point": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/sublime-point-walking-track",
+		"Sea Cliff Bridge": "https://www.visitnsw.com/destinations/south-coast/wollongong-and-surrounds/stanwell-park/attractions/sea-cliff-bridge"
+	},
+	"distance": [
+		18
+	],
+	"hero": "",
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "stanwellpark-sublimepoint-thirroul",
+	"updated": "2021-10-23",
+	"bounds": {
+		"west": 150.897216796875,
+		"north": -34.21634468843464,
+		"east": 151.007080078125,
+		"south": -34.3343644870263
+	},
+	"markers": [
+		{
+			"location": "Stanwell Park",
+			"type": "train",
+			"photo": "001_pxl_20211022_220328603.jpg",
+			"description": "Get the train to Stanwell Park using <a href=\"https://transportnsw.info/trip#/?to=Stanwell Park\">transportnsw.info</a>.",
+			"lon": 150.980408,
+			"lat": -34.227482
+		},
+		{
+			"type": "waypoint",
+			"photo": "002_pxl_20220513_213549172.jpg",
+			"description": "At the bottom of the stairwell, turn right out of the station.",
+			"lon": 151.00876666666667,
+			"lat": -34.19455277777777
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20211022_220333344.jpg",
+			"description": "<i>-1km</i> Alternatively turn left for a trailhead directly from the Sydneybound platform. However this section is in very poor condition.",
+			"lon": 150.980931,
+			"lat": -34.22648,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20211022_223602108.jpg",
+			"description": "The trail is overgrown. Watch for markers on the trees that indicate the way.",
+			"lon": 150.971113,
+			"lat": -34.228948,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20211022_223918908.jpg",
+			"description": "Cross the creek and find the scramble out of the gully on the other side.",
+			"lon": 150.971382,
+			"lat": -34.22927,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20211022_224138650.jpg",
+			"description": "Colourful ribbons indicate the route.",
+			"lon": 150.971641,
+			"lat": -34.229269,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20211022_225734788.jpg",
+			"description": "Small directional arrows are fastened to trees to indicate the way.",
+			"lon": 150.973589,
+			"lat": -34.232466,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20211022_230138547.jpg",
+			"description": "Small directional arrows are fastened to trees to indicate the way.",
+			"lon": 150.974139,
+			"lat": -34.232805,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20211022_230852666.jpg",
+			"description": "From the park sign, follow the directions up to Maddens Plain.",
+			"lon": 150.97679,
+			"lat": -34.234209,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "002_pxl_20220513_213708740.jpg",
+			"description": "From the station follow Railway Cres downhill.",
+			"lon": 150.9815888888889,
+			"lat": -34.22634444444444
+		},
+		{
+			"type": "waypoint",
+			"photo": "002_pxl_20220513_214157071.jpg",
+			"description": "From the right side of Railway Cres use the pedestrian bridge.",
+			"lon": 150.9828222222222,
+			"lat": -34.22798888888889
+		},
+		{
+			"type": "waypoint",
+			"photo": "003_pxl_20230901_223636579.jpg",
+			"description": "After crossing the pedestrian bridge follow the footpath to the right.",
+			"lon": 150.9838333333333,
+			"lat": -34.22827222222222
+		},
+		{
+			"type": "waypoint",
+			"photo": "003_pxl_20230901_223949896.jpg",
+			"description": "Follow the Grand Pacific Walk signs along Lawrence Hargrave Dr.",
+			"lon": 150.98204444444445,
+			"lat": -34.22999444444444
+		},
+		{
+			"type": "waypoint",
+			"photo": "003_pxl_20230901_224326554.jpg",
+			"description": "Follow the Grand Pacific Walk sign to the left down Murrawal Rd.",
+			"lon": 150.98255277777778,
+			"lat": -34.23184166666667
+		},
+		{
+			"type": "waypoint",
+			"photo": "003_pxl_20230901_224829190.jpg",
+			"description": "At the intersection continue straight on Lower Coast Rd.",
+			"lon": 150.98556388888886,
+			"lat": -34.23379722222222
+		},
+		{
+			"type": "waypoint",
+			"photo": "003_pxl_20230901_225216150.jpg",
+			"description": "From the end of Lower Coast Rd continue straight on the shared bike path.",
+			"lon": 150.98647777777776,
+			"lat": -34.23509722222222
+		},
+		{
+			"type": "waypoint",
+			"photo": "003_pxl_20230901_225634078.jpg",
+			"description": "Follow the sign to the Wodi Wodi track to the right across the road.",
+			"lon": 150.98380555555553,
+			"lat": -34.23789444444444
+		},
+		{
+			"type": "waypoint",
+			"photo": "004_pxl_20220513_220226142.jpg",
+			"description": "Follow the park sign to the Wodi Wodi Track up the railway embankment.",
+			"lon": 150.9840361111111,
+			"lat": -34.23768333333334
+		},
+		{
+			"type": "waypoint",
+			"photo": "004_pxl_20220513_220310966.jpg",
+			"description": "Use the underpass underneath the railway line.",
+			"lon": 150.9835861111111,
+			"lat": -34.23761666666667
+		},
+		{
+			"type": "waypoint",
+			"photo": "004_pxl_20220513_220409996.jpg",
+			"description": "After the underpass follow the national park trail markers along the Wodi Wodi Track.",
+			"lon": 150.9835861111111,
+			"lat": -34.23761666666667
+		},
+		{
+			"type": "waypoint",
+			"photo": "004_pxl_20220513_221952511.jpg",
+			"description": "At the split in the trail follow the national park sign up to Maddens Plain.",
+			"lon": 150.9787777777778,
+			"lat": -34.23439444444445
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211022_231543974.jpg",
+			"description": "Climb the steps up the escarpment.",
+			"lon": 150.97562,
+			"lat": -34.234648
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211022_233311271.jpg",
+			"description": "At the top of the steps follow the Forest Walking Track left along the lookouts.",
+			"lon": 150.977044,
+			"lat": -34.236446
+		},
+		{
+			"type": "hotspot",
+			"photo": "005_pxl_20211022_233708686.jpg",
+			"radius": 0.0004,
+			"description": "See Cliff? See Bridge? Sea Cliff Bridge!",
+			"badge": "bridge_2",
+			"title": "See Sea?",
+			"instruction": "Visit this location to earn the mystery trophy",
+			"lon": 150.976726,
+			"lat": -34.238538
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211022_234716731.jpg",
+			"description": "Continue straight at the intersection with Coal Cliff Dam Fire Trail.",
+			"lon": 150.969594,
+			"lat": -34.240251
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_000407538.jpg",
+			"description": "Follow Coke Works Fire Trail a short distance to the left.",
+			"lon": 150.96485199999998,
+			"lat": -34.24216
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_000426354.jpg",
+			"description": "Follow the trail markers right down the Forest Walking Track.",
+			"lon": 150.965046,
+			"lat": -34.242244
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_001142825.jpg",
+			"description": "Cross the firetrail and continue following the trail markers.",
+			"lon": 150.96216699990478,
+			"lat": -34.24457
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_001455850.jpg",
+			"description": "Cross the water feature and continue down the trail on the other side.",
+			"lon": 150.96047300010036,
+			"lat": -34.24545
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_002148985.jpg",
+			"description": "Use the footbridge across the creek and continue along the trail on the other side.",
+			"lon": 150.961805,
+			"lat": -34.248818
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_003154296.jpg",
+			"description": "Cross the creek and continue along the trail on the other side.",
+			"lon": 150.964195,
+			"lat": -34.252323
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_005643648.jpg",
+			"description": "Several side trails on the left lead to unguarded lookouts.",
+			"lon": 150.9603869999031,
+			"lat": -34.26215899988557
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_011059975.jpg",
+			"description": "At the intersection with the fire trail follow the national park sign to Sublime Point.",
+			"lon": 150.95386499999998,
+			"lat": -34.26454299986499
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_011717953.jpg",
+			"description": "Follow the boardwalk across the wetlands.",
+			"lon": 150.950325,
+			"lat": -34.266198
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_012130843.jpg",
+			"description": "At the intersection follow the trail marker to the left along the power line service trail.",
+			"lon": 150.94768,
+			"lat": -34.267307
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_012636362.jpg",
+			"description": "The service trail ends at three powerline pylons on the edge of the cliff.",
+			"lon": 150.946005,
+			"lat": -34.270365
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_012838297.jpg",
+			"description": "Follow the trail marker to the right of the pylons.",
+			"lon": 150.945969,
+			"lat": -34.270522
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_014913125.jpg",
+			"description": "At the second set of pylons follow the service trail to the right.",
+			"lon": 150.938623,
+			"lat": -34.279956
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_015031806.jpg",
+			"description": "A short distance up the service trail follow the trail markers to the left.",
+			"lon": 150.937868,
+			"lat": -34.279966999871846
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_021913089.jpg",
+			"description": "Take the left split of the track in the direction of Sublime Point.",
+			"lon": 150.92729,
+			"lat": -34.294072
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_021946890.jpg",
+			"description": "The trail ends at Sublime Point's picnic area.",
+			"lon": 150.927225,
+			"lat": -34.294395
+		},
+		{
+			"type": "toilet",
+			"photo": "005_pxl_20211023_022431748.jpg",
+			"description": "There is a toilet block at the picnic area.",
+			"lon": 150.925268,
+			"lat": -34.296034999999996
+		},
+		{
+			"type": "kiosk",
+			"photo": "005_pxl_20211023_022924684.jpg",
+			"description": "There are amenities at the lookout.",
+			"lon": 150.92517899999999,
+			"lat": -34.296616
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_023255031.jpg",
+			"description": "Follow the path along the lookout.",
+			"lon": 150.925063,
+			"lat": -34.296825999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_023351547.jpg",
+			"description": "At the park sign follow the Sublime Point Track down to Austinmer.",
+			"lon": 150.924457,
+			"lat": -34.297035
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_024611401.jpg",
+			"description": "Follow the many steps down the escarpment.",
+			"lon": 150.92404499999998,
+			"lat": -34.29879
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_025659133.jpg",
+			"description": "From the park sign follow the Gibsons Walking Track right to Austinmer Camp.",
+			"lon": 150.924914,
+			"lat": -34.301449
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_031300648.jpg",
+			"description": "At the intersection follow the fire trail to the left.",
+			"lon": 150.916466,
+			"lat": -34.3052
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_031620666.jpg",
+			"description": "Pass the gate and follow the trail to the left.",
+			"lon": 150.91785199999998,
+			"lat": -34.305882
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_032316162.jpg",
+			"description": "At the end of the trail pass the gate and continue straight on Phillip St.",
+			"lon": 150.918446,
+			"lat": -34.309396
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_033849735.jpg",
+			"description": "At the intersection follow George St to the left.",
+			"lon": 150.917033,
+			"lat": -34.317275
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_033940871.jpg",
+			"description": "At the intersection follow Lawrence Hargrave Dr to the left.",
+			"lon": 150.91741399999998,
+			"lat": -34.317438
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_034013480.jpg",
+			"description": "Cross at the traffic lights and follow the sign to Railway Pde.",
+			"lon": 150.91791999999998,
+			"lat": -34.317316000000005
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20211023_034242618.jpg",
+			"description": "Follow Railway Pde to the station.",
+			"lon": 150.918312,
+			"lat": -34.317629000000004
+		},
+		{
+			"location": "Thirroul",
+			"type": "train",
+			"photo": "005_pxl_20211023_034425698.jpg",
+			"description": "Plan your return trip from Thiroul at <a href=\"https://transportnsw.info/trip#/?from=Thiroul\">transportnsw.info</a>.",
+			"lon": 150.918686,
+			"lat": -34.31794799999999
+		}
+	]
+}

@@ -1,0 +1,826 @@
+{
+	"location": "Port Stephens",
+	"lon": 152.14010182768106,
+	"lat": -32.76185969822109,
+	"description": "This walk follows the newly opened Tomaree Coastal Walk, with options to climb Mount Tomaree and several shortcuts back in case of time constraints.",
+	"keywords": {
+		"Tomaree Coastal Walk": "https://www.nationalparks.nsw.gov.au/things-to-do/experiences/tomaree-coastal-walk",
+		"Mount Tomaree": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/tomaree-head-summit-walk"
+	},
+	"distance": [
+		14,
+		25,
+		31
+	],
+	"hero": "",
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "nelsonbay-tomaree-annabay",
+	"updated": "2024-02-03",
+	"bounds": {
+		"west": 152.061767578125,
+		"north": -32.694865977875054,
+		"east": 152.20458984375,
+		"south": -32.80574473290686
+	},
+	"markers": [
+		{
+			"location": "Nelson Bay",
+			"type": "bus",
+			"photo": "001_pxl_20240202_224500504.jpg",
+			"description": "Get the train and bus to Nelson Bay using <a href=\"https://transportnsw.info/trip#/?to=Nelson Bay\">transportnsw.info</a>.",
+			"lon": 152.14266769587994,
+			"lat": -32.721755392849445
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20240202_224729810.jpg",
+			"description": "From the bus stop continue to the intersection with Stockton St.",
+			"lon": 152.143377,
+			"lat": -32.721896
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20240202_224910601.jpg",
+			"description": "Follow Stockton St to the left to the pedestrian crossing .",
+			"lon": 152.143768,
+			"lat": -32.720851
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20240202_225256545.jpg",
+			"description": "Cross at the traffic lights and continue straight on to the harbour.",
+			"lon": 152.14408899999998,
+			"lat": -32.720279000000005
+		},
+		{
+			"type": "info",
+			"photo": "001_pxl_20240202_225224784.jpg",
+			"description": "There are public toilets at the tourist information to the right of the pedestrian crossing.",
+			"lon": 152.144334,
+			"lat": -32.720482
+		},
+		{
+			"type": "kiosk",
+			"photo": "001_pxl_20240202_225350421.jpg",
+			"description": "Follow the esplanade to right along the restaurants.",
+			"lon": 152.144326,
+			"lat": -32.719750000000005
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20240202_225623990.jpg",
+			"description": "From the harbour continue following the footpath along the shore.",
+			"lon": 152.14541699999998,
+			"lat": -32.719664
+		},
+		{
+			"type": "toilet",
+			"photo": "001_pxl_20240202_230657248.jpg",
+			"description": "There are public toilets at Fly Point Park.",
+			"lon": 152.150903,
+			"lat": -32.715797
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20240202_230948788.jpg",
+			"description": "Follow the shared path along Victoria Pde.",
+			"lon": 152.152255,
+			"lat": -32.714859000000004
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20240202_231450897.jpg",
+			"description": "Access Little Beach through the carpark to the left.",
+			"lon": 152.156819,
+			"lat": -32.714017000000005
+		},
+		{
+			"type": "toilet",
+			"photo": "001_pxl_20240202_231711884.jpg",
+			"description": "There are public toilets along Little Beach.",
+			"lon": 152.158748,
+			"lat": -32.712891000000006
+		},
+		{
+			"type": "kiosk",
+			"photo": "001_pxl_20240202_231829450.jpg",
+			"description": "From the end of Little Beach follow Beach Rd to the right to the holiday park cafe.",
+			"lon": 152.159679,
+			"lat": -32.712224000000006
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20240202_231947146.jpg",
+			"description": "At the corner of Beach Rd follow the path left to the beach.",
+			"lon": 152.160763,
+			"lat": -32.712320000000005
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20240202_232441130.jpg",
+			"description": "Follow Shoal Bay Beach to the right.",
+			"lon": 152.164025,
+			"lat": -32.713285000000006
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20240202_233425648.jpg",
+			"description": "A short distance up the beach it is possible to switch to the esplanade along the beach.",
+			"lon": 152.16996999999998,
+			"lat": -32.718861000000004
+		},
+		{
+			"type": "toilet",
+			"photo": "001_pxl_20240202_233722839.jpg",
+			"description": "There is a public toilet block along the beach across the shops.",
+			"lon": 152.172577,
+			"lat": -32.719784000000004
+		},
+		{
+			"type": "kiosk",
+			"photo": "001_pxl_20240202_233929935.jpg",
+			"description": "There is a cafe and a supermarket across the road at Shoal Bay.",
+			"lon": 152.173914,
+			"lat": -32.720338000000005
+		},
+		{
+			"type": "toilet",
+			"photo": "001_pxl_20240202_234322524.jpg",
+			"description": "From the shops continue along the esplanade to the wharf.",
+			"lon": 152.175207,
+			"lat": -32.720228
+		},
+		{
+			"type": "toilet",
+			"photo": "001_pxl_20240202_234805259.jpg",
+			"description": "From the wharf continue along the esplanade to the boat ramp.",
+			"lon": 152.17971599999998,
+			"lat": -32.719776
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20240202_234837577.jpg",
+			"description": "From the boat ramp follow the footpath along the carpark at Mount Tomaree.",
+			"lon": 152.180174,
+			"lat": -32.719616
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20240202_235147979.jpg",
+			"description": "<i>+1h</i> Optionally enter the Tomaree Track up from the end of the carpark.",
+			"lon": 152.182775,
+			"lat": -32.718299,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20240203_000105993.jpg",
+			"description": "On the right of the Tomaree Track follow the steps up to the summit.",
+			"lon": 152.185767,
+			"lat": -32.715306000000005,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20240203_001234384.jpg",
+			"description": "From the lookout at the summit return back to the carpark.",
+			"lon": 152.187067,
+			"lat": -32.716559000000004,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20240203_002907977.jpg",
+			"description": "From the Mount Tomaree carpark follow the road to the left to the Zenith Beach carpark.",
+			"lon": 152.182843,
+			"lat": -32.718268
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20240203_003138467.jpg",
+			"description": "From the gate at the end of the carpark follow the Tomaree Coastal Walk",
+			"lon": 152.182698,
+			"lat": -32.719864
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20240203_004842555.jpg",
+			"description": "From the intersection at Wreck Beach continue following Shoal Bay Trail straight on.",
+			"lon": 152.179632,
+			"lat": -32.72629299992936
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20240203_005624346.jpg",
+			"description": "Cross the road to Box Beach and continue along Shoal Bay Trail.",
+			"lon": 152.178442,
+			"lat": -32.73084
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20240203_010353884.jpg",
+			"description": "At the intersection follow Ocean Beach Trail to the left.",
+			"lon": 152.174052,
+			"lat": -32.732204
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20240203_011018623.jpg",
+			"description": "Follow the Tomaree Coastal Walk sign down the side trail on the right.",
+			"lon": 152.176008,
+			"lat": -32.736028
+		},
+		{
+			"type": "waypoint",
+			"photo": "002_dsc_1762.jpg",
+			"description": "<i>+1km</i> Optionally climb the dunes ahead for a lookout across the Fingal Spit.",
+			"lon": 152.17576043997016,
+			"lat": -32.73582794000238,
+			"optional": true
+		},
+		{
+			"type": "hotspot",
+			"photo": "002_dsc_1764.jpg",
+			"lon": 152.1786321851128,
+			"lat": -32.73720313825261,
+			"radius": 0.0004,
+			"description": "The impressive view from exactly this dune, make the Fingal Spit look irresistible.",
+			"badge": "skull_and_bones",
+			"title": "Tempting, but don't Risk It",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
+			"type": "waypoint",
+			"photo": "003_pxl_20240203_011617689.jpg",
+			"description": "The side trail ends at a lookout platform across Fingal Bay.",
+			"lon": 152.176134,
+			"lat": -32.739539
+		},
+		{
+			"type": "waypoint",
+			"photo": "003_pxl_20240203_011702736.jpg",
+			"description": "From the lookout platform follow the steps down to the beach.",
+			"lon": 152.17611,
+			"lat": -32.739647
+		},
+		{
+			"type": "waypoint",
+			"photo": "003_pxl_20240203_011755543.jpg",
+			"description": "Follow the Tomaree Coastal Walk to the right along the beach.",
+			"lon": 152.17618,
+			"lat": -32.739899
+		},
+		{
+			"type": "waypoint",
+			"photo": "003_pxl_20240203_012704626.jpg",
+			"description": "Halfway down the beach follow the path off the beach to the surf club.",
+			"lon": 152.17156799999998,
+			"lat": -32.742357
+		},
+		{
+			"type": "kiosk",
+			"photo": "004_dsc_1776.jpg",
+			"description": "From the surf club follow the footpath to the left along the beach.",
+			"lon": 152.17082728999395,
+			"lat": -32.74251426996173
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_dsc_1776_p3303381.jpg",
+			"description": "<i>-15km</i> Alternatively follow the footpath right from the surf club for a shortcut back to Nelson Bay.",
+			"lon": 152.1729227700369,
+			"lat": -32.7381312100177,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_dsc_1776_p3303387.jpg",
+			"description": "From the corner of Sylvia Street, follow the Austral St Firetrail to the left.",
+			"lon": 152.16527541998232,
+			"lat": -32.72621769999911,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_dsc_1776_p3303389.jpg",
+			"description": "At the intersection of firetrails follow the boreline trail staight on.",
+			"lon": 152.16133880994673,
+			"lat": -32.72313403999399,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_dsc_1776_p3303393.jpg",
+			"description": "From the end of the boreline trail, follow Kerrigan St and Fingal St back to the Nelson Bay shorefront.",
+			"lon": 152.15511562998407,
+			"lat": -32.719056180001616,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_dsc_1776_p3303397p.jpg",
+			"description": "From the corner of Magnus St follow Laidler Walk to the harbour shorefront.",
+			"lon": 152.1481083333333,
+			"lat": -32.719144444444446,
+			"optional": true
+		},
+		{
+			"type": "toilet",
+			"photo": "006_pxl_20240203_013532342.jpg",
+			"description": "There are public toilets along the reserve.",
+			"lon": 152.17008299999998,
+			"lat": -32.747349
+		},
+		{
+			"type": "waypoint",
+			"photo": "006_pxl_20240203_013828369.jpg",
+			"description": "From the reserve follow the footpath along the beach.",
+			"lon": 152.17138599999998,
+			"lat": -32.749175
+		},
+		{
+			"type": "waypoint",
+			"photo": "006_pxl_20240203_014033874.jpg",
+			"description": "At the headland enter Barry Park on he left. ",
+			"lon": 152.172905,
+			"lat": -32.749246
+		},
+		{
+			"type": "toilet",
+			"photo": "006_pxl_20240203_014113458.jpg",
+			"description": "There are public toilets at Barry Park.",
+			"lon": 152.173303,
+			"lat": -32.749389
+		},
+		{
+			"type": "waypoint",
+			"photo": "006_pxl_20240203_014222323.jpg",
+			"description": "From the toilets follow the Barry Park Track.",
+			"lon": 152.17327699999998,
+			"lat": -32.750107
+		},
+		{
+			"type": "waypoint",
+			"photo": "006_pxl_20240203_014607595.jpg",
+			"description": "From the park sign follow the trail across the headland to the left.",
+			"lon": 152.17210699999998,
+			"lat": -32.752337
+		},
+		{
+			"type": "waypoint",
+			"photo": "006_pxl_20240203_021141635.jpg",
+			"description": "At intersection follow the Tomaree Coastal Walk signs.",
+			"lon": 152.16357100000002,
+			"lat": -32.75685
+		},
+		{
+			"type": "waypoint",
+			"photo": "006_pxl_20240203_021352021.jpg",
+			"description": "Follow Boulder Bay Rd a short distance to the left.",
+			"lon": 152.16294200000002,
+			"lat": -32.755928
+		},
+		{
+			"type": "waypoint",
+			"photo": "006_pxl_20240203_021434658.jpg",
+			"description": "From the right side of Boulder Bay Rd, follow the bushtrail around the wastewater treatment plant.",
+			"lon": 152.162685,
+			"lat": -32.755647
+		},
+		{
+			"type": "waypoint",
+			"photo": "006_pxl_20240203_022037100.jpg",
+			"description": "At the intersecting firetrails continue straight on along the Tomaree Coastal Walk.",
+			"lon": 152.160435,
+			"lat": -32.758579
+		},
+		{
+			"type": "waypoint",
+			"photo": "006_pxl_20240203_023012308.jpg",
+			"description": "Follow the trail along the coastal lookout points.",
+			"lon": 152.15627700000002,
+			"lat": -32.76321899992235
+		},
+		{
+			"type": "waypoint",
+			"photo": "006_pxl_20240203_025440519.jpg",
+			"description": "At Rocky Beach follow the beach access trail to the car park to the right.",
+			"lon": 152.142892,
+			"lat": -32.763407
+		},
+		{
+			"type": "waypoint",
+			"photo": "006_pxl_20240203_025553693.jpg",
+			"description": "<i>+500m</i> Optionally follow the beach access trail to the left to visit Rock Beach.",
+			"lon": 152.14303699992578,
+			"lat": -32.763902,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "006_pxl_20240203_025648012.jpg",
+			"description": "From Rocky Beach return up the access trail to the carpark.",
+			"lon": 152.142874,
+			"lat": -32.76459900014083,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "006_pxl_20240203_030029198.jpg",
+			"description": "Follow the path along the carpark to the left.",
+			"lon": 152.14265699999999,
+			"lat": -32.763296
+		},
+		{
+			"type": "waypoint",
+			"photo": "008_dsc_1875.jpg",
+			"description": "<i>-6km</i> To save an hour follow Big Rocky Trail from the carpark back towards Nelson Bay.",
+			"lon": 152.138369719981,
+			"lat": -32.75894605999833,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "008_dsc_1879.jpg",
+			"description": "Follow Skip Pan Trail from the right side of Big Rocky Trail, ",
+			"lon": 152.13226092997866,
+			"lat": -32.75254176998465,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "008_dsc_1882.jpg",
+			"description": "From the intersection follow the Anna Bay Boreline to the right.",
+			"lon": 152.13298745999853,
+			"lat": -32.749831610001166,
+			"optional": true
+		},
+		{
+			"type": "hotspot",
+			"photo": "008_dsc_1883.jpg",
+			"lon": 152.1421952149484,
+			"lat": -32.74694053020608,
+			"radius": 0.0004,
+			"description": "In case you were wondering where Nelson Bay gets its water from.",
+			"badge": "drill_perforator",
+			"title": "The Boring Part",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
+			"type": "waypoint",
+			"photo": "008_dsc_1884.jpg",
+			"description": "From the intersection continue along Anna Bay Boreline to the left. ",
+			"lon": 152.14589228999424,
+			"lat": -32.74709712009804,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "008_dsc_1885.jpg",
+			"description": "From the intersection with the powerline service trail, follow the Meteorological Station Trail to the left.",
+			"lon": 152.1490727798955,
+			"lat": -32.74326854998584,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "008_dsc_1886.jpg",
+			"description": "From the split, follow Meteorological Station Link Trail to the left.",
+			"lon": 152.1482357100125,
+			"lat": -32.739449750008994,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "008_dsc_1891.jpg",
+			"description": "From the intersection with Gan Gan Powerline Trail, to the right of the open field, follow the bush trail up to Tallean Rd.",
+			"lon": 152.1401968799925,
+			"lat": -32.73273876002291,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "008_dsc_1893.jpg",
+			"description": "Follow the bushtrail up to the trailhead at Tallean Rd.",
+			"lon": 152.13828990999525,
+			"lat": -32.731258779993404,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "008_dsc_1894.jpg",
+			"description": "Follow Tallean Rd to the right.",
+			"lon": 152.13848996000436,
+			"lat": -32.73094188000177,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "008_dsc_1895.jpg",
+			"description": "From left side of Tallean Rd follow the steps down to the cemetery.",
+			"lon": 152.14071271999828,
+			"lat": -32.726401650047485,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "008_dsc_1897.jpg",
+			"description": "From the cemetery follow Stockton St to the right.",
+			"lon": 152.1410468499927,
+			"lat": -32.725137019987415,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "008_dsc_1899.jpg",
+			"description": "At the roundabout follow Stockton St to the left.",
+			"lon": 152.14304028000237,
+			"lat": -32.72395213999579,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "008_dsc_1900.jpg",
+			"description": "Follow Donald St to the left to the bus stop.",
+			"lon": 152.14350932000417,
+			"lat": -32.72201775002239,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_030130826.jpg",
+			"description": "From the end of the carpark follow the boardwalk to the left.",
+			"lon": 152.1423890000741,
+			"lat": -32.763295
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_030702330.jpg",
+			"description": "At intersections follow the Tomaree Coastal Walk signs to Samurai Beach.",
+			"lon": 152.14039699999998,
+			"lat": -32.761625
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_031921783.jpg",
+			"description": "Follow the Samurai Beach Track across the headland to Samurai Beach.",
+			"lon": 152.133645,
+			"lat": -32.764197000095535
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_032037952.jpg",
+			"description": "Take the steps down to Samurai Beach.",
+			"lon": 152.13320100012197,
+			"lat": -32.763763
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_032653248.jpg",
+			"description": "Cross the beach to the headland on the other side.",
+			"lon": 152.129948,
+			"lat": -32.764334
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_034148340.jpg",
+			"description": "On the far side of the beach follow Tomaree Coastal Walk signs up the steps to One Mile Beach.",
+			"lon": 152.12103000000002,
+			"lat": -32.768997
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_034549361.jpg",
+			"description": "Follow the markers across the headland to One Mile Beach.",
+			"lon": 152.12095100000002,
+			"lat": -32.769978
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_034744483.jpg",
+			"description": "Cross One Mile Beach to the headland on the other side.",
+			"lon": 152.120214,
+			"lat": -32.770296
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_040418220.jpg",
+			"description": "One the far side of One Mile Beach take the steps up the headland.",
+			"lon": 152.11697,
+			"lat": -32.779947
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_040849911.jpg",
+			"description": "At intersections follow the Tomaree Coastal Walk signs to Boat harbour.",
+			"lon": 152.118953,
+			"lat": -32.780237
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_042629381.jpg",
+			"description": "The bushtrail across the headland ends at a lookout platform.",
+			"lon": 152.118702,
+			"lat": -32.786876
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_043242031.jpg",
+			"description": "From the viewing platform follow the trail markers across the rocks.",
+			"lon": 152.11642799999998,
+			"lat": -32.787478
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_043341855.jpg",
+			"description": "The trail resumes after traversing the rocky section.",
+			"lon": 152.116111,
+			"lat": -32.787243
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_043912037.jpg",
+			"description": "Follow Nelson St straight ahead from the end of the trail.",
+			"lon": 152.11351,
+			"lat": -32.786269
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_044251055.jpg",
+			"description": "At the intersection follow Boat Harbour Rd to the left.",
+			"lon": 152.112048,
+			"lat": -32.785903999999995
+		},
+		{
+			"type": "toilet",
+			"photo": "009_pxl_20240203_044451586.jpg",
+			"description": "There are public toilets at the Boat Harbour Beach Reserve.",
+			"lon": 152.111456,
+			"lat": -32.787026999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_044827298.jpg",
+			"description": "Cross the carpark at the far end of Boat Harbour Beach.",
+			"lon": 152.110765,
+			"lat": -32.789013999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_044925911.jpg",
+			"description": "From the carpark follow Kingsley Dr. to the left.",
+			"lon": 152.110515,
+			"lat": -32.789383
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_045441547.jpg",
+			"description": "A the corner of Kingley Dr follow the road left to Kingsley Beach.",
+			"lon": 152.106564,
+			"lat": -32.787963
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_045905183.jpg",
+			"description": "From the carpark follow the trail down to Kingsley Beach.",
+			"lon": 152.10456399999998,
+			"lat": -32.787023999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_050131168.jpg",
+			"description": "At the far end of Kingsley Beach follow the steps up the headland.",
+			"lon": 152.102944,
+			"lat": -32.787752
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_050754789.jpg",
+			"description": "Follow the markers across the headland to Little Kingsley Beach.",
+			"lon": 152.100642,
+			"lat": -32.788377
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_051143871.jpg",
+			"description": "From the far end of Little Kingsley Beach follow the Tomaree Coastal Walk signs up the next headland.",
+			"lon": 152.099785,
+			"lat": -32.787624
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_052101152.jpg",
+			"description": "Follow the bushtrail across the headland.",
+			"lon": 152.095073,
+			"lat": -32.786539999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_052508221.jpg",
+			"description": "From the trailhead follow the Tomaree Coastal Walk sign to Birubi Point.",
+			"lon": 152.093018,
+			"lat": -32.787889
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_052553014.jpg",
+			"description": "Follow Pacific St along the beach reserve.",
+			"lon": 152.092648,
+			"lat": -32.788011
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_052658717.jpg",
+			"description": "There are public toilets on the right side of Pacific St.",
+			"lon": 152.09186400000002,
+			"lat": -32.788134
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_053029585.jpg",
+			"description": "From the end of Pacific St follow the Tomaree Coastal Walk to the left.",
+			"lon": 152.08891500000001,
+			"lat": -32.788213
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_054754930.jpg",
+			"description": "From Iris Moore Reserve. Follow the trial along the left side of the shorefront houses.",
+			"lon": 152.08532300000002,
+			"lat": -32.787912999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_055242302.jpg",
+			"description": "Past the houses follow the rocks up to the historic cemetery.",
+			"lon": 152.082282,
+			"lat": -32.786932
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_055334475.jpg",
+			"description": "Continue on the footpath along the history cemetery.",
+			"lon": 152.081625,
+			"lat": -32.786812999999995
+		},
+		{
+			"type": "toilet",
+			"photo": "009_pxl_20240203_055832027.jpg",
+			"description": "There are public toilets at Robinson Reserve.",
+			"lon": 152.0787909998865,
+			"lat": -32.784869
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_060010494.jpg",
+			"description": "Follow the footpath past Robinson Reserve.",
+			"lon": 152.07781599999998,
+			"lat": -32.783774
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_060131745.jpg",
+			"description": "At the intersection follow James Peterson St to the left to the surf club.",
+			"lon": 152.076751,
+			"lat": -32.78314699987473
+		},
+		{
+			"type": "kiosk",
+			"photo": "009_pxl_20240203_060220899.jpg",
+			"description": "There are amenities at the surf club.",
+			"lon": 152.076132,
+			"lat": -32.783355
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_060313319.jpg",
+			"description": "Birubi Point marks the official end of the Tomaree Coastal Walk.",
+			"lon": 152.075493,
+			"lat": -32.78313699987613
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240203_060618946.jpg",
+			"description": "Follow James Peterson St back from the surf club.",
+			"lon": 152.076977,
+			"lat": -32.782565999999996
+		},
+		{
+			"type": "toilet",
+			"photo": "009_pxl_20240203_061454386.jpg",
+			"description": "At the intersection follow Gan Gan Rd to the right to the bus stop. There are public toilets at the nearby carpark.",
+			"lon": 152.08101299999998,
+			"lat": -32.777483
+		},
+		{
+			"location": "Anna Bay",
+			"type": "bus",
+			"photo": "009_pxl_20240203_061610158.jpg",
+			"description": "Plan your return trip from Anna Bay at <a href=\"https://transportnsw.info/trip#/?from=Anna Bay\">transportnsw.info</a>.",
+			"lon": 152.08241832442582,
+			"lat": -32.7777046803385
+		}
+	]
+}

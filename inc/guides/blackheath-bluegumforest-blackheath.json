@@ -1,0 +1,186 @@
+{
+	"location": "Grose Valley",
+	"lon": 150.3570952546,
+	"lat": -33.6135320552,
+	"description": "This walk traverses Grose Valley to the Blue Gum Forest. Perrys Lookdown, Hat Hill and Pulpit Rock are worth visiting on the way back.",
+	"keywords": {
+		"Blue Gum Forest": "https://www.nationalparks.nsw.gov.au/things-to-do/historic-buildings-places/blue-gum-forest",
+		"Perrys Lookdown": "https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/perrys-lookdown",
+		"Pulpit Rock": "https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/pulpit-rock-lookout"
+	},
+	"distance": [
+		24
+	],
+	"hero": "002_p9215063.jpg",
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "blackheath-bluegumforest-blackheath",
+	"updated": "2017-12-27",
+	"bounds": {
+		"west": 150.27099609375,
+		"north": -33.58716733904656,
+		"east": 150.369873046875,
+		"south": -33.651208299204974
+	},
+	"markers": [
+		{
+			"location": "Blackheath",
+			"type": "train",
+			"photo": "001_p7200001.jpg",
+			"description": "Get the train to Blackheath using <a href=\"https://transportnsw.info/trip#/?to=Blackheath\">transportnsw.info</a>.",
+			"lon": 150.284271,
+			"lat": -33.633377
+		},
+		{
+			"type": "waypoint",
+			"photo": "002_p9214723.jpg",
+			"lon": 150.28834444444445,
+			"lat": -33.63671388888889,
+			"description": "From the station, follow the main road all the way down to Govetts Leap Lookout."
+		},
+		{
+			"type": "toilet",
+			"lon": 150.311066,
+			"lat": -33.628021,
+			"description": "There is a block of public toilets at the picnic area."
+		},
+		{
+			"type": "waypoint",
+			"photo": "002_p9214817_p9214831.jpg",
+			"lon": 150.3119388888889,
+			"lat": -33.62857777777778,
+			"description": "From Govetts Leap Lookout follow the signs to Rodriguez Pass down into the valley."
+		},
+		{
+			"type": "waypoint",
+			"photo": "002_p9214871.jpg",
+			"lon": 150.31268055555557,
+			"lat": -33.62895833333334,
+			"description": "The descent into the valley is steep and can be slippery because of the many streams and drips."
+		},
+		{
+			"type": "waypoint",
+			"photo": "002_p9214938_p9214943.jpg",
+			"lon": 150.3149361111111,
+			"lat": -33.63025277777778,
+			"description": "The descend ends at the foot of Govetts Leap. The trail starts at the far end of the pool."
+		},
+		{
+			"type": "waypoint",
+			"photo": "002_p9214951_p9214954.jpg",
+			"lon": 150.3164277777778,
+			"lat": -33.62884722222222,
+			"description": "From the falls a trail sets off into the dense bushland of the valley."
+		},
+		{
+			"type": "waypoint",
+			"photo": "002_p9214980.jpg",
+			"lon": 150.3180972222222,
+			"lat": -33.6284,
+			"description": "The trail follows the stream several and crosses it times along the way."
+		},
+		{
+			"type": "waypoint",
+			"photo": "002_p9215023.jpg",
+			"lon": 150.33460833333334,
+			"lat": -33.63098611111111,
+			"description": "At junction rock follow the direction to the Blue Gum forrest and Acacia Flat."
+		},
+		{
+			"type": "hotspot",
+			"photo": "002_p9215089.jpg",
+			"lon": 150.3467138888889,
+			"lat": -33.621966666666665,
+			"description": "This is legitimately the middle of nowhere, with only solitude surrounding you. May it comfort you during the long long climb ahead.",
+			"radius": 0.0004,
+			"badge": "compas_2",
+			"title": "You've Come a Long Way Baby",
+			"instruction": "<center>Visit this location to earn the mystery trophy</center>"
+		},
+		{
+			"type": "toilet",
+			"lon": 150.353587,
+			"lat": -33.615401,
+			"description": "The campground has a toilet cabin."
+		},
+		{
+			"type": "waypoint",
+			"photo": "002_p9215143.jpg",
+			"lon": 150.35662222222223,
+			"lat": -33.613725,
+			"description": "At Acacia Flat the trail leaves the river for the Blue Gum forest."
+		},
+		{
+			"type": "waypoint",
+			"photo": "002_p9215174.jpg",
+			"lon": 150.35749444444443,
+			"lat": -33.610283333333335,
+			"description": "At the junction further up the trail, follow the directions to Perrys Lookdown."
+		},
+		{
+			"type": "waypoint",
+			"photo": "002_p9215189.jpg",
+			"lon": 150.34773333333334,
+			"lat": -33.60255,
+			"description": "The ascent is long and steep, but the trail is well maintained."
+		},
+		{
+			"type": "waypoint",
+			"photo": "002_p9215268.jpg",
+			"description": "The climb ends at Perrys Lookdown.",
+			"lon": 150.34521944444447,
+			"lat": -33.59962222222222
+		},
+		{
+			"type": "waypoint",
+			"photo": "002_p9215271.jpg",
+			"lon": 150.3445888888889,
+			"lat": -33.59968611111111,
+			"description": "From the car park of the lookout follow the dirt road up the ridge."
+		},
+		{
+			"type": "waypoint",
+			"photo": "002_p9215300.jpg",
+			"lon": 150.32583055555554,
+			"lat": -33.61275277777778,
+			"description": "At the sealed section of the road a follow the first side street to Pulpit Rock"
+		},
+		{
+			"type": "waypoint",
+			"photo": "002_p9215318.jpg",
+			"lon": 150.32792777777777,
+			"lat": -33.620894444444446,
+			"description": "Pulpit Rock is a spectacular lookout with several levels of safe viewing platforms."
+		},
+		{
+			"type": "waypoint",
+			"photo": "002_p9215341.jpg",
+			"lon": 150.32751944444445,
+			"lat": -33.61859722222222,
+			"description": "Halfway back to the car park, follow the Pulpit Rock Track towards Govetts Leap."
+		},
+		{
+			"type": "waypoint",
+			"photo": "003_dsc_8654_dsc_8659.jpg",
+			"description": "After crossing the creek. follow Popes Glen Track to the right.",
+			"lon": 150.31116200000002,
+			"lat": -33.62437
+		},
+		{
+			"type": "waypoint",
+			"photo": "004_p7200205.jpg",
+			"description": "Cross Memorial Park and follow Govetts Leap Road back to the station.",
+			"lon": 150.2909861111111,
+			"lat": -33.63381666666667
+		},
+		{
+			"location": "Blackheath",
+			"type": "train",
+			"photo": "005_p7200207.jpg",
+			"description": "Plan your return trip from Blackheath at <a href=\"https://transportnsw.info/trip#/?from=Blackheath\">transportnsw.info</a>.",
+			"lon": 150.284332,
+			"lat": -33.633484
+		}
+	]
+}

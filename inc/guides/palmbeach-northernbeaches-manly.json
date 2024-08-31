@@ -1,23 +1,24 @@
 {
 	"location": "Northern Beaches",
-	"lon": 151.317324,
-	"lat": -33.671827,
-	"description": [
-		"From the start of the walk at the Palm Beach Ferry dock, the walk loops around <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/historic-buildings-places/barrenjoey-lighthouse\">Barrenjoey</a> for its breathtaking views.",
-		"<br/><br/>",
-		"This is followed by a long mostly urban trek down the Northern Beaches to <a href=\"https://www.northernbeaches.nsw.gov.au/things-to-do/recreation-area/narrabeen-lagoon-state-park\">Narrabeen Lagoon</a>,",
-		"intersperced by welcome stretches of bushland at <a href=\"http://postcardsydney.com/bangalley-head-walking-track-avalon/\">Bangalley Head</a>",
-		"and the <a href=\"https://www.northernbeaches.nsw.gov.au/things-to-do/recreation-area/bilgola-south-headland-0\">Bilgola Headland</a>.",
-		"<br/><br/>",
-		"From the natural break at the lagoon the walk can be completed to Manly along the <a href=\"https://www.northernbeaches.nsw.gov.au/things-to-do/recreation-area/bicentennial-coastal-walk\">Bicentennial Coastal Walk</a>."
+	"lon": 151.317406,
+	"lat": -33.672071,
+	"description": "This walk crosses the length of the Northern Beaches after a visit to the Barrenjoey Lighthouse, with notable stops at Narrabeen Lagoon and the Long Reef Headland",
+	"keywords": {
+		"Northern Beaches": "https://www.sydney.com/destinations/sydney/sydney-north/northern-beaches",
+		"Barrenjoey Lighthouse": "https://www.nationalparks.nsw.gov.au/things-to-do/historic-buildings-places/barrenjoey-lighthouse",
+		"Narrabeen Lagoon": "https://www.sydney.com/destinations/sydney/sydney-north/northern-beaches/attractions/narrabeen-lagoon",
+		"Long Reef Headland": "https://www.sydney.com/destinations/sydney/sydney-north/northern-beaches/journey/long-reef-headland-walk"
+	},
+	"distance": [
+		25,
+		40
 	],
-	"duration": 10,
-	"distance": 41,
+	"hero": "",
 	"zoom": 13,
 	"rain": true,
 	"fireban": true,
 	"key": "palmbeach-northernbeaches-manly",
-	"updated": "2017-10-20",
+	"updated": "2019-12-24",
 	"bounds": {
 		"west": 151.270751953125,
 		"north": -33.56886118255556,
@@ -28,110 +29,10 @@
 		{
 			"location": "Palm Beach",
 			"type": "bus",
-			"description": "Get the bus to Palm Beach using <a href=\"https://transportnsw.info/trip#/?to=Palm Beach\">transportnsw.info</a>.",
+			"photo": "0020_dsc_4814_dsc_4823.jpg",
+			"description": "Get the bus or ferry to Palm Beach using <a href=\"https://transportnsw.info/trip#/?to=Palm Beach\">transportnsw.info</a>.",
 			"lon": 151.319931,
 			"lat": -33.596193
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.598634,
-			"lon": 151.324697
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.636737,
-			"lon": 151.330149
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.732466,
-			"lon": 151.301482
-		},
-		{
-			"type": "bus",
-			"description": "Plan your return trip from Narrabeen at <a href=\"https://transportnsw.info/trip#/?from=Narrabeen\">transportnsw.info</a>.",
-			"lat": -33.70486666666667,
-			"lon": 151.29741666666666
-		},
-		{
-			"type": "toilet",
-			"lat": -33.595585,
-			"lon": 151.320238
-		},
-		{
-			"type": "toilet",
-			"lat": -33.586657,
-			"lon": 151.325344
-		},
-		{
-			"type": "toilet",
-			"lat": -33.597592,
-			"lon": 151.32452
-		},
-		{
-			"type": "toilet",
-			"lat": -33.613253,
-			"lon": 151.33137
-		},
-		{
-			"type": "toilet",
-			"lat": -33.632796,
-			"lon": 151.335094
-		},
-		{
-			"type": "toilet",
-			"lat": -33.64611,
-			"lon": 151.326765
-		},
-		{
-			"type": "toilet",
-			"lat": -33.654029,
-			"lon": 151.322947
-		},
-		{
-			"type": "toilet",
-			"lat": -33.678118,
-			"lon": 151.315032
-		},
-		{
-			"type": "toilet",
-			"lat": -33.719871,
-			"lon": 151.299246
-		},
-		{
-			"type": "toilet",
-			"lat": -33.733134,
-			"lon": 151.302283
-		},
-		{
-			"type": "toilet",
-			"lat": -33.755004,
-			"lon": 151.29847
-		},
-		{
-			"type": "toilet",
-			"lat": -33.774427,
-			"lon": 151.292883
-		},
-		{
-			"type": "toilet",
-			"lat": -33.781104,
-			"lon": 151.294408
-		},
-		{
-			"type": "toilet",
-			"lat": -33.786142,
-			"lon": 151.287682
-		},
-		{
-			"type": "toilet",
-			"lat": -33.790587,
-			"lon": 151.287254
-		},
-		{
-			"type": "toilet",
-			"lat": -33.799612,
-			"lon": 151.29018
 		},
 		{
 			"type": "waypoint",
@@ -162,7 +63,7 @@
 			"description": "Follow the beach towards the lighthouse."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "0140_dsc_4876.jpg",
 			"lon": 151.32385876001393,
 			"lat": -33.58780575001496,
@@ -204,6 +105,17 @@
 			"description": "Follow the Smugglers trail back down to the fork with the access trail."
 		},
 		{
+			"type": "hotspot",
+			"photo": "0460_dsc_5028.jpg",
+			"radius": 0.0004,
+			"description": "This lighthouse can be glimpsed in Skippy the Bush Kangaroo.",
+			"badge": "grass",
+			"title": "As Seen On Skippy",
+			"instruction": "Visit this location to earn the mystery trophy",
+			"lon": 151.32990681998413,
+			"lat": -33.58004975998127
+		},
+		{
 			"type": "waypoint",
 			"photo": "0600_dsc_5057.jpg",
 			"lon": 151.32654895991882,
@@ -223,6 +135,12 @@
 			"lon": 151.3263235000499,
 			"lat": -33.587967850036655,
 			"description": "Follow Palm Beach to rock pools at the far end."
+		},
+		{
+			"type": "toilet",
+			"lon": 151.324685,
+			"lat": -33.597817,
+			"description": "There's a toilet block along the beach."
 		},
 		{
 			"type": "waypoint",
@@ -251,6 +169,12 @@
 			"lon": 151.3314029599935,
 			"lat": -33.612345990005736,
 			"description": "Follow Whale Beach to the end."
+		},
+		{
+			"type": "toilet",
+			"lon": 151.331237,
+			"lat": -33.613193,
+			"description": "There's a toilet block at rock pool."
 		},
 		{
 			"type": "waypoint",
@@ -295,14 +219,14 @@
 			"description": "Follow Marine Parade to the left to the carpark for Avalon Beach."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "1120_dsc_5142_dsc_5143.jpg",
 			"lon": 151.3351777777778,
 			"lat": -33.632777777777775,
 			"description": "Take the path down to the beach and follow it to the surf club."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "1150_dsc_5145.jpg",
 			"lon": 151.33151744000463,
 			"lat": -33.63641297000422,
@@ -337,7 +261,7 @@
 			"description": "Follow the beach to the surf club at the far end."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "1270_dsc_5157.jpg",
 			"lon": 151.32703140001746,
 			"lat": -33.64600594991006,
@@ -358,7 +282,7 @@
 			"description": "The path eventually descends down to Newport Beach and continues along it."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "1390_dsc_5169.jpg",
 			"lon": 151.32318670997967,
 			"lat": -33.65637568001252,
@@ -398,6 +322,12 @@
 			"lon": 151.32160792000087,
 			"lat": -33.66326081007115,
 			"description": "Watch on the left for a concrete path leading down to Bungan Beach."
+		},
+		{
+			"type": "toilet",
+			"lon": 151.320868,
+			"lat": -33.665014,
+			"description": "There are public toilets at the surf club."
 		},
 		{
 			"type": "waypoint",
@@ -463,7 +393,7 @@
 			"description": "At high tide you may have to use the stairs up the headland instead of walking around below."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "1760_dsc_5222.jpg",
 			"lon": 151.30892338000154,
 			"lat": -33.691843739993594,
@@ -526,11 +456,26 @@
 			"description": "From the lookout across Narrabeen Lagoon, take the staircase down to the carpark."
 		},
 		{
+			"type": "toilet",
+			"photo": "2040_dsc_5292.jpg",
+			"lon": 151.30846,
+			"lat": -33.702892,
+			"description": "There are amenities at the rock pool."
+		},
+		{
 			"type": "waypoint",
 			"photo": "2060_dsc_5299.jpg",
 			"lon": 151.3067671100028,
 			"lat": -33.701595680005724,
 			"description": "Follow the footpath along the lagoon to the bridge."
+		},
+		{
+			"location": "Narrabeen",
+			"type": "bus",
+			"photo": "2078_p3092168p.jpg",
+			"description": "Get the bus to/from Narrabeen Lagoon using <a href=\"https://transportnsw.info/trip#/?from=Pittwater Rd opp Gondola Rd\">transportnsw.info</a>.",
+			"lon": 151.296573,
+			"lat": -33.708237
 		},
 		{
 			"type": "waypoint",
@@ -547,7 +492,7 @@
 			"description": "Follow Collaroy Beach to the rock pools at the end."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "2130_dsc_5312.jpg",
 			"lon": 151.30332878999198,
 			"lat": -33.733593770000184,
@@ -582,7 +527,7 @@
 			"description": "On the far side of the headland, continue along the path until it ends on Long Reef Beach."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "2290_dsc_5345.jpg",
 			"lon": 151.2972748099552,
 			"lat": -33.752788200005085,
@@ -617,7 +562,7 @@
 			"description": "Take the stairs down to Curl Curl Lagoon."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "2510_dsc_5411.jpg",
 			"lon": 151.29977840005532,
 			"lat": -33.76635917001339,
@@ -677,25 +622,25 @@
 			"photo": "2750_dsc_5452.jpg",
 			"lon": 151.2879271899886,
 			"lat": -33.784711700001765,
-			"description": "Cross the bridge across Manly Lagoon."
+			"description": "Cross the bridge and follow the esplanade along the beach."
+		},
+		{
+			"type": "toilet",
+			"lon": 151.287333,
+			"lat": -33.790639,
+			"description": "There are public toilets at the surf school."
 		},
 		{
 			"type": "waypoint",
 			"photo": "2770_dsc_5455.jpg",
 			"lon": 151.28820694002124,
 			"lat": -33.796620009887526,
-			"description": "Follow the footpath along the beach to Manly's shopping arcade."
-		},
-		{
-			"type": "waypoint",
-			"photo": "2780_dsc_5456.jpg",
-			"lon": 151.2846410800113,
-			"lat": -33.799169680035064,
-			"description": "The ferry dock is at the far end of the shopping arcade."
+			"description": "Follow the shopping arcade to the Manly Ferry Dock."
 		},
 		{
 			"location": "Manly",
 			"type": "ferry",
+			"photo": "2780_dsc_5456.jpg",
 			"description": "Plan your return trip from Narrabeen at <a href=\"https://transportnsw.info/trip#/?from=Manly\">transportnsw.info</a>.",
 			"lat": -33.80003333333333,
 			"lon": 151.2852861111111

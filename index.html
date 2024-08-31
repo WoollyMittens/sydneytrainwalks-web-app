@@ -35,10 +35,11 @@
 		<link rel="icon" type="image/png" sizes="96x96" href="./inc/ico/favicon-96x96.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="./inc/ico/favicon-16x16.png" />
 		<link rel="manifest" href="./manifest.json" />
-		<link rel="stylesheet" href="./inc/css/styles.css?t=2021-02-22"/>
+		<link rel="stylesheet" href="./inc/css/styles.css?t=2024-08-30"/>
+		<link rel="canonical" href="https://www.sydneyhikingtrips.com/" />
 	</head>
 
-	<body class="screen-menu" data-color-scheme="auto">
+	<body data-screen="menu" data-color-scheme="auto">
 
 		<!-- markup -->
 		<div class="web-margins">
@@ -68,40 +69,34 @@
 						<label class="sorting-label">
 							<span>Sort by:</span>
 							<select name="sorting-select">
-								<option value="start">By start</option>
-								<option value="finish">By end</option>
-								<option value="region">By region</option>
-								<option value="duration">By duration</option>
-								<option value="distance" selected>By distance</option>
-								<option value="revised">By revision date</option>
+								<option value="start">Start station</option>
+								<option value="finish">End station</option>
+								<option value="shortest" selected>Shortest first</option>
+								<option value="longest">Longest first</option>
+								<option value="revised">Newest first</option>
 							</select>
 						</label>
 						<label class="filtering-label">
 							<span>Filter by:</span>
 							<select name="filtering-select">
-								<option value="all" selected>All transport</option>
-								<option value="public">Public transport</option>
-								<option value="car">Just by car</option>
-								<option value="looped">Just loops</option>
-								<option value="kiosks">Has amenities</option>
+								<option value="all" selected>Show everything</option>
+								<option value="kiosks">Has food options</option>
 								<option value="toilets">Has public toilets</option>
 								<option value="rain">For rainy days</option>
-								<option value="fireban">Bushfire season</option>
+								<option value="fireban">In bushfire season</option>
 							</select>
 						</label>
 					</form>
 					<menu></menu>
 				</nav>
 
-				<figure class="overview localmap"></figure>
+				<figure class="overview local-area-map"></figure>
 
-				<article class="guide"></article>
+				<article class="legend local-area-map-legend"></article>
 
 				<aside>
-					<figure class="directions localmap">
-						<button class="localmap-return">Back</button>
-					</figure>
-					<figure class="photowall">
+					<figure class="directions local-area-map"></figure>
+					<figure class="photo-mosaic">
 						<ul></ul>
 					</figure>
 				</aside>
@@ -112,13 +107,13 @@
 							<h2>About This App</h2>
 							<figure>
 								<img src="./inc/img/icon.png" />
-								<figcaption><strong>Sydney Hiking Trips</strong> Version 3.0.3</figcaption>
+								<figcaption><strong>Sydney Hiking Trips</strong> Version 4.0.0</figcaption>
 							</figure>
 							<p>Thank you for supporting Sydney Hiking Trips. You make it possible for me to expand this guide and motivate people to enjoy Sydney's varied landscapes.</p>
 							<p>Please add your <a href="https://github.com/WoollyMittens/sydneytrainwalks-web-app/issues">suggestions and bug reports on GitHub</a>, or send them to <a href="mailto:maurice@sydneyhikingtrips.com">maurice@sydneyhikingtrips.com</a>.</p>
 							<h2>Credits</h2>
 							<p>App, photography, and GPS logs &copy; Maurice van Creij. Licensed under <a href="https://opensource.org/licenses/MIT" target="_blank">The MIT License</a>.</p>
-							<p>Maps &copy; <a href="https://4umaps.com/" target="_blank">4UMaps.com</a> and &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap contributors</a>.</p>
+							<p>Maps &copy; <a href="https://thunderforest.com/" target="_blank">Thunderforest.com</a> and &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap contributors</a>.</p>
 							<h2>Disclaimer</h2>
 							<p>Please do not rely solely on this app for your navigation. There is no warranty on the accuracy or reliability of this app. Always carry a real paper map, which are readily available from park offices and tourist information centres.</p>
 							<h2>Privacy Policy</h2>
@@ -157,72 +152,60 @@
 			<span class="sign to">to</span>
 			<span class="sign finish sign-short {endTransport}">{endLocation}</span>
 			<span class="sign via">via</span>
-			<span class="sign park sign-short">{walkLocation} <em>{walkDuration}h / <span>{walkDistance}</span>km</em></span>
+			<span class="sign park sign-short">{walkLocation} <em>{walkDistance} km</em></span>
 		</template>
 
 		<template id="menu-template">
 			<li data-id="{id}">
-				<a href="?key={id}">{title}</a>
+				<a href="?id={id}">{title}</a>
 			</li>
 		</template>
 
-		<template id="guide-template">
-			<div class="guide-scroller">
-				<h2>About this walk</h2>
-				<time datetime="{updated}">Updated: {date}</time>
-				{description}
-				<p>
-					It takes about {duration} hours to complete the full {distance} kilometre walk,
-					but plan extra for plenty of breaks and photography stops.
-					Consider that there's a lot to see along the way.
-				</p>
-				<h3>Getting there and back</h3>
-				<p>{there} {back}</p>
-				<h3>Along the way</h3> {landmarks}
-				<h3>What to bring</h3>
-				<ul>
-					<li>Check the <a href="http://www.nationalparks.nsw.gov.au/alert/state-alerts">national parks website</a> for possible closures and restriction.</li>
-					<li>Install an OpenStreetMap app for <a href="http://wiki.openstreetmap.org/wiki/Android">Android</a> or <a href="http://wiki.openstreetmap.org/wiki/Apple_iOS">iOS</a> and preload the area.</li>
-					<li>Download the <a href="{gpx}">GPS data</a> if your device can import it.</li>
-					<li>Print out this map and get a better one from a visitor information centre if possible.</li>
-					<li>Be sure to leave enough charge in your phone's battery for emergency calls.</li>
-					<li>Bring plenty of water, comfortable shoes, a hat and SPF 50 sunscreen.</li>
-					<li>Also bring a light windbreaker/raincoat in case you get caught out in the rain.</li>
-				</ul>
-			</div>
-		</template>
-
-		<template id="thumbnail-template">
-			<p class="guide-landmark">
-				<a class="cylinder-image" href="./inc/medium/{id}/{src}" style="background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./inc/small/{id}/{src});" data-title="{description}">
-					<img alt="Photo of the waypoint" src="./inc/small/{id}/{src}"/>
-				</a>
-				<span class="guide-text">{description} <button class="guide-locate" data-url="./inc/medium/{id}/{src}" data-title="{description}">Show location</button></span>
+		<template id="intro-template">
+			<h2>About this walk</h2>
+			<time datetime="{updated}">Updated: {date}</time>
+			{description}
+			<p class="duration">
+				It takes about {duration} hours to complete the <b>full</b> {distance} kilometre walk, but you can also <b>do shorter parts</b> of it.
+				Consider that there's a lot to see along the way, so plan for plenty of breaks and photography stops.
+			</p>
+			<p>
+				<a style="text-decoration: underline; cursor: pointer;" onclick="sydneyTrainWalks.editor.start()">Edit</a> - 
+				<a style="text-decoration: underline; cursor: pointer;" onclick="sydneyTrainWalks.editor.save()">Save</a>
 			</p>
 		</template>
 
-		<template id="wall-template">
-			<li><a class="cylinder-image" style="background-image:url('./inc/small/{id}/{src}');" href="./inc/medium/{id}/{src}"><img alt="Impression of the trail" src="./inc/small/{id}/{src}"/></a></li>
+		<template id="outro-template">
+			<h3>How to prepare</h3>
+			<ul>
+				<li>Check the <a href="http://www.nationalparks.nsw.gov.au/alert/state-alerts">national parks website</a> for possible closures and restriction.</li>
+				<li>Download the <a href="{gpx}">GPS data (GPX)</a> for your navigation device.</li>
+				<li>Print out this map on paper or get one from the park's visitor centre.</li>
+				<li>Always leave enough charge in your phone for emergency calls.</li>
+			</ul>
+		</template>
+
+		<template id="mosaic-template">
+			<li><a href="./inc/medium/{id}/{src}"><img alt="Impression of the trail" src="./inc/small/{id}/{src}"/></a></li>
 		</template>
 
 		<template id="footer-template">
 			<nav>
-				<a id="footer-to-menu" href="?screen=menu">Menu</a>
-				<a id="footer-to-overview" href="?screen=overview">Overview</a>
-				<a id="footer-to-map" href="?id={id}&amp;screen=map">Map</a>
-				<a id="footer-to-guide" href="?id={id}&amp;screen=guide">Guide</a>
-				<a id="footer-to-photos" href="?id={id}&amp;screen=photos">Photos</a>
-				<a id="footer-to-trophies" href="?screen=trophies">Trophies</a>
-				<a id="footer-to-about" href="?screen=about">About</a>
+				<a id="footer-to-menu" href="./">Menu</a>
+				<a id="footer-to-overview" href="./?screen=overview">Overview</a>
+				<a id="footer-to-guide" href="./?key={id}&amp;screen=guide">Guide</a>
+				<a id="footer-to-photos" href="./?key={id}&amp;screen=photos">Photos</a>
+				<a id="footer-to-trophies" href="./?screen=trophies">Trophies</a>
+				<a id="footer-to-about" href="./?screen=about">About</a>
 			</nav>
 		</template>
 
-		<template id="credit-template">
-			Maps &copy; <a href="http://www.4umaps.com/">4UMaps</a>. Data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> and contributors, CC BY-SA
+		<template id="credits-template">
+			Maps &copy; <a href="http://thunderforest.com/">Thunderforest.com</a>. Data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> and contributors, CC BY-SA
 		</template>
 
 		<template id="trophies-template">
-			<figure>
+			<figure style="background-image: url({foreground}), url({background});">
 				<img alt="{icon} icon" src="./inc/img/{icon}.svg" />
 				<figcaption>
 					{title}
@@ -237,8 +220,8 @@
 				<img alt="{icon} icon" src="./inc/img/{icon}.svg" />
 				<h3>{title}</h3>
 			</header>
-			<figure style="background-image:url('./inc/{tile}.jpg');">
-				<div style="background-image:url('./inc/{background}.jpg');"></div>
+			<figure style="background-image: url({background});">
+				<img alt="" src="{photo}" onerror="this.style.display='none'">
 				<figcaption>{description}</figcaption>
 			</figure>
 			<footer>
@@ -251,7 +234,8 @@
 		<script>
 			document.querySelector('#stw').addEventListener('load', function(evt) {
 				const local = '.';
-				const remote = 'https://www.sydneyhikingtrips.com';
+				const remote = 'https://local.sydneyhikingtrips.com';
+				//const remote = 'https://woollymittens.github.io/sydneytrainwalks-web-app/';
 				// configure the asset paths
 				window.sydneyTrainWalks = new SydneyTrainWalks({
 					'localUrl': `${local}/inc`,

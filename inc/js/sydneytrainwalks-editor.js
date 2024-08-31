@@ -1,42 +1,63 @@
 export class Editor {
-  constructor() {
-    this.output = [];
+  constructor(config, loadGuide) {
+		this.config = config;
+		this.loadGuide = loadGuide;
+    this.guide = null;
+    this.start = this.start.bind(this);
+    this.save = this.save.bind(this);
   }
 
-  init() {
-    var image, label, textarea;
-    // for all landmarks
-    const landmarks = document.querySelectorAll('.guide-landmark');
-    for (var a = 0, b = landmarks.length; a < b; a += 1) {
-      // get the image
-      image = landmarks[a].querySelector('img');
-      // get the label
-      label = landmarks[a].querySelector('.guide-text');
-      label.style.flex = '1 1 auto';
-      // replace the label with an input field
-      textarea = document.createElement('textarea');
-      textarea.style.width = '90%';
-      textarea.style.height = '96px';
-      textarea.style.verticalAlign = 'middle';
-      textarea.value = label.innerHTML.split('<button')[0].trim();
-      textarea.addEventListener('change', this.update.bind(this, textarea, image, a));
-      label.replaceChild(textarea, label.firstChild);
-      // store the data
-      this.output[a] = {
-        "type": "waypoint",
-  			"photo": image.src.split("/").pop(),
-  			"description": textarea.value
+  htmlEncode(value) {
+    return value
+      .replace(/&/g, '&amp;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
+  }
+
+  async update(id) {
+		// load the guide that goes with the id
+		this.guide = await this.loadGuide(id);
+  }
+
+  start() {
+    // give up if there is no guide yet
+    if (!this.guide) return;
+    // for all landmark photos in the guide
+    for (let marker of this.guide.markers) {
+      if (marker.photo) {
+        // find the corresponding legend
+	console.log('editor:', marker.photo, `.local-area-map-legend-photo[src*="${marker.photo}"]`);
+        let image = document.querySelector(`.local-area-map-legend-photo[src*="${marker.photo}"]`);
+        let legend = image.parentNode.nextSibling;
+        let label = legend.querySelector('p');
+        // add the input field
+        if (label) {
+          let textarea = document.createElement('textarea');
+          textarea.style.width = '90%';
+          textarea.style.height = '96px';
+          textarea.style.verticalAlign = 'middle';
+          textarea.value = label.innerHTML;
+          legend.style.flex = '1 1 auto';
+          legend.innerHTML = "";
+          legend.appendChild(textarea);
+          // handle the changes
+          textarea.addEventListener('change', this.edit.bind(this, marker, textarea));
+        }
       }
     }
   }
 
   save() {
     // export the output
-    console.log(JSON.stringify(this.output, null, '\t'));
+    const guideJson = JSON.stringify(this.guide, null, '\t');
+    console.log(guideJson);
+    localStorage.setItem(this.guide.key, guideJson);
   }
 
-  update(input, image, index, evt) {
+  edit(waypoint, textarea) {
     // update the field
-    this.output[index].description = input.value;
+    waypoint.description = textarea.value;
   }
 }

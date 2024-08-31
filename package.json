@@ -26,22 +26,22 @@
     }
   },
   "scripts": {
-    "import_gpx": "cd node_scripts && node importgpx && cd ..",
-    "import_photos": "cd node_scripts && node importphotos && cd ..",
-    "import_exif": "cd node_scripts && node importexif && cd ..",
-    "import_guides": "cd node_scripts && node importguides && cd ..",
-    "import_trophies": "cd node_scripts && node importtrophies && cd ..",
-    "import_tiles": "cd node_scripts && node importtiles && cd ..",
-    "convert_tiles": "cd node_scripts && node converttiles && cd ..",
+    "import_gpx": "cd node_scripts && node importgpx.mjs && cd ..",
+    "import_photos": "cd node_scripts && node importphotos.mjs && cd ..",
+    "import_exif": "cd node_scripts && node importexif.mjs && cd ..",
+    "import_guides": "cd node_scripts && node importguides.mjs && cd ..",
+    "import_tiles": "cd node_scripts && node importtiles.mjs && cd ..",
+    "convert_tiles": "cd node_scripts && node converttiles.mjs && cd ..",
     "styles_dev": "sass ./src/scss/styles.scss ./inc/css/styles.css --style expanded --update",
     "styles_prod": "sass ./src/scss/styles.scss ./inc/css/styles.css --style compressed",
     "styles_watch": "sass --watch ./src/scss:./inc/css --style expanded",
-    "import": "npm run import_gpx && npm run import_photos && npm run import_exif && npm run import_guides && npm run import_trophies && npm run import_tiles && npm run convert_tiles",
+    "import": "npm run import_gpx && npm run import_photos && npm run import_exif && npm run import_guides && npm run import_tiles && npm run convert_tiles",
     "build": "npm run import && styles_prod",
     "watch": "npm-watch"
   },
   "dependencies": {
     "JSDOM": "npm:jsdom@^22.1.0",
-    "node-fetch": "^3.3.1"
+    "node-fetch": "^3.3.1",
+    "utimes": "^5.2.1"
   }
 }

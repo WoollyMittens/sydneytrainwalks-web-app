@@ -1,0 +1,594 @@
+{
+	"location": "Manly Dam",
+	"lon": 151.2268235720694,
+	"lat": -33.76493252813816,
+	"description": "This walk covers part of the Harbour to Hawkesbury Track through Middle Harbour, before crossing over to Manly Dam to finish in Manly.",
+	"keywords": {
+		"Harbour to Hawkesbury Track": "https://www.nationalparks.nsw.gov.au/things-to-do/guided-tours/hawkesbury-to-harbour-walk-stage-4",
+		"Middle Harbour": "https://en.wikipedia.org/wiki/Middle_Harbour",
+		"Manly Dam": "https://www.northernbeaches.nsw.gov.au/things-to-do/parks-and-trails/parks/manly-dam"
+	},
+	"distance": [
+		23
+	],
+	"hero": "",
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "roseville-manlydam-manly",
+	"updated": "2024-03-16",
+	"bounds": {
+		"west": 151.160888671875,
+		"north": -33.75174787568194,
+		"east": 151.3037109375,
+		"south": -33.81566630870278
+	},
+	"markers": [
+		{
+			"location": "Roseville",
+			"type": "train",
+			"photo": "pxl_20240315_192206568.jpg",
+			"description": "Get the train to Roseville using <a href=\"https://transportnsw.info/trip#/?to=Roseville\">transportnsw.info</a>.",
+			"lon": 151.177582,
+			"lat": -33.784401
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_193105853.jpg",
+			"description": "From the station cross Hill St and follow Lord St straight ahead.",
+			"lon": 151.182011,
+			"lat": -33.782220999877765
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_193622523.jpg",
+			"description": "From the intersection follow Archbold Rd a short distance to the right.",
+			"lon": 151.186022,
+			"lat": -33.780255
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_193719374.jpg",
+			"description": "Cross Archbold Rd and follow Park Ave left.",
+			"lon": 151.186444,
+			"lat": -33.780599
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_194259976.jpg",
+			"description": "Cross Moore St and continue down Park Ave.",
+			"lon": 151.191213,
+			"lat": -33.77952700007976
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_194728077.jpg",
+			"description": "At Babbage Rd cross at the traffic lights the right.",
+			"lon": 151.194918,
+			"lat": -33.77874
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_194833349.jpg",
+			"description": "After crossing follow the shops along Babbage Rd to the left.",
+			"lon": 151.195099,
+			"lat": -33.778556
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_195018388.jpg",
+			"description": "Follow Babbage Rd to the right from Warrangah Rd.",
+			"lon": 151.195434,
+			"lat": -33.777083
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_195405189.jpg",
+			"description": "Cross Ormonde Rd and continue straight down Babbage Rd.",
+			"lon": 151.198446,
+			"lat": -33.77546
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_195755852.jpg",
+			"description": "Follow the sign to the Roseville Bridge Walkway from the left side of Babbage Rd.",
+			"lon": 151.201744,
+			"lat": -33.774547999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_195911262.jpg",
+			"description": "Follow the footpath under the bridge.",
+			"lon": 151.20240299999998,
+			"lat": -33.774112
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_200033631.jpg",
+			"description": "Follow the footpath left onto the bridge.",
+			"lon": 151.201407,
+			"lat": -33.774018999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_200140203.jpg",
+			"description": "Follow the footpath across the Roseville Bridge",
+			"lon": 151.202021,
+			"lat": -33.77393
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_200630480.jpg",
+			"description": "Follow the ramp down on the left side of the bridge.",
+			"lon": 151.20536099999998,
+			"lat": -33.771036
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_200837528.jpg",
+			"description": "Follow the ramp under the bridge.",
+			"lon": 151.204612,
+			"lat": -33.771827
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_201019327.jpg",
+			"description": "Follow the bridge ramps into the park in the direction of the boat ramp.",
+			"lon": 151.20508999999998,
+			"lat": -33.772937999999996
+		},
+		{
+			"type": "toilet",
+			"photo": "pxl_20240315_201607704.jpg",
+			"description": "There are public toilets at the boat ramp.",
+			"lon": 151.207873,
+			"lat": -33.77491
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_201112396.jpg",
+			"description": "From the end of the bridge ramps follow the steps on the left up to the Flat Rock Beach Track.",
+			"lon": 151.20566799999997,
+			"lat": -33.773198
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_202136341.jpg",
+			"description": "From the track closure follow access trail to the left.",
+			"lon": 151.211569,
+			"lat": -33.776075
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_202628255.jpg",
+			"description": "From the gate continue on Downpatrick Rd.",
+			"lon": 151.211624,
+			"lat": -33.7742
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_202753357.jpg",
+			"description": "From the intersection follow Drumcliff Ave to the right.",
+			"lon": 151.21239699999998,
+			"lat": -33.773526
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_203400900.jpg",
+			"description": "From the intersection follow Killarney Dr to the right.",
+			"lon": 151.21433199999998,
+			"lat": -33.776382
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_204509480_pano.jpg",
+			"description": "Follow Killarney Dr along the edge of the ridge.",
+			"lon": 151.218668,
+			"lat": -33.781359000083604
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_205115543.jpg",
+			"description": "From the cul-de-sac at the end of Killarney Dr follow the steps down to Flat Rock Beach.",
+			"lon": 151.223487,
+			"lat": -33.781902
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_205553883.jpg",
+			"description": "From the steps to the beach follow Magazine Track to the left towards the waterfall.",
+			"lon": 151.224907,
+			"lat": -33.78288700008212
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_205955657.jpg",
+			"description": "Traverse the rocks below the waterfall. The trail resumes across the creek.",
+			"lon": 151.225182,
+			"lat": -33.782578
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_210314920.jpg",
+			"description": "From the other side of the waterfall follow the Magazine Track along the shore.",
+			"lon": 151.225485,
+			"lat": -33.782449
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_212136515.jpg",
+			"description": "At the fence follow the trail around the left side.",
+			"lon": 151.229496,
+			"lat": -33.778656
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_212640959.jpg",
+			"description": "Follow the Magazine Track along the fence line of the Bantry Bay Magazine.",
+			"lon": 151.229843,
+			"lat": -33.776719
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_213738055.jpg",
+			"description": "From the magazine follow the trail markers up the ridge.",
+			"lon": 151.226526,
+			"lat": -33.773061999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_214824494.jpg",
+			"description": "At the trailhead continue straight along the firetrail.",
+			"lon": 151.223114,
+			"lat": -33.770444
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_215432843.jpg",
+			"description": "Cross the Bates Creek over the concrete causeway on the right side of the track.",
+			"lon": 151.219087,
+			"lat": -33.768959
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_220214439.jpg",
+			"description": "At the intersection continue straight on Curry St Trail.",
+			"lon": 151.221133,
+			"lat": -33.768035
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_220456161.jpg",
+			"description": "Turn right at the sign to the Natural Bridge.",
+			"lon": 151.221317,
+			"lat": -33.766731
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_220550692.jpg",
+			"description": "Follow the steps down Natural Arch Track. Take care when crossing the mountain bike trails.",
+			"lon": 151.221384,
+			"lat": -33.766576
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_221123974.jpg",
+			"description": "Cross the creek over the Natural Arch.",
+			"lon": 151.223502,
+			"lat": -33.76646300011144
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_221600185.jpg",
+			"description": "Follow the steps up the other side of Natural Arch Track.",
+			"lon": 151.224703,
+			"lat": -33.765925
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_222909604.jpg",
+			"description": "At the top of the steps continue straight on the Bluff Track.",
+			"lon": 151.227421,
+			"lat": -33.764976
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_223307965.jpg",
+			"description": "At the trailhead continue up Grattan Cres past the gate.",
+			"lon": 151.22922,
+			"lat": -33.763263
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_223542048.jpg",
+			"description": "Follow Grattan Cres to the right around the corner.",
+			"lon": 151.22987700000002,
+			"lat": -33.761725
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_223647502.jpg",
+			"description": "At the intersection follow Bantry Bay Rd to the right.",
+			"lon": 151.2308,
+			"lat": -33.76178099989606
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_224228039.jpg",
+			"description": "At the end of Bantry Bay Rd continue straight on the Engravings Trail past the gate.",
+			"lon": 151.232697,
+			"lat": -33.7655
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_224726743.jpg",
+			"description": "From the side trail on the left cross Wakehurst Parkway to the trailhead on the other side.",
+			"lon": 151.23424999999997,
+			"lat": -33.768372
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_224820781.jpg",
+			"description": "After crossing Wakehurst Parkway follow the firetrail past the gate.",
+			"lon": 151.23460999999998,
+			"lat": -33.768398
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_225013543.jpg",
+			"description": "Follow the trail markers down the firetrail towards Manly Dam.",
+			"lon": 151.235277,
+			"lat": -33.767516
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_230016245.jpg",
+			"description": "Follow the side trail along Manly Creek to the right.",
+			"lon": 151.237417,
+			"lat": -33.763845
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_230354357.jpg",
+			"description": "Follow the boardwalks and bush trail along Manly Creek.",
+			"lon": 151.23916799999998,
+			"lat": -33.764605
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_231635167.jpg",
+			"description": "At the lake follow the boardwalks along the wetland.",
+			"lon": 151.24191299999998,
+			"lat": -33.771242
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_233058899.jpg",
+			"description": "Follow the trail along the lake to the picnic area.",
+			"lon": 151.246887,
+			"lat": -33.776897
+		},
+		{
+			"type": "toilet",
+			"photo": "pxl_20240315_233125969.jpg",
+			"description": "There is a toilet block at the carpark.",
+			"lon": 151.247108,
+			"lat": -33.776925999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_233358250.jpg",
+			"description": "Follow the road between the picnic area carparks.",
+			"lon": 151.247426,
+			"lat": -33.776944
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_234424859.jpg",
+			"description": "From the left side of the road follow the paved footpath along the waterfront.",
+			"lon": 151.252173,
+			"lat": -33.781357
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_234609177.jpg",
+			"description": "Follow the footpath to the picnic area at the dam.",
+			"lon": 151.252979,
+			"lat": -33.782309
+		},
+		{
+			"type": "toilet",
+			"photo": "pxl_20240315_234729348.jpg",
+			"description": "There is a toilet block near the playground.",
+			"lon": 151.253507,
+			"lat": -33.782862
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_235339411.jpg",
+			"description": "From the far end of the picnic grounds, follow the footpath across Manly Dam.",
+			"lon": 151.255458,
+			"lat": -33.782906
+		},
+		{
+			"type": "hotspot",
+			"photo": "pxl_20240315_235444557.jpg",
+			"radius": 0.0004,
+			"description": "You can tell from the huge erected walls.",
+			"badge": "eggplant",
+			"title": "The Manliest Dam",
+			"instruction": "Visit this location to earn the mystery trophy",
+			"lon": 151.255704,
+			"lat": -33.782135
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240315_235708791.jpg",
+			"description": "At the other side of the dam, follow the bush trail to the right.",
+			"lon": 151.255731,
+			"lat": -33.78054
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240316_000049698.jpg",
+			"description": "At the houses follow the fence line to the right.",
+			"lon": 151.257281,
+			"lat": -33.779019999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240316_000252697.jpg",
+			"description": "From the end of the trail, follow Wandella Rd into the cul-de-sac to the right.",
+			"lon": 151.258765,
+			"lat": -33.778769
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240316_000551165.jpg",
+			"description": "From the end of Wandella Rd continue straight on the footpath past the university laboratories.",
+			"lon": 151.258364,
+			"lat": -33.779838
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240316_000654176.jpg",
+			"description": "From the laboratory driveway, follow the sign left AWAY from Manly Dam.",
+			"lon": 151.258465,
+			"lat": -33.780522
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240316_000717609.jpg",
+			"description": "Follow King St left from the campus driveway.",
+			"lon": 151.25869,
+			"lat": -33.780698
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240316_001025116.jpg",
+			"description": "At the intersection continue straight on King St.",
+			"lon": 151.261035,
+			"lat": -33.781546999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240316_001816461.jpg",
+			"description": "At the shops follow Condamine St to the right.",
+			"lon": 151.267245,
+			"lat": -33.78274700015584
+		},
+		{
+			"type": "kiosk",
+			"photo": "pxl_20240316_001935341.jpg",
+			"description": "There are amenities along Condamine St.",
+			"lon": 151.26755500000002,
+			"lat": -33.783305
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240316_002558927.jpg",
+			"description": "Cross at the intersection follow Kenneth Rd to the right.",
+			"lon": 151.266803,
+			"lat": -33.786189
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240316_003438499.jpg",
+			"description": "Follow the footpath along Kenneth Rd past around the gold course.",
+			"lon": 151.27426400000002,
+			"lat": -33.787585
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240316_004103710.jpg",
+			"description": "At the intersection follow Balgowlah Rd to the left.",
+			"lon": 151.279707,
+			"lat": -33.788713
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240316_004505932.jpg",
+			"description": "Cross at the traffic lights and continue along Pittwater Rd to the park. ",
+			"lon": 151.280943,
+			"lat": -33.785953
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240316_004641074.jpg",
+			"description": "At the carpark follow the sign right to Manly.",
+			"lon": 151.28116299986164,
+			"lat": -33.785329999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240316_005122745.jpg",
+			"description": "Take the left split and follow the footpath along the waterfront.",
+			"lon": 151.28487,
+			"lat": -33.785233999999996
+		},
+		{
+			"type": "toilet",
+			"photo": "pxl_20240316_005357835.jpg",
+			"description": "There is a toilet block near the brodge.",
+			"lon": 151.287036,
+			"lat": -33.785449
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240316_005414842.jpg",
+			"description": "Follow the footpath left under the bridge.",
+			"lon": 151.287244,
+			"lat": -33.785399999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240316_005728272.jpg",
+			"description": "From the bridge follow the esplanade along Manly Beach.",
+			"lon": 151.288064,
+			"lat": -33.787171
+		},
+		{
+			"type": "toilet",
+			"photo": "pxl_20240316_010207195.jpg",
+			"description": "There are public toilets at the surf club.",
+			"lon": 151.287277,
+			"lat": -33.790445
+		},
+		{
+			"type": "toilet",
+			"photo": "pxl_20240316_011015325.jpg",
+			"description": "There are amenities at the kiosk.",
+			"lon": 151.288109,
+			"lat": -33.796396
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240316_011110682.jpg",
+			"description": "From the esplanade cross the road and enter the Corso to the right.",
+			"lon": 151.288219,
+			"lat": -33.796963999999996
+		},
+		{
+			"type": "kiosk",
+			"photo": "pxl_20240316_033013083.jpg",
+			"description": "The are amenities along the mall.",
+			"lon": 151.287798,
+			"lat": -33.79729700008797
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240316_033406713.jpg",
+			"description": "Follow the Corso to the ferry wharf.",
+			"lon": 151.285863,
+			"lat": -33.798398
+		},
+		{
+			"location": "Manly",
+			"type": "ferry",
+			"photo": "pxl_20240316_033630834.jpg",
+			"description": "Plan your return trip from Manly at <a href=\"https://transportnsw.info/trip#/?from=Manly\">transportnsw.info</a>.",
+			"lat": -33.799503,
+			"lon": 151.284304
+		}
+	]
+}

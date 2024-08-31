@@ -136,18 +136,6 @@
 			background-image: url("../img/info_2_inv.svg");
 		}
 	}
-
-	/* the photos icon is active on the map screen since they are combined */
-	body.screen-map & {
-		opacity: 1;
-		filter: grayscale(0);
-
-		/* the photos icon is passive on the map screen */
-		@media (max-width:959px) {
-			opacity: 0.5;
-			filter: grayscale(1);
-		}
-	}
 }
 
 #footer-to-photos {
@@ -165,29 +153,6 @@
 		@media (prefers-color-scheme: dark) {
 			background-image: url("../img/nature_1_inv.svg");
 		}
-	}
-}
-
-#footer-to-map {
-	&:before {
-		background-image: url("../img/map_1.svg");
-
-		[data-color-scheme="light"] & {
-			background-image: url("../img/map_1.svg");
-		}
-
-		[data-color-scheme="dark"] & {
-			background-image: url("../img/map_1_inv.svg");
-		}
-
-		@media (prefers-color-scheme: dark) {
-			background-image: url("../img/map_1_inv.svg");
-		}
-	}
-
-	/* hide the map icon on wider screens */
-	@media (min-width:960px) {
-		display: none;
 	}
 }
 
@@ -211,27 +176,27 @@
 
 #footer-to-trophies {
 	&:before {
-		background-image: url("../img/hotspot.svg");
+		background-image: url("../img/trophy.svg");
 
 		[data-color-scheme="light"] & {
-			background-image: url("../img/hotspot.svg");
+			background-image: url("../img/trophy.svg");
 		}
 
 		[data-color-scheme="dark"] & {
-			background-image: url("../img/hotspot_inv.svg");
+			background-image: url("../img/trophy_inv.svg");
 		}
 
 		@media (prefers-color-scheme: dark) {
-			background-image: url("../img/hotspot_inv.svg");
+			background-image: url("../img/trophy_inv.svg");
 		}
 	}
 }
 
 /* what icons to show on the menu screen */
-body.screen-about,
-body.screen-menu,
-body.screen-overview,
-body.screen-trophies {
+body[data-screen="about"],
+body[data-screen="menu"],
+body[data-screen="overview"],
+body[data-screen="trophies"] {
 
 	#footer-to-about,
 	#footer-to-menu,
@@ -241,16 +206,14 @@ body.screen-trophies {
 	}
 
 	#footer-to-guide,
-	#footer-to-map,
 	#footer-to-photos {
 		display: none;
 	}
 }
 
 /* what icons to show on the map screen */
-body.screen-guide,
-body.screen-map,
-body.screen-photos {
+body[data-screen="guide"],
+body[data-screen="photos"] {
 
 	#footer-to-about,
 	#footer-to-trophies {
@@ -259,13 +222,12 @@ body.screen-photos {
 }
 
 /* what icons are active on per screen */
-body.screen-about #footer-to-about,
-body.screen-guide #footer-to-guide,
-body.screen-map #footer-to-map,
-body.screen-menu #footer-to-menu,
-body.screen-overview #footer-to-overview,
-body.screen-photos #footer-to-photos,
-body.screen-trophies #footer-to-trophies {
+body[data-screen="about"] #footer-to-about,
+body[data-screen="guide"] #footer-to-guide,
+body[data-screen="menu"] #footer-to-menu,
+body[data-screen="overview"] #footer-to-overview,
+body[data-screen="photos"] #footer-to-photos,
+body[data-screen="trophies"] #footer-to-trophies {
 	opacity: 1;
 	filter: grayscale(0);
 }

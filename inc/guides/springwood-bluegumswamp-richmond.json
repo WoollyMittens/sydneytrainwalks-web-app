@@ -1,0 +1,258 @@
+{
+	"location": "Springwood Ridge",
+	"lon": 150.60414,
+	"lat": -33.632252,
+	"description": "This walk follows Springwood Ridge to Winmalee and ultimately to Richmond, passing through the Blue Gum Swamp and Yarramundi Reserve along the way.",
+	"keywords": {
+		"Blue Gum Swamp": "https://www.bluemts.com.au/info/thingstodo/mountain-bike-trails/blue-gum-swamp-winmalee/",
+		"Yarramundi Reserve": "https://www.hawkesbury.nsw.gov.au/__data/assets/pdf_file/0020/34157/YarramundiReserve.pdf"
+	},
+	"distance": [
+		25,
+		30
+	],
+	"hero": "",
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "springwood-bluegumswamp-richmond",
+	"updated": "2023-01-13",
+	"bounds": {
+		"west": 150.545654296875,
+		"north": -33.578014746144,
+		"east": 150.765380859375,
+		"south": -33.71520164474085
+	},
+	"markers": [
+		{
+			"location": "Springwood",
+			"type": "train",
+			"photo": "001_p4080001.jpg",
+			"description": "Get the train to Springwood using <a href=\"https://transportnsw.info/trip#/?to=Springwood\">transportnsw.info</a>.",
+			"lat": -33.699158999999995,
+			"lon": 150.563733
+		},
+		{
+			"type": "waypoint",
+			"photo": "003_p4080003.jpg",
+			"description": "Exit the station and follow Macquarie Rd left past the bowling club.",
+			"lon": 150.569443,
+			"lat": -33.69909699988141
+		},
+		{
+			"type": "waypoint",
+			"photo": "004_p4080004.jpg",
+			"lon": 150.57075,
+			"lat": -33.6992,
+			"description": "At the roundabout turn left towards Winmalee."
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_p4080005.jpg",
+			"lon": 150.571291,
+			"lat": -33.698466999999994,
+			"description": "Cross the bridge across the railway line."
+		},
+		{
+			"type": "waypoint",
+			"photo": "006_p4080006.jpg",
+			"lon": 150.571224,
+			"lat": -33.697851,
+			"description": "From the roundabout follow the signs to Winmalee."
+		},
+		{
+			"type": "waypoint",
+			"photo": "014_p4080014.jpg",
+			"lon": 150.60895399999998,
+			"lat": -33.672309999999996,
+			"description": "Follow Hawkesbury Road all the way to the Winmalee Shopping Centre on the left."
+		},
+		{
+			"location": "Winmalee Village",
+			"type": "bus",
+			"photo": "015_p4080015.jpg",
+			"description": "Take the bus to Winmalee Village using <a href=\"https://transportnsw.info/trip#/?to=Winmalee Village\">transportnsw.info</a>.",
+			"lat": -33.672309999999996,
+			"lon": 150.60895399999998
+		},
+		{
+			"type": "toilet",
+			"photo": "015_p4080015.jpg",
+			"description": "There are public toilets in the shopping centre.",
+			"lat": -33.67091,
+			"lon": 150.608947
+		},
+		{
+			"type": "waypoint",
+			"photo": "016_p4080016.jpg",
+			"lon": 150.61072199999998,
+			"lat": -33.664386,
+			"description": "Continue past the shopping center until the road ends at the carpark for the park entrance."
+		},
+		{
+			"type": "waypoint",
+			"photo": "018_p4080017.jpg",
+			"lon": 150.611031,
+			"lat": -33.664371000077104,
+			"description": "Follow the firetrail the continues past the gate."
+		},
+		{
+			"type": "waypoint",
+			"photo": "022_p4080020.jpg",
+			"lon": 150.611271,
+			"lat": -33.66287,
+			"description": "A sign at the split in the trail offers either the Blue Gum Swamp or Shaws Ridge. Both take about as long."
+		},
+		{
+			"type": "waypoint",
+			"photo": "056_p4080040.jpg",
+			"lon": 150.611382,
+			"lat": -33.635927,
+			"description": "Either trail ends at a sign pointing to Grose Head South, wich should be followed."
+		},
+		{
+			"type": "waypoint",
+			"photo": "065_p4080044.jpg",
+			"lon": 150.60405799999998,
+			"lat": -33.632242,
+			"description": "The trail zig zags up hill and ends at another sign. Follow it to Grose Head South"
+		},
+		{
+			"type": "waypoint",
+			"photo": "071_p4080047.jpg",
+			"lon": 150.608443,
+			"lat": -33.62607,
+			"description": "The firetrail ends at the lookout. Please be very careful near the edge."
+		},
+		{
+			"type": "waypoint",
+			"photo": "077_p4080068.jpg",
+			"lon": 150.608486,
+			"lat": -33.626065,
+			"description": "From the end of the firetrail a narrow path starts following the cliff line."
+		},
+		{
+			"type": "waypoint",
+			"photo": "085_p4080091.jpg",
+			"lon": 150.610041,
+			"lat": -33.626019,
+			"description": "The rough trail continues along several lookout spots."
+		},
+		{
+			"type": "waypoint",
+			"photo": "094_r0012081.jpg",
+			"lon": 150.61256,
+			"lat": -33.627129000000004,
+			"description": "Eventually the trail turns into a very rough climb up to the other side of Grose Head."
+		},
+		{
+			"type": "hotspot",
+			"photo": "105_p4080127.jpg",
+			"lon": 150.6157016978932,
+			"lat": -33.6233346960489,
+			"radius": 0.0004,
+			"description": "Leave a friendly note in the geocache logbook. That it can lie here undisturbed means you're in a special place.",
+			"badge": "map_2_inv",
+			"title": "Shhh, it's a Secret",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
+			"type": "waypoint",
+			"photo": "109_p4080128.jpg",
+			"lon": 150.61600099999998,
+			"lat": -33.623394,
+			"description": "Near the trig a firetrail starts down the ridge."
+		},
+		{
+			"type": "waypoint",
+			"photo": "118_r0012096.jpg",
+			"lon": 150.626312,
+			"lat": -33.620141000000004,
+			"description": "Watch for several lookouts along the way."
+		},
+		{
+			"type": "waypoint",
+			"photo": "158_p4080187.jpg",
+			"lon": 150.66011,
+			"lat": -33.619043,
+			"description": "Follow the firetrail all the way down until it finally joins Mountain Ave."
+		},
+		{
+			"type": "waypoint",
+			"photo": "163_p4080195.jpg",
+			"lon": 150.676433,
+			"lat": -33.620684,
+			"description": "Continue along Mountain Ave to the intersection with Springwood Road and follow it to the left."
+		},
+		{
+			"type": "kiosk",
+			"photo": "165_p4080197.jpg",
+			"lon": 150.691719,
+			"lat": -33.613625,
+			"description": "Watch on the left for Tree Adventures carpark, where refreshments can be bought."
+		},
+		{
+			"type": "waypoint",
+			"photo": "168_p4080199.jpg",
+			"lon": 150.696414,
+			"lat": -33.611992,
+			"description": "A little further up the road enter Yaramundi Reserve for a short detour or a rest along the river."
+		},
+		{
+			"type": "toilet",
+			"lon": 150.696561,
+			"lat": -33.61112,
+			"description": "There is a toilet block at the carpark."
+		},
+		{
+			"type": "waypoint",
+			"photo": "186_p4080219.jpg",
+			"lon": 150.697485,
+			"lat": -33.612333,
+			"description": "From Yeramundi Reserve follow Springwood Road to the left across the bridge and beyond."
+		},
+		{
+			"type": "waypoint",
+			"photo": "190_p4080224.jpg",
+			"lon": 150.71045300007472,
+			"lat": -33.614136,
+			"description": "Springwood Road ends at an intersection. Follow the signs left to Richmond."
+		},
+		{
+			"type": "waypoint",
+			"photo": "194_p4080228.jpg",
+			"lon": 150.734624,
+			"lat": -33.601791,
+			"description": "Follow the directions all the way to the centre of Richmond."
+		},
+		{
+			"type": "kiosk",
+			"photo": "195_p4080229.jpg",
+			"lon": 150.74742299992297,
+			"lat": -33.596333,
+			"description": "Cross the road at the intersection with March Street and follow Bosworth Street past the KFC."
+		},
+		{
+			"type": "waypoint",
+			"photo": "196_p4080230.jpg",
+			"lon": 150.747817,
+			"lat": -33.595667,
+			"description": "At the roundabout turn right and follow Windsor Street past the shops."
+		},
+		{
+			"type": "waypoint",
+			"photo": "198_p4080232.jpg",
+			"lon": 150.75193423999423,
+			"lat": -33.5975036900369,
+			"description": "Follow the path around the oval to Richmond Station."
+		},
+		{
+			"location": "Richmond",
+			"type": "train",
+			"photo": "199_p4080233.jpg",
+			"description": "Plan your return trip from Richmond at <a href=\"https://transportnsw.info/trip#/?from=Richmond\">transportnsw.info</a>.",
+			"lat": -33.59847776999144,
+			"lon": 150.75223465000673
+		}
+	]
+}

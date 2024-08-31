@@ -2,20 +2,23 @@
 	"location": "Great West Walk",
 	"lon": 150.8404602483,
 	"lat": -33.7761111371,
-	"description": [
-		"This walk follows the <a href=\"https://greatwestwalk.com.au/\">Great West Walk</a> through <a href=\"https://www.parrapark.com.au/\">Parramatta Park</a>,",
-		"the reserves along Toongabbie Creek, the <a href=\"https://www.westernsydneyparklands.com.au/\">Western Sydney Parklands</a>,",
-		"and ending this green stretch in the pleasant <a href=\"https://www.blacktown.nsw.gov.au/Sport-and-recreation/Parks-and-recreation-directory/Nurragingy-Reserve\">Nurragingy Reserve</a>.",
-		"<br/><br/>",
-		"After looping around Mount Druitt the walk continues through <a href=\"https://www.blacktown.nsw.gov.au/Sport-and-recreation/Parks-and-recreation-directory/Whalan-Reserve\">Whalan Reserve</a>,",
-		"and the newly created <a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/wianamatta-nature-reserve\">Wianamatta Nature Reserve</a>.",
-		"Before bridging the remaining distance to Penritch with the <a href=\"https://www.penrithcity.nsw.gov.au/facilities-recreation/outdoor-recreation/great-river-walk\">Great River Walk</a>."
+	"description": "This walk strings together the Western Parklands, Nurragingy Reserve, Wianamatta Regional Park and the Great River Walk along the Great West Walk.",
+	"keywords": {
+		"Western Parklands": "https://www.westernsydneyparklands.com.au/",
+		"Nurragingy Reserve": "https://www.blacktown.nsw.gov.au/Sport-recreation/Parks-and-recreation-directory/Nurragingy-Reserve",
+		"Wianamatta Regional Park": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/wianamatta-regional-park",
+		"Great River Walk": "https://www.penrithcity.nsw.gov.au/facilities-recreation/nepean-river/great-river-walk",
+		"Great West Walk": "https://greatwestwalk.com.au/"
+	},
+	"distance": [
+		18,
+		46,
+		64
 	],
-	"duration": 14,
-	"distance": 64,
+	"hero": "",
 	"zoom": 13,
 	"rain": true,
-	"fireban": false,
+	"fireban": true,
 	"key": "parramatta-greatwestwalk-penrith",
 	"updated": "2019-10-18",
 	"bounds": {
@@ -30,92 +33,8 @@
 			"lat": -33.816935,
 			"lon": 151.004827,
 			"type": "train",
+			"photo": "0000_img_20191019_055918.jpg",
 			"description": "Get the train to Parramatta using <a href=\"https://transportnsw.info/trip#/?to=Parramatta Station\">transportnsw.info</a>."
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.766106,
-			"lon": 150.902629
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.762676,
-			"lon": 150.860337
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.78099,
-			"lon": 150.819348
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.769194,
-			"lon": 150.812747
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.732252,
-			"lon": 150.780735
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.751237,
-			"lon": 150.694352
-		},
-		{
-			"type": "toilet",
-			"lat": -33.808202,
-			"lon": 150.993427
-		},
-		{
-			"type": "toilet",
-			"lat": -33.774496,
-			"lon": 150.936176
-		},
-		{
-			"type": "toilet",
-			"lat": -33.768699,
-			"lon": 150.90718
-		},
-		{
-			"type": "toilet",
-			"lat": -33.765982,
-			"lon": 150.902408
-		},
-		{
-			"type": "toilet",
-			"lat": -33.762477,
-			"lon": 150.856474
-		},
-		{
-			"type": "toilet",
-			"lat": -33.762409,
-			"lon": 150.85991
-		},
-		{
-			"type": "toilet",
-			"lat": -33.765232,
-			"lon": 150.860451
-		},
-		{
-			"type": "toilet",
-			"lat": -33.781311,
-			"lon": 150.819381
-		},
-		{
-			"type": "toilet",
-			"lat": -33.732358,
-			"lon": 150.781666
-		},
-		{
-			"type": "toilet",
-			"lat": -33.727248,
-			"lon": 150.772404
-		},
-		{
-			"type": "toilet",
-			"lat": -33.751739,
-			"lon": 150.691777
 		},
 		{
 			"type": "waypoint",
@@ -139,23 +58,22 @@
 			"lat": -33.811643999999994
 		},
 		{
+			"type": "hotspot",
+			"photo": "0110_img_20191019_062530.jpg",
+			"lon": 150.99744199999998,
+			"lat": -33.803808,
+			"radius": 0.0004,
+			"description": "A thought for those inside the nearby hospital, while we are lucky to enjoy our health along the lush green riverside.",
+			"badge": "compas_1",
+			"title": "Go West: Wisteria Gardens",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
 			"type": "waypoint",
 			"photo": "0120_img_20191019_062555.jpg",
 			"description": "Cross the dam in the Wistaria Gardens and turn right down the dirt trail to follow Governor Phillip Walk along the river.",
 			"lon": 150.99753300012813,
 			"lat": -33.803568999999996
-		},
-		{
-			"title": "Go West: Wisteria Gardens",
-			"badge": "compas_1",
-			"lon": 150.9976076037098,
-			"lat": -33.80344755132822,
-			"radius": 0.0004,
-			"explanation": [
-				"A thought for those inside the hospital, along the lush green riverside."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",
@@ -242,23 +160,15 @@
 			"lat": -33.781286
 		},
 		{
-			"type": "waypoint",
-			"photo": "0690_img_20191019_081819.jpg",
-			"description": "At the split in the canal decide to cross here or follow the bike path to Station Road.",
-			"lon": 150.95563099999998,
-			"lat": -33.78109700010452
-		},
-		{
-			"title": "Go West: Tempting Shortcut",
-			"badge": "compas_1",
-			"lon": 150.9552224159125,
-			"lat": -33.78190705220473,
-			"radius": 0.0004,
-			"explanation": [
-				"You will be back here on the other side... eventually."
-			],
 			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+			"photo": "0690_img_20191019_081819.jpg",
+			"lon": 150.95563099999998,
+			"lat": -33.78109700010452,
+			"radius": 0.0004,
+			"description": "You will be back here on the other side... eventually.",
+			"badge": "compas_1",
+			"title": "Go West: Tempting Shortcut",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -338,11 +248,12 @@
 			"lat": -33.769622
 		},
 		{
-			"type": "waypoint",
-			"photo": "1030_img_20191019_092941.jpg",
-			"description": "Cross the train tracks at Blacktown Station.",
-			"lon": 150.908344,
-			"lat": -33.767786
+			"location": "Blacktown",
+			"type": "train",
+			"photo": "1050_img_20191019_093420.jpg",
+			"description": "Get the train from/to Blacktown using <a href=\"https://transportnsw.info/trip#/?to=Blacktown Station\">transportnsw.info</a>.",
+			"lon": 150.90706400000002,
+			"lat": -33.768921999999996
 		},
 		{
 			"type": "waypoint",
@@ -359,7 +270,7 @@
 			"lat": -33.767189
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "1110_img_20191019_094448.jpg",
 			"description": "Follow the path through the showground to the pavillion.",
 			"lon": 150.902892,
@@ -415,23 +326,22 @@
 			"lat": -33.741889
 		},
 		{
-			"title": "Go West: Strolling in the Park",
-			"badge": "compas_1",
-			"lon": 150.8677514332645,
-			"lat": -33.73801291844763,
-			"radius": 0.0004,
-			"explanation": [
-				"A band of green on the way out of the city that feels like breathing a sigh of relief."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "waypoint",
 			"photo": "1370_img_20191019_104710.jpg",
 			"description": "Continue following the path to the exit at Richmond Road.",
 			"lon": 150.8728,
 			"lat": -33.736689
+		},
+		{
+			"type": "hotspot",
+			"photo": "1400_img_20191019_105002.jpg",
+			"lon": 150.87104200000002,
+			"lat": -33.736303,
+			"radius": 0.0004,
+			"description": "A band of green on the way out of the city that feels like breathing a sigh of relief.",
+			"badge": "compas_1",
+			"title": "Go West: Strolling in the Park",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -462,23 +372,22 @@
 			"lat": -33.761364
 		},
 		{
+			"type": "kiosk",
+			"photo": "1670_pano_20191019_120014.jpg",
+			"lon": 150.860028,
+			"lat": -33.763458,
+			"radius": 0.0004,
+			"description": "A Chinese Garden surrounded by bushland and seemingly no one the wiser it even exists.",
+			"badge": "compas_1",
+			"title": "Go West: Didn't Know It Existed",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
 			"type": "waypoint",
 			"photo": "1690_img_20191019_120147.jpg",
 			"description": "The boardwalk ends at the pavilion. Continue past the Chinese Gardens.",
 			"lon": 150.86041099991445,
 			"lat": -33.764164
-		},
-		{
-			"title": "Go West: Didn't Know It Existed",
-			"badge": "compas_1",
-			"lon": 150.8601335828615,
-			"lat": -33.76350931726358,
-			"radius": 0.0004,
-			"explanation": [
-				"A Chinese Garden surrounded by bushland and seemingly no one the wiser it even exists."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
 		},
 		{
 			"type": "waypoint",
@@ -601,22 +510,21 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "2210_img_20191019_143246.jpg",
+			"photo": "2200_img_20191019_143150.jpg",
 			"description": "At the end of Kurrajong Avenue follow the nature strip to the right past the industrial buildings.",
 			"lon": 150.801578,
 			"lat": -33.763167
 		},
 		{
-			"title": "Go West: Survived Mount Druitt",
-			"badge": "compas_1",
+			"type": "hotspot",
+			"photo": "2210_img_20191019_143246.jpg",
 			"lon": 150.8015974320838,
 			"lat": -33.76326655370499,
 			"radius": 0.0004,
-			"explanation": [
-				"You climb through a fence to continue the trail, perfectly in keeping with the reputation."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+			"description": "You climb through a fence to continue the trail, perfectly in keeping with the reputation.",
+			"badge": "compas_1",
+			"title": "Go West: Survived Mount Druitt",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -675,19 +583,18 @@
 			"lat": -33.725622
 		},
 		{
-			"title": "Go West: Emus and Bombs",
-			"badge": "compas_1",
-			"lon": 150.7722553655753,
-			"lat": -33.72721010312973,
-			"radius": 0.0004,
-			"explanation": [
-				"There's emus here and there used to be bombs. It's probably best to avoid either."
-			],
 			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+			"photo": "2600_img_20191019_154703.jpg",
+			"lon": 150.77684200000002,
+			"lat": -33.725481,
+			"radius": 0.0004,
+			"description": "There's now emus where the bombs used to be made. It is clear who was the winner of the Emu wars.",
+			"badge": "compas_1",
+			"title": "Go West: Emus and Bombs",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "2660_img_20191019_155319.jpg",
 			"description": "Follow the road past the ruined munitions factory to the picnic area.",
 			"lon": 150.77226100000001,
@@ -778,23 +685,22 @@
 			"lat": -33.735833
 		},
 		{
-			"title": "Go West: Weir Almost There",
-			"badge": "compas_1",
-			"lon": 150.6852837769118,
-			"lat": -33.7415830753694,
-			"radius": 0.0004,
-			"explanation": [
-				"This stretch along the river is to celebrate putting most of Sydney behind you in a day."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "waypoint",
 			"photo": "3550_img_20191019_183302.jpg",
 			"description": "Follow the Great River Walk left along the Nepean River past the weir.",
 			"lon": 150.686069,
 			"lat": -33.738536
+		},
+		{
+			"type": "hotspot",
+			"photo": "3580_pano_20191019_184124.jpg",
+			"lon": 150.6852837769118,
+			"lat": -33.7415830753694,
+			"radius": 0.0004,
+			"description": "This stretch along the river is to celebrate putting most of Sydney behind you in a day.",
+			"badge": "compas_1",
+			"title": "Go West: Weir Almost There",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -839,17 +745,11 @@
 			"lat": -33.751775
 		},
 		{
-			"type": "waypoint",
-			"photo": "3780_img_20191019_191416.jpg",
-			"description": "Cross the Great Western Highway into the station.",
-			"lon": 150.695825,
-			"lat": -33.750742
-		},
-		{
 			"location": "Penrith",
 			"lat": -33.750329,
 			"lon": 150.695488,
 			"type": "train",
+			"photo": "3780_img_20191019_191416.jpg",
 			"description": "Plan your return trip from Penrith Station at <a href=\"https://transportnsw.info/trip#/?from=Penrith Station\">transportnsw.info</a>."
 		}
 	]

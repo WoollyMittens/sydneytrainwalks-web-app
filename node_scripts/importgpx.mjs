@@ -1,6 +1,6 @@
 // dependencies
 import fsp from 'fs/promises';
-import toGeoJSON from '../inc/js/togeojson.js';
+import toGeoJSON from './togeojson.js';
 import { JSDOM } from 'jsdom';
 const source = '../inc/gpx/';
 const destination = '../inc/routes/';
@@ -41,7 +41,7 @@ async function parseFiles() {
 			// convert the data into xml dom
 			let xml = new JSDOM(data).window.document;
 			// trim down the route
-			xml = truncateRoute(xml);
+			//xml = truncateRoute(xml);
 			// convert the GPX into geoJson
 			let geojson = toGeoJSON.gpx(xml);
 			let geodata = JSON.stringify(geojson, null,'\t' );

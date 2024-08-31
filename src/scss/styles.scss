@@ -2,7 +2,6 @@
 	Combined Stylesheet
 */
 
-@import "mixins";
 @import "typography";
 @import "cover";
 @import "header";
@@ -12,11 +11,11 @@
 @import "directions";
 @import "overview";
 @import "summary";
-@import "guide";
+@import "legend";
 @import "about";
 @import "trophies";
 @import "trophy";
 @import "signage";
-@import "photowall";
-@import "localmap";
+@import "photomosaic";
+@import "localareamap";
 @import "photocylinder";

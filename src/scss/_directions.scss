@@ -14,6 +14,9 @@
 	
 	@media (max-width:959px) {
 		width: 100%;
+		bottom: 33.333%;
+
+		bottom: calc(50vw + 4rem);
 	}
 
 	@media print {
@@ -33,16 +36,20 @@
 		}
 	}
 
-	body.screen-guide &,
-	body.screen-map &,
-	body.screen-photos & {
+	.local-area-map-return {
+		@media (min-width:960px) {
+			display: none !important;
+		}
+	}
+
+	body[data-screen="guide"] &,
+	body[data-screen="photos"] & {
 		transform: translate(0, 0);
 	}
 
-	body.screen-guide &,
-	body.screen-photos & {
+	body[data-screen="photos"] & {
 		@media (max-width:959px) {
-			transform: translate(-100%, 0);
+			transform: translate(100%, 0);
 		}
 	}
 }

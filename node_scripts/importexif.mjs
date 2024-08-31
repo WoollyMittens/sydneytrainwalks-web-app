@@ -46,17 +46,19 @@ async function parseImage(path) {
 	// define some working parameters
 	let deg, min, sec, ref, lon, lat;
 	// convert the lat into a usable format
-	deg = response.gps.GPSLatitude[0];
-	min = response.gps.GPSLatitude[1];
-	sec = response.gps.GPSLatitude[2];
-	ref = response.gps.GPSLatitudeRef;
-	lat = (deg + min / 60 + sec / 3600) * (ref === "N" ? 1 : -1);
-	// convert the lon into a usable format
-	deg = response.gps.GPSLongitude[0];
-	min = response.gps.GPSLongitude[1];
-	sec = response.gps.GPSLongitude[2];
-	ref = response.gps.GPSLongitudeRef;
-	lon = (deg + min / 60 + sec / 3600) * (ref === "W" ? -1 : 1);
+	try {
+		deg = response.gps.GPSLatitude[0];
+		min = response.gps.GPSLatitude[1];
+		sec = response.gps.GPSLatitude[2];
+		ref = response.gps.GPSLatitudeRef;
+		lat = (deg + min / 60 + sec / 3600) * (ref === "N" ? 1 : -1);
+		// convert the lon into a usable format
+		deg = response.gps.GPSLongitude[0];
+		min = response.gps.GPSLongitude[1];
+		sec = response.gps.GPSLongitude[2];
+		ref = response.gps.GPSLongitudeRef;
+		lon = (deg + min / 60 + sec / 3600) * (ref === "W" ? -1 : 1);
+	} catch (e) { console.log('no geolocation:', path); }
 	// return the processed geodata
 	return { 'lon' : lon, 'lat' : lat };
 };

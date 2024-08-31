@@ -72,14 +72,16 @@
 
 	ul {
 		list-style: none;
-		display: flex;
-		flex-wrap: wrap;
-		margin: 2.5rem -0.5rem;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: auto;
+		gap: 1rem;
+		max-width: 36rem;
+    	margin: 0 auto;
 
 		li {
-			flex: 0 1 20%;
 			margin: 0;
-			padding: 0 0.5rem 2.5rem;
+			padding: 0;
 			text-align: center;
 
 			@media (max-width:959px) {
@@ -89,32 +91,31 @@
 	}
 
 	figure {
+		cursor: pointer;
 		margin: 0;
+		aspect-ratio: 1;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
 
 		img {
-			width: auto;
-			height: 3rem;
+			position: absolute;
+			width: 40%;
+			height: 40%;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
 
-			[data-color-scheme="light"] & {
-				background-color: initial;
-				border-radius: initial;
-				padding: initial;
-			}
+			[data-color-scheme="light"] & {}
 
-			[data-color-scheme="dark"] & {
-				background-color: #fff;
-				border-radius: 50%;
-				padding: 5px;
-			}
+			[data-color-scheme="dark"] & {}
 
-			@media (prefers-color-scheme: dark) {
-				background-color: #fff;
-				border-radius: 50%;
-				padding: 5px;
-			}
+			@media (prefers-color-scheme: dark) {}
 		}
 
 		figcaption {
+			display: none;
 			font-size: 0.875rem;
 
 			button {
@@ -128,12 +129,30 @@
 	}
 
 	&-passive {
-		opacity: 0.5;
+		figure {
+			img {
+				transform: translate(-50%, -100%);
+			}
+		}
 	}
 
-	&-active {}
+	&-active {
+		figure {
+			img {
+				width: 33.333%;
+				height: 33.333%;
+				background-color: #fff;
+				border-radius: 100%;
+				padding: 5px;
+				left: 0.5rem;
+				top: 0.5rem;
+				transform: initial;
 
-	body.screen-trophies & {
+			}
+		}
+	}
+
+	body[data-screen="trophies"] & {
 		transform: translate(0, 0);
 	}
 }

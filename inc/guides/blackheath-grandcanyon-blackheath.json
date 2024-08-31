@@ -1,28 +1,23 @@
 {
 	"location": "Grand Canyon",
-	"lon": 150.327468872,
-	"lat": -33.654994965,
-	"description": [
-		"From the town centre halfway down the road to Govetts Leap the way to the Braeside Walk is signposted.",
-		"Less travelled by tourists the <a href=\"https://www.tripadvisor.com.au/Attraction_Review-g504238-d10769782-Reviews-Braeside_Trail-Blackheath_Blue_Mountains_New_South_Wales.html\">Braeside Trail</a> leads through a stretch of bushland to the Grand Canyon carpark.",
-		"<br/><br/>",
-		"The <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/grand-canyon-track\">Grand Canyon walk</a> is a well maintained trail that winds through a narrow canyon with many water features along the way.",
-		"A rather more adventurous side trip possible to nearby Beauchamp Falls, but the narrow ledge and loose rocks may be a bit too adventurous.",
-		"<br/><br/>",
-		"The seemingly endless climb back out of the canyon is rewarded by <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/evans-lookout\">Evans Lookout</a>.",
-		"From Evans lookout the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/cliff-top-walking-track\">Cliff Top Walking Track</a> follows the edge of",
-		"the cliffs to <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/govetts-leap-lookout\">Govetts Leap</a>.",
-		"<br/><br/>",
-		"From Govetts Leap it's possible to walk directly back to the town centre along the road the past the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/visitor-centres/blue-mountains-heritage-centre\">Blue Mountains Heritage Centre</a>,",
-		"but <a href=\"https://www.weekendnotes.com/popes-glen-walk/\">Popes Glenn</a> offers a more lush alternative."
+	"lon": 150.32632562331855,
+	"lat": -33.650162145495415,
+	"description": "This walk ties together the Braeside, Grand Canyon, Evans Lookout, Cliff Top Track, Govetts Leap, and Popes Glen in a loop around Blackheath's attractions.",
+	"keywords": {
+		"Grand Canyon": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/grand-canyon-track",
+		"Evans Lookout": "https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/evans-lookout",
+		"Cliff Top Track": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/cliff-top-walking-track",
+		"Govetts Leap": "https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/govetts-leap-lookout"
+	},
+	"distance": [
+		18
 	],
-	"duration": 7,
-	"distance": 18,
+	"hero": "",
 	"zoom": 13,
 	"rain": false,
 	"fireban": false,
 	"key": "blackheath-grandcanyon-blackheath",
-	"updated": "2013-02-02",
+	"updated": "2024-03-08",
 	"bounds": {
 		"west": 150.27099609375,
 		"north": -33.60546961227189,
@@ -33,176 +28,183 @@
 		{
 			"location": "Blackheath",
 			"type": "train",
+			"photo": "pxl_20240307_214621052.jpg",
 			"description": "Get the train to Blackheath using <a href=\"https://transportnsw.info/trip#/?to=Blackheath\">transportnsw.info</a>.",
-			"lon": 150.284362793,
-			"lat": -33.633621216
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.6357,
-			"lon": 150.285457
-		},
-		{
-			"type": "toilet",
-			"lat": -33.646621,
-			"lon": 150.324658
-		},
-		{
-			"type": "toilet",
-			"lat": -33.628026,
-			"lon": 150.31116
-		},
-		{
-			"type": "toilet",
-			"lat": -33.63406,
-			"lon": 150.288373
+			"lon": 150.28453906998038,
+			"lat": -33.63314193673432
 		},
 		{
 			"type": "waypoint",
-			"photo": "p7200002.jpg",
-			"lon": 150.28645555555556,
-			"lat": -33.63614444444445,
-			"description": "From the station, follow the signs to the Braeside Walk down the right side of the main road."
+			"photo": "pxl_20240307_214703315.jpg",
+			"description": "From the station entrance cross at the traffic lights and follow the Great Western Highway to the right.",
+			"lon": 150.284407,
+			"lat": -33.633821
 		},
 		{
 			"type": "waypoint",
-			"photo": "p7200003.jpg",
-			"lon": 150.29314722222222,
-			"lat": -33.63760555555555,
-			"description": "Halfway down the main road turn right following the Braeside Walk sign."
+			"photo": "pxl_20240307_215028100.jpg",
+			"description": "At the intersection follow the signs to Govetts Leap to the left.",
+			"lon": 150.284705,
+			"lat": -33.6353
 		},
 		{
 			"type": "waypoint",
-			"photo": "p7200005.jpg",
-			"lon": 150.29691111111111,
-			"lat": -33.64206388888889,
-			"description": "The sealed road turns into a fire trail winding through the bush."
+			"photo": "pxl_20240307_220808908.jpg",
+			"description": "At the intersection with Boreas Street, follow the signs to the Braeside Walk to the right.",
+			"lon": 150.293225,
+			"lat": -33.637586999999996
 		},
 		{
 			"type": "waypoint",
-			"photo": "p7200012.jpg",
-			"lon": 150.30591944444447,
-			"lat": -33.641019444444446,
-			"description": "Pass by the sign to the Braeside walk and follow the fire trail to its end."
+			"photo": "pxl_20240307_221652447.jpg",
+			"description": "At the intersection with the Braeside Trail, turn right and follow the fire trail past the park gates.",
+			"lon": 150.296559,
+			"lat": -33.641114
 		},
 		{
 			"type": "waypoint",
-			"photo": "p7200014.jpg",
-			"lon": 150.31127777777778,
-			"lat": -33.64868055555556,
-			"description": "Follow Evans Lookout road to the left, there will be a car park on the right side halfway to the lookout."
+			"photo": "pxl_20240307_223151709.jpg",
+			"description": "At the trailhead of the Braeside Walk, follow the sign to Evans Lookout continuing along the firetrail.",
+			"lon": 150.306125,
+			"lat": -33.640669
 		},
 		{
 			"type": "waypoint",
-			"photo": "p7200019.jpg",
-			"lon": 150.31349444444444,
-			"lat": -33.65368055555555,
-			"description": "From the Grand Canyon car park a steep trail leads down into the canyon."
+			"photo": "pxl_20240307_224953761.jpg",
+			"description": "At the end of the firetrail follow Evans Lookout Road to the left.",
+			"lon": 150.31061000000003,
+			"lat": -33.648068999913264
 		},
 		{
 			"type": "waypoint",
-			"photo": "p7200038.jpg",
-			"lon": 150.3155638888889,
-			"lat": -33.65836111111111,
-			"description": "The path winnding through the canyon is well maintained and clearly marked."
+			"photo": "pxl_20240307_225614905.jpg",
+			"description": "Enter Neates Glen Parking area on the right side of the road.",
+			"lon": 150.314398,
+			"lat": -33.651201
 		},
 		{
 			"type": "waypoint",
-			"photo": "p7200067.jpg",
-			"lon": 150.3263722222222,
-			"lat": -33.65462222222222,
-			"description": "At the end of the Canyon a junction to Rodriguez Pass leads to closeby Beauchamp Falls."
+			"photo": "pxl_20240307_225639806.jpg",
+			"description": "From the Neats Glen Parking Area follow the signs to the Grand Canyon Walking Track",
+			"lon": 150.3145729998599,
+			"lat": -33.651438
 		},
 		{
 			"type": "waypoint",
-			"photo": "p7200075.jpg",
-			"lon": 150.32676944444444,
-			"lat": -33.65641111111111,
-			"description": "After a short stretch of canyon the view opens up to Grose Valley."
+			"photo": "pxl_20240307_231218178.jpg",
+			"description": "Follow the stairs all the way down into the canyon to the creek crossing.",
+			"lon": 150.313655,
+			"lat": -33.654455999999996
 		},
 		{
 			"type": "waypoint",
-			"photo": "p7200082.jpg",
-			"lon": 150.32763333333332,
-			"lat": -33.655963888888884,
-			"description": "At the edge of a valley a steep trail windows down to the falls."
+			"photo": "pxl_20240307_231241555.jpg",
+			"description": "After crossing Greaves Creek, follows the signs to Evans Lookout.",
+			"lon": 150.313756,
+			"lat": -33.654773999999996
 		},
 		{
 			"type": "waypoint",
-			"photo": "p7200086.jpg",
-			"lon": 150.3256361111111,
-			"lat": -33.65382222222222,
-			"description": "From the falls retrace your steps back to the junction to Rodriguez Pass and follow the steps up out of the canyon."
+			"photo": "pxl_20240308_000151989.jpg",
+			"description": "At the intersection with Rodriguez Pass Walking Track, follow the sign up to Evans Lookout.",
+			"lon": 150.325605,
+			"lat": -33.654438999999996
 		},
 		{
 			"type": "waypoint",
-			"photo": "p7200119_p7200122.jpg",
-			"lon": 150.32545555555555,
-			"lat": -33.64621944444444,
-			"description": "The climb up out of the canyon ends at Evans Lookout."
+			"photo": "pxl_20240308_003626965.jpg",
+			"description": "At the lookout, follow the walking paths along the viewing platforms to the carpark.",
+			"lon": 150.326383,
+			"lat": -33.647045
 		},
 		{
 			"type": "waypoint",
-			"photo": "p7200123.jpg",
-			"lon": 150.32474444444443,
-			"lat": -33.64644722222222,
-			"description": "From Evans Lookout the well marked Cliff Top Track leads to Govetts Leap Lookout."
+			"photo": "pxl_20240308_004759280.jpg",
+			"description": "From the toilet block near the end of the carpark, follow the signs to Govetts Leap Lookout.",
+			"lon": 150.324618,
+			"lat": -33.646568
 		},
 		{
 			"type": "waypoint",
-			"photo": "p7200156.jpg",
-			"lon": 150.3132888888889,
-			"lat": -33.63198333333333,
-			"description": "Halfway between Evans Lookout and Govetts Leap Lookout the track crosses the actual leap."
+			"photo": "pxl_20240308_012707598.jpg",
+			"description": "At the intersection with the Braeside Walk, cross the creek and continue along the Cliff Top Track.",
+			"lon": 150.31327800000003,
+			"lat": -33.632215
 		},
 		{
 			"type": "waypoint",
-			"photo": "p7200173.jpg",
-			"lon": 150.31150277777778,
-			"lat": -33.62836111111111,
-			"description": "Don't be tempted to look over the edge. It is a long way down."
+			"photo": "pxl_20240308_014545544.jpg",
+			"description": "From the trailhead near the toilet blocks follow the signs to Popes Glen.",
+			"lon": 150.31147800000002,
+			"lat": -33.62782099988988
 		},
 		{
 			"type": "waypoint",
-			"photo": "p7200160_p7200164.jpg",
-			"lon": 150.3114888888889,
-			"lat": -33.62851388888889,
-			"description": "The Cliff Top Track ends at the popular Govetts Leap."
+			"photo": "pxl_20240308_020028283.jpg",
+			"description": "From the falls at the intersection with Pulpit Rock Track, follow the signs to Blackheath Station and Village to the left.",
+			"lon": 150.310946,
+			"lat": -33.62431
+		},
+		{
+			"type": "hotspot",
+			"photo": "pxl_20240308_020736177.jpg",
+			"description": "Someone thought so highly of this tiny swimming spot, that it deserved the signage.",
+			"radius": 0.0004,
+			"badge": "duck_rubberduck",
+			"title": "Technically this is a beach.",
+			"instruction": "<center>Visit this location to earn the mystery trophy</center>",
+			"lon": 150.310222,
+			"lat": -33.621715
 		},
 		{
 			"type": "waypoint",
-			"photo": "p7200198.jpg",
-			"lon": 150.31105000000002,
-			"lat": -33.62444444444444,
-			"description": "Continue past the lookout, following the signs to Popes Glen."
+			"photo": "pxl_20240308_024451571.jpg",
+			"description": "At the end of the track follow Dell Street to the left.",
+			"lon": 150.294106,
+			"lat": -33.632489
 		},
 		{
 			"type": "waypoint",
-			"photo": "p7200204.jpg",
-			"lon": 150.3079638888889,
-			"lat": -33.623175,
-			"description": "Follow Popes Glen all the way up to the swimming pool."
+			"photo": "pxl_20240308_025043226.jpg",
+			"description": "From the carpark at the bottom of Memorial Park, follows the signs to Blackheath Station through the park.",
+			"lon": 150.290808,
+			"lat": -33.634377
 		},
 		{
 			"type": "waypoint",
-			"photo": "p7200201.jpg",
-			"lon": 150.31107222222224,
-			"lat": -33.62413055555555,
-			"description": "A small side track along the way, leads to Boyd Beach and a small cascade."
+			"photo": "pxl_20240308_030054136.jpg",
+			"description": "From the park entrance, follow Gardiner Crescent to the left.",
+			"lon": 150.289052,
+			"lat": -33.635954
 		},
 		{
 			"type": "waypoint",
-			"photo": "p7200205.jpg",
-			"lon": 150.2909861111111,
-			"lat": -33.63381666666667,
-			"description": "The path through Memorial Park leads back to the train station."
+			"photo": "pxl_20240308_030254648.jpg",
+			"description": "At the intersection with Govetts Leap Road, follow the sign to Blackheath Station to the right. ",
+			"lon": 150.288782,
+			"lat": -33.637011
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240308_030844465.jpg",
+			"description": "From the intersection follow the Great Western Highway to the right towards the train station.",
+			"lon": 150.28510599999998,
+			"lat": -33.635812
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240308_031047101.jpg",
+			"description": "Cross the the Great Western Highway at the station entrance.",
+			"lon": 150.284837,
+			"lat": -33.634245
 		},
 		{
 			"location": "Blackheath",
 			"type": "train",
+			"photo": "pxl_20240308_031659433.jpg",
 			"description": "Plan your return trip from Blackheath at <a href=\"https://transportnsw.info/trip#/?from=Blackheath\">transportnsw.info</a>.",
-			"lon": 150.284317017,
-			"lat": -33.633811951
+			"lon": 150.2846654690802,
+			"lat": -33.63396579399705
 		}
 	]
 }

@@ -3,9 +3,9 @@ export class Index {
 		this.config = config;
 		this.searchFor = '';
 		this.searchDelay = null;
-		this.sortBy = 'length';
+		this.sortBy = 'shortest';
 		this.updateView = updateView;
-		this.guidesLookup = this.generateLookup(guideCache['_index']);
+		this.guidesLookup = this.generateLookup(guideCache['index']);
 		this.searchForm = document.getElementById('sorting');
 		this.searchInput = document.querySelector('.searching-label input');
 		this.sortSelect = document.querySelector('.sorting-label select');
@@ -41,13 +41,12 @@ export class Index {
 			guide = this.guidesLookup[id];
 			// construct a menu item
 			titleHtml = titleTemplate
-				.replace(/{startTransport}/g, guide.startTransport)
-				.replace(/{startLocation}/g, guide.startLocation)
+				.replace(/{startTransport}/g, guide.locations[0].type)
+				.replace(/{startLocation}/g, guide.locations[0].location)
 				.replace(/{walkLocation}/g, guide.region)
-				.replace(/{walkDuration}/g, guide.duration)
-				.replace(/{walkDistance}/g, guide.distance)
-				.replace(/{endTransport}/g, guide.endTransport)
-				.replace(/{endLocation}/g, guide.endLocation);
+				.replace(/{walkDistance}/g, guide.distance.join(' / '))
+				.replace(/{endTransport}/g,guide.locations.slice(-1)[0].type)
+				.replace(/{endLocation}/g, guide.locations.slice(-1)[0].location);
 			// add the menu item
 			menuHtml += menuTemplate
 				.replace(/{id}/g, id)
@@ -59,6 +58,23 @@ export class Index {
 			: menuHtml;
 	}
 
+	updateMeta() {
+		// format the guide data
+		const title = `Easy bushwalks around Sydney using the train, bus and ferry - Sydney Hiking Trips`;
+		const description = `Don't let organising a bushwalk intimidate you. These 40+ hikes are easy day trips from Sydney using public transport.`;
+		const url = `./`;
+		// update the route without refreshing
+		window.history.pushState({'key': 'menu'}, title, url);
+		// update the meta elements
+		document.querySelector('title').innerHTML = title;
+		document.querySelector('meta[name="description"]')?.setAttribute('content', description);
+		document.querySelector('meta[property="og:url"]')?.setAttribute('content', this.config.remoteUrl);
+		document.querySelector('meta[property="og:image"]')?.setAttribute('content', this.config.remoteUrl + `/inc/img/favicon.png`);
+		document.querySelector('meta[property="og:title"]')?.setAttribute('content', title);
+		document.querySelector('meta[property="og:description"]')?.setAttribute('content', description);
+		document.querySelector('link[rel="canonical"]')?.setAttribute('href', this.config.remoteUrl);
+	}
+
 	searchGuide(guideIds, keyword) {
 		var locations = '', searched = [], search = new RegExp(keyword, 'i');
 		// create an array of guides
@@ -68,7 +84,7 @@ export class Index {
 			// only for valid guide id's
 			if (guide.region) {
 				// fetch the locations to search for
-				locations = guide.region + ' ' + guide.startLocation + ' ' + guide.endLocation;
+				locations = guide.region + ' ' + guide.locations.map(entry => entry.location).join(' ');
 				// add the guide if it includes the keyword
 				if (search.test(locations)) { searched.push(id); }
 			}
@@ -82,19 +98,20 @@ export class Index {
 		// sort the array by the prefered method
 		switch (option) {
 			case 'start':
-				sorted = unsorted.sort((a, b) => (this.guidesLookup[a].startLocation < this.guidesLookup[b].startLocation) ? -1 : 1);
+				sorted = unsorted.sort((a, b) => (this.guidesLookup[a].locations[0].location < this.guidesLookup[b].locations[0].location) ? -1 : 1);
 				break;
 			case 'finish':
-				sorted = unsorted.sort((a, b) => (this.guidesLookup[a].endLocation < this.guidesLookup[b].endLocation) ? -1 : 1);
+				sorted = unsorted.sort((a, b) => (this.guidesLookup[a].locations.slice(-1)[0].location < this.guidesLookup[b].locations.slice(-1)[0].location) ? -1 : 1);
 				break;
 			case 'region':
 				sorted = unsorted.sort((a, b) => (this.guidesLookup[a].region < this.guidesLookup[b].region) ? -1 : 1);
 				break;
-			case 'duration':
-				sorted = unsorted.sort((a, b) => (this.guidesLookup[a].duration < this.guidesLookup[b].duration) ? -1 : 1);
+			case 'shortest':
+				console.log('sorting by shortest');
+				sorted = unsorted.sort((a, b) => (Math.min(...this.guidesLookup[a].distance) < Math.min(...this.guidesLookup[b].distance)) ? -1 : 1);
 				break;
-			case 'length':
-				sorted = unsorted.sort((a, b) => (this.guidesLookup[a].distance < this.guidesLookup[b].distance) ? -1 : 1);
+			case 'longest':
+				sorted = unsorted.sort((a, b) => (Math.max(...this.guidesLookup[a].distance) > Math.max(...this.guidesLookup[b].distance)) ? -1 : 1);
 				break;
 			case 'revised':
 				sorted = unsorted.sort((a, b) => (this.guidesLookup[a].revised < this.guidesLookup[b].revised) ? -1 : 1);
@@ -139,20 +156,23 @@ export class Index {
 	}
 
 	mirrorResults(guideIds, sortedIds) {
-		// show/hide markers based on filter results using Array.indexOf()
-		guideIds.map(function(id) {
-			var visibility = (sortedIds.indexOf(id) > -1) ? 'visible' : 'hidden';
-			var elements = document.querySelectorAll('[data-key="' + id + '"]');
-			for (let element of elements) {
-				element.style.visibility = visibility;
-			}
-		});
+		// show or hide page elements associated with a key, according to the filtered keys
+		const elements = document.querySelectorAll('.overview.local-area-map [data-key]');
+		let keywords = [];
+		for (let id of sortedIds) {
+			let guide = this.guidesLookup[id];
+			keywords.push(guide.key);
+			guide.locations.map(entry => { keywords.push(entry.location) });
+		}
+		for (let element of elements) {
+			element.style.visibility = keywords.includes(element.getAttribute('data-key')) ? 'visible' : 'hidden';
+		}
 	}
 
 	onFieldFocus(evt) {
 		// reset the previous state
-		window.localStorage.setItem('id', null);
-		window.localStorage.setItem('mode', null);
+		window.localStorage.setItem('key', null);
+		window.localStorage.setItem('screen', null);
 	}
 
 	onSearchReset(input, evt) {
@@ -170,7 +190,7 @@ export class Index {
 
 	onSearchSubmitted(input, evt) {
 		// cancel the submit
-		evt.preventDefault();
+		if(evt) evt.preventDefault();
 		// perform the search
 		this.searchFor = input.value.trim();
 		this.update();
@@ -213,7 +233,7 @@ export class Index {
 			target = target.parentNode;
 		}
 		// update the app for this id
-		this.updateView(id, 'map');
+		this.updateView(id, 'guide');
 	}
 
 	init() {

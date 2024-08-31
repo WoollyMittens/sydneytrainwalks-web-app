@@ -1,27 +1,26 @@
-import { Localmap } from "./localmap.js";
+import { LocalAreaMap } from "./local-area-map.js";
 
 export class Overview {
-  constructor(config, guideIds, loadGuide, loadRoute, updateView) {
+  constructor(config, guideIds, loadGuide, loadRoute, updateView, updateSearch) {
     this.parent = parent;
     this.config = config;
-    this.overviewMap = null;
-    this.awaitTimeout = null;
     this.guideIds = guideIds;
     this.loadGuide = loadGuide;
 		this.loadRoute = loadRoute;
 		this.updateView = updateView;
+    this.updateSearch = updateSearch;
     this.overviewElement = document.querySelector('.overview');
-    this.creditTemplate = document.getElementById('credit-template');
+    this.creditsTemplate = document.getElementById('credits-template');
     this.init();
   }
 
   async createMap() {
     // we only want one
-    if (this.localmap) return false;
+    if (this.localAreaMap) return false;
     // clear the container
     this.overviewElement.innerHTML = '';
     // generate the map
-    this.localmap = new Localmap({
+    this.localAreaMap = new LocalAreaMap({
       'container': this.overviewElement,
       'legend': null,
       // assets
@@ -29,20 +28,16 @@ export class Overview {
       'photosUrl': null,
       'markersUrl': this.config.localUrl + '/img/marker-{type}.svg',
       'exifUrl': null,
-      'guideUrl': null,
-      'routeUrl': null,
-      'mapUrl': this.config.localUrl + '/maps/{key}.jpg',
+      'guideUrl': await this.processMarkers(),
+      'routeUrl': await this.mergeRoutes(),
+      'mapUrl': null,
       'tilesUrl': this.config.localUrl + '/tiles/{z}/{x}/{y}.jpg',
       'tilesZoom': 11,
-      // cache
-      'guideData': await this.processMarkers(),
-      'routeData': await this.mergeRoutes(),
-      'exifData': null,
       // offsets
       'distortX': function(x) { return x },
       'distortY': function(y) { return y - (-2 * y * y + 2 * y) / 150 },
       // attribution
-      'creditsTemplate': this.creditTemplate.innerHTML,
+      'creditsTemplate': this.creditsTemplate.innerHTML,
       // legend
       'supportColour': function(name) {
         var colours = ['red', 'darkorange', 'green', 'teal', 'blue', 'purple', 'black'];
@@ -58,25 +53,59 @@ export class Overview {
 
   async processMarkers() {
     // add "onMarkerClicked" event handlers to markers
-    let guide = await this.loadGuide('_index');
+    const guide = await this.loadGuide('index');
     // for every marker
+    const markers = [];
     for (let marker of guide.markers) {
       // modify the marker to be a button
-      marker.type = 'waypoint';
-      marker.description = '';
-      marker.callback = this.onMarkerClicked.bind(this, marker.key);
+      markers.push({
+        key: marker.key,
+        type: 'waypoint',
+        lon: marker.lon,
+        lat: marker.lat,
+        photo: '',
+        callback: this.onMarkerClicked.bind(this, marker.key)
+      });
     }
+    // add markers for the start stations
+    const stationLookup = {};
+    const stations = [];
+    for (let marker of guide.markers) {
+      for (let station of marker.locations) {
+        if (!stationLookup[station.location]) {
+          stations.push({
+            key: station.location,
+            type: station.type,
+            lon: station.lon,
+            lat: station.lat,
+            callback: this.onStationClicked.bind(this, station.location)
+          });
+          stationLookup[station.location] = true;
+        }
+      }
+    }
+    // add the stations to the markers
+    guide.markers = [...markers, ...stations];
     // return the result
     return guide;
   }
 
   async mergeRoutes() {
     // create a dummy routes cache
-    var routes = {'features':[]};
+    const routes = {'features':[]};
     // for every walk
-    for (let id of this.guideIds) {
+    const total = this.guideIds.length;
+    for (let index in this.guideIds) {
+      // get the guide key
+      let key = this.guideIds[index];
       // load the route
-      let route = await this.loadRoute(id);
+      let route = await this.loadRoute(key);
+      // update a progress bar
+      this.overviewElement.setAttribute('data-progress', Math.round(index / total * 100) + '%');
+      // set the keys of the tracks
+      for (let feature of route.features) {
+        feature.properties.name = key;
+      }
       // add the route
       routes.features = routes.features.concat(route.features);
     }
@@ -86,8 +115,30 @@ export class Overview {
 
   onMarkerClicked(id, evt) {
     // update the app for this id
-    this.updateView(id, 'map');
+    this.updateView(id, 'guide');
   }
+
+  onStationClicked(name, evt) {
+    // populate the filter with the station name
+    this.updateSearch(name);
+  }
+
+	updateMeta() {
+		// format the guide data
+		const title = `Overview map of bushwalks accessible using public transport - Sydney Hiking Trips`;
+		const description = `This map shows the bushwalks that are accessible using public transport which are documented in this guide.`;
+		const url = `./?screen=overview`;
+		// update the route without refreshing
+		window.history.pushState({'key': 'overview'}, title, url);
+		// update the meta elements
+		document.querySelector('title').innerHTML = title;
+		document.querySelector('meta[name="description"]')?.setAttribute('content', description);
+		document.querySelector('meta[property="og:url"]')?.setAttribute('content', this.config.remoteUrl + '/?screen=overview');
+		document.querySelector('meta[property="og:image"]')?.setAttribute('content', this.config.remoteUrl + `/inc/img/favicon.png`);
+		document.querySelector('meta[property="og:title"]')?.setAttribute('content', title);
+		document.querySelector('meta[property="og:description"]')?.setAttribute('content', description);
+		document.querySelector('link[rel="canonical"]')?.setAttribute('href', this.config.remoteUrl + '/?screen=overview');
+	}
 
   init() {
     // wait for the viewport to become visible

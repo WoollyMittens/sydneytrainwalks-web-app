@@ -1,0 +1,538 @@
+{
+	"location": "Warrah Lookout",
+	"lon": 151.2818391155,
+	"lat": -33.5417993926,
+	"description": "This grand loop around Woy Woy follows the Woy Woy Foreshore and much of Brisbane Waters National Park, including Warrah Lookout.",
+	"keywords": {
+		"Woy Woy Foreshore": "https://www.lovecentralcoast.com/news/waterside-walks-shared-pathways",
+		"Brisbane Waters National Park": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/brisbane-water-national-park",
+		"Warrah Lookout": "https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/warrah-lookout"
+	},
+	"distance": [
+		28
+	],
+	"hero": "",
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "woywoy-warrahlookout-woywoy",
+	"updated": "2024-01-19",
+	"bounds": {
+		"west": 151.259765625,
+		"north": -33.46810795527896,
+		"east": 151.34765625,
+		"south": -33.56886118255556
+	},
+	"markers": [
+		{
+			"location": "Woy Woy",
+			"type": "train",
+			"photo": "pxl_20240112_191053417.jpg",
+			"description": "Get the train to Woy Woy using <a href=\"https://transportnsw.info/trip#/?to=Woy Woy\">transportnsw.info</a>.",
+			"lat": -33.485393,
+			"lon": 151.32345
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_191213460.jpg",
+			"lon": 151.323871,
+			"lat": -33.485028,
+			"description": "From the station cross Brisbane Water Dr and follow the footpath left on the other side."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_191327546.jpg",
+			"lon": 151.324355,
+			"lat": -33.484492,
+			"description": "Follow The Boulevarde to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_191554282.jpg",
+			"lon": 151.326362,
+			"lat": -33.484083,
+			"description": "Follow Brick Wharf Rd along the waterfront."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_192527200.jpg",
+			"lon": 151.3319,
+			"lat": -33.485258,
+			"description": "Follow the sign left to the Lions Park."
+		},
+		{
+			"type": "toilet",
+			"photo": "pxl_20240112_192958170.jpg",
+			"lon": 151.335567,
+			"lat": -33.484686,
+			"description": "There is a toilet block at the Lions Park."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_193232171.jpg",
+			"lon": 151.33644800000002,
+			"lat": -33.485166,
+			"description": "From the Lions Park follow the shared path along the waterfront."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_195522901.jpg",
+			"lon": 151.33136199999998,
+			"lat": -33.500302,
+			"description": "Follow the end the path to the right out of the park."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_195614738.jpg",
+			"lon": 151.331112,
+			"lat": -33.500604,
+			"description": "Follow Blackwall Road to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_195736577.jpg",
+			"lon": 151.331377,
+			"lat": -33.501576,
+			"description": "Cross at the pedestrian crossing and follow Memorial Ave around the right side of Blackwall Mountain."
+		},
+		{
+			"type": "kiosk",
+			"photo": "pxl_20240112_200440257.jpg",
+			"lon": 151.331467,
+			"lat": -33.505872,
+			"description": "There are amenities at the servo along Memorial Drive."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_200945405.jpg",
+			"lon": 151.330931,
+			"lat": -33.509348,
+			"description": "At the roundabout continue straight along Barrenjoey Rd."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_201318119.jpg",
+			"lon": 151.330517,
+			"lat": -33.511481,
+			"description": "At the next roundabout follow the sign to Ettalong to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_201828845.jpg",
+			"lon": 151.33487100000002,
+			"lat": -33.512325,
+			"description": "From the corner of Bourke Rd follow Memorial Ave to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_202024338.jpg",
+			"lon": 151.335246,
+			"lat": -33.513527,
+			"description": "At the intersection continue straight on Memorial Ave past the RSL."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_202229885.jpg",
+			"lon": 151.335203,
+			"lat": -33.515097,
+			"description": "Cross The Esplanade and continue to the waterfront."
+		},
+		{
+			"type": "kiosk",
+			"photo": "pxl_20240112_202310340.jpg",
+			"lon": 151.334899,
+			"lat": -33.515429,
+			"description": "There are amenities at The Box Park."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_202638176.jpg",
+			"lon": 151.334812,
+			"lat": -33.515914,
+			"description": "From The Box Park follow The Esplanade to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_204801733.jpg",
+			"lon": 151.329461,
+			"lat": -33.523513,
+			"description": "Follow The Esplanade to Umina Beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_205659878.jpg",
+			"lon": 151.321966,
+			"lat": -33.524456,
+			"description": "From the corner of The Esplanade follow the footpath to surf club to the left."
+		},
+		{
+			"type": "toilet",
+			"photo": "pxl_20240112_205736398.jpg",
+			"lon": 151.321443,
+			"lat": -33.524532,
+			"description": "From the surf club follow the beach access. There are amenities at the surf club."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_210017699.jpg",
+			"lon": 151.32058,
+			"lat": -33.525715999999996,
+			"description": "From the surf club follow Umina Beach to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_211528167.jpg",
+			"lon": 151.31145600000002,
+			"lat": -33.532649,
+			"description": "At the end of the beach follow the access trail to the carpark."
+		},
+		{
+			"type": "toilet",
+			"photo": "pxl_20240112_211935846.jpg",
+			"lon": 151.31028,
+			"lat": -33.534565,
+			"description": "From the carpark follow Mount Ettalong Rd to the left. There is a toilet block at the carpark."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_212250281.jpg",
+			"lon": 151.312509,
+			"lat": -33.534824,
+			"description": "Carefully follow the shoulder of Mount Ettalong Rd a short distance to the trailhead on the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_212542366.jpg",
+			"lon": 151.314391,
+			"lat": -33.53525,
+			"description": "From the trailhead follow the path around Umina Point."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_213331639.jpg",
+			"lon": 151.31089500000002,
+			"lat": -33.537507999999995,
+			"description": "From the end of the path follow the access trail to Pearl Beach to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_213555474.jpg",
+			"lon": 151.311339,
+			"lat": -33.538267,
+			"description": "Follow Pearl Beach to the headland on the other side."
+		},
+		{
+			"type": "toilet",
+			"photo": "pxl_20240112_214709844.jpg",
+			"lon": 151.30745800000003,
+			"lat": -33.54406300006957,
+			"description": "There is a toilet block at the picnic area."
+		},
+		{
+			"type": "kiosk",
+			"photo": "pxl_20240112_215058918.jpg",
+			"lon": 151.30726900000002,
+			"lat": -33.545078,
+			"description": "From the picnic area follow Pearl Parade to the left. There are amenities at the corner."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_215633115.jpg",
+			"lon": 151.30618800000002,
+			"lat": -33.545581,
+			"description": "From the corner of Pearl Parade follow Tourmaline Ave to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_215754517.jpg",
+			"lon": 151.305904,
+			"lat": -33.546388,
+			"description": "At the intersection follow Diamond Rd to the left across the bridge."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_220103064.jpg",
+			"lon": 151.30424100000002,
+			"lat": -33.547833999999995,
+			"description": "After the bridge follow Crystal Ave to the right to the Pearl Beach Arboretum."
+		},
+		{
+			"type": "hotspot",
+			"photo": "pxl_20240112_220306760.jpg",
+			"radius": 0.0004,
+			"description": "But why though?",
+			"badge": "music_1",
+			"title": "Wild Piano",
+			"instruction": "Visit this location to earn the mystery trophy",
+			"lon": 151.302639,
+			"lat": -33.548452
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_220415634.jpg",
+			"lon": 151.30193200000002,
+			"lat": -33.54878,
+			"description": "At the arboretum enter the gated trailhead on the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_221348618.jpg",
+			"lon": 151.29998699989386,
+			"lat": -33.551235999999996,
+			"description": "From the trailhead follow the Pearl Beach Patonga Firetrail up the ridge."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_222950786.jpg",
+			"lon": 151.289493,
+			"lat": -33.552398,
+			"description": "Access the fenced lookout from the left side of the trail."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_223121528.jpg",
+			"lon": 151.288436,
+			"lat": -33.552263999999994,
+			"description": "<i>+10m</i>Optionally there is a second unfenced lookout a short distance further along the track.",
+			"optional": true
+		},
+		{
+			"type": "hotspot",
+			"photo": "pxl_20240112_223314582_pano.jpg",
+			"lon": 151.2881417,
+			"lat": -33.552325,
+			"radius": 0.0004,
+			"description": "Let the tourists enjoy the fenced lookout. Welcome to the club of locals who know better.",
+			"badge": "house_3",
+			"title": "I Can See My House from Here",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_223607310.jpg",
+			"lon": 151.289382,
+			"lat": -33.552234,
+			"description": "Follow Doyles Track opposite the lookout to Warrah Car Park."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_224355955.jpg",
+			"lon": 151.287795,
+			"lat": -33.549707999999995,
+			"description": "From the Warrah Car Park follow Warrah Trig Rd."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_230101115.jpg",
+			"lon": 151.281641,
+			"lat": -33.540305,
+			"description": "At the intersection follow the trail to the right along Patonga Dr."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_230433114.jpg",
+			"lon": 151.282994,
+			"lat": -33.538477,
+			"description": "Cross Patonga Dr to the gated trailhead on the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_230604143.jpg",
+			"lon": 151.28216300000003,
+			"lat": -33.537982,
+			"description": "At the intersection follow the Great North Walk marker to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_230953477.jpg",
+			"lon": 151.28181500000002,
+			"lat": -33.535956999999996,
+			"description": "At the intersection follow the Great North Walk marker to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_231437986.jpg",
+			"lon": 151.2816230001468,
+			"lat": -33.533543,
+			"description": "At the intersection follow the Great North Walk marker to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_231659504.jpg",
+			"lon": 151.28013600000003,
+			"lat": -33.53273699986059,
+			"description": "At the intersection follow the park sign to Girakool."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240112_232512824.jpg",
+			"lon": 151.28218800000002,
+			"lat": -33.529978,
+			"description": "Follow the Great North Walk martkers along Van Dahl's Firetrail."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240113_000110119.jpg",
+			"lon": 151.289657,
+			"lat": -33.51291899990176,
+			"description": "Before the landfill, follow the Great North Walk sign left along the Hawkesbury Track"
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240113_000301663.jpg",
+			"lon": 151.289209,
+			"lat": -33.512408,
+			"description": "Cross the creek and follow the Hawkesbury Track up the ridge on the other side."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240113_001034324.jpg",
+			"lon": 151.28894499999998,
+			"lat": -33.510496,
+			"description": "Follow the Hawkesbury Track around the fenceline of the landfill."
+		},
+		{
+			"type": "hotspot",
+			"photo": "pxl_20240113_001307280.jpg",
+			"lon": 151.2889917,
+			"lat": -33.5096139,
+			"radius": 0.0004,
+			"description": "With luck the wind is blowing away from it.",
+			"badge": "bag_bagful",
+			"title": "The View is Garbage",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240113_002113969.jpg",
+			"lon": 151.286,
+			"lat": -33.508415,
+			"description": "Follow the Great North Walk markers across the rocky sections."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240113_004939463.jpg",
+			"lon": 151.27685100000002,
+			"lat": -33.501998,
+			"description": "At the end of the Hawkesbury Track follow Dillons Firetrail to the the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240113_030252909.jpg",
+			"lon": 151.27891300000002,
+			"lat": -33.501363,
+			"description": "Follow Dillons Firetrail to the landfill."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240113_031830887.jpg",
+			"lon": 151.290387,
+			"lat": -33.504815,
+			"description": "Follow Dillons Firetrail to fenceline of the landfill."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240113_032256053.jpg",
+			"lon": 151.291238,
+			"lat": -33.503708,
+			"description": "Use the pedestrian gate at the end of the trail for access to the landfill access road."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240113_032703471.jpg",
+			"lon": 151.29368,
+			"lat": -33.502943,
+			"description": "Follow Nagari Rd away from the landfill."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240113_033829284.jpg",
+			"lon": 151.297209,
+			"lat": -33.497662,
+			"description": "If the entrance gates are closed, use the pedestrian gate on the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240113_034508152.jpg",
+			"lon": 151.302679,
+			"lat": -33.4979,
+			"description": "Follow Nagari Rd to the underpass under the railway."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240113_034544430.jpg",
+			"lon": 151.30291300000002,
+			"lat": -33.497687,
+			"description": "Use the pedestrian tunnel on the right side of the underpass."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240113_034621423.jpg",
+			"lon": 151.302976,
+			"lat": -33.497348,
+			"description": "From the underpass cross Woy Woy Rd to Correa Bay Boat Ramp."
+		},
+		{
+			"type": "toilet",
+			"lon": 151.303832,
+			"lat": -33.497036,
+			"description": "There is a toilet block at the picnic area."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240113_041319296.jpg",
+			"lon": 151.304457,
+			"lat": -33.497042,
+			"description": "From the boat ramp follow the footpath along Woy Woy Rd."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240113_042525359.jpg",
+			"lon": 151.31258300012118,
+			"lat": -33.492643,
+			"description": "At the intersection with Rawson Rd, follow Woy Woy Rd to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240113_042651921.jpg",
+			"lon": 151.31365700010863,
+			"lat": -33.492444,
+			"description": "Before the railway crossing, use the pedestrian tunnel on the left side of Woy woy Rd. "
+		},
+		{
+			"type": "toilet",
+			"lon": 151.314483,
+			"lat": -33.492581,
+			"description": "There is a toilet block near the bus stop."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240113_043025084.jpg",
+			"lon": 151.31606100000002,
+			"lat": -33.491941000000004,
+			"description": "From the other side of the pedestrian tunnel follow Railway St to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240113_043733982.jpg",
+			"lon": 151.320197,
+			"lat": -33.488747000000004,
+			"description": "Follow the footpath along the station carpark."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240113_044010858.jpg",
+			"lon": 151.32175,
+			"lat": -33.487273,
+			"description": "From the roundabout follow the footpath straight to the station."
+		},
+		{
+			"location": "Woy Woy",
+			"type": "train",
+			"photo": "pxl_20240113_044228247.jpg",
+			"description": "Plan your return trip from Woy Woy at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>.",
+			"lat": -33.485393,
+			"lon": 151.32345
+		}
+	]
+}

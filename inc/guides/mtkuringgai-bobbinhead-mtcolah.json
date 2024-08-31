@@ -1,0 +1,470 @@
+{
+	"location": "Bobbin Head",
+	"lon": 151.15724908187985,
+	"lat": -33.660484459251165,
+	"description": "An expandable walk through Kuring-gai Chase to Bobbin Head with an optional extention to the Sphynx Memorial. The overgrown pipeline shortcut track to Apple Tree Bay is strongly discouraged.",
+	"keywords": {
+		"Kuring-gai Chase": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/kuringgai-chase-national-park",
+		"Bobbin Head": "https://www.nationalparks.nsw.gov.au/things-to-do/picnic-areas/bobbin-head",
+		"Sphynx Memorial": "https://www.nationalparks.nsw.gov.au/things-to-do/historic-buildings-places/sphinx-memorial",
+		"Apple Tree Bay": "https://www.nationalparks.nsw.gov.au/things-to-do/picnic-areas/apple-tree-picnic-area"
+	},
+	"distance": [
+		13,
+		25
+	],
+	"hero": "",
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "mtkuringgai-bobbinhead-mtcolah",
+	"updated": "2024-03-10",
+	"bounds": {
+		"west": 151.094970703125,
+		"north": -33.63291573870478,
+		"east": 151.182861328125,
+		"south": -33.69692269295768
+	},
+	"markers": [
+		{
+			"location": "Mount Kuring-gai",
+			"photo": "001_pxl_20240309_194305479.jpg",
+			"type": "train",
+			"description": "Get the train to Mount Kuring-gai using <a href=\"https://transportnsw.info/trip#/?to=Mount Kuring-gai\">transportnsw.info</a>.",
+			"lon": 151.13717157393694,
+			"lat": -33.6539083532989
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20240309_194314836.jpg",
+			"description": "Exit the station to the left and cross the overpass over the M1.",
+			"lon": 151.137273,
+			"lat": -33.653852
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20240309_194347455.jpg",
+			"description": "From the cul-de-sac follow Harwood Ave straight on.",
+			"lon": 151.13766999999999,
+			"lat": -33.653938
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20240309_194712425.jpg",
+			"description": "At the corner of Harwood Ave follow the Mount Kuring-gai track.",
+			"lon": 151.141029,
+			"lat": -33.654424
+		},
+		{
+			"type": "waypoint",
+			"photo": "001_pxl_20240309_195454516.jpg",
+			"description": "At the split follow the trail to the left.",
+			"lon": 151.14610399999998,
+			"lat": -33.651023
+		},
+		{
+			"type": "waypoint",
+			"photo": "002_pxl_20240309_195515148.jpg",
+			"description": "<i>+0.2km</i> Optionally follow the split to the right to a lookout.",
+			"lon": 151.1464369998987,
+			"lat": -33.650940999999996,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "003_pxl_20240309_195659531.jpg",
+			"description": "<i>-1km</i> From the lookout an overgrown trail leads further down the ridge and ultimately to Apple Tree Bay.",
+			"detour": true,
+			"lon": 151.147391,
+			"lat": -33.651122
+		},
+		{
+			"type": "waypoint",
+			"photo": "003_pxl_20240309_195916557.jpg",
+			"description": "It is not advised to follow this dangerous pipeline service trail.",
+			"detour": true,
+			"lon": 151.147617,
+			"lat": -33.65101
+		},
+		{
+			"type": "waypoint",
+			"photo": "003_pxl_20240309_200254823.jpg",
+			"description": "The trail ends at the abandoned structure of a water tank.",
+			"detour": true,
+			"lon": 151.148166,
+			"lat": -33.651036
+		},
+		{
+			"type": "waypoint",
+			"photo": "003_pxl_20240309_200711937.jpg",
+			"description": "From the water tank a disused pipeline leads to Apple Tree Bay.",
+			"detour": true,
+			"lon": 151.14949199999998,
+			"lat": -33.65096
+		},
+		{
+			"type": "waypoint",
+			"photo": "003_pxl_20240309_202812197.jpg",
+			"description": "Cross the creek instead of following it to the waterfall. The pipe line continues on the other side.",
+			"detour": true,
+			"lon": 151.152593,
+			"lat": -33.651409
+		},
+		{
+			"type": "waypoint",
+			"photo": "003_pxl_20240309_204304707.jpg",
+			"description": "The pipeline service trail ends with a scramble down to the Apple Tree Bay picnic area.",
+			"detour": true,
+			"lon": 151.155274,
+			"lat": -33.651723
+		},
+		{
+			"type": "waypoint",
+			"photo": "004_p2021278.jpg",
+			"description": "The leads to a set of steps down a drop.",
+			"lon": 151.14722777777777,
+			"lat": -33.64993055555556
+		},
+		{
+			"type": "waypoint",
+			"photo": "004_p2021279_p2021294.jpg",
+			"description": "<i>+50m</i>Before the steps down, an overgrown side trail to the left leads to a lookout and memorial.",
+			"lon": 151.14850555555554,
+			"lat": -33.649027777777775,
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "004_p2021295.jpg",
+			"description": "At the bottom of the steps, continue along the Mt Kuring-gai Track",
+			"lon": 151.14921666666666,
+			"lat": -33.64857222222222
+		},
+		{
+			"type": "waypoint",
+			"photo": "004_p2021304.jpg",
+			"description": "At the end of the trail a lookout overlooks Cowan Creek.",
+			"lon": 151.16063300000002,
+			"lat": -33.646895
+		},
+		{
+			"type": "waypoint",
+			"photo": "004_p2021305.jpg",
+			"description": "From the lookout follow the hairpin turns down to Cowan Creek.",
+			"lon": 151.161125,
+			"lat": -33.647422222222225
+		},
+		{
+			"type": "waypoint",
+			"photo": "004_p2021361_p2021364.jpg",
+			"description": "Follow the Berowra Track to the right along the waterfront.",
+			"lon": 151.1571111111111,
+			"lat": -33.65049722222222
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20240309_204343139.jpg",
+			"description": "The trail ends at a small picnic area along the Apple Tree Creek.",
+			"lon": 151.155323,
+			"lat": -33.651717999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "005_pxl_20240309_204525449.jpg",
+			"description": "From the small picnic area at the end of the track, cross the bridge to Apple Tree Bay.",
+			"lon": 151.155586,
+			"lat": -33.651809
+		},
+		{
+			"type": "toilet",
+			"photo": "005_pxl_20240309_204723756_pano.jpg",
+			"description": "There is a public toilet at the carpark.",
+			"lon": 151.155617,
+			"lat": -33.652512
+		},
+		{
+			"type": "waypoint",
+			"photo": "006_p2021394.jpg",
+			"description": "From the cafe follow the road to Bobbin Head.",
+			"lon": 151.1593388888889,
+			"lat": -33.65519444444444
+		},
+		{
+			"type": "kiosk",
+			"photo": "007_pxl_20240309_210505089.jpg",
+			"description": "There are public toilets at the carpark near Bobbin Head Inn.",
+			"lon": 151.15915,
+			"lat": -33.659006999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240309_210913348.jpg",
+			"description": "There is a restaurant and visitor information at Bobbin Head Inn.",
+			"lon": 151.159222,
+			"lat": -33.65948
+		},
+		{
+			"type": "waypoint",
+			"photo": "008_p2021413_p2021428.jpg",
+			"lon": 151.16023611111112,
+			"lat": -33.66073611111111,
+			"description": "<i>+12km</i>Cross the bridge and enter the marina to the left. The trail continues at the far end of the marina.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "008_p2021429.jpg",
+			"lon": 151.16556944444446,
+			"lat": -33.66453333333333,
+			"description": "Follow the trail along the creek.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "008_p2021510.jpg",
+			"lon": 151.16552777777778,
+			"lat": -33.686588888888885,
+			"description": "At the intersection in the trail, follow the signs up to the Sphynx War Memorial.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "008_p2021514.jpg",
+			"lon": 151.155941,
+			"lat": -33.688495999999994,
+			"description": "At the junction at the top of the climb, continue to the right towards to the Sphynx War Memorial.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "008_p2021518.jpg",
+			"lon": 151.15573333333333,
+			"lat": -33.68865833333333,
+			"description": "From the war memorial follow the car park to the road out of the national park.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "008_p2021525.jpg",
+			"lon": 151.145251,
+			"lat": -33.693206999999994,
+			"description": "Past the hospital follow Du Faur St right, Kirkpatrick St left, and Murrua St right to the next trail head.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "008_p2021526.jpg",
+			"lon": 151.145054,
+			"lat": -33.692988,
+			"description": "At the junction in the firetrail, follow the direction to the Gibberagong Track.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "008_p2021529.jpg",
+			"lon": 151.140877,
+			"lat": -33.685872999999994,
+			"description": "Another junction leads down a rougher trail to the left into the gully and down to the Gibberagong track.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "008_p2021546.jpg",
+			"lon": 151.13810833333332,
+			"lat": -33.68289166666666,
+			"description": "After descending down to the creek, follow the sign to Bobbin Head to the right.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "008_p2021558.jpg",
+			"lon": 151.14367777777778,
+			"lat": -33.676183333333334,
+			"description": "Follow the walking trail along the creek.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "008_p2021567.jpg",
+			"lon": 151.155243,
+			"lat": -33.665073,
+			"description": "The trail ends at a rocky outcrop, with Aboriginal stone cuttings.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "008_p2021571.jpg",
+			"lon": 151.155708,
+			"lat": -33.663737,
+			"description": "Past the stone cuttins, follow the boardwalk through the mangroves.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "008_p2021583.jpg",
+			"lon": 151.156508,
+			"lat": -33.66344,
+			"description": "Cross the bridge at the end of the mangroves and follow the path back onto the Bobbin Head picnic area.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240309_211026932.jpg",
+			"description": "To the left of the steps lead up the Birrawanna Track.",
+			"lon": 151.15877,
+			"lat": -33.659982
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240309_211311716.jpg",
+			"description": "The trail passes between a narrow gap between the rocks.",
+			"lon": 151.158155,
+			"lat": -33.660061
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240309_213750585.jpg",
+			"description": "At the intersection cross the firetrail and continue straight on to the Kalkari Dicrovery Centre.",
+			"lon": 151.152318,
+			"lat": -33.659351
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240309_214456354.jpg",
+			"description": "Follow the trail on the right side of the fence line.",
+			"lon": 151.14862,
+			"lat": -33.661822
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240309_215004145.jpg",
+			"description": "The trial end at the carpark of the Kalkari Discovery Centre.",
+			"lon": 151.148506,
+			"lat": -33.664648
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240309_215130930.jpg",
+			"description": "There are public toilets at the Kalkari Visitor Centre.",
+			"lon": 151.149046,
+			"lat": -33.665374
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240309_215202260.jpg",
+			"description": "From the exit of the carpark, follow the Kalkari Walking Track on the left side of Kuring-gai Chase Rd.",
+			"lon": 151.148924,
+			"lat": -33.665659999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240309_220138218.jpg",
+			"description": "Cross the powerline service trail and continue along the Kalkari Track on the other side.",
+			"lon": 151.144019,
+			"lat": -33.66938
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240309_220331012.jpg",
+			"description": "From the lookout near the powerlines, follow the Kalkari Track to the right.",
+			"lon": 151.144106,
+			"lat": -33.670291999999996
+		},
+		{
+			"type": "hotspot",
+			"photo": "009_pxl_20240309_220346530.jpg",
+			"radius": 0.0004,
+			"description": "When all else fails: Power line service trails.",
+			"badge": "thunder",
+			"title": "Electrifying View",
+			"instruction": "Visit this location to earn the mystery trophy",
+			"lon": 151.144209,
+			"lat": -33.670694
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240309_221212505.jpg",
+			"description": "Follow the Kalkari Track along the power lines.",
+			"lon": 151.141638,
+			"lat": -33.672202
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240309_223916990.jpg",
+			"description": "The trail continues a short distance past the park entrance booth.",
+			"lon": 151.124804,
+			"lat": -33.678781
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240309_224232101.jpg",
+			"description": "After the park entrance booths exit the trail onto Kuring-gai Chase Rd.",
+			"lon": 151.122217,
+			"lat": -33.679041999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240309_224246498.jpg",
+			"description": "Cross Kuring-gai Chase Rd and follow the bike and footpath to the left.",
+			"lon": 151.12217900000002,
+			"lat": -33.678988999999994
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240309_224448898.jpg",
+			"description": "Cross the overpass across the M1 along the footpath.",
+			"lon": 151.120594,
+			"lat": -33.67876
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240309_224701169.jpg",
+			"description": "After the overpass follow Myall Rd to the right.",
+			"lon": 151.11862000000002,
+			"lat": -33.67861
+		},
+		{
+			"type": "toilet",
+			"photo": "009_pxl_20240309_224830428.jpg",
+			"description": "There are public toilets when the sports fields are being used.",
+			"lon": 151.118389,
+			"lat": -33.67759099991312
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240309_225112047.jpg",
+			"description": "Continue on Myall Rd past the sports fields.",
+			"lon": 151.11870000000002,
+			"lat": -33.67598900007942
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240309_225233128.jpg",
+			"description": "Follow Cowan Rd to the left.",
+			"lon": 151.118887,
+			"lat": -33.674983999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240309_225808864.jpg",
+			"description": "At the end of Cowan Rd follow Belmont Pde to the right.",
+			"lon": 151.114288,
+			"lat": -33.673874
+		},
+		{
+			"type": "waypoint",
+			"photo": "009_pxl_20240309_230140062.jpg",
+			"description": "Enter the station entrance across the cul-de-sac.",
+			"lon": 151.115282,
+			"lat": -33.671724999999995
+		},
+		{
+			"location": "Mount Colah",
+			"photo": "009_pxl_20240309_230225509.jpg",
+			"type": "train",
+			"description": "Plan your return trip from Mount Colah at <a href=\"https://transportnsw.info/trip#/?from=Mount Colah\">transportnsw.info</a>.",
+			"lon": 151.1151202954352,
+			"lat": -33.67108102887869
+		}
+	]
+}

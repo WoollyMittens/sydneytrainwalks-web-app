@@ -103,7 +103,7 @@
 		}
 	}
 
-	body.screen-about & {
+	body[data-screen="about"] & {
 		transform: translate(0, 0);
 	}
 }

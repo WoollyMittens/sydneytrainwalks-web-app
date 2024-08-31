@@ -1,25 +1,24 @@
 {
 	"location": "Garigal",
-	"lon": 151.182632,
-	"lat": -33.710854,
-	"description": [
-		"This walk follows a ridge top trail down from Mount Kuring-gai to <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/picnic-areas/apple-tree-picnic-area\">Apple Tree Bay</a>",
-		"and <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/picnic-areas/bobbin-head\">Bobbin Head</a>.",
-		"After cutting through the marina, the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/sphinx-memorial-to-bobbin-head-loop-track\">Warrimoo Track</a> is followed to the carpark and trailhead at Warrimoo.",
-		"From a nearby sidestreet a firetrail leads into the <a href=\"http://www.kmc.nsw.gov.au/Services_facilities/Facilities_and_venues/Ku-ring-gai_Wildflower_Garden\">Ku-ring-gai Wildflower Garden</a>.",
-		"<br/><br/>",
-		"After crossing Mona Vale Road, the walk continues into <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/cycling-trails/heath-and-bare-creek-trails\">Garigal National Park</a>.",
-		"From <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/stepping-stone-crossing-to-cascades-trail\">the Cascades</a> at Belrose,",
-		"the trail continues along <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/davidson-park-to-stepping-stone-crossing-walk\">Middle Harbour</a>",
-		"to the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/picnic-areas/davidson-park-picnic-area-and-boat-ramp\">Roseville Bridge</a>."
+	"lon": 151.183167,
+	"lat": -33.710743,
+	"description": "This walk ties together Kuring-gai Chase and Garigal national parks all the way to Middle Harbour, split in two by the Ku-ring-gai Wildflower Garden",
+	"keywords": {
+		"Kuring-gai Chase": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/kuringgai-chase-national-park",
+		"Garigal": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/garigal-national-park",
+		"Middle Harbour": "https://www.nationalparks.nsw.gov.au/things-to-do/picnic-areas/davidson-park-picnic-area-and-boat-ramp",
+		"Ku-ring-gai Wildflower Garden": "https://www.krg.nsw.gov.au/Things-to-do/Ku-ring-gai-Wildflower-Garden"
+	},
+	"distance": [
+		14,
+		31
 	],
-	"duration": 8,
-	"distance": 31,
+	"hero": "",
 	"zoom": 13,
 	"rain": false,
 	"fireban": false,
 	"key": "mtkuringgai-garigal-roseville",
-	"updated": "2013-08-17",
+	"updated": "2023-06-23",
 	"bounds": {
 		"west": 151.1279296875,
 		"north": -33.63291573870478,
@@ -31,48 +30,8 @@
 			"location": "Mount Kuring-gai",
 			"type": "train",
 			"description": "Get the train to Mount Kuring-gai using <a href=\"https://transportnsw.info/trip#/?to=Mount Kuring-gai\">transportnsw.info</a>.",
-			"lon": 151.139877,
-			"lat": -33.654518
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.65976666666666,
-			"lon": 151.15893333333335
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.65260277777778,
-			"lon": 151.1558361111111
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.71695,
-			"lon": 151.17379
-		},
-		{
-			"type": "toilet",
-			"lat": -33.652713,
-			"lon": 151.155004
-		},
-		{
-			"type": "toilet",
-			"lat": -33.658888,
-			"lon": 151.159
-		},
-		{
-			"type": "toilet",
-			"lat": -33.662128,
-			"lon": 151.162006
-		},
-		{
-			"type": "toilet",
-			"lat": -33.707571,
-			"lon": 151.174509
-		},
-		{
-			"type": "toilet",
-			"lat": -33.768988,
-			"lon": 151.204023
+			"lon": 151.136915,
+			"lat": -33.652868
 		},
 		{
 			"type": "waypoint",
@@ -96,18 +55,6 @@
 			"description": "An easy to miss side trail on the left, just before a rocky staircase, leads to the Firefighter's Rest memorial."
 		},
 		{
-			"title": "Fireman's Rest",
-			"badge": "flower_3",
-			"lon": 151.147943,
-			"lat": -33.649026,
-			"radius": 0.0004,
-			"explanation": [
-				"A sobering look across this peaceful valley reminds us how treacherous this landscape becomes during bushfires."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "waypoint",
 			"photo": "p8182220.jpg",
 			"lon": 151.16070282001982,
@@ -129,7 +76,7 @@
 			"description": "At the bottom of the descent, follow the trail along the water to the right."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "p8182332.jpg",
 			"lon": 151.1554251299722,
 			"lat": -33.652397160005854,
@@ -143,7 +90,7 @@
 			"description": "Continue up the road to Bobbin Head straight across the bay."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "p8182391.jpg",
 			"lon": 151.15971506997604,
 			"lat": -33.65989204000548,
@@ -157,7 +104,7 @@
 			"description": "Enter the marina and follow the footpath along the water to the cafe."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "p8182426.jpg",
 			"lon": 151.1628806999832,
 			"lat": -33.66215594999855,
@@ -227,16 +174,21 @@
 			"description": "At the top of the ridge, follow the directions to Cunningman's Rest picnic area."
 		},
 		{
-			"title": "You've Seen More Flowers on the Way Here",
-			"badge": "flowers",
-			"lon": 151.1748750020137,
-			"lat": -33.70750425945467,
-			"radius": 0.0004,
-			"explanation": [
-				"The irony of walking through a national park full of wildflowers to get to a wildflower garden does not diminish it."
-			],
+			"type": "toilet",
+			"lon": 151.174712,
+			"lat": -33.707516,
+			"description": "There is a (beautifully decorated) toilet block opposite the visitor centre."
+		},
+		{
 			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+			"photo": "p8182671.jpg",
+			"lon": 151.1750112399964,
+			"lat": -33.70779160997733,
+			"radius": 0.0004,
+			"description": "The irony of walking kilometres through wildflowers to get to a wildflower garden does not diminish it.",
+			"badge": "flowers",
+			"title": "You've Seen More Flowers on the Way Here",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -246,12 +198,12 @@
 			"description": "From the picnic area follow the road out of the Wildflower Garden."
 		},
 		{
-			"type": "waypoint",
+			"location": "Ku-Ring-Gai Wildflower Gardens",
+			"type": "bus",
 			"photo": "p8182673.jpg",
 			"lon": 151.17475539000014,
 			"lat": -33.71133804000673,
-			"description": "<i>- 4h / 16km</i> The bus stops near the Wildflower Garden allow for an early end to the walk.",
-			"optional": true
+			"description": "Get the bus to/from Ku-Ring-Gai Wildflower Gardens using <a href=\"https://transportnsw.info/trip#/?to=Ku-Ring-Gai Wildflower Gardens\">transportnsw.info</a>."
 		},
 		{
 			"type": "waypoint",
@@ -359,36 +311,29 @@
 			"description": "Eventually the trail ends at a gate to Davidson Park picnic area."
 		},
 		{
+			"type": "toilet",
+			"lon": 151.203927,
+			"lat": -33.769005,
+			"description": "There is a toilet block along the picnic areas."
+		},
+		{
 			"type": "waypoint",
 			"photo": "p8182930.jpg",
 			"lon": 151.2046582000049,
 			"lat": -33.77169000999313,
-			"description": "Follow the picnic area to the Roseville Bridge."
-		},
-		{
-			"type": "waypoint",
-			"photo": "p8182933_p8182938.jpg",
-			"lon": 151.20324166666666,
-			"lat": -33.773225,
-			"description": "Take the road from the park up to the bridge and cross it."
+			"description": "Follow the road out of the park across the Roseville Bridge."
 		},
 		{
 			"type": "waypoint",
 			"photo": "p8182942.jpg",
 			"lon": 151.20210604999852,
 			"lat": -33.774200689983346,
-			"description": "On the other side of the bridge, take the underpass to end up on Babbage Road."
-		},
-		{
-			"type": "waypoint",
-			"photo": "p8182943.jpg",
-			"lon": 151.17784118997173,
-			"lat": -33.78395844,
-			"description": "From the bridge, follow the suburban streets to Roseville Station."
+			"description": "From the other side of the bridge, follow the Warringah Road to Roseville Station."
 		},
 		{
 			"location": "Roseville",
 			"type": "train",
+			"photo": "p8182943.jpg",
 			"description": "Plan your return trip from Roseville at <a href=\"https://transportnsw.info/trip#/?from=Roseville\">transportnsw.info</a>.",
 			"lon": 151.177841,
 			"lat": -33.783958

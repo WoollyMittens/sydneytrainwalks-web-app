@@ -1,24 +1,27 @@
 {
 	"location": "Munmorah",
-	"lon": 151.600996,
-	"lat": -33.195254,
-	"description": [
-		"From the Lakehaven shops the walk follows the bikepath along <a href=\"https://ebikerdiary.com/2018/05/22/tuggerah-to-budgewoi-via-the-entrance/\">Lake Budgewoi</a>.",
-		"An old powerline service trail leads along Lake Munmorah and through the town to the trailhead into <a href=\"https://www.nationalparks.nsw.gov.au/visit-a-park/parks/munmorah-state-conservation-area\">Munmorah State Conservation Area</a>.",
-		"<br/><br/>",
-		"The walk follows the roads and trails past <a href=\"https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/frazer-campground\">Frazer Beach</a> and <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/moonee-beach-trail\">Moonee Beach</a> to Catherine Hill Bay.",
-		"From <a href=\"https://www.icentralcoast.com/catherine-hill-bay.html\">Catherine Hill Bay Beach</a> the walk continues along the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/coastal-walking-track\">Coastal Walking Track</a> through  and <a href=\"http://www.nationalparks.nsw.gov.au/wallarah-national-park\">Wallarah National Park</a> to <a href=\"https://www.icentralcoast.com/caves-beach.html\">Caves Beach</a> in Swansea."
+	"lon": 151.617559,
+	"lat": -33.194284,
+	"description": "A pleasant shorefront path to Budgewoi followed by a more adventurous trek through Munmorah State Conservation Area, including the well known Frazer Beach.",
+	"keywords": {
+		"shorefront path": "https://www.lovecentralcoast.com/news/waterside-walks-shared-pathways",
+		"Munmorah State Conservation Area": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/munmorah-state-conservation-area",
+		"Frazer Beach": "https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/frazer-campground"
+	},
+	"distance": [
+		12,
+		25,
+		37
 	],
-	"duration": 8,
-	"distance": 37,
+	"hero": "",
 	"zoom": 13,
 	"rain": false,
 	"fireban": false,
 	"key": "lakehaven-munmorah-swansea",
-	"updated": "2018-12-07",
+	"updated": "2023-09-16",
 	"bounds": {
 		"west": 151.490478515625,
-		"north": -33.091541548655194,
+		"north": -33.073130945006625,
 		"east": 151.666259765625,
 		"south": -33.257063402365475
 	},
@@ -26,70 +29,14 @@
 		{
 			"location": "Lake Haven",
 			"type": "bus",
-			"description": "Get the train to Wyong and the connecting bus to <a href=\"https://transportnsw.info/trip#/?to=Lake Haven\">transportnsw.info</a>.",
+			"photo": "dsc_8423.jpg",
+			"description": "Get the bus to Lake Haven using <a href=\"https://transportnsw.info/trip#/?to=Lake Haven\">transportnsw.info</a>.",
 			"lat": -33.241745,
 			"lon": 151.505208
 		},
 		{
-			"type": "kiosk",
-			"lat": -33.157889,
-			"lon": 151.629089
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.206129,
-			"lon": 151.586565
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.237165,
-			"lon": 151.563105
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.21808,
-			"lon": 151.522581
-		},
-		{
-			"type": "toilet",
-			"lat": -33.157655,
-			"lon": 151.628964
-		},
-		{
-			"type": "toilet",
-			"lat": -33.186904,
-			"lon": 151.621928
-		},
-		{
-			"type": "toilet",
-			"lat": -33.207205,
-			"lon": 151.586544
-		},
-		{
-			"type": "toilet",
-			"lat": -33.239487,
-			"lon": 151.564125
-		},
-		{
-			"type": "toilet",
-			"lat": -33.2298,
-			"lon": 151.530249
-		},
-		{
-			"type": "toilet",
-			"lat": -33.219919,
-			"lon": 151.526651
-		},
-		{
 			"type": "waypoint",
-			"photo": "dsc_8423.jpg",
-			"lon": 151.50523225998808,
-			"lat": -33.24235203999355,
-			"description": "Leave the bus from Wyong station at the Lake Haven shopping centre."
-		},
-		{
-			"type": "waypoint",
-			"photo": "dsc_8425.jpg",
+			"photo": "dsc_8424.jpg",
 			"lon": 151.50556986004793,
 			"lat": -33.24150291005291,
 			"description": "Follow the footpath around the cinema to the car park of the recreation centre."
@@ -124,7 +71,7 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "dsc_8442.jpg",
+			"photo": "dsc_8441.jpg",
 			"lon": 151.5045049600056,
 			"lat": -33.22274563000303,
 			"description": "At the intersection follow the footpath along the Pacific Highway to the right."
@@ -148,14 +95,37 @@
 			"photo": "dsc_8465.jpg",
 			"lon": 151.51095600991326,
 			"lat": -33.218802420003215,
-			"description": "The path continues unbroken all the way to Budgewoi"
+			"description": "The path continues unbroken all the way to Budgewoi."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
+			"lon": 151.526792,
+			"lat": -33.21991,
+			"description": "At the boatramp cross the dam across the creek."
+		},
+		{
+			"type": "toilet",
 			"photo": "dsc_8491.jpg",
 			"lon": 151.53017010998047,
 			"lat": -33.229783950000005,
 			"description": "Don't miss the right turn at Edgewater Park."
+		},
+		{
+			"type": "hotspot",
+			"photo": "dsc_8492_pxl_20230915_232946606_pano.jpg",
+			"lon": 151.5330840578785,
+			"lat": -33.23742278283818,
+			"radius": 0.0004,
+			"description": "A welcome break with a view halfway to Budgewoi.",
+			"badge": "elevation_5",
+			"title": "All Jetties Short and Long: Matumba",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
+			"type": "kiosk",
+			"lon": 151.554573,
+			"lat": -33.23424,
+			"description": "The shops along Scenic Drive are within each reach of the path."
 		},
 		{
 			"type": "waypoint",
@@ -165,7 +135,20 @@
 			"description": "Cross the bridge across Budgewoi Creek along the footpath."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
+			"lon": 151.563197,
+			"lat": -33.234927,
+			"description": "From the centre of Budgewoi follow the road along the caravan park."
+		},
+		{
+			"location": "Budgewoi",
+			"type": "bus",
+			"description": "Get the bus from/to Budgewoi using <a href=\"https://transportnsw.info/trip#/?to=Budgewoi\">transportnsw.info</a>.",
+			"lat": -33.237796,
+			"lon": 151.563496
+		},
+		{
+			"type": "toilet",
 			"photo": "dsc_8508.jpg",
 			"lon": 151.56478274999188,
 			"lat": -33.239598,
@@ -193,14 +176,14 @@
 			"description": "Follow the powerline trail to Munmorah."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "dsc_8523-dsc_8530.jpg",
 			"lon": 151.58616211000844,
 			"lat": -33.20790493000024,
 			"description": "From the end of the trail, cross the reserve at the boat ramp."
 		},
 		{
-			"type": "waypoint",
+			"type": "kiosk",
 			"photo": "dsc_8532.jpg",
 			"lon": 151.5864943099887,
 			"lat": -33.206022970000035,
@@ -253,7 +236,7 @@
 			"photo": "dsc_8664.jpg",
 			"lon": 151.61691184,
 			"lat": -33.19400824000728,
-			"description": "<i>+ 0h / 0km</i> Follow the dirt road left a short distance to find a lookout point",
+			"description": "<i>+0km</i> Follow the dirt road left a short distance to find a lookout point",
 			"optional": true
 		},
 		{
@@ -271,6 +254,12 @@
 			"description": "The trail leads down to Frazer Beach."
 		},
 		{
+			"type": "toilet",
+			"lon": 151.62197,
+			"lat": -33.187007,
+			"description": "The campround at Frazer Beach has amenities."
+		},
+		{
 			"type": "waypoint",
 			"photo": "dsc_8687.jpg",
 			"lon": 151.62426215993406,
@@ -285,16 +274,15 @@
 			"description": "From Bongon Beach climb the trail up to the Snapper Point carpark."
 		},
 		{
-			"title": "The Other Hole",
-			"badge": "sink_bathroom",
+			"type": "hotspot",
+			"photo": "dsc_8721-dsc_8726.jpg",
 			"lon": 151.628035752481,
 			"lat": -33.18588747665788,
 			"radius": 0.0004,
-			"explanation": [
-				"Less famous than Kiama's, but they can only wish they had these beaches."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+			"description": "Less famous than Kiama's, but they can only wish they had these beaches.",
+			"badge": "sink_bathroom",
+			"title": "The Other Hole",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -360,7 +348,7 @@
 			"description": "Enter the surf club carpark on the right."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "dsc_8769.jpg",
 			"lon": 151.62832105004563,
 			"lat": -33.15756028998372,
@@ -441,7 +429,7 @@
 			"photo": "dsc_8814.jpg",
 			"lon": 151.6429570999571,
 			"lat": -33.12813466003317,
-			"description": "<i>+ 0.5h / 1km</i> A (degraded) section of a guided walk starts at the right side of the trail.",
+			"description": "<i>+1km</i> A (degraded) section of a guided walk starts at the right side of the trail.",
 			"optional": true
 		},
 		{
@@ -463,21 +451,30 @@
 			"photo": "dsc_8821.jpg",
 			"lon": 151.64517617992055,
 			"lat": -33.112173130057236,
-			"description": "Continue past the first bus stop at Caves Beach, since it is only for school busses."
+			"description": "Follow the busroute along Cave Beach road as far as time allows. There are more transport options from the Swansea Library."
 		},
 		{
-			"type": "waypoint",
+			"location": "Cave Beach",
+			"type": "bus",
 			"photo": "dsc_8822.jpg",
-			"lon": 151.64540713999196,
-			"lat": -33.11040790001002,
-			"description": "Take the bus to Newcastle from the bus stop at the Caves Beach car park."
+			"description": "Plan your return trip from Cave Beach using <a href=\"https://transportnsw.info/trip#/?from=Cave Beach\">transportnsw.info</a>.",
+			"lat": -33.109987,
+			"lon": 151.645422
+		},
+		{
+			"type": "toilet",
+			"photo": "dsc_8769.jpg",
+			"lon": 151.646434,
+			"lat": -33.1099,
+			"description": "There are amenities at the Cave Beach Surf Club."
 		},
 		{
 			"location": "Swansea",
 			"type": "bus",
-			"description": "Plan your return trip from Cave Beach in Swansea using <a href=\"https://transportnsw.info/trip#/?from=Cave Beach\">transportnsw.info</a>.",
-			"lat": -33.109987,
-			"lon": 151.645422
+			"photo": "pxl_20230916_074442218.jpg",
+			"description": "Plan your return trip from Swansea using <a href=\"https://transportnsw.info/trip#/?from=Swansea Library\">transportnsw.info</a>.",
+			"lat": -33.091205,
+			"lon": 151.63786
 		}
 	]
 }

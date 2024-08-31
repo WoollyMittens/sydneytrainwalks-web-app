@@ -66,6 +66,15 @@
 		transform: translate(-50%, -50%) scale(1, 1);
 	}
 
+	&-overlay {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 10;
+	}
+
 	&-obj {
 		&-row {
 			position: absolute;
@@ -152,16 +161,8 @@
 		width: 48px;
 		z-index: 20001;
 
-		&-fixed {
+		&[data-fixed="true"] {
 			position: fixed;
-		}
-
-		&-passive {
-			visibility: hidden;
-		}
-
-		&-active {
-			visibility: visible;
 		}
 	}
 
@@ -178,33 +179,35 @@
 		position: absolute;
 		text-align: center;
 		z-index: 20000;
+		opacity: 0;
 
 		* {
 			box-sizing: border-box;
 		}
 
-		&-passive {
-			opacity: 0;
+		&[data-active] {
+			opacity: 1;
 		}
 
-		&-active {
-			opacity: 1;
+		&[data-fixed="true"] {
+			position: fixed;
 		}
 	}
 
 	&-closer,
-	&-locator {
-		@include iconParent(48);
+	&-next,
+	&-previous {
 		width: 3rem;
 		height: 3rem;
-		right: 1rem;
-		top: 1rem;
+		overflow: hidden;
+		text-indent: 150%;
 		background: #0D47A1;
 		color: #fff;
 		cursor: pointer;
 		font-weight: bold;
 		position: absolute;
-		text-align: center;
+		text-align: left;
+		white-space: nowrap;
 		text-decoration: none;
 		z-index: 2;
 
@@ -223,29 +226,29 @@
 			color: #000;
 		}
 
-		&:before {
-			@include iconCenter(24);
-			background-image: url("../img/close.svg");
-			background-size: 24px 24px;
-
-			[data-color-scheme="light"] & {
-				background-image: url("../img/close.svg");
-			}
-
-			[data-color-scheme="dark"] & {
-				background-image: url("../img/close_inv.svg");
-			}
-
-			@media (prefers-color-scheme: dark) {
-				background-image: url("../img/close_inv.svg");
-			}
+		&[disabled] {
+			cursor: default;
+			opacity: 0.5;
 		}
 
-		&:hover {
-			background: $color-hover;
+		&:before {
+			content: "";
+			display: block;
+			background-size: 24px 24px;
+			width: 24px;
+			height: 24px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -12px;
+			margin-top: -12px;
+		}
+
+		&:not([disabled]):hover {
+			background: #ff9800;
 
 			[data-color-scheme="light"] & {
-				background: $color-hover;
+				background: #ff9800;
 				color: #fff;
 			}
 
@@ -261,26 +264,65 @@
 		}
 	}
 
-	&-locator {
-		right: 5rem;
-		display: none;
-		@media (max-width:959px) {
-			display: block;
-		}
+	&-closer {
+		right: 1rem;
+		top: 1rem;
 
 		&:before {
-			background-image: url("../img/map_2.svg");
+			background-image: url("../img/close.svg");
 
 			[data-color-scheme="light"] & {
-				background-image: url("../img/map_2.svg");
+				background-image: url("../img/close.svg");
 			}
 
 			[data-color-scheme="dark"] & {
-				background-image: url("../img/map_2_drk.svg");
+				background-image: url("../img/close_inv.svg");
 			}
 
 			@media (prefers-color-scheme: dark) {
-				background-image: url("../img/map_2_drk.svg");
+				background-image: url("../img/close_inv.svg");
+			}
+		}
+	}
+
+	&-next {
+		right: 1rem;
+		top: 50%;
+
+		&:before {
+			background-image: url("../img/icon-east.svg");
+
+			[data-color-scheme="light"] & {
+				background-image: url("../img/icon-east.svg");
+			}
+
+			[data-color-scheme="dark"] & {
+				background-image: url("../img/icon-east-inv.svg");
+			}
+
+			@media (prefers-color-scheme: dark) {
+				background-image: url("../img/icon-east-inv.svg");
+			}
+		}
+	}
+
+	&-previous {
+		left: 1rem;
+		top: 50%;
+
+		&:before {
+			background-image: url("../img/icon-west.svg");
+
+			[data-color-scheme="light"] & {
+				background-image: url("../img/icon-west.svg");
+			}
+
+			[data-color-scheme="dark"] & {
+				background-image: url("../img/icon-west-inv.svg");
+			}
+
+			@media (prefers-color-scheme: dark) {
+				background-image: url("../img/icon-west-inv.svg");
 			}
 		}
 	}

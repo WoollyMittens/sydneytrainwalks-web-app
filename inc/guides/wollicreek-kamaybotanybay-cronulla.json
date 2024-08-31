@@ -1,0 +1,922 @@
+{
+	"location": "Botany Bay",
+	"lon": 151.1777510494,
+	"lat": -34.0260492638,
+	"description": "A walk around the Botany Bay Foreshore's shared bike paths with an optional extention through Kamay Botany Bay National Park.",
+	"keywords": {
+		"Botany Bay Foreshore": "https://www.sydneycyclepaths.com.au/project/botany-bay-cyclepath/",
+		"Kamay Botany Bay National Park": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/kamay-botany-bay-national-park"
+	},
+	"distance": [
+		22,
+		45
+	],
+	"hero": "",
+	"zoom": 13,
+	"rain": true,
+	"fireban": true,
+	"key": "wollicreek-kamaybotanybay-cronulla",
+	"updated": "2024-01-06",
+	"bounds": {
+		"west": 151.10595703125,
+		"north": -33.916013113401696,
+		"east": 151.248779296875,
+		"south": -34.07086232376632
+	},
+	"markers": [
+		{
+			"location": "Wolli Creek",
+			"type": "train",
+			"photo": "pxl_20221104_201709580.jpg",
+			"description": "Get the train to Wolli Creek using <a href=\"https://transportnsw.info/trip#/?to=Wolli Creek\">transportnsw.info</a>.",
+			"lon": 151.1536876112,
+			"lat": -33.9286433347
+		},
+		{
+			"type": "kiosk",
+			"photo": "pxl_20221104_202143305.jpg",
+			"lon": 151.153814,
+			"lat": -33.928916,
+			"description": "From the station follow the footpath through the mall straight ahead. There are amenities along the mall."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_202235586.jpg",
+			"lon": 151.15383400000002,
+			"lat": -33.92930100008475,
+			"description": "On the other side of the mall follow the roundabout ahead to the Princes Hwy."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_202414675.jpg",
+			"lon": 151.154884,
+			"lat": -33.930537000110775,
+			"description": "Cross the Princess Hwy at the traffic lights and continue into Cahill Park."
+		},
+		{
+			"type": "toilet",
+			"photo": "pxl_20221104_202457903.jpg",
+			"lon": 151.155194,
+			"lat": -33.930909,
+			"description": "There is a toilet block at the entrance to the park."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_202810060.jpg",
+			"lon": 151.156305,
+			"lat": -33.932004,
+			"description": "Follow the footpath through Cahill Park along the riverside."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_203156921.jpg",
+			"lon": 151.157787,
+			"lat": -33.933378999999995,
+			"description": "At the other side of the park follow Rockwell Ave ahead around the dog park."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_203326260.jpg",
+			"lon": 151.158197,
+			"lat": -33.934194,
+			"description": "After the dog park follow the footpath along Marsh St to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_203658818.jpg",
+			"lon": 151.155423,
+			"lat": -33.935914999999994,
+			"description": "At Flora Street use the traffic lights to cross Marsh St."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_204134530.jpg",
+			"lon": 151.15526400000002,
+			"lat": -33.936316,
+			"description": "From the crossing follow the shared path along Marsh St to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_204309105.jpg",
+			"lon": 151.154188,
+			"lat": -33.936997,
+			"description": "Follow the bike path to the left before the M5."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_204433047.jpg",
+			"lon": 151.15401400000002,
+			"lat": -33.937807,
+			"description": "Follow the shared path along the power lines."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_204748537.jpg",
+			"lon": 151.155559,
+			"lat": -33.939696999999995,
+			"description": "Follow the underpass to the right underneath the M5."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_204943473.jpg",
+			"lon": 151.154201,
+			"lat": -33.939493,
+			"description": "From the gate follow Eve St to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_205056642.jpg",
+			"lon": 151.153748,
+			"lat": -33.940138999999995,
+			"description": "From the end of Eve St follow the shared path through Riverine Park."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_205741361.jpg",
+			"lon": 151.152143,
+			"lat": -33.94448,
+			"description": "At the end of the park follow the shared path to the left along the canal."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_210510929.jpg",
+			"lon": 151.15814,
+			"lat": -33.945332999916644,
+			"description": "Follow the shared path to the right across the bridge."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_210656557.jpg",
+			"lon": 151.157507,
+			"lat": -33.94646300011144,
+			"description": "Follow the shared path and boardwalk along the sports fields."
+		},
+		{
+			"type": "toilet",
+			"lon": 151.153055,
+			"lat": -33.949568,
+			"description": "There are toilet blocks along the sports fields."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_211422501.jpg",
+			"lon": 151.152868,
+			"lat": -33.950367,
+			"description": "At the end of the sport fields follow Bestic St left across the bridge."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_211541454.jpg",
+			"lon": 151.154011,
+			"lat": -33.950531000000005,
+			"description": "On the other side of the bridge follow the footpath left to the playground."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_211941950.jpg",
+			"lon": 151.156426,
+			"lat": -33.94867,
+			"description": "From the playground continue on the footpath past the community gardens."
+		},
+		{
+			"type": "toilet",
+			"photo": "pxl_20221104_212632293.jpg",
+			"lon": 151.161538,
+			"lat": -33.94611999999999,
+			"description": "Cross the carpark at the Kyeemagh Boat Ramp. There is a toilet block at the picnic area."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_213504076.jpg",
+			"lon": 151.165536,
+			"lat": -33.947514999999996,
+			"description": "From the boat ramp follow the shared path along the shorefront."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_213608508.jpg",
+			"lon": 151.166315,
+			"lat": -33.948024,
+			"description": "Follow the shared path underneath the Endeavour Bridge."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_213701946.jpg",
+			"lon": 151.166572,
+			"lat": -33.948608999879355,
+			"description": "After the bridge follow the shared path to the beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_213857793.jpg",
+			"lon": 151.165881,
+			"lat": -33.949571999999996,
+			"description": "Follow the shared path along the beach reserve."
+		},
+		{
+			"type": "toilet",
+			"lon": 151.163341,
+			"lat": -33.95052,
+			"description": "There's toilet blocks along the foreshore."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_214334705.jpg",
+			"lon": 151.162927,
+			"lat": -33.951689,
+			"description": "From the end of the park at the hippo statue, continue straight along The Grand Parade."
+		},
+		{
+			"type": "toilet",
+			"lon": 151.158029,
+			"lat": -33.957844,
+			"description": "There's toilet blocks along the foreshore."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_215716861.jpg",
+			"lon": 151.157125,
+			"lat": -33.960143,
+			"description": "Follow the esplanade along Brighton Le Sands Beach."
+		},
+		{
+			"type": "toilet",
+			"lon": 151.152806,
+			"lat": -33.969564,
+			"description": "There's toilet blocks along the foreshore."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_222823121.jpg",
+			"lon": 151.149496,
+			"lat": -33.980487000000004,
+			"description": "Follow the esplanade along Ramsgate Beach."
+		},
+		{
+			"type": "toilet",
+			"lon": 151.149581,
+			"lat": -33.979864,
+			"description": "There's toilet blocks along the foreshore."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_224556799.jpg",
+			"lon": 151.14747699999998,
+			"lat": -33.987966,
+			"description": "Follow the Esplanade around Dolls Point."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_230325532.jpg",
+			"lon": 151.14442900008825,
+			"lat": -33.996956000000004,
+			"description": "Follow the esplanade past the sailing club."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_230634154.jpg",
+			"lon": 151.14194,
+			"lat": -33.996459,
+			"description": "After the sailing club follow the esplanade to the left along the shore."
+		},
+		{
+			"type": "toilet",
+			"lon": 151.139687,
+			"lat": -34.001396,
+			"description": "There's toilet blocks along the foreshore."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_232139090.jpg",
+			"lon": 151.137461,
+			"lat": -34.003319,
+			"description": "At Sans Souci Point follow the esplanade to the Captain Cook Bridge."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_233131401.jpg",
+			"lon": 151.12914,
+			"lat": -34.005075,
+			"description": "Follow the right path up the ramp of the bridge."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_233239000.jpg",
+			"lon": 151.128582,
+			"lat": -34.005662,
+			"description": "Cross Captain Cook Bridge along the shared path."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_234037193.jpg",
+			"lon": 151.126607,
+			"lat": -34.011249,
+			"description": "Follow the path off the bridge to the left and follow Woodlands Rd."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_234546784.jpg",
+			"lon": 151.124781,
+			"lat": -34.01428,
+			"description": "Enter the Tarent Point Foreshore Reserve on the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_234716081.jpg",
+			"lon": 151.12521700000002,
+			"lat": -34.014914,
+			"description": "Follow the shared path along the shorefront."
+		},
+		{
+			"type": "toilet",
+			"photo": "pxl_20221104_235031894.jpg",
+			"lon": 151.125167,
+			"lat": -34.017043,
+			"description": "From the toilet block at the intersection follow the sign to Cronulla to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_235416299.jpg",
+			"lon": 151.126684,
+			"lat": -34.019418,
+			"description": "Continue following the the shared path past the Anglers Club."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_235636839.jpg",
+			"lon": 151.128226,
+			"lat": -34.020288,
+			"description": "Follow the boardwalk across the mangroves."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221104_235913956.jpg",
+			"lon": 151.129535,
+			"lat": -34.021639,
+			"description": "From the end of the boardwalk follow the shared path along the fenceline of the marina."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_000035779.jpg",
+			"lon": 151.12947200000002,
+			"lat": -34.022585,
+			"description": "At the intersection follow the sign to Kurnell left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_000517001.jpg",
+			"lon": 151.132698999863,
+			"lat": -34.024155,
+			"description": "Follow the shared path past the industrial estate."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_003838865.jpg",
+			"lon": 151.13549999999998,
+			"lat": -34.035019,
+			"description": "Follow the shared path across another boardwalk."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_004238501.jpg",
+			"lon": 151.137847,
+			"lat": -34.037227,
+			"description": "Follow the shared path around the apartment building. There is a cafe between the two buildings."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_004453847.jpg",
+			"lon": 151.13976599999998,
+			"lat": -34.037608999999996,
+			"description": "After the buildings follow the shared path right under the overpass."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_004643864.jpg",
+			"lon": 151.139488,
+			"lat": -34.038973999999996,
+			"description": "At the end of the shared path follow Captain Cook Dr to the left to the Sharks Stadium."
+		},
+		{
+			"type": "kiosk",
+			"photo": "pxl_20221105_004921267.jpg",
+			"lon": 151.14118,
+			"lat": -34.039698,
+			"description": "Cross Captain Cook Dr at the stadium and continue left. There are shops a little past the stadium."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_005119512.jpg",
+			"lon": 151.14280399999998,
+			"lat": -34.039454,
+			"description": "Cross Woolaware Rd and continue straight on Captain Cook Dr."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_005632707.jpg",
+			"lon": 151.146582,
+			"lat": -34.038823,
+			"description": "Follow the shared path past the Cronulla Golf Course."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_010646724.jpg",
+			"lon": 151.156021,
+			"lat": -34.039499,
+			"description": "At the roundabout cross Elouera Rd and continue straight on Captain Cook Dr."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_011314651.jpg",
+			"lon": 151.15984600000002,
+			"lat": -34.036605,
+			"description": "At the roundabout cross Trinity St and continue straight along Caption Cook Dr."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_011440709.jpg",
+			"lon": 151.160923,
+			"lat": -34.036637,
+			"description": "<i>-20km</i> At the roundabout follow Trinity St to the right for a shortcut to Cronulla.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_011749040.jpg",
+			"lon": 151.163541,
+			"lat": -34.037465999999995,
+			"description": "From the roundabout follow Brolga Ave to the right.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_011830515.jpg",
+			"lon": 151.163568,
+			"lat": -34.037757,
+			"description": "From the corner of Brolga Ave follow the access path between the houses to the dunes.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_011912302.jpg",
+			"lon": 151.16400300010716,
+			"lat": -34.038117,
+			"description": "Follow the shared path to the right to the carpark.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_012457555.jpg",
+			"lon": 151.160506,
+			"lat": -34.035948,
+			"description": "From the end of the footpath, continue on the shared bike path along Captain Cook Dr."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_015616180.jpg",
+			"lon": 151.17843,
+			"lat": -34.026236,
+			"description": "At the sports fields continue straight along Captain Cook Dr."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_020156518.jpg",
+			"lon": 151.182672,
+			"lat": -34.024989,
+			"description": "There is a viewing platform across the wetlands on the left side of Captain Cook Dr."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_020634882.jpg",
+			"lon": 151.18546,
+			"lat": -34.024321,
+			"description": "At the roundabout continue straight on Captain Cook Dr."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_022304797.jpg",
+			"lon": 151.198517,
+			"lat": -34.021297,
+			"description": "From the bus stop continue straight on Captain Cook Dr."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_022953297.jpg",
+			"lon": 151.20402099999998,
+			"lat": -34.018603,
+			"description": "At the Desalination Plant continue straight along Captain Cook Dr."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_023705471.jpg",
+			"lon": 151.207977,
+			"lat": -34.013993,
+			"description": "At Kurnell start following the footpath along Captain Cook Dr."
+		},
+		{
+			"type": "kiosk",
+			"photo": "pxl_20221105_024007383.jpg",
+			"lon": 151.209477,
+			"lat": -34.011959,
+			"description": "There are amenities a short distance in Kurnell on the left side of Captain Cook Dr."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_024919693.jpg",
+			"lon": 151.21137099999999,
+			"lat": -34.010657,
+			"description": "From the intersection follow Silver Beach Rd to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_025239443.jpg",
+			"lon": 151.21115299991536,
+			"lat": -34.008498,
+			"description": "At the intersection follow Prince Charles Pde to the right along the beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_025932363.jpg",
+			"lon": 151.215576,
+			"lat": -34.006753,
+			"description": "From the corner of Prince Charles Pde, follow the footpath along the shore into Kamay Botany Bay National Park."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_030232860.jpg",
+			"lon": 151.217283,
+			"lat": -34.005441,
+			"description": "From the right side of the path follow the steps up the embankment."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_030416941.jpg",
+			"lon": 151.217743,
+			"lat": -34.005134,
+			"description": "Follow the trail markers to the Visitor Information Centre."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_030505192.jpg",
+			"lon": 151.218,
+			"lat": -34.004821,
+			"description": "The obelisk monument is to the left of the path."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_030837884.jpg",
+			"lon": 151.219939,
+			"lat": -34.004465,
+			"description": "Follow the path through the presentation space behind the Visitor Information Centre."
+		},
+		{
+			"type": "toilet",
+			"photo": "pxl_20221105_031100433.jpg",
+			"lon": 151.221691,
+			"lat": -34.004649,
+			"description": "There are toilets outside the Visitor Information Centre."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_031413401.jpg",
+			"lon": 151.221758,
+			"lat": -34.004941,
+			"description": "From the front entrance of the Visitor Information Centre, cross the car park."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_031518952.jpg",
+			"lon": 151.221688,
+			"lat": -34.0054,
+			"description": "From the far end of the carpark follow the sign to the Banks-Solander Track."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_031634903.jpg",
+			"lon": 151.221255,
+			"lat": -34.005843,
+			"description": "Cross the road and follow the signs to Cape Solander past the gate."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_031801957.jpg",
+			"lon": 151.221565,
+			"lat": -34.006795,
+			"description": "There is a self guided tour on the left side of the Yena Trail."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_032309051.jpg",
+			"lon": 151.223659,
+			"lat": -34.009699,
+			"description": "Follow the sign on the right to Cape Solander."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_032926542.jpg",
+			"lon": 151.22538,
+			"lat": -34.013254,
+			"description": "At the intersection with the firetrail follow the sign left to Cape Solander."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_033448547.jpg",
+			"lon": 151.227753,
+			"lat": -34.015294,
+			"description": "At the intersection with the Pipeline Link follow the trail marker right to Cape Solander."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_033818288.jpg",
+			"lon": 151.228483,
+			"lat": -34.016958,
+			"description": "Follow the trail markers to Cape Solander across the rocky sections."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_034034855.jpg",
+			"lon": 151.229127,
+			"lat": -34.017753,
+			"description": "Follow the trail to the car park at Cape Solander."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_034205049.jpg",
+			"lon": 151.229515,
+			"lat": -34.018074,
+			"description": "From the carpark follow the boarwalk right along the coastal cliffs."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_034501187.jpg",
+			"lon": 151.229195,
+			"lat": -34.019847,
+			"description": "Follow the trail markers to the Cape Baily lighthouse."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_035009463.jpg",
+			"lon": 151.229098,
+			"lat": -34.023253,
+			"description": "Follow the trail markers along the rocky sections."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_035325017.jpg",
+			"lon": 151.227012,
+			"lat": -34.02426,
+			"description": "Follow the trail markers around the Tabbigai Gap to the Cape Baily Lighthhouse. "
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_035833970.jpg",
+			"lon": 151.229477,
+			"lat": -34.02645,
+			"description": "From the other side of the Tabbigai Gap follow the Cape Baily Track to the lighthouse."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_040459943.jpg",
+			"lon": 151.226233,
+			"lat": -34.028945,
+			"description": "Follow the boardwalk through the sandy dune section."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_041652580.jpg",
+			"lon": 151.224638,
+			"lat": -34.033494,
+			"description": "Follow the last section of the boardwalk to the foot of Cape Baily Lighthouse."
+		},
+		{
+			"type": "hotspot",
+			"photo": "pxl_20221105_042106719.jpg",
+			"lon": 151.2222179698302,
+			"lat": -34.03508340894466,
+			"radius": 0.0004,
+			"description": "The light is a warning not to sail a ship into the steep cliffs of the coast. Let it also be a reminder not to fall off the same.",
+			"badge": "lamp_on",
+			"title": "The Guiding Light",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_042309226.jpg",
+			"lon": 151.222162,
+			"lat": -34.036840999999995,
+			"description": "From the lighouse follow the dirt track through the coastal heath."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_042615523.jpg",
+			"lon": 151.22048900000001,
+			"lat": -34.038331,
+			"description": "Traverse the rocky section to Potter Point."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_043013862.jpg",
+			"lon": 151.21755,
+			"lat": -34.038319,
+			"description": "From the end of the rocky platform follow the gravel the rest of the way to Potter Point."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_043718790.jpg",
+			"lon": 151.213618,
+			"lat": -34.040513,
+			"description": "From Poter Point follow the gravel path to the carpark."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_044005588.jpg",
+			"lon": 151.21165499999998,
+			"lat": -34.039939,
+			"description": "From the carpark follow the sign to Cronulla Railway Station."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_044045434.jpg",
+			"lon": 151.21137399999998,
+			"lat": -34.040334,
+			"description": "From the sign follow the gravel path to the beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_044113894.jpg",
+			"lon": 151.21122899999997,
+			"lat": -34.0406,
+			"description": "Follow the a short distance."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_044947727.jpg",
+			"lon": 151.207978,
+			"lat": -34.040768,
+			"description": "Climb the trodden path over the dunes on the right side of the beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_045022075.jpg",
+			"lon": 151.20787199999998,
+			"lat": -34.040678,
+			"description": "Follow the sandy trail through the dunes to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_045145763.jpg",
+			"lon": 151.20725199999998,
+			"lat": -34.040468,
+			"description": "If the access to the dunes cannot easily be found, climb up at the old pipeline instead.",
+			"optional": "true"
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_045319991.jpg",
+			"lon": 151.206492,
+			"lat": -34.039912,
+			"description": "From the pipeline follow the sandy trail along the coast."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_045731576.jpg",
+			"lon": 151.203768,
+			"lat": -34.039394,
+			"description": "At Boat Harbour follow the sandy trail right to the start of the beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_050233855.jpg",
+			"lon": 151.201911,
+			"lat": -34.037791999999996,
+			"description": "Follow the trail off the headland onto the beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_050328883.jpg",
+			"lon": 151.201811,
+			"lat": -34.037713,
+			"description": "Follow the beach around Boat Harbour."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_050957032.jpg",
+			"lon": 151.198111,
+			"lat": -34.039215,
+			"description": "Follow the ocean along the car beach. Watch out for traffic."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_052846614.jpg",
+			"lon": 151.184537,
+			"lat": -34.034411999999996,
+			"description": "From the fences at the end of the car beach follow the trail into the dunes on the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_053020405.jpg",
+			"lon": 151.184257,
+			"lat": -34.034113,
+			"description": "Follow the access trail through the dunes along the fenceline."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_053304254.jpg",
+			"lon": 151.18421800000002,
+			"lat": -34.032464,
+			"description": "From the open grassy spot follow the gravel road away from the  beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_053612625.jpg",
+			"lon": 151.184315,
+			"lat": -34.03025100012905,
+			"description": "At the intersection follow the trail to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_053739489.jpg",
+			"lon": 151.183224,
+			"lat": -34.029946,
+			"description": "Follow the trail up the Cronulla Sand Dunes."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_055229910.jpg",
+			"lon": 151.172787,
+			"lat": -34.03269300008373,
+			"description": "From the viewing platforms across the Cronulla Sand Dunes continue following the trail."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_060821968.jpg",
+			"lon": 151.164264,
+			"lat": -34.038008999999995,
+			"description": "Follow the trail past the gate to the carpark."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_061155919.jpg",
+			"lon": 151.16423100007503,
+			"lat": -34.039659,
+			"description": "Follow the shared path along the left side of the carpark."
+		},
+		{
+			"type": "toilet",
+			"photo": "pxl_20221105_061834789.jpg",
+			"lon": 151.161633,
+			"lat": -34.042957,
+			"description": "There are toilets at the Wanda Beach Surf Club."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_062448042.jpg",
+			"lon": 151.16003,
+			"lat": -34.043901,
+			"description": "From the surf club follow the shared path along Mitchell Rd."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_063105763.jpg",
+			"lon": 151.157863,
+			"lat": -34.04792299988217,
+			"description": "Follow Prince St along the beach."
+		},
+		{
+			"type": "kiosk",
+			"photo": "pxl_20221105_063649635.jpg",
+			"lon": 151.155513,
+			"lat": -34.051542,
+			"description": "From the restaurants at the end of the beach follow the esplanade along the shore."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_064057906.jpg",
+			"lon": 151.155092,
+			"lat": -34.054306,
+			"description": "Follow the esplanade to Cronulla Beach."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_064205287.jpg",
+			"lon": 151.1548,
+			"lat": -34.054947999999996,
+			"description": "Follow the footpath through the beach reserve to the carpark."
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20221105_064352258.jpg",
+			"lon": 151.153685,
+			"lat": -34.055633,
+			"description": "From the carpark cross Gerrale St and follow Beach Park Ave to the station."
+		},
+		{
+			"location": "Cronulla",
+			"type": "train",
+			"photo": "pxl_20221105_064550934.jpg",
+			"description": "Plan your return trip from Cronulla at <a href=\"https://transportnsw.info/trip#/?from=Cronulla\">transportnsw.info</a>.",
+			"lon": 151.151687622,
+			"lat": -34.055538177
+		}
+	]
+}

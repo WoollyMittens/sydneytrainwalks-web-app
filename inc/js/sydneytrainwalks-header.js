@@ -1,6 +1,7 @@
 export class Header {
-	constructor(config) {
+	constructor(config, updateView) {
 		this.config = config;
+		this.updateView = updateView;
 		this.headerElement = document.querySelector('.title a');
 		this.themeButton = document.querySelector('.toggle-color-scheme');
 		this.init();
@@ -9,7 +10,11 @@ export class Header {
 	resetView(evt) {
 		if (evt) evt.preventDefault();
 		// restore the view to default
-		document.body.className = document.body.className.replace(/screen-photos|screen-guide|screen-map/, 'screen-menu');
+		window.localStorage.removeItem('key');
+		window.localStorage.removeItem('screen');
+		document.body.setAttribute('data-screen', 'menu');
+		// update the route
+		this.updateView(null, 'menu');
 	}
 
 	cycleTheme(evt) {

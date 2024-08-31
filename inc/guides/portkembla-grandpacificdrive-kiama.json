@@ -1,0 +1,925 @@
+{
+	"location": "Illawarra",
+	"lon": 150.8705369476229,
+	"lat": -34.57827343605459,
+	"description": "This walk extends the Grand Pacific Walk with part of the Grand Pacific Drive and visits Windang Beach completing part of the Kiama Coastal Walk from the Minnamurra Headland to the Kiama Blowhole.",
+	"keywords": {
+		"Grand Pacific Walk": "https://wollongong.nsw.gov.au/council-projects/ongoing-projects/grand-pacific-walk",
+		"Grand Pacific Drive": "https://www.grandpacificdrive.com.au/",
+		"Windang Beach": "https://www.visitnsw.com/destinations/south-coast/wollongong-and-surrounds/wollongong/attractions/windang-beach",
+		"Kiama Coastal Walk": "https://www.visitnsw.com/destinations/south-coast/kiama-area/kiama-coast-walk",
+		"Minnamurra Headland": "https://www.visitnsw.com/destinations/south-coast/kiama-area/kiama/attractions/minnamurra-headland",
+		"Kiama Blowhole": "https://www.visitnsw.com/destinations/south-coast/kiama-area/kiama/attractions/kiama-blowhole"
+	},
+	"distance": [
+		10,
+		19,
+		34
+	],
+	"hero": "",
+	"zoom": 13,
+	"rain": true,
+	"fireban": true,
+	"key": "portkembla-grandpacificdrive-kiama",
+	"updated": "2024-02-23",
+	"bounds": {
+		"west": 150.8203125,
+		"north": -34.46127728843706,
+		"east": 150.93017578125,
+		"south": -34.678393740116476
+	},
+	"markers": [
+		{
+			"location": "Port Kembla",
+			"type": "train",
+			"photo": "pxl_20240222_213459687.jpg",
+			"description": "Plan your return trip from Port Kembla at <a href=\"https://transportnsw.info/trip#/?from=Port Kembla\">transportnsw.info</a>.",
+			"lon": 150.90277215465903,
+			"lat": -34.477247865870595
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_213618471.jpg",
+			"description": "From the station follow the carpark to the roundabout.\n",
+			"lon": 150.903651,
+			"lat": -34.477263
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_213719350.jpg",
+			"description": "At the roundabout follow Foreshore Rd straight ahead.",
+			"lon": 150.904345,
+			"lat": -34.476917
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_214553362.jpg",
+			"description": "Follow the footpath right into the heritage park.",
+			"lon": 150.91160200000002,
+			"lat": -34.475602
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_214632811.jpg",
+			"description": "Follow the footpath around the historic crane.",
+			"lon": 150.91208900008553,
+			"lat": -34.475648
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_214747603.jpg",
+			"description": "From the crane follow the footpath to the Breakwater Battery Museum.",
+			"lon": 150.912565,
+			"lat": -34.475936000000004
+		},
+		{
+			"type": "kiosk",
+			"photo": "pxl_20240222_214938530.jpg",
+			"description": "There is a cafe at the museum.",
+			"lon": 150.91362,
+			"lat": -34.47555299992137
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_215208843.jpg",
+			"description": "From the museum follow Gloucester Blvd out of the reserve.",
+			"lon": 150.91360099988765,
+			"lat": -34.477083
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_215516019.jpg",
+			"description": "Follow the shared path along North Beach.",
+			"lon": 150.91294,
+			"lat": -34.479377
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_220633979.jpg",
+			"description": "At the end of the beach follow Gloucester Blvd to the right. The sign shows an alternative trail across the headland.",
+			"lon": 150.91525100012905,
+			"lat": -34.487062
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_221309811.jpg",
+			"description": "At the intersection follow Olympic Blvd straight ahead.",
+			"lon": 150.912246,
+			"lat": -34.489178
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_221536238.jpg",
+			"description": "Cross the carpark of the surf club to Port Kembla Beach.",
+			"lon": 150.91102700000002,
+			"lat": -34.490763
+		},
+		{
+			"type": "kiosk",
+			"photo": "pxl_20240222_221843870.jpg",
+			"description": "There are amenities at the surf club.",
+			"lon": 150.90955300000002,
+			"lat": -34.492328
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_222807531.jpg",
+			"description": "From the surf club follow Port Kembla Beach.",
+			"lon": 150.907888,
+			"lat": -34.493787
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_235522853.jpg",
+			"description": "At the end of the beach follow the breakwater to the right.",
+			"lon": 150.87451000000001,
+			"lat": -34.542308
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240222_235710543.jpg",
+			"description": "From the end of the breakwater follow the trail along the shore.",
+			"lon": 150.873227,
+			"lat": -34.54172
+		},
+		{
+			"type": "toilet",
+			"photo": "pxl_20240223_000418775.jpg",
+			"description": "There are public toilets at the surf club.",
+			"lon": 150.871585,
+			"lat": -34.538391999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_000426108.jpg",
+			"description": "From the end of he trail cross the picnic area along the shore.",
+			"lon": 150.871575,
+			"lat": -34.538326
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_000930869.jpg",
+			"description": "From the end of the picnic area follow the footpath along the shore.",
+			"lon": 150.87031000000002,
+			"lat": -34.536508
+		},
+		{
+			"type": "toilet",
+			"photo": "pxl_20240223_001036702.jpg",
+			"description": "There are public toilets near the boat ramp.",
+			"lon": 150.870023,
+			"lat": -34.535627
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_001316957.jpg",
+			"description": "From the boat ramp follow the steps up to the bidge.",
+			"lon": 150.86839600000002,
+			"lat": -34.534257
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_001534461.jpg",
+			"description": "From the top of the steps cross Windang Bridge to the left.",
+			"lon": 150.867556,
+			"lat": -34.535309
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_001743060.jpg",
+			"description": "Across the bridge follow the steps down to the foreshore.",
+			"lon": 150.866824,
+			"lat": -34.536743
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_001910955.jpg",
+			"description": "Follow footpath along the foreshore to the right.",
+			"lon": 150.8666170001419,
+			"lat": -34.537622999999996
+		},
+		{
+			"type": "kiosk",
+			"photo": "pxl_20240223_002138301.jpg",
+			"description": "There are amenities at Mia Beach. ",
+			"lon": 150.866466,
+			"lat": -34.53929
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_002508164.jpg",
+			"description": "Follow the footpath along the reserve.",
+			"lon": 150.867864,
+			"lat": -34.541295
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_003204796.jpg",
+			"description": "Follow the loop around the open field.",
+			"lon": 150.870573,
+			"lat": -34.545038
+		},
+		{
+			"type": "toilet",
+			"photo": "pxl_20240223_003305541.jpg",
+			"description": "At the other end of the loop are public toilets.",
+			"lon": 150.870112,
+			"lat": -34.545652
+		},
+		{
+			"type": "kiosk",
+			"photo": "pxl_20240223_003330977.jpg",
+			"description": "Across the Reddall Pde from the loop is a fish and chips shop.",
+			"lon": 150.86983600000002,
+			"lat": -34.545815
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_004306391.jpg",
+			"description": "From the corner of Reddall Pde follow the footpath along Entrance St (or access the beach from here).",
+			"lon": 150.870202,
+			"lat": -34.546039
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_004740197.jpg",
+			"description": "Follow the footpath left past the surf club.",
+			"lon": 150.868965,
+			"lat": -34.548842
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_005812234.jpg",
+			"description": "From the surf club follow the footpath along Warilla Beach.",
+			"lon": 150.867999,
+			"lat": -34.555975
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_010415114.jpg",
+			"description": "From the shore front path cross the footbridge over Elliot Lake.",
+			"lon": 150.868968,
+			"lat": -34.560075999999995
+		},
+		{
+			"type": "toilet",
+			"photo": "pxl_20240223_010506630.jpg",
+			"description": "There are public toilets at the picnic area to the right of the bridge.",
+			"lon": 150.86885700000002,
+			"lat": -34.560584999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_010549357.jpg",
+			"description": "From the bridge follow the sign to Shellharbour to the left.",
+			"lon": 150.868872,
+			"lat": -34.560865
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_011448533.jpg",
+			"description": "Follow the footpath around Barrack Reserve and follow the steps on the left down to Blacks Beach. ",
+			"lon": 150.873873,
+			"lat": -34.562765999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_012039757.jpg",
+			"description": "Cross the rocks to the sand part of the beach.",
+			"lon": 150.870662,
+			"lat": -34.563959999999994
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_013207973.jpg",
+			"description": "From the rocks section follow Shellharbour North Beach to the surf club.",
+			"lon": 150.86830700000002,
+			"lat": -34.570942
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_013619232.jpg",
+			"description": "From the end of the beach follow the steps up.",
+			"lon": 150.869132,
+			"lat": -34.573757
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_013649433.jpg",
+			"description": "Follow the trail on the left past the houses.",
+			"lon": 150.86918300000002,
+			"lat": -34.573967
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_014134508.jpg",
+			"description": "From the end of the trail cross the carpark to the boat ramp.",
+			"lon": 150.87097500000002,
+			"lat": -34.575596000000004
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_014221738.jpg",
+			"description": "From the left side of Town St follow the path to the harbour.",
+			"lon": 150.87125600000002,
+			"lat": -34.576036
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_014303816.jpg",
+			"description": "Follow the footpath along the harbour to the Shellharbour South Beach.",
+			"lon": 150.87087400000001,
+			"lat": -34.576376
+		},
+		{
+			"type": "toilet",
+			"photo": "pxl_20240223_014426676.jpg",
+			"description": "There is a toilet block at the playground.",
+			"lon": 150.87018700000002,
+			"lat": -34.577127000000004
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_014604356.jpg",
+			"description": "From the roundabout at the beach reserve follow Addison St to the shopping mall.",
+			"lon": 150.870729,
+			"lat": -34.578089000000006
+		},
+		{
+			"type": "kiosk",
+			"photo": "pxl_20240223_014938662.jpg",
+			"description": "There are amenities along the shopping mall.",
+			"lon": 150.868263,
+			"lat": -34.578926
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_015408123.jpg",
+			"description": "At the roundabout continue straight on along Addison St.",
+			"lon": 150.86670900000001,
+			"lat": -34.579454000000005
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_020008326.jpg",
+			"description": "At the intersection with Harbour Blvd cross at the traffic light and follow the footpath to the right.",
+			"lon": 150.86200299988462,
+			"lat": -34.58155300000001
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_020152969.jpg",
+			"description": "From the intersection with Shellharbour Rd follow the footpath left in the direction of Kiama.",
+			"lon": 150.86146,
+			"lat": -34.581274
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_021411464.jpg",
+			"description": "Cross the intersection with Cove Blvd and continue straight along Shelharbour Rd.",
+			"lon": 150.853884,
+			"lat": -34.587627000000005
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_022100540.jpg",
+			"description": "From the intersection before the motorway follow the sign to Dumore to the left.",
+			"lon": 150.84909000000002,
+			"lat": -34.589766000000004
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_022434281.jpg",
+			"description": "At the roundabout continue straight on Dunmore Rd.",
+			"lon": 150.84847899991394,
+			"lat": -34.591506
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_022724655.jpg",
+			"description": "<i>-4h</i>From the traffic lights follow Piper Dr to the right to the train station.",
+			"optional": true,
+			"lon": 150.848355,
+			"lat": -34.593587
+		},
+		{
+			"location": "Shell Harbour Junction",
+			"type": "train",
+			"description": "Get the train to/from Shell Harbour Junction using <a href=\"https://transportnsw.info/trip#/?to=Shell Harbour Junction\">transportnsw.info</a>.",
+			"lon": 150.845069,
+			"lat": -34.591388
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_022929778.jpg",
+			"description": "At the intersection with Buckleys Rd continue straight on Dunmore Rd ",
+			"lon": 150.848261,
+			"lat": -34.595162
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_023145465.jpg",
+			"description": "After the intersection follow the shoulder along Dunmore Rd.",
+			"lon": 150.848084,
+			"lat": -34.596423
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_023736311.jpg",
+			"description": "After a short distance use the footpath along the left side of Dunmore Rd.",
+			"lon": 150.846103,
+			"lat": -34.599206
+		},
+		{
+			"type": "hotspot",
+			"photo": "pxl_20240223_024906147.jpg",
+			"radius": 0.0004,
+			"description": "As tempting as it is to throw in the towel right here, the next functioning train station is all the way through the wetlands ahead.",
+			"badge": "tank_1",
+			"title": "The Train Does Not Stop Here Anymore",
+			"instruction": "Visit this location to earn the mystery trophy",
+			"lon": 150.8406277777778,
+			"lat": -34.60644444444445
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_024953443.jpg",
+			"description": "From the carpark at the disused station, follow the railway crossing across the tracks.",
+			"lon": 150.84023000000002,
+			"lat": -34.6066
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_025227657.jpg",
+			"description": "From the other side of the train tracks follow the footpath along the motorway offramp.",
+			"lon": 150.83909200000002,
+			"lat": -34.607887
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_025305700.jpg",
+			"description": "Before the overpass cross the train tracks to the left.",
+			"lon": 150.838763,
+			"lat": -34.608268
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_025612797.jpg",
+			"description": "From the train tracks follow the shared path through the wetlands along the motorway.",
+			"lon": 150.838602,
+			"lat": -34.610263000085666
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_030825910.jpg",
+			"description": "After the wetlands follow Riverside Dr to the left.",
+			"lon": 150.841629,
+			"lat": -34.617654
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_030957036.jpg",
+			"description": "At the Recycling Centre follow the bike path along the railway line.",
+			"lon": 150.84259400000002,
+			"lat": -34.618609
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_031212338.jpg",
+			"description": "Follow the path through the picnic area.",
+			"lon": 150.843909,
+			"lat": -34.619826
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_031422671.jpg",
+			"description": "From the picnic area follow Riverside Dr to the left to the bridge.",
+			"lon": 150.845041,
+			"lat": -34.621044
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_031521979.jpg",
+			"description": "Follow Riverside Dr across the Minnamurra River along the footpath on the left.",
+			"lon": 150.845682,
+			"lat": -34.621467
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_031754158.jpg",
+			"description": "From the intersection follow The Village side street to the left.",
+			"lon": 150.847462,
+			"lat": -34.622598
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_032031473.jpg",
+			"description": "At the end of the The Village use the pedestrian tunnel underneath the railway.",
+			"lon": 150.84866100000002,
+			"lat": -34.62211
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_032154622.jpg",
+			"description": "On the other side of the railway underpass follow Railway Ave to the right.",
+			"lon": 150.84900899986468,
+			"lat": -34.621879
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_032631179.jpg",
+			"description": "Follow the footpath along Railway Ace to Minnamurra Station.",
+			"lon": 150.85141099999998,
+			"lat": -34.624436
+		},
+		{
+			"location": "Minnamurra",
+			"type": "train",
+			"photo": "pxl_20240223_032931946.jpg",
+			"description": "Get the train to/from Minnamurra using <a href=\"https://transportnsw.info/trip#/?to=Minnamurra\">transportnsw.info</a>.",
+			"lon": 150.8529361111111,
+			"lat": -34.62613611111111
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_033017432.jpg",
+			"description": "From the train station follow North St to the left.",
+			"lon": 150.85306,
+			"lat": -34.62625
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_033154706.jpg",
+			"description": "From the intersection follow Charles Ave to the right.",
+			"lon": 150.854036,
+			"lat": -34.625677
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_033528725.jpg",
+			"description": "At the roundabout continue straight on Charles Ave.",
+			"lon": 150.855992,
+			"lat": -34.627212
+		},
+		{
+			"type": "kiosk",
+			"photo": "pxl_20240223_033541227.jpg",
+			"description": "there are amenities to the right of the roundabout.",
+			"lon": 150.855985,
+			"lat": -34.627301
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_033758015.jpg",
+			"description": "Enter the carpark on the left side of Charles Ave.",
+			"lon": 150.85634,
+			"lat": -34.628895
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_034052752.jpg",
+			"description": "From the boat ramp follow Kiama Coast Walk sign right through the reserve.",
+			"lon": 150.858192,
+			"lat": -34.629096
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_034144314.jpg",
+			"description": "Follow the trail up the Minnamurra Headland.",
+			"lon": 150.858619,
+			"lat": -34.629282
+		},
+		{
+			"type": "hotspot",
+			"photo": "pxl_20240223_034600631.jpg",
+			"lon": 150.8608821863694,
+			"lat": -34.63073175185122,
+			"radius": 0.0004,
+			"description": "It'll never fit in a single view, too wide for your vision to contain.",
+			"badge": "crop",
+			"title": "Too Big for the Photo",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_034607242.jpg",
+			"description": "At the top of the Minnamurra Headland follow the shared path to the left.",
+			"lon": 150.86089300007276,
+			"lat": -34.630717
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_034659073.jpg",
+			"description": "Follow the Kiama Coats Walk signs along the trail towards the blowhole.",
+			"lon": 150.861152,
+			"lat": -34.631197
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_035213071.jpg",
+			"description": "Follow the shared path past the helicopter landing pad.",
+			"lon": 150.860056,
+			"lat": -34.633017
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_035314953.jpg",
+			"description": "After the landing pad follow Eureka Ave to the right.",
+			"lon": 150.8593,
+			"lat": -34.633089
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_035532885.jpg",
+			"description": "At the intersection Johnson St follow the Kiama Coast Walk sign to the left.",
+			"lon": 150.857825,
+			"lat": -34.633494999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_035959746.jpg",
+			"description": "From the left side of Johnson St follow the access trail to Jones Beach.",
+			"lon": 150.856468,
+			"lat": -34.635263
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_040920883.jpg",
+			"description": "From halfway up Jones Beach follow the path through reserve and follow N Kiama Dr to the left.",
+			"lon": 150.854492,
+			"lat": -34.639824
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_041513942.jpg",
+			"description": "From the intersection follow Cliff Dr to the left.",
+			"lon": 150.853436,
+			"lat": -34.643343
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_041929637.jpg",
+			"description": "Follow the footpath along Cliff Dr to the Cathedral Rocks lookout.",
+			"lon": 150.855482,
+			"lat": -34.645638
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_042212925.jpg",
+			"description": "After the lookout continue along Cliff Dr.",
+			"lon": 150.856413,
+			"lat": -34.647068
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_042453719.jpg",
+			"description": "At the end of Cliff Dr continue straight on along the footpath.",
+			"lon": 150.85826,
+			"lat": -34.648217
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_043020387.jpg",
+			"description": "Follow the footpath past the wastewater plant.",
+			"lon": 150.85904099990958,
+			"lat": -34.65083
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_043202916.jpg",
+			"description": "After the fence line of the wastewater plant follow the road to the left.",
+			"lon": 150.858404,
+			"lat": -34.651928
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_043355417.jpg",
+			"description": "At the intersection follow the Kiama Coast Walk sign to the right.",
+			"lon": 150.859005,
+			"lat": -34.653106
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_043433375.jpg",
+			"description": "Follow the access trail to the Bombo Beach carpark.",
+			"lon": 150.85875,
+			"lat": -34.653287999999996
+		},
+		{
+			"type": "toilet",
+			"photo": "pxl_20240223_043536775.jpg",
+			"description": "There is a toilet block at the carpark.",
+			"lon": 150.85785099999998,
+			"lat": -34.653163
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_043824982.jpg",
+			"description": "From the carpark follow the access trail onto Bombo Beach.",
+			"lon": 150.857527,
+			"lat": -34.653256999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_044010942.jpg",
+			"description": "Near the start of the beach follow the trail to the right to access Bombo Station.",
+			"lon": 150.85757999999998,
+			"lat": -34.654115
+		},
+		{
+			"location": "Bombo Station",
+			"type": "train",
+			"photo": "pxl_20240223_044742214.jpg",
+			"description": "Get the train to/from Bombo Station using <a href=\"https://transportnsw.info/trip#/?to=Bombo Station\">transportnsw.info</a>.",
+			"lon": 150.854539,
+			"lat": -34.655508
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_050212175.jpg",
+			"description": "Cross the lagoon at the far end of Bombo Beach to the railway bridge.",
+			"lon": 150.853762,
+			"lat": -34.663517
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_050340942.jpg",
+			"description": "Follow the steps underneath the railway underpass.",
+			"lon": 150.85308899999998,
+			"lat": -34.663025
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_050524868.jpg",
+			"description": "From the reserve on the other side of the underpass follow Hothersal St to the left.",
+			"lon": 150.852507,
+			"lat": -34.662469
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_051302029.jpg",
+			"description": "From the intersection follow Gipps St to the left.",
+			"lon": 150.85201,
+			"lat": -34.663125
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_052012207.jpg",
+			"description": "Continue past the intersections with Fitzrow and Devonshire St.",
+			"lon": 150.854764,
+			"lat": -34.666821999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_052253902.jpg",
+			"description": "At the intersection follow Minnamirra St to the left.",
+			"lon": 150.854409,
+			"lat": -34.667496
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_052514606.jpg",
+			"description": "Cross the roundabout and follow the footpath into the foreshore reserve.",
+			"lon": 150.855804,
+			"lat": -34.668609
+		},
+		{
+			"type": "toilet",
+			"photo": "pxl_20240223_052546510.jpg",
+			"description": "There is a toilet block to the left in the reserve.",
+			"lon": 150.855912,
+			"lat": -34.668842999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_052635473.jpg",
+			"description": "Follow the Kiama Coast Walk signs around the harbour towards the blowhole.",
+			"lon": 150.85607,
+			"lat": -34.669343
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_053257969.jpg",
+			"description": "From the end of the foreshore follow Blowhole Point Rd to the left.",
+			"lon": 150.858747,
+			"lat": -34.671211
+		},
+		{
+			"type": "toilet",
+			"photo": "pxl_20240223_053707116.jpg",
+			"description": "There is a toilet block at the rock pools.",
+			"lon": 150.861451,
+			"lat": -34.670131999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_053857989.jpg",
+			"description": "From the rock pool follow the footpath to the blowhole.",
+			"lon": 150.862802,
+			"lat": -34.670790999999994
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_054024879.jpg",
+			"description": "Follow the footpath through the blowhole reserve along the viewing platforms.",
+			"lon": 150.86336599999998,
+			"lat": -34.671673
+		},
+		{
+			"type": "hotspot",
+			"photo": "pxl_20240223_054102545.jpg",
+			"radius": 0.0004,
+			"description": "More famous than Munmorah's, but they have the nicer beaches.",
+			"badge": "sink_bathroom",
+			"title": "The Big Hole",
+			"instruction": "Visit this location to earn the mystery trophy",
+			"lon": 150.86294166666667,
+			"lat": -34.67163333333333
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_054236819.jpg",
+			"description": "From the viewing platform follow the steps up to the lighthouse.",
+			"lon": 150.862786,
+			"lat": -34.671704
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_054311385.jpg",
+			"description": "From the lighthouse follow the footpath left around the carpark.",
+			"lon": 150.862831,
+			"lat": -34.672016
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_054421471.jpg",
+			"description": "From the carpark follow the footpath off the blowhole reserve.",
+			"lon": 150.862019,
+			"lat": -34.67229
+		},
+		{
+			"type": "info",
+			"photo": "pxl_20240223_054542697.jpg",
+			"description": "There are amenities at the visitor information centre.",
+			"lon": 150.861232,
+			"lat": -34.671962
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_055700989.jpg",
+			"description": "From the visitor information centre follow Blowhole Point Rd out of the reserve.",
+			"lon": 150.858101,
+			"lat": -34.672067999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_055831172.jpg",
+			"description": "At the roundabout follow Terralong St to the right.",
+			"lon": 150.856915,
+			"lat": -34.671741
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_055904777.jpg",
+			"description": "Follow the footpath along the right side of Terralong St.",
+			"lon": 150.85657799999998,
+			"lat": -34.671564
+		},
+		{
+			"type": "toilet",
+			"photo": "pxl_20240223_060004583.jpg",
+			"description": "There are public toilets in the reserve along Terralong St.",
+			"lon": 150.85590399999998,
+			"lat": -34.671056
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_060010434.jpg",
+			"description": "Follow Terralong St under the railway underpass.",
+			"lon": 150.85583,
+			"lat": -34.671009
+		},
+		{
+			"type": "kiosk",
+			"photo": "pxl_20240223_061938524.jpg",
+			"description": "After the railway underpass follow Railway Pde left. There are restaurants further along Terralong St.",
+			"lon": 150.855101,
+			"lat": -34.670866
+		},
+		{
+			"type": "waypoint",
+			"photo": "pxl_20240223_062149703.jpg",
+			"description": "Follow Railway Pde to the station entrance on the left.",
+			"lon": 150.854561,
+			"lat": -34.672123
+		},
+		{
+			"location": "Kiama",
+			"type": "train",
+			"photo": "pxl_20240223_062250878.jpg",
+			"description": "Get the train to Kiama using <a href=\"https://transportnsw.info/trip#/?to=Kiama\">transportnsw.info</a>.",
+			"lon": 150.85472121834755,
+			"lat": -34.67259692028165
+		}
+	]
+}

@@ -1,0 +1,328 @@
+{
+	"location": "North Head",
+	"lon": 151.29982005804777,
+	"lat": -33.820774275809526,
+	"description": "A short localised walk exploring the Shelly Beach, the Fairfax Track, and the memorials around North Head.",
+	"keywords": {
+		"Shelly Beach": "https://www.northernbeaches.nsw.gov.au/things-to-do/recreation-area/shelly-beach",
+		"Fairfax Track": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/fairfax-walk",
+		"North Head": "https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/north-head"
+	},
+	"distance": [
+		9
+	],
+	"hero": "",
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "manly-northhead-manly",
+	"updated": "2024-03-16",
+	"bounds": {
+		"west": 151.270751953125,
+		"north": -33.779147331286474,
+		"east": 151.314697265625,
+		"south": -33.82479361826489
+	},
+	"markers": [
+		{
+			"location": "Manly",
+			"type": "ferry",
+			"photo": "001_pxl_20240316_033630834.jpg",
+			"description": "Get the ferry to Manly at <a href=\"https://transportnsw.info/trip#/?from=Manly\">transportnsw.info</a>.",
+			"lon": 151.284502,
+			"lat": -33.799268
+		},
+		{
+			"type": "waypoint",
+			"photo": "004_pxl_20240316_033304695.jpg",
+			"description": "From the ferry wharf cross the road at the traffic lights and follow The Corso to Manly Beach. ",
+			"lon": 151.28624299999998,
+			"lat": -33.798164
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_011223804.jpg",
+			"description": "Follow the esplanade to the right to the surf club.",
+			"lon": 151.288724,
+			"lat": -33.797661999999995
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_011608418.jpg",
+			"description": "From the surf club follow the Marine Parade to the sea pools.",
+			"lon": 151.290774,
+			"lat": -33.799417999999996
+		},
+		{
+			"type": "toilet",
+			"photo": "007_pxl_20240316_012203827.jpg",
+			"description": "There are public toilets near the pools.",
+			"lon": 151.29468,
+			"lat": -33.800751999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_012417068.jpg",
+			"description": "From the sea pools follow Marine Parade to Shelly Beach.",
+			"lon": 151.296719,
+			"lat": -33.800788999999995
+		},
+		{
+			"type": "kiosk",
+			"photo": "007_pxl_20240316_012537025.jpg",
+			"description": "There are public toilets near the restaurant.",
+			"lon": 151.297796,
+			"lat": -33.800884999999994
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_012645283.jpg",
+			"description": "From the pinic area follow the steps up to the carpark.",
+			"lon": 151.298666,
+			"lat": -33.800717999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_012726806.jpg",
+			"description": "From the steps follow the footpath around the carpark to the left.",
+			"lon": 151.29896300011146,
+			"lat": -33.800549
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_012920555.jpg",
+			"description": "From the end of the carpark follow the trail along the cliffs to the left.",
+			"lon": 151.299702,
+			"lat": -33.80088
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_013551460.jpg",
+			"description": "Follow the trail along the cliffs to a door in the fortifications.",
+			"lon": 151.301063,
+			"lat": -33.802729
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_013609723.jpg",
+			"description": "On the other side of the wall follow park signs to Blue Fish Road.",
+			"lon": 151.301095,
+			"lat": -33.802761
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_014530419.jpg",
+			"description": "Cross Blue Fish Dr and continue along the trail.",
+			"lon": 151.299396,
+			"lat": -33.806818
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_014550348.jpg",
+			"description": "From Blue Fish Dr follow the signs to North Fort.",
+			"lon": 151.299283,
+			"lat": -33.80686
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_015156976.jpg",
+			"description": "At the entrance to North Fort follow the signs to the Fairfax Lookout.",
+			"lon": 151.297408999909,
+			"lat": -33.809677
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_015221778.jpg",
+			"description": "Enter through the gate and cross the parade grounds.",
+			"lon": 151.297382,
+			"lat": -33.809878
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_015412583.jpg",
+			"description": "On the other side of the parade grounds follow the sign right to the Fairfax Lookout",
+			"lon": 151.297612,
+			"lat": -33.811178
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_015458366.jpg",
+			"description": "At the intersection follow the signs to the Lookout Precinct to the left.",
+			"lon": 151.297306,
+			"lat": -33.81136
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_015557169.jpg",
+			"description": "From the right side of North Fort Road follow the sign to the lookouts.",
+			"lon": 151.297305,
+			"lat": -33.812033
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_020000791.jpg",
+			"description": "Follow the signs to the Fairfax lookout along the trail.",
+			"lon": 151.295923,
+			"lat": -33.813917999999994
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_021100886.jpg",
+			"description": "At North Fort follow the signs to the Fairfax Lookout.",
+			"lon": 151.2958929998858,
+			"lat": -33.817452
+		},
+		{
+			"type": "toilet",
+			"photo": "007_pxl_20240316_021150381.jpg",
+			"description": "There are public toilets at the visitor centre.",
+			"lon": 151.296242,
+			"lat": -33.817525
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_021254950.jpg",
+			"description": "From the visitor centre follow the Memorial Trail past the monuments.",
+			"lon": 151.29665599999998,
+			"lat": -33.817757
+		},
+		{
+			"type": "hotspot",
+			"photo": "007_pxl_20240316_021501378.jpg",
+			"radius": 0.0004,
+			"description": "The whole distance is paved with the names of the fallen.",
+			"badge": "obelisk",
+			"title": "A solumn trail",
+			"instruction": "Visit this location to earn the mystery trophy",
+			"lon": 151.297582,
+			"lat": -33.818088
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_021639928.jpg",
+			"description": "From the corner of the Memorial Trail follow the trail right to the Fairfax Lookout.",
+			"lon": 151.298703,
+			"lat": -33.818177000000006
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_021958026.jpg",
+			"description": "At Scenic Drive follow the road to the left.",
+			"lon": 151.299152,
+			"lat": -33.819951
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_022237818.jpg",
+			"description": "From the carpark follow the sign to the Fairfax Track.",
+			"lon": 151.299723,
+			"lat": -33.821351
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_022735588.jpg",
+			"description": "Follow the Fairfax Track to the lookout.",
+			"lon": 151.29975299984417,
+			"lat": -33.823111000000004
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_023217724.jpg",
+			"description": "From the lookout continue the Fairfax Track to Scenic Dr.",
+			"lon": 151.298652,
+			"lat": -33.82144400000001
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_023501530.jpg",
+			"description": "Follow Scenic Dr to the left.",
+			"lon": 151.29804,
+			"lat": -33.819726
+		},
+		{
+			"type": "kiosk",
+			"photo": "007_pxl_20240316_023923112.jpg",
+			"description": "There is a restaurant near the carpark along Scenic Drive.",
+			"lon": 151.29613799999998,
+			"lat": -33.818432
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_024532701.jpg",
+			"description": "From the restaurant follow the side of Scenic Dr.",
+			"lon": 151.292239,
+			"lat": -33.816528
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_025122603.jpg",
+			"description": "At the roundabout continue straight on Scenic Dr.",
+			"lon": 151.294141,
+			"lat": -33.812717
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_030152109.jpg",
+			"description": "Exit North Head through the gate.",
+			"lon": 151.295862,
+			"lat": -33.806331
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_030257884.jpg",
+			"description": "After the gate follow Darley Rd to the left.",
+			"lon": 151.295464,
+			"lat": -33.805662999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_030910344.jpg",
+			"description": "At the intersection follow Marshall St to the left.",
+			"lon": 151.291039,
+			"lat": -33.804477999999996
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_031014499.jpg",
+			"description": "Follow the bike path signs right along High St.",
+			"lon": 151.290356,
+			"lat": -33.804561
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_031253010.jpg",
+			"description": "Follow the bike route left down Addison Rd.",
+			"lon": 151.289038,
+			"lat": -33.80334
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_031412741.jpg",
+			"description": "At the roundabout follow Osbourne Rd to the right.",
+			"lon": 151.28831399999999,
+			"lat": -33.803287
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_031624483.jpg",
+			"description": "From the end of Osborn Rd cross the road into the Esplanade Park.",
+			"lon": 151.287156,
+			"lat": -33.802443999999994
+		},
+		{
+			"type": "waypoint",
+			"photo": "007_pxl_20240316_031828827.jpg",
+			"description": "Follow the esplanade to the ferry wharf.",
+			"lon": 151.286664,
+			"lat": -33.801576
+		},
+		{
+			"location": "Manly",
+			"type": "ferry",
+			"photo": "007_pxl_20240316_033630834.jpg",
+			"description": "Plan your return trip from Manly at <a href=\"https://transportnsw.info/trip#/?from=Manly\">transportnsw.info</a>.",
+			"lon": 151.284502,
+			"lat": -33.799268
+		}
+	]
+}

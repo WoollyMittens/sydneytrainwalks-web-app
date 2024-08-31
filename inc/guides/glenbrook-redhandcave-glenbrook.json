@@ -2,20 +2,17 @@
 	"location": "Lower Blue Mountains",
 	"lon": 150.6128664315,
 	"lat": -33.7998189311,
-	"description": [
-		"This walk covers many attractions of the Lower Blue Mountains in one managable loop.",
-		"From the park entrance at Glenbrook and a short detour to the famous <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/jellybean-track\">Jellybean Pools</a>",
-		"the walk follows a lush gully up to the aboriginal cave art at <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/red-hands-cave-walking-track-blue-mountains-national-park\">Red Hand Caves</a>.",
-		"<br/><br/>",
-		"At the nearby Aboriginal Sandstone Workshop a rough trail leads up to the Ironbarks Picnic Area along the famous <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/cycling-trails/woodford-oaks-trail\">Oaks trail</a>.",
-		"From there a tour across the <a href=\"https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/euroka-campground\">Euroka Campground</a>",
-		"for a possible kangaroo encounter and then up to the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/tunnel-view-lookout\">Tunnel View Lookout</a>.",
-		"<br/><br/>",
-		"A further detour to the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/mount-portal-lookout\">Mount Portal Lookout</a> is possible from there,",
-		"before returning to the weir across Glenbrook Creek and the park entrance."
+	"description": "This walk explores the Lower Blue Mountains in a loop around the Red Hands Cave, Euroka Campground, and Portal Lookout.",
+	"keywords": {
+		"Red Hands Cave": "https://www.nationalparks.nsw.gov.au/things-to-do/aboriginal-sites/red-hands-cave",
+		"Euroka Campground": "https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/euroka-campground",
+		"Portal Lookout": "https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/portal-lookout"
+	},
+	"distance": [
+		17,
+		21
 	],
-	"duration": 6,
-	"distance": 22,
+	"hero": "",
 	"zoom": 13,
 	"rain": false,
 	"fireban": false,
@@ -31,25 +28,10 @@
 		{
 			"location": "Glenbrook",
 			"type": "train",
+			"photo": "p7250001.jpg",
 			"description": "Get the train to Glenbrook using <a href=\"https://transportnsw.info/trip#/?to=Glenbrook\">transportnsw.info</a>.",
 			"lon": 150.620507542,
 			"lat": -33.7689544167
-		},
-		{
-			"type": "warning",
-			"lat": -33.78941388888889,
-			"lon": 150.60356944444445,
-			"description": "The trail up to the ridge can be hard to find,<br/>but is near the Aboriginal sandstone workshop sign."
-		},
-		{
-			"type": "toilet",
-			"lat": -33.778427,
-			"lon": 150.620693
-		},
-		{
-			"type": "toilet",
-			"lat": -33.797949,
-			"lon": 150.618014
 		},
 		{
 			"type": "waypoint",
@@ -66,7 +48,7 @@
 			"description": "Eventually the road crosses the railway tracks across a bridge into the National Park."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "p7250014.jpg",
 			"lon": 150.620925,
 			"lat": -33.778339,
@@ -143,7 +125,7 @@
 			"description": "Continue past the caves until you get to the carpark of Red Hand Caves."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "p7250116.jpg",
 			"lon": 150.590475,
 			"lat": -33.78369,
@@ -169,13 +151,6 @@
 			"lon": 150.602677,
 			"lat": -33.788866,
 			"description": "Directly across from the Sandstone Workshop on the right side of the track a rough trail leads up the ridge."
-		},
-		{
-			"type": "waypoint",
-			"photo": "p7250146.jpg",
-			"lon": 150.60269599999998,
-			"lat": -33.788858999999995,
-			"description": "The rough parts of this climb have been marked with red ribbons and stacks of rocks (cairns)."
 		},
 		{
 			"type": "waypoint",
@@ -206,26 +181,25 @@
 			"description": "Cross the gate and follow the trail. It zig zags down a hill and ends at the campground."
 		},
 		{
-			"type": "waypoint",
-			"photo": "p7250185.jpg",
-			"lon": 150.615994,
-			"lat": -33.799265999999996,
-			"description": "Follow the road across the campground to the left to find the information signs."
-		},
-		{
-			"title": "I was Promised Kangaroos",
-			"badge": "hovel_1",
+			"type": "hotspot",
+			"photo": "p7250181_p7250183.jpg",
 			"lon": 150.6169320721852,
 			"lat": -33.79894155167245,
 			"radius": 0.0004,
-			"explanation": [
-				"Neither campers nor eastern greys can resist these grassy fields."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+			"description": "Neither campers nor eastern greys can resist these grassy fields.",
+			"badge": "hovel_1",
+			"title": "I was Promised Kangaroos",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
+			"photo": "p7250185.jpg",
+			"description": "Follow the road across the campground to the left to find the information signs.",
+			"lon": 150.615994,
+			"lat": -33.799265999999996
+		},
+		{
+			"type": "toilet",
 			"photo": "p7250186.jpg",
 			"lon": 150.61650299992405,
 			"lat": -33.799276,
@@ -302,11 +276,15 @@
 			"description": "The first lookout on the left side is the Tunnel View lookout."
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "p7250266_p7250270.jpg",
-			"lon": 150.62768888888888,
-			"lat": -33.78381944444444,
-			"description": "There are no safety fences at the Tunnel View lookout. Don't go too close to the edge."
+			"lon": 150.6276634120437,
+			"lat": -33.78381702230462,
+			"radius": 0.0004,
+			"description": "If you stand around long enough, there will probably be a train across the valley.",
+			"badge": "search",
+			"title": "So where is it?",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -316,20 +294,8 @@
 			"description": "Return to the road from the lookout and follow it to the left where it will eventually end at Mount Portal lookout."
 		},
 		{
-			"title": "So where is it?",
-			"badge": "search",
-			"lon": 150.6276634120437,
-			"lat": -33.78381702230462,
-			"radius": 0.0004,
-			"explanation": [
-				"If you stand around long enough, there will probably be a train."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
-		},
-		{
 			"type": "waypoint",
-			"photo": "p7250300.jpg",
+			"photo": "p7250283_p7250286.jpg",
 			"lon": 150.63792999999998,
 			"lat": -33.781137,
 			"description": "From the car park make your way past the rock climbing area to the fenced lookout."
@@ -386,9 +352,10 @@
 		{
 			"location": "Glenbrook",
 			"type": "train",
+			"photo": "p7250328.jpg",
 			"description": "Plan your return trip from Glenbrook at <a href=\"https://transportnsw.info/trip#/?from=Glenbrook\">transportnsw.info</a>.",
-			"lon": 150.6218093354,
-			"lat": -33.769141417
+			"lon": 150.620507542,
+			"lat": -33.7689544167
 		}
 	]
 }

@@ -2,12 +2,17 @@
 	"location": "Hassans Walls",
 	"lon": 150.151232,
 	"lat": -33.512355,
-	"description": [
-		"This walk follows the historic mountain passes down <a href=\"http://en.wikipedia.org/wiki/Mount_York\">Mount York</a> at Mount Victoria in the Blue Mountains into the rural <a href=\"http://www.hartley-nsw.com/\">Hartley Vale</a>.",
-		"After crossing the valley's wide open landscape, the walk climbs the trails across <a href=\"http://www.lithgow-tourism.com/hassans.htm\">Hassans Walls</a> to Lithgow."
+	"description": "This walk follows either attempts at passes off Mount York for a brief taste of Country NSW and crosses Hartley Vale to Hassans Walls on the other side.",
+	"keywords": {
+		"Mount york": "https://www.visitnsw.com/destinations/blue-mountains/katoomba-area/attractions/mount-york",
+		"Country NSW": "https://www.nationalparks.nsw.gov.au/visit-a-park/regions/country-nsw",
+		"Hartley Vale": "https://www.bluemts.com.au/info/towns/hartley/",
+		"Hassans Walls": "https://lithgow-tourism.com/hassans.htm"
+	},
+	"distance": [
+		26
 	],
-	"duration": 6,
-	"distance": 26,
+	"hero": "",
 	"zoom": 13,
 	"rain": false,
 	"fireban": false,
@@ -23,26 +28,10 @@
 		{
 			"location": "Mount Victoria",
 			"type": "train",
+			"photo": "0010_dsc_1905.jpg",
 			"description": "Get the train to Mount Victoria using <a href=\"https://transportnsw.info/trip#/?to=Mount Victoria\">transportnsw.info</a>.",
 			"lat": -33.58802982001727,
 			"lon": 150.2564418
-		},
-		{
-			"type": "toilet",
-			"lat": -33.535802,
-			"lon": 150.233274
-		},
-		{
-			"type": "toilet",
-			"lat": -33.482969,
-			"lon": 150.151766
-		},
-		{
-			"type": "waypoint",
-			"photo": "0010_dsc_1905.jpg",
-			"lon": 150.2564418,
-			"lat": -33.58802982001727,
-			"description": "Exit the station and follow the signs to the walking tracks from the carpark."
 		},
 		{
 			"type": "waypoint",
@@ -84,7 +73,7 @@
 			"photo": "0081_p4010002.jpg",
 			"lon": 150.240197,
 			"lat": -33.575315,
-			"description": "<i>+ 0h / 0km</i> Optionally, follow the signs down Lawson Long Alley instead of Lockyers Road.",
+			"description": "<i>+0km</i> Optionally, follow the signs down Lawson Long Alley instead of Lockyers Road.",
 			"optional": true
 		},
 		{
@@ -168,7 +157,7 @@
 			"description": "At the fenced fields follow the sign left to Lockyers Road track head."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "0270_dsc_1978.jpg",
 			"lon": 150.2329413799921,
 			"lat": -33.535839509985585,
@@ -183,20 +172,19 @@
 			"description": "Follow Hartley Vale Road across the valley towards the hills on the other side."
 		},
 		{
-			"title": "He Wrote Rivulet",
-			"badge": "pen",
+			"type": "hotspot",
+			"photo": "0350_dsc_2003.jpg",
 			"lon": 150.2005471825524,
 			"lat": -33.52769530536342,
 			"radius": 0.0004,
-			"explanation": [
-				"For the surveyor it must have been frustrating to see a misunderstading paint the landscape forever."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+			"description": "For the surveyor it must have been frustrating to see a misunderstading paint the landscape forever.",
+			"badge": "pen",
+			"title": "He Wrote Rivulet",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
-			"photo": "0350_dsc_2003.jpg",
+			"photo": "0360_dsc_2004_dsc_2011.jpg",
 			"lon": 150.20043455999655,
 			"lat": -33.52748405004557,
 			"description": "Cross the River Lett along the road and continue down Browns Gap Road."
@@ -276,7 +264,7 @@
 			"photo": "0611_p6170122.jpg",
 			"lon": 150.1511473699896,
 			"lat": -33.512126950101226,
-			"description": "<i>+ 0.5h / 2km</i> Alternatively follow the sign right back to Bracey Lookout.",
+			"description": "<i>+2km</i> Alternatively follow the sign right back to Bracey Lookout.",
 			"optional": true
 		},
 		{
@@ -308,7 +296,7 @@
 			"photo": "0640_dsc_2122.jpg",
 			"lon": 150.14843603010348,
 			"lat": -33.510971,
-			"description": "At the gated trail, pass the gate and follow the trail left."
+			"description": "At the gated trail, follow the trail to the left."
 		},
 		{
 			"type": "waypoint",
@@ -374,7 +362,7 @@
 			"description": "Enter the gate into Elizabeth Park at the intersection with Peachman Ave."
 		},
 		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "0820_dsc_2150.jpg",
 			"lon": 150.1516549,
 			"lat": -33.48328910004369,
@@ -390,6 +378,7 @@
 		{
 			"location": "Lithgow",
 			"type": "train",
+			"photo": "0860_dsc_2155.jpg",
 			"description": "Plan your return trip from Lithgow at <a href=\"https://transportnsw.info/trip#/?from=Lithgow\">transportnsw.info</a>.",
 			"lat": -33.48087887989204,
 			"lon": 150.15715679000132

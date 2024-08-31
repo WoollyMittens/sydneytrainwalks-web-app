@@ -150,9 +150,9 @@ header {
 			font-weight: normal;
 		}
 
-		body.screen-about &,
-		body.screen-menu &,
-		body.screen-overview & {
+		body[data-screen="about"] &,
+		body[data-screen="menu"] &,
+		body[data-screen="overview"] & {
 			visibility: hidden;
 		}
 	}

@@ -1,21 +1,22 @@
 {
 	"location": "Berowra Valley",
-	"lon": 151.1004518811,
-	"lat": -33.646977609,
-	"description": [
-		"After short detour to the <a href=\"https://www.kateausburn.com/sydney-day-trips/naa-badu-lookout\">Naa Badu Lookout</a>,",
-		"this walk follows a stretch of the <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/great-north-walk-berowra-valley-national-park\">Great North Walk</a> through Berowra Valley National Park.",
-		"The picnic area at <a href=\"https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/place-of-winds-interpretive-trail\">Crosslands</a> offers some rest before the climb up Galson Gorge.",
-		"<br/><br/>",
-		"The rules for passing near the rifle range are prone to change, follow the instructions on the signs near the Steele bridge and check <a href=\"http://www.nationalparks.nsw.gov.au/visit-a-park/parks/Berowra-Valley-National-Park/Local-alerts\">here</a>."
+	"lon": 151.1003703251,
+	"lat": -33.6470330972,
+	"description": "This walk follows part of the Great North Walk through Berowra Valley, with Crosslands Reserve and Galston Gorge as notable landmarks along the way.",
+	"keywords": {
+		"Great North Walk": "https://www.thegreatnorthwalk.com/",
+		"Crosslands Reserve": "https://discoverhornsby.com/parks/crosslands-reserve/",
+		"Galston Gorge": "https://en.wikipedia.org/wiki/Galston_Gorge"
+	},
+	"distance": [
+		21
 	],
-	"duration": 8,
-	"distance": 22,
+	"hero": "",
 	"zoom": 13,
 	"rain": false,
 	"fireban": false,
 	"key": "berowra-crosslands-asquith",
-	"updated": "2016-11-25",
+	"updated": "2023-06-12",
 	"bounds": {
 		"west": 151.06201171875,
 		"north": -33.60546961227189,
@@ -27,43 +28,16 @@
 			"location": "Berowra",
 			"type": "train",
 			"description": "Get the train to Berowra using <a href=\"https://transportnsw.info/trip#/?to=Berowra\">transportnsw.info</a>.",
+			"photo": "pb260001.jpg",
 			"lon": 151.1528503429,
 			"lat": -33.6234793626
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.623568,
-			"lon": 151.151757
-		},
-		{
-			"type": "kiosk",
-			"lat": -33.688607,
-			"lon": 151.107549
-		},
-		{
-			"type": "warning",
-			"description": "Read the signs near the Steele bridge to find out if the detour past the rifle range is still in effect.",
-			"lat": -33.68011,
-			"lon": 151.085275
-		},
-		{
-			"type": "toilet",
-			"lat": -33.631144,
-			"lon": 151.109019
-		},
-		{
-			"type": "waypoint",
-			"photo": "pb260001.jpg",
-			"lon": 151.153308,
-			"lat": -33.623452,
-			"description": "Exit the station and cross the Pacific Highway at the trafic lights."
 		},
 		{
 			"type": "waypoint",
 			"photo": "pb260002.jpg",
 			"lon": 151.151795,
 			"lat": -33.623543,
-			"description": "Follow the footpath to the left and turn right at the Great North Walk marker, down Berowra Waters Road."
+			"description": "Follow the footpath across the highway to the left and turn right at the Great North Walk marker."
 		},
 		{
 			"type": "waypoint",
@@ -119,7 +93,7 @@
 			"photo": "pb260013.jpg",
 			"lon": 151.128536,
 			"lat": -33.617977,
-			"description": "<i>+ 0.5h / 0.5km</i> Continue a few hundred meters past this point to visit the nearby lookout first.",
+			"description": "<i>+0.5km</i> Continue a few hundred meters past this point to visit the nearby lookout first.",
 			"optional": true
 		},
 		{
@@ -174,13 +148,6 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pb260068.jpg",
-			"lon": 151.11979,
-			"lat": -33.627548,
-			"description": "From the bridge onwards to the camping, educational signs can be found at regular intervals."
-		},
-		{
-			"type": "waypoint",
 			"photo": "pb260092.jpg",
 			"lon": 151.113081,
 			"lat": -33.62698100009026,
@@ -208,14 +175,7 @@
 			"description": "From the car park, follow the path across the second camping area to the toilet blocks."
 		},
 		{
-			"type": "waypoint",
-			"photo": "pb260104.jpg",
-			"lon": 151.108911,
-			"lat": -33.631237,
-			"description": "Refill your water bottles at the taps if needed, before continuing."
-		},
-		{
-			"type": "waypoint",
+			"type": "toilet",
 			"photo": "pb260106.jpg",
 			"lon": 151.10904399999998,
 			"lat": -33.631513,
@@ -285,23 +245,15 @@
 			"description": "The trail winds its way down the ridge with several gradual descends."
 		},
 		{
-			"type": "waypoint",
+			"type": "hotspot",
 			"photo": "pb260161.jpg",
-			"lon": 151.085105,
-			"lat": -33.679168999999995,
-			"description": "Cross the historic Steele Military Bridge to the left."
-		},
-		{
-			"title": "It Belongs in a Museum",
-			"badge": "bridge_1",
 			"lon": 151.0852692848733,
 			"lat": -33.67955093920438,
 			"radius": 0.0004,
-			"explanation": [
-				"A historic military bridge, out here as a surprise outdoor museum piece."
-			],
-			"type": "hotspot",
-			"description": "<center>Visit this location to<br/>earn the mystery trophy</center>"
+			"description": "A historic military bridge, out here as a surprise outdoor museum piece.",
+			"badge": "bridge_1",
+			"title": "It Belongs in a Museum",
+			"instruction": "Visit this location to earn the mystery trophy"
 		},
 		{
 			"type": "waypoint",
@@ -388,16 +340,10 @@
 			"description": "Peats Ferry Road eventually leads to another intersection, continue to the shops along the Pacific Highway."
 		},
 		{
-			"type": "waypoint",
-			"photo": "pb260185.jpg",
-			"lon": 151.107688,
-			"lat": -33.688669999999995,
-			"description": "Cross the Pacific Highway at the traffic lights near the shops to enter Asquith Station."
-		},
-		{
 			"location": "Asquith",
 			"type": "train",
 			"description": "Plan your return trip from Asquith at <a href=\"https://transportnsw.info/trip#/?from=Asquith\">transportnsw.info</a>.",
+			"photo": "pb260184.jpg",
 			"lon": 151.1078680214,
 			"lat": -33.6887906492
 		}

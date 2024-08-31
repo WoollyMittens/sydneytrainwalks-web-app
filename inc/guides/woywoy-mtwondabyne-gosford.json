@@ -1,0 +1,649 @@
+{
+	"location": "Mount Wondabyne",
+	"lon": 151.2871101592,
+	"lat": -33.4713161364,
+	"description": "This walk strings together many attractions in Brisbane Waters National Park, including, Mount Wondabyne, Staples Lookout and Bulgandry.",
+	"keywords": {
+		"Brisbane Waters National Park": "https://www.nationalparks.nsw.gov.au/visit-a-park/parks/brisbane-water-national-park",
+		"Mount Wondabyne": "https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/wondabyne-to-patonga-walking-track",
+		"Staples Lookout": "https://www.nationalparks.nsw.gov.au/things-to-do/lookouts/staples-lookout",
+		"Bulgandry": "https://www.nationalparks.nsw.gov.au/things-to-do/aboriginal-sites/bulgandry-art-site-aboriginal-place"
+	},
+	"distance": [
+		29
+	],
+	"hero": "",
+	"zoom": 13,
+	"rain": false,
+	"fireban": false,
+	"key": "woywoy-mtwondabyne-gosford",
+	"updated": "2024-01-19",
+	"bounds": {
+		"west": 151.248779296875,
+		"north": -33.413102213708285,
+		"east": 151.358642578125,
+		"south": -33.523078808904195
+	},
+	"markers": [
+		{
+			"location": "Woy Woy",
+			"type": "train",
+			"photo": "100_pxl_20240118_190539792.jpg",
+			"description": "Plan your trip to Woy Woy at <a href=\"https://transportnsw.info/trip#/?from=Woy Woy\">transportnsw.info</a>.",
+			"lat": -33.485393,
+			"lon": 151.32345
+		},
+		{
+			"type": "waypoint",
+			"photo": "100_pxl_20240118_190747894.jpg",
+			"lon": 151.323243,
+			"lat": -33.486001,
+			"description": "Follow Railway St to the right from Woy Woy Station."
+		},
+		{
+			"type": "waypoint",
+			"photo": "100_pxl_20240118_190929620.jpg",
+			"lon": 151.322169,
+			"lat": -33.486962,
+			"description": "Follow the footpath along the right side of Railway St."
+		},
+		{
+			"type": "waypoint",
+			"photo": "100_pxl_20240118_191905793.jpg",
+			"lon": 151.31597200000002,
+			"lat": -33.491991,
+			"description": "Near the railway crossing, follow the ramp into the pedestrian tunnel on the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "100_pxl_20240118_192234209.jpg",
+			"lon": 151.31323500000002,
+			"lat": -33.492428000000004,
+			"description": "From the other side of the pedestrian tunnel follow Woy Woy Rd left around the corner."
+		},
+		{
+			"type": "toilet",
+			"lon": 151.314483,
+			"lat": -33.492581,
+			"description": "There is a toilet block near the bus stop."
+		},
+		{
+			"type": "waypoint",
+			"photo": "100_pxl_20240118_193225484.jpg",
+			"lon": 151.30612000000002,
+			"lat": -33.496735,
+			"description": "Follow the footpath along Woy Woy Rd."
+		},
+		{
+			"type": "waypoint",
+			"photo": "100_pxl_20240118_193450207.jpg",
+			"lon": 151.30397100000002,
+			"lat": -33.497068,
+			"description": "Enter Correa Bay Reserve on the right."
+		},
+		{
+			"type": "toilet",
+			"photo": "100_pxl_20240118_193542450_pano.jpg",
+			"lon": 151.303706,
+			"lat": -33.496852000000004,
+			"description": "There is a toilet block at the picnic area."
+		},
+		{
+			"type": "waypoint",
+			"photo": "100_pxl_20240118_193934668.jpg",
+			"lon": 151.30322600000002,
+			"lat": -33.49706,
+			"description": "From the reserve cross Woy Woy Rd to the railway underpass."
+		},
+		{
+			"type": "waypoint",
+			"photo": "100_pxl_20240118_194007144.jpg",
+			"lon": 151.30300200000002,
+			"lat": -33.497293,
+			"description": "Follow the footpath on the left side of the underpass."
+		},
+		{
+			"type": "waypoint",
+			"photo": "100_pxl_20240118_194046392.jpg",
+			"lon": 151.303007,
+			"lat": -33.497605,
+			"description": "After the underpass follow Nagari Rd to the Woy Woy Tip."
+		},
+		{
+			"type": "waypoint",
+			"photo": "100_pxl_20240118_194804875.jpg",
+			"lon": 151.29770099989796,
+			"lat": -33.49763899991118,
+			"description": "At the split in the road follow Nagari Rd to the left. If the gate is closed, use the pedestrian gate to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "100_pxl_20240118_200123041.jpg",
+			"lon": 151.292078,
+			"lat": -33.503398,
+			"description": "At the entrance to the tip, follow Dillons Firetrail to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "100_pxl_20240118_200221447.jpg",
+			"lon": 151.291404,
+			"lat": -33.503638,
+			"description": "Use the pedestrian gate on the right and continue down Dillons Firetrail."
+		},
+		{
+			"type": "waypoint",
+			"photo": "100_pxl_20240118_203631715.jpg",
+			"lon": 151.276856,
+			"lat": -33.501804,
+			"description": "Follow Dillons Firetrail to the intersection with the Great North Walk."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240113_005013805.jpg",
+			"lon": 151.27656900000002,
+			"lat": -33.501904,
+			"description": "Follow the Great North Walk marker to the right down the Tunnel Firetrail."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240113_005243675.jpg",
+			"lon": 151.276803,
+			"lat": -33.500601,
+			"description": "Continue straight on at the intersection with Rocky Ponds Firetrail."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240113_005938483.jpg",
+			"lon": 151.280763,
+			"lat": -33.498488,
+			"description": "Follow the signs to Mount Wondabyne to the left."
+		},
+		{
+			"type": "toilet",
+			"photo": "200_pxl_20240113_011320049.jpg",
+			"lon": 151.274709,
+			"lat": -33.496027,
+			"description": "Follow Mount Wondabyne Trig Firetrail to the campground. There is a toilet block at the campground."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240113_011345854.jpg",
+			"lon": 151.274561,
+			"lat": -33.496035,
+			"description": "From the campground follow the Great North Walk sign to Mooney Mooney."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240113_011556228.jpg",
+			"lon": 151.273975,
+			"lat": -33.49552,
+			"description": "Follow the Great North Walk markers across Mount Wondabyne."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240113_011639917.jpg",
+			"lon": 151.274154,
+			"lat": -33.495348,
+			"description": "<i>1km</i> Optionally climb the summit of Mount Wondabyne by following the trail to the right.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240113_012052184.jpg",
+			"lon": 151.27443000000002,
+			"lat": -33.495089,
+			"description": "Scramble up the rough steps to the top.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240113_012409317.jpg",
+			"lon": 151.274709,
+			"lat": -33.494719,
+			"description": "Follow the trail across the summit to the peak.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240113_012843057.jpg",
+			"lon": 151.27501700000002,
+			"lat": -33.493953,
+			"description": "There is a trig point at the peak.",
+			"optional": true
+		},
+		{
+			"type": "hotspot",
+			"photo": "200_pxl_20240113_012859254.jpg",
+			"lon": 151.2750087,
+			"lat": -33.4940091,
+			"radius": 0.0004,
+			"description": "The end is just the start of a new journey.",
+			"badge": "cancel_2",
+			"title": "This is the End",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240113_015224868.jpg",
+			"lon": 151.273989,
+			"lat": -33.494422,
+			"description": "From the top of Mount Wondabyne follow the trail down the other side."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240113_021105837.jpg",
+			"lon": 151.27588,
+			"lat": -33.489062000000004,
+			"description": "After descending from Mount Wondabyne follow the Great North Walk Sign right to Girakool."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240113_021511711.jpg",
+			"lon": 151.2778690000783,
+			"lat": -33.488921,
+			"description": "From the side of Mullet Creek Friretrail follow the Great North Walk sign left to Girakool."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240118_211423264.jpg",
+			"lon": 151.27895700000002,
+			"lat": -33.487689,
+			"description": "Follow the markers and trodden paths across the rocky sections of the Hawkesbury Track."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240118_212547462.jpg",
+			"lon": 151.27679600000002,
+			"lat": -33.484523,
+			"description": "From the intersection follow Tommo's Loop Firetrail to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240118_214602923.jpg",
+			"lon": 151.27162700000002,
+			"lat": -33.476774,
+			"description": "Where the Great North Walk splits off to the left, continue following Tommo's Loop Firetrail to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240118_220538274.jpg",
+			"lon": 151.283608,
+			"lat": -33.476371,
+			"description": "Follow Tommo's Loop Firetrail past the moon pool aboriginal engraving."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240118_221024497.jpg",
+			"lon": 151.286141,
+			"lat": -33.474684,
+			"description": "At the intersection follow MI9 Loop Firetrail to the left along the powerline poles."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240118_221355465.jpg",
+			"lon": 151.284848,
+			"lat": -33.472984000000004,
+			"description": "At the intersection follow the firetrail right to the rock quarry."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240118_221708017.jpg",
+			"lon": 151.28454,
+			"lat": -33.471421,
+			"description": "Follow the firetrail to the top of the rock quarry."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240118_221918225.jpg",
+			"lon": 151.28515,
+			"lat": -33.471749,
+			"description": "<i>1km</i> To visit Staples Lookout follow the trail right from the top of the quarry.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240118_222312521.jpg",
+			"lon": 151.287399,
+			"lat": -33.471314,
+			"description": "Follow the trail to the gate and carefully cross Woy Woy Rd into the lookout carpark.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240118_222512156.jpg",
+			"lon": 151.288369,
+			"lat": -33.471754000000004,
+			"description": "There is a monument and a picnic area at the lookout.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240118_223640007.jpg",
+			"lon": 151.287822,
+			"lat": -33.471316,
+			"description": "From the lookout retrace your steps back to the quarry.",
+			"optional": true
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240118_224344158.jpg",
+			"lon": 151.283773,
+			"lat": -33.471473,
+			"description": "From the top of the quarry follow the trail to the left along Woy Woy Rd Firetrail and the powerline poles."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240118_231258911.jpg",
+			"lon": 151.280963,
+			"lat": -33.461427,
+			"description": "Pass the gates and continue along Woy Woy Rd."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240118_231827286.jpg",
+			"lon": 151.282252,
+			"lat": -33.459716,
+			"description": "Pass the second gate and cross the intersection with Kariong Scout Camp Trail."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240118_232355080.jpg",
+			"lon": 151.284924,
+			"lat": -33.457039,
+			"description": "From the intersection continue straight on, then follow the sign left to Bulgandry."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240118_233136590.jpg",
+			"lon": 151.28432899999999,
+			"lat": -33.45604,
+			"description": "From the carpark follow the footpath to the Bulgandry Rock Engravings Site."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240118_233718257.jpg",
+			"lon": 151.286111,
+			"lat": -33.453871,
+			"description": "The trail ends at a boardwalk around the rock engravings."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240118_233915225.jpg",
+			"lon": 151.286073,
+			"lat": -33.453784000000006,
+			"description": "From the rock engravings follow the trail to the left (not back to the carpark)."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240118_234013291.jpg",
+			"lon": 151.286497,
+			"lat": -33.45414,
+			"description": "Cross the gate at intersection and follow Woy Woy Rd firetrail to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240118_234835724.jpg",
+			"lon": 151.288271,
+			"lat": -33.451607,
+			"description": "Follow Woy Woy Rd Firetrail along the powerline poles."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240118_235205217.jpg",
+			"lon": 151.289582,
+			"lat": -33.449619,
+			"description": "At the intersection follow Woy Woy Rd Firetrail to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240118_235438897.jpg",
+			"lon": 151.29072,
+			"lat": -33.44983899992342,
+			"description": "At the intersection follow Woy Woy Rd Firetrail to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240118_235632100.jpg",
+			"lon": 151.291414,
+			"lat": -33.450777,
+			"description": "Pass the gate and continue to the roadside."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240118_235804412.jpg",
+			"lon": 151.291277,
+			"lat": -33.451640000000005,
+			"description": "Cross Woy Woy Rd into the carpark on the other side."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240118_235831402.jpg",
+			"lon": 151.29131999999998,
+			"lat": -33.45192,
+			"description": "From the carpark pass the gate and follow Bambara Rd."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_001148326.jpg",
+			"lon": 151.30075300000001,
+			"lat": -33.454364000000005,
+			"description": "At the park sign follow the Hieroglyphic Trail to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_001649321.jpg",
+			"lon": 151.303198,
+			"lat": -33.45228,
+			"description": "Follow the Hieroglyphic Trail past the campground on the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_001839868.jpg",
+			"lon": 151.302917,
+			"lat": -33.451759,
+			"description": "<i>0.1km</i> Alternative climb the caves at the campground to visit the Gosford Glyphs.",
+			"optional": true
+		},
+		{
+			"type": "hotspot",
+			"photo": "200_pxl_20240119_001839868_img_20191110_073448.jpg",
+			"lon": 151.3026888811524,
+			"lat": -33.45139494829859,
+			"radius": 0.0004,
+			"description": "Visit this location to earn the mystery trophy",
+			"badge": "amphora",
+			"title": "But Why Though?",
+			"instruction": "Visit this location to earn the mystery trophy"
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_002538357.jpg",
+			"lon": 151.30675300000001,
+			"lat": -33.452551,
+			"description": "From the end of the Hieroglyphic Trail follow Corrumbine Creek Firetrail to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_003412832.jpg",
+			"lon": 151.305352,
+			"lat": -33.44881300008248,
+			"description": "Cross the creek and continue up the steep concrete trail on the other side."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_005110796.jpg",
+			"lon": 151.30843699993045,
+			"lat": -33.443298,
+			"description": "At the intersection with the concrete blocks, follow Milyerra Rd Fire Trail to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_011205418.jpg",
+			"lon": 151.321912,
+			"lat": -33.443540999999996,
+			"description": "At the split follow the trail to the left to a turning loop around a large tree."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_011306778.jpg",
+			"lon": 151.322363,
+			"lat": -33.443419999999996,
+			"description": "From the far side of the turning loop continue straight down the bush trail."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_011950298.jpg",
+			"lon": 151.324187,
+			"lat": -33.441033999999995,
+			"description": "Follow the trail past the makeshift mountain bike ramps."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_012141076.jpg",
+			"lon": 151.325299,
+			"lat": -33.440763,
+			"description": "Follow the trail across the rocky sections down the rough hewn steps."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_012241961.jpg",
+			"lon": 151.325573,
+			"lat": -33.440577999999995,
+			"description": "Follow the end of the trail to the trailhead to the right of the houses."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_012445600.jpg",
+			"lon": 151.32617199999999,
+			"lat": -33.440737999999996,
+			"description": "At the trailhead follow the steps down and continue down Penang St."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_013015309.jpg",
+			"lon": 151.32925699999998,
+			"lat": -33.440633,
+			"description": "At the end of Penang St follow Brisbane Water Dr to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_013228136.jpg",
+			"lon": 151.328642,
+			"lat": -33.439662,
+			"description": "Cross Brisbane Water Dr at the bus stop and continue to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_013349772.jpg",
+			"lon": 151.328292,
+			"lat": -33.439325999999994,
+			"description": "From the intersection follow Collard Rd to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_013453429.jpg",
+			"lon": 151.328351,
+			"lat": -33.438765,
+			"description": "From the intersection follow Welwyn Grove to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_013709647.jpg",
+			"lon": 151.3301330001149,
+			"lat": -33.438778,
+			"description": "From the corner of Welwyn Grove follow the shared path before the underpass to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_013959549.jpg",
+			"lon": 151.330345,
+			"lat": -33.437380999999995,
+			"description": "Follow the shared path along the mangroves and parkland."
+		},
+		{
+			"type": "toilet",
+			"photo": "200_pxl_20240119_015110277.jpg",
+			"lon": 151.323259,
+			"lat": -33.435841999999994,
+			"description": "There is a toilet block at the far end of the sports field at Fagan Park."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_015629726.jpg",
+			"lon": 151.322532,
+			"lat": -33.435033,
+			"description": "From the sports field continue along the shorefront path."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_020206091.jpg",
+			"lon": 151.31885499999999,
+			"lat": -33.433049,
+			"description": "Cross the bridge over Coorumbine Creek and continue along the path on the other side."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_020611069.jpg",
+			"lon": 151.318256,
+			"lat": -33.430782,
+			"description": "Follow the sign to Gosford to the right."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_020954325.jpg",
+			"lon": 151.32095999999999,
+			"lat": -33.430167,
+			"description": "From the end of the trail at Bunnings, follow Yallambee Ave to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_021317597.jpg",
+			"lon": 151.321551,
+			"lat": -33.428371999999996,
+			"description": "Cross Central Coast Hwy and continue to the right on the footpath."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_021438853.jpg",
+			"lon": 151.322317,
+			"lat": -33.428346999999995,
+			"description": "Cross the bridge over Narara Creek and continue along the footpath."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_023823891.jpg",
+			"lon": 151.326901,
+			"lat": -33.426994,
+			"description": "Cross Racecourse Rd at the traffic lights and continue following Central Coast Hwy straight ahead."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_024801797.jpg",
+			"lon": 151.333368,
+			"lat": -33.427609,
+			"description": "Before the overpass follow the off ramp to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_025131456.jpg",
+			"lon": 151.336072,
+			"lat": -33.42808300007841,
+			"description": "From the off ramp follow Pacific Hwy to the left."
+		},
+		{
+			"type": "waypoint",
+			"photo": "200_pxl_20240119_025745856.jpg",
+			"lon": 151.339664,
+			"lat": -33.42545,
+			"description": "Cross the road after the roundabout and continue straight on past the car park to the station entrance"
+		},
+		{
+			"location": "Gosford",
+			"type": "train",
+			"photo": "200_pxl_20240119_030251518.jpg",
+			"description": "Plan your return trip from Gosford at <a href=\"https://transportnsw.info/trip#/?from=Gosford\">transportnsw.info</a>.",
+			"lon": 151.3415736705,
+			"lat": -33.4236546233
+		}
+	]
+}
