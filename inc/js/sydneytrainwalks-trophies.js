@@ -132,7 +132,7 @@ export class Trophies {
 			.replace(/{icon}/g, marker.badge)
 			.replace(/{title}/g, marker.title)
 			.replace(/{background}/g, this.config.localUrl + `/small/${marker.key}/${marker.photo}`)
-			.replace(/{photo}/g, this.config.localUrl + `/medium/${marker.key}/${marker.photo}`)
+			.replace(/{photo}/g, this.config.remoteUrl + `/medium/${marker.key}/${marker.photo}`)
 			.replace(/{description}/g, `<p>${marker.description}</p>`);
 		// add the event handler to close the modal popup
 		var closer = container.querySelector('footer button');
