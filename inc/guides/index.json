@@ -91,14 +91,12 @@
 					"photo": "001_pxl_20240420_204942249.jpg",
 					"description": "Get the train to Bexley North using <a href=\"https://transportnsw.info/trip#/?to=Bexley North\">transportnsw.info</a>.",
 					"lon": 151.11357199028134,
-					"lat": -33.93764189444482,
-					"missing": true
+					"lat": -33.93764189444482
 				},
 				{
 					"location": "Tempe",
 					"type": "train",
 					"description": "Get the train to/from Tempe using <a href=\"https://transportnsw.info/trip#/?to=Tempe Station\">transportnsw.info</a>.",
-					"missing": true,
 					"lon": 151.156317,
 					"lat": -33.924517
 				},
@@ -107,7 +105,6 @@
 					"type": "train",
 					"photo": "002_pxl_20240425_033558307.jpg",
 					"description": "Get the train to/from Canterbury using <a href=\"https://transportnsw.info/trip#/?to=Canterbury Station\">transportnsw.info</a>.",
-					"missing": true,
 					"lon": 151.117997,
 					"lat": -33.911749
 				},
@@ -116,7 +113,6 @@
 					"type": "train",
 					"photo": "004_pxl_20240425_054915853.jpg",
 					"description": "Plan your return trip from Cronulla at <a href=\"https://transportnsw.info/trip#/?from=Cronulla\">transportnsw.info</a>.",
-					"missing": true,
 					"lon": 151.0697962436825,
 					"lat": -33.864821176975965
 				}
@@ -1714,13 +1710,13 @@
 		{
 			"key": "tuggerah-wyrrabalong-wyong",
 			"type": "walk",
-			"lon": 151.5382833593,
-			"lat": -33.2906253543,
+			"lon": 151.5357868094,
+			"lat": -33.2922710571,
 			"locations": [
 				{
 					"location": "Tuggerah",
 					"type": "train",
-					"photo": "pxl_20231226_194102963.jpg",
+					"photo": "100_pxl_20231226_194102963.jpg",
 					"description": "Get the train to Tuggerah using <a href=\"https://transportnsw.info/trip#/?to=Tuggerah\">transportnsw.info</a>.",
 					"lon": 151.420023,
 					"lat": -33.3079
@@ -1736,14 +1732,14 @@
 					"location": "Rocky Point",
 					"type": "bus",
 					"description": "Get the bus from Rocky Point using <a href=\"https://transportnsw.info/trip#/?to=Wolseley Ave at Colblack Cl\">transportnsw.info</a>.",
-					"photo": "pxl_20231227_050308943.jpg",
+					"photo": "700_pxl_20231227_050308943.jpg",
 					"lon": 151.469398,
 					"lat": -33.291748999999996
 				},
 				{
 					"location": "Wyong",
 					"type": "train",
-					"photo": "pxl_20231227_061501589.jpg",
+					"photo": "700_pxl_20231227_061501589.jpg",
 					"description": "Plan your return trip from Wyong at <a href=\"https://transportnsw.info/trip#/?from=Wyong\">transportnsw.info</a>.",
 					"lon": 151.425499,
 					"lat": -33.285622

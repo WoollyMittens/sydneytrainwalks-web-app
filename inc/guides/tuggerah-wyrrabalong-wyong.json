@@ -1,7 +1,7 @@
 {
 	"location": "Lake Tuggerah",
-	"lon": 151.5382833593,
-	"lat": -33.2906253543,
+	"lon": 151.5357868094,
+	"lat": -33.2922710571,
 	"description": "Almost a full loop around the lake is possible on shared bike paths including the Tuggerah Lakes Cycleway, and several kilometers of bush trails through Wyrrabalong National Park.",
 	"keywords": {
 		"Tuggerah Lakes Cycleway": "https://www.nsw.gov.au/visiting-and-exploring-nsw/locations-and-attractions/tuggerah-lakes-cycleway",
@@ -28,140 +28,140 @@
 		{
 			"location": "Tuggerah",
 			"type": "train",
-			"photo": "pxl_20231226_194102963.jpg",
+			"photo": "100_pxl_20231226_194102963.jpg",
 			"description": "Get the train to Tuggerah using <a href=\"https://transportnsw.info/trip#/?to=Tuggerah\">transportnsw.info</a>.",
 			"lon": 151.420023,
 			"lat": -33.3079
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_194352965.jpg",
+			"photo": "100_pxl_20231226_194352965.jpg",
 			"lon": 151.421316,
 			"lat": -33.30761300006746,
 			"description": "Exit the station on the carpark side and follow Bryant Dr."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_194511066.jpg",
+			"photo": "100_pxl_20231226_194511066.jpg",
 			"lon": 151.42254499999999,
 			"lat": -33.307809,
 			"description": "Follow Bryant Dr right around the corner."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_195157671.jpg",
+			"photo": "100_pxl_20231226_195157671.jpg",
 			"lon": 151.422215,
 			"lat": -33.312771999999995,
 			"description": "Cross Wyong Rd at the pedestrian crossing to the left of the roundabout."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_195612408.jpg",
+			"photo": "100_pxl_20231226_195612408.jpg",
 			"lon": 151.42345999999998,
 			"lat": -33.315414999999994,
 			"description": "After crossing follow the footpath along Wyong Rd to the left."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_201055065.jpg",
+			"photo": "100_pxl_20231226_201055065.jpg",
 			"lon": 151.42782099988986,
 			"lat": -33.326035000000005,
 			"description": "After the bridge over Ourimbah Creek cross Wyong Road into the park on the other side."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_201115490.jpg",
+			"photo": "100_pxl_20231226_201115490.jpg",
 			"lon": 151.42800599999998,
 			"lat": -33.326031,
 			"description": "Follow the footpath through the park to the shops."
 		},
 		{
 			"type": "kiosk",
-			"photo": "pxl_20231226_201208978.jpg",
+			"photo": "100_pxl_20231226_201208978.jpg",
 			"lon": 151.42856299992079,
 			"lat": -33.32620300000001,
 			"description": "There are amenities a the shopping centre."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_202433891.jpg",
+			"photo": "100_pxl_20231226_202433891.jpg",
 			"lon": 151.429745,
 			"lat": -33.326861,
 			"description": "From the shopping centre carpark cross Chittaway Rd at the roundabout and follow James Watt Dr straight on."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_202838745.jpg",
+			"photo": "100_pxl_20231226_202838745.jpg",
 			"lon": 151.432872,
 			"lat": -33.327665,
 			"description": "Follow the Chittaway Wetland Walk to the left. "
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_203854685.jpg",
+			"photo": "100_pxl_20231226_203854685.jpg",
 			"lon": 151.44140300007732,
 			"lat": -33.328594,
 			"description": "Cross Lakedge Ave and follow the footpath into Chittaway Bay Lions Park to the playground."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_204217456.jpg",
+			"photo": "100_pxl_20231226_204217456.jpg",
 			"lon": 151.441184,
 			"lat": -33.330467000000006,
 			"description": "From the playground follow the shared path along the foreshore."
 		},
 		{
 			"type": "toilet",
-			"photo": "pxl_20231226_205457205.jpg",
+			"photo": "100_pxl_20231226_205457205.jpg",
 			"lon": 151.438729,
 			"lat": -33.339084,
 			"description": "There are toilets at the Bluebell Park and amenities across the road."
 		},
 		{
 			"type": "kiosk",
-			"photo": "pxl_20231226_210525885.jpg",
+			"photo": "100_pxl_20231226_210525885.jpg",
 			"lon": 151.440757,
 			"lat": -33.34613,
 			"description": "There is a cafe along the road."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_211922561.jpg",
+			"photo": "100_pxl_20231226_211922561.jpg",
 			"lon": 151.44843,
 			"lat": -33.354377,
 			"description": "Cross Azads Footpath Bridge to the left."
 		},
 		{
 			"type": "toilet",
-			"photo": "pxl_20231226_213437438.jpg",
+			"photo": "100_pxl_20231226_213437438.jpg",
 			"lon": 151.45922,
 			"lat": -33.361233,
 			"description": "There is a toilet block at the Killarney Vale Foreshore."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_215550592.jpg",
+			"photo": "100_pxl_20231226_215550592.jpg",
 			"lon": 151.47333,
 			"lat": -33.365492,
 			"description": "Cross the bridge over Saltwater Creek."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_215833740.jpg",
+			"photo": "100_pxl_20231226_215833740.jpg",
 			"lon": 151.475548,
 			"lat": -33.36479,
 			"description": "From the bridge follow the footpath past the boatramp."
 		},
 		{
 			"type": "toilet",
-			"photo": "pxl_20231226_220407694.jpg",
+			"photo": "100_pxl_20231226_220407694.jpg",
 			"lon": 151.478494,
 			"lat": -33.361509,
 			"description": "There is a toilet block near Parry's Jetty."
 		},
 		{
 			"type": "hotspot",
-			"photo": "pxl_20231226_220504118.jpg",
+			"photo": "100_pxl_20231226_220504118.jpg",
 			"lon": 151.4789173198756,
 			"lat": -33.36094015282082,
 			"radius": 0.0004,
@@ -172,21 +172,21 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_220514598.jpg",
+			"photo": "100_pxl_20231226_220514598.jpg",
 			"lon": 151.478952,
 			"lat": -33.361018,
 			"description": "Continue along the foreshore footpath from Parry's Jetty."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_221233453.jpg",
+			"photo": "100_pxl_20231226_221233453.jpg",
 			"lon": 151.482604,
 			"lat": -33.357745,
 			"description": "Continue along the foreshore footpath from Watkin's Jetty."
 		},
 		{
 			"type": "hotspot",
-			"photo": "pxl_20231226_221257870.jpg",
+			"photo": "100_pxl_20231226_221257870.jpg",
 			"lon": 151.4825805048008,
 			"lat": -33.35771585379955,
 			"radius": 0.0004,
@@ -197,14 +197,14 @@
 		},
 		{
 			"type": "toilet",
-			"photo": "pxl_20231226_222219019.jpg",
+			"photo": "100_pxl_20231226_222219019.jpg",
 			"lon": 151.48600399999998,
 			"lat": -33.3534,
 			"description": "There is a toilet block at Long Jetty."
 		},
 		{
 			"type": "hotspot",
-			"photo": "pxl_20231226_222335154.jpg",
+			"photo": "100_pxl_20231226_222335154.jpg",
 			"lon": 151.4862488865436,
 			"lat": -33.35284070246215,
 			"radius": 0.0004,
@@ -215,49 +215,49 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_222345071.jpg",
+			"photo": "100_pxl_20231226_222345071.jpg",
 			"lon": 151.48618599999998,
 			"lat": -33.352802000000004,
 			"description": "Continue along the foreshore footpath from Long Jetty."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_223733417.jpg",
+			"photo": "100_pxl_20231226_223733417.jpg",
 			"lon": 151.490774,
 			"lat": -33.344358,
 			"description": "Follow the sign to Picnic Point to the left."
 		},
 		{
 			"type": "toilet",
-			"photo": "pxl_20231226_224718147.jpg",
+			"photo": "100_pxl_20231226_224718147.jpg",
 			"lon": 151.49345799999998,
 			"lat": -33.338305000000005,
 			"description": "There is a toilet block at Picnic Point."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_224915223.jpg",
+			"photo": "100_pxl_20231226_224915223.jpg",
 			"lon": 151.49457699992863,
 			"lat": -33.337301000000004,
 			"description": "From Picnic Point follow the footpath right along the foreshore towards the bridge."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_225525156.jpg",
+			"photo": "100_pxl_20231226_225525156.jpg",
 			"lon": 151.49855499999998,
 			"lat": -33.338827,
 			"description": "Follow the footpath under the bridge."
 		},
 		{
 			"type": "toilet",
-			"photo": "pxl_20231226_225601547.jpg",
+			"photo": "100_pxl_20231226_225601547.jpg",
 			"lon": 151.498559,
 			"lat": -33.338939,
 			"description": "There are public toilets right after the bridge."
 		},
 		{
 			"type": "kiosk",
-			"photo": "pxl_20231226_230000458.jpg",
+			"photo": "100_pxl_20231226_230000458.jpg",
 			"lon": 151.498743,
 			"lat": -33.339893000000004,
 			"description": "There are amenities along The Entrance foreshore."
@@ -271,98 +271,98 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_231140962.jpg",
+			"photo": "100_pxl_20231226_231140962.jpg",
 			"lon": 151.498629,
 			"lat": -33.339323,
 			"description": "From the roundabout at the bridge follow the onramp onto the bridge."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_231407254.jpg",
+			"photo": "100_pxl_20231226_231407254.jpg",
 			"lon": 151.49958100009823,
 			"lat": -33.338228,
 			"description": "Cross Tuggerah Entrance over the bridge."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_231836074.jpg",
+			"photo": "100_pxl_20231226_231836074.jpg",
 			"lon": 151.502499,
 			"lat": -33.336008,
 			"description": "On the other side of the bridge cross Wilfred Barrett Drive and follow the footpath into Terilbah Reserve."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_233051904.jpg",
+			"photo": "100_pxl_20231226_233051904.jpg",
 			"lon": 151.502671,
 			"lat": -33.327873000000004,
 			"description": "Follow the foreshore footpath to the Sensory Garden and then the boat ramp."
 		},
 		{
 			"type": "toilet",
-			"photo": "pxl_20231226_233303171.jpg",
+			"photo": "100_pxl_20231226_233303171.jpg",
 			"lon": 151.503334,
 			"lat": -33.327285,
 			"description": "There is a toilet block at the carpark."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_233414322.jpg",
+			"photo": "100_pxl_20231226_233414322.jpg",
 			"lon": 151.504193,
 			"lat": -33.326944000000005,
 			"description": "Cross the carpark access road and follow the foreshore footpath to the right."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_233831943.jpg",
+			"photo": "100_pxl_20231226_233831943.jpg",
 			"lon": 151.50663,
 			"lat": -33.327078,
 			"description": "At the intersection follow the Magenta Bike Path to the left."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_234404079.jpg",
+			"photo": "100_pxl_20231226_234404079.jpg",
 			"lon": 151.511222,
 			"lat": -33.326057000000006,
 			"description": "Cross the intersection and continue on the Magnta Bike Path."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231226_235613064.jpg",
+			"photo": "100_pxl_20231226_235613064.jpg",
 			"lon": 151.515845,
 			"lat": -33.318969,
 			"description": "Follow the bikepath though the bushland reserve."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_001336995.jpg",
+			"photo": "300_pxl_20231227_001336995.jpg",
 			"lon": 151.52122400000002,
 			"lat": -33.307438999999995,
 			"description": "Follow the bike path along the Central Coast Hwy."
 		},
 		{
 			"type": "warning",
-			"photo": "pxl_20231227_002753451.jpg",
+			"photo": "300_pxl_20231227_002753451.jpg",
 			"lon": 151.53152500000002,
 			"lat": -33.301337,
 			"description": "There may be detours along the Central Coast Hwy for unfinished sections of the bike path."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_002923201.jpg",
-			"lon": 151.53267000000002,
-			"lat": -33.300793,
-			"description": "From the carpark follow the Lilly Pilly Loop Trail away from the highway into Wyrrabalong National Park."
+			"photo": "300_pxl_20231227_002945228.jpg",
+			"description": "From the carpark follow the Lilly Pilly Loop Trail away from the highway into Wyrrabalong National Park.",
+			"lon": 151.53294299987962,
+			"lat": -33.30061
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_003856842.jpg",
+			"photo": "300_pxl_20231227_003856842.jpg",
 			"lon": 151.52957500000002,
 			"lat": -33.297284999999995,
 			"description": "Follow the Lilly Pilly Loop Trail through the rainforest section of the park."
 		},
 		{
 			"type": "hotspot",
-			"photo": "pxl_20231227_003938122.jpg",
+			"photo": "300_pxl_20231227_003938122.jpg",
 			"lon": 151.52941900000002,
 			"lat": -33.297058,
 			"radius": 0.0004,
@@ -373,28 +373,28 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_004452631.jpg",
+			"photo": "300_pxl_20231227_004452631.jpg",
 			"lon": 151.5284130000768,
 			"lat": -33.295418,
 			"description": "At the shorefront follow the Lilly Pilly Loop trail to the right."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_005440986.jpg",
+			"photo": "300_pxl_20231227_005440986.jpg",
 			"lon": 151.53314400000002,
 			"lat": -33.293113999999996,
 			"description": "From the shorefront the trail ascends to the dune tops."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_010646058.jpg",
-			"lon": 151.537198,
-			"lat": -33.292228,
-			"description": "At the intersection continue straight along the Redgum Trail."
+			"photo": "400_pxl_20240831_014757167.jpg",
+			"description": "At the intersection continue straight along the Redgum Trail.",
+			"lon": 151.537477,
+			"lat": -33.29219
 		},
 		{
 			"type": "hotspot",
-			"photo": "pxl_20231227_013111730.jpg",
+			"photo": "500_pxl_20231227_013111730.jpg",
 			"lon": 151.545152,
 			"lat": -33.288157,
 			"radius": 0.0004,
@@ -405,14 +405,14 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_014517567.jpg",
-			"lon": 151.54944699989778,
-			"lat": -33.285981,
-			"description": "From the intersection follow the Wetlands Trail to the left."
+			"photo": "600_pxl_20240831_022309754.jpg",
+			"description": "From the intersection follow the Wetlands Trail to the left.",
+			"lon": 151.547166,
+			"lat": -33.289741
 		},
 		{
 			"type": "hotspot",
-			"photo": "pxl_20231227_014732246.jpg",
+			"photo": "700_pxl_20231227_014732246.jpg",
 			"lon": 151.549455,
 			"lat": -33.285092999999996,
 			"radius": 0.0004,
@@ -423,105 +423,105 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_015144385.jpg",
+			"photo": "700_pxl_20231227_015144385.jpg",
 			"lon": 151.550755,
 			"lat": -33.283128,
 			"description": "From the end of the Wetlands Trail continue straight along Evans Rd past the tourist parks."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_020403970.jpg",
+			"photo": "700_pxl_20231227_020403970.jpg",
 			"lon": 151.54977699987035,
 			"lat": -33.274977,
 			"description": "At the intersection after the tourist parks follow Oleander St to the left."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_020559729.jpg",
+			"photo": "700_pxl_20231227_020559729.jpg",
 			"lon": 151.548396,
 			"lat": -33.274752,
 			"description": "At the intersection follow Wattle St to the right."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_020819077.jpg",
+			"photo": "700_pxl_20231227_020819077.jpg",
 			"lon": 151.54782099988986,
 			"lat": -33.2734,
 			"description": "Cross the reserve and follow Belbowrie St to the left."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_022007461.jpg",
+			"photo": "700_pxl_20231227_022007461.jpg",
 			"lon": 151.544408,
 			"lat": -33.271972,
 			"description": "From the corner of Belbowrie St follow the footpath right along Canton Beach Foreshore."
 		},
 		{
 			"type": "toilet",
-			"photo": "pxl_20231227_022208622.jpg",
+			"photo": "700_pxl_20231227_022208622.jpg",
 			"lon": 151.543449,
 			"lat": -33.271309,
 			"description": "There is a toilet block at Canton Beach Foreshore."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_022817075.jpg",
+			"photo": "700_pxl_20231227_022817075.jpg",
 			"lon": 151.540426,
 			"lat": -33.268231,
 			"description": "From the roundabout at the end of the foreshore path follow Moss Ave to the left."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_022951605.jpg",
+			"photo": "700_pxl_20231227_022951605.jpg",
 			"lon": 151.539542,
 			"lat": -33.267383,
 			"description": "Follow Pearce Ave to the right to the community centre."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_023217726.jpg",
+			"photo": "700_pxl_20231227_023217726.jpg",
 			"lon": 151.539491,
 			"lat": -33.265848,
 			"description": "From the community centre cross the carpark to the shops."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_023259970.jpg",
+			"photo": "700_pxl_20231227_023259970.jpg",
 			"lon": 151.539328,
 			"lat": -33.265438,
 			"description": "From the shops cross the carpark to the exit on the left."
 		},
 		{
 			"type": "kiosk",
-			"photo": "pxl_20231227_023950396.jpg",
+			"photo": "700_pxl_20231227_023950396.jpg",
 			"lon": 151.539894,
 			"lat": -33.26437299992558,
 			"description": "There are amenities at Toukley Village."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_024122738.jpg",
+			"photo": "700_pxl_20231227_024122738.jpg",
 			"lon": 151.539017,
 			"lat": -33.264136,
 			"description": "From the carpark exist follow Yaralla Rd to the right."
 		},
 		{
 			"type": "toilet",
-			"photo": "pxl_20231227_024406097.jpg",
+			"photo": "700_pxl_20231227_024406097.jpg",
 			"lon": 151.537586,
 			"lat": -33.263404,
 			"description": "At the intersection follow Main Rd to the left. There is a toilet block in Toukley Gardens across the road."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_030321148.jpg",
+			"photo": "700_pxl_20231227_030321148.jpg",
 			"lon": 151.52185200000002,
 			"lat": -33.26287700008939,
 			"description": "Follow the footpath across the Toukley Bridge."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_030710396.jpg",
+			"photo": "700_pxl_20231227_030710396.jpg",
 			"lon": 151.51920900000002,
 			"lat": -33.261923,
 			"description": "Cross Toukley Bridge and continue straight along Wallarah Rd."
@@ -534,63 +534,63 @@
 		},
 		{
 			"type": "kiosk",
-			"photo": "pxl_20231227_032054392.jpg",
+			"photo": "700_pxl_20231227_032054392.jpg",
 			"lon": 151.512787,
 			"lat": -33.258579,
 			"description": "There are amenities at the Gorokan shops."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_032339372.jpg",
+			"photo": "700_pxl_20231227_032339372.jpg",
 			"lon": 151.5107470000916,
 			"lat": -33.257675,
 			"description": "After the shops follow Lakeview Ave to the left."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_032616758.jpg",
+			"photo": "700_pxl_20231227_032616758.jpg",
 			"lon": 151.510061,
 			"lat": -33.259223,
 			"description": "At the intersection follow Lett St to the right."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_033002810.jpg",
+			"photo": "700_pxl_20231227_033002810.jpg",
 			"lon": 151.507386,
 			"lat": -33.259996,
 			"description": "At the intersection follow Leichhardt Rd to the left."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_033242720.jpg",
+			"photo": "700_pxl_20231227_033242720.jpg",
 			"lon": 151.506747,
 			"lat": -33.261081,
 			"description": "Cross through the reserve on the right side of Brennon St."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_033508251.jpg",
+			"photo": "700_pxl_20231227_033508251.jpg",
 			"lon": 151.506113,
 			"lat": -33.261625,
 			"description": "From the reserve continue straight along Marks Rd. "
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_035205311.jpg",
+			"photo": "700_pxl_20231227_035205311.jpg",
 			"lon": 151.494814,
 			"lat": -33.262938,
 			"description": "Follow the footpath into Craigie Park to the left."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_035228130.jpg",
+			"photo": "700_pxl_20231227_035228130.jpg",
 			"lon": 151.4948,
 			"lat": -33.262942,
 			"description": "Cross the bridge into Craigie Park."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_035338568.jpg",
+			"photo": "700_pxl_20231227_035338568.jpg",
 			"lon": 151.494757,
 			"lat": -33.262952,
 			"description": "Follow the footpath through Craigie Park."
@@ -603,49 +603,49 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_040110495.jpg",
+			"photo": "700_pxl_20231227_040110495.jpg",
 			"lon": 151.49254499999998,
 			"lat": -33.264408,
 			"description": "From the carpark follow Tuggerawong Rd to the left."
 		},
 		{
 			"type": "kiosk",
-			"photo": "pxl_20231227_041629106.jpg",
+			"photo": "700_pxl_20231227_041629106.jpg",
 			"lon": 151.49048699999997,
 			"lat": -33.274964,
 			"description": "There are amenities at the Wyongah Takeout."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_041859276.jpg",
+			"photo": "700_pxl_20231227_041859276.jpg",
 			"lon": 151.48920099999998,
 			"lat": -33.275925,
 			"description": "Follow Prawn Beach Ln to the left."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_041950957.jpg",
+			"photo": "700_pxl_20231227_041950957.jpg",
 			"lon": 151.489073,
 			"lat": -33.276431,
 			"description": "From the end of Prawn Beach Ln follow the Tuggerawong Shared Pathway to the right."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_044656296.jpg",
+			"photo": "700_pxl_20231227_044656296.jpg",
 			"lon": 151.473865,
 			"lat": -33.283919999999995,
 			"description": "Follow the Tuggerawong Shared Pathway along the foreshore."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_050050924.jpg",
+			"photo": "700_pxl_20231227_050050924.jpg",
 			"lon": 151.470692,
 			"lat": -33.292294,
 			"description": "From the end of the Tuggerawong Shared Pathway follow Palmet St to the right."
 		},
 		{
 			"type": "warning",
-			"photo": "pxl_20231227_050221529.jpg",
+			"photo": "700_pxl_20231227_050221529.jpg",
 			"lon": 151.469914,
 			"lat": -33.29167900007363,
 			"description": "From the intersection follow Wolseley Ave to the left. Take the bus here if the lack of footpaths onwards is a concern."
@@ -654,55 +654,55 @@
 			"location": "Rocky Point",
 			"type": "bus",
 			"description": "Get the bus from Rocky Point using <a href=\"https://transportnsw.info/trip#/?to=Wolseley Ave at Colblack Cl\">transportnsw.info</a>.",
-			"photo": "pxl_20231227_050308943.jpg",
+			"photo": "700_pxl_20231227_050308943.jpg",
 			"lon": 151.469398,
 			"lat": -33.291748999999996
 		},
 		{
 			"type": "toilet",
-			"photo": "pxl_20231227_051142890.jpg",
+			"photo": "700_pxl_20231227_051142890.jpg",
 			"lon": 151.46325299999998,
 			"lat": -33.294474,
 			"description": "Follow the shoulder of Wolseley Ave to the riverside. There is a toilet block at the corner."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_054555998.jpg",
+			"photo": "700_pxl_20231227_054555998.jpg",
 			"lon": 151.446012,
 			"lat": -33.290116999999995,
 			"description": "From the corner of Wolseley Ave follow the shoulder of the road to the right."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_055633511.jpg",
+			"photo": "700_pxl_20231227_055633511.jpg",
 			"lon": 151.437146,
 			"lat": -33.291759,
 			"description": "At the intersection follow McDonagh Rd to the right."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_055937873.jpg",
+			"photo": "700_pxl_20231227_055937873.jpg",
 			"lon": 151.435266,
 			"lat": -33.290579,
 			"description": "From the intersection with Panonia Rd continue straight on Boyce Ave."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_060502154.jpg",
+			"photo": "700_pxl_20231227_060502154.jpg",
 			"lon": 151.432275,
 			"lat": -33.287842999999995,
 			"description": "From the intersection with Warner Ave continue following Boyce Ave to the left."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_060733814.jpg",
+			"photo": "700_pxl_20231227_060733814.jpg",
 			"lon": 151.43055999999999,
 			"lat": -33.287351,
 			"description": "Follow the footpath along Boyce Ave past the sports fields."
 		},
 		{
 			"type": "waypoint",
-			"photo": "pxl_20231227_061320315.jpg",
+			"photo": "700_pxl_20231227_061320315.jpg",
 			"lon": 151.4257069999221,
 			"lat": -33.286623,
 			"description": "At the intersection cross Howarth St and follow the carpark right to the station."
@@ -710,7 +710,7 @@
 		{
 			"location": "Wyong",
 			"type": "train",
-			"photo": "pxl_20231227_061501589.jpg",
+			"photo": "700_pxl_20231227_061501589.jpg",
 			"description": "Plan your return trip from Wyong at <a href=\"https://transportnsw.info/trip#/?from=Wyong\">transportnsw.info</a>.",
 			"lon": 151.425499,
 			"lat": -33.285622

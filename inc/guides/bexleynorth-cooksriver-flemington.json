@@ -31,8 +31,7 @@
 			"photo": "001_pxl_20240420_204942249.jpg",
 			"description": "Get the train to Bexley North using <a href=\"https://transportnsw.info/trip#/?to=Bexley North\">transportnsw.info</a>.",
 			"lon": 151.11357199028134,
-			"lat": -33.93764189444482,
-			"missing": true
+			"lat": -33.93764189444482
 		},
 		{
 			"type": "waypoint",
@@ -203,7 +202,6 @@
 			"location": "Tempe",
 			"type": "train",
 			"description": "Get the train to/from Tempe using <a href=\"https://transportnsw.info/trip#/?to=Tempe Station\">transportnsw.info</a>.",
-			"missing": true,
 			"lon": 151.156317,
 			"lat": -33.924517
 		},
@@ -276,7 +274,6 @@
 			"type": "train",
 			"photo": "002_pxl_20240425_033558307.jpg",
 			"description": "Get the train to/from Canterbury using <a href=\"https://transportnsw.info/trip#/?to=Canterbury Station\">transportnsw.info</a>.",
-			"missing": true,
 			"lon": 151.117997,
 			"lat": -33.911749
 		},
@@ -490,7 +487,6 @@
 			"type": "train",
 			"photo": "004_pxl_20240425_054915853.jpg",
 			"description": "Plan your return trip from Cronulla at <a href=\"https://transportnsw.info/trip#/?from=Cronulla\">transportnsw.info</a>.",
-			"missing": true,
 			"lon": 151.0697962436825,
 			"lat": -33.864821176975965
 		}
