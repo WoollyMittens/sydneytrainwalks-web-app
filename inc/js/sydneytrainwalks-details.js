@@ -46,16 +46,18 @@ export class Details {
 		const end = guide.markers[guide.markers.length - 1].location;
 		const title = `A bushwalk from ${start} to ${end} via ${guide.location} - Sydney Hiking Trips`;
 		const url = `./?key=${guide.key}`;
+		const hero = `${this.config.remoteUrl}/medium/${guide.key}/${guide.hero}`;
+		const canonical = `${this.config.rootDomain}?key=${guide.key}`;
 		// update the route without refreshing
 		window.history.pushState({'key': guide.key}, title, url);
 		// update the meta elements
 		document.querySelector('title').innerHTML = title;
 		document.querySelector('meta[name="description"]')?.setAttribute('content', guide.description);
-		document.querySelector('meta[property="og:url"]')?.setAttribute('content', this.config.remoteUrl + url);
-		document.querySelector('meta[property="og:image"]')?.setAttribute('content', this.config.remoteUrl + `/medium/${guide.key}/${guide.hero}`);
+		document.querySelector('meta[property="og:url"]')?.setAttribute('content', canonical);
+		document.querySelector('meta[property="og:image"]')?.setAttribute('content', hero);
 		document.querySelector('meta[property="og:title"]')?.setAttribute('content', title);
 		document.querySelector('meta[property="og:description"]')?.setAttribute('content', guide.description);
-		document.querySelector('link[rel="canonical"]')?.setAttribute('href', this.config.remoteUrl + url);
+		document.querySelector('link[rel="canonical"]')?.setAttribute('href', canonical);
 	}
 
 	updateTitle(guide) {
