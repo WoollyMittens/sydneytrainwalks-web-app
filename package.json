@@ -32,10 +32,11 @@
     "import_guides": "cd node_scripts && node importguides.mjs && cd ..",
     "import_tiles": "cd node_scripts && node importtiles.mjs && cd ..",
     "convert_tiles": "cd node_scripts && node converttiles.mjs && cd ..",
+    "generate_sitemap": "cd node_scripts && node generatesitemap.mjs && cd ..",
     "styles_dev": "sass ./src/scss/styles.scss ./inc/css/styles.css --style expanded --update",
     "styles_prod": "sass ./src/scss/styles.scss ./inc/css/styles.css --style compressed",
     "styles_watch": "sass --watch ./src/scss:./inc/css --style expanded",
-    "import": "npm run import_gpx && npm run import_photos && npm run import_exif && npm run import_guides && npm run import_tiles && npm run convert_tiles",
+    "import": "npm run import_gpx && npm run import_photos && npm run import_exif && npm run import_guides && npm run import_tiles && npm run convert_tiles && npm run generate_sitemap",
     "build": "npm run import && styles_prod",
     "watch": "npm-watch"
   },
