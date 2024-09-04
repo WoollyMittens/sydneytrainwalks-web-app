@@ -36,14 +36,14 @@
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240224_190844993.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the station exit follow Railway St left past the bus stops to the pedestrian crossing.",
 			"lon": 151.323997,
 			"lat": -33.485542
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240224_190944033.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross Brisbane Water Dr and continue left past past the pub.",
 			"lon": 151.324441,
 			"lat": -33.484765
 		},
@@ -57,7 +57,7 @@
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240224_191129030.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the Boulevarde and continue straight along Brisbane Water Dr on the shared path.",
 			"lon": 151.324742,
 			"lat": -33.483473000000004
 		},
@@ -89,14 +89,14 @@
 		{
 			"type": "waypoint",
 			"photo": "001_pxl_20240224_191946819.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross Spike Milligan Bridge and continue on the shaed path along Brisbane Water Dr.",
 			"lon": 151.324136,
 			"lat": -33.477255
 		},
 		{
 			"type": "waypoint",
 			"photo": "002_img_20200530_143056.jpg",
-			"description": "<i>-1h</i>Lorem ipsum dolor sit amet.",
+			"description": "<i>-1h</i>To avoid climbing the steep hill, keep following the shared path along Brisbane Water Dr.",
 			"optional": true,
 			"lon": 151.32407,
 			"lat": -33.475078
@@ -112,7 +112,7 @@
 		{
 			"type": "waypoint",
 			"photo": "002_img_20200530_143636.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the directions along the waterfront path to Gosford.",
 			"optional": true,
 			"lon": 151.321153,
 			"lat": -33.471919
@@ -128,7 +128,7 @@
 		{
 			"type": "toilet",
 			"photo": "002_img_20200530_145433.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There is a toilet block in Koolewong Waterfront Reserve after the boat ramp.",
 			"optional": true,
 			"lon": 151.31339,
 			"lat": -33.460514
@@ -144,7 +144,7 @@
 		{
 			"type": "waypoint",
 			"photo": "002_img_20200530_151051.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From Tascott Station keep following the shared path along Brisbane Water Dr.",
 			"optional": true,
 			"lon": 151.320471,
 			"lat": -33.450471
@@ -152,7 +152,7 @@
 		{
 			"type": "waypoint",
 			"photo": "002_img_20200530_151620.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the bus stop follow the shared path to the right down the ramp.",
 			"optional": true,
 			"lon": 151.325439,
 			"lat": -33.449617999999994
@@ -160,7 +160,7 @@
 		{
 			"type": "waypoint",
 			"photo": "002_img_20200530_151759.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the shared path along the fence line. ",
 			"optional": true,
 			"lon": 151.326797,
 			"lat": -33.449127
@@ -168,7 +168,7 @@
 		{
 			"type": "waypoint",
 			"photo": "002_img_20200530_151922.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the end of the path follow Kurrawa Ave straight on.",
 			"optional": true,
 			"lon": 151.32755799999998,
 			"lat": -33.448265
@@ -184,7 +184,7 @@
 		{
 			"type": "waypoint",
 			"photo": "002_img_20200530_152930.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After the station follow Kurrawa Ave along the railway line to Goodayway Reserve.",
 			"optional": true,
 			"lon": 151.330598,
 			"lat": -33.440864
@@ -192,7 +192,7 @@
 		{
 			"type": "waypoint",
 			"photo": "002_img_20200530_153008.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the carpark follow the steps up into the picnic area.",
 			"optional": true,
 			"lon": 151.330794,
 			"lat": -33.440425999999995
@@ -200,7 +200,7 @@
 		{
 			"type": "toilet",
 			"photo": "002_img_20200530_153054.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There is a toilet block at the far end of the picnic area.",
 			"optional": true,
 			"lon": 151.330873,
 			"lat": -33.440062999999995
@@ -208,7 +208,7 @@
 		{
 			"type": "waypoint",
 			"photo": "002_img_20200530_153540.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After the picnic area follow the tunnel under the railway to the left.",
 			"optional": true,
 			"lon": 151.331074,
 			"lat": -33.438978
@@ -216,7 +216,8 @@
 		{
 			"type": "waypoint",
 			"photo": "003_pxl_20240224_192108733.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the tunnel under the railway follow the shared bike path to Gosford.",
+			"optional": true,
 			"lon": 151.32408100006813,
 			"lat": -33.476272
 		},
