@@ -134,7 +134,7 @@ export class Overview {
 		document.querySelector('title').innerHTML = title;
 		document.querySelector('meta[name="description"]')?.setAttribute('content', description);
 		document.querySelector('meta[property="og:url"]')?.setAttribute('content', this.config.remoteUrl + '/?screen=overview');
-		document.querySelector('meta[property="og:image"]')?.setAttribute('content', this.config.remoteUrl + `/inc/img/favicon.png`);
+		document.querySelector('meta[property="og:image"]')?.setAttribute('content', this.config.remoteUrl + `/img/splash.jpg`);
 		document.querySelector('meta[property="og:title"]')?.setAttribute('content', title);
 		document.querySelector('meta[property="og:description"]')?.setAttribute('content', description);
 		document.querySelector('link[rel="canonical"]')?.setAttribute('href', this.config.remoteUrl + '/?screen=overview');
