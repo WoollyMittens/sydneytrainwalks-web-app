@@ -79,6 +79,7 @@ ul {
 
 a {
 	color: #0D47A1;
+	overflow-wrap: anywhere;
 
 	[data-color-scheme="light"] & {
 		color: #0D47A1;
