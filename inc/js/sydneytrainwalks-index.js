@@ -63,16 +63,17 @@ export class Index {
 		const title = `Easy bushwalks around Sydney using the train, bus and ferry - Sydney Hiking Trips`;
 		const description = `Don't let organising a bushwalk intimidate you. These 40+ hikes are easy day trips from Sydney using public transport.`;
 		const url = `./`;
+		const canonical = `${this.config.rootDomain}`;
 		// update the route without refreshing
 		window.history.pushState({'key': 'menu'}, title, url);
 		// update the meta elements
 		document.querySelector('title').innerHTML = title;
 		document.querySelector('meta[name="description"]')?.setAttribute('content', description);
-		document.querySelector('meta[property="og:url"]')?.setAttribute('content', this.config.remoteUrl);
+		document.querySelector('meta[property="og:url"]')?.setAttribute('content', canonical);
 		document.querySelector('meta[property="og:image"]')?.setAttribute('content', this.config.remoteUrl + `/img/splash.jpg`);
 		document.querySelector('meta[property="og:title"]')?.setAttribute('content', title);
 		document.querySelector('meta[property="og:description"]')?.setAttribute('content', description);
-		document.querySelector('link[rel="canonical"]')?.setAttribute('href', this.config.remoteUrl);
+		document.querySelector('link[rel="canonical"]')?.setAttribute('href', canonical);
 	}
 
 	searchGuide(guideIds, keyword) {

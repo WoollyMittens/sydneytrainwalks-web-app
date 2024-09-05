@@ -31,6 +31,8 @@ export class SydneyTrainWalks {
 			// store it in the cache
 			this.guideCache[id] = guideData;
 		}
+		// update the navigation
+		this.updateNavigation(id);
 		// return the cached item
 		return this.guideCache[id];
 	}
@@ -103,6 +105,11 @@ export class SydneyTrainWalks {
 		setTimeout(() => {
 			document.body.setAttribute('data-screen', mode || 'menu');
 		}, 100);
+	}
+
+	updateNavigation(id) {
+		console.log('updateNavigation', id);
+		this.footer?.update(id);
 	}
 
 	getQuery(property) {

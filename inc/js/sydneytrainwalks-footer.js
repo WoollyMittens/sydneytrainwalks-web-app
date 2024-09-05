@@ -8,9 +8,10 @@ export class Footer {
 		this.init();
 	}
 
-	update() {
+	update(id) {
 		// fill the menu with options
-		this.footerElement.innerHTML = this.footerTemplate.innerHTML;
+		console.log('this.id', id);
+		this.footerElement.innerHTML = this.footerTemplate.innerHTML.replace(/\{id\}/g, id);
 	};
 
 	onBackButton(evt) {
@@ -32,7 +33,8 @@ export class Footer {
 
 	onFooterClicked(evt) {
 		// get the target of the click
-		var target = evt.target || evt.srcElement, id = target.getAttribute('id');
+		let target = evt.target || evt.srcElement;
+		let id = target.getAttribute('id');
 		// if a button was clicked
 		if (id && id.match(/footer-to-/)) {
 			// cancel any clicks

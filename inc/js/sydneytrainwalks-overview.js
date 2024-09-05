@@ -128,16 +128,17 @@ export class Overview {
 		const title = `Overview map of bushwalks accessible using public transport - Sydney Hiking Trips`;
 		const description = `This map shows the bushwalks that are accessible using public transport which are documented in this guide.`;
 		const url = `./?screen=overview`;
+		const canonical = `${this.config.rootDomain}?key=overview`;
 		// update the route without refreshing
 		window.history.pushState({'key': 'overview'}, title, url);
 		// update the meta elements
 		document.querySelector('title').innerHTML = title;
 		document.querySelector('meta[name="description"]')?.setAttribute('content', description);
-		document.querySelector('meta[property="og:url"]')?.setAttribute('content', this.config.remoteUrl + '/?screen=overview');
+		document.querySelector('meta[property="og:url"]')?.setAttribute('content', canonical);
 		document.querySelector('meta[property="og:image"]')?.setAttribute('content', this.config.remoteUrl + `/img/splash.jpg`);
 		document.querySelector('meta[property="og:title"]')?.setAttribute('content', title);
 		document.querySelector('meta[property="og:description"]')?.setAttribute('content', description);
-		document.querySelector('link[rel="canonical"]')?.setAttribute('href', this.config.remoteUrl + '/?screen=overview');
+		document.querySelector('link[rel="canonical"]')?.setAttribute('href', canonical);
 	}
 
   init() {
