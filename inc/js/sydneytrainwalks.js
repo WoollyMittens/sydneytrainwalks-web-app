@@ -143,11 +143,12 @@ export class SydneyTrainWalks {
 			? root.className.replace('ios-false', 'ios-true')
 			: root.className.replace('ios-true', 'ios-false');
 		// recover the previous state
+		var requestId = this.getQuery('key') || this.getQuery('id');
 		var storedId = window.localStorage.getItem('key');
 		var storedMode = window.localStorage.getItem('screen') || 'guide';
-		var startScreen = (this.getQuery('key')) ? 'guide' : 'menu';
+		var startScreen = (requestId) ? 'guide' : 'menu';
 		// recover the state from the url
-		storedId = this.getQuery('key') || storedId ;
+		storedId = requestId || storedId ;
 		storedMode = this.getQuery('screen') || storedMode;
 		startScreen = this.getQuery('screen') || startScreen;
 		// initialise the components
