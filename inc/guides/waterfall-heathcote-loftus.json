@@ -38,14 +38,14 @@
 		{
 			"type": "waypoint",
 			"photo": "001_dsc_9546.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the station exit at the top of the strairs, follow Kooraban St to the right across the overpass.",
 			"lon": 150.99456504002853,
 			"lat": -34.135190180001885
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_dsc_9547.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the intersection follow Warabin St right to the end.",
 			"lon": 150.99334826009888,
 			"lat": -34.13527551999548
 		},
@@ -59,35 +59,35 @@
 		{
 			"type": "waypoint",
 			"photo": "001_dsc_9549.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the trailhead at the end of Warabin St, pass the gate and follow the Bullawarring Track.",
 			"lon": 150.99208241999122,
 			"lat": -34.13086421000629
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_dsc_9550.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the sign down the Bullawarring Track to the left.",
 			"lon": 150.991829130026,
 			"lat": -34.130322680049304
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_dsc_9551.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the rough steps down the scramble.",
 			"lon": 150.99099863999612,
 			"lat": -34.13049415000775
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_dsc_9553.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the bottom of the scramble, follow the Bullawarring Track to the left.",
 			"lon": 150.98913026994236,
 			"lat": -34.13021404008064
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_dsc_9554.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the sign to the Kingfisher Pool to the right.",
 			"lon": 150.98877475999512,
 			"lat": -34.13052096998609
 		},
@@ -108,7 +108,7 @@
 		{
 			"type": "waypoint",
 			"photo": "001_dsc_9557.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the creek at the 108 Trail and follow the sign to the Kingfisher Pool to the right.",
 			"lon": 150.98595795999864,
 			"lat": -34.129634600012295
 		},
@@ -122,7 +122,7 @@
 		{
 			"type": "toilet",
 			"photo": "001_dsc_9559.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There is a toilet at the picnic area before the Kingfisher Pools",
 			"lon": 150.97841718001368,
 			"lat": -34.12673263999434
 		},
@@ -136,14 +136,14 @@
 		{
 			"type": "waypoint",
 			"photo": "001_dsc_9579.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the Kingfisher pool follow the track to the campground.",
 			"lon": 150.97698952991453,
 			"lat": -34.12683216000873
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_dsc_9580.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the creek at the campground and continue along the Bullawarring Track.",
 			"lon": 150.9766340699946,
 			"lat": -34.127150619985414
 		},
@@ -157,14 +157,14 @@
 		{
 			"type": "waypoint",
 			"photo": "001_dsc_9588.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the intersection with the Mooray Track, follow the sign to Lake Eckersley",
 			"lon": 150.9725454899922,
 			"lat": -34.12268261000356
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_dsc_9589.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross Myana Creek and continue following the Bullawarring Track.",
 			"lon": 150.97238358999834,
 			"lat": -34.12157612999513
 		},
@@ -213,14 +213,14 @@
 		{
 			"type": "waypoint",
 			"photo": "001_dsc_9627.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the intersection with the Goanna Track continue straight, following the sign to Lake Eckersley.",
 			"lon": 150.97567104004375,
 			"lat": -34.10529590997458
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_dsc_9628.jpg",
-			"description": "<i>+0.5km</i> Lorem ipsum dolor sit amet.",
+			"description": "<i>+0.5km</i> Alternative follow the Goanna Track to the left for a shortcut to Lake Eckerley.",
 			"lon": 150.97565211994836,
 			"lat": -34.105219899964275,
 			"optional": true
@@ -228,7 +228,7 @@
 		{
 			"type": "waypoint",
 			"photo": "002_pxl_20230310_225255088.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the Goanna Track across the ridge, follow the pipeline trail right to Lake Eckersley.",
 			"lon": 150.97308055555555,
 			"lat": -34.10202777777778,
 			"optional": true
@@ -252,7 +252,7 @@
 		{
 			"type": "waypoint",
 			"photo": "002_pxl_20230310_230515149.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the side of the pipeline trail follow the sign to the left down to the lake.",
 			"lon": 150.97840277777777,
 			"lat": -34.09540555555556,
 			"optional": true
@@ -284,7 +284,7 @@
 		{
 			"type": "waypoint",
 			"photo": "002_pxl_20230310_232402084.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the lake continue following the Pipeline Trail to the Battery Causeway.",
 			"lon": 150.97936666666666,
 			"lat": -34.09556111111112,
 			"optional": true
@@ -313,7 +313,7 @@
 		{
 			"type": "waypoint",
 			"photo": "003_dsc_9640_003_dsc_9651.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the Battery Causeway and continue following the Pipeline Trail.",
 			"lon": 150.97929203003875,
 			"lat": -34.09584704999508
 		},
@@ -355,7 +355,7 @@
 		{
 			"type": "waypoint",
 			"photo": "003_dsc_9658.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Optionally visit the Mirang Pool on the left side of the Pipeline Trail.",
 			"lon": 150.98862018995737,
 			"lat": -34.09059304997128
 		},
@@ -376,7 +376,7 @@
 		{
 			"type": "waypoint",
 			"photo": "003_dsc_9661.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From stairs over the pipeline on the right side of the track, follow the sign to Heathcote Station.",
 			"lon": 150.9947438100273,
 			"lat": -34.086208
 		},
@@ -404,37 +404,43 @@
 		{
 			"type": "waypoint",
 			"photo": "003_dsc_9666.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the Friendly Track to the Scout Hall. ",
 			"lon": 151.00131231998702,
 			"lat": -34.08710329998245
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_dsc_9668.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the Scout Hall follow Freeman Rd to the right. ",
 			"lon": 151.0016723300084,
 			"lat": -34.08618136999392
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_dsc_9669.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection follow Boundary Rd to the left.",
 			"lon": 151.00266112000355,
 			"lat": -34.08557627999775
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_dsc_9670.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the intersection follow Oliver St to the right.",
 			"lon": 151.00345134997454,
 			"lat": -34.08517280999561
 		},
 		{
 			"type": "kiosk",
 			"photo": "003_dsc_9671.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There are amenities at the Heathcote shops.",
 			"lon": 151.0064972899729,
 			"lat": -34.08682858000038
+		},
+		{
+			"type": "toilet",
+			"description": "There are public toilets at Veno Street Reserve.",
+			"lon": 151.008579,
+			"lat": -34.086311
 		},
 		{
 			"type": "waypoint",
