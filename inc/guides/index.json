@@ -1816,7 +1816,7 @@
 			"transit": true,
 			"car": false,
 			"kiosks": 2,
-			"toilets": 4,
+			"toilets": 6,
 			"looped": false,
 			"rain": false,
 			"fireban": false
@@ -1832,8 +1832,8 @@
 					"type": "train",
 					"photo": "001_pa055975.jpg",
 					"description": "Get the train to Waterfall using <a href=\"https://transportnsw.info/trip#/?to=Waterfall\">transportnsw.info</a>.",
-					"lat": -34.1350492,
-					"lon": 150.99596526007738
+					"lat": -34.134882,
+					"lon": 150.994562
 				},
 				{
 					"location": "Royal National Park Station",
