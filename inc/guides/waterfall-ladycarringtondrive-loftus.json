@@ -47,13 +47,6 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pa055980.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.99764700009982,
-			"lat": -34.136154
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pa055981.jpg",
 			"description": "Follow the left side of the oval clearing.",
 			"lon": 150.998328,
@@ -68,213 +61,68 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pa055984.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.002896,
-			"lat": -34.138331
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pa055985.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.004403,
-			"lat": -34.137999
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pa055986.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.004566,
-			"lat": -34.137929
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pa055987.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the right side of the trail follow the sign to Bola Creek.",
 			"lon": 151.004887,
 			"lat": -34.13773
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pa055988.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.005925,
-			"lat": -34.137906
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pa055990.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.006774,
-			"lat": -34.137865
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pa055991_001_pa055994.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.009775,
-			"lat": -34.138619444444444
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pa055995.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.009773,
-			"lat": -34.138613
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pa055996_001_pa055998.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.00867222222223,
-			"lat": -34.14103055555555
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pa056003.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.01172,
-			"lat": -34.14457
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pa056005.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.011699,
-			"lat": -34.144223
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pa056007.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the trail to the right along the creek.",
 			"lon": 151.01267300008502,
 			"lat": -34.141478
 		},
 		{
 			"type": "waypoint",
-			"photo": "001_pa056008.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.012938,
-			"lat": -34.141227
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pa056010.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.014242,
-			"lat": -34.14241700007019
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pa056021.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.019563,
-			"lat": -34.142813
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pa056022_001_pa056024.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 150.99879300011986,
-			"lat": -34.137392
-		},
-		{
-			"type": "waypoint",
-			"photo": "001_pa056025.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.02001700000002,
-			"lat": -34.143006
-		},
-		{
-			"type": "waypoint",
 			"photo": "001_pa056026.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the trail along the right bank of the Hacking River.",
 			"lon": 151.020239,
 			"lat": -34.143145
 		},
 		{
 			"type": "waypoint",
 			"photo": "001_pa056028.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Look for the sandy crossing down the left side of the track.",
 			"lon": 151.02196600000002,
 			"lat": -34.146667
 		},
 		{
 			"type": "waypoint",
+			"photo": "003_pa056029.jpg",
+			"description": "At the river crossing use the step stones to cross to the sandy beach on the other side.",
+			"lon": 151.02205600000002,
+			"lat": -34.146909
+		},
+		{
+			"type": "waypoint",
 			"photo": "002_pxl_20220128_212527544.jpg",
-			"description": "<i>+2km</i> Lorem ipsum dolor sit amet.",
+			"description": "<i>+2km</i> If the crossing is impossible, continue following the Couranga Track.",
 			"optional": true,
 			"lon": 151.021958,
 			"lat": -34.146911
 		},
 		{
 			"type": "waypoint",
-			"photo": "002_pxl_20220128_212542236.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": true,
-			"lon": 151.02201100000002,
-			"lat": -34.146980999912444
-		},
-		{
-			"type": "waypoint",
-			"photo": "002_pxl_20220128_213048307.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": true,
-			"lon": 151.021918,
-			"lat": -34.148139
-		},
-		{
-			"type": "waypoint",
 			"photo": "002_pxl_20220128_213101801.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross Waterfall Creek and continue following the Couranga Track on the other side.",
 			"optional": true,
 			"lon": 151.02191900000003,
 			"lat": -34.148240999922244
 		},
-		{
-			"type": "waypoint",
-			"photo": "002_pxl_20220128_213127261.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": true,
-			"lon": 151.021892,
-			"lat": -34.14828700008868
-		},
-		{
-			"type": "waypoint",
-			"photo": "002_pxl_20220128_213216071.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": true,
-			"lon": 151.021929,
-			"lat": -34.148534
-		},
-		{
-			"type": "waypoint",
-			"photo": "002_pxl_20220128_213524089.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": true,
-			"lon": 151.02248500000002,
-			"lat": -34.150222
-		},
+
 		{
 			"type": "waypoint",
 			"photo": "002_pxl_20220128_213641481.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the trailhead CAREFULLY follow the shoulder of McKell Ave to the left.",
 			"optional": true,
 			"lon": 151.02293500000002,
 			"lat": -34.150985
 		},
 		{
 			"type": "waypoint",
-			"photo": "002_pxl_20220128_213801256.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": true,
-			"lon": 151.023905,
-			"lat": -34.151232
-		},
-		{
-			"type": "waypoint",
 			"photo": "002_pxl_20220128_214444039.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Be mindful of traffic when crossing the bridge over the Hacking River.",
 			"optional": true,
 			"lon": 151.028377,
 			"lat": -34.151866
@@ -282,288 +130,62 @@
 		{
 			"type": "waypoint",
 			"photo": "002_pxl_20220128_214507913.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "After the bridge follow the sign to Wattamolla to the left.",
 			"optional": true,
 			"lon": 151.02864200000002,
 			"lat": -34.152093
 		},
 		{
 			"type": "waypoint",
-			"photo": "002_pxl_20220128_214601915.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": true,
-			"lon": 151.028717,
-			"lat": -34.151643
-		},
-		{
-			"type": "waypoint",
-			"photo": "002_pxl_20220128_215036677.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": true,
-			"lon": 151.029606,
-			"lat": -34.148938
-		},
-		{
-			"type": "waypoint",
 			"photo": "002_pxl_20220128_215048673.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the left side of the road follow the sign to the Forest Path to the Couranga Track.",
 			"optional": true,
 			"lon": 151.02968,
 			"lat": -34.148866
 		},
 		{
 			"type": "waypoint",
-			"photo": "002_pxl_20220128_215513632.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"optional": true,
-			"lon": 151.02630900000003,
-			"lat": -34.149135
-		},
-		{
-			"type": "waypoint",
 			"photo": "002_pxl_20220128_220002414.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the intersection with the Couranga Track continue straight on the Forest Path.",
 			"optional": true,
 			"lon": 151.02385500000003,
 			"lat": -34.14797
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pa056029.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.02205600000002,
-			"lat": -34.146909
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056030.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.02209200000001,
-			"lat": -34.146935
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056031.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.022209,
-			"lat": -34.147018
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056036_003_pa056039.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.006666,
-			"lat": -34.137841
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056044.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.022378,
-			"lat": -34.147138
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pa056047.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the other side of the Hacking River follow the steps up at the No Pushbikes sign.",
 			"lon": 151.02242,
 			"lat": -34.147168
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pa056049.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.023083,
-			"lat": -34.14794899989528
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pa056050.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the intersection follow the sign left to Audley down the Forest Path.",
 			"lon": 151.02330400000002,
 			"lat": -34.147947
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pa056051.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.02336400000002,
-			"lat": -34.147947
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056054.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.022813,
-			"lat": -34.146195999999996
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056058_003_pa056060.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.011169,
-			"lat": -34.145042
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056062.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.020443,
-			"lat": -34.141954
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056065.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.020743,
-			"lat": -34.138745
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056069.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.02542100000002,
-			"lat": -34.140356
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056077_003_pa056080.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.014408,
-			"lat": -34.142609
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056082.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.02834800000002,
-			"lat": -34.138329
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056084.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.030752,
-			"lat": -34.138788
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056088.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.03071900010394,
-			"lat": -34.141504
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pa056089.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At Bola Creek, follow Lady Carrington Drive left towards Audley.",
 			"lon": 151.03102300009604,
 			"lat": -34.141879
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pa056090.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.03107200000002,
-			"lat": -34.141924
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056091.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.03112000000002,
-			"lat": -34.141975
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056092.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.031316,
-			"lat": -34.14219099991943
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056093.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.03143700007922,
-			"lat": -34.142284
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056098.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.03112800000002,
-			"lat": -34.137993
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pa056100.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "<i>+3km</i> From the right side of the track there is a possible side track to the Limestone Cave.",
 			"lon": 151.03268400000002,
-			"lat": -34.133998
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056105.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.0442769999181,
-			"lat": -34.12485300008011
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056108.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.047033,
-			"lat": -34.121996
+			"lat": -34.133998,
+			"optional": true
 		},
 		{
 			"type": "waypoint",
 			"photo": "003_pa056110.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "On the left side of the track the Calala picnic area offers picnic tables to rest at.",
 			"lon": 151.045032,
 			"lat": -34.119509
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056111.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.044926,
-			"lat": -34.119331
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056112_003_pa056114.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.027385,
-			"lat": -34.139105
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056126.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.048764,
-			"lat": -34.103301
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056131.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.04907599999999,
-			"lat": -34.099541000144114
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056132.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.05026,
-			"lat": -34.098578
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056133.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.050388,
-			"lat": -34.098569000000005
 		},
 		{
 			"type": "hotspot",
@@ -578,141 +200,71 @@
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pa056136.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.052527,
-			"lat": -34.09429
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056142.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.05515200000002,
-			"lat": -34.089194
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pa056147.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Finish the paved section of Lady Carrington Drive along the picnic areas to Audley.",
 			"lon": 151.056215,
 			"lat": -34.082071000000006
 		},
 		{
 			"type": "waypoint",
-			"photo": "003_pa056148.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.05475,
-			"lat": -34.08176700011909
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056154_003_pa056158.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.04624,
-			"lat": -34.115016999864004
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056159.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.055295,
-			"lat": -34.079478
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056160.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.055318,
-			"lat": -34.079454000000005
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056161.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.05648300000001,
-			"lat": -34.07799099990576
-		},
-		{
-			"type": "waypoint",
-			"photo": "003_pa056162.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.056349,
-			"lat": -34.077527
-		},
-		{
-			"type": "waypoint",
 			"photo": "003_pa056163.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the bridge continue to the Visitor Centre.",
 			"lon": 151.056026,
 			"lat": -34.076730000000005
 		},
 		{
-			"type": "waypoint",
-			"photo": "003_pa056166.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.055697,
-			"lat": -34.075872000000004
-		},
-		{
 			"type": "kiosk",
 			"photo": "003_pa056168.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "The Audley Dance Hall offers amenities.",
 			"lon": 151.055677,
 			"lat": -34.07572300008189
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_dsc_9848.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the path from the visitor centre to the carpark.",
 			"lon": 151.05620546996008,
 			"lat": -34.07507058001398
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_dsc_9849.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the carpark follow the footpath to the left to the weir.",
 			"lon": 151.05663468999526,
 			"lat": -34.07432292000086
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_dsc_9861.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the other side of the weir, cross Audley Rd into the Bus Stop Flat Picnic Area.",
 			"lon": 151.05707711000474,
 			"lat": -34.07329082000289
 		},
 		{
 			"type": "toilet",
 			"photo": "004_dsc_9862.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "There is a toilet block near the picnic area.",
 			"lon": 151.05674586999655,
 			"lat": -34.072958970005665
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_dsc_9863.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the Honeymoon Track up the ridge from the left side of the toilet block.",
 			"lon": 151.05659613997116,
 			"lat": -34.07263380997031
 		},
 		{
 			"type": "waypoint",
-			"photo": "004_dsc_9864.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.05776545002075,
-			"lat": -34.06904221999499
-		},
-		{
-			"type": "waypoint",
 			"photo": "004_dsc_9865.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the top of the ridge follow the footpath past the park office.",
 			"lon": 151.05755096005097,
 			"lat": -34.064920500037765
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_dsc_9867.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the road into the carpark and continue to the tram platform.",
 			"lon": 151.05730762997538,
 			"lat": -34.063644169993346
 		},
@@ -727,91 +279,56 @@
 		{
 			"type": "waypoint",
 			"photo": "004_dsc_9869.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the end of the platform follow Rawson Pde Trail along the tram line.",
 			"lon": 151.0566171099999,
 			"lat": -34.06268653010552
 		},
 		{
 			"type": "waypoint",
-			"photo": "004_dsc_9870.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.05651429998753,
-			"lat": -34.06235851990049
-		},
-		{
-			"type": "waypoint",
 			"photo": "004_dsc_9873.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the trail the right around the park depot.",
 			"lon": 151.0524730100014,
 			"lat": -34.052419650020056
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_dsc_9875.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the end of the depot fence line, follow the Loftus Loop Track to the right.",
 			"lon": 151.0527939699754,
 			"lat": -34.051475349995705
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_dsc_9876.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "At the split in the trail follow the the bike trail left along the Princess Hwy. Watch out for cyclists.",
 			"lon": 151.05308815999518,
 			"lat": -34.05048517999688
 		},
 		{
 			"type": "waypoint",
-			"photo": "004_dsc_9877.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.05316200000001,
-			"lat": -34.04950079008649
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_dsc_9878.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.05317497998982,
-			"lat": -34.04919907988289
-		},
-		{
-			"type": "waypoint",
-			"photo": "004_dsc_9879_004_dsc_9888.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.05313298000482,
-			"lat": -34.048585459966674
-		},
-		{
-			"type": "waypoint",
 			"photo": "004_dsc_9889.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "The bike trail end at the traffic lights near Loftus Station.",
 			"lon": 151.05277378999182,
 			"lat": -34.04624561998418
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_dsc_9890.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Use the traffic lights to cross the Princess Hwy safely.",
 			"lon": 151.05271562000578,
 			"lat": -34.0461599800025
 		},
 		{
 			"type": "waypoint",
 			"photo": "004_dsc_9891.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Across the highway enter the carpark at the Tramway Museum.",
 			"lon": 151.05285670999606,
 			"lat": -34.04511727996557
 		},
 		{
 			"type": "waypoint",
-			"photo": "004_dsc_9892.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
-			"lon": 151.05271585000162,
-			"lat": -34.044998209985025
-		},
-		{
-			"type": "waypoint",
 			"photo": "004_dsc_9893.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Cross the carpark to Loftus Station.",
 			"lon": 151.0522499400048,
 			"lat": -34.044767290034535
 		},
@@ -826,7 +343,7 @@
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20240425_022400242.jpg",
-			"description": "<i>+2km</i>If time allows, consider following Old Princes Highway to Sutherland for a more frequent train service.",
+			"description": "<i>+2km</i> If time allows, consider following Old Princes Highway to Sutherland for a more frequent train service.",
 			"optional": true,
 			"lon": 151.05283200000002,
 			"lat": -34.045386
@@ -834,7 +351,7 @@
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20240425_022721959.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "Follow the footpath along the sports fields.",
 			"optional": true,
 			"lon": 151.05337300000002,
 			"lat": -34.043186
@@ -842,7 +359,7 @@
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20240425_023753879.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the Leisure Centre, follow the footpath along Old Princess Hwy under the overpass to the shops.",
 			"optional": true,
 			"lon": 151.05518500000002,
 			"lat": -34.035461999999995
@@ -850,7 +367,7 @@
 		{
 			"type": "waypoint",
 			"photo": "005_pxl_20240425_024243210.jpg",
-			"description": "Lorem ipsum dolor sit amet.",
+			"description": "From the shops, cross the road to Sutherland Station.",
 			"optional": true,
 			"lon": 151.057296,
 			"lat": -34.03241699987883
